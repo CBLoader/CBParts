@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.26</Version>
+    <Version>1.27</Version>
     <Filename>21-druid.part</Filename>
     <PartAddress>https://vorpald20.com/cbloader/21-druid.part</PartAddress>
     <VersionAddress>https://vorpald20.com/cbloader/version.php?part=21-druid</VersionAddress>
@@ -33,6 +33,7 @@
  Updated 11-June-2012 Protector subclass fix.
  Updated 18-August-2012 Fixed Druid of the Wastes grants.
  Updated 24-November-2013 Writhing Henge spell update.
+ Updated 7-April-2020 Allow Sentinel to use normal druid encounters.
 </Changelog>
   <!-- Druid sub-class Powers, Heroes of the Forgotten Kingdoms -->  
   <RulesElement name="Dynamic Assault" type="Power" internal-id="ID_FMP_POWER_13507" source="Player Essentials: Heroes of the Forgotten Kingdoms">
@@ -2668,136 +2669,7 @@ Add +2 to your Charisma.
     <specific name="Level"> 26 </specific>
     <specific name="Power Type"> Utility </specific>
   </RulesElement>
-  
-<!-- Block Druid Powers for Sentinel/Hybrid Sentinel -->
-<AppendNodes name="Darting Bite" type="Power" internal-id="ID_FMP_POWER_2671" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:46 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Tidal Surge" type="Power" internal-id="ID_FMP_POWER_2681" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:46 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Shifting Rake" type="Power" internal-id="ID_FMP_POWER_2683" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:47 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Scavenger&apos;s Prize" type="Power" internal-id="ID_FMP_POWER_2684" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:48 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Lightning Cascade" type="Power" internal-id="ID_FMP_POWER_2686" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:48 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Cull the Herd" type="Power" internal-id="ID_FMP_POWER_2688" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:48 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Close to the Kill" type="Power" internal-id="ID_FMP_POWER_2790" source="Primal Power" revision-date="8/27/2010 11:29 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Stinging Cloud" type="Power" internal-id="ID_FMP_POWER_4866" source="Primal Power" revision-date="8/27/2010 11:36:34 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Floating Death" type="Power" internal-id="ID_FMP_POWER_4867" source="Primal Power" revision-date="8/27/2010 11:36:35 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Scattered Form" type="Power" internal-id="ID_FMP_POWER_4870" source="Primal Power" revision-date="8/27/2010 11:36:36 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Frost Flash" type="Power" internal-id="ID_FMP_POWER_5041" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:26 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Twisting Vines" type="Power" internal-id="ID_FMP_POWER_5042" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:26 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Claws of Retribution" type="Power" internal-id="ID_FMP_POWER_5058" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:32 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Expose Weakness" type="Power" internal-id="ID_FMP_POWER_5059" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:32 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Thunder Crash" type="Power" internal-id="ID_FMP_POWER_5060" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:33 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Windstorm" type="Power" internal-id="ID_FMP_POWER_5064" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:34 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Call Forth the Spirit Pack" type="Power" internal-id="ID_FMP_POWER_9637" source="Primal Power" revision-date="8/27/2010 11:50:10 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Thorn Spray" type="Power" internal-id="ID_FMP_POWER_9640" source="Primal Power" revision-date="8/27/2010 11:50:11 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Oak Skewer" type="Power" internal-id="ID_FMP_POWER_9669" source="Primal Power" revision-date="8/27/2010 11:50:19 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Rending Claws" type="Power" internal-id="ID_FMP_POWER_9671" source="Primal Power" revision-date="8/27/2010 11:50:19 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Twin-Horned Bolt" type="Power" internal-id="ID_FMP_POWER_9672" source="Primal Power" revision-date="8/27/2010 11:50:19 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Inexorable Smash" type="Power" internal-id="ID_FMP_POWER_9686" source="Primal Power" revision-date="8/27/2010 11:50:22 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Torrential Storm" type="Power" internal-id="ID_FMP_POWER_9687" source="Primal Power" revision-date="8/27/2010 11:50:22 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Cloud of Sparrows" type="Power" internal-id="ID_FMP_POWER_10035" source="Primal Power" revision-date="8/27/2010 11:52:10 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Devouring Swarm" type="Power" internal-id="ID_FMP_POWER_10036" source="Primal Power" revision-date="8/27/2010 11:52:10 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Hungry for the Kill" type="Power" internal-id="ID_FMP_POWER_10037" source="Primal Power" revision-date="8/27/2010 11:52:10 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Slashing Dash" type="Power" internal-id="ID_FMP_POWER_12838" source="Dragon Magazine 389" revision-date="8/27/2010 12:05:41 PM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Infiltrating Drone" type="Power" internal-id="ID_FMP_POWER_12841" source="Dragon Magazine 389" revision-date="8/27/2010 12:05:42 PM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Tundra Wind" type="Power" internal-id="ID_FMP_POWER_2669" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:45 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Call Lightning" type="Power" internal-id="ID_FMP_POWER_2689" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:49 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Flowing Swarm" type="Power" internal-id="ID_FMP_POWER_4865" source="Primal Power" revision-date="8/27/2010 11:36:34 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Battering Claws" type="Power" internal-id="ID_FMP_POWER_5047" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:28 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Predator&apos;s Flurry" type="Power" internal-id="ID_FMP_POWER_5048" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:29 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Feral Harrier" type="Power" internal-id="ID_FMP_POWER_9649" source="Primal Power" revision-date="8/27/2010 11:50:13 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Ironbreaker&apos;s Claws" type="Power" internal-id="ID_FMP_POWER_9651" source="Primal Power" revision-date="8/27/2010 11:50:14 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Roar of the Unbowed Beast" type="Power" internal-id="ID_FMP_POWER_9652" source="Primal Power" revision-date="8/27/2010 11:50:14 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Thorn Castle" type="Power" internal-id="ID_FMP_POWER_9653" source="Primal Power" revision-date="8/27/2010 11:50:14 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Tremor" type="Power" internal-id="ID_FMP_POWER_2682" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:47 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Latch On" type="Power" internal-id="ID_FMP_POWER_2804" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:29:01 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Poison Sting" type="Power" internal-id="ID_FMP_POWER_4869" source="Primal Power" revision-date="8/27/2010 11:36:35 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Feast of Fury" type="Power" internal-id="ID_FMP_POWER_5053" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:30 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Swirling Winds" type="Power" internal-id="ID_FMP_POWER_5054" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:31 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Blood-Spray Bite" type="Power" internal-id="ID_FMP_POWER_9660" source="Primal Power" revision-date="8/27/2010 11:50:16 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Plague of Locusts" type="Power" internal-id="ID_FMP_POWER_9661" source="Primal Power" revision-date="8/27/2010 11:50:17 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Wind of Blades" type="Power" internal-id="ID_FMP_POWER_9663" source="Primal Power" revision-date="8/27/2010 11:50:17 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Serpent&apos;s Hold" type="Power" internal-id="ID_FMP_POWER_12835" source="Dragon Magazine 389" revision-date="8/27/2010 12:05:40 PM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Leaping Rake" type="Power" internal-id="ID_FMP_POWER_2691" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:49 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Feral Whirlwind" type="Power" internal-id="ID_FMP_POWER_2692" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:50 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Polar Blast" type="Power" internal-id="ID_FMP_POWER_2694" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:28:50 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Explosive Wind" type="Power" internal-id="ID_FMP_POWER_5076" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:37 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Behemoth Stampede" type="Power" internal-id="ID_FMP_POWER_9701" source="Primal Power" revision-date="8/27/2010 11:50:27 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Death Fangs" type="Power" internal-id="ID_FMP_POWER_9702" source="Primal Power" revision-date="8/27/2010 11:50:27 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Howling Doom" type="Power" internal-id="ID_FMP_POWER_9703" source="Primal Power" revision-date="8/27/2010 11:50:28 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Thunder Claw" type="Power" internal-id="ID_FMP_POWER_9704" source="Primal Power" revision-date="8/27/2010 11:50:28 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Disorienting Drone" type="Power" internal-id="ID_FMP_POWER_9705" source="Primal Power" revision-date="8/27/2010 11:50:28 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Blinding Swarm" type="Power" internal-id="ID_FMP_POWER_4872" source="Primal Power" revision-date="8/27/2010 11:36:36 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Grasping Earth" type="Power" internal-id="ID_FMP_POWER_5070" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:35 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Primal Roar" type="Power" internal-id="ID_FMP_POWER_5071" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:35 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Stormburst" type="Power" internal-id="ID_FMP_POWER_5072" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:36 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Strength of the Hunt" type="Power" internal-id="ID_FMP_POWER_5073" source="Player&apos;s Handbook 2" revision-date="8/27/2010 11:37:36 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Fearsome Fangs" type="Power" internal-id="ID_FMP_POWER_9695" source="Primal Power" revision-date="8/27/2010 11:50:25 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Rain of Fire Needles" type="Power" internal-id="ID_FMP_POWER_9696" source="Primal Power" revision-date="8/27/2010 11:50:25 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Razor Snare" type="Power" internal-id="ID_FMP_POWER_9697" source="Primal Power" revision-date="8/27/2010 11:50:25 AM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>
-<AppendNodes name="Fungal Eruption" type="Power" internal-id="ID_FMP_POWER_12330" source="Dragon Magazine 386" revision-date="8/27/2010 12:03:05 PM" >
-<Prereqs> !Sentinel, !Hybrid Sentinel </Prereqs> </AppendNodes>  
+
 <!-- Heroes of the Feywild --> 
 <!-- Protector Sub-Class --> 
 <RulesElement name="Protector" type="Class" internal-id="ID_FMP_CLASS_909" source="Heroes of the Feywild">

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.11</Version>
+    <Version>1.12</Version>
     <Filename>13-ranger.part</Filename>
     <PartAddress>https://vorpald20.com/cbloader/13-ranger.part</PartAddress>
     <VersionAddress>https://vorpald20.com/cbloader/version.php?part=13-ranger</VersionAddress>
   </UpdateInfo>
   <!-- Ranger -->
   <!-- 13-ranger.part, version 1.11 -->
-  <!-- Original release: 13-July-2011; Last modified: 5-June-2012 -->
+  <!-- Original release: 13-July-2011; Last modified: 13-April-2017 -->
   <!-- Test compiled with CBLoader build V1.3.0 -->
   <!-- This part file belongs to the July 2011 reorganization of data files. -->
   <!-- Special thanks to the entire community for handling the materials. -->
@@ -23,6 +23,7 @@
  Updated 18-May-2012 DSH added.
  Updated 4-June-2012 Updated Ranger Beast Companion Powers from Dragon Magazine 392.
  Updated 5-June-2012 Hunter/Scout fixes.
+ Updated 13-April-2017 Fixed Hunter/Scout stances to allow for selecting any ranger stance.
 </Changelog>
   <!-- Shared Ranger and Druid Wilderness Knacks * Class Features -->
   <RulesElement name="Beast Empathy" type="Class Feature" internal-id="ID_WOG_SHARED_CLASS_FEATURE_KNACK_1" source="Player Essentials: Heroes of the Forgotten Kingdoms">
@@ -107,7 +108,7 @@ A ranger trains to fight, but sometimes the best tactic is one that allows you t
 A serpent strikes like lightning and retreats like a ghost. It lands deadly attacks but never lingers near its enemy. You mimic these tactics with this aspect, pouncing upon an isolated enemy and not letting it bog you down in close quarters.
 </RulesElement>
   <RulesElement name="Aspect of the Pouncing Lynx" type="Power" internal-id="ID_FMP_POWER_13591" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Like a hunting cat, you have learned to strike hard and fast. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Ranger Utility  </specific>
@@ -127,7 +128,7 @@ A serpent strikes like lightning and retreats like a ghost. It lands deadly atta
 Hunting cats, such as the lynx, rely on speed and surprise to overwhelm their prey in a burst of sudden action. Drawing on primal magic, you employ a similar tactic. When battle is joined, you seize the initiative and make a deadly attack. If your foes manage to leap upon you before you can act, you escape their grasp with a quick move.
 </RulesElement>
   <RulesElement name="Aspect of the Lone Wolf" type="Power" internal-id="ID_FMP_POWER_13592" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Like the lone wolf, you learn to pick off the weakest of your enemies with quick and brutal efficiency.</Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Ranger Utility  </specific>
@@ -208,7 +209,7 @@ A wolf pack is a whole that is stronger than the sum of its parts. When you ente
 The lion is the king of the savannah, a proud hunter and a ferocious enemy. When you enter this aspect, you gain the lion's unmatched bravery and resolute determination. No foe, regardless of its size or strength, can hope to match your tenacity.
 </RulesElement>
   <RulesElement name="Aspect of the Seeking Falcon" type="Power" internal-id="ID_FMP_POWER_13595" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You take on the aspect of the falcon, gaining its keen eyes and striking a fellowship with the primal winds, which carry your attacks even farther. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Ranger Utility  </specific>
@@ -228,7 +229,7 @@ The lion is the king of the savannah, a proud hunter and a ferocious enemy. When
 The falcon is a hunter and a wanderer, allowing the primal spirits of wind to guide it along its path. You tap into this bond and become part of it, gaining both the falcon's keen eyesight and the benefits of its kinship with the spirits of the wind.
 </RulesElement>
   <RulesElement name="Aspect of the Charging Ram" type="Power" internal-id="ID_FMP_POWER_13620" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You barrel past your foes with such speed and strength that they are unable to react to your assault</Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Ranger Utility  </specific>
@@ -248,7 +249,7 @@ The falcon is a hunter and a wanderer, allowing the primal spirits of wind to gu
 The ram relies on brute force to overwhelm its enemies, favoring a deadly charge. You mimic its tactics, drawing on primal magic to deliver a brutal attack. With this aspect, you run rampant over the battlefield. Your enemies shrink away as you barrel forward, unwilling to attack you or stand between you and your target.
 </RulesElement>
   <RulesElement name="Aspect of the Hungry Shark" type="Power" internal-id="ID_FMP_POWER_13621" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> As you take on the aspect of the shark, the scent of blood drives you into a vicious frenzy.</Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Ranger Utility  </specific>
@@ -268,7 +269,7 @@ The ram relies on brute force to overwhelm its enemies, favoring a deadly charge
 The loremasters hold that a shark can smell blood from miles away. Whether or not that is true, this aspect turns you into a single-minded killer. When you smell blood, you attack mercilessly.
 </RulesElement>
   <RulesElement name="Aspect of the Soaring Hawk" type="Power" internal-id="ID_FMP_POWER_13622" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You move through the battle like a hawk, carefully waiting for the best moment to strike, rising above all barriers that might restrict you. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Ranger Utility  </specific>

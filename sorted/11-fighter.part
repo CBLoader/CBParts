@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.15</Version>
+    <Version>1.16</Version>
     <Filename>11-fighter.part</Filename>
     <PartAddress>https://vorpald20.com/cbloader/11-fighter.part</PartAddress>
     <VersionAddress>https://vorpald20.com/cbloader/version.php?part=11-fighter</VersionAddress>
   </UpdateInfo>
   <!-- Fighter -->
-  <!-- 11-fighter.part, version 1.15 -->
-  <!-- Original release: 13-July-2011; Last modified: 19-October-2012 -->
+  <!-- 11-fighter.part, version 1.16 -->
+  <!-- Original release: 13-July-2011; Last modified: 13-April-2017 -->
   <!-- Test compiled with CBLoader build V1.3.0 -->
   <!-- This part file belongs to the July 2011 reorganization of data files. -->
   <!-- Special thanks to the entire community for handling the materials. -->
@@ -25,6 +25,7 @@
  Updated 18-August-2012 Spinning Deflection calculation fix.
  Updated 19-September-2012 Brawler Style and Unarmored Defense Fix
  Updated 19-October-2012 Updates on fighter attack powers changed weapon group detection for correct damage bonus and to calculate correctly for differant groups
+ Updated 13-April-2017 Fixed Slayer/Knight stances to allow for selecting any fighter utility.
 </Changelog>
   <!-- Fighter Class Feature Updates -->
   <RulesElement name="Fighter" type="Class" internal-id="ID_FMP_CLASS_3" source="Player's Handbook" revision-date="10/12/2010 1:39:31 PM">
@@ -1227,7 +1228,7 @@ Level 21: +4 power bonus. </specific>
 Tactics and cunning have their place in every battle. However, you learned early in your training that raw anger is an effective weapon against a foe that refuses to die.
 </RulesElement>
   <RulesElement name="Cleaving Assault" type="Power" internal-id="ID_FMP_POWER_12663" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:52 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Your wide, sweeping attacks carry through to let you lash out at another nearby foe. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1242,7 +1243,7 @@ Tactics and cunning have their place in every battle. However, you learned early
 After countless battles fighting against overwhelming odds, you have perfected a whirling assault technique that uses the follow-through from an attack for deadly effect.
 </RulesElement>
   <RulesElement name="Defend the Line" type="Power" internal-id="ID_FMP_POWER_12664" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:52 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Your attack staggers a foe, hindering its attempts to flee from you. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1257,7 +1258,7 @@ After countless battles fighting against overwhelming odds, you have perfected a
 By vowing to hold the line, you ensure that your attacks leave your foes struggling to move into optimal position before you strike again.
 </RulesElement>
   <RulesElement name="Hammer Hands" type="Power" internal-id="ID_FMP_POWER_12665" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:53 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You throw your weight into each attack, striking with such force that you drive your enemy before you. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1272,7 +1273,7 @@ By vowing to hold the line, you ensure that your attacks leave your foes struggl
 As long as an enemy is a threat to your allies, you rely on the hammer hands stance to keep that foe exactly where you want it.
 </RulesElement>
   <RulesElement name="Measured Cut" type="Power" internal-id="ID_FMP_POWER_12666" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:53 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Each carefully timed strike lets you slip through your foes without fear of reprisal. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1611,7 +1612,7 @@ You have trained to take advantage of a foe's misstep, and when the enemy's atta
 Through the heroic and paragon tiers, you have learned to hold enough of your strength in reserve to finish the fight. Having joined the ranks of the great warriors of legend, you can now draw on this strength regularly.
 </RulesElement>
   <RulesElement name="Berserker's Charge" type="Power" internal-id="ID_FMP_POWER_12688" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:59 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You channel your combat fury to run down your foes. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1626,7 +1627,7 @@ Through the heroic and paragon tiers, you have learned to hold enough of your st
 You have trained to unleash the full fury of your combat style in devastating charge attacks that let you lay waste to your foes.
 </RulesElement>
   <RulesElement name="Duelist's Assault" type="Power" internal-id="ID_FMP_POWER_12689" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:59 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You focus your attention on a lone enemy, tearing into it with deadly force. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1643,7 +1644,7 @@ Level 21: +8 power bonus. </specific>
 With no other opponents to divide your attention and no allies to distract you, nothing stands between you and your enemy's destruction.
 </RulesElement>
   <RulesElement name="Mobile Blade" type="Power" internal-id="ID_FMP_POWER_12690" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:29:59 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> The force of your weapon attack lets you spring away from your foe. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>
@@ -1658,7 +1659,7 @@ With no other opponents to divide your attention and no allies to distract you, 
 You have learned to let the momentum of each attack carry you into position for your next strike.
 </RulesElement>
   <RulesElement name="Unfettered Fury" type="Power" internal-id="ID_FMP_POWER_12692" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:30 PM">
-    <Category> ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Category> ID_FMP_CLASS_FEATURE_2850,ID_FMP_CLASS_FEATURE_3005,ID_FMP_CLASS_FEATURE_3012,ID_FMP_CLASS_FEATURE_2854,ID_FMP_CLASS_FEATURE_2852,ID_FMP_CLASS_FEATURE_3026,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You embrace your inner fury, hitting fast and hard to mow through your foes. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Fighter Utility  </specific>

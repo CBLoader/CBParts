@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMHybrid.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMHybrid.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMHybrid.txt</VersionAddress>
+  </UpdateInfo>
+  <AppendNodes name="Hybrid" type="Class" internal-id="ID_INTERNAL_CLASS_HYBRID" source="Core,Player's Handbook 3">
+    <rules>
+      <!--
+
+Code that I was going to use in a version that calculates a variable to determine what level of armor proficiency the hybrid character should get (2 is cloth, 12 is plate, etc.) and grants the appropriate proficiencies automatically. Calculating the variable worked fine, but unfortunately I couldn't get it to use the variable as any kind of requires or prereq or anything, so I scrapped it in favor of an easy but self-regulated way for players to add their own. If you have a solution to the other method, let me know.
+
+    <statadd name="HyPro" value="+1" />
+    <statadd name="HyShPro" value="+1" />
+    <statadd name="HyPro" value="+4" requires="Ardent" />
+    <statadd name="HyPro" value="+2" requires="Artificer" />
+    <statadd name="HyPro" value="+2" requires="Assassin" />
+    <statadd name="HyPro" value="+1" requires="Avenger" />
+    <statadd name="HyPro" value="+3" requires="Barbarian" />
+    <statadd name="HyPro" value="+4" requires="Bard" />
+    <statadd name="HyPro" value="+5" requires="Battlemind" />
+    <statadd name="HyPro" value="+4" requires="Cleric" />
+    <statadd name="HyPro" value="+3" requires="Druid" />
+    <statadd name="HyPro" value="+5" requires="Fighter" />
+    <statadd name="HyPro" value="+4" requires="Invoker" />
+    <statadd name="HyPro" value="+1" requires="Monk" />
+    <statadd name="HyPro" value="+6" requires="Paladin" />
+    <statadd name="HyPro" value="+1" requires="Psion" />
+    <statadd name="HyPro" value="+3" requires="Ranger" />
+    <statadd name="HyPro" value="+2" requires="Rogue" />
+    <statadd name="HyPro" value="+5" requires="Runepriest" />
+    <statadd name="HyPro" value="+2" requires="Seeker" />
+    <statadd name="HyPro" value="+2" requires="Shaman" />
+    <statadd name="HyPro" value="+1" requires="Sorcerer" />
+    <statadd name="HyPro" value="+2" requires="Swordmage" />
+    <statadd name="HyPro" value="+3" requires="Warden" />
+    <statadd name="HyPro" value="+2" requires="Warlock" />
+    <statadd name="HyPro" value="+4" requires="Warlord" />
+    <statadd name="HyPro" value="+1" requires="Wizard" />
+    <statadd name="HyShPro" value="+1" requires="Assassin" />
+    <statadd name="HyShPro" value="+1" requires="Bard" />
+    <statadd name="HyShPro" value="+2" requires="Battlemind" />
+    <statadd name="HyShPro" value="+2" requires="Fighter" />
+    <statadd name="HyShPro" value="+2" requires="Paladin" />
+    <statadd name="HyShPro" value="+1" requires="Runepriest" />
+    <statadd name="HyShPro" value="+2" requires="Warden" />
+    <statadd name="HyShPro" value="+1" requires="Warlord" />
+-->
+      <select type="Feat" category="Hybrid Armor" number="1" optional="true" />
+      <select type="Feat" category="Hybrid Shield" number="1" optional="true" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Hybrid Armor" type="Category" internal-id="ID_INTERNAL_CATEGORY_HYBRID_ARMOR" source="KDM" />
+  <RulesElement name="Hybrid Shield" type="Category" internal-id="ID_INTERNAL_CATEGORY_HYBRID_SHIELD" source="KDM" />
+  <RulesElement name="Hybrid Armor (Leather)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_ARMOR_(LEATHER)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_ARMOR</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Armor (Hide)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_ARMOR_(HIDE)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_ARMOR</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Armor (Chainmail)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_ARMOR_(CHAINMAIL)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_ARMOR</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Armor (Scale)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_ARMOR_(SCALE)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_ARMOR</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Armor (Plate)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_ARMOR_(PLATE)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_ARMOR</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Shield (Light)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_SHIELD_(LIGHT)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_SHIELD</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Shield (Heavy)" type="Feat" internal-id="ID_KDM_FEAT_HYBRID_SHIELD_(HEAVY)" source="KDM">
+    <Category>ID_INTERNAL_CATEGORY_HYBRID_SHIELD</Category>
+    <Prereqs> Hybrid </Prereqs>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+</D20Rules>

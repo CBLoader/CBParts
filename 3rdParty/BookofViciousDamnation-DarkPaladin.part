@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>BookofViciousDamnation-DarkPaladin.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/BookofViciousDamnation-DarkPaladin.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/BookofViciousDamnation-DarkPaladin.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Coded by Tivaan -->
+  <RulesElement name="Unholy Strike" type="Power" internal-id="ID_FMP_POWER_10001_20" source="Book of Vicious Damnation - Dark Paladin" revision-date="11/30/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> You hit your enemy using a weapon ignited with dark flames. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Fire, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier fire damage. If you marked the target, you gain combat advantage against it until the end of your next turn. </specific>
+    <specific name="Level 21" />
+    <specific name=" Hit"> As above, but increase damage to 2[W] + Strength modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Evil Smite" type="Power" internal-id="ID_FMP_POWER_10001_21" source="Book of Vicious Damnation - Dark Paladin" revision-date="11/30/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your attack putrefies the flesh of your opponent. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier + Charisma modifier necrotic damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Foul's Delirium" type="Power" internal-id="ID_FMP_POWER_10001_22" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your arcane gestures cause madness. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Implement, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 3d8 + Charisma modifier psychic damage, and the target is stunned until the end of your next turn. </specific>
+    <specific name="Miss"> Half damage, and the target is dazed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Abyssal Speech" type="Power" internal-id="ID_FMP_POWER_10001_23" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your revolting words bend your enemy's will. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Utility 2 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Effect"> The target takes a penalty to Will defense equal to 1 + your Charisma modifier against your Intimidate attempts until the end of the encounter. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Dark Harvest" type="Power" internal-id="ID_FMP_POWER_10001_24" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your attacks are devastating against pure opponents. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 3 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One or Two Creature </specific>
+    <specific name="Attack"> Strength vs. AC, one attack per target </specific>
+    <specific name="Hit"> The effect of this prayer depends on what your target's alignment is: 1) Chaotic Evil or Evil target: 1[W] + Strength modifier damage; 2)Unaligned target: 1[W] + Strength modifier damage, and the target is marked until the end of your next turn; 3)Good or Lawful Good target: 1[W] + Strength modifier damage, and the target is marked and dazed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Vulnerability to Evil" type="Power" internal-id="ID_FMP_POWER_10001_25" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your attacks are devastating against pure opponents. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 5 </specific>
+    <specific name="Keywords"> Divine, Implement, Necrotic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit"> 1d8 necrotic plus 1d8 psychic damage, and the target gains vulnerability 5 to necrotic and psychic damage until the end of the encounter. </specific>
+    <specific name="Miss"> Half damage, and the target gains no vulnerability. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Transfer Pain" type="Power" internal-id="ID_FMP_POWER_10001_26" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> You can use your pain to damage your enemies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Utility 6 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Effect"> Choose an opponent within 5 squares of you. The target takes 1/4 of YOUR damage in place of you until the end of the encounter or until you end the effect as a free action. No power or effect can reduce or stop the damage the target takes from this power. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Ice Mask" type="Power" internal-id="ID_FMP_POWER_10001_27" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> You encapsulate your opponents' heads in a block of ice. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 7 </specific>
+    <specific name="Keywords"> Cold, Divine, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> Charisma modifier cold damage, and the target is blinded and deafened until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Paralyzing Disease" type="Power" internal-id="ID_FMP_POWER_10001_28" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> The gray cloud that surrounds you carries a terrible disease. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 9 </specific>
+    <specific name="Keywords"> Psychic, Divine, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 1d8 + Charisma modifier necrotic damage. </specific>
+    <specific name="Effect"> Any enemy that starts its turn adjacent to you is immobilized until the end of your next turn. </specific>
+    <specific name="Special"> Sustain Minor: You can sustain the power's effect. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Cursed Gaze" type="Power" internal-id="ID_FMP_POWER_10001_29" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your dark flaming eyes curse your enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Utiltity 10 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Effect"> Target's saving throws get a -4 penalty until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Tremendous Smite" type="Power" internal-id="ID_FMP_POWER_10001_30" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> After your attack the air becomes cold and hostile. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 13 </specific>
+    <specific name="Keywords"> Cold, Divine, Weapon, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst you can see </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> This power's area is difficult terrain until the end of your next turn. Any creature that starts its turn in the area takes 5 cold and psychic damage. You can dismiss the effect as a minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Lost Time" type="Power" internal-id="ID_FMP_POWER_10001_31" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your hit damages your victim's time perception. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 15 </specific>
+    <specific name="Keywords"> Charm, Divine, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage and the target loses its next standard action. </specific>
+    <specific name="Miss"> Half damage and no action is lost. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Black Luck" type="Power" internal-id="ID_FMP_POWER_10001_32" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,16 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> The evil god you serve gives to you another chance. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Utiltity 16 </specific>
+    <specific name="Keywords"> Divine, Illusion </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Trigger"> You (or one ally in range) fail a ranged or a melee attack roll. </specific>
+    <specific name="Effect"> You or your ally can reroll the attack roll. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Dark hands of Evil Gods" type="Power" internal-id="ID_FMP_POWER_10001_33" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_MINOR_ACTION,17 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> A crushing hand of despair strikes your foe's mind. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 17 </specific>
+    <specific name="Keywords"> Divine, Implement, Psychic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit"> 2d10 + Wisdom modifier psychic damage, and the target is marked until the end of your next turn. </specific>
+    <specific name="Effect"> Until the end of your next turn, allies in the burst gain a power bonus to damage rolls equal to your Charisma modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Evil Crown" type="Power" internal-id="ID_FMP_POWER_10001_34" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> The power of your corrupted soul is unbearable. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 19 </specific>
+    <specific name="Keywords"> Divine, Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst you can see </specific>
+    <specific name="Attack"> Wisdom vs. Fortitude </specific>
+    <specific name="Hit"> 1[W] + Wisdom modifier necrotic damage, and the target is stunned (save ends). </specific>
+    <specific name="Miss"> Half damage, and the target is blinded until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Doom" type="Power" internal-id="ID_FMP_POWER_10001_35" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> Your enemies can't escape the shadow of your dark god. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Utility 22 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Effect"> Until the end of your next turn, any target who makes a saving throw must roll two dice and take the lower result. Also all targets get a -2 penalty to attack rolls and defenses until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Kiss of the Snake" type="Power" internal-id="ID_FMP_POWER_10001_36" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> With a single evil word you can put a strong poison in your victim's veins. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 23 </specific>
+    <specific name="Keywords"> Divine, Implement, Poison </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 3d6 + Wisdom modifier poison damage, and ongoing 10 poison damage (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Four Curses" type="Power" internal-id="ID_FMP_POWER_10001_37" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION,25 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> You destroy your enemies' heart, body, mind and soul using four ancient dark curses. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 25 </specific>
+    <specific name="Keywords"> Acid, Cold, Divine, Implement, Necrotic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit"> 1d6 acid damage plus 1d6 cold damage plus 1d6 necrotic damage plus 1d6 psychic damage, and ongoing 10 damage (save ends). The target is marked until the end of your next turn. If the target is good or lawful good it is also slowed until the end of your next turn. </specific>
+    <specific name="Miss"> Half damage, and ongoing 10 damage (save ends). The target is marked until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Demon's Blow" type="Power" internal-id="ID_FMP_POWER_10001_38" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> You hit your enemy using a weapon infused with hellish power. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 27 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee Weap0n </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Strength vs. Will </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Special"> This attack deals 5d12 extra damage on a critical hit. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+  <RulesElement name="Vampire Grasp" type="Power" internal-id="ID_FMP_POWER_10001_39" source="Book of Vicious Damnation - Dark Paladin" revision-date="12/01/2010 11:38:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION,29 </Category>
+    <Prereqs> Evil or Chaotic Evil </Prereqs>
+    <Flavor> You obtain your victim's life force using cruel evil arts. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Dark Paladin Attack 29 </specific>
+    <specific name="Keywords"> Divine, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Requirement"> Must have an Alignment of Evil or Chaotic Evil. </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 3d12 + Charisma modifier damage and ongoing 15 necrotic damage (save ends). Each time this ongoing damage is dealt, you gain 15 temporary hit points. </specific>
+    <specific name="Miss"> 3d12 + Charisma modifier damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <specific name="_Associated Feats" />
+  </RulesElement>
+</D20Rules>

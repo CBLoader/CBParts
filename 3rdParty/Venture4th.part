@@ -1,0 +1,2107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.01</Version>
+    <Filename>Venture4th.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/Venture4th.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/Venture4th.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Venture 4th" type="source" internal-id="ID_CDJ_SOURCE_645001" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://rpg.drivethrustuff.com/index.php?cPath=4508 </specific>
+    <specific name="Release Date"> 01/21/2011 </specific>
+  </RulesElement>
+  <!--Start Class Features-->
+  <AppendNodes name="Eldritch Pact" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_777" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="_PARSED_SUB_FEATURES"> ID_CDJ_CLASS_FEATURE_6450001, ID_CDJ_CLASS_FEATURE_6450005 </specific>
+  </AppendNodes>
+  <RulesElement name="Ghost Pact" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645001" source="Venture 4th" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_777,1 </Category>
+    <specific name="Short Description"> Howling Echoes spell; Dark Descent boon: Until the start of your next turn, one attack may do no damage. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_CDJ_POWER_645001,ID_CDJ_POWER_645079 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="_DisplayPowers"> ID_CDJ_POWER_645001,ID_CDJ_POWER_645079 </specific>
+    <rules>
+      <grant name="ID_CDJ_POWER_645001" type="Power" />
+      <grant name="ID_CDJ_POWER_645079" type="Power" />
+    </rules>
+When a creature dies, its soul passes beyond the realms of the living into unknown planes. However, either from sheer tenacity, a misapprehension of their true state, or a need to finish some uncompleted business many spirits refuse to make this final journey. Mortals know these itinerant souls as ghosts, shades or fetches. Whatever the term, these beings exist in a half-world between corporeal reality and the cold, invisible realm of the dead.
+	Howling Echoes: You know the Howling Echoes spell.
+	This benefit can only be used once before the start of your next turn, no matter how many foes under your Warlock's Curse are reduced to 0 hit points or fewer.
+   </RulesElement>
+  <RulesElement name="Ghost Pact (Hybrid)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GHOST_PACT_(HYBRID)" source="Venture 4th">
+    <Category> Hybrid Pact </Category>
+    <specific name="Short Description"> Warlock pact minus the at-will attack power and pact boon </specific>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_1844 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASPACT_GHOST_PACT" type="CountsAsPact" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_GHOST_PACT" type="CountsAsFeature" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Howling Echoes" />
+    </rules>
+This feature is the same as the non-hybrid pact, except you do not gain the at-will attack power nor the pact boon.
+   </RulesElement>
+  <RulesElement name="Ghost Pact" type="CountsAsPact" internal-id="ID_INTERNAL_COUNTSASPACT_GHOST_PACT" source="Venture 4th"></RulesElement>
+  <RulesElement name="Ghost Pact" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_GHOST_PACT" source="Venture 4th"></RulesElement>
+  <RulesElement name="Ghost Pact (Multiclass)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645012" source="At-Will Blog" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_RYV_CATEGORY_MULTICLASS_PACTS,1 </Category>
+    <specific name="Short Description"> Dark Descent boon 1/encounter: Until the start of your next turn, one attack may do no damage. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ,ID_CDJ_POWER_645079 </specific>
+    <specific name="type" />
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_CDJ_POWER_645079 </specific>
+    <rules>
+      <grant name="ID_CDJ_POWER_645079" type="Power" />
+      <modify Field="Power Usage" value="Encounter" />
+      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer." />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_GHOST_PACT" type="CountsAsFeature" />
+    </rules>
+When a creature dies, its soul passes beyond the realms of the living into unknown planes. However, either from sheer tenacity, a misapprehension of their true state, or a need to finish some uncompleted business many spirits refuse to make this final journey. Mortals know these itinerant souls as ghosts, shades or fetches. Whatever the term, these beings exist in a half-world between corporeal reality and the cold, invisible realm of the dead.
+Dark Descent pact boon: When you are hit by an attack, you may choose to make a saving throw. If you save, the triggering attack does no damage.
+	This benefit can only be used once before the start of your next turn, no matter how many foes under your Warlock's Curse are reduced to 0 hit points or fewer.
+   </RulesElement>
+  <RulesElement name="Angelic Pact" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645005" source="Venture 4th" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_777,1 </Category>
+    <specific name="Short Description"> True Name and Radiant Fire spells; Fiery Rapture boon: Enemies lose concealment. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_CDJ_POWER_645039,ID_CDJ_POWER_645040,ID_CDJ_POWER_645080 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="_DisplayPowers"> ID_CDJ_POWER_645039,ID_CDJ_POWER_645040,ID_CDJ_POWER_645080 </specific>
+    <rules>
+      <grant name="ID_CDJ_POWER_645039" type="Power" />
+      <grant name="ID_CDJ_POWER_645040" type="Power" />
+      <grant name="ID_CDJ_POWER_645080" type="Power" />
+      <grant name="ID_CDJ_CLASS_FEATURE_645006" type="Class Feature" />
+      <drop name="ID_FMP_CLASS_FEATURE_604" type="Class Feature" />
+    </rules>   
+   You have discovered the ancient thaumaturgies and rituals used to invoke the creatures that roam the Astral Sea. While this means you sometimes channel life-giving power, you also blast your enemies with searing light and the awesome might of the heavens.
+Radiant Fire: You know the radiant fire at-will power.
+You gain the Fiery Rapture pact boon.
+Menacing Transport: You do not gain the Shadow Walk class feature.  Instead, you gain the Menacing Transport class feature.  Your passage creates an aura of awe and dread. Whenever you move 3 or more squares on your turn, opponents suffer a -2 penalty to melee or ranged attacks (but not area attacks) against you until the start of your next turn.
+</RulesElement>
+  <RulesElement name="Angelic Pact (Hybrid)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANGELIC_PACT_(HYBRID)" source="Venture 4th">
+    <Category> Hybrid Pact </Category>
+    <specific name="Short Description"> Warlock pact minus the at-will attack power and pact boon </specific>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_1844 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASPACT_ANGELIC_PACT" type="CountsAsPact" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_ANGELIC_PACT" type="CountsAsFeature" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Radiant Fire" />
+    </rules>
+This feature is the same as the non-hybrid pact, except you do not gain the at-will attack power nor the pact boon.
+   </RulesElement>
+  <RulesElement name="Angelic Pact" type="CountsAsPact" internal-id="ID_INTERNAL_COUNTSASPACT_ANGELIC_PACT" source="Venture 4th"></RulesElement>
+  <RulesElement name="Angelic Pact" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_ANGELIC_PACT" source="Venture 4th"></RulesElement>
+  <RulesElement name="Angelic Pact (Multiclass)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645011" source="At-Will Blog" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_RYV_CATEGORY_MULTICLASS_PACTS,1 </Category>
+    <specific name="Short Description"> Fiery Rapture boon 1/encounter: Enemies lose concealment. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_CDJ_POWER_645080 </specific>
+    <specific name="type" />
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_CDJ_POWER_645080 </specific>
+    <rules>
+      <grant name="ID_CDJ_POWER_645080" type="Power" />
+      <modify Field="Power Usage" value="Encounter" />
+      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer." />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_ANGELIC_PACT" type="CountsAsFeature" />
+    </rules>   
+You have discovered the ancient thaumaturgies and rituals used to invoke the creatures that roam the Astral Sea. While this means you sometimes channel life-giving power, you also blast your enemies with searing light and the awesome might of the heavens.
+You gain the Fiery Rapture pact boon once per encounter.
+</RulesElement>
+  <RulesElement name="Menacing Transport" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645006" source="Venture 4th" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_HYBRID_CLASS_358,1 </Category>
+    <Prereqs> Angelic Pact </Prereqs>
+    <specific name="Short Description"> On your turn, if you move 3+ squares from starting square, enemies take -2 to hit you with melee or ranged attacks. </specific>
+    <specific name="Level"> 1 </specific>
+On your turn, if you move 3+ squares from starting square, enemies take -2 to hit you with melee or ranged attacks.  This feature replaces the Shadow Walk class feature.
+   </RulesElement>
+  <RulesElement name="Second Sight" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645002" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Spend action point to see invisible creatures </specific>
+    <specific name="Level"> 11 </specific>
+Once per day you may spend an action point during one encounter to gain the ability to see invisible creatures until the end of the encounter.
+</RulesElement>
+  <RulesElement name="Ghost Action" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645003" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Action point makes you insubstantial </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="When you use an action point to take a move action, you are considered insubstantial until the start of your next turn." />
+    </rules>
+When you use an action point to take a move action, you are considered insubstantial until the start of your next turn.
+</RulesElement>
+  <RulesElement name="Spirit Vigor" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645004" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Temp HPs stack up to your Charisma score </specific>
+    <specific name="Level"> 16 </specific>
+Temporary hit points you gain stack with each other up to a maximum number equal to your Charisma score.
+</RulesElement>
+  <RulesElement name="Menacing Aura" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645007" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Enemies take -2 to hit you when a cursed enemy drops. </specific>
+    <specific name="Level"> 11 </specific>
+When an enemy under your Warlock's Curse is reduced to 0 or fewer hit points you radiate an aura of powerful dread. Foes take a -2 penalty to hit you until the start of your next turn.
+</RulesElement>
+  <RulesElement name="Awestruck Action" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645008" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Shift and deal damage when you use an action point to move. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="When you spend an action point to take an extra action, you can shift your speed if the extra action is a move action. All enemies adjacent to you when you start this move action take radiant damage equal to your Charisma modifier." />
+    </rules>
+When you spend an action point to take an extra action, you can shift your speed if the extra action is a move action. All enemies adjacent to you when you start this move action take radiant damage equal to your Charisma modifier.
+</RulesElement>
+  <RulesElement name="Surge of Astral Life" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645009" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Gain necrotic resistance on an action point. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <textstring name="Action Point" value="When you spend an action point to take an extra action, you can shift your speed if the extra action is a move action. All enemies adjacent to you when you start this move action take radiant damage equal to your Charisma modifier. If you take a standard action, you instead gain necrotic resistance equal to 3 + your Intelligence modifier until the end of your next turn." />
+    </rules>
+When you spend an action point to take an extra action you gain resistance to necrotic damage equal to 3 + your Intelligence modifier until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Stalwart Heart" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_645010" source="Venture 4th" revision-date="12/06/10 09:52 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> +1 bonus to saves vs. fear </specific>
+    <specific name="Level"> 11 </specific>
+You gain a +1 bonus to saving throws against fear effects.
+</RulesElement>
+  <AppendNodes name="Warlock Pact Boon" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1845" source="Player's Handbook 3" revision-date="10/5/2010 1:47:05 PM">
+    <rules>
+      <grant name="ID_CDJ_POWER_645079" type="Power" requires="Ghost Pact (Hybrid)" />
+      <grant name="ID_CDJ_POWER_645080" type="Power" requires="Angelic Pact (Hybrid)" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Pact Initiate (ghost pact)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GHOST_PACT_INITIATE" source="Venture 4th">
+    <Category> Pact Initiate </Category>
+    <specific name="Short Description"> Gain Howling Echoes as an encounter power, can use warlock implements for warlock powers </specific>
+    <specific name="_SupportsID"> ID_FMP_FEAT_337 </specific>
+    <specific name="_RequiresID"> ID_CDJ_CLASS_FEATURE_645001 </specific>
+    <rules>
+      <grant name="ID_CDJ_POWER_645001" type="Power" />
+      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_COUNTSASPACT_GHOST_PACT" type="CountsAsPact" />
+    </rules>
+You gain training in one skill from the warlock's class skill list.	Choose a warlock pact. You gain the pact's at-will power as an encounter power, and you can pursue the warlock paragon path based on that pact.	In addition, you can use a rod, a wand, or a pact blade as an implement.
+   </RulesElement>
+  <RulesElement name="Pact Initiate (angelic pact)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANGELIC_PACT_INITIATE" source="Venture 4th">
+    <Category> Pact Initiate </Category>
+    <specific name="Short Description"> Gain Radiant Fire as an encounter power, can use warlock implements for warlock powers </specific>
+    <specific name="_SupportsID"> ID_FMP_FEAT_337 </specific>
+    <specific name="_RequiresID"> ID_CDJ_CLASS_FEATURE_645005 </specific>
+    <rules>
+      <grant name="ID_CDJ_POWER_645040" type="Power" />
+      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_COUNTSASPACT_ANGELIC_PACT" type="CountsAsPact" />
+    </rules>
+You gain training in one skill from the warlock's class skill list.	Choose a warlock pact. You gain the pact's at-will power as an encounter power, and you can pursue the warlock paragon path based on that pact.	In addition, you can use a rod, a wand, or a pact blade as an implement.
+   </RulesElement>
+  <!--End Class Features-->
+  <!--Start Powers-->
+  <RulesElement name="Howling Echoes" type="Power" internal-id="ID_CDJ_POWER_645001" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_CDJ_CLASS_FEATURE_645001,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Crying with unearthly pain, the spirits of the dead rise at your command and circle about your foe. Even after the phantoms dissipate, their moans haunt your enemy. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Fear, Implement, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier psychic damage, and the target must roll twice for the next attack it makes before the end of the encounter, taking the lower result.
+Level 21: 2d6 + Charisma modifier damage and the rerolled attack takes a -2 penalty. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_CDJ_CLASS_FEATURE_645001 </specific>
+  </RulesElement>
+  <RulesElement name="Night Visions" type="Power" internal-id="ID_CDJ_POWER_645002" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> A phantasmagoria of horrible images - murder, betrayal, executions - parade themselves before an opponents eyes, drowning him in sorrow and wracking his already fragile mind. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Fear, Implement, Illusion </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d6 + Charisma modifier psychic damage, and the target takes a -2 penalty to Will defense until the end of your next turn. </specific>
+    <specific name="Ghost Pact"> The target takes a -2 penalty to saving throws against conditions with a Charm or Fear effect (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Fingers of the Grave" type="Power" internal-id="ID_CDJ_POWER_645003" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Icy tendrils rise out of the ground and wrap themselves around your foe, sapping its heat. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Cold, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier cold damage, and the target loses its next standard action trying to pry away from the icy fingers that grip it. </specific>
+    <specific name="Effect"> Slide the target 2 squares. </specific>
+    <specific name="Ghost Pact"> If the target has vulnerability to cold, you gain temporary hit points equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Spirit Whispers" type="Power" internal-id="ID_CDJ_POWER_645004" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You tap a ghostly realm where you may ask questions of the spirits residing there. The answers are true, but the contact with the alien realm shakes your strength of mind. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +5 power bonus to the next Arcana, Religion or Perception check you make during this encounter. </specific>
+    <specific name="Ghost Pact"> You can add a bonus equal to your 1 + Intelligence modifier to the check instead, but take a -2 penalty to Will defense (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Quiet Dead" type="Power" internal-id="ID_CDJ_POWER_645005" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> The silence of the grave is yours to command. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of the encounter you gain a power bonus to Stealth checks equal to your Intelligence modifier, and a +2 bonus to one attack roll with a power that has the Fear keyword. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Dance of the Spirits" type="Power" internal-id="ID_CDJ_POWER_645006" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> A whirling vortex of ghosts surrounds a foe, their sudden improbability driving him mad. He flees, but his mind is so damaged he strikes out at any creature nearby. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Fear, Implement, Charm, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d6 + Charisma modifier psychic damage, and slide the target 3 squares. </specific>
+    <specific name="Ghost Pact"> After the slide, the target makes a basic melee attack against an adjacent ally. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Rage at the Living" type="Power" internal-id="ID_CDJ_POWER_645007" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> Your ghostly servants grant you a bolt of pure hatred to launch at the corporeal living. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Force, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma + 2 vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier force and necrotic damage. </specific>
+    <specific name="Ghost Pact"> If you hit, place your Warlock's Curse on the target. </specific>
+    <specific name="Special"> Undead and constructs are immune to this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Death's Eager Hand" type="Power" internal-id="ID_CDJ_POWER_645008" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> A ghostly hand emerges from the ground and tries to drag your foe into the land of the dead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 5 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier necrotic damage, and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Miss"> Half damage and target is slowed (save ends). </specific>
+    <specific name="Sustain Minor"> The target is immobilized and takes ongoing 5 necrotic damage (save ends both). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="They Run Screaming" type="Power" internal-id="ID_CDJ_POWER_645009" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> You blast a foe with the horrors of the exiled dead. He runs, screaming. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 5 </specific>
+    <specific name="Keywords"> Arcane, Fear, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier psychic damage, push the target 3 squares, and the target grants combat advantage until the start of your next turn. </specific>
+    <specific name="Miss"> Half damage, and the target takes a -2 penalty to all defenses until the start of your next turn. </specific>
+    <specific name="Ghost Pact"> The target takes a penalty to Stealth checks equal to 1 + your Intelligence modifier (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Ghostly Walk" type="Power" internal-id="ID_CDJ_POWER_645010" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MOVE_ACTION,6 </Category>
+    <Flavor> The spirits transport you to their plane. While there you move with them and as them. However, for a moment, you become them. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 6 </specific>
+    <specific name="Keywords"> Arcane, Polymorph </specific>
+    <specific name="Action Type"> Move action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> On this move action you become insubstantial and can shift your speed, but also gain vulnerable to radiant equal to your Intelligence modifier until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Ghost Slip" type="Power" internal-id="ID_CDJ_POWER_645011" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,6 </Category>
+    <Flavor> You flit through the grasp of a foe as if you were made of gossamer. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate interrupt </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> You are subject to forced movement, immobilized or restrained </specific>
+    <specific name="Effect"> Ignore the triggering action and shift 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Poltergeists" type="Power" internal-id="ID_CDJ_POWER_645012" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> At your word, the souls of the frustrated dead manifest around a foe and batter him with unseen force. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 7 </specific>
+    <specific name="Keywords"> Arcane, Force, Implement, Conjuration, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Area burst 1 within 5 squares </specific>
+    <specific name="Target"> All enemies in burst </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier force damage. </specific>
+    <specific name="Ghost Pact"> The burst creates a zone that lasts until the start of your next turn. All creatures that start their turn in or enter the zone take 1d6 + Charisma modifier force damage and a -2 penalty to Will defense. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Closer Than You Think" type="Power" internal-id="ID_CDJ_POWER_645013" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> Foes keep their distance, wary of your affiliation with death. You show them neither distance nor a stalwart constitution is defense against your powers. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 7 </specific>
+    <specific name="Keywords"> Arcane, Force, Implement, Teleportation </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier necrotic damage, and teleport the target 3 squares. </specific>
+    <specific name="Ghost Pact"> If the teleport places the target adjacent to your ally, the target grants combat advantage to that ally until the start of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Memory Is a Bitter Tree" type="Power" internal-id="ID_CDJ_POWER_645014" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_10,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> The revenants of your foe's past victims swarm his vision. They bleed and wail, and demand vengeance. If satisfied, the spirits grant you a favor. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 9 </specific>
+    <specific name="Keywords"> Arcane, Illusion, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier psychic damage, and the target is stunned until the end of your next turn. </specific>
+    <specific name="Effect"> The target gains vulnerability to psychic damage equal to 1 + your Intelligence modifier (save ends). </specific>
+    <specific name="Ghost Pact"> If this power drops the target to 0 hit points, you gain the phasing ability until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Your Cold Hand In Mine" type="Power" internal-id="ID_CDJ_POWER_645015" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,9 </Category>
+    <Flavor> Death may take you, but as your last act, it will also take your foe. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 9 </specific>
+    <specific name="Keywords"> Arcane, Cold, Necrotic, Implement </specific>
+    <specific name="Action Type"> Immediate interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> You are reduced to 0 hit points or fewer </specific>
+    <specific name="Target"> The enemy who attacked you </specific>
+    <specific name="Attack"> Charisma + 4 vs. Fortitude </specific>
+    <specific name="Hit"> 4d10 + Charisma modifier cold and necrotic damage.  If the target is reduced to zero or fewer hit points, you gain a number of hit points equal to your level. </specific>
+    <specific name="Effect" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Ghost's Touch" type="Power" internal-id="ID_CDJ_POWER_645016" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You reach into the nether realms where the spirits wait. There you act against them as if you were one of the exiled dead. If you plunge your entire body into the second world, you are more effective, but the pain is even greater. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 10 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of your next turn, your attacks against insubstantial creatures deal full damage, instead of half damage. </specific>
+    <specific name="Ghost Pact"> Until the end of your next turn, gain a bonus to attack rolls against insubstantial creatures equal to your Intelligence modifier. You may choose to double this bonus, but you then take 5 cold damage that is not subject to any resistance. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Death's Frigid Mien" type="Power" internal-id="ID_CDJ_POWER_645017" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> The shadow of death takes over you. Your face grows ashen and taut, and your hands become skeletal digits. A pall hangs over your presence. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 10 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of your next turn, you gain a power bonus to AC and all defenses equal to 1 + your Intelligence modifier, and you can place your Warlock's Curse on all enemies who start their turn in or enter a square adjacent to you. </specific>
+    <specific name="Ghost Pact"> Spend an action point as a free action. One enemy under your Warlock's curse takes a -4 penalty to Will defense until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Cold Ghouls of Limbo" type="Power" internal-id="ID_CDJ_POWER_645018" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> The wandering spirits, neither in heaven nor hell, arrive at your summons. They eagerly grasp an opponent, greedily stealing the life-heat they are forever denied. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 13 </specific>
+    <specific name="Keywords"> Arcane, Cold, Implement, Conjuration </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier cold damage, and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Ghost Pact"> Sustain Standard: Make an attack as above against the immobilized target. On a hit the target is restrained and takes ongoing 10 cold damage (save ends both). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Mischievous Ghost" type="Power" internal-id="ID_CDJ_POWER_645019" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,13 </Category>
+    <Flavor> You summon the invisible spirits that play tricks on the living. For these beings, even death is a joke. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 13 </specific>
+    <specific name="Keywords"> Arcane, Implement </specific>
+    <specific name="Action Type"> Immediate interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> A creature makes a successful attack </specific>
+    <specific name="Target"> The triggering creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> The target's attack is resolved against itself. </specific>
+    <specific name="Ghost Pact"> Ignore any resistances the target might have against this attack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Wail of the Solitary Dead" type="Power" internal-id="ID_CDJ_POWER_645020" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+    <Flavor> You summon one of the solitary dead, a creature so foul even other spirits fear it. The eidolon lets forth with a scream of rage, withering your foe's mind and exhausting his will to live. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 15 </specific>
+    <specific name="Keywords"> Arcane, Psychic, Fear, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier psychic damage, and the target is weakened until the end of your next turn. </specific>
+    <specific name="Effect"> The target gains vulnerable to all damage equal to 1 + your Intelligence modifier (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Final Moments" type="Power" internal-id="ID_CDJ_POWER_645021" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_10,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+    <Flavor> You summon a ghost to surround a foe and show him the pain and horror of its death. While the effect might be an illusion, your enemy believes it in any case. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 15 </specific>
+    <specific name="Keywords"> Arcane, Illusion, Fire, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier fire damage. </specific>
+    <specific name="Effect"> The target takes ongoing 10 fire damage (save ends). </specific>
+    <specific name="Ghost Pact"> You can raise a ghost that died a different way. Spend an action point to change the damage type to acid, cold or lightning. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dark Lady's Kiss" type="Power" internal-id="ID_CDJ_POWER_645022" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> Your closeness to death garners the favor and jealously of the queen of the dead. She bestows a gift for the promise of future payment. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 16 </specific>
+    <specific name="Keywords"> Arcane, Polymorph </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> When you spend an action point you gain phasing until the end of your next turn, and temporary hit points equal to your level plus your Charisma modifier. You lose a healing surge and make all death saving throws with a -4 penalty until you take an extended rest. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Stains" type="Power" internal-id="ID_CDJ_POWER_645023" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> You draw forth the lurking malevolent energies from an earlier scene of agony and display them for all to see. The land becomes marked with horrible portents. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 16 </specific>
+    <specific name="Keywords"> Arcane, Fear, Psychic, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+    <specific name="Effect"> The burst creates a zone of images of violence, shrill screams and dismembered limbs. The zone is lightly obscured and considered difficult terrain. Creatures that start their turn in or enter the zone take 2d6 + Charisma modifier psychic damage, and take a -2 penalty to Will defense (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Death's Shadowy Pickets" type="Power" internal-id="ID_CDJ_POWER_645024" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> The realm of death forms a barrier between this world and the next. You draw a foe closer to this dividing line, separating him from the world of the living. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier necrotic damage, and the target is slowed until the end of your next turn. </specific>
+    <specific name="Ghost Pact"> Whenever the target takes ongoing damage, add your Intelligence modifier to the damage (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Darkness Shrouds" type="Power" internal-id="ID_CDJ_POWER_645025" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You invoke the ghosts from the land of eternal midnight. They bring their world with them, blinding a foe with the darkness that consumes, and sending inky tendrils towards the eyes of other foes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> The target is blinded until the start of your next turn. </specific>
+    <specific name=" Aftereffect"> All creatures have concealment from the target until the start of your next turn. </specific>
+    <specific name="Ghost Pact"> Whenever the target takes ongoing damage, add your Intelligence modifier to the damage (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Houses of Silence" type="Power" internal-id="ID_CDJ_POWER_645026" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+    <Flavor> You banish a foe to the realm of the lonely dead. There he experiences the torment and suffering of those who have died without completing their life's mission. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 19 </specific>
+    <specific name="Keywords"> Arcane, Implement, Teleportation, Necrotic; Cold or Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier necrotic damage. </specific>
+    <specific name="Effect"> The target is transported to a ghostly realm where it wanders among abandoned, decaying mansions. Roll to determine what house it enters:
+	1: House of Regret: Target takes 1d10 + Charisma modifier cold damage, and a penalty to attack rolls equal to 1 + your Intelligence modifier (save ends).
+	2: House of Despair: Target takes 1d10 + Charisma modifier cold damage, and loses its next standard action (save ends).
+	3: House of Fear: Target takes 1d10 + Charisma modifier psychic damage, and is weakened (save ends).
+	4: House of Loneliness: Target takes 1d10 + Charisma modifier psychic damage, a penalty to Will defense equal to 1 + your Intelligence modifier (save ends).
+At the start of its next turn, the target then reappears to its original space. If that space is occupied, it returns to the nearest unoccupied space (its choice). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Walking Dead" type="Power" internal-id="ID_CDJ_POWER_645027" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,22 </Category>
+    <Flavor> Damage that would kill other creatures only sends you into the shadow realm. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 22 </specific>
+    <specific name="Keywords"> Arcane, Healing, Polymorph </specific>
+    <specific name="Action Type"> Immediate reaction </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> You are reduced to 0 or fewer HP </specific>
+    <specific name="Effect"> You remain conscious and now have temporary hit points equal to your level. Until the end of the encounter, as long as you possess only temporary hit points you are conscious, insubstantial and gain the phasing ability. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Soul Incorruptible" type="Power" internal-id="ID_CDJ_POWER_645028" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,22 </Category>
+    <Flavor> The body may be transitory, but the spirit lives forever. When suffering a corporeal affliction you step through a doorway into the spirit realm, leaving that condition behind. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 22 </specific>
+    <specific name="Keywords"> Arcane, Teleportation </specific>
+    <specific name="Action Type"> Immediate reaction </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> You gain a condition that a save can end </specific>
+    <specific name="Effect"> You teleport 3 squares and remove the condition. You take 2d6 necrotic damage that is not subject to any damage resistance. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Beckoning Fair One" type="Power" internal-id="ID_CDJ_POWER_645029" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_10,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You conjure the image of a ghostly, beautiful creature. The image draws your foes towards it. When they are close, it reveals its true, hideous form. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 23 </specific>
+    <specific name="Keywords"> Arcane, Charm, Conjuration, Illusion, Radiant, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature within 5 of the origin square </specific>
+    <specific name="Effect"> Designate a square within range as the origin square </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> Pull the target 3 squares towards the origin square. For each square moved, the target takes radiant damage equal to 1 + your Intelligence modifier. If a creature enters or starts its turn in the origin square, it takes 2d8 + Charisma modifier necrotic damage, and is dazed (save ends.) </specific>
+    <specific name="Ghost Pact"> Sustain standard: Each time you sustain this power, make an attack as above against the original target or a different creature within range. </specific>
+    <specific name="Effect" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Haunted" type="Power" internal-id="ID_CDJ_POWER_645030" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Spirits of the dead hover around your foe. His allies notice something wrong, and they strike out at the creature they no longer recognize. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 23 </specific>
+    <specific name="Keywords"> Arcane, Charm, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier psychic damage. Until the end of your next turn, all of the target's allies treat it as an opponent for purposes of powers that affect only enemies. If the target takes an action that provokes an opportunity attack, all creatures able to must make an opportunity against the target. </specific>
+    <specific name="Ghost Pact"> Until the end of your next turn creatures that begin their turn in or enter a square adjacent to the target take psychic damage equal to 3 + your Intelligence modifier if you hit with this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Hungry Moon" type="Power" internal-id="ID_CDJ_POWER_645031" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> A baleful lunar light shines upon a foe. He flees, for all creatures know what ghostly horrors the moon brings. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 25 </specific>
+    <specific name="Keywords"> Arcane, Cold, Radiant, Psychic, Fear, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 4d10 + Charisma modifier cold and radiant damage, and the target moves its speed in a random direction (roll 1d8). During the move the target will try to avoid hazards. If the target does not move its full base speed it takes 2d8 + Charisma modifier psychic damage. </specific>
+    <specific name="Miss"> Half damage, and the target takes a -2 penalty to all attack rolls (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Window to the Other World" type="Power" internal-id="ID_CDJ_POWER_645032" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,25 </Category>
+    <Flavor> You create a portal that lets your foe glimpse the land of the dead. Tendrils of black energy escape this realm to claim those nearby. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 25 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Cold, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 6d10 + Charisma modifier necrotic damage, and the target is blinded until the end of your next turn, its vision dominated by a view of the dark realm. </specific>
+    <specific name="Effect"> The dark realm attempts to claim the souls of the living. Roll a die to randomly select one creature (including yourself) within 5 squares of the target. Make an attack as above with a +2 bonus. On a hit the creature is whisked off to the realm of the dead (save ends). If there is no creature within 5 squares of the original target, you are transported to the realm of the dead.
+While in the realm of the dead, a creature cannot be targeted, cannot take actions, and suffers 20 cold and necrotic damage at the start of its turn. On a save, it returns to the space it was last in. If that space is occupied the target returns to the nearest unoccupied space of its choice. </specific>
+    <specific name="Sustain Standard"> Spend an action point. The effect persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Shades of the Heroic Dead" type="Power" internal-id="ID_CDJ_POWER_645033" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> The glories of the dead are not easily forgotten. You conjure their vestige manifestations and urge them to battle one final time. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 27 </specific>
+    <specific name="Keywords"> Arcane, Conjuration, Radiant, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier radiant damage, and the target is pushed 3 squares. </specific>
+    <specific name="Ghost Pact"> Allies within 5 squares of the target gain a +4 power bonus to hit with their next attack made before the end of the encounter. </specific>
+    <specific name="Effect" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Urge of the Soul" type="Power" internal-id="ID_CDJ_POWER_645034" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> The soul of every creature yearns in some way for release. You invoke spirits that coax the souls of the living into the second world. Unfortunately, this includes your soul as well. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 27 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Zone, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 3 </specific>
+    <specific name="Target"> All creatures in burst </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 3d10 + Charisma modifier necrotic damage. The burst creates a zone of undeath that lasts until the end of your next turn. The zone is centered on you and moves when you move. While the zone is in effect you and all creatures that enter or start their turn in the zone take 10 necrotic damage, and can not spend healing surges. </specific>
+    <specific name="Ghost Pact"> Sustain the zone as a minor action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Course of Midnight" type="Power" internal-id="ID_CDJ_POWER_645035" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> The specters of evening run their course through a foe's soul, then use him to spread their foul enervation to nearby creatures. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 29 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 4d10 + Charisma modifier necrotic damage, and the target takes 20 ongoing necrotic damage (save ends). This save suffers a -4 penalty. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Special"> Each round the primary target takes ongoing damage from this power, make a Charisma vs. Fortitude attack against one foe within 3 squares of the target. On a hit, the creature takes ongoing necrotic damage equal to 3 + your Charisma modifier (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Your Shade, My Servant" type="Power" internal-id="ID_CDJ_POWER_645036" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_CDJ_PARAGON_PATH_645001,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,11 </Category>
+    <Prereqs> Master of Shrouds </Prereqs>
+    <Flavor> A slain enemy becomes your thrall before passing on to the other world. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Master of Shrouds Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Immediate reaction </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> One creature under your Warlock's Curse drops to 0 HP or fewer </specific>
+    <specific name="Target"> One enemy within 5 of the triggering creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier necrotic damage. </specific>
+    <specific name="Special"> Your attack takes no penalties if the target has cover or total cover. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_CDJ_PARAGON_PATH_645001 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Malefic Regeneration" type="Power" internal-id="ID_CDJ_POWER_645037" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_CDJ_PARAGON_PATH_645001,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
+    <Prereqs> Master of Shrouds </Prereqs>
+    <Flavor> You imbue yourself with the malignant power of the ghostly dead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Master of Shrouds Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of the encounter, you gain a number of temporary hit points each turn equal to 3 + your Intelligence modifier.  In addition, once per round if you are hit with an attack that deals necrotic damage, you regain 5 hit points. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_CDJ_PARAGON_PATH_645001 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Body Thief" type="Power" internal-id="ID_CDJ_POWER_645038" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_CDJ_PARAGON_PATH_645001,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Master of Shrouds </Prereqs>
+    <Flavor> Jealous spirits, envious of your foe's tangible existence, assault him, attempting to claim his body even for just a little while. Once they have taken over, your enemy is a puppet for you to use as you wish. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Master of Shrouds Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Charm, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier psychic damage, and the target is dominated until the end of your next turn. As long as the target is dominated it gains resistance to all damage equal to 5 + your Intelligence modifier. </specific>
+    <specific name="Miss"> Half damage and the target is stunned until the end of your next turn. </specific>
+    <specific name="Sustain Standard"> Make an attack as above. On a hit the target is dominated (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_CDJ_PARAGON_PATH_645001 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="True Name  " type="Power" internal-id="ID_CDJ_POWER_645039" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_CDJ_CLASS_FEATURE_645005,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You call upon your patrons to reveal the True Name of your foe. With it, your adversary is more vulnerable to your attacks. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Feature </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack" />
+    <specific name="Effect"> You can learn the True Name of the enemy nearest to you that you can see. If you have placed your Warlock's Curse on a creature, the curse is immediately lifted when you use the True Name power. You can not curse an enemy while the True Name power is in effect, unless otherwise indicated in a warlock power's description.
+Against your attacks, the target takes a penalty to all defenses equal to 1 + half your Intelligence modifier. This penalty lasts until the end of the encounter or until the target drops to 0 hit points or fewer. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class" />
+    <specific name="Level" />
+    <specific name="Power Type" />
+    <specific name="_ParentFeature"> ID_CDJ_CLASS_FEATURE_645005 </specific>
+  </RulesElement>
+  <RulesElement name="Radiant Fire" type="Power" internal-id="ID_CDJ_POWER_645040" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_CDJ_CLASS_FEATURE_645005,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> A globe of fire launches from your palm to strike a foe. The flame burns. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Radiant, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier radiant damage. 
+Level 21: 2d6 + Charisma modifier radiant damage. </specific>
+    <specific name="Effect"> The fire lingers. On your next turn make a Charisma vs. Fortitude attack against the same target with a +4 bonus. On a hit the target takes radiant damage equal to your Intelligence modifier.  Add 2 more damage to this at 21st level. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_CDJ_CLASS_FEATURE_645005 </specific>
+  </RulesElement>
+  <RulesElement name="Night Visions" type="Power" internal-id="ID_CDJ_POWER_645041" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You shine with the frightening glory of an astral creature. The image sears and dazes your foe while bolstering an ally. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Radiant, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier radiant damage and the target is dazed until the end of your next turn. </specific>
+    <specific name="Angelic Pact"> An ally within 5 squares of you gains a number of temporary hit points equal to 1 + your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Awe of the Heavens" type="Power" internal-id="ID_CDJ_POWER_645042" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You embody the vast gulf that is the seat of creation. Your adversary can do nothing but cower in the face of your might. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Fear, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 3d6 + Charisma psychic damage and the target is knocked prone. </specific>
+    <specific name="Effect"> The target takes a -2 penalty to attack rolls (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Heavenly Glow" type="Power" internal-id="ID_CDJ_POWER_645043" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> The power that is the angelic host becomes your own to use as you see fit. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +5 power bonus to your next Diplomacy, Heal or Intimidate check during this encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Inspiring Light" type="Power" internal-id="ID_CDJ_POWER_645044" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You ask your patrons for a flash of knowledge. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +5 power bonus to your next Insight, Nature or Religion check during this encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Warding Presence" type="Power" internal-id="ID_CDJ_POWER_645045" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,2 </Category>
+    <Flavor> With a fingertip you weave glowing runes of protection in the air around you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of the encounter you add 1 + your Intelligence modifier to AC, Fortitude, Reflex and Willpower defense. </specific>
+    <specific name="Angelic Pact"> You gain resistance to acid, fire, lightning, and radiant damage equal to 1 + your Intelligence modifier until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Burning Bright" type="Power" internal-id="ID_CDJ_POWER_645046" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,3 </Category>
+    <Flavor> Flame arcs from your fingertips and wrap an enemy in dancing fire. The foe shines like a beacon in the dark, vulnerable to all around. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Fire, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 3d6 + Charisma modifier fire damage, and all of your allies gain combat advantage against the target until the start of your next turn. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Angelic Pact"> On a hit, push the target 1 square. If you score a critical, the target takes a -2 penalty to attack rolls until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Righteous Sword of Azareal" type="Power" internal-id="ID_CDJ_POWER_645047" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> You invoke Azareal, angel of righteous action. At your command a fiery tulwar leaps into existence and slashes at your foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Fear, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma + 2 vs. AC </specific>
+    <specific name="Hit"> 2d6 + Charisma modifier radiant damage. </specific>
+    <specific name="Ghost Pact"> On a hit, push the target 1 square. If you score a critical, the target takes a -2 penalty to attack rolls until the end of your next turn. </specific>
+    <specific name="Special"> If the target has already damaged you in this encounter, add your Intelligence modifier to the damage on a hit, and you score a critical on a 19-20. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Lion of Heaven" type="Power" internal-id="ID_CDJ_POWER_645048" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> You emit a mighty roar that blasts enemies backwards. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 5 </specific>
+    <specific name="Keywords"> Arcane, Thunder, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> All creatures in burst </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 3d10 + Charisma modifier thunder damage and the target is pushed 1 square. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Angelic Pact"> On a hit, the target is pushed a number of squares equal to 1 + your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Blessed Accomplishment" type="Power" internal-id="ID_CDJ_POWER_645049" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You invoke your patron's aid for yourself or one ally. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Range 5 </specific>
+    <specific name="Target"> You or one ally in range </specific>
+    <specific name="Effect"> The target gains a bonus one d20 roll equal to 1 + your Charisma modifier. This bonus must be used within five minutes or by the end of the encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Supernal Speech" type="Power" internal-id="ID_CDJ_POWER_645050" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION,6 </Category>
+    <Flavor> Your patrons translate your speech into the tongue Astral Sea, the first language of the universe. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Free action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> All intelligent creatures can understand you no matter what language you speak. This effect lasts until the end of the encounter or for five minutes. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Word is Real" type="Power" internal-id="ID_CDJ_POWER_645051" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Supernal words are the things they represent. You can use them to shape reality. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Change the damage type of one warlock attack power to another. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Voice of Conscience" type="Power" internal-id="ID_CDJ_POWER_645052" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You speak of a foe's past misdeeds. Even evil creatures are so shocked by their depravity their minds are sent reeling. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 7 </specific>
+    <specific name="Keywords"> Arcane, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier psychic damage, and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Angelic Pact"> As a minor action on your next turn make a Charisma vs. Will attack with a +2 bonus against the original target. If you hit, you deal psychic damage to the target equal to your 1+ Intelligence modifier. </specific>
+    <specific name="Special"> Creatures with an Intelligence score of 3 or lower are immune to this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Pillar of Fire" type="Power" internal-id="ID_CDJ_POWER_645053" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> You assume the shape of 15' column of swirling flame. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 9 </specific>
+    <specific name="Keywords"> Arcane, Fire, Polymorph </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You become an insubstantial column of fire that radiates light in a radius of 10 squares. Enemies who start their turn or enter a square adjacent to you take 1d8 + Charisma modifier fire damage. </specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Aura of Cerviel" type="Power" internal-id="ID_CDJ_POWER_645054" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,10 </Category>
+    <Flavor> You call upon the power of Cerviel, angel of valor in combat against superior odds. His power grants you strength when hard pressed by your foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 10 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate reaction </specific>
+    <specific name="Trigger"> You or an ally is bloodied </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain temporary hit points equal to your level and one action point. You must spend the action point before the end of the encounter or it is lost. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Pillar of Smoke" type="Power" internal-id="ID_CDJ_POWER_645055" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10 </Category>
+    <Flavor> You turn into a billowing cloud of smoke. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 10 </specific>
+    <specific name="Keywords"> Arcane, Polymorph </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You become insubstantial and gain a fly (hover) speed equal to your speed. You can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or a cracked window). </specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Bull of Heaven" type="Power" internal-id="ID_CDJ_POWER_645056" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> With a thrust of your palm, a glowing bull's head charges your foe, knocking him backwards and trampling him to the earth. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 13 </specific>
+    <specific name="Keywords"> Arcane, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier damage, and the target is pushed two squares and knocked prone. Make a secondary attack against the target. </specific>
+    <specific name=" Secondary Target"> The primary target </specific>
+    <specific name=" Secondary Attack"> Charisma vs. AC </specific>
+    <specific name=" Hit"> 2d8 + Charisma modifier damage, and target is stunned until the end of your next turn. </specific>
+    <specific name="Angelic Pact"> Gain a bonus to hit on the secondary attack equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Words of Power" type="Power" internal-id="ID_CDJ_POWER_645057" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> The primal speech of the Astral Sea conveys unimaginable power. You can alter reality with just a single syllable. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 13 </specific>
+    <specific name="Keywords"> Arcane, Thunder, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 1d10 + Charisma modifier thunder damage and the target is pushed two squares. </specific>
+    <specific name="Effect"> Choose a word from the following list: attack, damage, save, or check. Each time the target rolls a die associated with one of these words, you subtract 1d10 from the target's total roll (save ends). </specific>
+    <specific name="Angelic Pact"> As a free action, you may place your True Name power on the target even if it is already on another creature. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Lightning and Thunder" type="Power" internal-id="ID_CDJ_POWER_645058" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> The power of the sky is yours to command. You call lightning onto a foe, then blast him with the resulting thunder. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 15 </specific>
+    <specific name="Keywords"> Arcane, Lightning, Thunder, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 </specific>
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 3d10 + Charisma modifier lightning and thunder damage, and the target is deafened (save ends). </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Plague Bearer" type="Power" internal-id="ID_CDJ_POWER_645059" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+    <Flavor> Angels are not only messengers, but harbingers of death. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 15 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 3d10 + Charisma modifier necrotic damage, and the target is weakened until the end of your next turn. </specific>
+    <specific name="Effect"> Place your Warlock's Curse on each enemy within 2 squares of the target (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Twice as Bright" type="Power" internal-id="ID_CDJ_POWER_645060" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,15 </Category>
+    <Flavor> You glow with an intense light that burns all who come near. However, the sudden coursing of power drains your inner reserves. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 15 </specific>
+    <specific name="Keywords"> Arcane, Radiant </specific>
+    <specific name="Action Type"> Immediate reaction </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> You would gain the use of your Fiery Rapture boon </specific>
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> Instead of the boon, you gain 25 temporary hit points. Until the temporary hit points are reduced to 0, all foes within 5 squares of you take radiant damage equal to your 3 + your Intelligence modifier at the start of their turn and grant combat advantage to you and your allies. Ranged and melee attacks against you and all allies adjacent to you take a -4 penalty. </specific>
+    <specific name="Special"> When the temporary hit points are reduced to 0 you lose one healing surge and take damage equal to 5 + your Charisma modifier. If you have no healing surges left you are weakened until you take an extended rest. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Knowledge of The Heavens" type="Power" internal-id="ID_CDJ_POWER_645061" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION,16 </Category>
+    <Flavor> Nothing is unknown to those who sit above reality. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 16 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Free action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +20 bonus to any one knowledge skill check you make this encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Signs and Portents" type="Power" internal-id="ID_CDJ_POWER_645062" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,16 </Category>
+    <Flavor> You can see into the future. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 16 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate interrupt </specific>
+    <specific name="Trigger"> During a round an event occurs you don't like. </specific>
+    <specific name="Effect"> The round returns to just before the event. You may take a minor, move or standard action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Valor's Transport" type="Power" internal-id="ID_CDJ_POWER_645063" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> Those demonstrating courage in battle deserve well-earned respite. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 16 </specific>
+    <specific name="Keywords"> Arcane, Teleportation </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You change places with an ally within 10 that is adjacent to an enemy. You gain a bonus to all defenses equal to 3 + your Intelligence modifier until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="The Watcher" type="Power" internal-id="ID_CDJ_POWER_645064" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> You move partially out of the material plane and into the interstices of the upper realities. Four wings unfurl from your shoulders, each with a single eye at the tip. While in this state you can see things normally hidden. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 16 </specific>
+    <specific name="Keywords"> Arcane, Polymorph </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You become insubstantial until the end of the encounter or for five minutes. During this time you gain darkvision and a +10 bonus to one Perception or Insight check you make. You can see all creatures and objects within your line of sight that are invisible or that have concealment. Ending this effect is a move action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Bridge of Judgement" type="Power" internal-id="ID_CDJ_POWER_645065" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> Invisible forces grip your opponent and push him at your command. When he moves, flashes of righteous fury assault his mind. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier psychic damage. </specific>
+    <specific name="Effect"> You slide the target 3 squares. For each square the target moves, it takes psychic damage equal to 3 + your Intelligence modifier. If this damage exceeds the better of the target"s Wisdom or Charisma score in a single round the target is stunned (save ends) and knocked prone. </specific>
+    <specific name="Angelic Pact"> You may sustain this power as a minor action while the target is stunned. If you do, repeat the Effect line. </specific>
+    <specific name="Special"> The target may negate the forced movement by taking 3d10 + Charisma modifier psychic damage. If so, you can no longer sustain the power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Terrible as an Army" type="Power" internal-id="ID_CDJ_POWER_645066" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_10,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You conjure a ghostly army of winged warriors. Their fierce cries and glaring faces send your foes fleeing. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Fear, Illusion, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Target"> Each enemy in blast </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier psychic damage, and the target is weakened until the end of your next turn. </specific>
+    <specific name="Effect"> The target moves away from you at its speed (save ends). If it can not move away from you, the target takes 2d8 + Charisma modifier psychic damage. </specific>
+    <specific name="Angelic Pact"> The target takes a -2 penalty to saving throws to end the effect. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Part The Soul" type="Power" internal-id="ID_CDJ_POWER_645067" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+    <Flavor> Tendrils of dark light reach into your foe. When they withdraw, the creature's life spark comes with them. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 19 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 4d10 + Charisma modifier necrotic damage. </specific>
+    <specific name="Effect"> The target's soul leaves its body (save ends). While parted from its body, the target is stunned and takes 1d10 necrotic damage at the start of its turn. After the first failed save the target falls unconscious. On a save, the target's soul returns to the body and it can take actions as normal on its next turn. </specific>
+    <specific name="Angelic Pact"> If the target is slain while separated from its body you gain a use of the Fiery Rapture pact boon. </specific>
+    <specific name="Special"> Animates and undead are immune to this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Fiery Chariot" type="Power" internal-id="ID_CDJ_POWER_645068" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> A chariot with wheels of fire materializes around you, lifting you into the air. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 22 </specific>
+    <specific name="Keywords"> Arcane, Conjuration, Fire </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> A two-wheeled chariot appears in a square adjacent to you. It can hold you and four other Medium creatures or items of similar size and weight. The chariot flies at your speed until the end of the encounter or for 5 minutes. If the power ends before you land, all creatures and objects in the chariot float to the ground without taking falling damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Seals and Wards" type="Power" internal-id="ID_CDJ_POWER_645069" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> The body may be transitory, but the spirit lives forever. When suffering a corporeal affliction you step through a doorway into the spirit realm, leaving that condition behind. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Utility 22 </specific>
+    <specific name="Keywords"> Arcane, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Effect"> The power creates a zone which moves with you. You and all allies within the zone gain a +2 power bonus to AC and all defenses, and enemies treat the zone as difficult terrain. </specific>
+    <specific name="Sustain Minor"> The effect persists.  As a standard action you may push all enemies in the zone a number of squares equal to your Intelligence modifier, but doing so ends the power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Scourge and Lash" type="Power" internal-id="ID_CDJ_POWER_645070" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Coruscating tendrils of fire and light whip and scour the flesh of an adversary. The wounds burn long after the attack is ended. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 23 </specific>
+    <specific name="Keywords"> Arcane, Radiant, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 3d8 + Charisma modifier radiant damage, and the target is weakened until the end of your next turn. </specific>
+    <specific name="Angelic Pact"> The target takes ongoing radiant damage equal to 1 + your Intelligence modifier (save ends). </specific>
+    <specific name="Effect" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Trumpet of Darien" type="Power" internal-id="ID_CDJ_POWER_645071" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You blast your foes with the sound of the thrones and powers. All foes caught in the cacophony shudder as the noise rattles inside them long after the music has stopped. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 23 </specific>
+    <specific name="Keywords"> Arcane, Thunder, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 4d8 + Charisma modifier thunder damage, and the target is deafened (save ends). </specific>
+    <specific name="Effect"> The target takes ongoing 10 thunder damage as long as it is deafened. </specific>
+    <specific name="Angelic Pact"> Until the end of your next turn, attacks with the thunder keyword deal an extra amount of damage to the target equal to 1 + your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Mark of the Anathema" type="Power" internal-id="ID_CDJ_POWER_645072" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,25 </Category>
+    <Flavor> You place a sign upon your enemy. The mark compels all the creature's allies to act with revulsion towards the target, even attacking him. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 25 </specific>
+    <specific name="Keywords"> Arcane, Charm, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack" />
+    <specific name="Effect"> All allies of the target within 5 squares of the target treat it as an enemy and must immediately make a basic attack against it as a free action. </specific>
+    <specific name="Sustain Standard"> On your turn, the target may make a save.  If it fails, you may sustain the power and repeat the effect. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="This Is My True Face" type="Power" internal-id="ID_CDJ_POWER_645073" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> You reveal the unearthly visage of your patron. The image is so alien the viewer turns to stone, while those nearby reel from the glimpse. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 25 </specific>
+    <specific name="Keywords"> Arcane, Psychic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> You take psychic damage equal to your Charisma modifier, and are dazed until the start of your next turn. Target is slowed (save ends). First Failed Save: The target is immobilized instead of slowed (save ends). Second Failed Save: The target is petrified. </specific>
+    <specific name="Miss"> The target takes psychic damage equal to double your Charisma modifier, and is stunned until the end of your next turn. </specific>
+    <specific name="Angelic Pact"> The target takes psychic damage equal to double your Charisma modifier, and a -5 penalty to its first saving throw. All creatures (including allies) within 5 squares take psychic damage equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Behold the Creation" type="Power" internal-id="ID_CDJ_POWER_645074" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> In one great blast you reveal to an enemy the infinity of the universe, demonstrating his insignificance in the great scheme of things. His mind is so withered at the realization he sees no point in continuing his existence. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 27 </specific>
+    <specific name="Keywords"> Arcane, Psychic, Radiant, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 2d10 + Charisma modifier psychic and radiant damage, and the target takes a penalty to AC, Fortitude, Reflex and Will defense equal to 3 + your Intelligence modifier until the end of your next turn. </specific>
+    <specific name="Effect"> The targets gains vulnerability to all damage equal to 3 + your Intelligence modifier (save ends). </specific>
+    <specific name="Angelic Pact"> Vulnerable 5 + your Intelligence modifier instead. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Apocalypse" type="Power" internal-id="ID_CDJ_POWER_645075" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> You call down the fury of the gods, scouring the earth with fire and brimstone. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 29 </specific>
+    <specific name="Keywords"> Arcane, Acid, Fire, Force, Zone, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Area burst 5 within 10 squares </specific>
+    <specific name="Target"> All creatures in burst </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 6d10 + Charisma modifier acid, fire and force damage, and the target is knocked prone. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Special"> You may center the blast on the square you occupy and choose to take damage from the attack. If you do, add 4d10 to the damage. </specific>
+    <specific name="Effect"> The area becomes a burning zone until the end of your next turn. </specific>
+    <specific name="Sustain Minor"> Repeat the attack against all creatures in the zone. On a hit the target takes 1d10 + Charisma modifier fire damage, and half damage on a miss. Repeat the effect. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Storm of Wings" type="Power" internal-id="ID_CDJ_POWER_645076" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_CDJ_PARAGON_PATH_645002,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Celestial </Prereqs>
+    <Flavor> Six multicolored wings spring from your shoulders. They buffet your enemies with fierce winds while flashing with electrical energy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Celestial Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Lightning, Polymorph, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 3 </specific>
+    <specific name="Target"> All creatures in blast </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2d8 + Charisma modifier damage and the target is pushed 2 squares. </specific>
+    <specific name="Effect"> You hover 5 feet off the ground, and can shift your speed. Until the end of your next turn, opponents that move into or start their turn in a square adjacent to you take lightning damage equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_CDJ_PARAGON_PATH_645002 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Astral Infusion" type="Power" internal-id="ID_CDJ_POWER_645077" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_CDJ_PARAGON_PATH_645002,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
+    <Prereqs> Celestial </Prereqs>
+    <Flavor> Astral fire burns in your limbs. It scours your body of life-draining substances and energy. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Celestial Utility 12 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of the encounter, you gain resist necrotic and poison equal to 2 + your Charisma modifier, a +2 bonus to one saving throw, your healing surge value increases by 3 + your Charisma modifier, and if you are infected with a disease or become infected with one, it is cured. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_CDJ_PARAGON_PATH_645002 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Radiant Wake of the Astral Sea" type="Power" internal-id="ID_CDJ_POWER_645078" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_CDJ_PARAGON_PATH_645002,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_MINOR_ACTION,20 </Category>
+    <Prereqs> Celestial </Prereqs>
+    <Flavor> Your movement through the world churns up a fiery trail that consumes all who come near. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Celestial Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Radiant, Implement </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Effect"> On your next move action you leave a fiery trail in each square you pass through. If a creature starts its turn in or moves into one of these squares, it takes 4d6 + Charisma modifier radiant damage. Creatures that start their turn in or move into a square adjacent to one of these squares take radiant damage equal to 1 + your Intelligence modifier. This effect lasts until the end of your next turn. </specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_CDJ_PARAGON_PATH_645002 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dark Descent" type="Power" internal-id="ID_CDJ_POWER_645079" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_CDJ_CLASS_FEATURE_645001,ID_INTERNAL_CATEGORY_PACT_BOON,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
+    <Prereqs> Ghost Pact; Unselectable </Prereqs>
+    <print-prereqs> Ghost Pact </print-prereqs>
+    <Flavor> The passage of the foe's spirit from the material world draws you with it as well. Your body phases in and out of the ghostly realm. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Pact Boon 1 </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> Ghost Pact </specific>
+    <specific name="Trigger"> An enemy under your Warlock's Curse is reduced to 0 hit points or fewer </specific>
+    <specific name="Effect"> Until the start of your next turn you can choose one attack that hits you to occur just as you phase out of corporeal existence. If you roll a successful saving throw, the attack deals no damage. You must decide to use this ability before damage is rolled. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Pact Boon </specific>
+    <specific name="_ParentFeature"> ID_CDJ_CLASS_FEATURE_645001 </specific>
+  </RulesElement>
+  <RulesElement name="Fiery Rapture" type="Power" internal-id="ID_CDJ_POWER_645080" source="Venture 4th" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_CDJ_CLASS_FEATURE_645005,ID_INTERNAL_CATEGORY_PACT_BOON,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
+    <Prereqs> Angelic Pact; Unselectable </Prereqs>
+    <print-prereqs> Angelic Pact </print-prereqs>
+    <Flavor> Your patrons imbue you with the revelatory light of the Astral Sea. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Pact Boon 1 </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> Angelic Pact </specific>
+    <specific name="Trigger"> An enemy under your Warlock's Curse is reduced to 0 hit points or fewer </specific>
+    <specific name="Effect"> Your body glows, illuminating everything within 5 squares of you. Until the end of your next turn, creatures with concealment or total concealment (but not invisible creatures) within that area no longer have concealment. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Pact Boon </specific>
+    <specific name="_ParentFeature"> ID_CDJ_CLASS_FEATURE_645005 </specific>
+  </RulesElement>
+  <!--End Powers-->
+  <!--Start Paragon Paths-->
+  <RulesElement name="Master of Shrouds" type="Paragon Path" internal-id="ID_CDJ_PARAGON_PATH_645001" source="Venture 4th" revision-date="8/27/2010 12:40:19 PM">
+    <Prereqs> Warlock class, Ghost Pact class feature </Prereqs>
+    <print-prereqs> Warlock class, Ghost Pact </print-prereqs>
+    <Flavor> "The pathways of the spirit world are open to me. I walk the same courses as the ghostly dead." </Flavor>
+    <specific name="Power Name" />
+    <specific name="Class Features"> ID_CDJ_CLASS_FEATURE_645002, ID_CDJ_CLASS_FEATURE_645003, ID_CDJ_CLASS_FEATURE_645004 </specific>
+    <specific name="Powers"> ID_CDJ_POWER_645036,ID_CDJ_POWER_645037,ID_CDJ_POWER_645038 </specific>
+    <specific name="_DisplayPowers"> ID_CDJ_POWER_645036,ID_CDJ_POWER_645037,ID_CDJ_POWER_645038 </specific>
+    <rules>
+      <grant name="ID_CDJ_CLASS_FEATURE_645002" type="Class Feature" Level="11" />
+      <grant name="ID_CDJ_CLASS_FEATURE_645003" type="Class Feature" Level="11" />
+      <grant name="ID_CDJ_CLASS_FEATURE_645004" type="Class Feature" Level="16" />
+      <grant name="ID_CDJ_POWER_645036" type="Power" Level="11" />
+      <grant name="ID_CDJ_POWER_645037" type="Power" Level="12" />
+      <grant name="ID_CDJ_POWER_645038" type="Power" Level="20" />
+    </rules>
+You know the runes and chants that allow you to exploit the inherent power of the realm of shadows. You have joined the discorporate fraternity of ghosts, but instead of an equal, you control them as a master works a puppet.
+   </RulesElement>
+  <RulesElement name="Celestial" type="Paragon Path" internal-id="ID_CDJ_PARAGON_PATH_645002" source="Venture 4th" revision-date="8/27/2010 12:40:19 PM">
+    <Prereqs> Warlock class, Angelic Pact class feature </Prereqs>
+    <print-prereqs> Warlock class, Angelic Pact </print-prereqs>
+    <Flavor> "The power of the Astral Sea courses through my limbs. I am the bearer of light and bringer of awe." </Flavor>
+    <specific name="Power Name" />
+    <specific name="Class Features"> ID_CDJ_CLASS_FEATURE_645007, ID_CDJ_CLASS_FEATURE_645008, ID_CDJ_CLASS_FEATURE_645009, ID_CDJ_CLASS_FEATURE_645010 </specific>
+    <specific name="Powers"> ID_CDJ_POWER_645076,ID_CDJ_POWER_645077,ID_CDJ_POWER_645078 </specific>
+    <specific name="_DisplayPowers"> ID_CDJ_POWER_645076,ID_CDJ_POWER_645077,ID_CDJ_POWER_645078 </specific>
+    <rules>
+      <grant name="ID_CDJ_CLASS_FEATURE_645007" type="Class Feature" Level="11" />
+      <grant name="ID_CDJ_CLASS_FEATURE_645008" type="Class Feature" Level="11" />
+      <grant name="ID_CDJ_CLASS_FEATURE_645009" type="Class Feature" Level="16" />
+      <grant name="ID_CDJ_CLASS_FEATURE_645010" type="Class Feature" Level="11" />
+      <grant name="ID_CDJ_POWER_645076" type="Power" Level="11" />
+      <grant name="ID_CDJ_POWER_645077" type="Power" Level="12" />
+      <grant name="ID_CDJ_POWER_645078" type="Power" Level="20" />
+    </rules>
+The primal origins of creation surge through you. No longer do you dabble in the burning light of the Astral Sea. Instead, your body courses with the stuff. Creatures of undeath and darkness tremble when you approach.
+   </RulesElement>
+  <!--End Paragon Paths-->
+  <!--Start Feats-->
+  <RulesElement name="Boon of False Life" type="Feat" internal-id="ID_CDJ_FEAT_645001" source="Venture 4th" revision-date="12/08/2010 10:46:00 PM">
+    <Prereqs> warlock, Ghost Pact class feature, Cha 15 </Prereqs>
+    <print-prereqs> Warlock, Ghost Pact class feature, Cha 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 to all defenses when you have temporary HP </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="AC" value="+1" type="Feat" condition="when you have temporary HP" />
+      <statadd name="Fortitude Defense" value="+1" type="Feat" condition="when you have temporary HP" />
+      <statadd name="Will Defense" value="+1" type="Feat" condition="when you have temporary HP" />
+      <statadd name="Reflex Defense" value="+1" type="Feat" condition="when you have temporary HP" />
+    </rules>
+As long as you have temporary hit points you gain a +1 feat bonus to AC and all defenses.
+</RulesElement>
+  <RulesElement name="Improved Dark Descent" type="Feat" internal-id="ID_CDJ_FEAT_645002" source="Venture 4th" revision-date="12/08/2010 10:46:00 PM">
+    <Prereqs> warlock, Ghost Pact class feature, Cha 15 </Prereqs>
+    <print-prereqs> Warlock, Ghost Pact class feature, Cha 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 to save when using Dark Descent </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Saving Throws" value="+1" condition="when you use Dark Descent" />
+    </rules>
+You gain a +1 bonus to your saving throw when using your pact boon to avoid taking damage.
+</RulesElement>
+  <RulesElement name="Unnatural Vigor" type="Feat" internal-id="ID_CDJ_FEAT_645003" source="Venture 4th" revision-date="12/08/2010 10:46:00 PM">
+    <Prereqs> warlock, Ghost Pact class feature, Cha 17 </Prereqs>
+    <print-prereqs> Warlock, Ghost Pact class feature, Cha 17 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain temporary HP when using action point to take second wind. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you spend an action point to use your Second Wind you also gain a number of temporary hit points equal to 1 + your Charisma modifier.
+</RulesElement>
+  <RulesElement name="Withering Touch" type="Feat" internal-id="ID_CDJ_FEAT_645004" source="Venture 4th" revision-date="12/08/2010 10:46:00 PM">
+    <Prereqs> warlock, Ghost Pact class feature, Cha 17 </Prereqs>
+    <print-prereqs> Warlock, Ghost Pact class feature, Cha 17 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Ongoing necrotic damage creates cold vulnerability </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When one of your Ghost Pact powers causes ongoing necrotic damage, the target gains vulnerability to cold equal to 1 + your Intelligence modifier.
+</RulesElement>
+  <RulesElement name="Improved True Name" type="Feat" internal-id="ID_CDJ_FEAT_645005" source="Venture 4th" revision-date="12/08/2010 10:46:00 PM">
+    <Prereqs> warlock, Angelic Pact class feature, Cha 15, Int 13 </Prereqs>
+    <print-prereqs> Warlock, Angelic Pact class feature, Cha 15, Int 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> True Name power drops defenses by an additional 1 </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <modify name="True Name  " type="Power" field="Effect" value="You can learn the True Name of the enemy nearest to you that you can see. If you have placed your Warlock's Curse on a creature, the curse is immediately lifted when you use the True Name power. You can not curse an enemy while the True Name power is in effect, unless otherwise indicated in a warlock power's description. Against your attacks, the target takes a penalty to all defenses equal to 2 + half your Intelligence modifier. This penalty lasts until the end of the encounter or until the target drops to 0 hit points or fewer." />
+    </rules>
+Against your attacks, the target of your True Name class feature takes a penalty to AC and all defenses equal to 2 + one-half your Intelligence modifier.
+</RulesElement>
+  <RulesElement name="Improved Fiery Rapture" type="Feat" internal-id="ID_CDJ_FEAT_645006" source="Venture 4th" revision-date="12/08/2010 10:46:00 PM">
+    <Prereqs> warlock, Angelic Pact class feature, Cha 15, Int 13 </Prereqs>
+    <print-prereqs> Warlock, Angelic Pact class feature, Cha 15, Int 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain temp HP with Fiery Rapture boon </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you trigger your Fiery Rapture pact boon, you gain temporary hit points equal to your Charisma modifier.
+</RulesElement>
+  <!--End Feats-->
+  <!--Start Magic Items-->
+  <RulesElement name="Ghost Rod +4" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645001" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod is almost unbearably cold to the touch. </Flavor>
+    <specific name="Level"> 18 </specific>
+    <specific name="Gold"> 85000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical"> +4d6 psychic damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Until the end of the encounter, when you use a warlock power that has an additional effect if you have the ghost pact, you gain that benefit even if you don't have the ghost pact. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Ghost Rod +5" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645002" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod is almost unbearably cold to the touch. </Flavor>
+    <specific name="Level"> 23 </specific>
+    <specific name="Gold"> 425000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical"> +5d6 psychic damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Until the end of the encounter, when you use a warlock power that has an additional effect if you have the ghost pact, you gain that benefit even if you don't have the ghost pact. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Ghost Rod +6" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645003" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod is almost unbearably cold to the touch. </Flavor>
+    <specific name="Level"> 23 </specific>
+    <specific name="Gold"> 2125000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical"> +6d6 psychic damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Until the end of the encounter, when you use a warlock power that has an additional effect if you have the ghost pact, you gain that benefit even if you don't have the ghost pact. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Spirit Doll" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645004" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This small wooden puppet looks like a child's toy. It is a power vestige able to store your spirit even if your body is slain. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Wondrous Item </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Free action. When you are rendered unconscious or dropped to 0 or fewer hit points, you can transfer your soul into the spirit doll as long as it is within 10 squares of you. As long as your spirit is in this doll you can take a full set of actions and use your warlock powers. As a move action you may return to your body if it is still alive.
+	The doll is a Small (2 ft. tall) creature with 10 hit points and is only strong enough to wield a light weapon. It can not carry anything heavier than 10 pounds. If it is destroyed your soul returns to your body if your body is still alive. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement" />
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Book of the Damned" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645005" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> Said to be written by a mad poet, this tome grants the reader knowledge of the spirit world, and the power to control the souls who reside there. </Flavor>
+    <specific name="Level"> 12 </specific>
+    <specific name="Gold"> 13000 </specific>
+    <specific name="Magic Item Type"> Wondrous Item </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Property"> This book grants a +4 item bonus to monster knowledge checks for creatures with the shadow origin or undead keyword. </specific>
+    <specific name="Power"> Power (Daily): Minor Action. Make a Charisma vs. Will implement attack against a ghost or a creature with the shadow origin. On a hit the creature is dominated (save ends). </specific>
+    <specific name="Power"> Power (Daily): Minor Action. Add the fear keyword to one attack you make with an arcane power. If you hit, the target takes a -4 to Will defense until the end of the encounter. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement" />
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Angel Rod +4" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645006" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod draws upon the power of the Astral Sea, temporarily granting you the benefits of a warlock. </Flavor>
+    <specific name="Level"> 18 </specific>
+    <specific name="Gold"> 85000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical"> +4d6 radiant damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Until the end of the encounter, when you use a warlock power that has an additional effect if you have the Angelic pact, you gain that benefit even if you don't have the Angelic pact. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Angelic Rod +5" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645007" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod draws upon the power of the Astral Sea, temporarily granting you the benefits of a warlock. </Flavor>
+    <specific name="Level"> 23 </specific>
+    <specific name="Gold"> 425000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical"> +5d6 radiant damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Until the end of the encounter, when you use a warlock power that has an additional effect if you have the Angelic pact, you gain that benefit even if you don't have the Angelic pact. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Angelic Rod +6" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645008" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod draws upon the power of the Astral Sea, temporarily granting you the benefits of a warlock. </Flavor>
+    <specific name="Level"> 23 </specific>
+    <specific name="Gold"> 2125000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical"> +6d6 radiant damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Until the end of the encounter, when you use a warlock power that has an additional effect if you have the Angelic pact, you gain that benefit even if you don't have the Angelic pact. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+  </RulesElement>
+  <RulesElement name="Rod of Vengeance +1" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645009" source="Venture 4th" revision-date="9/1/2010 10:42:23 AM">
+    <Flavor> A globe of unmelting ice surrounds one end of this rod. </Flavor>
+    <specific name="Level"> 5 </specific>
+    <specific name="Gold"> 1000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +1d6 cold damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Cold): Free Action. Use this power when you are hit by a melee attack. The attacking creature takes 1d8 cold damage per plus. If the creature scores a critical against you it takes an extra 1d12 fire damage. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Rod of Vengeance +2" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645010" source="Venture 4th" revision-date="9/1/2010 10:42:23 AM">
+    <Flavor> A globe of unmelting ice surrounds one end of this rod. </Flavor>
+    <specific name="Level"> 10 </specific>
+    <specific name="Gold"> 5000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +2d6 cold damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Cold): Free Action. Use this power when you are hit by a melee attack. The attacking creature takes 1d8 cold damage per plus. If the creature scores a critical against you it takes an extra 1d12 fire damage. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Rod of Vengeance +3" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645011" source="Venture 4th" revision-date="9/1/2010 10:42:23 AM">
+    <Flavor> A globe of unmelting ice surrounds one end of this rod. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +3d6 cold damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Cold): Free Action. Use this power when you are hit by a melee attack. The attacking creature takes 1d8 cold damage per plus. If the creature scores a critical against you it takes an extra 1d12 fire damage. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Rod of Vengeance +4" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645012" source="Venture 4th" revision-date="9/1/2010 10:42:23 AM">
+    <Flavor> A globe of unmelting ice surrounds one end of this rod. </Flavor>
+    <specific name="Level"> 20 </specific>
+    <specific name="Gold"> 125000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +4d6 cold damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Cold): Free Action. Use this power when you are hit by a melee attack. The attacking creature takes 1d8 cold damage per plus. If the creature scores a critical against you it takes an extra 1d12 fire damage. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Rod of Vengeance +5" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645013" source="Venture 4th" revision-date="9/1/2010 10:42:24 AM">
+    <Flavor> A globe of unmelting ice surrounds one end of this rod. </Flavor>
+    <specific name="Level"> 25 </specific>
+    <specific name="Gold"> 625000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +5d6 cold damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Cold): Free Action. Use this power when you are hit by a melee attack. The attacking creature takes 1d8 cold damage per plus. If the creature scores a critical against you it takes an extra 1d12 fire damage. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Rod of Vengeance +6" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645014" source="Venture 4th" revision-date="9/1/2010 10:42:24 AM">
+    <Flavor> A globe of unmelting ice surrounds one end of this rod. </Flavor>
+    <specific name="Level"> 30 </specific>
+    <specific name="Gold"> 3125000 </specific>
+    <specific name="Magic Item Type"> Rod </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot" />
+    <specific name="Requirement" />
+    <specific name="Critical"> +6d6 cold damage </specific>
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Cold): Free Action. Use this power when you are hit by a melee attack. The attacking creature takes 1d8 cold damage per plus. If the creature scores a critical against you it takes an extra 1d12 fire damage. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Seven Keys of Wisdom (level 18)" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645015" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod draws upon the power of the Astral Sea, temporarily granting you the benefits of a warlock. </Flavor>
+    <specific name="Level"> 18 </specific>
+    <specific name="Gold"> 85000 </specific>
+    <specific name="Magic Item Type"> Wondrous Item </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special"> A warlock of the Angelic Pact may use this item as an implement. </specific>
+    <specific name="Property"> Gain an item bonus to Insight, Nature, and Religion checks equal to the enhancement bonus. </specific>
+    <specific name="Power"> Power (Daily * Arcane): Standard Action. Once per day you may cast a daily Angelic Pact warlock spell of the item's level or lower. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="_ImplementEquiv"> Rod </specific>
+    <specific name="_ImplementForClass"> ID_FMP_CLASS_7(Angelic Pact) </specific>
+    <rules>
+      <modify name="this" Field="_ImplementEquiv" value="Rod" />
+      <modify name="this" Field="Item Slot" value="Off-hand" />
+      <modify name="this" Field="_ImplementForClass" value="ID_FMP_CLASS_7(Angelic Pact)" />
+      <statadd name="Insight Misc" value="+4" type="item" />
+      <statadd name="Nature Misc" value="+4" type="item" />
+      <statadd name="Religion Misc" value="+4" type="item" />
+      <select type="Power" name="Seven Keys of Wisdom (level 18)" number="1" Category="ID_CDJ_POWER_645042|ID_CDJ_POWER_645048|ID_CDJ_POWER_645053|ID_CDJ_POWER_645058|ID_CDJ_POWER_645059|ID_CDJ_POWER_645060" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Seven Keys of Wisdom (level 23)" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645016" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod draws upon the power of the Astral Sea, temporarily granting you the benefits of a warlock. </Flavor>
+    <specific name="Level"> 23 </specific>
+    <specific name="Gold"> 425000 </specific>
+    <specific name="Magic Item Type"> Wondrous Item </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special"> A warlock of the Angelic Pact may use this item as an implement. </specific>
+    <specific name="Property"> Gain an item bonus to Insight, Nature, and Religion checks equal to the enhancement bonus. </specific>
+    <specific name="Power"> Power (Daily * Arcane): Standard Action. Once per day you may cast a daily Angelic Pact warlock spell of the item's level or lower. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="_ImplementEquiv"> Rod </specific>
+    <specific name="_ImplementForClass"> ID_FMP_CLASS_7(Angelic Pact) </specific>
+    <rules>
+      <modify name="this" Field="_ImplementEquiv" value="Rod" />
+      <modify name="this" Field="Item Slot" value="Off-hand" />
+      <modify name="this" Field="_ImplementForClass" value="ID_FMP_CLASS_7(Angelic Pact)" />
+      <statadd name="Insight Misc" value="+5" type="item" />
+      <statadd name="Nature Misc" value="+5" type="item" />
+      <statadd name="Religion Misc" value="+5" type="item" />
+      <select type="Power" name="Seven Keys of Wisdom (level 23)" number="1" Category="ID_CDJ_POWER_645042|ID_CDJ_POWER_645048|ID_CDJ_POWER_645053|ID_CDJ_POWER_645058|ID_CDJ_POWER_645059|ID_CDJ_POWER_645060|ID_CDJ_POWER_645067" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Seven Keys of Wisdom (level 28)" type="Magic Item" internal-id="ID_CDJ_MAGIC_ITEM_645017" source="Venture 4th" revision-date="9/1/2010 10:30:16 AM">
+    <Flavor> This rod draws upon the power of the Astral Sea, temporarily granting you the benefits of a warlock. </Flavor>
+    <specific name="Level"> 28 </specific>
+    <specific name="Gold"> 2125000 </specific>
+    <specific name="Magic Item Type"> Wondrous Item </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special"> A warlock of the Angelic Pact may use this item as an implement. </specific>
+    <specific name="Property"> Gain an item bonus to Insight, Nature, and Religion checks equal to the enhancement bonus. </specific>
+    <specific name="Power"> Power (Daily * Arcane): Standard Action. Once per day you may cast a daily Angelic Pact warlock spell of the item's level or lower. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+    <specific name="Granted Powers" />
+    <specific name="_ImplementEquiv"> Rod </specific>
+    <specific name="_ImplementForClass"> ID_FMP_CLASS_7(Angelic Pact) </specific>
+    <rules>
+      <modify name="this" Field="_ImplementEquiv" value="Rod" />
+      <modify name="this" Field="Item Slot" value="Off-hand" />
+      <modify name="this" Field="_ImplementForClass" value="ID_FMP_CLASS_7(Angelic Pact)" />
+      <statadd name="Insight Misc" value="+6" type="item" />
+      <statadd name="Nature Misc" value="+6" type="item" />
+      <statadd name="Religion Misc" value="+6" type="item" />
+      <select type="Power" name="Seven Keys of Wisdom (level 28)" number="1" Category="ID_CDJ_POWER_645042|ID_CDJ_POWER_645048|ID_CDJ_POWER_645053|ID_CDJ_POWER_645058|ID_CDJ_POWER_645059|ID_CDJ_POWER_645060|ID_CDJ_POWER_645067|ID_CDJ_POWER_645072|ID_CDJ_POWER_645073" />
+    </rules>
+  </RulesElement>
+</D20Rules>

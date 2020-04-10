@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>Kender.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/Kender.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/Kender.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Dragonlance" type="source" internal-id="ID_CER_SOURCE_1" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.dragonlance.com/products/SVP-4404.aspx </specific>
+    <specific name="Release Date"> 8/1/2007 </specific>
+  </RulesElement>
+  <RulesElement name="Kender" type="Race" internal-id="ID_CER_RACE_1" source="Dragonlance" revision-date="x/x/x">
+    <Prereqs> ~KENDER </Prereqs>
+    <Flavor> Quick and resourceful wanderers, small in stature but great in courage. </Flavor>
+    <specific name="Size"> Small </specific>
+    <specific name="Speed"> 5 squares </specific>
+    <specific name="Characteristics"> Fearless, curious, addicted to shiny stuff </specific>
+    <specific name="Physical Qualities"> Kender are often mistaken for Halflings, most don't care either way if they are. They have bright eyes that give them a youthful appearance, and are often quite thin and frail looking. They carry an air of innocence about them, and are often caught off guard as many are just as naive as they are energetic. Kenders are fond of simple clothing that is loose and comfortable and usually carry numerous bags, satchels and pouches on their person as their fingers are quick to pick-up items that amuse or fascinate them. </specific>
+    <specific name="Playing"> Although a Kender is unusually fearless, it should be noted that on more than one occasion, Kender have felt fear for individuals that they care for. So, while Kender rarely fear for themselves, they may still fear the peril of others. 	Kender are afflicted with Wanderlust in their teens, this lust makes it difficult, even stifling to be in one place for a very long time. They become overly curious, and find that they seek adventure more and more throughout their adolescence. This can be problematic, as they are immune to fear, many young Kender may find themselves in dangerous positions. One such example would be Teik Glittergold, a young rogue that found himself face to face with a red dragon, because the Kender wondered how large the dragon's cave could be. 	As a note, Wanderlust does not make Kender unintelligent, it just helps to remove inhibitions about completing dangerous, or otherwise unhealthy tasks, if it means that the Kender can explore, unearth, or find something new and different. 	Kender usually grow out of the Wanderlust later in their lives, provided that they live that long.  	Anyone who has holes in their pockets should be wary of the Kender. More often than not, if a Kender has a fond appreciation for something you own that is not strapped down, tied up, or locked away, they will "find it". It is not uncommon at all for a Kender to have many pockets filled with the knick-knacks, and shiny baubles, that his party has "dropped." If one were to realize that their key has come up missing, and is now in the Kenders possession, the Kender will (usually) have no problem giving it back, and will exclaim something along the lines of, "I found that a couple miles back, I bet you are really glad that I saw it and picked it up for you." 	Kender are very curious and tend to "borrow" objects. The Kender possess a habit of finding things that have dropped into their pouches by accident, picking things up in the streets, finding "junk", and generally getting things that belong to other people. The Kender have enormous natural curiosity, a character trait which is also employed to provision the characters with both lock picking skills and a tendency to "listen in on other's conversations". In terms of moral considerations, Kender are described as not believing that there is anything wrong with handling, although this habit may be employed to get Kender in to deep trouble with the owner of an item. In addition, they do not tend to "find" things like money, gems, and the like, as they have little concept of monetary value. Kender oppose actual thieving vehemently, and thus consider being called a thief a great insult to their dignity. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 3' -3' 9" </specific>
+    <specific name="Average Weight"> 85-105 lb. </specific>
+    <specific name="Ability Scores"> +2 Charisma, +2 Dexterity </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Acrobatics, +2 Thievery </specific>
+    <specific name="Male Names"> Ander, Corrin, Dannad, Errich, Finnan, Garret, Lazam, Lindal, Merric, Nebin, Ostran, Perrin, Reed, Shardon, Ulmo, Wenner. </specific>
+    <specific name="Female Names"> Andrey, Bree, Callie, Chenna, Eida, Kithri, Lidda, Nedda, Paela, Shaena, Tryn, Vani, Verna, Wella. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_25, ID_FMP_RACIAL_TRAIT_361, ID_CER_RACIAL_TRAIT_1 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_KENDER" type="Grants" />
+      <statadd name="Speed" value="+5" />
+      <textstring name="Average Height" value="3' -3' 9&quot;" />
+      <textstring name="Average Weight" value="85-105 lb." />
+      <textstring name="Size" value="Small" />
+      <select type="Language" number="1" Category="Starting" />
+    </rules>
+Kender are a small race known for their fearlessness, wanderlust, and curiousity.
+
+Play a Kender if you want ...
+	* to play the definition of fearless innocence.
+	* to be overly energetic and quick.
+	* to be a member of a race that favors the bard or rogue classes.
+   </RulesElement>
+  <RulesElement name="Kender" type="Grants" internal-id="ID_INTERNAL_GRANTS_KENDER" source="Dragonlance">
+    <specific name="_SupportsID"> ID_CER_RACE_1 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_25" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait" />
+      <grant name="ID_CER_RACIAL_TRAIT_1" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Kender Taunt" type="Racial Trait" internal-id="ID_CER_RACIAL_TRAIT_1" source="Dragonlance" revision-date="x/x/x">
+    <specific name="Short Description"> Use Kender Taunt as an encounter power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_CER_POWER_1 </specific>
+    <specific name="_DisplayPowers"> ID_CER_POWER_1 </specific>
+    <rules>
+      <grant name="ID_CER_POWER_1" type="Power" />
+    </rules>
+You can use Kender Taunt as an Encounter power. 
+   </RulesElement>
+  <RulesElement name="Kender Taunt" type="Power" internal-id="ID_CER_POWER_1" source="Dragonlance" revision-date="x/x/x">
+    <Category> ID_CER_RACIAL_TRAIT_1,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Unselectable </Prereqs>
+    <Flavor> You utter a jarring taunt, sending your enemy into a rage. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Kender Racial Power </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close Burst 10  </specific>
+    <specific name="Special"> You can use this power twice per encounter, but only once per round. </specific>
+    <specific name="Target"> One creature in burst </specific>
+    <specific name="Effect"> The target is marked by you.  </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_CER_RACIAL_TRAIT_1 </specific>
+  </RulesElement>
+  <RulesElement name="Kenderhome" type="Background" internal-id="ID_CER_BACKGROUND_1" source="Dragonlance" revision-date="x/x/x">
+    <specific name="type"> Campaign </specific>
+    <specific name="Common Knowledge"> Kenderhome is home to the Kender. Or, it would be if they didn't all suffer from Wanderlust and keep leaving. </specific>
+    <specific name="Benefit"> You add Stealth and Thievery to your class skill list, and you gain a +1 bonus to Stealth and Thievery checks. </specific>
+    <specific name="Short Description"> Kenderhome is home to the Kender, obviously. </specific>
+    <specific name="Campaign"> Forgotten Realms </specific>
+    <specific name="Associated Skills" />
+    <specific name="Associated Languages" />
+  </RulesElement>
+  <RulesElement name="Kenderhome Benefit" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_KENDERHOME_BENEFIT" source="Dragonlance" revision-date="x/x/x">
+    <Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
+    <Prereqs> ID_CER_BACKGROUND_1 </Prereqs>
+    <specific name="_SupportsID"> ID_CER_BACKGROUND_1 </specific>
+    <specific name="_IsBenefit"> 1 </specific>
+    <rules>
+      <modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true" />
+      <modify name="Thievery" type="Skill Training" Field="UniversalClassSkill" value="true" />
+      <statadd name="Stealth Misc" value="+1" />
+      <statadd name="Thievery Misc" value="+1" />
+    </rules>
+  </RulesElement>
+</D20Rules>

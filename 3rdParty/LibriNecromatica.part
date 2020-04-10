@@ -1,0 +1,2090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>LibriNecromatica.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/LibriNecromatica.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/LibriNecromatica.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Coded by Tivaan -->
+  <!-- Libri Necromatica -->
+  <RulesElement name="Libri Necromatica" type="source" internal-id="ID_TIV_SOURCE_LIBRA_NECROMATICA_100_1" source="Core">
+    <specific name="IsBeta"> 1 </specific>
+    <specific name="URL"> http://www.rpgnow.com/product_info.php?products_id=83209 </specific>
+    <specific name="Release Date"> 9/1/2010 </specific>
+  </RulesElement>
+  <!-- Powers -->
+  <RulesElement name="Dark Ray" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> A purple-black ray of negative energy streaks to your target. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 1 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence vs Fortitude. </specific>
+    <specific name="Hit"> 1d6 + Intelligence modifier necrotic damage and the target is weakened until the end of your next turn.
+Increase damage to 2d6 + Intelligence modifier at 21st level. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Fear Itself" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You force your will upon your target, getting in their head and making them afraid of things unseen. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 1 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Fear </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs Will </specific>
+    <specific name="Hit"> 1d6 + Constitution modifier psychic damage and you can slide the target one square.
+Increase damage to 2d6 + constitution modifier at 21st level. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Dark Touch" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Dark energy crackles around your hand as you reach out to touch your enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 1 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 2d8 + Constitution modifier necrotic damage and the target is blinded until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+  </RulesElement>
+  <RulesElement name="Dark Plague" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_04" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Maybe you can't transmit the actual plague, but you can sure make your enemy feel like they have it for a short time. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 1 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic, Poison </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 1d8 + Constitution modifier poison damage. Each time the target attacks on its next turn it coughs up blood and takes 5 damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Summon Lesser Skeleton" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_05" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> From the dust of the earth you call forth the skeletal remains of an animal to do your bidding. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 1 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic, Summoning </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You summon a skeletal animal in an unoccupied square within range. The skeletal animal is immune to disease or poison and has a speed of 6. You can give it the following special commands:
+* Standard Action: Melee 1; targets one creature; Dexterity vs AC; 1d8 + Dexterity modifier damage.
+* Opportunity Attack: Melee 1; targets one creature; Dexterity vs AC; 1d8 + Dexterity modifier damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Despair and Dismay" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_06" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Your enemies hear whispers of failure and death that play on their fears as a zone of shadow envelopes you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 1 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Constitution vs Will </specific>
+    <specific name="Hit"> Target is dazed. </specific>
+    <specific name="Effect"> Creates a shadow zone around you in the burst area that lasts until the end of your next turn. Any enemy that starts its turn in the zone suffers a -2 penalty to attacks on that turn. This zone provides concealment to those within it. This zone is centered on you and moves when you do. </specific>
+    <specific name="Sustain Minor"> The zone persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Semi-Wraith Form" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_07" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Your enemies hear whispers of failure and death that play on their fears as a zone of shadow envelopes you. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 2 </specific>
+    <specific name="Keywords"> Death, Arcane </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> Until the end of your next turn you reduce pull, push and slide effects by 1 square and resist 5 to all damage except psychic and radiant. Your speed drops by 2 but you gain a spider-climb speed equal to your new move speed. You also deal full damage to insubstantial targets while in this form. </specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Personal </specific>
+  </RulesElement>
+  <RulesElement name="Seal Death's Door" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_08" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT_ACTION,2 </Category>
+    <Flavor> Another's failing struggle against death is a balm to your soul. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 2 </specific>
+    <specific name="Keywords"> Death, Arcane, Healing </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> A dying creature attempts a death save within range </specific>
+    <specific name="Target"> The triggering creature </specific>
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> The target must roll two saves and use the worst result of the pair of rolls. If the target fails the save attempt then you regain a spent healing surge. If you have all of your healing surges, then you gain 5 temporary hit points instead. 
+Note: The DM usually won't roll death saves for monsters. They should do so for a sub 0 HP monster when you use this power.</specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Death Beetle Swarm" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_09" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> You summon a group up huge deadly scarab beetles to harass and scatter your foes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 3 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjuration, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Intelligence vs Fortitude </specific>
+    <specific name="Hit"> 1d8 + Intelligence modifier damage and you conjure a scarab beetle in an unoccupied space next to each enemy. Each beetle lasts until the end of your next turn. Each enemy that ends its turn adjacent to a beetle takes necrotic damage equal to your Constitution modifier. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Painful Undeath" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_10" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> Your psychic attack gnaws at your foes with the pain of death - which is especially unpleasant for the undead who will flee from the source of their pain. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 3 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Constitution or Intelligence vs Will </specific>
+    <specific name="Hit"> 2d8 + Constitution modifier psychic damage. If the target is undead, it's next two actions must be to move away from you at full speed. They need not run, and may stop moving if there is no safe path for them to follow. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Withering Strike" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_11" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> Dark energy crackles down your arm and into your weapon allowing you to deliver debilitating energy with your weapon strike. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 3 </specific>
+    <specific name="Keywords"> Death, Arcane, Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs AC </specific>
+    <specific name="Hit"> 1[W] + Constitution modifier damage and the target is both immobilized and weakened (save ends both). The target cannot make opportunity attacks while in this state. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+  </RulesElement>
+  <RulesElement name="Spirit Merge" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_12" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+    <Flavor> You become a spirit form and walk into your enemy to torment them from within. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 5 </specific>
+    <specific name="Keywords"> Death, Arcane, Necrotic, Teleportation </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence +2 or Constitution +2 vs Will. 
+Increase bonus to +4 at 11th and +6 at 21st level. </specific>
+    <specific name="Hit"> You turn into shadow and enter the target. You have line of sight only to the target and only psychic attacks can gain line of effect against you. The target is slowed and takes 10 necrotic damage at the start of it's next turn. On your next turn a minor action will deal 5 necrotic damage and you can attack the target as if adjacent to it. At the end of that turn you appear in a space of your choice adjacent to the target and are solid once again. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Summon Giant Skull" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_13" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_51,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_MINOR_ACTION,5 </Category>
+    <Flavor> A giant floating skull appears to do your bidding. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 5 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Summoning, Necrotic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You summon a floating giant skull that fills one unoccupied square within range. It has a fly 6 (hover) move and you can give it the following special commands:
+* Standard Action: Melee 1; targets one creature; Dexterity vs Reflex; 2d6 + Dexterity modifier damage.
+* Opportunity Attack: Melee 1; targets one creature; Dexterity vs Reflex; 2d6 + Dexterity modifier damage and the target's move is stopped. </specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Death's Friend" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_14" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Your power and knowledge aids you in communicating with the undead. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 6 </specific>
+    <specific name="Keywords"> Death, Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Prerequisite"> You must be attempting to use a Charisma or Intelligence based skill involving interaction with the undead or the spirits of the dead (such as a Speak with Dead ritual). </specific>
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You gain a +3 power bonus to modifier of the ability being used. </specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Personal </specific>
+  </RulesElement>
+  <RulesElement name="Death Shielding" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_15" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> A dark aura forms around you as you pull the power of death around you like a cloak. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 6 </specific>
+    <specific name="Keywords"> Death, Arcane, Necrotic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger" />
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You gain resist 10 necrotic and immunity to diseases until the end of the encounter. Additionally, whenever a creature makes a melee attack against you they suffer 1d6 + Constitution modifier necrotic damage while the shield is in effect. You can end the shield as a free action. </specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Personal </specific>
+  </RulesElement>
+  <RulesElement name="Bone Shard Explosion" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_16" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You throw a small bit of bone out into the air where it explodes into thousands of sharp bone shards. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 7 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjuration, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Intelligence vs Reflex </specific>
+    <specific name="Hit"> 3d6 + Intelligence modifier damage and the burst area is considered difficult terrain until the end of your next turn. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Compel Undead" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_17" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> Using your own life force you attempt to overwhelm and command an undead to do you bidding. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 7 </specific>
+    <specific name="Keywords"> Death, Arcane, Charm, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> One undead </specific>
+    <specific name="Attack"> Constitution vs Will </specific>
+    <specific name="Hit"> The target is dominated until the end of your next turn. At the end of that turn the target gains a save that if successful cancels your ability to sustain this attack. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor"> The target is dominated until the end of your next turn as well. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Soul Stripping" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_18" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You conjure the souls of wrathful spirits that cling to your enemy and shred at their life force. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 7 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjuration, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Intelligence vs Fortitude </specific>
+    <specific name="Hit"> 2d8 + Constitution modifier necrotic damage. Until the end of your next turn, whenever the target makes an attack roll it takes necrotic damage equals to your Constitution modifier. </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Grave's Chill" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_19" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> The target can feel the cold earth pressing in on them as your spell takes hold. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 9 </specific>
+    <specific name="Keywords"> Death, Arcane, Cold, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence vs Fortitude </specific>
+    <specific name="Hit"> 2d10 + Intelligence modifier cold damage and the target is restrained (save ends). </specific>
+    <specific name="Effect" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Looming Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_20" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_10,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> You surround your enemies with illusionary death reapers, pinning them in place with fear. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 9 </specific>
+    <specific name="Keywords"> Death, Arcane, Fear, Illusion, Implement, Psychic, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+    <specific name="Effect"> The burst creates a zone that is bordered by illusionary death reapers hovering menacingly. These reapers are only visible from inside the zone. A target forced to leave the zone will take 2d8 + Intelligence modifier psychic damage and the effect ends for it. The zone lasts until no creature is subject to it's effect. </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Intelligence vs Will </specific>
+    <specific name="Hit"> The target can see impending death in the form of a death angel waiting to take its soul (save ends). While affected by the vision the target will not voluntarily leave the zone and does not have line of sight outside the zone. </specific>
+    <specific name="Effect" />
+    <specific name="Miss"> Rather than the effect ending with a save, it only lasts until the end of your next turn. </specific>
+    <specific name="Special"> A creature whose space is partly within the zone can only move into squares within the zone when affected.</specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Summon Shadow Rat" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_21" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_51,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,9 </Category>
+    <Flavor> A shadow rat the size of a huge wolf appears to do your bidding. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 9 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Summoning </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You summon a shadow rat that fills one unoccupied square within range. It has a move of fly 7 (hover) and +2 AC plus resistance 5 to all damage except radiant and fire. You can give it the following special commands:
+* Standard Action: shift two squares and attack; Melee 1; targets one creature; Dexterity vs Reflex; 1d10 + Dexterity modifier necrotic damage and the target is slowed until the end of your next turn.
+* Opportunity Attack: Melee 1; targets one creature; 1d10 + Dexterity modifier necrotic damage and the target is slowed until the end of your next turn. </specific>
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Resist the Necrotic" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_22" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> While the touch of your power is icy, none can deny the protection it lends. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 10 </specific>
+    <specific name="Keywords"> Death, Arcane, Necrotic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 10 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> You and each ally in burst </specific>
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> Until the end of the encounter, each target gains resistance to necrotic damage equal to 10 plus your Constitution modifier and is immune to attacks that drain healing surges. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Glide" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_23" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> For a brief moment you wisp into shadow form and then leap. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 10 </specific>
+    <specific name="Keywords"> Death, Arcane, Necrotic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You gain a fly speed equal to twice your move speed for this action. If you end the move off the ground you will float down safely up to 10 squares. Anything higher than that and you fall the rest of the way. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Personal </specific>
+  </RulesElement>
+  <RulesElement name="Necrotic Blade" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_24" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_22,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> A bladed pole arm of wispy necrotic energy forms in your hand and you use it to attack your enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 13 </specific>
+    <specific name="Keywords"> Death, Arcane, Force, Implement, Necrotic, Reliable </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee 2 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs Reflex </specific>
+    <specific name="Hit"> 3d8 + Dexterity modifier necrotic damage. </specific>
+    <specific name="Effect"> This damage ignores 10 points of necrotic resistance. If the attack misses the power is not lost and can be used again. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+  </RulesElement>
+  <RulesElement name="Necrotic Burst" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_25" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> Purple-black negative energy flashes out and explodes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 13 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Burst 2 within 20 squares </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d6 + Constitution modifier necrotic damage and the target is blinded until the end of your next turn. </specific>
+    <specific name="Effect" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Infliction" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_26" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> This frightening attack turns your enemy's limbs into shadow, greatly affecting their ability to fight. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 15 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Prerequisite" />
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 2d10 necrotic damage and the target's limbs and head become insubstantial so that they take 5 ongoing necrotic damage, are weakened, and become vulnerable 10 to radiant attacks. (save ends all). </specific>
+    <specific name="Effect" />
+    <specific name="Miss"> Half damage +3 and no partially insubstantial effects. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Wall of Bones" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_27" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> You summon forth a wall of mixed bones from the forgotten graves of the world. Residue negative energy allows you to make some of the bones move. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 15 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjuration, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Wall 12 within 10 squares </specific>
+    <specific name="Effect"> You conjure a wall of intertwined bones up to 12 squares long and 6 squares high. This wall blocks line of sight and prevents movement. No creature can enter a square containing a wall section. This wall may be climbed against DC 15. </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One creature adjacent to the wall </specific>
+    <specific name="Attack"> Intelligence vs AC </specific>
+    <specific name="Hit"> 2d6+Intelligence modifier damage. </specific>
+    <specific name="Effect" />
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Special"> As the wall forms you can make a jagged bone spar strike at one target adjacent to the wall. A creature can attack one square of the wall. Each square has 40 HP. Attacks do not miss, but creatures that are adjacent to the wall when they attack take 1d12 damage from ricocheting bone fragments. </specific>
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Full Shadow Form" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_28" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> You are like the wraith, a creature of shadow energy for a short time. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 16 </specific>
+    <specific name="Keywords"> Death, Arcane, Polymorph </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You are insubstantial and phasing until the end of your next turn. You do full damage to other insubstantial creatures in this form. </specific>
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect" />
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Personal </specific>
+  </RulesElement>
+  <RulesElement name="Life Force Drain" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_29" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> You extend your hand and extract a bit of life energy from an unconscious body. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 16 </specific>
+    <specific name="Keywords"> Death, Arcane, Healing, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> One unconscious creature in burst </specific>
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You force a target in the burst to spend a healing surge but not regain any hit points. Instead, you regain the hit points that the target would have gained. These become temporary hit points if you are damaged less then the surge value provides. If the target does not have healing surges, then they become weakened for their next turn once awake again and you regain half of their Constitution as healed or temporary hit point. This can only affect any given target creature once per day.</specific>
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Transfer Life Force" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_30" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> The vitality of life is at your command. You shuffle it between willing donors to aid an injured ally. Or perhaps to heal yourself... </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 16 </specific>
+    <specific name="Keywords"> Death, Arcane, Healing </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> You and up to two allies </specific>
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> Either you or an ally in the burst can spend a healing surge and transfer those hit points to yourself or another ally in the burst. The donor must be willing to spend the healing surge and cannot transfer the hit points to himself (or you to yourself). The recipient ally can be unconscious to receive the hit points. You can be the recipient. As you control where the hit points go, the willing donor cannot specify if you or the third ally gets the hit points.</specific>
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Blood Absorption" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_31" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You create an energy syphon within your weapon. If it can draw blood, you can suck some of the enemy's life into yourself. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 17 </specific>
+    <specific name="Keywords"> Death, Arcane, Healing, Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs AC </specific>
+    <specific name="Hit"> 1[W] + Constitution modifier damage plus 3d6 necrotic damage. You regain hit points equal to twice the necrotic damage that was dealt. </specific>
+    <specific name="Effect" />
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+  </RulesElement>
+  <RulesElement name="Grasping Skeleton Arms" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_32" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> Purple-black negative energy flashes out and explodes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 17 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjure, Implement, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Burst 2 within 20 squares </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Constitution or Dexterity vs Reflex </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier damage and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Effect"> Creates a zone of grasping arms that rise from the ground. Movement through these arms requires a Strength check against DC 20 per square. Once the check fails the character's move ends. Shifting requires the Strength check before attempting the shift (per square). </specific>
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Fling Undead" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_33" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> You can grasp the negative energy of an undead and use it to propel the physical form around at great speed. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 19 </specific>
+    <specific name="Keywords"> Death, Arcane, Force, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> One undead </specific>
+    <specific name="Attack"> Constitution vs Reflex </specific>
+    <specific name="Hit"> You slide the target 20 squares. You can choose to slam the undead into a wall or another enemy (if either is available) doing 1d8 per 2 squares traveled before impact. An enemy struck by your undead suffers a bull rush attack using your Constitution to hit. 
+Note: You cannot move the undead straight up. It must travel along the ground, but you can pull a flying undead down to the ground.</specific>
+    <specific name="Effect" />
+    <specific name="Miss"> You can only slide the target 10 squares maximum. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Rune of Control" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_34" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> You trace a glowing rune in the air that shoots out to brand itself upon your chosen target. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 19 </specific>
+    <specific name="Keywords"> Death, Arcane, Charm, Implement, Necrotic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> One undead </specific>
+    <specific name="Attack"> Constitution or Intelligence vs Will </specific>
+    <specific name="Hit"> The target is immobilized (save ends). First Failed Save: Target is stunned (save at -2 ends) Second Failed Save: Target is dominated (save at -2 ends)</specific>
+    <specific name="After Effect"> Once released, the target suffers 2d6 + Constitution modifier psychic damage and the target is dazed until the end of your next turn.</specific>
+    <specific name="Miss"> 2d6 + Constitution modifier psychic damage and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Summon Fleshy Mass" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_35" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> A disgusting and very large zombie made of a conglomeration of various parts appears to do you bidding. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 19 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Summoning </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect"> You summon a large fleshy zombie of many different original parts in an unoccupied 2x2 area within range. It has reach 2 and speed 5 with a +4 bonus to AC and Fortitude. You can give it the following special commands:
+* Standard Action: Melee 2; targets one creature; Dexterity vs Reflex; 2d4 + Dexterity modifier damage and the target is grabbed. Target suffers -3 to escape attempts against this grab. The zombie gains a +2 bonus to attack and damage rolls against a target it is grabbing.
+* Opportunity Attack: Melee 1; targets one creature; 1d8 + Dexterity modifier damage and the target is knocked prone. </specific>
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="After Effect" />
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Danielle's Faithful Crew" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_37" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> You conjure forth five pirate souls from the Eternal Danielle's crew to aid you in your battle. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 22 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjuration </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Effect"> You conjure five skeletal pirates in five different unoccupied squares within range. Enemies cannot enter a pirate square but your allies can move through them as if the pirates are allies. The conjured pirates grant cover to allies but not enemies. When you take a move action you can move each pirate 3 squares. </specific>
+    <specific name="Trigger" />
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="After Effect" />
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor" />
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Hide the Living" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_38" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> Your magic hides the life force that the undead use to sense living targets. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Utility 22 </specific>
+    <specific name="Keywords"> Death, Arcane, Illusion </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> You or one ally in the burst </specific>
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You or the ally become invisible to undead creatures until the start of your next turn or you/ally attack. </specific>
+    <specific name="Miss" />
+    <specific name="Special" />
+    <specific name="Sustain Minor"> You or the ally stay invisible for another turn. If you sustain in the same round that invisibility was lost from an attack, the invisibility returns again. Allies that attacked must be within range 10 to make them invisible again.</specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Danielle's Death Strike" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_39" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Danielle the Eternal Pirate has left a few of her spells to the care of the living. This one slams an enemy with negative energy that feeds off the target's energy then explodes to affect your other nearby enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 23 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Dexterity vs AC </specific>
+    <specific name="Hit"> 2d8 + Constitution modifier necrotic damage and the target is immobilized until the end of your next turn. Make a secondary attack with the burst centered on the target you just hit. This attack does not provoke opportunity attacks. </specific>
+    <specific name="Secondary Target"> All non-undead enemies within burst 2 of the target just struck. </specific>
+    <specific name="Secondary Attack"> Constitution vs Fortitude </specific>
+    <specific name="Special" />
+    <specific name="Secondary Hit"> 1d8 + Constitution modifier necrotic damage and the target is slowed until the end of your next turn.</specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Inversion" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_40" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Life clings to matter, and death clings to life. You use this arcane reality to both disrupt the molecules of your target and to force insubstantial creatures into solid form. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 23 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Polymorph </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Burst 2 within 10 squares </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Constitution vs Will </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier damage. </specific>
+    <specific name="Secondary Target" />
+    <specific name="Effect"> If the target is insubstantial, it becomes solid and loses the insubstantial property until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="Sustain Minor"> The target remains substantial until the end of your next turn.</specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Life Drain Syphon" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_41" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> You open a tiny pinprick to the shadow realm which greedily sucks at the life force plentiful on your realm of existence. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 25 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Necrotic, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Burst 2 within 20 squares </specific>
+    <specific name="Effect"> The burst creates a zone of swirling negative energy that lasts until the end of your next turn. You can make a secondary attack, using a square in the zone as the origin square. </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 5d6 + Constitution modifier necrotic damage, and ongoing 10 necrotic damage (save ends). </specific>
+    <specific name="Secondary Target" />
+    <specific name="Effect" />
+    <specific name="Miss"> Half damage and ongoing 5 necrotic damage (save ends). </specific>
+    <specific name="Opportunity Action"> Close Burst 4 </specific>
+    <specific name="Trigger"> A creature fails its saving throw against this attack's ongoing damage. </specific>
+    <specific name="Secondary Target"> The triggering creature in the burst. </specific>
+    <specific name="Secondary attack"> Constitution vs Fortitude </specific>
+    <specific name="Secondary Hit"> 1d8 + Constitution necrotic damage and the target is weakened until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Summon Flaming Skulls" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_42" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,25 </Category>
+    <Flavor> Up to three flaming skulls are summoned to do your bidding. They can be made to explode if you want them to do so. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 25 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Summoning </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect"> You summon up to three medium sized giant flaming skulls, each appearing in an unoccupied square within range. Each flaming skull has a speed of fly 6 (hover) and resists 10 fire and is vulnerable 5 cold. You can give the flaming skulls the following commands:
+* Standard Action: Melee 1; targets one creature; Dexterity vs Reflex; 2d6 + Dexterity fire modifier damage.
+* Standard Action: Explode, Close Burst 2; targets all creatures in burst; Dexterity vs Reflex; 1d10 + Dexterity modifier fire damage and the flaming skull is destroyed.
+* Opportunity Attack: Melee 1; targets one creature; 1d8 + Dexterity modifier fire damage. </specific>
+    <specific name="Special"> When you use a standard or minor action to issue a command all the flaming skulls take that action. The melee attacks can be against different adjacent targets. The exception to this is exploding, which you can pick how many explode, and opportunity attacks. An enemy must be adjacent to the flaming skull for an opportunity attack to occur. You do not lose a healing surge until all flaming skulls summoned by this power are reduced to 0 HP (and / or ordered to explode). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Frozen Souls" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_43" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You call forth the piercing cold of the frozen hells into the soul force of your enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 27 </specific>
+    <specific name="Keywords"> Death, Arcane, Cold, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Burst 2 within 20 squares </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Intelligence vs Will </specific>
+    <specific name="Hit"> 3d8 + Intelligence modifier necrotic and cold damage, and the target is dazed until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Bloodhound of Hades" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_44" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You call forth an undead beast from the realms of the hells that thirsts for the blood of your foes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 27 </specific>
+    <specific name="Keywords"> Death, Arcane, Conjuration, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Effect" />
+    <specific name="Trigger" />
+    <specific name="Target"> Once creature </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 4d8 + Constitution modifier necrotic damage. </specific>
+    <specific name="Secondary Target" />
+    <specific name="Effect"> You summon an undead hound from the netherworld that appears in an unoccupied square adjacent to the target and attacks. It lasts until the end of your next turn. Whenever a creature adjacent to this hound moves, it takes necrotic damage equal to your Constitution modifier and the hound gains the same number of temporary hit points. These hit points stack with other temporary HP from any source. This hound does not count for flanking purposes and provides cover to allies and enemies alike. It will help you this one time, but does not consider you to be an ally nor its master. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Veil" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_45" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_STANDARD_ACTION,29 </Category>
+    <Flavor> A wall of contained negative energy from the Shadowfell forms at your behest. The negative energy swirls about unevenly, buffeting those that enter and unleashing cold, necrotic attacks at your foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 29 </specific>
+    <specific name="Keywords"> Death, Arcane, Cold, Conjuration, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area wall 4 within 1 square </specific>
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Effect"> You conjure a wall of darkness that is up to 3 squares high and lasts until the end of the encounter. This wall blocks line of sight. Entering a wall square costs 3 squares of movement. Any creature that starts its turn in the wall takes 2d10 + your Constitution modifier cold and necrotic damage. Any creature other than you that starts its turn adjacent to the wall takes 1d10 + your Constitution modifier cold and necrotic damage.
+As a move action, you can move the wall to a space adjacent to you. Once per round you can make the following attack, which must include a square of the wall. </specific>
+    <specific name="Minor Action"> Close Burst 2 </specific>
+    <specific name="Target"> Each creature in burst. </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 2d10 + Constitution modifier cold and necrotic damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <RulesElement name="Summon Undead Dragon" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_100_46" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CATEGORY_DEATH,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,29 </Category>
+    <Flavor> A wall of contained negative energy from the Shadowfell forms at your behest. The negative energy swirls about unevenly, buffeting those that enter and unleashing cold, necrotic attacks at your foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Necromancer Attack 29 </specific>
+    <specific name="Keywords"> Death, Arcane, Implement, Summoning </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect"> You conjure a huge undead dragon in an unoccupied 3x3 square space within range. This dragon cannot fly and has a speed of 4. It has a +4 bonus to AC and Fortitude. You can give this undead dragon the following special commands:
+* Standard Action: Melee 3; targets one creature; Dexterity vs Reflex; 2d8 + Dexterity modifier damage and the target is knocked prone.
+* Standard Action: Breath Attack, Close blast 4; targets all enemies in blast; Dexterity vs Reflex; 1d10 + Dexterity modifier cold damage and the target is immobilized until the end of their next turn.
+* Opportunity Attack: Melee 1; targets one creature; Dexterity vs Reflex; 2d8 + Dexterity modifier damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_TIV_CLASS_FH-SS_100_2 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+  </RulesElement>
+  <!-- Paragon Paths -->
+  <!-- Danielle's Deckhand -->
+  <RulesElement name="Danielle's Deckhand" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> Legend claims that anyone who leaves useful information about Davey Jones in a red sea chest and flings it into the sea will be rewarded by Danielle. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_10_01,ID_TIV_POWER_LIBRA_NECROMATICA_10_02,ID_TIV_POWER_LIBRA_NECROMATICA_10_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_10_01,ID_TIV_POWER_LIBRA_NECROMATICA_10_02,ID_TIV_POWER_LIBRA_NECROMATICA_10_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_10_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_10_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_10_03" type="Power" Level="20" />
+    </rules>
+Danielle of Lincomb was a magically gifted pirate corsair who lived 500 years ago. She was obsessed with meeting the legendary undead naval spirit Davey Jones. So she studied necromancy and scoured the seas in her ship the Queen Lori's Revenge seeking lore about Jones. She was a brilliant and innovative magician and many say she used her skills to become Danielle the Eternal and that her search still goes on.
+Legend claims that anyone who leaves useful information about Davey Jones in a red sea chest and flings it into the sea will be rewarded by Danielle.
+Maybe you are a full mage, or maybe you are as much a rogue as a magician. Either way, you have become a disciple of Danielle and studied all the works by her hand that you could find. You continually seek out hidden caches that might have been stashed by Danielle and search for lore about Davey Jones.
+It is your belief that Danielle is still out there somewhere. Should you ever meet her you plan to be capable enough to be taken on as part of her crew and join her on her wanderings in search of Davey Jones.
+</RulesElement>
+  <RulesElement name="Pirate Resourcefulness" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> You can spend an action point to regain one encounter power you have already used instead of taking an extra action. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Pirate Resourcefulness: You can spend an action point to regain one encounter power you have already used instead of taking an extra action." />
+    </rules>
+You can spend an action point to regain one encounter power you have already used instead of taking an extra action.
+</RulesElement>
+  <RulesElement name="Master of the Seas" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Within 30 squares of the ocean or sea, you gain a +2 power bonus to initiative checks as well as Athletics and Perception checks. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="Initiative" value="+2" type="Class Feature" condition="when within 30 squares of the ocean or sea" />
+      <statadd name="Athletics Misc" value="+2" type="Class Feature" condition="when within 30 squares of the ocean or sea" />
+      <statadd name="Perception Misc" value="+2" type="Class Feature" condition="when within 30 squares of the ocean or sea" />
+    </rules>
+Within 30 squares of the ocean or sea, you gain a +2 power bonus to initiative checks as well as Athletics and Perception checks.
+</RulesElement>
+  <RulesElement name="Death Drinker" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_10_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you drop an enemy to 0 HP or fewer the first time in your turn you regain a spent healing surge. If you have all your surges you regain 15 HP, and if you have all your hit points you gain 10 temporary hit points. </specific>
+    <specific name="Level"> 16 </specific>
+When you drop an enemy to 0 HP or fewer the first time in your turn you regain a spent healing surge. If you have all your surges you regain 15 HP, and if you have all your hit points you gain 10 temporary hit points. 
+</RulesElement>
+  <RulesElement name="Surefooted Deck Shuffle" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_10_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Danielle's Deckhand </Prereqs>
+    <Flavor> A clash on a rolling deck is often a poor place to try throwing magic spells around. Luckily for you, you can handle yourself in melee combat when you need to. Adding a little necrotic energy to the weapon will increase the sting. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Danielle's Deckhand Attack 11 </specific>
+    <specific name="Keywords"> Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Effect"> You can shift 3 squares either before or after the attack. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Dexterity or Strength vs AC </specific>
+    <specific name="Hit"> 2[W] + Attribute used modifier necrotic damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Life of the Sea" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_10_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,12 </Category>
+    <Prereqs> Danielle's Deckhand </Prereqs>
+    <Flavor> As you focus your spirit and rejuvenate yourself, you reach out with your power and skim a little bit of life force from the teaming ocean. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Danielle's Deckhand Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger" />
+    <specific name="Effect"> You spend a healing surge. If you are within 30 squares of a natural body of water home to fish or sea life then you add double your Constitution modifier to the hit points gained plus an extra 1d6. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Dani's Drowning Soul" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_10_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Danielle's Deckhand </Prereqs>
+    <Flavor> Water gushes from your foe's mouths and noses as you redirect a bit of the fabled river Styx directly into their throats. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Danielle's Deckhand Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 5 within 20 squares </specific>
+    <specific name="Target"> All enemy in burst.  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 2d10 + Constitution modifier necrotic damage, and 10 ongoing damage plus the target is dazed (save ends both). The save is at -2 if the target is within 30 squares of a body of water at least 1,000 cubic feet. (A cube ten feet on each side). </specific>
+    <specific name="Miss"> Half damage and no ongoing damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_10_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Blackguard -->
+  <RulesElement name="Blackguard" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> The Blackguard commands necromantic energy for direct combat purposes and to make the undead do their bidding. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_20_01,ID_TIV_POWER_LIBRA_NECROMATICA_20_02,ID_TIV_POWER_LIBRA_NECROMATICA_20_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_20_01,ID_TIV_POWER_LIBRA_NECROMATICA_20_02,ID_TIV_POWER_LIBRA_NECROMATICA_20_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_20_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_20_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_20_03" type="Power" Level="20" />
+    </rules>
+You are probably part warrior, warlord or paladin and likely unaligned or evil. Just walking the path between life and death wasn't enough for you. You seek to master both death and whatever lays beyond death. The Blackguard commands necromantic energy for direct combat purposes and to make the undead do their bidding.
+Blackguards are sometimes found in temples of gods that favor the use of undead. Someone has to keep the undead in line and lead them into battle. That would be the Blackguard's task.
+Liches and vampires that keep living servants often find that a Blackguard is just what they need to both herd the undead minions around and to battle the occasional dogooder that passes by looking to smite evil.
+Pure magic using types, even if they are necromancers themselves, often find that partnering with a blackguard gives them a melee capable ally that understands the finer points of necromancy during dinner conversation.
+It is believed that the tradition of the Blackguard was formed in the ancient Atlantean culture before their trafficking with demons sent their island home plunging into the sea. If you ever find an undead that was around when Atlantis sank you'll be sure to ask them.
+</RulesElement>
+  <RulesElement name="Killer Action" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to make an extra attack, you gain combat advantage against the target and do extra damage equal to your Constitution modifier if you hit. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Killer Action: When you spend an action point to make an extra attack, you gain combat advantage against the target and do extra damage equal to your Constitution modifier if you hit." />
+    </rules>
+When you spend an action point to make an extra attack, you gain combat advantage against the target and do extra damage equal to your Constitution modifier if you hit.
+</RulesElement>
+  <RulesElement name="Cause Despair" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you score a critical hit against a target, that target takes a -2 penalty to attacks until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+When you score a critical hit against a target, that target takes a -2 penalty to attacks until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Corrosive Soul" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you hit a target that is aligned good or lawful good you deal extra damage equal to your Constitution modifier to the target. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="item" condition="against aligned good or lawful good targets" />
+    </rules>
+When you hit a target that is aligned good or lawful good you deal extra damage equal to your Constitution modifier to the target. 
+</RulesElement>
+  <RulesElement name="Blazing Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_20_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Blackguard </Prereqs>
+    <Flavor> With a few quick words you empower your weapon with sizzling necromantic power, then use that energy to propel yourself in a spinning arc of blazing death. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Blackguard Attack 11 </specific>
+    <specific name="Keywords"> Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 1 (weapon) </specific>
+    <specific name="Effect" />
+    <specific name="Target"> All enemies in burst you can see </specific>
+    <specific name="Attack"> Constitution or Strength vs AC </specific>
+    <specific name="Hit"> 1[W] + Constitution or Strength modifier damage plus 1d10 necrotic energy damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Blood Friend" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_20_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,12 </Category>
+    <Prereqs> Blackguard </Prereqs>
+    <Flavor> The blood you bleed when an undead hits you becomes the sacrifice that bonds the undead to your will. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Blackguard Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Charm </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> You are damaged by an undead attacker </specific>
+    <specific name="Effect"> You spend a healing surge. Rather than regain hit points, the undead that just struck you is dominated (save ends). The save is at -2. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Pillar of Flaming Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_20_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Blackguard </Prereqs>
+    <Flavor> You tap into one of the fiery hells and call down a pillar of fiery destruction to fry your foes while draining their energy. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Blackguard Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 5 within 20 squares </specific>
+    <specific name="Target"> All enemy in burst.  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier fire and necrotic damage, and the target is weakened (save ends). </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> Undead targets will take half damage and become dominated (save ends) on a hit and will take only one quarter damage on a miss. Note that fire resistant creatures will be damaged by this spell unless they also have resist necrotic as well. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Guardian of Mortality -->
+  <RulesElement name="Guardian of Mortality" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> Your role in your society is to see that the dead are sent off to the afterlife with due respect as well as to honor guardian ancestors that linger as undead and to destroy the dangerous undead that sully the glory of life and seek to harm the living. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_30_01,ID_TIV_POWER_LIBRA_NECROMATICA_30_02,ID_TIV_POWER_LIBRA_NECROMATICA_30_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_30_01,ID_TIV_POWER_LIBRA_NECROMATICA_30_02,ID_TIV_POWER_LIBRA_NECROMATICA_30_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_30_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_30_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_30_03" type="Power" Level="20" />
+    </rules>
+Your role in your society is to see that the dead are sent off to the afterlife with due respect as well as to honor guardian ancestors that linger as undead and to destroy the dangerous undead that sully the glory of life and seek to harm the living.
+Perhaps you are a necromancer mixed with a primal class. This unlikely seeming combination works with the spirits of the world as well as the spirits of the dead to maintain harmony for the living. In areas not prone to primal spell casters, sometimes the Guardian movement rises to become a buffer between the places where life is lived and those where the dead are interred. This is most common among the dwarven folk who's dead are often just right down a tunnel path from "home".
+Those that study necromancy in order to better combat the undead often gravitate towards this path as they advance in level. A Guardian's role as buffer between the worlds of the living and the dead comes with powers that are effective against the undead.
+As a Guardian of Mortality you know that life is precious and should be protected. You also know that most undead do not rest in eternal peace. With your training and skills you will seek to safeguard the living and bring final rest to the walking dead.
+</RulesElement>
+  <RulesElement name="Evade Undead" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, you become invisible to undead until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Evade Undead: When you spend an action point to take an extra action, you become invisible to undead until the end of your next turn." />
+    </rules>
+When you spend an action point to take an extra action, you become invisible to undead until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Power of Life" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend a healing surge, you can restore hit points equal to one half your level plus your Constitution modifier to an adjacent ally. </specific>
+    <specific name="Level"> 11 </specific>
+When you spend a healing surge, you can restore hit points equal to one half your level plus your Constitution modifier to an adjacent ally.
+</RulesElement>
+  <RulesElement name="Destroyer of the Dead" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Any saving throws made by undead creatures to remove effects you have placed on them are at -2. Additionally, you add your Constitution modifier as bonus radiant damage to any attack you make against an undead creature. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="Class Feature" condition="against aligned good or lawful good targets" />
+    </rules>
+Any saving throws made by undead creatures to remove effects you have placed on them are at -2. Additionally, you add your Constitution modifier as bonus radiant damage to any attack you make against an undead creature. 
+</RulesElement>
+  <RulesElement name="Pulse of Life" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_30_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Guardian of Mortality </Prereqs>
+    <Flavor> You can exert the power of life as well as the energy of death. Calling upon the positive energy of the living world you invoke a pulse of life that damages foes and aids your allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Guardian of Mortality Attack 11 </specific>
+    <specific name="Keywords"> Healing, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 4 </specific>
+    <specific name="Effect"> Allies in the blast can spend a healing surge. </specific>
+    <specific name="Target"> Each enemy in blast </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 2d10 + Constitution modifier radiant damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Undead Ward" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_30_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CATEGORY_31,12 </Category>
+    <Prereqs> Guardian of Mortality </Prereqs>
+    <Flavor> You weave a protective charm that will shield your allies from the dangers of battling the undead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Guardian of Mortality Utility 12 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> You and all allies in the burst. </specific>
+    <specific name="Effect"> Until the end of the encounter and the affected allies gain resist 5 necrotic and immunity to diseases. Saves against ongoing damage from attacks by undead are at +2. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Synergy of Life &amp; Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_30_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Guardian of Mortality </Prereqs>
+    <Flavor> Mixing the positive energy of life and the negative energy of death you create a potent and unstable spell that is damaging to the living and undead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Guardian of Mortality Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic, Radiant </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Target"> One creature  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d10 + Constitution modifier radiant and necrotic damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> At the start of your next turn, the target is the center of a burst 5 energy explosion that affects only your enemies: Intelligence or Constitution vs Fortitude; 3d10 radiant and necrotic damage; half damage on a miss. The target is dazed (save ends) but otherwise unharmed by this release of energy. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Lich Apparent -->
+  <RulesElement name="Lich Apparent" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> Your goal in life has been clear to you for some time. You will transcend life and become one of the most powerful of undead - a lich. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_40_01,ID_TIV_POWER_LIBRA_NECROMATICA_40_02,ID_TIV_POWER_LIBRA_NECROMATICA_40_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_40_01,ID_TIV_POWER_LIBRA_NECROMATICA_40_02,ID_TIV_POWER_LIBRA_NECROMATICA_40_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_40_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_40_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_40_03" type="Power" Level="20" />
+    </rules>
+Your goal in life has been clear to you for some time. You will transcend life and become one of the most powerful of undead - a lich.
+Not just any run-of-the-mill lich mind you. Simply making a phylactery to hold your soul and performing the ritual as soon as possible is not enough to comfort you. You will wait until you are deep into your living power. It is your plan to be an elite among lichdom. To that end you will master ever more spells and amass great personal power.
+There is more than just your personal abilities to consider. You must also prepare the lair in which you plan to spend eternity. There are creature comforts to place, interesting books to store, traps to design, and useful followers to recruit and train.
+Most mortals give up their lives when fate and the gods say it is time. But not you. You will only surrender your life when you are ready and on your own terms. You will not pray that a kindly deity provides you a comfortable afterlife. You will see to your own eternity, thank you very much.
+Depending on who your companions in life are, you might want to keep your plans for the future to yourself. Your adventuring allies probably view undead as prey rather than a future career choice. Yet what they feel about the undead matters not to you - only how well do they perform in the task of preparing you for your goal.
+</RulesElement>
+  <RulesElement name="Necromatic Aura" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, any enemies that are adjacent to you at the end of your turn take 5 necromatic damage. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Necromatic Aura: When you spend an action point to take an extra action, any enemies that are adjacent to you at the end of your turn take 5 necromatic damage." />
+    </rules>
+When you spend an action point to take an extra action, any enemies that are adjacent to you at the end of your turn take 5 necromatic damage.
+</RulesElement>
+  <RulesElement name="Growing Resistance" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> You gain resist 5 necrotic that stacks with other sources of resistance. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="resist:necrotic" value="+5" type="Racial Trait" zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="Racial Trait" non-zero="true" />
+    </rules>
+You gain resist 5 necrotic that stacks with other sources of resistance.
+</RulesElement>
+  <RulesElement name="Growing Regeneration" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you are bloodied you gain regeneration 5. This regeneration will not function in a round where you took radiant or fire damage. Regeneration becomes 10 at 21st level.  </specific>
+    <specific name="Level"> 16 </specific>
+When you are bloodied you gain regeneration 5. This regeneration will not function in a round where you took radiant or fire damage. Regeneration becomes 10 at 24th level. 
+</RulesElement>
+  <RulesElement name="Shadow Ray" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_40_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Lich Apparent </Prereqs>
+    <Flavor> Blazing purple energy strikes out at your foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Lich Apparent Attack 11 </specific>
+    <specific name="Keywords"> Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Intelligence vs Reflex </specific>
+    <specific name="Hit"> 2d8 + Constitution or Intelligence modifier necrotic damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Lich Wind" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_40_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,12 </Category>
+    <Prereqs> Lich Apparent </Prereqs>
+    <Flavor> You shall not fall in battle. You have far too much to die for than to get killed now! </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Lich Apparent Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Effect"> You spend a healing surge and gain +2 bonus to all defenses until the start of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Frostburn" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_40_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Lich Apparent </Prereqs>
+    <Flavor> You tap into the cold, shadow energy of death and fling it out where it bursts, filling a small area with bone chilling cold that cramps muscles. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Lich Apparent Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Cold, Implement, Necrotic, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 20 squares </specific>
+    <specific name="Target"> Each creature in burst  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier cold and necrotic damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> The burst creates a zone that is considered difficult terrain until the end of your next turn. Any creature that starts its turn in the zone takes 10 necrotic damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Shadowfell Dancer -->
+  <RulesElement name="Shadowfell Dancer" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> You don't just cloak yourself in shadow. You become the shadow itself. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_50_01,ID_TIV_POWER_LIBRA_NECROMATICA_50_02,ID_TIV_POWER_LIBRA_NECROMATICA_50_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_50_01,ID_TIV_POWER_LIBRA_NECROMATICA_50_02,ID_TIV_POWER_LIBRA_NECROMATICA_50_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_50_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_50_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_50_03" type="Power" Level="20" />
+    </rules>
+As you have studied necromancy, you have found yourself more interested in the living shadow-based creatures of the Shadowfell than the undead. You find the warped mirror relationship between your world and the shadow world to be fascinating.
+In point of fact, the shadow realm seems much more interesting than the mortal world you live in. The boundaries of space, of time, and of light or shadow seem to be malleable there. Reality itself is more flexible. This appeals to you. You like the thought of shaping reality to your own desires and of going where a physical body can not.
+You don't just cloak yourself in shadow. You become the shadow itself. Even in your solid body you move gracefully like the flickering shadow in the moonlight. 
+Now you have undertaken to learn everything that you can about what it means to be of the shadows. You study anything you can find about the Shadowfell, keeping careful notes of what places reportedly allow access. You seek out denizens of that place that are visiting your world to test yourself against them.
+Your ultimate goal is to become strong enough to travel the Shadowfell and any other shadow realms you can find without having to worry that such places are too dangerous for you to enter.
+</RulesElement>
+  <RulesElement name="Shadow Stalker" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you are insubstantial you gain a power bonus to all arcane damage rolls equal to your Constitution modifier. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="Class Feature" condition="when, insubstantial, you gain a bonus to damage rolls with the Arcane keyword" />
+    </rules>
+When you are insubstantial you gain a power bonus to all arcane damage rolls equal to your Constitution modifier.
+</RulesElement>
+  <RulesElement name="Shadow Switch" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point, instead of an extra action you may become insubstantial until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Shadow Switch: When you spend an action point, instead of an extra action you may become insubstantial until the end of your next turn." />
+    </rules>
+When you spend an action point, instead of an extra action you may become insubstantial until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Death Fade" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you reduce an enemy to 0 HP or less you become insubstantial until the end of your next turn.  </specific>
+    <specific name="Level"> 16 </specific>
+When you reduce an enemy to 0 HP or less you become insubstantial until the end of your next turn. 
+</RulesElement>
+  <RulesElement name="Fading Shot" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_50_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Shadowfell Dancer </Prereqs>
+    <Flavor> You fade to shadow form and transfer the mass loss into kinetic energy that you fling at your enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Shadowfell Dancer Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Force, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Intelligence vs AC </specific>
+    <specific name="Hit"> 2d10 + Constitution modifier force damage. This attack does full damage to insubstantial foes. You turn insubstantial until the end of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Shadowfell Refuge" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_50_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_19,12 </Category>
+    <Prereqs> Shadowfell Dancer </Prereqs>
+    <Flavor> You and up to two allies are whisked out of reality and pause just short of taking form in the Shadowfell. There you may take recuperative or actions until your connection to the mortal realm pulls you back to where you and any allies originally stood. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Shadowfell Dancer Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Healing, Teleportation </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> You are up to two willing allies adjacent to you. </specific>
+    <specific name="Effect"> All of you are taken out of play for 3 rounds as your characters are sent to a astral bubble just outside of the shadowfell. While there you may use a healing surge each round, make Heal skill checks, or even cast utility spells and activate items. At the end of the effect you return to the squares you left. If they are no longer vacant, then you all arrive in the nearest unoccupied space to where you were. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Blind" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_50_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Shadowfell Dancer </Prereqs>
+    <Flavor> You pull shadow stuff from the Shadowfell and fling it spinning out at your foes where it flies off in all directions, clinging to everyone in range. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Shadowfell Dancer Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Illusion, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+    <specific name="Target"> Each creature in burst  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d10 + Constitution modifier necrotic damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect" />
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Vampire's Lover -->
+  <RulesElement name="Vampire's Lover" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> When it comes to the undead, one form seems to combine the best of the living world with the unending life of the undead world. The vampire. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_60_01,ID_TIV_POWER_LIBRA_NECROMATICA_60_02,ID_TIV_POWER_LIBRA_NECROMATICA_60_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_60_01,ID_TIV_POWER_LIBRA_NECROMATICA_60_02,ID_TIV_POWER_LIBRA_NECROMATICA_60_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_60_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_60_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_60_03" type="Power" Level="20" />
+    </rules>
+When it comes to the undead, one form seems to combine the best of the living world with the unending life of the undead world. The vampire. They have fully functioning bodies that do not decay, keep their emotions, gain several powers, and enjoy many of the same luxuries that the living do. In the right circumstances, vampires can even circulate among the living without instantly being spotted as an undead.
+The trade offs of the coffin bed and hunger to drink blood seem like trivial things compared to what there is to gain. That whole "destroyed by sunlight" thing is a bit harsh though. That is why you will become not one of those weak vampires that rise after being drained, but a vampire lord.
+You have heard that sometimes arcane abilities transfer. That is a reason why you advance your necromantic studies. The other reason is that you need to find a vampire lord and then convince it to grant you the dark gift of the undying ritual. You will defeat any of his allies that oppose you to show that you are more worthy of the lord's attention. Any enemies of the vampire lord will be dealt with by you. You will become so indispensable to your vampire lord that they will want you to be with them for eternity. Then you too will be a vampire lord.
+</RulesElement>
+  <RulesElement name="Taste for Blood" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point and make a melee attack on a bloodied target, if you hit you drain some of their blood so that the target is weakened (save ends) and you regain hit points equal to half your healing surge value. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Taste for Blood: When you spend an action point and make a melee attack on a bloodied target, if you hit you drain some of their blood so that the target is weakened (save ends) and you regain hit points equal to half your healing surge value." />
+    </rules>
+When you spend an action point and make a melee attack on a bloodied target, if you hit you drain some of their blood so that the target is weakened (save ends) and you regain hit points equal to half your healing surge value.
+</RulesElement>
+  <RulesElement name="Force of Will" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Before you attempt a save against a charm effect, you can elect to spend a healing surge and gain a +3 to that save. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="Saving Throws" value="+3" type="Class Feature" condition="against a charm effect, if you spend a healing surge" />
+    </rules>
+Before you attempt a save against a charm effect, you can elect to spend a healing surge and gain a +3 to that save.
+</RulesElement>
+  <RulesElement name="Wall Cling" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> You can spider climb at speed 4 just like the vampires do.  </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Secondary Speed"> climb 4 (spider climb) </specific>
+    <rules>
+      <statadd name="Speed" value="4" condition="when using spider climb (climb 4)" />
+    </rules>
+You can spider climb at speed 4 just like the vampires do.
+</RulesElement>
+  <RulesElement name="Dominating Gaze" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_60_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Vampire's Lover </Prereqs>
+    <Flavor> Your eyes are intoxicating and your force of personality vast. One could get lost in either one of them - together they cause others to do your bidding. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Vampire's Lover Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Charm, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Effect" />
+    <specific name="Target"> One creature that can see your face </specific>
+    <specific name="Attack"> Intelligence or Charisma vs Will </specific>
+    <specific name="Hit"> Target is dominated (save ends, save is at -1). </specific>
+    <specific name="After Effect"> The target is dazed until the end of its next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Mist Form" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_60_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,12 </Category>
+    <Prereqs> Vampire's Lover </Prereqs>
+    <Flavor> You change your substance to mist but retain control over your direction of travel and senses through force of will. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Vampire's Lover Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Polymorph </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Effect"> You become mist, and are insubstantial and have a fly speed 6 (hover) until the end of the encounter (or five minutes out of combat). While in this form you cannot make attacks or manipulate objects. You can end this spell as a minor action to turn solid. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Power Blast" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_60_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Vampire's Lover </Prereqs>
+    <Flavor> Vampires are impressed by raw power. This is raw magic energy that you command to inflict heavy damage on your enemies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Vampire's Lover Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Target"> One creature  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 5d10 + Constitution modifier radiant damage, and ongoing 10 damage (save ends). </specific>
+    <specific name="Miss"> 3d10 + Constitution modifier radiant damage and ongoing 5 damage (save ends). </specific>
+    <specific name="Effect"> Targets that die from this attack are partially melted where the blast struck them. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Blackguard -->
+  <RulesElement name="Blackguard" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> The Blackguard commands necromantic energy for direct combat purposes and to make the undead do their bidding. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_20_01,ID_TIV_POWER_LIBRA_NECROMATICA_20_02,ID_TIV_POWER_LIBRA_NECROMATICA_20_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_20_01,ID_TIV_POWER_LIBRA_NECROMATICA_20_02,ID_TIV_POWER_LIBRA_NECROMATICA_20_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_20_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_20_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_20_03" type="Power" Level="20" />
+    </rules>
+You are probably part warrior, warlord or paladin and likely unaligned or evil. Just walking the path between life and death wasn't enough for you. You seek to master both death and whatever lays beyond death. The Blackguard commands necromantic energy for direct combat purposes and to make the undead do their bidding.
+Blackguards are sometimes found in temples of gods that favor the use of undead. Someone has to keep the undead in line and lead them into battle. That would be the Blackguard's task.
+Liches and vampires that keep living servants often find that a Blackguard is just what they need to both herd the undead minions around and to battle the occasional dogooder that passes by looking to smite evil.
+Pure magic using types, even if they are necromancers themselves, often find that partnering with a blackguard gives them a melee capable ally that understands the finer points of necromancy during dinner conversation.
+It is believed that the tradition of the Blackguard was formed in the ancient Atlantean culture before their trafficking with demons sent their island home plunging into the sea. If you ever find an undead that was around when Atlantis sank you'll be sure to ask them.
+</RulesElement>
+  <RulesElement name="Killer Action" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to make an extra attack, you gain combat advantage against the target and do extra damage equal to your Constitution modifier if you hit. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Killer Action: When you spend an action point to make an extra attack, you gain combat advantage against the target and do extra damage equal to your Constitution modifier if you hit." />
+    </rules>
+When you spend an action point to make an extra attack, you gain combat advantage against the target and do extra damage equal to your Constitution modifier if you hit.
+</RulesElement>
+  <RulesElement name="Cause Despair" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you score a critical hit against a target, that target takes a -2 penalty to attacks until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+When you score a critical hit against a target, that target takes a -2 penalty to attacks until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Corrosive Soul" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_20_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you hit a target that is aligned good or lawful good you deal extra damage equal to your Constitution modifier to the target. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="item" condition="against aligned good or lawful good targets" />
+    </rules>
+When you hit a target that is aligned good or lawful good you deal extra damage equal to your Constitution modifier to the target. 
+</RulesElement>
+  <RulesElement name="Blazing Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_20_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Blackguard </Prereqs>
+    <Flavor> With a few quick words you empower your weapon with sizzling necromantic power, then use that energy to propel yourself in a spinning arc of blazing death. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Blackguard Attack 11 </specific>
+    <specific name="Keywords"> Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 1 (weapon) </specific>
+    <specific name="Effect" />
+    <specific name="Target"> All enemies in burst you can see </specific>
+    <specific name="Attack"> Constitution or Strength vs AC </specific>
+    <specific name="Hit"> 1[W] + Constitution or Strength modifier damage plus 1d10 necrotic energy damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Blood Friend" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_20_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,12 </Category>
+    <Prereqs> Blackguard </Prereqs>
+    <Flavor> The blood you bleed when an undead hits you becomes the sacrifice that bonds the undead to your will. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Blackguard Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Charm </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> You are damaged by an undead attacker </specific>
+    <specific name="Effect"> You spend a healing surge. Rather than regain hit points, the undead that just struck you is dominated (save ends). The save is at -2. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Pillar of Flaming Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_20_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Blackguard </Prereqs>
+    <Flavor> You tap into one of the fiery hells and call down a pillar of fiery destruction to fry your foes while draining their energy. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Blackguard Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 5 within 20 squares </specific>
+    <specific name="Target"> All enemy in burst.  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier fire and necrotic damage, and the target is weakened (save ends). </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> Undead targets will take half damage and become dominated (save ends) on a hit and will take only one quarter damage on a miss. Note that fire resistant creatures will be damaged by this spell unless they also have resist necrotic as well. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_20_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Guardian of Mortality -->
+  <RulesElement name="Guardian of Mortality" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> Your role in your society is to see that the dead are sent off to the afterlife with due respect as well as to honor guardian ancestors that linger as undead and to destroy the dangerous undead that sully the glory of life and seek to harm the living. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_30_01,ID_TIV_POWER_LIBRA_NECROMATICA_30_02,ID_TIV_POWER_LIBRA_NECROMATICA_30_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_30_01,ID_TIV_POWER_LIBRA_NECROMATICA_30_02,ID_TIV_POWER_LIBRA_NECROMATICA_30_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_30_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_30_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_30_03" type="Power" Level="20" />
+    </rules>
+Your role in your society is to see that the dead are sent off to the afterlife with due respect as well as to honor guardian ancestors that linger as undead and to destroy the dangerous undead that sully the glory of life and seek to harm the living.
+Perhaps you are a necromancer mixed with a primal class. This unlikely seeming combination works with the spirits of the world as well as the spirits of the dead to maintain harmony for the living. In areas not prone to primal spell casters, sometimes the Guardian movement rises to become a buffer between the places where life is lived and those where the dead are interred. This is most common among the dwarven folk who's dead are often just right down a tunnel path from "home".
+Those that study necromancy in order to better combat the undead often gravitate towards this path as they advance in level. A Guardian's role as buffer between the worlds of the living and the dead comes with powers that are effective against the undead.
+As a Guardian of Mortality you know that life is precious and should be protected. You also know that most undead do not rest in eternal peace. With your training and skills you will seek to safeguard the living and bring final rest to the walking dead.
+</RulesElement>
+  <RulesElement name="Evade Undead" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, you become invisible to undead until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Evade Undead: When you spend an action point to take an extra action, you become invisible to undead until the end of your next turn." />
+    </rules>
+When you spend an action point to take an extra action, you become invisible to undead until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Power of Life" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend a healing surge, you can restore hit points equal to one half your level plus your Constitution modifier to an adjacent ally. </specific>
+    <specific name="Level"> 11 </specific>
+When you spend a healing surge, you can restore hit points equal to one half your level plus your Constitution modifier to an adjacent ally.
+</RulesElement>
+  <RulesElement name="Destroyer of the Dead" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_30_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Any saving throws made by undead creatures to remove effects you have placed on them are at -2. Additionally, you add your Constitution modifier as bonus radiant damage to any attack you make against an undead creature. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="Class Feature" condition="against aligned good or lawful good targets" />
+    </rules>
+Any saving throws made by undead creatures to remove effects you have placed on them are at -2. Additionally, you add your Constitution modifier as bonus radiant damage to any attack you make against an undead creature. 
+</RulesElement>
+  <RulesElement name="Life Pulse" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_30_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Guardian of Mortality </Prereqs>
+    <Flavor> You can exert the power of life as well as the energy of death. Calling upon the positive energy of the living world you invoke a pulse of life that damages foes and aids your allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Guardian of Mortality Attack 11 </specific>
+    <specific name="Keywords"> Healing, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 4 </specific>
+    <specific name="Effect"> Allies in the blast can spend a healing surge. </specific>
+    <specific name="Target"> Each enemy in blast </specific>
+    <specific name="Attack"> Constitution vs Fortitude </specific>
+    <specific name="Hit"> 2d10 + Constitution modifier radiant damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Undead Ward" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_30_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CATEGORY_31,12 </Category>
+    <Prereqs> Guardian of Mortality </Prereqs>
+    <Flavor> You weave a protective charm that will shield your allies from the dangers of battling the undead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Guardian of Mortality Utility 12 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> You and all allies in the burst. </specific>
+    <specific name="Effect"> Until the end of the encounter and the affected allies gain resist 5 necrotic and immunity to diseases. Saves against ongoing damage from attacks by undead are at +2. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Synergy of Life &amp; Death" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_30_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Guardian of Mortality </Prereqs>
+    <Flavor> Mixing the positive energy of life and the negative energy of death you create a potent and unstable spell that is damaging to the living and undead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Guardian of Mortality Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic, Radiant </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Target"> One creature  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d10 + Constitution modifier radiant and necrotic damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> At the start of your next turn, the target is the center of a burst 5 energy explosion that affects only your enemies: Intelligence or Constitution vs Fortitude; 3d10 radiant and necrotic damage; half damage on a miss. The target is dazed (save ends) but otherwise unharmed by this release of energy. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_30_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Lich Apparent -->
+  <RulesElement name="Lich Apparent" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> Your goal in life has been clear to you for some time. You will transcend life and become one of the most powerful of undead - a lich. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_40_01,ID_TIV_POWER_LIBRA_NECROMATICA_40_02,ID_TIV_POWER_LIBRA_NECROMATICA_40_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_40_01,ID_TIV_POWER_LIBRA_NECROMATICA_40_02,ID_TIV_POWER_LIBRA_NECROMATICA_40_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_40_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_40_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_40_03" type="Power" Level="20" />
+    </rules>
+Your goal in life has been clear to you for some time. You will transcend life and become one of the most powerful of undead - a lich.
+Not just any run-of-the-mill lich mind you. Simply making a phylactery to hold your soul and performing the ritual as soon as possible is not enough to comfort you. You will wait until you are deep into your living power. It is your plan to be an elite among lichdom. To that end you will master ever more spells and amass great personal power.
+There is more than just your personal abilities to consider. You must also prepare the lair in which you plan to spend eternity. There are creature comforts to place, interesting books to store, traps to design, and useful followers to recruit and train.
+Most mortals give up their lives when fate and the gods say it is time. But not you. You will only surrender your life when you are ready and on your own terms. You will not pray that a kindly deity provides you a comfortable afterlife. You will see to your own eternity, thank you very much.
+Depending on who your companions in life are, you might want to keep your plans for the future to yourself. Your adventuring allies probably view undead as prey rather than a future career choice. Yet what they feel about the undead matters not to you - only how well do they perform in the task of preparing you for your goal.
+</RulesElement>
+  <RulesElement name="Necromatic Aura" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, any enemies that are adjacent to you at the end of your turn take 5 necromatic damage. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Necromatic Aura: When you spend an action point to take an extra action, any enemies that are adjacent to you at the end of your turn take 5 necromatic damage." />
+    </rules>
+When you spend an action point to take an extra action, any enemies that are adjacent to you at the end of your turn take 5 necromatic damage.
+</RulesElement>
+  <RulesElement name="Growing Resistance" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> You gain resist 5 necrotic that stacks with other sources of resistance. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="resist:necrotic" value="+5" type="Racial Trait" zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="Racial Trait" non-zero="true" />
+    </rules>
+You gain resist 5 necrotic that stacks with other sources of resistance.
+</RulesElement>
+  <RulesElement name="Growing Regeneration" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_40_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you are bloodied you gain regeneration 5. This regeneration will not function in a round where you took radiant or fire damage. Regeneration becomes 10 at 21st level.  </specific>
+    <specific name="Level"> 16 </specific>
+When you are bloodied you gain regeneration 5. This regeneration will not function in a round where you took radiant or fire damage. Regeneration becomes 10 at 24th level. 
+</RulesElement>
+  <RulesElement name="Shadow Ray" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_40_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Lich Apparent </Prereqs>
+    <Flavor> Blazing purple energy strikes out at your foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Lich Apparent Attack 11 </specific>
+    <specific name="Keywords"> Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Intelligence vs Reflex </specific>
+    <specific name="Hit"> 2d8 + Constitution or Intelligence modifier necrotic damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Lich Wind" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_40_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,12 </Category>
+    <Prereqs> Lich Apparent </Prereqs>
+    <Flavor> You shall not fall in battle. You have far too much to die for than to get killed now! </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Lich Apparent Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Effect"> You spend a healing surge and gain +2 bonus to all defenses until the start of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Burn of the Frost" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_40_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Lich Apparent </Prereqs>
+    <Flavor> You tap into the cold, shadow energy of death and fling it out where it bursts, filling a small area with bone chilling cold that cramps muscles. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Lich Apparent Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Cold, Implement, Necrotic, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 20 squares </specific>
+    <specific name="Target"> Each creature in burst  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier cold and necrotic damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> The burst creates a zone that is considered difficult terrain until the end of your next turn. Any creature that starts its turn in the zone takes 10 necrotic damage. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_40_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Shadowfell Dancer -->
+  <RulesElement name="Shadowfell Dancer" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> You don't just cloak yourself in shadow. You become the shadow itself. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_50_01,ID_TIV_POWER_LIBRA_NECROMATICA_50_02,ID_TIV_POWER_LIBRA_NECROMATICA_50_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_50_01,ID_TIV_POWER_LIBRA_NECROMATICA_50_02,ID_TIV_POWER_LIBRA_NECROMATICA_50_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_50_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_50_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_50_03" type="Power" Level="20" />
+    </rules>
+As you have studied necromancy, you have found yourself more interested in the living shadow-based creatures of the Shadowfell than the undead. You find the warped mirror relationship between your world and the shadow world to be fascinating.
+In point of fact, the shadow realm seems much more interesting than the mortal world you live in. The boundaries of space, of time, and of light or shadow seem to be malleable there. Reality itself is more flexible. This appeals to you. You like the thought of shaping reality to your own desires and of going where a physical body can not.
+You don't just cloak yourself in shadow. You become the shadow itself. Even in your solid body you move gracefully like the flickering shadow in the moonlight. 
+Now you have undertaken to learn everything that you can about what it means to be of the shadows. You study anything you can find about the Shadowfell, keeping careful notes of what places reportedly allow access. You seek out denizens of that place that are visiting your world to test yourself against them.
+Your ultimate goal is to become strong enough to travel the Shadowfell and any other shadow realms you can find without having to worry that such places are too dangerous for you to enter.
+</RulesElement>
+  <RulesElement name="Shadow Stalker" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you are insubstantial you gain a power bonus to all arcane damage rolls equal to your Constitution modifier. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="Class Feature" condition="when, insubstantial, you gain a bonus to damage rolls with the Arcane keyword" />
+    </rules>
+When you are insubstantial you gain a power bonus to all arcane damage rolls equal to your Constitution modifier.
+</RulesElement>
+  <RulesElement name="Shadow Switch" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point, instead of an extra action you may become insubstantial until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Shadow Switch: When you spend an action point, instead of an extra action you may become insubstantial until the end of your next turn." />
+    </rules>
+When you spend an action point, instead of an extra action you may become insubstantial until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Death Fade" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_50_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you reduce an enemy to 0 HP or less you become insubstantial until the end of your next turn.  </specific>
+    <specific name="Level"> 16 </specific>
+When you reduce an enemy to 0 HP or less you become insubstantial until the end of your next turn. 
+</RulesElement>
+  <RulesElement name="Fading Shot" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_50_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Shadowfell Dancer </Prereqs>
+    <Flavor> You fade to shadow form and transfer the mass loss into kinetic energy that you fling at your enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Shadowfell Dancer Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Force, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Effect" />
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution or Intelligence vs AC </specific>
+    <specific name="Hit"> 2d10 + Constitution modifier force damage. This attack does full damage to insubstantial foes. You turn insubstantial until the end of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Shadowfell Refuge" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_50_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_19,12 </Category>
+    <Prereqs> Shadowfell Dancer </Prereqs>
+    <Flavor> You and up to two allies are whisked out of reality and pause just short of taking form in the Shadowfell. There you may take recuperative or actions until your connection to the mortal realm pulls you back to where you and any allies originally stood. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Shadowfell Dancer Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Healing, Teleportation </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> You are up to two willing allies adjacent to you. </specific>
+    <specific name="Effect"> All of you are taken out of play for 3 rounds as your characters are sent to a astral bubble just outside of the shadowfell. While there you may use a healing surge each round, make Heal skill checks, or even cast utility spells and activate items. At the end of the effect you return to the squares you left. If they are no longer vacant, then you all arrive in the nearest unoccupied space to where you were. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Blind" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_50_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Shadowfell Dancer </Prereqs>
+    <Flavor> You pull shadow stuff from the Shadowfell and fling it spinning out at your foes where it flies off in all directions, clinging to everyone in range. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Shadowfell Dancer Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Illusion, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+    <specific name="Target"> Each creature in burst  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 3d10 + Constitution modifier necrotic damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect" />
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_50_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Vampire's Lover -->
+  <RulesElement name="Vampire's Lover" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Prereqs> Necromancer </Prereqs>
+    <print-prereqs> Necromancer </print-prereqs>
+    <Flavor> When it comes to the undead, one form seems to combine the best of the living world with the unending life of the undead world. The vampire. </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_01, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_02, ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_LIBRA_NECROMATICA_60_01,ID_TIV_POWER_LIBRA_NECROMATICA_60_02,ID_TIV_POWER_LIBRA_NECROMATICA_60_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_LIBRA_NECROMATICA_60_01,ID_TIV_POWER_LIBRA_NECROMATICA_60_02,ID_TIV_POWER_LIBRA_NECROMATICA_60_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_60_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_60_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_LIBRA_NECROMATICA_60_03" type="Power" Level="20" />
+    </rules>
+When it comes to the undead, one form seems to combine the best of the living world with the unending life of the undead world. The vampire. They have fully functioning bodies that do not decay, keep their emotions, gain several powers, and enjoy many of the same luxuries that the living do. In the right circumstances, vampires can even circulate among the living without instantly being spotted as an undead.
+The trade offs of the coffin bed and hunger to drink blood seem like trivial things compared to what there is to gain. That whole "destroyed by sunlight" thing is a bit harsh though. That is why you will become not one of those weak vampires that rise after being drained, but a vampire lord.
+You have heard that sometimes arcane abilities transfer. That is a reason why you advance your necromantic studies. The other reason is that you need to find a vampire lord and then convince it to grant you the dark gift of the undying ritual. You will defeat any of his allies that oppose you to show that you are more worthy of the lord's attention. Any enemies of the vampire lord will be dealt with by you. You will become so indispensable to your vampire lord that they will want you to be with them for eternity. Then you too will be a vampire lord.
+</RulesElement>
+  <RulesElement name="Taste the Blood" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point and make a melee attack on a bloodied target, if you hit you drain some of their blood so that the target is weakened (save ends) and you regain hit points equal to half your healing surge value. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Taste for Blood: When you spend an action point and make a melee attack on a bloodied target, if you hit you drain some of their blood so that the target is weakened (save ends) and you regain hit points equal to half your healing surge value." />
+    </rules>
+When you spend an action point and make a melee attack on a bloodied target, if you hit you drain some of their blood so that the target is weakened (save ends) and you regain hit points equal to half your healing surge value.
+</RulesElement>
+  <RulesElement name="Force of Will" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Before you attempt a save against a charm effect, you can elect to spend a healing surge and gain a +3 to that save. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="Saving Throws" value="+3" type="Class Feature" condition="against a charm effect, if you spend a healing surge" />
+    </rules>
+Before you attempt a save against a charm effect, you can elect to spend a healing surge and gain a +3 to that save.
+</RulesElement>
+  <RulesElement name="Wall Cling" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_LIBRA_NECROMATICA_60_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> You can spider climb at speed 4 just like the vampires do.  </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Secondary Speed"> climb 4 (spider climb) </specific>
+    <rules>
+      <statadd name="Speed" value="4" condition="when using spider climb (climb 4)" />
+    </rules>
+You can spider climb at speed 4 just like the vampires do.
+</RulesElement>
+  <RulesElement name="Gaze Domination" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_60_01" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Vampire's Lover </Prereqs>
+    <Flavor> Your eyes are intoxicating and your force of personality vast. One could get lost in either one of them - together they cause others to do your bidding. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Vampire's Lover Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Charm, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Effect" />
+    <specific name="Target"> One creature that can see your face </specific>
+    <specific name="Attack"> Intelligence or Charisma vs Will </specific>
+    <specific name="Hit"> Target is dominated (save ends, save is at -1). </specific>
+    <specific name="After Effect"> The target is dazed until the end of its next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Form of the Mist" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_60_02" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,12 </Category>
+    <Prereqs> Vampire's Lover </Prereqs>
+    <Flavor> You change your substance to mist but retain control over your direction of travel and senses through force of will. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Vampire's Lover Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Polymorph </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Effect"> You become mist, and are insubstantial and have a fly speed 6 (hover) until the end of the encounter (or five minutes out of combat). While in this form you cannot make attacks or manipulate objects. You can end this spell as a minor action to turn solid. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Power Blast" type="Power" internal-id="ID_TIV_POWER_LIBRA_NECROMATICA_60_03" source="Libri Necromatica" revision-date="11/27/2010 11:30:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Vampire's Lover </Prereqs>
+    <Flavor> Vampires are impressed by raw power. This is raw magic energy that you command to inflict heavy damage on your enemies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Vampire's Lover Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Target"> One creature  </specific>
+    <specific name="Attack"> Intelligence or Constitution vs Fortitude </specific>
+    <specific name="Hit"> 5d10 + Constitution modifier radiant damage, and ongoing 10 damage (save ends). </specific>
+    <specific name="Miss"> 3d10 + Constitution modifier radiant damage and ongoing 5 damage (save ends). </specific>
+    <specific name="Effect"> Targets that die from this attack are partially melted where the blast struck them. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_LIBRA_NECROMATICA_60_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

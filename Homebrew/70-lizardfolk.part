@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>0</Version>
+    <Filename>70-lizardfolk.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/70-lizardfolk.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/70-lizardfolk.txt</VersionAddress>
+  </UpdateInfo>
+
+<!-- Lizardfolk: One spelljamming race for the astral sea -->
+<!-- 70-lizardfolk.part, version 0.00 -->
+<!-- Original release: 14-December-2011; Last modified: 14-December-2011 -->
+<!-- Test compiled with CBLoader build V1.3.0 -->
+
+<Changelog>
+Released 14-December-2011 Lizardfolk race added.
+</Changelog>
+
+<!-- Section 0: Source Declarations -->
+<RulesElement name="Spelljammer" type="source" internal-id="ID_WOG_SOURCE_TSR1049" source="Core">
+  <specific name="IsBeta">1</specific>
+  <specific name="URL">http://en.wikipedia.org/wiki/Spelljammer</specific>
+  <specific name="Release Date">11/01/1989</specific>
+</RulesElement>
+
+<!-- Section 1: Races -->
+<RulesElement name="Lizardfolk" type="Race" internal-id="ID_WOG_SJ_RACE_1" source="Spelljammer">
+  <Prereqs> ~LIZARDFOLK </Prereqs>
+  <Flavor> Spiritual, but aggressive, reptilian humanoids that protect their own kin by any means necessary.  </Flavor>
+  <specific name="Size"> Medium </specific>
+  <specific name="Speed"> 6 squares (swamp walk), Swim 4 squares </specific>
+  <specific name="Characteristics"> Aggressive, fierce, insular, powerful, savage, spiritual, tough </specific>
+  <specific name="Physical Qualities"> Lizardfolk are reptilian humanoids typically standing from five to seven feet tall. Their scales are normally dull, earthy colors such as green, brown, or gray. They have a tail for balance, which measures three to four feet long. Typical weight is between 200 and 300 pounds. There are several species of lizardfolk however and appearances can vary. They often decorate their bodies with tattoos and body paint. </specific>
+  <specific name="Playing"> Lizardfolk society is primarily patriarchal, with the strongest member normally in charge. Shamans are typically counselors, and normally do not lead tribes. Where ever they make their home, survival is the main priority for any lizardfolk. Lizardfolk mostly worship the deity Semuanya, whose main agenda is the reproduction and survival of the species. Semuanya's Bog lies on an island in the Astral Sea. The bog is an untamed primordial place, and is filled with lizardfolk petitioners, reptiles of all types, and what will eventually be their meals.
+    Lizardfolk are normally found in temperate marshes and swamps. Lizardfolk are passable swimmers however, and may be found in underwater cave systems.
+	Lizardfolk in the planes are more advanced than their groundling cousins. They seek to continue the advancement of their race. Lizardfolk mostly use the same sort of astral vessels as humans, but have a special breeding ship design called the bloatfly. The bloatfly is a heavily armed vessel containing a large tank of water for incubating eggs.
+	Lizardfolk are omnivores, though they have a preference for meat. </specific>
+  <specific name="Vision"> Normal </specific>
+  <specific name="Average Height"> 5'-7' </specific>
+  <specific name="Average Weight"> 200-300 lb. </specific>
+  <specific name="Ability Scores"> +2 Strength, +2 Dexterity or +2 Wisdom </specific>
+  <specific name="Languages"> Common, Draconic </specific>
+  <specific name="Skill Bonuses"> +2 Athletics, +2 Nature </specific>
+  <specific name="Racial Traits"> ID_WOG_SJ_RACIAL_TRAIT_1, ID_WOG_SJ_RACIAL_TRAIT_2, ID_WOG_SJ_RACIAL_TRAIT_3, ID_WOG_SJ_RACIAL_TRAIT_4, ID_FMP_RACIAL_TRAIT_632 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_LIZARDFOLK" type="Grants" />
+    <statadd name="Speed" value="+6" />
+    <textstring name="Average Height" value="5'-7'" />
+    <textstring name="Average Weight" value="200-300 lb." />
+    <textstring name="Size" value="Medium" />
+    <select type="Race Ability Bonus" number="1" Category="Dexterity|Wisdom" />
+  </rules>
+Play a Lizardfolk if you want ...
+   </RulesElement>
+<RulesElement name="Among Another Race (Lizardfolk)" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_AMONG_ANOTHER_RACE_(LIZARDFOLK)" source="Spelljammer">
+  <Category> ID_FMP_BACKGROUND_88 </Category>
+  <Prereqs> ~LIZARDFOLK </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_BACKGROUND_88 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
+  </rules>
+You were raised like a Lizardfolk.
+   </RulesElement>
+<RulesElement name="Lizardfolk" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" source="Spelljammer">
+  <specific name="_SupportsID"> ID_WOG_SJ_RACE_1 </specific>
+You count as a Lizardfolk for meeting prerequisites.
+   </RulesElement>
+<RulesElement name="Past Spirit (Lizardfolk)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(LIZARDFOLK)" source="Spelljammer">
+  <Category> ID_FMP_CLASS_FEATURE_2064 </Category>
+  <Prereqs> !Lizardfolk Race,!Lizardfolk CountsAsRace </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" type="CountsAsRace" />
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_2" type="Racial Trait" />
+  </rules>
+You are considered a Lizardfolk for the purpose of meeting feat prerequisites. You gain swamp walk.
+   </RulesElement>
+<RulesElement name="Lizardfolk" type="Grants" internal-id="ID_INTERNAL_GRANTS_LIZARDFOLK" source="Spelljammer">
+  <specific name="_SupportsID"> ID_WOG_SJ_RACE_1 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+    <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_1" type="Racial Trait" />
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_2" type="Racial Trait" />
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_3" type="Racial Trait" />
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_4" type="Racial Trait" />
+    <grant name="ID_FMP_RACIAL_TRAIT_632" type="Racial Trait" />
+    <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
+    <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+    <grant name="ID_FMP_LANGUAGE_2" type="Language" />
+    <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+	<grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+    <grant name="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" type="CountsAsRace" />
+  </rules>
+</RulesElement>
+<RulesElement name="Hold Breath" type="Racial Trait" internal-id="ID_WOG_SJ_RACIAL_TRAIT_1" source="Spelljammer">
+  <specific name="Short Description"> You can hold your breath for up to 10 minutes without making Endurance checks. </specific>
+  <specific name="Level"> 1 </specific>
+Lizardfolk excel at swimming and often take to the water to stalk prey and evade pursuit. You can hold your breath for up to ten minutes without making Endurance checks to avoid suffocation instead of the normal three minute time period.
+</RulesElement>
+<RulesElement name="Swamp Walk" type="Racial Trait" internal-id="ID_WOG_SJ_RACIAL_TRAIT_2" source="Spelljammer">
+  <specific name="Short Description"> You ignore difficult terrain that is part of mud or shallow water. </specific>
+  <specific name="Level"> 1 </specific>
+You ignore difficult terrain that is part of mud or shallow water.
+</RulesElement>
+<RulesElement name="Swim Speed" type="Racial Trait" internal-id="ID_WOG_SJ_RACIAL_TRAIT_3" source="Spelljammer">
+  <specific name="Short Description"> You move through water without having to make Athletics checks to swim. </specific>
+  <specific name="Level"> 1 </specific>
+A creature that has a swim speed moves through water at that speed without having to make Athletics checks to swim.
+</RulesElement>
+<RulesElement name="Tail Slap" type="Racial Trait" internal-id="ID_WOG_SJ_RACIAL_TRAIT_4" source="Spelljammer">
+    <specific name="Short Description"> You have the tail slap encounter power. </specific>
+    <specific name="Level" />
+    <specific name="Powers"> ID_WOG_SJ_RACE_POWER_1 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class"> ID_WOG_SJ_RACE_1 </specific>
+    <specific name="_DisplayPowers"> ID_WOG_SJ_RACE_POWER_1 </specific>
+    <rules>
+      <grant name="ID_WOG_SJ_RACE_POWER_1" type="Power" />
+    </rules>
+You have the tail slap encounter power.
+</RulesElement>
+<RulesElement name="Tail Slap" type="Power" internal-id="ID_WOG_SJ_RACE_POWER_1" source="Spelljammer">
+    <Category> ID_WOG_SJ_RACIAL_TRAIT_4,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You quickly lash out with your tail at a nearby enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Lizardfolk Racial Attack </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength + 3 vs. AC, Dexterity + 3 vs. AC, or Wisdom + 3 vs. AC
+Level 11: Strength + 6 vs. AC, Dexterity + 6 vs. AC, or Wisdom + 6 vs. AC
+Level 21: Strength + 9 vs. AC, Dexterity + 9 vs. AC, or Wisdom + 9 vs. AC </specific>
+    <specific name="Hit"> 1d8 + Strength modifier, Dexterity modifier, or Wisdom modifier damage.
+Level 11: 2d8 + Strength modifier, Dexterity modifier, or Wisdom modifier damage
+Level 21: 3d8 + Strength modifier, Dexterity modifier, or Wisdom modifier damage. </specific>
+    <specific name="Class"> ID_WOG_SJ_RACE_1 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_WOG_SJ_RACIAL_TRAIT_4 </specific>
+  </RulesElement>
+</D20Rules>

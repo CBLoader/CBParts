@@ -1,0 +1,370 @@
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KoboldQuarterly#17.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/KoboldQuarterly#17.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/KoboldQuarterly#17.txt</VersionAddress>
+  </UpdateInfo>
+<RulesElement name="Dead Eyes and Battle Scars" type="source" internal-id="ID_TIV_SOURCE_KOBOLD_01" source="Core" >
+      <specific name="IsBeta"> 0 </specific>
+      <specific name="URL"> http://www.koboldquarterly.com/ </specific>
+      <specific name="Release Date"> 04/01/2011 </specific>
+</RulesElement>
+
+<!--Coded by Tivaan-->
+
+<RulesElement name="[Wound] - Body Cavity" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_01" source="Kobold Quarterly #17" revision-date="11/14/2011 5:45:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Suffered a critical hit from a battleaxe or heavy blade or taken a single hit that causes 50 or more hp damage. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Grants you the ability to wear one additional neck or waist slot magic item and a -2 penalty to Fortitude defense. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+           <statadd name="Fortitude Defense" value="-2" type="Feat" />
+       </rules>
+A massive injury removed a portion of your body that never regrew. A depression marks where the flesh once was. This empty space grants you the ability to wear one additional neck or waist slot magic item. The damage has permanently impaired your health. You take a -2 penalty to Fortitude defense.
+</RulesElement>
+
+<RulesElement name="[Wound] - Brain Damage" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_02" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Suffered a critical hit from a flail, mace, war hammer, battleaxe, or heavy blade. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You lose reasoning capability, you gain a +2 bonus to defense against attacks with the Psychic or Fear keywords and also means you take a -2 penalty on all Intelligence and Wisdom skills and checks. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+           <statadd name="Fortitude Defense" value="+2" type="Feat" condition="Against attacks with the Psychic or Fear keywords."/>
+         <statadd name="Reflex Defense" value="+2" type="Feat" condition="Against attacks with the Psychic or Fear keywords."/>
+         <statadd name="Will Defense" value="+2" type="Feat" condition="Against attacks with the Psychic or Fear keywords."/>
+         <statadd name="Arcana Misc" value="-2" type="Feat"/>
+         <statadd name="Dungeoneering Misc" value="-2" type="Feat"/>
+         <statadd name="Heal Misc" value="-2" type="Feat"/>
+         <statadd name="History Misc" value="-2" type="Feat"/>
+         <statadd name="Insight Misc" value="-2" type="Feat"/>
+         <statadd name="Nature Misc" value="-2" type="Feat"/>
+         <statadd name="Perception Misc" value="-2" type="Feat"/>
+         <statadd name="Religion Misc" value="-2" type="Feat"/>
+       </rules>
+A blow to the head has impaired your ability to think clearly. As a side effect of your lost reasoning capability, you gain a +2 feat bonus to defense against attacks with the Psychic or Fear keywords. Your slower brain also means you take a -2 penalty on all Intelligence and Wisdom skills and checks.
+</RulesElement>
+
+<RulesElement name="[Wound] - Burns" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_03" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, During the course of a single day, you must have suffered fire damage equal to at least 1/3 your total hp. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Grants you resist 3 to all attacks that target your AC or have the weapon keyword. You also gain a +2 bonus to Endurance checks to resist extremes of environmental heat and cold. You take a -4 penalty on all Charisma-based skills and checks. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+           <statadd name="resist:all" value="+3" type="Feat" condition="All Attacks that target your AC or have the weapon keyword." />
+		   <statadd name="resist:Heat and Cold" value="+2" type="Feat" condition="Checks to resist extremes of environmental heat and cold."/>
+		   <statadd name="Bluff Misc" value="-4" type="Feat"/>
+		   <statadd name="Diplomacy Misc" value="-4" type="Feat"/>
+		   <statadd name="Intimidate Misc" value="-4" type="Feat"/>
+		   <statadd name="Streetwise Misc" value="-4" type="Feat"/>
+       </rules>
+Injury from fire has destroyed the nerve endings in your skin. Your lost sensitivity grants you resist 3 to all attacks that target your AC or have the weapon keyword. You also gain a +2 bonus to Endurance checks to resist extremes of environmental heat and cold. You take a -4 penalty on all Charisma-based skills and checks.
+</RulesElement>
+
+<RulesElement name="[Wound] - Cauliflower Ears" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_04" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +5 feat bonus to all Intimidate checks. However, you also take a -2 penalty to all other Charisma-based skills and checks. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		   <statadd name="Bluff Misc" value="-2" type="Feat"/>
+		   <statadd name="Diplomacy Misc" value="-2" type="Feat"/>
+		   <statadd name="Intimidate Misc" value="+5" type="Feat"/>
+		   <statadd name="Streetwise Misc" value="-2" type="Feat"/>
+       </rules>
+You have been in so many fistfights and brawls, your appearance is permanently marred. Others recognize your disfigurement as the mark of a fighter. You gain a +5 feat bonus to all Intimidate checks. However, you also take a -2 penalty to all other Charisma-based skills and checks.
+</RulesElement>
+
+<RulesElement name="[Wound] - Chronic Pain" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_05" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You only take a -3 penalty to Perception checks while sleeping. Additionally, you receive a +2 bonus to saving throws against sleep effects and the unconscious condition. You only benefit from an extended rest after 8 hours, instead of the usual 6 </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		   <statadd name="Perception Misc" value="-3" type="Feat" condition="While sleeping." />
+		   <statadd name="Saving Throws" value="+2" type="Feat" condition="Against sleep effects and the unconscious condition." />
+       </rules>
+You have a hard time sleeping from the nearly constant pain of old injuries. This makes you a light sleeper. You only take a -3 penalty to Perception checks while sleeping. Additionally, you receive a +2 bonus to saving throws against sleep effects and the unconscious condition. You only benefit from an extended rest after 8 hours, instead of the usual 6.
+</RulesElement>
+
+<RulesElement name="[Wound] - Fused Digits" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_06" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Must have suffered damage to a hand while disabling a trap or opening a lock, or suffered damage from acid. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +5 feat bonus on Climb checks. However, this hand imposes a -2 penalty on Thievery checks made to disable a trap, open a lock or perform a sleight of hand trick. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		   <statadd name="Thievery Misc" value="-2" type="Feat" condition="While disabling a trap, opening a lock or performing a sleight of hand trick." />
+       </rules>
+The finger joints of one hand no longer work properly, and your hand resembles a hook. Because of your stiffened finger joints, you gain a +5 feat bonus on Climb checks. However, this hand imposes a -2 penalty on Thievery checks made to disable a trap, open a lock or perform a sleight of hand trick.
+</RulesElement>
+
+<RulesElement name="[Wound] - Limp" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_07" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +5 feat bonus to Bluff, Diplomacy and Streetwise checks. You take a -1 penalty to speed. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		 <statadd name="Bluff Misc" value="+5" type="Feat"/>
+         <statadd name="Diplomacy Misc" value="+5" type="Feat"/>
+		 <statadd name="Streetwise Misc" value="+5" type="Feat"/>
+		 <statadd name="Speed" value="-1"/>
+       </rules>
+An earlier leg injury has given you a permanent limp. Your hobbled movement makes you seem less threatening. You gain a +5 feat bonus to Bluff, Diplomacy and Streetwise checks. You take a -1 penalty to speed.
+</RulesElement>
+
+<RulesElement name="[Wound] - Loose Joints" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_08" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Must have suffered damage from a fall of at least 30 ft. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +5 feat bonus to Acrobatics checks to escape a grab or other immobilizing effects, as allowed by the GM. Whenever you employ this bonus, you take a -2 penalty to melee attacks and Strength-based skills and checks for 1d10 rounds. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		 <statadd name="Acrobatics Misc" value="+5" type="Feat" condition="To escape a grab or other immobilizing effects." />
+		 <statadd name="attack rolls" value="-2" type="Feat" condition="Whenever you employ the +5 bonus to escape a grab or other immobilizing effects, lasts 1d10 rounds." />
+		 <statadd name="Athletics Misc" value="-2" type="Feat" condition="Whenever you employ the +5 bonus to escape a grab or other immobilizing effects, lasts 1d10 rounds." />
+       </rules>
+Falls and trips have loosened your shoulder joints, making them more flexible but also increasing the chance of dislocating your shoulders. The pliancy in your shoulders grants you a +5 feat bonus to Acrobatics checks to escape a grab or other immobilizing effects, as allowed by the GM. Whenever you employ this bonus, you take a -2 penalty to melee attacks and Strength-based skills and checks for 1d10 rounds.
+</RulesElement>
+
+<RulesElement name="[Wound] - Lost Eye" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_09" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Must have suffered a critical hit from an arrow, bolt, light blade, or spear. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +4 feat bonus to defense against gaze attacks and charm effects based on vision. However, you also take a -2 penalty on all Perception checks and ranged attack rolls. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		 <statadd name="Fortitude Defense" value="+4" type="Feat" condition="Against gaze attacks and charm effects based on vision."/>
+         <statadd name="Reflex Defense" value="+4" type="Feat" condition="Against gaze attacks and charm effects based on vision."/>
+         <statadd name="Will Defense" value="+4" type="Feat" condition="Against gaze attacks and charm effects based on vision."/>
+		 <statadd name="attack rolls" value="-2" type="Feat" condition="On ranged attacks." />
+		 <statadd name="Perception Misc" value="-2" type="Feat" />
+       </rules>
+You are missing an eye from a past fight. Your limited ranged of vision grants you a +4 feat bonus to defense against gaze attacks and charm effects based on vision. However, you also take a -2 penalty on all Perception checks and ranged attack rolls.
+</RulesElement>
+
+<RulesElement name="[Wound] - Lost Fingers" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_10" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Must have suffered a critical hit from light or heavy blade, war hammer, mace, or battle axe. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You may use one available arcane power 1/day as a free action or an immediate reaction. However, speed comes at a price. When you roll a 1 on any arcane power attack roll, you become the spell's target and take damage as if the spell hit you. </specific>
+	<specific name="type"> Wound </specific>
+You have lost one or more fingers from one hand. Because of your handicap, you have taught yourself to cast spells with increased speed and efficiency. You may use one available arcane power 1/day as a free action or an immediate reaction. However, speed comes at a price. When you roll a 1 on any arcane power attack roll, you become the spell's target and take damage as if the spell hit you.
+</RulesElement>
+
+<RulesElement name="[Wound] - Punctured Lung" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_11" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Must have suffered a critical hit from a light blade, arrow, bolt, or spear. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +2 feat bonus to defenses against inhaled poisons, spores, gases, and dust. However, your decreased breathing capacity means you take a -2 penalty to Endurance checks when deprived of air. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		 <statadd name="Fortitude Defense" value="+4" type="Feat" condition="Against inhaled poisons, spores, gases, and dust."/>
+         <statadd name="Reflex Defense" value="+4" type="Feat" condition="Against inhaled poisons, spores, gases, and dust."/>
+         <statadd name="Will Defense" value="+4" type="Feat" condition="Against inhaled poisons, spores, gases, and dust."/>
+		 <statadd name="Endurance Misc" value="-2" type="Feat" condition="When deprived of air."/>
+       </rules>
+A deep stab wound penetrated one of your lungs, destroying it. You gain a +2 feat bonus to defenses against inhaled poisons, spores, gases, and dust. However, your decreased breathing capacity means you take a -2 penalty to Endurance checks when deprived of air.
+</RulesElement>
+
+<RulesElement name="[Wound] - Short-Term Amnesia" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_12" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, Must have suffered a critical hit from hammer, mace, or flail. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you fail a save against a fear effect, you may make a second save against the effect with a +4 feat bonus as an immediate reaction. Whenever you are surprised in combat, you are surprised for one additional round. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		 <statadd name="Saving Throws" value="+4" type="item" condition="Against a fear effects that you failed on first save, you may make a second save against the effect with the bonus as an immediate reaction." />
+       </rules>
+A blow to the head has damaged your ability to remember recent events. When you fail a save against a fear effect, you may make a second save against the effect with a +4 feat bonus as an immediate reaction. Whenever you are surprised in combat, you are surprised for one additional round.
+</RulesElement>
+
+<RulesElement name="[Wound] - Shot Nerves" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_13" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> 11th Level, During the course of a single day, you must have suffered damage from lightning equal to at least 1/3 your total hp. </print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> You gain a +2 power bonus to Initiative and +1 power bonus to AC, but a -2 penalty to all Dexterity-based skills and checks. The spasms also cause others to perceive you unfavorably. You take a -2 penalty to all Charisma-based skills and checks. </specific>
+	<specific name="type"> Wound </specific>
+	   <rules>
+		 <statadd name="Initiative" value="+1"/>
+		 <statadd name="AC" value="+1"/>
+		 <statadd name="Acrobatics Misc" value="-2" type="Feat"/>
+		 <statadd name="Stealth Misc" value="-2" type="Feat"/>
+		 <statadd name="Thievery Misc" value="-2" type="Feat"/>
+		 <statadd name="Bluff Misc" value="-2" type="Feat"/>
+         <statadd name="Diplomacy Misc" value="-2" type="Feat"/>
+		 <statadd name="Intimidate Misc" value="-2" type="Feat"/>
+		 <statadd name="Streetwise Misc" value="-2" type="Feat"/>
+       </rules>
+Electrical damage has permanently damaged your nervous system. You have a difficult time holding still, and sudden noise or movement makes you flinch uncontrollably. You gain a +2 power bonus to Initiative and +1 power bonus to AC, but a -2 penalty to all Dexterity-based skills and checks. The spasms also cause others to perceive you unfavorably. You take a -2 penalty to all Charisma-based skills and checks.
+</RulesElement>
+
+<RulesElement name="Ache of Wrath" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_14" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Cleric or Invoker, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Cleric or Invoker, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with an encounter attack power with the divine keyword, you deal radiant damage to the original target equal to 3 + your Wisdom modifier. </specific>
+	<specific name="type"> Wound </specific>
+If you miss with an encounter attack power with the divine keyword and you wouldn't otherwise still deal damage on the miss, you deal radiant damage to the original target equal to 3 + your Wisdom modifier. This damage receives no modifiers or other benefits you normally gain on damage...
+</RulesElement>
+
+<RulesElement name="Bell Ringer" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_15" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Strength 15, Constitution 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Strength 15, Constitution 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack with a flail, hammer or mace, your original target grants combat advantage to the next melee attack made against it before the start of its next turn.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack with a flail, hammer or mace and you wouldn't otherwise still deal damage on the miss, your original target grants combat advantage to the next melee attack made against it before the start of its next turn. This effect receives no modifiers or other benefits you normally gain on weapon damage. 
+</RulesElement>
+
+<RulesElement name="Blister" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_16" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Wizard, Intelligence 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Wizard, Intelligence 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a wizard attack power against a foe while wielding an implement, you deal damage to the original target equal to your implement's enhancement bonus. </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a wizard attack power against a foe while wielding an implement, and you wouldn't otherwise still deal damage on the miss, you deal damage to the original target equal to your implement's enhancement bonus. This damage receives no modifiers or other benefits you normally gain on damage. 
+</RulesElement>
+
+<RulesElement name="Chin Clock" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_17" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Fighter, Strength 17 or Constitution 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Fighter, Strength 17 or Constitution 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack against a foe marked under your combat challenge class feature, you deal damage to the original target equal to your Strength modifier plus your Constitution modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack against a foe marked under your combat challenge class feature, and you wouldn't otherwise still deal damage on the miss, you deal damage to the original target equal to your Strength modifier plus your Constitution modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage. 
+</RulesElement>
+
+<RulesElement name="Frenzied Strike" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_18" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Barbarian, Strength 17, Power Attack, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Barbarian, Strength 17, Power Attack, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> While in a rage, if you miss on a melee attack, you deal damage to the target equal to your Strength modifier plus the number of unused daily rage powers you possess.  </specific>
+	<specific name="type"> Wound </specific>
+While in a rage, if you miss on a melee attack and you wouldn't otherwise still deal damage on the miss, you deal damage to the target equal to your Strength modifier plus the number of unused daily rage powers you possess. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Guardian's Challenge" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_19" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Warden, Constitution 17 or Wisdom 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Warden, Constitution 17 or Wisdom 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack against a foe while in your guardian form, you deal damage to the original target equal to your Constitution modifier plus your Wisdom modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack against a foe while in your guardian form, and you wouldn't otherwise still deal damage on the miss, you deal damage to the original target equal to your Constitution modifier plus your Wisdom modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Hallowed Blow" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_20" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Paladin, Charisma 17, Wisdom 15, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Paladin, Charisma 17, Wisdom 15, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack against a foe under your divine challenge power, you deal radiant damage to the target equal to your 1 + Charisma modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack against a foe under your divine challenge power, and you wouldn't otherwise still deal damage on the miss, you deal radiant damage to the target equal to your 1 + Charisma modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Hunter's Skill" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_21" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Ranger, Strength 15, Wisdom 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Ranger, Strength 15, Wisdom 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack against your hunter's quarry, you deal damage to the target equal to your Wisdom modifier plus 1 point per die of your hunter's quarry extra damage.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack against your hunter's quarry and you wouldn't otherwise still deal damage on the miss, you deal damage to the target equal to your Wisdom modifier plus 1 point per die of your hunter's quarry extra damage. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Inescapable Oath" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_22" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Avenger, Wisdom 17, Dexterity 15, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Avenger, Wisdom 17, Dexterity 15, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack against a target under your oath of enmity class ability, you deal psychic damage to the original target equal to your Wisdom modifier plus your Dexterity modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack against a target under your oath of enmity class ability and you wouldn't otherwise still deal damage on the miss, you deal psychic damage to the original target equal to your Wisdom modifier plus your Dexterity modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Longarm Tap" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_23" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Intelligence 17, Dexterity 15, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Intelligence 17, Dexterity 15, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack with a polearm, you deal damage to the original target equal to your Intelligence modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a melee attack with a polearm and you wouldn't otherwise still deal damage on the miss, you deal damage to the original target equal to your Intelligence modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Magic's Bite" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_24" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Sorcerer, Charisma 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Sorcerer, Charisma 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with an attack with the arcane keyword that has an added effect based on the source of your power, you deal radiant damage to the original target equal to 3 + your Charisma modifier.  </specific>
+    <specific name="Special" />
+	<specific name="type"> Wound </specific>
+If you miss with an attack with the arcane keyword that has an added effect based on the source of your power and you wouldn't otherwise still deal damage on the miss, you deal radiant damage to the original target equal to 3 + your Charisma modifier.
+</RulesElement>
+
+<RulesElement name="No Escape" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_25" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Ranger, Dexterity 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Ranger, Dexterity 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a ranged attack for which you received the prime shot bonus, you deal damage to the original target equal to 2 + your Dexterity modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a ranged attack for which you received the prime shot bonus, and you wouldn't otherwise still deal damage on the miss, you deal damage to the original target equal to 2 + your Dexterity modifier. This damage receives no modifiers or other benefits you normally gain on damage.
+</RulesElement>
+
+<RulesElement name="Predator's Strike" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_26" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Druid, Wisdom 17, Constitution 15, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Druid, Wisdom 17, Constitution 15, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a melee attack against a target while in your beast form, you deal damage to the original target equal to 1 + your Wisdom modifier.  </specific>
+If you miss with a melee attack against a target while in your beast form and you wouldn't otherwise still deal damage on the miss, you deal damage to the original target equal to 1 + your Wisdom modifier. This damage receives no modifiers or other benefits you normally gain on damage.
+</RulesElement>
+
+<RulesElement name="Rapier Song" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_27" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Charisma 17, Dexterity 15, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Charisma 17, Dexterity 15, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you have combat advantage against an enemy and miss with an attack while using a light blade, crossbow or sling, you deal damage to the target equal to the weapon's proficiency bonus plus your Dexterity modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you have combat advantage against an enemy and miss with an attack while using a light blade, crossbow or sling, and you wouldn't otherwise still deal damage on the miss, you deal damage to the target equal to the weapon's proficiency bonus plus your Dexterity modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Rogue's Luck" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_28" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Rogue, Wisdom 15, Dexterity 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Rogue, Wisdom 15, Dexterity 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you have combat advantage against an enemy and miss with an attack while using a light blade, crossbow or sling, you deal damage to the target equal to the weapon's proficiency bonus plus your Dexterity modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you have combat advantage against an enemy and miss with an attack while using a light blade, crossbow or sling, and you wouldn't otherwise still deal damage on the miss, you deal damage to the target equal to the weapon's proficiency bonus plus your Dexterity modifier. This damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+<RulesElement name="Skin Scorch" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_29" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Warlock, Intelligence 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Warlock, Intelligence 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a warlock attack power against a foe under your warlock's curse, you deal damage to your original target equal to your Intelligence modifier plus 1 point per die of bonus warlock's curse damage.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a warlock attack power against a foe under your warlock's curse, and you wouldn't otherwise still deal damage on the miss, you deal damage to your original target equal to your Intelligence modifier plus 1 point per die of bonus warlock's curse damage. This damage receives no modifiers or other benefits you normally gain on damage.
+</RulesElement>
+
+<RulesElement name="Tenacious Spirit" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_30" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Shaman, Wisdom 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Shaman, Wisdom 17, 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If your spirit companion misses with a melee attack, it deals damage to the original target equal to 1 + your Wisdom modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If your spirit companion misses with a melee attack and it wouldn't otherwise still deal damage on the miss, it deals damage to the original target equal to 1 + your Wisdom modifier. This damage receives no modifiers or other benefits you normally gain on damage.
+</RulesElement>
+
+<RulesElement name="Winged'Em" type="Feat" internal-id="ID_TIV_FEAT_KOBOLD_100_31" source="Kobold Quarterly #17" revision-date="11/12/2011 5:25:29 PM" >
+    <Prereqs> Dexterity 17, 11th level; Paragon Tier </Prereqs>
+	 <print-prereqs> Dexterity 17, Weapon Focus (bows, crossbow, light blades or slings), 11th Level</print-prereqs>
+     <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If you miss with a ranged attack with a bow, crossbow, dagger, sling or shuriken, you deal damage to your original target equal to your Dexterity modifier.  </specific>
+	<specific name="type"> Wound </specific>
+If you miss with a ranged attack with a bow, crossbow, dagger, sling or shuriken and you wouldn't otherwise deal damage on the miss, you deal damage to your original target equal to your Dexterity modifier. Subtract 2 from this damage if the target was at long range, otherwise this damage receives no modifiers or other benefits you normally gain on weapon damage.
+</RulesElement>
+
+</D20Rules>

@@ -1,0 +1,2196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.11</Version>
+    <Filename>13-ranger.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/13-ranger.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/13-ranger.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Ranger -->
+  <!-- 13-ranger.part, version 1.11 -->
+  <!-- Original release: 13-July-2011; Last modified: 5-June-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File released.
+ Updated 16-July-2011 Playtest Ranger Options added.
+ Updated 30-July-2011 Fixed Spinning Axe Mastery code.
+ Updated 31-July-2011 Conflict Issues, Leaf Wall.
+ Updated 03-August-2011 Disrupting Shot Feat Fix.
+ Updated 18-August-2011 Attack Finesse fix.
+ Updated 22-August-2011 Martial Cross-Training and Archery Mastery fixes and a couple odd power typos.
+ Updated 18-May-2012 DSH added.
+ Updated 4-June-2012 Updated Ranger Beast Companion Powers from Dragon Magazine 392.
+ Updated 5-June-2012 Hunter/Scout fixes.
+</Changelog>
+  <!-- Shared Ranger and Druid Wilderness Knacks * Class Features -->
+  <RulesElement name="Beast Empathy" type="Class Feature" internal-id="ID_WOG_SHARED_CLASS_FEATURE_KNACK_1" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_WOG_SENTINEL_CLASS_FEATURE_4,ID_FMP_CLASS_5,ID_FMP_CLASS_126,ID_DBB_CLASS_FEATURE_100015 </Category>
+    <Flavor> The beasts of the wilderness see and know most of what unfolds in their realm. Few folk heed them, but you have learned to understand and interpret their actions and attitudes. Your woodcraft is short of the magical ability to communicate with animals directly, but it is enough to reveal secrets that others miss. </Flavor>
+    <specific name="Short Description"> +2 Bluff, Diplomacy, Intimidate vs beasts. </specific>
+    <specific name="_CS_ShortDescription"> +2 Bluff, Diplomacy, Intimidate </specific>
+    <specific name="Level"> 1 </specific>
+You gain a +2 bonus to Bluff, Diplomacy, and Intimidate checks against beasts. You can communicate simple concepts and commands to such creatures, though they are under no compulsion to obey you. With a successful Insight check (DC determined by the DM), you can read a creature's body language and vocalizations enough to understand basic messages from it.
+</RulesElement>
+  <RulesElement name="Mountain Guide" type="Class Feature" internal-id="ID_WOG_SHARED_CLASS_FEATURE_KNACK_2" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_WOG_SENTINEL_CLASS_FEATURE_4,ID_FMP_CLASS_5,ID_FMP_CLASS_126,ID_DBB_CLASS_FEATURE_100015 </Category>
+    <Flavor> You have clambered over steep cliffs and ranged across imposing mountains. Your knack for climbing allows you to pick out the easiest paths up even the most imposing slopes. </Flavor>
+    <specific name="Short Description"> Reduce allies climbing checks whenever you succeed on a climbing check. </specific>
+    <specific name="_CS_ShortDescription"> May reduce allies climbing checks </specific>
+    <specific name="Level"> 1 </specific>
+Whenever you succeed on an Athletics check to climb, you reduce the DC of that climb by 2 for your allies until the end of the encounter. Only allies who see you make the climb gain this benefit.
+</RulesElement>
+  <RulesElement name="Watchful Rest" type="Class Feature" internal-id="ID_WOG_SHARED_CLASS_FEATURE_KNACK_3" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_WOG_SENTINEL_CLASS_FEATURE_4,ID_FMP_CLASS_5,ID_FMP_CLASS_126,ID_DBB_CLASS_FEATURE_100015 </Category>
+    <Flavor> Long days spent in the wilds have taught you the best way to set up a camp. By picking out an easily defensible spot and carefully positioning your gear, you ensure that you and your allies have the best chance to avoid an ambush. </Flavor>
+    <specific name="Short Description"> Do not take the -5 penalty to Perception checks for sleeping. </specific>
+    <specific name="_CS_ShortDescription"> No penalty to Perception for sleeping </specific>
+    <specific name="Level"> 1 </specific>
+When you take an extended rest, you and any allies also taking the rest do not take the -5 penalty to Perception checks for sleeping.
+</RulesElement>
+  <RulesElement name="Wilderness Tracker" type="Class Feature" internal-id="ID_WOG_SHARED_CLASS_FEATURE_KNACK_4" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_WOG_SENTINEL_CLASS_FEATURE_4,ID_FMP_CLASS_5,ID_FMP_CLASS_126,ID_DBB_CLASS_FEATURE_100015 </Category>
+    <Flavor> You are an expert at reading the signs of a creature's passage. When you inspect an area, a splintered twig or a trampled leaf is enough for you to glean a significant amount of information. Even the slyest rogues and sneakiest warlocks leave behind some trace of their passage. </Flavor>
+    <specific name="Short Description"> During a short rest, you can inspect the area for tracks. </specific>
+    <specific name="_CS_ShortDescription"> Inspect tracks during short rest </specific>
+    <specific name="Level"> 1 </specific>
+During a short rest, you can make a Perception check (DC determined by the DM) to inspect the area around you. This area can be as large as 10 squares on a side. If your check succeeds, you determine the number and nature of the creatures that have moved through the area in the past 24 hours. You ascertain when and where they entered the area, as well as when and where they left.
+</RulesElement>
+  <RulesElement name="Ambush Expertise" type="Class Feature" internal-id="ID_WOG_SHARED_CLASS_FEATURE_KNACK_5" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100015,ID_FMP_CLASS_5 </Category>
+    <Flavor> You have wandered through dangerous realms, such as kingdoms ruled by hobgoblin tyrants and mountain ranges jealously guarded by brooding giants. You know not only how to hide yourself, but also how to hide others. </Flavor>
+    <specific name="Short Description">Allies gain +2 to next stealth check when you make stealth check.</specific>
+    <specific name="_CS_ShortDescription"> Allies gain +2 stealth when you make check </specific>
+    <specific name="Level"> 1 </specific>
+When you make a Stealth check, allies within 10 squares gain +2 to their next Stealth check before the end of your next turn.  
+</RulesElement>
+  <!-- Ranger sub-class Powers (Hunter and Scout Powers) -->
+  <RulesElement name="Aspect of the Cunning Fox" type="Power" internal-id="ID_FMP_POWER_13589" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> Like a fox, you move with stealth, speed, and cunning. Your foes cannot hope to harm you while you are in motion. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Cunning Fox stance. Until the stance ends, you gain the following benefits:
+  
+  -You take only half damage from attacks made against you during your turn.
+  -Whenever you hit or miss with a melee attack or a ranged attack on your turn, you can take a free action to shift up to 2 squares.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788,ID_FMP_CLASS_790 </specific>
+A ranger trains to fight, but sometimes the best tactic is one that allows you to escape from a battle. Like a fox, you use speed and cunning to outwit your foes. They might attempt to hinder your movement, but you easily dodge their attacks. When you strike, you remain one step ahead of your foes, dancing in and out of the battle.
+</RulesElement>
+  <RulesElement name="Aspect of the Dancing Serpent" type="Power" internal-id="ID_FMP_POWER_13590" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor>You move like a snake, darting here and there, never remaining within reach of your foe. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Dancing Serpent stance. Until the stance ends, you gain the following benefits:
+  
+  -You can take a free action at the end of each of your turns to shift 1 square.
+  -When you make a basic attack against an enemy that has none of its allies adjacent to it, you gain a +1 power bonus to the attack roll and damage roll.
+     Level 11: The bonus to the damage roll increases to +2.
+	 Level 21: The bonus to the damage roll increases to +3.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788,ID_FMP_CLASS_790 </specific>
+A serpent strikes like lightning and retreats like a ghost. It lands deadly attacks but never lingers near its enemy. You mimic these tactics with this aspect, pouncing upon an isolated enemy and not letting it bog you down in close quarters.
+</RulesElement>
+  <RulesElement name="Aspect of the Pouncing Lynx" type="Power" internal-id="ID_FMP_POWER_13591" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> Like a hunting cat, you have learned to strike hard and fast. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Pouncing Lynx stance. Until the stance ends, you gain the following benefits:
+  
+  -You gain a +4 power bonus to initiative checks.
+  -During your first turn in an encounter, you gain a +2 power bonus to attack rolls.
+  -You gain a power bonus to all defenses against opportunity attacks that you provoke by moving. The bonus equals your Wisdom modifier.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+Hunting cats, such as the lynx, rely on speed and surprise to overwhelm their prey in a burst of sudden action. Drawing on primal magic, you employ a similar tactic. When battle is joined, you seize the initiative and make a deadly attack. If your foes manage to leap upon you before you can act, you escape their grasp with a quick move.
+</RulesElement>
+  <RulesElement name="Aspect of the Lone Wolf" type="Power" internal-id="ID_FMP_POWER_13592" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> Like the lone wolf, you learn to pick off the weakest of your enemies with quick and brutal efficiency.</Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Lone Wolf stance. Until the stance ends, you gain the following benefits:
+  
+  -When you make a basic attack against a bloodied enemy you gain a +2 power bonus to the attack roll.
+  -At the start of each of your turns, you learn the location of every hidden, bloodied enemy within 5 squares of you.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+Many hunters learn from the lone wolf, a creature forced to forage on its own. Like a lone wolf, a hunter must sometimes venture into the wilds without the benefit of companions. During such journeys, he or she knows the value in finishing a wounded foe as quickly as possible, lest the enemy overwhelm the hunter with superior numbers.
+</RulesElement>
+  <RulesElement name="Aspect of the Lurking Spider" type="Power" internal-id="ID_FMP_POWER_13593" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> Like a spider, you lie in ambush and wait until your foe comes near. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Lurking Spider stance. Until the stance ends, you gain the following benefits:
+  
+  -You gain a +2 power bonus to Stealth checks.
+  -You gain a +5 power bonus to Athletics checks made to climb.
+  -While you have combat advantage against an enemy, you gain a +2 power bonus to damage rolls against it.
+     Level 11: The bonus to damage rolls increases to +3.
+	 Level 21: The bonus to damage rolls increases to +4.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788,ID_FMP_CLASS_790 </specific>
+Many other predators rely on strength and overwhelming force, but the spider is a patient slayer. Using a combination of stealth and maneuverability, it lures its foe into its lair and strikes to kill.
+</RulesElement>
+  <RulesElement name="Aspect of the Pack Wolf" type="Power" internal-id="ID_FMP_POWER_13596" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You fight as a member of the pack, turning your allies' positions to your advantage. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Pack Wolf stance. Until the stance ends, you gain the following benefits:
+  
+  -You do not provoke opportunity attacks when leaving squares adjacent to your allies.
+  -When you make a basic attack against an enemy adjacent to two or more of your allies, you gain a +1 power bonus to the attack roll. You also gain a power bonus to the damage rolls equal to the number of your allies adjacent to it.
+      Level 11: The bonus to damage rolls increases to 1 + the number of allies adjacent.
+	  Level 21: The bonus to damage rolls increases to 2 + the number of allies adjacent.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788,ID_FMP_CLASS_790 </specific>
+A wolf pack is a whole that is stronger than the sum of its parts. When you enter this aspect, you develop an instinctual understanding of your allies' movements and attacks. When you make your own attack, you use your allies' presence to land a telling blow.
+</RulesElement>
+  <RulesElement name="Aspect of the Regal Lion" type="Power" internal-id="ID_FMP_POWER_13594" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You fight with the courage of a lion, taking on a larger foe without a sliver of doubt or fear. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Regal Lion stance. Until the stance ends, you gain the following benefits:
+  
+  -When you make a basic attack against an enemy that is Large or larger, you gain a +2 power bonus to the attack roll.
+  -You gain a +2 power bonus to all defenses against such enemies.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788,ID_FMP_CLASS_790 </specific>
+The lion is the king of the savannah, a proud hunter and a ferocious enemy. When you enter this aspect, you gain the lion's unmatched bravery and resolute determination. No foe, regardless of its size or strength, can hope to match your tenacity.
+</RulesElement>
+  <RulesElement name="Aspect of the Seeking Falcon" type="Power" internal-id="ID_FMP_POWER_13595" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You take on the aspect of the falcon, gaining its keen eyes and striking a fellowship with the primal winds, which carry your attacks even farther. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Seeking Falcon stance. Until the stance ends, you gain the following benefits:
+  
+  -You ignore the penalty to attack rolls for making a ranged weapon attack at long range.
+  -You gain a +2 power bonus to speed.
+  -You gain a +2 power bonus to Perception checks.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100014,ID_DBB_CLASS_FEATURE_100020,ID_DBB_CLASS_FEATURE_10000030 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+The falcon is a hunter and a wanderer, allowing the primal spirits of wind to guide it along its path. You tap into this bond and become part of it, gaining both the falcon's keen eyesight and the benefits of its kinship with the spirits of the wind.
+</RulesElement>
+  <RulesElement name="Aspect of the Charging Ram" type="Power" internal-id="ID_FMP_POWER_13620" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You barrel past your foes with such speed and strength that they are unable to react to your assault</Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Charging Ram stance. Until the stance ends, you gain the following benefits:
+  
+  -Your movement during a charge doesn't provoke opportunity attacks.
+  -If you hit with a charge attack, you can knock the target prone.
+  -You gain a +2 power bonus to the damage rolls of charge attacks.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_790 </specific>
+The ram relies on brute force to overwhelm its enemies, favoring a deadly charge. You mimic its tactics, drawing on primal magic to deliver a brutal attack. With this aspect, you run rampant over the battlefield. Your enemies shrink away as you barrel forward, unwilling to attack you or stand between you and your target.
+</RulesElement>
+  <RulesElement name="Aspect of the Hungry Shark" type="Power" internal-id="ID_FMP_POWER_13621" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> As you take on the aspect of the shark, the scent of blood drives you into a vicious frenzy.</Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Hungry Shark stance. Until the stance ends, you gain the following benefits:
+  
+  -When you make a basic attack against a bloodied enemy, you gain a +2 power bonus to the attack roll.
+  -You can take a move action to shift up to 3 squares to a square adjacent to a bloodied enemy.
+  -You gain a +5 power bonus to Athletics checks made to swim.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_790 </specific>
+The loremasters hold that a shark can smell blood from miles away. Whether or not that is true, this aspect turns you into a single-minded killer. When you smell blood, you attack mercilessly.
+</RulesElement>
+  <RulesElement name="Aspect of the Soaring Hawk" type="Power" internal-id="ID_FMP_POWER_13622" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443216,ID_DBB_CLASS_FEATURE_123443217,ID_DBB_CLASS_FEATURE_123443218,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> You move through the battle like a hawk, carefully waiting for the best moment to strike, rising above all barriers that might restrict you. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility  </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You assume the Aspect of the Soaring Hawk stance. Until the stance ends, you gain the following benefits:
+  
+  -You gain a +2 power bonus to speed.
+  -You ignore the penalty to attack rolls imposed by partial cover and partial concealment, and you take no worse than a -2 penalty to attack rolls against targets that have superior cover or total concealment.
+  -You gain a +2 power bonus to Perception checks.
+  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_790 </specific>
+From its perch among the winds, high above the ground, a hawk keeps careful watch on the land. When it spots its prey, it strikes in the blink of an eye. This aspect allows you to channel the hawk's speed and also take advantage of the hawk's high perch. In battle, your spirit almost rises out of your body, allowing you to strike true regardless of the obstacles before you.
+</RulesElement>
+  <RulesElement name="Bridge of Roots" type="Power" internal-id="ID_FMP_POWER_13597" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>The primal energy you draw from the ground calls forth a churning mass of great roots that can cover even the most dangerous ground.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 2</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 2 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. At least one square of the zone must be on a solid surface. You and your allies can ignore hindering terrain and difficult terrain in the zone. In addition, any portion of a pit, chasm, or similar feature within the zone becomes safe, passable ground.
+	  Move Action: You move the zone up to 5 squares, keeping at least one square of a solid surface.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">2 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Entangling Roots" type="Power" internal-id="ID_FMP_POWER_13598" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Thick roots emerge from the ground in response to your command, and your foes stumble as they try to slip through them.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 2</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 2 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. The ground in the zone is difficult terrain for your enemies. When any enemy charges, its movement cannot include any square of the ground in the zone.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">2 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Stalker's Mist" type="Power" internal-id="ID_FMP_POWER_13599" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>A thick fog settles over the area, blocking sight and muffling sound. Though the fog confounds other creatures, you can see through it with ease.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 2</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 1 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. Squares in the zone are heavily obscured to your enemies.
+	  Move Action: You move the zone up to 5 squares.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">2 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Oak Skin" type="Power" internal-id="ID_FMP_POWER_13623" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Your skin takes on the texture of tough bark, protecting you from the worst of your enemies' attacks.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 2</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">You gain resistance to all damage until the end of the encounter. The resistance equals your Wisdom modifier.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">2 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Ranger's Agility" type="Power" internal-id="ID_FMP_POWER_13624" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>The power of the primal spirits lets you move with the speed and subtlety of the wind.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 2</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Until the end of the encounter, you gain a +2 power bonus to speed, and whenever you shift, the distance you can shift increases by 1 square.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">2 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Safe Passage" type="Power" internal-id="ID_FMP_POWER_13625" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>The spirits of earth, stone, and land accept your plea for assistance, allowing you and your allies to move unhindered and at great speed.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 2</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Close burst 5 </specific>
+    <specific name="Target">You and each ally in the burst</specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Until the end of the encounter, each target ignores difficult terrain and gains a +2 power bonus to speed.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">2 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Healing Lore" type="Power" internal-id="ID_FMP_POWER_13607" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>The primal power you call upon allows access to the deepest reserves of strength.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 6</specific>
+    <specific name="Keywords">Healing, Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Close burst 5 </specific>
+    <specific name="Target">You or one ally in the burst</specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The target can spend a healing surge.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">6 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788,ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Thorn Ward" type="Power" internal-id="ID_FMP_POWER_13609" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>A shimmering tangle of briars appears before you. It seems harmless, but as a foe moves through it, the briars lash out like a living creature.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 6</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 1 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. Any enemy that ends its turn in the zone takes damage equal to your Wisdom modifier.
+	  Move Action: You move the zone up to 5 squares.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">6 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Step of Morning Mist" type="Power" internal-id="ID_FMP_POWER_13626" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_MOVE_ACTION,6 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>A magical mist wraps around you, letting you cross the battlefield in the blink of an eye, then clinging to you as a protective shroud.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 6</specific>
+    <specific name="Keywords">Primal, Teleportation</specific>
+    <specific name="Action Type">Move </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">You teleport up to 5 squares, then gain a +5 power bonus to all defenses until the end of your next turn.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">6 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Eyes of the Owl" type="Power" internal-id="ID_FMP_POWER_13610" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>The spirits of the night grant you enhanced senses.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 10</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Close burst 5 </specific>
+    <specific name="Target">You and each ally in the burst</specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Each target gains both darkvision and a +2 power bonus to Perception checks until the end of the encounter.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788,ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Hunter's Thorn Trap" type="Power" internal-id="ID_FMP_POWER_13611" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Your primal magic forms invisible thorns that lurk just below the surface of the ground. When a foe steps on their location, they erupt to rend and tear flesh.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Encounter</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 10</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Ranged 10 </specific>
+    <specific name="Target">One square</specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The target becomes a zone that lasts until the end of the encounter or until an enemy enters it. Without a Perception check (DC 10 + your level + your Wisdom modifier), your enemies notice neither the zone nor your use of this power. When an enemy enters the zone, the enemy takes 5 + your Wisdom modifier damage, and it is immobilized until the end of your next turn.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">10 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Verdant Flames" type="Power" internal-id="ID_FMP_POWER_13612" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Eldritch green flames wrap around your enemies, hampering their ability to defend themselves or hide from you.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 10</specific>
+    <specific name="Keywords">Fire, Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 1 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. Enemies grant combat advantage and take a -5 penalty to Stealth checks while in the zone. Any enemy that ends its turn in the zone takes fire damage equal to your Wisdom modifier.
+	  Move Action: You move the zone up to 5 squares.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788,ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Root Gate" type="Power" internal-id="ID_FMP_POWER_13627" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>At your command, great roots threaded with primal power burrow through the ground around you, closing the space between two points on the battlefield.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 10</specific>
+    <specific name="Keywords">Primal, Teleportation, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Close burst 10 </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">You creat two zones, each one in an unoccupied square in the burst. The zones last until the end of the encounter. When you or any of your allies enters either of the zones, that character can teleport to the other zone as a free action, as long as the destination zone is unoccupied.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">10 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Embrace the Wild" type="Power" internal-id="ID_FMP_POWER_13614" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Faint images of the eagle, the owl, the wolf, and other hunting beasts flicker within your eyes as you take on those creatures' extraordinary senses.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 16</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Ranged 5 </specific>
+    <specific name="Target">You or one ally</specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Until the end of the encounter, the target has darkvision, cannot be blinded, never grants combat advantage, and can see all creatures within 10 squares of him or her.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">16</specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788,ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Howling Winds" type="Power" internal-id="ID_FMP_POWER_13615" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>You call forth the primal spirits of wind and storm, sending them howling over the battlefield to harass your enemies.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 16</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Until the end of the encounter, you are surrounded by howling winds. Once on each of your turns, you can take a fee action to slide an enemy within 10 squares of you a number of squares equal to your Wisdom modifier.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">16 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Wall of Earth" type="Power" internal-id="ID_FMP_POWER_13616" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>The spirits of the earth respond to your bidding, forcing up a wall of densely packed soil and stone to rout your foes.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 16</specific>
+    <specific name="Keywords">Conjuration, Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area wall 8 within 10 </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">You conjure a wall of earth that lasts until the end of your next turn. The wall can be up to 2 squares high and must be on a solid surface. When you use this power, any creature in the wall slides to the nearest unoccupied space outside the wall, sliding the shortest distance possible. The creature then falls prone. The wall is blocking terrain and is immune to damage. When the wall ends, its area becomes difficult terrain until the end of the encounter.
+	  Sustain Minor: The wall persists until the end of your next turn.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Iron Endurance" type="Power" internal-id="ID_FMP_POWER_13630" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Your primal magic imbues you with a power as strong as any armor, granting you a surge of resilience in combat.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 16</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">You gain temporary hit points equal to your healing surge value + 10.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">16 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Word of Warning" type="Power" internal-id="ID_FMP_POWER_13631" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_FREE_ACTION,16 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Acting solely on instinct, you evoke primal magic to lend your allies a surge of speed and combat awareness.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 16</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Free action </specific>
+    <specific name="Attack Type">Close burst 10 </specific>
+    <specific name="Trigger">You and your allies roll initiative</specific>
+    <specific name="Target">You and each ally in the burst</specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Each target gains a +5 power bonus to the initiative check and gains combat advantage until the end of his or her next turn.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">16 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Veil of Winter" type="Power" internal-id="ID_FMP_POWER_13617" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>An inky darkness falls over the area as you channel the primal essence of night and sunset.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 22</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 1 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. The zone blocks line of sight for your enemies.
+	  Move Action: You move the zone up to 5 squares.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">22 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Wrath of Root and Soil" type="Power" internal-id="ID_FMP_POWER_13618" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Your senses are as those of the spirits of earth and air, tree and stone, and no foe can hide from you.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 22</specific>
+    <specific name="Keywords">Primal, Zone</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Area burst 2 within 10 squares </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">The burst creates a zone that lasts until the end of the encounter. Th ground in the zone is difficult terrain, and enemies cannot shift, teleport, or charge in or through it. An enemy that ends its turn on the ground in the zone is restrained (save ends).</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">22 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_788</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Speed of the Zephyr" type="Power" internal-id="ID_FMP_POWER_13632" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>You move with the swiftness of the wind.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 22</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">You gain a +6 power bonus to speed until the end of the encounter.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">22 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <RulesElement name="Stepping Through the Veil" type="Power" internal-id="ID_FMP_POWER_13633" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Prereqs></Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>As you step away from your enemy, you fade from its view, shielded by your primal magic as you prepare to strike again.</Flavor>
+    <specific name="Power Type">Utility</specific>
+    <specific name="Power Usage">Daily</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Ranger Utility 22</specific>
+    <specific name="Keywords">Primal</specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type">Personal </specific>
+    <specific name="Target"></specific>
+    <specific name="Attack"></specific>
+    <specific name="Hit"></specific>
+    <specific name="Miss"></specific>
+    <specific name="Effect">Until the end of the encounter, whenever you end your turn not adjacent to any enemies, you are invisible until the start of your next turn.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_5 </specific>
+    <specific name="Level">22 </specific>
+    <specific name="_ParentFeature"></specific>
+    <specific name="_Subclasses">ID_FMP_CLASS_790</specific>
+    <specific name="Prerequisite"></specific>
+  </RulesElement>
+  <!-- Shared Ranger sub-class Features -->
+  <RulesElement name="Ranger Wilderness Knacks" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100015" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> All rangers learn to survive in the wilderness, whether that realm is a frozen tundra, a verdant forest, or a mushroom-choked cavern deep beneath the earth. You have acquired a couple of tricks and abilities that give you and your allies a key edge. </Flavor>
+    <specific name="Short Description"> Gain two ranger wilderness knacks. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> Gain 2 wilderness knacks </specific>
+    <rules>
+      <select type="Class Feature" number="2" Category="ID_DBB_CLASS_FEATURE_100015,ID_FMP_CLASS_5" />
+    </rules>
+You gain two of the following abilities of your choice.
+
+Ambush Expertise:
+You have wandered through dangerous realms, such as kingdoms ruled by hobgoblin tyrants and mountain ranges jealously guarded by brooding giants. You know not only how to hide yourself, but also how to hide others.
+   *When you make a Stealth check, allies within 10 squares gain +2 to their next Stealth check before the end of your next turn.
+ 
+Beast Empathy:
+The beasts of the wilderness see and know most of what unfolds in their realm. Few folk heed them, but you have learned to understand and interpret their actions and attitudes. Your woodcraft is short of the magical ability to communicate with animals directly, but it is enough to reveal secrets that others miss.
+   *You gain a +2 bonus to Bluff, Diplomacy, and Intimidate checks against beasts. You can communicate simple concepts and commands to such creatures, though they are under no compulsion to obey you. With a successful Insight check (DC determined by the DM), you can read a creature's body language and vocalizations enough to understand basic messages from it.
+
+Mountain Guide:
+You have clambered over steep cliffs and ranged across imposing mountains. Your knack for climbing allows you to pick out the easiest paths up even the most imposing slopes.
+   *Whenever you succeed on an Athletics check to climb, you reduce the DC of that climb by 2 for your allies until the end of the encounter. Only allies who see you make the climb gain this benefit.
+
+Watchful Rest:
+Long days spent in the wilds have taught you the best way to set up a camp. By picking out an easily defensible spot and carefully positioning your gear, you ensure that you and your allies have the best chance to avoid an ambush.
+   *When you take an extended rest, you and any allies also taking the rest do not take the -5 penalty to Perception checks for sleeping.
+
+Wilderness Tracker:
+You are an expert at reading the signs of a creature's passage. When you inspect an area, a splintered twig or a trampled leaf is enough for you to glean a significant amount of information. Even the slyest rogues and sneakiest warlocks leave behind some trace of their passage.
+   *During a short rest, you can make a Perception check (DC determined by the DM) to inspect the area around you. This area can be as large as 10 squares on a side. If your check succeeds, you determine the number and nature of the creatures that have moved through the area in the past 24 hours. You ascertain when and where they entered the area, as well as when and where they left.
+</RulesElement>
+  <RulesElement name="Level 4 Wilderness Knack" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100017" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 4 </Category>
+    <Flavor> As you gain more experience in journeying into the wilds, you expand your range of tricks and talents. </Flavor>
+    <specific name="Short Description"> Gain one additional wilderness knacks.</specific>
+    <specific name="_CS_ShortDescription"> Gain 1 wilderness knack </specific>
+    <specific name="Level"> 4 </specific>
+    <rules>
+      <select type="Class Feature" number="1" category="ID_DBB_CLASS_FEATURE_100015, ID_FMP_CLASS_5" />
+    </rules>
+You gain one additional wilderness knack.
+</RulesElement>
+  <RulesElement name="Level 8 Wilderness Knack" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100022" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 8 </Category>
+    <Flavor> As you gain more experience in journeying into the wild, you expand your repertoire of tricks and talents. </Flavor>
+    <specific name="Short Description"> Gain one additional wilderness knacks.</specific>
+    <specific name="_CS_ShortDescription"> Gain 1 wilderness knack </specific>
+    <specific name="Level"> 8 </specific>
+    <rules>
+      <select type="Class Feature" number="1" category="ID_DBB_CLASS_FEATURE_100015, ID_FMP_CLASS_5" />
+    </rules>
+You gain one additional wilderness knack.
+</RulesElement>
+  <RulesElement name="Reactive Shift" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100018" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 5 </Category>
+    <Flavor> From the first time you faced off against a more powerful foe in combat, you learned the advantage of maintaining an optimal position for your powerful ranged attacks. When an enemy closes with you, you instinctively slip away before that foe can lock you down. </Flavor>
+    <specific name="Short Description"> Gain reactive shift power. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Powers"> ID_FMP_POWER_13600 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13600 </specific>
+    <rules>
+      <grant type="Power" name="ID_FMP_POWER_13600" />
+    </rules>
+You gain the reactive shift power.
+</RulesElement>
+  <RulesElement name="Reactive Shift" type="Power" internal-id="ID_FMP_POWER_13600" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100018,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,ID_FMP_CLASS_5 </Category>
+    <Flavor>You keep one eye on the fight around you at all times, so that you can slip away from an enemy that moves too close.</Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Ranger Utility </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> An enemy you can see ends its turn adjacent to you. </specific>
+    <specific name="Effect"> You shift a number of squares up to your Wisdom modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100018 </specific>
+  </RulesElement>
+  <RulesElement name="Peerless Perception" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100050" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 23 </Category>
+    <Flavor> Attuning yourself to the heightened awareness of the spirit world is second nature to you now. </Flavor>
+    <specific name="Short Description">Roll twice, use either result for Perception checks.</specific>
+    <specific name="_CS_ShortDescription"> Roll twice for perception. </specific>
+    <specific name="Level"> 23 </specific>
+  Whenever you make a Perception check, you can roll twice and use either result.
+</RulesElement>
+  <!-- Hunter sub-class Features -->
+  <!-- Notes: Archery Style, Aspects of the Wild (Hunter), Disruptive Shot, Expert Archer, Ranger Wilderness Knacks, Weapon Talent, Level 2 Hunter Utility Power, Level 3 Improved Disruptive Shot, Level 4 Wilderness Knack, Reactive Shift, Weapon Mastery, Level 6 Hunter Utility Power, Level 7 Aspect of the Wild (Hunter), Level 7 Improved Disruptive Shot, Level 8 Wilderness Knack, Close Combat Archery, Level 10 Hunter Utility Power, Level 13 Improved Disruptive Shot, Paragon Weapon Mastery, Level 16 Hunter Utility Power, Level 17 Aspect of the Wild (Hunter), Level 22 Hunter Utility Power, Peerless Perception, Epic Weapon Mastery, Resolute Hunter, Epic Accuracy. -->
+  <RulesElement name="Archery Style" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100010" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> All hunters are archers, and your choice of ranged weapon defines an archery style that you will hone and perfect over the course of your adventuring career. Many hunters—from the elves and eladrin of the wild forests to the humans and half-orcs of the plains and tundra—choose the longbow as their signature weapon. Most halflings prefer the shortbow due to its ease of use by smaller combatants, but either weapon excels at mowing down groups of marauding goblins, ores, and other foul creatures. The crossbow is often a more useful weapon in the cramped quarters of the Underdark. The dwarf hunters who took up their profession in the ancient caverns of their race's fallen strongholds favor the crossbow, as do hunters who spend their time in the gloom-tainted forest ruins spread across the borderlands. </Flavor>
+    <specific name="Short Description"> Select bow or crossbow archery style. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <select type="Class Feature" number="1" category="ID_DBB_CLASS_FEATURE_100010" />
+    </rules>
+You gain one of the following features depending on your choice of ranged weapon.
+
+Bow Hunter:
+You have spent so many hours training with the bow that you have learned, on your own, to use the weapon as capably as someone who received special training.
+   *You gain the Bow Expertise feat.
+
+Crossbow Hunter:
+As an expert with the crossbow, you can reload bolts in the blink of an eye. You have also mastered the intricacies of this weapon, attaining a high level of skill through focused training and practice.
+   *You gain the Crossbow Expertise feat. Also, if a crossbow you wield has the load minor property, you can instead reload it as a free action.
+</RulesElement>
+  <RulesElement name="Bow Hunter" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100032" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100010,1 </Category>
+    <Flavor> You have spent so many hours training with the bow that you have learned, on your own, to use the weapon as capably as someone who received special training. </Flavor>
+    <specific name="Short Description"> You gain the Bow Expertise feat. </specific>
+    <specific name="_CS_ShortDescription"> Gain the Bow Expertise feat </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <grant name="ID_FMP_FEAT_3124" type="Feat" />
+    </rules>
+You gain the Bow Expertise feat.
+</RulesElement>
+  <RulesElement name="Crossbow Hunter" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100033" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100010,1 </Category>
+    <Flavor> As an expert with the crossbow, you can reload bolts in the blink of an eye. You have also mastered the intricacies of this weapon, attaining a high level of skill through focused training and practice. </Flavor>
+    <specific name="Short Description"> Gain the Crossbow Expertise feat, load minor becomes load free for crossbows. </specific>
+    <specific name="_CS_ShortDescription"> Gain Crossbow Expertise; load minor becomes free </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <grant name="ID_FMP_FEAT_3126" type="Feat" />
+    </rules>
+You gain the Crossbow Expertise feat. Also, if a crossbow you wield has the load minor property, you can instead reload it as a free action.
+</RulesElement>
+  <RulesElement name="Aspects of the Wild (Hunter)" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100014" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> You have spent uncounted days in the wild, seeking forgotten paths, hunting bandits and monsters that threaten the scattered points of civilization along the frontier, and ferreting out nascent threats before they grow to menace the land. Your hours of isolated wandering build on the lore of the master hunters who taught you what you know, granting you insight into the mysterious workings of primal magic. By channeling this power, you take on the the grace and strength of great beasts of the wild as you hunt your foes. </Flavor>
+    <specific name="Short Description"> Gain utilities </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"> Aspect of the Wild </specific>
+    <specific name="Powers"> ID_FMP_POWER_13589,ID_FMP_POWER_13590,ID_FMP_POWER_13591,ID_FMP_POWER_13592,ID_FMP_POWER_13593,ID_FMP_POWER_13596,ID_FMP_POWER_13594,ID_FMP_POWER_13595 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13589,ID_FMP_POWER_13590,ID_FMP_POWER_13591,ID_FMP_POWER_13592,ID_FMP_POWER_13593,ID_FMP_POWER_13596,ID_FMP_POWER_13594,ID_FMP_POWER_13595 </specific>
+    <rules>
+      <select type="Power" number="2" category="ID_DBB_CLASS_FEATURE_100014" />
+    </rules>
+Each aspect grants a particular benefit to your attacks, whether by helping you better control the battlefield through forcing your enemies to move, limiting a creature's combat options, or dealing damage to additional foes.
+You gain two of the following powers of your choice.
+</RulesElement>
+  <RulesElement name="Disruptive Shot" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100012" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> As a battle rages around you, sometimes you spot the perfect moment to unleash a devastating shot. A foe might lose track of you for a moment, or you notice that a slight crack in an enemy's helm is the perfect spot for a shot that glances off its skull. Your skill with the bow allows you to take advantage of such opportunities. </Flavor>
+    <specific name="Short Description"> Gain the disruptive shot power.</specific>
+    <specific name="_CS_ShortDescription"> Gain disruptive shot power@Level 3 Improved Disruptive Shot </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Powers"> ID_FMP_POWER_13588 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13588 </specific>
+    <rules>
+      <grant type="Power" name="ID_FMP_POWER_13588" />
+    </rules>
+You gain the disruptive shot power.
+</RulesElement>
+<RulesElement name="Disruptive Shot" type="Power" internal-id="ID_FMP_POWER_13588" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+  <Category> ID_DBB_CLASS_FEATURE_100012,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS </Category>
+  <Prereqs> Hunter class </Prereqs> 
+  <Flavor> Through a combination of careful aim and perfect timing, your shot ruins your foe&apos;s plans. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="Display"> Ranger Attack  </specific>
+  <specific name="Keywords"> Martial, Weapon </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged weapon </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Dexterity vs. AC </specific>
+  <specific name="Hit"> 1[W] + Dexterity modifier damage and you choose for the target to be either immobilized or dazed (save ends either).
+Increase damage to 2[W] + Dexterity modifier damage at 17th level.
+Increase damage to 3[W] + Dexterity modifier damage at 27th level </specific>
+  <specific name="Miss"> Half damage, and the target is slowed until the end of your next turn. </specific>
+  <specific name="Class"> ID_FMP_CLASS_5 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100012 </specific>
+  <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+</RulesElement>
+<RulesElement name="Disruptive Shot  " type="Power" internal-id="ID_FMP_POWER_13588_DISRUPTING_SHOT" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+  <Prereqs> Disrupting Shot feat,!Hunter class </Prereqs> 
+  <Flavor> Through a combination of careful aim and perfect timing, your shot ruins your foe&apos;s plans. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="Display"> Ranger Attack </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Keywords"> Martial, Weapon </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged weapon </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Dexterity vs. AC </specific>
+  <specific name="Hit"> 1[W] + Dexterity modifier damage and you choose for the target to be either immobilized or dazed (save ends either).
+Increase damage to 2[W] + Dexterity modifier damage at 17th level.
+Increase damage to 3[W] + Dexterity modifier damage at 27th level </specific>
+  <specific name="Miss"> Half damage, and the target is slowed until the end of your next turn. </specific>
+  <specific name="Class"> ID_FMP_CLASS_5 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+</RulesElement>
+  <RulesElement name="Expert Archer" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100011" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> In the hands of a hunter, a ranged weapon becomes the most fearsome tool on the battlefield. Each arrow or bolt you fire is part of a deadly assault that no foe can stand against for long. You learn a number of tricks and techniques with ranged weapons. </Flavor>
+    <specific name="Short Description"> Gain three expert archer powers.</specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Powers"> ID_FMP_POWER_13585,ID_FMP_POWER_13586,ID_FMP_POWER_13587 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13585,ID_FMP_POWER_13586,ID_FMP_POWER_13587 </specific>
+    <rules>
+      <grant type="Power" name="ID_FMP_POWER_13585" />
+      <grant type="Power" name="ID_FMP_POWER_13586" />
+      <grant type="Power" name="ID_FMP_POWER_13587" />
+    </rules>
+You gain the following three powers.
+</RulesElement>
+  <RulesElement name="Aimed Shot" type="Power" internal-id="ID_FMP_POWER_13585" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100011,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_788,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+    <Flavor> Your mastery of the bow allows you to disregard cover, concealment, or other hindrance. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You make a ranged basic attack with a weapon, ignoring the penalty to attack rolls imposed by partial cover and partial concealment. In addition, the penalty to attack rolls imposed by superior cover and total concealment is no worse than -2 for this attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_788 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100011 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+Your focus and training allow you to draw a bead on your target despite cover, fog, and other impediments. Your mind clears, your foe comes into focus, and you unleash a shot.
+</RulesElement>
+  <RulesElement name="Clever Shot" type="Power" internal-id="ID_FMP_POWER_13586" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100011,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_788,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+    <Flavor>  By carefully judging the target's stance, you unlease a shot that sends the enemy tumbling. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You make a ranged basic attack with a weapon. If the attack hits, the target is also subject to one of the following effects of your choice:
+-You slide the target up to 2 squares.
+-The target falls prone.
+-The target is slowed (save ends).  </specific>
+    <specific name="Class"> ID_FMP_CLASS_788 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100011 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+Your skill with ranged attacks comes across in a variety of ways. Aimed shot reflects your focus and accuracy, while rapid shot is the byproduct of your speed and skill in handling your weapon. Clever shot draws on your guile and insight. You aim your shot to strike your foe at just the right angle, hindering its movement or knocking it backward as you see fit.
+</RulesElement>
+  <RulesElement name="Rapid Shot" type="Power" internal-id="ID_FMP_POWER_13587" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100011,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_788,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+    <Flavor>  You take careful aim at a group of enemies before unleashing a succession of arrows. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You make a ranged basic attack with a weapon against each creature in or adjacent to a square within the attack's range. You take a -2 penalty to the attack rolls. </specific>
+    <specific name="Class"> ID_FMP_CLASS_788 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_100011 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_788 </specific>
+By sacrificing some amount of accuracy, you unleash a series of attacks against your enemies that encourage them to spread out. When your enemies linger close to each other, your speed and confidence with your weapon allow you to lay waste their formations.
+</RulesElement>
+  <RulesElement name="Level 2 Hunter Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100060" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 2 </Category>
+    <Flavor> As you continue to demonstrate your dedication to protecting the natural world and its creatures, the primal spirits show increased respect to you and grant you even greater power. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13597,ID_FMP_POWER_13598,ID_FMP_POWER_13599 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13597,ID_FMP_POWER_13598,ID_FMP_POWER_13599 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,2,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 3 Improved Disruptive Shot" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100016" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 3 </Category>
+    <Flavor> Through constant practice, you improve your ability to unleash your most accurate attacks. </Flavor>
+    <specific name="Short Description"> Use disruptive shot one additional time per encounter (1/turn) </specific>
+    <specific name="_CS_ShortDescription"> Use twice per encounter@Level 7 Improved Disruptive Shot </specific>
+    <specific name="Level"> 3 </specific>
+    <rules>
+      <modify type="Power" name="Disruptive Shot" field="Special" value="You can use twice per encounter, but only once per turn." />
+    </rules>
+You gain one more use of disruptive shot per encounter, but you can still use it only once per turn.
+</RulesElement>
+  <RulesElement name="Level 6 Hunter Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100061" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 6 </Category>
+    <Flavor> Your determination to persevere in battle inspires the primal spirits to bestow even stronger protective energy upon you and your allies. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13607,ID_FMP_POWER_7393,ID_FMP_POWER_13609 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13607,ID_FMP_POWER_7393,ID_FMP_POWER_13609 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,6,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 7 Aspect of the Wild (Hunter)" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100020" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 7 </Category>
+    <Flavor> Each new adventure shows you more of the world, letting you expand your already impressive range of combat styles. </Flavor>
+    <specific name="Short Description"> Gain one additional aspect of the wild.</specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 7 </specific>
+    <rules>
+      <select type="Power" number="1" category="ID_DBB_CLASS_FEATURE_100014" />
+    </rules>
+You gain one additional aspect of the wild.
+</RulesElement>
+  <RulesElement name="Level 7 Improved Disruptive Shot" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100021" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 7 </Category>
+    <Flavor> Through constant practice, you improve your ability to unleash your most accurate attacks. </Flavor>
+    <specific name="Short Description"> Use disruptive shot one additional time per encounter (1/turn) </specific>
+    <specific name="_CS_ShortDescription"> Use three times per encounter@Level 11 Improved Disruptive Shot </specific>
+    <specific name="Level"> 7 </specific>
+    <rules>
+      <modify type="Power" name="Disruptive Shot" field="Special" value="You can use three times per encounter, but only once per turn." />
+    </rules>
+You gain one more use of disruptive shot per encounter, but you can still use it only once per turn.
+</RulesElement>
+  <RulesElement name="Close Combat Archery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100023" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 9 </Category>
+    <Flavor> As your reputation has grown, your enemies have learned to fear the deadly attacks you make from the edge of the fray. You have trained yourself to stay one step ahead of their defensive tactics, however, making your archery style even more deadly when a horde of foes tries to surround you on the battlefield. </Flavor>
+    <specific name="Short Description">Ranged attacks don't provoke opportunity attacks.</specific>
+    <specific name="_CS_ShortDescription"> Ranged attacks don't provoke. </specific>
+    <specific name="Level"> 9 </specific>
+Your ranged attacks don't provoke opportunity attacks.
+</RulesElement>
+  <RulesElement name="Level 10 Hunter Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100062" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 10 </Category>
+    <Flavor> The primal spirits reward you for your continued dedication as you reach the apex of the heroic tier. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13610,ID_FMP_POWER_13611,ID_FMP_POWER_13612 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13610,ID_FMP_POWER_13611,ID_FMP_POWER_13612 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,10,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 13 Improved Disruptive Shot" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100024" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 13 </Category>
+    <Flavor> Your ability to selectively target specific foes lets you make attacks of extraordinary effectiveness. </Flavor>
+    <specific name="Short Description"> Disruptive shot can blind until end of next turn instead of other effects, also gains additional features depending on weapon. </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <grant name="ID_DDB_CLASS_FEATURE_1000001" type="Class Feature" requires="ID_DBB_CLASS_FEATURE_100033" />
+      <grant name="ID_DDB_CLASS_FEATURE_1000002" type="Class Feature" requires="ID_DBB_CLASS_FEATURE_100032" />
+      <modify type="Power" name="Disruptive Shot" field="Level 13" value="When you hit with disruptive shot, you can blind the target until the end of your next turn, instead of immobilizing or dazing it. " />
+    </rules>
+When you hit with disruptive shot, you can blind the target until the end of your next turn, instead of immobilizing or dazing it.
+In addition, you gain one of the following features depending on your choice of ranged weapon.
+
+Punishing Quarrel (Crossbow Hunter):
+A precisely placed crossbow bolt hits with the force of a battering ram, leaving your foe reeling in pain.
+   *When you hit with Disruptive Shot using a crossbow, you also push the target up to 3 squares.
+
+Volley of Arrows (Bow Hunter):
+You pepper the area around your enemy with a series of additional shots, causing mayhem in the enemy's ranks.
+   *When you hit with Disruptive Shot using a bow, each enemy adjacent to the target takes damage equal to your Wisdom modifier.
+</RulesElement>
+  <RulesElement name="Punishing Quarrel" type="Class Feature" internal-id="ID_DDB_CLASS_FEATURE_1000001" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DDB_CLASS_FEATURE_100024,13 </Category>
+    <Flavor> A precisely placed crossbow bolt hits with the force of a battering ram, leaving your foe reeling in pain. </Flavor>
+    <specific name="Short Description"> When you hit with Disruptive Shot using a crossbow, you also push the target up to 3 squares. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 13 </specific>
+    <rules>
+      <modify name="Disruptive Shot" type="Power" Field="Punishing Quarrel" value="When you hit with Disruptive Shot using a crossbow, you also push the target up to 3 squares." />
+    </rules>
+When you hit with Disruptive Shot using a crossbow, you also push the target up to 3 squares.
+</RulesElement>
+  <RulesElement name="Volley of Arrows" type="Class Feature" internal-id="ID_DDB_CLASS_FEATURE_1000002" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DDB_CLASS_FEATURE_100024,13 </Category>
+    <Flavor> You pepper the area around your enemy with a series of additional shots, causing mayhem in the enemy's ranks. </Flavor>
+    <specific name="Short Description"> When you hit with Disruptive Shot using a bow, each enemy adjacent to the target takes damage equal to your Wisdom modifier. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 13 </specific>
+    <rules>
+      <modify name="Disruptive Shot" type="Power" Field="Volley of Arrows" value="When you hit with Disruptive Shot using a bow, each enemy adjacent to the target takes damage equal to your Wisdom modifier." />
+    </rules>
+When you hit with Disruptive Shot using a bow, each enemy adjacent to the target takes damage equal to your Wisdom modifier.
+</RulesElement>
+  <RulesElement name="Level 16 Hunter Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100063" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 16 </Category>
+    <Flavor> The strength of nature is yours to command, providing you with even greater powers of protection for you and your allies. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13614,ID_FMP_POWER_13615,ID_FMP_POWER_13616 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13614,ID_FMP_POWER_13615,ID_FMP_POWER_13616 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,16,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 17 Aspect of the Wild (Hunter)" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_10000030" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 17 </Category>
+    <Flavor> The struggles of the paragon tier let you push past all previous limitations, focusing your warrior's spirit as you come to terms with your true potential. </Flavor>
+    <specific name="Short Description"> Gain one additional aspect of the wild.</specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 17 </specific>
+    <rules>
+      <select type="Power" number="1" category="ID_DBB_CLASS_FEATURE_100014" />
+    </rules>
+You gain one additional aspect of the wild.
+</RulesElement>
+  <RulesElement name="Level 22 Hunter Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100064" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 22 </Category>
+    <Flavor> The primal power that once deposed the gods themselves opens up to you even more as you rise through the epic tier. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13617,ID_FMP_POWER_13618 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13617,ID_FMP_POWER_13618 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,22,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one utility power. 
+</RulesElement>
+  <RulesElement name="Resolute Hunter" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100054" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 27 </Category>
+    <Flavor> The primal spirits thread permanently through you now, granting you the power of their limitless gaze. </Flavor>
+    <specific name="Short Description"> You are immune to the blinded condition. </specific>
+    <specific name="_CS_ShortDescription"> Immune to blinded. </specific>
+    <specific name="Level"> 27 </specific>
+You are immune to the blinded condition.
+</RulesElement>
+  <RulesElement name="Epic Accuracy" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100055" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 29 </Category>
+    <Flavor> You are an epic hunter, and as great an archer as any mortal who ever lived. </Flavor>
+    <specific name="Short Description"> Normal/long range of ranged weapon increases by 10. </specific>
+    <specific name="_CS_ShortDescription"> Increase ranges +10. </specific>
+    <specific name="Level"> 29 </specific>
+Both the normal and the long range of any ranged weapon increases by 10 when you make an attack with it.
+</RulesElement>
+  <RulesElement name="Hunter Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_HUNTER_IMPLEMENTS" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_788</specific>
+  </RulesElement>
+  <!-- Hunter sub-class -->
+  <RulesElement name="Hunter" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_HUNTER" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_788 </specific>
+  </RulesElement>
+  <RulesElement name="Hunter" type="Class" internal-id="ID_FMP_CLASS_788" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="Key Abilities"> Dexterity, Wisdom </specific>
+    <specific name="Implements" />
+    <specific name="Armor Proficiencies"> Cloth, leather</specific>
+    <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged, military ranged </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude, +1 Reflex </specific>
+    <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> Dungeoneering or Nature (your choice). From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Acrobatics (Dex), Athletics (Str), Dungeoneering (Wis), Endurance (Con), Heal (Wis), Nature (Wis), Perception (Wis), Stealth (Dex) </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Archery Style, Aspects of the Wild (Hunter), Disruptive Shot, Expert Archer, Ranger Wilderness Knacks, Weapon Talent, Level 2 Hunter Utility Power, Level 3 Improved Disruptive Shot, Level 4 Wilderness Knack, Reactive Shift, Weapon Mastery, Level 6 Hunter Utility Power, Level 7 Aspect of the Wild (Hunter), Level 7 Improved Disruptive Shot, Level 8 Wilderness Knack, Close Combat Archery, Level 10 Hunter Utility Power, Level 13 Improved Disruptive Shot, Paragon Weapon Mastery, Level 16 Hunter Utility Power, Level 17 Aspect of the Wild (Hunter), Level 22 Hunter Utility Power, Peerless Perception, Epic Weapon Mastery, Resolute Hunter, Epic Accuracy </specific>
+    <specific name="Role"> Controller. Rangers such as the hunter use their training and skill with ranged weapons as well as a reverence for the natural world to make them champions of the wilderness. </specific>
+    <specific name="Power Source"> Martial and Primal. Your talents depend on extensive training and practice, inner confidence, and a deep connection to the primal spirits of the world. </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+    <specific name="_SecondaryPowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+    <specific name="Short Description"> A master of ranged weapons, you draw on cunning battle tactics to deter your enemies. </specific>
+    <specific name="_ParentClass"> ID_FMP_CLASS_5 </specific>
+    <specific name="Trait Package" />
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_HUNTER" type="Grants" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_5 (ID_FMP_CLASS_788)" />
+      <statadd name="_LEVEL-ONE-HPS" value="+12" />
+      <statadd name="_PER-LEVEL-HPS" value="+5" />
+      <statadd name="Healing Surges" value="+6" />
+      <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      <statadd name="Reflex Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_5 Choice" />
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_5" />
+    </rules>
+Hunters are the masters of ranged weapons, and they draw on cunning battle tactics to deter their enemies. Reverent allies of the natural world, hunters train in the deep forests and wilderness, tracking down and slaying monsters intent on attacking villages and towns. At the same time, they seek to find harmony with the beneficial creatures of nature, and they learn to dabble in primal power-the magic of nature itself.
+     A hunter is a controller first and foremost, manipulating the battlefield using high-precision ranged attacks. Against single targets, however, a hunter's attacks pack a punch that make it lean toward striker as a secondary role.
+</RulesElement>
+  <RulesElement name="Hunter" type="Grants" internal-id="ID_INTERNAL_GRANTS_HUNTER" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_788 </specific>
+    <rules>
+      <grant name="ID_FMP_ROLE_1" type="Role" />
+      <grant name="ID_FMP_POWER_SOURCE_4" type="Power Source" />
+      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
+      <grant name="ID_INTERNAL_GRANTS_HUNTER_IMPLEMENTS" type="Grants" />
+      <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal" />
+      <grant name="ID_INTERNAL_COUNTSASCLASS_HUNTER" type="CountsAsClass" />
+      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass" />
+      <grant name="ID_DBB_CLASS_FEATURE_100010" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_100011" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_100012" type="Class Feature" level="1" />
+      <grant name="ID_FMP_CLASS_FEATURE_2770" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_100014" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_100015" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_100060" type="Class Feature" level="2" />
+      <grant name="ID_DBB_CLASS_FEATURE_100016" type="Class Feature" level="3" />
+      <grant name="ID_DBB_CLASS_FEATURE_100017" type="Class Feature" level="4" />
+      <grant name="ID_DBB_CLASS_FEATURE_100018" type="Class Feature" level="5" />
+      <grant name="ID_FMP_CLASS_FEATURE_2754" type="Class Feature" level="5" />
+      <grant name="ID_DBB_CLASS_FEATURE_100061" type="Class Feature" level="6" />
+      <grant name="ID_DBB_CLASS_FEATURE_100020" type="Class Feature" level="7" />
+      <grant name="ID_DBB_CLASS_FEATURE_100021" type="Class Feature" level="7" />
+      <grant name="ID_DBB_CLASS_FEATURE_100022" type="Class Feature" level="8" />
+      <grant name="ID_DBB_CLASS_FEATURE_100023" type="Class Feature" level="9" />
+      <grant name="ID_DBB_CLASS_FEATURE_100062" type="Class Feature" level="10" />
+      <grant name="ID_DBB_CLASS_FEATURE_100024" type="Class Feature" level="13" />
+      <grant name="ID_FMP_CLASS_FEATURE_2762" type="Class Feature" level="15" />
+      <grant name="ID_DBB_CLASS_FEATURE_100063" type="Class Feature" level="16" />
+      <grant name="ID_DBB_CLASS_FEATURE_10000030" type="Class Feature" level="17" />
+      <grant name="ID_DBB_CLASS_FEATURE_100064" type="Class Feature" level="22" />
+      <grant name="ID_DBB_CLASS_FEATURE_100050" type="Class Feature" level="23" />
+      <grant name="ID_FMP_CLASS_FEATURE_2767" type="Class Feature" level="25" />
+      <grant name="ID_DBB_CLASS_FEATURE_100054" type="Class Feature" level="27" />
+      <grant name="ID_DBB_CLASS_FEATURE_100055" type="Class Feature" level="29" />
+    </rules>
+  </RulesElement>
+  <!-- Peerless Hunter Path -->
+  <RulesElement name="Peerless Hunter" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_789" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Prereqs> Hunter </Prereqs>
+    <print-prereqs> Hunter </print-prereqs>
+    <specific name="Class Features"> ID_DBB_CLASS_FEATURE_100026, ID_DBB_CLASS_FEATURE_100027, ID_DBB_CLASS_FEATURE_100028, ID_DBB_CLASS_FEATURE_100029, ID_DBB_CLASS_FEATURE_1000030, ID_DBB_CLASS_FEATURE_100031</specific>
+    <specific name="Powers"> ID_FMP_POWER_13613 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13613 </specific>
+    <rules>
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_100026" level="11" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_100027" level="11" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_100028" level="11" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_100029" level="12" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_1000030" level="16" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_100031" level="20" />
+    </rules>
+As your mastery of both ranged weapons and primal magic increases, you learn to unleash ever more powerful attacks against your enemies. You are ready to wander the planes, seeking out threats to the world that lie far beyond the wilderness paths you once followed.
+You are an expert with ranged weapons—matched by few, surpassed by none.
+</RulesElement>
+  <RulesElement name="Hunter's Action" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100026" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 11 </Category>
+    <Flavor> Even when you push yourself beyond normal limits in battle, your instinct for combat guides your hand.</Flavor>
+    <specific name="Short Description">Can reroll each attack roll you make before end of your turn and use second roll.</specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="When you spend an action point to make an attack, you can reroll each attack roll you make before the end of yoru turn, and you must use the second roll each time." />
+    </rules>
+When you spend an action point to make an attack, you can reroll each attack roll you make before the end of yoru turn, and you must use the second roll each time.  
+</RulesElement>
+  <RulesElement name="Level 11 Improved Disruptive Shot" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100027" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 11 </Category>
+    <Flavor> Through constant practice, you improve your ability to unleash your most accurate attacks. </Flavor>
+    <specific name="Short Description"> Use four times per encounter </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <modify type="Power" name="Disruptive Shot" field="Special" value="You can use four times per encounter, but only once per turn." />
+    </rules>
+You gain one more use of disruptive shot per encounter, but you can still use it only once per turn.
+</RulesElement>
+  <RulesElement name="Superior Archery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100028" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 11 </Category>
+    <Flavor> Your endless hours of training with the bow or crossbow lend unequaled speed to your attacks. </Flavor>
+    <specific name="Short Description"> Gain benefit to aimed shot, clever shot, and rapid shot</specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <modify type="Power" name="Aimed Shot" field="Miss" value="Half damage" />
+      <modify type="Power" name="Clever Shot" field="Miss" value="Slide the target 1 square" />
+      <modify type="Power" name="Rapid Shot" field="Superior Archery" value="You don't take the -2 penalty to attack rolls." />
+    </rules>
+You gain benefits associated with your Expert Archer powers.
+</RulesElement>
+  <RulesElement name="Hunter's Grasping Trap" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100029" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 12 </Category>
+    <Flavor> You have learned that controlling the enemy's maneuvers is the key to victory.</Flavor>
+    <specific name="Short Description">Gain hunter's grasping trap power</specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 12 </specific>
+    <rules>
+      <grant type="Power" name="ID_FMP_POWER_13613" />
+    </rules>
+  You gain the hunter's grasping trap power.
+</RulesElement>
+  <RulesElement name="Hunter's Grasping Trap" type="Power" internal-id="ID_FMP_POWER_13613" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_100029,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_100000,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
+    <Prereqs> Peerless Hunter </Prereqs>
+    <Flavor> You gather wisps of primal magic and form them into a spectral trap that lies hidden from your enemie's view. When a foes stumbles into the trap, a thick vine emerges from the ground to wrap around it. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Peerless Hunter Utility 12 </specific>
+    <specific name="Keywords"> Primal, Zone </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One square </specific>
+    <specific name="Effect"> The target becomes a zone that lasts until the end of the encounter or until an enemy enters it. Without a Perception Check (DC 10 + your level + your Wisdom modifier) your enemies notice neither the zone nor your use of this power. when an enemy enters the zone, the enemy's movement ends, you can slide it up to 4 squares, and it is slowed until the end of its next turn.</specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_789 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Threatening Archery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1000030" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Prereqs> Peerless Hunter </Prereqs>
+    <Category> 16 </Category>
+    <Flavor> When an enemy drops its guard, you snap off a shot to take advantage of its defenseless position. </Flavor>
+    <specific name="Short Description">Use ranged basic for opportunity attacks.</specific>
+    <specific name="Level"> 16 </specific>
+  If an adjacent enemy provokes an opportunity attack from you, you can use a ranged basic attack instead of a melee basic attack.  
+</RulesElement>
+  <RulesElement name="Master Hunter" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_100031" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 20 </Category>
+    <Flavor> You are a hunter without equal, attacking with such accuracy that you no longer need optimal positioning. </Flavor>
+    <specific name="Short Description"> Gain combat advantage within 5 squares with ranged basic attack. </specific>
+    <specific name="_CS_ShortDescription"> Gain combat advantage within 5 squares with ranged basic attack </specific>
+    <specific name="Level"> 20 </specific>
+You gain combat advantage against enemies within 5 squares of you when you make ranged basic attacks against them.
+</RulesElement>
+  <!-- Scout sub-class Features -->
+  <!-- Note: Aspects of the Wild (Scout), Attack Finesse, Dual Weapon Attack, Power Strike, Ranger Wilderness Knacks, Two-Weapon Style, Level 2 Scout Utility Power, Level 3 Improved Power Strike, Level 4 Wilderness Knack, Reactive Shift, Level 6 Scout Utility Power, Level 7 Aspect of the Wild (Scout), Level 8 Wilderness Knack, Improved Dual Weapon Attack, Level 10 Scout Utility Power, Enhanced Power Strike, Paragon Dual Weapon Attack, Level 16 Scout Utility Power, Level 17 Aspect of the Wild (Hunter), Cautious Shift, Level 22 Scout Utility Power, Peerless Perception, Epic Dual Weapon Attack, Epic Scout&apos;s Shift. -->
+  <RulesElement name="Aspects of the Wild (Scout)" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443216" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> The weapon training and tactics you have developed drew both from martial training and from the teachings of druids and other masters of primal magic. You have struck a careful balance between the two approaches, mastering a fighting style that employs two weapons but augmenting it with primal magic that draws on the hunting tiger, the stalking wolf, and the soaring eagle.
+This combination grants you mastery of primal aspects, reflections of natural beasts that guide you in combat. Quite literally, you fight with the strength, speed, and ferocity of an animal. Yet you temper this primal ruthlessness with the cool approach of a veteran warrior, giving you the best parts of both the primal and civilized worlds. </Flavor>
+    <specific name="Short Description"> Gain utilities </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"> Aspect of the Wild (Scout)</specific>
+    <specific name="Powers"> ID_FMP_POWER_13589,ID_FMP_POWER_13590,ID_FMP_POWER_13620,ID_FMP_POWER_13621,ID_FMP_POWER_13593,ID_FMP_POWER_13596,ID_FMP_POWER_13594,ID_FMP_POWER_13622 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13589,ID_FMP_POWER_13590,ID_FMP_POWER_13620,ID_FMP_POWER_13621,ID_FMP_POWER_13593,ID_FMP_POWER_13596,ID_FMP_POWER_13594,ID_FMP_POWER_13622 </specific>
+    <rules>
+      <select type="Power" number="2" category="ID_DBB_CLASS_FEATURE_123443216" />
+    </rules>
+You gain two of the following powers of your choice.
+</RulesElement>
+  <RulesElement name="Attack Finesse" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443213" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> Your two-weapon fighting style marks you as a warrior who relies on speed and grace more than on brute strength. Others try to cut through their foes as if they were chopping wood, but you have a more refined approach to melee. </Flavor>
+    <specific name="Short Description"> Use Dexterity for melee basic attacks </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"></specific>
+    <specific name="Powers"></specific>
+    <specific name="_DisplayPowers"></specific>
+    <rules>
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Strength or Dexterity vs. AC" />
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Strength or Dexterity modifier damage.
+Increase damage to 2[W] + Strength or Dexterity modifier damage at 21st level." />
+      <textstring name="melee basic:key ability" value="Strength,Dexterity" />
+    </rules>
+When you make a melee basic attack, you can use your Dexterity modifier instead of your Strength modifier for the attack roll and the damage roll.
+</RulesElement>
+  <RulesElement name="Dual Weapon Attack" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443212" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor>You have learned the importance of traveling fast and light as you stand between your foes and the folk you are sworn to defend. Other warriors define their combat style with the largest and most powerful weapons, often at the expense of maneuverability. You have learned to fight with two weapons, maximizing your mobility as you cut through foes with unparalleled ease. </Flavor>
+    <specific name="Short Description"> Gain the dual weapon attack power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Powers"> ID_FMP_POWER_13619 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13619 </specific>
+    <rules>
+      <grant type="Power" name="ID_FMP_POWER_13619" />
+    </rules>
+You gain the dual weapon attack power.
+</RulesElement>
+  <RulesElement name="Dual Weapon Attack" type="Power" internal-id="ID_FMP_POWER_13619" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443212,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+    <Flavor> You follow your successful swing with a quick strike from your off hand. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Free action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Requirement"> You must be wielding two melee weapons. </specific>
+    <specific name="Trigger">You hit with a melee basic attack on your turn</specific>
+    <specific name="Target">One creature</specific>
+    <specific name="Attack">Dexterity vs. AC (off-hand weapon)</specific>
+    <specific name="Hit">1[W] + Dexterity modifier damage.</specific>
+    <specific name="Effect"></specific>
+    <specific name="Special">You can use this power only once per round</specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_DBB_CLASS_FEATURE_123443212 </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_790 </specific>
+  </RulesElement>
+  <RulesElement name="Two-Weapon Style" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443211" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> From the time you first took up the scout's two-weapon fighting style, you have learned to maximize the effectiveness of your favored weapons. </Flavor>
+    <specific name="Short Description"> Select two-handed weapon style style. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <select type="Class Feature" number="1" category="ID_DBB_CLASS_FEATURE_123443211" />
+    </rules>
+You gain one of the following features, depending on your choice of off hand weapon.
+
+Flashing Blade Mastery:
+With a light blade in your offhand, you maintain the agility that lets you keep your foes off balance and susceptible to your attacks.
+   *You gain a +1 bonus to weapon attack rolls while you wield a light blade in your off hand.
+
+Spinning Axe Mastery:
+The axe is a brutal weapon that you trust to deal consistent damage. Scouts who face off against the largest, toughest enemies often favor the axe fighting style.
+   *You gain a +2 bonus to weapon damage rolls while you wield an axe in your off hand.
+</RulesElement>
+<RulesElement name="Flashing Blade Mastery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432132" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_123443211,1 </Category>
+    <Flavor> With a light blade in your off hand, you maintain the agility that lets you keep your foes off balance and susceptible to your attacks. </Flavor>
+    <specific name="Short Description"> +1 to attack rolls with light blade in off hand. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="two-weapon,weapon:attack" value="+1" requires="WearingOffHandLightBlade" />
+    </rules>
+You gain a +1 bonus to weapon attack rolls while you wield a light blade in your off hand.
+</RulesElement>
+<RulesElement name="Spinning Axe Mastery" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432133" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+  <Category> ID_DBB_CLASS_FEATURE_123443211,1 </Category>
+  <Flavor> The axe is a brutal weapon that you trust to deal consistent damage. Scouts who face off against the largest, toughest enemies often favor the axe fighting style. </Flavor>
+  <specific name="Short Description"> You gain a +2 bonus to weapon damage rolls while you wield an axe in your off hand. </specific>
+  <specific name="_CS_ShortDescription"> Gain +2 damage wielding off-hand axe </specific>
+  <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="two-weapon,weapon:damage" value="+2" requires="WearingOffHandAxe" />
+    </rules>  
+You gain a +2 bonus to weapon damage rolls while you wield an axe in your off hand.
+</RulesElement>
+<RulesElement name="Level 7 Aspect of the Wild (Scout)" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443217" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 7 </Category>
+    <Flavor> Each new adventure shows you more of the world, letting you expand your already impressive range of combat styles. </Flavor>
+    <specific name="Short Description"> Gain one additional aspect of the wild.</specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="type"> Aspect of the Wild (Scout)</specific>
+    <rules>
+      <select type="Power" number="1" category="ID_DBB_CLASS_FEATURE_123443217" />
+    </rules>
+You gain one additional aspect of the wild.
+</RulesElement>
+  <RulesElement name="Level 17 Aspect of the Wild (Scout)" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443218" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 17 </Category>
+    <Flavor> The struggles of the paragon tier let you push past all previous limitations, focusing your warrior's spirit as you come to terms with your true potential. </Flavor>
+    <specific name="Short Description"> Gain one additional aspect of the wild.</specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="type"> Aspect of the Wild (Scout) </specific>
+    <rules>
+      <select type="Power" number="1" category="ID_DBB_CLASS_FEATURE_123443218" />
+    </rules>
+You gain one additional aspect of the wild.
+</RulesElement>
+  <RulesElement name="Level 2 Scout Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_123443219" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 2 </Category>
+    <Flavor> As you gain experience, your knowledge of primal magic grows ever deeper. You now supplement your hard-earned woodcraft with the ability to command primal magic directly. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13623,ID_FMP_POWER_13624,ID_FMP_POWER_13625 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13623,ID_FMP_POWER_13624,ID_FMP_POWER_13625 </specific>
+    <specific name="Level"> 2 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,2,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 6 Scout Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432110" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 6 </Category>
+    <Flavor> Your determination to persevere in battle inspires the primal spirits to bestow even stronger protective energy upon you and your allies. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13607,ID_FMP_POWER_7393,ID_FMP_POWER_13626 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13607,ID_FMP_POWER_7393,ID_FMP_POWER_13626 </specific>
+    <specific name="Level"> 6 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,6,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 10 Scout Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432111" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 10 </Category>
+    <Flavor> The primal spirits reward you for your continued dedication as you reach the apex of the heroic tier. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13610,ID_FMP_POWER_13627,ID_FMP_POWER_13612 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13610,ID_FMP_POWER_13627,ID_FMP_POWER_13612 </specific>
+    <specific name="Level"> 10 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,10,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice.
+</RulesElement>
+  <RulesElement name="Level 16 Scout Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432112" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 16 </Category>
+    <Flavor> The strength of nature is yours to command, providing you with even greater powers of protection for you and your allies. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13614,ID_FMP_POWER_13630,ID_FMP_POWER_13631 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13614,ID_FMP_POWER_13630,ID_FMP_POWER_13631 </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,16,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice. 
+</RulesElement>
+  <RulesElement name="Level 22 Scout Utility Power" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432113" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 22 </Category>
+    <Flavor> The primal power that once deposed the gods themselves opens up to you even more as you rise through the epic tier. </Flavor>
+    <specific name="Short Description"> Gain one utility power. </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <specific name="Powers"> ID_FMP_POWER_13632,ID_FMP_POWER_13633 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13632,ID_FMP_POWER_13633 </specific>
+    <specific name="Level"> 22 </specific>
+    <rules>
+      <select type="Power" number="1" category="$$CLASS,utility,22,!ID_FMP_CATEGORY_54" />
+    </rules>
+You gain one of the following utility powers of your choice. 
+</RulesElement>
+  <RulesElement name="Enhanced Power Strike" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432116" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 13 </Category>
+    <Flavor> Your mastery of primal power grants you unique insights into the hunting forms of the fiercest predators, just as your choice of favored weapon suggests new approaches to combat that employ those forms. </Flavor>
+    <specific name="Short Description"> Use power strike one additional time per encounter (1/turn), gain extra bonus </specific>
+    <specific name="Level"> 13 </specific>
+    <rules>
+      <modify type="Power" name="Power Strike" field="Special" value="You can use power strike three times per encounter, but only once per turn." />
+      <modify type="Power" name="Power Strike" field="Eagle's Axe" value="While you wield an axe in your off hand, your power strike deals 3 extra damage to the target." requires="Spinning Axe Mastery" />
+      <modify type="Power" name="Power Strike" field="Serpent's Blade" value="While you wield a light blade in your off hand, you can take a free action to shift up to 3 squares immediately after using power strike." requires="Flashing Blade Mastery" />
+    </rules>
+You gain one more use of power strike per encounter. In addition, you gain one of the following features depending on your choice of off-hand weapon.
+
+Eagle's Axe:
+Like the great eagle, you strike with such speed and precision that your axe cleaves from one foe to the next.
+   *While you wield an axe in your offhand, your power strike deals 3 extra damage to the target.
+   
+Serpent's Blade:
+You wield your blades like twin serpents, darting in and out of your opponents' reach as you make each attack.
+   *While you wield a light blade in your offhand, you can take a free action to shift up to 3 squares immediately after using power strike.
+</RulesElement>
+  <RulesElement name="Improved Dual Weapon Attack" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432120" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 9 </Category>
+    <Flavor> After countless skirmishes, your off hand attacks are nearly as powerful as attacks with your main weapon </Flavor>
+    <specific name="Short Description"> You gain a +2 bonus to damage rolls of dual weapon attack. </specific>
+    <specific name="Level"> 9 </specific>
+    <rules>
+      <modify name="Dual Weapon Attack" field="Hit" value="1[W] + 2 + Dexterity modifier damage." />
+    </rules>
+  
+You gain a +2 bonus to damage rolls with your dual weapon attack.
+</RulesElement>
+  <RulesElement name="Paragon Dual Weapon Attack" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432121" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 15 </Category>
+    <Flavor> Your weapons become an extension of your body, hitting to deadly effect with every successful strike.</Flavor>
+    <specific name="Short Description"> Bonus damage to dual weapon attack increases to +4. </specific>
+    <specific name="Level"> 15 </specific>
+    <rules>
+      <modify name="Dual Weapon Attack" field="Hit" value="1[W] + 4 + Dexterity modifier damage." />
+    </rules>
+  
+The bonus to weapon damage rolls granted by your Improved Dual Weapon Attack class feature increases to +4
+</RulesElement>
+  <RulesElement name="Epic Dual Weapon Attack" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432122" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 25 </Category>
+    <Flavor> Your weapons become an extension of your body, hitting to deadly effect with every successful strike.</Flavor>
+    <specific name="Short Description"> Bonus damage to dual weapon attack increases to +6. </specific>
+    <specific name="Level"> 25 </specific>
+    <rules>
+      <modify name="Dual Weapon Attack" field="Hit" value="1[W] + 6 + Dexterity modifier damage." />
+    </rules>
+  
+The bonus to weapon damage rolls granted by your Improved Dual Weapon Attack class feature increases to +6
+</RulesElement>
+  <RulesElement name="Cautious Shift" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432123" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 19 </Category>
+    <Flavor> You have learned to draw on your reserves of healing and defense without breaking your stride in combat. Even as you slip away from your foes, you renew yourself for your next assault.</Flavor>
+    <specific name="Short Description">Shift 1 with second wind or total defense.</specific>
+    <specific name="Level"> 19 </specific>
+Whenever you use your second wind or take the total defense action, you can shift 1 square as a free action before or after doing so
+</RulesElement>
+  <RulesElement name="Epic Scout's Shift" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_1234432125" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 29 </Category>
+    <Flavor> You are the undisputed master of every battlefield, laughing as you slip past your foes and their feeble attempts to stop you.</Flavor>
+    <specific name="Short Description">Shift 1 additional square when you shift</specific>
+    <specific name="Level"> 29 </specific>
+  Whenever you shift, you can shift 1 additional square.
+</RulesElement>
+  <RulesElement name="Scout Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_SCOUT_IMPLEMENTS" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_790</specific>
+  </RulesElement>
+  <!-- Section 12: Scout Class -->
+  <RulesElement name="Scout" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_SCOUT" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_790 </specific>
+  </RulesElement>
+  <RulesElement name="Scout" type="Class" internal-id="ID_FMP_CLASS_790" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="Key Abilities"> Dexterity, Wisdom </specific>
+    <specific name="Implements" />
+    <specific name="Armor Proficiencies"> Cloth, leather, hide</specific>
+    <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged, military ranged </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude, +1 Reflex </specific>
+    <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> Dungeoneering or Nature (your choice). From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Acrobatics (Dex), Athletics (Str), Dungeoneering (Wis), Endurance (Con), Heal (Wis), Nature (Wis), Perception (Wis), Stealth (Dex) </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Aspects of the Wild (Scout), Attack Finesse, Dual Weapon Attack, Power Strike, Ranger Wilderness Knacks, Two-Weapon Style, Level 2 Scout Utility Power, Level 3 Improved Power Strike, Level 4 Wilderness Knack, Reactive Shift, Level 6 Scout Utility Power, Level 7 Aspect of the Wild (Scout), Level 8 Wilderness Knack, Improved Dual Weapon Attack, Level 10 Scout Utility Power, Enhanced Power Strike, Paragon Dual Weapon Attack, Level 16 Scout Utility Power, Level 17 Aspect of the Wild (Hunter), Cautious Shift, Level 22 Scout Utility Power, Peerless Perception, Epic Dual Weapon Attack, Epic Scout's Shift </specific>
+    <specific name="Role"> Striker. Rangers such as the scout mix a singular two-weapon combat style with a mastery of primal magic to overwhelm their foes. </specific>
+    <specific name="Power Source"> Martial and Primal. Your talents depend on extensive training and practice, inner confidence, and a deep connection to the primal spirits of the world. </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+    <specific name="_SecondaryPowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+    <specific name="Short Description"> A master of fighting with two weapons, you draw on cunning battle tactics to deter your enemies. </specific>
+    <specific name="_ParentClass"> ID_FMP_CLASS_5 </specific>
+    <specific name="Trait Package" />
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_SCOUT" type="Grants" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_5 (ID_FMP_CLASS_790)" />
+      <statadd name="_LEVEL-ONE-HPS" value="+12" />
+      <statadd name="_PER-LEVEL-HPS" value="+5" />
+      <statadd name="Healing Surges" value="+7" />
+      <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      <statadd name="Reflex Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_5 Choice" />
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_5" />
+    </rules>
+Scouts learn to wield two weapons at once, from the supple combination of longsword and short sword to the brutal double assault of battleaxe and handaxe. This tactic denies the defensive benefit of a shield, but allows a scout to strike hard and fast. At their best when outnumbered and surrounded, scouts count on speed and accuracy in combat to overwhelm their foes.
+     Scouts augment their combat prowess with primal magic, channeling the supernatural power of the natural world to their advantage. Primal power allows a scout to pass by foes unseen, to discourage pursuit, and to keep his or her companions alive in the wild under conditions that would slay lesser explorers outright.
+</RulesElement>
+  <RulesElement name="Scout" type="Grants" internal-id="ID_INTERNAL_GRANTS_SCOUT" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_790 </specific>
+    <rules>
+      <grant name="ID_FMP_ROLE_3" type="Role" />
+      <grant name="ID_FMP_POWER_SOURCE_4" type="Power Source" />
+      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
+      <grant name="ID_INTERNAL_GRANTS_SCOUT_IMPLEMENTS" type="Grants" />
+      <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal" />
+      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443211" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443212" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443213" type="Class Feature" level="1" />
+      <grant name="ID_FMP_CLASS_FEATURE_2851" type="Class Feature" level="1" />
+      <modify name="Power Strike" type="Power" Field="Display" value=" Ranger Attack " />
+      <modify name="Power Strike" type="Power" Field="Class" value="ID_FMP_CLASS_790" />
+      <grant name="ID_DBB_CLASS_FEATURE_100015" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443216" type="Class Feature" level="1" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443217" type="Class Feature" level="7" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443218" type="Class Feature" level="17" />
+      <grant name="ID_DBB_CLASS_FEATURE_123443219" type="Class Feature" level="2" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432110" type="Class Feature" level="6" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432111" type="Class Feature" level="11" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432112" type="Class Feature" level="16" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432113" type="Class Feature" level="22" />
+      <grant name="ID_FMP_CLASS_FEATURE_2752" type="Class Feature" Level="3" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432116" type="Class Feature" level="13" />
+      <grant name="ID_DBB_CLASS_FEATURE_100018" type="Class Feature" level="5" />
+      <grant name="ID_DBB_CLASS_FEATURE_100017" type="Class Feature" level="4" />
+      <grant name="ID_DBB_CLASS_FEATURE_100022" type="Class Feature" level="8" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432120" type="Class Feature" level="9" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432121" type="Class Feature" level="15" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432122" type="Class Feature" level="25" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432123" type="Class Feature" level="19" />
+      <grant name="ID_DBB_CLASS_FEATURE_100050" type="Class Feature" level="23" />
+      <grant name="ID_DBB_CLASS_FEATURE_1234432125" type="Class Feature" level="29" />
+    </rules>
+  </RulesElement>
+  <!-- Intrepid Scout Path -->
+  <RulesElement name="Intrepid Scout" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_791" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Prereqs> Scout </Prereqs>
+    <print-prereqs> Scout</print-prereqs>
+    <specific name="Class Features"> ID_DBB_CLASS_FEATURE_432112341, ID_FMP_CLASS_FEATURE_3008, ID_DBB_CLASS_FEATURE_432112343, ID_DBB_CLASS_FEATURE_432112344, ID_DBB_CLASS_FEATURE_432112345, ID_DBB_CLASS_FEATURE_432112346</specific>
+    <specific name="Powers"> ID_FMP_POWER_13629 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13629 </specific>
+    <rules>
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_432112341" level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_3008" type="Class Feature" Level="11" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_432112343" level="11" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_432112344" level="12" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_432112345" level="16" />
+      <grant type="Class Feature" name="ID_DBB_CLASS_FEATURE_432112346" level="20" />
+    </rules>
+In battle, you are now a whirlwind. Your two weapons combine to cleave through your foes. Your enemies struggle to corner you as you dart from one foe to the next.
+Your mastery of two weapon fighting combines with your focus and speed to grant you unmatched mobility.
+	</RulesElement>
+  <RulesElement name="Scout's Action" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_432112341" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 11 </Category>
+    <Flavor> You count on being able to freely combine movement with you attacks to keep a constant advantage over your foes. When you push yourself past your limits, you summon up a surge of speed that lets you slip across the battlefield with ease.</Flavor>
+    <specific name="Short Description">Shift up to speed with action point</specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="When you spend an action point to take an extra action, you can shift up to your speed before or after taking that extra action." />
+    </rules>
+  When you spend an action point to take an extra action, you can shift up to your speed before or after taking that extra action.  
+</RulesElement>
+  <RulesElement name="Scout's Mobility" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_432112343" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 11 </Category>
+    <Flavor> Your tireless stride lets you cover more ground than other characters can. </Flavor>
+    <specific name="Short Description"> +1 speed </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="Speed" value="+1" />
+    </rules>
+You gain a +1 bonus to speed.
+</RulesElement>
+  <RulesElement name="Scout's Stride" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_432112344" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 12 </Category>
+    <Flavor> You thrive on staying in motion at the center of combat, and your pursuit of the intrepid scout path lets you augment your natural speed with primal power.</Flavor>
+    <specific name="Short Description">Gain scout's stride power</specific>
+    <specific name="Level"> 12 </specific>
+    <rules>
+      <grant type="Power" name="ID_FMP_POWER_13629" />
+    </rules>
+  You gain the scout's stride power.
+</RulesElement>
+  <RulesElement name="Scout's Stride" type="Power" internal-id="ID_FMP_POWER_13629" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_DBB_CLASS_FEATURE_432112344,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_43211234,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MOVE_ACTION,12 </Category>
+    <Prereqs> Intrepid Scout </Prereqs>
+    <Flavor>Calling upon the primal spirits to guide your movement, you slip safely across the battlefield at supernatural speed</Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Intrepid Scout Utility 12 </specific>
+    <specific name="Keywords"> Primal </specific>
+    <specific name="Action Type"> Move</specific>
+    <specific name="Attack Type">Personal</specific>
+    <specific name="Target"></specific>
+    <specific name="Effect"> You shift up to twice your speed. You ignore difficult terrain during this movement.</specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_791 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Speed of the Wild" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_432112345" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Prereqs> Intrepid Scout</Prereqs>
+    <Category> 16 </Category>
+    <Flavor> Your natural agility and speed draw on your mastery of primal power to provide you freedom of movement in the widest range of environments. Whether you are fighting in the treetops, traversing the summit of a mountain peak, or fording a rushing stream, no foe can elude you for long.</Flavor>
+    <specific name="Short Description">Gain climb &amp; swim speed</specific>
+    <specific name="Level"> 16 </specific>
+You gain a climb speed and a swim speed equal to your speed.  
+  </RulesElement>
+  <RulesElement name="Isolated Assault" type="Class Feature" internal-id="ID_DBB_CLASS_FEATURE_432112346" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 20 </Category>
+    <Flavor> As you reach the peak of the paragon tier, your foes have learned to fear your presence on the battlefield. With no enemies or allies to shield it from your wrath, a chosen foe grants you the advantage. </Flavor>
+    <specific name="Short Description">Gain combat advantage against lone enemies</specific>
+    <specific name="Level"> 20 </specific>
+You gain combat advantage with melee weapon attacks against any enemy that has no creatures but you adjacent to it.
+</RulesElement>
+  <!-- Ranger Powers, Dragon # 392 -->
+<RulesElement name="Avian Grace" type="Power" internal-id="ID_FMP_POWER_13696" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_5 </Prereqs>
+    <Flavor> A stairway of arrows appears where you point your bow. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> You must have a raptor beast companion </specific>
+    <specific name="Effect"> Until the end of the encounter, you can make long jumps as if you had a running start, and you gain a +2 power bonus on your fly speed (if any). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+  
+<RulesElement name="Equestrian Maneuver" type="Power" internal-id="ID_FMP_POWER_13697" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_90 </Prereqs>
+    <Flavor> You guide your horse through tight spaces to reach that enemy who thought he was safe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 1  </specific>
+    <specific name="Prerequisite"> You must have a horse beast companion </specific>
+    <specific name="Target"> You and your beast companion. </specific>
+    <specific name="Effect"> Until the end of your next turn, while you are mounted on your beast companion, squeezing does not cause you or your beast companion to take a -5 penalty on attack rolls, grant combat advantage, or move at half speed </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Feline Escape" type="Power" internal-id="ID_FMP_POWER_13698" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_3 </Prereqs>
+    <Flavor> You sidestep an attack as nimbly as your companion might. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You are hit by an attack that targets AC or Reflex </specific>
+    <specific name="Prerequisite"> You must have a cat beast companion </specific>
+    <specific name="Effect"> You gain a +4 bonus to AC and Reflex until the end of your next turn. If the triggering attack misses you because of this bonus, you can shift a number of squares equal to your Wisdom modifier (minimum 1). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Path of the Monkey" type="Power" internal-id="ID_FMP_POWER_13699" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_91 </Prereqs>
+    <Flavor> You and your companion take to the trees as if born there. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> You must have a simian beast companion </specific>
+    <specific name="Effect"> Until the end of the encounter or until your beast companion is killed or becomes unconscious, you gain a climb speed equal to your speed, and a +4 power bonus on Acrobatics checks. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Reptilian Perseverance" type="Power" internal-id="ID_FMP_POWER_13700" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_FREE_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_4 </Prereqs>
+    <Flavor> With the tenacity of the plodding giant lizard, you ignore those who would push you back. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Close burst 5  </specific>
+    <specific name="Trigger"> You or your beast companion are pushed, pulled, or slid. </specific>
+    <specific name="Prerequisite"> You must have a lizard beast companion </specific>
+    <specific name="Target"> You and your beast companion. </specific>
+    <specific name="Effect"> Reduce the triggering forced movement on you and your beast companion by a number of squares equal to your Wisdom modifier (minimum 1). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+  
+<RulesElement name="Slither's Stride" type="Power" internal-id="ID_FMP_POWER_13701" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_6 </Prereqs>
+    <Flavor> You twist, contort, and scramble with surprising grace and speed. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> You must have a serpent beast companion </specific>
+    <specific name="Effect"> Until the end of the encounter or until your beast companion is killed or becomes unconscious, you can shift 2 squares as a move action and ignore difficult terrain when you shift. If you already ignore difficult terrain when shifting, you can shift 3 squares instead of 2. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+  
+<RulesElement name="Tenacity of the Tusked" type="Power" internal-id="ID_FMP_POWER_13702" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_2 </Prereqs>
+    <Flavor> You sidestep an attack as nimbly as your companion might. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You take damage from a melee attack </specific>
+    <specific name="Prerequisite"> You must have a boar beast companion </specific>
+    <specific name="Effect"> Reduce the damage you take from the triggering attack by a number equal to half your level + Wisdom modifier (minimum 1). If you take no damage from the attack because of this reduction, then you are not affected by any conditions or effects this attack would have caused on a hit. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<RulesElement name="Ursine Brutality" type="Power" internal-id="ID_FMP_POWER_13703" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_1 </Prereqs>
+    <Flavor> With a roar you lunge forward, bullying your enemies backward. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> You must have a bear beast companion </specific>
+    <specific name="Effect"> Until the stance ends, when you hit a creature with a melee attack, you can push that creature 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+  
+<RulesElement name="Web Trick" type="Power" internal-id="ID_FMP_POWER_13704" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_FREE_ACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_7 </Prereqs>
+    <Flavor> Sticky webbing is a lifesaver in sticky situations. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Prerequisite"> You must have a spider beast companion </specific>
+    <specific name="Requirement"> Your beast companion must be within 5 squares of you and able to make opportunity attacks. </specific>
+    <specific name="Trigger"> You make an Athletics check while climbing or because you took damage while climbing, or you make a saving throw to avoid being forced into hindering terrain or over a precipice. </specific>
+    <specific name="Effect"> You gain a +4 power bonus to the triggering climb check or saving throw. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+  
+<RulesElement name="Wolf Trip" type="Power" internal-id="ID_FMP_POWER_13705" source="Dragon Magazine 392" revision-date="12/03/2010 11:55:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,2 </Category>
+    <Prereqs> ID_FMP_COMPANION_8 </Prereqs>
+    <Flavor> Once an enemy is on the ground, your wolf companion excels at keeping it there. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Beast, Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You take damage from a melee attack. </specific>
+    <specific name="Prerequisite"> You must have a wolf beast companion </specific>
+    <specific name="Requirement"> Your beast companion must be adjacent to the triggering enemy and able to make opportunity attacks. </specific>
+    <specific name="Effect"> The triggering enemy is knocked prone and cannot stand up until it begins a move action not adjacent to your beast companion. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+  
+<!-- Playtest Ranger Class Features -->
+<RulesElement name="Clever Shot Mastery" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_34501" source="Player Essentials: Class Compendium">
+  <Category> 1 </Category>
+  <Flavor>  </Flavor>
+  <specific name="Short Description"> Gain Clever Shot in place of a ranger at-will attack. </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="type"> At-Will </specific>
+  <specific name="Powers"> ID_FMP_POWER_13586 </specific>
+   <specific name="_DisplayPowers"> ID_FMP_POWER_13586 </specific>
+You may select Clever Shot as one of your level 1 at-will attacks.
+</RulesElement>
+
+<RulesElement name="Rapid Shot Mastery" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_34502" source="Player Essentials: Class Compendium">
+  <Category> 1 </Category>
+  <Flavor>  </Flavor>
+  <specific name="Short Description"> Gain Rapid Shot in place of a ranger at-will attack. </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="type"> At-Will </specific>
+  <specific name="Powers"> ID_FMP_POWER_13587 </specific>
+   <specific name="_DisplayPowers"> ID_FMP_POWER_13587 </specific>
+You may select Rapid Shot as one of your level 1 at-will attacks.
+</RulesElement>
+
+<RulesElement name="Aimed Shot Mastery" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_34503" source="Player Essentials: Class Compendium">
+  <Category> 1 </Category>
+  <Flavor>  </Flavor>
+  <specific name="Short Description"> Gain Aimed Shot in place of a ranger at-will attack. </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="type"> At-Will </specific>
+  <specific name="Powers"> ID_FMP_POWER_13585 </specific>
+   <specific name="_DisplayPowers"> ID_FMP_POWER_13585 </specific>
+You may select Aimed Shot as one of your level 1 at-will attacks.
+</RulesElement>
+
+<RulesElement name="Aimed Shot (Archery Mastery)" type="Power" internal-id="ID_CDJ_POWER_13585" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Prereqs> Aimed Shot Mastery class feature </Prereqs>
+	<Flavor> Your mastery of the bow allows you to disregard cover, concealment, or other hindrance. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You make a ranged basic attack with a weapon, ignoring the penalty to attack rolls imposed by partial cover and partial concealment. In addition, the penalty to attack rolls imposed by superior cover and total concealment is no worse than -2 for this attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+	<specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+Your focus and training allow you to draw a bead on your target despite cover, fog, and other impediments. Your mind clears, your foe comes into focus, and you unleash a shot.
+</RulesElement>
+  <RulesElement name="Clever Shot (Archery Mastery)" type="Power" internal-id="ID_CDJ_POWER_13586" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Prereqs> Clever Shot Mastery class feature </Prereqs>
+	<Flavor>  By carefully judging the target&apos;s stance, you unlease a shot that sends the enemy tumbling. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You make a ranged basic attack with a weapon. If the attack hits, the target is also subject to one of the following effects of your choice:
+-You slide the target up to 2 squares.
+-The target falls prone.
+-The target is slowed (save ends).  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+	<specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+Clever shot draws on your guile and insight. You aim your shot to strike your foe at just the right angle, hindering its movement or knocking it backward as you see fit.
+</RulesElement>
+  <RulesElement name="Rapid Shot (Archery Mastery)" type="Power" internal-id="ID_CDJ_POWER_13587" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Prereqs> Rapid Shot Mastery class feature </Prereqs>
+	<Flavor>  You take careful aim at a group of enemies before unleashing a succession of arrows. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You make a ranged basic attack with a weapon against each creature in or adjacent to a square within the attack's range. You take a -2 penalty to the attack rolls. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+	<specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+By sacrificing some amount of accuracy, you unleash a series of attacks against your enemies that encourage them to spread out. When your enemies linger close to each other, your speed and confidence with your weapon allow you to lay waste their formations.
+</RulesElement>
+<!-- DSH -->
+  <RulesElement name="Blinding Assault" type="Power" internal-id="ID_FMP_POWER_16480" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> Delivering a wicked strike, you momentarily rob your opponent of sight and then take advantage of its fumbling. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength (melee) or Dexterity (ranged) vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage (melee) or 1[W] + Dexterity modifier damage (ranged), and the target is blinded and cannot shift (save ends both). Until this effect ends, you can shift 1 square as a free action whenever the target misses with an attack. </specific>
+    <specific name="Miss"> Half damage, and the target takes a -2 penalty to attack rolls (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+The blind grimlocks navigate the Underdark's tunnels with other senses. Keen hearing, sense of smell, and instinct help them make their way. When they attack, therefore, they do so under cover of darkness, hoping to prey on disoriented enemies. Blinding assault takes its cue from the grimlocks, taking down the enemy while it struggles to find you.
+</RulesElement>
+  <RulesElement name="Rattle the Senses" type="Power" internal-id="ID_FMP_POWER_16486" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> A precise strike makes your enemy reel in disorientation, robbing it of its ability to use its specialized senses. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength (melee) or Dexterity (ranged) vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage (melee) or Dexterity modifier damage (ranged), and the target is dazed (save ends). </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> The target loses blindsight and tremorsense until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+The most dangerous enemies of the Underdark are able to detect you without light, and in some cases even without eyes! Through preternatural hearing, echolocation, or even detecting vibrations in the ground, these enemies can feel you coming, but rattle the senses denies them this natural advantage.
+</RulesElement>
+</D20Rules>

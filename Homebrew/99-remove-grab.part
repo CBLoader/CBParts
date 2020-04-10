@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>31-July-2011</Version>
+    <Filename>99-remove-grab.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/99-remove-grab.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/99-remove-grab.txt</VersionAddress>
+  </UpdateInfo>
+
+<!-- Disable Grab, Bull Rush and Opportunity Attacks -->
+<!-- 99-remove-grab.part, version 1.00 -->
+<!-- Original release: 31-July-2011; Last modified: 31-July-2011 -->
+<!-- Test compiled with CBLoader build V1.2.4.1 -->
+
+<!-- Updated 31-July-2011 File released -->
+
+<RemoveNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
+    <grant name="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" type="Power" />
+    <grant name="ID_INTERNAL_POWER_GRAB_ATTACK" type="Power" />
+    <grant name="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" type="Power" />
+</RemoveNodes>
+</D20Rules>

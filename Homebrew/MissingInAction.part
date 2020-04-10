@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules>
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>MissingInAction.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/MissingInAction.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/MissingInAction.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Missing In Action" type="source" internal-id="ID_RYV_SOURCE_MIA" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.rpgnow.com/product_reviews.php?products_id=64330 </specific>
+    <specific name="Release Date"></specific>
+  </RulesElement>
+  <RulesElement name="Offensive Barricade" type="Power" internal-id="ID_RYV_POWER_43501" source="Missing In Action" revision-date="8/27/2010 11:22:42 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> The sweeping strokes of your weapon keep your foe at bay and punish him if he gets too close. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Barbarian Attack 1 </specific>
+    <specific name="Keywords"> Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> The target takes a -1 penalty to attack rolls against you until the start of your next turn while it is adjacent to you and you are able to make opportunity attacks. If you are raging, it also takes damage equal to your Strength modifier before it makes its attack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_148 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sonic Resonance" type="Power" internal-id="ID_RYV_POWER_43502" source="Missing In Action" revision-date="8/27/2010 11:27:42 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> If your opponent resists your thunderous blast, its powerful echoes amplify the effect of other sonic attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Thunder, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier thunder damage.
+Level 21: 2d6 + Charisma modifier thunder damage. </specific>
+    <specific name="Miss"> The target takes a -1 penalty to all defenses against thunder attacks until the end of your next turn. The next attack that deals thunder damage to it before the end of your next turn deals extra damage to it equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Siren Strike" type="Power" internal-id="ID_RYV_POWER_43503" source="Missing In Action" revision-date="8/27/2010 11:27:43 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> As you attack, you alert a nearby ally to move closer if you need help. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage. 
+Level 21: 2[W] + Charisma modifier damage.  </specific>
+    <specific name="Miss"> Choose one ally within 5 squares of you. That ally may shift 1 square closer to you. The next time the ally deals damage to the target before the start of your next turn, he deals extra damage to it equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sigil of Bounty" type="Power" internal-id="ID_RYV_POWER_43504" source="Missing In Action" revision-date="8/27/2010 11:22:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You single out an enemy as deserving of your deity's wrath. If you fail to wound him, your deity rewards an ally who succeeds. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 1 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> The next ally who deals damage to the target before the start of your next turn gains temporary hit points equal to your Strength modifier. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Healer's Gamble" type="Power" internal-id="ID_RYV_POWER_43505" source="Missing In Action" revision-date="8/27/2010 11:22:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Radiant energy envelops an enemy. If resisted, it lingers on to aid a creature that he attacks. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 1 </specific>
+    <specific name="Keywords"> Divine, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 1d8 + Wisdom modifier radiant damage.
+Level 21: 2d8 + Wisdom modifier damage. </specific>
+    <specific name="Miss"> The target takes a penalty equal to your Wisdom modifier to its next damage roll before the start of your next turn.  </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Lightning Discharge" type="Power" internal-id="ID_RYV_POWER_43506" source="Missing In Action" revision-date="8/27/2010 11:28:45 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Static builds up in the air around your enemy, threatening to discharge at any time. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Druid Attack 1 </specific>
+    <specific name="Keywords"> Implement, Primal, Lightning, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + Wisdom modifier lightning damage.
+Level 21: 2d6 + Wisdom modifier lightning damage. </specific>
+    <specific name="Miss"> One square in the target's space becomes a zone of undischarged static. The zone lasts until the start of your next turn, at which time the static in the zone discharges, dealing lightning damage equal to your Wisdom modifier to any creature in the zone. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_126 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Caging Claws" type="Power" internal-id="ID_RYV_POWER_43507" source="Missing In Action" revision-date="8/27/2010 11:28:46 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_50,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Your furious swipes make it dangerous for your enemy to move. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Druid Attack 1 </specific>
+    <specific name="Keywords"> Beast Form, Implement, Primal </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee touch </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + Wisdom modifier damage. 
+Level 21: 2d6 + Wisdom modifier damage.	</specific>
+    <specific name="Miss"> Until the start of your next turn, you may use this power as a melee basic attack against the target. In addition, the next time the target leaves a square adjacent to you before the start of your next turn while you are able to make opportunity attacks, it takes damage equal to your Wisdom modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_126 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Hedging Strike" type="Power" internal-id="ID_RYV_POWER_43508" source="Missing In Action" revision-date="8/27/2010 11:23:35 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Avoiding your carefully-timed strokes distracts your enemy from attacking your allies. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Fighter Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Targets"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> The target takes a -1 penalty to attack rolls against your allies until the start of your next turn. The next time the target attacks an ally before the start of your next turn while it is adjacent to you and you are able to make opportunity attacks, it takes damage equal to your Wisdom modifier before it makes its attack. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_3 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Retributive Glow" type="Power" internal-id="ID_RYV_POWER_43509" source="Missing In Action" revision-date="8/27/2010 11:22:56 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Radiant energy infuses your weapon. If you miss your opponent, it lingers on to punish him when he attacks one of your allies. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Weapon, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier radiant damage.
+Level 21: 2[W] + Charisma modifier radiant damage. </specific>
+    <specific name="Miss"> If the target attacks an ally before the start of your next turn, it takes radiant damage equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Building Wrath" type="Power" internal-id="ID_RYV_POWER_43510" source="Missing In Action" revision-date="8/27/2010 11:22:56 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Missing your opponent only fuels your righteous fury. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> You gain a +1 bonus to your next attack roll against the target before the end of your next turn. The next time you deal damage to the target before the end of your next turn, you deal extra damage to it equal to your Strength modifier. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Distract the Prey" type="Power" internal-id="ID_RYV_POWER_43511" source="Missing In Action" revision-date="8/27/2010 11:21:55 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Your target may have avoided your attack, but he had to turn his back on your ally for just long enough. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Requirement"> You must be wielding two melee weapons or a ranged weapon. </specific>
+    <specific name="Targets"> One or two creatures </specific>
+    <specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged), two attacks </specific>
+    <specific name="Hit"> 1[W] + Strength modifier (melee) or Dexterity modifier (ranged) damage.
+Level 21: 2[W] + Strength modifier (melee) or Dexterity modifier (ranged) damage. </specific>
+    <specific name="Miss"> Choose an ally within 5 squares of the target. The ally gains a +1 bonus to his next attack roll against the target before the start of your next turn. The next time the ally deals damage to the target before the start of your next turn, he deals extra damage to it equal to your Wisdom modifier. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Forced Misstep" type="Power" internal-id="ID_RYV_POWER_43512" source="Missing In Action" revision-date="8/27/2010 11:22:46 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You force your opponent to scramble into a precarious position if he wants to avoid your attack. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Rogue Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Requirement"> You must be wielding a crossbow, sling or light blade. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 1[W] + Dexterity modifier damage.
+Level 21: 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Miss"> The next ally who has combat advantage against the target and deals damage to it before the start of your next turn deals extra damage to it equal to your Dexterity modifier and may push it 1 square. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Spectrum Tendril" type="Power" internal-id="ID_RYV_POWER_43513" source="Missing In Action" revision-date="8/27/2010 11:38:32 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You summon a tendril of energy that lashes out at a foe and strikes at a nearby enemy if it misses. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Implement; Variable </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Primary Target"> One creature </specific>
+    <specific name="Primary Attack"> Charisma vs. Reflex </specific>
+    <specific name="Effect"> Each time you cast this spell, select a damage type which you are resistant to from the following: acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, or thunder. The attack deals damage of that type. </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier damage of the chosen type.
+Level 21: 2d6 + Charisma modifier damage of the chosen type. </specific>
+    <specific name="Miss"> The next enemy who enters a square adjacent to you or ends its turn adjacent to you before the start of your next turn takes damage of the selected type equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Repulsive Dread" type="Power" internal-id="ID_RYV_POWER_43514" source="Missing In Action" revision-date="8/27/2010 11:25:08 AM">
+    <Category> ID_FMP_CLASS_FEATURE_774,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You fill your opponent's mind with the strong desire to move away from you. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Fear, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier radiant damage.
+Level 21: 2d6 + Charisma modifier radiant damage. </specific>
+    <specific name="Miss"> If the target does not end its turn further from you than where it was when it started its turn, it takes psychic damage equal to your Intelligence modifier. </specific>
+    <specific name="Special"> A star pact warlock may select this spell in place of the Dire Radiance power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_774 </specific>
+  </RulesElement>
+  <RulesElement name="Bewildering Glamour" type="Power" internal-id="ID_RYV_POWER_43515" source="Missing In Action" revision-date="8/27/2010 11:25:07 AM">
+    <Category> ID_FMP_CLASS_FEATURE_772,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You beguile your opponent, draining his will. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Charm, Implement, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier psychic damage.
+Level 21: 2d6 + Charisma modifier psychic damage. </specific>
+    <specific name="Miss"> The target takes a -1 penalty to Will defense until the end of your next turn. The next attack that deals psychic damage to it before the end of your next turn deals extra damage to it equal to your Intelligence modifier. </specific>
+    <specific name="Special"> A fey pact warlock may select this spell in place of the Eyebite power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_772 </specific>
+  </RulesElement>
+  <RulesElement name="Vitality Drain" type="Power" internal-id="ID_RYV_POWER_43516" source="Missing In Action" revision-date="8/27/2010 11:25:08 AM">
+    <Category> ID_FMP_CLASS_FEATURE_773,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> Necrotic energy weakens your foe. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlock Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Necrotic, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Constitution vs. Fortitude </specific>
+    <specific name="Hit"> 1d6 + Constitution modifier necrotic damage.
+Level 21: 2d6 + Constitution modifier necrotic damage. </specific>
+    <specific name="Miss"> The target takes a -1 penalty to Fortitude defense until the end of your next turn. The next attack that deals necrotic damage to the target before the end of your next turn deals extra damage to it equal to your Intelligence modifier. </specific>
+    <specific name="Special"> An infernal pact warlock may select this spell in place of the Hellish Rebuke or Gift to Avernus powers. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_773 </specific>
+  </RulesElement>
+  <RulesElement name="Tactical Gambit" type="Power" internal-id="ID_RYV_POWER_43517" source="Missing In Action" revision-date="8/27/2010 11:22:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You time your attack so that even if your enemy dodges your weapon, he is distracted just long enough for an ally to move or strike a glancing blow. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> As a free action, an ally adjacent to the target may shift 1 square or deal damage to it equal to his Strength modifier. </specific>
+    <specific name="_Associated Feats"></specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Clutching Hand" type="Power" internal-id="ID_RYV_POWER_43518" source="Missing In Action" revision-date="8/27/2010 11:22:25 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You create a hand of force that latches on to an opponent, choking him or hindering his movements. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Wizard Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Implement, Force </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + Intelligence modifier force damage
+Level 21: 2d6 + Intelligence modifier force damage. </specific>
+    <specific name="Miss"> The target takes a -1 penalty to AC and Reflex defense until the end of your next turn or until it moves. In addition, the next time the target moves before the end of your next turn, it takes force damage equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_9 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Fey Pact" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_772" source="Player's Handbook,Missing In Action,Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_777,1 </Category>
+    <specific name="Short Description"> Eyebite spell; Misty Step boon: When cursed foe is dropped to 0 hp, you can teleport 3 squares (free). </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_2094,ID_FMP_POWER_1456,ID_RYV_POWER_43515 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1456,ID_RYV_POWER_43515,ID_FMP_POWER_2094 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1456|ID_RYV_POWER_43515" default="Eyebite" />
+      <grant name="ID_FMP_POWER_2094" type="Power" />
+    </rules>
+You have forged a bargain with ancient, amoral powers of the Feywild. Some are primitive earth spirits, grim and menacing; some are capricious wood, sky, or water spirits; and others are incarnations of seasons or natural forces who roam the faerie realm like wild gods. They bestow magic that ranges from feral and savage to wondrous and enchanting.
+	Eyebite: You know the eyebite spell. Alternatively, you could know the Bewildering Glamour spell.
+	Misty Step: You have the Misty Step pact boon. You instantly transform into silver mist that streams a short distance and reforms, allowing you to flee or maneuver to set up a deadly attack.
+	When an enemy under your Warlock's Curse is reduced to 0 hit points or fewer, you can immediately teleport 3 squares as a free action.
+   </RulesElement>
+  <RulesElement name="Infernal Pact" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_773" source="Player's Handbook,Missing In Action,Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_777,1 </Category>
+    <specific name="Short Description"> Hellish rebuke spell; Dark One's Blessing boon: When cursed foe is dropped to 0 hp, gain temporary hp equal to your level. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_2095,ID_FMP_POWER_1458,ID_RYV_POWER_43516 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_2095,ID_FMP_POWER_1458,ID_FMP_POWER_12307,ID_RYV_POWER_43516 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1458|ID_FMP_POWER_12307|ID_RYV_POWER_43516" default="Hellish Rebuke" />
+      <grant name="ID_FMP_POWER_2095" type="Power" />
+    </rules>
+Long ago a forgotten race of devils created a secret path to power and taught it to the tieflings of old to weaken their fealty to Asmodeus. In his wrath, Asmodeus destroyed the scheming devils and struck their very names from the memory of all beings-but you dare to study their perilous secrets anyway.
+	Hellish Rebuke: You know the hellish rebuke spell. You could alternatively know either the Gift to Avernus or Vitality Drain spells.
+	Dark One's Blessing: You have the Dark One's Blessing pact boon. You instantly gain vitality from a cursed enemy when that enemy falls.
+	When an enemy under your Warlock's Curse is reduced to 0 hit points or fewer, you immediately gain temporary hit points equal to your level.
+   </RulesElement>
+  <RulesElement name="Star Pact" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_774" source="Player's Handbook,Missing In Action,Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_777,1 </Category>
+    <specific name="Short Description"> Dire radiance spell; Fate of the Void boon: cursed foe dropped to 0 hp gives you +1 on one d20 roll during your next turn (+2 for two foes, etc.). </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_2263,ID_FMP_POWER_1457,ID_RYV_POWER_43514 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_7 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1457,ID_RYV_POWER_43514,ID_FMP_POWER_2263 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1457|ID_RYV_POWER_43514" default="Dire Radiance" />
+      <grant name="ID_FMP_POWER_2263" type="Power" />
+    </rules>
+You have mastered the astrologer's art, learning the secret names of the stars and gazing into the Far Realm beyond, gaining great power thereby. You can call upon powers that madden or terrify your enemies, manipulate chance and fate, or scour your foes with icy banes and curses drawn from beyond the night sky.
+	Dire Radiance: You know the dire radiance spell. You could alternatively know the Repulsive Dread spell.
+	Fate of the Void: You have the Fate of the Void pact boon. Your curse intermingles with the lost vitality of a cursed enemy to reveal a glimpse of the future to you.
+	When an enemy under your Warlock's Curse is reduced to 0 hit points or fewer, you gain a +1 bonus to any single d20 roll you make during your next turn (attack roll, saving throw, skill check, or ability check). If you don't use this bonus by the end of your turn, it is lost.
+	This bonus is cumulative; if three cursed enemies drop to 0 hit points or fewer before your next turn, you gain a +3 bonus to a d20 roll during your turn.
+   </RulesElement>
+  <RulesElement name="Star Pact (Hybrid)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_STAR_PACT_(HYBRID)" source="Missing In Action,Player's Handbook 3">
+    <Category> Hybrid Pact </Category>
+    <specific name="Short Description"> Warlock pact minus the at-will attack power and pact boon </specific>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_1844 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASPACT_STAR_PACT" type="CountsAsPact" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_STAR_PACT" type="CountsAsFeature" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Dire Radiance" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Repulsive Dread" />
+    </rules>
+This feature is the same as the non-hybrid pact, except you do not gain the at-will attack power nor the pact boon.
+   </RulesElement>
+  <RulesElement name="Fey Pact (Hybrid)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_PACT_(HYBRID)" source="Missing In Action,Player's Handbook 3">
+    <Category> Hybrid Pact </Category>
+    <specific name="Short Description"> Warlock pact minus the at-will attack power and pact boon </specific>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_1844 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASPACT_FEY_PACT" type="CountsAsPact" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_FEY_PACT" type="CountsAsFeature" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Eyebite" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Bewildering Glamour" />
+    </rules>
+This feature is the same as the non-hybrid pact, except you do not gain the at-will attack power nor the pact boon.
+   </RulesElement>
+  <RulesElement name="Infernal Pact (Hybrid)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_INFERNAL_PACT_(HYBRID)" source="Player's Handbook 3,Missing In Action">
+    <Category> Hybrid Pact </Category>
+    <specific name="Short Description"> Warlock pact minus the at-will attack power and pact boon </specific>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_1844 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASPACT_INFERNAL_PACT" type="CountsAsPact" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_INFERNAL_PACT" type="CountsAsFeature" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Hellish Rebuke" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Gift To Avernus" />
+      <grant name="ID_INTERNAL_INTERNAL_MATCHED_WARLOCK_PACT" type="Internal" requires="Vitality Drain" />
+    </rules>
+This feature is the same as the non-hybrid pact, except you do not gain the at-will attack power nor the pact boon.
+   </RulesElement>
+  <RulesElement name="Pact Initiate (star pact)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_STAR_PACT_INITIATE" source="Player's Handbook,Missing In Action">
+    <Category> Pact Initiate </Category>
+    <specific name="Short Description"> Gain Dire Radiance or Repulsive Dread as an encounter power, can use warlock implements for warlock powers </specific>
+    <specific name="_SupportsID"> ID_FMP_FEAT_337 </specific>
+    <specific name="_RequiresID"> ID_FMP_CLASS_FEATURE_774 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1457|ID_RYV_POWER_43514" default="Dire Radiance" />
+      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_COUNTSASPACT_STAR_PACT" type="CountsAsPact" />
+    </rules>
+You gain training in one skill from the warlock's class skill list.	Choose a warlock pact. You gain the pact's at-will power as an encounter power, and you can pursue the warlock paragon path based on that pact.	In addition, you can use a rod, a wand, or a pact blade as an implement.
+   </RulesElement>
+  <RulesElement name="Pact Initiate (fey pact)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_PACT_INITIATE" source="Player's Handbook,Missing In Action">
+    <Category> Pact Initiate </Category>
+    <specific name="Short Description"> Gain Eyebite or Bewildering Glamour as an encounter power, can use warlock implements for warlock powers </specific>
+    <specific name="_SupportsID"> ID_FMP_FEAT_337 </specific>
+    <specific name="_RequiresID"> ID_FMP_CLASS_FEATURE_772 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1456|ID_RYV_POWER_43515" default="Eyebite" />
+      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_COUNTSASPACT_FEY_PACT" type="CountsAsPact" />
+    </rules>
+You gain training in one skill from the warlock's class skill list.	Choose a warlock pact. You gain the pact's at-will power as an encounter power, and you can pursue the warlock paragon path based on that pact.	In addition, you can use a rod, a wand, or a pact blade as an implement.
+   </RulesElement>
+  <RulesElement name="Pact Initiate (infernal pact)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_INFERNAL_PACT_INITIATE" source="Player's Handbook,Missing In Action">
+    <Category> Pact Initiate </Category>
+    <specific name="Short Description"> Gain Hellish Rebuke, Gift To Avernus or Vitality Drain as an encounter power, can use warlock implements for warlock powers </specific>
+    <specific name="_SupportsID"> ID_FMP_FEAT_337 </specific>
+    <specific name="_RequiresID"> ID_FMP_CLASS_FEATURE_773 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_1458|ID_FMP_POWER_12307|ID_RYV_POWER_43516" default="Hellish Rebuke" />
+      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_COUNTSASPACT_INFERNAL_PACT" type="CountsAsPact" />
+    </rules>
+You gain training in one skill from the warlock's class skill list.	Choose a warlock pact. You gain the pact's at-will power as an encounter power, and you can pursue the warlock paragon path based on that pact.	In addition, you can use a rod, a wand, or a pact blade as an implement.
+   </RulesElement>
+</D20Rules>

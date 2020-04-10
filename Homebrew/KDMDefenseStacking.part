@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMDefenseStacking.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMDefenseStacking.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMDefenseStacking.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" source="Core">
+    <specific name="XP Needed"> 1000 </specific>
+    <rules>
+      <statalias name="Strength" alias="str" />
+      <statalias name="Constitution" alias="con" />
+      <statalias name="Dexterity" alias="dex" />
+      <statalias name="Intelligence" alias="int" />
+      <statalias name="Wisdom" alias="wis" />
+      <statalias name="Charisma" alias="cha" />
+      <statadd name="Strength modifier" value="+ABILITYMOD(str)" />
+      <statadd name="Dexterity modifier" value="+ABILITYMOD(dex)" />
+      <statadd name="Constitution modifier" value="+ABILITYMOD(con)" />
+      <statadd name="Intelligence modifier" value="+ABILITYMOD(int)" />
+      <statadd name="Wisdom modifier" value="+ABILITYMOD(wis)" />
+      <statadd name="Charisma modifier" value="+ABILITYMOD(cha)" />
+      <statalias name="AC" alias="Armor Class" />
+      <statalias name="Fortitude Defense" alias="Fortitude" />
+      <statalias name="Reflex Defense" alias="Reflex" />
+      <statalias name="Will Defense" alias="Will" />
+      <statadd name="Death Saves Count" value="+3" />
+      <statadd name="Level" value="+1" />
+      <statadd name="Hit Points" value="+Constitution" type="Level 1" />
+      <statadd name="Hit Points" value="+_LEVEL-ONE-HPS" />
+      <statadd name="Healing Surges" value="+ABILITYMOD(Constitution)" type="Level 1" />
+      <statadd name="Fortitude Defense" value="+10" />
+      <statadd name="Fortitude Defense" value="+HALF-LEVEL" />
+      <statadd name="Fortitude Defense" value="+ABILITYMOD(str)" />
+      <statadd name="Fortitude Defense" value="+ABILITYMOD(con)" />
+      <statadd name="Fortitude Defense" value="+Fortitude Defense Class Bonus" type="Class" />
+      <statadd name="Reflex Defense" value="+10" />
+      <statadd name="Reflex Defense" value="+HALF-LEVEL" />
+      <statadd name="Reflex Defense" value="+ABILITYMOD(dex)" />
+      <statadd name="Reflex Defense" value="+ABILITYMOD(int)" />
+      <statadd name="Reflex Defense" value="+Reflex Defense Class Bonus" type="Class" />
+      <statadd name="Will Defense" value="+10" />
+      <statadd name="Will Defense" value="+HALF-LEVEL" />
+      <statadd name="Will Defense" value="+ABILITYMOD(wis)" />
+      <statadd name="Will Defense" value="+ABILITYMOD(cha)" />
+      <statadd name="Will Defense" value="+Will Defense Class Bonus" type="Class" />
+      <statadd name="AC" value="+10" />
+      <statadd name="AC" value="+HALF-LEVEL" />
+      <statadd name="AC" value="+ABILITYMOD(dex)" type="Ability" not-wearing="armor:heavy" />
+      <statadd name="AC" value="+ABILITYMOD(int)" type="Ability" not-wearing="armor:heavy" />
+      <statadd name="AC" value="+1" type="Defensive" wearing="DEFENSIVE:" />
+      <statadd name="Initiative" value="+HALF-LEVEL" />
+      <statadd name="Initiative" value="+ABILITYMOD(dex)" type="Ability" />
+      <statadd name="Initiative" value="Initiative Misc" />
+      <statadd name="Ring Slots" value="+2" />
+      <statadd name="_BaseActionPoints" value="+1" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" type="Level1Rules" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" type="Level1Rules" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION1" type="Level1Rules" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION2" type="Level1Rules" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION3" type="Level1Rules" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION4" type="Level1Rules" />
+      <grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION5" type="Level1Rules" />
+      <select type="Race" number="1" />
+      <select type="Class" number="1" />
+      <select type="Feat" number="1" />
+      <select type="Power" name="Power Encounter 1" number="1" Category="$$CLASS,encounter,1" requires="!No Encounter Powers" />
+      <select type="Power" name="Power Daily 1" number="1" Category="$$CLASS,daily,1" requires="!Essentials Class" />
+      <select type="Deity" number="1" optional="true" />
+      <statadd name="XP Needed" value="+1000" />
+    </rules>
+  </RulesElement>
+</D20Rules>

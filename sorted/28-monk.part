@@ -1,0 +1,1798 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<UpdateInfo>
+		<Version>1.09</Version>
+		<Filename>28-monk.part</Filename>
+		<PartAddress>http://cbloader.com/sorted/28-monk.part</PartAddress>
+		<VersionAddress>http://cbloader.com/sorted/28-monk.txt</VersionAddress>
+	</UpdateInfo>
+	<!-- Monk -->
+	<!-- 28-monk.part, version 1.09 -->
+	<!-- Original release: 13-July-2011; Last modified: 1-July-2012 -->
+	<!-- Test compiled with CBLoader build V1.3.0 -->
+	<!-- This part file belongs to the July 2011 reorganization of data files. -->
+	<!-- Special thanks to the entire community for handling the materials. -->
+	<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 13-July-2011 June Eratta.
+ Updated 14-September-2011: Added Errata for August 2011 (Malek Deneith)
+ Updated 19-October-2011 Changed No Action (Special) to No Action on Lines 26, 46, and 66
+ Updated 29-October-2011 Added Dragon 404 Material from "Monk Basics"
+ Updated 17-November-2011 Added "Kensei Monk Unarmed Strike Fix.
+ Updated 25-December-2011 Compatibility Upgrades and General Fixes.
+ updated 3-March-2012 Added Heroes of the Elemental Chaos Desert Wind and Eternal Tide.
+ Updated 1-July-2012 Fallen Needle June 2012 Update.
+	</Changelog>
+	<RulesElement name="Centered Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_7448" source="Player's Handbook 3" revision-date="8/27/2010 11:45:44 AM">
+		<Flavor> Your fists become a blur as you follow up your initial attack with another, shifting your foes' positions to your advantage. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn </specific>
+		<specific name="Target"> One creature
+Level 11: One or two creatures
+Level 21: Each enemy adjacent to you </specific>
+		<specific name="Effect"> The target takes damage equal to 2 + your Wisdom modifier, and you slide it 1 square to a square adjacent to you, or 1 square in any direction if the target wasn't targeted by the triggering attack. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_1544,ID_FMP_CLASS_FEATURE_2532 </specific>
+	</RulesElement>
+	<RulesElement name="Stone Fist Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_11207" source="Player's Handbook 3" revision-date="8/27/2010 11:58:41 AM">
+		<Flavor> You lash out at another enemy after your first attack, a casual reminder of your great strength. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn </specific>
+		<specific name="Target"> One creature
+Level 11: One or two creatures
+Level 21: Each enemy adjacent to you </specific>
+		<specific name="Effect"> The target takes damage equal to 3 + your Strength modifier. If the target wasn't targeted by the triggering attack, the damage increases by 2 (4 at 11th level and 6 at 21st level). </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2360,ID_FMP_CLASS_FEATURE_2533 </specific>
+	</RulesElement>
+	<RulesElement name="Iron Soul Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_13123" source="Psionic Power" revision-date="9/21/2010 2:10:35 PM">
+		<Flavor> You follow up an initial assault with a quick strike that disorients your enemy, curtailing its combat options. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn </specific>
+		<specific name="Target"> One creature
+Level 11: One or two creatures
+Level 21: Each enemy adjacent to you </specific>
+		<specific name="Effect"> The target takes damage equal to 2 + your Constitution modifier, and it cannot shift until the start of your next turn. If the target was not a target of the triggering attack, it also can't make opportunity attacks until the end of your turn. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2952 </specific>
+	</RulesElement>
+	<!-- Errata for August 2011 -->
+	<RulesElement name="Lashing Rain" type="Power" internal-id="ID_FMP_POWER_13139" source="Psionic Power" revision-date="9/14/2011 6:15:00 PM" >
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> Your savage strike draws an enemy close, leaving you in an aggressive stance that lets you punish any foe that approaches you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Implement, Psionic, Stance </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d10 + Dexterity modifier damage, and you slide the target 2 squares to a square adjacent to you. </specific>
+		<specific name="Effect"> You assume the lashing rain stance. Once per turn, when an enemy you can see enters a square adjacent to you while you are able to make opportunity attacks, you deal 5 damage to that enemy and slide it 2 squares to any unoccupied square adjacent to you. You are slowed while you are in this stance. You can end the stance as a free action. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Supreme Parry" type="Power" internal-id="ID_FMP_POWER_13249" source="Psionic Power" revision-date="9/14/2011 6:17:00 PM" >
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+		<Flavor> Your weapon blurs as you spin it around you in an impenetrable barrier. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Monk Utility 22 </specific>
+		<specific name="Keywords"> Psionic, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the supreme parry stance. Until the stance ends, you add the proficiency bonus of your main weapon as a power bonus to AC and Reflex. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 22 </specific>
+		<specific name="Power Type"> Utility </specific>
+	</RulesElement>
+	<RulesElement name="Basilisk Nature Defense" type="Power" internal-id="ID_FMP_POWER_13279" source="Psionic Power" revision-date="9/14/2011 6:18:00 PM" >
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_749,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,12 </Category>
+		<Prereqs> Basilisk&apos;s Fury Adept </Prereqs>
+		<Flavor> The power of your mind transforms your body into stone. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Basilisk&apos;s Fury Adept Utility 12 </specific>
+		<specific name="Keywords"> Healing, Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An attack makes you unconscious or stuns you </specific>
+		<specific name="Effect"> You are instead petrified for as long as you would be unconscious or stunned by the triggering attack. You gain a +2 power bonus to saving throws until you are no longer petrified. When the petrification ends, you can spend a healing surge. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_PARAGON_PATH_749 </specific>
+		<specific name="Level"> 12 </specific>
+		<specific name="Power Type"> Utility </specific>
+	</RulesElement>
+	<RulesElement name="Unseen Ambush" type="Power" internal-id="ID_FMP_POWER_13297" source="Psionic Power" revision-date="9/14/2011 6:19:00 PM" >
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_754,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+		<Prereqs> Unseen Hand </Prereqs>
+		<Flavor> You slip through space to cut down a foe with a crippling attack, then step away to vanish in the shadows. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Unseen Hand Attack 20 </specific>
+		<specific name="Keywords"> Implement, Psionic, Teleportation </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Effect"> Before the attack, you teleport your speed. </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex. If you use a weapon other than your monk unarmed strike to make this attack, you gain combat advantage for the attack. </specific>
+		<specific name="Hit"> 3d6 + Dexterity modifier damage, and the target is stunned and gains vulnerable 10 to your attacks (save ends). </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> After the attack, you teleport your speed. If you teleport to a square that grants you concealment or cover, you can make a Stealth check to hide. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_PARAGON_PATH_754 </specific>
+		<specific name="Level"> 20 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Deflect Arrow" type="Power" internal-id="ID_FMP_POWER_15983" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,2 </Category>
+		<Flavor> Your foe manages to strike you from afar, so you focus your energy and spin away from further attacks. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Monk Utility 2 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You are hit by a ranged weapon attack. </specific>
+		<specific name="Effect"> Until the start of your next turn, you gain superior cover against ranged weapon attacks, and you can shift 1 square as a free action each time a ranged weapon attack misses you. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 2 </specific>
+		<specific name="Power Type"> Utility </specific>
+	</RulesElement>
+	<RulesElement name="Wind Through the Willows" type="Power" internal-id="ID_FMP_POWER_15984" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+		<Flavor> You move like a furious wind through the line of your enemies, hobbling them. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_15985 </specific>
+		<specific name="Display"> Monk Attack 3 </specific>
+		<specific name="Keywords"> Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each creature in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage, and the target is slowed and cannot charge until the end of your next turn. </specific>
+		<specific name="Effect"> You shift up to 3 squares to a square in the blast or adjacent to it. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_15985" type="Power" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Wind Through the Willows [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_15985" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<Flavor> You move like a furious wind through the line of your enemies, hobbling them. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Effect"> You shift 1 square and slide the target 1 square, swapping places. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_15984 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Water Gives Way" type="Power" internal-id="ID_FMP_POWER_15986" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+		<Flavor> Like a stone passing harmlessly through water, so do your enemies' attacks pass by you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 5 </specific>
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> An adjacent enemy hits you with a melee attack. </specific>
+		<specific name="Target"> The triggering enemy </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude. If the triggering attack is a charge, you gain a +2 bonus to the attack roll and deal 1d10 extra damage if you hit. </specific>
+		<specific name="Hit"> 3d10 + Dexterity modifier damage, and you slide the target up to 2 squares and knock it prone. </specific>
+		<specific name="Miss"> You regain the use of this power but cannot use it again during this encounter. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Brilliant Counterstrike" type="Power" internal-id="ID_FMP_POWER_15987" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+		<Flavor> You ready yourself for the blows of your enemies and prepare a sudden counterattack. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_15988 </specific>
+		<specific name="Display"> Monk Attack 7 </specific>
+		<specific name="Keywords"> Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage. Immediately after any adjacent enemy attacks you before the start of your next turn, you can deal 1d8 damage to that enemy as a free action. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 7 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_15988" type="Power" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Brilliant Counterstrike [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_15988" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<Flavor> You ready yourself for the blows of your enemies and prepare a sudden counterattack. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> Choose either to escape from a grab automatically or to end one mark on yourself. You then shift up to 2 squares. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_15987 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Stone Warrior Training" type="Power" internal-id="ID_FMP_POWER_15989" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+		<Flavor> In a peaceful moment, you give your ally a brief lesson in the ways of your style so that he or she can draw upon your strength by imitating your actions. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 9 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Requirement"> You must have just ended a short or an extended rest. </specific>
+		<specific name="Target"> One ally who can see or hear you </specific>
+		<specific name="Effect"> Until the start of your next rest, whenever you hit an enemy with an attack, the target's next attack against that enemy gains a power bonus to the damage roll equal to your Strength modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 9 </specific>
+		<specific name="Power Type"> Attack </specific>
+	</RulesElement>
+	<RulesElement name="Kensei Monk Unarmed Strike" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KENSEI_FOCUS_MONK_UNARMED_STRIKE" source="Player's Handbook">
+		<Category> ID_FMP_CLASS_FEATURE_452 </Category>
+		<Prereqs> Monk, Unarmed Combatant class feature </Prereqs>
+		<print-prereqs> Monk, Unarmed Combatant class feature </print-prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
+		<specific name="Level"> 11 </specific>
+		<rules>
+			<statadd name="Monk Unarmed Strike,weapon:attack" value="+1" />
+			<statadd name="Monk Unarmed Strike,weapon:damage" value="+4" requires="Kensei Mastery" />
+		</rules>
+You gain a +1 bonus to weapon attack rolls with Monk Unarmed Strike.
+	</RulesElement>
+	<!-- Heroes of the Elemental Chaos -->
+	<!-- Monk Updates -->
+	<RulesElement name="Monastic Tradition" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1543" source="Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
+		<Category> 1 </Category>
+		<specific name="Short Description"> Choose a Flurry of Blows and become more resilient </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_1544, ID_FMP_CLASS_FEATURE_2360, ID_FMP_CLASS_FEATURE_2952, ID_CDJ_CLASS_FEATURE_SWIFT_WIND, ID_CDJ_CLASS_FEATURE_JADE_HAND, ID_CDJ_CLASS_FEATURE_LASHING_VINE, ID_CDJ_CLASS_FEATURE_RENDING_CLAW,ID_FMP_CLASS_FEATURE_4331,ID_FMP_CLASS_FEATURE_4332 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_1543" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Desert Wind" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4331" source="Heroes of the Elemental Chaos">
+		<Category> ID_FMP_CLASS_FEATURE_1543,1 </Category>
+		<Flavor> After the fall of Arkhosia, many dragonborn retreated to the deep deserts to contemplate their empire's collapse and find a way to overcome the loss. What began as refugee camps evolved into genuine communities, their members united by a common belief and hope for the future-and in some cases these ideas became something more. The Desert Wind tradition reflects these survivors' triumph over the harshness of a life spent under the desert sun. These warriors learned to ease their discomfort by using the elemental fire within themselves as a shield and a weapon.
+	Monks of the Desert Wind tradition emulate these predecessors as they rush into battle, spin away from threats, and scorch enemies with strikes bolstered by elemental fire. Like all monks, you need a high Dexterity score to perform your disciplines. manifesting elemental fire requires a strong, confident outlook, so Charisma should be your second-highest ability score. Consider Constitution for your third-best score to increase your durability. </Flavor>
+		<specific name="Short Description"> You gain the desert wind flurry of blows and resist 5/10/15 fire </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_16131 </specific>
+		<specific name="Type"> At-Will </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16131 </specific>
+		<rules>
+			<statadd name="Mental Crucible" value="+5"/> 		
+			<statadd name="Mental Crucible" value="+5" requires="Paragon tier"/>
+			<statadd name="Mental Crucible" value="+5" requires="epic tier"/>
+			<statadd name="resist:fire" value="+Mental Crucible" type="Class Feature" zero="true"/>
+			<grant name="ID_FMP_POWER_16131" type="Power" />
+		</rules>
+If you choose the Desert Wind monastic tradition, you gain the following class features.
+	Flurry of Blows: You gain the desert wind flurry of blows power.
+	Mental Crucible: You gain resist 5 fire. The resistance increases to 10 at 11th level and 15 at 21st level. If you already have fire resistance that is equal to or higher than this value, increase it by 2.
+	</RulesElement>
+	<RulesElement name="Desert Wind Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_16131" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<Flavor> A successful attack ignites your mind's power, causing lambent flames to dance across your body and sear your enemies. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Elemental, Fire, Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn. </specific>
+		<specific name="Target"> One creature
+	Level 11: One or two creatures
+	Level 21: Each enemy adjacent to you </specific>
+		<specific name="Effect"> The target takes 2 + your Charisma modifier fire damage. If the target wasn't targeted by the triggering attack, it also takes a -2 penalty to attack rolls for any attack that includes you as a target until the end of your next turn. You can then shift 1 square. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4331 </specific>
+You are as a screaming blast of heat that blisters anything in your path. Your strikes release elemental flame that you can hurl against your enemies.
+	</RulesElement>
+	<RulesElement name="Eternal Tide" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4332" source="Heroes of the Elemental Chaos">
+		<Category> ID_FMP_CLASS_FEATURE_1543,1 </Category>
+		<Flavor> History tells how the githzerai fled from their corrupted cousins, the githyanki, and of their own struggles to come to terms with the conflict shaping their thoughts. They sought refuge in the Elemental Chaos, thinking their estranged kin would not follow, not realizing that the tumultuous landscape was like a mirror of their souls. As the githzerai became acclimated to their new environment, they discovered that by concentrating on their surroundings, they could control the swirling chaos. And then they realized that if they could control the chaos without, they could do the same for the chaos in their hearts.
+	Since the githzerai established the Eternal Tide tradition, its methods have spread beyond the Elemental Chaos, and its disciplines are now taught in some academies.
+	As with any monk, Dexterity should be your highest ability score. Many disciplines require you to respond to force with equal force, so Strength should be your next highest ability score. Wisdom is a good choice for your third-highest ability score, to improve your awareness and resist mental assaults. </Flavor>
+		<specific name="Short Description"> Gain the eternal tide flurry of blows power, reduce forced movement by 1 square, and shift 1 square after the forced movement </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_16132 </specific>
+		<specific name="Type"> At-Will </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16132 </specific>
+		<rules>	
+			<grant name="ID_FMP_POWER_16132" type="Power" />
+		</rules>
+If you choose the Eternal Tide monastic tradition, you gain the following class features.
+	Flurry of Blows: You gain the eternal tide flurry of blows power.
+	Mental Balance: Whenever an enemy would pull, push, or slide you, you can reduce the forced movement by 1 square. After the forced movement is resolved, you can shift 1 square as a free action.
+	</RulesElement>
+	<RulesElement name="Eternal Tide Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_16132" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<Flavor> You unleash psionic energy in the wake of your initial attack to wrench another enemy into your reach. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Monk Feature  </specific>
+		<specific name="Keywords"> Elemental, Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Melee 2 </specific>
+		<specific name="Trigger"> You hit with an attack during your turn. </specific>
+		<specific name="Target"> One creature
+	Level 11: One or two creatures
+	Level 21: One, two, or three creatures </specific>
+		<specific name="Effect"> The target takes damage equal to your Strength modifier, and you can pull the target 1 square. If the target wasn't targeted by the triggering attack, it is slowed until the end of your next turn. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4332 </specific>
+When you strike a foe, you can compel another to face you. The stronger you become, the greater the number of enemies that find themselves drawn toward you.
+	</RulesElement>
+	<RulesElement name="Blistering Flourish" type="Power" internal-id="ID_FMP_POWER_16133" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> Executing movements in a complex pattern brings forth elemental fire to aid the next attack you make. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16134 </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Dexterity modifier damage. Until the end of your next turn, your melee attacks deal extra fire damage equal to your Charisma modifier.
+	Level 21: 2d8 + Dexterity modifier damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+When you perform blistering flourish, you fix in your mind the image of a candle flame and feed psionic energy into the image. Until it fades, elemental fire adds potency to your strikes and punishes enemies that would stop your progress.
+	</RulesElement>
+	<RulesElement name="Blistering Flourish [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16134" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable; Unselectable </Prereqs>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed. Enemies that hit you with opportunity attacks provoked by this movement take fire damage equal to 2 + your Charisma modifier. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16133 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Crashing Wave" type="Power" internal-id="ID_FMP_POWER_16135" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> Surging forward through your enemies' ranks, you deliver a resounding strike to send an enemy reeling. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16136 </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 1d8 + Dexterity modifier damage, and you can slide the target 1 square.
+	Level 21: 2d8 + Dexterity modifier damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+No barrier can stop a tidal wave; no obstacle can halt its progress. Crashing wave lets you push through your foes so you can focus on the target you want to strike
+	</RulesElement>
+	<RulesElement name="Crashing Wave [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16136" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable; Unselectable </Prereqs>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to a number of squares equal to half your Strength modifier. You can shift through enemies' spaces during this move. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16135 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Balance Restored" type="Power" internal-id="ID_FMP_POWER_16137" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> Dropping into a wide stance helps you deliver the greatest impact, while also ensuring that you can deal with any counterattacks that follow. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16138 </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 1d10 + Dexterity modifier damage, and you push the target up to a number of squares equal to half your Strength modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+Monks of the Eternal Tide adopt fighting styles that enable them to turn their enemies' strength against those foes.
+	</RulesElement>
+	<RulesElement name="Balance Restored [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16138" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift 1 square. The next time an adjacent enemy hits you before the start of your next turn, you can knock that enemy prone after the attack is resolved. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16137 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Call up the Savage Wind" type="Power" internal-id="ID_FMP_POWER_16139" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> A stiff gust rises up to scatter your enemies and speed you over treacherous terrain. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16140 </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each creature in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 1d8 + Dexterity modifier damage. </specific>
+		<specific name="Effect"> You can slide each target 1 square. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your emotions stir up the air. The winds follow your movement, helping you across obstacles in your path.
+	</RulesElement>
+	<RulesElement name="Call up the Savage Wind [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16140" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed, ignoring difficult terrain. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16139 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Light the Fire" type="Power" internal-id="ID_FMP_POWER_16141" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> Bright flames dance across your body, scorching enemies you strike and swirling around you to immolate foes in your reach. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16142 </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Aura, Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier fire damage. </specific>
+		<specific name="Effect"> You activate an aura 1 that lasts until the start of your next turn. Any enemy that starts its turn in the aura takes fire damage equal to 2 + your Charisma modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+Focusing your mind on elemental fire while you meditate makes it easier for you to use psionic energy and call it forth. Light the fire throws open your mental doors to scourge your opponents.
+	</RulesElement>
+	<RulesElement name="Light the Fire [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16142" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Aura, Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to 2 squares. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16141 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Cyclone Scourge" type="Power" internal-id="ID_FMP_POWER_16143" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+		<Flavor> You leap into the air, gathering up winds to help you smash your enemy and trap it in a swirling column of destruction. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Elemental, Implement, Psionic, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Effect"> Before the attack, you fly up to your speed to a square adjacent to an enemy. </specific>
+		<specific name="Target"> One creature in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier damage, and the target is immobilized (save ends). </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> The blast creates a zone that lasts until the end of your next turn. You can move the zone up to 3 squares as a move action. Once per turn, when a creature other than you enters the zone or ends its turn there, you can slide that creature up to 2 squares as a free action. </specific>
+		<specific name="Sustain Minor"> The zone persists until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your thoughts whirl around you as you hurtle through the air. Winds gain strength and follow you as you crash down on your foe. Your attack produces a swirling vortex that spirals out of control, flinging away everything in its path.
+	</RulesElement>
+	<RulesElement name="Reflection in Water" type="Power" internal-id="ID_FMP_POWER_16144" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+		<Flavor> Fixing your attention on a single opponent lets you mirror its movements with swift strikes and counterstrikes. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Elemental, Implement, Psionic, Stance </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You assume the reflection in water stance. Until the stance ends, you gain combat advantage against any enemy adjacent to at least one of your allies. Also, when an enemy adjacent to you misses you with an attack, you can use an immediate reaction to swap places with it (the enemy slides 1 square, and you shift 1 square). </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+You can quickly size up an enemy and detect its weaknesses. When you use reflection in water, you concentrate your attention on imminent threats and undermine an enemy's attacks with your own superior positioning.
+	</RulesElement>
+	<RulesElement name="Risen Sun" type="Power" internal-id="ID_FMP_POWER_16145" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> Your wrath ignites your thoughts and causes them to erupt into liquid flames that rush out and incinerate anything near you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Aura, Elemental, Fire, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each enemy in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier damage, and ongoing 5 fire damage (save ends). </specific>
+		<specific name=" Each Failed Saving Throw"> You can slide the target 1 square as a free action. </specific>
+		<specific name="Effect"> You activate an aura 1 that lasts until the end of your next turn. Any enemy that enters the aura or ends its turn there takes fire damage equal to your Dexterity modifier. A creature can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your passion and fury ignite your psionic reservoir, causing your mental energy to manifest as flame. Before the fire gutters out, you can hurl it against your foes in a sheet of brilliant agony.
+	</RulesElement>
+	<RulesElement name="Cat and Mouse" type="Power" internal-id="ID_FMP_POWER_16146" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_FREE_ACTION,2 </Category>
+		<Flavor> You step into your enemy's blind spot after a successful attack and leave it casting about to find you. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Monk Utility 2 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You hit an enemy with a melee attack. </specific>
+		<specific name="Effect"> You shift up to 3 squares to a square adjacent to the enemy. Until the start of your next turn or until you take damage from an attack, you have total concealment against that enemy. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 2 </specific>
+		<specific name="Power Type"> Utility </specific>
+Every enemy has a blind spot; you just have to find it. When you strike your foe, you can use cat and mouse to slip away and set up your next attack.
+	</RulesElement>
+	<RulesElement name="Eye in the Sky" type="Power" internal-id="ID_FMP_POWER_16147" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+		<Flavor> You attune your mind to the dangers at hand, and when an enemy closes, you step out of its reach. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16148 </specific>
+		<specific name="Display"> Monk Utility 2 </specific>
+		<specific name="Keywords"> Psionic, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the eye in the sky stance. Until the stance ends, you gain a +5 power bonus to Perception checks, and you can use the secondary power at will. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 2 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16148 </specific>
+By emptying your mind of all distractions, you elevate your awareness and thereby perceive the battlefield from a different perspective. While in this state, you can anticipate your enemies' movements and react accordingly.
+	</RulesElement>
+	<RulesElement name="Eye in the Sky Secondary Power" type="Power" internal-id="ID_FMP_POWER_16148" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Requirement"> The power Eye in the Sky must be active in order to use this power. </specific>
+		<specific name="Trigger"> An enemy enters a square adjacent to you. </specific>
+		<specific name="Effect"> You can shift 1 square to a square adjacent to the triggering enemy. You gain a +2 power bonus to all defenses against that enemy's attacks until the end of this turn. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16147 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Reed in the Wind" type="Power" internal-id="ID_FMP_POWER_16149" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,2 </Category>
+		<Flavor> You spin away from the attack, only to snap back with a quick threat of your own. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Monk Utility 2 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An enemy attacks you. </specific>
+		<specific name="Effect"> You gain temporary hit points equal to your Dexterity modifier, and you gain combat advantage against the triggering enemy until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 2 </specific>
+		<specific name="Power Type"> Utility </specific>
+You turn your enemy's momentum to your advantage. When a foe attacks, you roll with the strike and set up a vicious counter.
+	</RulesElement>
+	<RulesElement name="Bonecrusher" type="Power" internal-id="ID_FMP_POWER_16150" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+		<Flavor> A sickening crunch sounds from your opponent when you land your strike. Its pain bolsters your confidence to keep fighting. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16151 </specific>
+		<specific name="Display"> Monk Attack 3 </specific>
+		<specific name="Keywords"> Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage, and the target takes a -2 penalty to all defenses until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+Drawing from your psionic reservoir enables you to focus your thoughts and their strength into one brutal strike. An enemy hit by this attack finds itself stripped of its defenses.
+	</RulesElement>
+	<RulesElement name="Bonecrusher [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16151" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift 1 square. Until the end of your next turn, you gain a +2 power bonus to AC and Fortitude. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16150 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Burning Brand" type="Power" internal-id="ID_FMP_POWER_16152" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+		<Flavor> Your strike leaves behind a fiery imprint that explodes the next time the target is struck. Wielding fire in this way wreathes you in concealing smoke. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16153 </specific>
+		<specific name="Display"> Monk Attack 3 </specific>
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage. The first time the target takes damage from an attack before the start of your next turn, the target and each of your enemies adjacent to it take fire damage equal to 3 + your Charisma modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+One of the signature disciplines of the Desert Wind tradition, burning brand lodges a seed of flame in a creature-a seed that detonates with any impact.
+	</RulesElement>
+	<RulesElement name="Burning Brand [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16153" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed + 2. You have partial concealment during this movement. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16152 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Frozen Moment" type="Power" internal-id="ID_FMP_POWER_16154" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+		<Flavor> Your strike pins down your enemy, forcing it to face you. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16155 </specific>
+		<specific name="Display"> Monk Attack 3 </specific>
+		<specific name="Keywords"> Cold, Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier cold damage, and the target is immobilized until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+The Eternal Tide teaches that reality is not unlike a vast ocean, and all things in it are part of a larger whole. Frozen moment uses elemental cold to intensify the connection between you and your opponent so neither of you can escape the other.
+	</RulesElement>
+	<RulesElement name="Frozen Moment [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16155" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Cold, Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> Until the start of your next turn, you are immobilized and gain resistance to all damage equal to 3 + your Strength modifier. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16154 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Calm Before the Storm" type="Power" internal-id="ID_FMP_POWER_16156" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+		<Flavor> You feel calm settle over you, and you see your situation with new eyes. Reading your enemies' thoughts helps you strike before their own attacks can land. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16157 </specific>
+		<specific name="Display"> Monk Attack 5 </specific>
+		<specific name="Keywords"> Implement, Psionic, Stance </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You enter the calm before the storm stance. Until the stance ends, you are slowed, and you can use the secondary power at will. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16157 </specific>
+Clearing your mind of fear and doubt helps you achieve enough clarity to anticipate attacks and foil them. Most of the time your instincts are right, but misjudging your opponent might expose you to even greater danger.
+	</RulesElement>
+	<RulesElement name="Calm Before the Storm Secondary Power" type="Power" internal-id="ID_FMP_POWER_16157" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_INTERNAL_CATEGORY_MISS </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Requirement"> The power Calm before the Storm must be active in order to use this power. </specific>
+		<specific name="Trigger"> An enemy adjacent to you makes an attack. </specific>
+		<specific name="Target"> The triggering enemy </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Dexterity modifier damage, and the target falls prone. </specific>
+		<specific name="Miss"> You grant combat advantage to the target until the start of your next turn. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16156 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Overwhelming Mountain Strike" type="Power" internal-id="ID_FMP_POWER_16158" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+		<Flavor> Your strike against a pressure point robs your enemy of its ability to maneuver effectively. Until it recovers, you keep it pinned down. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 5 </specific>
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage, and the target is dazed (save ends). </specific>
+		<specific name=" Aftereffect"> The target is slowed until the end of its next turn. </specific>
+		<specific name="Miss"> Half damage, and the target is slowed until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+After innumerable hours spent sharpening your fighting prowess, you know where to strike to cripple your opponent. The target of overwhelming mountain strike must devote all its effort to moving if it would withdraw.
+	</RulesElement>
+	<RulesElement name="Salamander Charge" type="Power" internal-id="ID_FMP_POWER_16159" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+		<Flavor> Your motions gather elemental fire, and you leave a fiery trail behind you as you close in to destroy your opponent. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 5 </specific>
+		<specific name="Keywords"> Elemental, Fire, Implement, Psionic, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Effect"> You move up to your speed. The squares you leave become a zone that lasts until the end of your next turn. Any creature that enters the zone or starts its turn there takes fire damage equal to your Dexterity modifier. A creature can take this damage only once per turn.
+	At the end of the move, make the following attack. </specific>
+		<specific name=" Target"> One creature </specific>
+		<specific name=" Attack"> Dexterity vs. Reflex </specific>
+		<specific name=" Hit"> 4d6 fire damage. </specific>
+		<specific name=" Miss"> Half damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+Students of the Desert Wind can call upon elemental fire with a simple gesture or maneuver. Salamander charge represents your growing control over flame and your ability to direct it where it can be most effective.
+	</RulesElement>
+	<RulesElement name="Break the Dam" type="Power" internal-id="ID_FMP_POWER_16160" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,6 </Category>
+		<Flavor> You use the pain of an enemy's blow to draw more deeply from your psionic reservoir and quit your position for a safer one. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Monk Utility 6 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An enemy hits you with an attack. </specific>
+		<specific name="Effect"> You shift up to half your speed. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 6 </specific>
+		<specific name="Power Type"> Utility </specific>
+When an enemy's attack finds its mark, this power enables you to act instinctively to prevent a second strike. Your subconscious mind speeds you away from the danger threatening you.
+	</RulesElement>
+	<RulesElement name="Fresh Start" type="Power" internal-id="ID_FMP_POWER_16161" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+		<Flavor> All in a whisper of time, you call upon your mental reserves to invigorate you while willing yourself to dart to a better location. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 6 </specific>
+		<specific name="Keywords"> Healing, Psionic </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You can spend a healing surge, and then shift up to 2 squares. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 6 </specific>
+		<specific name="Power Type"> Utility </specific>
+You know how to channel your mental prowess into giving yourself a surge of vitality and, at the same time, the uncanny ability to slip into a new position on the battlefield.
+	</RulesElement>
+	<RulesElement name="Roll the Boulder" type="Power" internal-id="ID_FMP_POWER_16162" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+		<Flavor> To your enemies, you seem to swell in size and stature, your body made more formidable by your mind's strength. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 6 </specific>
+		<specific name="Keywords"> Psionic, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You enter the roll the boulder stance. Until the stance ends, you gain a +2 power bonus to the distance of your pushes, pulls, and slides, and you gain a +4 power bonus to Strength checks and Strength-based skill checks. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 6 </specific>
+		<specific name="Power Type"> Utility </specific>
+This discipline enables you to bridge the gap between the mental and the physical. Enemies that you move forcibly are nearly helpless to resist your manipulation.
+	</RulesElement>
+	<RulesElement name="Deafening Howl" type="Power" internal-id="ID_FMP_POWER_16163" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+		<Flavor> You vault into the air, soaring over your enemies to land in their midst and roar in defiance. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16164 </specific>
+		<specific name="Display"> Monk Attack 7 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d10 + Dexterity modifier thunder damage. </specific>
+		<specific name="Effect"> Each creature adjacent to you becomes deafened until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 7 </specific>
+		<specific name="Power Type"> Attack </specific>
+Monks who know how to manipulate elemental air can draw the substance from the Plane Below to aid them. Deafening howl is a useful discipline since it helps you reach foes beyond the battle lines.
+	</RulesElement>
+	<RulesElement name="Deafening Howl [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16164" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic, Thunder </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You fly up to your speed. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16163 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Fiery Serpent" type="Power" internal-id="ID_FMP_POWER_16166" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,7 </Category>
+		<Flavor> A snaking flame extends from your hand and snaps through the air to strike a distant opponent. The flames you call forth linger, adding their power to your next fire attack. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16167 </specific>
+		<specific name="Display"> Monk Attack 7 </specific>
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier fire damage. </specific>
+		<specific name="Miss"> One enemy within 5 squares of you other than the target takes 1d8 fire damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 7 </specific>
+		<specific name="Power Type"> Attack </specific>
+Monks who study the Desert Wind tradition wield elemental fire as a weapon. Fiery serpent extends your reach to harry enemies that manage to slip away from you.
+	</RulesElement>
+	<RulesElement name="Fiery Serpent [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16167" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to half your speed. Until the end of your next turn, you gain a +2 power bonus to fire damage rolls. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16166 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Giant's Grasp" type="Power" internal-id="ID_FMP_POWER_16168" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+		<Flavor> You snap your hand out to grab your foe. As you tighten your grip, the enemy howls in pain. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16169 </specific>
+		<specific name="Display"> Monk Attack 7 </specific>
+		<specific name="Keywords"> Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Requirement"> You must have at least one hand free. </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier damage, and you grab the target. Until the end of your next turn, the target takes a penalty to escape attempts equal to your Strength modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 7 </specific>
+		<specific name="Power Type"> Attack </specific>
+This power enables you to ensnare an enemy and drag it with you in an almost unbreakable grip. You simply believe that the target cannot escape you, and that belief becomes fact.
+	</RulesElement>
+	<RulesElement name="Giant's Grasp [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16169" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed. If you are grabbing a creature, the creature moves with you. This movement does not provoke opportunity attacks from creatures you have grabbed. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16168 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Lightning Leap" type="Power" internal-id="ID_FMP_POWER_16170" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+		<Flavor> The lightning that scorches your enemies also speeds you away, and thunder offers a cacophonous accompaniment. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 9 </specific>
+		<specific name="Keywords"> Elemental, Implement, Lightning, Psionic, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Primary Target"> Each creature in the burst </specific>
+		<specific name="Primary Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 1d8 + Dexterity modifier lightning damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You jump up to 5 squares without provoking opportunity attacks. Then make the secondary attack. </specific>
+		<specific name=" Close burst 1" />
+		<specific name=" Secondary Target"> Each creature in the burst </specific>
+		<specific name=" Secondary Attack"> Dexterity vs. Fortitude </specific>
+		<specific name=" Hit"> 1d8 + Dexterity modifier thunder damage. </specific>
+		<specific name=" Miss"> Half damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 9 </specific>
+		<specific name="Power Type"> Attack </specific>
+Freeing the energy that your mind creates can produce destructive and surprising results. When you use this discipline, this energy becomes slashing lightning that provides you with an escape from enemies that surround you.
+	</RulesElement>
+	<RulesElement name="Stone Juggernaut" type="Power" internal-id="ID_FMP_POWER_16171" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION,9 </Category>
+		<Flavor> Attuning your mind to elemental earth triggers your transformation into a stone juggernaut. Your every strike causes the earth to fracture and enemies to fall. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16172 </specific>
+		<specific name="Display"> Monk Attack 9 </specific>
+		<specific name="Keywords"> Polymorph, Psionic </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the form of the stone juggernaut until the end of the encounter. While in this form, you have a +2 power bonus to all defenses and can make saving throws against slowing, immobilizing, or restraining effects at the start of your turn as well as the end of your turn. The form also enables you to ignore difficult terrain and use the secondary power at will. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 9 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16172 </specific>
+Some seekers of the Sublime Way can transform themselves by using their minds to harness the might of elemental earth. Stone juggernaut turns you into an unstoppable force on the battlefield.
+	</RulesElement>
+	<RulesElement name="Stone Juggernaut Secondary Power" type="Power" internal-id="ID_FMP_POWER_16172" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Requirement"> The power Stone Juggernaut must be active in order to use this power. </specific>
+		<specific name="Trigger"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d6 + Dexterity modifier damage, and the target falls prone. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16171 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Tsunami Throw" type="Power" internal-id="ID_FMP_POWER_16173" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,9 </Category>
+		<Flavor> You catch one opponent and hurl it away from you with a wave of mental force, sending it crashing into your other enemies. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 9 </specific>
+		<specific name="Keywords"> Elemental, Implement, Psionic </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> An adjacent enemy hits you with an attack. </specific>
+		<specific name="Primary Target"> The triggering enemy </specific>
+		<specific name="Primary Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 1d8 + Dexterity modifier damage. </specific>
+		<specific name="Effect"> You push the primary target up to 5 squares, knock it prone, and then make the secondary attack. </specific>
+		<specific name=" Close burst 1"> centered on the primary target </specific>
+		<specific name=" Secondary Target"> Each creature other than the primary target in the burst </specific>
+		<specific name=" Secondary Attack"> Dexterity vs. Fortitude </specific>
+		<specific name=" Hit"> 1d8 + Dexterity modifier damage, and the secondary target falls prone. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 9 </specific>
+		<specific name="Power Type"> Attack </specific>
+Mastering the secrets of the Eternal Tide enables you to invert an enemy's aggression so that it becomes an asset you can exploit. When you use tsunami throw, an enemy's attack becomes the instrument of its downfall.
+	</RulesElement>
+	<RulesElement name="Elemental Resilience" type="Power" internal-id="ID_FMP_POWER_16174" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,10 </Category>
+		<Flavor> Your reactions are faster than the energy being brought to bear against you. You instantly adjust your body to minimize the effect of all such attacks that target you. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Monk Utility 10 </specific>
+		<specific name="Keywords"> Elemental, Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You take acid, cold, fire, lightning, or thunder damage. </specific>
+		<specific name="Effect"> You gain resist 5 to the triggering damage type until the start of your next turn. </specific>
+		<specific name=" Aftereffect"> You gain resist 3 to the triggering damage type until the end of the encounter. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 10 </specific>
+		<specific name="Power Type"> Utility </specific>
+You have trained your mind to act instantly when you are hit by an elemental attack. Whether you absorb the energy or repel it does not matter-the important thing is that it does not have its full effect on you.
+	</RulesElement>
+	<RulesElement name="Flame's Blessing" type="Power" internal-id="ID_FMP_POWER_16175" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+		<Flavor> The pale flames dancing across your body do not harm you, but instead turn you into a faster and more accurate attacker. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 10 </specific>
+		<specific name="Keywords"> Elemental, Psionic, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the flame's blessing stance. Until the stance ends, you gain a +2 power bonus to speed and a +1 power bonus to fire attack rolls. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 10 </specific>
+		<specific name="Power Type"> Utility </specific>
+By achieving a certain state of mind, you can draw upon the quickness of flickering fire at the same time that you hone in on the enemies you are trying to burn.
+	</RulesElement>
+	<RulesElement name="Mirrored Pursuit" type="Power" internal-id="ID_FMP_POWER_16176" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_NO_ACTION,10 </Category>
+		<Flavor> You match your enemy's movements as if you were a reflection in a still pool. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16177 </specific>
+		<specific name="Display"> Monk Utility 10 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Special  </specific>
+		<specific name="Trigger"> You hit an enemy with a melee attack. </specific>
+		<specific name="Effect"> You mark the enemy until it drops to 0 hit points or until the end of the encounter. Until the mark ends, you can use the secondary power at will. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 10 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16177 </specific>
+Synchronizing your movements with an enemy's enables you to keep pace with your foe. There is nowhere it can go where you can't follow.
+	</RulesElement>
+	<RulesElement name="Mirrored Pursuit Secondary Power" type="Power" internal-id="ID_FMP_POWER_16177" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Requirement"> The power Mirrored Pursuit must be active in order to use this power. </specific>
+		<specific name="Trigger"> The marked enemy moves willingly on its turn. </specific>
+		<specific name="Effect"> You shift up to your speed, and you must end this shift adjacent to the enemy. You don't get your normal move action on your next turn. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16176 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Break the Stone" type="Power" internal-id="ID_FMP_POWER_16178" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+		<Flavor> The ground trembles as you step forward to smash your foe. So great is the concussion that your opponent finds itself disoriented and vulnerable. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16179 </specific>
+		<specific name="Display"> Monk Attack 13 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d10 + Dexterity modifier damage. Until the end of your next turn, the target is slowed and has vulnerability to all damage equal to your Strength modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 13 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your ability to protect yourself reaches a new plateau when you learn break the stone. The same energy that makes you almost invulnerable helps you cripple an enemy's defenses.
+	</RulesElement>
+	<RulesElement name="Break the Stone [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16179" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to 2 squares. Until the start of your next turn, you gain resistance to all damage equal to 3 + your Strength modifier, and you cannot be subjected to forced movement unless you choose to be. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16178 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Skirling Grasp" type="Power" internal-id="ID_FMP_POWER_16180" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+		<Flavor> A mighty wind howls around you, punishing your foes and giving you incredible mobility. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16181 </specific>
+		<specific name="Display"> Monk Attack 13 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each creature in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage and the target is immobilized until the end of your next turn. </specific>
+		<specific name="Effect"> You slide each target up to 2 squares. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 13 </specific>
+		<specific name="Power Type"> Attack </specific>
+As your fury grows, the winds respond and bear down on your enemies to hurl them where you want them to go.
+	</RulesElement>
+	<RulesElement name="Skirling Grasp [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16181" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed + 2, ignoring difficult terrain. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16180 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Stoke the Flames" type="Power" internal-id="ID_FMP_POWER_16182" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+		<Flavor> Calling on a great quantity of elemental fire to aid your attacks causes you to emanate hungry flames that scorch anything in their path. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16183 </specific>
+		<specific name="Display"> Monk Attack 13 </specific>
+		<specific name="Keywords"> Aura, Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier fire damage. </specific>
+		<specific name="Effect"> You activate an aura 1 that lasts until the end of your next turn. Any creature that enters the aura or ends its turn there takes fire damage equal to 5 + your Charisma modifier. A creature can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 13 </specific>
+		<specific name="Power Type"> Attack </specific>
+You visibly manifest an impressive display of flames, which causes burns and raises blisters on anyone or anything that comes near you.
+	</RulesElement>
+	<RulesElement name="Stoke the Flames [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16183" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Aura, Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to 3 squares. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16182 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Breath of the Storm Lord" type="Power" internal-id="ID_FMP_POWER_16184" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+		<Flavor> You execute a series of kicks and thrusts that calls forth a column of storm clouds to hamper and brutalize your foe. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 15 </specific>
+		<specific name="Keywords"> Elemental, Implement, Psionic, Thunder, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each enemy in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 3d8 + Dexterity modifier thunder damage, and the target is slowed (save ends). </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You shift up to 4 squares to a square adjacent to the blast. The blast then creates a zone that lasts until the end of your next turn. The zone is difficult terrain for creatures other than you, and any creature other than you that ends its turn in the zone falls prone. You can move the zone up to 3 squares as a move action. </specific>
+		<specific name="Sustain Minor"> The zone persists until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 15 </specific>
+		<specific name="Power Type"> Attack </specific>
+This discipline helps you strike with great effect, and also move more quickly than an ordinary mortal. This abrupt movement disturbs your environment, causing winds to pick up and batter the enemies you strike.
+	</RulesElement>
+	<RulesElement name="Dragon's Flame" type="Power" internal-id="ID_FMP_POWER_16185" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+		<Flavor> You surge through your enemies' ranks with a flurry of blazing attacks, and as your strikes fall, fire radiates out from you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 15 </specific>
+		<specific name="Keywords"> Aura, Elemental, Fire, Implement, Psionic, Psychic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 5 </specific>
+		<specific name="Target"> Each enemy in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Will </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier fire and psychic damage, and ongoing 10 fire and psychic damage (save ends). </specific>
+		<specific name=" Each Failed Saving Throw"> You can slide the target up to 2 squares as a free action. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You activate an aura 1 that lasts until the end of your next turn. Any enemy that enters the aura or ends its turn there takes fire and psychic damage equal to your Dexterity modifier. An enemy can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 15 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your ability to call upon this discipline is further proof of your growing skill at manipulating fire. Not only does each of your attacks sear both body and mind, any enemy you hit remains subject to your will until it can shake off the effect.
+	</RulesElement>
+	<RulesElement name="Sundered Mountain" type="Power" internal-id="ID_FMP_POWER_16186" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+		<Flavor> A cracking noise sounds when you strike your foe, and the creature's staggering, pain-wracked steps are evidence of the extent of its injuries. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 15 </specific>
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 4d10 + Dexterity modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> The target is subjected to sundering (save ends). Until this effect ends, the target takes 5 damage for each square it willingly enters. If the target moves more than half its speed willingly, it falls prone at the end of its movement. While you are adjacent to the target, it cannot make saving throws to end this effect. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 15 </specific>
+		<specific name="Power Type"> Attack </specific>
+This discipline makes your enemy a slave to pain-every step it takes sends agony coursing through its body.
+	</RulesElement>
+	<RulesElement name="Catch the Wind" type="Power" internal-id="ID_FMP_POWER_16187" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,16 </Category>
+		<Flavor> Spinning away from an enemy's missile sends you on a giant leap through the air that brings you close to your attacker. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 16 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An enemy within 10 squares of you damages you with a ranged or an area attack. </specific>
+		<specific name="Effect"> You take only half damage from the attack. After the attack is resolved, you fly up to 10 squares to a square adjacent to the triggering enemy. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 16 </specific>
+		<specific name="Power Type"> Utility </specific>
+Monks prefer hand-to-hand combat, and most have few options when faced with enemies at a distance. Catch the wind lets you respond to a ranged attacker by partially deflecting its missile, and speeding you to the foe's side so you can wreak your vengeance.
+	</RulesElement>
+	<RulesElement name="One Hundred Steps" type="Power" internal-id="ID_FMP_POWER_16188" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+		<Flavor> You attune your mind to concentrate on keeping yourself safe, and you can effortlessly flit away from any attack mounted against you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16189 </specific>
+		<specific name="Display"> Monk Utility 16 </specific>
+		<specific name="Keywords"> Psionic, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the one hundred steps stance. Until the stance ends, you have partial concealment, and you can use the secondary power at will. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 16 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16189 </specific>
+A subtle discipline of defense, often incredibly frustrating to your enemies, one hundred steps turns you into an ominous, blurry threat. You become a target that is both hard to see and difficult to keep up with.
+	</RulesElement>
+	<RulesElement name="One Hundred Steps Secondary Power" type="Power" internal-id="ID_FMP_POWER_16189" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Psionic, Teleportation </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Requirement"> The power One Hundred Steps must be active in order to use this power. </specific>
+		<specific name="Trigger"> An enemy attacks you. </specific>
+		<specific name="Effect"> You teleport up to 2 squares. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16188 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Roots of the Mountain" type="Power" internal-id="ID_FMP_POWER_16190" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,16 </Category>
+		<Flavor> Rooting yourself in place helps you deflect an enemy's attack and knock the foe out of your way. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Monk Utility 16 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An adjacent enemy attacks your AC or Fortitude. </specific>
+		<specific name="Effect"> You gain a +4 power bonus to AC and Fortitude until the start of your next turn. If the triggering attack misses, you can push the triggering enemy up to 2 squares. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 16 </specific>
+		<specific name="Power Type"> Utility </specific>
+Your combat prowess ensures that your place in a fight is on the front lines. Roots of the mountain uses your mental energy to reinforce your body, enabling it to withstand the most punishing strikes.
+	</RulesElement>
+	<RulesElement name="Bitter Stasis" type="Power" internal-id="ID_FMP_POWER_16191" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+		<Flavor> The elemental cold released through your attack traps you and an enemy in ice. The cold is more than your enemy can bear, but it offers you protection from outside interference. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16192 </specific>
+		<specific name="Display"> Monk Attack 17 </specific>
+		<specific name="Keywords"> Cold, Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier cold damage, and the target is restrained until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 17 </specific>
+		<specific name="Power Type"> Attack </specific>
+Eternal Tide monks often draw force from the Elemental Chaos, deploying elemental cold to keep an enemy where you want it.
+	</RulesElement>
+	<RulesElement name="Bitter Stasis [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16192" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Cold, Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> Until the end of your next turn, you are immobilized, you are immune to forced movement, and you gain resistance to all damage equal to 5 + your Strength modifier. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16191 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Fist of the Whirling Tempest" type="Power" internal-id="ID_FMP_POWER_16193" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+		<Flavor> You reach out with your thoughts to the sky and call down a thunderbolt to destroy your enemies. Echoing thunder follows you as you maneuver into position. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16194 </specific>
+		<specific name="Display"> Monk Attack 17 </specific>
+		<specific name="Keywords"> Aura, Elemental, Full Discipline, Implement, Lightning, Psionic, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 3d6 + Dexterity modifier lightning damage, and the target is dazed until the end of your next turn. </specific>
+		<specific name="Effect"> You activate an aura 1 that lasts until the start of your next turn. Any creature that enters the aura or ends its turn there takes 1d6 thunder damage. A creature can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 17 </specific>
+		<specific name="Power Type"> Attack </specific>
+The thunderstorm reflects the turmoil in your heart, and training your focus on this upheaval helps you use this destructive power to your advantage.
+	</RulesElement>
+	<RulesElement name="Fist of the Whirling Tempest [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16194" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Aura, Elemental, Full Discipline, Lightning, Psionic, Thunder </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to your speed. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16193 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Living Torch" type="Power" internal-id="ID_FMP_POWER_16195" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+		<Flavor> Black smoke roils around you, obscuring you from sight. When you strike a foe, heat shimmers appear and explode with renewed flames each time your target sustains further injury. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16196 </specific>
+		<specific name="Display"> Monk Attack 17 </specific>
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage. </specific>
+		<specific name="Effect"> Until the end of your next turn, whenever the target takes damage from an attack, each of your enemies adjacent to it takes 10 fire damage. An enemy can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 17 </specific>
+		<specific name="Power Type"> Attack </specific>
+The flames this discipline draws from the Elemental Chaos seem almost eager to feast on your enemies, building in intensity in answer to the violence they engender.
+	</RulesElement>
+	<RulesElement name="Living Torch [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16196" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed + 2. During this movement, you have total concealment. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16195 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Duel of Fates" type="Power" internal-id="ID_FMP_POWER_16197" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+		<Flavor> You zero in on an enemy and commit yourself to its defeat by creating a field to keep it close and hedge out interference. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 19 </specific>
+		<specific name="Keywords"> Implement, Psionic, Psychic, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 2 </specific>
+		<specific name="Target"> One creature in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 4d8 + Dexterity modifier damage, and the target grants combat advantage (save ends). </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> The squares adjacent to the burst become a zone that lasts until the target drops to 0 hit points or until you leave the zone. Nothing can teleport into or out of the area enclosed by the zone. The target treats the zone as blocking terrain, and any creature other than you or the target that enters the zone or starts its turn there takes 10 psychic damage. A creature can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 19 </specific>
+		<specific name="Power Type"> Attack </specific>
+By issuing a challenge to a particular enemy, you prevent it from escaping you. While subject to your duel of fates, the foe you single out finds it has no choice but to take you on.
+	</RulesElement>
+	<RulesElement name="Fire-Snake Dance" type="Power" internal-id="ID_FMP_POWER_16198" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+		<Flavor> The fires erupting from your body burn so brightly that none dare stop you. As you move across the battlefield, you deliver strikes that constrict your enemies with coils of flame. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 19 </specific>
+		<specific name="Keywords"> Elemental, Fire, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Effect"> You shift up to your speed + 4. You make the following attack each time you first enter a square adjacent to an enemy during this movement. You can attack a given enemy only once with each use of this power. </specific>
+		<specific name=" Attack"> Dexterity vs. Reflex </specific>
+		<specific name=" Hit"> 3d6 + Dexterity modifier fire damage, and the target is immobilized until the end of your next turn. </specific>
+		<specific name=" Miss"> Half damage, and the target is slowed until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 19 </specific>
+		<specific name="Power Type"> Attack </specific>
+This discipline reflects your growing mastery over elemental fire. As you channel it through your psionic pathways, you can shape it into fiery serpents that entwine your enemies and hold them in place.
+	</RulesElement>
+	<RulesElement name="Neutralizing Strike" type="Power" internal-id="ID_FMP_POWER_16199" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+		<Flavor> The disruptive force of your mentally enhanced strike renders your target virtually helpless and ready to be finished off. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 19 </specific>
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 3d8 + Dexterity modifier damage, and the target is stunned until the end of your next turn. </specific>
+		<specific name="Miss"> Half damage, and the target is weakened until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 19 </specific>
+		<specific name="Power Type"> Attack </specific>
+Even a hydra, with all its snapping jaws, is left reeling when struck by this debilitating attack. It leaves your opponent struggling just to stay upright, let alone react with an offensive of its own.
+	</RulesElement>
+	<RulesElement name="Everywhere at Once" type="Power" internal-id="ID_FMP_POWER_16200" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+		<Flavor> Your enlightened mind collapses all points in an area to one, so you can be wherever you wish. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 22 </specific>
+		<specific name="Keywords"> Psionic, Teleportation, Zone </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Effect"> The burst creates a zone that lasts until the end of the encounter. Any enemy that starts its turn in the zone grants combat advantage to you until the start of its next turn. In addition, whenever an enemy misses you with an attack while you are in the zone, you can teleport to another square in the zone as an immediate reaction. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 22 </specific>
+		<specific name="Power Type"> Utility </specific>
+Distance and time are concoctions the mind creates to make sense of the world outside. You can free your consciousness from such limitations, so you can be in one place and all places at the same time.
+	</RulesElement>
+	<RulesElement name="Hastened Effort" type="Power" internal-id="ID_FMP_POWER_16201" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+		<Flavor> Psionic energy rushes through you, helping you to do more than what should be possible. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 22 </specific>
+		<specific name="Keywords"> Psionic </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to 2 squares and take a standard action. You cannot use this action to make an attack. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 22 </specific>
+		<specific name="Power Type"> Utility </specific>
+This discipline unlocks deeper reservoirs of power to help you push yourself farther than normal limits allow. You move too quickly to be able to line up an attack, but you can use the surge to move a greater distance or perform some other maneuver.
+	</RulesElement>
+	<RulesElement name="Perfect Motion" type="Power" internal-id="ID_FMP_POWER_16202" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+		<Flavor> Expanding your mind lets you see pathways across the battlefield that you can exploit to move with impunity. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Utility 22 </specific>
+		<specific name="Keywords"> Psionic, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the perfect motion stance. Until the stance ends, your movement does not provoke opportunity attacks. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 22 </specific>
+		<specific name="Power Type"> Utility </specific>
+With an instant's thought, you see routes once hidden to you. A turned back, a quick distraction, even simple positioning can grant opportunities for you to move without drawing attacks.
+	</RulesElement>
+	<RulesElement name="Blazing Scourge" type="Power" internal-id="ID_FMP_POWER_16203" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+		<Flavor> Hot tendrils unfurl from your outstretched hand to ensnare your foes. The fire you command makes enemies think twice about stopping you and adds intensity to your other fire attacks. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16204 </specific>
+		<specific name="Display"> Monk Attack 23 </specific>
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Target"> One, two, or three creatures </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 3d8 + Dexterity modifier fire damage, and the target is immobilized until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 23 </specific>
+		<specific name="Power Type"> Attack </specific>
+The more you study and work with elemental fire, the more versatile your applications of it become. Now, the flares you send out can entrap multiple foes at the same time.
+	</RulesElement>
+	<RulesElement name="Blazing Scourge [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16204" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to your speed. Until the end of your next turn, you gain a +4 power bonus to fire damage rolls. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16203 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Lightning in the Clouds" type="Power" internal-id="ID_FMP_POWER_16205" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+		<Flavor> You leap into the air and hurl lightning and thunder against your foes. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16206 </specific>
+		<specific name="Display"> Monk Attack 23 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Lightning, Psionic, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 3d6 + Dexterity modifier lightning damage, and the target is dazed until the end of your next turn. </specific>
+		<specific name="Effect"> Each creature adjacent to the target takes 10 thunder damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 23 </specific>
+		<specific name="Power Type"> Attack </specific>
+This power lets you channel the elemental fury found in storms, and infuses you with lightning and thunder to use against your enemies. Soaring above them, you rain destruction down upon their heads.
+	</RulesElement>
+	<RulesElement name="Lightning in the Clouds [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16206" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Lightning, Psionic, Thunder </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You fly up to your speed + 2. If you do not land at the end of this movement, you hover until the start of your next turn, when you descend without taking falling damage. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16205 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Order Unbound" type="Power" internal-id="ID_FMP_POWER_16207" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+		<Flavor> You shed order's hold on your body and become pure energy, if only for a few moments. Your rapid strikes wreak havoc on your foes. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16208 </specific>
+		<specific name="Display"> Monk Attack 23 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic, Teleportation </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 2 </specific>
+		<specific name="Target"> Each creature in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage, and you slide the target up to a number of squares equal to 1 + your Strength modifier. </specific>
+		<specific name="Effect"> The first time the target makes an attack before the start of your next turn, it falls prone after resolving the attack. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 23 </specific>
+		<specific name="Power Type"> Attack </specific>
+The greatest disciplines taught by masters of the Eternal Tide help students soften or even shed the structure imposed on their bodies. Order unbound releases you from the bonds of physicality and lets you move with impunity to strike from a direction your enemies don't expect.
+	</RulesElement>
+	<RulesElement name="Order Unbound [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16208" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic, Teleportation </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You become insubstantial until the start of your next turn and teleport up to a number of squares equal to your speed. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16207 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Crushing Anger" type="Power" internal-id="ID_FMP_POWER_16209" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+		<Flavor> An enemy's strike awakens dreadful rage in you, which you turn into a mental onslaught that leaves the creature unable to continue facing you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 25 </specific>
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Trigger"> An adjacent enemy hits you with an attack. </specific>
+		<specific name="Target"> The triggering enemy </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 4d8 + Dexterity modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> The target is subjected to crushing anger (save ends). While the target is within 2 squares of you, it takes a -2 penalty to saving throws to end this effect. Until the effect ends, you can use a minor action once during each of your turns to deal 10 damage to the target and knock it prone. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 25 </specific>
+		<specific name="Power Type"> Attack </specific>
+This discipline combines defense and offense in a brutally effective way, harming the enemy that provokes you and burying it under a mental oppression so great that it must either flee from you or crumple beneath your slightest touch.
+	</RulesElement>
+	<RulesElement name="Enduring Boulder" type="Power" internal-id="ID_FMP_POWER_16210" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+		<Flavor> You become a creature not unlike stone, capable of bringing great physical force to bear and proving almost invulnerable to attacks for a time. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 25 </specific>
+		<specific name="Keywords"> Elemental, Implement, Polymorph, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 5d10 + Dexterity modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You assume the form of the enduring boulder. While in this form, you gain resist 30 to all damage and a +3 power bonus to melee damage rolls. Each time you are hit by an attack, reduce the resistance by 5. When the resistance drops to 0, the form ends. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 25 </specific>
+		<specific name="Power Type"> Attack </specific>
+When you use this discipline, you manifest all the might of elemental earth without sacrificing speed or agility. Your rocky hide protects you from attacks, but each time an attack lands, some of your exterior breaks away to reveal your true form underneath.
+	</RulesElement>
+	<RulesElement name="Living Lightning" type="Power" internal-id="ID_FMP_POWER_16211" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+		<Flavor> Launching yourself at an enemy causes psionic energy to crackle around you so that when you land, you deliver a thunderbolt that can shatter your target's body and mind. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 25 </specific>
+		<specific name="Keywords"> Elemental, Implement, Lightning, Psionic, Thunder </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Effect"> Before the attack, you can fly up to your speed. Any creature that hits you with an opportunity attack provoked by this movement takes 10 lightning damage. </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier lightning and thunder damage, and the target is stunned until the end of your next turn. </specific>
+		<specific name="Miss"> Half damage, and the target loses its standard action on its next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 25 </specific>
+		<specific name="Power Type"> Attack </specific>
+Many followers of the Sublime Way develop elemental characteristics in time. Living lightning is one way in which these traits might manifest. Using this power gives you the appearance and destructive nature of the worst tempests that rage across the Elemental Chaos.
+	</RulesElement>
+	<RulesElement name="Get Away, Stay Away" type="Power" internal-id="ID_FMP_POWER_16212" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+		<Flavor> By waiting until several enemies converge on you, you can drive home to all of them at once the folly of daring to confront you head-on. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16213 </specific>
+		<specific name="Display"> Monk Attack 27 </specific>
+		<specific name="Keywords"> Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each enemy in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier damage, and you push the target up to a number of squares equal to your Strength modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 27 </specific>
+		<specific name="Power Type"> Attack </specific>
+When enemies have the audacity to close upon you in a group, you
+can wound them and scatter them at the same time. Foes that don't learn to keep their distance will get a second lesson.
+	</RulesElement>
+	<RulesElement name="Get Away, Stay Away [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16213" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to 2 squares. Until the start of your next turn, when an adjacent enemy damages you with an attack, you can use an immediate reaction to push that enemy up to 3 squares and knock it prone. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16212 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Loose the Screaming Gale" type="Power" internal-id="ID_FMP_POWER_16214" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+		<Flavor> An unnatural wind comes to life, following on the heels of your swift attacks and hammering into your foes. The same gale lifts you into the air. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16215 </specific>
+		<specific name="Display"> Monk Attack 27 </specific>
+		<specific name="Keywords"> Elemental, Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 5 </specific>
+		<specific name="Target"> Each creature in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 3d8 + Dexterity modifier damage, you slide the target up to 3 squares, and it is immobilized until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 27 </specific>
+		<specific name="Power Type"> Attack </specific>
+The winds you call forth with loose the screaming gale originate from beyond the natural world, and they owe their strength and fury to elemental air. Your connection to that force empowers this discipline, which batters and buffets your enemies while it sets you free to soar upon the same winds.
+	</RulesElement>
+	<RulesElement name="Loose the Screaming Gale [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16215" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You fly up to a number of squares equal to your speed + 4. If you do not land at the end of this movement, you land safely in the nearest unoccupied square at the start of your next turn. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16214 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Wildfire Unleashed" type="Power" internal-id="ID_FMP_POWER_16216" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+		<Flavor> Elemental fire crawls up your arms and spreads across your body. Wherever you go, fire follows, and at your command savage heat washes out ahead of you to incinerate your enemies. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16217 </specific>
+		<specific name="Display"> Monk Attack 27 </specific>
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Implement, Psionic, Zone </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close blast 3 </specific>
+		<specific name="Target"> Each creature in the blast </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 3d8 + Dexterity modifier fire damage. </specific>
+		<specific name="Effect"> The blast creates a zone that lasts until the end of your next turn. Any creature that enters the zone or ends its turn there takes fire damage equal to 3 + your Charisma modifier. A creature can take damage from a zone created by this power only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 27 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your expertise with elemental fire culminates in wildfire unleashed. This power momentarily transforms you into a creature of flame, so that fire burns in the tracks you leave behind you and flows before you where you direct it. This power is useful for isolating a powerful foe while blasting its underlings.
+	</RulesElement>
+	<RulesElement name="Wildfire Unleashed [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_16217" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic, Zone </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to half your speed. The squares you leave become a zone that lasts until the end of your next turn. Any creature that enters the zone or ends its turn there takes fire damage equal to 3 + your Charisma modifier. A creature can take damage from a zone created by this power only once per turn. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16216 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<RulesElement name="Bones of the Mountain King" type="Power" internal-id="ID_FMP_POWER_16218" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+		<Flavor> Each foe exposed to your rapid assault finds its mobility suddenly curtailed. The longer you remain at hand to threaten an enemy, the more it suffers. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 29 </specific>
+		<specific name="Keywords"> Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each enemy in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Fortitude </specific>
+		<specific name="Hit"> 5d6 + Dexterity modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> The target is immobilized and takes ongoing 10 damage (save ends both). While you are adjacent to the target, it takes a penalty to saving throws against this effect. The penalty equals half your Dexterity modifier. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 29 </specific>
+		<specific name="Power Type"> Attack </specific>
+A potent attack when you need to lock down several enemies at once, bones of the mountain king causes your opponents' skeletons or other internal structures to calcify, causing barbs to push out from inside. Although you can affect several enemies at once, the fact that they are immobilized by this power ensures that they focus their attacks on you until freed from the power's effects.
+	</RulesElement>
+	<RulesElement name="Rising Phoenix" type="Power" internal-id="ID_FMP_POWER_16219" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+		<Flavor> Death's proximity awakens the fires within you, causing them to flow out from you in a blazing torrent to burn your enemies and lift you above the battlefield. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Monk Attack 29 </specific>
+		<specific name="Keywords"> Aura, Elemental, Fire, Healing, Implement, Psionic </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Close burst 3 </specific>
+		<specific name="Trigger"> An attack bloodies you or drops you below 1 hit point. </specific>
+		<specific name="Target"> Each enemy in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 2d8 + Dexterity modifier fire damage, and the target is marked and takes ongoing 10 fire damage (save ends both). </specific>
+		<specific name=" Each Failed Saving Throw"> The ongoing fire damage increases by 5. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You can spend a healing surge. Until the end of the encounter, you have a fly speed of 6 (altitude limit 2). You also activate an aura 1 that lasts until the end of the encounter. Any enemy that enters the aura or ends its turn there takes fire damage equal to your Dexterity modifier. A creature can take this damage only once per turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 29 </specific>
+		<specific name="Power Type"> Attack </specific>
+Your emotions are wild, raging forces that reach their apex when you are on the brink of your demise. If an attack delivers a grievous injury, your emotions take over, rousing you as a creature of fiery devastation.
+	</RulesElement>
+	<RulesElement name="Tormenting Mirage" type="Power" internal-id="ID_FMP_POWER_16220" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+		<Flavor> Clouding your enemies' thoughts with doubt and fear, you use their failures to press your own attacks. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_16221 </specific>
+		<specific name="Display"> Monk Attack 29 </specific>
+		<specific name="Keywords"> Implement, Psionic, Psychic, Stance </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each enemy in the burst </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 6d6 + Dexterity modifier psychic damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You assume the tormenting mirage stance. Until the stance ends, you gain a +2 power bonus to all defenses against attacks made by enemies adjacent to you, you grant combat advantage to all other enemies, and you can use the secondary power at will. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 29 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16221 </specific>
+Attuning your senses to be especially sensitive to your enemies helps you to assail them with a withering attack, then distort their perceptions. You make yourself harder to hit, and any enemy that tries to hurt you pays.
+	</RulesElement>
+	<RulesElement name="Tormenting Mirage Secondary Power" type="Power" internal-id="ID_FMP_POWER_16221" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
+		<Prereqs> Unselectable </Prereqs>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Fear, Psionic, Psychic </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Requirement"> The power Tormenting Mirage must be active in order to use this power. </specific>
+		<specific name="Trigger"> An enemy adjacent to you misses you with an attack. </specific>
+		<specific name="Target"> The triggering enemy </specific>
+		<specific name="Effect"> The target takes psychic damage equal to your Dexterity modifier. You and the target swap positions (it slides 1 square, and you shift 1 square), and you gain combat advantage against it until the end of your next turn. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_16220 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+	<!-- June 2012 Updates -->
+	<RulesElement name="Fallen Needle" type="Power" internal-id="ID_FMP_POWER_13219" source="Dragon Magazine 389">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> A single, sharp blow readies you to step away at a moment's notice. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="_ChildPower"> ID_FMP_POWER_13220 </specific>
+		<specific name="Display"> Monk Attack 1 </specific>
+		<specific name="Keywords"> Full Discipline, Implement, Psionic </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Dexterity vs. Reflex </specific>
+		<specific name="Hit"> 1d10 + Dexterity modifier damage, and the target takes a -2 penalty to attack rolls against you until the end of your next turn.
+Increase damage to 2d10 + Dexterity modifier damage at 21st level. </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_13220" type="Power" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Fallen Needle [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_13220" source="Dragon Magazine 389">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+		<Prereqs> Unselectable; Unselectable </Prereqs>
+		<Flavor> A single, sharp blow readies you to step away at a moment's notice. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display" />
+		<specific name="Keywords"> Full Discipline, Psionic </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift 1 square or move 3 squares. </specific>
+		<specific name="_ParentPower"> ID_FMP_POWER_13219 </specific>
+		<specific name="Class"> ID_FMP_CLASS_362 </specific>
+	</RulesElement>
+</D20Rules>

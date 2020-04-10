@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>Buck-A-Batch-MagicRings.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/Buck-A-Batch-MagicRings.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/Buck-A-Batch-MagicRings.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Artificer's Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_01" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> Two silver interlocked gears attached to a simple hold band. The gears spin when the ring's power is activated. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Encounter): Free Action. Activate to gain a +2 bonus to an attack roll when using a magic item.
+Power (Daily): Free Action. When you use a magic item's daily power roll a save. If you succeed the item's daily power can be used again.  </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Gain a +2 item bonus to Knowledge checks. </specific>
+    <rules>
+      <statadd name="Artificer's Ring (paragon tier)" value="+2" />
+      <statadd name="check:Knowledge" value="+Artificer's Ring (paragon tier)" type="resist" zero="true" />
+      <statadd name="check:Knowledge" value="+Artificer's Ring (paragon tier)" non-zero="true" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Avenging Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_02" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> This silver ring bears a small broken blood covered sword. It seeks revenge against those who have injured you. </Flavor>
+    <specific name="Level"> 16 </specific>
+    <specific name="Gold"> 45000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Radiant): Immediate Reaction. You may use this ability after you have been damaged by a melee attack. All creatures within 5 squares of you who have dealt damage to you during this encounter are dealt 3d10 radiant damage.
+Power (Daily): Immediate Reaction. Use this ability if an enemy's melee attack reduces you to 0 hit points or less. Make a basic melee attack against the enemy if it hits you deal (2W) Damage.  </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> If an enemy that damages you during their turn ends its turn in a square adjacent to you that enemy takes 3 points damage. </specific>
+  </RulesElement>
+  <RulesElement name="Channel Ring (Necrotic) (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_03" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> This simple onyx band transforms Radiant energy into a Necrotic attack. </Flavor>
+    <specific name="Level"> 22 </specific>
+    <specific name="Gold"> 325000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Encounter * Necrotic): Immediate Reaction. Use this ability after you have been damaged by an attack that deals radiant damage. A melee weapon held in your hand becomes charged with necrotic energy. The next successful attack you make with the weapon during this encounter deals an additional 3d6 Necrotic damage. 
+Power (Daily): Immediate Interrupt. Use this ability immediately after suffering a critical hit from an attack that deals radiant damage. The damage resistance that the ring grants to you and your allies is doubled until the end of your next turn.  </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You gain resist 10 Radiant. Allies adjacent to you gain resist 5 Radiant. </specific>
+    <rules>
+      <statadd name="Channel Ring (Necrotic) (epic tier)" value="+10" />
+      <statadd name="resist:radiant" value="+Channel Ring (Necrotic) (epic tier)" type="resist" zero="true" />
+      <statadd name="resist:radiant" value="+Channel Ring (Necrotic) (epic tier)" non-zero="true" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Channel Ring (Radiant) (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_04" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A series of twisted ivory bands transform Necrotic energy into a Radiant attack. </Flavor>
+    <specific name="Level"> 22 </specific>
+    <specific name="Gold"> 325000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Encounter * Radiant): Immediate Reaction. Use this ability after you have been damaged by an attack that deals necrotic damage. A melee weapon held in your hand becomes charged with Radiant energy. The next successful attack you make with the weapon during this encounter deals an additional 3d6 Radiant damage.
+Power (Daily): Immediate Interrupt. Use this ability immediately after suffering a critical hit from an attack that deals necrotic damage. The damage resistance that the ring grants to you and your allies is doubled until the end of your next turn.  </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You gain resist 10 Necrotic. Allies adjacent to you gain resist 5 Necrotic. </specific>
+    <rules>
+      <statadd name="Channel Ring (Radiant) (epic tier)" value="+10" />
+      <statadd name="resist:necrotic" value="+Channel Ring (Radiant) (epic tier)" type="resist" zero="true" />
+      <statadd name="resist:necrotic" value="+Channel Ring (Radiant) (epic tier)" non-zero="true" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Combatant's Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_06" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> An ivory band carved to resemble the outer walls of a combat arena. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Zone): Standard Action. Close burst 6. This zone is ringed by the walls of a phantom arena. At the start of their turn, as a free action, creatures in the zone may make an intimidate check against another creature in the zone. If they succeed the creature gains a +3 power bonus to their attack rolls against the target creature until the end of their turn. The zone persists until the end of the encounter or you can end it on your turn with a minor action.
+Power (Daily): Immediate Reaction. Use after failing an intimidate check while the zone is active. A resounding cheer goes up from an invisible crowd. Re-roll your intimidate check with an additional +5 bonus.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You gain a +1 bonus to your intimidate skill for as long as the Combatant's ring's zone is active. </specific>
+    <rules>
+      <statadd name="Combatant's Ring (paragon tier)" value="+1" />
+      <statadd name="Intimidate" value="+Combatant's Ring (paragon tier)" condition="for as long as the Combatant's ring's zone is active" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Crusader's Ring (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_07" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A golden band engraved with the symbols of a lawful good organization. </Flavor>
+    <specific name="Level"> 20 </specific>
+    <specific name="Gold"> 125000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Free Action. You may use this ability if a critical hit you make reduces an evil creature's hit points to 0 or less. Spend a healing surge to regain twice your surge value in hit points or heal an ally within 2 squares of you for a number of hit points equal to their surge value.
+Power (Daily * Radiant): Immediate Reaction. Close burst 2. You can use this power when hit by a melee attack made by an evil creature. All evil creatures in range are dealt 3d6+8 radiant damage.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> If you are of lawful good alignment your melee attacks deal an additional +2 radiant damage against evil creatures. </specific>
+    <rules>
+      <statadd name="Crusader's Ring (epic tier)" value="+2" />
+      <statadd name="damage rolls" value="+Crusader's Ring (epic tier)" condition=" your melee attacks deal an additional damage against evil creatures" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Dagger Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_08" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A silver ring carved to resemble a length of chain set with a small dagger shaped gemstone. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Encounter): Free Action. Make a standard range attack against a target with your dagger. If it hits the attack deals 2W. The dagger returns to your hand at the end of your turn.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Gain a +3 item bonus to your attack rolls when using a dagger held in the ring bearing hand. You cannot be disarmed when using a dagger. </specific>
+    <rules>
+      <statadd name="Dagger Ring (paragon tier)" value="+3" />
+      <statadd name="attack rolls" value="+Dagger Ring (paragon tier)" condition="when using a dagger held in the ring bearing hand" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Death Blow Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_09" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> Carved from onyx and engraved with a laughing skull this ring can amplify a critical hit into a lethal blow. </Flavor>
+    <specific name="Level"> 16 </specific>
+    <specific name="Gold"> 45000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Free Action. You may use this power when you score a critical hit upon a creature in melee combat. The creature makes a save. If it fails, the damage dealt by the attack is doubled.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> If an ally adjacent to you performs a critical hit you gain a +3 power bonus to your next attack roll. </specific>
+    <rules>
+      <statadd name="Death Blow Ring (paragon tier)" value="+3" />
+      <statadd name="melee attack rolls" value="+Death Blow Ring (paragon tier)" condition="when an ally adjacent to you performs a critical hit" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Destroyer's Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_10" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A golden band engraved with the symbols of a chaotic evil organization. </Flavor>
+    <specific name="Level"> 20 </specific>
+    <specific name="Gold"> 125000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Free Action. You may use this ability if a critical hit you make reduces a good creature's hit points to 0 or less. Spend a healing surge to regain twice your surge value in hit points or heal an ally within 2 squares of you for a number of hit points equal to their surge value.
+Power (Daily * Necrotic): Immediate Reaction. Close burst 2. You can use this power when hit by a melee attack made by a good creature. All good creatures in range are dealt 3d6+8 necrotic damage.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> If you are of chaotic evil alignment your melee attacks deal an additional +2 necrotic damage against good creatures.</specific>
+    <rules>
+      <statadd name="Destroyer's Ring (paragon tier)" value="+2" />
+      <statadd name="damage rolls" value="+Destroyer's Ring (paragon tier)" condition=" your melee attacks deal an additional damage against good creatures" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Duelist's Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_11" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> This ring grants you special bonuses when you focus upon a single opponent in combat. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. Mark a creature. You gain a +3 item bonus to attack rolls make against the marked creature. You also gain a +3 item bonus to your AC when defending against the marked creature.
+Power (Daily): Immediate Reaction. Use after you reduce a creature you marked at the start of combat to 0 hit points. You are healed a number of hit points equal to a healing surge.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Farstrike Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_12" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> This onyx ring bears the image of a sword its hilt is notched and bears the fletching of an arrow. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Encounter): Standard Action. You may make a basic melee attack against a single target up to 5 squares away.
+Power (Daily): Free Action. You may use this ability after making a critical melee attack against a target. Make a basic melee attack against another target up to 5 squares
+away.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property" />
+  </RulesElement>
+  <RulesElement name="Healing Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_13" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A silver ring with a small red cross shaped gem. The cross glows when healing powers are in use. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Healing): Free Action. You, or a single ally within 5 squares of you, are healed as though they used a healing surge. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Any healing power used within 3 squares of you gains a +2 bonus to the result. </specific>
+  </RulesElement>
+  <RulesElement name="Key Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_14" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A gold ring with three small key shaped gems. Locks seem to want to open in its presence. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Consumable): Minor Action. As the Ritual "Knock". A healing surge is not required, however each time this power is used one of the key shaped gems turns to dust. 
+The Knock ritual allows you to open a single locked door, chest, gate, or other object. It even works against portals sealed with the Arcane Lock ritual or doors secured with bolts or bars that are on the far side, out of reach. You must defeat all the closures on a locked object to unlock it. You make one Arcana check per lock, bar, Arcane Lock, or similar closure. The object you unlock does not open automatically; you still must open it yourself after the ritual unlocks it. Make an Arcana check with a +5 bonus in place of a Thievery check to open each lock or closure. To undo bolts or bars you normally couldn't reach, you must succeed on a DC 20 Arcana check. If you use this ritual successfully against a portal protected by Arcane Lock, you destroy the Arcane Lock and its effects end. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Any attempt made to pick a lock within 3 squares of you gains a +3 bonus to the skill check. </specific>
+    <rules>
+      <grant name="ID_FMP_RITUAL_22" type="Ritual" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_KEY_RING" type="CountsAsFeature" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Monster Hunter's Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_15" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A simple gold ring that bears the face of a goblin. Two small X's mark the eyes. </Flavor>
+    <specific name="Level"> 16 </specific>
+    <specific name="Gold"> 45000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Encounter): Free action. Use after making a successful melee attack against a creature of the type that the ring is attuned to. The creature becomes marked. You gain a +3 bonus to your attack and damage rolls against the marked creature.
+Power (Daily): Immediate reaction. Use after being struck by a marked creature. This attack does not count. Re-roll the attack roll.
+
+Power (Daily): Free action. Use after making a successful attack against a marked creature. Your attack deals an additional 1W and the creature is dazed until the end of its next turn. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Touching the ring to a recently deceased corpse will permanently attune the ring to the creature type responsible for its death. </specific>
+  </RulesElement>
+  <RulesElement name="Necromancer's Ring (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_16" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A series of skulls engraved in a silver ring. Phantom skulls shoot from the ring when its power is used. </Flavor>
+    <specific name="Level"> 25 </specific>
+    <specific name="Gold"> 625000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Necrotic): Free Action. Close Burst 5. Living creatures within range suffer 4d10 + Charisma modifier necrotic. Undead creatures within range are healed for 4d10 + Charisma modifier. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Undead within 5 squares of you gain a +5 bonus to their Will when defending against Channel Divinity: Turn Undead. </specific>
+  </RulesElement>
+  <RulesElement name="Potion Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_17" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A silver ring which bears the image of a goblin with inflated cheeks and a puckered mouth. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Free Action. You may activate the ring to benefit from the effects of the stored potion. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> When this ring comes into contact with a magic potion it will slowly absorb the liquid over a 24 hour period. Only one potion may be stored at a time. The stored potion is expended if the ring's power is used. </specific>
+  </RulesElement>
+  <RulesElement name="Razorstorm Ring (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_18" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> This ring bears seemingly sharp edges yet is dull to the touch. </Flavor>
+    <specific name="Level"> 24 </specific>
+    <specific name="Gold"> 525000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Force, Zone): Standard Action. Close burst 3. You may use this power to create a zone filled with dozens of whirling dagger-sized blades of solid energy. Enemy creatures in the zone when it is first created are dealt 4d6 Force. Enemies that end their turn in this zone are dealt 6 Force. The zone persists until the end of the encounter or you can end it on your turn with a minor action. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Enemy creatures that end their turn in a square adjacent to you while the Razorstorm ring's zone is active are dealt 3 points damage. </specific>
+  </RulesElement>
+  <RulesElement name="Ring of Dazing (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_19" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A silver band encrusted with multicolored fragments of gems. </Flavor>
+    <specific name="Level"> 18 </specific>
+    <specific name="Gold"> 85000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Radiant, Zone): Minor Action. Close Burst 3. You create a zone of scintillating light. Attacks made on creatures in this zone that deal radiant damage or have a dazing effect gain a +3 bonus to the attack roll. This zone lasts for 3 turns.
+Power (Daily * Radiant): Standard Action. Make an attack: Close burst 2; All enemy creatures within range; Intelligence or Charisma vs. Will; on a hit, target is dealt 3d8 radiant damage and is dazed (save ends). </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You roll your save twice when attempting to end a dazed condition. </specific>
+  </RulesElement>
+  <RulesElement name="Ring of Flanking (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_20" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> This wooden band has the carved image of an orc's head at its center with a sword on either side. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Free Action. Close burst 6. Choose up to 3 enemy targets within range. You create a phantom warrior in an empty space adjacent to each target. These warriors count as allies to you and your party for the purpose of granting a flanking bonus. Creatures can move through the phantoms or even end their turn in their space. If a phantom is on an occupied square it slides towards you, stopping on the next empty square it encounters. The phantoms remain until the end of the encounter.
+Power (At-Will): Minor Action. On your turn you can spend a healing surge to slide a phantom up to 6 spaces.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You gain an additional +1 to your attack roll when attempting to hit a flanked target. </specific>
+    <rules>
+      <statadd name="Ring of Flanking (paragon tier)" value="+1" />
+      <statadd name="attack rolls" value="+Ring of Flanking (paragon tier)" type="item" condition="when attempting to hit a flanked target" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Ring of the Martyr (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_21" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A gold ring which bears the symbol of a forgotten goddess of sacrifice. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Immediate Interrupt. You may activate this power when an ally within 5 squares of you is dealt damage. The damage meant for the ally is dealt to you instead.</specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You may reduce the damage dealt to allies adjacent to you by up to 5 points. Each time you do this you take an equal amount of damage. </specific>
+  </RulesElement>
+  <RulesElement name="Share-Rings - Damage (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_22" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A set of four onyx rings carved to resemble a length of chain. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special"> These rings come in a set. If one ring is disenchanted the others in the set lose their magic as well. The cost covers the set of rings. </specific>
+    <specific name="Power"> Power (Daily): Immediate Interrupt. You may use this ability when you or an ally wearing a ring within five squares of you is damaged. The damage is divided among all ring wearing allies within five squares of the target.
+Power (Daily): Immediate Reaction. If the above power is activated by one of your allies roll a save. If you fail your ring's power is considered spent as well. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You may prevent 3 points of damage dealt to ring wearing allies adjacent to you. Take 3 points of damage each time you do so. </specific>
+  </RulesElement>
+  <RulesElement name="Share-Rings - Healing (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_23" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A set of four ivory rings carved to resemble a length of chain. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special"> These rings come in a set. If one ring is disenchanted the others in the set lose their magic as well. The cost covers the set of rings. </specific>
+    <specific name="Power"> Power (Daily): Standard Action. All ring bearing allies within five squares of you spend a healing surge. The recovered hit points are divided up among the ring bearers.
+Power (Daily): Immediate Reaction. If the above power is activated by one of your allies roll a save. If you fail your ring's power is considered spent as well. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> Ring wearing allies adjacent to you are healed for 3 points each time you use a healing surge. </specific>
+  </RulesElement>
+  <RulesElement name="Share-Rings - Save (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_24" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A set of four alabaster rings carved to resemble a length of chain. </Flavor>
+    <specific name="Level"> 15 </specific>
+    <specific name="Gold"> 25000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special"> These rings come in a set. If one ring is disenchanted the others in the set lose their magic as well. The cost covers the set of rings. </specific>
+    <specific name="Power"> Power (Daily): Immediate Interrupt. Use when a ring bearing ally within five squares of you fails a Fortitude, Reflex, or Will save. The save attempt is re-rolled using your save rating instead.
+Power (Daily): Immediate Reaction. If the above power is activated by one of your allies roll a save. If you fail your ring's power is considered spent as well. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You gain a +3 item bonus to your Fortitude, Reflex, and Will saves as long as there is at least one ring bearer adjacent to you. </specific>
+  </RulesElement>
+  <RulesElement name="Shock Ring (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_25" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A gold ring engraved with the image of a lightning bolt. The ring occasionally throws off tiny sparks. </Flavor>
+    <specific name="Level"> 24 </specific>
+    <specific name="Gold"> 525000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily * Lightning, Zone): Minor Action. Close Burst 3. You create a zone of charged air. Creatures that end their turn in this zone gain vulnerability 5 lightning until the start of their next turn. The zone remains until the end of the encounter.
+	  
+Power (Daily * Lightning): Free Action. Use this ability when you hit an enemy with a melee attack. The attack deals an additional 4d10 lightning.
+
+Power (Daily * Lightning): Free Action. Use this ability when you hit an enemy with a ranged attack. The attack deals an additional 4d10 lightning. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property"> You gain resist 10 lightning. Allies adjacent to you gain resist 5 lightning. </specific>
+    <rules>
+      <statadd name="Shock Ring (epic tier)" value="+10" />
+      <statadd name="resist:lightning" value="+Shock Ring (epic tier)" type="resist" zero="true" />
+      <statadd name="resist:lightning" value="+Shock Ring (epic tier)" non-zero="true" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Target Ring (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_10045_26" source="Buck-A-Batch Magic Rings" revision-date="12/14/2010 10:35 AM">
+    <Flavor> A silver ring bearing a small archery target. This target can be projected upon the target of your choice. </Flavor>
+    <specific name="Level"> 14 </specific>
+    <specific name="Gold"> 21000 </specific>
+    <specific name="Magic Item Type"> Ring </specific>
+    <specific name="Tier" />
+    <specific name="_Item_Set_ID" />
+    <specific name="Armor" />
+    <specific name="Weapon" />
+    <specific name="Item Slot"> Ring </specific>
+    <specific name="Requirement" />
+    <specific name="Critical" />
+    <specific name="Special" />
+    <specific name="Power"> Power (Daily): Minor Action. You may use this power to mark an enemy creature in line of sight with the image of a target. This image is only visible to you and allies within 2 squares of you. The phantom target makes the marked creature easier to hit with ranged weapons. Those that can see the image of the target gain a +3 item bonus to their attack roll when attempting to hit the creature with a ranged weapon. </specific>
+    <specific name="_Rarity"> Common </specific>
+    <specific name="Property" />
+  </RulesElement>
+</D20Rules>

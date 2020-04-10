@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMFeats-Misc.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMFeats-Misc.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMFeats-Misc.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Reaper's Touch" type="Feat" internal-id="ID_FMP_FEAT_1239" source="Dragon Magazine Annual 2009,Dragon Magazine 372" revision-date="1/26/2011 12:17:55 PM">
+    <Prereqs> invoker, sorcerer, warlock, or wizard class </Prereqs>
+    <print-prereqs> invoker, sorcerer, warlock, or wizard class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You gain a benefit with some attack powers. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+You gain a benefit with any of the following attack powers you know.
+Avenging Light (invoker, Player's Handbook 2, page 103): This power gains a range of Melee touch in addition to its normal range. You can use it as a melee basic attack.
+Acid Orb (sorcerer, Player's Handbook 2, page 138): This power gains a range of Melee touch in addition to its normal range. You can use it as a melee basic attack.
+Dragonfrost (sorcerer, Player's Handbook 2, page 139): This power gains a range of Melee touch in addition to its normal range. You can use it as a melee basic attack.
+Eldritch Blast (warlock, Player's Handbook, page 132): This power gains a range of Melee touch in addition to its normal range. You can use it as a melee basic attack.
+Magic Missile (wizard, Player's Handbook, page 132): This power gains a range of Melee touch in addition to its normal range. You can use it as a melee basic attack.
+</RulesElement>
+  <RulesElement name="Zuoken's Centering" type="Feat" internal-id="ID_FMP_FEAT_1782" source="Dragon Magazine 378" revision-date="1/26/2011 12:17:55 PM">
+    <Prereqs> 11th level, Wis 15, monk; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Wis 15, monk </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Base hit points and healing surges on your Wisdom; use Wisdom for Strength checks, Athletics checks </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Hit Points" value="+Wisdom" type="Level 1" />
+      <statadd name="Healing Surges" value="+Wisdom modifier" type="Level 1" />
+      <statadd name="Athletics" value="+Wisdom modifier" type="Ability" />
+    </rules>
+Your hit points and number of healing surges are based on your Wisdom instead of Constitution. When you must make a Strength check, you can use Wisdom instead, and your Athletics checks are based on your Wisdom modifier.
+</RulesElement>
+  <RulesElement name="Blessed Strength" type="Feat" internal-id="ID_FMP_FEAT_2909" source="Dragon Magazine 386" revision-date="1/26/2011 12:17:55 PM">
+    <Prereqs> Unselectable </Prereqs>
+  </RulesElement>
+  <RulesElement name="Mighty Challenge" type="Feat" internal-id="ID_FMP_FEAT_1544" source="Divine Power" revision-date="8/27/2010 12:19:12 PM">
+    <Prereqs> Paladin, divine challenge power </Prereqs>
+    <print-prereqs> Paladin, divine challenge power </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Divine challenge and sanctions deal extra radiant damage </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Divine Challenge:damage" value="+Strength modifier" />
+      <statadd name="Divine Sanction:damage" value="+Strength modifier" />
+    </rules>
+Whenever a target of your divine challenge or a creature affected by your divine sanction takes damage from that power or feature, it takes extra radiant damage equal to your Strength modifier.
+   </RulesElement>
+  <RulesElement name="Mark of Scribing" type="Feat" internal-id="ID_FMP_FEAT_1394" source="Eberron Player's Guide" revision-date="1/26/2011 12:17:55 PM">
+    <Category> ID_INTERNAL_CATEGORY_DRAGONMARK </Category>
+    <Prereqs> ~DRAGONMARK </Prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain additional languages, +2 to Diplomacy checks, perform certain rituals </specific>
+    <specific name="Special" />
+    <specific name="type"> Dragonmark </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Language" number="4" />
+      <select type="Language" number="1" level="5" />
+      <select type="Language" number="1" level="10" />
+      <select type="Language" number="1" level="15" />
+      <select type="Language" number="1" level="20" />
+      <select type="Language" number="1" level="25" />
+      <select type="Language" number="1" level="30" />
+      <statadd name="Diplomacy Misc" value="+2" />
+    </rules>
+Choose four languages. You can speak, read, and write those languages fluently. You gain one additional language every 5 levels.
+You gain a +2 bonus to Diplomacy checks.
+You can master and perform rituals as if you had the Ritual Caster feat. Furthermore, you can create scrolls in half the normal time (that is, the same amount of time it takes create a ritual book).
+</RulesElement>
+  <RulesElement name="Linguist" type="Feat" internal-id="ID_FMP_FEAT_150" source="Player's Handbook" revision-date="1/26/2011 12:17:55 PM">
+    <Prereqs> Intelligence 13, Wisdom 13, or Charisma 13 </Prereqs>
+    <print-prereqs> Int 13, Wis 13, or Cha 13 </print-prereqs>
+    <Flavor> Through study or extensive travel, you have mastered several languages. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Learn three new languages, +1 per 5 levels</specific>
+    <specific name="Special"> You can take this feat more than once. Each time you select this feat, choose three new languages. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Language" number="3" />
+      <select type="Language" number="1" level="5" />
+      <select type="Language" number="1" level="10" />
+      <select type="Language" number="1" level="15" />
+      <select type="Language" number="1" level="20" />
+      <select type="Language" number="1" level="25" />
+      <select type="Language" number="1" level="30" />
+    </rules>
+Choose three languages. You can now speak, read, and write those languages fluently. You gain one additional language every 5 levels.
+</RulesElement>
+  <RulesElement name="Improved Grab" type="Feat" internal-id="ID_FMP_FEAT_658" source="Player's Handbook 2" revision-date="1/26/2011 12:17:55 PM">
+    <Prereqs> Str 13 </Prereqs>
+    <print-prereqs> Str 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +4 to grab attacks, grab as minor</specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use the grab action, you gain a +4 feat bonus to the attack roll. The bonus increases to +6 at 11th level and +8 at 21st level.
+	Once per encounter, you can make a grab attack as a minor action.
+</RulesElement>
+  <RulesElement name="Alchemist" type="Feat" internal-id="ID_FMP_FEAT_652" source="Eberron Player's Guide" revision-date="1/26/2011 12:17:55 PM">
+    <Category> ID_FMP_CLASS_FEATURE_683 </Category>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Alchemist bonus feat replaces Ritual Caster class feature. </specific>
+    <specific name="Special"> You can take this feat instead of the Ritual Caster feat granted by your class feature. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_INTERNAL_ALCHEMICAL_ITEMS" type="Internal" />
+    </rules>
+You can make alchemical items of your level or lower. You must have the correct formula and an appropriate skill.
+	Each day, you can eschew the component cost for up to three alchemical items of your level or lower.
+</RulesElement>
+  <RulesElement name="Human Perseverance" type="Feat" internal-id="ID_FMP_FEAT_47" source="Player's Handbook" revision-date="8/27/2010 12:17:49 PM">
+    <Prereqs> Human </Prereqs>
+    <print-prereqs> Human </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 to saving throws </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Saving Throws" value="+1" />
+    </rules>
+You gain a +1 bonus to saving throws.
+   </RulesElement>
+  <RulesElement name="Fated Survival" type="Feat" internal-id="ID_FMP_FEAT_2139" source="Dragon Magazine 381" revision-date="8/27/2010 12:19:48 PM">
+    <Prereqs> 11th level, Cha 13; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Cha 13 </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description" />
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you fail a saving throw, you gain a +2 bonus to the next saving throw you make against the same effect.
+   </RulesElement>
+  <RulesElement name="Liberating Teleport" type="Feat" internal-id="ID_FMP_FEAT_2651" source="Player's Handbook 3" revision-date="8/27/2010 12:20:28 PM">
+    <Prereqs> 11th level; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> +2 to saving throws at end of turn after you teleport </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you teleport on your turn, you gain a +2 bonus to saving throws at the end of that turn.
+   </RulesElement>
+  <RulesElement name="Two-Weapon Fighting" type="Feat" internal-id="ID_FMP_FEAT_173" source="Player's Handbook" revision-date="8/27/2010 12:17:53 PM">
+    <Prereqs> Dexterity 13 </Prereqs>
+    <print-prereqs> Dexterity 13 </print-prereqs>
+    <Flavor> Your two weapons form a deadly combination. You slash and stab with both in unison, delivering punishing strikes as you press the attack. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 damage while holding a melee weapon in each hand </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="two-weapon:damage" value="+1" />
+    </rules>
+While wielding a melee weapon in each hand, you gain a +1 bonus to the damage rolls of attacks that you make with a melee weapon.
+   </RulesElement>
+  <RulesElement name="Astral Fire" type="Feat" internal-id="ID_FMP_FEAT_282" source="Player's Handbook" revision-date="8/27/2010 12:17:56 PM">
+    <Prereqs> Dex 13, Cha 13 </Prereqs>
+    <print-prereqs> Dex 13, Cha 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 damage with fire or radiant power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="fire:damage" value="+1" type="elemental" />
+      <statadd name="fire:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="fire:damage" value="+3" type="elemental" requires="Epic Tier" />
+      <statadd name="radiant:damage" value="+1" type="elemental" />
+      <statadd name="radiant:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="radiant:damage" value="+3" type="elemental" requires="Epic Tier" />
+    </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the fire or the radiant keyword.
+     At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+  <RulesElement name="Burning Blizzard" type="Feat" internal-id="ID_FMP_FEAT_284" source="Player's Handbook" revision-date="8/27/2010 12:17:56 PM">
+    <Prereqs> Int 13, Wis 13 </Prereqs>
+    <print-prereqs> Int 13, Wis 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 damage with acid or cold power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="acid:damage" value="+1" type="elemental" />
+      <statadd name="acid:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="acid:damage" value="+3" type="elemental" requires="Epic Tier" />
+      <statadd name="cold:damage" value="+1" type="elemental" />
+      <statadd name="cold:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="cold:damage" value="+3" type="elemental" requires="Epic Tier" />
+    </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the acid or the cold keyword.
+     At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+  <RulesElement name="Dark Fury" type="Feat" internal-id="ID_FMP_FEAT_285" source="Player's Handbook" revision-date="8/27/2010 12:17:56 PM">
+    <Prereqs> Con 13, Wis 13 </Prereqs>
+    <print-prereqs> Con 13, Wis 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 damage with necrotic or psychic power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="necrotic:damage" value="+1" type="elemental" />
+      <statadd name="necrotic:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="necrotic:damage" value="+3" type="elemental" requires="Epic Tier" />
+      <statadd name="psychic:damage" value="+1" type="elemental" />
+      <statadd name="psychic:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="psychic:damage" value="+3" type="elemental" requires="Epic Tier" />
+    </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the necrotic or the psychic keyword.
+     At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+  <RulesElement name="Raging Storm" type="Feat" internal-id="ID_FMP_FEAT_303" source="Player's Handbook" revision-date="8/27/2010 12:17:57 PM">
+    <Prereqs> Con 13, Dex 13 </Prereqs>
+    <print-prereqs> Con 13, Dex 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 damage with lightning or thunder power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="lightning:damage" value="+1" type="elemental" />
+      <statadd name="lightning:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="lightning:damage" value="+3" type="elemental" requires="Epic Tier" />
+      <statadd name="thunder:damage" value="+1" type="elemental" />
+      <statadd name="thunder:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="thunder:damage" value="+3" type="elemental" requires="Epic Tier" />
+    </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the lightning or the thunder keyword.
+	At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+  <RulesElement name="Student of Moil" type="Feat" internal-id="ID_FMP_FEAT_1092" source="Dragon Magazine 371" revision-date="8/27/2010 12:18:38 PM">
+    <Prereqs> Con 13, Int 13 </Prereqs>
+    <print-prereqs> Con 13, Int 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 on damage rolls with cold or necrotic powers </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="cold:damage" value="+1" type="elemental" />
+      <statadd name="cold:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="cold:damage" value="+3" type="elemental" requires="Epic Tier" />
+      <statadd name="necrotic:damage" value="+1" type="elemental" />
+      <statadd name="necrotic:damage" value="+2" type="elemental" requires="Paragon Tier" />
+      <statadd name="necrotic:damage" value="+3" type="elemental" requires="Epic Tier" />
+    </rules>
+You gain a +1 elemental bonus to damage rolls when you use a power that has the cold or necrotic keyword.
+	At 11th level, this bonus increases to +2. At 21st level, it increases to +3.
+   </RulesElement>
+  <RulesElement name="Retribution Seeker" type="Feat" internal-id="ID_FMP_FEAT_2114" source="Dragon Magazine 381" revision-date="8/27/2010 12:19:47 PM">
+    <Prereqs> 11th level, artificer; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, artificer </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description" />
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="arcane:damage" value="+2" condition="against enemies adjacent to at least on of your allies" />
+    </rules>
+You gain a +2 bonus to damage rolls with arcane attack powers against enemies adjacent to at least one of your allies.
+   </RulesElement>
+</D20Rules>

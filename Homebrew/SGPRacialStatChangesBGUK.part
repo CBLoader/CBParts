@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>SGPRacialStatChangesBGUK.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/SGPRacialStatChangesBGUK.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/SGPRacialStatChangesBGUK.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Gnome" type="Race" internal-id="ID_FMP_RACE_20" source="Player's Handbook 2" revision-date="8/27/2010 12:39:12 PM">
+    <Prereqs> ~GNOME </Prereqs>
+    <Flavor> Slight, sly tricksters of the Feywild who excel at avoiding notice </Flavor>
+    <specific name="Size"> Small </specific>
+    <specific name="Speed"> 5 squares </specific>
+    <specific name="Characteristics"> Affable, clever, crafty, curious, funny, guarded, inconspicuous, inventive, secretive, sly, tricky </specific>
+    <specific name="Physical Qualities"> Gnomes are smaller even than halflings, rarely exceeding 4 feet in height. Apart from their size, they resemble elves or eladrin, with pointed ears and chiseled facial features such as high cheekbones and sharp jaws. They have a more wild look than eladrin do, though, particularly in the hair that sprouts from their heads in random directions. Some male gnomes sprout tufts of hair from their chins, but they otherwise lack body hair.
+Gnome skin tone ranges from a ruddy tan through woody brown to rocky gray. Their hair can be virtually any color, from stark white to blond and various shades of brown to autumnal orange or green. Their eyes are glittering black orbs.
+Gnomes are as long-lived as eladrin, living over 300 years, but they show more of the effects of age. A gnome over the age of 100 has gray or white hair and skin that shows the wrinkled and weathered lines of a century of laughter, but even the oldest gnome retains the strength and agility of youth. </specific>
+    <specific name="Playing"> In quiet forests of the Feywild and remote woodlands in the world, gnomes live out of sight and mostly beneath the notice of larger races. Gnomes dwell in homes dug among the roots of trees, easily overlooked and cleverly concealed by camouflage and illusion. They are fond of the burrowing mammals that share their habitat, such as badgers, foxes, and rabbits, and have a sense of kinship with these small animals that share their forests.
+Unobtrusiveness is a virtue among gnomes. They grow up on games of stealth and silence, in which the winner is the last to be discovered. An adult gnome who draws attention in a crowd is considered dangerously rude. Gnome folk heroes are not mighty warriors, but tricksters who slip out of captivity, play great pranks without being detected, or sneak past magical guardians. They deflect both aggression and attention with humor, and they guard their thoughts with friendly laughter.
+Gnomes also value a quick mind and the ability to come up with a clever solution to any problem. They appreciate witty conversation, especially rapidfire repartee. They are inventive and resourceful, although they have little interest in or aptitude for the kind of technology found in human cities. They have an innate talent for magic and a love of illusion, music, poetry, and story.
+Eager to see what the world has to offer and willing to be awed by its wonders, gnomes greet the world with open curiosity. Gnomes who are drawn to adventure are most often driven by curiosity and wanderlust above any desire for wealth or glory.
+Gnomes were once enslaved by the fomorian rulers of the Feydark, the subterranean caverns of the Feywild. They regard their former masters with more fear than hatred, and they feel some degree of sympathy for the fey that still toil under fomorian lashes-particularly the spriggans, which some say are corrupted gnomes. Gnomes are not fond of goblins or kobolds, but in typical gnome fashion, they avoid creatures they dislike rather than crusading against them. They are fond of eladrin and other friendly fey, and gnomes who travel the world have good relations with elves and halflings. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 3'4"-3'8" </specific>
+    <specific name="Average Weight"> 50-75 lb. </specific>
+    <specific name="Ability Scores"> +2 Intelligence, +2 Charisma or +2 Dexterity </specific>
+    <specific name="Languages"> Common, Elven </specific>
+    <specific name="Skill Bonuses"> +2 Arcana, +2 Stealth </specific>
+    <specific name="Male Names"> Alston, Alvyn, Brocc, Eldon, Frug, Kellen, Ku, Nim, Orryn, Pock, Sindri, Warryn, Wrenn. </specific>
+    <specific name="Female Names"> Breena, Carlin, Donella, Ella, Lilli, Lorilla, Nissa, Nyx, Oda, Orla, Roswyn, Tana, Zanna. </specific>
+    <specific name="Short Description"> Clever tricksters and skilled wielders of fey magic, gnomes use their wits to survive. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_426, ID_FMP_RACIAL_TRAIT_427, ID_FMP_RACIAL_TRAIT_641, ID_FMP_RACIAL_TRAIT_1142, ID_FMP_RACIAL_TRAIT_1141 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_GNOME" type="Grants" />
+      <statadd name="Speed" value="+5" />
+      <textstring name="Average Height" value="3'4&quot;-3'8&quot;" />
+      <textstring name="Average Weight" value="50-75 lb." />
+      <textstring name="Size" value="Small" />
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+    </rules>
+In the Feywild, the best way for a small creature to survive is to be overlooked. While suffering in servitude to the fomorian tyrants of the Feydark, gnomes learned to hide, to mislead, and to deflect-and by these means, to survive. The same talents sustain them still, allowing them to prosper in a world filled with creatures much larger and far more dangerous than they are.
+
+Play a Gnome if you want ...
+ *	to be curious, funny, and tricky.
+ *	to rely more on stealth and deception than on brute strength and intimidation.
+ *	to be a member of a race that favors the bard, sorcerer, warlock, and wizard classes.
+   </RulesElement>
+  <RulesElement name="Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_GNOME" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_RACE_20 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_426" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_427" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1142" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1141" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Shadar-kai" type="Race" internal-id="ID_FMP_RACE_26" source="Dragon Magazine 372" revision-date="9/1/2010 3:24:47 PM">
+    <Prereqs> ~SHADAR_KAI </Prereqs>
+    <Flavor> Cold of heart and dark of eye, passion burns still within these people of shadow and deep winter. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Ambitious, bloodthirsty, detached, excessive, grim, intrepid, rash, ruthless, sinister, thrill-seeking, unconventional, violent, zealous </specific>
+    <specific name="Physical Qualities"> Shadar-kai are humanlike, but the weight of existence in the Shadowfell has shaped them to be slightly shorter and much thinner than their human counterparts. A shadar-kai has a colorless complexion that varies from alabaster to dark gray. Shadar-kai hair is similarly drab or raven black. Pale hair might have a hint of color within the range of human norms. The eyes are lustrous and black, lacking any white or clear pupil. Shadows near a shadar-kai sometimes seem to reach out or deepen, especially when the shadar-kai is angry.
+Although drab in natural appearance, shadar-kai are quite elaborate and idiosyncratic in personal adornment. They like dark and exotic clothing, jewelry, and weapons, often decorated with swatches of bright color. Hair is similarly ornate and often dyed. All shadar-kai embellish their skin with tattoos, scars, and piercings.
+A shadar-kai could live longer than any eladrin. Few do, however; the consequences of extreme living keep them from seeing old age. Some simply fade away, disappearing into shadow and death, perhaps leaving behind a wraith as the soul passes into the Raven Queen's care. </specific>
+    <specific name="Playing"> The Shadowfell saps living creatures of creativity and the will to live. When shadar-kai moved to the Shadowfell ages ago, they were not immune to this depression. Numerous members of their early society gave in to ennui and simply slipped out of existence, driving the shadar-kai to change their lifestyle, embracing strong emotions and peak experiences. These practices, born out of necessity, became traditions over countless generations.
+The current culture of the shadar-kai is a study in pushing boundaries. Shadar-kai welcome difficult tasks, as well as physical and emotional extremes, as a way of life. They learn to channel the darkness of the Shadowfell rather than allowing that darkness to consume them. And they accept death as the inevitable end for those who fail to attain the right amount of power or fame.
+Shadar-kai embrace living with gusto. The limits of pleasure and pain distract them from the wearying melancholy of the Shadowfell. They also strive for personal greatness, so that if they fail to gain the actual ability to live forever, stories of their great deeds will grant a sort of immortality. In this search for personal glory, most shadar-kai ignore banalities such as comfort, morality, and safety.
+The tattoos, scars, and piercings a shadar-kai wears have more than one purpose. They exist as a testament to the wearer's ability to withstand pain as well as a means of personal expression and decoration. Each decoration can also be a record of a deed done, an honor gained, or a misdeed declared.
+These records are important, because personal merit is all a shadar-kai really has. Other signs of personal worth, such as wealth, are but manifestations of success-side effects. Money, for example, can be gained by chance. What matters is an affluent shadar-kai's ability to protect his or her holdings and the ability to gain more.
+Although shadar-kai leave the Shadowfell to seek fortune in the world and among the planes, a few needs and wants drive a shadar-kai to return home from time to time. Most shadar-kai feel a basic need to visit the enveloping dimness of the Shadowfell at least intermittently. The plane is unlike even the darkest reaches of other planes. Obtaining new adornments and equipment in the proper style often requires a return to the Shadowfell. Shadar-kai also return to their gloomy settlements to spend time among those who see extreme, weird, or even deviant as normal. And they come home to brag.
+As a rule, shadar-kai are far from humble about their abilities and accomplishments. Boasting and  bravado, called "crowing" among shadar-kai, are common in shadar-kai gathering places. Shadar-kai crow in battle, talking up their successes and speaking doom to their enemies. During birthdays and other celebrations, shadar-kai have what they call "crowing moots," where boasting is taken to the level of artistic and poetic ritual. In addition to the verbal jousting, moots often include, or degenerate into, physical competitions and duels among the participants. As with other deeds among shadar-kai, the greatest "crower" of a moot gains a token-a physical representation such as a tattoo-to commemorate his or her victory. A few shadar-kai, known as doomspeakers, take this "crowing" custom to a supernatural level, becoming so adept at malediction that they can demoralize and sting their foes with dark threats and bloody predictions.
+Truth be known, shadar-kai don't care if their bravado ultimately proves false. Despite their origin, they have no fear of defeat or agonizing death. What they truly dread is to live without having experienced life, fading into nothingness and being forgotten. Death in battle or even execution for a crime is a statement of a life lived. After all, shadar-kai are death's children.
+The Raven Queen is a fair mother, if not a loving one. When the shadar-kai called upon her in ancient times, she answered. She still does. While she spares little love, she also never demands the love of her children. Almost all shadar-kai revere the Raven Queen, but each shadar-kai is free to choose his or her destiny and way of life, including religion. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5'7"-6'0" </specific>
+    <specific name="Average Weight"> 110-170 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Intelligence </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Acrobatics, +2 Stealth </specific>
+    <specific name="Male Names"> Albrek, Baden, Codren, Emul, Horiam, Hutahn, Ioan, Lucyan, Mahahn, Niku, Ovid, Petru, Razvahn, Serbahn, Shathys, Teodahr, Vasylay, Zahar. </specific>
+    <specific name="Female Names"> Afyn, Anka, Bahnka, Codruta, Doru, Dyon, Floahr, Ghita, Helayna, Ioana, Jenit, Katryn, Lucya, Markella, Nadya, Roduka, Sahyeh, Tabita, Yalda, Zyna. </specific>
+    <specific name="Short Description"> Born of the Shadowfell, shadar-kai are independent, adventurous, and daring individuals. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_410, ID_FMP_RACIAL_TRAIT_719, ID_FMP_RACIAL_TRAIT_1496 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_SHADAR-KAI" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'7&quot;-6'0&quot;" />
+      <textstring name="Average Weight" value="110-170 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Language" number="1" Category="Starting" />
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Intelligence" />
+    </rules>
+Long eons in the Shadowfell have shaped the shadar-kai into a fiery and, some say, cruel people. Fighting the apathy pervasive in their home plane, shadar-kai live passionately and fearlessly, if grimly. They see themselves as instruments of death and dissolution, the bringers of the righteous end to complacency, stagnation, and life itself. Theirs is a harsh society of self-interest. Among shadar-kai, the strong of body and mind excel and create legends. The weak molder to dust, passing into eternity unremembered.
+
+Play a Shadar-kai if you want ...
+ *	to use your shadow origins to enhance your abilities with dark powers.
+ *	to be part of a culture that values great deeds and great power.
+ *	to be a member of a race that favors the avenger, bard, fighter, invoker, ranger, rogue, sorcerer, warlord, and wizard classes.
+   </RulesElement>
+  <RulesElement name="Shadar-kai" type="Grants" internal-id="ID_INTERNAL_GRANTS_SHADAR-KAI" source="Dragon Magazine 372">
+    <specific name="_SupportsID"> ID_FMP_RACE_26 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_410" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_719" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1496" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Longtooth Shifter" type="Race" internal-id="ID_FMP_RACE_27" source="Player's Handbook 2" revision-date="8/27/2010 12:39:17 PM">
+    <Prereqs> ~LONGTOOTH_SHIFTER </Prereqs>
+    <Flavor> Ferocious heirs of the wild, the perfect fusion of civilized race and wild beast </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Active, alert, fierce, freespirited, intuitive, perceptive, predatory, self-reliant, unrestrained, wild </specific>
+    <specific name="Physical Qualities"> In broad strokes, shifters resemble humans with animalistic features. Their bodies are lithe and strong, and they often move in a crouched posture, springing and leaping along the ground. Their faces have a bestial cast, with wide, flat noses, large eyes and heavy eyebrows, pointed ears, and long sideburns. The hair of their heads is thick and worn long. Shifter skin and hair are usually some shade of brown.
+Longtooth shifters claim werewolves as ancestors and have a vaguely canine cast to their features that becomes much more pronounced when they use their longtooth shifting power. Razorclaw shifters are descended from weretigers and are more catlike, particularly when using razorclaw shifting.
+Shifters live about as long as humans. </specific>
+    <specific name="Playing"> Shifters are strongly influenced by their animal natures. They think and act like predators, conceiving of most activities in terms of hunting and prey. Longtooth shifters are drawn to a pack of companions, whether that's a family group or an adventuring party. They work well as part of a team in combat, coordinating their attacks with their allies and coming to the aid of beleaguered friends. They're drawn to the leader and defender roles, and they make excellent clerics, fighters, paladins, and wardens.
+Razorclaw shifters are more independent, self-reliant, and adaptable. They're no less devoted to their adventuring companions, but they trust their allies to take care of themselves, and they strive to carry their own weight in the group. They're more inclined to be strikers or controllers, and they favor classes such as avenger, druid, ranger, and rogue.
+Historically, most shifters dwelled in nomadic bands in plains and forests far removed from cities and towns. Since the fall of Nerath, however, the increasing dangers of the wilds have driven many shifters into closer proximity to human and elf communities. Some shifters have adapted smoothly to this change, carving niches for themselves as trappers, hunters, fishers, trackers, guides, or military scouts. Others have a much harder time fitting in. Shifters who feel alienated from the plains and forests they love sometimes take up the adventuring life as a way of escaping the confines of city walls and returning to nature. Some shifters, though, turn to a life of crime, preying on the residents of their new homes like the hunters they are. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5'7"-6'0" </specific>
+    <specific name="Average Weight"> 130-180 lb. </specific>
+    <specific name="Ability Scores"> +2 Wisdom, +2 Constitution or +2 Strength </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Athletics, +2 Endurance </specific>
+    <specific name="Male Names"> Ash, Brook, Claw, Cliff, Flint, Frost, River, Rock, Storm, Thorn, Tor. </specific>
+    <specific name="Female Names"> Aurora, Autumn, Dawn, Hazel, Iris, Lily, Rain, Rose, Summer. </specific>
+    <specific name="Short Description"> Shifters carry the blood of lycanthropes, and can shift to unleash their savage natures. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_429 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_LONGTOOTH_SHIFTER" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'7&quot;-6'0&quot;" />
+      <textstring name="Average Weight" value="130-180 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Constitution" />
+      <select type="Language" number="1" Category="Starting" />
+    </rules>
+Shifters are fierce hunters strongly influenced by their animal nature. Though they can't fully change shape as their lycanthrope ancestors can, shifters do become more bestial during the heat of battle, calling on the primal power of the beast within.
+
+Play a Longtooth Shifter if you want ...
+ *	to tap into bestial strength or speed in battle.
+ *	to be a character in tune with your primal savage nature.
+ *	to be a member of a race that favors the druid, fighter, ranger, and warden classes.
+   </RulesElement>
+  <RulesElement name="Longtooth Shifter" type="Grants" internal-id="ID_INTERNAL_GRANTS_LONGTOOTH_SHIFTER" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_RACE_27 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_429" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Warforged" type="Race" internal-id="ID_FMP_RACE_28" source="Eberron Player's Guide" revision-date="9/16/2010 1:51:05 PM">
+    <Prereqs> ~WARFORGED </Prereqs>
+    <Flavor> Built for a war that has ended, searching for purpose </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Aggressive, alert,brave, curious, forthright, industrious, loyal, methodical, naive, practical, reserved, simple </specific>
+    <specific name="Physical Qualities"> Warforged are bulky humanoids covered in plates of metal and stone. A skeleton of these materials supports woody fiber bundles that comprise a warforged's muscular system.  Warforged bodies have an internal network of tubes filled with a bloodlike fluid that nourishes and lubricates their systems. Their powerful arms end in hands that each have two fingers and one thumb, and each of their feet has two broad toes.
+
+Warforged heads have simple humanlike features. They have heavy brows, hinged toothless jaws, and no noses. A warforged's eyes sometimes glow when he or she experiences certain intense emotions. The forehead of each warforged bears a unique rune called a ghulra. These ghulra help give warforged a sense of individuality.
+
+Warforged possess an artificial and relatively sexless shape. They don't reproduce like other humanoids. A warforged can modify its body, adding and removing limbs as necessary. A warforged feels pain only from real injury. These physical modifications allow warforged to vary in appearance as much as any other humanoids. </specific>
+    <specific name="Playing"> Warforged have a straightforward emotional range. Although they experience pain, fear, hatred, and anger like other races, they are reserved and pensive, hiding emotions behind expressionless metal faces. Some warforged lack introspection and are dangerously naive or emotionally stunted. Many warforged are the opposite, though. They question the purpose  of their existence and consider whether or not they have souls. A few warforged develop sophisticated philosophies about what they perceive and learn. Many warforged fall in with humanoids of similar mindsets, working passionately for an organization or a religion. A warforged typically forms a strong emotional attachment to a small group of comrades.
+
+A warforged often has limited experiences in the world, having spent its existence assigned to one specific duty. Warforged enjoy working, and many create endless lists of goals and chores. They take pride in their jobs, and they dislike idleness and failure more than most races do. A warforged's sensibilities give it a single-minded efficiency with any task, particularly in combat. War and military conditioning color warforged behavior. Warforged intuitively understand duty, conflict, the chain of command, and other elements of war and soldierly life. Because most warforged have bodies that resemble males, they identify themselves as males and prefer to be called "he" rather than "it." Some warforged adopt female names, though. Most warforged have simple names related to their jobs, abilities, or military positions. Warforged often accept the names or the nicknames that their comrades give them, although some search long for particular names that define them. Many simply take names common within another race, especially those of humans. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 6'0"-6'6" </specific>
+    <specific name="Average Weight"> 270-300 lb. </specific>
+    <specific name="Ability Scores"> +2 Intelligence, +2 Constitution or +2 Strength </specific>
+    <specific name="Languages"> Common </specific>
+    <specific name="Skill Bonuses"> +2 Endurance, +2 Intimidate </specific>
+    <specific name="Male Names" />
+    <specific name="Female Names" />
+    <specific name="Short Description"> Built in creation forges, the enigmatic warforged are magically constructed, but sentient. </specific>
+    <specific name="Names"> Azm, Book, Bulwark, Cart, Cutter, Falchion, Graven, Hammer, Mark, Morg, Nameless, Pierce, Pious, Relic, Rune, Steeple, Three, Titan, Unsung, Victor, Watcher, Zealot. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_406, ID_FMP_RACIAL_TRAIT_721, ID_FMP_RACIAL_TRAIT_800, ID_FMP_RACIAL_TRAIT_1815, ID_FMP_RACIAL_TRAIT_1814 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_WARFORGED" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="6'0&quot;-6'6&quot;" />
+      <textstring name="Average Weight" value="270-300 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Constitution" />
+    </rules>
+Created as soldiers for the Last War, warforged are artificial humanoids who are intelligent and selfaware. Without a war to fight, freed of their creators, and with no heritage or culture of  their own, warforged are searching for a place in the world.
+
+Play a Warforged if you want ...
+ *	to be strong, tough, and built for battle.
+ *	to be a creature searching for the meaning of your existence.
+ *	to be a member of a race that favors the fighter, barbarian, warden, and paladin classes.
+   </RulesElement>
+  <RulesElement name="Warforged" type="Grants" internal-id="ID_INTERNAL_GRANTS_WARFORGED" source="Eberron Player's Guide">
+    <specific name="_SupportsID"> ID_FMP_RACE_28 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_406" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_721" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_800" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1815" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1814" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Razorclaw Shifter" type="Race" internal-id="ID_FMP_RACE_30" source="Player's Handbook 2" revision-date="8/27/2010 12:39:18 PM">
+    <Prereqs> ~RAZORCLAW_SHIFTER </Prereqs>
+    <Flavor> Ferocious heirs of the wild, the perfect fusion of civilized race and wild beast </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Active, alert, fierce, freespirited, intuitive, perceptive, predatory, self-reliant, unrestrained, wild </specific>
+    <specific name="Physical Qualities"> In broad strokes, shifters resemble humans with animalistic features. Their bodies are lithe and strong, and they often move in a crouched posture, springing and leaping along the ground. Their faces have a bestial cast, with wide, flat noses, large eyes and heavy eyebrows, pointed ears, and long sideburns. The hair of their heads is thick and worn long. Shifter skin and hair are usually some shade of brown.
+Longtooth shifters claim werewolves as ancestors and have a vaguely canine cast to their features that becomes much more pronounced when they use their longtooth shifting power. Razorclaw shifters are descended from weretigers and are more catlike, particularly when using razorclaw shifting.
+Shifters live about as long as humans. </specific>
+    <specific name="Playing"> Shifters are strongly influenced by their animal natures. They think and act like predators, conceiving of most activities in terms of hunting and prey. Longtooth shifters are drawn to a pack of companions, whether that's a family group or an adventuring party. They work well as part of a team in combat, coordinating their attacks with their allies and coming to the aid of beleaguered friends. They're drawn to the leader and defender roles, and they make excellent clerics, fighters, paladins, and wardens.
+Razorclaw shifters are more independent, self-reliant, and adaptable. They're no less devoted to their adventuring companions, but they trust their allies to take care of themselves, and they strive to carry their own weight in the group. They're more inclined to be strikers or controllers, and they favor classes such as avenger, druid, ranger, and rogue.
+Historically, most shifters dwelled in nomadic bands in plains and forests far removed from cities and towns. Since the fall of Nerath, however, the increasing dangers of the wilds have driven many shifters into closer proximity to human and elf communities. Some shifters have adapted smoothly to this change, carving niches for themselves as trappers, hunters, fishers, trackers, guides, or military scouts. Others have a much harder time fitting in. Shifters who feel alienated from the plains and forests they love sometimes take up the adventuring life as a way of escaping the confines of city walls and returning to nature. Some shifters, though, turn to a life of crime, preying on the residents of their new homes like the hunters they are. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5'7"-6'0" </specific>
+    <specific name="Average Weight"> 130-180 lb. </specific>
+    <specific name="Ability Scores"> +2 Wisdom, +2 Constitution or +2 Dexterity </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Acrobatics, +2 Stealth </specific>
+    <specific name="Male Names"> Ash, Brook, Claw, Cliff, Flint, Frost, River, Rock, Storm, Thorn, Tor. </specific>
+    <specific name="Female Names"> Aurora, Autumn, Dawn, Hazel, Iris, Lily, Rain, Rose, Summer. </specific>
+    <specific name="Short Description"> Shifters carry the blood of lycanthropes, and can shift to unleash their savage natures. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_720 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_RAZORCLAW_SHIFTER" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'7&quot;-6'0&quot;" />
+      <textstring name="Average Weight" value="130-180 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Language" number="1" Category="Starting" />
+      <select type="Race Ability Bonus" number="1" Category="Dexterity|Constitution" />
+    </rules>
+Shifters are fierce hunters strongly influenced by their animal nature. Though they can't fully change shape as their lycanthrope ancestors can, shifters do become more bestial during the heat of battle, calling on the primal power of the beast within.
+
+Play a Razorclaw Shifter if you want ...
+ *	to tap into bestial strength or speed in battle.
+ *	to be a character in tune with your primal savage nature.
+ *	to be a member of a race that favors the druid, fighter, ranger, and warden classes.
+   </RulesElement>
+  <RulesElement name="Razorclaw Shifter" type="Grants" internal-id="ID_INTERNAL_GRANTS_RAZORCLAW_SHIFTER" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_RACE_30 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_720" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Genasi" type="Race" internal-id="ID_FMP_RACE_33" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:39:20 PM">
+    <Prereqs> ~GENASI </Prereqs>
+    <Flavor> Energy embodied, chaos and order united-a race of inherent flexibility, passion, and diversity </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Capricious, exotic, freespirited, haughty, headstrong, impulsive, independent, passionate, quick-tempered, quixotic </specific>
+    <specific name="Physical Qualities"> Every genasi constantly manifests an element (Genasi have no neutral, nonelemental state.) All genasi are born with one elemental manifestation, a genetic trait that is handed down from his or her parents. Some genasi learn an additional manifestation in late adolescence or adulthood, and a rare few have several.
+	Genasi are of roughly the same size and proportions as humans, though they tend toward broader physiques that are evidence of their physical strength. A genasi's body is etched with energy lines that glow in a color associated with the element that the genasi is manifesting. The energy lines on a genasi's body appear in a pattern that is common between members of the same family and sometimes between natives of the same area. The specific configuration of energy lines on each genasi's face and head is distinctive, varying between individuals the way fingerprints differ between humans. Even when genasi change their elemental manifestation, each one retains his or her unique facial energy lines. To show off the energy lines etching his or her body, a genasi often wears clothes that leave at least some portion of his or her body uncovered.
+	Genasi skin tones and "hair" also vary depending on which element an individual is manifesting. Genasi don't have actual hair-the substance that appears to cover their heads during different manifestations is a magical expression of their elemental nature.
+	The physical qualities that genasi display when using different elemental manifestations are summarized below.
+Earthsoul: Brown skin; golden energy lines and eyes; bald with golden energy lines glowing on the head.
+Firesoul: Ruddy bronze skin; fiery orange energy lines and eyes; flickering flames coming out of the energy lines on the head.
+Stormsoul: Purple skin; silvery energy lines; glowing crystalline silver spikes on the head.
+Watersoul: Seafoam green skin; bright blue energy lines; bald with blue energy lines glowing on the head.
+Windsoul: Silver skin; light blue energy lines; glowing blue and gray ice crystal spikes on the head.
+	Genasi have an average life span comparable to that of humans, roughly 75 years. Some members of the race can live to the age of 90 or 100. </specific>
+    <specific name="Playing"> Generalities about a genasi's elemental manifestation are sometimes contradicted by the race's changeable nature. In most regions where genasi live, the dominant manifestation is the one most closely associated with the region's environment. The most extreme example of this truism occurs in underwater communities, where it's essentially impossible for a genasi to survive without the watersoul manifestration.
+	In a city whose construction features a number of elevated features and possibly a lot of earthmotes  (such as Airspur, the capital of Akanul), the vast majority of genasi have the stormsoul or windsoul manifestation. In a hot climate or a place where creatures of flame hold sway (such as the city of Memnon in Calimshan), firesoul is the most prevalent manifestation. Genasi are noted for their presence in Akanul, Calimshan, and Returned Abeir, but smaller pockets of genasi can be found most anywhere.
+	Genasi who have more than one manifestation think of themselves as having multiple personas. A genasi who is quick-tempered and passionate while manifesting firesoul might be a much more deliberate person while manifesting earthsoul. When free from the demands of travel or conflict, genasi who have multiple manifestations sometimes change manifestation as a method of expressing their mood or their intentions.
+	Genasi philosophers believe that genasi were created as a compromise between chaos and the world's divinely crafted forms. A few genasi internalize that  contradiction and struggle to eliminate one or the other of their natures, becoming maniacs of chaos or disciples of order, but those genasi are the exception. Most simply enjoy the connections that their elemental nature gives them to the world.
+	As children, genasi express only a single   manifestation. In all but a few areas of Faerun, however, genasi know family members and childhood friends who have manifestations other than their own, so that they grow up knowing the diverse elements their race is connected to.
+	Ambition and pride have strongly influenced genasi culture. Genasi are constantly aspiring to improve their station. Their societies bubble with a constant pressure for recognition of true strength and competence. In  consequence, genasi social structures are nowhere near as stable as those created by other races.
+	Genasi have no longstanding animosity toward any other races. Neither can they be said to be sure friends of any other race-not even their own. In human cities, some genasi prefer to deal with one group of friends while manifesting one element and keep a different circle of friends in another manifestation. Other genasi find friends who can deal with all their forms. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 5'7"-6'2" </specific>
+    <specific name="Average Weight"> 130-225 lb. </specific>
+    <specific name="Ability Scores"> +2 Strength, +2 Charisma or +2 Intelligence </specific>
+    <specific name="Languages"> Common, Primordial </specific>
+    <specific name="Skill Bonuses"> +2 Endurance, +2 Nature </specific>
+    <specific name="Male Names"> Emere, Garel-kai, Jett, Kaddim-sul, Ki-amar, Mariz, Sardis, Sha-karn, Yuriel, Zan-kyri. </specific>
+    <specific name="Female Names"> Ashar, Gwind, Jenda-shan, Jerra, Len-jes, Mai-sal, Mara-kai, Nari-lana, Sonliin, Valandra, Vanri. </specific>
+    <specific name="Short Description"> The genasi are living embodiments of earth, fire, air, water, and the storm. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_519, ID_FMP_RACIAL_TRAIT_803 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_GENASI" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'7&quot;-6'2&quot;" />
+      <textstring name="Average Weight" value="130-225 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Charisma" />
+    </rules>
+Genasi are an inherent contradiction. Each genasi embodies the potential chaos of air and fire, the  order of earth and water, or the ferocity of thunder and lightning. Genasi manifest one of these facets of their elemental soul at all times. Their race is passionate and nearly as diverse as humans. Genasi can be found almost anywhere.
+
+Play a Genasi if you want ...
+ *	to struggle or experiment with the order and chaos of your existence.
+ *	to look for adaptability in personality and physical appearance.
+ *	to be a member of a race that favors the
+swordmage and warlord classes.
+   </RulesElement>
+  <RulesElement name="Genasi" type="Grants" internal-id="ID_INTERNAL_GRANTS_GENASI" source="Forgotten Realms Player's Guide">
+    <specific name="_SupportsID"> ID_FMP_RACE_33 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_519" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_803" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_6" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Deva" type="Race" internal-id="ID_FMP_RACE_35" source="Player's Handbook 2" revision-date="8/27/2010 12:39:21 PM">
+    <Prereqs> ~DEVA </Prereqs>
+    <Flavor> Immortal spirits who embody virtue, born and reborn to mortal life in the world </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Dedicated, devout, elegant, enlightened, introspective, mystical, refined, righteous, spiritual, thoughtful </specific>
+    <specific name="Physical Qualities"> In appearance, devas are very similar to humans, but with an unearthly beauty and an uncanny stillness about them. They are almost as tall as dragonborn, but much more slender.
+Devas' coloration distinguishes them most strongly from humans. All devas have patterns of light and dark colors on their skin. The light portions are chalk white or pale gray, and the dark areas range from blue or purple to dark gray or black. In any individual deva, either light or dark can be dominant, with the opposite shade appearing in simple, elegant patterns on the face, chest, and shoulders. A deva's hair is typically the same color as these skin patterns.
+When sitting or standing at rest, devas remain almost perfectly still, except for the occasional blink of the eyes. They don't fidget or twitch, and their eyes move only when they are actively examining something.
+Devas do not have children. When a deva dies, his or her spirit is reincarnated in a new, adult body that appears in some sacred place, such as a mountain peak, a riverbank, or a desert oasis. The new deva retains enough memory of past lives to speak and understand multiple languages and offer the proper prayers and sacrifices to the gods of good. </specific>
+    <specific name="Playing"> Devas are refined and polite. They follow the highest moral standards, but they are not afraid of violence. They believe that the pursuit of good is an eternal war with the forces of evil, embodied in rakshasas, demons, devils, and the evil gods and their servant angels. Devas wage that war in their hearts as well, constantly vigilant lest evil take root and corrupt their souls, transforming them into the creatures they most despise.
+Because they remember, at least dimly, a life in the Astral Sea spent in close company with the gods, most devas are devout worshipers of the gods of good, especially Bahamut but also Moradin and Pelor. Devas seek to achieve a personal connection with the gods rather than approach them through temples and priests. They worship at meals in their homes, setting an empty place for the absent gods, and strive through meditation and prayer to become more like the gods they serve. Deva adventurers are commonly avengers, clerics, and invokers, who savor the experience of divine power flowing through them without any intermediary.
+Devas do not have cities or societies of their own, and their numbers are so small that a deva can spend entire lifetimes without ever meeting another of his or her kind. They live among other races and, at least to some extent, adopt their ways. However, all devas remember elements of the life they had before their incarnation in flesh and the beginning of their cycle of rebirth, and they share some common cultural elements of dress, religion, and habits. Devas favor flowing clothes of fine silks, polished metal armor with winglike shoulder ornaments, and headdresses or helmets that suggest crowns or halos. In other ways, they prefer to live simply, without extravagance. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 6'1"-6'6" </specific>
+    <specific name="Average Weight"> 175-280 lb. </specific>
+    <specific name="Ability Scores"> +2 Wisdom, +2 Charisma or +2 Intelligence </specific>
+    <specific name="Languages"> Common, choice of two others </specific>
+    <specific name="Skill Bonuses"> +2 History, +2 Religion </specific>
+    <specific name="Male Names"> Adiah, Ansis, Ayab, Bavak, Beriah, Eben, Elyas, Galad, Gamal, Hiyal, Iannes, Kerem, Mahar, Marach, Mathas, Natan, Nehem, Oris, Raham, Ronen, Samel, Sered, Tavar, Vered, Zachar. </specific>
+    <specific name="Female Names"> Abea, Adara, Asha, Chana, Danel, Darah, Davi, Elka, Eranah, Hania, Hava, Idria, Isa, Jael, Kana, Kayah, Lihi, Mahel, Marek, Navah, Noma, Paziah, Ravah, Riya, Sada, Shara, Tirah. </specific>
+    <specific name="Short Description"> Immortal servitors of the gods of good, devas are eternally reborn to fight evil. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1137, ID_FMP_RACIAL_TRAIT_1138, ID_FMP_RACIAL_TRAIT_1139, ID_FMP_RACIAL_TRAIT_1140 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_DEVA" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="6'1&quot;-6'6&quot;" />
+      <textstring name="Average Weight" value="175-280 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Language" number="2" Category="Starting" />
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Charisma" />
+    </rules>
+Deep in the recesses of memory, devas recall what they once were: immortal servitors of the gods of good, spirits who chose to bind themselves to the world in mortal flesh. For millennia, their souls have been reborn to wage an endless war against the forces of darkness. Most devas are fiercely committed to the cause of good, because they fear what they might become if they turn to evil: A deva whose soul becomes corrupted risks being reborn as a rakshasa.
+
+Play a Deva if you want ...
+ * 	to have dimly remembered connections to a thousand heroic lifetimes.
+ *	to embrace the cause of good and strive for perfection in all you do.
+ * 	to be a member of a race that favors the avenger, cleric, invoker, and wizard classes.
+   </RulesElement>
+  <RulesElement name="Deva" type="Grants" internal-id="ID_INTERNAL_GRANTS_DEVA" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_RACE_35 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1137" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1138" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1139" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1140" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Goliath" type="Race" internal-id="ID_FMP_RACE_37" source="Player's Handbook 2" revision-date="8/27/2010 12:39:22 PM">
+    <Prereqs> ~GOLIATH </Prereqs>
+    <Flavor> Tribal nomads of the mountains, strong as the rock and proud as the peak </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Competitive, daring, driven, inquisitive, powerful, reliable, restless, trusting </specific>
+    <specific name="Physical Qualities"> Goliaths tower over even dragonborn, standing between 7 and 8 feet tall. Their skin is gray or brown, mottled with darker patches that they believe hint at some aspect of each goliath's fate or destiny. Their skin is speckled with lithoderms, coin-sized growths of bone that appear like pebbles studding their arms, shoulders, torso, and head. A bony ridge juts over their gleaming blue or green eyes. Male goliaths are bald, and females have dark hair they typically grow long and wear in braids.
+Goliaths have life spans comparable to those of humans. </specific>
+    <specific name="Playing"> Goliaths are driven by a fierce love of competition. Anything that can be conceived as a challenge invites goliaths to keep score, tracking their progress against both their comrades and themselves. A goliath fighter might remark on how many times he has drawn first blood in battle within a particular dungeon compared to the party's rogue, and he's certainly mentally tracking his own performance against his last adventure. This competitiveness takes the form of good-natured rivalry among goliaths. As a race they have no patience for cheaters, gloaters, or sore losers, but goliaths can be very hard on themselves when they fail to measure up to their own past accomplishments.
+Daring that borders on foolhardiness is also a common trait among goliaths. They have no fear of heights, climbing sheer mountain cliffs and leaping great chasms with ease. Their nomadic lifestyle of hunting and gathering instills in them an inquisitive interest in whatever lies over the next ridge or at the head of a canyon. To a wandering hunter's mind, that curiosity can lead to better hunting grounds or a good water source that would otherwise go undiscovered.
+Goliaths respect and revere the natural world, and goliath adventurers commonly draw on the primal power source. Druids and shamans are more common among them than clerics, and goliath priests-called skywatchers-invoke the spirits of nature and their ancestors far more often than they call on the distant gods of the Astral Sea. Some goliath tribes also honor Kord, Melora, and Avandra, particularly those tribes that have frequent contact with other races. Tribes that regularly trade with dwarves sometimes offer sacrifices to Moradin as well. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 7'2"-7'8" </specific>
+    <specific name="Average Weight"> 280-340 lb. </specific>
+    <specific name="Ability Scores"> +2 Constitution, +2 Strength or +2 Wisdom </specific>
+    <specific name="Languages"> Common, either Dwarven or Giant </specific>
+    <specific name="Skill Bonuses"> +2 Athletics, +2 Nature </specific>
+    <specific name="Male Names"> Aukan, Eglath, Gauthak, Ilikan, Kavaki, Keothi, Lo-Kag, Maveith, Meavoi, Thotham, Vimak. </specific>
+    <specific name="Female Names"> Gae-Al, Kuori, Manneo, Nalla, Orilo, Paavu, Pethani, Thalai, Uthal, Vaunea. </specific>
+    <specific name="Short Description"> Goliaths are mountain-dwelling nomads who see life as a grand competition. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1143, ID_FMP_RACIAL_TRAIT_1144, ID_FMP_RACIAL_TRAIT_1145 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_GOLIATH" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="7'2&quot;-7'8&quot;" />
+      <textstring name="Average Weight" value="280-340 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+      <select type="Language" number="1" Category="ID_FMP_RACE_37" />
+    </rules>
+Goliaths are mountain-dwelling nomads who see life as a grand competition. Their scattered bands have never been major players in the politics of the lowland world, but they have wandered the mountain ranges of the world since the primordials first shaped the peaks and valleys. Tall and massive, goliaths revere the primal power of nature and use it to enhance their own strength.
+
+Play a Goliath if you want ...
+ *	to be tougher and stronger than nearly anyone else.
+ *	to master the rugged mountain slopes.
+ *	to be a member of a race that favors the barbarian, fighter, and warden classes.
+   </RulesElement>
+  <RulesElement name="Goliath" type="Grants" internal-id="ID_INTERNAL_GRANTS_GOLIATH" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_RACE_37 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1143" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1144" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1145" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Bladeling" type="Race" internal-id="ID_FMP_RACE_38" source="Manual of the Planes" revision-date="9/1/2010 3:23:26 PM">
+    <Prereqs> ~BLADELING </Prereqs>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics" />
+    <specific name="Physical Qualities" />
+    <specific name="Playing" />
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 5'8"-6'4" </specific>
+    <specific name="Average Weight"> 210-310 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Strength or +2 Wisdom </specific>
+    <specific name="Languages"> Common </specific>
+    <specific name="Skill Bonuses"> +2 Intimidate </specific>
+    <specific name="Male Names" />
+    <specific name="Female Names" />
+    <specific name="Short Description"> Covered in vicious spikes, bladelings are skilled and nimble combatants. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1066, ID_FMP_RACIAL_TRAIT_1065 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_BLADELING" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'8&quot;-6'4&quot;" />
+      <textstring name="Average Weight" value="210-310 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+    </rules>
+
+
+Play a Bladeling if you want ...
+
+   </RulesElement>
+  <RulesElement name="Bladeling" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADELING" source="Manual of the Planes">
+    <specific name="_SupportsID"> ID_FMP_RACE_38 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1066" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1065" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Kenku" type="Race" internal-id="ID_FMP_RACE_43" source="Monster Manual 2" revision-date="9/1/2010 3:22:15 PM">
+    <Prereqs> ~KENKU </Prereqs>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics" />
+    <specific name="Physical Qualities" />
+    <specific name="Playing" />
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5'0"-5'6" </specific>
+    <specific name="Average Weight"> 110-150 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Strength </specific>
+    <specific name="Languages"> Common </specific>
+    <specific name="Skill Bonuses"> +2 Bluff, +2 Stealth </specific>
+    <specific name="Male Names" />
+    <specific name="Female Names" />
+    <specific name="Short Description"> The ravenlike kenku are sly and agile, and often thrive in the underbelly of society. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1524, ID_FMP_RACIAL_TRAIT_1525 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_KENKU" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'0&quot;-5'6&quot;" />
+      <textstring name="Average Weight" value="110-150 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Charisma" />
+    </rules>
+
+
+Play a Kenku if you want ...
+
+   </RulesElement>
+  <RulesElement name="Kenku" type="Grants" internal-id="ID_INTERNAL_GRANTS_KENKU" source="Monster Manual 2">
+    <specific name="_SupportsID"> ID_FMP_RACE_43 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1524" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1525" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Kalashtar" type="Race" internal-id="ID_FMP_RACE_46" source="Eberron Player's Guide" revision-date="8/27/2010 12:39:25 PM">
+    <Prereqs> ~KALASHTAR </Prereqs>
+    <Flavor> Refugees from the realm of dreams whose minds are as sharp as their swords </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Balanced, commanding, compassionate, contemplative, disciplined, graceful, insightful, intellectual, spiritual, thoughtful </specific>
+    <specific name="Physical Qualities"> Kalashtar, which in Quori means "wandering dreams," first came to Eberron 1,800 years ago. They came as a renegade group from Dal Quor that sought to escape religious and philosophical persecution. Agents of Dal Quor known as the Dreaming Dark hunted them until finally the group's leader, Taratai, found an audacious way to escape Dal Quor. She convinced Adaran monks to accept a permanent fusion of their own souls with those of the renegade quori. From that synthesis came kalashtar, and as a result, kalashtar today look similar to the monks who served as the first willing vessels.
+The monastery where the sixty-seven humans became kalashtar was a place of refuge, so the humans who lived there were diverse. Kalashtar have thus retained a diversity of appearance, possessing the same variety of skin, hair, and eye colors found among humans. They are usually slimmer and taller than humans, although short or stocky kalashtar exist.
+Kalashtar physically develop at the same rate as humans do and have similar life spans. A kalashtar child passes for human at first glance, but a few minutes of observation reveals the key difference. All kalashtar have a manner that is graceful, serene, and serious because of the fragment of quori soul bound within them. While human children run, laugh, and play, kalashtar children engage in the same meditative exercises, martial training, and telepathic conversations as adult kalashtar. For a kalashtar, growing up is a physical process, not a mental or emotional one. </specific>
+    <specific name="Playing"> Most kalashtar remain in the temple-keeps of Adar, so any kalashtar traveling around Khorvaire probably has a good reason for doing so. A kalashtar might be driven by a desire to break the Riedran siege of Adar, or could be on the run from the Dreaming Dark.
+The typical kalashtar is contemplative and serene. They are compassionate and friendly, but in a cerebral way. Perhaps due to the turmoil within their conjoined souls, kalashtar keep a tight rein on their emotions. A kalashtar demonstrates camaraderie with a wry grin and an offhand remark rather than with a backslap or a ribald joke.
+The fragment of quori soul in a kalashtar recalls the escape from Dal Quor. Kalashtar on the run from the Dreaming Dark are wary, although they still try to maintain polite and kind behavior. Kalashtar struggle to integrate the thoughts and sensibilities of their human halves with the strange, intangible memories of their quori souls. Kalashtar flirt with madness. Occasionally, a kalashtar's serene countenance drops to reveal crazed and baffling behavior that is inappropriate or even dangerous. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 5'8"-6'3" </specific>
+    <specific name="Average Weight"> 130-220 lb. </specific>
+    <specific name="Ability Scores"> +2 Charisma, +2 Intelligence or +2 Wisdom </specific>
+    <specific name="Languages"> Common </specific>
+    <specific name="Skill Bonuses"> +2 Insight, +2 to choice of one other </specific>
+    <specific name="Male Names"> Halkad, Havrakhad, Kanatash, Lanamelk, Lanharath, Malharath, Minharath, Nevitash, Parmelk, Thakakhad, Thinharath. </specific>
+    <specific name="Female Names"> Ganitari, Khashana, Lakashtari, Meva kri, Novakri, Panitari, Sorashana, Thakashtai, Thatari. </specific>
+    <specific name="Short Description"> Refugees from the realm of dreams, a kalashtar's mind is as sharp as a vorpal sword. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1571, ID_FMP_RACIAL_TRAIT_1572, ID_FMP_RACIAL_TRAIT_1813 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_KALASHTAR" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'8&quot;-6'3&quot;" />
+      <textstring name="Average Weight" value="130-220 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Racial Trait" number="1" Category="Skill Bonus" />
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom" />
+    </rules>
+Kalashtar look similar to humans, but their outward appearance masks an inner demeanor that is at once serene and wild-cerebral and mad. The kalashtar fled Dal Quor, the region of dreams, eighteen centuries ago and came to Eberron. Today, they are strangers in Khorvaire, seeking refuge from agents of the Dreaming Dark in temple-keeps in the mountains of Adar.
+
+Play a Kalashtar if you want ...
+ * to play a wise and contemplative character who is capable of momentary madness.
+ * to be a stranger in a strange land, where every place you visit is full of wonder.
+ * to be a fugitive on the run from enemies that could be anyone, anywhere.
+ * to be a member of a race that favors the bard, cleric, paladin, and warlock classes.
+   </RulesElement>
+  <RulesElement name="Kalashtar" type="Grants" internal-id="ID_INTERNAL_GRANTS_KALASHTAR" source="Eberron Player's Guide">
+    <specific name="_SupportsID"> ID_FMP_RACE_46 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1571" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1572" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1813" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Revenant" type="Race" internal-id="ID_FMP_RACE_47" source="Dragon Magazine 376" revision-date="8/27/2010 12:39:26 PM">
+    <Prereqs> ~REVENANT </Prereqs>
+    <Flavor> Resilient souls returned from death to do the work of fate </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Agile, cold, determined, fearsome, hard-bitten, noble, pragmatic, tragic </specific>
+    <specific name="Physical Qualities"> Revenants are souls of the dead returned to a semblance of life by the Raven Queen, but they do not appear as undead horrors or even anything like their former selves. When the Raven Queen reincarnates souls, they exist as her special creations, and they have the bodies of her choosing and creation. In this way, such souls are always marked as representatives of the Raven Queen's power.
+
+A revenant has a body that is slender for his or her height, but this form possesses an uncanny toughness that contradicts the apparent build. Revenants have the same range of complexions as humans, but a revenant's skin is ashen and the features are sunken. Eyes are most commonly solid black with a single point of red light in place of a pupil, but other eerie eye colors-including yellow, white, silver, and gold-are not uncommon, although they always share the same fiery red pupil. In most cases, the eyes lack an iris and pupil, and some glow with a ghostly light. Revenant hair typically ranges from black to white. They can grow facial hair, and males often have beards or mustaches that accentuate their dreadful countenances.
+
+A revenant's face and skin clearly set a member of this unique race apart from other humanoids. A revenant's visage has a masklike quality that can be disturbing to normal mortals. Rough, dark scales appear on the flesh near the ends of a revenant's limbs, marking the revenant as one of those the Raven Queen allowed back into the world of the living. Revenant digits end in strong, black fingernails or toenails that resemble claws.
+
+Each revenant is unique, but ties to the Shadowfell draw most to dark colors and clothing that can help them escape notice. Whether because of dark humor or as a warning to others, their clothing and gear bear symbols that are reminders of death or duty. Revenants use raven feathers, bones, chains, grave markers, and skulls for decoration. </specific>
+    <specific name="Playing"> Revenants do not live and reproduce like mortal races. Indeed, they are not a true race at all. Each revenant arises in the world only by the will of the Raven Queen. She-or someone she has made a bargain with-has a specific purpose in mind for each soul she returns to the world. This purpose might be plain to the revenant, or it might be a mystery the revenant has to unravel before it can rest. A revenant might doggedly pursue this end or rebel against that fate and try to avoid destiny. The purpose could even change, eluding the revenant or revealing greater goals as steps toward the ultimate end are achieved. Much depends on who brought the revenant back. If the Raven Queen commanded the soul's return for her own reasons, the revenant might play an important part in the future the Raven Queen foresees.
+
+The Raven Queen might send a soul to bring someone or something to the death it has avoided, and the character might have been chosen because of past ties to the target. Perhaps the character's death was somehow wrong, and the Raven Queen reincarnated the soul as a revenant to set right the weave of fate.
+
+If another power made a bargain with the Raven Queen, the possibilities are endless. Most deities could simply choose to raise a loyal follower to live again, so if a being of such power resorted to bargaining with the Raven Queen, there must a reason. Perhaps a god wants more of the follower's service, but there is something the deity wants even his most devout servant to forget. Perhaps the new lease on life is intended only as a temporary reprieve wherein the revenant must make up for some mistake made in life. A power might even want to return another deity's follower to life for a purpose hidden from the other gods.
+
+The reason could also be the desire of a being weaker than a true deity. Maybe an exarch raises a soul despite a deity's wishes. Perhaps a devil or archfey has a claim on the soul of a mortal and it seeks to get what it paid for in some bargain the person made in life. A mortal might gain audience with the Raven Queen to plead the case of a deceased friend or enemy. The mortal's aims might be altruistic, selfish, or wicked, sweeping the revenant up in a saga of great glory or terrible woe. Sometimes, the dead one begs to be returned to the world, and the Raven Queen listens for her own reasons.
+
+What lies in store for a revenant who completes its mission changes by the individual. A revenant might seek an end to a painful existence in the mortal world or attempt to earn a place in the heavens by completed deeds to make up for past wrongs. Maybe the revenant is rewarded for fulfilling destiny by being given true life again, in the old body or reincarnated in a new form. A revenant could even be condemned to a horrible fate in the afterlife but consider the accomplishment of the goal worth the price. Perhaps the revenant can't truly die even after accomplishing its goal unless it sees the dead body from its former life.
+
+Revenants usually remember only snippets of their former lives-just enough to push them toward the purpose for which some power raised them. Many don't even remember their names and thus take new ones fitting their dispositions. Memories come in dreams and flashes of insight, often provoked by the revenant's experiences. Brushing shoulders accidentally in the market could call to mind the bumped person as a lifelong friend. The sight of a pale hand moving through lustrous hair could remind the revenant's heart of a lost love. Yet these memories can be deceptive. The memory of friendship might neglect the betrayal that caused a rift. The lost love might be long dead, and the memory serves only as a lure to the revenant. Each remembrance has its purpose: as a reward, punishment, bait, or aid. All are true, but the power that raised the revenant can sometimes control which truths the revenant recalls.
+
+The rarity of revenants results in few having much knowledge of them. Experts in religion or those who encountered revenants in the past might know of them, but for most people revenants are strange and alien. </specific>
+    <specific name="Vision"> Low-light vision </specific>
+    <specific name="Average Height"> 5' 5"-6' 2" </specific>
+    <specific name="Average Weight"> 100-200 lb. </specific>
+    <specific name="Ability Scores"> +2 Constitution, +2 Dexterity or +2 Intelligence </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Endurance, +2 Intimidate </specific>
+    <specific name="Male Names"> Bane, Chiseler, Dredge, Riven, Rook, Scourge, Sever, Snick, Tuck, Wrath. </specific>
+    <specific name="Female Names"> Blessed, Charm, Fable, Ire, Lash, Maleficence, Raven, Sunder, Vengeance, Vice. </specific>
+    <specific name="Short Description"> Revenants are unfulfilled souls sent back to the world by the Raven Queen. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_1870, ID_FMP_RACIAL_TRAIT_1866, ID_FMP_RACIAL_TRAIT_1867, ID_FMP_RACIAL_TRAIT_1868 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_REVENANT" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5'5&quot;-6'2&quot;" />
+      <textstring name="Average Weight" value="100-200 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Language" number="1" Category="Starting" />
+      <select type="Race Ability Bonus" number="1" Category="Dexterity|Intelligence" />
+    </rules>
+For most, death represents the gateway to the afterlife or the end of a natural existence. Yet for some, the Raven Queen bars passage, turning their souls back toward the world. For these rare few, fate has other plans.
+
+Play a Revenant if you want ...
+ *	to be eerie, cold, and mysterious.
+ *	to strive for or against your fate as an instrument of a greater power.
+ *	to live with the memories of a past life whose purpose was unfulfilled.
+ *	to be a member of a race that favors the assassin, rogue, and warlock classes.
+   </RulesElement>
+  <RulesElement name="Revenant" type="Grants" internal-id="ID_INTERNAL_GRANTS_REVENANT" source="Dragon Magazine 376">
+    <specific name="_SupportsID"> ID_FMP_RACE_47 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1870" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1866" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1867" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1868" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+</D20Rules>

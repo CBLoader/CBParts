@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>SorcererHouserule.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/SorcererHouserule.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/SorcererHouserule.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <!-- by Tanngrisnr :) -->
+  <RulesElement name="Cosmic Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1555" source="Arcane Power" revision-date="04/7/2011 1:47:04 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Add Strength modifier to damage, +3 at 11th, +6 at 21st </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="arcane:damage" value="+Strength modifier" />
+      <statadd name="arcane:damage" value="+3" requires="Paragon Tier" />
+      <statadd name="arcane:damage" value="+6" requires="Epic Tier" />
+    </rules>
+You gain a bonus to the damage rolls of arcane powers equal to your Strength modifier. The bonus equals your Strength modifier + 3 at 11th level and your Strength modifier + 6 at 21st level.   </RulesElement>
+  <RulesElement name="Draconic Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1557" source="Player's Handbook 2" revision-date="04/7/2011 1:47:04 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Add Strength modifier to damage, +3 at 11th, +6 at 21st </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="arcane:damage" value="+Strength modifier" />
+      <statadd name="arcane:damage" value="+3" requires="Paragon Tier" />
+      <statadd name="arcane:damage" value="+6" requires="Epic Tier" />
+      <statadd name="Draconic Power" value="+3" requires="Paragon Tier" />
+      <statadd name="Draconic Power" value="+6" requires="Epic Tier" />
+    </rules>
+You gain a bonus to the damage rolls of arcane powers equal to your Strength modifier. The bonus increases to your Strength modifier +3 at 11th level and your Strength modifier +6 at 21st level.
+   </RulesElement>
+  <RulesElement name="Storm Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1561" source="Arcane Power" revision-date="04/7/2011 1:47:04 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Add Dexterity modifier to damage, +3 at 11th, +6 at 21st </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Storm Power" value="+Dexterity modifier" />
+      <statadd name="Storm Power" value="+3" requires="Paragon Tier" />
+      <statadd name="Storm Power" value="+6" requires="Epic Tier" />
+      <statadd name="arcane:damage" value="+Storm Power" />
+    </rules>
+You gain a bonus to the damage rolls of arcane powers equal to your Dexterity modifier. The bonus equals your Dexterity modifier + 3 at 11th level and your Dexterity modifier + 6 at 21st level.
+   </RulesElement>
+  <RulesElement name="Chaos Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1565" source="Player's Handbook 2" revision-date="04/7/2011 1:47:04 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Add Dexterity modifier to damage, +3 at 11th, +6 at 21st </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Chaos Power" value="+Dexterity modifier" />
+      <statadd name="Chaos Power" value="+3" requires="Paragon Tier" />
+      <statadd name="Chaos Power" value="+6" requires="Epic Tier" />
+      <statadd name="arcane:damage" value="+Chaos Power" />
+    </rules>
+You gain a bonus to the damage rolls of arcane powers equal to your Dexterity modifier. The bonus increases to your Dexterity modifier + 3 at 11th level and your Dexterity modifier + 6 at 21st level.
+   </RulesElement>
+  <RulesElement name="Arcane Empowerment" type="Power" internal-id="ID_FMP_POWER_5275" source="Player's Handbook 2" revision-date="05/07/2011 11:38:38 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You force additional energy into your spells. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, increase the size of your sorcerer and sorcerer paragon path powers' blasts and bursts by 1. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+</D20Rules>

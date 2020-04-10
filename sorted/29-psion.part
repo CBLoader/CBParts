@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.04</Version>
+    <Filename>29-psion.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/29-psion.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/29-psion.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Psion -->
+  <!-- 29-psion.part, version 1.04 -->
+  <!-- Original release: 13-July-2011; Last modified: 18-May-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 14-September-2011: Added Errata for August 2011.
+ Updated 25-September-2011: Added Community updates.
+ Updated 18-May-2012 DSH added.
+</Changelog>
+
+  <!-- Errata for August 2011 -->
+  <RulesElement name="Static Mote" type="Power" internal-id="ID_FMP_POWER_13462" source="Psionic Power" revision-date="9/14/2011 6:27:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+      <Flavor> A mote of roiling lightning hinders your foes before exploding in a devastating burst. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13463 </specific>
+      <specific name="Display"> Psion Attack 1 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Lightning, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a static mote in an unoccupied square within range. Any creature that starts its turn adjacent to the mote is slowed until the end of its turn. At the start of your next turn, the mote disappears and you use the Static Mote Attack power. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_13463 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_13463" type="Power" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Static Mote Attack" type="Power" internal-id="ID_FMP_POWER_13463" source="Psionic Power" revision-date="9/14/2011 6:27:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+      <Prereqs> Unselectable; Unselectable </Prereqs>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Implement, Lightning, Psionic </specific>
+      <specific name="Action Type"> No Action </specific>
+      <specific name="Attack Type"> Close burst 3 centered on the square the mote occupied </specific>
+      <specific name="Requirement"> This power follows the use of the power Static Mote. </specific>
+      <specific name="Target"> Each creature in burst </specific>
+      <specific name="Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier lightning damage. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name="	Hit"> As above, and one target is pulled 1 square toward the center of the burst. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Hit"> 2d6 + Intelligence modifier lightning damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_STATIC_MOTE_ATTACK_(AUGMENT_0),ID_INTERNAL_POWER_STATIC_MOTE_ATTACK_(AUGMENT_1),ID_INTERNAL_POWER_STATIC_MOTE_ATTACK_(AUGMENT_2) </specific>
+      <specific name="_ParentPower"> ID_FMP_POWER_13462 </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
+   <RulesElement name="Inflicted Mindscape" type="Power" internal-id="ID_FMP_POWER_13324" source="Psionic Power" revision-date="9/14/2011 6:29:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+      <Flavor> As you reach into your enemies&apos; minds, the ground beneath their feet becomes a clutching mire of madness. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Psion Attack 5 </specific>
+      <specific name="Keywords"> Implement, Psionic, Psychic, Zone </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+      <specific name="Target"> Each enemy in burst </specific>
+      <specific name="Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> 2d6 + Intelligence modifier psychic damage, and the target is immobilized (save ends). </specific>
+      <specific name="Miss"> Half damage, and the target is slowed (save ends). </specific>
+      <specific name="Effect"> The burst creates a zone that lasts until the end of your next turn. Any enemy that ends its turn in the zone is slowed until the end of its next turn. </specific>
+      <specific name="Sustain Minor">  The effect persists until the end of your next turn. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 5 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Malicious Lightning Attack" type="Power" internal-id="ID_FMP_POWER_13340" source="Psionic Power" revision-date="9/14/2011 6:31:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+      <Prereqs> Unselectable </Prereqs>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Conjuration, Implement, Lightning, Psionic </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close burst 1 </specific>
+      <specific name="Requirement"> The power Malicious Lightning must be active in order to use this power.</specific>
+      <specific name="Secondary Target"> Each creature in burst </specific>
+      <specific name="Secondary Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier lightning damage, and the lightning mote pushes the secondary target 1 square. </specific>
+      <specific name="Effect"> The mote is expended. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_ParentPower"> ID_FMP_POWER_13339 </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
+   <RulesElement name="Void Shard" type="Power" internal-id="ID_FMP_POWER_13464" source="Psionic Power" revision-date="9/14/2011 6:35:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+      <Flavor> A shard of nothingness holds fast any creature that slips too close. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13465 </specific>
+      <specific name="Display"> Psion Attack 13 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a void shard in an unoccupied square within range. Any creature that starts its turn adjacent to the shard is slowed until the end of its turn. At the start of your next turn, the shard disappears and you use the Void Shard Attack power. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name="	Effect"> As above, and when the void shard is conjured, it uses the Void Shard Attack power as a free action, with the range Close burst 3. </specific>
+      <specific name="	Target"> Each enemy in burst </specific>
+      <specific name="	Attack"> Intelligence vs. Reflex </specific>
+      <specific name="	Hit"> The void shard pulls the target 3 squares. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 13 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_VOID_SHARD_(AUGMENT_0),ID_INTERNAL_POWER_VOID_SHARD_(AUGMENT_1) </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_13465 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_13465" type="Power" />
+      </rules>
+   </RulesElement> 
+   <RulesElement name="Void Shard Attack" type="Power" internal-id="ID_FMP_POWER_13465" source="Psionic Power" revision-date="9/14/2011 6:35:00 PM">
+      <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+      <Prereqs> Unselectable; Unselectable </Prereqs>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
+      <specific name="Action Type"> No Action </specific>
+      <specific name="Attack Type"> Close burst 3 centered on the square the shard occupied </specific>
+      <specific name="Requirement"> The power Void Shard must be active in order to use this power. </specific>
+      <specific name="Target"> Each creature in burst </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d8 + Intelligence modifier force damage, and the target falls prone. </specific>
+      <specific name="Augment"> 4 </specific>
+      <specific name=" Hit"> 2d8 + Intelligence modifier force damage, and the target is both dazed and slowed until the end of your next turn </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_VOID_SHARD_ATTACK_(AUGMENT_0),ID_INTERNAL_POWER_VOID_SHARD_ATTACK_(AUGMENT_4) </specific>
+      <specific name="_ParentPower"> ID_INTERNAL_POWER_VOID_SHARD_(AUGMENT_1) </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
+   <RulesElement name="Living Barrage" type="Power" internal-id="ID_FMP_POWER_13350" source="Psionic Power" revision-date="9/14/2011 6:38:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+      <Flavor> You ensnare your enemies with a thought, then hurl them about like living weapons. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13351 </specific>
+      <specific name="Display"> Psion Attack 15 </specific>
+      <specific name="Keywords"> Force, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+      <specific name="Primary Target"> Each enemy in burst </specific>
+      <specific name="Primary Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 2d8 + Intelligence modifier force damage, and the primary target is immobilized (save ends). </specific>
+      <specific name="Miss"> Half damage, and the primary target is slowed (save ends). </specific>
+      <specific name="Effect"> While at least one primary target is immobilized or slowed by this power, you can use the Living Barrage Attack power. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 15 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_13351 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_13351" type="Power" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Living Barrage Attack" type="Power" internal-id="ID_FMP_POWER_13351" source="Psionic Power" revision-date="9/14/2011 6:38:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+      <Prereqs> Unselectable </Prereqs>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Force, Implement, Psionic </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Requirement"> The power Living Barrage must be active in order to use this power. This power can be used once per round. </specific>
+      <specific name="Secondary Target"> One or two primary targets immobilized or slowed by the attack </specific>
+      <specific name="Effect"> You slide the secondary target 5 squares and make the following tertiary attack against one creature adjacent to the secondary target during the shift. You cannot attack the same tertiary target more than once per round with this power. </specific>
+      <specific name="	Tertiary Target"> One creature </specific>
+      <specific name="	Tertiary Attack"> Intelligence vs. Reflex </specific>
+      <specific name="	Hit"> 2d6 + Intelligence modifier damage, and the secondary target and tertiary target fall prone. The secondary target takes 5 damage. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_ParentPower"> ID_FMP_POWER_13350 </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
+   <RulesElement name="Reality Meltdown Attack" type="Power" internal-id="ID_FMP_POWER_13386" source="Psionic Power" revision-date="9/14/2011 6:39:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_OPPORTUNITY_ACTION </Category>
+      <Prereqs> Unselectable; Unselectable </Prereqs>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+      <specific name="Action Type"> Opportunity Action </specific>
+      <specific name="Attack Type"> Melee 3 </specific>
+      <specific name="Requirement"> The power Reality Meltdown must be active in order to use this power. </specific>
+      <specific name="Trigger"> An enemy starts its turn within 3 squares of the molten orb </specific>
+      <specific name="Target"> The triggering enemy </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> Intelligence modifier fire damage, and you move the orb 3 squares to a square adjacent to the target. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Hit"> 1d6 + Intelligence modifier fire damage, and you move the orb 3 squares to a square adjacent to the target. If the target doesn&apos;t end its turn at least 3 squares away from the orb, the target takes 5 fire damage. </specific>
+      <specific name="Augment"> 6 </specific>
+      <specific name="	Trigger"> An enemy starts its turn within 5 squares of the molten orb </specific>
+      <specific name="	Hit"> 2d6 + Intelligence modifier fire damage, and you move the orb 5 squares to a square adjacent to the target. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_REALITY_MELTDOWN_ATTACK_(AUGMENT_0),ID_INTERNAL_POWER_REALITY_MELTDOWN_ATTACK_(AUGMENT_2),ID_INTERNAL_POWER_REALITY_MELTDOWN_ATTACK_(AUGMENT_6) </specific>
+      <specific name="_ParentPower"> ID_FMP_POWER_13385 </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+   </RulesElement>
+   <RulesElement name="Hungry Flames" type="Power" internal-id="ID_FMP_POWER_13397" source="Psionic Power" revision-date="9/14/2011 6:42:00 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_757,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+      <Prereqs> Firestarter </Prereqs>
+      <Flavor> Motes of living flame manifest in the midst of your foes. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13400 </specific>
+      <specific name="Display"> Firestarter Attack 11 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure two hungry flames in unoccupied squares within range. The hungry flames last until the end of your next turn. You can use the Hungry Flames Attack power with the flames. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Effect"> As above, except you conjure four hungry flames in unoccupied squares within range. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_PARAGON_PATH_757 </specific>
+      <specific name="Level"> 11 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_HUNGRY_FLAMES_(AUGMENT_0),ID_INTERNAL_POWER_HUNGRY_FLAMES_(AUGMENT_2) </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_13400 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_13400" type="Power" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Hungry Flames (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_HUNGRY_FLAMES_(AUGMENT_0)" source="Psionic Power" revision-date="9/21/2010 2:08:36 PM">
+      <Flavor> Motes of living flame manifest in the midst of your foes. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_13397 </specific>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13400 </specific>
+      <specific name="Display"> Firestarter Attack 11 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure two hungry flames in unoccupied squares within range. The hungry flames last until the end of your next turn. You can use the Hungry Flames Attack power with the flames. </specific>
+      <specific name="Class"> ID_FMP_PARAGON_PATH_757 </specific>
+      <specific name="Level"> 11 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13397 </specific>
+   </RulesElement>
+   <RulesElement name="Hungry Flames (Augment 2)" type="Power" internal-id="ID_INTERNAL_POWER_HUNGRY_FLAMES_(AUGMENT_2)" source="Psionic Power" revision-date="9/21/2010 2:08:36 PM">
+      <Flavor> Motes of living flame manifest in the midst of your foes. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_13397 </specific>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13400 </specific>
+      <specific name="Display"> Firestarter Attack 11 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure two hungry flames in unoccupied squares within range. The hungry flames last until the end of your next turn. You can use the Hungry Flames Attack power with the flames, except you conjure four hungry flames in unoccupied squares within range. </specific>
+      <specific name="Class"> ID_FMP_PARAGON_PATH_757 </specific>
+      <specific name="Level"> 11 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13397 </specific>
+   </RulesElement>
+   <RulesElement name="Resilient Creation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3125" source="Psionic Power" revision-date="9/14/2011 6:43:00 PM" >
+      <Category> 11 </Category>
+      <specific name="Short Description"> Creatures summoned w/ psion power: +temp hp (Cha mod). When you spend a healing surge, 1 summoned creature regains hp (Int mod). </specific>
+      <specific name="Level"> 11 </specific>
+When you summon a creature using a psion power or psion paragon path power, the summoned creature gains temporary hit points equal to your Charisma modifier.
+	In addition, whenever you spend a healing surge, one summoned creature you control regains hit points equal to your Intelligence modifier.
+   </RulesElement>
+   
+   <RulesElement name="Void Shard (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_VOID_SHARD_(AUGMENT_0)" source="Psionic Power" revision-date="9/21/2010 2:08:44 PM">
+      <Flavor> A shard of nothingness holds fast any creature that slips too close. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_13464 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13465 </specific>
+      <specific name="Display"> Psion Attack 13 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a void shard in an unoccupied square within range. Any creature that starts its turn adjacent to the shard is slowed until the end of its turn. At the start of your next turn, the shard disappears and you use the Void Shard Attack power. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 13 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13464 </specific>
+   </RulesElement>
+   <RulesElement name="Void Shard (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_VOID_SHARD_(AUGMENT_1)" source="Psionic Power" revision-date="9/21/2010 2:08:44 PM">
+      <Flavor> A shard of nothingness holds fast any creature that slips too close. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_13464 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="_ChildPower"> ID_FMP_POWER_13465 </specific>
+      <specific name="Display"> Psion Attack 13 </specific>
+      <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Ranged 10 </specific>
+      <specific name="Effect"> You conjure a void shard in an unoccupied square within range. Any creature that starts its turn adjacent to the shard is slowed until the end of its turn. At the start of your next turn, the shard disappears and you use the Void Shard Attack power, and when the void shard is conjured, it uses the Void Shard Attack power as a free action, with the range Close burst 3. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="Level"> 13 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13464 </specific>
+      <specific name="Target"> Each enemy in burst </specific>
+      <specific name="Attack"> Intelligence vs. Reflex </specific>
+      <specific name="Hit"> The void shard pulls the target 3 squares. </specific>
+   </RulesElement>
+
+
+   
+   <RulesElement name="Void Shard Attack (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_VOID_SHARD_ATTACK_(AUGMENT_0)" source="Psionic Power" revision-date="9/21/2010 2:08:46 PM">
+      <specific name="_SupportsID"> ID_FMP_POWER_13465 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
+      <specific name="Action Type"> No Action </specific>
+      <specific name="Attack Type"> Close burst 3 centered on the square the shard occupied </specific>
+      <specific name="Requirement"> The power Void Shard must be active in order to use this power. </specific>
+      <specific name="Target"> Each creature in burst </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d8 + Intelligence modifier force damage, and the target falls prone. </specific>
+      <specific name="Special"> You can take this free action only as the first action of your turn. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13465 </specific>
+   </RulesElement>
+   <RulesElement name="Void Shard Attack (Augment 4)" type="Power" internal-id="ID_INTERNAL_POWER_VOID_SHARD_ATTACK_(AUGMENT_4)" source="Psionic Power" revision-date="9/21/2010 2:08:46 PM">
+      <specific name="_SupportsID"> ID_FMP_POWER_13465 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
+      <specific name="Action Type"> No Action </specific>
+      <specific name="Attack Type"> Close burst 3 centered on the square the shard occupied </specific>
+      <specific name="Requirement"> The power Void Shard must be active in order to use this power. </specific>
+      <specific name="Target"> Each creature in burst </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 2d8 + Intelligence modifier force damage, and the target is both dazed and slowed until the end of your next turn </specific>
+      <specific name="Special"> You can take this free action only as the first action of your turn. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13465 </specific>
+   </RulesElement>
+   <RulesElement name="Reality Meltdown Attack (Augment 2)" type="Power" internal-id="ID_INTERNAL_POWER_REALITY_MELTDOWN_ATTACK_(AUGMENT_2)" source="Psionic Power" revision-date="9/21/2010 2:08:31 PM">
+      <specific name="_SupportsID"> ID_FMP_POWER_13386 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display" />
+      <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+      <specific name="Action Type"> Opportunity Action </specific>
+      <specific name="Attack Type"> Melee 3 </specific>
+      <specific name="Requirement"> The power Reality Meltdown must be active in order to use this power. </specific>
+      <specific name="Trigger"> An enemy starts its turn within 3 squares of the molten orb </specific>
+      <specific name="Target"> The triggering enemy </specific>
+      <specific name="Attack"> Intelligence vs. Fortitude </specific>
+      <specific name="Hit"> 1d6 + Intelligence modifier fire damage, and you move the orb 3 squares to a square adjacent to the target. If the target doesn't end its turn at least 3 squares away from the orb, the target takes 5 fire damage. </specific>
+      <specific name="Class"> ID_FMP_CLASS_437 </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13386 </specific>
+   </RulesElement>
+<!-- DSH -->
+  <RulesElement name="Telepathic Wail" type="Power" internal-id="ID_FMP_POWER_16493" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> You project a keening psychic scream into the minds around you and rob nearby creatures of hearing. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Psion Attack 13 </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Intelligence vs. Will </specific>
+    <specific name="Hit"> 1d8 + Intelligence modifier psychic damage, and the target is deafened until the end of your next turn. </specific>
+    <specific name="Augment"> 1 </specific>
+    <specific name=" Hit"> As above, and the target loses any psychic resistance or immunity until the end of your next turn. </specific>
+    <specific name="Augment"> 4 </specific>
+    <specific name=" Hit"> 2d8 + Intelligence modifier psychic damage, and the target is deafened and dazed until the end of your next turn. If the target deals psychic damage before the end of your next turn, it is stunned instead of dazed. </specific>
+    <specific name="Class"> ID_FMP_CLASS_437 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentVersions"> ID_INTERNAL_POWER_TELEPATHIC_WAIL_(AUGMENT_0),ID_INTERNAL_POWER_TELEPATHIC_WAIL_(AUGMENT_1),ID_INTERNAL_POWER_TELEPATHIC_WAIL_(AUGMENT_4) </specific>
+The aberrant creatures below rarely communicate in ways familiar to surface dwellers. Most transmit their sickening thoughts with telepathy, which makes them especially receptive to the mental activity of their prospective victims. With telepathic wail, you ensure that they hear your thoughts loud and clear.
+</RulesElement>
+  <RulesElement name="Telepathic Wail (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_TELEPATHIC_WAIL_(AUGMENT_0)" source="Dungeon Survival Handbook">
+    <Flavor> You project a keening psychic scream into the minds around you and rob nearby creatures of hearing. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_16493 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Psion Attack 13 </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Intelligence vs. Will </specific>
+    <specific name="Hit"> 1d8 + Intelligence modifier psychic damage, and the target is deafened until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_437 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_16493 </specific>
+The aberrant creatures below rarely communicate in ways familiar to surface dwellers. Most transmit their sickening thoughts with telepathy, which makes them especially receptive to the mental activity of their prospective victims. With telepathic wail, you ensure that they hear your thoughts loud and clear.
+</RulesElement>
+  <RulesElement name="Telepathic Wail (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_TELEPATHIC_WAIL_(AUGMENT_1)" source="Dungeon Survival Handbook">
+    <Flavor> You project a keening psychic scream into the minds around you and rob nearby creatures of hearing. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_16493 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Psion Attack 13 </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Intelligence vs. Will </specific>
+    <specific name="Hit"> 1d8 + Intelligence modifier psychic damage, and the target is deafened until the end of your next turn, and the target loses any psychic resistance or immunity until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_437 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_16493 </specific>
+The aberrant creatures below rarely communicate in ways familiar to surface dwellers. Most transmit their sickening thoughts with telepathy, which makes them especially receptive to the mental activity of their prospective victims. With telepathic wail, you ensure that they hear your thoughts loud and clear.
+</RulesElement>
+  <RulesElement name="Telepathic Wail (Augment 4)" type="Power" internal-id="ID_INTERNAL_POWER_TELEPATHIC_WAIL_(AUGMENT_4)" source="Dungeon Survival Handbook">
+    <Flavor> You project a keening psychic scream into the minds around you and rob nearby creatures of hearing. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_16493 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Psion Attack 13 </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Intelligence vs. Will </specific>
+    <specific name="Hit"> 2d8 + Intelligence modifier psychic damage, and the target is deafened and dazed until the end of your next turn. If the target deals psychic damage before the end of your next turn, it is stunned instead of dazed. </specific>
+    <specific name="Class"> ID_FMP_CLASS_437 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_16493 </specific>
+The aberrant creatures below rarely communicate in ways familiar to surface dwellers. Most transmit their sickening thoughts with telepathy, which makes them especially receptive to the mental activity of their prospective victims. With telepathic wail, you ensure that they hear your thoughts loud and clear.
+</RulesElement>
+</D20Rules>

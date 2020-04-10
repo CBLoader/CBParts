@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>SGPStealthySorcerersBGUK.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/SGPStealthySorcerersBGUK.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/SGPStealthySorcerersBGUK.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="St Georges Prey" type="source" internal-id="ID_FMP_SOURCE_401" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.leedsdnd.co.uk </specific>
+    <specific name="Release Date"> 12/2/2010 </specific>
+  </RulesElement>
+  <RulesElement name="Secret Sorcery  " type="Feat" internal-id="ID_FMP_FEAT_65128" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Sorcerer, Dex 15 </Prereqs>
+    <print-prereqs> Sorcerer, Dex 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Deal additional damage when hidden </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you hit a target that you considered to be hidden from with a sorcerer attack power, you deal additional damage equal to your Dexterity modifier.
+   </RulesElement>
+  <RulesElement name="Arcane Vision  " type="Feat" internal-id="ID_FMP_FEAT_65129" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Sorcerer, Int 15 </Prereqs>
+    <print-prereqs> Sorcerer, Int 15+</print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You gain low-light vision, and gain a +2 feat bonus to perception checks </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <statadd name="Perception Misc" value="+2" type="feat" />
+    </rules>
+You gain low-light vision, and gain a +2 feat bonus to perception checks
+   </RulesElement>
+  <RulesElement name="Wild Stealth  " type="Feat" internal-id="ID_FMP_FEAT_65130" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Sorcerer, Wild Magic class feature </Prereqs>
+    <print-prereqs> Sorcerer, Wild Magic class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Roll twice for sorcerer stealth checks </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When a sorcerer power allows you to make a stealth check, you can roll twice and use which ever result you want.
+   </RulesElement>
+  <RulesElement name="Stealth of Storms  " type="Feat" internal-id="ID_FMP_FEAT_65131" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Sorcerer, Storm Magic class feature </Prereqs>
+    <print-prereqs> Sorcerer, Storm Magic class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Nearby enemies take damage from sorcerer stealth </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When a sorcerer power allows you to make a stealth check, enemies within 5 squares with a perception score that beats your result take lightning and thunder damage equal to your Dexterity modifier
+   </RulesElement>
+  <RulesElement name="Draconic Bravo  " type="Feat" internal-id="ID_FMP_FEAT_65132" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Sorcerer, Dragon Magic class feature </Prereqs>
+    <print-prereqs> Sorcerer, Dragon Magic class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use Intimidate rather than Stealth </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When a sorcerer power allows you to make a stealth check, you can make an Intimidation check instead. If you succeed, you are not hidden, but enemies within 3 squares take a -2 penalty to attack rolls against you until the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Cosmic Camouflage  " type="Feat" internal-id="ID_FMP_FEAT_65133" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Sorcerer, Cosmic Magic class feature </Prereqs>
+    <print-prereqs> Sorcerer, Cosmic Magic class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Change cosmic phase with sorcerer stealth </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When a sorcerer power allows you to make a stealth check, you can also choose to change which cosmic phase you are currently in.
+   </RulesElement>
+  <RulesElement name="Bone Bind  " type="Power" internal-id="ID_FMP_POWER_65252" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> As you reach out to touch your target, arcane energy flows from your finger tips, and knots their bones together, stopping them from moving. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Touch </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 1d10 + Charisma modifier necrotic damage, and the target is slowed until the end of your next turn. </specific>
+    <specific name="Special"> If you have combat advantage against the target, it is immobilized rather than slowed. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Shadow Bolt  " type="Power" internal-id="ID_FMP_POWER_65253" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> The dark arcane energy that forms this attack, occludes the route it took as it swept towards the target. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 1d8 + Charisma modifier necrotic damage, and the target takes a -2 penalty to Perception checks. </specific>
+    <specific name="Special"> This attack can be used as a ranged basic attack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <rules>
+      <modify name="this" Field="_BasicAttack" value="Ranged" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Dark Shroud  " type="Power" internal-id="ID_FMP_POWER_65254" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> The arcane energy flows from your finger tips and gathers the darkness and shadows, expanding it to fill the space around you. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Implement, Necrotic, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close Burst 3 </specific>
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 1d6 + Charisma modifier necrotic damage, and you can make a stealth check to hide from the target. </specific>
+    <specific name="Effect"> The burst creates a zone of darkness that lasts until the end of your next turn. The zone counts as difficult terrain, and creatures outside the zone are considered to have concealment against creatures inside the zone. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Arcane Sweep  " type="Power" internal-id="ID_FMP_POWER_65255" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You bind the arcane energy into a floor hugging wave, that sweeps your opponent off their feet and hurls them away from you, giving you chance to hide. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Implement, Force </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Touch </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs.Reflex </specific>
+    <specific name="Hit"> 2d6 + Charisma modifier force damage, and the target is pushed 2 squares and knocked prone. You can make a stealth check to hide from the target. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Cloak of Dead Souls  " type="Power" internal-id="ID_FMP_POWER_65256" source="St Georges Prey" revision-date="8/27/2010 11:26:28 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> With each enemy you send to the grave, you grew fainter to their allies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of the encounter, each time you kill an enemy, you gain a +2 bonus to stealth checks. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Black Fire  " type="Power" internal-id="ID_FMP_POWER_65257" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,3 </Category>
+    <Flavor> As the attack strikes you, a gout of black flame erupts where you stand, and you disappear from the enemies view. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Teleportation </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> You are hit by an attack </specific>
+    <specific name="Effect"> You teleport a number of squares equal to your Dexterity modifier, and can then make a stealth check to hide from the triggering attacker. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dread Statue  " type="Power" internal-id="ID_FMP_POWER_65258" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> Your touch freezes your opponent on the spot, and warps their face into a visage of terror, which acts as a warnign to their allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sorcerer Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Implement, Fear </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Touch </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 1d10 + Charisma modifier damage, and the target is immobilized (save ends). Enemies within 5 squares of the target take a -1 penalty to attack rolls against you until the target makes its save. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_128 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

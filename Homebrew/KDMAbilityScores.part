@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMAbilityScores.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMAbilityScores.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMAbilityScores.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Strength" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH </Category>
+  </RulesElement>
+  <RulesElement name="Constitution" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION </Category>
+  </RulesElement>
+  <RulesElement name="Dexterity" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY </Category>
+  </RulesElement>
+  <RulesElement name="Intelligence" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE </Category>
+  </RulesElement>
+  <RulesElement name="Wisdom" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM </Category>
+  </RulesElement>
+  <RulesElement name="Charisma" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA </Category>
+  </RulesElement>
+  <RulesElement name="Null" type="Race Ability Bonus" internal-id="ID_INTERNAL_RACE_ABILITY_BONUS_NULL" source="Core">
+    <Category> ID_INTERNAL_RACE_ABILITY_BONUS_NULL </Category>
+  </RulesElement>
+  <AppendNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
+    <rules>
+      <select type="Racial Trait" number="2" Category="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" />
+      <select type="Race Ability Bonus" number="1" Category="Null" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Racial Ability Bonus (Strength)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_RACIAL_ABILITY_BONUS_(STRENGTH)" source="KDM">
+    <Category> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </Category>
+    <specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </specific>
+    <specific name="Short Description"> +2 to your Strength </specific>
+    <specific name="_CS_ShortDescription"> +2 to your Strength </specific>
+    <rules>
+      <statadd name="Strength" value="+2" type="Racial" />
+    </rules>
+Add +2 to your Strength.
+</RulesElement>
+  <RulesElement name="Racial Ability Bonus (Constitution)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_RACIAL_ABILITY_BONUS_(CONSTITUTION)" source="KDM">
+    <Category> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </Category>
+    <specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </specific>
+    <specific name="Short Description"> +2 to your Constitution </specific>
+    <specific name="_CS_ShortDescription"> +2 to your Constitution </specific>
+    <rules>
+      <statadd name="Constitution" value="+2" type="Racial" />
+    </rules>
+Add +2 to your Constitution.
+</RulesElement>
+  <RulesElement name="Racial Ability Bonus (Dexterity)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_RACIAL_ABILITY_BONUS_(DEXTERITY)" source="KDM">
+    <Category> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </Category>
+    <specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </specific>
+    <specific name="Short Description"> +2 to your Dexterity </specific>
+    <specific name="_CS_ShortDescription"> +2 to your Dexterity </specific>
+    <rules>
+      <statadd name="Dexterity" value="+2" type="Racial" />
+    </rules>
+Add +2 to your Dexterity.
+</RulesElement>
+  <RulesElement name="Racial Ability Bonus (Intelligence)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_RACIAL_ABILITY_BONUS_(INTELLIGENCE)" source="KDM">
+    <Category> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </Category>
+    <specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </specific>
+    <specific name="Short Description"> +2 to your Intelligence </specific>
+    <specific name="_CS_ShortDescription"> +2 to your Intelligence </specific>
+    <rules>
+      <statadd name="Intelligence" value="+2" type="Racial" />
+    </rules>
+Add +2 to your Intelligence.
+</RulesElement>
+  <RulesElement name="Racial Ability Bonus (Wisdom)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_RACIAL_ABILITY_BONUS_(WISDOM)" source="KDM">
+    <Category> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </Category>
+    <specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </specific>
+    <specific name="Short Description"> +2 to your Wisdom </specific>
+    <specific name="_CS_ShortDescription"> +2 to your Wisdom </specific>
+    <rules>
+      <statadd name="Wisdom" value="+2" type="Racial" />
+    </rules>
+Add +2 to your Wisdom.
+</RulesElement>
+  <RulesElement name="Racial Ability Bonus (Charisma)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_RACIAL_ABILITY_BONUS_(CHARISMA)" source="KDM">
+    <Category> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </Category>
+    <specific name="_SupportsID"> ID_INTERNAL_LEVEL1RULES_LEVEL1RULES </specific>
+    <specific name="Short Description"> +2 to your Charisma </specific>
+    <specific name="_CS_ShortDescription"> +2 to your Charisma </specific>
+    <rules>
+      <statadd name="Charisma" value="+2" type="Racial" />
+    </rules>
+Add +2 to your Charisma.
+</RulesElement>
+</D20Rules>

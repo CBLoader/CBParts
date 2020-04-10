@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>PathstoPrestige.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/PathstoPrestige.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/PathstoPrestige.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Paths to Prestige: Fell Knight" type="source" internal-id="ID_TIV_SOURCE_PATHS_TO_PRESTIGE:_FELL_KNIGHT" source="Core">
+    <specific name="IsBeta"> 1 </specific>
+    <specific name="URL"> http://paizo.com/store/byCompany/b/blackdirgePublishing/v5748btpy85rx </specific>
+    <specific name="Release Date"> 11/12/2008 </specific>
+  </RulesElement>
+  <RulesElement name="Paths to Prestige: The Centurion" type="source" internal-id="ID_TIV_SOURCE_PATHS_TO_PRESTIGE:_THE_CENTURION" source="Core">
+    <specific name="IsBeta"> 1 </specific>
+    <specific name="URL"> http://paizo.com/store/byCompany/b/blackdirgePublishing/v5748btpy86ai </specific>
+    <specific name="Release Date"> 11/12/2008 </specific>
+  </RulesElement>
+  <RulesElement name="Fell Knight" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Prereqs> Paladin, Evil Alignment or Chaotic Evil Alignment </Prereqs>
+    <print-prereqs> Paladin, Evil Alignment or Chaotic Evil Alignment </print-prereqs>
+    <Flavor> "I was a fool before I fell from the grace of unworthy gods. My new masters have shown me the truth in darkness, and the power in despair." </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_300_01, ID_TIV_CLASS_FEATURE_300_02, ID_TIV_CLASS_FEATURE_300_02_01, ID_TIV_CLASS_FEATURE_300_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_300_01_01_01,ID_TIV_POWER_300_01_01_02,ID_TIV_POWER_300_01_01_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_300_01_01_01,ID_TIV_POWER_300_01_01_02,ID_TIV_POWER_300_01_01_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_300_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_300_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_300_02_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_300_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_300_01_01_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_300_01_01_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_300_01_01_03" type="Power" Level="20" />
+    </rules>
+You have forsaken the gods of light and truth for those that dwell in darkness and deception. You have become a twisted, corrupted thing, a hollow mockery of the noble paladin you once were, but you have found power...none can deny that. You can draw upon the might of foul gods to smite your enemies, transforming what was once purifying flame and light into choking darkness and shadow. 
+</RulesElement>
+  <RulesElement name="Aura of Despair" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_300_01" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Aura of Despair: Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn." />
+    </rules>
+Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Black Radiance" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_300_02" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Any paladin prayer you use that deals radiant damage now deals necrotic damage. </specific>
+    <specific name="Level"> 11 </specific>
+Any paladin prayer you use that deals radiant damage now deals necrotic damage.
+</RulesElement>
+  <RulesElement name="Curse of the Fallen" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_300_02_01" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> You gain resist 5 necrotic and vulnerability 5 radiant. This increases to resist 10 necrotic and vulnerability 10 radiant at 21st level. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="resist:necrotic" value="+5" type="resist" zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="resist" non-zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="resist" requires="Epic Tier" zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="resist" requires="Epic Tier" non-zero="true" />
+      <statadd name="vulnerable:radiant" value="+5" type="resist" zero="true" />
+      <statadd name="vulnerable:radiant" value="+5" type="resist" non-zero="true" />
+      <statadd name="vulnerable:radiant" value="+5" type="resist" requires="Epic Tier" zero="true" />
+      <statadd name="vulnerable:radiant" value="+5" type="resist" requires="Epic Tier" non-zero="true" />
+    </rules>
+You gain resist 5 necrotic and vulnerability 5 radiant. This increases to resist 10 necrotic and vulnerability 10 radiant at 21st level.
+</RulesElement>
+  <RulesElement name="Unholy Smite" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_300_03" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Targets of your divine challenge that attack your allies without attacking you take ongoing necrotic damage equal to your Charisma modifier (save ends). This is in addition to the damage normally dealt by divine challenge. </specific>
+    <specific name="Level"> 16 </specific>
+Targets of your divine challenge that attack your allies without attacking you take ongoing necrotic damage equal to your Charisma modifier (save ends). This is in addition to the damage normally dealt by divine challenge. 
+</RulesElement>
+  <RulesElement name="Blade of Woe" type="Power" internal-id="ID_TIV_POWER_300_01_01_01" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Fell Knight </Prereqs>
+    <Flavor> You strike your foe and unleash a blast of crackling, black energy that fills your enemies with despair. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Fell Knight Attack 11 </specific>
+    <specific name="Keywords"> Divine, Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature that is marked by you </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 2[W] + Charisma modifier necrotic damage, and each enemy within 5 squares automatically fails any saving throw made until the end of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Black Blessing" type="Power" internal-id="ID_TIV_POWER_300_01_01_02" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
+    <Prereqs> Fell Knight </Prereqs>
+    <Flavor> The power of your dark gods fills you and wards you against the blows of your enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Fell Knight Utility 12 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain resist all equal to 5 + your Charisma modifier until the end of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Horrific Strike" type="Power" internal-id="ID_TIV_POWER_300_01_01_03" source="Paths to Prestige: Fell Knight" revision-date="1/10/2011 1:16:35 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Fell Knight </Prereqs>
+    <Flavor> You strike your enemy with the raw horror of the black gods. He flees from you, howling in terror and madness, infecting his allies with the plague of fear. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Fell Knight Attack 20 </specific>
+    <specific name="Keywords"> Divine, Fear, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Will </specific>
+    <specific name="Hit"> 4[W] + Charisma modifier psychic damage, the target takes a -2 penalty to attack rolls (save ends), and moves its speed away from you. Until the target makes a saving throw, its allies also suffer a -2 penalty to attack rolls while they are adjacent to it. </specific>
+    <specific name="Miss"> Half damage, and the target does not move away or suffer a penalty to attack rolls. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_300_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="The Centurion" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Prereqs> Warlord </Prereqs>
+    <print-prereqs> Warlord </print-prereqs>
+    <Flavor> "Officer? Me? No sir, I work for living." </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_301_01, ID_TIV_CLASS_FEATURE_301_02, ID_TIV_CLASS_FEATURE_301_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_301_01_01_01,ID_TIV_POWER_301_01_01_02,ID_TIV_POWER_301_01_01_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_301_01_01_01,ID_TIV_POWER_301_01_01_02,ID_TIV_POWER_301_01_01_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_301_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_301_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_301_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_301_01_01_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_301_01_01_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_301_01_01_03" type="Power" Level="20" />
+    </rules>
+You're a soldier than knows how to lead other soldiers. You don't stand behind the lines issuing orders for runners to carry out, you're right there in the blood and piss dealing out death alongside you're brothers. Sure, you're in charge, but only because you can get the boys in and out alive. You don't have much use for officers or nobility, they only tend to muck things up on the battlefield, and get honest soldiers killed. 
+</RulesElement>
+  <RulesElement name="Hit 'Em Hard!" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_301_01" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Allies gain a +2 bonus to damage rolls when they are adjacent to you. </specific>
+    <specific name="Level"> 11 </specific>
+Allies gain a +2 bonus to damage rolls when they are adjacent to you.
+</RulesElement>
+  <RulesElement name="The Centurion's Action" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_301_02" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="The Centurion's Action: Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target." />
+    </rules>
+Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target.
+</RulesElement>
+  <RulesElement name="Hold-the-Line" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_301_03" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> When you use your inspiring word power, the target gains immunity to any forced movement (pull, push, slide, etc.) until the end of your next turn. </specific>
+    <specific name="Level"> 16 </specific>
+When you use your inspiring word power, the target gains immunity to any forced movement (pull, push, slide, etc.) until the end of your next turn. 
+</RulesElement>
+  <RulesElement name="Rallying Strike" type="Power" internal-id="ID_TIV_POWER_301_01_01_01" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> The Centurion </Prereqs>
+    <Flavor> You strike your foe with a resounding blow, heartening those around you, and drawing them to your side. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> The Centurion Attack 11 </specific>
+    <specific name="Keywords"> Martial, Healing, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and each ally within 5 squares may shift 3 squares in your direction. Allies than end up adjacent to you may spend a healing surge. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Tortoise" type="Power" internal-id="ID_TIV_POWER_301_01_01_02" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
+    <Prereqs> The Centurion </Prereqs>
+    <Flavor> You and your allies lock shields, presenting a wall of impenetrable steel to the enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> The Centurion Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Effect"> You and each ally within the burst gain a +1 power bonus to AC equal to the number of allies in the burst until the end of your next turn. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Into the Arms of the Enemy" type="Power" internal-id="ID_TIV_POWER_301_01_01_03" source="Paths to Prestige: The Centurion" revision-date="1/10/2011 1:16:35 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> The Centurion </Prereqs>
+    <Flavor> You strike your enemy with a mighty blow, propelling him backward upon the blade of a waiting ally. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> The Centurion Attack 20 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and you push the target 1 square. If you push the target adjacent to an ally, the ally can make an immediate melee basic attack against the target with combat advantage. </specific>
+    <specific name="Miss"> Half damage, and you do not push the target. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_PATHS_TO_PRESTIGE_301_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

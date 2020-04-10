@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>GnollStatUpdate.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/GnollStatUpdate.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/GnollStatUpdate.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Gnoll" type="Race" internal-id="ID_FMP_RACE_19" source="Dragon Magazine 367" revision-date="9/1/2010 3:19:25 PM">
+    <Prereqs> ~GNOLL </Prereqs>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 7 squares </specific>
+    <specific name="Characteristics"> Aggressive, carnivorous, cunning, feral, fierce, loyal, predatory, primal, swift, tough, wild </specific>
+    <specific name="Physical Qualities"> Gnolls tower over humans, with the average gnoll standing over 7 feet tall. Despite their physical strength, gnolls are lean; gnolls are rarely musclebound, and they move with remarkable speed. Their eyes are bright green or yellow, and gleam whenever they catch the light. Gnolls are covered with a thick coat of fur, which generally ranges from light to dark brown; depending on the clan, this might be a uniform color, or broken up by stripes or spots. A number of gnoll bloodlines have members (both male and female) who possess crestlike manes of hair that run from the head and down the spine; these rise up when gnolls are frightened or angry.
+	Although these are general traits, the traces of demonic blood in gnolls can produce unusual features. An obvious example of this are the talons of the gnoll claw fighter, but this can manifest in lesser ways. A gnoll might have gleaming red eyes, or black fur with fiery orange spots; a wide range of variation is possible.
+	Gnolls mature with remarkable speed for intelligent humanoids; some cite this as proof of their demonic heritage and suggest that it is unnatural for a creature to be ready for battle so soon after birth. They have short life spans — in fact, they rarely live longer than thirty years, but they typically remain remarkably strong and vigorous right up to the end of their days. When their strength leaves them, it is a sudden and catastrophic decline. </specific>
+    <specific name="Playing"> Gnolls are primal creatures, and instinct plays a powerful role in their lives. Pack and family bonds are important to them, and while they might squabble to establish lines of dominance, between such challenges gnolls are steadfast allies. In battle, gnolls are strong team players, and they set aside any thought of personal glory to assist an ally. When separated from their own kind, gnolls seek a surrogate pack and are loyal to those they choose as friends.
+	Gnoll behavior seems aggressive to other creatures; a gnoll is more likely to demand an answer than ask a question. Among gnolls, this sort of intimidation isn't considered a hostile act; it is a way of establishing strength.
+	Gnolls are natural predators, and they love the thrill of the chase and the challenge of the hunt. Most prefer the wilds to civilization, but some adapt and come to see the city as another sort of jungle. Gnolls are natural scavengers, and they love to collect trophies of their victories and experiences; these can range from grisly remnants to simple objects that remind them of an event.
+	Tales say that gnolls were born of the blending of beast and demon, and this is something that should be kept in mind with any gnoll character. The ferocity of the fiend lies within even the noblest gnoll, and this could manifest in many ways. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 7'0"-7'6" </specific>
+    <specific name="Average Weight"> 280-320 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Strength or +2 Constitution </specific>
+    <specific name="Languages"> Abyssal, Common </specific>
+    <specific name="Skill Bonuses"> +2 Intimidate, +2 Perception </specific>
+    <specific name="Male Names"> Dagnyr, Dhyrn, Doryc, Ghyrryn, Gnasc, Gnoryc, Gnyrn, Hyrn, Lhoryn, Lhyr, Mognyr, Sorgnyn, Thyrn, Toryc, Yrgnyn, Yrych. </specific>
+    <specific name="Female Names"> Dagnyra, Gnara, Gnora, Gnyrl, Hyra, Hyrgna, Lhyra, Lhyrl, Malgna, Myrl, Sargna, Shyrla, Tarnyra, Yrgna. </specific>
+    <specific name="Short Description"> Often feral demon worshipers, gnolls are quick, brutal fighters who strike without mercy. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_713, ID_FMP_RACIAL_TRAIT_712, ID_FMP_RACIAL_TRAIT_413 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_GNOLL" type="Grants" />
+      <statadd name="Speed" value="+7" />
+      <textstring name="Average Height" value="7'0&quot;-7'6&quot;" />
+      <textstring name="Average Weight" value="280-320 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Constitution" />
+    </rules>
+
+Play a Gnoll if you want ...
+•  to be a fierce hunter driven by instinct.
+•  to be an outsider in the civilized world — a scion of a race known for its cruelty and brutality.
+•  to be swift and deadly, striking enemies with surprising force.
+•  to be a member of a race that favors the rogue, ranger, and warlock classes.
+   </RulesElement>
+  <RulesElement name="Gnoll" type="Grants" internal-id="ID_INTERNAL_GRANTS_GNOLL" source="Dragon Magazine 367">
+    <specific name="_SupportsID"> ID_FMP_RACE_19 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_713" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_712" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_413" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_7" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+</D20Rules>

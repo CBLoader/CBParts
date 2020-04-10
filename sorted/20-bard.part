@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.16</Version>
+    <Filename>20-bard.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/20-bard.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/20-bard.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Bard -->
+  <!-- 20-bard.part, version 1.16 -->
+  <!-- Original release: 13-July-2011; Last modified: 30-January-2013 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 13-July-2011 Added Bard Powers, Dragon #396.
+ Updated 01-August-2011 Moved main class from Dark Sun part file.
+ Updated 18-November-2011 Added Skald and new bard powers from Heroes of the Feywild
+ Updated 21-November-2011 Updated Skald power choices at level 15+, added update from scpredmage
+ Updated 25-November-2011 Skald fix
+ Updated 27-November-2011 Added Signs of Influence class feature from Heroes of the Feywild
+ Updated 14-December-2011 Removed Line 227 and updated Line 193 (updates from forum).
+ Updated 18-May-2012 DSH added.
+ Updated 22-June-2012 Updated Bard and Skald Implement Grants.
+ Updated 6-August-2012 Mantle of Unity 7/2012 Rules Update.
+ Updated 30-January-2013 Skald Implements (display typo only) corrected.
+</Changelog>
+  <!-- Bard Class Feature Updates -->
+    <RulesElement name="Bard" type="Class" internal-id="ID_FMP_CLASS_104" source="Player's Handbook 2" revision-date="8/27/2010 12:40:38 PM">
+    <Flavor> "The clash of blades, a note.
+A battle fought, a verse.
+The hero's war, a song." </Flavor>
+    <specific name="Key Abilities"> Charisma, Intelligence, Constitution </specific>
+    <specific name="Implements"> Wand </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail; light shields </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, simple ranged, military ranged, longsword, scimitar, short sword </specific>
+    <specific name="Bonus to Defense"> +1 Reflex, +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 7+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> Arcana. From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Diplomacy (Cha), Dungeoneering (Wis), Heal (Wis), History (Int), Insight (Wis), Intimidate (Cha), Nature (Wis), Perception (Wis), Religion (Int), Streetwise (Cha) </specific>
+    <specific name="Build Options"> Cunning Bard, Prescient Bard, Valorous Bard </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Bardic Training, Bardic Virtue, Majestic Word, Multiclass Versatility, Skill Versatility, Song of Rest, Words of Friendship </specific>
+    <specific name="Role"> Leader. Your spells inspire and invigorate your allies. Your spells also include significant control elements, making controller a natural secondary role. </specific>
+    <specific name="Power Source"> Arcane. You channel magical power through words and music, studying long and hard to master the power contained in the lore and sagas of old. </specific>
+    <specific name="Creating"> Your choice of ability scores, class features, and powers suggests one of two builds based on the storied virtues of cunning and valor. All bards use Charisma for their attacks. Intelligence increases the effect of tricky attacks, and Constitution is best for powers that inspire allies. </specific>
+    <specific name="Class Features"> Each bard has the powers majestic word and words of friendship. </specific>
+    <specific name="Supplemental" />
+    <specific name="Implement"> Bards use wands to direct and control their spells. When you wield a magic wand, you can add its enhancement bonus to the attack rolls and the damage rolls of bard powers and bard paragon path powers that have the implement keyword. Without a wand, you can still use these powers.
+	Songblades and some magic musical instruments (see Chapter 3) can be used as implements for bard powers and bard paragon path powers. Bards treasure these magic musical instruments not only for the power they offer, but for the wondrous melodies they produce in the hands of a skilled musician. </specific>
+    <specific name="Powers"> Your powers are called spells, and you create them by gracefully mixing art, magic, and weapons skill. </specific>
+    <specific name="Power Name"> Spells </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+    <specific name="_SecondaryPowerSourceElement" />
+    <specific name="Secondary Abilities" />
+    <specific name="Hybrid Talent Options" />
+    <specific name="Short Description"> You channel your arcane prowess through an artistic medium, using your power to warp reality. </specific>
+    <specific name="_ParentClass" />
+    <specific name="Trait Package" />
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_BARD" type="Grants" />
+      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_104" />
+      <statadd name="_LEVEL-ONE-HPS" value="+12" />
+      <statadd name="_PER-LEVEL-HPS" value="+5" />
+      <statadd name="Healing Surges" value="+7" />
+      <select type="Build" number="1" Category="$$CLASS" optional="true" />
+      <statadd name="Reflex Defense Class Bonus" value="+1" />
+      <statadd name="Will Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_104" />
+    </rules>
+Bards are artists first and foremost, and they practice magic just as they practice song, drama, or poetry. They have a clear sense of how people perceive reality, so they master charm magic and some illusions. Sagas of great heroes are part of a bard's repertoire, and most bards follow the example of many fables and become skilled in a variety of fields. A bard's artistic ability, knowledge of lore, and arcane might are widely respected, particularly among the world's rulers.
+Art and magic share a sublime beauty, and, as a bard, you seek the place where the two meet. You might be a naturally talented wanderer who casts impressive spells almost instinctively, a student of a bardic college who learned ordered systems of magic and epic poetry, a warrior skald who mixes skill at arms with thundering music, a dashing performer known for putting on a good show even for your enemies, or a perfectionist who seeks the consummate formula that blends art and magic into a higher force.
+A steady rhythm beats in the back of your mind as you brandish your sword. Your eyes and ears pick up the motion of the villains that surround you, and one glance tells you everything you need to know to defeat them. You whistle three staccato notes, letting your allies know the symphony of battle is about to begin.
+   </RulesElement>
+
+   
+<!--Update to Bard Implements-->
+<RulesElement name="Bard Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD_IMPLEMENTS" source="Player's Handbook 2">
+      <specific name="_SupportsID"> ID_FMP_CLASS_104 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+		 <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" type="Proficiency" />
+      </rules>
+</RulesElement>
+
+
+  <!--Bard Powers, Dragon #396 -->
+  <RulesElement name="Rally the Spectral Host" type="Power" internal-id="ID_FMP_POWER_13789" source="Dragon Magazine 396" revision-date="8/27/2010 11:28:59 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> An aggressive strike calls forth the spirits of fallen warriors to stand at your side. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bard Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Aura, Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 2[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> You activate an aura 2 that lasts until the end of your next turn. While in the aura, any ally gains a +1 power bonus to attack rolls and a +2 power bonus to damage rolls. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Wrath of Wolfstone" type="Power" internal-id="ID_FMP_POWER_13790" source="Dragon Magazine 396" revision-date="8/27/2010 11:28:59 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You conjure the spirit of a Wolfstone berserker and use arcane magic to focus its wild fury against your foes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bard Attack 7 </specific>
+    <specific name="Keywords"> Arcane, Cold, Conjuration, Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee or ranged weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. Reflex </specific>
+    <specific name="Hit"> 2[W] + Charisma modifier cold damage. </specific>
+    <specific name="Effect"> You conjure the spirit of a Wolfstone berserker in an unoccupied square adjacent to the target. The conjuration lasts until the end of your next turn or until you dismiss it as a free action. Any enemy that ends its turn adjacent to the berserker takes 5 cold damage, and you can slide the enemy 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Spectral Vanguard" type="Power" internal-id="ID_FMP_POWER_13791" source="Dragon Magazine 396" revision-date="8/27/2010 11:28:59 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> As you swing your blade, you shout lines from an ancient saga, summoning forth its heroes to lend their aid. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bard Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Aura, Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 3[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> You activate an aura 3 that lasts until the end of your next turn. While in the aura, you and your allies have a +2 power bonus to all defenses. In addition, whenever any enemy ends its turn in the aura, you can slide it up to 2 squares. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="White Wolves" type="Power" internal-id="ID_FMP_POWER_13792" source="Dragon Magazine 396" revision-date="8/27/2010 11:28:59 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You lament the lives lost to the white wolves. So stirring is your song that it draws the howling pack from the spirit world. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bard Attack 23 </specific>
+    <specific name="Keywords"> Arcane, Cold, Zone, Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 5 </specific>
+    <specific name="Target"> Each enemy in blast </specific>
+    <specific name="Attack"> Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 2[W] + Charisma modifier cold damage and the target falls prone. </specific>
+    <specific name="Effect"> The blast creates a zone that lasts until the end of your next turn. Any enemy that ends its turn in the zone takes 5 cold damage, and it is immobilized until the end of its next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  
+
+
+<!-- Heroes of the Feywild --> 
+<!-- Skald Sub-Class -->  
+<RulesElement name="Skald" type="Class" internal-id="ID_FMP_CLASS_907" source="Heroes of the Feywild">
+      <Flavor> "The clash of blades, a note. 
+A battle fought, a verse.
+The hero's war, a song." </Flavor>
+      <specific name="Key Abilities"> Charisma, Intelligence </specific>
+      <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail; light shield </specific>
+      <specific name="Weapon Proficiencies"> Simple melee, simple ranged, military ranged, longsword, scimitar, short sword </specific>
+			<specific name="Implements"> Wand. Note: Songblades and some magic musical instruments can be used as implements for bard powers and bard paragon path powers. Bards treasure these magic musical instruments not only for the power they offer, but for the wondrous melodies they produce in the hands of a skilled musician. </specific>
+      <specific name="Bonus to Defense"> +1 Reflex, +1 Will </specific>
+      <specific name="Hit Points at 1st Level"> 12 + Constitution Score </specific>
+      <specific name="Hit Points per Level Gained"> 5 </specific>
+      <specific name="Healing Surges"> 7 + Constitution Modifier </specific>
+      <specific name="Trained Skills"> Arcana. From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+      <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Diplomacy (Cha), Dungeoneering (Wis), Heal (Wis), History (Int), Insight (Wis), Intimidate (Cha), Nature (Wis), Perception (Wis), Religion (Int), Streetwise (Cha) </specific>
+      <specific name="Build Options"/>
+      <specific name="_PARSED_CLASS_FEATURE"> Deceptive Duelist, Master of Story and Song, Skald's Aura, Skill Versatility, Song of Rest, Words of Friendship </specific>
+      <specific name="Role"> Leader. Your spells inspire and invigorate your allies. Your spells also include significant control elements, making controller a natural secondary role. </specific>
+      <specific name="Power Source"> Arcane and Martial. You combine a strong tradition of martial training and expertise with arcane tricks that you pick up along the way. </specific>
+      <specific name="Creating"> To create a skald, use the character creation rules in the Rules Compendium or the Player's Handbook. The Character Advancement table (page 160) summarizes how many powers and feats your skald should have at each level, as well as when ability scores increase.
+A skald lacks several of the bard class features from Player's Handbook 2: Bardic Training, Bardic
+Virtue, majestic word, and Multiclass Versatility. A skald gains new class features: Deceptive Duelist, skald's aura, and Master of Story and Song. </specific>
+      <specific name="Class Features"/>	  
+	  <specific name="Skald Powers"> You can choose Bard powers when choosing or retraining class powers. </specific>
+      <specific name="Supplemental" />
+      <specific name="Powers"> Your powers are called spells, and you create them by gracefully mixing art, magic, and weapons skill. </specific>
+      <specific name="Power Name"> Spells </specific>
+      <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+      <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+      <specific name="_SecondaryPowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+      <specific name="_SecondaryPowerSourceElement" />
+      <specific name="Secondary Abilities" />
+      <specific name="Hybrid Talent Options" />
+      <specific name="Short Description"> You combine a strong tradition of martial training and expertise with arcane tricks that you pick up along the way. </specific>
+      <specific name="_ParentClass"> ID_FMP_CLASS_104 </specific>
+      <specific name="_DisplayName"> Bard (Skald) </specific>
+      <rules>
+         <grant name="ID_INTERNAL_GRANTS_SKALD" type="Grants" />
+         <select type="Power" number="2" Category="$$Class,at-will,1" />
+         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_104 (ID_FMP_CLASS_907)" />
+         <statadd name="_LEVEL-ONE-HPS" value="+12" />
+         <statadd name="_PER-LEVEL-HPS" value="+5" />
+         <statadd name="Healing Surges" value="+7" />
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+         <statadd name="Will Defense Class Bonus" value="+1" />
+         <select type="Skill Training" number="4" Category="ID_FMP_CLASS_104" />
+	  </rules>
+Those who live on the fringes of civilization, or who come from places where civilization is nothing like what the mortal races understand, rely on chroniclers and historians who maintain their history as oral tradition. These individuals, respected for their knowledge and insights, serve as the keepers of the heritage of their people. It is their responsibility to make sure that none forget the past. They are both observers and storytellers; what they see becomes the legends and tales passed on from one generation to the next. These historians are known as skalds.
+	A skald is no mere entertainer. Skalds are responsible for witnessing firsthand the great events of their time, committing those events to memory, and then passing on those tales. They learned all the tales of the previous generation as well, and theirs is a line of storytellers who pass on the entire history of their people. Skalds travel from one place to the next, acting as witnesses to the events of their time. Along the way they pick up new stories and bits of magic and other tricks that add to their mystique.
+	Among the people of the world and other realms who know of this bardic tradition, skalds are nearly sacred. They can move freely through enemy territory and are considered untouchable even during the most bitter of tribal feuds. In many ways, skalds are like holy leaders: All but the most honorless thugs hesitate to attack them, and they are revered  and respected for their role as masters of history. When a culture's entire history is contained within the tales told by a single person, that person is more than just a storyteller; he or she is the sum total of that history, and that of all its ancestors, given flesh.
+	In the Feywild, a skald is treated as a visiting dignitary, no matter where he or she comes from. From Cendriane to Mithrendain, even the most unmannered and barbaric skalds can find food, shelter, and respect throughout the lands of the eladrin. The Summer Queen herself would not refuse an audience with a skald, though most skalds know better than to bother powerful fey lords and ladies with trifling matters in such sessions. The status of a skald is perhaps even more elevated in the Feywild than it is in the mortal world, so that few in the  fey realm would risk being savaged in the stories of a skald, their names blackened for the rest of history because of an offense they committed against a storyteller.
+</RulesElement>
+
+<RulesElement name="Skald" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD" source="Heroes of the Feywild">
+	<specific name="_SupportsID"> ID_FMP_CLASS_907 </specific>
+	<rules>
+		<grant name="ID_INTERNAL_COUNTSASCLASS_BARD" type="CountsAsClass" />
+		<grant name="ID_FMP_ROLE_2" type="Role" />
+		<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+		<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency" />
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
+		<grant name="ID_INTERNAL_GRANTS_SKALD_IMPLEMENTS" type="Grants" />
+		<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+		<grant name="ID_INTERNAL_NO_LV15_DAILY_POWER" type="Internal"/>
+		<grant name="ID_INTERNAL_NO_LV19_DAILY_POWER" type="Internal"/>
+		<grant name="ID_INTERNAL_NO_LV25_DAILY_POWER" type="Internal"/>
+		<grant name="ID_INTERNAL_NO_LV29_DAILY_POWER" type="Internal"/>
+		<grant name="ID_FMP_CLASS_FEATURE_698" type="Class Feature" />
+		<grant name="ID_FMP_CLASS_FEATURE_699" type="Class Feature" />
+		<grant name="ID_FMP_CLASS_FEATURE_1120" type="Class Feature" />		 
+		<grant name="ID_FMP_CLASS_FEATURE_4135" type="Class Feature" />	
+		<grant name="ID_FMP_CLASS_FEATURE_4136" type="Class Feature" />	
+		<grant name="ID_FMP_CLASS_FEATURE_4137" type="Class Feature" />		 
+		<grant name="ID_FMP_CLASS_FEATURE_SKALD_LVL5" type="Class Feature" Level="5-8" />		 
+		<grant name="ID_FMP_CLASS_FEATURE_SKALD_LVL9" type="Class Feature" Level="9" />		 
+	</rules>
+</RulesElement>
+
+<RulesElement name="Skald Lvl 5 Daily Explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_SKALD_LVL5" source="Heroes of the Feywild">
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<modify name="Master of Story and Song" type="Class Feature" Field="_CS_ShortDescription" value="Can use only two bard daily attack powers per day, and only one of a given level." />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Skald Lvl 9 Daily Explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_SKALD_LVL9" source="Heroes of the Feywild">
+	<specific name="_CS_ShortDescription"> @ </specific>
+	<rules>
+		<modify name="Master of Story and Song" type="Class Feature" Field="_CS_ShortDescription" value="Can use only three bard daily attack powers per day, and only one of a given level." />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Skald" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_SKALD" source="Heroes of the Feywild">
+    <specific name="_SupportsID"> ID_FMP_CLASS_907 </specific>
+You count as a skald for meeting prerequisites.
+</RulesElement>
+
+
+<!--Update to Skald Implements-->
+<RulesElement name="Skald Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD_IMPLEMENTS" source="Heroes of the Feywild">
+    <specific name="_SupportsID"> ID_FMP_CLASS_907 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" type="Proficiency" />
+		</rules>
+</RulesElement>
+
+<RulesElement name="Deceptive Duelist" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4135" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+	  <Flavor> A skald depends not on speed of sword or strength of arm, but on the natural ability to read enemies and trick them into making themselves vulnerable. You know how to use your cunning in combat to make your enemy all but fall onto your blade or in some other way open itself up to your attack. </Flavor>
+      <specific name="Short Description"> Use Cha instead of Str for melee basic attacks with one-handed weapons. </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_PARSED_SUB_FEATURES"/>
+	  <specific name="_DisplayPowers"/>
+		<rules>
+			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Strength or Charisma vs. AC" />
+			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Strength or Charisma modifier damage. Increase damage to 2[W] + Strength or Charisma modifier damage at 21st level." />
+			<textstring name="melee basic:key ability" value="Strength,Charisma" />
+		</rules>
+When you make a melee basic attack with a one-handed weapon, you can use Charisma instead of Strength for the attack roll and the damage roll.
+</RulesElement>
+
+<RulesElement name="Skald's Aura" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4136" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+	  <Flavor> When danger strikes, often the only thing standing between your allies and their defeat is their morale. Your ability  to inspire your allies gives them (and you) the energy to fight on. </Flavor>
+      <specific name="Short Description"> You gain the Skald's Aura power. </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="Powers"> ID_FMP_POWER_15849 </specific>
+	  <specific name="Type"> Utility </specific>
+      <specific name="Class"> ID_FMP_CLASS_104 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_15849 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_15849" type="Power" />
+      </rules>
+You gain the Skald's Aura power.
+</RulesElement>
+
+<RulesElement name="Skald's Aura" type="Power" internal-id="ID_FMP_POWER_15849" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_FEATURE_4136,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+		<Prereqs> Skald </Prereqs>
+		<Flavor> You chant, sing, or otherwise inspire your allies with your words, allowing them to draw the strength to battle on from your encouragement. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Bard Utility </specific>
+		<specific name="Keywords"> Aura, Healing, Martial </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> You activate an aura 5 that lasts until the end of the encounter. If the aura ends prematurely for any reason, you can reactivate it during the encounter as a minor action. Twice per encounter but only once per turn, you or any ally in the aura can use a minor action to spend a healing surge and regain 1 d6 additional hit points. Alternatively, you or any ally can use a minor action to allow an adjacent ally to spend a healing surge and regain the additional hit points.
+level 6: 2d6 additional hit points.
+level 11: 3d6 additional hit points.
+Level 16: 4d6 additional hit points, and the healing can be used three times per encounter.
+Level 21: Sd6 additional hit points, and the healing can be used three times per encounter.
+Level 26: 6d6 additional hit points, and the healing can be used three times per encounter. </specific>    
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4136 </specific>
+		<specific name="Level"> 1 </specific>
+</RulesElement>
+
+<RulesElement name="Master of Story and Song" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4137" source="Heroes of the Feywild">
+      <Category> 1 </Category>
+	  <Flavor> The skald's greatest ability is his or her mastery of song and tale. When the situation is most dire, the skald can recall stories and ballads that provide great hope or inspire the strongest zeal. The skald's memory for such art is legendary, and it rarely fails. </Flavor>
+      <specific name="Short Description"> Gain additional 1st level bard daily attack power and gain daily attack powers at levels 15 + without replacing, however you are limited to using these power a number of times per day as a standard character of your level. </specific>
+      <specific name="Level"> 1 </specific>
+	  <specific name="_CS_ShortDescription"> Can use no more than one bard daily attack power per day. </specific>
+	  <specific name="_PARSED_SUB_FEATURES"/>
+	  <specific name="_DisplayPowers"/>
+      <rules>
+         <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,1" />
+		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,15" Level="15"/>
+		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,19" Level="19"/>
+		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,25" Level="25"/>
+		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,29" Level="29"/>
+      </rules>
+You gain two 1st-level bard daily attack powers of your choice, but each day you can use only one bard daily attack power.
+	When you gain a bard daily attack power at 5th level, you can use two bard daily attack powers per day, but no more than one of a particular level. Similarly, after you gain a bard daily attack power at 9th level, you can use three bard daily attack powers per day, but still no more than one of a particular level.
+	At level 15, 19, 25, and 29, you gain a bard daily attack power of your level or lower without having to replace a power, but the number that you can use per day remains at three.
+</RulesElement>
+
+  <RulesElement name="Bolstering Speech" type="Power" internal-id="ID_FMP_POWER_14447" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> You offer up a story that inspires and reinforces the morale of your allies, urging them to fight past their pain. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter or until you use another bard at-will attack power, your skald's aura gains the following effect: Each time you hit an enemy with a basic attack, one of your allies in the aura gains temporary hit points equal to your Charisma modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Though some would scoff at the thought of a few mere words affecting the outcome of a battle, just as many would say that a brief bit of inspiration can turn the tide, even in the middle of combat. Many military leaders hire bards as standard bearers or drummers for their armies, counting on the bards to provide words of encouragement at just the right moment.
+</RulesElement>
+  <RulesElement name="Song of Savagery" type="Power" internal-id="ID_FMP_POWER_14448" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> You sing a song that imparts a tale of violence and savagery, getting your allies' blood up and driving them into a frenzy. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter or until you use another bard at-will attack power, your skald's aura gains the following effect: Each time you hit an enemy with a basic attack, one of your allies in the aura gains a +4 power bonus to his or her next damage roll before the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Among many barbaric tribes, songs of victory are laced with the most violent and brutal descriptions of battle. The bards of these tribes say that it is the viciousness of the lyrics that keep battle in the minds of their tribe's warriors at all times, and that when those songs are chanted on the battlefield, they drive the warriors into a frenzy.
+</RulesElement>
+  <RulesElement name="Song of Serendipity" type="Power" internal-id="ID_FMP_POWER_14449" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> You sing a song that tells of serendipitous events, giving your allies a keen eye for openings in your enemies' defenses. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter or until you use another bard at-will attack power, your skald's aura gains the following effect: Each time you hit an enemy with a basic attack, one of your allies in the aura gains a +2 power bonus to his or her next attack roll before the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Luck and fate are two concepts that find their way into almost every song and tale about the Feywild, for the fey races seem to be masters at bending chance to their will. Bards who sing about these events often find that their allies are suddenly overcome by a streak of good luck themselves. Some believe that it is enough to sing of the fey in order to steal their luck, but most bards believe it is simply the ally making his or her own good fortune.
+</RulesElement>
+  <RulesElement name="Words of Gravity" type="Power" internal-id="ID_FMP_POWER_14450" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> You tell a story full of danger and violence, urging your allies into a defensive mind-set. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter or until you use another bard at-will attack power, your skald's aura gains the following effect: Each time you hit an enemy with a basic attack, one of your allies in the aura gains a +2 power bonus to all defenses until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Stories about the perils of the world are among the most common stories told by bards about the Feywild. Though most children eventually grow too old for such tales, there are some stories even adults know better than to ignore. These stories, told in the heat of combat, can focus the mind and keep allies from falling prey to attacks.
+</RulesElement>
+  <RulesElement name="Lesser Dimensional Step" type="Power" internal-id="ID_FMP_POWER_14451" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_NO_ACTION,1 </Category>
+    <Flavor> As your weapon strikes, you and one of your allies vanish from one spot and appear in another, confusing your opponent. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Teleportation </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Trigger"> You hit an enemy within 5 squares of you with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The attack deals 1[W] extra damage to the enemy you hit, and you and one ally in the burst can teleport to a square adjacent to that enemy. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Many creatures of the Feywild, such as eladrin, can teleport short distances. You've learned the secret of these teleporting creatures, and you can use it to put yourself and an ally within striking distance of a foe.
+</RulesElement>
+  <RulesElement name="Lesser Flash of Distraction" type="Power" internal-id="ID_FMP_POWER_14452" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_NO_ACTION,1 </Category>
+    <Flavor> A sudden burst of light and a blast of noise leaves your foe momentarily disoriented. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special  </specific>
+    <specific name="Trigger"> You hit an enemy with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The enemy you hit is dazed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Malicious fey often use distraction and misdirection to cause a mortal to drop his guard for a moment. After experiencing such an event firsthand, you learned the trick of creating small flashes of light that can temporarily dazzle your enemies.
+</RulesElement>
+  <RulesElement name="Lesser Ringing Weapon" type="Power" internal-id="ID_FMP_POWER_14453" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_NO_ACTION,1 </Category>
+    <Flavor> You drive your weapon into an enemy and then channel a spell through it, causing it to ring like a tuning fork and draw the attention of others. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Thunder </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special  </specific>
+    <specific name="Trigger"> You hit an enemy with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The enemy you hit takes 5 thunder damage. Until the end of your next turn, that enemy grants combat advantage and cannot benefit from partial concealment. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Some of the most dangerous magical predators use invisibility or natural camouflage to stalk their prey. In order to protect yourself from such creatures, you have developed a trick that uses your weapon's strike to create a loud noise that makes it easy to locate the predator.
+</RulesElement>
+  <RulesElement name="Cautionary Tale" type="Power" internal-id="ID_FMP_POWER_14454" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> Your warning inspires your allies to be vigilant against danger from all sides. Your comrades exercise caution, waiting until one of them can strike with greatest effect. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Allies in the aura do not grant combat advantage while flanked. In addition, once before the end of the encounter, one of your allies in the aura can deal 2d10 extra damage on any one attack that hits an enemy. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+One of the most common kinds of stories you pick up in your travels is the cautionary tale, one that provides some warning to the unwary. Though most commonly told to children, you know a number of such tales that can inspire even the most hardened soldier to tread lightly in the face of an enemy.
+</RulesElement>
+  <RulesElement name="Dirge of the Damned" type="Power" internal-id="ID_FMP_POWER_14455" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> You begin chanting a dirge that makes every strike from your allies cut just that much deeper into your doomed enemies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Allies in the aura gain a +2 power bonus to damage rolls, or a +4 power bonus to damage rolls against bloodied enemies. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Among the litany of songs you know, some can only be called funeral dirges. These songs or chants sound much like those sung for fallen allies, but instead hold woeful portents for your enemies.
+</RulesElement>
+  <RulesElement name="Disruptive Words" type="Power" internal-id="ID_FMP_POWER_14456" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
+    <Flavor> You call out to your enemies with words that distract and confuse them, drawing their attention away at a critical moment and opening them up to your allies' attacks. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Enemies in the aura grant combat advantage. Once before the end of the encounter, when an enemy in the aura takes damage from any source, you can choose for that enemy to be dazed (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Tricky fey creatures such as satyrs and gnomes tell stories designed to mock their enemies. These tales tend to drive enemies who hear them to distraction; merely the tone of your voice can be enough to cause your enemies to let their guard down.
+</RulesElement>
+  <RulesElement name="Bardic Lore" type="Power" internal-id="ID_FMP_POWER_14457" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Using your magic to sharpen your memory, you recall an important piece of information that you picked up in a story or a song you heard in your travels. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 2 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You use Arcana, Dungeoneering, History, Nature, or Religion to make a knowledge check, but instead of rolling a d20, resolve the check as if you had rolled a 20. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Through your travels as well as your knack for collecting stories, you have collected a large amount of general knowledge on subjects both common and esoteric. You can recall useful bits of information, gleaned from people you have met or other bards with whom you have exchanged stories.
+</RulesElement>
+  <RulesElement name="Chilled Blade" type="Power" internal-id="ID_FMP_POWER_14458" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_MINOR_ACTION,3 </Category>
+    <Flavor> Frost forms along the edge of the weapon as you lay your hand on it, a fine mist falling off it toward the ground. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Cold </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One weapon </specific>
+    <specific name="Effect"> The next weapon attack made with the target weapon before the end of your next turn slows the attack's first target until the end of its next turn. On a hit, that target also takes 1d10 extra cold damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Satyr bards claim that the original enchantments for making weapons that exude an unnatural cold were forged by the Prince of Frost deep within the Fortress of Frozen Tears. Whatever the truth, those satyrs-or someone like them-taught you how to turn a weapon as cold as ice.
+</RulesElement>
+  <RulesElement name="Echoing Weapon" type="Power" internal-id="ID_FMP_POWER_14459" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MINOR_ACTION,3 </Category>
+    <Flavor> You place your hand on the weapon, and it begins to rumble quietly, as though a booming thunderhead is contained within. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Thunder </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One weapon </specific>
+    <specific name="Effect"> Until the end of your next turn, the next weapon attack made with the target weapon deals 2d6 thunder damage to one target of the attack, regardless of whether the attack hits or misses. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You developed this enchantment to impart your strikes with more noise, allowing you to intimidate your opponents by having your attacks echo with the crash of thunder.
+</RulesElement>
+  <RulesElement name="Seek Weakness" type="Power" internal-id="ID_FMP_POWER_14460" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,3 </Category>
+    <Flavor> The weapon you enchant quivers under your fingertips as though eager to strike. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 3 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One weapon </specific>
+    <specific name="Effect"> Until the end of your next turn, weapon attacks made with the target weapon have combat advantage and gain a +2 power bonus to damage rolls. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Some bards claim to have come across weapons imbued with such great magic that they develop minds of their own. You know magic that allows you to imbue a weapon with the desire to seek out the weak spots in an enemy and plunge into them.
+</RulesElement>
+  <RulesElement name="Haunting Tune" type="Power" internal-id="ID_FMP_POWER_14461" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_MINOR_ACTION,5 </Category>
+    <Flavor> You chant a haunting dirge that seems to reach right into your enemies' psyches, leaving them shaken. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 5 </specific>
+    <specific name="Keywords"> Arcane, Fear, Psychic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Enemies that end their turns in the aura take 3 psychic damage. This damage cannot drop an enemy below 1 hit point. If the damage would normally drop an enemy below 1 hit point, that enemy must immediately move up to its speed as a free action if it can, ending the move as far from you as possible. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You have mastered songs so beautiful that they touch the soul. When you sing one of these haunting tunes, it can affect even the most hardened hearts with its beauty, sapping your foes' willingness to continue fighting.
+</RulesElement>
+  <RulesElement name="Scathing Rebuke" type="Power" internal-id="ID_FMP_POWER_14462" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_MINOR_ACTION,5 </Category>
+    <Flavor> You keep a barbed tongue handy for your enemies, offering them no quarter with your disparaging words. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 5 </specific>
+    <specific name="Keywords"> Arcane, Fear </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Any enemy in the aura whose Will is equal to or lower than 12 + your level cannot attack you, unless that enemy is marked by you or in your defender's aura. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+In your arsenal of stories and legends are a few designed to rebuke those who would do you harm. When you recite one of these tales, your enemies think twice before laying a hand on you.
+</RulesElement>
+  <RulesElement name="Song of Hope" type="Power" internal-id="ID_FMP_POWER_14463" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,5 </Category>
+    <Flavor> You sing a song that inspires your allies, giving them the confidence to triumph. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 5 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Your allies in the aura gain a +2 power bonus to skill checks. Once before the end of the encounter, when one of your allies makes an attack roll, as a free action you can choose to have that ally roll twice for the attack and use either result. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You have mastered several heroic ballads, stories of survival and success despite long odds. When you sing one of these songs, your allies' minds are filled with visions of victory and the will to succeed despite any disadvantages they face.
+</RulesElement>
+  <RulesElement name="Reactive Wards" type="Power" internal-id="ID_FMP_POWER_14464" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You quickly inscribe a runic shape into the air, a ward against further harm, and then cast it on one of your allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Utility 6 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target makes a saving throw against an effect that a save can end, with a +2 power bonus to the saving throw. If the saving throw fails, the target gains temporary hit points equal to your Charisma modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Eladrin masters of warding magic long ago developed protections to combat harmful magic already affecting a victim. You've learned some of these wards and can cast them to help an ally shake off a malicious effect.
+</RulesElement>
+  <RulesElement name="Revitalizing Incantation" type="Power" internal-id="ID_FMP_POWER_14465" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You whisper a few phrases in a secret language, urging your ally's body to mend itself. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Utility 6 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target can spend a healing surge. Additionally, the target gains temporary hit points equal to his or her healing surge value. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+A spell derived from ancient satyr songs of merriment, this incantation revitalizes a wounded ally. Bards learn this spell to heal allies who are unconscious or cannot hear their inspiring words and songs.
+</RulesElement>
+  <RulesElement name="Alter Fate" type="Power" internal-id="ID_FMP_POWER_14466" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,7 </Category>
+    <Flavor> You curl your hand in a twisting motion, and a strike that might have been a glancing blow becomes a grievous hit. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 7 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An enemy within 10 squares of you is hit by your ally's attack. </specific>
+    <specific name="Target"> The triggering enemy </specific>
+    <specific name="Effect"> The target takes 1d12 extra damage from the attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Sometimes great change can be wrought by a matter of mere inches. Instead of deflecting off the enemy's helm, your ally's arrow punches through an eye slit, dropping the foe. You can bend fate so that your allies' attacks always seem to find just the right spot.
+</RulesElement>
+  <RulesElement name="Prescient Warning" type="Power" internal-id="ID_FMP_POWER_14467" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,7 </Category>
+    <Flavor> You utter words of warning that fly upstream through the river of time, warning your ally of danger. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 7 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally within 10 squares of you is hit by an enemy's attack. </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The target can make a basic attack against the attacking enemy as a free action, dealing 1d8 extra damage on a hit. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+This magical technique allows you to send a short message backward in time, warning one of your allies of an imminent attack. The message arrives just in time to allow a first strike, perhaps stopping the enemy from attacking in the first place.
+</RulesElement>
+  <RulesElement name="Urge to Victory" type="Power" internal-id="ID_FMP_POWER_14468" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,7 </Category>
+    <Flavor> You cast a spell of haste and direction on one of your allies, allowing your friend to strike when it seemed as though he or she could not. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 7 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally within 10 squares of you ends his or her turn without having made an attack. </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The target can either make a basic attack or charge an enemy as a free action, even if the target is dominated or stunned. If the attack hits, it deals 1d10 extra damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Sometimes, the forces of fortune seem to conspire to keep your allies on their heels. When one of your allies stumbles after being dazed by a blow to the head, or when an ally has to dash madly across the battlefield just to get into position, you can use this spell to give him or her a nudge in the right direction.
+</RulesElement>
+  <RulesElement name="Anthem of Aggression" type="Power" internal-id="ID_FMP_POWER_14469" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,9 </Category>
+    <Flavor> You sing a song that gets the hearts of your allies racing, sending them into battle with fervor. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 9 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: The first time each turn one of your allies in the aura misses with an at-will attack, that ally deals damage to the missed target equal to your Charisma modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Many songs passed down by warriors are meant to stoke the fires of battle within their veins. You've spent time studying these battle songs and can replicate them to drive your allies to victory.
+</RulesElement>
+  <RulesElement name="Exposure of Weakness" type="Power" internal-id="ID_FMP_POWER_14470" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,9 </Category>
+    <Flavor> You tell a tale that reveals the gaps in your enemies' armor, exposing them for your allies to see. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 9 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Enemies in the aura gain vulnerable 2 to all damage dealt by your allies. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+A good tale can not only provide listeners with entertainment and lessons, it can expose the faults and foibles of the audience. By studying the reactions of an audience to certain tales, you can tell where a listener's vulnerabilities lie and then exploit them with further words.
+</RulesElement>
+  <RulesElement name="Enchantment Ward" type="Power" internal-id="ID_FMP_POWER_14471" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You place wards on an ally well in advance, allowing him or her to resist harmful effects before they can take hold. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 10 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The first time before an extended rest that the target is subjected to an effect that a save can end, the target can make a saving throw to end that effect, with a +3 power bonus to the saving throw. If the effect has the arcane, charm, fear, or illusion keywords, the bonus instead equals your Charisma modifier. </specific>
+    <specific name="Special"> If the target is still under the effect of this power when he or she is subjected to an effect that can normally be removed only by the Remove Affliction ritual, that effect and this power both end. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You know spells that can prepare you and your allies for the dangers that you face, even warding you against harmful spells that might be cast your way.
+</RulesElement>
+  <RulesElement name="Project Vitality" type="Power" internal-id="ID_FMP_POWER_14472" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You allow your eyes to slip half-closed, then project both strength and health out to your allies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 10 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> You and each ally in the burst </specific>
+    <specific name="Effect"> Each target regains a number of hit points equal to your Charisma modifier. In addition, until the start of your next turn, the healing benefit of your skald's aura can be used as a free action instead of as a minor action (it can still be used only once per turn). </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+When the situation is dire, this spell enables you to exude your own vitality so that your allies can benefit from it. It effectively broadcasts magical healing on the strength of your own willpower, and it can bring your allies back from the brink of death.
+</RulesElement>
+  <RulesElement name="Dimensional Step" type="Power" internal-id="ID_FMP_POWER_14473" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_NO_ACTION,13 </Category>
+    <Flavor> You warp the fabric of the world around you, transporting you and your ally instantaneously into positions from which your comrade can strike. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 13 </specific>
+    <specific name="Keywords"> Arcane, Teleportation </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Trigger"> You hit an enemy within 5 squares of you with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The attack deals 1[W] extra damage to the enemy you hit, and you and one ally in the burst can teleport to squares adjacent to that enemy. The ally can then make a basic attack against the enemy as a free action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+What was once stolen knowledge-the secret of teleportation magic-has now become a full-fledged weapon in your repertoire. As you learn more about the subtleties of teleportation, you unlock new secrets about its nature. Just like powerful eladrin warriors, you can use your ability to teleport to let one of your allies make a devastating attack.
+</RulesElement>
+  <RulesElement name="Flash of Distraction" type="Power" internal-id="ID_FMP_POWER_14474" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_NO_ACTION,13 </Category>
+    <Flavor> You create a burst of image and sound that startles your opponent and leaves the distracting visage lingering in its mind for a short time. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 13 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special  </specific>
+    <specific name="Trigger"> You hit an enemy with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The enemy you hit is dazed and takes a -2 penalty to attack rolls until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Small distractions and arcane tricks once served you well; now a greater degree of mastery over such magic enables you to more deeply confuse your enemies' minds. Images and sounds form the basis of the distracting flash you place before your enemy, but there is also a pattern underneath it that lingers in your enemy's mind and makes it hard for the foe to focus on you.
+</RulesElement>
+  <RulesElement name="Ringing Weapon" type="Power" internal-id="ID_FMP_POWER_14475" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_NO_ACTION,13 </Category>
+    <Flavor> A surge of sound rings out across the battlefield as you strike, making it impossible for your enemy to hide its presence. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 13 </specific>
+    <specific name="Keywords"> Arcane, Thunder </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special  </specific>
+    <specific name="Trigger"> You hit an enemy with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The enemy you hit takes 10 thunder damage, and until the end of your next turn, that enemy grants combat advantage and cannot benefit from partial concealment. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+When you channel magic through a weapon you wield, you can strengthen the sound it makes to create painful vibrations that inflict harm on your enemy while keeping it from slinking away.
+</RulesElement>
+  <RulesElement name="Directed Aggression" type="Power" internal-id="ID_FMP_POWER_14476" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,15 </Category>
+    <Flavor> You twist a common tale to make it so that your ally knows where to attack, while your enemy has no idea what is coming. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 15 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Once before the end of the encounter, when you or an ally in the aura hits an enemy with an attack, that character can deal 3d10 extra damage to the enemy with that attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Sometimes when you tell a story, you alter it in such a way that it has more immediate meaning. Whether you change the names or embellish on the details, you can use a story to communicate information relevant to the current situation-inspiring one of your allies to strike where you intend, without tipping off your enemies to your tactics.
+</RulesElement>
+  <RulesElement name="Song of Solidarity" type="Power" internal-id="ID_FMP_POWER_14477" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,15 </Category>
+    <Flavor> Your words ring out over the battlefield, urging your allies to come to one another's defense. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 15 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: When an enemy uses a melee attack power against an ally of yours in the aura, that enemy provokes opportunity attacks from any of your allies who are in the aura but not targeted by that attack power. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Many great ballads tell tales of stalwart companions standing side by side in the face of danger. When you perform one of these ballads, it inspires your allies to mimic the heroes of the song, supporting one another when lesser warriors would be tempted to run.
+</RulesElement>
+  <RulesElement name="Dramatic Intercession" type="Power" internal-id="ID_FMP_POWER_14478" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,16 </Category>
+    <Flavor> At the last second, you create a shield made of fey magic that appears between your ally and danger, giving the ally a moment to recover and keep fighting. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 16 </specific>
+    <specific name="Keywords"> Arcane, Healing </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally within 10 squares of you drops below 1 hit point. </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The ally instead has 1 hit point and can spend a healing surge, regaining additional hit points equal to 10 + your Intelligence modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Like fey creatures themselves, fey magic is often described as nimble by its admirers, or slippery by those who have been on the receiving end of it. You've learned to quickly interpose a spell between your allies and certain death, intervening in the nick of time.
+</RulesElement>
+  <RulesElement name="Fearless Example" type="Power" internal-id="ID_FMP_POWER_14479" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> You project a surge of courage into the minds of your allies, allowing them to push through and keep fighting. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 16 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> You and each ally in the burst </specific>
+    <specific name="Effect"> All fear effects end on each target. In addition, each target can make a saving throw against each effect that a save can end. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Though fear can blind even the most courageous hero from time to time, you know ways to break through the fear and inspire your allies to keep fighting. You can use this spell to project  earlessness into the minds of your allies, not only protecting them against fear but also helping them shake off other lingering maladies.
+</RulesElement>
+  <RulesElement name="Greater Chilled Blade" type="Power" internal-id="ID_FMP_POWER_14480" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_MINOR_ACTION,17 </Category>
+    <Flavor> You touch a weapon and lay your enchantment upon it, sheathing the weapon in a thin layer of jagged ice. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Cold </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One weapon </specific>
+    <specific name="Effect"> The next weapon attack made with the target weapon before the end of your next turn slows the attack's first target until the end of its next turn. On a hit, that target also takes 2d10 extra cold damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+The magic used to create a greater chilled blade spell, as well as its lesser versions, is said to draw power from the Prince of Frost's domain. When you cast this spell, you widen that connection, allowing through it a cold infused with the arcane power of the Feywild, a cold so deep that it can make living flesh brittle.
+</RulesElement>
+  <RulesElement name="Greater Echoing Weapon" type="Power" internal-id="ID_FMP_POWER_14481" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MINOR_ACTION,17 </Category>
+    <Flavor> Your touch causes vibrations to shoot from one end of the weapon to the other, filling the air with a low rumble. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Thunder </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One weapon </specific>
+    <specific name="Effect"> Until the end of your next turn, the next weapon attack made with the target weapon deals 3d6 thunder damage to one target of the attack, whether the attack hits or misses. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Your skill with the lesser version of this spell has improved, and
+the rumbling thunder you can place on a weapon now sounds  ore like the coming of a storm that threatens to wipe entire villages off the map.
+</RulesElement>
+  <RulesElement name="Greater Seek Weakness" type="Power" internal-id="ID_FMP_POWER_14482" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,17 </Category>
+    <Flavor> After you place your hand upon a weapon and enchant it, the weapon seems to point to your enemy's weak spots. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 17 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One weapon </specific>
+    <specific name="Effect"> Until the end of your next turn, weapon attacks made with the target weapon have combat advantage and gain a +4 power bonus to damage rolls. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You have honed your ability to create spells that seek out your
+enemies, and now your enchantments have been fine-tuned to the point of deadliness. Since your temporary enchantment lasts longer than many others of its kind, you or an ally capable of making multiple strikes quickly can take advantage of it repeatedly before the magic fades.
+</RulesElement>
+  <RulesElement name="Fable of Focus" type="Power" internal-id="ID_FMP_POWER_14483" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,19 </Category>
+    <Flavor> You weave a tale that forces your allies to concentrate on the task before them, ensuring that every attack counts. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 19 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: You and each ally in the aura can reroll any result of 1 or 2 on any damage die, keeping the second result for each die rolled. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You have learned several stories that tell of great concentration leading to great success. Likewise, you have mastered the art of telling one of these tales in such a way that, for your allies, your words fade away into background noise, drowning out other distractions and leaving your allies in a state of intensity.
+</RulesElement>
+  <RulesElement name="Song of Flagging Strength" type="Power" internal-id="ID_FMP_POWER_14484" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_MINOR_ACTION,19 </Category>
+    <Flavor> Your song seems to sap the spirit of your enemies, taking some of the zest of battle out of them. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 19 </specific>
+    <specific name="Keywords"> Arcane, Psychic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Twice before the end of the encounter, when you or one of your allies hits an enemy in the aura with an attack, that enemy is weakened and takes ongoing 10 psychic damage (save ends both). </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+While many of your songs are directed toward inspiring your allies, some are designed to demoralize your opponents and draw away their will to keep fighting. In fact, the right notes and words at the  right time can cause an enemy that has been struck to fight halfheartedly for a time as it reconsiders its dedication to the battle.
+</RulesElement>
+  <RulesElement name="Aura of Reverence" type="Power" internal-id="ID_FMP_POWER_14485" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> Enemies cringe before you, skulking away lest you turn your attention to them. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 22 </specific>
+    <specific name="Keywords"> Arcane, Fear </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Any bloodied enemy that starts its turn in the aura must use the first action of its turn to move out of the aura, if possible. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+You have seen the worst that the world has to offer, and you did not flinch. You carry with you the knowledge of a thousand tales and songs, and you are treated as an honored guest in the halls of greatest power. You can harness the confidence that this knowledge gives you and use it to project your assuredness, making your enemies back down.
+</RulesElement>
+  <RulesElement name="Words of Manipulation" type="Power" internal-id="ID_FMP_POWER_14486" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> You choose your words carefully, prompting one of your allies into action. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: As a standard action, you can choose one ally in the aura; that ally can then take a standard action as a free action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+In many cultures, when a bard talks, others listen. There is an art to manipulating one's voice to inspire fear, hope, joy, and even obedience-the last of which makes bards such effective leaders on the battlefield.
+</RulesElement>
+  <RulesElement name="True Alter Fate" type="Power" internal-id="ID_FMP_POWER_14487" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,23 </Category>
+    <Flavor> Your outstretched hands bend the fabric of reality, turning an unspectacular attack into a devastating hit. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 23 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An enemy within 10 squares of you is hit by your ally's attack. </specific>
+    <specific name="Target"> The triggering enemy </specific>
+    <specific name="Effect"> The target takes 3d12 extra damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Greater forces of fortune and fate know of your existence, and they favor you with gifts. Now, when all seems arrayed against you, you can call upon the supernatural forces that alter the patterns of fate and luck to benefit your allies' attacks, such that every hit might be a killing blow.
+</RulesElement>
+  <RulesElement name="True Prescient Warning" type="Power" internal-id="ID_FMP_POWER_14488" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,23 </Category>
+    <Flavor> A few quick words sail backward in time a few seconds, giving your ally timely insight. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 23 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally within 10 squares of you is hit by an enemy's attack. </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The target can make a basic attack against the attacking enemy as a free action, dealing 3d10 extra damage on a hit. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+While your other spells have improved thanks to your mastery over the magic that governs them, the effectiveness of this spell comes largely from your mastery of language. You choose the perfect combination of words to travel back through time, telling your ally exactly what he or she needs to know to avoid harm.
+</RulesElement>
+  <RulesElement name="True Urge to Victory" type="Power" internal-id="ID_FMP_POWER_14489" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,23 </Category>
+    <Flavor> You let no opportunity for triumph pass, using arcane power to urge an ally into making a quick and brutal attack. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 23 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally within 10 squares of you ends his or her turn without having attacked. </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The target can either make a basic attack or charge an enemy as a free action, even if the target is dominated or stunned. If the attack hits, it deals 3d10 extra damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+The enemy of any great bard is time; even the nigh-immortal fey races must grow old and fade some day. You have mastered
+the art of twisting time, giving you the ability to hasten your allies to victory even when they might not be in control of themselves for a moment.
+</RulesElement>
+  <RulesElement name="Chant of Devastation" type="Power" internal-id="ID_FMP_POWER_14490" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,25 </Category>
+    <Flavor> You chant a song that drives your allies to strike, and strike hard. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 25 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Once per round when you or an ally in the aura hits an enemy with an attack, that enemy takes ongoing 15 damage (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Often, the songs you sing require precise timing in order to inspire your allies in just the right way. You can weave a tune so perfectly that your allies are inspired to land devastating blows on your enemies.
+</RulesElement>
+  <RulesElement name="Zeal-Inspiring Tale" type="Power" internal-id="ID_FMP_POWER_14491" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,25 </Category>
+    <Flavor> You tell a tale that fills your allies with a zeal unmatched by the words of even the most skilled demagogue. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 25 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Each time one of your enemies in the aura misses one of your allies with a melee attack, that enemy provokes an opportunity attack from that ally. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Stories are meant to instill emotions in their listeners, and you know how to whip your listeners into a frenzy. You can tell stories that fill your allies with zeal, so that they seize any opening to strike at an enemy that shows any sign of weakness.
+</RulesElement>
+  <RulesElement name="Greater Dimensional Step" type="Power" internal-id="ID_FMP_POWER_14492" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_NO_ACTION,27 </Category>
+    <Flavor> You and an ally vanish from one place, appearing near an enemy in a flash. When your ally strikes, the momentum of the transport gives weight to the attack. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 27 </specific>
+    <specific name="Keywords"> Arcane, Teleportation </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Trigger"> You hit an enemy within 5 squares of you with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The attack deals 1[W] extra damage to the enemy you hit, and you and one ally in the burst can teleport to squares adjacent to that enemy. The ally can then make a basic attack against that enemy as a free action, dealing 1d10 extra damage if the attack hits. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Time and space bend themselves to your command, treating
+you with the respect that a king would give to a bard of your stature. When you bend reality and hurtle your ally toward an enemy, he or she arrives with such speed that the resulting attack can be devastating.
+</RulesElement>
+  <RulesElement name="Greater Flash of Distraction" type="Power" internal-id="ID_FMP_POWER_14493" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_NO_ACTION,27 </Category>
+    <Flavor> You create a dizzying array of images and sounds that scrambles your foe's senses. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 27 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special  </specific>
+    <specific name="Trigger"> You hit an enemy with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The enemy you hit is stunned until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Your ability to create a distraction no longer simply muddles the mind of a foe for a moment, it seizes that mind and paralyzes it. The patterns you choose when creating a greater flash of distraction seem to trigger something in all creatures that causes them to freeze for a moment, unable to clear their heads.
+</RulesElement>
+  <RulesElement name="Greater Ringing Weapon" type="Power" internal-id="ID_FMP_POWER_14494" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_NO_ACTION,27 </Category>
+    <Flavor> A great clap of thunder accompanies your strike, which seems to linger on your enemy, calling your allies' attention to your foe's position. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 27 </specific>
+    <specific name="Keywords"> Arcane, Thunder </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Special  </specific>
+    <specific name="Trigger"> You hit an enemy with a basic attack using a weapon. </specific>
+    <specific name="Effect"> The enemy you hit takes 15 thunder damage. Until the end of your next turn, that enemy grants combat advantage and cannot benefit from partial concealment. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+The thunder that rolls out of weapons you touch is no longer that
+of a dangerous gale; instead, your thunder is drawn from the depths of the Feywild, the vestiges of a great primeval maelstrom that lives only in stories and legends.
+</RulesElement>
+  <RulesElement name="Climactic Crescendo" type="Power" internal-id="ID_FMP_POWER_14495" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,29 </Category>
+    <Flavor> As your tale reaches its peak, so too does your ally's deadliness. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 29 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Once before the end of the encounter, when you or an ally in the aura hits an enemy with an attack, that character can turn that hit into an automatic critical hit against the enemy. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+The method of a bard's telling is as important as the tale itself, and you know better than any others how to craft a story that reaches its dramatic peak at the right moment. You can bring your tale to its climax at just the right time, inspiring one of your allies to deal a crippling blow to an enemy.
+</RulesElement>
+  <RulesElement name="Demoralizing Dirge" type="Power" internal-id="ID_FMP_POWER_14496" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_MINOR_ACTION,29 </Category>
+    <Flavor> You sing a sorrowful tune that demoralizes your enemies each time they are struck by your allies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Bard Attack 29 </specific>
+    <specific name="Keywords"> Arcane, Psychic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, your skald's aura gains the following effect: Each time one of your allies hits and damages an enemy that is in the aura, that enemy also takes ongoing psychic damage equal to your Charisma modifier (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_907 </specific>
+Some songs are so filled with depressing imagery that the listener
+cannot help becoming despondent upon hearing it. It is said that master bards have passed on the knowledge of the song sung by the Raven Queen to the dying, and they can use that song to literally exhaust their enemies with sorrow.
+</RulesElement>  
+
+<RulesElement name="Skald Dailies Explanation Level 5" type="Internal" internal-id="ID_INTERNAL_INTERNAL_SKALD_DAILIES_EXPLANATION_LEVEL_5" source="Heroes of the Feywild">
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4137 </specific>
+  
+You can use two bard daily attack powers per day.
+</RulesElement>
+
+<RulesElement name="Skald Dailies Explanation Level 9" type="Internal" internal-id="ID_INTERNAL_INTERNAL_SKALD_DAILIES_EXPLANATION_LEVEL_9" source="Heroes of the Feywild">
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4137 </specific>
+	
+You can use three bard daily attack powers per day.
+</RulesElement>
+
+
+
+
+
+<!-- Heroes of the Feywild -->
+<!-- Signs of Influence -->
+<RulesElement name="Signs of Influence" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4139" source="Heroes of the Feywild">
+    <Category> ID_INTERNAL_CATEGORY_UNKNOWN,ID_INTERNAL_INTERNAL_SIGNS_OF_INFLUENCE,1 </Category>
+    <Flavor> All bards wield some influence no matter where they go among civilized peoples. Even in hostile cities, you might be regarded with respect, however grudging. The Signs of Influence optional class feature represents the extent of a bard's influence in the world. 
+	If you and your DM agree, your bard gains access to certain qualities known as signs of influence. Each sign of influence provides an ability that the bard can use to gain some benefit in a civilized area. Most signs of influence provide benefits of little monetary value, but they can be a great boon or relief when a bard leads a bedraggled group of adventurers back into civilization after a harrowing adventure. </Flavor>
+    <specific name="Short Description"> Gain two Signs of Influence options at 1st level and additional options at 13th and 17th levels </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4140, ID_FMP_CLASS_FEATURE_4141, ID_FMP_CLASS_FEATURE_4142, ID_FMP_CLASS_FEATURE_4143, ID_FMP_CLASS_FEATURE_4144 </specific>
+	<rules>
+		<select type="Class Feature" number="2" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" />
+		<select type="Class Feature" number="1" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" Level="13" />
+		<select type="Class Feature" number="1" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" Level="17" />
+	</rules>	
+	
+At 1st level, your bard gains two Signs of Influence options of your choice. At 13th level and 17th level, you can choose an additional option.
+</RulesElement>
+  <RulesElement name="Attract Attendants" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4140" source="Heroes of the Feywild">
+    <Flavor> In any civilized area that reveres bards, there are always those who are eager to please, hoping to have themselves represented in the bard's tales. These seekers offer their services to the bard for a short while, allowing the bard to focus on important business while the attendants take care of menial tasks. </Flavor>
+    <specific name="Short Description"> Receive up to 3 servants when in communities that revere bards </specific>
+    <specific name="Level"> 1 </specific>
+Whenever you are in a village, town, or other civilized location that reveres bards, up to three servants will attend to your needs while in that location. These servants run errands for you, help you with physical tasks (such as moving chests of treasure or cleaning), and carry out any mundane task that a servant could reasonably be asked to perform.
+</RulesElement>
+  <RulesElement name="Demand Audience" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4141" source="Heroes of the Feywild">
+    <Flavor> Refusing an audience with a bard is tantamount to writing yourself into history as a villain of one sort or another. Bards can often gain entry into places that others would be turned away from, and even the most powerful rulers know better than to refuse a bard who requests a meeting. </Flavor>
+    <specific name="Short Description"> Receive an audience with ruling power of a community that reveres bards within 24 hours </specific>
+    <specific name="Level"> 1 </specific>
+Whenever you are in a village, town, or city that reveres bards, you can receive an audience with someone representing the ruling power within 24 hours, and you are guaranteed safe passage to that audience by the local authorities. You can use this ability no more than once a month in a particular settlement.
+</RulesElement>
+  <RulesElement name="Ritual Beneficiary" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4142" source="Heroes of the Feywild">
+    <Flavor> Though the bard is a master of many talents, sometimes you might have to call on someone who has greater knowledge in a certain field, especially in matters related to magic. When you have need of magical expertise, sages and magic users that respect your calling are eager to provide you with their services. </Flavor>
+    <specific name="Short Description"> Once per day you can have a ritual with component cost of 150 gp or less cast for free while in a community with a non-hostile ritual caster (cannot create permanent items) </specific>
+    <specific name="Level"> 1 </specific>
+Whenever you are in a village, a town, or some other civilized location where a person lives who is capable of casting rituals, once per day you can have any ritual cast for free if it normally has a component cost of 150 gp or lower, provided that the ritual caster is not hostile toward you. The ritual cannot be one that produces a permanent item.
+</RulesElement>
+  <RulesElement name="Travel in Style" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4143" source="Heroes of the Feywild">
+    <Flavor> Bards spend a lot of time on the road. They like to travel with a bit of style when possible, or at least with speed and comfort. Many consider it an honor to give or loan one's horses to a bard, and many a good word has been included in a bard's tale for a kindly stable master. </Flavor>
+    <specific name="Short Description"> Borrow up to 8 horses and a cart or carriage from a community; you cannot use this power again until they are returned or paid for </specific>
+    <specific name="Level"> 1 </specific>
+Whenever you are in a village, town, or other civilized location where horses, carts, and carriages can be obtained and where bards are revered, you can procure horses for you and up to seven of your allies, plus a single cart or carriage at no cost, from someone in that location. Before you can use this ability again, you must return the horses and cart or carriage, leave them at a predetermined location, or pay for them.
+	At the DM's discretion, you can obtain other modes of transportation of a similar value when available. For example, when visiting Cendriane, you might be able to obtain griffons to carry you to the city of Mithrendain, provided that the eladrin valued the use of griffons similar to that of horses and carts in the mortal world.
+</RulesElement>
+  <RulesElement name="Welcome Guest" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4144" source="Heroes of the Feywild">
+    <Flavor> Having a bard stay under one's roof is a great honor indeed. Innkeepers often compete vigorously for the opportunity to offer shelter and food to visiting bards, and the winner brags about having such a guest for weeks or months to come. </Flavor>
+    <specific name="Short Description"> Obtain room and board for yourself and up to 7 allies at inns where bards are revered </specific>
+    <specific name="Level"> 1 </specific>
+Whenever you are in a village, a town, or a city that has a public inn where bards are revered, you can use your influence (and perhaps the promise of a performance) to obtain meals and a comfortable room for you and up to seven of your allies for the duration of your stay in that location.
+</RulesElement>
+
+<AppendNodes name="Skald" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD" >
+	<rules>
+		<select type="Class Feature" category="ID_FMP_CLASS_FEATURE_4139" optional="true" />
+	</rules>
+</AppendNodes>
+
+<AppendNodes name="Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD" >
+	<rules>
+		<select type="Class Feature" category="ID_FMP_CLASS_FEATURE_4139" optional="true" />
+	</rules>
+</AppendNodes>
+<!-- DSH -->
+  <RulesElement name="Ballad of the Zombie King" type="Power" internal-id="ID_FMP_POWER_16509" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> The mere mention of the zombie king sends chills down the spine of even the most fearless. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Attack 3 </specific>
+    <specific name="Keywords"> Arcane, Fear, Implement, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 1d8 + Charisma modifier psychic damage, and the target takes a -2 penalty to attack rolls until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+Over the centuries, many folktales and stories have been passed down in Erelhei-Cinlu. One tells of the zombie king, a dreadful monster that lies in stasis somewhere near the Vault. The location of his resting place is unknown, but stories say that at some secret time, he will be unleashed upon the city. Behind him will be an immense sea of the dead—souls claimed in the many wars the city has endured. Recounting this tale unnerves all who hear it.
+</RulesElement>
+  <RulesElement name="Mantle of Unity" type="Power" internal-id="ID_FMP_POWER_5699" source="Arcane Power">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> A swelling chorus of confidence enfolds your allies, so that the strengths of each mask another's weakness. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Bard Utility 10 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> You and each ally in the burst </specific>
+    <specific name="Effect"> Determine the highest AC, Fortitude, Reflex, and Will among all the targets. Until the end of your next turn, use these values for the corresponding defenses of all the targets, not including any temporary bonuses or penalties. </specific>
+    <specific name="Class"> ID_FMP_CLASS_104 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+</D20Rules>

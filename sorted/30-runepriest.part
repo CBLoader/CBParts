@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.06</Version>
+    <Filename>30-runepriest.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/30-runepriest.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/30-runepriest.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Runepriest -->
+  <!-- 30-runepriest.part, version 1.06 -->
+  <!-- Original release: 13-July-2011; Last modified: 18-May-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 23-August-2011 Class Feature Fixes
+ Updated 16-November-2011 Added Runepriest - Shan Zi of Kara-Tur from Dragon Magazine 405
+ Updated 25-December-2011 Updated Enlightened Word paragon path and new Runepriest powers.
+ Updated 18-May-2012 DSH added.
+</Changelog>
+<RulesElement name="Runes of the Blade Smith" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2398" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> 11 </Category>
+      <specific name="Short Description"> During rest, grant +1 damage bonus to one weapon </specific>
+      <specific name="Level"> 11 </specific>
+      <rules>
+      <select type="Class Feature" number="1" Category="Runes of the Blade Smith" />
+      </rules>
+When you take a short or an extended rest, you can touch one weapon that you or an ally carries. That weapon then gains a +1 bonus to damage rolls until you grant this bonus to a different weapon.
+   </RulesElement>
+   
+ <RulesElement name="Runes of the Blade Smith (Self)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ROTBS_SELF" source="Player&apos;s Handbook 3" >
+      <Category> ID_FMP_CLASS_FEATURE_2398 </Category>
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2398 </specific>
+      <specific name="Level"> 11 </specific>
+      <rules>
+         <statadd name="Weapon:damage" value="+1" />
+      </rules>
+You gain a +1 bonus to damage rolls with a weapon you are wielding.
+   </RulesElement>
+   
+<RulesElement name="Runes of the Blade Smith (Ally)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ROTBS_ALLY" source="Player&apos;s Handbook 3" >
+      <Category> ID_FMP_CLASS_FEATURE_2398 </Category>
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2398 </specific>
+      <specific name="Level"> 11 </specific>
+An ally gains a +1 bonus to damage rolls with a weapon they are wielding.
+   </RulesElement>
+   
+ <RulesElement name="Indomitable Steel" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2400" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> 16 </Category>
+      <specific name="Short Description"> +1 to AC of one set of heavy armor after rest </specific>
+      <specific name="Level"> 16 </specific>
+            <rules>
+      <select type="Class Feature" number="1" Category="Indomitable Steel" />
+      </rules>
+When you take a short or an extended rest, you can touch one suit of heavy armor that you or an ally wears. That armor gains a +1 bonus to AC until you grant this bonus to a different suit of armor.
+   </RulesElement>
+   
+<RulesElement name="Indomitable Steel (Self)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_IS_SELF" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_2400 </Category>
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2400 </specific>
+      <specific name="Short Description"> +1 AC in heavy armor </specific>
+      <specific name="Level"> 16 </specific>
+      <rules>
+         <statadd name="AC" value="+1" wearing="armor:heavy" />
+      </rules>
+You receive a +1 bonus to AC when wearing heavy armor.
+   </RulesElement>
+   
+ <RulesElement name="Indomitable Steel (Ally)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_IS_ALLY" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_2400 </Category>
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2400 </specific>
+      <specific name="Short Description"> +1 AC in heavy armor </specific>
+      <specific name="Level"> 16 </specific>
+An ally receives a +1 bonus to AC when wearing heavy armor.
+   </RulesElement>
+   
+   
+   
+   <!-- Dragon Magazine 404 -->
+<!-- Runepriest - Shan Zi of Kara-Tur -->
+<!-- Runepriest - Serene Blade -->
+<RulesElement name="Runic Artistry" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2388" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+      <Category> 1 </Category>
+      <specific name="Short Description"> Follow path of Defiant Word, way of Wrathful Hammer or tradition of the Serene Blade </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2389, ID_FMP_CLASS_FEATURE_2390, ID_FMP_CLASS_FEATURE_4261 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2388" />
+      </rules>
+Many runepriests follow one of the two major traditions of rune magic: the path of the Wrathful Hammer or the way of the Defiant Word. The two traditions use the same runes but differ in their practices and teachings.
+Although most shan zi in Kara-Tur follow the two major traditions of rune magic, Defiant Word and Wrathful Hammer, a sizable minority practices the tradition of the Serene Blade. When creating a runepriest, you can choose the following Runic Artistry option instead of those in Player's Handbook 3.
+</RulesElement>
+<RulesElement name="Serene Blade" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4261" source="Dragon Magazine 404">
+    <Category> ID_FMP_CLASS_FEATURE_2388,1 </Category>
+    <Flavor> Although most shan zi in Kara-Tur follow the two major traditions of rune magic, Defiant Word and Wrathful Hammer, a sizable minority practices the tradition of the Serene Blade. When creating a runepriest, you can choose the following Runic Artistry option instead of those in Player's Handbook 3. </Flavor>
+    <specific name="Short Description"> Gain proficiency with military heavy blades; you can use Wis instead of Dex or Int to determine AC when not wearing heavy armor; gain temp HP once per round when hit by an enemy </specific>
+    <specific name="Level"> 1 </specific>
+	  <rules>  
+         <grant name="ID_INTERNAL_PROFICIENCY_ONE-HANDED_MILITARY_HEAVY_BLADE" type="Proficiency" />
+		 <grant name="ID_INTERNAL_PROFICIENCY_TWO-HANDED_MILITARY_HEAVY_BLADE" type="Proficiency" />
+		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" type="Proficiency" />
+		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" type="Proficiency" /> 
+		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)" type="Proficiency" />  
+		 <statadd name="AC" value="+Wisdom modifier" type="Ability" not-wearing="armor:heavy" />
+	  </rules>  
+You gain proficiency with all one-handed and two-handed military heavy blades. While you are not wearing heavy armor, you can use your Wisdom modifier in place of your Dexterity or Intelligence modifier to determine your AC. Once per round immediately after an enemy deals damage to you with an attack, you gain temporary hit points equal to your Wisdom modifier. The number of temporary hit points increases to 5 + your Wisdom modifier at 11th level and 10 + your Wisdom modifier at 21st level.
+</RulesElement>
+<!-- Runepriest - Powers -->
+  <RulesElement name="Words of Bravery" type="Power" internal-id="ID_FMP_POWER_15990" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_65,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> You move your weapon as a brush, batting enemies aside and strengthening one of your comrades. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Runepriest Attack 3 </specific>
+    <specific name="Keywords"> Divine, Fear, Runic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage, and you can push the target 1 square. </specific>
+    <specific name="Effect"> You and one ally within 5 squares of you can make a saving throw. </specific>
+    <specific name=" Rune of Destruction"> The first ally who hits the target before the end of your next turn can push the target up to a number of squares equal to your Wisdom modifier. </specific>
+    <specific name=" Rune of Protection"> You and the ally each gain a power bonus to the saving throw equal to your Wisdom modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+By weaving your weapon around you, you can use it to scribe words that remove afflictions from your allies and strike terror into your enemies' hearts.
+</RulesElement>
+  <RulesElement name="Words of Compassion" type="Power" internal-id="ID_FMP_POWER_15991" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_STANDARD_ACTION,6 </Category>
+    <Flavor> You write words that heal your ally with their inner warmth. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Runepriest Utility 6 </specific>
+    <specific name="Keywords"> Divine, Healing </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> You or one ally in the burst </specific>
+    <specific name="Effect"> The target regains hit points equal to his or her healing surge value. In addition, the target gains a +2 power bonus to saving throws until the end of his or her next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+Moving your thumb quickly, you inscribe a merciful mantra upon thin air. Those words also appear on the forehead of a wounded ally, easing that person's pain.
+</RulesElement>
+  <RulesElement name="Words of Reflected Karma" type="Power" internal-id="ID_FMP_POWER_15992" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> Glowing red words appear upon your enemies' foreheads, heralding immediate retribution for any violent action. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Runepriest Attack 9 </specific>
+    <specific name="Keywords"> Divine, Lightning, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Target"> Each enemy in the blast </specific>
+    <specific name="Attack"> Strength vs. Will </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> The target takes 5 lightning damage whenever it uses an attack power (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+Many who follow the Path of Enlightenment spread knowledge of righteousness but also teach about karma, which can be simply if incompletely described as the idea that one reaps what one sows. With a wide arc of your weapon, you scribe words of karma upon your enemies, so they know that whatever violence they use will be visited upon them.
+</RulesElement>
+  <RulesElement name="Protective Scroll" type="Power" internal-id="ID_FMP_POWER_15993" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> With masterful precision, you turn a small strip of parchment into a powerful ward. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Runepriest Utility 10 </specific>
+    <specific name="Keywords"> Divine, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> You spend a healing surge but regain no hit points. Instead, you create a palm-sized protective scroll that lasts until it is expended or until the end of your next extended rest. A creature carrying the scroll can use a minor action to expend the scroll and regain hit points equal to your healing surge value. The creature also gains a +5 power bonus to all defenses until the end of its next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+You have mastered writing that brims with celestial power. A few quick strokes on a strip of parchment can be more effective than a suit of armor.
+</RulesElement>
+  <RulesElement name="Words of Fiery Fidelity" type="Power" internal-id="ID_FMP_POWER_15994" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_65,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> Your determination to protect your allies burns your enemy and heals your comrades. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Runepriest Attack 13 </specific>
+    <specific name="Keywords"> Divine, Fire, Healing, Runic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Fortitude </specific>
+    <specific name="Hit"> 2[W] + Strength modifier fire damage, and you and each ally adjacent to the target regain 10 hit points. </specific>
+    <specific name="Effect"> The target takes ongoing 5 fire damage (save ends). Each time the target takes this fire damage, your allies adjacent to it regain 5 hit points. </specific>
+    <specific name=" Rune of Destruction"> Both the ongoing fire damage and the regained hit points increase to 10. </specific>
+    <specific name=" Rune of Protection"> Allies within 2 squares of the target benefit from this effect. </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+You trace words of love and loyalty upon your weapon, stoking the flames within your heart. These flames burst as you strike your enemy, and their warmth is a salve to your allies.
+</RulesElement>
+  <RulesElement name="Words of Ancestral Bravery" type="Power" internal-id="ID_FMP_POWER_15995" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> Epic poems appear on your weapon, and shades of past heroes lend you their strength. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Runepriest Attack 15 </specific>
+    <specific name="Keywords"> Divine, Radiant, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Will </specific>
+    <specific name="Hit"> 3[W] + Strength modifier radiant damage, and the target falls prone. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, each ally who ends his or her turn adjacent to you gains temporary hit points equal to 5 + your Strength modifier and gains a +2 power bonus to saving throws that lasts until the start of his or her next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+Your weapon gleams with written sagas and poems of great heroes. As you strike your foe, it sees the long lineage of champions that came before you.
+</RulesElement>
+<!-- Enlightened Word -->
+<RulesElement name="Enlightened Word" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_934" source="Dragon Magazine 404">
+    <Prereqs> Runepriest </Prereqs>
+    <print-prereqs> Runepriest, any nonevil alignment </print-prereqs>
+    <Flavor> “My calling could not be more sacred. I am the Word that lights the Path.” </Flavor>
+    <specific name="Class Features"> ID_FMP_CLASS_FEATURE_4252, ID_FMP_CLASS_FEATURE_4253, ID_FMP_CLASS_FEATURE_4254 </specific>
+    <specific name="Powers"> ID_FMP_POWER_15997,ID_FMP_POWER_15998,ID_FMP_POWER_15999 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_15997,ID_FMP_POWER_15998,ID_FMP_POWER_15999 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_4252" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_4253" type="Class Feature" Level="11" />
+	  <grant name="ID_FMP_CLASS_FEATURE_4254" type="Class Feature" Level="16" />
+      <grant name="ID_FMP_POWER_15997" type="Power" Level="11" />
+      <grant name="ID_FMP_POWER_15999" type="Power" Level="12" />
+      <grant name="ID_FMP_POWER_15998" type="Power" Level="20" />
+    </rules> 
+All across Kara-Tur, runepriests go from village to village teaching not only literacy, but also the lessons found in the Path of Enlightenment. Such selfless acts, in turn, bring these runepriests closer to their own enlightenment. Recognizing this truth, a few shan zi learn how to share their blessings with their comrades and allies, further pushing back the darkness so that the light of the Celestial Emperor can purge the world of ignorance and evil. The following paragon path is available to any honorable runepriest who strives to become the consummate leader, acting through his or her allies to vanquish the opposition.
+</RulesElement>
+  <RulesElement name="Cloud Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4252" source="Dragon Magazine 404">
+    <Category> 11 </Category>
+    <Flavor> Your closeness to the Celestial Heaven gives you clarity unmatched by most mortals. By focusing on the core of your being, you impart this clarity to your allies, and you can briefly become a weightless cloud. </Flavor>
+    <specific name="Short Description"> Use cloud step as a rune state; when active adjacent allies can shift 2 squares when you hit and enemy and you can end this effect to fly your speed as a minor action </specific>
+    <specific name="Level"> 11 </specific>
+Whenever you enter a new rune state, you can enter the rune state of the cloud step instead. While you are in this rune state, allies adjacent to you can shift up to 2 squares as a free action the first time they hit an enemy each turn. You can end this rune state as a minor action to fly up to a number of squares equal to your speed.
+</RulesElement>
+  <RulesElement name="Shared Enlightenment Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4253" source="Dragon Magazine 404">
+    <Category> 11 </Category>
+    <Flavor> With quick movements of your weapon, you scribe a glowing rune upon a distant ally, sharing your divine blessings with that friend. </Flavor>
+    <specific name="Short Description"> When you spend an action point for a runepriest attack, make the origin the space of an ally within 5 squares and that ally gains temp HP equal to 5 + your Str mod </specific>
+    <specific name="Level"> 11 </specific>
+		<rules>
+            <textstring name="Action Point" value="Shared Enlightenment Action: When you spend an action point to use a runepriest attack power, you can choose for that attack to originate from the space of an ally within 5 squares of you, instead of originating from your space. If you do so, that ally gains temporary hit points equal to 5 + your Strength modifier." />
+        </rules>
+When you spend an action point to use a runepriest attack power, you can choose for that attack to originate from the space of an ally within 5 squares of you, instead of originating from your space. If you do so, that ally gains temporary hit points equal to 5 + your Strength modifier.
+</RulesElement>
+  <RulesElement name="Radiant Cloud Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4254" source="Dragon Magazine 404">
+    <Category> 16 </Category>
+    <Flavor> By emptying yourself of all material concerns, you are not only capable of flying, you also ignore most physical threats and obstacles. </Flavor>
+    <specific name="Short Description"> During the flight granted by cloud step, you are insubstantial and phasing </specific>
+    <specific name="Level"> 16 </specific>
+During the flight granted by the rune state of the cloud step, you are insubstantial and phasing.
+</RulesElement>
+  <RulesElement name="Celestial Lightning" type="Power" internal-id="ID_FMP_POWER_15997" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_934,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_65,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Enlightened Word </Prereqs>
+    <Flavor> You call upon the red lightning that carved the will of the Celestial Heaven upon the cliffs of Tanghai to punish those who threaten your comrade. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Enlightened Word Attack 11 </specific>
+    <specific name="Keywords"> Divine, Lightning, Radiant, Runic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 centered on an ally within 5 squares </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Attack"> Strength vs. Fortitude </specific>
+    <specific name="Hit"> 2[W] + Strength modifier lightning and radiant damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, the attacks of the ally on whom the burst was centered deal lightning and radiant damage, in addition to their normal types. </specific>
+    <specific name=" Rune of Destruction"> Until the end of your next turn, the ally also gains a power bonus to damage rolls equal to your Strength modifier. </specific>
+    <specific name=" Rune of Protection"> Until the end of your next turn, the ally also gains a power bonus to his or her healing surge value equal to your Strength modifier. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_934 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+The Celestial Emperor sent red lightning to inspire mortals into seeking enlightenment. With a quick weave of your weapon, that same heavenly bolt comes to the aid of your ally.
+</RulesElement>
+  <RulesElement name="Words of Celestial Heaven" type="Power" internal-id="ID_FMP_POWER_15998" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_934,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Enlightened Word </Prereqs>
+    <Flavor> Your attack leaves your foe transfixed, as its life flashes before its eyes. When your enemy shakes off this effect, it tries to repent by turning on its former ally. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Enlightened Word Attack 20 </specific>
+    <specific name="Keywords"> Divine, Lightning, Radiant, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier lightning and radiant damage, and the target is stunned (save ends). </specific>
+    <specific name=" Aftereffect"> The target makes a basic attack as a free action against one of its allies. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, your runepriest at-will attacks deal 5 extra lightning and radiant damage. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_934 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+As you approach ultimate enlightenment, you can call down the Celestial Emperor's red lightning to impart momentary clarity upon your enemies, so they learn— however briefly— the error of their ways.
+</RulesElement>
+  <RulesElement name="Touch of Hope" type="Power" internal-id="ID_FMP_POWER_15999" source="Dragon Magazine 404">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_934,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_STANDARD_ACTION,12 </Category>
+    <Prereqs> Enlightened Word </Prereqs>
+    <Flavor> With a quick gesture, you trace the sign for “hope,” removing all afflictions from your ally. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Enlightened Word Utility 12 </specific>
+    <specific name="Keywords"> Divine, Healing </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee touch </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target makes a saving throw against each effect on him or her that a save can end. The target also regains hit points equal to his or her healing surge value and can stand up as a free action. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_934 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+The symbol for hope is deceptively simple. Those who master it know that no matter how bleak the situation, all will be well.
+</RulesElement>
+<!-- DSH -->
+  <RulesElement name="Rune of Divine Providence" type="Power" internal-id="ID_FMP_POWER_16499" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_602,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> You strike your enemy and call upon your god to wrap you and your allies in divine supremacy. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Runepriest Attack 9 </specific>
+    <specific name="Keywords"> Aura, Divine, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> You activate an aura 1 that lasts until the end of your next turn. While in the aura, your allies gain a +2 power bonus to all defenses. </specific>
+    <specific name="Sustain Minor"> The aura persists until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_602 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+During the Dawn War, each god created a unique icon of divine power to serve his or her purposes. Many of these were shattered or lost during the clash, and after it had ended, the gods sought their restoration. Runepriests are natural seekers of lost artifacts, envoys of the gods sent to recover their ancient relics, and benefit from their patrons' protection.
+</RulesElement>
+</D20Rules>

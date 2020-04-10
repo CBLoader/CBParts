@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>RacialWeaponTraining.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/RacialWeaponTraining.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/RacialWeaponTraining.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <RulesElement name="Eladrin Soldier" type="Feat" internal-id="ID_FMP_FEAT_64" source="Player's Handbook" revision-date="8/27/2010 12:17:50 PM">
+    <Prereqs> Eladrin </Prereqs>
+    <print-prereqs> Eladrin </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain a damage bonus and proficiency with longswords and spears </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SPEAR)" type="Proficiency" />
+      <statadd name="spear group:damage" value="+2" type="Feat" />
+      <statadd name="Longsword:damage" value="+2" type="Feat" />
+      <statadd name="spear group:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="Longsword:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="spear group:damage" value="+4" type="Feat" requires="Epic Tier" />
+      <statadd name="Longsword:damage" value="+4" type="Feat" requires="Epic Tier" />
+    </rules>
+You gain proficiency with all spears and a +2 feat bonus to damage rolls with longswords and all spears. This bonus increases to +3 at 11th level and +4 at 21st level.
+   </RulesElement>
+  <RulesElement name="Dwarven Weapon Training" type="Feat" internal-id="ID_FMP_FEAT_69" source="Player's Handbook" revision-date="8/27/2010 12:17:50 PM">
+    <Prereqs> Dwarf </Prereqs>
+    <print-prereqs> Dwarf </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain a damage bonus and proficiency with axes and hammers </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)" type="Proficiency" />
+      <statadd name="axe group:damage" value="+2" type="Feat" />
+      <statadd name="hammer group:damage" value="+2" type="Feat" />
+      <statadd name="axe group:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="hammer group:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="axe group:damage" value="+4" type="Feat" requires="Epic Tier" />
+      <statadd name="hammer group:damage" value="+4" type="Feat" requires="Epic Tier" />
+    </rules>
+You gain proficiency and a +2 feat bonus to damage rolls with axes and hammers. This bonus increases to +3 at 11th level and +4 at 21st level.
+   </RulesElement>
+  <RulesElement name="Talenta Weapon Training" type="Feat" internal-id="ID_FMP_FEAT_1411" source="Eberron Player's Guide" revision-date="8/27/2010 12:19 PM">
+    <Prereqs> Halfling, Talenta Plains background </Prereqs>
+    <print-prereqs> Halfling, Talenta Plains background </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain a damage bonus and proficiency with Talenta boomerang, Talenta sharrash, and Talenta tangat </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_BOOMERANG)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)" type="Proficiency" />
+      <statadd name="Talenta Boomerang:damage" value="+2" type="Feat" />
+      <statadd name="Talenta Sharrash:damage" value="+2" type="Feat" />
+      <statadd name="Talenta Tangat:damage" value="+2" type="Feat" />
+      <statadd name="Talenta Boomerang:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="Talenta Sharrash:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="Talenta Tangat:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="Talenta Boomerang:damage" value="+4" type="Feat" requires="Epic Tier" />
+      <statadd name="Talenta Sharrash:damage" value="+4" type="Feat" requires="Epic Tier" />
+      <statadd name="Talenta Tangat:damage" value="+4" type="Feat" requires="Epic Tier" />
+    </rules>
+You gain proficiency and a +2 feat bonus to damage rolls with the Talenta boomerang, the Talenta sharrash, and the Talenta tangat.  This bonus increases to +3 at 11th level and +4 at 21st level.
+   </RulesElement>
+  <RulesElement name="Xen'drik Weapon Training" type="Feat" internal-id="ID_FMP_FEAT_1415" source="Eberron Player's Guide" revision-date="8/27/2010 12:19 PM">
+    <Prereqs> Drow </Prereqs>
+    <print-prereqs> Drow </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain a damage bonus and proficiency with drow long knife and Xen'drik boomerang </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DROW_LONG_KNIFE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(XEN'DRIK_BOOMERANG)" type="Proficiency" />
+      <statadd name="Drow Long Knife:damage" value="+2" type="Feat" />
+      <statadd name="Xen'drik Boomerang:damage" value="+2" type="Feat" />
+      <statadd name="Drow Long Knife:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="Xen'drik Boomerang:damage" value="+3" type="Feat" requires="Paragon Tier" />
+      <statadd name="Drow Long Knife:damage" value="+4" type="Feat" requires="Epic Tier" />
+      <statadd name="Xen'drik Boomerang:damage" value="+4" type="Feat" requires="Epic Tier" />
+    </rules>
+You gain proficiency and a +2 feat bonus to damage rolls with the drow long knife and the Xen'drik boomerang. This bonus increases to +3 at 11th level and +4 at 21st level.
+   </RulesElement>
+</D20Rules>

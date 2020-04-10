@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>99-cleric-nerfage-reversal.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/99-cleric-nerfage-reversal.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/99-cleric-nerfage-reversal.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Cleric Nerfage Reversal -->
+  <!-- 95-cleric-nerfage-reversal, version 2.00 -->
+  <!-- Original release: 18-June-2011; Last modified: 17-July-2011 -->
+  <!-- Test compiled with CBLoader build V1.2.4.1 -->
+  <!-- Coded by Greyhawk Fan -->
+  <!-- This part file reverses some of the changes to clerics in the Class Compendium file. -->
+  <!-- Updated to new nerfage situations -->
+  <RulesElement name="House Rules Supplement" type="source" internal-id="ID_WOG_SOURCE_HOUSERULES" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://en.wikipedia.org/wiki/House_rule </specific>
+    <specific name="Release Date"> 3/6/2011 </specific>
+  </RulesElement>
+  <RulesElement name="Turn Undead" type="Power" internal-id="ID_FMP_POWER_146" source="Player's Handbook" revision-date="8/27/2010 11:21:59 AM">
+    <Category> ID_FMP_CLASS_FEATURE_324,ID_FMP_CLASS_2 </Category>
+    <Flavor> You sear undead foes, push them back, and root them in place. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack </specific>
+    <specific name="Keywords"> Divine, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 2 (5 at 11th level, 8 at 21st level) </specific>
+    <specific name="Target"> Each undead creature in burst </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit"> 1d10 + Wisdom modifier radiant damage, and you push the target a number of squares equal to 3 + your Charisma modifier. The target is immobilized until the end of your next turn.
+Increase damage to 2d10 + Wisdom modifier at 5th level, 3d10 + Wisdom modifier at 11th level, 4d10 + Wisdom modifier at 15th level, 5d10 + Wisdom modifier at 21st level, and 6d10 + Wisdom modifier at 25th level. </specific>
+    <specific name="Miss"> Half damage, and the target is not pushed or immobilized. </specific>
+    <specific name="Special"> You can use only one channel divinity power per encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_324 </specific>
+  </RulesElement>
+  <RulesElement name="Divine Power" type="Power" internal-id="ID_FMP_POWER_929" source="Player's Handbook" revision-date="8/27/2010 11:23:18 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> You swing your weapon in a wide arc around you, creating a halo of divine energy that drives foes back while fortifying you and your allies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 9 </specific>
+    <specific name="Keywords"> Divine, Healing, Radiant, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each enemy in burst you can see </specific>
+    <specific name="Attack"> Strength vs. Fortitude </specific>
+    <specific name="Hit"> 2[W] + Strength modifier radiant damage, and you push the target 1 square. </specific>
+    <specific name="Effect"> Until the end of the encounter, you gain regeneration 5, and you and each ally within the burst gain a +2 power bonus to AC. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Purifying Fire" type="Power" internal-id="ID_FMP_POWER_933" source="Player's Handbook" revision-date="8/27/2010 11:23:20 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> Divine fire engulfs your foes and leaves them burning. Like beacons of holy flame, your burning foes heal your nearby allies while the flames persist. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 15 </specific>
+    <specific name="Keywords"> Divine, Fire, Healing, Implement </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 3d10 + Wisdom modifier fire damage, and ongoing 10 fire damage (save ends). While this power's ongoing damage is in effect, you and your allies regain hit points equal to 5 + your Charisma modifier when starting a turn adjacent to one or more targets taking the ongoing damage. </specific>
+    <specific name="Miss"> Half damage, and no ongoing fire damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Seal of Warding" type="Power" internal-id="ID_FMP_POWER_934" source="Player's Handbook" revision-date="8/27/2010 11:23:20 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> You create a circle of faintly glowing divine symbols around you that hinders the movement of enemies caught within it and protects you and your allies from ranged attacks. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 15 </specific>
+    <specific name="Keywords"> Divine, Implement, Radiant, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 3 </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit"> 4d10 + Wisdom modifier radiant damage, and the target is slowed until the end of your next turn. </specific>
+    <specific name="Miss"> Half damage, and the target is not slowed. </specific>
+    <specific name="Effect"> The burst creates a zone of difficult terrain that grants cover to you and your allies against ranged attacks until the end of your next turn. </specific>
+    <specific name="Sustain Minor"> The zone persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Holy Wrath" type="Power" internal-id="ID_FMP_POWER_936" source="Player's Handbook" revision-date="8/27/2010 11:23:21 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+    <Flavor> You bring down the wrath of your god upon your foes in a burst of furious light that shines from your weapon.  It scours your enemies even as it fortifies you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 19 </specific>
+    <specific name="Keywords"> Divine, Healing, Radiant, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 3 </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier radiant damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, you gain regeneration 10 and a +2 power bonus to attack rolls. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Fire Storm" type="Power" internal-id="ID_FMP_POWER_937" source="Player's Handbook" revision-date="8/27/2010 11:23:22 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> A roiling cloud of fire scours your foes, lingering on the battlefield until you allow it to burn itself out. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 19 </specific>
+    <specific name="Keywords"> Divine, Fire, Implement, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Area burst 5 within 10 squares </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 5d10 + Wisdom modifier fire damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> The burst creates a zone of fire that lasts until the end of your next turn. Enemies that start their turn in this zone take 1d10 + Wisdom modifier fire damage. </specific>
+    <specific name="Sustain Minor"> The zone persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Healing Torch" type="Power" internal-id="ID_FMP_POWER_907" source="Player's Handbook" revision-date="8/27/2010 11:23:10 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You whisper an ancient prayer, igniting your holy symbol with divine light that quickly spreads to engulf your enemies and allies. The light sears your foes and momentarily bathes your allies in a protective, healing glow. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 23 </specific>
+    <specific name="Keywords"> Divine, Healing, Implement, Radiant </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Area burst 5 within 10 squares </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit"> 3d8 + Wisdom modifier radiant damage. </specific>
+    <specific name="Effect"> You and each ally in the burst gain a power bonus to AC equal to your Charisma modifier until the end of your next turn and can spend a healing surge. Add your Charisma modifier to the hit points regained. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sacred Word" type="Power" internal-id="ID_FMP_POWER_940" source="Player's Handbook" revision-date="8/27/2010 11:23:23 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> A single word of Supernal, the language of the gods, damages and stuns your foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 25 </specific>
+    <specific name="Keywords"> Divine, Implement, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Fortitude </specific>
+    <specific name="Hit"> 4d10 + Wisdom modifier psychic damage, and the target is stunned until the end of your next turn. </specific>
+    <specific name="Miss"> Half damage, and the target is not stunned. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Astral Storm" type="Power" internal-id="ID_FMP_POWER_61" source="Player's Handbook" revision-date="8/27/2010 11:21:52 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> You unleash a terrible storm upon your enemies, raining ice, fire, lightning, and thunder down upon them. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Cleric Attack 29 </specific>
+    <specific name="Keywords"> Cold, Divine, Fire, Implement, Lightning, Thunder, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 5 within 20 squares </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 6d10 + Wisdom modifier cold, fire, lightning, and thunder damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> The burst creates a stormy zone until the end of your next turn. </specific>
+    <specific name="Sustain Minor"> The zone persists until the end of your next turn, and you can make the secondary attack. </specific>
+    <specific name="  Secondary Attack"> (Divine, Implement, Lightining) </specific>
+    <specific name="  Secondary Target"> Each enemy within the zone </specific>
+    <specific name="  Attack"> Wisdom vs. Reflex </specific>
+    <specific name="  Hit"> 2d10 + Wisdom modifier lightining damage. </specific>
+    <specific name="  Miss"> Half damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

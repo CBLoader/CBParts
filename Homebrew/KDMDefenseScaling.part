@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMDefenseScaling.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMDefenseScaling.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMDefenseScaling.txt</VersionAddress>
+  </UpdateInfo>
+  <AppendNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
+    <rules>
+      <statadd name="Defensive Math Fix" value="+1" />
+      <statadd name="Defensive Math Fix" value="+1" requires="Paragon Tier" />
+      <statadd name="Defensive Math Fix" value="+1" requires="Epic Tier" />
+      <statadd name="Fortitude Defense" value="+Defensive Math Fix" />
+      <statadd name="Reflex Defense" value="+Defensive Math Fix" />
+      <statadd name="Will Defense" value="+Defensive Math Fix" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Paragon Defenses" type="Feat" internal-id="ID_FMP_FEAT_530" source="Player's Handbook 2" revision-date="8/27/2010 12:18:04 PM">
+    <Prereqs> Unselectable </Prereqs>
+  </RulesElement>
+  <RulesElement name="Robust Defenses" type="Feat" internal-id="ID_FMP_FEAT_540" source="Player's Handbook 2" revision-date="8/27/2010 12:18:04 PM">
+    <Prereqs> Unselectable </Prereqs>
+  </RulesElement>
+  <RulesElement name="Improved Defenses" type="Feat" internal-id="ID_FMP_FEAT_3143" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Prereqs> Unselectable </Prereqs>
+  </RulesElement>
+  <RulesElement name="Great Fortitude" type="Feat" internal-id="ID_FMP_FEAT_145" source="Player's Handbook" revision-date="8/27/2010 12:17:51 PM">
+    <Flavor> You are tough enough to withstand poisons, disease, and harsh environmental conditions. You can endure brutal attacks meant to overcome your body's resilience. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to Fortitude defense </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Great Fortitude" value="+2" />
+      <statadd name="Fortitude Defense" value="+Great Fortitude" type="Feat" />
+    </rules>
+You gain a +2 feat bonus to Fortitude.
+   </RulesElement>
+  <RulesElement name="Iron Will" type="Feat" internal-id="ID_FMP_FEAT_148" source="Player's Handbook" revision-date="8/27/2010 12:17:51 PM">
+    <Flavor> Your mind is as tough and resilient as iron. You effortlessly resist powerful attacks aimed at breaking your will or penetrating your psyche. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to Will defense </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Iron Will" value="+2" />
+      <statadd name="Will Defense" value="+Iron Will" type="Feat" />
+    </rules>
+You gain a +2 feat bonus to Will.
+   </RulesElement>
+  <RulesElement name="Lightning Reflexes" type="Feat" internal-id="ID_FMP_FEAT_149" source="Player's Handbook" revision-date="8/27/2010 12:17:51 PM">
+    <Flavor> A combination of battle awareness, tactical planning, and agility ensure that you dodge most attacks. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to Reflex defense </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Lightning Reflexes" value="+2" />
+      <statadd name="Reflex Defense" value="+Lightning Reflexes" type="Feat" />
+    </rules>
+You gain a +2 feat bonus to Reflex.
+   </RulesElement>
+  <RulesElement name="Superior Fortitude" type="Feat" internal-id="ID_FMP_FEAT_3152" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Prereqs> Strength 15 or Constitution 15 </Prereqs>
+    <print-prereqs> Strength 15 or Constitution 15 </print-prereqs>
+    <Flavor> Your natural endurance is so great that you can ignore lasting injuries. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain +2 to Fortitude, and resist 3/6/9 to ongoing damage </specific>
+    <rules>
+      <statadd name="Superior Fortitude" value="+2" />
+      <statadd name="Fortitude Defense" value="+Superior Fortitude" type="Feat" />
+      <statadd name="Superior Fortitude Resist" value="+3" />
+      <statadd name="Superior Fortitude Resist" value="+3" requires="Paragon Tier" />
+      <statadd name="Superior Fortitude Resist" value="+3" requires="Epic Tier" />
+      <statadd name="resist:ongoing" value="+Superior Fortitude Resist" type="resist" />
+    </rules>
+You gain a +2 feat bonus to Fortitude.
+	You also gain resist 3 to ongoing damage. This resistance increases to 6 at 11th level and 9 at 21st level.
+</RulesElement>
+  <RulesElement name="Superior Reflexes" type="Feat" internal-id="ID_FMP_FEAT_3153" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Prereqs> Dexterity 15 or Intelligence 15 </Prereqs>
+    <print-prereqs> Dexterity 15 or Intelligence 15 </print-prereqs>
+    <Flavor> Your speed and agility give you the upper hand at the start of combat as well as an advantage against certain attacks. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to Reflex. Gain combat advantage against all enemies during your first turn in an encounter. </specific>
+    <rules>
+      <statadd name="Superior Reflex" value="+2" />
+      <statadd name="Reflex Defense" value="+Superior Reflex" type="Feat" />
+    </rules>
+You gain a +2 feat bonus to Reflex.
+	You also gain combat advantage against all enemies during your first turn in an encounter.
+</RulesElement>
+  <RulesElement name="Superior Will" type="Feat" internal-id="ID_FMP_FEAT_3154" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Prereqs> Wisdom 15 or Charisma 15 </Prereqs>
+    <print-prereqs> Wisdom 15 or Charisma 15 </print-prereqs>
+    <Flavor> You can shrug off attacks that try to seize your mind or leave you senseless. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to Will. Additional saving throw vs. dazed or stunned at start of turn, even if condition is not (save ends) </specific>
+    <rules>
+      <statadd name="Superior Will" value="+2" />
+      <statadd name="Will Defense" value="+Superior Will" type="Feat" />
+    </rules>
+You gain a +2 feat bonus to Will.
+	In addition, if you are dazed or stunned, you can make a saving throw at the start of your turn to end that effect, even if the effect doesn't normally end on a save.
+</RulesElement>
+</D20Rules>

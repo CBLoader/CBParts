@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>Dragon'sHoard.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/Dragon'sHoard.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/Dragon'sHoard.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Coded by Tivaan -->
+  <!-- Dragon's Hoard -->
+  <!-- Dark Champion -->
+  <RulesElement name="Dark Champion" type="Paragon Path" internal-id="ID_TIV_PARAGON_PATH_DH_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Prereqs> Paladin, Evil or Chaotic Evil </Prereqs>
+    <print-prereqs> Chaotic Evil or Evil, Paladin </print-prereqs>
+    <Flavor> "I am no abomination; I represent the natural order of things, for all life must die." </Flavor>
+    <specific name="Class Features"> ID_TIV_CLASS_FEATURE_DH_01, ID_TIV_CLASS_FEATURE_DH_02, ID_TIV_CLASS_FEATURE_DH_03 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DH_01_01_01,ID_TIV_POWER_DH_01_01_02,ID_TIV_POWER_DH_01_01_03 </specific>
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DH_01_01_01,ID_TIV_POWER_DH_01_01_02,ID_TIV_POWER_DH_01_01_03 </specific>
+    <rules>
+      <grant name="ID_TIV_CLASS_FEATURE_DH_01" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_DH_02" type="Class Feature" Level="11" />
+      <grant name="ID_TIV_CLASS_FEATURE_DH_03" type="Class Feature" Level="16" />
+      <grant name="ID_TIV_POWER_DH_01_01_01" type="Power" Level="11" />
+      <grant name="ID_TIV_POWER_DH_01_01_02" type="Power" Level="12" />
+      <grant name="ID_TIV_POWER_DH_01_01_03" type="Power" Level="20" />
+    </rules>
+Many scholars believe they are divine creations of dark and horrible machinations fashioned into elite
+soldiers by masters of abomination. Dark Champions surround themselves with fiendish servants as they take to the battlefield bringing terror and uncertainty to every foe.
+</RulesElement>
+  <RulesElement name="Path of the Dead" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DH_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> You are dazed until the end of your next turn when hit by power with the radiant keyword. </specific>
+    <specific name="Level"> 11 </specific>
+You are dazed until the end of your next turn when hit by power with the radiant keyword.
+</RulesElement>
+  <RulesElement name="Undead Defense Action" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DH_02" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Undead Defense Action: When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn." />
+    </rules>
+When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn.
+</RulesElement>
+  <RulesElement name="Skin of the Dead" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DH_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> You have resist necrotic 5. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="resist:necrotic" value="+5" type="Class Feature" zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="Class Feature" non-zero="true" />
+    </rules>
+You have resist necrotic 5.
+</RulesElement>
+  <RulesElement name="Dark Blood" type="Power" internal-id="ID_TIV_POWER_DH_01_01_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_TIV_PARAGON_PATH_DH_01,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_14,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Dark Champion </Prereqs>
+    <Flavor> A sinister prayer and minor sacrifice metamorphoses the blood an enemy into a poisonous concoction of evil. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Dark Champion Attack 11 </specific>
+    <specific name="Keywords"> Divine, Implement, Necrotic, Poison </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Constitution vs. Fortitude </specific>
+    <specific name="Hit"> 3d8 + Constitution modifier poison and necrotic damage, and 5 ongoing poison damage. </specific>
+    <specific name="Effect"> You can spend a healing surge to deal extra 10 damage to the target. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_DH_01 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Eyes of the Dead" type="Power" internal-id="ID_TIV_POWER_DH_01_01_02" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_DH_01,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_STANDARD_ACTION,12 </Category>
+    <Prereqs> Dark Champion </Prereqs>
+    <Flavor> A simple chant to a dark god bestows the gift of undead sight. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Dark Champion Utility 12 </specific>
+    <specific name="Keywords"> Divine </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target" />
+    <specific name="Attack" />
+    <specific name="Hit" />
+    <specific name="Effect"> You gain darkvision and vulnerable 5 radiant. </specific>
+    <specific name="Sustain Minor"> You may sustain this power either until the end of the encounter or for 5 minutes. </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_DH_01 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Dance of the Dead" type="Power" internal-id="ID_TIV_POWER_DH_01_01_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_TIV_PARAGON_PATH_DH_01,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Dark Champion </Prereqs>
+    <Flavor> Dark runes convey a command from your blade enabling you to govern an undead creature. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Dark Champion Attack 20 </specific>
+    <specific name="Keywords"> Charm, Divine, Necrotic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit"> 3[W] + Charisma modifier necrotic damage. If the target is undead, it is dazed (save ends). First Failed Save: The target is dominated (save ends).</specific>
+    <specific name="Effect" />
+    <specific name="Miss"> Half damage. If the target is undead, it is also dazed (save ends). </specific>
+    <specific name="Class"> ID_TIV_PARAGON_PATH_DH_01 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Mustache Ride's Additions -->
+  <RulesElement name="Dragon's Hoard" type="source" internal-id="ID_MSR_SOURCE_DRAGONS_HOARD" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.rpgnow.com/product_info.php?products_id=58808 </specific>
+    <specific name="Release Date"> 11/9/2008 </specific>
+  </RulesElement>
+  <RulesElement name="Knight of the Dawn" type="Paragon Path" internal-id="ID_MSR_PARAGON_PATH_DH_02" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Prereqs> Paladin </Prereqs>
+    <print-prereqs> Paladin </print-prereqs>
+    <Flavor> Many feel the dawn represents a new beginning; however, for us, it means we survived the night. </Flavor>
+    <specific name="Class Features"> ID_MSR_CLASS_FEATURE_DH_01, ID_MSR_CLASS_FEATURE_DH_02, ID_MSR_CLASS_FEATURE_DH_03 </specific>
+    <specific name="Powers"> ID_MSR_POWER_DH_01_01_01,ID_MSR_POWER_DH_01_01_02,ID_MSR_POWER_DH_01_01_03 </specific>
+    <specific name="_DisplayPowers"> ID_MSR_POWER_DH_01_01_01,ID_MSR_POWER_DH_01_01_02,ID_MSR_POWER_DH_01_01_03 </specific>
+    <rules>
+      <grant name="ID_MSR_CLASS_FEATURE_DH_01" type="Class Feature" Level="11" />
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02" type="Class Feature" Level="11" />
+      <grant name="ID_MSR_CLASS_FEATURE_DH_03" type="Class Feature" Level="16" />
+      <grant name="ID_MSR_POWER_DH_01_01_01" type="Power" Level="11" />
+      <grant name="ID_MSR_POWER_DH_01_01_02" type="Power" Level="12" />
+      <grant name="ID_MSR_POWER_DH_01_01_03" type="Power" Level="20" />
+    </rules>
+Knights of the Dawn revel in the destruction of all foul, nocturnal creatures. Against such powerful adversaries such as undead and other fetid creatures who fear the light of day, the Knights of the Dawn wields the power of faith and conviction. 
+These fearless knights believe only the righteous can withstand the light of day.  However, many predominant churches fear their ritualistic sun worship borders heresy. Nevertheless, due to their indomitable courage, their willingness to venture into places others fear, and their continued success, many nobles protect the Knights of the Dawn within the political arena. 
+Still, many skeptics claim their boldness is not due to their righteous philosophy, but their greed for ancient treasures and secrets. 
+</RulesElement>
+  <RulesElement name="Dawn Challenge" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Extra 2d6 radiant damage against enemies of the light. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Damage" condition="against enemies of the light (Undead, shadow, and lycanthropes)" value="+2d6" />
+    </rules>
+Your damage rolls against enemies of the light (Undead, shadow, and lycanthropes) that you challenge deal an extra 2d6 radiant damage. 
+</RulesElement>
+  <RulesElement name="Knight's Renewing Action" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_02" source="Dragon's Hoard">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Knight Renewing Action:When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge." />
+    </rules>
+When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge.   
+</RulesElement>
+  <RulesElement name="Dawn Crusade" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> +4 damage against enemies of the light. </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+4" type="item" condition="against enemies of the light. (Undead, shadow, and lycanthropes)" />
+    </rules>
+You gain a +4 bonus to damage rolls against enemies of the light. (Undead, shadow, and lycanthropes) If you attack a creature other than an enemy of the light, you lose this benefit until you take a short rest, at which time you spend in prayer to refocus yourself to the goal of the crusade. 
+</RulesElement>
+  <RulesElement name="Smite of the Renewing Dawn" type="Power" internal-id="ID_MSR_POWER_DH_01_01_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_PARAGON_PATH_DH_02,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Knight of the Dawn </Prereqs>
+    <Flavor> Each strike upon your enemy renews your determination to vanquish the foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Knight of the Dawn Attack 11 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] damage. If the target is an enemy of the light, this power is not expended. </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_DH_02 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dawn Blade" type="Power" internal-id="ID_MSR_POWER_DH_01_01_02" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_MSR_PARAGON_PATH_DH_02,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,12 </Category>
+    <Prereqs> Knight of the Dawn </Prereqs>
+    <Flavor> Rays of light form a tangible blade to pierce into the darkness of the otherworld. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Knight of the Dawn Utility 12 </specific>
+    <specific name="Keywords"> Conjuration, Divine, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You conjure a light or heavy blade (no polearms) comprised of pure light.  When you use the blade in conjunction with a power that has the divine, radiant and weapon keywords, you deal full damage (instead of half) against insubstantial creatures.  The blade lasts until the end of your next turn.  </specific>
+    <specific name="Sustain Minor"> You may sustain this power either until the end of the encounter or for 5 minutes. </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_DH_02 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Smite of the Blazing Sun" type="Power" internal-id="ID_MSR_POWER_DH_01_01_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_MSR_PARAGON_PATH_DH_02,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Knight of the Dawn </Prereqs>
+    <Flavor> Your powerful smite unleashes a brilliant explosion burning your enemies where they stand. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Knight of the Dawn Attack 20 </specific>
+    <specific name="Keywords"> Divine, Radiant, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength  modifier radiant  damage, and 5 ongoing damage (save ends).  If the target is an enemy of the light, it instead takes 5[W] damage. </specific>
+    <specific name="Effect"> Radiant light bursts from your weapon. Make a secondary attack. </specific>
+    <specific name="Special">  You lose the benefit of dawn challenge and dawn crusade until you take an extended rest. </specific>
+    <specific name=" Secondary Target"> Each enemy within 3 squares of you  </specific>
+    <specific name=" Secondary Attack"> Charisma vs. Reflex </specific>
+    <specific name=" Hit"> 5 ongoing  radiant damage (save ends). If the target is an enemy of the light, it instead suffers 10 ongoing radiant damage (save ends). </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_DH_02 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Ancestral Knight" type="Paragon Path" internal-id="ID_MSR_PARAGON_PATH_DH_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Prereqs> Warlord, Dwarf or Eladrin </Prereqs>
+    <print-prereqs> Warlord, Dwarf or Eladrin </print-prereqs>
+    <Flavor> As I forged this axe, ancestral spirits forged my soul with the singular ambition to vanquish those who threaten our security. </Flavor>
+    <specific name="Class Features"> ID_MSR_CLASS_FEATURE_DH_02_02_01, ID_MSR_CLASS_FEATURE_DH_02_02, ID_MSR_CLASS_FEATURE_DH_02_03 </specific>
+    <specific name="Powers"> ID_MSR_POWER_DH_01_02_01,ID_MSR_POWER_DH_01_02_02,ID_MSR_POWER_DH_01_02_03 </specific>
+    <specific name="_DisplayPowers"> ID_MSR_POWER_DH_01_02_01,ID_MSR_POWER_DH_01_02_02,ID_MSR_POWER_DH_01_02_03 </specific>
+    <rules>
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02_01" type="Class Feature" Level="11" />
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02_02" type="Class Feature" Level="11" />
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02_03" type="Class Feature" Level="16" />
+      <grant name="ID_MSR_POWER_DH_01_02_01" type="Power" Level="11" />
+      <grant name="ID_MSR_POWER_DH_01_02_02" type="Power" Level="12" />
+      <grant name="ID_MSR_POWER_DH_01_02_03" type="Power" Level="20" />
+    </rules>
+Spirits guide ancestral knights allowing them to provide stability and encouragement to those of their race. Ancestral knights serve as a bastion of defense instilling vigor on the battlefield against the numerous encroaching armies of man. Most are long retired warriors; emerging now as great leaders, storytellers, and generals. 
+Though knighthood is a human concept, the ancient civilized races adopted the notions of chivalry without the savagery instilled by man. When human warlords travel the countryside inciting others to the ways of war-mongering, ancestral knights attempt to hold the peace. 
+Nevertheless, they proudly take their place on the battlefield should duty call them to war. They encourage new heroes by inspiring great feats in hope that one day these young warriors can take their place to lend guidance and glory to their race. 
+</RulesElement>
+  <RulesElement name="Ancestral Courage" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_02_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Allies gain a +1 bonus to saving throws and can re-roll a failed saving throw once per day. </specific>
+    <specific name="Level"> 11 </specific>
+Allies gain a +1 bonus to saving throws against fear and charm effects whenever they are adjacent to you. Once per day, one adjacent racial ally may immediately reroll a failed save. 
+</RulesElement>
+  <RulesElement name="Inherit Leadership Action" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_02_02" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Inherit Leadership Action:Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn." />
+    </rules>
+Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn. </RulesElement>
+  <RulesElement name="Spiritual Guidance" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_02_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Allies gain a +1 bonus to attack and damage rolls whenever they are adjacent to you. </specific>
+    <specific name="Level"> 16 </specific>
+Allies gain a +1 bonus to attack and damage rolls whenever they are adjacent to you.  Allies of the same race instead gain a +2 bonus. 
+</RulesElement>
+  <RulesElement name="Forward Press" type="Power" internal-id="ID_MSR_POWER_DH_01_02_01" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_PARAGON_PATH_DH_03,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Ancestral Knight </Prereqs>
+    <Flavor> Marshaling power from your racial allies, you shift the battlefield following an encouraging strike. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ancestral Knight Attack 11 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Charisma + 1 per ally adjacent to you vs. AC  </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> After making the attack, each adjacent ally may shift 1 square. </specific>
+    <specific name="Special"> Each racial ally within 5 squares may instead shift 2 squares. </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_DH_03 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Hearten" type="Power" internal-id="ID_MSR_POWER_DH_01_02_02" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_MSR_PARAGON_PATH_DH_03,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,12 </Category>
+    <Prereqs> Ancestral Knight </Prereqs>
+    <Flavor> Encouraging words incite your harried allies once more into battle. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ancestral Knight Utility 12 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each bloodied ally in burst </specific>
+    <specific name="Effect"> Target can spend a healing surge and gain a +1 power bonus to attack rolls until the end of your next turn. </specific>
+    <specific name="Special"> Each racial ally also gains temporary hit points equal to your Charisma modifier. </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_DH_03 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Venerating  Assault" type="Power" internal-id="ID_MSR_POWER_DH_01_02_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_MSR_PARAGON_PATH_DH_03,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Ancestral Knight </Prereqs>
+    <Flavor> Your singular attack awakens ancestral spirits within your allies who then assail all adjacent foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ancestral Knight Attack 20 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 3[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> Each ally within 10 squares can immediately make a basic attack against an adjacent creature as a free action. </specific>
+    <specific name="Miss"> Half damage, and one ally within 10 squares can immediately make a basic attack against an adjacent target as a free action. </specific>
+    <specific name="Special"> Racial allies also gain a power bonus equal to your Charisma modifier to attack and damage rolls of the immediate basic attack. </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_DH_03 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

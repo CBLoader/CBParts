@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.03</Version>
+    <Filename>23-shaman.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/23-shaman.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/23-shaman.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Shaman -->
+  <!-- 23-shaman.part, version 1.03 -->
+  <!-- Original release: 13-July-2011; Last modified: 18-May-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 13-July-2011 Added Phrenic Master and powers.
+ Updated 01-August-2011 Moved main class from Dark Sun part file.
+ Updated 18-May-2012 DSH added.
+</Changelog> 
+  <!-- Shaman Class Updates -->
+  <RulesElement name="Shaman" type="Class" internal-id="ID_FMP_CLASS_147" source="Player's Handbook 2" revision-date="10/12/2010 1:40:25 PM">
+    <Flavor> “The spirits surround us, guide us, and hold all the knowledge of the world.” </Flavor>
+    <specific name="Key Abilities"> Wisdom, Constitution, Intelligence </specific>
+    <specific name="Implements"> Totems </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, longspear </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude, +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 7+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> Nature. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Arcana (Int), Athletics (Str), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Nature (Wis), Perception (Wis), Religion (Int) </specific>
+    <specific name="Build Options"> Animist Shaman, Bear Shaman, Eagle Shaman, Panther Shaman, World Speaker Shaman </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Companion Spirit, Healing Spirit, Speak with Spirits </specific>
+    <specific name="Role"> Leader. Your spirit companion bolsters and heals your nearby allies, and you can evoke other spirits to aid your allies and harm your foes. Depending on your choice of class features and powers, you lean toward either defender or striker as a secondary role. </specific>
+    <specific name="Power Source"> Primal. The spirits of the natural world give you power and manifest on your behalf. </specific>
+    <specific name="Creating"> All shamans rely on Wisdom, and they also benefit from a high Constitution or Intelligence. You can choose any shaman powers you like for your character, though many shamans favor one of two different builds, letting their power choices be shaped by the form of their spirit companions. </specific>
+    <specific name="Class Features"> Each shaman has the powers call spirit companion, healing spirit, and speak with spirits. Your choice of Companion Spirit determines whether you have the power spirit's fangs or spirit's shield. </specific>
+    <specific name="Supplemental"> Shaman Overview
+You lead your adventuring party from a position of relative safety, sending your spirit companion to the front of the battle while you linger behind. Your powers fall into two broad categories: melee attacks your spirit companion makes, and ranged attacks. Your daily powers include a number of conjurations and zones, representing your ability to call on additional spirits for aid.
+
+Religion
+Shamans draw their power from the primal power source and therefore don't usually worship gods. They view themselves as agents—not servants or masters—of the spirits of nature and instruct others how to live their lives in harmony with those spirits. Like druids, shamans call on the spirits to witness significant events but don't worship them. </specific>
+    <specific name="Implement"> Shamans use totems carved to resemble the spirits they most commonly call upon, particularly their spirit companions. When you wield a magic totem, you can add its enhancement bonus to the attack rolls and the damage rolls of shaman powers and shaman paragon path powers that have the implement keyword. Without an implement, you can still use these powers. </specific>
+    <specific name="Powers"> Your powers evoke primal spirits that you view as partners and revered elders. Many of your powers channel primal energy through your spirit companion and have the spirit keyword, including powers that have “spirit” as part of the range. Those powers treat your spirit companion's space as the origin square for the power, so “melee spirit 1” means you can target a creature adjacent to your spirit.
+Other shaman powers call on other spirits to intervene in the course of battle on your behalf, and many of those spirits then channel their energy through your spirit companion either to benefit allies or to harm enemies. </specific>
+    <specific name="Power Name"> Evocations </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+    <specific name="Short Description"> You command the services of a faithful spirit guide, using it to inspire allies and destroy enemies. </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_SHAMAN" type="Grants" />
+      <select type="Power" number="1" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_147" />
+      <statadd name="_LEVEL-ONE-HPS" value="+12" />
+      <statadd name="_PER-LEVEL-HPS" value="+5" />
+      <statadd name="Healing Surges" value="+7" />
+      <select type="Build" number="1" Category="$$CLASS" optional="true" />
+      <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      <statadd name="Will Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_147" />
+    </rules>
+Shamans are inspiring and dangerous battle leaders. They command powerful spirit guides, and through them lead their allies. These nature spirits bolster their allies' attacks and offer protection and healing when needed.
+In a rite of passage or initiation, you pledged yourself to the spirits, to be their voice and hands in the world. Through ancient song and sacred ceremony, you have called a powerful spirit companion to your side. The primal spirits of nature affirm your will, guide the actions of your allies, and deal mighty attacks against your foes. You might be a venerable advisor to a tribal leader, a young traveler seeking to bring tales of a wider world back to your people, or a scholar devoted to the pursuit of nearly forgotten lore.
+The spirits and voices of nature guide your every step. Their power flows through you, calling you to lead, to fight, and to triumph.
+   </RulesElement>
+    
+  <!-- Paragon Path, Dragon 394 -->
+  <RulesElement name="Phrenic Master" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_807" source="Dragon Magazine 394" revision-date="x/x/x">
+    <Prereqs> Call Spirit Companion power </Prereqs>
+    <print-prereqs> Call Spirit Companion power </print-prereqs>
+    <Flavor> Kneel before my intellect and tremble. </Flavor>
+    <specific name="Class Features"> ID_FMP_CLASS_FEATURE_3514, ID_FMP_CLASS_FEATURE_3515, ID_FMP_CLASS_FEATURE_3516 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13762,ID_FMP_POWER_13764,ID_FMP_POWER_13763 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13762,ID_FMP_POWER_13764,ID_FMP_POWER_13763 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_3514" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_3515" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_3516" type="Class Feature" Level="16" />
+      <grant name="ID_FMP_POWER_13762" type="Power" Level="11" />
+      <grant name="ID_FMP_POWER_13764" type="Power" Level="12" />
+      <grant name="ID_FMP_POWER_13763" type="Power" Level="20" />
+    </rules>
+  Your mind is the gateway through which you imprint your will upon the world. In your studies, you have searched for more powerful ways of asserting that will. By choosing the mind flayer as your totem creature, you've gained some of the illithid's natural prowess at bending the wills of lesser beings.
+  This connection has taught you hidden secrets of mental dominion, and you've found that they can also be applied to the shamanic practice of summoning spirit companions. In order to bind your new spirit companion to your will, you had to prove your dominance over it. Your spirit companion was cowed, to the point that it is more slave than friend. Even so, you know that if you let your guard down for a moment, the slave will try to become the master.
+</RulesElement>
+  <RulesElement name="Spiteful Retaliation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3514" source="Dragon Magazine 394" revision-date="6/2/2011 1:18:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Whenever an enemy attacks your spirit companion and causes it to disappear, that enemy is dazed until the end of its next turn. </specific>
+    <specific name="Level"> 11 </specific>
+  Whenever an enemy attacks your spirit companion and causes it to disappear, that enemy is dazed until the end of its next turn.
+</RulesElement>
+  <RulesElement name="Enervating Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3515" source="Dragon Magazine 394" revision-date="6/2/2011 1:18:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Inflict -2 save penalty with action point attack </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="When you spend an action point to make an attack, any enemy hit with the attack takes a -2 penalty to saving throws against any effects the attack imposes. Enemies hit by the attack grant combat advantage until the end of your next turn." />
+    </rules>
+  When you spend an action point to make an attack, any enemy hit with the attack takes a -2 penalty to saving throws against any effects the attack imposes. Enemies hit by the attack grant combat advantage until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Twin-Souled Projection" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3516" source="Dragon Magazine 394" revision-date="6/2/2011 1:18:35 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Use spirit companion as origin for ranged attacks. </specific>
+    <specific name="Level"> 16 </specific>
+  You can choose to use your spirit companion's square as the origin square for any of your ranged or area powers. If your spirit companion is not adjacent to any enemies, using a power in this manner does not provoke opportunity attacks.
+</RulesElement>
+  <RulesElement name="Intellect Pummel" type="Power" internal-id="ID_FMP_POWER_13762" source="Dragon Magazine 394" revision-date="x/x/x">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_807,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_6,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Phrenic Master </Prereqs>
+    <Flavor> Your attack may not be as potent as an illithid's mind blast, but you're satisfied to see your foes stumble about at your whim. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Phrenic Master Attack 11 </specific>
+    <specific name="Keywords"> Psionic, Primal, Implement, Charm, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 5 </specific>
+    <specific name="Target"> Each creature in blast </specific>
+    <specific name="Attack"> Wisdom vs. Will </specific>
+    <specific name="Hit">  2d6 + Wisdom modifier psychic damage, and the target is dazed until the end of your next turn. </specific>
+    <specific name="Effect"> You slide each target 2 squares. </specific>
+    <specific name="Special"> You can use your spirit companion's square as the origin for this attack. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_807 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Minion's Shield" type="Power" internal-id="ID_FMP_POWER_13764" source="Dragon Magazine 394" revision-date="x/x/x">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_807,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,12 </Category>
+    <Prereqs> Phrenic Master </Prereqs>
+    <Flavor> As the attack speeds towards you, you decide that your spirit companion should take the blow instead. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Phrenic Master Utility 12 </specific>
+    <specific name="Keywords"> Primal, Psionic </specific>
+    <specific name="Action Type"> Immediate interrupt </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Requirement"> Your spirit companion must be adjacent to you. </specific>
+    <specific name="Trigger"> You take damage from an attack. </specific>
+    <specific name="Effect"> Your spirit companion takes the damage instead of you. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_807 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Total Subjugation" type="Power" internal-id="ID_FMP_POWER_13763" source="Dragon Magazine 394" revision-date="x/x/x">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_807,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_57,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Phrenic Master </Prereqs>
+    <Flavor> Your spirit companion engulfs your enemy completely, controlling its movement as you control its mind. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Phrenic Master Attack 20 </specific>
+    <specific name="Keywords"> Primal, Psionic, Implement, Spirit </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee spirit 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> The target is dominated (save ends). </specific>
+    <specific name="Miss"> The target is dazed (save ends). </specific>
+    <specific name="Effect"> If your spirit companion is adjacent to the target at the start of your turn, you can slide the target 4 squares and slide your spirit companion 4 squares to a space adjacent to the target. This effect persists while the target is dazed or dominated by this power. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_807 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Shaman Powers, Dragon 395 -->
+  <RulesElement name="Four-Armed is Forewarned" type="Power" internal-id="ID_FMP_POWER_13771" source="Dragon Magazine 395" revision-date="8/27/2010 11:32:21 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_147,ID_FMP_CATEGORY_57,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> You channel the many-armed thri-kreen spirit through your ally, allowing him or her to strike with speed and ferocity. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Shaman Attack 9 </specific>
+    <specific name="Keywords"> Primal, Spirit </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee spirit 1 </specific>
+    <specific name="Target"> One ally </specific>
+    <specific name="Effect"> The target can make a melee basic attack against up to four enemies adjacent to it as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_147 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+<!-- DSH -->
+  <RulesElement name="Ancient Progenitor Spirit" type="Power" internal-id="ID_FMP_POWER_16501" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_147,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_57,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+    <Flavor> With a low hum, your spirit companion fades and the essence of an ancient ancestor comes to your aid, invading the minds of enemies foolish enough to stay close. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Shaman Attack 5 </specific>
+    <specific name="Keywords"> Implement, Primal, Psychic, Spirit, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst spirit 2 </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Attack"> Wisdom vs. Fortitude </specific>
+    <specific name="Hit"> 1d10 + Wisdom modifier psychic damage, and the target grants combat advantage and cannot benefit from any concealment (save ends both). </specific>
+    <specific name="Effect"> Your spirit companion disappears, and the burst creates a zone that lasts until the end of your next turn. Enemies in the zone take a -2 penalty to attack rolls, and any enemy that ends its turn in the zone takes 5 psychic damage. </specific>
+    <specific name="Sustain Minor"> The zone persists until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_147 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+The spirit world frightens the ignorant. It is associated with death and the great passing. Shamans understand that life extends beyond the mortal shell and that great ancestors wait to welcome us home once more.
+</RulesElement>
+</D20Rules>

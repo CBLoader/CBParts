@@ -1,0 +1,1993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<UpdateInfo>
+		<Version>1.12</Version>
+		<Filename>39-epic-destinies.part</Filename>
+		<PartAddress>http://cbloader.com/sorted/39-epic-destinies.part</PartAddress>
+		<VersionAddress>http://cbloader.com/sorted/39-epic-destinies.txt</VersionAddress>
+	</UpdateInfo>
+	<!-- Epic Destinies -->
+	<!-- 39-epic-destinies, version 1.12 -->
+	<!-- Original release: 13-July-2011; Last modified: 18-August-2012 -->
+	<!-- Test compiled with CBLoader build V1.3.0 -->
+	<!-- This part file belongs to the July 2011 reorganization of data files. -->
+	<!-- Special thanks to the entire community for handling the materials. -->
+	<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 28-July-2011 Primal Power, Soul of the World epic destiny Update.
+ Updated 29-July-2011 Primal Power, Soul of the Word-Knowledge of Ancient Lives Update.
+ Updated 21-November-2011 Added Epic Destinies from Heroes of the Feywild.
+ Updated 24-December-2011 Added Exemplar of Evil (BVOD).
+ Updated 26-February-2012 Added Heroes of the Elemental Chaos Epic Destinies.
+ Updated 11-May-2012 Quests for Humanity, Dragon 411, God-Emperor Destiny.
+ Updated 01-July-2012 Sovereign Will/Angelic Nature updates for June 2012.
+ Updated 07-July-2012 Emergent Primordial fix for resists, level 21.
+ Updated 18-August-2012 Shiradi Champion eligibility fix.
+	</Changelog>
+	<!-- Heroes of the Fallen Lands -->
+	<RulesElement name="Indomitable Champion" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_728" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:42:53 PM">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_2818, ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Powers"> ID_FMP_POWER_12781,ID_FMP_POWER_12782 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_12781,ID_FMP_POWER_12782 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3068" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_2818" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_POWER_12781" type="Power" Level="26" />
+			<grant name="ID_FMP_POWER_12782" type="Power" Level="30" />
+		</rules>
+It is your destiny to stand against the encroaching darkness that threatens to overwhelm the world. You started with battles against goblins and kobolds, but as time passed and your skill grew you faced ever more dangerous foes. Now, you understand that your fate rests far beyond the borders of the lands you have defended. Great powers from other planes threaten the world, and it is up to you to endure their attacks and end their menace forever.
+	As an Indomitable Champion, you are almost impossible to sway from your quest. Drawing on reserves of vitality, energy, and vigor, you push on despite your enemies' efforts. Destiny has chosen you to achieve some great deed, and as an epic hero you soldier on despite the obstacles and foes you face.
+	</RulesElement>
+	<RulesElement name="Epic Heroism" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3068" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/14/2010 9:29:04 AM">
+		<Category> 21 </Category>
+		<Flavor> Whether you boast the strength of a legion or the intellect of an entire academy of sages, your abilities are unparalleled among your people. </Flavor>
+		<specific name="Short Description"> Increase two different ability scores by 2. </specific>
+		<specific name="Level"> 21 </specific>
+		<specific name="_CS_ShortDescription"> Increase two different ability scores by 2 </specific>
+		<rules>
+			<select type="Class Feature" number="2" Category="ID_FMP_CLASS_FEATURE_3068" />
+		</rules>
+You increase two different ability scores by 2.
+	</RulesElement>
+	<RulesElement name="Epic Heroism (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EPIC_HEROISM_(STRENGTH)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Category> ID_FMP_CLASS_FEATURE_3068 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Epic Heroism (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EPIC_HEROISM_(DEXTERITY)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Category> ID_FMP_CLASS_FEATURE_3068 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Epic Heroism (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EPIC_HEROISM_(CONSTITUTION)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Category> ID_FMP_CLASS_FEATURE_3068 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Epic Heroism (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EPIC_HEROISM_(INTELLIGENCE)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Category> ID_FMP_CLASS_FEATURE_3068 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Epic Heroism (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EPIC_HEROISM_(WISDOM)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Category> ID_FMP_CLASS_FEATURE_3068 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Epic Heroism (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EPIC_HEROISM_(CHARISMA)" source="Player Essentials: Heroes of the Fallen Lands">
+		<Category> ID_FMP_CLASS_FEATURE_3068 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Epic Resilience" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2818" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/14/2010 9:29:04 AM">
+		<Category> 24 </Category>
+		<Flavor> Your dedication grants you the physical and mental toughness needed to survive and achieve your ultimate destiny. </Flavor>
+		<specific name="Short Description"> You gain 20 additional hit points and a +1 bonus to Fortitude, Reflex, and Will. </specific>
+		<specific name="Level"> 24 </specific>
+		<specific name="_CS_ShortDescription"> Gain 20 hit points and a +1 bonus to Fortitude, Reflex, and Will </specific>
+		<rules>
+			<statadd name="Hit Points" value="+20" />
+			<statadd name="Fortitude Defense" value="+1" type="Misc" />
+			<statadd name="Reflex Defense" value="+1" type="Misc" />
+			<statadd name="Will Defense" value="+1" type="Misc" />
+		</rules>
+You gain 20 additional hit points and a +1 bonus to Fortitude, Reflex, and Will.
+	</RulesElement>
+	<RulesElement name="Epic Tenacity" type="Power" internal-id="ID_FMP_POWER_12781" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:30:56 PM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_728,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_NO_ACTION,26 </Category>
+		<Prereqs> Indomitable Champion </Prereqs>
+		<Flavor> You shake off a potential killing blow, resolute in your determination to defeat your enemies. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Indomitable Champion Utility 26 </specific>
+		<specific name="Keywords"> Healing </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You drop to 0 hit points or fewer. </specific>
+		<specific name="Effect"> You regain hit points as if you had spent a healing surge, and you gain a +5 power bonus to all defenses until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_728 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+You cannot afford to fall in battle. Instead, your duty to stand before evil gives you the strength to stand against all odds.
+	</RulesElement>
+	<RulesElement name="Unmatched Defense" type="Power" internal-id="ID_FMP_POWER_12782" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:30:57 PM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_728,ID_INTERNAL_CATEGORY_NO_ACTION,30 </Category>
+		<Prereqs> Indomitable Champion </Prereqs>
+		<Flavor> At the last moment you slip aside, somehow dodging a blow that should have claimed your life. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Indomitable Champion Utility 30 </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You are hit by an attack. </specific>
+		<specific name="Effect"> You treat the triggering attack roll as a natural 1. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_728 </specific>
+		<specific name="Level"> 30 </specific>
+		<specific name="Power Type"> Utility </specific>
+It is your destiny to bring peace and order to the world, to throw back the encroaching darkness forevermore. When a foe has you cornered, when a killing blow is about to fall upon you, fate twists its weave to leave you unscathed.
+	</RulesElement>
+	<!-- Heroes of the Forgotten Kingdoms -->
+	<RulesElement name="Destined Scion" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_797" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3434, ID_FMP_CLASS_FEATURE_3068 </specific>
+		<specific name="Powers"> ID_FMP_POWER_13687,ID_FMP_POWER_13688 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_13687,ID_FMP_POWER_13688 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3068" type="Class Feature" level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3434" type="Class Feature" level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3435" type="Class Feature" level="26" />
+			<grant name="ID_FMP_CLASS_FEATURE_3436" type="Class Feature" level="30" />
+		</rules>
+The world has seen many empires, but all of them have fallen to treachery from within and enemies from without. You realize that if the world is ever to be safeguarded against evil, the old empires must arise again. It is your destiny to defeat the cosmic forces—be they deities, demon lords, or archdevils—that conspire to crush civilization.
+As a Destined Scion, you take the fight to the enemies of the mortal world. In battle, you are stern and resolute. Your foes' attacks cannot stop you, and when the time comes to deliver a killing blow, your attack strikes true.
+	</RulesElement>
+	<RulesElement name="Epic Combatant" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3434" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Prereqs> Destined Scion </Prereqs>
+		<Category>24</Category>
+		<Flavor>Your many successes in battle have given you insights beyond those of normal combatants.</Flavor>
+		<specific name="Short Description">Gain a +1 bonus to attack rolls and a +2 bonus to saving throws</specific>
+		<specific name="Level">24</specific>
+		<rules>
+			<statadd name="Attack Rolls" value="+1" />
+			<statadd name="Saving Throws" value="+2" />
+		</rules>
+You gain a +1 bonus to attack rolls and a +2 bonus to saving throws.
+	</RulesElement>
+	<RulesElement name="Epic Recovery" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3435" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Category>26</Category>
+		<Flavor>Like the ancient kingdoms that fell but will rise once again, so too do you rise, undaunted, when you fall in battle.</Flavor>
+		<specific name="Short Description">Gain the Epic Recovery power</specific>
+		<specific name="Level">26</specific>
+		<specific name="Powers">ID_FMP_POWER_13687</specific>
+		<specific name="Type">Utility</specific>
+		<specific name="Class">ID_FMP_EPIC_DESTINY_797</specific>
+		<specific name="_DisplayPowers">ID_FMP_POWER_13687</specific>
+		<specific name="_CS_ShortDescription">@</specific>
+		<rules>
+			<grant name="ID_FMP_POWER_13687" type="Power" />
+		</rules>	
+You gain the epic recovery power.
+	</RulesElement>
+	<RulesElement name="Undeniable Victory" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3436" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Category>30</Category>
+		<Flavor>You stand on the verge of rebuilding what was lost. Your power is unmatched, and any who stand against you face certain death.</Flavor>
+		<specific name="Short Description">Gain the Undeniable Victory power</specific>
+		<specific name="Level">30</specific>
+		<specific name="Powers">ID_FMP_POWER_13688</specific>
+		<specific name="Type">Utility</specific>
+		<specific name="Class">ID_FMP_EPIC_DESTINY_797</specific>
+		<specific name="_DisplayPowers">ID_FMP_POWER_13688</specific>
+		<specific name="_CS_ShortDescription">@</specific>
+		<rules>
+			<grant name="ID_FMP_POWER_13688" type="Power" />
+		</rules>
+You gain the undeniable victory power.
+	</RulesElement>
+	<RulesElement name="Epic Recovery" type="Power" internal-id="ID_FMP_POWER_13687" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_900000,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_NO_ACTION,26 </Category>
+		<Prereqs> Destined Scion </Prereqs>
+		<Flavor> Though your enemies thought you defeated, you stand up once again, injured but unbowed. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Destined Scion Utility 26 </specific>
+		<specific name="Keywords"> Healing </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You start your turn at 0 hit points or fewer. </specific>
+		<specific name="Effect"> You regain hit points equal to twice your healing surge value. You can then stand up as a free action. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_797 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+Like the ancient kingdoms that fell but will rise once again, so too do you rise, undaunted, when you fall in battle.
+	</RulesElement>
+	<RulesElement name="Undeniable Victory" type="Power" internal-id="ID_FMP_POWER_13688" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_900000,ID_INTERNAL_CATEGORY_FREE_ACTION,30 </Category>
+		<Prereqs> Destined Scion </Prereqs>
+		<Flavor> Time seems to slow as the cosmos aligns to prsent the perfect opportunity to cut down your foe. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Destined Scion Utility 30 </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger">You miss a target with an attack. </specific>
+		<specific name="Effect"> The attack instead hits the target </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_797 </specific>
+		<specific name="Level"> 30 </specific>
+		<specific name="Power Type"> Utility </specific>
+You stand on the verge of rebuilding what was lost. Your power is unmatched, and any who stand against you face certain death.
+	</RulesElement>
+	<!-- Dragon Magazine # 390, Dead God Avatar was missing -->
+	<RulesElement name="Dead God Avatar" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_844" source="Dragon Magazine 390" revision-date="3/29/2011 3:04:08 PM">
+		<Prereqs> 21st level, divine power source </Prereqs>
+		<print-prereqs> 21st level, must worship a dead deity, divine power source </print-prereqs>
+		<Flavor> Dead does not mean forgotten. </Flavor>
+		<specific name="Immortality"> Immortality?
+Upon completion of your final quest, you disappear, leaving only dust, as you are entirely absorbed by your deity. You become part of it, aware of what happens in the world around you, but unable to participate while your deity is still dead.
+	Perhaps your sacrifice rejuvenates the dead deity, or it might increase the activity of the deity's cult, giving it a chance at resurrection in the future. If your deity is brought back, you return as its avatar. As its most loyal servant, you might yet play a role in the future of the faith. </specific>
+		<specific name="Power Name" />
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3810, ID_FMP_CLASS_FEATURE_3811, ID_FMP_CLASS_FEATURE_3812, ID_FMP_CLASS_FEATURE_3813 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14069 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14069 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3810" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3811" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3812" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3813" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_14069" type="Power" Level="26" />
+		</rules>
+When you follow this destiny, you begin to transform into an avatar of your dead deity, but at a price. As you leech power from your deity, your soul slowly dwindles and rekindles glimmers of the deity's consciousness. You gain considerable power and mental resilience but sacrifice some of your life force to earn that power.
+	As this connection grows stronger, you also become more attuned to the lingering echoes of your deity's feelings and thoughts. You come as close to being one entity as is possible, and this brings the realization that you must surrender your individuality to ever bring your power to the next level and achieve the return of your deity—or, if you prefer, your transformation into a deity.
+	</RulesElement>
+	<RulesElement name="By Divine Command" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3810" source="Dragon Magazine 390" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 21 </Category>
+		<Prereqs> 21st level, must worship a dead deity, divine power source </Prereqs>
+		<specific name="Short Description"> You gain resist 10 psychic and are immune to charm effects. </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<statadd name="By Divine Command Resist" value="+10" />
+			<statadd name="resist:psychic" value="+By Divine Command Resist" type="resist" />
+		</rules>
+You gain resist 10 psychic and are immune to charm effects.
+	</RulesElement>
+	<RulesElement name="Divine Insight" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3811" source="Dragon Magazine 390" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 21 </Category>
+		<Prereqs> 21st level, must worship a dead deity, divine power source </Prereqs>
+		<specific name="Short Description"> Your Wisdom or Charisma score increases by 2. </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3811" />
+		</rules>
+Your Wisdom or Charisma score increases by 2.
+	</RulesElement>
+	<RulesElement name="Divine Insight (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_DIVINE_INSIGHT_(WISDOM)" source="Dragon Magazine 390">
+		<Category> ID_FMP_CLASS_FEATURE_3811 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3811 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+  Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Divine Insight (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_DIVINE_INSIGHT_(CHARISMA)" source="Dragon Magazine 390">
+		<Category> ID_FMP_CLASS_FEATURE_3811 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3811 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+  Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Astral Corpse" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3812" source="Dragon Magazine 390" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 24 </Category>
+		<Prereqs> 21st level, must worship a dead deity, divine power source </Prereqs>
+		<specific name="Short Description"> Successful death saving throws are treated as natural 20s. If out of healing surges, regain [surge value] hp 1/encounter (rechages after an extended rest) </specific>
+		<specific name="Level"> 24 </specific>
+Your spirit is accustomed to plumbing the depths of the Astral Sea, and it returns there when death beckons. With its last flicker, your spirit can gather the dissipating essence of your dead deity and fuse it into the spark of life. While this process appears to take only moments to your friends, to you it feels as if you were adrift for days or weeks. When you make death saving throws during an encounter, any successful saving throw has the same effect as if you had rolled a 20. If you have no healing surges, you regain hit points equal to your healing surge value. Once this feature is used, it can't be used again until after you have taken an extended rest.
+	</RulesElement>
+	<RulesElement name="Sacrifice" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3813" source="Dragon Magazine 390,Dragon Magazine 391" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 30 </Category>
+		<Prereqs> 21st level, must worship a dead deity, divine power source </Prereqs>
+		<specific name="Short Description"> Spend a healing surge (minor action): instead of hp, regain an encounter power. May be used to regain a daily power once per day </specific>
+		<specific name="Level"> 30 </specific>
+As a minor action, you can spend a healing surge. Instead of regaining hit points, you regain an encounter power. Once per day, instead of regaining an encounter power in the manner described above, you can regain a daily power.
+	</RulesElement>
+	<RulesElement name="Summon Divine Presence" type="Power" internal-id="ID_FMP_POWER_14069" source="Dragon Magazine 390" revision-date="5/25/2011 2:41:59 PM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_EPIC_DESTINY_844,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Dead God Avatar </Prereqs>
+		<Flavor> Your god's essence infuses the world around you. Its astral might burns away your enemies' defenses. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Dead God Avatar Utility 26 </specific>
+		<specific name="Keywords"> Divine, Zone </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Effect"> The burst creates a zone that lasts until the end of your next turn. While within the zone, enemies gain vulnerable 10 radiant and vulnerable 10 necrotic to your attacks. Depending on the deity you worship, the power creates an additional effect:
+Aurom: The zone is filled with a mind-numbing gloom. Enemies that begin their turn in the zone are dazed until the start of their next turn.
+Haramathur: Those within the zone take on the semblance of stone. While within the zone, allies gain a +2 bonus to AC and Fortitude. Enemies treat the zone as difficult terrain, and enemies that begin their turn in the zone are slowed until the start of their next turn.
+Laeris: The zone is filled with a magical mist. Enemies treat the zone as heavily obscured to all senses, including blindsight and tremorsense.
+Nusemnee: Pulsing light illuminates the zone. While within the zone, allies gain a +2 power bonus to saving throws and can use second wind as a minor action (or as a free action if they can use second wind as a minor action normally).
+Sagawehn: The zone is filled with buzzing insects. While within the zone, enemies have a -2 penalty to attack rolls and to all defenses. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_844 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+	</RulesElement>
+	<!-- Dragon Magazine # 397 -->
+	<RulesElement name="Sage of the Swan Tower" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_847" source="Dragon Magazine 397" revision-date="8/27/2010 12:40:14 PM">
+		<Prereqs> 21st level, must worship Ioun </Prereqs>
+		<print-prereqs> 21st level, must worship Ioun </print-prereqs>
+		<specific name="Power Name" />
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3825, ID_FMP_CLASS_FEATURE_3826, ID_FMP_CLASS_FEATURE_3827 </specific>
+		<specific name="Powers"> ID_FMP_POWER_1752 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_1752 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3825" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3826" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3827" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_1752" type="Power" Level="26" />
+		</rules>
+Your ceaseless drive to learn and your devotion to Ioun has enabled you to attain a status few others can claim. As a Sage of the Swan Tower, you have gained access to the glorious Halls of Enlightenment and can call upon its infinite knowledge. You, however, are not like the other sages. You find the traditional method of learning through reading to be insufficient and spend much of your time in the field, acquiring new knowledge and testing theories.
+    Each new nugget of information—each new revelation—brings you closer to the goal that you have held in your heart for so long. You feel the call of Ioun as you achieve greater feats of discovery and demystify new layers of knowledge. Eventually your dream becomes reality, and you are invited to become one of the timeless sages of the Swan Tower.
+    Life among your fellow sages in Kerith-Ald is all you hoped it would be, yet you see more potential for yourself every time you visit the Pillars of Ioun. It has been a long time since Ioun has honored one of her sages in such a way. Perhaps with some perseverance you can come to deserve your own alabaster monument.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field Skill" type="Category" internal-id="ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_SKILL" source="Dragon Magazine 397">
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+Category for skill choice
+	</RulesElement>
+	<RulesElement name="Expert in Your Field Ability" type="Category" internal-id="ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_ABILITY" source="Dragon Magazine 397">
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+Category for ability increase
+	</RulesElement>
+	<RulesElement name="Expert in Your Field" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3825" source="Dragon Magazine 397" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 21 </Category>
+		<specific name="Short Description"> Select one trained skill (Arcana, Dungeoneering, History, Nature, or Religion), may roll twice and use either result for skill checks. +2 to Int or Wis </specific>
+		<specific name="_CS_ShortDescription">@</specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="Expert in Your Field Ability" />
+			<select type="Class Feature" number="1" Category="Expert in Your Field Skill" />
+		</rules>
+Increase your Intelligence or Wisdom score by 2. In addition, select one of the following skills in which you have training: Arcana, Dungeoneering, History, Nature, or Religion. Whenever you make a check using the selected skill, you can roll twice and use either result.
+	</RulesElement>
+	<RulesElement name="Divine Arcana" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3826" source="Dragon Magazine 397" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 24 </Category>
+		<specific name="Short Description"> When you use an arcane attack power, you gain combat advantage on your next use of a divine attack power before the end of your next turn. </specific>
+		<specific name="Level"> 24 </specific>
+When you use an arcane attack power, you gain combat advantage on your next use of a divine attack power before the end of your next turn.
+	</RulesElement>
+	<RulesElement name="Secret of the Pillars" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3827" source="Dragon Magazine 397" revision-date="6/2/2011 1:18:35 PM">
+		<Category> 30 </Category>
+		<specific name="Short Description"> Once per encounter, you can make an Intelligence check or a Wisdom check as a free action when you take damage. Subtract the result of that check from the damage you take. </specific>
+		<specific name="Level"> 30 </specific>
+Once per encounter, you can make an Intelligence check or a Wisdom check as a free action when you take damage. Subtract the result of that check from the damage you take.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(INTELLIGENCE)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_ABILITY </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(WISDOM)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_ABILITY </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (Arcana)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(ARCANA)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_SKILL </Category>
+		<Prereqs> Arcana Skill Training </Prereqs>
+		<print-prereqs> Arcana Skill Training </print-prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> Make two Arcana checks and use either result. </specific>
+		<specific name="_DisplayName"> Arcana </specific>
+Whenever you make a check using Arcana, you can roll twice and use either result.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (Dungeoneering)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(DUNGEONEERING)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_SKILL </Category>
+		<Prereqs> Dungeoneering Skill Training </Prereqs>
+		<print-prereqs> Dungeoneering Skill Training </print-prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> Make two Dungeoneering checks and use either result. </specific>
+		<specific name="_DisplayName"> Dungeoneering </specific>
+Whenever you make a check using Dungeoneering, you can roll twice and use either result.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (History)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(HISTORY)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_SKILL </Category>
+		<Prereqs> History Skill Training </Prereqs>
+		<print-prereqs> History Skill Training </print-prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> Make two History checks and use either result. </specific>
+		<specific name="_DisplayName"> History </specific>
+Whenever you make a check using History, you can roll twice and use either result.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (Nature)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(NATURE)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_SKILL </Category>
+		<Prereqs> Nature Skill Training </Prereqs>
+		<print-prereqs> Nature Skill Training </print-prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> Make two Nature checks and use either result. </specific>
+		<specific name="_DisplayName"> Nature </specific>
+Whenever you make a check using Nature, you can roll twice and use either result.
+	</RulesElement>
+	<RulesElement name="Expert in Your Field (Religion)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_EXPERT_IN_YOUR_FIELD_(RELIGION)" source="Dragon Magazine 397">
+		<Category> ID_INTERNAL_CATEGORY_EXPERT_IN_YOUR_FIELD_SKILL </Category>
+		<Prereqs> Religion Skill Training </Prereqs>
+		<print-prereqs> Religion Skill Training </print-prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3825 </specific>
+		<specific name="Short Description"> Make two Religion checks and use either result. </specific>
+		<specific name="_DisplayName"> Religion </specific>
+Whenever you make a check using Religion, you can roll twice and use either result.
+	</RulesElement>
+	<RulesElement name="Knowledge Applied" type="Power" internal-id="ID_FMP_POWER_14084" source="Dragon Magazine 397" revision-date="8/27/2010 11:26:21 AM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_EPIC_DESTINY_847,ID_INTERNAL_CATEGORY_FREE_ACTION,26 </Category>
+		<Prereqs> Sage of the Swan Tower </Prereqs>
+		<Flavor> Tapping into the knowledge contained in the Swan Tower, you guide an ally's actions toward success. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Sage of the Swan Tower Utility 26 </specific>
+		<specific name="Keywords"> Arcane, Divine </specific>
+		<specific name="Action Type"> Free action </specific>
+		<specific name="Attack Type"> Close burst 5  </specific>
+		<specific name="Trigger"> An ally in the burst fails a skill check, an ability check, or a saving throw. </specific>
+		<specific name="Effect"> The triggering ally can make a new roll, with a power bonus equal to your Intelligence or Wisdom modifier. The ally can use either roll. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_847 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+	</RulesElement>
+	<!-- Heroes of Shadow -->
+	<RulesElement name="Guardian of the Void" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_840" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:15:02 AM">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<Flavor> You walk a path carefully balanced between life and death. You draw on the power of the Shadowfell to preserve death, as well as to prevent the annihilation of countless living things. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+As a Guardian of the Void, your destiny is tied to those who hope to unlock the power of the Echoing Void. Perhaps you crossed paths early, fighting a minor skirmish that later proved to be one of the first steps in beginning the ritual. A guardian has little knowledge of this destiny, assuming its mantle only when the ritual nears its final stages. You might find that a few disparate events come together to paint a terrifying pattern—one that you must disrupt.
+	A Guardian of the Void fights to prevent the Echoing Void's completion, to destroy all knowledge of the ritual, and to defeat those who would pursue the power it offers. By the time a guardian arises, the threat posed to the cosmos is both dire and imminent. You will face down the servants of the powerful creature that seeks to complete the Echoing Void, preparing for your final battle. </specific>
+		<specific name="Power Name" />
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3798, ID_FMP_CLASS_FEATURE_3799, ID_FMP_CLASS_FEATURE_3800, ID_FMP_CLASS_FEATURE_3859 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14065 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14065 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3798" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3799" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3859" type="Class Feature" Level="26" />
+			<grant name="ID_FMP_CLASS_FEATURE_3800" type="Class Feature" Level="30" />
+		</rules>
+The Shadowfell is a realm of death, the one thing in the universe that unifies all mortal folk, from the lowliest beggar to the mightiest emperor. Even the gods are vulnerable to death's sting. During the Dawn War between the gods and the primordials, many deities fell in battle. Since that time, gods have died at the hands of demons and even mortals.
+	Some creatures seek to escape death's grasp. A wizard walks the dark path of lichdom to attain immortality. An alchemist brews a secret elixir that will extend his life by centuries. Such creatures only delay the inevitable. Others, however, take a more direct approach to avoiding their fate.
+	Scattered pieces of lore, some dating back to the time before the Dawn War, suggest that death is not an intrinsic part of the cosmic order. By performing a dark ritual known as the Echoing Void, creatures intent on immortality at any cost can overcome death—but only by sacrificing millions of sentient lives.
+	The signs of preparation for this ritual are unmistakable. For a creature that seeks to create devastation on such a massive scale, the options are few—perhaps smashing an astral dominion or annihilating an entire region of the world. Secrecy rather than overwhelming power is such a villain's primary tool, since the pursuit of the Echoing Void is bound to draw the wrath of heroes, gods, fiends, and primordials alike.
+	When the ritual of the Echoing Void is begun, the magic it gathers spawns an equal and opposite reaction. The cosmos anoints champions to oppose the ritual's master. These powerful heroes become the Guardians of the Void, dedicated to preventing the wholesale destruction of the established order of death and life.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3798" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 21 </Category>
+		<Flavor> As the final guardian of the mystery of death, you can call on the power of life to sustain you on your quest. Your epic form is honed more sharply, even as you gain a measure of power against death. </Flavor>
+		<specific name="Short Description"> While you are bloodied, you have resist 15 necrotic and regeneration 5. </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3798" />
+			<statadd name="resist:necrotic" value="+15" type="resist" condition="while you are bloodied" />
+		</rules>
+You increase one ability score of your choice by 2.
+	In addition, while you are bloodied, you have resist 15 necrotic and regeneration 5.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_RAVEN_GUARDIAN'S_ENDURANCE_(STRENGTH)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3798 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3798 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_RAVEN_GUARDIAN'S_ENDURANCE_(DEXTERITY)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3798 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3798 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_RAVEN_GUARDIAN'S_ENDURANCE_(CONSTITUTION)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3798 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3798 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_DisplayName"> Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_RAVEN_GUARDIAN'S_ENDURANCE_(INTELLIGENCE)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3798 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3798 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_RAVEN_GUARDIAN'S_ENDURANCE_(WISDOM)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3798 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3798 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Raven Guardian's Endurance (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_RAVEN_GUARDIAN'S_ENDURANCE_(CHARISMA)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3798 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3798 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Guardian's Recovery" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3799" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 24 </Category>
+		<Flavor> Your fight to preserve the place of death in the cosmos allows you to resist death's cold hand when it reaches for you. </Flavor>
+		<specific name="Short Description"> +2 bonus to death saving throws, bonus increases by 1 for each other Guardian of the Void within 20 squares </specific>
+		<specific name="Level"> 24 </specific>
+		<rules>
+			<statadd name="Death Saving Throws" value="+2" type="Class Feature" />
+		</rules>
+You gain a +2 bonus to death saving throws. You increase this bonus by 1 for each other Guardian of the Void within 20 squares of you.
+	</RulesElement>
+	<RulesElement name="Soul of Destiny" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3859" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 26 </Category>
+		<Flavor> Those who fight alongside you share in your all-important task, gaining a measure of power against your fated foes. </Flavor>
+		<specific name="Short Description"> Gain the soul of destiny power </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14065 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_840 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14065 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_14065" type="Power" />
+		</rules>
+You gain the soul of destiny power.
+	</RulesElement>
+	<RulesElement name="Soul of Destiny" type="Power" internal-id="ID_FMP_POWER_14065" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:14:31 AM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3859,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_840,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Guardian of the Void </Prereqs>
+		<Flavor> The energy of the Shadowfell threads through you and your allies, letting you share the power of your destiny. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Guardian of the Void Utility 26 </specific>
+		<specific name="Keywords"> Aura, Shadow </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You activate an aura 5 that lasts until the end of your next turn. While in the aura, you and each of your allies can use a minor action to lose a healing surge and gain temporary hit points equal to his or her healing surge value and a +4 power bonus to his or her next attack roll, skill check, or saving throw. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_840 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3859 </specific>
+	</RulesElement>
+	<RulesElement name="Guardian of Death" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3800" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 30 </Category>
+		<Flavor> Death is no longer a threat to you. As its champion, you gain the resilience to fight on against even the most overwhelming odds. </Flavor>
+		<specific name="Short Description"> 1/Day: when you would drop to 0hp or fewer, instead regain all your hp, end effects of your choosing, stand up (free), teleport adj to another Guardian of the Void (free) </specific>
+		<specific name="Level"> 30 </specific>
+Once per day when you would drop to 0 hit points or fewer, you instead regain all your hit points, can stand up as a free action, end all effects of your choice that are affecting you, and can teleport adjacent to any other Guardian of the Void as a free action.
+	</RulesElement>
+	<RulesElement name="Keeper of the Everflow" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_841" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:16:39 AM">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<Flavor> You draw on the power of the Spirit Wheel, fundamentally changing your physical and spiritual nature to adapt to any challenge you face. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+As you achieve enlightenment, your actions attract the attention of beings that would rather face eternal destruction than abide a change in the everflow.
+	First and foremost among these opponents are the servants of the Raven Queen. Her legions of shadar-kai and sorrowsworn hunt you unceasingly, but their wrath is only a foreshadowing of the eventual confrontation between you and the god of death. When that final conflict comes, you will lead the Raven Queen back into the everflow—by force if necessary—so that she might be reborn and attain the enlightenment she has denied herself and all other creatures. </specific>
+		<specific name="Power Name" />
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3801, ID_FMP_CLASS_FEATURE_3802, ID_FMP_CLASS_FEATURE_3803, ID_FMP_CLASS_FEATURE_3860 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14066 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14066 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3801" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3802" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3860" type="Class Feature" Level="26" />
+			<grant name="ID_FMP_CLASS_FEATURE_3803" type="Class Feature" Level="30" />
+		</rules>
+A constant stream of spirits passes through the Shadowfell—part of a grand procession of life, death, and rebirth known to a few ascetics as the everflow. Those who believe in the everflow also believe that it was once intended to return souls back to the world for a new lease on life. According to legend, the dread god Nerull usurped the everflow by hoarding the spirits of the dead. His successor, the Raven Queen, only partly undid the damage done by the fallen god, cutting the everflow short and passing judgment on mortal souls as she sees fit.
+	The select few who have glimpsed this truth have chosen to correct the course of the everflow. To do this, the Keepers of the Everflow must find a mighty construct hidden deep in the darklands of the Shadowfell—the great Spirit Wheel, set in motion by the actions of the first Keepers. If they complete their work, the everflow will trickle away from the Raven Queen's domain as the procession of souls is redirected from the road to Letherna back into the world. The existence of the Keepers of the Everflow is an affront to the god of death, and she will stop at nothing until the faithful of this upstart order are all held in her wintry grasp.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3801" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 21 </Category>
+		<Flavor> You have touched the enlightenment promised by the Spirit Wheel, letting you improve your innate abilities as the life force of all creatures flows through you. </Flavor>
+		<specific name="Short Description"> You can change your origin at the end of a short rest or an extended rest. You gain a benefit based on the origin you choose, even if that origin is your native origin. </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3801" />
+		</rules>
+You increase one ability score of your choice by 2.
+	In addition, you can change your origin at the end of a short rest or an extended rest. You gain a benefit based on the origin you choose, even if that origin is your native origin.
+	Aberrant: You have psychic resistance equal to 5 + one-half your level. Any creature that hits or misses you with an attack that targets your Will takes psychic damage equal to your Intelligence, Wisdom, or Charisma modifier.
+	Elemental: You have resist 10 acid, resist 10 cold, resist 10 fire, and resist 10 lightning. Your attacks ignore any resistance to acid, cold, fire, or lightning damage.
+	Fey: You have a +1 bonus to Reflex and Will, and you are immune to charm effects.
+	Immortal: While you are bloodied, you have regeneration 5. Your at-will attacks that deal untyped damage can now deal radiant damage instead.
+	Natural: You have resist 5 to all damage and a +2 bonus to saving throws.
+	Shadow: You have resist 10 necrotic. Any creature that hits or misses you with an attack that targets your Will takes necrotic damage equal to your Intelligence, Wisdom, or Charisma modifier.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ENLIGHTENED_REBIRTH_(STRENGTH)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3801 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3801 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ENLIGHTENED_REBIRTH_(DEXTERITY)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3801 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3801 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ENLIGHTENED_REBIRTH_(CONSTITUTION)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3801 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3801 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_DisplayName"> Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ENLIGHTENED_REBIRTH_(INTELLIGENCE)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3801 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3801 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ENLIGHTENED_REBIRTH_(WISDOM)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3801 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3801 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Enlightened Rebirth (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ENLIGHTENED_REBIRTH_(CHARISMA)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3801 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3801 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Life Overflow" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3802" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 24 </Category>
+		<Flavor> The enemies that stand between you and your quest are legion, but you are guided by the Spirit Wheel. Your connection with the everflow grows stronger each time you fall and rise again. </Flavor>
+		<specific name="Short Description"> 1/Day, start turn w/ 0 hp or fewer: gain [bloodied value] hp, +5 temp hp per allied Keeper present, end effects of your choosing. May also change origin for new Enlightened Rebirth benefit. </specific>
+		<specific name="Level"> 24 </specific>
+Once per day when you start your turn at 0 hit points or fewer, you regain hit points equal to your bloodied value and end all effects of your choice that are affecting you. You can also change your origin, gaining a different benefit from your Enlightened Rebirth feature. You also gain 5 temporary hit points for every allied Keeper of the Everflow present in the encounter.
+	</RulesElement>
+	<RulesElement name="Lore of the Wheel" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3860" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 26 </Category>
+		<Flavor> Countless spirits are connected to each other through the Spirit Wheel. With a moment's concentration, you leave your flesh and let your soul roam the everflow, drenching yourself in the knowledge of all who came before you. </Flavor>
+		<specific name="Short Description"> Gain the lore of the wheel power </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14066 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_841 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14066 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_14066" type="Power" />
+		</rules>
+You gain the lore of the wheel power.
+	</RulesElement>
+	<RulesElement name="Turn the Wheel" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3803" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 30 </Category>
+		<Flavor> At long last, you unlock the secrets of the Spirit Wheel, binding your opponents to the power of the everflow. </Flavor>
+		<specific name="Short Description"> Hit enemy w/ daily attack or crit: enemy can only make basic attacks until your next turn ends. Also, when you drop an enemy to 0 hp or fewer, you may choose for it to reincarnate as a natural creature. </specific>
+		<specific name="Level"> 30 </specific>
+When you hit an enemy with a daily attack power or when you score a critical hit against an enemy, that enemy can make only basic attacks until the end of your next turn. When you reduce an enemy to 0 hit points, you can choose to have that enemy reincarnated in the world as a natural creature with no memory of its past life. You have no control over where and how the enemy reincarnates.
+	</RulesElement>
+	<RulesElement name="Lore of the Wheel" type="Power" internal-id="ID_FMP_POWER_14066" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:16:17 AM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3860,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_EPIC_DESTINY_841,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Keeper of the Everflow </Prereqs>
+		<Flavor> Black shadow fills your gaze for a moment, as your mind delves deep into the accumulated knowledge of all beings. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Keeper of the Everflow Utility 26 </specific>
+		<specific name="Keywords"> Shadow </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Target"> You or an allied Keeper of the Everflow in the burst </specific>
+		<specific name="Effect"> Until the end of your next turn, the target gains a +5 bonus to skill checks. The target can use any skill as if he or she had training in that skill. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_841 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3860 </specific>
+	</RulesElement>
+	<RulesElement name="Marshal of Letherna" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_842" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:18:15 AM">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<Flavor> You are a principal commander in the armies of death, preserving the citadel's sanctity and supporting the Raven Queen's rule. Her servants and power are yours to command, and just as your foes fear death, they will learn to fear you. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+The Marshals of Letherna are given command over the upper echelons of the Raven Queen's entourage, facing down the threats to her power and to the cosmic balance she upholds. You will stand on the battlements of that great fortress, raining your deity's blessings down on the demons, godlings, and elemental forces that crash against Letherna's gates. When the time comes to finally put down the threats against the god of death, you will lead the strike force.
+	Of all the dangers to Letherna, none rank higher than Orcus, Demon Prince of Undeath. His ultimate goal is to sit on the Raven Queen's throne, subverting the natural order so that every creature that dies becomes undead. As you defend your dark mistress, a confrontation with Orcus seems all but inevitable. </specific>
+		<specific name="Power Name" />
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3804, ID_FMP_CLASS_FEATURE_3805, ID_FMP_CLASS_FEATURE_3806, ID_FMP_CLASS_FEATURE_3861 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14067 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14067 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3804" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3805" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3861" type="Class Feature" Level="26" />
+			<grant name="ID_FMP_CLASS_FEATURE_3806" type="Class Feature" Level="30" />
+		</rules>
+Letherna lies deep in the Shadowfell, far beyond the reach of most mortals. This bastion of the Raven Queen is seen only by the spirits of the dead and by the privileged retainers and bodyguards of the god of death. Those loyal to the Raven Queen stand ready to defend her citadel's frost-covered walls from any threat.
+	Ages ago, when the Raven Queen struck down the dread god Nerull, the other deities crafted a pact that changed the nature of the gods' relationship with death. To prevent the recently ascended queen from hoarding the spirits of the dead as her own personal army, the pact stipulated that the Raven Queen would be the god of death but not god of the dead, serving as a custodian of the natural cycle of life and death. In return, the gods would allow the Raven Queen to enlist their own followers to aid her worshipers in the defense of her realm. This arrangement suited the Raven Queen, herself an ascended mortal, who preferred to deal with mortals more than with the uncaring powers of the Astral Sea.
+	That call of duty has sounded again. The armies of Letherna have need of commanders, and only the greatest heroes can be entrusted with the sanctity of the afterlife. With grim determination, the Marshals of Letherna pick up the Raven Queen's banner and stand fast in the defense of her bastion.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3804" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 21 </Category>
+		<Flavor> Your mind and body are infused with the power of Letherna, steeling you with an unbreakable resolve. </Flavor>
+		<specific name="Short Description"> You are immune to charm and fear effects. Gain a 2 + [allied Marshals of Letherna within 10 squares] bonus to death saving throws. </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3804" />
+			<statadd name="Death Saving Throws" value="+2" type="Class Feature" />
+		</rules>
+You increase one ability score of your choice by 2.
+	In addition, you are immune to charm effects and fear effects, and you gain a bonus to death saving throws equal to 2 + the number of allied Marshals of Letherna within 10 squares of you.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SWORN_TO_DUTY_(STRENGTH)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3804 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3804 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SWORN_TO_DUTY_(DEXTERITY)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3804 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3804 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SWORN_TO_DUTY_(CONSTITUTION)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3804 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3804 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_DisplayName"> Constitution </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SWORN_TO_DUTY_(INTELLIGENCE)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3804 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3804 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SWORN_TO_DUTY_(WISDOM)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3804 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3804 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Sworn to Duty (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SWORN_TO_DUTY_(CHARISMA)" source="Player Essentials: Heroes of Shadow">
+		<Category> ID_FMP_CLASS_FEATURE_3804 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3804 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Legions of Letherna" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3805" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 24 </Category>
+		<Flavor> As battle rages, you can call the armies of Letherna to your side. Shadow creatures congregate near you to hamper the movements of your enemies and allow you to control the battlefield. </Flavor>
+		<specific name="Short Description"> While you're conscious, squares within 2 are treated as difficult terrain by enemies.  May end/resume effect as desired (minor action) </specific>
+		<specific name="Level"> 24 </specific>
+While you are conscious, enemies treat squares within 2 squares of you as difficult terrain. You can end or resume this effect as a minor action.
+	</RulesElement>
+	<RulesElement name="Clarion of Sorrow" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3861" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 26 </Category>
+		<Flavor> The sorrow that is the heart of the Raven Queen's legacy is yours to command, letting you forge a link to the power of death. </Flavor>
+		<specific name="Short Description"> Gain the clarion of sorrow power </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14067 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_842 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14067 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_14067" type="Power" />
+		</rules>
+You gain the clarion of sorrow power.
+	</RulesElement>
+	<RulesElement name="Clarion of Sorrow" type="Power" internal-id="ID_FMP_POWER_14067" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:17:53 AM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3861,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_842,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Marshal of Letherna </Prereqs>
+		<Flavor> A great horn sounds, carrying with it a shroud of shadow that wraps your foes like raven wings. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Marshal of Letherna Utility 26 </specific>
+		<specific name="Keywords"> Shadow, Zone </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Area burst 3 within 20 squares </specific>
+		<specific name="Effect"> The burst creates a zone that lasts until the end of the encounter or until you dismiss it as a minor action. You and your allies gain a +5 power bonus to damage rolls on attacks against creatures in the zone. Bloodied creatures in the zone cannot regain hit points. Creatures reduced to 0 hit points while in the zone cannot be raised as undead. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_842 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3861 </specific>
+	</RulesElement>
+	<RulesElement name="Defender of Life and Death" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3806" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 30 </Category>
+		<Flavor> One of the Raven Queen's mysterious servants watches over you. This pale raven with deep blue eyes has the deity's permission to guide souls back to their bodies and overload them with divine vitality. </Flavor>
+		<specific name="Short Description"> 1/Day when dropped to 0 hp or fewer: regain [bloodied value] hp, stand up (free), use an at-will attack power (free) </specific>
+		<specific name="Level"> 30 </specific>
+Once per day when you drop to 0 hit points or fewer, a pale raven guides your soul back to your body. You regain hit points equal to your bloodied value, can stand up as a free action, and can use an at-will attack power as a free action.
+	</RulesElement>
+	<RulesElement name="Twilight Tribune" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_843" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:21:24 AM">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<Flavor> You take on a ghostly aspect to more expertly do battle with the wayward spirits that haunt the cosmos. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+During your time as a Twilight Tribune, you might begin hearing whispers of an unspeakable evil lumbering its way back into existence. Could a slain god rise as an undead? Could Orcus, Demon Prince of Undeath, animate the corpse of dread Nerull as his servant, thus gaining enough power to challenge the gods directly?
+	At the end of your journey, you might pass into the afterlife as all mortals do, or you might volunteer to stay behind as a ghostly judge—your unmatched wisdom continuing to guide mortal souls into the beyond. You might serve the Raven Queen as an advisor, or you might lead a covenant of tribunes that eventually replace her as the gods of fate and death. </specific>
+		<specific name="Power Name" />
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_3809, ID_FMP_CLASS_FEATURE_3808, ID_FMP_CLASS_FEATURE_3807, ID_FMP_CLASS_FEATURE_3862 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14068 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14068 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3807" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_3808" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_3862" type="Class Feature" Level="26" />
+			<grant name="ID_FMP_CLASS_FEATURE_3809" type="Class Feature" Level="30" />
+		</rules>
+All mortals have a dark road ahead of them in the afterlife. When their spirits are released from the flesh they were born into, they venture into the Shadowfell to make their way to the cold slopes of Letherna—and to whatever final destination awaits beyond the halls of the Raven Queen. However, some souls linger in the mortal realm, unable or unwilling to take this fateful journey. Entities such as ghosts, specters, wraiths, and devourers are the most dangerous of these hesitant spirits, committing atrocities through malicious intent or mindless despair.
+	In response to this scourge, the greatest and wisest heroes of the world are called by fate and the Raven Queen to serve as the Twilight Tribunes. These selfless champions dedicate their lives to seeking out and destroying wayward incorporeal souls. By invoking their dread judgment, the Twilight Tribunes allow even the most tormented undead to leave their lives and pain behind. As they follow the path of their destiny, the Twilight Tribunes are drawn to ever more powerful creatures and challenges, working their way through the most fearsome creatures of shadow and undeath. Having dispensed with liches, dracoliches, and vampires, a tribune might be called on in the end to face off against beings of godlike power and the greatest lords of the undead.
+	</RulesElement>
+	<RulesElement name="Twilight Insight" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3807" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 21 </Category>
+		<Flavor> Your already legendary enlightenment reaches even greater heights as your destiny unfolds. </Flavor>
+		<specific name="Short Description"> You gain darkvision. </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+			<grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision" />
+		</rules>
+You increase your Wisdom score by 2.
+	In addition, you gain darkvision.
+	</RulesElement>
+	<RulesElement name="Twilight Cloak" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3808" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 24 </Category>
+		<Flavor> When you recover your strength on the battlefield, the power of the Shadowfell lets you take on a spectral appearance to foil your enemies' attacks. </Flavor>
+		<specific name="Short Description"> Use Second Wind or total defense action: you can become insubstantial until your next turn ends </specific>
+		<specific name="Level"> 24 </specific>
+When you use your second wind or use the total defense action, you can become insubstantial until the end of your next turn.
+	</RulesElement>
+	<RulesElement name="Tribune's Authority" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3862" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 26 </Category>
+		<Flavor> As your duties and insight bring you closer to the veil of the afterlife, your voice and presence carry the weight of the Raven Queen's power. What you decree shall be your opponents' fate, and they are powerless to stop you. </Flavor>
+		<specific name="Short Description"> Gain the tribune's authority power </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Powers"> ID_FMP_POWER_14068 </specific>
+		<specific name="Type"> Utility </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_843 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_14068 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_14068" type="Power" />
+		</rules>
+You gain the tribune's authority power.
+	</RulesElement>
+	<RulesElement name="Tribune's Authority" type="Power" internal-id="ID_FMP_POWER_14068" source="Player Essentials: Heroes of Shadow" revision-date="4/8/2011 11:20:58 AM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3862,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_843,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Twilight Tribune </Prereqs>
+		<Flavor> Shadow unfurls around you as your body fades, and you are filled with the dread authority that is your destiny. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Twilight Tribune Utility 26 </specific>
+		<specific name="Keywords"> Shadow, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the tribune's authority stance. Until the stance ends, you are insubstantial and gain a fly speed equal to your speed. When a creature hits you or an allied Twilight Tribune within 10 squares of you with an attack while you are in this stance, you gain combat advantage against that creature until the end of your next turn. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_843 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3862 </specific>
+	</RulesElement>
+	<RulesElement name="Tribune's Judgment" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3809" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+		<Category> 30 </Category>
+		<Flavor> Your presence carries the full weight of the cycle of life and death. No creature, mortal or otherwise, can violate the sanctity of your judgment without facing your wrath. </Flavor>
+		<specific name="Short Description"> Nonminion enemy hits you with a melee attack: roll a d20. On a 10 or higher, enemy takes dmg equal to 1/2 what you were dealt.  Also, creatures you reduce to 0hp can't be raised from the dead or animated as undead. </specific>
+		<specific name="Level"> 30 </specific>
+Whenever a nonminion enemy hits you with a melee attack, roll a d20. On a 10 or higher, the enemy takes damage equal to half the damage it dealt you with the attack.
+	In addition, creatures you reduce to 0 hit points can't be raised from the dead or animated as undead.
+	</RulesElement>
+	<!-- Updates -->
+	<RulesElement name="Stance of Legend" type="Power" internal-id="ID_FMP_POWER_4211" source="Dragon Magazine 365" revision-date="8/27/2010 11:33:24 AM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_154,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Reborn Champion </Prereqs>
+		<Flavor> The forces of destiny provide you with an uncanny awareness of your surroundings, which affects how you hold yourself and how you react to your environment and the actions of others. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Reborn Champion Utility 26 </specific>
+		<specific name="Keywords"> Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the stance of legend. Until the stance ends, you gain a +2 bonus to attack rolls, skill checks, ability checks, and saving throws. You can end this stance at any time during your turn as a free action. When you end the stance, you may either end all conditions currently affecting you that a save can end, or regain hit points as if you spent a healing surge. </specific>
+		<specific name="_Associated Feats" />
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_154 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+	</RulesElement>
+	<RulesElement name="Legendary Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_871" source="Dragon Magazine 365" revision-date="10/5/2010 1:47:04 PM">
+		<Category> 30 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<specific name="Short Description"> When you score a crit on your turn, take an extra standard action. </specific>
+		<specific name="Level"> 30 </specific>
+The first time you score a critical hit on your turn during an encounter, you can take an extra standard action as a free action.
+	</RulesElement>
+	<!-- Primal Power, Soul of the World epic destiny Update -->
+	<RulesElement name="Past Spirit (Mul)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(MUL)" source="Primal Power,Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2064 </Category>
+		<Prereqs> !Mul Race,!Mul CountsAsRace </Prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_MUL" type="CountsAsRace" />
+			<grant name="ID_FMP_POWER_11738" type="Power" />
+		</rules>
+You are considered a Mul for the purpose of meeting feat prerequisites.
+	</RulesElement>
+	<RulesElement name="Past Spirit (Thri-Kreen)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(THRI-KREEN)" source="Primal Power,Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2064 </Category>
+		<Prereqs> !Thri-Kreen Race,!Thri-Kreen CountsAsRace </Prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_THRI-KREEN" type="CountsAsRace" />
+			<grant name="ID_FMP_POWER_11739" type="Power" />
+		</rules>
+You are considered a Thri-Kreen for the purpose of meeting feat prerequisites.
+	</RulesElement>
+	<RulesElement name="Past Spirit (Shade)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(SHADE)" source="Primal Power,Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2064 </Category>
+		<Prereqs> !Shade Race,!Shade CountsAsRace </Prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_SHADE" type="CountsAsRace" />
+			<grant name="ID_FMP_POWER_14032" type="Power" />
+			<modify name="ID_FMP_POWER_14032" type="Power" Field="Power Usage" value="Encounter" />
+		</rules>
+You are considered a Shade for the purpose of meeting feat prerequisites.
+	</RulesElement>
+	<RulesElement name="Past Spirit (Vryloka)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(VRYLOKA)" source="Primal Power,Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2064 </Category>
+		<Prereqs> !Vryloka Race,!Vryloka CountsAsRace </Prereqs>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASRACE_VRYLOKA" type="CountsAsRace" />
+			<grant name="ID_FMP_POWER_14033" type="Power" />
+		</rules>
+You are considered a Vryloka for the purpose of meeting feat prerequisites.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Warpriest)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(WARPRIEST)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_705 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_705" />
+		</rules>
+You can choose Warpriest powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Knight)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(KNIGHT)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_713 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_713" />
+		</rules>
+You can choose Knight powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Slayer)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(SLAYER)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_716 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_716" />
+		</rules>
+You can choose Slayer powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Thief)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(THIEF)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_719 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_719" />
+		</rules>
+You can choose Thief powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Mage)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(MAGE)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_722 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_722" />
+		</rules>
+You can choose Mage powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Sentinel)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(SENTINEL)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_779 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_779" />
+		</rules>
+You can choose Sentinel powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Cavalier)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(CAVALIER)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_784 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_784" />
+		</rules>
+You can choose Cavalier powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Hunter)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(HUNTER)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_788 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_788" />
+		</rules>
+You can choose Hunter powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Scout)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(SCOUT)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_790 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_790" />
+		</rules>
+You can choose Scout powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Hexblade)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(HEXBLADE)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_793 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_793" />
+		</rules>
+You can choose Hexblade powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Executioner)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(EXECUTIONER)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_811 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_811" />
+		</rules>
+You can choose Executioner powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Blackguard)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(BLACKGUARD)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_813 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_813" />
+		</rules>
+You can choose Blackguard powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Vampire)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(VAMPIRE)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_817 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_817" />
+		</rules>
+You can choose Vampire powers when choosing or retraining a class power.
+	</RulesElement>
+	<RulesElement name="Knowledge of Ancient Lives (Binder)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KNOWLEDGE_OF_ANCIENT_LIVES_(BINDER)" source="Dragon Magazine 385">
+		<Category> ID_FMP_CLASS_FEATURE_2584 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2584 </specific>
+		<specific name="_RequiresID"> ID_FMP_CLASS_821 </specific>
+		<rules>
+			<textstring name="PowersAsClass" value="ID_FMP_CLASS_821" />
+		</rules>
+You can choose Binder powers when choosing or retraining a class power.
+	</RulesElement>
+	<!-- Heroes of the Feywild -->
+	<!-- Epic Destiny: Witch Queen -->
+	<RulesElement name="Witch Queen" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_914" source="Heroes of the Feywild">
+		<Prereqs> 21st level, wizard </Prereqs>
+		<print-prereqs> 21st level, wizard </print-prereqs>
+		<Flavor> You are a master of witches and have learned the secret to incorporating the tremendous power of magic into your very being. With such power, your name is destined to be remembered with awe. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+As your power grows, you ascend to a status like that of royalty among others who practice your craft. Though you are not a monarch in the true sense, the power you wield means that many bow to your wishes, or face your wrath. You stand as an equal to fey nobles, and eventually grow in power to challenge the Summer Queen. More than a formidable spellcaster, you are now a player in the great power struggles of the Feywild.
+	When you approach the peak of your power, others will challenge you, trying to end your rise before you become a rival to their masters. You might face assassins, powerful fey, or even armies that wish to put an end to your ascension, but those conflicts are the bedrock for the stories to come that extol your greatness. In time, you might fade into the myths and legends of the natural world, but your rise to power- and the deeds both cruel and kind that you become known for-will become the fairy tales of tomorrow. </specific>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_4188, ID_FMP_CLASS_FEATURE_4189, ID_FMP_CLASS_FEATURE_4190 </specific>
+		<specific name="Powers"> ID_FMP_POWER_15880 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_15880 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_4188" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_4189" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_4190" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_15880 " type="Power" Level="26" />
+		</rules>
+Few heroes have borne the name Witch Queen (or Witch King), but those few have inspired awe, fear, and dread.
+	These beings become living legends, the stock character in the myths, fairy tales, and horror stories of every race, as awe-inspiring as they are terrifying. Those who have accepted this mantle have learned to incorporate their power into their being, no longer treating it as a source separate from their form.
+	Before becoming a Witch Queen, those who aspired to fill the role were conflicted between three aspects: one's power, one's familiar, and one's self. But when one becomes a king or queen of all witches, these aspects merge, allowing a Witch Queen or Witch King to bring forth spells as easily as if his or her familiar had whispered the arcane words directly into their ear. These individuals are near equals to their patrons in power, and armies clamor to their banners, while mortals and immortals alike seek their counsel to beg their favor or plead for their mercy.
+	</RulesElement>
+	<RulesElement name="Witch Apotheosis" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4188" source="Heroes of the Feywild">
+		<Category> 21 </Category>
+		<Prereqs> 21st level, wizard </Prereqs>
+		<Flavor> As one of the mightiest witches, you have experienced an apotheosis and become one with your power. Now, even when your foes would strike you down, your familiar can whisk your spirit away so that you can regenerate. </Flavor>
+		<specific name="Short Description"> If you die and your familiar is present, you are resurrected in a new body near one of your allies 24 hours later </specific>
+		<specific name="Level"> 21 </specific>
+The first time each day that you would die while your familiar is present, you do not die. Instead, your familiar seizes your spirit and is then removed from play as it carries your spirit away to a secret extraplanar sanctuary.  After 24 hours, you build a new body for your spirit, and you can reappear near one of your allies that was present when you died. If none of your allies were present when you died, or those allies are no longer alive, you can reappear in the place where you last took an extended rest.
+	</RulesElement>
+	<RulesElement name="Witch Queen's Presence" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4189" source="Heroes of the Feywild">
+		<Category> 24 </Category>
+		<Prereqs> 21st level, wizard </Prereqs>
+		<Flavor> The power your patron has bestowed upon you radiates from every fiber of your being, manifesting around you like the majestic aspect of a god when you steel yourself against harm. </Flavor>
+		<specific name="Short Description"> When using second wind, gain resist 15 to all damage and a +5 bonus to saving throws until the end of your next turn </specific>
+		<specific name="Level"> 24 </specific>
+		<rules>
+			<modify name="Second Wind" field="Witch Queen's Presence" value="When using second wind, gain resist 15 to all damage and a +5 bonus to saving throws until the end of your next turn" />
+		</rules>
+When you use your second wind, you gain resist 15 to all damage and a +5 bonus to saving throws. These benefits last until the end of your next turn.
+	</RulesElement>
+	<RulesElement name="Mastery of the Gift" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4190" source="Heroes of the Feywild">
+		<Category> 30 </Category>
+		<Prereqs> 21st level, wizard </Prereqs>
+		<Flavor> At last your learning is complete. Your gift of power is no longer a force you call upon, but a trait inherent in your very being. Now, even your least used spells form upon your lips in an instant, marshaling to your command as soldiers before a fearsome monarch. </Flavor>
+		<specific name="Short Description"> After a short rest you can confer with familiar to replace a wizard encounter power </specific>
+		<specific name="Level"> 30 </specific>
+At the end of a short rest, when you confer with your familiar, you can replace one of your wizard encounter attack powers with another wizard encounter attack power. The new power must have a level, and its level must be the same as the old power's level.
+	</RulesElement>
+	<RulesElement name="True Prophecy" type="Power" internal-id="ID_FMP_POWER_15880" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_914,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,26 </Category>
+		<Prereqs> Witch Queen </Prereqs>
+		<Flavor> Your divination gives you a clear image of an event soon to transpire, allowing you to prepare. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Witch Queen Utility 26 </specific>
+		<specific name="Keywords"> Arcane </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Requirement"> You must not be in a combat encounter. </specific>
+		<specific name="Target"> You or one ally </specific>
+		<specific name="Effect"> During the target's next encounter before his or her next extended rest, the target gains the following benefit: a +2 power bonus to initiative, skill checks, and all defenses until the end of the encounter. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_914 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+The future is always in flux, but a Witch Queen can behold the immediate course of events as easily as a common farmer gazes at distant clouds and predicts rain. To glean more concrete details about a nearfuture event, you can use the true prophecy power to view an event's possible outcomes and prepare for them. The context of the event might be ambiguous or surprising, but the knowledge you gain is enough to prepare yourself or an ally against the dangers that are to come.
+	</RulesElement>
+	<!-- Epic Destiny: Wild Hunter -->
+	<RulesElement name="Wild Hunter" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_913" source="Heroes of the Feywild">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<Flavor> Like the firbolgs, you are a master of the Wild Hunt, dispensing justice for those who cannot do so themselves. You call on the creatures of the hunt to help you seek your prey, so that it cannot hide from that justice. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+As a Wild Hunter, you live for the chase. Your quests revolve around tracking down and dispatching oath breakers, either on behalf of those wronged by their failure, or simply to reestablish balance to the cosmos. As you bring down foe after foe, your prowess increases to the point that you turn your attention to the most infamous fey oath breaker-the evil goddess Lolth.
+	At first, you might have to settle for taking down her favored abyssal drow or her exarch. But the day nears when the clarions will call for the greatest of all Wild Hunts, and the Demon Queen of Spiders will feel that primal fear shared by all prey of the hunt. </specific>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_4185, ID_FMP_CLASS_FEATURE_4186, ID_FMP_CLASS_FEATURE_4187 </specific>
+		<specific name="Powers"> ID_FMP_POWER_15879 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_15879 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_4185" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_4186" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_4187" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_15879 " type="Power" Level="26" />
+		</rules>
+Deep in the Feywild, far from the stately halls of the eladrin, a tradition has been upheld for eons. In shadowy forests thick with moss and undergrowth, the baying of hunting hounds sounds, followed by the long strides of their masters. As storm clouds cover the sky, the forest is no longer a realm of bedtime stories or folk tales. It becomes the province of the Wild Hunt.
+	The tradition of the Wild Hunt originated among the firbolgs, fey giants devoted to the moon and the Three Fates, personified by Sehanine (the Maiden), Melora (the Mother), and the Raven Queen (the Crone). The firbolgs call for a Wild Hunt when they seek to punish an oath breaker, for oaths are powerful things in the Feywild. Some mortals, their trust betrayed by the Unseelie fey, have learned to summon these eldritch hunters to bring down those who wronged them. A select few learn the ritual for summoning the hunters, but instead of asking for justice, request to learn the secrets of the Wild Hunt. Such requests are rarely accepted, but a worthy few learn the ways of the Wild Hunt, bringing retribution to all traitors and oath breakers.
+	</RulesElement>
+	<RulesElement name="Soul of the Hunter" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4185" source="Heroes of the Feywild">
+		<Category> 21 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<Flavor> As you channel the raw power of the Wild Hunt, your very being is changed to match the fey origin of those who created the hunt. Your body becomes stronger and your reflexes quicker, even as your senses expand to reveal everything around you in clear detail. No track is too faint, no lie too convincing. </Flavor>
+		<specific name="Short Description"> Increase Str or Dex by 2; gain fey origin and a +2 bonus to Insight and Perception checks </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4185" />
+			<grant name="ID_FMP_RACIAL_TRAIT_641" type="Class Feature" />
+			<statadd name="Insight Misc" value="+2" type="Class Feature" />
+			<statadd name="Perception Misc" value="+2" type="Class Feature" />
+		</rules>
+You increase your Strength or Dexterity score by 2.
+	Your origin becomes fey, meaning that you are considered a fey creature for the purpose of effects that relate to creature origin.
+	In addition, you gain a +2 bonus to Insight checks and Perception checks.
+	</RulesElement>
+	<RulesElement name="Soul of the Hunter (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SOUL_OF_THE_HUNTER_(STRENGTH)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4185 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4185 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Soul of the Hunter (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_SOUL_OF_THE_HUNTER_(DEXTERITY)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4185 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4185 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Strike of the Hunter" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4186" source="Heroes of the Feywild">
+		<Category> 24 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<Flavor> Your prowess translates into unerring strikes, which inflict deep wounds on your foes. The sight and smell of your enemy's ebbing life force intoxicates you, driving you on. </Flavor>
+		<specific name="Short Description"> A chosen encounter attack power also deals ongoing 10 damage (save ends); gain combat advantage against enemies taking ongoing damage </specific>
+		<specific name="Level"> 24 </specific>
+Choose one of your encounter attack powers. Once per encounter, when you hit an enemy with that power, the attack also deals ongoing 10 damage (save ends). In addition, you have combat advantage against enemies taking ongoing damage.
+	</RulesElement>
+	<RulesElement name="Avatar of the Wild Hunt" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4187" source="Heroes of the Feywild">
+		<Category> 30 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<Flavor> The Three Fates worshiped by the firbolgs watch you with a keen interest. When an enemy dares strike you down, the Three Fates intervene, giving you a chance to prove that you are not destined to fall yet. The power of the Wild Hunt rushes into your form, turning you into an avatar of its will. </Flavor>
+		<specific name="Short Description"> Once per day if you have 0 or fewer HP, regain all used encounter powers and HP equal to your bloodied value and until end of encounter become large, gain +1 reach and score crits on 18-20 with at-will attack powers </specific>
+		<specific name="Level"> 30 </specific>
+Once per day when you start your turn at 0 hit points or fewer, you assume the form of the Avatar of the Wild Hunt until the end of the encounter. When you assume this form, you regain hit points equal to your bloodied value, and you regain the use of every encounter attack power that you have used during the encounter.
+	While in the form, your size becomes Large if it was Medium or smaller, and your melee reach increases by 1. In addition, when you use an at-will attack power, you can score a critical hit on a roll of 18-20.
+	</RulesElement>
+	<RulesElement name="Hounds of the Hunt" type="Power" internal-id="ID_FMP_POWER_15879" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_913,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Wild Hunter </Prereqs>
+		<Flavor> Two powerful hounds appear, growling thunder at your prey. They start circling it to cut off any escape. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Wild Hunter Utility 26 </specific>
+		<specific name="Keywords"> Acid, Summoning </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Effect"> You summon two Medium hounds of the hunt, each appearing in an unoccupied square within range. Enemies grant combat advantage while adjacent to either hound. Each hound has a speed of 8 and a fly speed of 8 (hover).
+	Each hound has hit points equal to your healing surge value and uses your defenses, not including any temporary bonuses or penalties, with a +2 bonus to AC and Reflex. Each hound lasts until the end of the encounter or until it drops to 0 hit points. You lose a healing surge if both hounds are destroyed.
+	As a minor action, you can mentally direct both hounds to crawl, escape, run, stand up, shift, squeeze, or walk. The hounds do not need to perform the same action. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_913 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+With a loud whistle, you can call forth a pair of hounds from the Wild Hunt to help you bring down difficult prey. The eyes of these powerful, blackfurred hounds flash with lightning, and their growls rumble with thunder as they surge toward your enemies. They obey your commands without hesitation, ferreting out prey and leaving it open to your strike.
+	</RulesElement>
+	<!-- Epic Destiny: Shiradi Champion -->
+	<RulesElement name="Shiradi Champion" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_912" source="Heroes of the Feywild">
+		<Prereqs> 21st level, !ID_FMP_ALIGNMENT_4, !ID_FMP_ALIGNMENT_5 </Prereqs>
+		<print-prereqs> 21st level, any nonevil alignment </print-prereqs>
+		<Flavor> You live to serve Tiandra, the Queen of Summer, and the Court of Stars. In exchange for your service, the queen lets you draw power from her to protect the Feywild and its inhabitants from evil. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+You have become a legend among legends, and your anointment as a Shiradi Champion echoes throughout the world. Your name is used in bedtime stories and folk tales as a synonym for chivalry and courage. Fey seek you out, asking for your help. Mortals call your name out at fey crossings, seeking your might against enemies equally legendary. It is your burden to help them, thus spreading the influence of the Court of Stars.
+	Your greatest task is the defense of the Court of Stars from those who would see it torn asunder. You and your allies stand against cyclops warlords, mad fomorian kings, and dreadful hags, beating back their advances and recovering the lands lost during centuries of battle. In time, you might even receive a request for aid from the Queen of Summer to face down her own son, the Prince of Frost, mightiest of the Winter Fey. You strive to be ready for the task.
+	As a Shiradi Champion, you are the ultimate defender of all the good things represented by the Court of Stars. Your powers reflect the ephemeral and radiant nature of the Feywild's rulers. </specific>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_4182, ID_FMP_CLASS_FEATURE_4183, ID_FMP_CLASS_FEATURE_4184 </specific>
+		<specific name="Powers"> ID_FMP_POWER_15878 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_15878 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_4182" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_4183" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_4184" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_15878 " type="Power" Level="26" />
+		</rules>
+Myriad archfey band together several times a year at the congress known as the Court of Stars, where they engage in diplomacy, schemes, marriages, betrayals, and legendary revels. Although dozens of lesser factions make up the Court of Stars, they mostly acknowledge the leadership of Her Summer Majesty, Queen Tiandra. And the Queen of Summer, when the need arises, turns to her anointed warriors for the defense of her subjects and allies. These warriors are known as Shiradi Champions, the shields of the fey.
+	Whereas eladrin nobles might rise through the ranks of coures, bralanis, ghaeles, and other complex titles, Shiradi Champions are usually individuals who have earned the respect and trust of Queen Tiandra. Archfey of all courts assemble at Senaliesse to bear witness to a champion's anointing. Some eye these protectors with suspicion, arrogance, or envy, but their pettiness is ill placed. Each Shiradi Champion is devoted to the lovely Queen of Summer and determined to justify her trust.
+	Some eladrin Shiradi Champions are also shiere knights (see Player's Handbook 2). A very few champions are not born as one of the fey, and their ascendancy to the role of Shiradi Champion is an unprecedented event, a testament to the champion's unique valor and great worth. Whatever path a champion takes, he or she is assuredly an ally and protector of good-natured fey beings everywhere.
+	</RulesElement>
+	<RulesElement name="Fey Anointment" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4182" source="Heroes of the Feywild">
+		<Category> 21 </Category>
+		<Prereqs> 21st level, good or lawful good or unaligned </Prereqs>
+		<Flavor> By the hand of Queen Tiandra, you are anointed as an exalted member of the Court of Stars. The blessings of the queen give greater power to your personality and quicker reactions to your body. Your eyes become the colored orbs common among the eladrin, but with a shining, golden tinge seen only among the higher nobles of the Court of Stars, and darkness poses no impediment to your sight. </Flavor>
+		<specific name="Short Description"> Increase one ability score by 2; gain immunity to charm effects, fey origin trait, darkvision and immunity to blinded condition </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4182" />
+			<grant name="ID_FMP_RACIAL_TRAIT_641" type="Class Feature" />
+			<grant name="ID_INTERNAL_VISION_DARKVISION" type="Class Feature" />
+		</rules>
+You increase one ability score of your choice by 2.
+	You are immune to charm effects.
+	Your origin becomes fey, meaning that you are considered a fey creature for the purpose of effects that relate to creature origin.
+	You gain darkvision, and you gain immunity to the blinded condition.
+	</RulesElement>
+	<RulesElement name="Fey Anointment (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_ANOINTMENT_(STRENGTH)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4182 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4182 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Fey Anointment (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_ANOINTMENT_(DEXTERITY)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4182 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4182 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Fey Anointment (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_ANOINTMENT_(CONSTITUTION)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4182 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4182 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_DisplayName"> Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Fey Anointment (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_ANOINTMENT_(INTELLIGENCE)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4182 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4182 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Fey Anointment (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_ANOINTMENT_(WISDOM)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4182 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4182 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Fey Anointment (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_FEY_ANOINTMENT_(CHARISMA)" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4182 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4182 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Armor of Stars" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4183" source="Heroes of the Feywild">
+		<Category> 24 </Category>
+		<Prereqs> 21st level, any nonevil alignment </Prereqs>
+		<Flavor> The magic inherent to the Feywild suffuses your entire being, granting you a graceful majesty. As long as you are not injured, tiny motes of light swirl about you like constellations, shielding you from attacks. The protection these "stars" offer improves when other Shiradi Champions stand at your side. </Flavor>
+		<specific name="Short Description"> While not bloodied, gain +1 bonus to AC and Reflex (+2 if adjacent to allied Shiradi Champion) </specific>
+		<specific name="Level"> 24 </specific>
+		<rules>
+			<statadd name="AC" value="+1" type="Class Feature" condition="while not bloodied; +2 if adjacent to allied Shiradi Champion" />
+			<statadd name="Reflex Defense" value="+1" type="Class Feature" condition="while not bloodied; +2 if adjacent to allied Shiradi Champion" />
+		</rules>
+While you are not bloodied, you gain a +1 bonus to AC and Reflex. This bonus increases to +2 if you are adjacent to one or more allied Shiradi Champions.
+	</RulesElement>
+	<RulesElement name="Everlasting Champion" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4184" source="Heroes of the Feywild">
+		<Category> 30 </Category>
+		<Prereqs> 21st level, any nonevil alignment </Prereqs>
+		<Flavor> As you reach the pinnacle of your power, you are no longer a mere mortal, but rather an archetype made flesh. As a version of you falls, another takes its place. Its appearance might be slightly different, but its determination is unshakable. </Flavor>
+		<specific name="Short Description"> Once per day when you have 0 or less HP, stand up and regain HP equal to your bloodied value and end any adverse effects and deal extra radiant damage equal to your Cha mod until end of encounter </specific>
+		<specific name="Level"> 30 </specific>
+Once per day when you start your turn at 0 hit points or fewer, your body transforms into a slightly different variation of yourself, although your game statistics and equipment don't change. When you transform, you regain hit points equal to your bloodied value, you can stand up as a free action, and any adverse effects you are subject to end immediately.
+	In addition, your attacks deal extra radiant damage equal to your Charisma modifier until the end of the encounter.
+	</RulesElement>
+	<RulesElement name="Audience with the Queen" type="Power" internal-id="ID_FMP_POWER_15878" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_912,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MOVE_ACTION,26 </Category>
+		<Prereqs> Shiradi Champion </Prereqs>
+		<Flavor> You vanish from sight, only to return moments later, healed and bearing the gifts of the Queen of Summer. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Shiradi Champion Utility 26 </specific>
+		<specific name="Keywords"> Arcane, Healing </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You are removed from play. When you end your turn out of play this way, you choose one of the following benefits to receive. When you have received all three benefits, you return to play at the start of your next turn.
+* You regain hit points equal to your bloodied value.
+* Until the end of the encounter, you gain a +2 power bonus to attack rolls and skill checks.
+* Until the end of the encounter, allied Shiradi Champions gain a +2 power bonus to saving throws while adjacent to you.
+	Alternatively, you can return to play at the start of your turn after receiving only one or two of the benefits. When you return to play, each allied Shiradi Champion within 5 squares of you gains temporary hit points equal to your Charisma modifier + one-half your level. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_912 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+As a champion of the Court of Stars, you have the privilege of requesting immediate audiences with Queen Tiandra. Upon your arrival, Her Summer Majesty heals your wounds with a touch. With brief words that reveal much to her, you explain the dire situation you are facing. Queen Tiandra's wise counsel offers you guidance through your trials. When you share this advice with other Shiradi Champions, they are also fortified by their queen's soothing words.
+	</RulesElement>
+	<!-- Exemplar of Evil, BVOD -->
+	<RulesElement name="Exemplar of Evil" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_933" source="The Book of Vile Darkness">
+		<Prereqs> 21st level, evil alignment </Prereqs>
+		<print-prereqs> 21st level, evil alignment </print-prereqs>
+		<Flavor> “There is no stopping me now. I stand at the brink of immortality. The world will know my name and deeds forever!” </Flavor>
+		<specific name="Immortality"> Immortality
+Your fate is not to create a good work, to stand at a god's side in the heavens, or to build a nation. Your fate is to become part of history, a nightmare in flesh and bone that torments generations to follow. You seek an end most terrible, a goal even the darkest gods would reel against. Your aim is singularly evil. Its fulfillment will leave the world forever after changed, undoubtedly for the worse. When you choose this epic destiny, you should have some notion of the evil outcome you hope to achieve. Communicate this idea with your Dungeon Master so he or she can devise the various goals you must meet to achieve this destiny. </specific>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_4248, ID_FMP_CLASS_FEATURE_4249 </specific>
+		<specific name="Powers"> ID_FMP_POWER_15974,ID_FMP_POWER_15975 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_15974,ID_FMP_POWER_15975 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_4248" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_4249" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_POWER_15974" type="Power" Level="26" />
+			<grant name="ID_FMP_POWER_15975" type="Power" Level="30" />
+		</rules>
+You have walked through the darkest shadows to achieve your destiny. You have sacrificed companions, betrayed allies, and performed acts so despicable they are legendary. You are beyond temptation. You have passed through the veil of corruption and unmasked true evil. You bask in the awful glory of true wickedness.
+	It no longer matters why you descended into darkness. The past is trivial. What matters now is that you secure your place in the cosmos or destroy it in the process. Your destiny is to become one of the world's greatest antiheroes, to carve your name in the annals of history through blood and death. The objective you seek is what you were born to do, the act you were made to perform. You have come this far; you will not allow anything to stop you.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4248" source="The Book of Vile Darkness">
+		<Category> 21 </Category>
+		<Prereqs> 21st level, evil alignment </Prereqs>
+		<Flavor> You might be a soulless butcher, a cunning opportunist, a vile cultist who consorts with demons, or a perverse spellcaster who dabbles in the darkest arts. Whatever you are, your abilities increase as a result, proving to all the significance of your threat. </Flavor>
+		<specific name="Short Description"> Increase two different ability scores by 2 </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="2" Category="ID_FMP_CLASS_FEATURE_4248" />
+		</rules>
+You increase two different ability scores by 2.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ABILITY_SCORE_INCREASE_(STRENGTH)" source="The Book of Vile Darkness">
+		<Category> ID_FMP_CLASS_FEATURE_4248 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4248 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ABILITY_SCORE_INCREASE_(DEXTERITY)" source="The Book of Vile Darkness">
+		<Category> ID_FMP_CLASS_FEATURE_4248 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4248 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ABILITY_SCORE_INCREASE_(CONSTITUTION)" source="The Book of Vile Darkness">
+		<Category> ID_FMP_CLASS_FEATURE_4248 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4248 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_DisplayName"> Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ABILITY_SCORE_INCREASE_(INTELLIGENCE)" source="The Book of Vile Darkness">
+		<Category> ID_FMP_CLASS_FEATURE_4248 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4248 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ABILITY_SCORE_INCREASE_(WISDOM)" source="The Book of Vile Darkness">
+		<Category> ID_FMP_CLASS_FEATURE_4248 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4248 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Ability Score Increase (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ABILITY_SCORE_INCREASE_(CHARISMA)" source="The Book of Vile Darkness">
+		<Category> ID_FMP_CLASS_FEATURE_4248 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4248 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Epic Evil" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4249" source="The Book of Vile Darkness">
+		<Category> 24 </Category>
+		<Prereqs> 21st level, evil alignment </Prereqs>
+		<Flavor> Vile darkness drives your attacks. Each spell you cast, each swing from your weapon, leaves your enemies shrieking and maimed. The evil you work lingers in the tortured carcasses you create. </Flavor>
+		<specific name="Short Description"> Create a zone in the space where you killed creatures, enemies in or adjacent to the zone take a -2 penalty to attack rolls and grant combat advantage </specific>
+		<specific name="Level"> 24 </specific>
+When you kill a creature with an attack, its space becomes a zone that lasts until the end of your next turn. While in the zone or adjacent to it, any enemy of yours takes a -2 penalty to attack rolls and grants combat advantage.
+	</RulesElement>
+	<RulesElement name="Vile Assembly" type="Power" internal-id="ID_FMP_POWER_15974" source="The Book of Vile Darkness">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_933,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_NO_ACTION,26 </Category>
+		<Prereqs> Exemplar of Evil </Prereqs>
+		<Flavor> The dark forces are not about to let you die now, not when you are so close to achieving your ultimate purpose. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Exemplar of Evil Utility 26 </specific>
+		<specific name="Keywords"> Healing </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You drop below 1 hit point. </specific>
+		<specific name="Effect"> You regain hit points equal to your healing surge value, and you are removed from play. At the start of your next turn, you return to play in an unoccupied space within 10 squares of the space you last occupied. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_933 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+You cannot fail. Even if you wanted to enter the void, the dark powers lending you strength would not allow it. When you fall, your body dissolves into a noisome slick or a mass of crawling vermin. Moments later, you reappear and continue your dreadful work.
+	</RulesElement>
+	<RulesElement name="Victory at Any Price" type="Power" internal-id="ID_FMP_POWER_15975" source="The Book of Vile Darkness">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_933,ID_INTERNAL_CATEGORY_NO_ACTION,30 </Category>
+		<Prereqs> Exemplar of Evil </Prereqs>
+		<Flavor> You sacrifice an ally to ensure a swift and certain victory. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Exemplar of Evil Utility 30 </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Trigger"> You hit an enemy with an at-will or an encounter attack power. </specific>
+		<specific name="Target"> One ally in the burst who is not bloodied </specific>
+		<specific name="Effect"> The target takes damage equal to his or her bloodied value, and your hit becomes a critical hit. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_933 </specific>
+		<specific name="Level"> 30 </specific>
+		<specific name="Power Type"> Utility </specific>
+Your allies serve a purpose. They exist to help you fulfill your destiny. They are commodities to be drained as your dark will dictates. When you use this power, you debilitate an ally to impose a devastating fate on an enemy.
+	</RulesElement>
+	<!-- Heroes of the Elemental Chaos -->
+	<!-- Epic Destiny: Emergent Primordial -->
+	<RulesElement name="Emergent Primordial" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_969" source="Heroes of the Elemental Chaos">
+		<Prereqs> 21st level; elemental origin, Born of the Elements feat, or any elemental power </Prereqs>
+		<print-prereqs> 21st level; elemental origin, Born of the Elements feat, or any elemental power </print-prereqs>
+		<Flavor> You carry the essence of an imprisoned primordial, a being so vast, so terrible, that the gods imprisoned it in the Elemental Chaos. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+Although the primordial within you seeks to annihilate your identity, it has no choice but to bend to your will. At the same time, your growing power awakens the primordial in your thoughts, gradually drawing it out from its long slumber until its presence pervades your consciousness. By the time you complete your final quest, you might be ready to surrender your body and soul to the primordial-or descend into the Elemental Chaos to confront and destroy it for good. </specific>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_4390, ID_FMP_CLASS_FEATURE_4391, ID_FMP_CLASS_FEATURE_4392 </specific>
+		<specific name="Powers"> ID_FMP_POWER_16344 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16344 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_4390" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_4391" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_4392" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_16344" type="Power" Level="26" />
+		</rules>
+There is no full accounting of the primordials sealed away in the Elemental Chaos and elsewhere in the planes. Their roster is endless, their exploits too terrible to dwell upon. They are too powerful to die, too dangerous to live. The gods sealed them in the deepest depths to ensure that they would trouble the planes no more. During their imprisonment, the primordials have never ceased their efforts to escape and to resume the struggle against the gods they hate.
+	In exploring elemental magic, you have been touched by a primordial's essence. Perhaps only a dream has settled in your mind, or maybe a shard of a fallen primordial became lodged inside you. When you attain the epic tier, the shard awakens and begins merging its identity with yours until one day you become like a primordial.
+	</RulesElement>
+	<RulesElement name="Primordial Form" type="Power" internal-id="ID_FMP_POWER_16344" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_969,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Emergent Primordial </Prereqs>
+		<Flavor> You free the primordial within you and transform into a titanic elemental being, like the ancient and terrible forces unseen since the Dawn War. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Emergent Primordial Utility 26 </specific>
+		<specific name="Keywords"> Elemental, Polymorph </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the form of a Huge primordial-like creature until the end of your next turn. Creatures adjacent to you when you assume the form are pushed 1 square, or they fall prone if they cannot be pushed. While in this form, you gain the following benefits.
+	* Your reach increases by 2.
+	* You gain resist 5 to all damage.
+	* You gain a +4 power bonus to melee damage rolls and damage rolls that include acid, cold, fire, lightning, or thunder. </specific>
+		<specific name="Sustain Minor"> The form persists until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_969 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+The primordial essence strains against your body's limitations, demanding release and battering your psyche. When you give in to the primordial's demands, you become a monstrous creature, an elemental nightmare towering over the battlefield.
+	</RulesElement>
+	<RulesElement name="EmergentPrimordialAbilityChoice" type="Category" internal-id="ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE" source="Core"></RulesElement>
+	<RulesElement name="EmergentPrimordialResistChoice" type="Category" internal-id="ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE" source="Core"></RulesElement>
+	<RulesElement name="Primordial Rebirth" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4390" source="Heroes of the Elemental Chaos">
+		<Category> 21 </Category>
+		<Prereqs> 21st level; elemental origin, Born of the Elements feat, or any elemental power </Prereqs>
+		<Flavor> An elemental essence awakens inside you and lends you its power. The essence transforms you, turning you into a suitable vessel for its emerging presence. </Flavor>
+		<specific name="Short Description"> Increase an ability score by 2; origin changes to elemental; gain Primordial language; gain resist 15 and deal +3 damage with acid, cold, fire, lightning, or thunder </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE" />
+			<grant name="ID_FMP_LANGUAGE_6" type="Language" />
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait" />
+			<select type="Class Feature" number="1" Category="ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE" />
+		</rules>
+You increase one ability score of your choice by 2.
+	Your origin changes to elemental if it is not elemental already, and you can speak, read, and write Primordial.
+	In addition, choose one of the following: acid, cold, fire, lightning, or thunder. You gain resist 15 to the chosen damage type, and you gain a +3 bonus to damage rolls that include that type.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_(STRENGTH)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_DisplayName"> Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_(DEXTERITY)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_DisplayName"> Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_(CONSTITUTION)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_DisplayName"> Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_(INTELLIGENCE)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_DisplayName"> Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_(WISDOM)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_DisplayName"> Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_(CHARISMA)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALABILITYCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_DisplayName"> Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth Resist (Acid)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_RESIST_(ACID)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> Gain resist Acid 15 and +3 to Acid rolls. </specific>
+		<specific name="_DisplayName"> Acid </specific>
+		<rules>
+			<statadd name="resist:acid" value="+15" type="resist" non-zero="true"/>
+			<statadd name="resist:acid" value="+15" type="resist" zero="true"/>
+			<statadd name="damage:acid" value="+3"/>
+		</rules>
+You gain resist 15 Acid. You gain a +3 bonus to Acid damage rolls
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth Resist (Cold)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_RESIST_(COLD)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> Gain resist Cold 15 and +3 to Cold rolls. </specific>
+		<specific name="_DisplayName"> Cold </specific>
+		<rules>
+			<statadd name="resist:cold" value="+15" type="resist" non-zero="true"/>
+			<statadd name="resist:cold" value="+15" type="resist" zero="true"/>
+			<statadd name="damage:cold" value="+3"/>
+		</rules>
+You gain resist 15 Cold. You gain a +3 bonus to Cold damage rolls
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth Resist (Fire)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_RESIST_(FIRE)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> Gain resist Fire 15 and +3 to Fire rolls. </specific>
+		<specific name="_DisplayName"> Fire </specific>
+		<rules>
+			<statadd name="resist:fire" value="+15" type="resist" non-zero="true"/>
+			<statadd name="resist:fire" value="+15" type="resist" zero="true"/>
+			<statadd name="damage:fire" value="+3"/>
+		</rules>
+You gain resist 15 Fire. You gain a +3 bonus to Fire damage rolls
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth Resist (Lightning)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_RESIST_(LIGHTNING)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> Gain resist Lightning 15 and +3 to Lightning rolls. </specific>
+		<specific name="_DisplayName"> Lightning </specific>
+		<rules>
+			<statadd name="resist:lightning" value="+15" type="resist" non-zero="true"/>
+			<statadd name="resist:lightning" value="+15" type="resist" zero="true"/>
+			<statadd name="damage:lightning" value="+3"/>
+		</rules>
+You gain resist 15 Lightning. You gain a +3 bonus to Lightning damage rolls
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth Resist (Thunder)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_PRIMORDIAL_REBIRTH_RESIST_(THUNDER)" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_EMERGENTPRIMORDIALRESISTCHOICE </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_4390 </specific>
+		<specific name="Short Description"> Gain resist Thunder 15 and +3 to Thunder rolls. </specific>
+		<specific name="_DisplayName"> Thunder </specific>
+		<rules>
+			<statadd name="resist:thunder" value="+15" type="resist" non-zero="true"/>
+			<statadd name="resist:thunder" value="+15" type="resist" zero="true"/>
+			<statadd name="damage:thunder" value="+3"/>
+		</rules>
+You gain resist 15 Thunder. You gain a +3 bonus to Thunder damage rolls
+	</RulesElement>
+	<RulesElement name="Primordial Rebirth (Level 24)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4391" source="Heroes of the Elemental Chaos">
+		<Category> 24 </Category>
+		<Prereqs> 21st level; elemental origin, Born of the Elements feat, or any elemental power </Prereqs>
+		<Flavor> Death cannot claim you as long as the primordial shares your body. If you fall in battle, the primordial awakens to your enemies' detriment. </Flavor>
+		<specific name="Short Description"> Once per day when you have 0 HP you can regain your bloodied value and all allies within 5 squares can spend a healing surge and all allies within 10 gain 20 temp HP and shift 1 square </specific>
+		<specific name="Level"> 24 </specific>
+Once per day when you start your turn at 0 hit points or fewer, you regain hit points equal to your bloodied value. When you do so, each ally within 5 squares of you can spend a healing surge. In addition, each ally within 10 squares of you who has this epic destiny gains 20 temporary hit points and can shift 1 square as a free action.
+	</RulesElement>
+	<RulesElement name="Primordial Ascendance" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4392" source="Heroes of the Elemental Chaos">
+		<Category> 30 </Category>
+		<Prereqs> 21st level; elemental origin, Born of the Elements feat, or any elemental power </Prereqs>
+		<Flavor> You and the primordial merge. Now that your elemental nature is unfettered, it might seek to resume its war against the gods or turn its malign attention against other enemies. Your greatest successes renew and embolden your allies. </Flavor>
+		<specific name="Short Description"> Allies within 5 square gain 10 temp HP and +2 attack when you score a critical hit or drop an enemy </specific>
+		<specific name="Level"> 30 </specific>
+Whenever you score a critical hit or reduce a nonminion enemy to 0 hit points, each ally within 5 squares of you gains 10 temporary hit points, and each one gains a +2 power bonus to attack rolls until the end of your next turn.
+	</RulesElement>
+	<!-- Epic Destiny: Lord of Chaos -->
+	<RulesElement name="Lord of Chaos" type="Epic Destiny" internal-id="ID_FMP_EPIC_DESTINY_970" source="Heroes of the Elemental Chaos">
+		<Prereqs> 21st level </Prereqs>
+		<print-prereqs> 21st level </print-prereqs>
+		<Flavor> You incarnate a creative force that can shape the Elemental Chaos into continent-sized wonders and sculpt kingdoms. The multiverse itself is your canvas. </Flavor>
+		<specific name="Immortality"> Living the Destiny
+Few of your kind remain anywhere in the multiverse. You and your kindred souls are not mortals, nor gods, nor elemental beings; you are something else. As a Lord of Chaos, you might commit yourself to shaping a vast swath of the elemental plane into a domain of your own. You or your descendants could rule over an extraplanar kingdom forged by your will and imagination. Or you might choose to roam the multiverse, immersing yourself in every interest and experience that catches your eye. Whatever path you take, you eventually leave your adventuring career behind, drawn by the challenge of shaping and ordering your own private universe. </specific>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_4393, ID_FMP_CLASS_FEATURE_4394, ID_FMP_CLASS_FEATURE_4395 </specific>
+		<specific name="Powers"> ID_FMP_POWER_16345 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_16345 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_4393" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_4394" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_4395" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_POWER_16345" type="Power" Level="26" />
+		</rules>
+Long ago, an ancient race of mighty sorcerers abandoned the material world for the Elemental Chaos, drawn by the plane's infinite mutability. These were the Reigar, a humanlike people who revered personal freedom, expression, and artistry above all other values. In time they mastered the secrets of immortality and became a race of godlings in mortal form-self-centered, capricious, driven only by the desire to experience new sensations and outdo each other in creative works. Foreseeing that their race would eventually dwindle and stagnate, the Reigar created one last masterwork of cooperative magic: a sentient, self-guiding force that would seek out the most brilliant and worthy souls among mortals and gift them with the powers of the Reigar, thus renewing the race across the ages.
+	In the course of your mortal adventures, you have developed into that one person in a million who embodies the exquisitely rare mix of brilliance, beauty, willfulness, and creativity that characterizes the immortal ranks of the Reigar. The ancient lore of the Reigar has revealed itself to you and given you the ability to shape the world to suit your whims.
+	</RulesElement>
+	<RulesElement name="Whim of Creation" type="Power" internal-id="ID_FMP_POWER_16345" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_EPIC_DESTINY_970,ID_FMP_CATEGORY_74,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Lord of Chaos </Prereqs>
+		<Flavor> You reshape your surroundings to suit your tastes. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Lord of Chaos Utility 26 </specific>
+		<specific name="Keywords"> Elemental </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Effect"> Choose one of the following effects. The effect lasts as long as you wish.
+	Remove Difficult Terrain: You change up to 5 squares of nonmagical difficult terrain in the burst into normal terrain.
+	Create Difficult Terrain: You change up to 5 squares in the burst into difficult terrain.
+	Create Weather: You create fog, mist, rain, wind, harmless ball lightning, or other nondamaging weather conditions in the burst. The weather can change how heavily obscured  the burst is. </specific>
+		<specific name="Class"> ID_FMP_EPIC_DESTINY_970 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+With sufficient time and concentration, any sentient creature can effect minor changes to its surroundings in the Elemental Chaos. You can achieve much wider results with a moment's thought, regardless of where you happen to be.
+	</RulesElement>
+	<RulesElement name="Awakening" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4393" source="Heroes of the Elemental Chaos">
+		<Category> 21 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<Flavor> An intangible mantle of power begins to gather around you, and you awaken to the realization that you are more than the mortal you once were. </Flavor>
+		<specific name="Short Description"> Origin becomes immortal; gain 2 Cha and a shakti that can transformed into a +5 magic weapon, implement, armor, or amulet of protection (+6 at 26th level) </specific>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+			<grant name="ID_FMP_RACIAL_TRAIT_1139" type="Racial Trait" />
+		</rules>
+You increase your Charisma by 2, and your origin becomes immortal.
+	In addition, you gain a shakti, an ancient tool of the Reigar that takes the form of a small statuette or token that is representative of you. As a minor action, you can transform it into a +5 magic weapon, magic implement, magic armor, or amulet of protection (+6 at 26th level). If the shakti leaves your person or is destroyed somehow, it turns to dust. You can create it again as a minor action, and it appears on your person in the desired form.
+	</RulesElement>
+	<RulesElement name="Rapid Reincarnation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4394" source="Heroes of the Elemental Chaos">
+		<Category> 24 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<Flavor> You can recover from mortal injury by making your body disincarnate, briefly relinquishing your physical form, and then re-creating it shortly afterward anywhere near where you fell. </Flavor>
+		<specific name="Short Description"> Once per day instead of making a death saving throw you can choose to disappear and reincarnate with your bloodied value in HP 1 minute to 1 hour later </specific>
+		<specific name="Level"> 24 </specific>
+Once per day when you would make a death saving throw, you can instead choose to become disincarnate. Your body disappears in motes of golden light, and you can then reincarnate anywhere within 1 mile, between 1 minute and 1 hour later. You reincarnate with hit points equal to your bloodied value.
+	</RulesElement>
+	<RulesElement name="Master of Chaos" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4395" source="Heroes of the Elemental Chaos">
+		<Category> 30 </Category>
+		<Prereqs> 21st level </Prereqs>
+		<Flavor> Unseen currents of power surge throughout the Elemental Chaos, and are preserved-frozen-in the matter of the mortal world too. You sense these currents and exploit them in combat by teleporting yourself or your foe along them. </Flavor>
+		<specific name="Short Description"> When you bloody an enemy or score a critical hit, teleport yourself or the enemy up to 10 squares </specific>
+		<specific name="Level"> 30 </specific>
+When you bloody an enemy or score a critical hit against an enemy, you can teleport yourself or the enemy up to 10 squares as a free action.
+	</RulesElement>
+	<!-- Quests for Humanity, Dragon 411 -->
+	<RulesElement name="God-Emperor" type="Epic Destiny" internal-id="ID_DRAGON411_EPIC_DESTINY_HUMAN_1" source="Dragon Magazine 411">
+		<Prereqs> 21st level, human </Prereqs>
+		<print-prereqs> 21st level, human </print-prereqs>
+		<specific name="Class Features"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1,ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_2,ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_3 </specific>
+		<specific name="Powers"> ID_DRAGON411_EPIC_DESTINY_HUMAN_POWER_1 </specific>
+		<specific name="_DisplayPowers"> ID_DRAGON411_EPIC_DESTINY_HUMAN_POWER_1 </specific>
+		<rules>
+			<grant name="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1" type="Class Feature" Level="21" />
+			<grant name="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_2" type="Class Feature" Level="24" />
+			<grant name="ID_DRAGON411_EPIC_DESTINY_HUMAN_POWER_1" type="Power" Level="26" />
+			<grant name="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_3" type="Class Feature" Level="30" />
+		</rules>
+As you performed ever greater deeds throughout the cosmos, uniting the scattered humans of the world into a new empire greater even than Nerath, more and more have called you lord-even savior. And as those who look to you for leadership multiply, the whispers begin that you are more than human. Not only are you set apart from mortals, but your destiny is to ascend even further, beyond the petty concerns of the material world. This ascension will mark not only your own greatness, but also that of the civilization you champion.
+	At first you remain a physical presence in the capital of your realm, guiding your governors and generals with a firm hand, but over time your laws and commandments take on their own life. The leaders of your society increasingly divine your will from this body of knowledge rather than hearing it from your lips, while your focus gradually moves to the planes-spanning affairs of gods and demigods. Eventually, you fade from the world and join their ranks, a great patron invoked in ceremonies and on holy days, to whom the greatest achievements of your civilization are dedicated.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler" type="Class Feature" internal-id="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1" source="Dragon Magazine 411">
+		<Category> 21 </Category>
+		<Flavor> You are recognized by those who follow you as the ultimate embodiment of the empire. You become the physical and spiritual epitome of humanity. </Flavor>
+		<specific name="Short Description"> Increase two different ability scores by 2. </specific>
+		<specific name="Level"> 21 </specific>
+		<specific name="_CS_ShortDescription"> Increase two different ability scores by 2 </specific>
+		<rules>
+			<select type="Class Feature" number="2" Category="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1" />
+		</rules>
+You increase two ability scores of your choice by 2 each.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler (Strength)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GIFTED_RULER_(STRENGTH)" source="Dragon Magazine 411">
+		<Category> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </Category>
+		<specific name="_SupportsID"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </specific>
+		<specific name="Short Description"> +2 to your Strength </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Strength </specific>
+		<rules>
+			<statadd name="Strength" value="+2" />
+		</rules>
+Add +2 to your Strength.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GIFTED_RULER_(DEXTERITY)" source="Dragon Magazine 411">
+		<Category> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </Category>
+		<specific name="_SupportsID"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler (Constitution)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GIFTED_RULER_(CONSTITUTION)" source="Dragon Magazine 411">
+		<Category> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </Category>
+		<specific name="_SupportsID"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </specific>
+		<specific name="Short Description"> +2 to your Constitution </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Constitution </specific>
+		<rules>
+			<statadd name="Constitution" value="+2" />
+		</rules>
+Add +2 to your Constitution.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GIFTED_RULER_(INTELLIGENCE)" source="Dragon Magazine 411">
+		<Category> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </Category>
+		<specific name="_SupportsID"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler (Wisdom)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GIFTED_RULER_(WISDOM)" source="Dragon Magazine 411">
+		<Category> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </Category>
+		<specific name="_SupportsID"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </specific>
+		<specific name="Short Description"> +2 to your Wisdom </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Wisdom </specific>
+		<rules>
+			<statadd name="Wisdom" value="+2" />
+		</rules>
+Add +2 to your Wisdom.
+	</RulesElement>
+	<RulesElement name="Gifted Ruler (Charisma)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_GIFTED_RULER_(CHARISMA)" source="Dragon Magazine 411">
+		<Category> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </Category>
+		<specific name="_SupportsID"> ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_1 </specific>
+		<specific name="Short Description"> +2 to your Charisma </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Charisma </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+		</rules>
+Add +2 to your Charisma.
+	</RulesElement>
+	<RulesElement name="Unquenchable Spirit" type="Class Feature" internal-id="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_2" source="Dragon Magazine 411">
+		<Category> 24 </Category>
+		<Flavor> You are the soul of the empire. Mere physical death cannot put an end to what you have created-or what you have become. </Flavor>
+		<specific name="Short Description"> 1/day gain HP equal to BV if start turn w/ 0 or fewer </specific>
+		<specific name="Level"> 24 </specific>
+Once per day when you start your turn at 0 hit points or fewer, you regain hit points equal to your bloodied value.
+	</RulesElement>
+	<RulesElement name="The Sovereign Will" type="Power" internal-id="ID_DRAGON411_EPIC_DESTINY_HUMAN_POWER_1" source="Dragon Magazine 411">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_DRAGON411_EPIC_DESTINY_HUMAN_1,ID_FMP_CATEGORY_68,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> God-Emperor </Prereqs>
+		<Flavor> Your commanding presence radiates from you to grant authority to your companions. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> God-Emperor Utility 26 </specific>
+		<specific name="Keywords"> Aura </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You activate an aura 2 that lasts until the end of your next turn. When you or any ally in the aura makes a Diplomacy check, instead of rolling a d20, resolve the check as if that character had rolled a 20. </specific>
+		<specific name="Class"> ID_DRAGON411_EPIC_DESTINY_HUMAN_1 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+You speak with the authority of a god. All harken to your every word, and to the words of those you hold closest.
+	</RulesElement>
+	<RulesElement name="Your Protective Wing" type="Class Feature" internal-id="ID_DRAGON411_EPIC_DESTINY_HUMAN_CLASS_FEATURE_3" source="Dragon Magazine 411">
+		<Category> 30 </Category>
+		<Flavor> Your awareness and guiding hand extend to all who follow you. No enemy will despoil any who fall in your service; you return them to your side where they can be healed, or at least buried with honor. </Flavor>
+		<specific name="Short Description"> Teleport as free action to ally you can see that drops to 0 HP or fewer </specific>
+		<specific name="Level"> 24 </specific>
+When any ally you can see drops to 0 hit points or fewer, you can teleport that ally to a square adjacent to you as a free action.
+	</RulesElement>
+	<!-- June 2012 Updates -->
+	<RulesElement name="Angelic Nature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1855" source="Divine Power">
+		<Category> 21 </Category>
+		<specific name="Short Description" />
+		<Prereqs> 21st level, any divine class </Prereqs>
+		<specific name="Level"> 21 </specific>
+		<rules>
+			<grant name="ID_FMP_LANGUAGE_8" type="Language" />
+			<statadd name="resist:fire" value="+15" type="resist" />
+			<statadd name="resist:radiant" value="+15" type="resist" />
+		</rules>		
+Your origin changes to immortal, and you cease to age.  You gain the ability to speak Supernal, resist 15 fire, and resist 15 radiant. You are immune to fear.
+	You gain a pair of angelic wings, which you can manifest or conceal as a minor action.  While your wings are manifested, you can fly at a speed equal to your speed + 2, but you land at the end of your turn.  If your turn ends while you are still flying, you swiftly descend and land without taking falling damage.  While your wings are concealed, your angelic nature is hidden, and you resemble the mortal you once were.
+	If you already have wings from some other source (such as the favored soul paragon path; see page 23), these angelic wings take the place of the wings you previously gained.
+	</RulesElement>
+</D20Rules>

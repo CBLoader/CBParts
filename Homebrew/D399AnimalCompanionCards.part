@@ -1,0 +1,1950 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>1.04</Version>
+    <Filename>D399AnimalCompanionCards.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/D399AnimalCompanionCards.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/D399AnimalCompanionCards.txt</VersionAddress>
+  </UpdateInfo>
+
+<!-- Adds Animal Companion Cards with information to the Character Sheet Currently this mod overwrites the following code (RemoveNodes is not functioning correctly) -->
+
+<!-- Coded by Tivaan -->
+<RulesElement name="Tivaan's Animal Companion Cards" type="source" internal-id="ID_TIV_SOURCE_ANIMAL_COMPANION_CARDS" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"/>
+    <specific name="Release Date"> 7/12/2011 </specific>
+</RulesElement>
+
+
+
+
+<!-- Animal Companion's Overwrite -->
+<RulesElement name="Animal Master Minion (Cat)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(CAT)" source="Dragon Magazine 399">
+    <Category> ID_FMP_CLASS_FEATURE_3869 </Category>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3869 </specific>
+    <specific name="Short Description"> Gain a Cat animal minion </specific>
+    <specific name="_DisplayPowers"/>    
+Quiet and agile, cats are very good at getting into places without being noticed. Yours might be a housecat or a small wildcat, bobcat, or lynx.
+</RulesElement>
+
+<RulesElement name="Animal Master Minion (Dog)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(DOG)" source="Dragon Magazine 399">
+    <Category> ID_FMP_CLASS_FEATURE_3869 </Category>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3869 </specific>
+    <specific name="Short Description"> Gain a Dog animal minion </specific>
+    <specific name="_DisplayPowers"/>  
+Dogs come in a variety of breeds; yours is a mutt of about 25 to 50 pounds, or it might be a jackal, a fox, a coyote, or a wild dog. You can use your dog to follow tracks.
+</RulesElement>
+
+<RulesElement name="Animal Master Minion (Hawk)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(HAWK)" source="Dragon Magazine 399">
+    <Category> ID_FMP_CLASS_FEATURE_3869 </Category>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3869 </specific>
+    <specific name="Short Description"> Gain a Hawk animal minion </specific>
+    <specific name="_DisplayPowers"/> 
+Fast, keen-eyed, and armed with sharp talons, a hawk makes an excellent scout
+</RulesElement>
+
+<RulesElement name="Animal Master Minion (Monkey)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(MONKEY)" source="Dragon Magazine 399">
+    <Category> ID_FMP_CLASS_FEATURE_3869 </Category>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3869 </specific>
+    <specific name="Short Description"> Gain a Monkey animal minion </specific>
+    <specific name="_DisplayPowers"/>
+This monkey is a small one of 10 pounds or less, such as a capuchin, a marmoset, or a grivet. Monkeys are excellent climbers and can manipulate objects easily.
+</RulesElement>
+
+<RulesElement name="Animal Master Minion (Raven)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(RAVEN)" source="Dragon Magazine 399">
+    <Category> ID_FMP_CLASS_FEATURE_3869 </Category>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_3869 </specific>
+    <specific name="Short Description"> Gain a Raven animal minion </specific>
+    <specific name="_DisplayPowers"/>
+Highly intelligent birds, ravens can speak in humanlike voices (much as parrots do). They are also notorious thieves and have a knack for carrying off small, shiny objects.
+</RulesElement>
+
+<!-- Cat Companion Card -->
+	
+<AppendNodes name="Animal Master Minion (Cat)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(CAT)" source="Dragon Magazine 399">
+      <rules>
+         <grant name="ID_TIV_ANIMAL_COMPANION-1" type="Power"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-2" type="Companion" Level="2"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-3" type="Companion" Level="3"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-4" type="Companion" Level="4"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-5" type="Companion" Level="5"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-6" type="Companion" Level="6"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-7" type="Companion" Level="7"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-8" type="Companion" Level="8"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-9" type="Companion" Level="9"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-10" type="Companion" Level="10"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-11" type="Companion" Level="11"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-12" type="Companion" Level="12"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-13" type="Companion" Level="13"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-14" type="Companion" Level="14"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-15" type="Companion" Level="15"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-16" type="Companion" Level="16"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-17" type="Companion" Level="17"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-18" type="Companion" Level="18"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-19" type="Companion" Level="19"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-20" type="Companion" Level="20"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-21" type="Companion" Level="21"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-22" type="Companion" Level="22"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-23" type="Companion" Level="23"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-24" type="Companion" Level="24"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-25" type="Companion" Level="25"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-26" type="Companion" Level="26"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-27" type="Companion" Level="27"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-28" type="Companion" Level="28"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-29" type="Companion" Level="29"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-30" type="Companion" Level="30"/>
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Animal Master's Companion: Cat" type="Power" internal-id="ID_TIV_ANIMAL_COMPANION-1" source="Tivaan's Animal Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Animal Companion"> Cat Level 1 Minion Skirmisher </specific>
+  <specific name="Statistics"> Tiny (natural beast), Low-light vision, Speed: 5
+Initiative: +6, Senses: Perception +1 </specific>
+  <specific name="Hit Points"> 1; a missed attack never damages a minion. </specific>
+  <specific name="Defenses"> AC 15; Fortitude 10, Reflex 14, Will 11 </specific>
+  <specific name="Skills"> Athletics +2, Stealth +9
+Str 4 (-3)	Dex 19 (+4)	Wis 12 (+1)
+Con 11 (+0)	Int 2 (-4)	Cha 11 (0)
+Alignment Unaligned Languages - </specific>
+  <specific name="Cat's Stealth"> (Move Action; At-Will)
+While within 10 squares of the cat, the cat's master can move up to half his or her speed without incurring the -5 penalty to Stealth checks for moving more than 2 squares. </specific>
+  <specific name="Distracting Attack"> See accompanying Encounter Card. </specific>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 2" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-2" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 2nd Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 2nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	 <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 16; Fortitude 11, Reflex 15, Will 12"/>		  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 3" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-3" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 3rd Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 3rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 17; Fortitude 12, Reflex 16, Will 13"/>		  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 4" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-4" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 4th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 4th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 18; Fortitude 13, Reflex 17, Will 14"/>		  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 5" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-5" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 5th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 5th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 19; Fortitude 14, Reflex 18, Will 15"/>		  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 6" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-6" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 6th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 6th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 20; Fortitude 15, Reflex 19, Will 16"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 7" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-7" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 7th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 7th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 21; Fortitude 16, Reflex 20, Will 17"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 8" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-8" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 8th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 8th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 22; Fortitude 17, Reflex 21, Will 18"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 9" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-9" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 9th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 9th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 23; Fortitude 18, Reflex 22, Will 19"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 10" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-10" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 10th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 10th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 24; Fortitude 19, Reflex 23, Will 20"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 11" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-11" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 11th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 11th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 25; Fortitude 20, Reflex 24, Will 21"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 12" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-12" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 12th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 12th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 26; Fortitude 21, Reflex 25, Will 22"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 13" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-13" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 13th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 13th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 27; Fortitude 22, Reflex 26, Will 23"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 14" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-14" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 14th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 14th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 28; Fortitude 23, Reflex 27, Will 24"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 15" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-15" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 15th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 15th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 29; Fortitude 24, Reflex 28, Will 25"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 16" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-16" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 16th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 16th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 30; Fortitude 25, Reflex 29, Will 26"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 17" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-17" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 17th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 17th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 31; Fortitude 26, Reflex 30, Will 27"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 18" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-18" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 18th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 18th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 32; Fortitude 27, Reflex 31, Will 28"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 19" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-19" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 19th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 19th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 33; Fortitude 28, Reflex 32, Will 29"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 20" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-20" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 20th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 20th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 34; Fortitude 29, Reflex 33, Will 30"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 21" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-21" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 21st Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 21st Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 35; Fortitude 30, Reflex 34, Will 31"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 22" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-22" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 22nd Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 22nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 36; Fortitude 31, Reflex 35, Will 32"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 23" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-23" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 23rd Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 23rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 37; Fortitude 32, Reflex 36, Will 33"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 24" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-24" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 24th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 24th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 38; Fortitude 33, Reflex 37, Will 34"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 25" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-25" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 25th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 25th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 39; Fortitude 34, Reflex 38, Will 35"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 26" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-26" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 26th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 26th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 40; Fortitude 35, Reflex 39, Will 36"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 27" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-27" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 27th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 27th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 41; Fortitude 36, Reflex 40, Will 37"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 28" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-28" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 28th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 28th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 42; Fortitude 37, Reflex 41, Will 38"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 29" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-29" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 29th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 29th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 43; Fortitude 38, Reflex 42, Will 39"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Cat 30" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-30" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 30th Level </Prereqs>
+<specific name="Short Description"> Cat Animal Companion: 30th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Cat" type="Power" Field="Defenses" value="AC 44; Fortitude 39, Reflex 43, Will 40"/>			  
+	</rules>
+</RulesElement>
+
+
+
+<!-- Dog Companion Card -->
+
+<AppendNodes name="Animal Master Minion (Dog)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(DOG)" source="Dragon Magazine 399">
+      <rules>
+         <grant name="ID_TIV_ANIMAL_COMPANION-2" type="Power"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-2-1" type="Companion" Level="2"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-3-1" type="Companion" Level="3"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-4-1" type="Companion" Level="4"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-5-1" type="Companion" Level="5"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-6-1" type="Companion" Level="6"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-7-1" type="Companion" Level="7"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-8-1" type="Companion" Level="8"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-9-1" type="Companion" Level="9"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-10-1" type="Companion" Level="10"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-11-1" type="Companion" Level="11"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-12-1" type="Companion" Level="12"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-13-1" type="Companion" Level="13"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-14-1" type="Companion" Level="14"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-15-1" type="Companion" Level="15"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-16-1" type="Companion" Level="16"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-17-1" type="Companion" Level="17"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-18-1" type="Companion" Level="18"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-19-1" type="Companion" Level="19"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-20-1" type="Companion" Level="20"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-21-1" type="Companion" Level="21"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-22-1" type="Companion" Level="22"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-23-1" type="Companion" Level="23"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-24-1" type="Companion" Level="24"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-25-1" type="Companion" Level="25"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-26-1" type="Companion" Level="26"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-27-1" type="Companion" Level="27"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-28-1" type="Companion" Level="28"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-29-1" type="Companion" Level="29"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-30-1" type="Companion" Level="30"/>
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Animal Master's Companion: Dog" type="Power" internal-id="ID_TIV_ANIMAL_COMPANION-2" source="Tivaan's Animal Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Animal Companion"> Dog - Level 1 Minion Skirmisher </specific>
+  <specific name="Statistics"> Small (natural beast), Speed: 7
+Initiative: +4, Senses: Perception +7 </specific>
+  <specific name="Hit Points"> 1; a missed attack never damages a minion. </specific>
+  <specific name="Defenses"> AC 14; Fortitude 11, Reflex 14, Will 12 </specific>
+  <specific name="Skills"> Perception +7
+Str 8 (-1)	Dex 15 (+2)	Wis 14 (+2)
+Con 13 (+1)	Int 2 (-4)	Cha 11 (0)
+Alignment Unaligned Languages - </specific>
+  <specific name="On the Track"> (Move Action; At-Will)
+While within 10 squares of the dog, the dog's master gains a +4 bonus to Perception checks made to find or follow tracks. </specific>
+  <specific name="Distracting Attack"> See accompanying Encounter Card. </specific>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 2" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-2-1" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 2nd Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 2nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 15; Fortitude 12, Reflex 15, Will 13"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 3" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-3-1" source="Tivaan's Companion Cards" revision-date="05/12/2011 10:46:57 AM" >
+<Prereqs> Unselectable, 3rd Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 3rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 16; Fortitude 13, Reflex 16, Will 14"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 4" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-4-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 4th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 4th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 17; Fortitude 14, Reflex 17, Will 15"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 5" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-5-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 5th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 5th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 18; Fortitude 15, Reflex 18, Will 16"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 6" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-6-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 6th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 6th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 19; Fortitude 16, Reflex 19, Will 17"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 7" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-7-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 7th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 7th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 20; Fortitude 17, Reflex 20, Will 18"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 8" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-8-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 8th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 8th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 21; Fortitude 18, Reflex 21, Will 19"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 9" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-9-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 9th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 9th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 22; Fortitude 19, Reflex 22, Will 20"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 10" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-10-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 10th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 10th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 23; Fortitude 20, Reflex 23, Will 21"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 11" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-11-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 11th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 11th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 24; Fortitude 21, Reflex 24, Will 22"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 12" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-12-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 12th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 12th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 25; Fortitude 22, Reflex 25, Will 23"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 13" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-13-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 13th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 13th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 26; Fortitude 23, Reflex 26, Will 24"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 14" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-14-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 14th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 14th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 27; Fortitude 24, Reflex 27, Will 25"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 15" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-15-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 15th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 15th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 28; Fortitude 25, Reflex 28, Will 26"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 16" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-16-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 16th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 16th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 29; Fortitude 26, Reflex 29, Will 27"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 17" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-17-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 17th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 17th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 30; Fortitude 27, Reflex 30, Will 28"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 18" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-18-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 18th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 18th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 31; Fortitude 28, Reflex 31, Will 29"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 19" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-19-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 19th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 19th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 32; Fortitude 29, Reflex 32, Will 30"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 20" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-20-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 20th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 20th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 33; Fortitude 30, Reflex 33, Will 31"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 21" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-21-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 21st Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 21st Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 34; Fortitude 31, Reflex 34, Will 32"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 22" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-22-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 22nd Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 22nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 35; Fortitude 32, Reflex 35, Will 33"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 23" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-23-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 23rd Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 23rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 36; Fortitude 33, Reflex 36, Will 34"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 24" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-24-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 24th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 24th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 37; Fortitude 34, Reflex 37, Will 35"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 25" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-25-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 25th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 25th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 38; Fortitude 35, Reflex 38, Will 36"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 26" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-26-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 26th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 26th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 39; Fortitude 36, Reflex 39, Will 37"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 27" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-27-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 27th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 27th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 40; Fortitude 37, Reflex 40, Will 38"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 28" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-28-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 28th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 28th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 41; Fortitude 38, Reflex 41, Will 39"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 29" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-29-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 29th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 29th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 42; Fortitude 39, Reflex 42, Will 40"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Dog 30" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-30-1" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 30th Level </Prereqs>
+<specific name="Short Description"> Dog Animal Companion: 30th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Dog" type="Power" Field="Defenses" value="AC 43; Fortitude 40, Reflex 43, Will 41"/>			  
+	</rules>
+</RulesElement>
+
+
+
+
+<!-- Hawk Companion Card -->
+
+<AppendNodes name="Animal Master Minion (Hawk)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(HAWK)" source="Dragon Magazine 399">
+      <rules>
+         <grant name="ID_TIV_ANIMAL_COMPANION-3" type="Power"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-2-2" type="Companion" Level="2"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-3-2" type="Companion" Level="3"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-4-2" type="Companion" Level="4"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-5-2" type="Companion" Level="5"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-6-2" type="Companion" Level="6"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-7-2" type="Companion" Level="7"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-8-2" type="Companion" Level="8"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-9-2" type="Companion" Level="9"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-10-2" type="Companion" Level="10"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-11-2" type="Companion" Level="11"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-12-2" type="Companion" Level="12"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-13-2" type="Companion" Level="13"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-14-2" type="Companion" Level="14"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-15-2" type="Companion" Level="15"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-16-2" type="Companion" Level="16"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-17-2" type="Companion" Level="17"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-18-2" type="Companion" Level="18"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-19-2" type="Companion" Level="19"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-20-2" type="Companion" Level="20"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-21-2" type="Companion" Level="21"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-22-2" type="Companion" Level="22"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-23-2" type="Companion" Level="23"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-24-2" type="Companion" Level="24"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-25-2" type="Companion" Level="25"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-26-2" type="Companion" Level="26"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-27-2" type="Companion" Level="27"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-28-2" type="Companion" Level="28"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-29-2" type="Companion" Level="29"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-30-2" type="Companion" Level="30"/>
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Animal Master's Companion: Hawk" type="Power" internal-id="ID_TIV_ANIMAL_COMPANION-3" source="Tivaan's Animal Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Animal Companion"> Hawk - Level 1 Minion Skirmisher </specific>
+  <specific name="Statistics"> Tiny (natural beast), Darkvision, Speed: 4, fly: 7
+Initiative: +6, Senses: +7 </specific>
+  <specific name="Hit Points"> 1; a missed attack never damages a minion. </specific>
+  <specific name="Defenses"> AC 15; Fortitude 10, Reflex 13, Will 11 </specific>
+  <specific name="Skills"> Perception + 7
+Str 8 (-1)	Dex 15 (+2)	Wis 14 (+2)
+Con 13 (+1)	Int 2 (-4)	Cha 11 (0)
+Alignment Unaligned Languages - </specific>
+  <specific name="Hawk's Eye"> (Move Action; At-Will)
+While within 10 squares of the hawk, the hawk's master gains a +4 bonus to Perception checks made to spot creatures. </specific>
+  <specific name="Distracting Attack"> See accompanying Encounter Card. </specific>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 2" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-2-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 2nd Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 2nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 16; Fortitude 11, Reflex 14, Will 12"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 3" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-3-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 3rd Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 3rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 17; Fortitude 12, Reflex 15, Will 13"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 4" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-4-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 4th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 4th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 18; Fortitude 13, Reflex 16, Will 14"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 5" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-5-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 5th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 5th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 19; Fortitude 14, Reflex 17, Will 15"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 6" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-6-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 6th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 6th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 20; Fortitude 15, Reflex 18, Will 16"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 7" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-7-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 7th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 7th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 21; Fortitude 16, Reflex 19, Will 17"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 8" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-8-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 8th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 8th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 22; Fortitude 17, Reflex 20, Will 18"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 9" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-9-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 9th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 9th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 23; Fortitude 18, Reflex 21, Will 19"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 10" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-10-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 10th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 10th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 24; Fortitude 19, Reflex 22, Will 20"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 11" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-11-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 11th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 11th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 25; Fortitude 20, Reflex 23, Will 21"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 12" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-12-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 12th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 12th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 26; Fortitude 21, Reflex 24, Will 22"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 13" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-13-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 13th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 13th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 27; Fortitude 22, Reflex 27, Will 23"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 14" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-14-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 14th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 14th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 28; Fortitude 23, Reflex 28, Will 24"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 15" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-15-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 15th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 15th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 29; Fortitude 24, Reflex 29, Will 25"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 16" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-16-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 16th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 16th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 30; Fortitude 25, Reflex 30, Will 26"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 17" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-17-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 17th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 17th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 31; Fortitude 26, Reflex 31, Will 27"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 18" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-18-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 18th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 18th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 32; Fortitude 27, Reflex 32, Will 28"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 19" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-19-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 19th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 19th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 33; Fortitude 28, Reflex 33, Will 29"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 20" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-20-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 20th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 20th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 34; Fortitude 29, Reflex 34, Will 30"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 21" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-21-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 21st Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 21st Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 35; Fortitude 30, Reflex 35, Will 31"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 22" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-22-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 22nd Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 22nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 36; Fortitude 31, Reflex 36, Will 32"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 23" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-23-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 23rd Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 23rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 37; Fortitude 32, Reflex 37, Will 33"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 24" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-24-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 24th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 24th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 38; Fortitude 33, Reflex 38, Will 34"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 25" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-25-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 25th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 25th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 39; Fortitude 34, Reflex 39, Will 35"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 26" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-26-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 26th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 26th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 40; Fortitude 35, Reflex 40, Will 36"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 27" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-27-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 27th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 27th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 41; Fortitude 36, Reflex 41, Will 37"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 28" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-28-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 28th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 28th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 42; Fortitude 37, Reflex 42, Will 38"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 29" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-29-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 29th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 29th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 43; Fortitude 38, Reflex 43, Will 39"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Hawk 30" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-30-2" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 30th Level </Prereqs>
+<specific name="Short Description"> Hawk Animal Companion: 30th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Hawk" type="Power" Field="Defenses" value="AC 44; Fortitude 39, Reflex 44, Will 40"/>			  
+	</rules>
+</RulesElement>
+
+
+
+<!-- Monkey Companion Card -->
+
+<AppendNodes name="Animal Master Minion (Monkey)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(MONKEY)" source="Dragon Magazine 399">
+      <rules>
+         <grant name="ID_TIV_ANIMAL_COMPANION-4" type="Power"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-2-3" type="Companion" Level="2"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-3-3" type="Companion" Level="3"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-4-3" type="Companion" Level="4"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-5-3" type="Companion" Level="5"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-6-3" type="Companion" Level="6"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-7-3" type="Companion" Level="7"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-8-3" type="Companion" Level="8"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-9-3" type="Companion" Level="9"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-10-3" type="Companion" Level="10"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-11-3" type="Companion" Level="11"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-12-3" type="Companion" Level="12"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-13-3" type="Companion" Level="13"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-14-3" type="Companion" Level="14"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-15-3" type="Companion" Level="15"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-16-3" type="Companion" Level="16"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-17-3" type="Companion" Level="17"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-18-3" type="Companion" Level="18"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-19-3" type="Companion" Level="19"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-20-3" type="Companion" Level="20"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-21-3" type="Companion" Level="21"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-22-3" type="Companion" Level="22"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-23-3" type="Companion" Level="23"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-24-3" type="Companion" Level="24"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-25-3" type="Companion" Level="25"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-26-3" type="Companion" Level="26"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-27-3" type="Companion" Level="27"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-28-3" type="Companion" Level="28"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-29-3" type="Companion" Level="29"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-30-3" type="Companion" Level="30"/>
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Animal Master's Companion: Monkey" type="Power" internal-id="ID_TIV_ANIMAL_COMPANION-4" source="Tivaan's Animal Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Animal Companion"> Monkey - Level 1 Minion Skirmisher </specific>
+  <specific name="Statistics"> Tiny (natural beast), Speed: 6, climb: 6
+Initiative +5 Senses Perception +0 </specific>
+  <specific name="Hit Points"> 1; a missed attack never damages a minion. </specific>
+  <specific name="Defenses"> AC 14; Fortitude 11, Reflex 13, Will 11 </specific>
+  <specific name="Skills"> Acrobatics +8
+Str 5 (-3)	Dex 17 (+3)	Wis 10 (0)
+Con 12 (+1)	Int 4 (-3)	Cha 13 (+1)
+Alignment Unaligned Languages - </specific>
+  <specific name="Nimble Fingers"> (Move Action; At-Will)
+While within 10 squares of the monkey, the monkey's master can take a standard action to command it to make a Thievery check to pick a pocket as a free action, using the master's Thievery modifier with a +2 bonus. </specific>
+  <specific name="Distracting Attack"> See accompanying Encounter Card. </specific>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 2" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-2-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 2nd Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 2nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 15; Fortitude 12, Reflex 14, Will 12"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 3" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-3-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 3rd Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 3rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 16; Fortitude 13, Reflex 15, Will 13"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 4" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-4-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 4th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 4th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 17; Fortitude 14, Reflex 16, Will 14"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 5" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-5-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 5th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 5th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 18; Fortitude 15, Reflex 17, Will 15"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 6" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-6-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 6th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 6th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 19; Fortitude 16, Reflex 18, Will 16"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 7" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-7-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 7th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 7th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 20; Fortitude 17, Reflex 19, Will 17"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 8" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-8-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 8th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 8th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 21; Fortitude 18, Reflex 20, Will 18"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 9" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-9-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 9th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 9th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 22; Fortitude 19, Reflex 21, Will 19"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 10" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-10-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 10th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 10th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 23; Fortitude 20, Reflex 22, Will 20"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 11" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-11-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 11th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 11th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 24; Fortitude 21, Reflex 23, Will 21"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 12" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-12-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 12th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 12th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 25; Fortitude 22, Reflex 24, Will 22"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 13" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-13-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 13th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 13th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 26; Fortitude 23, Reflex 25, Will 23"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 14" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-14-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 14th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 14th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 27; Fortitude 24, Reflex 26, Will 24"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 15" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-15-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 15th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 15th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 28; Fortitude 25, Reflex 27, Will 25"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 16" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-16-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 16th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 16th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 29; Fortitude 26, Reflex 28, Will 26"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 17" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-17-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 17th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 17th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 30; Fortitude 27, Reflex 29, Will 27"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 18" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-18-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 18th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 18th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 31; Fortitude 28, Reflex 30, Will 28"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 19" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-19-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 19th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 19th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 32; Fortitude 29, Reflex 31, Will 29"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 20" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-20-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 20th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 20th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 33; Fortitude 30, Reflex 32, Will 30"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 21" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-21-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 21st Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 21st Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 34; Fortitude 31, Reflex 33, Will 31"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 22" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-22-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 22nd Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 22nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 35; Fortitude 32, Reflex 34, Will 32"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 23" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-23-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 23rd Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 23rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 36; Fortitude 33, Reflex 35, Will 33"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 24" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-24-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 24th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 24th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 37; Fortitude 34, Reflex 36, Will 34"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 25" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-25-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 25th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 25th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 38; Fortitude 35, Reflex 37, Will 35"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 26" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-26-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 26th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 26th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 39; Fortitude 36, Reflex 38, Will 36"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 27" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-27-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 27th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 27th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 40; Fortitude 37, Reflex 39, Will 37"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 28" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-28-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 28th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 28th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 41; Fortitude 38, Reflex 40, Will 38"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 29" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-29-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 29th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 29th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 42; Fortitude 39, Reflex 41, Will 39"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Monkey 30" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-30-3" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 30th Level </Prereqs>
+<specific name="Short Description"> Monkey Animal Companion: 30th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Monkey" type="Power" Field="Defenses" value="AC 43; Fortitude 40, Reflex 42, Will 40"/>			  
+	</rules>
+</RulesElement>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Raven Companion Card -->
+
+<AppendNodes name="Animal Master Minion (Raven)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ANIMAL_MASTER_STARTING_FEATURE_(RAVEN)" source="Dragon Magazine 399">
+      <rules>
+         <grant name="ID_TIV_ANIMAL_COMPANION-5" type="Power"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-2-4" type="Companion" Level="2"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-3-4" type="Companion" Level="3"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-4-4" type="Companion" Level="4"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-5-4" type="Companion" Level="5"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-6-4" type="Companion" Level="6"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-7-4" type="Companion" Level="7"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-8-4" type="Companion" Level="8"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-9-4" type="Companion" Level="9"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-10-4" type="Companion" Level="10"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-11-4" type="Companion" Level="11"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-12-4" type="Companion" Level="12"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-13-4" type="Companion" Level="13"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-14-4" type="Companion" Level="14"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-15-4" type="Companion" Level="15"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-16-4" type="Companion" Level="16"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-17-4" type="Companion" Level="17"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-18-4" type="Companion" Level="18"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-19-4" type="Companion" Level="19"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-20-4" type="Companion" Level="20"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-21-4" type="Companion" Level="21"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-22-4" type="Companion" Level="22"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-23-4" type="Companion" Level="23"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-24-4" type="Companion" Level="24"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-25-4" type="Companion" Level="25"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-26-4" type="Companion" Level="26"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-27-4" type="Companion" Level="27"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-28-4" type="Companion" Level="28"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-29-4" type="Companion" Level="29"/>
+		 <grant name="ID_TIV_FEAT_ANIMAL_COMPANION-30-4" type="Companion" Level="30"/>
+      </rules>
+</AppendNodes>
+
+<RulesElement name="Animal Master's Companion: Raven" type="Power" internal-id="ID_TIV_ANIMAL_COMPANION-5" source="Tivaan's Animal Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable </Prereqs>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Animal Companion"> Raven - Level 1 Minion Skirmisher </specific>
+  <specific name="Statistics"> Tiny (natural beast), Speed: 4, fly: 8
+Initiative +6, Senses Perception +4 </specific>
+  <specific name="Hit Points"> 1; a missed attack never damages a minion. </specific>
+  <specific name="Defenses"> AC 15; Fortitude 10, Reflex 14, Will 12 </specific>
+  <specific name="Skills"> Stealth +9
+Str 3 (-4)	Dex 19 (+4)	Wis 15 (+2)
+Con 10 (0)	Int 3 (-4)	Cha 10 (0)
+Alignment Unaligned Languages - </specific>
+  <specific name="Snatch and Scoot"> (Move Action; At-Will)
+While within 10 squares of the raven, the raven's master can take a standard action to command it to make a Thievery check to perform sleight of hand as a free action, using the master's Thievery modifier with a +2 bonus. </specific>
+  <specific name="Distracting Attack"> See accompanying Encounter Card. </specific>
+</RulesElement> 
+
+<RulesElement name="Animal Companion Raven 2" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-2-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 2nd Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 2nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 16; Fortitude 11, Reflex 15, Will 13"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 3" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-3-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 3rd Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 3rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 17; Fortitude 12, Reflex 16, Will 14"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 4" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-4-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 4th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 4th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 18; Fortitude 13, Reflex 17, Will 15"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 5" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-5-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 5th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 5th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 19; Fortitude 14, Reflex 18, Will 16"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 6" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-6-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 6th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 6th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 20; Fortitude 15, Reflex 19, Will 17"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 7" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-7-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 7th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 7th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 21; Fortitude 16, Reflex 20, Will 18"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 8" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-8-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 8th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 8th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 22; Fortitude 17, Reflex 21, Will 19"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 9" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-9-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 9th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 9th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 23; Fortitude 18, Reflex 22, Will 20"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 10" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-10-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 10th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 10th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 24; Fortitude 19, Reflex 23, Will 21"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 11" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-11-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 11th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 11th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 25; Fortitude 20, Reflex 24, Will 22"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 12" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-12-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 12th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 12th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 26; Fortitude 21, Reflex 25, Will 23"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 13" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-13-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 13th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 13th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 27; Fortitude 22, Reflex 26, Will 24"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 14" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-14-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 14th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 14th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 28; Fortitude 23, Reflex 27, Will 25"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 15" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-15-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 15th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 15th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 29; Fortitude 24, Reflex 28, Will 26"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 16" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-16-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 16th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 16th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 30; Fortitude 25, Reflex 29, Will 27"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 17" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-17-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 17th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 17th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 31; Fortitude 26, Reflex 30, Will 28"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 18" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-18-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 18th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 18th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 32; Fortitude 27, Reflex 31, Will 29"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 19" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-19-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 19th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 19th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 33; Fortitude 28, Reflex 32, Will 30"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 20" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-20-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 20th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 20th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 34; Fortitude 29, Reflex 33, Will 31"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 21" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-21-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 21st Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 21st Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 35; Fortitude 30, Reflex 34, Will 32"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 22" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-22-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 22nd Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 22nd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 36; Fortitude 31, Reflex 35, Will 33"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 23" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-23-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 23rd Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 23rd Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 37; Fortitude 32, Reflex 36, Will 34"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 24" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-24-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 24th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 24th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 38; Fortitude 33, Reflex 37, Will 35"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 25" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-25-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 25th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 25th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 39; Fortitude 34, Reflex 38, Will 36"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 26" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-26-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 26th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 26th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 40; Fortitude 35, Reflex 39, Will 37"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 27" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-27-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 27th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 27th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 41; Fortitude 36, Reflex 40, Will 38"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 28" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-28-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 28th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 28th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 42; Fortitude 37, Reflex 41, Will 39"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 29" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-29-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 29th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 29th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 43; Fortitude 38, Reflex 42, Will 40"/>			  
+	</rules>
+</RulesElement>
+
+<RulesElement name="Animal Companion Raven 30" type="Companion" internal-id="ID_TIV_FEAT_ANIMAL_COMPANION-30-4" source="Tivaan's Companion Cards" revision-date="00/00/0000 00:00:00 AM" >
+<Prereqs> Unselectable, 30th Level </Prereqs>
+<specific name="Short Description"> Raven Animal Companion: 30th Level </specific>
+<specific name="type"/>
+<specific name="Associated Power Info"/>
+<specific name="Associated Powers"/>
+    <rules>
+	  	  <modify name="Animal Master's Companion: Raven" type="Power" Field="Defenses" value="AC 44; Fortitude 39, Reflex 43, Will 41"/>			  
+	</rules>
+</RulesElement>
+  
+</D20Rules>

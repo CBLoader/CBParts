@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>90-divine-battle-healer.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/90-divine-battle-healer.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/90-divine-battle-healer.txt</VersionAddress>
+  </UpdateInfo>
+  
+<!-- Divine Healer Alternative: Divine Battle Healer -->
+<!-- 90-divine-battle-healer.part, version 1.00 -->
+<!-- Original release: 26-December-2011; Last modified: 26-December-2011 -->
+<!-- Test compiled with CBLoader build V1.3.0 -->
+
+<Changelog>
+This is an alternative house-ruled version of the Divine Healer feat that gives the Battle Cleric's Lore feature instead of the Healer's Lore feature.
+Original release: 26-December-2011.
+</Changelog>
+
+<RulesElement name="House Rules Supplement" type="source" internal-id="ID_WOG_SOURCE_HOUSERULES" source="Core">
+    <specific name="IsBeta">0</specific>
+    <specific name="URL">http://en.wikipedia.org/wiki/House_rule</specific>
+    <specific name="Release Date">3/6/2011</specific>
+</RulesElement>
+
+<!-- Customized Divine Healer Feat: Divine Battle Healer -->
+  <RulesElement name="Divine Battle Healer" type="Feat" internal-id="ID_WOG_HR_DBH_FEAT" source="House Rules Supplement">
+    <Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
+    <Prereqs> Wis 15; ~MULTICLASS or Unlimited Multiclass or Cleric CountsAsClass; !ID_FMP_CLASS_2; !ID_FMP_HYBRID_CLASS_352; !ID_FMP_CLASS_705 </Prereqs>
+    <print-prereqs> Wis 15 </print-prereqs>
+    <specific name="Short Description"> Cleric: training in Heal, Battle Cleric's Lore </specific>
+    <specific name="Type"> Multiclass Cleric </specific>
+    <specific name="Tier"> Heroic </specific>
+	<specific name="Special"> This feat requires your Dungeon Master's approval to take. </specific>
+    <rules>  
+      <grant name="ID_INTERNAL_SKILL_TRAINING_HEAL" type="Skill Training" />  
+      <grant name="ID_FMP_CLASS_FEATURE_4058" type="Class Feature" />  
+      <grant name="ID_INTERNAL_GRANTS_CLERIC_IMPLEMENTS" type="Grants" />  
+      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass" />  
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />  
+    </rules>   
+You gain training in the Heal skill. You gain the Battle Cleric's Lore class feature. In addition, you can wield cleric implements.
+This is an alternative house-ruled version of the Divine Healer feat that gives the Battle Cleric's Lore feature instead of the Healer's Lore feature.
+</RulesElement>
+</D20Rules>

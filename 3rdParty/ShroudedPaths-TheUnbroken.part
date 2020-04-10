@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>ShroudedPaths-TheUnbroken.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/ShroudedPaths-TheUnbroken.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/ShroudedPaths-TheUnbroken.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Paragon Path: The Unbroken -->
+  <RulesElement name="The Unbroken" type="Paragon Path" internal-id="ID_ESJ_PARAGON_PATH_7776003" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Prereqs> Paladin </Prereqs>
+    <print-prereqs> Paladin class, no channel divinity feat powers </print-prereqs>
+    <Flavor> "I need no gods to stop the likes of you." </Flavor>
+    <specific name="Class Features"> ID_ESJ_CLASS_FEATURE_7776007, ID_ESJ_CLASS_FEATURE_7776008, ID_ESJ_CLASS_FEATURE_7776009 </specific>
+    <specific name="Powers"> ID_ESJ_POWER_7776003,ID_ESJ_POWER_7776004,ID_ESJ_POWER_7776005 </specific>
+    <specific name="_DisplayPowers"> ID_ESJ_POWER_7776009,ID_ESJ_POWER_7776010,ID_ESJ_POWER_7776011 </specific>
+    <rules>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776007" type="Class Feature" Level="11" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776008" type="Class Feature" Level="11" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776009" type="Class Feature" Level="16" />
+      <grant name="ID_ESJ_POWER_7776009" type="Power" Level="11" />
+      <grant name="ID_ESJ_POWER_7776010" type="Power" Level="12" />
+      <grant name="ID_ESJ_POWER_7776011" type="Power" Level="20" />
+    </rules>
+	The loss of faith can be a terrible tragedy, especially if you have spent your life as a champion of divinity. For many, it is the end of everything. You have weathered this tragedy and come out stronger for it--bloodied, battered, but unbroken. Whether it has left you embittered towards the gods, or merely weary of their games, it has not weakened your resolve to do the things that must be done. Though you turned from your deity, your powers have not abandoned you, either because your god still supports you or perhaps because you never needed a divine crutch in the first place.
+   </RulesElement>
+  <RulesElement name="Unbroken Inspiration" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776007" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Action point grants extra Channel Divinity as free action </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Unbroken Inspiration:you may also use your channel divinity (divine mettle) or channel divinity (divine strength) as a free action. This use does not count as a use of the channel divinity power for this encounter." />
+    </rules>
+When you spend an action point to take an extra action, you may also use your channel divinity: divine mettle or channel divinity: divine strength as a free action. This use does not count as a use of the channel divinity power for this encounter.
+   </RulesElement>
+  <RulesElement name="Devoted Steel" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776008" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Lose proficiency with holy symbols, use melee weapons as implements </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <drop name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" type="Proficiency" />
+    </rules>
+You may no longer use holy symbols, but you may use the enhancement bonus of a melee weapon as an implement bonus (the proficiency bonus is not included).
+   </RulesElement>
+  <RulesElement name="Inescapable Challenge" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776009" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Challenge punishes shift or teleport, deal extra damage to immortals </specific>
+    <specific name="Level"> 16 </specific>
+When you are adjacent to the target of your divine challenge, the target provokes an opportunity attack if it shifts or teleports away from you. Furthermore, your damage rolls against immortal creatures deal an extra 1d8 force damage.
+   </RulesElement>
+  <RulesElement name="Unflagging Strike" type="Power" internal-id="ID_ESJ_POWER_7776009" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_ESJ_PARAGON_PATH_7776003,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> The Unbroken </Prereqs>
+    <Flavor> You trust yourself, you trust your weapon, and those are all that you need to strike home. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Unbroken Attack 11 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature that is marked by you </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. You may spend a healing surge. Add your Strength modifier to the number of hit points you recover. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776003 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Unyielding Valor" type="Power" internal-id="ID_ESJ_POWER_7776010" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_ESJ_PARAGON_PATH_7776003,ID_INTERNAL_CATEGORY_MOVE_ACTION,ID_INTERNAL_CATEGORY_32,ID_INTERNAL_CATEGORY_28,ID_INTERNAL_CATEGORY_24,12 </Category>
+    <Prereqs> The Unbroken </Prereqs>
+    <Flavor> You have faced the worst of struggles within your soul. Compared to that, the blows of your enemies are as nothing. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Unbroken Utility 12 </specific>
+    <specific name="Keywords"> Divine, Stance, Weapon </specific>
+    <specific name="Action Type"> Move Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You are slowed and receive a +1 power bonus to all defenses and saving throws. You reduce all push, pull, and slide effects against you by a number of squares equal to your Wisdom modifier (minimum 1 square). </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776003 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="That Others May Live" type="Power" internal-id="ID_ESJ_POWER_7776011" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_MISS,ID_ESJ_PARAGON_PATH_7776003,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,20 </Category>
+    <Prereqs> The Unbroken </Prereqs>
+    <Flavor> You strike a furious blow that draws your enemy's ire, buying your allies a moment to recover. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Unbroken Attack 20 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature marked by you </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> Spend two healing surges without recovering any hit points. All allies within 10 squares may immediately spend a healing surge. All enemies adjacent to the target are now marked by you. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776003 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- New feats -->
+  <RulesElement name="Personal Code" type="Feat" internal-id="ID_ESJ_FEAT_7776010" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <print-prereqs> Adopt a personal code. </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain benefits by following personal code of honor </specific>
+	You have a code of conduct which you are willing to follow, even at great personal cost. The code consists of three priorities (similar to the commandments of a deity), which may be chosen by the player. In fact, deity commandments make a great personal code for strongly religious characters.
+	When you encounter a situation where following your code produces some significant or serious difficulty for you, that scene is treated as a milestone (see the D&amp;D 4e Player's Handbook). Further, at end of the session you are rewarded as if you had completed a minor quest (see the experience point section in the D&amp;D 4e Dungeon Master's Guide).
+	The character can only benefit from this feat once per session of play.
+   </RulesElement>
+  <RulesElement name="Clarity of Purpose" type="Feat" internal-id="ID_ESJ_FEAT_7776011" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Prereqs> Personal Code feat </Prereqs>
+    <print-prereqs> Personal Code feat </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 on action point when furthering personal code </specific>
+When you spend an action point to take an action that furthers your personal code you gain a +2 feat bonus to the first roll associated with that action.
+   </RulesElement>
+  <!-- New magic item -->
+  <RulesElement name="Unbroken Blade +3" type="Magic Item" internal-id="ID_ESJ_MAGIC_ITEM_7776004" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Flavor> This weapon is cracked--so profoundly damaged that it looks like it should break on impact, yet it never does. </Flavor>
+    <specific name="Level"> 12 </specific>
+    <specific name="Gold"> 13000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Weapon"> Axe, Hammer, Heavy Blade </specific>
+    <specific name="Critical"> +3d8 damage </specific>
+    <specific name="Property"> Enhancement bonus is added to damage from the divine challenge ability. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
+  </RulesElement>
+  <RulesElement name="Unbroken Blade +4" type="Magic Item" internal-id="ID_ESJ_MAGIC_ITEM_7776005" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Flavor> This weapon is cracked--so profoundly damaged that it looks like it should break on impact, yet it never does. </Flavor>
+    <specific name="Level"> 17 </specific>
+    <specific name="Gold"> 65000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Weapon"> Axe, Hammer, Heavy Blade </specific>
+    <specific name="Critical"> +4d8 damage </specific>
+    <specific name="Property"> Enhancement bonus is added to damage from the divine challenge ability. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
+  </RulesElement>
+  <RulesElement name="Unbroken Blade +5" type="Magic Item" internal-id="ID_ESJ_MAGIC_ITEM_7776006" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Flavor> This weapon is cracked--so profoundly damaged that it looks like it should break on impact, yet it never does. </Flavor>
+    <specific name="Level"> 22 </specific>
+    <specific name="Gold"> 325000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Weapon"> Axe, Hammer, Heavy Blade </specific>
+    <specific name="Critical"> +5d8 damage </specific>
+    <specific name="Property"> Enhancement bonus is added to damage from the divine challenge ability. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
+  </RulesElement>
+  <RulesElement name="Unbroken Blade +6" type="Magic Item" internal-id="ID_ESJ_MAGIC_ITEM_7776007" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
+    <Flavor> This weapon is cracked--so profoundly damaged that it looks like it should break on impact, yet it never does. </Flavor>
+    <specific name="Level"> 27 </specific>
+    <specific name="Gold"> 1625000 </specific>
+    <specific name="Magic Item Type"> Weapon </specific>
+    <specific name="Weapon"> Axe, Hammer, Heavy Blade </specific>
+    <specific name="Critical"> +6d8 damage </specific>
+    <specific name="Property"> Enhancement bonus is added to damage from the divine challenge ability. </specific>
+    <specific name="_Rarity"> Uncommon </specific>
+    <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
+  </RulesElement>
+  <!-- New implement proficiency: All Melee Weapons -->
+  <RulesElement name="Implement Proficiency (Melee Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" source="Core">
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GARROTE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <!-- Source for hyperlinks -->
+  <RulesElement name="Shrouded Paths: The Unbroken" type="source" internal-id="ID_ESJ_SOURCE_7776003" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://rpg.drivethrustuff.com/product_info.php?products_id=58594 </specific>
+    <specific name="Release Date"> 10/24/2008 </specific>
+  </RulesElement>
+</D20Rules>

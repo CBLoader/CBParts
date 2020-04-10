@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>Tikbalang.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/Tikbalang.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/Tikbalang.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Tikbalang" type="Race" internal-id="ID_ESJ_RACE_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> ~TIKBALANG </Prereqs>
+    <Flavor> Swift defenders of Kalikasan, creatures of brawn and guile. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 7 squares </specific>
+    <specific name="Characteristics"> enduring, fraternal, impulsive, protective, swift, wild </specific>
+    <specific name="Physical Qualities"> Tikbalangs are astounding specimens, about a head taller than the imposing dragonborn. They combine equine and human features, with a horse-like head and long legs that end in hooves complementing a slender, humanoid torso. Fur is prominent but short all over their bodies, with a range of colors similar to those found on horses.
+	A tikbalang's most prominent feature, however, is its impressive mane. If tikbalangs are ever seen as creatures of vanity, it is because of the amount of attention they dedicate to these locks of hair. They have been known to spend hours washing their hair and softening it with coconut oil. Others have even been known to knot charms and small talismans into them to form intricate designs. Perhaps this attention to their mane adds fuel to the rumoured tikbalang weakness. Each tikbalang is said to possess a golden strand of hair in their mane that, when wrested off and tied into a ring, allows one to charm one of these fey creatures.
+	Tikbalang are also accomplished Pintados, and they have been known to sport primal tattoos that depict their swiftness. Common motifs include designs reminiscent of clouds and gusts of wind.
+	As fey creatures, tikbalang live longer than humans do. They reach adulthood in as few as 14 harvests, but can live to see as many as a hundred harvests. </specific>
+    <specific name="Playing"> Tikbalangs are creatures of the wild, and their approach to life is as impulsive as their origins. They do not share the patience of other long-lived fey, for what is the point of living long if all you do is wait the whole time? Action is the gift of life, and tikblangs are among the swiftest fey to respond to danger. Thus, other fey value them as the first line of defence against interlopers. In many cases, they are the only line of defence needed.
+	Tikbalang foals grow up seeing their elders defending Kalikasan from harm, whether through forcing ignorant humans to respect the wilds and their fey inhabitants, or repulsing vicious creatures of shadow that seek to subvert nature. The young ones are thus encouraged to join in this sacred duty, and their brothers and sisters all assist in their upbringing. A strong sense of brotherhood and community is instinctive in their society, and most tikbalangs develop a strong sense of commitment to their peers.
+	Tikbalang clans refer to themselves as a kapatiran, a term that translates as brotherhood or compact. Other than their own parents, a datu that acts as its warchief, and a sect of spiritual leaders known as the babaylan, a tikbalang views everybody in the kapatiran as a brother or sister, part of an extended family. Tikbalang adventurers have been known to extend this view to their companions, given time.
+	It is uncommon for tikbalang to revere gods; most instead revere the purity of the natural world. Those who do worship a deity usually revere those gods who teach the value of honor among brothers, as well as gods and goddesses who have strong ties to nature. These tikbalang are not treated differently from those who prefer more primal beliefs. Interestingly, many deities who espouse honor are also pioneers of brick, mortar, and other forms of "civilization", something that most tikbalangs are vehemently against. Tikbalang who worship these deities have views that clash with outsiders that share the same religious patron. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 6' 8"-7' 2" </specific>
+    <specific name="Average Weight"> 150-280 lb. </specific>
+    <specific name="Ability Scores"> +2 Constitution, +2 Dexterity or +2 Charisma </specific>
+    <specific name="Languages"> Common, Elven </specific>
+    <specific name="Skill Bonuses"> +2 Arcana, +2 Endurance </specific>
+    <specific name="Male Names"> Lysto, Tagbanon, Tikas, Udyok </specific>
+    <specific name="Female Names"> Akaba, Kalira, Laya, Ydlihp </specific>
+    <specific name="Short Description"> Equine fey humanoids, clever and swift. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_641, ID_ESJ_RACIAL_TRAIT_7776001, ID_ESJ_RACIAL_TRAIT_7776002 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_TIKBALANG" type="Grants" />
+      <statadd name="Speed" value="+7" />
+      <textstring name="Average Height" value="6' 8&quot;-7' 2&quot;" />
+      <textstring name="Average Weight" value="150-280 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Dexterity|Charisma" />
+    </rules>
+Like many fey creatures, the mysterious tikbalang are forest guardians that one will only see if they allow you to. But unlike their gnomish or elven cousins, they have little reason to hide their presence from those that offend them. Though they also employ deceptive magic to ward off the many gates to Kalikasan, they are just as likely to literally kick a trespasser out of their demesne.
+
+Play a tikbalang if you want . . .
+* to be mysterious and forceful.
+* to be a creature of magic and physical might.
+* to be a member of a race that favors the barbarian, paladin, and warlock classes.
+   </RulesElement>
+  <RulesElement name="Tikbalang" type="Grants" internal-id="ID_INTERNAL_GRANTS_TIKBALANG" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <specific name="_SupportsID"> ID_ESJ_RACE_7776001 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
+      <grant name="ID_ESJ_RACIAL_TRAIT_7776001" type="Racial Trait" />
+      <grant name="ID_ESJ_RACIAL_TRAIT_7776002" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Fleet of Foot" type="Racial Trait" internal-id="ID_ESJ_RACIAL_TRAIT_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <specific name="Short Description"> +2 to initiative </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Initiative Misc" value="+2" type="Racial" />
+    </rules>
+You gain a +2 racial bonus on initiative checks.
+   </RulesElement>
+  <RulesElement name="Unearthly Gallop" type="Racial Trait" internal-id="ID_ESJ_RACIAL_TRAIT_7776002" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <specific name="Short Description"> Use Unearthly Gallop as at-will power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_ESJ_POWER_7776002 </specific>
+    <specific name="_DisplayPowers"> ID_ESJ_POWER_7776002 </specific>
+    <rules>
+      <grant name="ID_ESJ_POWER_7776002" type="Power" />
+    </rules>
+You can use Unearthly Gallop as an at-will power. 
+   </RulesElement>
+  <RulesElement name="Unearthly Gallop" type="Power" internal-id="ID_ESJ_POWER_7776002" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_ESJ_RACIAL_TRAIT_7776002,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Unselectable </Prereqs>
+    <Flavor> You master your immediate surroundings with a quick glance, allowing you to move about unhindered. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Tikbalang Racial Power </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> The next time you willingly move from your space before the start of your next turn, you ignore difficult terrain. </specific>
+    <specific name="Special"> You can only use this power once per turn. </specific>
+    <specific name="_ParentFeature"> ID_ESJ_RACIAL_TRAIT_7776002 </specific>
+  </RulesElement>
+  <RulesElement name="Believe the Lie" type="Feat" internal-id="ID_ESJ_FEAT_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, Cha 15 </Prereqs>
+    <print-prereqs> Tikbalang, Charisma 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain vulnerable psychic for extra illusion/psychic damage </specific>
+	Once per turn, before making an attack roll for a power that has the Illusion or Psychic keyword, you may choose to gain Vulnerability 5 Psychic until the start of your next turn. If you do, you gain a +2 feat bonus to damage rolls with that power.
+	At 11th level, the vulnerability increases to 10 and the feat bonus increases to +4. At 21st level, the vulnerability increases to 15 and the feat bonus increases to +6.
+   </RulesElement>
+  <RulesElement name="Galloping Charge" type="Feat" internal-id="ID_ESJ_FEAT_7776002" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Str 13, Tikbalang, Unearthly Gallop racial power </Prereqs>
+    <print-prereqs> Strength 13, Tikbalang, Unearthly Gallop racial power </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Ignore difficult terrain when charging </specific>
+You ignore difficult terrain whenever you charge.
+   </RulesElement>
+  <RulesElement name="Unearthly Leap" type="Feat" internal-id="ID_ESJ_FEAT_7776003" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, trained in Athletics </Prereqs>
+    <print-prereqs> Tikbalang, trained in Athletics </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Bonus to Athletics and free running start </specific>
+    <rules>
+      <statadd name="Athletics Misc" value="+2" type="Feat" />
+    </rules>
+	You gain a +2 feat bonus to Athletics checks.
+	You are always considered to have made a running start whenever you make Athletics checks to jump.
+   </RulesElement>
+  <RulesElement name="Shove Intruders" type="Feat" internal-id="ID_ESJ_FEAT_7776004" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang </Prereqs>
+    <print-prereqs> Tikbalang </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Push 1 additional square </specific>
+Whenever an effect causes you to push an opponent, you may choose to push that opponent 1 additional square.
+   </RulesElement>
+  <RulesElement name="Goldstrand Ring" type="Feat" internal-id="ID_ESJ_FEAT_7776005" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, defender role, paragon tier </Prereqs>
+    <print-prereqs> Tikbalang, defender role, 11th level </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Mark penalty increases to -4 for chosen ally </specific>
+You may choose a willing ally at the end of every extended rest. That ally loses a ring slot item until you choose a new ally. Whenever you mark an enemy, that enemy takes a -4 penalty to attack rolls against that ally, instead of the normal -2 penalty.
+   </RulesElement>
+  <RulesElement name="Impulsive Accuracy" type="Feat" internal-id="ID_ESJ_FEAT_7776006" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, Dex 15, Fleet of Foot racial feature, paragon tier </Prereqs>
+    <print-prereqs> Dexterity 15, Tikbalang, Fleet of Foot racial feature, 11th level </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> +1 attack vs. opponents who have not yet acted </specific>
+You gain a +1 bonus to attack rolls against opponents who have yet to act in an encounter.
+   </RulesElement>
+  <RulesElement name="Kalikasan Stride" type="Feat" internal-id="ID_ESJ_FEAT_7776007" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, Unearthly Gallop racial power, paragon tier </Prereqs>
+    <print-prereqs> Tikbalang, Unearthly Gallop racial power, 11th level </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Unearthly Gallop grants phasing </specific>
+    <rules>
+      <modify name="Unearthly Gallop" type="Power" Field="Effect" value="You gain phasing for the next time you willingly move from your space before the start of your next turn." />
+    </rules>
+Whenever you use your Unearthly Gallop, you also gain phasing for the next movement that you make before the start of your next turn.
+   </RulesElement>
+  <RulesElement name="Kick-Start Gallop" type="Feat" internal-id="ID_ESJ_FEAT_7776008" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, Unearthly Gallop racial power, epic tier </Prereqs>
+    <print-prereqs> Tikbalang, Unearthly Gallop racial power, 21st level </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Free melee basic attack with Unearthly Gallop </specific>
+    <rules>
+      <modify name="Unearthly Gallop" type="Power" Field="Kick-Start Gallop" value="You may also make an unarmed melee basic attack as a free action." />
+    </rules>
+Whenever you use your Unearthly Gallop, you may make an unarmed melee basic attack as a free action.
+   </RulesElement>
+  <RulesElement name="Hooves of the Fey" type="Feat" internal-id="ID_ESJ_FEAT_7776009" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang </Prereqs>
+    <print-prereqs> Tikbalang </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use hooves as unarmed weapon </specific>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+      <statadd name="FREEBEE:ID_INTERNAL_WEAPON_TIKBALANG_HOOVES" value="+1" />
+    </rules>
+	When you make an unarmed attack, you can use your hooves instead, which is a weapon in the unarmed weapon group. This weapon has a proficiency bonus of +2, and a damage of 1d10. The hooves are not considered to be a weapon that you wield in your hand.
+	You can master and perform the Enhance Natural Armaments ritual as if you had the Ritual Caster feat.
+	Your hooves, being magical, can be enchanted. Performing the Disenchant Magic Item ritual on your hooves does not destroy them.
+   </RulesElement>
+  <RulesElement name="Tikbalang Hooves" type="Weapon" internal-id="ID_INTERNAL_WEAPON_TIKBALANG_HOOVES" source="Tikbalang: Guardians of Kalikasan">
+    <Prereqs> Hooves of the Fey Feat </Prereqs>
+    <specific name="Weight"> 0 </specific>
+    <specific name="Gold"> 0 </specific>
+    <specific name="Damage"> 1d10 </specific>
+    <specific name="Proficiency Bonus"> 2 </specific>
+    <specific name="Weapon Category"> Improvised Melee </specific>
+    <specific name="Hands Required"> One-Handed </specific>
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Group"> Unarmed </specific>
+    <specific name="Properties"> Off-hand </specific>
+    <specific name="_IncludeImprovised"> 1 </specific>
+    <specific name="_SupportsID"> ID_ESJ_FEAT_7776009 </specific>
+Your hooves are deadly weapons. You can use them as a weapon in the Unarmed group, with +2 proficiency and 1d10 damage. 
+
+(Note: Though an Off-hand weapon due to Character Builder limitations, this item need not be equipped.)
+   </RulesElement>
+  <RulesElement name="Enhance Natural Armaments" type="Ritual" internal-id="ID_ESJ_RITUAL_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Flavor> Tikbalangs originally mastered this ritual to fight with their hooves and fists as well as they do with blades or spears. </Flavor>
+    <specific name="Category"> Creation </specific>
+    <specific name="Key Skill"> Nature (no check) </specific>
+    <specific name="Component Cost"> Special </specific>
+    <specific name="Duration"> Permanent </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Time"> 1 hour </specific>
+    <specific name="Market Price"> 100 gp </specific>
+    <specific name="type"> Ritual </specific>
+	This ritual functions like the Enchant Magic Item ritual, except that you can only enchant weapons in the unarmed weapon group like your unarmed attack or an unarmed weapon granted to you by a class or feat.
+	You cannot use Enhance Natural Armaments to resize items.
+	Using the Disenchant Magic Item ritual on weapons enchanted this way destroys its magical properties, but does not destroy the weapon itself. The ritual otherwise produces the normal amount of residuum.
+   </RulesElement>
+  <RulesElement name="Mane Ring Binding" type="Ritual" internal-id="ID_ESJ_RITUAL_7776002" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Flavor> You bind the inherently magical soul of the tikbalang to yours as you wrap its mane around your finger. </Flavor>
+    <specific name="Category"> Binding </specific>
+    <specific name="Key Skill"> Arcana </specific>
+    <specific name="Component Cost"> 500 gp, and a golden mane that you personally plucked from a tikbalang </specific>
+    <specific name="Duration"> Special </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Time"> 10 minutes </specific>
+    <specific name="Market Price"> 2,600 gp </specific>
+    <specific name="type"> Ritual </specific>
+You tie the golden mane around your ring finger, which causes you to lose one of your ring item slots for the duration of this ritual. This process allows you to exercise a degree of control over the tikbalang (whose level must not exceed yours) that produced the strand. The creature need not be in the immediate vicinity, but you must be in the same plane of existence as the creature while you perform this ritual.
+	Upon the completion of this ritual, it begins to rain for 10 miles around you, regardless of the season. The rain will even fall during a cloudless, sunny day. At the Dungeon Master's discretion, the rain may or may not have an effect on visibility or lighting; it can be a purely aesthetic effect with no game changes.
+	This ritual has been known to backfire on the caster; its effectiveness and duration depends on your Arcana check:
+
+19 or lower: The tikbalang has immediate authority over you and can issue one command you can obey, one that takes up to a day of effort to accomplish.
+
+20-24: You bind the tikbalang to a minor pact. Before rolling initiative on one encounter during the next 24 hours, you can call upon the tikbalang to join the battle by your side. It teleports to a space within 5 squares of you of its own choosing, rolls initiative, and tries to protect you during the	encounter. However, it retains its free will, and you cannot command it to perform specific tasks in combat.
+
+25-34: You bind the tikbalang to a moderate pact. In addition to being able to call upon it within the next 24 hours, as above, you can command the creature to perform a task that takes up to a day of effort to accomplish.
+
+35-39: You bind the tikbalang to a powerful pact. Within the next 24 hours, it accompanies you on your adventure, and tries to protect you to the best of its ability. However, it retains its free will, and you cannot command it to perform specific tasks in combat. Alternatively, you can command the tikbalang to perform a task that requires up to a week of effort to accomplish.
+
+40 or higher: You bind the tikbalang to a supreme pact. Within the next week, it accompanies you on your adventure, and tries to protect you to the best of its ability. It will even give its life to protect yours if the situation arises. Alternatively, you can command the tikbalang to perform a task that requires up to a harvest season's length in effort. While it retains its free will during the extent of this ritual, the tikbalang is inclined to respond favourably to requests that you make over that period of time. The Dungeon Master is the final arbiter on what the tikbalang will and will not do while this ritual is in effect.
+
+	Once the task is completed or the time has elapsed, the tikbalang (or you) will be released from service, and the golden mane turns into a nondescript strand of horse hair. Issuing impossible tasks, such as forcing the tikbalang to fly, discharges the ritual, as is issuing tasks that are blatantly suicidal.
+	Removing the gold mane from your finger immediately ends the ritual, and the tikbalang is no longer compelled. You cannot remove it if you are the one compelled by this ritual. Finally, you cannot use this ritual if you have no ring item slots remaining.   
+   </RulesElement>
+  <RulesElement name="Weapon Proficiency (Tikbalang Hooves)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" source="Tikbalang: Guardians of Kalikasan">
+    <Category> ID_FMP_WEAPON_GROUP_27,ID_INTERNAL_CATEGORY_IMPROVISED,ID_INTERNAL_CATEGORY_MELEE </Category>
+  </RulesElement>
+  <RulesElement name="Kensei Focus Tikbalang Hooves" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_KENSEI_FOCUS_TIKBALANG_HOOVES" source="Player's Handbook">
+    <Category> ID_FMP_CLASS_FEATURE_452 </Category>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="Tikbalang Hooves:attack" value="+1" />
+      <statadd name="Tikbalang Hooves:damage" value="+4" requires="Kensei Mastery" />
+    </rules>
+You gain a +1 bonus to attack rolls with Tikbalang Hooves.
+   </RulesElement>
+  <RulesElement name="Implement Proficiency (Tikbalang Hooves)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" source="Core">
+    <Category> ID_FMP_CATEGORY_25 </Category>
+  </RulesElement>
+  <AppendNodes name="Implement Proficiency (Proficient Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)" source="Core">
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" requires="Weapon Proficiency (Tikbalang Hooves)" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Implement Proficiency (Unarmed group)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(UNARMED_GROUP)" source="Core">
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Weapon Master" type="Internal" internal-id="ID_INTERNAL_INTERNAL_WEAPON_MASTER" source="Dragon Magazine 382">
+    <rules>
+      <statadd name="Tikbalang Hooves:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Tikbalang Hooves) proficiency" />
+      <statadd name="Tikbalang Hooves:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Tikbalang Hooves) proficiency" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Weapon Group (Unarmed)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(UNARMED)" source="Core">
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Implement Proficiency (Melee Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" source="Core">
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Monk Unarmed Strike" type="Weapon" internal-id="ID_INTERNAL_WEAPON_MONK_UNARMED_STRIKE" source="Player's Handbook 3">
+    <Prereqs> Unarmed Combatant Class Feature </Prereqs>
+    <specific name="InternalOnly"> 0 </specific>
+    <specific name="Weight"> 0 </specific>
+    <specific name="Gold"> 0 </specific>
+    <specific name="Range" />
+    <specific name="Damage"> 1d8 </specific>
+    <specific name="Proficiency Bonus"> 3 </specific>
+    <specific name="Weapon Category"> Improvised Melee </specific>
+    <specific name="Hands Required"> One-Handed </specific>
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Group"> Unarmed </specific>
+    <specific name="Properties"> Off-hand </specific>
+    <specific name="_IncludeImprovised"> 1 </specific>
+    <specific name="_SupportsID"> ID_FMP_CLASS_362 </specific>
+You can make unarmed attacks with much greater effectiveness than most combatants. When you make a weapon attack such as a melee basic attack, you can use the monk unarmed strike, which is a weapon in the unarmed weapon group. This weapon has the off-hand weapon property and a +3 proficiency bonus, and it deals 1d8 damage. You must have a hand free to use your monk unarmed strike, even if you're kicking, kneeing, elbowing, or head-butting a target. Also, your monk unarmed strike can benefit from a magic ki focus if you have one.
+   </RulesElement>
+  <RulesElement name="Eldritch Runner" type="Paragon Path" internal-id="ID_ESJ_PARAGON_PATH_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, any arcane class </Prereqs>
+    <print-prereqs> Tikbalang </print-prereqs>
+    <Flavor> "Fighting me is like fighting the wind: A battle you cannot hope to win." </Flavor>
+    <specific name="Class Features"> ID_ESJ_CLASS_FEATURE_7776001, ID_ESJ_CLASS_FEATURE_7776002, ID_ESJ_CLASS_FEATURE_7776003 </specific>
+    <specific name="Powers"> ID_ESJ_POWER_7776003,ID_ESJ_POWER_7776004,ID_ESJ_POWER_7776005 </specific>
+    <specific name="_DisplayPowers"> ID_ESJ_POWER_7776003,ID_ESJ_POWER_7776004,ID_ESJ_POWER_7776005 </specific>
+    <rules>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776001" type="Class Feature" Level="11" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776002" type="Class Feature" Level="11" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776003" type="Class Feature" Level="16" />
+      <grant name="ID_ESJ_POWER_7776003" type="Power" Level="11" />
+      <grant name="ID_ESJ_POWER_7776004" type="Power" Level="12" />
+      <grant name="ID_ESJ_POWER_7776005" type="Power" Level="20" />
+    </rules>
+	Like the winds, tikbalangs are swift, unseen, and unpredictable. They can feel the powerful magic of the winds as their manes swim through it, and many take up the arcane arts because of this connection. However, only the truly skilled can gather this magic to power their spells. These tikbalangs are known as the eldritch runners.
+	Just like most mages, you prefer to stay outside melee, preferring to direct the flow of battle from a safe distance. But to affect real change, you know that galloping through the thick of things is necessary. You dart into the fight one moment and are gone the next; just like the wind that empowers you.
+   </RulesElement>
+  <RulesElement name="Windpact Action" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Move action from action point gives bonus arcane attack and damage </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Windpact Action:If you spend an action point to take a move action, the next arcane attack power you make before the end of your next turn gains a +4 bonus to attack and damage." />
+    </rules>
+Whenever you spend an action point to take a move action, the next arcane attack power you make before the end of your next turn gains a +4 bonus to the attack and damage roll.
+   </RulesElement>
+  <RulesElement name="Agile Spellcasting" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776002" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Ignore run penalty with at-will arcane attack powers </specific>
+    <specific name="Level"> 11 </specific>
+Whenever you use an at-will arcane attack power, you may ignore the -5 penalty to attack rolls associated with running.
+   </RulesElement>
+  <RulesElement name="Master of Winds" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776003" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> 16 </Category>
+    <specific name="Short Description"> You control direction of forced movement </specific>
+    <specific name="Level"> 16 </specific>
+When an effect causes you to be pushed, pulled, or slid, you can instead slide an equal number of squares in a direction of your choice.
+   </RulesElement>
+  <RulesElement name="Twin Winds" type="Power" internal-id="ID_ESJ_POWER_7776003" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_ESJ_PARAGON_PATH_7776001,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Eldritch Runner </Prereqs>
+    <Flavor> You call upon the cool summer breeze and the humid gust of storms, throwing an opponent and sliding an ally to safety at the same time. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Eldritch Runner Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Implement, Cold, Fire </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence or Charisma vs. Fortitude </specific>
+    <specific name="Hit"> 1d8 + Intelligence or Charisma modifier cold or fire damage (your choice), and you push the target up to 4 squares. In addition, pull an ally within range up to 4 squares. That ally gains resist 10 cold or 10 fire until the end of your next turn (your choice, special). </specific>
+    <specific name="Special"> The damage and the resistance granted by this power must be of different types. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776001 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Mirror Gallop" type="Power" internal-id="ID_ESJ_POWER_7776004" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_ESJ_PARAGON_PATH_7776001,ID_INTERNAL_CATEGORY_MOVE_ACTION,ID_INTERNAL_CATEGORY_31,ID_INTERNAL_CATEGORY_26,ID_INTERNAL_CATEGORY_19,12 </Category>
+    <Prereqs> Eldritch Runner </Prereqs>
+    <Flavor> You weave a translucent image of yourself that gallops to the opposite direction. As the image solidifies, you crumble into a cloud of dust and falling stones. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Eldritch Runner Utility 12 </specific>
+    <specific name="Keywords"> Arcane, Conjuration, Teleportation </specific>
+    <specific name="Action Type"> Move Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You conjure an image of yourself that occupies a square adjacent to you. You and the illusion then move a number of squares equal to your speed.
+The image lasts until the end of your next turn. When the conjuration ends, you teleport to the space the conjuration last occupied. </specific>
+    <specific name="Special"> The conjured image needs to be supported on a solid surface. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776001 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Whirling Mane" type="Power" internal-id="ID_ESJ_POWER_7776005" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_MISS,ID_ESJ_PARAGON_PATH_7776001,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,20 </Category>
+    <Prereqs> Eldritch Runner </Prereqs>
+    <Flavor> You sway your mane around, assaulting the minds of those around you and imparting in them a sense of wanderlust. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Eldritch Runner Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Implement, Psychic </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> Each creature in burst </specific>
+    <specific name="Attack"> Intelligence or Charisma vs. Will </specific>
+    <specific name="Hit"> 1d10 + Intelligence or Charisma modifier psychic damage, and the target is dominated (save ends). You can only choose move actions for targets dominated this way. </specific>
+    <specific name="Miss"> You slide the target 2 squares, and it is dazed until the end of your next turn. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776001 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Razormane Rampager" type="Paragon Path" internal-id="ID_ESJ_PARAGON_PATH_7776002" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Prereqs> Tikbalang, barbarian </Prereqs>
+    <print-prereqs> Tikbalang, must have a power with the Rage keyword </print-prereqs>
+    <Flavor> "My mane, my hooves, and my fists. This is all the magic I need." </Flavor>
+    <specific name="Class Features"> ID_ESJ_CLASS_FEATURE_7776004, ID_ESJ_CLASS_FEATURE_7776005, ID_ESJ_CLASS_FEATURE_7776006  </specific>
+    <specific name="Powers"> ID_ESJ_POWER_7776006,ID_ESJ_POWER_7776007,ID_ESJ_POWER_7776008 </specific>
+    <specific name="_DisplayPowers"> ID_ESJ_POWER_7776006,ID_ESJ_POWER_7776007,ID_ESJ_POWER_7776008 </specific>
+    <rules>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776004" type="Class Feature" Level="11" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776005" type="Class Feature" Level="11" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776006" type="Class Feature" Level="16" />
+      <grant name="ID_ESJ_POWER_7776006" type="Power" Level="11" />
+      <grant name="ID_ESJ_POWER_7776007" type="Power" Level="12" />
+      <grant name="ID_ESJ_POWER_7776008" type="Power" Level="20" />
+    </rules>
+	There are those who see the tikbalangs for their inherent magical nature and their ability to mislead travellers. They view tikbalangs as a nuisance when travelling through the thick forests, but they aren't seen as an immediate, physical threat. Those who hold these beliefs have never had the misfortune of dealing with a Razormane Rampager.
+	Razormane Rampagers are creatures of strength and primal magic. Their manes permanently harden into bristles, and grow into hundreds of sharp daggers in the heat of battle. They also become larger and more terrifying than other tikbalangs, sometimes growing to 8 feet tall as they tap into their anger.
+	As a Razormane Rampager, you see combat as the most efficient way to drive off intruders. You lack the subtlety of your kin, but you are no less effective at your task. Let others be the wind of deception; you are the typhoon that destroys everything in your path.
+   </RulesElement>
+  <RulesElement name="Scattermane Action" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776004" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Adjacent creatures take Con mod damage on action point </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Scattermane Action:Each creature adjacent to you takes damage equal to your Constitution modifier." />
+    </rules>
+Whenever you spend an action point to take an extra action, each creature adjacent to you takes damage equal to your Constitution modifier.
+   </RulesElement>
+  <RulesElement name="Razormane Wrestler" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776005" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Grabbed or grabbing creatures take Con mod damage/turn </specific>
+    <specific name="Level"> 11 </specific>
+An opponent who begins its turn grabbing or grabbed by you takes damage equal to your Constitution modifier.
+   </RulesElement>
+  <RulesElement name="Blood-Red Mane" type="Class Feature" internal-id="ID_ESJ_CLASS_FEATURE_7776006" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Being bloodied counts as raging </specific>
+    <specific name="Level"> 16 </specific>
+Whenever you are bloodied, you are considered to be raging for the purposes of class features, feats, and powers. If you are already raging, this effect does not count as entering a new rage.
+   </RulesElement>
+  <RulesElement name="Prehensile Mane" type="Power" internal-id="ID_ESJ_POWER_7776006" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_ESJ_PARAGON_PATH_7776002,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Razormane Rampager </Prereqs>
+    <Flavor> Your mane slashes and pierces at your opponent's skin, and you wrap it around him to prevent escape. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Razormane Rampager Attack 11 </specific>
+    <specific name="Keywords"> Primal </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength +4 vs. Reflex 
+Level 21: Strength + 6 vs. Reflex </specific>
+    <specific name="Hit"> 5d4 + Strength modifier + Constitution modifier damage, and the target is grabbed (until escape). </specific>
+    <specific name="Special"> If you use this power while raging, your melee reach for the purposes of this attack is 2 squares. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776002 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Wildmane Shield" type="Power" internal-id="ID_ESJ_POWER_7776007" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_ESJ_PARAGON_PATH_7776002,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_INTERNAL_CATEGORY_33,ID_INTERNAL_CATEGORY_28,12 </Category>
+    <Prereqs> Razormane Rampager </Prereqs>
+    <Flavor> Your mane becomes hard as steel, and you use it to shield your allies and wound your enemies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Razormane Rampager Utility 12 </specific>
+    <specific name="Keywords"> Primal, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the stance ends, allies adjacent to you gain concealment, and an opponent who hits you or an ally adjacent to you with a melee attack takes ongoing damage equal to your Constitution modifier (save ends). </specific>
+    <specific name="Special"> If you use this power while raging, the effect extends to allies and opponents within 2 squares of you. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776002 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Galloping Giant Rage" type="Power" internal-id="ID_ESJ_POWER_7776008" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_MISS,ID_ESJ_PARAGON_PATH_7776002,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,20 </Category>
+    <Prereqs> Razormane Rampager </Prereqs>
+    <Flavor> Your fury swells inside you, seeping into your feyborn body as you leap to the attack. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Razormane Rampager Attack 20 </specific>
+    <specific name="Keywords"> Primal, Rage, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 4[W] + Strength modifier damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> You enter the rage of the galloping giant. Until the rage ends, your melee reach increases by 1, and you may grab targets as if you were one size larger. In addition, you can spend a standard action to move your speed and make a melee basic attack at any point in your movement. </specific>
+    <specific name="Class"> ID_ESJ_PARAGON_PATH_7776002 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Tikbalang" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_TIKBALANG" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <specific name="_SupportsID"> ID_ESJ_RACE_7776001 </specific>
+You count as a tikbalang for meeting prerequisites.
+   </RulesElement>
+  <RulesElement name="Past Spirit (Tikbalang)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(TIKBALANG)" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
+    <Category> ID_FMP_CLASS_FEATURE_2064 </Category>
+    <Prereqs> !Tikbalang Race,!Tikbalang CountsAsRace </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASRACE_TIKBALANG" type="CountsAsRace" />
+      <grant name="ID_ESJ_POWER_7776002" type="Power" />
+    </rules>
+You are considered a Tikbalang for the purpose of meeting prerequisites.
+   </RulesElement>
+  <RulesElement name="Tikbalang: Guardians of Kalikasan" type="source" internal-id="ID_ESJ_SOURCE_7776001" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.rpgnow.com/product_info.php?products_id=65865 </specific>
+    <specific name="Release Date"> 11/23/2009 </specific>
+  </RulesElement>
+</D20Rules>

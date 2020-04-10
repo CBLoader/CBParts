@@ -1,0 +1,1545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>GuildWarsRangerSkills.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/GuildWarsRangerSkills.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/GuildWarsRangerSkills.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Guild Wars" type="source" internal-id="ID_TIV_SOURCE_GUILD_WARS_10_1" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://guildwars.wikia.com/wiki/Index_of_skill_lists </specific>
+    <specific name="Release Date"> 1/1/2005 </specific>
+  </RulesElement>
+  <!-- Coded by Tivaan -->
+  <!-- KDM is still testing and as he gets the test parts completed these will also be updated. -->
+  <!-- Guild Wars -->
+  <!-- Beast Mastery -->
+  <RulesElement name="Death" type="Category" internal-id="ID_TIV_CATEGORY_DEATH" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Disease" type="Category" internal-id="ID_TIV_CATEGORY_DISEASE" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Shout" type="Category" internal-id="ID_TIV_CATEGORY_SHOUT" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Hex" type="Category" internal-id="ID_TIV_CATEGORY_HEX" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Disrupting-Lunge" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_142-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Your beast waits patiently in the shadows, then lunges at its prey as it attacks. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 1[B] + beast's Strength modifier + your Wisdom modifier damage.
+Level 21: Increase damage to 2[B] + beast's Strength modifier + your Wisdom modifier.</specific>
+    <specific name="Special"> If the target has not initiated its turn during this round, then this attack can be delayed till that turn. If the attack is delayed then this attack disrupts the targets attack ending the targets turn. This can only be done once per encounter. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Maiming-Strike" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_153-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Your beast sweeps the legs of its prey. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 1[B] + beast's Strength modifier and the target is slowed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Bestial-Mauling" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_135-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> While your beast is stalking its prey, it leaps on it's fallen foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 1[B] + beast's Strength modifier + your Wisdom modifier damage.
+Level 21: Increase damage to 2[B] + beast's Strength modifier + your Wisdom modifier. </specific>
+    <specific name="Special"> If the attack strikes a knocked prone foe, that foe is Dazed. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Brutal-Strike" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_137-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You command your beast to finish off the enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 2[B] + beast's Strength modifier + your Wisdom modifier damage.</specific>
+    <specific name="Special"> If the attack hits a bloodied foe, then add an additional 1[B] damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Bestial-Pounce" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_136-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,1 </Category>
+    <Flavor> Sneaking behind your enemy, your beast knocks the attacking foe to your feet, before it can harm you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Beast, Weapon </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Melee weapon (beast 1) </specific>
+    <specific name="Trigger"> One enemy attacks you with a melee attack </specific>
+    <specific name="Target"> The triggering creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> The attack is interrupted (you take no damage from the attack) and the target is knocked prone. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Symbiotic-Bond" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_168-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Attacking as one, you and your beast's senses become filled with vengeance. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, your beast gains regeneration 3 and half of the damage your pet receives is redirected to you. This Stance can be ended with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Bestial-Fury" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_134-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Attacking as one, you and your beast's senses become filled with vengeance. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Effect"> While this Stance is active, you can make one extra basic melee or ranged attack per turn. This stance ends if you use a At-Will, Encounter, or Daily power. This Stance can be ended with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Call-of-Haste" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_138-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You find yourself surrounded, so you call for immediate assistance from your beast. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Minor Action - Shout </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> Your beast companion in burst </specific>
+    <specific name="Effect"> Your beast can shift its speed. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Heket's-Rampage" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_151-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You see an opening in the defenses of your enemy, calling upon your pet, you shift into position. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> You or your beast companion </specific>
+    <specific name="Effect"> The target can shift 2 squares prior to or after the next attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Feral-Aggression" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_146-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> Bearing its teeth, your beast strikes out against your well-armored foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 3 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC, two attacks </specific>
+    <specific name="Hit"> 1[B] + beast's Strength modifier + your Wisdom modifier damage per attack. If both attacks hit the target is knocked prone. If both attacks miss your beast is knocked prone. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Enraged-Lunge" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_145-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> Your pet steps out of the shadows, behind the enemy, it lunges and rips its claws deep into the exposed flesh of it's foe. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 2[B] damage and the target receives a Deep Wound effect. </specific>
+    <specific name="Miss"> Half damage </specific>
+    <specific name="Deep Wound Effect"> You subtract 20% of the targets Hit Points from its Max HP and Current HP prior to calculating the damage. Then you subtract the damage from the adjusted current HP. 
+The current HP can be healed up to the Max HP less the 20%. The Max HP will not recover the 20% loss unless a First Aid Action (which can be performed by the target on itself or a comrade of that target performing it on the target) DC 17 or an Extended Rest has been taken. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Call-of-Protection" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_139-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You get separated from your beast companion and from what you can see, its not faring well against its foes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Minor Action - Shout </specific>
+    <specific name="Attack Type"> Close burst 10 </specific>
+    <specific name="Target"> Your beast companion in burst </specific>
+    <specific name="Effect"> Your beast has invulnerable 10 to all damage until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Comfort-Animal" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_140-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Seeing your beast take a beating, you send words of comfort. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> Your beast companion </specific>
+    <specific name="Effect"> You can spend a healing surge. The target gains the HP as if it had spent a healing surge and can remove one effect that a save can remove. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Rampage as One" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_162-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You order your beast to attack together in concert against your common foe. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Attack"> Strength vs. AC and Beast's attack bonus vs. AC </specific>
+    <specific name="Effect"> On your next attack, you and your beast can make one extra melee basic attack against the same target and shift 3 squares before or after the attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Feral-Lunge" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_147-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> In spite of your commands, your beast viciously attacks your enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 7 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 1[B] + beast's Strength modifier + your Wisdom modifier damage and ongoing 5 damage (save ends) - Bleeding. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Melandru's-Assault" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_154-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> Your beast is surrounded by enemies that are gonna wish they had not done that. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 9 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst (beast) </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Beast's attack bonus vs. Reflex </specific>
+    <specific name="Hit"> 3[B] damage + the beast's Strength modifier damage. </specific>
+    <specific name="Miss"> Half damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Run-as-One" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_163-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10 </Category>
+    <Flavor> You and your beast move together as swift as the wind. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You and your beasts' speed is increased by 3. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Tiger's-Fury" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_169-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> Attacking as one, you and your beast's senses become filled with vengeance. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Attack"> Strength vs. AC  </specific>
+    <specific name="Beast Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Effect"> While this Stance is active, you can make one extra basic melee or ranged attack per turn and your beast can make one extra basic melee attack per turn. This stance ends if you use a At-Will, Encounter, or Daily power. This Stance can be ended with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Companionship" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_141-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You and your beast have been to hell and back many times, and its all because of the friendship you share. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Beast, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 10 </specific>
+    <specific name="Requirement"> You or your beast companion is bloodied. </specific>
+    <specific name="Target"> You and your beast companion </specific>
+    <specific name="Effect"> You can spend 2 healing surges, splitting the results with your beast companion. Healing you and your companion equal amounts.</specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Otyugh's-Cry" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_155-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> Letting out a call to the wild, the spirits of Nature responds with enchantments to your beast. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Beast, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 10 </specific>
+    <specific name="Requirement"> Your beast companion is bloodied. </specific>
+    <specific name="Target"> Your beast companion </specific>
+    <specific name="Effect"> The target gains a +2 bonus to its AC (ends at the end of your next turn) and its next attack cannot be blocked or interrupted. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Ferocious-Strike" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_148-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> Your beast lands a strike on your enemy that rips flesh from bone. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 13 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 3[B] + beast's Strength modifier + your Wisdom modifier damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Poisonous-Bite" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_156-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> Your beast tears at flesh and bone, causing a poisonous infection to invade the wounds. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 15 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 3[B] + beast's Strength modifier damage and the target takes 4 ongoing poison damage (saves end). </specific>
+    <specific name="Miss"> Half damage and no ongoing damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Heal-as-One" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_150-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> With forces overwhelming you and your beast, you call out to the forces of nature to grant you the blessing of health. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 16 </specific>
+    <specific name="Keywords"> Martial, Beast, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 10 </specific>
+    <specific name="Requirement"> You or your beast companion is bloodied. </specific>
+    <specific name="Target"> You and your beast companion </specific>
+    <specific name="Effect"> You can spend 3 healing surges, splitting the results with your beast companion. Healing you and your companion equal amounts. You are your companion can remove one effect each that a save can end. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Leaping-Pounce" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_157-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> Your beast leaps up at its enemy, taking it to the ground in a mass of teeth and claws. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 17 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 3[B] + beast's Strength modifier damage and the target is knocked prone. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Predator's-Pounce" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_158-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> Your beast leaps up at its enemy, taking it to the ground in a mass of teeth and claws. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 19 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 3[B] + beast's Strength modifier damage and your beast recovers an equal amount of Hit Points to the damage caused. </specific>
+    <specific name="Miss"> Half damage and Half HP recovery. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Predatory-Bond" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_159-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> You and your beast, form a bond that goes beyond the physical realm. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 22 </specific>
+    <specific name="Keywords"> Martial, Beast, Healing, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, each time your beast successfully hits with an attack and you are within 3 squares of your beast, you regain 1d4 Hit Points. This stance can be ended as a Minor Action. (This cannot heal you beyond your max HP.)</specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Savage-Pounce" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_164-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Your beast strikes its foe, knocking it off balance. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 23 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 4[B] + beast's Strength modifier damage and the target is knocked prone. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Scavenger-Strike" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_165-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> Seeking a wounded victim, your beast attacks it relentlessly. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 25 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee beast 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 4[B] + beast's Strength modifier damage. </specific>
+    <specific name="Effect"> If the target has a condition, then your beast heals itself one-half of the damage it dealt. </specific>
+    <specific name="Miss"> Half damage and no effect. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Strike-as-One" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_166-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> Your beast strikes its foe, knocking it off balance. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 29 </specific>
+    <specific name="Keywords"> Martial, Beast </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon (beast 1) </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Beast's attack bonus vs. AC </specific>
+    <specific name="Hit"> 3[B] + beast's Strength modifier damage and the target has ongoing 3 damage (save ends) - Bleeding </specific>
+    <specific name="Miss"> Half damage and no ongoing damage. </specific>
+    <specific name="Target"> Same target as your Beast </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage and the target is slowed (save ends). </specific>
+    <specific name="Miss"> Half damage and the target is not slowed. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Marksmanship -->
+  <RulesElement name="Crossfire" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_197-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You pepper your Ally's' enemies with arrows, while it is focused on your allies. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 1[W] + Dexterity modifier damage. If the target is adjacent to one of your allies then add bonuses to the attack and damage rolls equal to your Strength modifier.
+Level 21: Increase damage to 2[W] + Dexterity modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Volley" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_225-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You load your bowstring with arrows and and fire into the crowd of enemies. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+    <specific name="Target"> Three differant enemies in burst </specific>
+    <specific name="Attack"> Dexterity vs. Reflex </specific>
+    <specific name="Hit"> 1[W] + Dexterity modifier damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Concussion-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_195-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,1 </Category>
+    <Flavor> Your ally ducks down as arrows fly from the ledge above, you send your response immediately.  </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Trigger"> You or one ally is attacked with a ranged attack </specific>
+    <specific name="Target"> The triggering creature </specific>
+    <specific name="Attack"> Dexterity vs. Reflex </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage and the target is dazed until the start of your next turn. The target's attack misses. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Crippling-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_196-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> An enemy charges at you, you slow it down quickly with a arrow in its leg. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage and the target is slowed (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Debilitating-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_198-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You hamper your target in a way that eliminates its choices in combat. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. On the targets next attack it can only perform a melee or ranged basic attack. </specific>
+    <specific name="Miss"> Half Damage Only. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Disrupting-Accuracy" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_200-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You shove your arrows tip first into the ground in front of you. Placing your feet shoulder width apart you take your first arrow, nock it, and fire it at an enemy with uncanny accuracy, causing a deadly effect. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, all of your basic ranged attacks are considered Critical Hits on attack rolls of 16-20. This stance can be ended with a Minor action or at the end of the encounter. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Disrupting-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_201-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,3 </Category>
+    <Flavor> An enemy, focusing its melee attacks on your ally, doesn't realize that arrow marked with its name heading toward it. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Trigger"> An ally within range is hit by a melee attack </specific>
+    <specific name="Target"> The triggering creature </specific>
+    <specific name="Attack"> Dexterity vs AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. The target's melee attack misses. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Hunter's-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_205-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> You hunt your target down, by the bloody track left on the ground, and finish it off. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs AC </specific>
+    <specific name="Hit"> 1[W] + Dexterity modifier damage and the target takes ongoing 3 Bleeding damage (save ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Determined-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_199-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> Whether your arrow strikes its target or not, you won't give up. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Miss"> This power is not expended and can be reused. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Marauder's-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_207-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> You move into a more favorable position before releasing a well-placed shot. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Effect"> Before or after the attack you may shift 3 squares. </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier damage. </specific>
+    <specific name="Miss"> Half Damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Rapid-Fire" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_216-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You are one with your bow, it feels natural and you are extremely fast at it. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, you can only make basic ranged attacks. You can make 3 basic ranged attacks per turn on up to 3 differant targets. This stance ends at the end of your next turn. </specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Arcing-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_190-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You shoot an arrow high into the air, arcing it on a trajectory to hit the leader in the rear. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. The target grants combat advantage to you until the end of your next turn. </specific>
+    <specific name="Special"> The range of the weapon your are using is doubled for this attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Needling-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_210-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You see a wounded enemy trying to get away, so you release arrow after arrow at him, hoping to bring it down. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Special"> If the target is bloodied, then you may make 2 more basic ranged attacks against the same target. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Barrage" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_191-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> You let loose a number of arrows in rapid succession, raining them down on your enemies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 9 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Dexterity vs. Reflex </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Penetrating-Attack" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_211-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> Your arrow finds a weak spot in your enemy's armor, causing it to penetrate deeper. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 9 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier + Strength modifier damage. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Read-the-Wind" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_217-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> Firing your bow with the wind, pushes your arrows to your target that much quicker. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, your basic ranged attacks gain a bonus to damage rolls equal to one-half your Strength modifier. This stance ends at the end of your next turn.</specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Body-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_192-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> You lower your sights, to hit your enemy square in the chest. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage and the target takes a -2 penalty to their AC and is slowed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Pin-Down" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_212-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> Your next shot pins the target in its place. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Broad-Head-Arrow" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_193-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> You change a tip on your arrow, nock it, and thump the creature in the head. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 15 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier damage and the target is Dazed until the end of your next turn. </specific>
+    <specific name="Miss"> Half Damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Power-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_213-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> You substitute accuracy for power in the shot. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 15 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity - 4 vs. AC </specific>
+    <specific name="Hit"> 5[W] + Dexterity modifier + Strength modifier damage. </specific>
+    <specific name="Miss"> Half Damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Precision-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_214-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> You substitute power for accuracy in the shot. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 15 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity + 4 vs. AC </specific>
+    <specific name="Hit"> 1[W] + Dexterity modifier damage - 4. </specific>
+    <specific name="Miss"> Half Damage </specific>
+    <specific name="Special"> This attack cannot be blocked or interrupted. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Seeking-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_221-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> Your arrows never seem to miss, even when your enemy hides. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 16 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, your basic ranged attacks gain a bonus to attack rolls equal to one-half your Strength modifier. This stance ends at the end of your next turn.</specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Burning-Arrow" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_194-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You ignite the tip of your arrow and fire it at the nearest combustible enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 17 </specific>
+    <specific name="Keywords"> Martial, Fire, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier damage and the target takes ongoing 10 fire damage until the end of your 2nd turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Prepared-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_214-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You take the time to get the shot right, because you only get one shot. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 17 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Special"> Must state prior to the attack if you will use Standard Action or Standard + Minor Action. </specific>
+    <specific name="Attack"> Dexterity + 2 vs. AC </specific>
+    <specific name="Standard Action Hit"> 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Standard + Minor Action Hit"> 4[W] + Dexterity modifier damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Focused-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_203-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> You focus on the target, draw your arrow and let it fly. You strike the creature, knocking it off its feet. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 19 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier damage, and you knock the target prone. </specific>
+    <specific name="Miss"> No damage, and you knock the target prone. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Punishing-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_215-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> Even from a distance, you release a rain of arrows unrelenting in your pursuit. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 19 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 4[W] + Dexterity modifier damage. </specific>
+    <specific name="Miss"> Half Damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Forked-Arrow" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_204-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You allies laugh at you. While you pull out a strange looking arrow, you scoff, "It's accurate and it works." </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 23 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity + 3 vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier damage and the target is immobilized until the end of your next turn. </specific>
+    <specific name="Special"> The weapon's range is one-half. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Savage-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_218-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> The arrow you notch on your string has a tip that appears to be extra jagged for tearing instead of cutting. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 23 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 4[W] + Dexterity modifier + Strength modifier damage and the target is takes ongoing 3 Bleeding damage (save - 4 ends). </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Keen-Arrow" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_206-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> Thinking to yourself, while you mess with the tip of your arrow, "With the proper arrowhead adjustments, this arrow can penetrate deeper than the normal arrow." </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 25 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Special"> Consider this attack a Critical hit on an attack roll of 14-20. </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 4[W] + Dexterity modifier damage. If this is a Critical hit add 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Miss"> Half Damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Screaming-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_220-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> Your arrow flies across the field, slaming into your target with a loud bang. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 25 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 4[W] + Dexterity modifier damage. The target and all adjacent creatures are deafened (save ends). </specific>
+    <specific name="Miss"> Half Damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sloth-Hunter's-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_222-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You tip the arrow with a light blue acid that creates dizziness once it works itself throughout the blood system of your foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 27 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 4[W] + Dexterity modifier damage. If the target moves or attacks prior to the end of your next turn, it is knocked prone and the target's action is ended. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Splinter-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_223-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> Your arrow shatters on impact, throwing shards of splintered wood over on the adjacent enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 27 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 4[W] + Dexterity modifier damage. Each adjacent creature takes splintering damage equal to your Dexterity modifier damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Melandru's-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_209-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> Calling on the spirits of nature to aid in the destruction of evil, your arrow does more than what you thought possible. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 29 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Special"> Consider this attack a Critical hit on an attack roll of 14-20. </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 5[W] + Dexterity modifier damage. The target is knocked prone, takes ongoing 3 Bleeding damage (Save - 4 ends) and Slowed (save - 4 ends). </specific>
+    <specific name="Miss"> Half Damage and the target is knocked prone. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sundering-Attack" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_224-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> Your arrowws rip through the armor on your foes. The arrows leave large gaping holes in the armor, causing peices of it to fall away. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 29 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity + 4 vs. AC </specific>
+    <specific name="Hit"> 6[W] + Dexterity modifier damage. The target suffers a -4 penalty to its AC until the end of your next turn. </specific>
+    <specific name="Miss"> Half Damage and the target takes no penalty to its AC. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Expertise -->
+  <RulesElement name="Point-Blank-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_183-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You don't hesitate a bit as you wait for the enemy to move in close. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 1[W] + Dexterity modifier damage. If you are within 2 squares of the target, the attack deals extra damage equal to your Wisdom modifier. 
+Level 21: Increase to 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Distracting-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_173-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,1 </Category>
+    <Flavor> Your an ally is targeted by an enemy retaliating with a deadly shot of your own </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 1 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Trigger"> An ally is hit with a ranged attack </specific>
+    <specific name="Target"> The triggering enemy </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage, if the target's next attack does not include you, then that attack fails. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Archer's-Signet" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_172-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> With a little extra concentration and time, you fire a arrow that flies straighter and strikes deeper. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +2 to attack and damage rolls until the end of your next turn.  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Expert-Focus" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_176-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You slow your movement just enough to steady your aim. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, you gain a +2 bonus to attack rolls and your Speed is one-half. This stance can be ended as a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Glass-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_178-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You apply glass dust to the tips and shafts of your arrows...this ought to hurt.  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, you can only make basic ranged attacks. All of your basic ranged attacks apply ongoing 3 damage (Save ends) - bleeding. This stance can be ended with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Marksman's-Wager" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_181-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> Taking the bet, you fire your arrow. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 3 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage, and this power can be reused during the encounter. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Oath-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_182-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> You pullback your bow string, take aim, and vow to bring an end to this evil. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 3[W] + Dexterity modifier damage, and this power can be reused during the encounter. </specific>
+    <specific name="Miss"> Half Damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dodge" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_174-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You move with skill, knocking away arrows as they fly towards you. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of your next turn, you block all ranged attacks (taking no damage) that target you directly.  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Lightning-Reflexes" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_180-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Moving with cat-like reflexes, you easily dodge and stop all of your enemies attacks. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of your next turn, you gain a +4 bonus to your AC and you do not grant Combat Advantage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Expert's-Dexterity" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_177-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Slipping to the right, you dodge the attack with grace, and raise your bow to fire another round. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You can shift 2 squares, and you gain a power bonus equal to 1 + Wisdom modifier to all defenses until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Zojun's-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_189-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> Close Range fighting can, at times, be deadlier. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 7 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. If you are within 2 squares of the target, the attack deals an extra 1[W] + Dexterity modifier + Strength modifier damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Ranger's-Escape" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_175-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You move fluidly through the barrage, using your bow like a shield, knocking away arrows left and right. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Until the end of your next turn, you block all ranged attacks (taking no damage) that target you directly and your speed is increased by 3. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Practiced-Stance" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_184-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> Practice makes perfect. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 16 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, you can re-roll once per missed basic ranged attack with a bonus equal to your Strength modifier. This Stance ends if you miss with a re-roll, or at the end of the encounter. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Whirling-Defense" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_187-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> Your bow becomes your shield, you whip it around with lightning speed, reflecting attacks back at your enemies.  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 22 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, you cannot perform any attacks. Each attack against you is reflected (you take no damage) and all adjacent enemies take the reflected damage equal to your Dexterity modifier until the end of your next turn. </specific>
+    <specific name="Sustained Standard"> The effect persists. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Zojun's-Haste" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_188-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,22 </Category>
+    <Flavor> Finding yourself surrounded by overwhelming forces, you quickly retreat. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> You are hit by an attack. </specific>
+    <specific name="Effect"> You can shift your speed. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <!-- Wilderness Survival -->
+  <RulesElement name="Apply-Poison" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_225-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You dip your arrow tips into a small vial, to add that little bit of flavor. </Flavor>
+    <specific name="Power Usage">Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Apply Poison Stance. Until the stance ends, your basic ranged attacks add 3 ongoing Poison damage (save ends). You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Storm-Chaser" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_259-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You dip your arrow tips into a small vial, to add that little bit of flavor. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +2 bonus to your Speed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Barbed-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_226-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Your set of arrows has sharp barbs on the tip, to help tear the flesh. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 2 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Barbed Arrows Stance. Until the stance ends, your basic ranged attacks add 3 ongoing Bleeding damage (save ends). You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Poison-Arrow" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_249-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> You pull a special arrow from your pack, smile while looking at the solidified black mass surrounds the tip. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage and takes 4 ongoing poison damage (save ends). </specific>
+    <specific name="Miss"> Half damage and no ongoing Poison damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Choking-Gas" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_229-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> The tips of your arrows are made of a breakable material. These tips break on contact releasing a noxious gas causing your enemy's eyes to water and burn. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Choking Gas Stance. Until the stance ends, your basic ranged attacks cause blindness (save ends). You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Poison-Tip-Signet" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_250-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Blades or arrows, it doesn't matter, poison can be applied to both. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Your next successful attack adds 4 ongoing Poison damage (save ends).  </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Dryder's-Defenses" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_231-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You easily knock away attacks as you move across the field. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Dryder's Defenses Stance. Until the stance ends, you gain a +3 bonus to your AC. This stance ends at the end of your 2nd turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Troll-Unguent" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_262-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You open a small vial of smelly fluid, and quickly swallow it. You think to yourself, "Yuck, tastes as bad as it smells, but it makes you feel all warm inside." </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You can use a Healing Surge, but you do not gain Hit Points. Instead you gain a regeneration of 3, which lasts a number of turns equal to your Constitution modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Scavenger's-Focus" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_254-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You find your target limping away slowly, and think to yourself, "This will be an easy target." </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage </specific>
+    <specific name="Effect"> If you hit a creature with an active effect on it, then this power is not expended. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Ignite-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_239-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> The tips of your arrows are made of a explosive material. These tips explode on contact damaging all creatures in the vicinity. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Stance, Fire </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Ignite Arrows Stance. Until the stance ends, your basic ranged attacks, in addition to your normal damage to the target also explode (burst 1 within weapon range) causing 2d4 fire damage to all creatures in the burst. You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Serpent's-Quickness" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_255-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You move with grace and speed, scattering enemies in your wake. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Serpent's Quickness Stance. Until the stance ends, you can shift 1 square per turn before or after an attack. This stance ends when you become bloodied. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Kindle-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_241-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> The tips of your arrows are made with burning cinder tips. Unlucky targets are branded with your mark made from flame. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial, Stance, Fire </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Kindle Arrows Stance. Until the stance ends, your basic ranged attacks cause an additional 4d4 fire damage. You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Incendiary-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_240-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> The tips of your arrows are made of a highly flammable material. Once the arrow hits it spreads its flames rapidly over your target. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 16 </specific>
+    <specific name="Keywords"> Martial, Stance, Fire </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Incendiary Arrows Stance. Until the stance ends, your basic ranged attacks cause ongoing fire damage equal to your Dexterity modifier (save ends). You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Natural-Stride" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_245-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MOVE_ACTION,16 </Category>
+    <Flavor> Racing across the battlefield towards your allies, you dodge attack after attack against you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 16 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Move Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +5 bonus to your speed. In addition, while you are moving you gain a +3 bonus to your AC and Reflex defenses, against opportunity attacks. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Melandru's-Arrows" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_242-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> The tips of your arrows are made with enchanted tips, blessed by nature. Nature's wrath can be all consuming in your hands. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 22 </specific>
+    <specific name="Keywords"> Martial, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Melandru's Arrows Stance. Until the stance ends, your basic ranged attacks cause ongoing Bleeding damage equal to your Dexterity modifier. If they hit a target who is slowed they cause an additional 2d10 damage. You can end this stance with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Melandru's-Resilience" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_243-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> Your soul and complete being is awashed in nature spirits, encasing you in protection and power. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You gain a +3 hit point regeneration for each negative effect on you and regain the use of 1 expended encounter power at the end of each turn this effect lasts (which must be used in the same encounter). This effect ends at the end of your 3rd turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <!-- No Attribute -->
+  <RulesElement name="Called-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_266-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILLID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD,3 </Category>
+    <Flavor> Turning around you iinstinctively fire an arrow, striking your target unerringly.</Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ranger Attack  </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs AC </specific>
+    <specific name="Hit"> 1[W] damage </specific>
+    <specific name="Hit"> This arrow ignores cover and cannot be interrupted or blocked. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Dual-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_267-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> Nocking two arrows, one above the other, you pull back the string and release both, striking the target head on. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC, Two attacks </specific>
+    <specific name="Special"> Roll twice taking the best roll for both hits. </specific>
+    <specific name="Hit"> 2[W] damage per attack. </specific>
+    <specific name="Miss"> Half Damage per attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Storm's-Embrace" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_270-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Like a lightning strike, you are there then gone. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You can shift 5 squares prior to or after your next attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Magebane-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_268-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,7 </Category>
+    <Flavor> An ally trying to pull back is attacked from the flank, while you provide cover fire. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Trigger"> An ally is attacked </specific>
+    <specific name="Target"> Triggering creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] damage </specific>
+    <specific name="Effect"> The triggering creature provides combat advantage to the target it attacked until the end of its next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Quick-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_269-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> You fire two arrows in rapid succession at the same target, pinning it down. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Attack 9 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC, Two attacks </specific>
+    <specific name="Hit"> 2[W] damage, if both attacks hit then the target is immobilized until the end of your next turn. </specific>
+    <specific name="Miss"> Half damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Antidote-Signet" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_265-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> You quickly swallow a green liquid made from a few special prepared herbs. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Utility 10 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You remove Poison, Blindness, and one additional condition that a save can end. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Triple-Shot" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_271-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> One draw, three arrows, and three hits. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ranger Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged </specific>
+    <specific name="Target"> One Creature </specific>
+    <specific name="Attack"> Dexterity vs. AC, Three attacks </specific>
+    <specific name="Special"> Roll thrice taking the best roll for all hits. </specific>
+    <specific name="Hit"> 1[W] damage </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Never-Rampage-Alone" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_272-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
+    <Flavor> You and your beast, form a bond that goes beyond the physical realm. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Ranger Utility 22 </specific>
+    <specific name="Keywords"> Martial, Beast, Healing, Stance </specific>
+    <specific name="Requirement"> You must be within 2 squares of your Beast Companion. </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You assume the Never Rampage Alone Stance. Until the stance ends, you and your beast gain an additonal basic melee attack to use once per round as a Free Action. In addition, you and your beast gain a +3 regeneration. This stance ends at the end of your next turn. </specific>
+    <specific name="Sustain Minor"> The effect persists. </specific>
+    <specific name="Class"> ID_FMP_CLASS_5 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+</D20Rules>

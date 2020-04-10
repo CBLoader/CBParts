@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.03</Version>
+    <Filename>25-warden.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/25-warden.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/25-warden.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Warden -->
+  <!-- 25-warden.part, version 1.03 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 13-July-2011 Warden Powers from Dragon Magazine 392 added.
+ Updated 18-May-2012 DSH added.
+ Updated 19-October-2012 Updated Warden Class Features Added info to show on the Second Wind power Card.
+</Changelog>
+  <!-- Warden Powers, Dragon Magazine 392 -->
+  <RulesElement name="Playful Torment" type="Power" internal-id="ID_FMP_POWER_13601" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Your strike points the way for a tiny fey. It appears at your enemy's side and begins pulling and plucking to distract the foe momentarily. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warden Attack 1 </specific>
+    <specific name="Keywords"> Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage, and the target grants combat advantage to you until the start of your next turn.
+Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the start of your next turn, you gain a +2 power bonus to warden's fury damage rolls. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Stinging Nettles (Warden)" type="Power" internal-id="ID_FMP_POWER_13602" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> An aggressive strike signals your fey allies to launch tiny missiles into the enemies' midst. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warden Attack 1 </specific>
+    <specific name="Keywords"> Primal, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 2 </specific>
+    <specific name="Target"> One enemy adjacent to you in the blast </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] damage, and each other enemy in the blast takes damage equal to your Strength modifier. </specific>
+    <specific name="Effect"> Each enemy in the blast is marked by you until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Call Faerie Guardian" type="Power" internal-id="ID_FMP_POWER_13603" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:48 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> A bright light answers your call and heralds the faerie guardian's arrival. The diminutive warrior flutters near your foe while worrying it with feints and strikes. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warden Utility 2 </specific>
+    <specific name="Keywords"> Conjuration, Primal </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 5  </specific>
+    <specific name="Effect"> You conjure a faerie guardian in an unoccupied square within range. The faerie lasts until the end of the encounter or until you dismiss it as a minor action. As a minor action, you can move the faerie up to 5 squares. Whenever you use your Nature's Wrath class feature, one enemy adjacent to your faerie guardian also becomes marked by you until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Fey Congress" type="Power" internal-id="ID_FMP_POWER_13604" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:48 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Tiny glowing fey folk flit and caper through the air around you. Their movements make it difficult for distant enemies to see you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warden Utility 6 </specific>
+    <specific name="Keywords"> Primal, Zone </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 1  </specific>
+    <specific name="Effect"> The burst becomes a zone that lasts until the end of your next turn. Enemies treat the zone as lightly obscured terrain. </specific>
+    <specific name="Sustain Minor"> The zone persists. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Sylvan trickery" type="Power" internal-id="ID_FMP_POWER_13605" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:48 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> Your faerie allies cloak you in fey magic to hide you and speed you away. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warden Utility 10 </specific>
+    <specific name="Keywords"> Illusion, Primal, Teleportation </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1  </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target becomes invisible until the end of his or her next turn or until he or she makes an attack. When the invisibility ends, the target can teleport up to 3 squares. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Swarming Fey" type="Power" internal-id="ID_FMP_POWER_13606" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> As you bring your weapon about, your fey companions latch onto your enemies, distracting them long enough to give your allies the opening they need to strike. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warden Attack 13 </specific>
+    <specific name="Keywords"> Primal, Weapon, Zone </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each enemy in the burst </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> The burst becomes a zone that lasts until the end of your next turn. Enemies grant combat advantage while in the zone. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+<!-- DSH -->
+  <RulesElement name="Expulsion" type="Power" internal-id="ID_FMP_POWER_16488" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You strike the ground and send a rolling tremor through the earth. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Warden Attack 7 </specific>
+    <specific name="Keywords"> Primal, Thunder, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Special"> You ignore blocking terrain when determining line of effect for this attack. </specific>
+    <specific name="Target"> Each creature in the blast </specific>
+    <specific name="Attack"> Strength vs. Fortitude </specific>
+    <specific name="Hit"> 1[W] + Strength modifier thunder damage, and the target is slowed until the end of your next turn. The target emerges to the nearest unoccupied space if it is burrowing or falls if it is climbing, and it cannot burrow or climb until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+Creatures that burrow or cling to walls can be tricky to deal with. Deep Guides of the warden class use expulsion to keep such enemies on the dungeon floor.
+</RulesElement>
+  <RulesElement name="Pulverizing Impact" type="Power" internal-id="ID_FMP_POWER_16516" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_134,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> You drive your weapon into the earth, shattering rock and spraying debris into nearby enemies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Warden Attack 13 </specific>
+    <specific name="Keywords"> Primal, Thunder, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 2[W] + Strength modifier thunder damage. If the target is in difficult terrain, it takes extra damage equal to your Constitution modifier. </specific>
+    <specific name=" Earthstrength"> Add 5 to the extra damage. </specific>
+    <specific name="Class"> ID_FMP_CLASS_134 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+The solemn stones of Cor Talcor reverberate with a mystic strength. Wardens draw on this power to smash enemies against jagged rocks or other rough terrain.
+</RulesElement>
+
+
+<!-- WARDEN GUARDIAN MIGHT CLASS FEATURES. ADDED CODE TO SHOW ON SECOND WIND POWER CARD. -->
+
+    <RulesElement name="Earthstrength" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1317" source="Player's Handbook 2" revision-date="10/5/2010 1:47:04 PM">
+        <Category> ID_FMP_CLASS_FEATURE_1281,1 </Category>
+        <specific name="Short Description"> Add Con mod to AC instead of Dex or Int. When you use second wind, add your Con mod to AC. </specific>
+        <specific name="Level"> 1 </specific>
+        <rules>
+            <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+            <modify name="Second Wind" field="Earthstrength" value="You gain an additional bonus to AC equal to your Constitution Modifier." />
+        </rules>
+While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+
+In addition, when you use your second wind, you gain an additional bonus to AC equal to your Constitution modifier. The bonus lasts until the end of your next turn.
+    </RulesElement>
+
+   <RulesElement name="Wildblood" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1318" source="Player's Handbook 2" revision-date="10/5/2010 1:47:04 PM">
+      <Category> ID_FMP_CLASS_FEATURE_1281,1 </Category>
+      <specific name="Short Description"> Add Wis mod to AC instead of Dex or Int. When you use second wind, marked enemies take a penalty on attacks. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Wisdom modifier" type="Ability" not-wearing="armor:heavy" />
+            <modify name="Second Wind" field="Wildblood" value="Each enemy marked by you takes an additional penalty to attack rolls that don't include you as a target equal to your Wisdom Modifier until end of your next turn." />
+      </rules>
+While you are not wearing heavy armor, you can use your Wisdom modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+
+In addition, when you use your second wind, each enemy marked by you takes an additional penalty to attack rolls for attacks that don't include you as a target. The penalty equals your Wisdom modifier and lasts until the end of your next turn.
+   </RulesElement>
+
+   <RulesElement name="Lifespirit" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2026" source="Primal Power" revision-date="10/5/2010 1:47:05 PM">
+      <Category> ID_FMP_CLASS_FEATURE_1281,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Wisdom modifier" type="Ability" not-wearing="armor:heavy" />
+            <modify name="Second Wind" field="Lifespirit" value="An ally within 5 squares of you can spend a healing surge and make a saving throw." />
+      </rules>
+While you are not wearing heavy armor, you can use your Wisdom modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+
+In addition, when you use your second wind, an ally within 5 squares of you can spend a healing surge and make a saving throw.
+   </RulesElement>
+
+   <RulesElement name="Stormheart" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2027" source="Primal Power" revision-date="10/5/2010 1:47:05 PM">
+      <Category> ID_FMP_CLASS_FEATURE_1281,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+            <modify name="Second Wind" field="Stormheart" value="Slide each enemy marked by you and within 2 squares of you 1 square, and each enemy marked by you is slowed until the end of your next turn." />
+      </rules>
+While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+
+In addition, when you use your second wind, you slide each enemy marked by you and within 2 squares of you 1 square, and each enemy marked by you is slowed until the end of your next turn.
+   </RulesElement>
+
+
+
+
+
+</D20Rules>

@@ -1,0 +1,1193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.29</Version>
+    <Filename>02-base.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/02-base.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/02-base.txt</VersionAddress>
+  </UpdateInfo>
+
+<!-- Base Module -->
+<!-- 02-base.part, version 1.29 -->
+<!-- Original release: 13-July-2011; Last modified: 22-June-2012 -->
+<!-- Test compiled with CBLoader build V1.3.0 -->
+<!-- This part file belongs to the July 2011 reorganization of data files. -->
+<!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File released.
+ Updated 16-July-2011 Military One-Handed Melee Proficiency restored.
+ Updated 18-July-2011 Hybrid Psionic Augmentation extended to Essentials builds, Level Advancement Tree Altered for Hybrid Essentials.
+ Updated 21-July-2011 Update Skills for Hybrid Essentials.
+ Updated 01-August-2011 Base Rules Expansion Tweaks for Companion Classes.
+ Updated 10-August-2011 Bladesinger Updates.
+ Updated 13-August-2011 New Categories Added.
+ Updated 25-August-2011 Bladespell correction.
+ Updated 30-September-2011: Added New Armor and Proficiencies from Mordendainen's Magnificent Emporium (MMAgCh).
+ Updated 1-October-2011: Moved the New base armors and proviciencies to Item file.
+ Updated 16-November-2011 Updated Military One-Handed Melee.
+ Updated 22-November-2011 Updated the ID for Hybrid Sentinel.
+ Updated 25-November-2011 Added the new Second Wind Card (KDM).
+ Updated 26-November-2011 Corrected some skill nodes.
+ Updated 2-December-2011 Added missing rules.
+ Updated 3-December-2011 Second Wind card fix concerning power swaps.
+ Updated 4-December-2011 Added Weapon Master Internal Rules.
+ updated 26-February-2012 Added Heroes of the Elemental Chaos Origin part.
+ Updated 18-May-2012 Mounted property moved here.
+ Updated 4-June-2012 Added "Any Class" power selection node.
+ Updated 22-June-2012 added the new weapon groups fro bards and skalds
+</Changelog>
+<!-- New "Any Class" Node -->
+<RulesElement name="Any Class" type="Class" internal-id="ID_FMP_CLASS_0" source="Core">
+<Prereqs> Unselectable </Prereqs> 
+</RulesElement>
+<!-- Essential Attacks, Any Class Node Activation -->
+<RulesElement name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
+  <rules>
+    <grant name="ID_INTERNAL_LEVEL1RULES_SKILLRULES" type="Level1Rules" />
+    <grant name="ID_INTERNAL_TIER_HEROIC" type="Tier" />
+    <grant name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" type="Power" />
+    <grant name="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK" type="Power" />
+    <grant name="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" type="Power" />
+    <grant name="ID_INTERNAL_POWER_GRAB_ATTACK" type="Power" />
+    <grant name="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" type="Power" />
+	<grant name="ID_KDM_POWER_SECOND_WIND" type="Power" />
+    <textstring name="PowersAsClass" value="ID_FMP_CLASS_0" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Melee Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" source="Core">
+  <Flavor> You resort to the simple attack you learned when you first picked up a melee weapon. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Display"> Basic Attack </specific>
+  <specific name="Keywords"> Weapon </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Melee weapon </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Strength vs. AC </specific>
+  <specific name="Hit"> 1[W] + Strength modifier damage.
+Increase damage to 2[W] + Strength modifier damage at 21st level. </specific>
+</RulesElement>
+
+<RulesElement name="Ranged Basic Attack" type="Power" internal-id="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK" source="Core">
+  <Flavor> You resort to the simple attack you learned when you first picked up a ranged weapon. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Display"> Basic Attack </specific>
+  <specific name="Keywords"> Weapon </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged weapon </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Dexterity vs. AC </specific>
+  <specific name="Hit"> 1[W] + Dexterity modifier damage.
+Increase damage to 2[W] + Dexterity modifier damage at 21st level. </specific>
+</RulesElement>
+
+<RulesElement name="Bull Rush Attack" type="Power" internal-id="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" source="Core" >
+  <Flavor> You hurl yourself at your foe and push it back. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Display"> Attack </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Melee 1 </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Strength vs. Fortitude </specific>
+  <specific name="Hit"> You can push the target 1 square and then shift 1 square into the space it left. </specific>
+</RulesElement>
+
+<RulesElement name="Grab Attack" type="Power" internal-id="ID_INTERNAL_POWER_GRAB_ATTACK" source="Core" >
+  <Flavor> You reach out and grasp your foe, preventing it from moving. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Display"> Attack </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Melee touch </specific>
+  <specific name="Requirement"> You must have a hand free. </specific>
+  <specific name="Target"> One creature that is no more than one size category larger than you </specific>
+  <specific name="Attack"> Strength vs. Reflex </specific>
+  <specific name="Hit"> You grab the target until the end of your next turn. You can end the grab as a free action. </specific>
+  <specific name="Sustain Minor"> The grab persists until the end of your next turn. </specific>
+</RulesElement>
+
+<RulesElement name="Opportunity Attack" type="Power" internal-id="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" source="Core" >
+  <Flavor> Your foe drops its guard for a moment, and you exploit the opportunity. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="Display"> Attack </specific>
+  <specific name="Action Type"> Opportunity Action </specific>
+  <specific name="Attack Type"> Melee 1 </specific>
+  <specific name="Trigger"> An enemy that you can see either leaves a square adjacent to you or uses a ranged or an area power while adjacent to you. </specific>
+  <specific name="Target"> The triggering enemy </specific>
+  <specific name="Effect"> You make a melee basic attack against the target. </specific>
+</RulesElement>
+
+<!-- Additional Second Wind Card -->
+
+<RulesElement name="Second Wind" type="Power" internal-id="ID_KDM_POWER_SECOND_WIND" source="Core" >
+    <Flavor> You take a moment to catch your breath and gather your strength. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Utility </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> Spend a healing surge and gain a +2 bonus to all defenses until the start of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class" />
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
+<!-- Skill Trainings -->
+
+<RulesElement name="Acrobatics" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ACROBATICS" source="Core">
+  <Category> ID_FMP_SKILL_1,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_104,ID_FMP_CLASS_129,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_612,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_719,ID_FMP_CLASS_788,ID_FMP_CLASS_811,ID_FMP_CLASS_817,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_FMP_CLASS_883, </Category>
+  <rules>
+    <statadd name="Acrobatics Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Arcana" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ARCANA" source="Core">
+  <Category> ID_INTERNAL_CATEGORY_KNOWLEDGE,ID_FMP_SKILL_2,ID_FMP_CLASS_2,ID_FMP_CLASS_7,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_147,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_352,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_610,ID_FMP_HYBRID_CLASS_611,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_705,ID_FMP_CLASS_722,ID_FMP_CLASS_793,ID_INTERNAL_CATEGORY_SCHOLAR,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_883,ID_CDJ_HYBRID_CLASS_40006,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Arcana Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Athletics" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ATHLETICS" source="Core">
+  <Category> ID_FMP_SKILL_27,ID_FMP_CLASS_3,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_8,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_126,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_353,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_359,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_611,ID_FMP_HYBRID_CLASS_612,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_883,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Athletics Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Bluff" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_BLUFF" source="Core">
+  <Category> ID_FMP_SKILL_3,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_128,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_529,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_610,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_719,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40006, </Category>
+  <rules>
+    <statadd name="Bluff Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Diplomacy" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" source="Core">
+  <Category> ID_FMP_SKILL_6,ID_FMP_CLASS_2,ID_FMP_CLASS_4,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_529,ID_FMP_HYBRID_CLASS_352,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_359,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_610,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_722,ID_FMP_CLASS_784,ID_FMP_CLASS_817,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40004,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_883,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Diplomacy Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Dungeoneering" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_DUNGEONEERING" source="Core">
+  <Category> ID_INTERNAL_CATEGORY_KNOWLEDGE,ID_FMP_SKILL_7,ID_FMP_CLASS_5,ID_INTERNAL_CATEGORY_ID_FMP_CLASS_5_CHOICE,ID_FMP_CLASS_6,ID_FMP_CLASS_9,ID_FMP_CLASS_104,ID_FMP_CLASS_125,ID_FMP_CLASS_128,ID_FMP_CLASS_134,ID_FMP_CLASS_437,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_610,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_788,ID_INTERNAL_CATEGORY_SCHOLAR,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40006 </Category>
+  <rules>
+    <statadd name="Dungeoneering Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Endurance" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_ENDURANCE" source="Core">
+  <Category> ID_FMP_SKILL_8,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_8,ID_FMP_CLASS_53,ID_FMP_CLASS_124,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_353,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_359,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_611,ID_FMP_HYBRID_CLASS_612,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Endurance Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Heal" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HEAL" source="Core">
+  <Category> ID_FMP_SKILL_9,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_8,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_352,ID_FMP_HYBRID_CLASS_353,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_359,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_611,ID_FMP_HYBRID_CLASS_612,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_784,ID_FMP_CLASS_788,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Heal Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="History" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_HISTORY" source="Core">
+  <Category> ID_INTERNAL_CATEGORY_KNOWLEDGE,ID_FMP_SKILL_11,ID_FMP_CLASS_2,ID_FMP_CLASS_4,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_147,ID_FMP_CLASS_437,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_352,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_359,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_610,ID_FMP_HYBRID_CLASS_611,ID_FMP_CLASS_705,ID_FMP_CLASS_722,ID_FMP_CLASS_784,ID_FMP_CLASS_793,ID_INTERNAL_CATEGORY_SCHOLAR,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_883,ID_CDJ_HYBRID_CLASS_40006,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="History Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Insight" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INSIGHT" source="Core">
+  <Category> ID_FMP_SKILL_13,ID_FMP_CLASS_2,ID_FMP_CLASS_4,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_147,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_352,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_610,ID_FMP_HYBRID_CLASS_611,ID_FMP_HYBRID_CLASS_612,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_705,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_FMP_CLASS_784,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40004,ID_CDJ_HYBRID_CLASS_40006,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Insight Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Intimidate" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_INTIMIDATE" source="Core">
+  <Category> ID_FMP_SKILL_14,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_148,ID_FMP_CLASS_437,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_HYBRID_CLASS_353,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_357,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_359,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_590,ID_FMP_HYBRID_CLASS_610,ID_FMP_HYBRID_CLASS_612,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_784,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,ID_FMP_CLASS_883,ID_CDJ_HYBRID_CLASS_40006 </Category>
+  <rules>
+    <statadd name="Intimidate Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Nature" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_NATURE" source="Core">
+  <Category> ID_INTERNAL_CATEGORY_KNOWLEDGE,ID_FMP_SKILL_16,ID_FMP_CLASS_5,ID_INTERNAL_CATEGORY_ID_FMP_CLASS_5_CHOICE,ID_FMP_CLASS_9,ID_FMP_CLASS_104,ID_FMP_CLASS_126,ID_FMP_CLASS_128,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_472,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_445,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_612,ID_FMP_CLASS_722,ID_FMP_CLASS_788,ID_INTERNAL_CATEGORY_SCHOLAR,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_883,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Nature Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Perception" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_PERCEPTION" source="Core">
+  <Category> ID_FMP_SKILL_17,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_104,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_440,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_446,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_610,ID_FMP_HYBRID_CLASS_612,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_719,ID_FMP_CLASS_788,ID_FMP_CLASS_811,ID_FMP_CLASS_817,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_FMP_HYBRID_CLASS_894,ID_FMP_CLASS_883,ID_FMP_CLASS_909 </Category>
+  <rules>
+    <statadd name="Perception Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Religion" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_RELIGION" source="Core">
+  <Category> ID_INTERNAL_CATEGORY_KNOWLEDGE,ID_FMP_SKILL_18,ID_FMP_CLASS_2,ID_FMP_CLASS_4,ID_FMP_CLASS_7,ID_FMP_CLASS_9,ID_FMP_CLASS_104,ID_FMP_CLASS_127,ID_FMP_CLASS_129,ID_FMP_CLASS_147,ID_FMP_CLASS_362,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_722,ID_FMP_HYBRID_CLASS_352,ID_FMP_HYBRID_CLASS_354,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_360,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_443,ID_FMP_HYBRID_CLASS_444,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_611,ID_FMP_CLASS_784,ID_FMP_CLASS_793,ID_INTERNAL_CATEGORY_SCHOLAR,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,ID_CDJ_HYBRID_CLASS_40006 </Category>
+  <rules>
+    <statadd name="Religion Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Stealth" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STEALTH" source="Core">
+  <Category> ID_FMP_SKILL_20,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_129,ID_FMP_CLASS_362,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_HYBRID_CLASS_355,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_612,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_719,ID_FMP_CLASS_793,ID_FMP_CLASS_788,ID_FMP_CLASS_817,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002 </Category>
+  <rules>
+    <statadd name="Stealth Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Streetwise" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_STREETWISE" source="Core">
+  <Category> ID_FMP_SKILL_21,ID_FMP_CLASS_3,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_104,ID_FMP_CLASS_129,ID_FMP_CLASS_466,ID_FMP_CLASS_529,ID_FMP_HYBRID_CLASS_353,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_439,ID_FMP_HYBRID_CLASS_441,ID_FMP_HYBRID_CLASS_588,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40006 </Category>
+  <rules>
+    <statadd name="Streetwise Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Thievery" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_THIEVERY" source="Core">
+  <Category> ID_FMP_SKILL_23,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_125,ID_FMP_CLASS_362,ID_FMP_CLASS_466,ID_FMP_CLASS_602,ID_FMP_HYBRID_CLASS_356,ID_FMP_HYBRID_CLASS_358,ID_FMP_HYBRID_CLASS_536,ID_FMP_HYBRID_CLASS_609,ID_FMP_HYBRID_CLASS_611,ID_FMP_HYBRID_CLASS_641,ID_FMP_CLASS_719,ID_FMP_CLASS_793,ID_FMP_CLASS_811,ID_FMP_CLASS_813,ID_FMP_CLASS_817,ID_FMP_CLASS_821,ID_CDJ_HYBRID_CLASS_40001,ID_CDJ_HYBRID_CLASS_40002,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40006 </Category>
+  <rules>
+    <statadd name="Thievery Trained" value="+5" type="trained" />
+  </rules>
+</RulesElement>
+
+<!-- Categories -->
+  <RulesElement name="WearingOffHandAxe" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_OFF_HAND_AXE" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_790 </specific>
+  </RulesElement>
+  <RulesElement name="WearingOffHandLightBlade" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_OFF_HAND_LIGHT_BLADE" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_790 </specific>
+  </RulesElement>
+  <RulesElement name="WearingRod" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_ROD" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingAccurateRod" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_ACCURATE_ROD" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingAshenRod" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_ASHEN_ROD" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingDeathboneRod" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_DEATHBONE_ROD" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingDefiantRod" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_DEFIANT_ROD" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingWand" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_WAND" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingAccurateWand" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_ACCURATE_WAND" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingCinderWand" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_CINDER_WAND" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingDragontoothWand" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_DRAGONTOOTH_WAND" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="WearingRowanWand" type="Category" internal-id="ID_INTERNAL_WOG_WEARING_ROWAN_WAND" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <specific name="_SupportsID"> ID_FMP_CLASS_793 </specific>
+  </RulesElement>
+  <RulesElement name="Aura" type="Category" internal-id="ID_FMP_CATEGORY_40" source="Core" revision-date="2/6/2009 1:47:34 PM"></RulesElement>
+  <RulesElement name="Transmutation" type="Category" internal-id="ID_FMP_CATEGORY_71" source="Core" revision-date="12/13/2010 10:32:05 AM"></RulesElement>
+  <RulesElement name="Necromancy" type="Category" internal-id="ID_FMP_CATEGORY_72" source="Core" revision-date="2/18/2011 9:53:41 AM"></RulesElement>
+  <RulesElement name="Nethermancy" type="Category" internal-id="ID_FMP_CATEGORY_73" source="Core" revision-date="2/18/2011 9:54:18 AM"></RulesElement>
+  <RulesElement name="Elemental" type="Category" internal-id="ID_FMP_CATEGORY_74" source="Core" revision-date="2/22/2011 4:26:32 PM"></RulesElement>
+  <RulesElement name="Any Class" type="Category" internal-id="ID_INTERNAL_CATEGORY_ANY_CLASS" source="Core"></RulesElement>
+  <RulesElement name="Racial Power" type="Category" internal-id="ID_INTERNAL_CATEGORY_RACIAL_POWER" source="Core"></RulesElement>
+  <RulesElement name="Racial Utility" type="Category" internal-id="ID_INTERNAL_CATEGORY_RACIAL_UTILITY" source="Core"></RulesElement>
+  <RulesElement name="Swappable Utility" type="Category" internal-id="ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY" source="Core"></RulesElement>
+  <RulesElement name="Swappable Encounter" type="Category" internal-id="ID_INTERNAL_CATEGORY_SWAPPABLE_ENCOUNTER" source="Core"></RulesElement>
+  <RulesElement name="Swappable Daily" type="Category" internal-id="ID_INTERNAL_CATEGORY_SWAPPABLE_DAILY" source="Core"></RulesElement>
+  <RulesElement name="Class Power" type="Category" internal-id="ID_INTERNAL_CATEGORY_CLASS_POWER" source="Core"></RulesElement>
+  <RulesElement name="Martial Practice" type="Category" internal-id="ID_INTERNAL_CATEGORY_MARTIAL_PRACTICE" source="Core"></RulesElement>
+  <RulesElement name="Alchemical Formula" type="Category" internal-id="ID_INTERNAL_CATEGORY_ALCHEMICAL_FORMULA" source="Core"></RulesElement>
+  <RulesElement name="Ritual" type="Category" internal-id="ID_INTERNAL_CATEGORY_RITUAL" source="Core"></RulesElement>
+  <RulesElement name="Warding" type="Category" internal-id="ID_INTERNAL_CATEGORY_WARDING" source="Core"></RulesElement>
+  <RulesElement name="Deception" type="Category" internal-id="ID_INTERNAL_CATEGORY_DECEPTION" source="Core"></RulesElement>
+  <RulesElement name="Exploration" type="Category" internal-id="ID_INTERNAL_CATEGORY_EXPLORATION" source="Core"></RulesElement>
+  <RulesElement name="Binding" type="Category" internal-id="ID_INTERNAL_CATEGORY_BINDING" source="Core"></RulesElement>
+  <RulesElement name="Travel" type="Category" internal-id="ID_INTERNAL_CATEGORY_TRAVEL" source="Core"></RulesElement>
+  <RulesElement name="Scrying" type="Category" internal-id="ID_INTERNAL_CATEGORY_SCRYING" source="Core"></RulesElement>
+  <RulesElement name="Restoration" type="Category" internal-id="ID_INTERNAL_CATEGORY_RESTORATION" source="Core"></RulesElement>
+  <RulesElement name="Divination" type="Category" internal-id="ID_INTERNAL_CATEGORY_DIVINATION" source="Core"></RulesElement>
+  <RulesElement name="Curative" type="Category" internal-id="ID_INTERNAL_CATEGORY_CURATIVE" source="Core"></RulesElement>
+  <RulesElement name="Other" type="Category" internal-id="ID_INTERNAL_CATEGORY_OTHER" source="Core"></RulesElement>
+  <RulesElement name="Volatile" type="Category" internal-id="ID_INTERNAL_CATEGORY_VOLATILE" source="Core"></RulesElement>
+  <RulesElement name="Oil" type="Category" internal-id="ID_INTERNAL_CATEGORY_OIL" source="Core"></RulesElement>
+  <RulesElement name="Essentials" type="tag" internal-id="ID_FMP_TAG_1" source="Core"></RulesElement>
+  <RulesElement name="Dark Sun" type="tag" internal-id="ID_FMP_TAG_8" source="Core"></RulesElement>
+  <RulesElement name="Bladespell" type="Category" internal-id="ID_FMP_CATEGORY_75" source="Core"></RulesElement>
+  <RulesElement name="Blade Magic" type="Category" internal-id="ID_NWC_CATEGORY_BLADE_MAGIC" source="Core" ></RulesElement>
+
+<!-- New Weapon Groups -->
+  <RulesElement name="Military One-Handed Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_ONE-HANDED_MELEE" source="Core">
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FLAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(THROWING_HAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WARHAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WAR_PICK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RAPIER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LIGHT_WAR_PICK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCOURGE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ALHULAK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CARRIKAL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LANCE)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+
+
+
+<!--Hybrid Psionic Augmentation for Essentials classes-->
+<RulesElement name="Psionic Augmentation Decider" type="Internal" internal-id="ID_INTERNAL_INTERNAL_PSIONIC_AUGMENTATION_DECIDER" source="Core" >
+      <rules>
+         <grant name="ID_FMP_CLASS_FEATURE_1812" type="Class Feature" requires="(ID_FMP_HYBRID_CLASS_588&amp;ID_FMP_HYBRID_CLASS_590)|(ID_FMP_HYBRID_CLASS_588&amp;ID_FMP_HYBRID_CLASS_610)|(ID_FMP_HYBRID_CLASS_590&amp;ID_FMP_HYBRID_CLASS_610)" />
+         <grant name="ID_INTERNAL_INTERNAL_PSIONIC_AUGMENTATION_(HYBRID)" type="Internal" requires="ID_FMP_HYBRID_CLASS_352|ID_FMP_HYBRID_CLASS_353|ID_FMP_HYBRID_CLASS_354|ID_FMP_HYBRID_CLASS_355|ID_FMP_HYBRID_CLASS_356|ID_FMP_HYBRID_CLASS_357|ID_FMP_HYBRID_CLASS_358|ID_FMP_HYBRID_CLASS_359|ID_FMP_HYBRID_CLASS_360|ID_FMP_HYBRID_CLASS_439|ID_FMP_HYBRID_CLASS_440|ID_FMP_HYBRID_CLASS_441|ID_FMP_HYBRID_CLASS_442|ID_FMP_HYBRID_CLASS_443|ID_FMP_HYBRID_CLASS_444|ID_FMP_HYBRID_CLASS_445|ID_FMP_HYBRID_CLASS_446|ID_FMP_HYBRID_CLASS_536|ID_FMP_HYBRID_CLASS_609|ID_FMP_HYBRID_CLASS_611|ID_FMP_HYBRID_CLASS_612|ID_FMP_HYBRID_CLASS_641|ID_CDJ_HYBRID_CLASS_40001|ID_CDJ_HYBRID_CLASS_40002|ID_CDJ_HYBRID_CLASS_40003|ID_CDJ_HYBRID_CLASS_40004|ID_FMP_HYBRID_CLASS_894|ID_CDJ_HYBRID_CLASS_40006" />
+      </rules>
+</RulesElement>
+<!--End Hybrid Psionic Augmentation for Essentials classes-->
+
+<!-- Companion Class Setup -->
+<RulesElement name="No Daily Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NO_DAILY_POWERS" source="Core">
+</RulesElement>
+
+<RulesElement name="No Utility Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NO_UTILITY_POWERS" source="Core">
+</RulesElement>
+
+<RulesElement name="Nonstandard Feats" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NONSTANDARD_FEATS" source="Core">
+</RulesElement>
+
+<RulesElement name="Nonstandard Scores" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NONSTANDARD_SCORES" source="Core">
+</RulesElement>
+
+<RulesElement name="Companion Class" type="Internal" internal-id="ID_INTERNAL_INTERNAL_COMPANION_CLASS" source="Core">
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NO_DAILY_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NO_UTILITY_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NONSTANDARD_FEATS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NONSTANDARD_SCORES" type="Internal" />
+      </rules>
+</RulesElement>
+
+<RulesElement name="Essentials Class" type="Internal" internal-id="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" source="Core">
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NO_DAILY_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NO_UTILITY_POWERS" type="Internal" />
+      </rules>
+</RulesElement>
+
+<!-- Essential Hybrid Class Setup -->
+<RulesElement name="No Encounter Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" source="Core" >
+   <rules>
+   <grant type="Internal" name="ID_INTERNAL_NO_LV17_ENCOUNTER_POWER" />
+   <grant type="Internal" name="ID_INTERNAL_NO_LV7_ENCOUNTER_POWER" />
+   <grant type="Internal" name="ID_INTERNAL_NO_LV3_ENCOUNTER_POWER" />
+   <grant type="Internal" name="ID_INTERNAL_NO_LV1_ENCOUNTER_POWER" />
+   <grant type="Internal" name="ID_INTERNAL_NO_LV13_ENCOUNTER_POWER" />
+   <grant type="Internal" name="ID_INTERNAL_NO_LV23_ENCOUNTER_POWER" />
+   <grant type="Internal" name="ID_INTERNAL_NO_LV27_ENCOUNTER_POWER" />
+   </rules>
+</RulesElement>
+
+<RulesElement name="No Level 1 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV1_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="No Level 3 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV3_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="No Level 7 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV7_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="No Level 13 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV13_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="No Level 17 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV17_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="No Level 23 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV23_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="No Level 27 Encounter Power" type="Internal" internal-id="ID_INTERNAL_NO_LV27_ENCOUNTER_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Block Level 7 Hybrid Psionics" type="Internal" internal-id="ID_INTERNAL_BLOCK_LV7_HYBRID_PSONICS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="Block Level 13 Hybrid Psionics" type="Internal" internal-id="ID_INTERNAL_BLOCK_LV13_HYBRID_PSONICS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="Block Level 17 Hybrid Psionics" type="Internal" internal-id="ID_INTERNAL_BLOCK_LV17_HYBRID_PSONICS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="Block Level 23 Hybrid Psionics" type="Internal" internal-id="ID_INTERNAL_BLOCK_LV23_HYBRID_PSONICS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="Block Level 27 Hybrid Psionics" type="Internal" internal-id="ID_INTERNAL_BLOCK_LV27_HYBRID_PSONICS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<!-- Required Rules Expansion Tweaks -->
+
+   <RulesElement name="Expansion1" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION1" source="Core">
+      <rules>
+         <select type="Background" number="1" optional="true" requires="!Companion Class" />
+         <grant name="ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT" type="Internal" requires="!Companion Class" />
+         <select type="Background" number="5" optional="true" requires="!Companion Class" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="Expansion2" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_EXPANSION2" source="Core">
+      <rules>
+         <select type="Theme" number="1" optional="true" requires="!Companion Class" />
+      </rules>
+   </RulesElement>
+   
+	<RulesElement name="No Daily Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NO_DAILY_POWERS" source="Core">
+		<rules>
+			<grant type="Internal" name="ID_INTERNAL_NO_LV1_DAILY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV5_DAILY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV9_DAILY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV15_DAILY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV19_DAILY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV25_DAILY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV29_DAILY_POWER" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="No Utility Powers" type="Internal" internal-id="ID_INTERNAL_INTERNAL_NO_UTILITY_POWERS" source="Core">
+		<rules>
+			<grant type="Internal" name="ID_INTERNAL_NO_LV2_UTILITY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV6_UTILITY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV10_UTILITY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV16_UTILITY_POWER" />
+			<grant type="Internal" name="ID_INTERNAL_NO_LV22_UTILITY_POWER" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="No Level 1 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV1_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 5 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV5_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 9 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV9_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 15 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV15_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 19 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV19_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 25 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV25_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 29 Daily Power" type="Internal" internal-id="ID_INTERNAL_NO_LV29_DAILY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+
+	<RulesElement name="No Level 2 Utility Power" type="Internal" internal-id="ID_INTERNAL_NO_LV2_UTILITY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 6 Utility Power" type="Internal" internal-id="ID_INTERNAL_NO_LV6_UTILITY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 10 Utility Power" type="Internal" internal-id="ID_INTERNAL_NO_LV10_UTILITY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 16 Utility Power" type="Internal" internal-id="ID_INTERNAL_NO_LV16_UTILITY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+	<RulesElement name="No Level 22 Utility Power" type="Internal" internal-id="ID_INTERNAL_NO_LV22_UTILITY_POWER" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+
+	<RulesElement name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" source="Core">
+		<specific name="XP Needed"> 1000 </specific>
+		<rules>
+			<statalias name="Strength" alias="str" />
+			<statalias name="Constitution" alias="con" />
+			<statalias name="Dexterity" alias="dex" />
+			<statalias name="Intelligence" alias="int" />
+			<statalias name="Wisdom" alias="wis" />
+			<statalias name="Charisma" alias="cha" />
+			<statadd name="Strength modifier" value="+ABILITYMOD(str)" />
+			<statadd name="Dexterity modifier" value="+ABILITYMOD(dex)" />
+			<statadd name="Constitution modifier" value="+ABILITYMOD(con)" />
+			<statadd name="Intelligence modifier" value="+ABILITYMOD(int)" />
+			<statadd name="Wisdom modifier" value="+ABILITYMOD(wis)" />
+			<statadd name="Charisma modifier" value="+ABILITYMOD(cha)" />
+			<statalias name="AC" alias="Armor Class" />
+			<statalias name="Fortitude Defense" alias="Fortitude" />
+			<statalias name="Reflex Defense" alias="Reflex" />
+			<statalias name="Will Defense" alias="Will" />
+			<statadd name="Death Saves Count" value="+3" />
+			<statadd name="Level" value="+1" />
+			<statadd name="Hit Points" value="+Constitution" type="Level 1" />
+			<statadd name="Hit Points" value="+_LEVEL-ONE-HPS" />
+			<statadd name="Healing Surges" value="+ABILITYMOD(Constitution)" type="Level 1" />
+			<statadd name="Fortitude Defense" value="+10" />
+			<statadd name="Fortitude Defense" value="+HALF-LEVEL" requires="!Companion Class" />
+			<statadd name="Fortitude Defense" value="+LEVEL" requires="Companion Class" />
+			<statadd name="Fortitude Defense" value="+ABILITYMOD(str)" type="Ability" requires="!Companion Class" />
+			<statadd name="Fortitude Defense" value="+ABILITYMOD(con)" type="Ability" requires="!Companion Class" />
+			<statadd name="Fortitude Defense" value="+Fortitude Defense Class Bonus" type="Class" />
+			<statadd name="Reflex Defense" value="+10" />
+			<statadd name="Reflex Defense" value="+HALF-LEVEL" requires="!Companion Class" />
+			<statadd name="Reflex Defense" value="+LEVEL" requires="Companion Class" />
+			<statadd name="Reflex Defense" value="+ABILITYMOD(dex)" type="Ability" requires="!Companion Class" />
+			<statadd name="Reflex Defense" value="+ABILITYMOD(int)" type="Ability" requires="!Companion Class" />
+			<statadd name="Reflex Defense" value="+Reflex Defense Class Bonus" type="Class" />
+			<statadd name="Will Defense" value="+10" />
+			<statadd name="Will Defense" value="+HALF-LEVEL" requires="!Companion Class" />
+			<statadd name="Will Defense" value="+LEVEL" requires="Companion Class" />
+			<statadd name="Will Defense" value="+ABILITYMOD(wis)" type="Ability" requires="!Companion Class" />
+			<statadd name="Will Defense" value="+ABILITYMOD(cha)" type="Ability" requires="!Companion Class" />
+			<statadd name="Will Defense" value="+Will Defense Class Bonus" type="Class" />
+			<statadd name="AC" value="+10" />
+			<statadd name="AC" value="+HALF-LEVEL" requires="!Companion Class" />
+			<statadd name="AC" value="+LEVEL" requires="Companion Class" />
+			<statadd name="AC" value="+AC Defense Class Bonus" type="Class" requires="Companion Class" />
+			<statadd name="AC" value="+ABILITYMOD(dex)" type="Ability" not-wearing="armor:heavy" requires="!Companion Class" />
+			<statadd name="AC" value="+ABILITYMOD(int)" type="Ability" not-wearing="armor:heavy" requires="!Companion Class" />
+			<statadd name="AC" value="+1" type="Defensive" wearing="DEFENSIVE:" />
+			<statadd name="Initiative" value="+HALF-LEVEL" />
+			<statadd name="Initiative" value="+ABILITYMOD(dex)" type="Ability" />
+			<statadd name="Initiative" value="Initiative Misc" />
+			<statadd name="Ring Slots" value="+2" />
+			<statadd name="_BaseActionPoints" value="+1" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" type="Level1Rules" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_DETAILSRULES" type="Level1Rules" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION1" type="Level1Rules" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION2" type="Level1Rules" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION3" type="Level1Rules" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION4" type="Level1Rules" />
+			<grant name="ID_INTERNAL_LEVEL1RULES_EXPANSION5" type="Level1Rules" />
+			<select type="Race" number="1" />
+			<select type="Class" number="1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<select type="Power" name="Power Encounter 1" number="1" Category="$$CLASS,encounter,1" requires="!No Level 1 Encounter Power" />
+			<select type="Power" name="Power Daily 1" number="1" Category="$$CLASS,daily,1" requires="!No Level 1 Daily Power" />
+			<select type="Deity" number="1" optional="true" />
+			<statadd name="XP Needed" value="+1000" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="2" type="Level" internal-id="ID_INTERNAL_LEVEL_2" source="Core">
+		<specific name="XP Needed"> 1250 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<select type="Power" name="Power Utility 2" number="1" Category="$$CLASS,utility,2" requires="!No Level 2 Utility Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+1250" />
+		</rules>
+	</RulesElement>
+	   <RulesElement name="3" type="Level" internal-id="ID_INTERNAL_LEVEL_3" source="Core">
+      <specific name="XP Needed"> 1500 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <select type="Power" name="Power Encounter 3" number="1" Category="$$CLASS,encounter,3" requires="!No Level 3 Encounter Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+1500" />
+      </rules>
+   </RulesElement>
+	   <RulesElement name="4" type="Level" internal-id="ID_INTERNAL_LEVEL_4" source="Core">
+      <specific name="XP Needed"> 1750 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Ability Increase (Level 4)" number="2" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+1750" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="5" type="Level" internal-id="ID_INTERNAL_LEVEL_5" source="Core">
+		<specific name="XP Needed"> 2000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<select type="Power" name="Power Daily 5" number="1" Category="$$CLASS,daily,5" requires="!No Level 5 Daily Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+2000" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="6" type="Level" internal-id="ID_INTERNAL_LEVEL_6" source="Core">
+		<specific name="XP Needed"> 2500 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<select type="Power" name="Power Utility 6" number="1" Category="$$CLASS,utility,6" requires="!No Level 6 Utility Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+2500" />
+		</rules>
+	</RulesElement>
+	   <RulesElement name="7" type="Level" internal-id="ID_INTERNAL_LEVEL_7" source="Core">
+      <specific name="XP Needed"> 3000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <select type="Power" name="Power Encounter 7" number="1" Category="$$CLASS,encounter,7" requires="!No Level 7 Encounter Power" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+3000" />
+      </rules>
+   </RulesElement>
+	   <RulesElement name="8" type="Level" internal-id="ID_INTERNAL_LEVEL_8" source="Core">
+      <specific name="XP Needed"> 3500 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Ability Increase (Level 8)" number="2" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+3500" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="9" type="Level" internal-id="ID_INTERNAL_LEVEL_9" source="Core">
+		<specific name="XP Needed"> 4000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<select type="Power" name="Power Daily 9" number="1" Category="$$CLASS,daily,9" requires="!No Level 9 Daily Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+4000" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="10" type="Level" internal-id="ID_INTERNAL_LEVEL_10" source="Core">
+		<specific name="XP Needed"> 5500 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<select type="Power" name="Power Utility 10" number="1" Category="$$CLASS,utility,10" requires="!No Level 10 Utility Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+5500" />
+		</rules>
+	</RulesElement>
+	   <RulesElement name="11" type="Level" internal-id="ID_INTERNAL_LEVEL_11" source="Core">
+      <specific name="XP Needed"> 6000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="Strength" value="+1" />
+         <statadd name="Constitution" value="+1" />
+         <statadd name="Dexterity" value="+1" />
+         <statadd name="Intelligence" value="+1" />
+         <statadd name="Wisdom" value="+1" />
+         <statadd name="Charisma" value="+1" />
+         <grant name="ID_INTERNAL_TIER_PARAGON" type="Tier" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Paragon Path" number="1" default="[Default Paragon Path]" optional="true" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+6000" />
+      </rules>
+   </RulesElement>
+      <RulesElement name="12" type="Level" internal-id="ID_INTERNAL_LEVEL_12" source="Core">
+      <specific name="XP Needed"> 7000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+7000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="13" type="Level" internal-id="ID_INTERNAL_LEVEL_13" source="Core">
+      <specific name="XP Needed"> 8000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <replace name="Power Encounter 13" requires="!No Level 13 Encounter Power" powerswap="$$CLASS,encounter,13" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+8000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="14" type="Level" internal-id="ID_INTERNAL_LEVEL_14" source="Core">
+      <specific name="XP Needed"> 10000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Ability Increase (Level 14)" number="2" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+10000" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="15" type="Level" internal-id="ID_INTERNAL_LEVEL_15" source="Core">
+		<specific name="XP Needed"> 12000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<replace name="Power Daily 15" requires="!No Level 15 Daily Power" powerswap="$$CLASS,daily,15" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+12000" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="16" type="Level" internal-id="ID_INTERNAL_LEVEL_16" source="Core">
+		<specific name="XP Needed"> 14000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<select type="Power" name="Power Utility 16" number="1" Category="$$CLASS,utility,16" requires="!No Level 16 Utility Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+14000" />
+		</rules>
+	</RulesElement>
+   <RulesElement name="17" type="Level" internal-id="ID_INTERNAL_LEVEL_17" source="Core">
+      <specific name="XP Needed"> 16000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <replace name="Power Encounter 17" requires="!No Level 17 Encounter Power" powerswap="$$CLASS,encounter,17" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+16000" />
+      </rules>
+   </RulesElement>
+	   <RulesElement name="18" type="Level" internal-id="ID_INTERNAL_LEVEL_18" source="Core">
+      <specific name="XP Needed"> 20000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Ability Increase (Level 18)" number="2" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+20000" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="19" type="Level" internal-id="ID_INTERNAL_LEVEL_19" source="Core">
+		<specific name="XP Needed"> 24000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<replace name="Power Daily 19" requires="!No Level 19 Daily Power" powerswap="$$CLASS,daily,19" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+24000" />
+		</rules>
+	</RulesElement>
+	   <RulesElement name="20" type="Level" internal-id="ID_INTERNAL_LEVEL_20" source="Core">
+      <specific name="XP Needed"> 32000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+32000" />
+      </rules>
+   </RulesElement>
+
+   <RulesElement name="21" type="Level" internal-id="ID_INTERNAL_LEVEL_21" source="Core">
+      <specific name="XP Needed"> 35000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="Strength" value="+1" />
+         <statadd name="Constitution" value="+1" />
+         <statadd name="Dexterity" value="+1" />
+         <statadd name="Intelligence" value="+1" />
+         <statadd name="Wisdom" value="+1" />
+         <statadd name="Charisma" value="+1" />
+         <grant name="ID_INTERNAL_TIER_EPIC" type="Tier" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Epic Destiny" number="1" default="[Default Epic Destiny]" optional="true" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+35000" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="22" type="Level" internal-id="ID_INTERNAL_LEVEL_22" source="Core">
+		<specific name="XP Needed"> 45000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<statadd name="HALF-LEVEL" value="+1" />
+			<select type="Feat" number="1" requires="!Nonstandard Feats" />
+			<select type="Power" name="Power Utility 22" number="1" Category="$$CLASS,utility,22" requires="!No Level 22 Utility Power" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+45000" />
+		</rules>
+	</RulesElement>
+   <RulesElement name="23" type="Level" internal-id="ID_INTERNAL_LEVEL_23" source="Core">
+      <specific name="XP Needed"> 55000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <replace name="Power Encounter 23" requires="!No Level 23 Encounter Power" powerswap="$$CLASS,encounter,23" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+55000" />
+      </rules>
+   </RulesElement>
+	   <RulesElement name="24" type="Level" internal-id="ID_INTERNAL_LEVEL_24" source="Core">
+      <specific name="XP Needed"> 65000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Ability Increase (Level 24)" number="2" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+65000" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="25" type="Level" internal-id="ID_INTERNAL_LEVEL_25" source="Core">
+		<specific name="XP Needed"> 75000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<replace name="Power Daily 25" requires="!No Level 25 Daily Power" powerswap="$$CLASS,daily,25" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+75000" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="26" type="Level" internal-id="ID_INTERNAL_LEVEL_26" source="Core">
+      <specific name="XP Needed"> 100000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+100000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="27" type="Level" internal-id="ID_INTERNAL_LEVEL_27" source="Core">
+      <specific name="XP Needed"> 125000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <replace name="Power Encounter 27" requires="!No Level 27 Encounter Power" powerswap="$$CLASS,encounter,27" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+125000" />
+      </rules>
+   </RulesElement>
+   <RulesElement name="28" type="Level" internal-id="ID_INTERNAL_LEVEL_28" source="Core">
+      <specific name="XP Needed"> 150000 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <select type="Ability Increase (Level 28)" number="2" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+150000" />
+      </rules>
+   </RulesElement>
+	<RulesElement name="29" type="Level" internal-id="ID_INTERNAL_LEVEL_29" source="Core">
+		<specific name="XP Needed"> 175000 </specific>
+		<rules>
+			<statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+			<statadd name="Level" value="+1" />
+			<replace name="Power Daily 29" requires="!No Level 29 Daily Power" powerswap="$$CLASS,daily,29" />
+			<replace retrain="true" optional="true" />
+			<statadd name="XP Needed" value="+175000" />
+		</rules>
+	</RulesElement>
+   <RulesElement name="30" type="Level" internal-id="ID_INTERNAL_LEVEL_30" source="Core">
+      <specific name="XP Needed"> 0 </specific>
+      <rules>
+         <statadd name="Hit Points" value="+_PER-LEVEL-HPS" />
+         <statadd name="Level" value="+1" />
+         <statadd name="HALF-LEVEL" value="+1" />
+         <select type="Feat" number="1" requires="!Nonstandard Feats" />
+         <replace retrain="true" optional="true" />
+         <statadd name="XP Needed" value="+0" />
+      </rules>
+   </RulesElement>
+   
+      <RulesElement name="Companion Class" type="Internal" internal-id="ID_INTERNAL_INTERNAL_COMPANION_CLASS" source="Core">
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NO_DAILY_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NO_UTILITY_POWERS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NONSTANDARD_FEATS" type="Internal" />
+         <grant name="ID_INTERNAL_INTERNAL_NONSTANDARD_SCORES" type="Internal" />
+         <select type="Feat" number="1" category="NOFEATSFORYOU" optional="yes" />
+      </rules>
+   </RulesElement>
+
+
+<RulesElement name="Psionic Augmentation Decider" type="Internal" internal-id="ID_INTERNAL_INTERNAL_PSIONIC_AUGMENTATION_DECIDER" source="Core" >
+      <rules>
+         <grant name="ID_FMP_CLASS_FEATURE_1812" type="Class Feature" requires="(ID_FMP_HYBRID_CLASS_588&amp;ID_FMP_HYBRID_CLASS_590)|(ID_FMP_HYBRID_CLASS_588&amp;ID_FMP_HYBRID_CLASS_610)|(ID_FMP_HYBRID_CLASS_590&amp;ID_FMP_HYBRID_CLASS_610)" />
+         <grant name="ID_INTERNAL_INTERNAL_PSIONIC_AUGMENTATION_(HYBRID)" type="Internal" requires="ID_FMP_HYBRID_CLASS_352|ID_FMP_HYBRID_CLASS_353|ID_FMP_HYBRID_CLASS_354|ID_FMP_HYBRID_CLASS_355|ID_FMP_HYBRID_CLASS_356|ID_FMP_HYBRID_CLASS_357|ID_FMP_HYBRID_CLASS_358|ID_FMP_HYBRID_CLASS_359|ID_FMP_HYBRID_CLASS_360|ID_FMP_HYBRID_CLASS_439|ID_FMP_HYBRID_CLASS_440|ID_FMP_HYBRID_CLASS_441|ID_FMP_HYBRID_CLASS_442|ID_FMP_HYBRID_CLASS_443|ID_FMP_HYBRID_CLASS_444|ID_FMP_HYBRID_CLASS_445|ID_FMP_HYBRID_CLASS_446|ID_FMP_HYBRID_CLASS_536|ID_FMP_HYBRID_CLASS_609|ID_FMP_HYBRID_CLASS_611|ID_FMP_HYBRID_CLASS_612|ID_FMP_HYBRID_CLASS_641|ID_CDJ_HYBRID_CLASS_40001|ID_CDJ_HYBRID_CLASS_40002|ID_CDJ_HYBRID_CLASS_40003|ID_CDJ_HYBRID_CLASS_40004|ID_FMP_HYBRID_CLASS_894|ID_CDJ_HYBRID_CLASS_40006" />
+      </rules>
+   </RulesElement>
+
+<RulesElement name="Psionic Augmentation (Hybrid)" type="Internal" internal-id="ID_INTERNAL_INTERNAL_PSIONIC_AUGMENTATION_(HYBRID)" source="Core" >
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_NO_ENCOUNTER_POWERS" type="Internal" />
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2340" />
+         <grant name="ID_INTERNAL_INTERNAL_HYBRID_POWER_POINTS" type="Internal" Level="3" />
+         <select type="Power" name="Hybrid At-Will/Encounter 7" number="1" Category="$$CLASS,encounter|Augmentable At-Will,7" Level="7" requires="!Block Level 7 Hybrid Psionics" />
+         <replace name="Hybrid At-Will/Encounter 13" Level="13" powerswap="$$CLASS,encounter|Augmentable At-Will,13" requires="!Block Level 13 Hybrid Psionics" />
+         <replace name="Hybrid At-Will/Encounter 17" Level="17" powerswap="$$CLASS,encounter|Augmentable At-Will,17" requires="!Block Level 17 Hybrid Psionics" />
+         <replace name="Hybrid At-Will/Encounter 23" Level="23" powerswap="$$CLASS,encounter|Augmentable At-Will,23" requires="!Block Level 23 Hybrid Psionics" />
+         <replace name="Hybrid At-Will/Encounter 27" Level="27" powerswap="$$CLASS,encounter|Augmentable At-Will,27" requires="!Block Level 27 Hybrid Psionics" />
+      </rules>
+   </RulesElement>
+   
+<RulesElement name="Hybrid Power Point Option" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_POWER_POINT_OPTION" source="Player&apos;s Handbook 3" >
+      <Category> ID_FMP_CLASS_FEATURE_2340 </Category>
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2340 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_INTERNAL_HYBRID_POWER_POINTS" type="Internal" />
+		 <select type="Power" name="Hybrid Encounter 3" number="1" Category="$$CLASS,encounter,3" Level="3" />
+      </rules>
+When you choose the hybrid power point option, you gain a number of power points based on the levels of the augmentable at-will attack powers that you have.
+   </RulesElement>
+   <RulesElement name="Hybrid Encounter Power" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_ENCOUNTER_POWER" source="Player&apos;s Handbook 3" >
+      <Category> ID_FMP_CLASS_FEATURE_2340 </Category>
+      <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2340 </specific>
+      <rules>
+         <select type="Power" number="1" Category="$$CLASS,encounter,1" />
+		 <replace name="Power At-Will 3" Level="3" powerswap="$$CLASS,at-will,3" optional="true" />
+      </rules>
+Choose a 1st-level encounter attack power from your hybrid class that includes such powers.
+   </RulesElement>   
+<!--End Level Advancement Alterations-->
+
+
+
+<!-- Weapon Master Internal Rules -->
+<RulesElement name="Weapon Master" type="Internal" internal-id="ID_INTERNAL_INTERNAL_WEAPON_MASTER" source="Dragon Magazine 382" >
+      <specific name="_SupportsID"> ID_FMP_FEAT_2149 </specific>
+      <rules>
+         <statadd name="Weapon Mastery Focus" value="+1" />
+         <statadd name="Weapon Mastery Focus" value="+1" requires="Paragon Tier" />
+         <statadd name="Weapon Mastery Focus" value="+1" requires="Epic Tier" />
+         <statadd name="Weapon Mastery Expertise" value="+1" />
+         <statadd name="Weapon Mastery Expertise" value="+1" requires="15 level" />
+         <statadd name="Weapon Mastery Expertise" value="+1" requires="25 level" />
+         <statadd name="Club:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Club) proficiency" />
+         <statadd name="Club:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Club) proficiency" />
+         <statadd name="Dagger:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Dagger) proficiency" />
+         <statadd name="Dagger:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Dagger) proficiency" />
+         <statadd name="Javelin:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Javelin) proficiency" />
+         <statadd name="Javelin:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Javelin) proficiency" />
+         <statadd name="Mace:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Mace) proficiency" />
+         <statadd name="Mace:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Mace) proficiency" />
+         <statadd name="Sickle:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Sickle) proficiency" />
+         <statadd name="Sickle:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Sickle) proficiency" />
+         <statadd name="Spear:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Spear) proficiency" />
+         <statadd name="Spear:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Spear) proficiency" />
+         <statadd name="Greatclub:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Greatclub) proficiency" />
+         <statadd name="Greatclub:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Greatclub) proficiency" />
+         <statadd name="Morningstar:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Morningstar) proficiency" />
+         <statadd name="Morningstar:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Morningstar) proficiency" />
+         <statadd name="Quarterstaff:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Quarterstaff) proficiency" />
+         <statadd name="Quarterstaff:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Quarterstaff) proficiency" />
+         <statadd name="Scythe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Scythe) proficiency" />
+         <statadd name="Scythe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Scythe) proficiency" />
+         <statadd name="Battleaxe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Battleaxe) proficiency" />
+         <statadd name="Battleaxe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Battleaxe) proficiency" />
+         <statadd name="Handaxe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Handaxe) proficiency" />
+         <statadd name="Handaxe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Handaxe) proficiency" />
+         <statadd name="Flail:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Flail) proficiency" />
+         <statadd name="Flail:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Flail) proficiency" />
+         <statadd name="Throwing hammer:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Throwing hammer) proficiency" />
+         <statadd name="Throwing hammer:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Throwing hammer) proficiency" />
+         <statadd name="Warhammer:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Warhammer) proficiency" />
+         <statadd name="Warhammer:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Warhammer) proficiency" />
+         <statadd name="War Pick:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (War Pick) proficiency" />
+         <statadd name="War Pick:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (War Pick) proficiency" />
+         <statadd name="Scimitar:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Scimitar) proficiency" />
+         <statadd name="Scimitar:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Scimitar) proficiency" />
+         <statadd name="Longsword:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Longsword) proficiency" />
+         <statadd name="Longsword:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Longsword) proficiency" />
+         <statadd name="Short sword:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Short sword) proficiency" />
+         <statadd name="Short sword:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Short sword) proficiency" />
+         <statadd name="Greataxe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Greataxe) proficiency" />
+         <statadd name="Greataxe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Greataxe) proficiency" />
+         <statadd name="Heavy flail:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Heavy flail) proficiency" />
+         <statadd name="Heavy flail:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Heavy flail) proficiency" />
+         <statadd name="Glaive:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Glaive) proficiency" />
+         <statadd name="Glaive:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Glaive) proficiency" />
+         <statadd name="Halberd:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Halberd) proficiency" />
+         <statadd name="Halberd:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Halberd) proficiency" />
+         <statadd name="Maul:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Maul) proficiency" />
+         <statadd name="Maul:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Maul) proficiency" />
+         <statadd name="Longspear:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Longspear) proficiency" />
+         <statadd name="Longspear:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Longspear) proficiency" />
+         <statadd name="Greatsword:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Greatsword) proficiency" />
+         <statadd name="Greatsword:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Greatsword) proficiency" />
+         <statadd name="Katar:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Katar) proficiency" />
+         <statadd name="Katar:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Katar) proficiency" />
+         <statadd name="Rapier:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Rapier) proficiency" />
+         <statadd name="Rapier:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Rapier) proficiency" />
+         <statadd name="Bastard sword:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Bastard sword) proficiency" />
+         <statadd name="Bastard sword:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Bastard sword) proficiency" />
+         <statadd name="Whip:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Whip) proficiency" />
+         <statadd name="Whip:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Whip) proficiency" />
+         <statadd name="Spiked chain:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Spiked chain) proficiency" />
+         <statadd name="Spiked chain:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Spiked chain) proficiency" />
+         <statadd name="Hand Crossbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Hand Crossbow) proficiency" />
+         <statadd name="Hand Crossbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Hand Crossbow) proficiency" />
+         <statadd name="Sling:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Sling) proficiency" />
+         <statadd name="Sling:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Sling) proficiency" />
+         <statadd name="Crossbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Crossbow) proficiency" />
+         <statadd name="Crossbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Crossbow) proficiency" />
+         <statadd name="Shortbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Shortbow) proficiency" />
+         <statadd name="Shortbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Shortbow) proficiency" />
+         <statadd name="Longbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Longbow) proficiency" />
+         <statadd name="Longbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Longbow) proficiency" />
+         <statadd name="Shuriken:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Shuriken) proficiency" />
+         <statadd name="Shuriken:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Shuriken) proficiency" />
+         <statadd name="Falchion:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Falchion) proficiency" />
+         <statadd name="Falchion:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Falchion) proficiency" />
+         <statadd name="Spiked gauntlet:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Spiked gauntlet) proficiency" />
+         <statadd name="Spiked gauntlet:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Spiked gauntlet) proficiency" />
+         <statadd name="Broadsword:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Broadsword) proficiency" />
+         <statadd name="Broadsword:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Broadsword) proficiency" />
+         <statadd name="Khopesh:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Khopesh) proficiency" />
+         <statadd name="Khopesh:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Khopesh) proficiency" />
+         <statadd name="Light war pick:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Light war pick) proficiency" />
+         <statadd name="Light war pick:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Light war pick) proficiency" />
+         <statadd name="Scourge:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Scourge) proficiency" />
+         <statadd name="Scourge:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Scourge) proficiency" />
+         <statadd name="Trident:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Trident) proficiency" />
+         <statadd name="Trident:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Trident) proficiency" />
+         <statadd name="Heavy war pick:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Heavy war pick) proficiency" />
+         <statadd name="Heavy war pick:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Heavy war pick) proficiency" />
+         <statadd name="Craghammer:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Craghammer) proficiency" />
+         <statadd name="Craghammer:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Craghammer) proficiency" />
+         <statadd name="Kukri:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Kukri) proficiency" />
+         <statadd name="Kukri:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Kukri) proficiency" />
+         <statadd name="Parrying dagger:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Parrying dagger) proficiency" />
+         <statadd name="Parrying dagger:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Parrying dagger) proficiency" />
+         <statadd name="Spiked shield:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Spiked shield) proficiency" />
+         <statadd name="Spiked shield:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Spiked shield) proficiency" />
+         <statadd name="Tratnyr:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Tratnyr) proficiency" />
+         <statadd name="Tratnyr:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Tratnyr) proficiency" />
+         <statadd name="Triple-headed flail:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Triple-headed flail) proficiency" />
+         <statadd name="Triple-headed flail:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Triple-headed flail) proficiency" />
+         <statadd name="Waraxe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Waraxe) proficiency" />
+         <statadd name="Waraxe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Waraxe) proficiency" />
+         <statadd name="Execution axe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Execution axe) proficiency" />
+         <statadd name="Execution axe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Execution axe) proficiency" />
+         <statadd name="Fullblade:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Fullblade) proficiency" />
+         <statadd name="Fullblade:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Fullblade) proficiency" />
+         <statadd name="Greatspear:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Greatspear) proficiency" />
+         <statadd name="Greatspear:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Greatspear) proficiency" />
+         <statadd name="Mordenkrad:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Mordenkrad) proficiency" />
+         <statadd name="Mordenkrad:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Mordenkrad) proficiency" />
+         <statadd name="Double axe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Double axe) proficiency" />
+         <statadd name="Double axe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Double axe) proficiency" />
+         <statadd name="Double flail:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Double flail) proficiency" />
+         <statadd name="Double flail:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Double flail) proficiency" />
+         <statadd name="Double sword:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Double sword) proficiency" />
+         <statadd name="Double sword:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Double sword) proficiency" />
+         <statadd name="Urgrosh:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Urgrosh) proficiency" />
+         <statadd name="Urgrosh:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Urgrosh) proficiency" />
+         <statadd name="Repeating crossbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Repeating crossbow) proficiency" />
+         <statadd name="Repeating crossbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Repeating crossbow) proficiency" />
+         <statadd name="Greatbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Greatbow) proficiency" />
+         <statadd name="Greatbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Greatbow) proficiency" />
+         <statadd name="Superior crossbow:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Superior crossbow) proficiency" />
+         <statadd name="Superior crossbow:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Superior crossbow) proficiency" />
+         <statadd name="Net:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Net) proficiency" />
+         <statadd name="Net:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Net) proficiency" />
+         <statadd name="Bola:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Bola) proficiency" />
+         <statadd name="Bola:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Bola) proficiency" />
+         <statadd name="Blowgun:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Blowgun) proficiency" />
+         <statadd name="Blowgun:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Blowgun) proficiency" />
+         <statadd name="Garrote:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Garrote) proficiency" />
+         <statadd name="Garrote:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Garrote) proficiency" />
+         <statadd name="Cutting Wheel:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Cutting Wheel) proficiency" />
+         <statadd name="Cutting Wheel:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Cutting Wheel) proficiency" />
+         <statadd name="Drow Long Knife:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Drow Long Knife) proficiency" />
+         <statadd name="Drow Long Knife:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Drow Long Knife) proficiency" />
+         <statadd name="Talenta Tangat:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Talenta Tangat) proficiency" />
+         <statadd name="Talenta Tangat:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Talenta Tangat) proficiency" />
+         <statadd name="Talenta Sharrash:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Talenta Sharrash) proficiency" />
+         <statadd name="Talenta Sharrash:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Talenta Sharrash) proficiency" />
+         <statadd name="Double Scimitar:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Double Scimitar) proficiency" />
+         <statadd name="Double Scimitar:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Double Scimitar) proficiency" />
+         <statadd name="Zulaat:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Zulaat) proficiency" />
+         <statadd name="Zulaat:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Zulaat) proficiency" />
+         <statadd name="Talenta Boomerang:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Talenta Boomerang) proficiency" />
+         <statadd name="Talenta Boomerang:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Talenta Boomerang) proficiency" />
+         <statadd name="Xen&apos;drik Boomerang:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Xen&apos;drik Boomerang) proficiency" />
+         <statadd name="Xen&apos;drik Boomerang:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Xen&apos;drik Boomerang) proficiency" />
+         <statadd name="Monk Unarmed Strike:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Monk Unarmed Strike) proficiency" />
+         <statadd name="Monk Unarmed Strike:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Monk Unarmed Strike) proficiency" />
+         <statadd name="Battlefist:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Battlefist) proficiency" />
+         <statadd name="Battlefist:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Battlefist) proficiency" />
+         <statadd name="Claw Fighter Claw:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Claw Fighter Claw) proficiency" />
+         <statadd name="Claw Fighter Claw:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Claw Fighter Claw) proficiency" />
+         <statadd name="Shadowblade:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Shadowblade) proficiency" />
+         <statadd name="Shadowblade:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Shadowblade) proficiency" />
+         <statadd name="Climbing Claw:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Climbing Claw) proficiency" />
+         <statadd name="Climbing Claw:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Climbing Claw) proficiency" />
+         <statadd name="Feral Armor Claw:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Feral Armor Claw) proficiency" />
+         <statadd name="Feral Armor Claw:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Feral Armor Claw) proficiency" />
+         <statadd name="Boar Tusk:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Boar Tusk) proficiency" />
+         <statadd name="Boar Tusk:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Boar Tusk) proficiency" />
+         <statadd name="Dragontooth Shield (heroic tier):damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Dragontooth Shield (heroic tier)) proficiency" />
+         <statadd name="Dragontooth Shield (heroic tier):attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Dragontooth Shield (heroic tier)) proficiency" />
+         <statadd name="Fighting Shield (heroic tier):damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Fighting Shield (heroic tier)) proficiency" />
+         <statadd name="Fighting Shield (heroic tier):attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Fighting Shield (heroic tier)) proficiency" />
+         <statadd name="Soul Shield (paragon tier):damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Soul Shield (paragon tier)) proficiency" />
+         <statadd name="Soul Shield (paragon tier):attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Soul Shield (paragon tier)) proficiency" />
+         <statadd name="Sun Shield (paragon tier):damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Sun Shield (paragon tier)) proficiency" />
+         <statadd name="Sun Shield (paragon tier):attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Sun Shield (paragon tier)) proficiency" />
+         <statadd name="Rod of Seven Parts (Weapon):damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Rod of Seven Parts (Weapon)) proficiency" />
+         <statadd name="Rod of Seven Parts (Weapon):attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Rod of Seven Parts (Weapon)) proficiency" />
+
+         <statadd name="Alhulak:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Alhulak) proficiency" />
+         <statadd name="Alhulak:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Alhulak) proficiency" />
+         <statadd name="Cahulaks:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Cahulaks) proficiency" />
+         <statadd name="Cahulaks:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Cahulaks) proficiency" />
+         <statadd name="Carrikal:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Carrikal) proficiency" />
+         <statadd name="Carrikal:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Carrikal) proficiency" />
+         <statadd name="Chatkcha:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Chatkcha) proficiency" />
+         <statadd name="Chatkcha:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Chatkcha) proficiency" />
+         <statadd name="Dejada:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Dejada) proficiency" />
+         <statadd name="Dejada:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Dejada) proficiency" />
+         <statadd name="Dragon Paw:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Dragon Paw) proficiency" />
+         <statadd name="Dragon Paw:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Dragon Paw) proficiency" />
+         <statadd name="Gauntlet Axe:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Gauntlet Axe) proficiency" />
+         <statadd name="Gauntlet Axe:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Gauntlet Axe) proficiency" />
+         <statadd name="Gouge:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Gouge) proficiency" />
+         <statadd name="Gouge:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Gouge) proficiency" />
+         <statadd name="Gythka:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Gythka) proficiency" />
+         <statadd name="Gythka:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Gythka) proficiency" />
+         <statadd name="Kusari-gama:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Kusari-gama) proficiency" />
+         <statadd name="Kusari-gama:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Kusari-gama) proficiency" />
+         <statadd name="Lance:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Lance) proficiency" />
+         <statadd name="Lance:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Lance) proficiency" />
+         <statadd name="Light Mace:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Light Mace) proficiency" />
+         <statadd name="Light Mace:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Light Mace) proficiency" />
+         <statadd name="Lotulis:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Lotulis) proficiency" />
+         <statadd name="Lotulis:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Lotulis) proficiency" />
+         <statadd name="Pike:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Pike) proficiency" />
+         <statadd name="Pike:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Pike) proficiency" />
+         <statadd name="Puchik:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Puchik) proficiency" />
+         <statadd name="Puchik:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Puchik) proficiency" />
+         <statadd name="Serrated Pick:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Serrated Pick) proficiency" />
+         <statadd name="Serrated Pick:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Serrated Pick) proficiency" />
+         <statadd name="Short Spear:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Short Spear) proficiency" />
+         <statadd name="Short Spear:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Short Spear) proficiency" />
+         <statadd name="Singing Stick:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Singing Stick) proficiency" />
+         <statadd name="Singing Stick:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Singing Stick) proficiency" />
+         <statadd name="Talid:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Talid) proficiency" />
+         <statadd name="Talid:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Talid) proficiency" />
+         <statadd name="Tortoise Blade:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Tortoise Blade) proficiency" />
+         <statadd name="Tortoise Blade:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Tortoise Blade) proficiency" />
+         <statadd name="Trikal:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Trikal) proficiency" />
+         <statadd name="Trikal:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Trikal) proficiency" />
+         <statadd name="Widow's Knife:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Widow's Knife) proficiency" />
+         <statadd name="Widow's Knife:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Widow's Knife) proficiency" />
+         <statadd name="Wrist Razors:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Wrist Razors) proficiency" />
+         <statadd name="Wrist Razors:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Wrist Razors) proficiency" />
+         <statadd name="Zadatl:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Zadatl) proficiency" />
+         <statadd name="Zadatl:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Zadatl) proficiency" />
+      </rules>
+</RulesElement>
+
+<!-- Heroes of the Elemental Chaos origin -->
+<RulesElement name="Elemental Origin" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" source="Heroes of the Elemental Chaos">
+      <specific name="Short Description"> You have the elemental origin </specific>
+      <specific name="Level"> 1 </specific>
+Your ancestors were native to the Elemental Chaos, so you are considered an elemental creature for the purpose of effects that relate to creature origin.
+</RulesElement>
+<RulesElement name="Mounted" type="Weapon Property" internal-id="ID_FMP_WEAPON_PROPERTY_35" source="Core">
+A mounted weapon is most effective when you use it while riding a mount. When you use such a weapon while not mounted, you take a -2 penalty to attack rolls with it. While you are mounted, your charge attacks with the weapon deal 1[W] extra damage.
+</RulesElement>
+
+<!-- Added the updated weapon groups for bards Not strictly needed, but here for completeness: -->
+<RulesElement name="Instrument" type="Weapon Group" internal-id="ID_FMP_WEAPON_GROUP_INSTRUMENT" source="Core" revision-date="3/15/2010 9:22:08 AM">
+      <specific name="Implement"> 1 </specific>
+</RulesElement>
+<RulesElement name="Implement Proficiency (Instrument)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" source="Core">
+      <Category> ID_FMP_CATEGORY_25 </Category>
+</RulesElement>
+</D20Rules>

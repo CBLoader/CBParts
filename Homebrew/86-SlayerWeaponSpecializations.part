@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.00</Version>
+    <Filename>86-SlayerWeaponSpecializations.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/86-SlayerWeaponSpecializations.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/86-SlayerWeaponSpecializations.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Slayer Weapon Specializations - Homebrew Mod -->
+  <!-- Written by P_G -->
+  <RulesElement name="Entangling Flail" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_ENTANGLINGFLAIL" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_2856,7 </Category>
+    <Flavor> You strike a mighty blow with your flail that entangles the enemy. </Flavor>
+    <specific name="Short Description"> When you use power strike with a two-handed flail, you can grab the target until the end of your next turn. </specific>
+    <specific name="Level"> 7 </specific>
+    <rules>
+      <modify name="Power Strike" type="Power" Field="Entangling Flail" value="When you use power strike with a two-handed flail, you can grab the target until the end of your next turn." />
+    </rules>
+When you use power strike with a two-handed flail, you can grab the target until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Piercing Spear" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_PIERCINGSPEAR" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_2856,7 </Category>
+    <Flavor> Your powerful spear thrust pins your enemy to the ground. </Flavor>
+    <specific name="Short Description"> When you use power strike with a two-handed spear, you can immobilize the target until the end of your next turn. </specific>
+    <specific name="Level"> 7 </specific>
+    <rules>
+      <modify name="Power Strike" type="Power" Field="Piercing Spear" value="When you use power strike with a two-handed spear, you can immobilize the target until the end of your next turn." />
+    </rules>
+When you use power strike with a two-handed spear, you can immobilize the target until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Rupturing Pick" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_RUPTURINGPICK" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_2856,7 </Category>
+    <Flavor> Your pick hits with great force, leaving a bleeding wound. </Flavor>
+    <specific name="Short Description"> When you use power strike with a two-handed pick, you can cause the target to take ongoing 5 damage (save ends). </specific>
+    <specific name="Level"> 7 </specific>
+    <rules>
+      <modify name="Power Strike" type="Power" Field="Rupturing Pick" value="When you use power strike with a two-handed pick, you can cause the target to take ongoing 5 damage (save ends)." />
+    </rules>
+When you use power strike with a two-handed pick, you can cause the target to take ongoing 5 damage (save ends).
+</RulesElement>
+  <RulesElement name="Smashing Hammer" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_SMASHINGHAMMER" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_2856,7 </Category>
+    <Flavor> The impact of your hammer causes the enemy to reel. </Flavor>
+    <specific name="Short Description"> When you use power strike with a two-handed hammer or a two-handed mace, you can daze the target until the end of your next turn. </specific>
+    <specific name="Level"> 7 </specific>
+    <rules>
+      <modify name="Power Strike" type="Power" Field="Smashing Hammer" value="When you use power strike with a two-handed hammer or a two-handed mace, you can daze the target until the end of your next turn." />
+    </rules>
+When you use power strike with a two-handed hammer or a two-handed mace, you can daze the target until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Whirling Flail" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_WHIRLINGFLAIL" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_3019,12 </Category>
+    <specific name="Short Description"> Gain the whirling flail power. </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Powers"> ID_PGF_POWER_WHIRLINGFLAIL </specific>
+    <specific name="type"> Utility </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="_DisplayPowers"> ID_PGF_POWER_WHIRLINGFLAIL </specific>
+    <specific name="_CS_ShortDescription"> On a miss, target gets -2 to attacks. </specific>
+    <rules>
+      <grant name="ID_PGF_POWER_WHIRLINGFLAIL" type="Power" />
+    </rules>
+You gain the whirling flail power.
+</RulesElement>
+  <RulesElement name="Whirling Flail" type="Power" internal-id="ID_PGF_POWER_WHIRLINGFLAIL" source="Homebrew" revision-date="10/13/2010 1:30:05 PM">
+    <Category> ID_PGF_CLASS_FEATURE_WHIRLINGFLAIL,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_717,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_FREE_ACTION,12 </Category>
+    <Flavor> You spin the flail so that it deflects enemy attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Mythic Slayer Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You miss an enemy with a melee attack using a flail. </specific>
+    <specific name="Target"> The enemy you missed </specific>
+    <specific name="Effect"> The target takes a -2 penalty to attack rolls until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_PGF_CLASS_FEATURE_WHIRLINGFLAIL </specific>
+You have learned to wield the flail in a whirling motion, enabling you to turn aside counterattacks after your strikes have been blocked.
+</RulesElement>
+  <RulesElement name="Lunging Spear" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_LUNGINGSPEAR" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_3019,12 </Category>
+    <specific name="Short Description"> Gain the lunging spear power. </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Powers"> ID_PGF_POWER_LUNGINGSPEAR </specific>
+    <specific name="type"> Utility </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="_DisplayPowers"> ID_PGF_POWER_LUNGINGSPEAR </specific>
+    <specific name="_CS_ShortDescription"> On a miss, slide target 1 square. </specific>
+    <rules>
+      <grant name="ID_PGF_POWER_LUNGINGSPEAR" type="Power" />
+    </rules>
+You gain the lunging spear power.
+</RulesElement>
+  <RulesElement name="Lunging Spear" type="Power" internal-id="ID_PGF_POWER_LUNGINGSPEAR" source="Homebrew" revision-date="10/13/2010 1:30:05 PM">
+    <Category> ID_PGF_CLASS_FEATURE_LUNGINGSPEAR,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_717,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_FREE_ACTION,12 </Category>
+    <Flavor> With a quick lunge of your spear, you force the enemy to move where you want him to be. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Mythic Slayer Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You miss an enemy with a melee attack using a spear. </specific>
+    <specific name="Target"> The enemy you missed </specific>
+    <specific name="Effect"> You slide the target 1 square. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_PGF_CLASS_FEATURE_LUNGINGSPEAR </specific>
+Harnessing the speed and reach of the spear, you combine quick thrusts with an uncanny prediction of the enemy's evasive movements to force him into a disadvantageous position.
+</RulesElement>
+  <RulesElement name="Sundering Pick" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_SUNDERINGPICK" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_3019,12 </Category>
+    <specific name="Short Description"> Gain the sundering pick power. </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Powers"> ID_PGF_POWER_SUNDERINGPICK </specific>
+    <specific name="type"> Utility </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="_DisplayPowers"> ID_PGF_POWER_SUNDERINGPICK </specific>
+    <specific name="_CS_ShortDescription"> On a miss, target gets -2 to defenses. </specific>
+    <rules>
+      <grant name="ID_PGF_POWER_SUNDERINGPICK" type="Power" />
+    </rules>
+You gain the sundering pick power.
+</RulesElement>
+  <RulesElement name="Sundering Pick" type="Power" internal-id="ID_PGF_POWER_SUNDERINGPICK" source="Homebrew" revision-date="10/13/2010 1:30:05 PM">
+    <Category> ID_PGF_CLASS_FEATURE_SUNDERINGPICK,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_717,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_FREE_ACTION,12 </Category>
+    <Flavor> Even when blocked, a pick can pierce through steel. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Mythic Slayer Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You miss an enemy with a melee attack using a pick. </specific>
+    <specific name="Target"> The enemy you missed </specific>
+    <specific name="Effect"> The target takes a -2 penalty to its defenses until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_PGF_CLASS_FEATURE_SUNDERINGPICK </specific>
+You strike with such force that even a glancing blow with the pick can penetrate shields and sunder armor, demoralizing your enemy.
+</RulesElement>
+  <RulesElement name="Thundering Hammer" type="Class Feature" internal-id="ID_PGF_CLASS_FEATURE_THUNDERINGHAMMER" source="Homebrew" revision-date="10/13/2010 9:29:04 AM">
+    <Category> ID_FMP_CLASS_FEATURE_3019,12 </Category>
+    <specific name="Short Description"> Gain the thundering hammer power. </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Powers"> ID_PGF_POWER_THUNDERINGHAMMER </specific>
+    <specific name="type"> Utility </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="_DisplayPowers"> ID_PGF_POWER_THUNDERINGHAMMER </specific>
+    <specific name="_CS_ShortDescription"> On a miss, target is knocked prone. </specific>
+    <rules>
+      <grant name="ID_PGF_POWER_THUNDERINGHAMMER" type="Power" />
+    </rules>
+You gain the thundering hammer power.
+</RulesElement>
+  <RulesElement name="Thundering Hammer" type="Power" internal-id="ID_PGF_POWER_THUNDERINGHAMMER" source="Homebrew" revision-date="10/13/2010 1:30:05 PM">
+    <Category> ID_PGF_CLASS_FEATURE_THUNDERINGHAMMER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_717,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_FREE_ACTION,12 </Category>
+    <Flavor> With a powerful swing, you knock your enemy to the ground. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Mythic Slayer Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You miss an enemy with a melee attack using a hammer or a mace. </specific>
+    <specific name="Target"> The enemy you missed </specific>
+    <specific name="Effect"> The target is knocked prone. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_717 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_PGF_CLASS_FEATURE_THUNDERINGHAMMER </specific>
+You swing the hammer in a low arc so that the force of the impact alone will fell the enemy.
+</RulesElement>
+</D20Rules>

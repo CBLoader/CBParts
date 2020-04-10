@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>HomebrewMonsterRacesandFeats-v0.93Werebeasts.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/HomebrewMonsterRacesandFeats-v0.93Werebeasts.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/HomebrewMonsterRacesandFeats-v0.93Werebeasts.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <RulesElement name="Werebeast" type="Race" internal-id="ID_DCY1_RACE_WEREBEAST00" source="DC Homebrewed" revision-date="2/20/2011">
+    <Prereqs> ~WEREBEAST </Prereqs>
+    <Flavor> Commonly referred to as Lycanthropes, werebeasts are bestial shapeshifters that Combine the characteristics of humankind with the brutality of beasts. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> Varies </specific>
+    <specific name="Characteristics" />
+    <specific name="Physical Qualities"> Werebeasts physical qualities and their appearance vary greatly depending what type of beast they derive from. </specific>
+    <specific name="Playing"> Werebeasts live in three distinct worlds: humanoid society, shapeshifter clans, and animal packs. In cities, they remain in human form, going to great lengths to avoid revealing their bestial forms. Commonly only the most vicious werebeasts - creatures that revel in debauchery, theft, and violence - spend more time than absolutely necessary in civilization. Among clan members, lycanthropes form cabals and remain in their hybrid forms. </specific>
+    <specific name="Vision"> Low-Light </specific>
+    <specific name="Average Height"> Varies </specific>
+    <specific name="Average Weight"> Varies </specific>
+    <specific name="Ability Scores"> Depends on animal type. </specific>
+    <specific name="Languages"> Common </specific>
+    <specific name="Skill Bonuses"> Varies  </specific>
+    <specific name="Male Names" />
+    <specific name="Female Names" />
+    <specific name="Short Description"> Half man, half beast. </specific>
+    <specific name="Racial Traits"> ID_DCY1_RACIAL_TRAIT_WERESELECT00,ID_DCY1_RACIAL_TRAIT_CHAFOR00,ID_DCY1_RACIAL_TRAIT_WEREREG00,ID_FMP_RACIAL_TRAIT_1867 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_WEREBEAST" type="Grants" />
+      <statadd name="Speed" value="+1" />
+      <textstring name="Average Height" value="2' 8&quot;-3' 0&quot;" />
+      <textstring name="Average Weight" value="25-38 lb." />
+      <textstring name="Size" value="Medium" />
+    </rules>
+
+A Werebeast, commonly referred to as "lycanthropes", is a bestial shapeshifters that preys on other living creatures. It often assumes animal form in the wild, hunting in packs with similar animals or others of its kind. 
+When infiltrating civilized humanoid settlements, it assumes a benign humanoid form, blending in with the local populace. Werebeasts gather in clannish communities hidden in remote places, or they live secretly among other races.
+Although they hunt when they please, Werebeasts are most active on nights of the full moon. A Werebeast superficially resembles a human or other humanoid creature. It stands erect but has the head of a ravenous animal, such as a rat or wolf.
+A Werebeast can assume the form of a specific humanoid, usually a human with subtle physical traits that betray the creature's true heritage such as long hair, long fingernails, or pointed teeth, for instance. 
+Normally, a werebeast assumes humanoid form only when it needs to disguise itself as something nonthreatening.
+	  
+Play a Werebeast if you want ...
+-	to be a shapeshifter with a vicious animal side
+-   to select from a variety of beasts
+
+   </RulesElement>
+  <RulesElement name="Werebeast" type="Grants" internal-id="ID_INTERNAL_GRANTS_WEREBEAST" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_DCY1_RACE_WEREBEAST00 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WERESELECT00" type="Racial Trait" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WEREREG00" type="Racial Trait" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_CHAFOR00" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_1867" type="Racial Trait" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Beast Type" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WERESELECT00" source="DC Homebrewed" revision-date="01/29/2011">
+    <specific name="Short Description"> You can choose one type of animal that makes up your beastform and discerns your ability and skill bonuses. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES" />
+    <rules>
+      <select type="Racial Trait" number="1" Category="Beast Type" />
+    </rules>
+You can choose one type of animal that makes up your beastform and discerns your ability and skill bonuses.
+</RulesElement>
+  <RulesElement name="Bestial Regeneration" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WEREREG00" source="DC Homebrewed" revision-date="01/29/2011">
+    <specific name="Short Description"> While bloodied you have Regeneration 2. 4 at 11th level and 6 at 21st level. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES" />
+While bloodied you have Regeneration 2. This increases to 4 at 11th level and to 6 at 21st level. When hit with a silvered weapon the regeneration does not function on your next turn.
+</RulesElement>
+  <RulesElement name="Big Bad Beast" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_CHAFOR00" source="DC Homebrewed" revision-date="01/20/2011">
+    <specific name="Short Description"> You have the Change Form At-Will power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_DCY1_POWER_WBCF0 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WBCF0 </specific>
+    <rules>
+      <grant name="ID_DCY1_POWER_WBCF0" type="Power" />
+    </rules>
+You have the Change Form At-Will power.
+</RulesElement>
+  <RulesElement name="Change Form" type="Power" internal-id="ID_DCY1_POWER_WBCF0" source="DC Homebrewed" revision-date="02/03/2011">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_DCY1_RACIAL_TRAIT_CHAFOR00,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> You quickly change between your forms. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Werebeast Racial Feature </specific>
+    <specific name="Keywords"> Polymorph </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You alter your physical form to appear as a humanoid of your chosen race or the animal given by your Beast Type, these forms last until you change back as a Minor Action. You retain your stats and any possessions when transforming. </specific>
+    <specific name="Special"> Any creature that attempts to see through your disguise must make an Insight check against your Bluff check, to which you gain a +5 bonus. </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Quadruped Drag" type="Feat" internal-id="ID_DCY1_FEAT_WBEAST001" source="DC Homebrewed" revision-date="03/09/2011">
+    <Prereqs> Werebeast, Str 14 </Prereqs>
+    <print-prereqs> Werebeast, Str 14 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Push and drag 25% more weight for your Strength when in animal form </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When in animal form, you can push and drag 25% more weight for your Strength.
+   </RulesElement>
+  <RulesElement name="Weretiger" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WERETIGER" source="DC Homebrewed" revision-date="01/29/2011">
+    <Category> ID_DCY1_RACIAL_TRAIT_WERESELECT00 </Category>
+    <specific name="Short Description"> You are a Weretiger. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers" />
+    <specific name="type" />
+    <specific name="Racial Traits"> ID_DCY1_RACIAL_TRAIT_WT001 </specific>
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WT001 </specific>
+    <rules>
+      <statadd name="Speed" value="+5" />
+      <statadd name="Dexterity" value="+2" type="racial" />
+      <statadd name="Acrobatics Misc" value="+2" type="racial" />
+      <statadd name="Stealth Misc" value="+2" type="racial" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Charisma" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WT001" type="Racial Trait" />
+      <grant name="ID_DCY1_POWER_WT001" type="Power" />
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a medium tiger. In this form you have speed 8 and gain additional +2 to Stealth and Acrobatics and can only make Melee Basic attacks." />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Ability Scores" value="+2 Dexterity, +2 Charisma or +2 Strength" />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Skill Bonuses" value="+2 Acrobatics, +2 Stealth" />
+    </rules>
+	  
+Weretigers are cautious combatants. A weretiger often uses stealth to stalk an enemy, waiting for the opportune moment to strike.
+
+RACIAL TRAITS
+  
+  Ability Scores: +2 Dexterity, +2 Charisma or +2 Strength 
+  Speed: 6 squares
+  Skill Bonuses: +2 Acrobatics, +2 Stealth
+  
+  Rip and Tear:
+	You have proficiency with the Claw Figther Claw.
+  
+  You have the Tiger's Bite racial power:
+</RulesElement>
+  <RulesElement name="Tiger's Bite" type="Power" internal-id="ID_DCY1_POWER_WT001" source="DC Homebrewed" revision-date="02/03/2011">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_WEREWOLF,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> And then to eat you up! </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Weretiger Racial Attack </specific>
+    <specific name="Keywords"> Disease </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One enemy </specific>
+    <specific name="Attack"> Primary ability score vs. Reflex </specific>
+    <specific name="Hit"> 1d8 + primary ability modifier damage, and the target is afflicted with Moon Rage (save ends).
+Increase damage to 2d8 at 11th level and 3d8 at 21st level. </specific>
+    <specific name="Moon Rage"> The target suffers a -2 penalty to its attack rolls. </specific>
+    <specific name=" First Failed Saving Throw"> The target takes an additional -2 to its attack rolls. </specific>
+    <specific name=" 11th Level - Second Failed Saving Throw"> The enemy cannot change targets and has to focus on the target it attacked the last time until it saves against Moon Rage. </specific>
+    <specific name="Special"> You can also use this attack when in your animal form, but not when in your humanoid form. </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Rip and Tear" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WT001" source="DC Homebrewed" revision-date="x/x/x">
+    <specific name="Short Description"> Your hands are deadly weapons with razor sharp claws, you gain proficiency with the Claw Fighter Claw.  </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" type="Proficiency" />
+    </rules>
+Your hands are deadly weapons with razor sharp claws which you can use as weapons with a +3 proficiency bonus and 1d6 damage. For purpose of powers and feats, your claws are treated as light blades, and you are considered to have a weapon in each hand while not holding anything else. You may enchant and disenchant your claws. When you disenchant your claws, they do not turn to dust.
+</RulesElement>
+  <RulesElement name="Werewolf" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WEREWOLF" source="DC Homebrewed" revision-date="01/29/2011">
+    <Category> ID_DCY1_RACIAL_TRAIT_WERESELECT00 </Category>
+    <specific name="Short Description"> You are a Werewolf. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers" />
+    <specific name="type" />
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WW001 </specific>
+    <rules>
+      <statadd name="Speed" value="+5" />
+      <statadd name="Strength" value="+2" type="racial" />
+      <statadd name="Perception Misc" value="+2" type="racial" />
+      <statadd name="Intimidate Misc" value="+2" type="racial" />
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WW01" type="Racial Trait" />
+      <grant name="ID_DCY1_POWER_WW001" type="Power" />
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a medium wolf. In this form you have speed 8 and gain +2 to Perception, you can only make Melee Basic attacks or use your Wolf's Bite power." />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Ability Scores" value="+2 Strength, +2 Intelligence or +2 Wisdom" />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Skill Bonuses" value="+2 Intimidate, +2 Perception" />
+    </rules>
+	  
+Brutish and feral, werewolves dwell alone or in small wilderness clans. 
+They frequently run with wolf packs, especially when the moon is full. They sometimes join bandit gangs or become mercenaries. Werewolves prefer to stick to the borderlands but occasionally work inside cities. Anyone who employs a werewolf must be prepared to satisfy the creature's thirst for blood.
+
+RACIAL TRAITS
+
+  Ability Scores: +2 Strength, +2 Intelligence or +2 Wisdom
+  Speed: 6 squares
+  Skill Bonuses: +2 Intimidate, +2 Perception
+  
+  Lycanthropic Blood Rage: 
+    Your attacks deal additional 4 damage against bloodied targets.
+  
+  You have the Wolf's Bite racial power:
+</RulesElement>
+  <RulesElement name="Lycanthropic Blood Rage" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WW01" source="DC Homebrewed" revision-date="01/29/2011">
+    <specific name="Short Description"> Your attacks deal 2 additional damage against bloodied enemies. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES" />
+    <rules>
+      <statadd name="Lycanthropic Blood Rage" value="+2" />
+      <statadd name="Lycanthropic Blood Rage" value="+2" requires="Paragon Tier" />
+      <statadd name="Lycanthropic Blood Rage" value="+2" requires="Epic Tier" />
+      <statadd name="damage rolls" value="+Lycanthropic Blood Rage" condition="against bloodied targets" />
+    </rules>
+Your attacks deal 4 additional damage against bloodied enemies. This increases to 4 at 11th level and to 6 at 21st level.
+</RulesElement>
+  <RulesElement name="Wolf's Bite" type="Power" internal-id="ID_DCY1_POWER_WW001" source="DC Homebrewed" revision-date="02/03/2011">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_WEREWOLF,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> All the better to eat you with! </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Werewolf Racial Attack </specific>
+    <specific name="Keywords"> Disease </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One enemy </specific>
+    <specific name="Attack"> Primary ability score vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + primary ability modifier damage, and the target takes ongoing 5 damage (save ends) and is afflicted with Moon Frenzy (save ends).
+Increase damage to 2d6 at 11th level and 3d6 at 21st level.  </specific>
+    <specific name="Moon Frenzy"> The target suffers a -2 penalty to its Will defense. </specific>
+    <specific name=" First Failed Saving Throw"> While bloodied, the target has to attack a random enemy within 5 squares with a basic attack or move in a random direction if there is no target in range when failing its saving throw against Moon Frenzy. </specific>
+    <specific name=" 11th Level - Second Failed Saving Throw"> While bloodied, the target has to attack a random enemy it can see with an At-Will or basic attack, or move in a random direction if there is no target in range when failing its saving throw against Moon Frenzy. </specific>
+    <specific name="Special"> You can also use this attack when in your animal form, but not when in your humanoid form. </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Wererat" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WERERAT" source="DC Homebrewed" revision-date="01/29/2011">
+    <Category> ID_DCY1_RACIAL_TRAIT_WERESELECT00 </Category>
+    <specific name="Short Description"> You are a Wererat. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers" />
+    <specific name="type" />
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WR001, ID_DCY1_POWER_WR002 </specific>
+    <rules>
+      <statadd name="Speed" value="+5" />
+      <statadd name="Dexterity" value="+2" type="racial" />
+      <statadd name="Stealth Misc" value="+2" type="racial" />
+      <statadd name="Streetwise Misc" value="+2" type="racial" />
+      <select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence" />
+      <statadd name="Saving Throws" value="+5" type="Racial" condition="against disease" />
+      <grant name="ID_DCY1_POWER_WR001" type="Power" />
+      <grant name="ID_DCY1_POWER_WR002" type="Power" />
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a small rat. In this form you gain an additional +2 to Stealth, you can only make Melee Basic attacks or use your Rat's Bite and Rat Scurry powers." />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Ability Scores" value="+2 Dexterity, +2 Constitution or +2 Intelligence" />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Skill Bonuses" value="+2 Streetwise, +2 Stealth" />
+    </rules>
+
+The most urban of werebeasts, wererats often dwell in packs inside sewers or catacombs. 
+More cunning and materialistic than their shapeshifter kin, wererats join criminal organizations or start their own. A wererat might be a pickpocket, a criminal mastermind, or a spy.
+	  
+RACIAL TRAITS
+
+  Ability Scores: +2 Dexterity, +2 Constitution or +2 Intelligence
+  Speed: 6 squares, Climb 4 (not in human form)
+  Skill Bonuses: +2 Streetwise, +2 Stealth
+  
+  Scavenger:
+    You gain a +5 racial bonus to saving throws against disease.
+	
+  You have the Rat's Bite and Rat Scurry racial powers:
+</RulesElement>
+  <RulesElement name="Rat's Bite" type="Power" internal-id="ID_DCY1_POWER_WR001" source="DC Homebrewed" revision-date="02/03/2011">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_WERERAT,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> Only a nibble, but a painful one. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Wererat Racial Attack </specific>
+    <specific name="Keywords"> Disease </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One enemy </specific>
+    <specific name="Attack"> Primary ability score vs. Reflex </specific>
+    <specific name="Hit"> 1d4 + primary ability modifier damage, the target takes ongoing 3 damage (save ends) and is afflicted with Filth Fever (save ends).
+Increase damage to 2d4 at 11th level and 4d4 at 21st level.  </specific>
+    <specific name="Filth Fever"> The target cannot regain Hit Points. </specific>
+    <specific name=" First Failed Saving Throw"> The target suffers a -2 penalty to all defenses. </specific>
+    <specific name=" 11th Level - Second Failed Saving Throw"> The target suffers an additional -2 to all defenses. </specific>
+    <specific name="Special"> You can also use this attack when in your animal form, but not when in your humanoid form. </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Rat Scurry" type="Power" internal-id="ID_DCY1_POWER_WR002" source="DC Homebrewed" revision-date="02/12/2011">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_WERERAT,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> You swiftly traverse the battlefield </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Wererat Racial Utility </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Attack" />
+    <specific name="Effect"> You shift your speed. </specific>
+    <specific name="Requirement"> You must be in rat form. </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Wereboar" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WEREBOAR" source="DC Homebrewed" revision-date="01/29/2011">
+    <Category> ID_DCY1_RACIAL_TRAIT_WERESELECT00 </Category>
+    <specific name="Short Description"> You are a Wereboar. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers" />
+    <specific name="type" />
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WB001 </specific>
+    <rules>
+      <statadd name="Speed" value="+5" />
+      <statadd name="Strength" value="+2" type="racial" />
+      <statadd name="Endurance Misc" value="+2" type="racial" />
+      <statadd name="Athletics Misc" value="+2" type="racial" />
+      <select type="Race Ability Bonus" number="1" Category="Constitution|Wisdom" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WB01" type="Racial Trait" />
+      <grant name="ID_DCY1_POWER_WB001" type="Power" />
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a medium boar. In this form you have speed 8, you can only make Melee Basic attacks or use your Boar's Gore power." />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Ability Scores" value="+2 Strength, +2 Constitution or +2 Wisdom" />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Skill Bonuses" value="+2 Endurance, +2 Athletics" />
+    </rules>
+	  
+Wereboars are brutish humanoids that are easily angered and that transform into hybrid form when incited. A wereboar is a provocateur, and often seeks out fights in taverns and on city streets.
+
+RACIAL TRAITS
+
+  Ability Scores: +2 Strength, +2 Constitution or +2 Wisdom
+  Speed: 6 squares
+  Skill Bonuses: +2 Endurance, +2 Athletics
+  
+  Wereboar Weapon Affinity:
+	You gain proficiency with the Craghammer.  
+	
+  You have the Boar's Gore racial power:
+</RulesElement>
+  <RulesElement name="Boar's Gore" type="Power" internal-id="ID_DCY1_POWER_WB001" source="DC Homebrewed" revision-date="02/03/2011">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_WEREBOAR,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> Now you've angered me! </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Wereboar Racial Attack </specific>
+    <specific name="Keywords"> Disease </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One enemy </specific>
+    <specific name="Attack"> Primary ability score vs. Reflex </specific>
+    <specific name="Hit"> 1d8 + primary ability modifier damage, the target takes ongoing 5 damage (save ends) and is afflicted with Moontusk Fever (save ends).
+Increase damage to 2d8 at 11th level and 3d8 at 21st level.  </specific>
+    <specific name="Moontusk Fever"> The target takes a -2 penalty to saving throws while bloodied. </specific>
+    <specific name=" First Failed Saving Throw"> The target can only make one saving throw at the end of its turn, even when suffering more than one effect that save can end. </specific>
+    <specific name=" 11th Level - Second Failed Saving Throw"> While bloodied the target has to roll twice on a saving throw and use the lower result. </specific>
+    <specific name="Special"> You can also use this attack when in your animal form, but not when in your humanoid form. Can also be used instead of a Melee Basic attack when charging. </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Wereboar Weapon Affinity" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WB01" source="DC Homebrewed" revision-date="02/09/2011">
+    <specific name="Short Description"> You gain proficiency with the Craghammer. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES" />
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CRAGHAMMER)" type="Proficiency" />
+    </rules>
+You gain proficiency with the Craghammer.
+</RulesElement>
+  <RulesElement name="Facepounder" type="Feat" internal-id="ID_DCY1_FEAT_WB001" source="DC Homebrewed" revision-date="02/09/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WEREBOAR </Prereqs>
+    <print-prereqs> Wereboar </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain +1 to attack and damage rolls when wielding a mace or hammer. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Wereboar Weapons" value="+1" />
+      <statadd name="Wereboar Weapons" value="+1" requires="Paragon Tier" />
+      <statadd name="Wereboar Weapons" value="+1" requires="Epic Tier" />
+      <statadd name="weapon,mace group:attack" value="+Wereboar Weapons" type="Feat" />
+      <statadd name="weapon,hammer group:attack" value="+Wereboar Weapons" type="Feat" />
+      <statadd name="weapon,mace group:damage" value="+Wereboar Weapons" type="Feat" />
+      <statadd name="weapon,hammer group:damage" value="+Wereboar Weapons" type="Feat" />
+    </rules>
+You gain +1 to attack and damage rolls when wielding a mace or hammer. This increases to +2 at 11th level and to +3 at 21st level. 
+   </RulesElement>
+  <RulesElement name="Wild Boar" type="Feat" internal-id="ID_DCY1_FEAT_WB002" source="DC Homebrewed" revision-date="02/09/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WEREBOAR, ID_FMP_CLASS_148 </Prereqs>
+    <print-prereqs> Wereboar, Barbarian, Boar's Gore racial power </print-prereqs>
+    <specific name="Category"> Racial </specific>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Damage die of Boar's Gore increase to d10 while raging. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+While you are raging, the damage die of your Boar's Gore racial power increase from d8 to d10, and to d12 at 11th level. In addtion, if you have already expended the power before entering your rage, you regain one use of it.
+   </RulesElement>
+  <RulesElement name="Wereshark" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WERESHARK" source="DC Homebrewed" revision-date="01/29/2011">
+    <Category> ID_DCY1_RACIAL_TRAIT_WERESELECT00 </Category>
+    <Flavor> I come from the fathomless deeps... </Flavor>
+    <specific name="Short Description"> You are a Wereshark. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers" />
+    <specific name="type" />
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WS001 </specific>
+    <rules>
+      <statadd name="Speed" value="+4" />
+      <statadd name="Strength" value="+2" type="racial" />
+      <statadd name="Intimidate Misc" value="+2" type="racial" />
+      <statadd name="Endurance Misc" value="+2" type="racial" />
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WS01" type="Racial Trait" />
+      <grant name="ID_DCY1_POWER_WS001" type="Power" />
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a medium shark. In this form you have no landspeed, but swim (aquatic) 8 and gain +10 to Stealth when under water and you can only make Melee Basic attacks or use your Shark's Chomp power." />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Ability Scores" value="+2 Strength, +2 Charisma or +2 Dexterity" />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Skill Bonuses" value="+2 Intimidate, +2 Endurance" />
+    </rules>
+
+RACIAL TRAITS
+
+  Ability Scores: +2 Strength, +2 Charisma or +2 Dexterity
+  Speed: 5 squares, Swim 8 (Aquatic) (not in human form)
+  Skill Bonuses: +2 Intimidate, +2 Endurance
+  
+  Feeding Frenzy: 
+    Your attacks deal additional 2 damage against bloodied targets.
+  
+  You have the Shark's Chomp racial power:
+</RulesElement>
+  <RulesElement name="Feeding Frenzy" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WS01" source="DC Homebrewed" revision-date="01/29/2011">
+    <specific name="Short Description"> Your attacks deal 2 additional damage against bloodied enemies. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES" />
+    <rules>
+      <statadd name="Feeding Frenzy" value="+2" />
+      <statadd name="Feeding Frenzy" value="+2" requires="Paragon Tier" />
+      <statadd name="Feeding Frenzy" value="+2" requires="Epic Tier" />
+      <statadd name="damage rolls" value="+Feeding Frenzy" condition="against bloodied targets" />
+    </rules>
+Your attacks deal 4 additional damage against bloodied enemies. This increases to 4 at 11th level and to 6 at 21st level.
+</RulesElement>
+  <RulesElement name="Shark's Chomp" type="Power" internal-id="ID_DCY1_POWER_WS001" source="DC Homebrewed" revision-date="02/03/2011">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_WERESHARK,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> Feeding time! </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Wereshark Racial Attack </specific>
+    <specific name="Keywords"> Disease </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One enemy </specific>
+    <specific name="Attack"> Primary ability score vs. Reflex </specific>
+    <specific name="Hit"> 1d10 + primary ability modifier damage, the target takes ongoing 5 damage (save ends) and is afflicted with Nautic Fever (save ends).
+Increase damage to 2d10 at 11th level, and 3d10 at 21st level.  </specific>
+    <specific name="Nautic Fever"> The target's speed is halved and it takes a -2 penalty to its attack rolls. </specific>
+    <specific name=" First Failed Saving Throw"> The target is slowed and takes -2 to its Reflex defense. </specific>
+    <specific name=" 11th Level - Second Failed Saving Throw"> The target is immobilized and takes an additional -2 to its attack rolls and Reflex defense. </specific>
+    <specific name="Special"> You can also use this attack when in your animal form, but not when in your humanoid form. Can also be used instead of a Melee Basic attack when charging. </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sleep with the Fishes" type="Feat" internal-id="ID_DCY1_FEAT_WS001" source="DC Homebrewed" revision-date="02/09/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WERESHARK </Prereqs>
+    <print-prereqs> Wereshark </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain temporary Hit Points when you reduce an enemy to 0 Hit Points </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Whenever you reduce a non-minion enemy to 0 Hit Points you gain temporary Hit Points equal to your Constitution modifier + one-half the enemy's level (minimum 1). 
+   </RulesElement>
+  <RulesElement name="Jaws" type="Feat" internal-id="ID_DCY1_FEAT_WS002" source="DC Homebrewed" revision-date="02/09/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WERESHARK </Prereqs>
+    <print-prereqs> Wereshark </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Score critical hits with your racial power on d20 rolls of 18-20 </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers"> Shark's Chomp </specific>
+When using your Shark's Chomp racial power you score a critical hit on d20 rolls of 18-20. In addition, the target takes ongoing 10 damage instead of 5 when you critically hit.
+   </RulesElement>
+  <RulesElement name="Chill of the Deep Sea" type="Feat" internal-id="ID_DCY1_FEAT_WS003" source="DC Homebrewed" revision-date="02/09/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WERESHARK, any arcane class </Prereqs>
+    <print-prereqs> Wereshark, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Deal additional damage with powers that have the Cold keyword </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you deal damage with a power that has the Cold keyword, you deal additional cold damage equal to your Charisma, Wisdom or Intelligence modifier. Choose one when modifier when you take this feat.
+   </RulesElement>
+  <RulesElement name="The Scent Of Blood" type="Feat" internal-id="ID_DCY1_FEAT_WS004" source="DC Homebrewed" revision-date="02/09/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WERESHARK </Prereqs>
+    <print-prereqs> Wereshark </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Bloodied enemies cannot gain total concealment from you </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Bloodied enemies within 20 squares of you cannot gain concealment from you, even when turning invisible. If you have no line of sight to the target, you still can discern the general direction of the target's hiding place.
+   </RulesElement>
+  <RulesElement name="Great White" type="Feat" internal-id="ID_DCY1_FEAT_WS005" source="DC Homebrewed" revision-date="02/20/2011">
+    <Prereqs> ID_DCY1_RACIAL_TRAIT_WERESHARK </Prereqs>
+    <print-prereqs> Wereshark </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> While in animal form you are of large size and damage die of Shark's Chomp increase to d12 </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a large shark. In this form you have no landspeed, but swim (aquatic) 8 and gain +10 to Stealth when under water and you can only make Melee Basic attacks or use your Shark's Chomp power." />
+    </rules>
+You turn into a large shark when you assume your animal form. In addition the damage die of your Shark's Chomp power increase to d12 while in animal form.
+   </RulesElement>
+  <RulesElement name="Jackalwere" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_JACKALWERE" source="DC Homebrewed" revision-date="02/12/2011">
+    <Category> ID_DCY1_RACIAL_TRAIT_WERESELECT00 </Category>
+    <specific name="Short Description"> You are a Jackalwere. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers" />
+    <specific name="type" />
+    <specific name="_DisplayPowers"> ID_DCY1_POWER_WJ001 </specific>
+    <rules>
+      <statadd name="Speed" value="+5" />
+      <statadd name="Charisma" value="+2" type="racial" />
+      <statadd name="Stealth Misc" value="+2" type="racial" />
+      <statadd name="Bluff Misc" value="+2" type="racial" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Dexterity" />
+      <grant name="ID_DCY1_RACIAL_TRAIT_WJ01" type="Racial Trait" />
+      <grant name="ID_DCY1_POWER_WJ001" type="Power" />
+      <modify name="ID_DCY1_POWER_WBCF0" type="Power" Field="Animal Form" value="You turn into a medium jackal. In this form you have speed 8 and gain +2 to Stealth and Perception, you can only make Melee Basic attacks or use your Jackal's Bite power." />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Ability Scores" value="+2 Charisma, +2 Strength or +2 Dexterity" />
+      <modify name="ID_DCY1_RACE_WEREBEAST00" type="Race" Field="Skill Bonuses" value="+2 Stealth, +2 Bluff" />
+    </rules>
+
+Jackalweres can be found across the frontiers of humanoid lands; they seldom settle in cities. Though they are skilled hunters, jackalweres exult in deception and cunning as much as in the eventual kill. They are noted for establishing themselves in remote villages, frontier roadhouses, and isolated trading posts.
+	  
+RACIAL TRAITS
+
+  Ability Scores: +2 Charisma, +2 Strength or +2 Dexterity
+  Speed: 6 squares
+  Skill Bonuses: +2 Stealth, +2 Bluff
+
+  Fury of the Jackal: 
+    Once per encounter you can deal 1d6 additional damage to dazed, prone or helpless enemies.
+  
+  You have the Jackal's Bite racial power:
+</RulesElement>
+  <RulesElement name="Fury of the Jackal" type="Racial Trait" internal-id="ID_DCY1_RACIAL_TRAIT_WJ01" source="DC Homebrewed" revision-date="02/12/2011">
+    <specific name="Short Description"> Once per encounter you can deal 1d6 additional damage against dazed, prone and helpless enemies. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES" />
+Once per encounter you can deal 1d6 additional damage against dazed, prone and helpless enemies. This bonus increases to 2d6 at 11th level and 3d6 at 21st level.
+</RulesElement>
+  <RulesElement name="Jackal's Bite" type="Power" internal-id="ID_DCY1_POWER_WJ001" source="DC Homebrewed" revision-date="02/12/2011">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DCY1_RACIAL_TRAIT_JACKALWERE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Prereqs> Werebeast </Prereqs>
+    <Flavor> Feeding time! </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Jackalwere Racial Attack </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> One enemy </specific>
+    <specific name="Attack"> Primary ability score vs. Reflex </specific>
+    <specific name="Hit"> 2d6 + primary ability modifier damage and the target is knocked prone.
+Increase damage to 3d6 at 11th level, and 4d6 at 21st level. </specific>
+    <specific name="Special"> You can also use this attack when in your animal form, but not when in your humanoid form. Can also be used instead of a Melee Basic attack when charging. </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

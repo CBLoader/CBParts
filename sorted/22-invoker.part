@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.03</Version>
+    <Filename>22-invoker.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/22-invoker.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/22-invoker.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Invoker -->
+  <!-- 22-invoker.part, version 1.03 -->
+  <!-- Original release: 13-July-2011; Last modified: 18-May-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 21-July-2011 Spell Update.
+ Updated 18-May-2012 DSH added.
+</Changelog>
+<!-- Typos -->  
+   <RulesElement name="Blessing of the Storm Father" type="Power" internal-id="ID_FMP_POWER_11047" source="Dragon Magazine 383" revision-date="8/27/2010 11:57:45 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_127,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,16 </Category>
+      <Flavor> The enemy strikes you, but Kord girds you with the storm&apos;s power, ensuring you will stand fast to destroy those who offend you. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Invoker Utility 16 </specific>
+      <specific name="Keywords"> Divine </specific>
+      <specific name="Action Type"> Immediate Interrupt </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Trigger"> An enemy damages you with an attack </specific>
+      <specific name="Effect"> You gain temporary hit points equal to your healing surge value. Add the lightning and thunder damage types to the next attack you make before the end of your next turn. The power also gains those keywords. If the next attack you make before the end of your next turn hits the triggering enemy, it is dazed (save ends). </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_127 </specific>
+      <specific name="Level"> 16 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>  
+<!-- DSH -->
+  <RulesElement name="Admonition of Oghma" type="Power" internal-id="ID_FMP_POWER_16498" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_127,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,7 </Category>
+    <Flavor> A split-second view of the future flashes before you, revealing a threat to come. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Invoker Attack 7 </specific>
+    <specific name="Keywords"> Divine, Implement </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Trigger"> An enemy ends its turn within 5 squares of you. </specific>
+    <specific name="Target"> The triggering enemy </specific>
+    <specific name="Attack"> Wisdom vs. Reflex </specific>
+    <specific name="Hit"> 2d6 + Wisdom modifier damage, and the target is slowed until the end of its next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_127 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+Seekers of lost lore can be consumed by their work. They spend most of their waking hours entranced in the study of the items they seek, possibly due to a residual property of the magic that binds the items to ensure they are never forgotten. The god of knowledge opens a conduit to such seekers, compelling them to go out and retrieve the items rather than remain forever studying, with timely warnings to protect them during their travels.
+</RulesElement>
+</D20Rules>

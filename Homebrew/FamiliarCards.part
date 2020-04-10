@@ -1,0 +1,1748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>FamiliarCards.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/FamiliarCards.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/FamiliarCards.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Adds Familiar Cards with information to the Character Sheet -->
+  <!-- Coded by Tivaan -->
+  <RulesElement name="Tivaan's Familiar Cards" type="source" internal-id="ID_TIV_SOURCE_FAMILIAR_CARDS" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL" />
+    <specific name="Release Date"> 7/1/2011 </specific>
+  </RulesElement>
+  <!-- Bat Card -->
+  <AppendNodes name="Bat" type="Familiar" internal-id="ID_FMP_FAMILIAR_9" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-1" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Bat" type="Power" internal-id="ID_TIV_FAMILIAR-1" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Bats are common familiars for warlocks and those who prefer subtle magic and stealth. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks and Stealth checks. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> blindsight 5 </specific>
+    <specific name="See the Unseen"> As a minor action, you cause enemies adjacent to your bat familiar to lose the benefits of concealment (but not total concealment) against you until the end of your current turn. </specific>
+  </RulesElement>
+  <!-- Book Imp Card -->
+  <AppendNodes name="Book Imp" type="Familiar" internal-id="ID_FMP_FAMILIAR_10" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-2" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Book Imp" type="Power" internal-id="ID_TIV_FAMILIAR-2" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Book imps are masters of knowledge, dispatched by the powers of Hell to offer advice to and tempt mortal spellcasters. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana checks and History checks.
+You can read and speak Supernal.
+You gain resist fire 5. If you already have resist fire, increase your resistance by 2. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Deceptive Move"> As a minor action, you cause your book imp to become invisible until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Owl Card -->
+  <AppendNodes name="Owl" type="Familiar" internal-id="ID_FMP_FAMILIAR_11" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-3" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Owl" type="Power" internal-id="ID_TIV_FAMILIAR-3" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A common symbol of wisdom and knowledge, owl familiars are known for their good counsel and insight. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> Whenever you make an Insight check or Perception check, add 1d4 to the result. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Owl's Eyes"> As a standard action, you can see through your familiar's eyes until the end of your next turn. You do not gain the ability to cast spells or attack through the familiar, and you determine if a target has cover and concealment from you as normal, but you might spot an enemy coming around a corner, or notice a foe hiding behind a wall. </specific>
+  </RulesElement>
+  <!-- Bound Demon Card -->
+  <AppendNodes name="Bound Demon" type="Familiar" internal-id="ID_FMP_FAMILIAR_12" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-4" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Bound Demon" type="Power" internal-id="ID_TIV_FAMILIAR-4" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This ugly blob of flesh is a creature bound to your service, but it would prefer to be back in the Abyss. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Intimidate checks.
+You can read and speak Abyssal. </specific>
+    <specific name="Secondary Speed"> fly 3 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Alchemical Synergy"> Once per encounter, when you hit a bloodied creature adjacent to your bound demon, you gain 1d8 temporary hit points.
+Level 11: 2d8 temporary hit points.
+Level 21: 3d8 temporary hit points. </specific>
+  </RulesElement>
+  <!-- Crafter Homunculus Card -->
+  <AppendNodes name="Crafter Homunculus" type="Familiar" internal-id="ID_FMP_FAMILIAR_14" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-5" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Crafter Homunculus" type="Power" internal-id="ID_TIV_FAMILIAR-5" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This humanoid figure has indistinct features and looks like it's made of clay. Arcane crafters use homunculi as skilled assistants. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana checks.
+You gain a +2 bonus to skill checks related to rituals of the creation category. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Blood Feast"> An enemy adjacent to your crafter homunculus takes a -1 penalty to all defenses against alchemical items. Your crafter homunculus is immune to your alchemical items. </specific>
+  </RulesElement>
+  <!-- Dragonling Card -->
+  <AppendNodes name="Dragonling" type="Familiar" internal-id="ID_FMP_FAMILIAR_15" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-6" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Dragonling" type="Power" internal-id="ID_TIV_FAMILIAR-6" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This humanoid figure has indistinct features and looks like it's made of clay. Arcane crafters use homunculi as skilled assistants. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You can read and speak Draconic. When you spend a healing surge, you regain 2 additional hit points.
+Level 11: 3 additional hit points.
+Level 21: 4 additional hit points. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Dragon's Breath"> Once per encounter, you can use your dragonling's space as the origin square for a close blast arcane attack power. </specific>
+  </RulesElement>
+  <!-- Falcon Card -->
+  <AppendNodes name="Falcon" type="Familiar" internal-id="ID_FMP_FAMILIAR_16" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-7" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Falcon" type="Power" internal-id="ID_TIV_FAMILIAR-7" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Warrior spellcasters, those that love to wade into the fray, see the fighting falcon as the ideal familiar. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+You gain a +2 bonus to all defenses against opportunity attacks. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Hunting Falcon"> Once per encounter, you can determine range for your ranged arcane attacks from your falcon until the end of your current turn.
+(Soaring Spirit: A falcon familiar has a range limit of 40 squares from you.) </specific>
+  </RulesElement>
+  <!-- Rat Card -->
+  <AppendNodes name="Rat" type="Familiar" internal-id="ID_FMP_FAMILIAR_18" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-8" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Rat" type="Power" internal-id="ID_TIV_FAMILIAR-8" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> The rat is a scavenger capable of infiltrating even the most tightly guarded places. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Stealth checks. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Rat's Cunning"> A rat familiar can carry an object that weighs 2 pounds, and it can manipulate objects to make Thievery checks. It gains a +2 bonus to such checks. A rat gains a +5 bonus to its Stealth checks.</specific>
+  </RulesElement>
+  <!-- Raven Card -->
+  <AppendNodes name="Raven" type="Familiar" internal-id="ID_FMP_FAMILIAR_19" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-9" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Raven" type="Power" internal-id="ID_TIV_FAMILIAR-9" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Ravens are known for their keen senses and skill in uncovering hidden knowledge. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +4 bonus to Perception checks made to find hidden objects. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Raven's Speech"> A raven can speak any language you know, and it can converse with other creatures. When it speaks, you hear everything it says and hear everything spoken to it. You can dictate its answers if you so choose. </specific>
+  </RulesElement>
+  <!-- Cat Card -->
+  <AppendNodes name="Cat" type="Familiar" internal-id="ID_FMP_FAMILIAR_20" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-10" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Cat" type="Power" internal-id="ID_TIV_FAMILIAR-10" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Cats are known for their keen senses and skill in uncovering hidden knowledge. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Acrobatics checks, and you can make an Acrobatics check to reduce the damage you take from falling even if you are not trained in that skill. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Independent Spirit"> A cat familiar has no range limit on the distance it can exist away from you.
+(Silent Predator: A cat familiar gains a +5 bonus to its Stealth checks.) </specific>
+  </RulesElement>
+  <!-- Serpent Card -->
+  <AppendNodes name="Serpent" type="Familiar" internal-id="ID_FMP_FAMILIAR_21" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-11" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Serpent" type="Power" internal-id="ID_TIV_FAMILIAR-11" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> The serpent is a deceptive creature, and it offers its master the same mastery of guile and cunning. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks.
+When you shift, you can ignore 1 square of difficult terrain during that movement. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Serpent's Startle"> Once per encounter as a minor action, all creatures adjacent to your serpent familiar can't make opportunity attacks until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Spider Card -->
+  <AppendNodes name="Spider" type="Familiar" internal-id="ID_FMP_FAMILIAR_22" source="Arcane Power">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-12" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Spider" type="Power" internal-id="ID_TIV_FAMILIAR-12" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Spiders are guardians of hidden knowledge that weave webs capable of grabbing and moving small objects. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks to climb.
+Enemies take a -1 penalty to saving throws against your arcane powers that immobilize or slow them. </specific>
+    <specific name="Secondary Speed"> climb 4 </specific>
+    <specific name="Senses" />
+    <specific name="Spider's Web"> As a minor action, a spider can slide an object within 5 squares of it 2 squares. The object must be unattended, and it can weigh no more than 5 pounds. </specific>
+  </RulesElement>
+  <!-- Arcane Eye Card -->
+  <AppendNodes name="Arcane Eye" type="Familiar" internal-id="ID_FMP_FAMILIAR_23" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-13" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Arcane Eye" type="Power" internal-id="ID_TIV_FAMILIAR-13" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This hovering eyeball enhances your vision and sees in places you can't. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> fly 6 (hover) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+You gain a +2 bonus to skill checks for Scrying rituals. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="See All"> Once per encounter, you can determine range, line of sight, and line of effect for one ranged arcane implement attack from the eye, and you ignore concealment (but not total concealment) for that attack. </specific>
+  </RulesElement>
+  <!-- Badger Card -->
+  <AppendNodes name="Badger" type="Familiar" internal-id="ID_FMP_FAMILIAR_24" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-14" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Badger" type="Power" internal-id="ID_TIV_FAMILIAR-14" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Casters who want a stronger defense manifest badgers to protect them, as do those who are dangerous when they are hurt. </specific>
+    <specific name="Size"> Tiny </specific>
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Intimidate checks.
+You gain a +1 bonus to damage rolls while bloodied. This bonus increases to +2 at 11th level and +3 at 21st level. </specific>
+    <specific name="Secondary Speed"> burrow 2 </specific>
+    <specific name="Senses" />
+    <specific name="Devoted Minion"> If your badger is adjacent to you when you are hit by an attack, the badger is reduced to 0 hit points, and you reduce the damage you take by your Constitution modifier. </specific>
+  </RulesElement>
+  <!-- Canine Construct Card -->
+  <AppendNodes name="Canine Construct" type="Familiar" internal-id="ID_FMP_FAMILIAR_25" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-15" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Canine Construct" type="Power" internal-id="ID_TIV_FAMILIAR-15" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This dog-shaped familiar is a loyal, valiant guardian. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 7 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks.
+You gain a +2 bonus to skill checks for Warding rituals. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Tenacious Guard"> You gain resist 1 against ranged and melee attacks while adjacent to the canine construct. This increases to resist 2 at 11th level and resist 3 at 21st level. </specific>
+  </RulesElement>
+  <!-- Disembodied Hand Card -->
+  <AppendNodes name="Disembodied Hand" type="Familiar" internal-id="ID_FMP_FAMILIAR_26" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-16" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Disembodied Hand" type="Power" internal-id="ID_TIV_FAMILIAR-16" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This hand crawls around using its digits, and it can expertly manipulate items. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You can retrieve or stow an item as a free action instead of as a minor action. </specific>
+    <specific name="Secondary Speed"> climb 2 </specific>
+    <specific name="Senses" />
+    <specific name="Agile Digits"> A disembodied hand can open latches and turn knobs that require only one hand to operate. It can also manipulate objects to make Thievery checks. It gains a +2 bonus to such checks. </specific>
+  </RulesElement>
+  <!-- Fire Lizard Card -->
+  <AppendNodes name="Fire Lizard" type="Familiar" internal-id="ID_FMP_FAMILIAR_27" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-17" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Fire Lizard" type="Power" internal-id="ID_TIV_FAMILIAR-17" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> These blazing hot lizards are favored familiars for tieflings and pyromancers. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics and Endurance checks.
+You gain resist 5 fire. If you already have resist fire, increase it by 2. Your resist fire increases by 2 while you are bloodied. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Lizard's Immunity"> The fire lizard is immune to fire. </specific>
+  </RulesElement>
+  <!-- Lightning Lizard Card -->
+  <AppendNodes name="Lightning Lizard" type="Familiar" internal-id="ID_FMP_FAMILIAR_28" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-18" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Lightning Lizard" type="Power" internal-id="ID_TIV_FAMILIAR-18" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Storm sorcerers and other lightning-focused casters choose lightning lizards as familiars. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Acrobatics and Athletics checks.
+You gain resist 5 lightning. If you already have resist lightning, increase it by 2. Your resist lightning increases by 2 while you are bloodied. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Lizard's Immunity"> The lightning lizard is immune to lightning. </specific>
+  </RulesElement>
+  <!-- Ooze Card -->
+  <AppendNodes name="Ooze" type="Familiar" internal-id="ID_FMP_FAMILIAR_29" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-19" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Ooze" type="Power" internal-id="ID_TIV_FAMILIAR-19" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This colorful, blobby familiar is a boon to those who explore underground areas. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Dungeoneering checks.
+You gain resist 5 acid. If you already have resist acid, increase it by 2. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> tremorsense 5 </specific>
+    <specific name="Ooze's Malleability"> The ooze can squeeze through gaps as small as half an inch wide. </specific>
+  </RulesElement>
+  <!-- Parrot Card -->
+  <AppendNodes name="Parrot" type="Familiar" internal-id="ID_FMP_FAMILIAR_30" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-20" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Parrot" type="Power" internal-id="ID_TIV_FAMILIAR-20" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Social arcane casters prefer talkative parrot familiars. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Diplomacy and Streetwise checks. </specific>
+    <specific name="Secondary Speed"> fly 5 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Parrot's Speech"> A parrot can speak any language you know, and it can converse with other creatures. When it speaks, you hear everything it says and hear everything spoken to it. You can dictate its answers if you so choose. </specific>
+  </RulesElement>
+  <!-- Rootling Card -->
+  <AppendNodes name="Rootling" type="Familiar" internal-id="ID_FMP_FAMILIAR_31" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-21" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Rootling" type="Power" internal-id="ID_TIV_FAMILIAR-21" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A bundle of roots and twigs, a rootling shows its master's connection to the natural world. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Nature checks.
+You gain forest walk (you ignore difficult terrain if it's the result of trees, underbrush, plants, or natural growth). </specific>
+    <specific name="Secondary Speed"> climb 4 </specific>
+    <specific name="Senses" />
+    <specific name="Rootling Camouflage"> A rootling gains a +5 bonus to Stealth checks if it is in a forest or has concealment due to plants. </specific>
+  </RulesElement>
+  <!-- Scout Homunculus Card -->
+  <AppendNodes name="Scout Homunculus" type="Familiar" internal-id="ID_FMP_FAMILIAR_32" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-22" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Scout Homunculus" type="Power" internal-id="ID_TIV_FAMILIAR-22" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> With tiny wings, this homunculus can scout in elevated places. It is also used by casters who often scry. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Stealth.
+You gain a +2 bonus to skill checks for Scrying rituals. </specific>
+    <specific name="Secondary Speed"> fly 3 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Glamered Scout"> A scout homunculus rolls two d20s and takes the higher result for Stealth checks.
+(Independent Spirit: A scout homunculus can exist up to a mile away from you.) </specific>
+  </RulesElement>
+  <!-- Skull Card -->
+  <AppendNodes name="Skull" type="Familiar" internal-id="ID_FMP_FAMILIAR_33" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-23" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Skull" type="Power" internal-id="ID_TIV_FAMILIAR-23" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> An arcane character with a dark side might choose a skull as a familiar, drawing on its accumulated magical knowledge. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> fly 4 (hover) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana and Intimidate checks. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Skull's Gaze"> Once per encounter, you can gain a +2 bonus to an attack roll against a creature adjacent to the skull if you are using an arcane power with the fear keyword. </specific>
+  </RulesElement>
+  <!-- Toad Card -->
+  <AppendNodes name="Toad" type="Familiar" internal-id="ID_FMP_FAMILIAR_34" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-24" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Toad" type="Power" internal-id="ID_TIV_FAMILIAR-24" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Toughness and durability are tough to come by for most arcane practitioners, but a toad familiar can close the gap. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 3 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Endurance checks.
+You gain a +2 bonus to your healing surge value. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Toad's Healing"> Once per encounter, when an ally adjacent to the toad spends a healing surge, that ally regains 1d8 extra hit points. </specific>
+  </RulesElement>
+  <!-- Weasel Card -->
+  <AppendNodes name="Weasel" type="Familiar" internal-id="ID_FMP_FAMILIAR_35" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-25" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Weasel" type="Power" internal-id="ID_TIV_FAMILIAR-25" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Masters of weasel familiars are regarded as both quick-witted and quick-footed. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Acrobatics and Bluff checks. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Silent Predator"> A weasel gains a +5 bonus to Stealth checks.
+(Weasel's Sleekness: The weasel gains a +5 bonus to AC against opportunity attacks.) </specific>
+  </RulesElement>
+  <!-- Air Mephit Card -->
+  <AppendNodes name="Air Mephit" type="Familiar" internal-id="ID_FMP_FAMILIAR_36" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-26" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Air Mephit" type="Power" internal-id="ID_TIV_FAMILIAR-26" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A manifestation of air, this creature appears to be a miniature winged humanoid made entirely of swirling wind. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks.
+You can read and speak Primordial.
+You gain resist 5 lightning and resist 5 thunder. If you already resist one of those damage types, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 7 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Form of Air">  As a minor action, you can cause the air mephit to become invisible until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Arcane Wisp Card -->
+  <AppendNodes name="Arcane Wisp" type="Familiar" internal-id="ID_FMP_FAMILIAR_37" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-27" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Arcane Wisp" type="Power" internal-id="ID_TIV_FAMILIAR-27" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Fey pact warlocks and others who like to teleport choose these floating orbs of light as familiars. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> fly 8 (hover) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Stealth checks.
+When you teleport, add 1 to the distance you teleport. </specific>
+    <specific name="Secondary Speed"> fly 7 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Wisp's Escape"> The first time the arcane wisp is attacked in an encounter, it can teleport 5 squares as an immediate interrupt. </specific>
+  </RulesElement>
+  <!-- Beholderkin Card -->
+  <AppendNodes name="Beholderkin" type="Familiar" internal-id="ID_FMP_FAMILIAR_38" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-28" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Beholderkin" type="Power" internal-id="ID_TIV_FAMILIAR-28" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A spherical creature with a large central eye and a few eyes on stalks, the beholderkin is the chosen familiar of chaotic mages. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> fly 8 (hover) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+You can read and speak Deep Speech. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Beholderkin Eye Ray"> Once per encounter, you can have the beholder shoot an eye ray as a minor action. The beholderkin deals 1d10 damage to a creature within 5 squares of it. Roll 1d4 to determine the damage type: 1-acid, 2-fire, 3-necrotic, 4-poison. </specific>
+  </RulesElement>
+  <!-- Blackspawn Darkling Card -->
+  <AppendNodes name="Blackspawn Darkling" type="Familiar" internal-id="ID_FMP_FAMILIAR_39" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-29" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Blackspawn Darkling" type="Power" internal-id="ID_TIV_FAMILIAR-29" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This reptilian familiar has two curving horns and black scales. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 8 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Stealth checks.
+You can read and speak Draconic.
+You gain resist 5 acid. If you already have resist acid, increase it by 2. </specific>
+    <specific name="Secondary Speed"> (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Blackspawn Stealth"> The blackspawn darkling gains a +5 bonus to Stealth checks. </specific>
+  </RulesElement>
+  <!-- Bluespawn Nimblespark Card -->
+  <AppendNodes name="Bluespawn Nimblespark" type="Familiar" internal-id="ID_FMP_FAMILIAR_40" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-30" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Bluespawn Nimblespark" type="Power" internal-id="ID_TIV_FAMILIAR-30" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A single prominent horn juts from this reptile's snout, and its blue scales carry a static charge. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics and Nature checks.
+You can read and speak Draconic.
+You gain resist 5 lightning. If you already have resist lightning, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Bluespawn Shock"> If the bluespawn is hit by an attack, the creature that hit it takes 2d6 lightning damage. </specific>
+  </RulesElement>
+  <!-- Earth Mephit Card -->
+  <AppendNodes name="Earth Mephit" type="Familiar" internal-id="ID_FMP_FAMILIAR_41" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-31" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Earth Mephit" type="Power" internal-id="ID_TIV_FAMILIAR-31" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A manifestation of air, this creature appears to be a miniature winged humanoid made entirely of swirling wind. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff and Endurance checks.
+You can read and speak Primordial.
+When you would be pushed, pulled, or slid, reduce the forced movement by 1 square. </specific>
+    <specific name="Secondary Speed"> fly 4 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Form of Earth"> Once per encounter as a minor action, you can cause the earth mephit to enlarge into a stone statue. It gains resist 20 all and occupies the square until the end of your next turn. You can use this ability only if the mephit is in an unoccupied square. </specific>
+  </RulesElement>
+  <!-- Fire Mephit Card -->
+  <AppendNodes name="Fire Mephit" type="Familiar" internal-id="ID_FMP_FAMILIAR_42" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-32" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Fire Mephit" type="Power" internal-id="ID_TIV_FAMILIAR-32" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> These tiny, winged, humanoids are manifested by spellcasters who like to play with fire. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks.
+You can read and speak Primordial.
+You gain resist 5 fire. If you already have resist fire, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Form of Fire"> As a minor action, you can cause the fire mephit to glow or to stop glowing. While glowing, it sheds bright light in its square and in a 10-square radius. </specific>
+  </RulesElement>
+  <!-- Grayspawn Shortfang Card -->
+  <AppendNodes name="Grayspawn Shortfang" type="Familiar" internal-id="ID_FMP_FAMILIAR_43" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-33" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Grayspawn Shortfang" type="Power" internal-id="ID_TIV_FAMILIAR-33" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Spiky projections cover this familiar's body, and its tail is tipped with two long spikes. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 7 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana and Intimidate checks.
+You can read and speak Draconic.
+You gain resist 5 acid. If you already have resist acid, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Grayspawn Toughness"> A grayspawn gains a +2 bonus to all defenses. </specific>
+  </RulesElement>
+  <!-- Greenspawn Banespeak Card -->
+  <AppendNodes name="Greenspawn Banespeak" type="Familiar" internal-id="ID_FMP_FAMILIAR_44" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-34" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Greenspawn Banespeak" type="Power" internal-id="ID_TIV_FAMILIAR-34" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This green-scaled reptile's head is crested with several long spines, and its body is lithe and agile. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 8 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks.
+You can read and speak Draconic.
+You gain resist 5 poison. If you already have resist poison, increase it by 2. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Greenspawn's Diversion"> Once per encounter as a minor action, you can make a Bluff check against the passive Insight of an enemy adjacent to the greenspawn. If successful, you gain combat advantage against the target on your next attack made before the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Ice Mephit Card -->
+  <AppendNodes name="Ice Mephit" type="Familiar" internal-id="ID_FMP_FAMILIAR_45" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-35" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Ice Mephit" type="Power" internal-id="ID_TIV_FAMILIAR-35" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This crystalline humanoid looks like it's made of ice, and its tiny wings shed ice crystals as they flap. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks.
+You can read and speak Primordial.
+You gain resist 5 cold. If you already have resist cold, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 4 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Form of Ice"> Once per encounter as a minor action, you can cause the ice mephit's square and each adjacent square to become difficult terrain until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Rakshasa Claw Card -->
+  <AppendNodes name="Rakshasa Claw" type="Familiar" internal-id="ID_FMP_FAMILIAR_46" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-36" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Rakshasa Claw" type="Power" internal-id="ID_TIV_FAMILIAR-36" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This gnarled, furred hand has long talons and is a favored familiar for those who want to pierce illusions. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 7 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana checks.
+You gain a +5 bonus to Insight checks to recognize effects as illusory.
+You can retrieve or stow an item as a free action instead of as a minor action. </specific>
+    <specific name="Secondary Speed"> climb 3 </specific>
+    <specific name="Senses" />
+    <specific name="Agile Digits"> A rakshasa claw can open latches and turn knobs that require only one hand to operate. It can also manipulate objects to make Thievery checks. It gains a +2 bonus to such checks. </specific>
+  </RulesElement>
+  <!-- Redspawn Spirfire Card -->
+  <AppendNodes name="Redspawn Spirfire" type="Familiar" internal-id="ID_FMP_FAMILIAR_47" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-37" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Redspawn Spirfire" type="Power" internal-id="ID_TIV_FAMILIAR-37" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This reptilian familiar is hot to the touch, and it has red scales. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Intimidate checks.
+You can read and speak Draconic.
+You gain resist 5 fire. If you already have resist fire, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 5 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Redspawn Toughness"> A redspawn gains a +2 bonus to all defenses. </specific>
+  </RulesElement>
+  <!-- Stone Fowl Card -->
+  <AppendNodes name="Stone Fowl" type="Familiar" internal-id="ID_FMP_FAMILIAR_48" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-38" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Stone Fowl" type="Power" internal-id="ID_TIV_FAMILIAR-38" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Similar in appearance to a cockatrice, this familiar helps you resist the effects of poisons or petrification. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Dungeoneering checks.
+You gain resist 5 poison. If you already have resist poison, increase it by 2. </specific>
+    <specific name="Secondary Speed"> fly 2 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Cockatrice's Defense"> Once per encounter, when you make a saving throw against a slowed, immobilized, or petrified effect while adjacent to the stone fowl, you gain a +5 power bonus to the saving throw. </specific>
+  </RulesElement>
+  <!-- Whitespawn Snowstepper Card -->
+  <AppendNodes name="Whitespawn Snowstepper" type="Familiar" internal-id="ID_FMP_FAMILIAR_49" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-39" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Whitespawn Snowstepper" type="Power" internal-id="ID_TIV_FAMILIAR-39" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Ice crystals cake this reptile's white scales, and a thin sheet of ice coats anything it perches upon. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 7 (ice walk) </specific>
+    <specific name="Constant Benefits"> You can read and speak Draconic.
+You gain resist 5 cold. If you already have resist cold, increase it by 2.
+You gain ice walk (you ignore difficult terrain caused by snow and ice). </specific>
+    <specific name="Secondary Speed"> fly 3 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Whitespawn Minion"> If the whitespawn is adjacent to you when you are hit by an attack, you can reduce the amount of damage you take by 5+ your Constitution modifier. If you do so, the whitespawn drops to 0 hit points. If the damage is cold damage, you reduce the damage by 10 + your Constitution modifier. </specific>
+  </RulesElement>
+  <!-- Blazing Skull Card -->
+  <AppendNodes name="Blazing Skull" type="Familiar" internal-id="ID_FMP_FAMILIAR_50" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-40" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Blazing Skull" type="Power" internal-id="ID_TIV_FAMILIAR-40" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This skull is wreathed in fire and holds knowledge about many things - mostly flammable things. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> fly 10 (hover) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana and Stealth checks.
+You gain resist 5 fire. If you already have resist fire, increase it by 2. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Skull's Gaze"> Once per encounter, you can gain a +2 bonus to an attack roll against a creature adjacent to the skull if you are using an arcane power with the fear or fire keyword.
+(Fire Light: As a minor action, you can cause the blazing skull to glow or to stop glowing. While glowing, it sheds bright light in its square and in a 20-square radius.) </specific>
+  </RulesElement>
+  <!-- Chaos Shard Card -->
+  <AppendNodes name="Chaos Shard" type="Familiar" internal-id="ID_FMP_FAMILIAR_51" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-41" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Chaos Shard" type="Power" internal-id="ID_TIV_FAMILIAR-41" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> It's said a chaos shard is a portion of its master's mind warped into a spirit form, but no master has ever confirmed this. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> fly 6 (hover) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana checks.
+You gain a +2 bonus to saving throws against the dominated condition. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> blindsight 3 </specific>
+    <specific name="Chaos Echo"> Once per encounter when you make an area or close attack, you can choose a creature within 5 squares of the chaos shard to also be a target for the attack. </specific>
+  </RulesElement>
+  <!-- Gibbering Pet Card -->
+  <AppendNodes name="Gibbering Pet" type="Familiar" internal-id="ID_FMP_FAMILIAR_52" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-42" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Gibbering Pet" type="Power" internal-id="ID_TIV_FAMILIAR-42" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This lump of flesh has dozens of tiny eyes and mouths that constantly reshape and reform across its surface. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> At the end of each extended rest, roll 1d4 to determine a language you can read and speak. Then roll 1d4 two more times to determine two skills to which you gain a +2 bonus (reroll if the same skill shows up twice). All benefits last until your next extended rest.
+1	Deep Speech and Bluff
+2	Primordial and Diplomacy
+3	Supernal and Intimidate
+4	Abyssal and Streetwise  </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> all-around vision </specific>
+    <specific name="Gibbering Utterances"> When a creature makes an attack that includes the gibbering pet, it takes a -2 penalty to all attack rolls on that attack. </specific>
+  </RulesElement>
+  <!-- Shadow Incarnate Card -->
+  <AppendNodes name="Shadow Incarnate" type="Familiar" internal-id="ID_FMP_FAMILIAR_53" source="Dragon Magazine 374">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-43" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Shadow Incarnate" type="Power" internal-id="ID_TIV_FAMILIAR-43" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Your own shadow moves independently from you and can even separate to move on its own. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 8 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Stealth checks.
+You gain darkvision.  </specific>
+    <specific name="Secondary Speed"> fly 8 (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Shadow Shroud"> Any square the shadow occupies is lightly obscured.
+(Shadowcast: Once per encounter as a minor action, you can determine range, line of sight, and line of effect for your arcane attacks from your shadow until the end of your current turn.) </specific>
+  </RulesElement>
+  <!-- Oso de la Fez, Former Show Bear Card -->
+  <AppendNodes name="Oso de la Fez, Former Show Bear" type="Familiar" internal-id="ID_FMP_FAMILIAR_55" source="Dragon Magazine 376">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-44" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Oso de la Fez, Former Show Bear" type="Power" internal-id="ID_TIV_FAMILIAR-44" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Balanced atop his ball, wearing his small, red fez, this bear seems the picture of innocence-until he bellows with fury and lashes at enemies who mock him with his razor-sharp claws. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> Grrrrrr: You gain a +2 bonus on Intimidate checks.  </specific>
+    <specific name="Secondary Speed"> fly 4 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="His Own Bear"> Oso can speak any language you know, and can converse with other creatures. Unlike mere familiars, you can't hear everything Oso hears and says unless Oso lets you, and you would never be able to tell Oso what to say.</specific>
+  </RulesElement>
+  <!-- Bantam Fastieth Card -->
+  <AppendNodes name="Bantam Fastieth" type="Familiar" internal-id="ID_FMP_FAMILIAR_56" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-45" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Bantam Fastieth" type="Power" internal-id="ID_TIV_FAMILIAR-45" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A bipedal lizard with powerful running legs, this creature is a smaller cousin of the Talenta mount. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 8 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks to jump.
+You can make a running jump after moving only 1 square.  </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Fastieth Activity"> When you use a move action for any reason, you can move the bantam fastieth its speed.
+(Running Companion: When you start your turn adjacent to your familiar, you gain a +2 bonus to speed until the end of your turn.) </specific>
+  </RulesElement>
+  <!-- Bloodthorn Vine Barb Card -->
+  <AppendNodes name="Bloodthorn Vine Barb" type="Familiar" internal-id="ID_FMP_FAMILIAR_57" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-46" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Bloodthorn Vine Barb" type="Power" internal-id="ID_TIV_FAMILIAR-46" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Inhabitants of Xen'drik sometimes transform the island's deadly vegetation into companions. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Heal checks.
+You gain forest walk (you ignore difficult terrain if it's the result of trees, underbrush, plants, or natural growth). </specific>
+    <specific name="Secondary Speed"> (forest walk) </specific>
+    <specific name="Senses" />
+    <specific name="Bloodthorn Drain"> Once per encounter as a free action, when you deal damage to an enemy adjacent to your bloodthorn vine barb, you gain 3 temporary hit points.
+Level 11: 6 temporary hit points.
+Level 21: 9 temporary hit points. </specific>
+  </RulesElement>
+  <!-- Clockwork Scorpion Card -->
+  <AppendNodes name="Clockwork Scorpion" type="Familiar" internal-id="ID_FMP_FAMILIAR_58" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-47" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Clockwork Scorpion" type="Power" internal-id="ID_TIV_FAMILIAR-47" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> With a metallic clattering, this construct scuttles along beside you, stinger raised to inject its stored venom. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to attack rolls to grab an enemy.
+The clockwork scorpion contains a small reservoir that can store 1 dose of a poison or alchemical oil that you can apply to a weapon. You can refill it during a rest. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> tremorsense 5 </specific>
+    <specific name="Scorpion's Injection"> Once per encounter, when you or an ally hits an enemy adjacent to the clockwork scorpion with a weapon attack, that attack benefits from the effect of the stored substance, which is consumed. </specific>
+  </RulesElement>
+  <!-- Dragonmark Reflection Card -->
+  <AppendNodes name="Dragonmark Reflection" type="Familiar" internal-id="ID_FMP_FAMILIAR_59" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-48" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Dragonmark Reflection" type="Power" internal-id="ID_TIV_FAMILIAR-48" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This tattoolike familiar is in the image of its master's Mark of Making, and it overlays the Mark of Making while passive. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You can perform the Arcane Mark ritual as a standard action for no cost, and other creation rituals require half the normal time for you.
+You can create alchemical items one level higher than your level. </specific>
+    <specific name="Secondary Speed"> fly 5 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Infuse Mark"> When you use healing infusion on an ally adjacent to your dragonmark reflection, that ally regains 2 additional hit points (if you are using curative admixture) or gains 4 additional temporary hit points when the ally ends the AC bonus (if you are using resistive formula).
+Level 11: 3 additional hit points or 6 additional temporary hit points.
+Level 21: 4 additional hit points or 8 additional temporary hit points. </specific>
+  </RulesElement>
+  <!-- Floating Weapon Card -->
+  <AppendNodes name="Floating Weapon" type="Familiar" internal-id="ID_FMP_FAMILIAR_60" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-49" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Floating Weapon" type="Power" internal-id="ID_TIV_FAMILIAR-49" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> An animate weapon hovers nearby to threaten your foes. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 0 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff and Intimidate checks. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Defensive Stance"> The floating weapon has a +2 bonus to all defenses.
+(Offensive Partner: When you hit an enemy adjacent to the floating weapon with a weapon attack, you can shift 1 square.) </specific>
+  </RulesElement>
+  <!-- Gadfly Card -->
+  <AppendNodes name="Gadfly" type="Familiar" internal-id="ID_FMP_FAMILIAR_61" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-50" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Gadfly" type="Power" internal-id="ID_TIV_FAMILIAR-50" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This wee buzzing creation alerts your guardian to an incoming threat. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 0 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+You gain a +2 bonus to skill checks for warding rituals. </specific>
+    <specific name="Secondary Speed"> fly 6 </specific>
+    <specific name="Senses" />
+    <specific name="Gadfly's Bite"> Any summoned ally adjacent to the gadfly gains a +2 bonus to attack rolls on opportunity attacks. </specific>
+  </RulesElement>
+  <!-- Magpie Card -->
+  <AppendNodes name="Magpie" type="Familiar" internal-id="ID_FMP_FAMILIAR_62" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-51" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Magpie" type="Power" internal-id="ID_TIV_FAMILIAR-51" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Natural thieves, these glossy black-and-white birds are the preferred companions of larcenous arcanists. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception and Thievery checks. </specific>
+    <specific name="Secondary Speed"> fly 6 </specific>
+    <specific name="Senses" />
+    <specific name="Thieving Magpie"> A magpie can make Thievery checks to pick pockets or use sleight of hand. It gains a +2 bonus to such checks. </specific>
+  </RulesElement>
+  <!-- Marmoset Card -->
+  <AppendNodes name="Marmoset" type="Familiar" internal-id="ID_FMP_FAMILIAR_63" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-52" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Marmoset" type="Power" internal-id="ID_TIV_FAMILIAR-52" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Some artificers seek these clever creatures from Xen'drik forests for their nimbleness and manual dexterity. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Acrobatics checks.
+You gain a +2 bonus to skill checks for exploration rituals. </specific>
+    <specific name="Secondary Speed"> climb 6 </specific>
+    <specific name="Senses" />
+    <specific name="Monkey Business"> A marmoset can make Thievery checks to open locks or disable traps, gaining a +2 bonus to such checks. It can manipulate thieves' tools to gain an additional +2 bonus to such checks. </specific>
+  </RulesElement>
+  <!-- Octopus Card -->
+  <AppendNodes name="Octopus" type="Familiar" internal-id="ID_FMP_FAMILIAR_64" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-53" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Octopus" type="Power" internal-id="ID_TIV_FAMILIAR-53" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A master of camouflage that can squeeze into tiny spaces, an octopus is an ideal spy and assistant, especially to reavers of the Lhazaar Principalities. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Stealth checks.
+You can go 6 minutes before you must make Endurance checks to hold your breath, and you gain a +5 bonus to such checks. </specific>
+    <specific name="Secondary Speed"> swim 6 (aquatic) </specific>
+    <specific name="Senses" />
+    <specific name="Octopus's Flexibility"> An octopus can squeeze through gaps as small as half an inch wide.
+(Aquatic: While underwater, an octopus has a +5 bonus to Stealth checks.) </specific>
+  </RulesElement>
+  <!-- Saddle Squire Card -->
+  <AppendNodes name="Saddle Squire" type="Familiar" internal-id="ID_FMP_FAMILIAR_65" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-54" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Saddle Squire" type="Power" internal-id="ID_TIV_FAMILIAR-54" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This tiny construct assistant resembles a jockey and carries a replica saddle on its back. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Nature checks.
+While you are mounted, your mount gains a +1 bonus to its speed. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Saddle Assistance"> As a minor action, you can mount or dismount a friendly mount adjacent to the saddle squire. </specific>
+  </RulesElement>
+  <!-- Soarwood Wings Card -->
+  <AppendNodes name="Soarwood Wings" type="Familiar" internal-id="ID_FMP_FAMILIAR_66" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-55" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Soarwood Wings" type="Power" internal-id="ID_TIV_FAMILIAR-55" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This animated set of wings clings to your back like a newly emerged butterfly. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks to jump.
+You gain a +1 bonus to your fly speed, when you have one. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Soarwood Lift"> Once per encounter as a move action, your soarwood wings fly an adjacent ally (or you, if you are adjacent) up to 6 squares, then lower the creature gently to the ground. </specific>
+  </RulesElement>
+  <!-- Summoner Homunculus Card -->
+  <AppendNodes name="Summoner Homunculus" type="Familiar" internal-id="ID_FMP_FAMILIAR_67" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-56" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Summoner Homunculus" type="Power" internal-id="ID_TIV_FAMILIAR-56" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This entity is a collection of sprockets and wire that can spur on summoned creatures. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Endurance checks.
+You can perform the Unseen Servant ritual as a standard action for no cost, when you have no extant unseen servants. You do not need to master the ritual to use this benefit. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Infuse Summoned"> Any creature you have summoned gains a +1 bonus to all defenses and to attack rolls while adjacent to the summoner homunculus. </specific>
+  </RulesElement>
+  <!-- Tome Caddy Card -->
+  <AppendNodes name="Tome Caddy" type="Familiar" internal-id="ID_FMP_FAMILIAR_68" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-57" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Tome Caddy" type="Power" internal-id="ID_TIV_FAMILIAR-57" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> The bent form of this tiny construct assistant supports a lectern. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana and Dungeoneering checks.
+You can wield a tome in place of another kind of arcane implement you can use. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Book Bearer"> You can wield a tome as an implement without occupying either of your hands.
+Summons Focus: Any creature you have summoned gains a +2 bonus to damage rolls while adjacent to the tome caddy.
+Level 11: +3 bonus.
+Level 21: +4 bonus. </specific>
+  </RulesElement>
+  <!-- Warforged Faceplate Card -->
+  <AppendNodes name="Warforged Faceplate" type="Familiar" internal-id="ID_FMP_FAMILIAR_69" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-58" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Warforged Faceplate" type="Power" internal-id="ID_TIV_FAMILIAR-58" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This tiny construct resembles the armored face of a warforged, and it clings to you with multiple jointed appendages. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Intimidate checks.
+You gain a +2 bonus to saving throws against ongoing damage. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Warforged Watchfulness"> While you are asleep, a warforged faceplate remains aware of its surroundings, allowing you to notice approaching enemies and other events as though you were awake. </specific>
+  </RulesElement>
+  <!-- Ambush Vine Shoot Card -->
+  <AppendNodes name="Ambush Vine Shoot" type="Familiar" internal-id="ID_FMP_FAMILIAR_70" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-59" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Ambush Vine Shoot" type="Power" internal-id="ID_TIV_FAMILIAR-59" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Inhabitants of the Xen'drik jungles bond with this climbing plant to exploit that environment's hazards. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks.
+When you climb or swim, add 1 to the distance you move on a successful Athletics check. </specific>
+    <specific name="Secondary Speed"> burrow 6 </specific>
+    <specific name="Senses"> tremorsense 5 </specific>
+    <specific name="Vine's Clasp"> Enemies take a -2 penalty to saving throws to end the immobilized or restrained conditions while adjacent to the ambush vine shoot. </specific>
+  </RulesElement>
+  <!-- Crawling Clot Card -->
+  <AppendNodes name="Crawling Clot" type="Familiar" internal-id="ID_FMP_FAMILIAR_71" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-60" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Crawling Clot" type="Power" internal-id="ID_TIV_FAMILIAR-60" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Favored by the Blood of Vol, this strange companion is crafted from blood collected during the cult's sacraments. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Heal checks.
+You gain resist 5 necrotic. If you already have resist necrotic, increase it by 2. Your resist necrotic increases by 2 while you are bloodied. </specific>
+    <specific name="Secondary Speed"> climb 4 (spider climb) </specific>
+    <specific name="Senses" />
+    <specific name="Clotting Factor"> Once per day, if your crawling clot is adjacent to you or an ally when that character takes damage, you can allow your crawling clot to be destroyed so that character can spend a healing surge. </specific>
+  </RulesElement>
+  <!-- Dimensional Pet Card -->
+  <AppendNodes name="Dimensional Pet" type="Familiar" internal-id="ID_FMP_FAMILIAR_72" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-61" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Dimensional Pet" type="Power" internal-id="ID_TIV_FAMILIAR-61" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> You imbue a homunculus with an elemental spirit that grants a bit of control over the space around you. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You can read and speak Primordial.
+When you teleport, add 1 to the distance you teleport. </specific>
+    <specific name="Secondary Speed"> climb 4 (spider climb) </specific>
+    <specific name="Senses" />
+    <specific name="Dimensional Lock"> Once per encounter as an immediate interrupt, you can negate an attempt to teleport made by a creature adjacent to the dimensional pet. That creature cannot teleport again until the start of its next turn. </specific>
+  </RulesElement>
+  <!-- Living Infusion Card -->
+  <AppendNodes name="Living Infusion" type="Familiar" internal-id="ID_FMP_FAMILIAR_73" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-62" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Living Infusion" type="Power" internal-id="ID_TIV_FAMILIAR-62" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> The bulging body of this strange homunculus resembles a flask. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Heal checks.
+You can perform rituals of the restoration category in half the casting time. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Mobile Infusion"> If the living infusion is adjacent to the target of your healing infusion, each ally adjacent to the target also regains 1d6 hit points.
+Level 21: 2d6 hit points. </specific>
+  </RulesElement>
+  <!-- Minor Foulspawn Card -->
+  <AppendNodes name="Minor Foulspawn" type="Familiar" internal-id="ID_FMP_FAMILIAR_74" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-63" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Minor Foulspawn" type="Power" internal-id="ID_TIV_FAMILIAR-63" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This horror of Xoriat resembles an inside-out cat with three eyes and two mouths. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Dungeoneering checks.
+You gain a +2 bonus to saving throws against fear effects. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Foulspawn Babble"> Once per encounter as a free action, you can deal 1d10 extra psychic damage to a target adjacent to your minor foulspawn that you hit with an arcane attack power.
+Level 21: 2d10 extra psychic damage. </specific>
+  </RulesElement>
+  <!-- Smith's Hammer Card -->
+  <AppendNodes name="Smith's Hammer" type="Familiar" internal-id="ID_FMP_FAMILIAR_75" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-64" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Smith's Hammer" type="Power" internal-id="ID_TIV_FAMILIAR-64" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This fine crafting tool assists in performing impromptu repairs or upkeep. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> If you are an artificer, you begin each day with an additional use of your Arcane Empowerment class feature. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Hammer's Ring"> Once per encounter as an immediate interrupt, when an enemy makes an attack against you or an ally adjacent to your smith's hammer, you can grant a +2 bonus to a single defense of that character against the triggering attack. If the ally is a construct, the bonus increases to +3. Your smith's hammer is destroyed. </specific>
+  </RulesElement>
+  <!-- Tinker Feyling Card -->
+  <AppendNodes name="Tinker Feyling" type="Familiar" internal-id="ID_FMP_FAMILIAR_76" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-65" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Tinker Feyling" type="Power" internal-id="ID_TIV_FAMILIAR-65" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This diminutive sprite has a natural touch with magic items, making it a favorite of artificers. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff and Thievery checks. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Feyling's Reservoir"> You can use your Arcane Empowerment class feature as a minor action to empower a weapon adjacent to the feyling. This does not grant you any additional uses of Arcane Empowerment. </specific>
+  </RulesElement>
+  <!-- Lingering Nightmare Card -->
+  <AppendNodes name="Lingering Nightmare" type="Familiar" internal-id="ID_FMP_FAMILIAR_77" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-66" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Lingering Nightmare" type="Power" internal-id="ID_TIV_FAMILIAR-66" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Willing servants of the Dreaming Dark sometimes retain a memory of the quori that previously possessed them. That nightmare residue floats like a small cloud nearby, shimmering with its master's changing mood. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Intimidate checks.
+You gain resist 5 psychic. If you already have resist psychic, increase the resistance by 2. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Nightmare Voice"> When you hit an enemy adjacent to the lingering nightmare with a fear attack, roll 1d4 to determine the additional effect, which lasts until the end of your next turn.
+1: The target is slowed.
+2: The target takes a -2 penalty to Will.
+3: The target grants combat advantage.
+4. The target takes a -2 penalty to attack rolls. </specific>
+  </RulesElement>
+  <!-- Silver Lamp Card -->
+  <AppendNodes name="Silver Lamp" type="Familiar" internal-id="ID_FMP_FAMILIAR_78" source="Dragon Magazine 377">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-67" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Silver Lamp" type="Power" internal-id="ID_TIV_FAMILIAR-67" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This floating censerlike lantern contains a mystic reflection of the Silver Flame. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 0 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Religion and Arcana checks.
+You gain a +2 bonus to saving throws against effects created by demons. </specific>
+    <specific name="Secondary Speed"> fly 8 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Silver Beams"> As a minor action, you can cause the silver lamp to glow or to stop glowing. While glowing, it sheds bright light in its square and in a 10-square radius.
+(Glory of the Silver Flame: Once per encounter as a free action, you can deal 2d8 extra radiant damage to a demon target within the silver lamp's light that you hit with an arcane attack power.) </specific>
+  </RulesElement>
+  <!-- Muse Sprite Card -->
+  <AppendNodes name="Muse Sprite" type="Familiar" internal-id="ID_FMP_FAMILIAR_79" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-68" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Muse Sprite" type="Power" internal-id="ID_TIV_FAMILIAR-68" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> The muse sprite is a small glowing humanoid creature with gossamer wings, and it serves you as a councilor and a messenger. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Diplomacy checks.
+The muse sprite radiates dim light in a 2-square radius. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Bearer of News"> The muse sprite can deliver a short written message to someone up to 5 miles away for you.
+(Insightful Councilor: Once per milestone, when you make an Arcana, Nature, or History check, you can roll two d20s and take the higher roll.) </specific>
+  </RulesElement>
+  <!-- White-Eyed Crow Card -->
+  <AppendNodes name="White-Eyed Crow" type="Familiar" internal-id="ID_FMP_FAMILIAR_80" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-69" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: White-Eyed Crow" type="Power" internal-id="ID_TIV_FAMILIAR-69" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A white-eyed crow has stark white eyes, without pupils, but it is not blind. This small black bird sees more than any mortal creature. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You can't be surprised. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Fate's Agent"> When you spend an action point to make an attack, you can reroll one missed attack roll against a target of that attack if that target is adjacent to the white-eyed crow. </specific>
+  </RulesElement>
+  <!-- Gallant Hawk Card -->
+  <AppendNodes name="Gallant Hawk" type="Familiar" internal-id="ID_FMP_FAMILIAR_81" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-70" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Gallant Hawk" type="Power" internal-id="ID_TIV_FAMILIAR-70" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Noble hawks with sable wings and a white breast in the form of a shield, gallant hawk spirits have a form of raptor beauty whether at the glove or in flight. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+While a creature marked by you is adjacent to you, it takes a -3 penalty to attack rolls on attacks that don't include you as a target instead of the normal -2 from being marked. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Gallant's Call"> Once per milestone, as a minor action, you can mark each creature adjacent to the gallant hawk (save ends). </specific>
+  </RulesElement>
+  <!-- Moon Wisp Card -->
+  <AppendNodes name="Moon Wisp" type="Familiar" internal-id="ID_FMP_FAMILIAR_82" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-71" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Moon Wisp" type="Power" internal-id="ID_TIV_FAMILIAR-71" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> These wisps of pale moonlight move to and fro through the night like a luminous tadpole in a wine-dark sea. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 0 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana and Nature checks.
+The moon wisp radiates dim or bright light in a radius from 2 to 10 squares. You can change the details as a minor action, but it defaults to dim light in a 2-square radius. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Moon Bite"> Once per milestone, as a minor action, the moon's light reveals truth. Until the end of your next turn, attacks against any creature within 2 squares of the moon wisp do not take the -2 penalty from concealment. </specific>
+  </RulesElement>
+  <!-- Specter Card -->
+  <AppendNodes name="Specter" type="Familiar" internal-id="ID_FMP_FAMILIAR_83" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-72" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Specter" type="Power" internal-id="ID_TIV_FAMILIAR-72" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> You have touched the Shadowfell and lived to speak of it. You even brought back a souvenir. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 0 </specific>
+    <specific name="Constant Benefits"> You gain a +4 bonus to monster knowledge checks to identify undead creatures.
+You gain resist 5 necrotic. If already have resist necrotic, increase the resistance by 2.</specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Incorporeal"> The specter has phasing and does not provoke opportunity attacks.
+Undead: The specter is immune to necrotic damage. </specific>
+  </RulesElement>
+  <!-- Least Air Elemental Card -->
+  <AppendNodes name="Least Air Elemental" type="Familiar" internal-id="ID_FMP_FAMILIAR_84" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-73" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Least Air Elemental" type="Power" internal-id="ID_TIV_FAMILIAR-73" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A wisp of air from the Elemental Chaos does your bidding on the mortal plane. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 0 </specific>
+    <specific name="Constant Benefits"> You take half normal damage from falling.</specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses" />
+    <specific name="Elemental Servant"> As a minor action, you cause the familiar to pick up, move, or manipulate an unattended object weighing 20 pounds or less and carry it up to 5 squares. </specific>
+  </RulesElement>
+  <!-- Tiny Gelatinous Cube Card -->
+  <AppendNodes name="Tiny Gelatinous Cube" type="Familiar" internal-id="ID_FMP_FAMILIAR_85" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-74" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Tiny Gelatinous Cube" type="Power" internal-id="ID_TIV_FAMILIAR-74" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This palm-sized ooze tickles you with its weak acid. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain resist 5 acid. If you already have resist acid, increase the resistance by 2.</specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Cleaning"> The familiar consumes nonliving organic objects that it touches at a rate of 1 pound of material per round.
+(Transparent: The familiar is invisible.) </specific>
+  </RulesElement>
+  <!-- Least Earth Elemental Card -->
+  <AppendNodes name="Least Earth Elemental" type="Familiar" internal-id="ID_FMP_FAMILIAR_86" source="Dragon Magazine 382">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-75" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Least Earth Elemental" type="Power" internal-id="ID_TIV_FAMILIAR-75" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A small creature made of earth and stone lumbers along as you command. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> When an attack knocks you prone, you can make a saving throw to avoid falling prone.</specific>
+    <specific name="Secondary Speed"> burrow 6 </specific>
+    <specific name="Senses" />
+    <specific name="Special"> You and the least earth elemental can clearly see creatures and objects in the same square as the least earth elemental, even if they are invisible, obscured, or outside line of effect, but they and the least earth elemental must be in contact with the ground or the same substance, such as water or a web. </specific>
+  </RulesElement>
+  <!-- Fiddling Grig Card -->
+  <AppendNodes name="Fiddling Grig" type="Familiar" internal-id="ID_FMP_FAMILIAR_87" source="Dragon Magazine 390">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-76" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Fiddling Grig" type="Power" internal-id="ID_TIV_FAMILIAR-76" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This tiny sprite has the upper body of a humanoid, but the wings, antennae, and legs of a cricket. It wears a gaily colored vest and plays a miniature fiddle. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You can master and perform bard rituals as if you had the Ritual Caster feat.
+	The grig can act as a focus for any bard ritual that requires a musical instrument worth fewer than 100 gp.</specific>
+    <specific name="Secondary Speed"> fly 6 </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Irresistible Dance"> If you hit an enemy adjacent to the fiddling grig with an arcane attack power, the target of that power is immobilized until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Faerie Dragonling Card -->
+  <AppendNodes name="Faerie Dragonling" type="Familiar" internal-id="ID_FMP_FAMILIAR_88" source="Dragon Magazine 390">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-77" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Faerie Dragonling" type="Power" internal-id="ID_TIV_FAMILIAR-77" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This lithe reptile has a long, prehensile tail, vivid butterfly wings, and a toothy grin that sparkles whenever it opens its maw. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 4 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks.
+	Creatures take a -1 penalty to their first saving throw made against your arcane charm and illusion effects.</specific>
+    <specific name="Secondary Speed"> fly 8 (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Dazzling Breath"> Once per encounter as a minor action, you can have the dragonling breathe in a close blast 3. Enemies in that blast gain Vulnerable 5 radiant until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Coure Attendant Card -->
+  <AppendNodes name="Coure Attendant" type="Familiar" internal-id="ID_FMP_FAMILIAR_89" source="Dragon Magazine 390">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-78" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Coure Attendant" type="Power" internal-id="ID_TIV_FAMILIAR-78" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> Sometimes, the courtiers of the Court of the Stars honor promising arcanists by serving as their squires or handmaidens. In familiar form, these noble eladrin resemble miniature versions of themselves, but with long, gossamer wings sprouting from their shoulders. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Arcana checks.
+	You can retrieve or store an item as a free action instead of a minor action.
+	Enemies treat squares adjacent to you as difficult terrain.</specific>
+    <specific name="Secondary Speed"> fly 8 (hover) </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Feylight Form"> Once per encounter as a minor action, the coure attendant can assume the form of a twinkling ball of light. While in this form, it gains a +2 bonus to all defenses and sheds dim light within 2 squares. Enemies that start their turns within the dim light shed by a coure attendant in feylight form grant combat advantage to you. It can return to its normal form as a free action. </specific>
+  </RulesElement>
+  <!-- Critic Lizard Card -->
+  <AppendNodes name="Critic Lizard" type="Familiar" internal-id="ID_MSR_FAMILIAR_CRITIC_LIZARD" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-79" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Critic Lizard" type="Power" internal-id="ID_TIV_FAMILIAR-79" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> These irritable, multicolored, spiny-backed lizards are renowned for their ability to perceive danger before it strikes. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Insight checks and Perception checks. 
+You gain a +1 bonus to initiative checks.</specific>
+    <specific name="Secondary Speed"> climb 3 </specific>
+    <specific name="Senses"> Low-light vision </specific>
+    <specific name="Quirks"> The lizard expects to be rewarded with food after every fight.
+It is jumpy and paranoid. </specific>
+    <specific name="Danger Sense"> Being surprised doesn't cause you to grant combat advantage.
+	Augment 1: When you are surprised, you can spend 1 power point to take a move action or a minor action during the surprise round. </specific>
+  </RulesElement>
+  <!-- Floating Polyp Card -->
+  <AppendNodes name="Floating Polyp" type="Familiar" internal-id="ID_MSR_FAMILIAR_FLOATING_POLYP" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-80" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Floating Polyp" type="Power" internal-id="ID_TIV_FAMILIAR-80" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This creature resembles a translucent jellyfish floating lazily through the air. </specific>
+    <specific name="Size" />
+    <specific name="Speed">  fly 6 (hover; altitude limit 3) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks made to jump 
+You can make an Acrobatics check to reduce the damage you take from falling even if you are not trained in that skill.</specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> blind, blindsight 5 </specific>
+    <specific name="Quirks"> The polyp becomes agitated near open flames.
+When it shares your space, you feel physically lighter </specific>
+    <specific name="Shared Buoyancy"> When you jump, you are considered to have a running start.
+(Sudden Combustion: If the floating polyp takes fire or lightning damage, it is destroyed and explodes in a close burst 1. Creatures in the burst take 5 fire damage and are pushed 1 square.) </specific>
+  </RulesElement>
+  <!-- Hurrum Card -->
+  <AppendNodes name="Hurrum" type="Familiar" internal-id="ID_MSR_FAMILIAR_HURRUM" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-81" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Hurrum" type="Power" internal-id="ID_TIV_FAMILIAR-81" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This colorful, speckled beetle is highly sought after for its ability to generate a soothing melody by vibrating its tiny wings. </specific>
+    <specific name="Size" />
+    <specific name="Speed">  4 </specific>
+    <specific name="Constant Benefits"> Rather than sleep, you enter a meditative state known as trance. You need to spend 4 hours in this state to gain the same benefits others gain from taking a 6-hour extended rest. While in a trance, you are fully aware of your surroundings, and you notice approaching enemies and other events as normal
+At the end of a short rest, you regain 1 additional hit point each time you spend a healing surge.</specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses" />
+    <specific name="Quirks"> The hurrum imitates songs you are thinking about.
+It shies away from bright light.</specific>
+    <specific name="Overheat"> If the hurrum ends your turn exposed to direct sunlight, it is destroyed.
+Pacifying Drone: While within 5 squares of the hurrum, any enemy takes a -2 penalty to Insight checks and Perception checks.
+	Augment 1: Once per encounter as a free action during your turn, you can spend 1 power point to slow an enemy within 5 squares of the hurrum until the end of your next turn. </specific>
+  </RulesElement>
+  <!-- Jank Card -->
+  <AppendNodes name="Jank" type="Familiar" internal-id="ID_MSR_FAMILIAR_JANK" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-82" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Jank" type="Power" internal-id="ID_TIV_FAMILIAR-82" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> The soft, golden pelts of these ferretlike mammals fetch a high price, but their poisonous spurs make them dangerous to trap. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6, burrow 3 (loose earth only), climb 3 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Nature checks.
+You gain low-light vision.</specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> low-light vision </specific>
+    <specific name="Quirks"> The jank stuffs its mouth pouches full of food
+It rummages through your belongings and plays with small objects.</specific>
+    <specific name="Expert Forager"> During an extended rest, the jank can locate a quantity of food and water that is equivalent to one survival day.
+(Poisonous Spur: Once per encounter as a minor action, you can apply the jank's poison to a weapon you are carrying. The next creature hit with that weapon before the end of the encounter takes 3 extra poison damage.
+	Level 11: 6 extra poison damage.
+	Level 21: 9 extra poison damage.) </specific>
+  </RulesElement>
+  <!-- Kes'trekel Card -->
+  <AppendNodes name="Kes'trekel" type="Familiar" internal-id="ID_MSR_FAMILIAR_KESTREKEL" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-83" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Kes'trekel" type="Power" internal-id="ID_TIV_FAMILIAR-83" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> These grotesque carrion birds have a strong affinity with death. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2, fly 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Intimidate checks and Perception checks.
+You gain a +1 bonus to damage rolls against bloodied creatures.
+	Level 11: +2 bonus.
+	Level 21: +4 bonus</specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> low-light vision </specific>
+    <specific name="Quirks"> The kes'trekel pecks at the corpses of slain enemies
+It squawks hungrily at bloodied allies.</specific>
+    <specific name="Horrific Aversion"> Once per encounter as a minor action, the kes'trekel can push one creature adjacent to it 1 square.
+	Augment 1: As above, except that the kes'trekel can push all creatures adjacent to it. </specific>
+  </RulesElement>
+  <!-- Kivit Card -->
+  <AppendNodes name="Kivit" type="Familiar" internal-id="ID_MSR_FAMILIAR_KIVIT" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-84" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Kivit" type="Power" internal-id="ID_TIV_FAMILIAR-84" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This aloof, gray-furred feline secretes a venomous musk that makes it unappetizing to predators. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 7 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+You gain a +2 bonus to all defenses against opportunity attacks. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> low-light vision </specific>
+    <specific name="Quirks"> The kivit emits a foul-smelling musk when upset
+It hates being inside </specific>
+    <specific name="Poisonous Deterrent"> Once per encounter, when a creature hits you or the kivit with a melee attack, you can deal 5 poison damage to the attacker as an opportunity action. 
+	Level 11: 10 poison damage.
+	Level 21: 15 poison damage. </specific>
+  </RulesElement>
+  <!-- Sitak Card -->
+  <AppendNodes name="Sitak" type="Familiar" internal-id="ID_MSR_FAMILIAR_SITAK" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-85" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Sitak" type="Power" internal-id="ID_TIV_FAMILIAR-85" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This gregarious, brightly colored, parrotlike bird is as intelligent as it is attractive. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2, fly 5 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Bluff checks and Diplomacy checks.
+You can read and speak one additional language of your choice. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> low-light vision </specific>
+    <specific name="Quirks"> The sitak telepathically requests food
+It pulls out its feathers if it is regularly deprived of conversation. </specific>
+    <specific name="Telepathic Mimicry"> A sitak can telepathically communicate with other creatures that share a language with you and that are within 10 squares of it. When it communicates, you hear everything it transmits and hear everything spoken to it. You can dictate its answers if you choose. You do not need line of effect or line of sight to the sitak to use this benefit. </specific>
+  </RulesElement>
+  <!-- Wrab Card -->
+  <AppendNodes name="Wrab" type="Familiar" internal-id="ID_MSR_FAMILIAR_WRAB" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-86" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Wrab" type="Power" internal-id="ID_TIV_FAMILIAR-86" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> These reclusive, black-scaled, winged serpents use their empathic sense to hunt for food and to read the mental states of nearby creatures. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2, fly 6 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Diplomacy checks and Insight checks. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> blindsight 5 </specific>
+    <specific name="Quirks"> The wrab licks the blood from your weapons after a fight.
+It coils around your hand when you make a Diplomacy check or a Bluff check. </specific>
+    <specific name="Empathic Guidance"> Once per round, when you make an Insight check and dislike the result, you can reroll the skill check. You must use the second roll.
+	Augment 1: As above, except that you can use either the second die roll or a result of 10. 
+(Vampiric Vitality: Once per encounter, if the wrab starts your turn adjacent to a bloodied creature, you gain 4 temporary hit points.
+	Level 11: 8 temporary hit points.
+	Level 21: 12 temporary hit points.) </specific>
+  </RulesElement>
+  <!-- Z'tal Card -->
+  <AppendNodes name="Z'tal" type="Familiar" internal-id="ID_MSR_FAMILIAR_ZTAL" source="Dragon Magazine 397">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-87" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Z'tal" type="Power" internal-id="ID_TIV_FAMILIAR-87" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> This lizard chirps nervously as it hops around, and its sharp, feathered scales gleam in the light. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 6 (10 when running) </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Athletics checks made to jump.
+You gain a +2 bonus to speed when running or charging. </specific>
+    <specific name="Secondary Speed" />
+    <specific name="Senses"> low-light vision </specific>
+    <specific name="Quirks"> The z'tal chirps alarmingly when someone strays too far from the group.
+It runs headfirst into your leg when angered. </specific>
+    <specific name="Piercing Scream"> Once per encounter as a minor action, the z'tal can unleash a piercing scream in a close blast 3. Any creature in the blast is deafened and cannot make opportunity attacks until the start of its next turn. </specific>
+  </RulesElement>
+  <!-- Shadow Raven Card -->
+  <AppendNodes name="Shadow Raven" type="Familiar" internal-id="ID_FMP_FAMILIAR_92" source="Player Essentials: Heroes of Shadow">
+    <rules>
+      <grant name="ID_TIV_FAMILIAR-88" type="Power" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Familiar: Shadow Raven" type="Power" internal-id="ID_TIV_FAMILIAR-88" source="Tivaan's Familiar Cards" revision-date="00/00/0000 00:00:00 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Information"> A small shadow takes the form of an inky black raven with glowing red eyes. </specific>
+    <specific name="Size" />
+    <specific name="Speed"> 2 </specific>
+    <specific name="Constant Benefits"> You gain a +2 bonus to Perception checks.
+You gain a +4 bonus to all defenses during a surprise round. </specific>
+    <specific name="Secondary Speed"> fly 6 (hover) </specific>
+    <specific name="Senses"> Darkvision </specific>
+    <specific name="Under Raven's Wing"> Once per encounter as a minor action, you and your allies adjacent to the shadow raven gain partial concealment until the end of your next turn. </specific>
+  </RulesElement>
+</D20Rules>

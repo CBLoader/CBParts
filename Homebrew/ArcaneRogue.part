@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>ArcaneRogue.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/ArcaneRogue.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/ArcaneRogue.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Arcane Rogue Custom Paragon Path -->
+  <RulesElement name="The Arcane Rogue" type="source" internal-id="ID_MSR_SOURCE_ARCANE_ROGUE" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://goo.gl/5D6yJ </specific>
+    <specific name="Release Date"> 8/1/1980 </specific>
+  </RulesElement>
+  <RulesElement name="Arcane Rogue" type="Paragon Path" internal-id="ID_MSR_PARAGON_PATH_ARCANE_ROGUE" source="The Arcane Rogue" revision-date="8/27/2010 12:40:14 PM">
+    <Prereqs> Rogue, any arcane class </Prereqs>
+    <print-prereqs> Hybrid, Rogue, any arcane class </print-prereqs>
+    <Flavor> “Yes, I'm not a person that studied magic for years like him and I'm not the best with martial prowess like you, but my abilities combine everything I learned up until now and that is something you can't beat me on without the other.” </Flavor>
+    <specific name="Power Name"> Spells </specific>
+    <specific name="Class Features"> ID_MSR_CLASS_FEATURE_ARCANE_TALENT, ID_MSR_CLASS_FEATURE_SNEAKY_ARCANE_ACTION, ID_MSR_CLASS_FEATURE_WITTY_ARCANE_ATTACK </specific>
+    <specific name="Powers"> ID_MSR_POWER_ULTIMATE_MASTER,ID_MSR_POWER_ARCANE_DODGE,ID_MSR_POWER_ENHANCED_STRIKE </specific>
+    <specific name="_DisplayPowers"> ID_MSR_POWER_ULTIMATE_MASTER,ID_MSR_POWER_ARCANE_DODGE,ID_MSR_POWER_ENHANCED_STRIKE </specific>
+    <rules>
+      <grant name="ID_MSR_CLASS_FEATURE_ARCANE_TALENT" type="Class Feature" Level="11" />
+      <grant name="ID_MSR_CLASS_FEATURE_WITTY_ARCANE_ATTACK" type="Class Feature" Level="16" />
+      <grant name="ID_MSR_CLASS_FEATURE_SNEAKY_ARCANE_ACTION" type="Class Feature" Level="11" />
+      <grant name="ID_MSR_POWER_ULTIMATE_MASTER" type="Power" Level="20" />
+      <grant name="ID_MSR_POWER_ARCANE_DODGE" type="Power" Level="12" />
+      <grant name="ID_MSR_POWER_ENHANCED_STRIKE" type="Power" Level="11" />
+    </rules>
+Your average rogues can be elusive, cunning, sneaky, and everything else that can be asked of a rogue.  Magic users like wizards, sorcerers, warlocks and others all have powerful spellcasting abilities.  Those magic users can sometimes mimic what a rogue can do in places a rogue normally can't, while a rogue can stand above mages simply by thinking through his situation and relying on wits.  A wizard's fireball will burn whether it hits you directly or just grazes you, but a good rogue knows how to prepare for such things and that fireball can no longer affect him when he properly dodges.  This can be daunting to any arcane user or even the best of fighters when they find out that the rogue has magic abilities as well.
+   </RulesElement>
+  <RulesElement name="Arcane Talent " type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_ARCANE_TALENT" source="The Arcane Rogue" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Gain the Hybrid Talent Feat for the Acrane Class of your Hybrid. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT" type="Feat" Level="11" requires="!ID_INTERNAL_FEAT_PARAGON_HYBRID_TALENT" />
+    </rules>
+As the Hybrid Talent feat, except you are limited only to the arcane class of your hybrid for your extra hybrid talent feature.  If you have used the Hybrid Talent feat on your arcane class and there is no other hybrid talent feature to choose, you may retrain your Hybrid Talent feat so that you meet the condition of this feature.
+   </RulesElement>
+  <RulesElement name="Witty Arcane Attack" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_WITTY_ARCANE_ATTACK" source="The Arcane Rogue" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Use an Arcane Hybrid Ranged Encounter Power as a melee attack against an adjacent enemy. </specific>
+    <specific name="Level"> 16 </specific>
+ Choose one ranged encounter power from your arcane hybrid class at the end of an extended rest.  If you are adjacent to an enemy, you can use the power as a melee attack.  You must be using a light blade (such as a dagger, short sword, etc) in your off-hand to use this.  If you score a critical hit, you deal critical damage as normal for the arcane power, and you also add the bonus critical damage dice from the weapon in your off-hand. 
+   </RulesElement>
+  <RulesElement name="Sneaky Arcane Action" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_SNEAKY_ARCANE_ACTION" source="The Arcane Rogue" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend an action point to take an extra action, until the end of your next turn, you can apply your rogue sneak attack to any arcane at-will or encounter attack power. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Arcane Rogue Action:When you spend an action point to take an extra action, until the end of your next turn, you can apply your rogue sneak attack to any arcane at-will or encounter attack power." />
+    </rules>
+When you spend an action point to take an extra action, until the end of your next turn, you can apply your rogue sneak attack to any arcane at-will or encounter attack power.  The power must deal damage for the sneak attack to take effect, and you must meet all normal conditions for the sneak attack to trigger (for example, the target must grant combat advantage to you).
+   </RulesElement>
+  <RulesElement name="Ultimate Mastery" type="Power" internal-id="ID_MSR_POWER_ULTIMATE_MASTER" source="The Arcane Rogue" revision-date="8/27/2010 11:26:04 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_MSR_PARAGON_PATH_ARCANE_ROGUE,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Arcane Rogue </Prereqs>
+    <Flavor> You show off the power of mastery between the arcane and your own martial abilities.  As you flick your shuriken at your target, the shuriken spawns arcane energy shurikens that form up around you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="_ChildPower"> ID_MSR_POWER_ARCANE_SHURIKEN </specific>
+    <specific name="_DisplayPower"> ID_MSR_POWER_ARCANE_SHURIKEN </specific>
+    <specific name="Display"> Arcane Rogue Attack 20 </specific>
+    <specific name="Keywords"> Arcane, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. AC </specific>
+    <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, you may use Arcane Shuriken as a secondary attack each time you use a rogue attack power. </specific>
+    <specific name="Miss"> Half damage, and until the end of the encounter, you may use Arcane Shuriken as a secondary attack each time you use a rogue attack power. </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_ARCANE_ROGUE </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <rules>
+      <grant name="ID_MSR_POWER_ARCANE_SHURIKEN" type="Power" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Arcane Shuriken" type="Power" internal-id="ID_MSR_POWER_ARCANE_SHURIKEN" source="The Arcane Rogue" revision-date="8/27/2010 12:07:57 PM">
+    <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_MSR_PARAGON_PATH_ARCANE_ROGUE,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+    <Prereqs> Unselectable </Prereqs>
+    <Flavor> You show off the power of mastery between the arcane and your own martial abilities.  As you flick your shuriken at your target, the shuriken spawns arcane energy shurikens that form up around you. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display" />
+    <specific name="Keywords"> Arcane, Implement, Force </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Ranged (special)  </specific>
+    <specific name="Requirement"> You use the Arcane Rogue power Ultimate Mastery. </specific>
+    <specific name="Trigger"> You hit a creature with a rogue attack power. </specific>
+    <specific name="Target"> The creature you hit or one other creature within 5 squares of the creature you hit. </specific>
+    <specific name="Attack"> Charisma, Constitution, or Intelligence vs. Reflex </specific>
+    <specific name="Hit"> Charisma, Constitution, or Intelligence modifier force damage. </specific>
+    <specific name="Special"> You can only use this power once per round. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentPower"> ID_MSR_POWER_ULTIMATE_MASTER </specific>
+    <specific name="Class"> ID_MSR_PARAGON_PATH_ARCANE_ROGUE </specific>
+  </RulesElement>
+  <RulesElement name="Arcane Dodge" type="Power" internal-id="ID_MSR_POWER_ARCANE_DODGE" source="The Arcane Rogue" revision-date="8/27/2010 11:26:04 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_PARAGON_PATH_ARCANE_ROGUE,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,12 </Category>
+    <Prereqs> Arcane Rogue </Prereqs>
+    <Flavor> Through trained mastery of arcane energies, you now can see the arcane energy that is within many things. This lets you use your natural reactions to dodge. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Arcane Rogue Utility 12 </specific>
+    <specific name="Keywords"> Arcane </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger"> An enemy targets your Fortitude or Will defense. </specific>
+    <specific name="Effect"> The enemy targets your Reflex or AC (your choice) instead. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_MSR_PARAGON_PATH_ARCANE_ROGUE </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Enhanced Strike" type="Power" internal-id="ID_MSR_POWER_ENHANCED_STRIKE" source="The Arcane Rogue" revision-date="8/27/2010 11:26:14 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_PARAGON_PATH_ARCANE_ROGUE,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Arcane Rogue </Prereqs>
+    <Flavor> You empower your weapon with raw energy and flick it at your opponent. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Arcane Rogue Attack 11 </specific>
+    <specific name="Keywords"> Arcane, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Dexterity vs. Reflex </specific>
+    <specific name="Hit"> 2[W] + Dexterity + Charisma, Constitution, or Intelligence modifier damage, and you apply your sneak attack damage even if you normally couldn't. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_MSR_PARAGON_PATH_ARCANE_ROGUE </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+</D20Rules>

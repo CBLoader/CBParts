@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>GuildWarsRogueTraps.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/GuildWarsRogueTraps.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/GuildWarsRogueTraps.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Guild Wars" type="source" internal-id="ID_TIV_SOURCE_GUILD_WARS_10_1" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://guildwars.wikia.com/wiki/Index_of_skill_lists </specific>
+    <specific name="Release Date"> 1/1/2005 </specific>
+  </RulesElement>
+  <!-- Beast Mastery Rogue Traps -->
+  <!-- Coded by Tivaan -->
+  <!-- KDM is still testing and as he gets the test parts completed these will also be updated. -->
+  <!-- Guild Wars -->
+  <RulesElement name="Death" type="Category" internal-id="ID_TIV_CATEGORY_DEATH" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Disease" type="Category" internal-id="ID_TIV_CATEGORY_DISEASE" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Shout" type="Category" internal-id="ID_TIV_CATEGORY_SHOUT" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Hex" type="Category" internal-id="ID_TIV_CATEGORY_HEX" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Trap: Viper's Nest" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_171-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_14,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,2 </Category>
+    <Flavor> A small vial of poison, a couple of sharp shards of wood or metal, string, a spring, and little luck... </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 2 </specific>
+    <specific name="Keywords"> Martial, Poison </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking 1d6 poison damage and ongoing 4 poison damage (save ends). All adjacent creatures take ongoing 4 poison damage until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Barbed Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_227-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,6 </Category>
+    <Flavor> Sharp stakes, springs, rope, and two small rods. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking 2d6 force damage and ongoing 3 Bleeding damage (save ends) and is slowed (save ends). All adjacent creatures take ongoing 3 Bleeding damage until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Tripwire" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_261-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,6 </Category>
+    <Flavor> Rope, 2 stakes, Glimmer powder, and a small mirror... </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking 2d6 piercing damage. If the triggering creature is slowed it is also knocked prone. All adjacent creatures take 1d6 piercing damage.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Dust Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_232-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10 </Category>
+    <Flavor> A pouch of fine dirt, a jagged piece of wood, three springs, string, and some type of covering.  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 10 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking 3d6 force damage and blindness (save ends). All adjacent creatures are blinded until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Spike Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_258-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10 </Category>
+    <Flavor> Sharpened spikes, rope, 4 springs, shiny pieces of metal, and dirt... </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 10 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking ongoing 3 Bleeding damage (save ends), slowed (save ends) and is knocked prone. Adjacent creatures are knocked prone and slowed until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trapper's Focus" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_185-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> You worked hard at setting traps efficiently and quickly. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 16 </specific>
+    <specific name="Keywords"> Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, all traps that you set are 2x2 sized and you only need to use a Standard Action to set the trap. This Stance ends at the end of the encounter or can be ended as a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trapper's Speed" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_186-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> Being fast is what is required when setting traps. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 16 </specific>
+    <specific name="Keywords"> Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> While this Stance is active, all traps you set require only a Minor action for any trap size. This stance ends at the end of the Encounter or with a Minor action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Flame Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_235-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> Some oil, piece of flint, a sharp piece of steel, springs, rope, and some combustable cover material.  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 16 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking 4d6 fire damage and takes ongoing 9 fire damage. (save ends). All adjacent creatures take ongoing 9 fire damage until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Snare Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_257-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> 10' of Rope, knowledge of knot-tieing, springboard, and 2 hooks...  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 16 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), becoming slowed (save ends). All adjacent creatures are slowed until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Piercing Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_248-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> Sharp junks of metal, stone, and wood, twine, 3 short pieces of spring, spring board, a little oil...  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), taking 6d6 piercing damage and all adjacent creatures take 3d6 damage. If the triggering creature has a form of armor reduction active at the time the trap is set off, then add another 6d6 piercing damage to the triggering creature.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Trap: Smoke Trap" type="Power" internal-id="ID_TIV_POWER_GUILD_WARS_1_256-1" source="Guild Wars" revision-date="3/7/2011 9:49:21 PM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> Burning oil, incense, black tar, flint, and a striker with a looped wire...  </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Rogue Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Special </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Target"> Special </specific>
+    <specific name="Effect"> You place a trap in an adjacent area to you. 
+Standard Action: 1 unoccupied adjacent square to you.
+Standard + Minor Action: 2x2 unoccupied adjacent squares to you.
+The first enemy creature that steps into the square sets the trap off (Perception Check DC 17 + Rogue's Level to recognize the trap), becoming blinded (save ends) and dazed (save ends). Adjacent creatures are Blinded and Dazed until the end of their next turn.
+Allies that move into the trapped area must treat the area as difficult terrain or they set the trap off. The trap lasts until its either set-off or disabled. </specific>
+    <specific name="Disabling a Trap"> You can disable this trap (as a Minor Action) and reuse the power on a DC 15 (Dexterity modifier roll bonus), only if the trap has not been sprung and you are adjacent to it while disabling it. </specific>
+    <specific name="Class"> ID_FMP_CLASS_6 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+</D20Rules>

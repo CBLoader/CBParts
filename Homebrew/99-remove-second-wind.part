@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>26-November-2011</Version>
+    <Filename>99-remove-second-wind.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/99-remove-second-wind.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/99-remove-second-wind.txt</VersionAddress>
+  </UpdateInfo>
+
+<!-- Disable Extra Second Wind Card -->
+<!-- 99-remove-second-wind.part, version 1.00 -->
+<!-- Original release: 26-November-2011; Last modified: 26-November-2011 -->
+<!-- Test compiled with CBLoader build V1.3.0 -->
+
+<!-- Updated 26-November-2011 File released -->
+
+<RemoveNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
+	<grant name="ID_KDM_POWER_SECOND_WIND" type="Power" />
+</RemoveNodes>
+</D20Rules>

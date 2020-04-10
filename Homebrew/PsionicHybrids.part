@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>PsionicHybrids.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/PsionicHybrids.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/PsionicHybrids.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <!-- Psionic Options for Hybrids by Kais -->
+  <RulesElement name="Ardent Mantle (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2341" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2342, ID_FMP_CLASS_FEATURE_2343, ID_FMP_CLASS_FEATURE_MI </specific>
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2341" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_ARDENT_MANTLE" type="CountsAsFeature" />
+    </rules>
+This class feature functions as the ardent class feature , except that you don't gain the power associated with the mantle you choose.
+   </RulesElement>
+  <RulesElement name="Mantle of Impulsiveness (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_MI" source="Psionic Power" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2341,1 </Category>
+    <specific name="Short Description"> Allies within 5 gain your Con modifier power bonus to damage rolls when they are targeted by an opportunity attack and +2 to Endurance and Intimidate </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_12931" type="Power" requires="Ardent Mantle|Mantle Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_MANTLE_OF_IMPULSIVENESS" type="CountsAsFeature" />
+    </rules>
+When an ally within 5 squares of you is targeted by an opportunity attack, that ally gains a power bonus to damage rolls equal to your Constitution modifier until the end of his or her turn.
+    In addition, each ally within 5 squares of you gains a +2 bonus to Endurance checks and Intimidate checks.
+   </RulesElement>
+  <RulesElement name="Mantle Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2345" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_HYBRID_CLASS_588,1 </Category>
+    <specific name="Short Description"> Gain power of mantle you chose </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_10272,ID_FMP_POWER_11060, ID_FMP_POWER_12931 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+You gain the power associated with the Ardent Mantle option you chose.
+   </RulesElement>
+  <RulesElement name="Mantle of Impulsiveness" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_MANTLE_OF_IMPULSIVENESS" source="Core"></RulesElement>
+  <RulesElement name="Ardent Surge" type="Power" internal-id="ID_FMP_POWER_10273" source="Player's Handbook 3" revision-date="8/27/2010 11:53:28 AM">
+    <Flavor> You send a surge of powerful emotion that revives a faltering ally. </Flavor>
+    <specific name="Power Usage"> Encounter (Special) </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Ardent Feature  </specific>
+    <specific name="Keywords"> Healing, Psionic </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 (10 at 16th level) </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target can spend a healing surge and regain 1d6 additional hit points.
+    Level 6: 2d6 additional hit points.
+    Level 11: 3d6 additional hit points.
+    Level 16: 4d6 additional hit points.
+    Level 21: 5d6 additional hit points.
+    Level 26: 6d6 additional hit points. </specific>
+    <specific name="    Mantle of Clarity"> The target gains a +1 bonus to all defenses until the end of your next turn. </specific>
+    <specific name="    Mantle of Elation"> The target gains a +1 bonus to attack rolls until the end of your next turn. </specific>
+    <specific name="    Mantle of Impulsiveness"> The target gains a +2 bonus to speed until the end of your next turn. </specific>
+    <specific name="Special"> You can use this power twice per encounter, but only once per round. At 16th level, you can use this power three times per encounter, but only once per round. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2138,ID_FMP_CLASS_FEATURE_2346 </specific>
+  </RulesElement>
+  <RulesElement name="Psionic Study (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2526" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_HYBRID_CLASS_590,1 </Category>
+    <specific name="Short Description"> Battlemind may pick one of the battle resilience, persistent harrier, speed of thought or wild focus powers </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2527, ID_FMP_CLASS_FEATURE_PH, ID_FMP_CLASS_FEATURE_2528, ID_FMP_CLASS_FEATURE_WF </specific>
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2526" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_PSIONIC_STUDY" type="CountsAsFeature" />
+    </rules>
+Battleminds learn to fight using their bodies as weapons. Some battleminds alter their own form to fit their needs. Other battleminds use their psionic power to predict the best position for launching an attack.
+Choose one of these options.
+   </RulesElement>
+  <RulesElement name="Battle Resilience (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2527" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2526,1 </Category>
+    <specific name="Short Description"> Gain battle resilience power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_11155 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_124 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_11155 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_11155" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_BATTLE_RESILIENCE" type="CountsAsFeature" />
+    </rules>
+You gain the battle resilience power, which reflects your ability to use your psionic power to bend your own body to protect yourself.
+   </RulesElement>
+  <RulesElement name="Persistent Harrier (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_PH" source="Psionic Power" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2526,1 </Category>
+    <specific name="Short Description"> Gain persistent harrier power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13024 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_124 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13024 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13024" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_PERSISTENT_HARRIER" type="CountsAsFeature" />
+    </rules>
+You gain the persistent harrier power, which reflects the ease with which you can outmaneuver your opponents.
+   </RulesElement>
+  <RulesElement name="Speed of Thought (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2528" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2526,1 </Category>
+    <specific name="Short Description"> Gain speed of thought power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_10441 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_124 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_10441 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_10441" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_SPEED_OF_THOUGHT" type="CountsAsFeature" />
+    </rules>
+You gain the speed of thought power, which allows you to be always ready for a fight.
+   </RulesElement>
+  <RulesElement name="Wild Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_WF" source="Dark Sun" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2526,1 </Category>
+    <specific name="Short Description"> Gain wild focus class power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_12418 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_124 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_12418 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_12418" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_WILD_FOCUS" type="CountsAsFeature" />
+    </rules>
+You gain the wildfocus power, which reflects the raw telekinetic power you wield in combat.
+   </RulesElement>
+  <RulesElement name="Persistent Harrier" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_PERSISTENT_HARRIER" source="Core"></RulesElement>
+  <RulesElement name="Wild Focus" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_WILD_FOCUS" source="Core"></RulesElement>
+  <RulesElement name="Shaper Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_SF" source="Psionic Power" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2415,1 </Category>
+    <specific name="Short Description"> Gain minor creation power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13301 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_437 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13301 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13301" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_SHAPER_FOCUS" type="CountsAsFeature" />
+    </rules>
+You gain the power minor creation.
+   </RulesElement>
+  <RulesElement name="Discipline Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2415" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2534, ID_FMP_CLASS_FEATURE_2535, ID_FMP_CLASS_FEATURE_SF </specific>
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2415" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DISCIPLINE_FOCUS" type="CountsAsFeature" />
+    </rules>
+Choose a Discipline Focus option. If you choose Telekinesis Focus, you gain the far hand power. If you choose Telepathy Focus, you gain the send thoughts power. If you choose Shaper Focus, you gain the minor creation power.
+   </RulesElement>
+  <RulesElement name="Expanded Discipline Focus" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2416" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_HYBRID_CLASS_610,1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13300, ID_FMP_POWER_11268,ID_FMP_POWER_8224  </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13300" type="Power" requires="Shaper Focus" />
+      <grant name="ID_FMP_POWER_11268" type="Power" requires="Telekinesis Focus" />
+      <grant name="ID_FMP_POWER_8224" type="Power" requires="Telepathy Focus" />
+    </rules>
+If you have Shaper Focus, you gain the shaped consciousness power.If you have Telekinesis Focus, you gain the forceful push power. If you have Telepathy Focus, you gain the distract power.
+   </RulesElement>
+  <RulesElement name="Iron Soul (Hybrid)" type="Class Feature" internal-id="ID_RGC_CLASS_FEATURE_3098" source="Psionic Power" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2413,1 </Category>
+    <specific name="Short Description"> Gain Iron Soul Flurry of Blows </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13123 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_362 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13123 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13123" type="Power" />
+      <modify name="Iron Soul Flurry of Blows" type="Power" Field="_ExtraKeywords" value="Flurry of Blows" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_IRON_SOUL" type="CountsAsFeature" />
+    </rules>
+      Flurry of Blows: You gain the iron soul flurry of blows power.
+   </RulesElement>
+  <RulesElement name="Iron Soul" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_IRON_SOUL" source="Core"></RulesElement>
+</D20Rules>

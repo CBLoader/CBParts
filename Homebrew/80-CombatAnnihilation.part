@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>80-CombatAnnihilation.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/80-CombatAnnihilation.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/80-CombatAnnihilation.txt</VersionAddress>
+  </UpdateInfo>
+  <AppendNodes name="Fighter" type="Grants" internal-id="ID_INTERNAL_GRANTS_FIGHTER" source="Player's Handbook">
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_KDM_CLASS_FEATURE_COMBAT_ANNIHILATION" optional="true" />
+    </rules>
+  </AppendNodes>
+  <RulesElement name="Combat Annihilation" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_COMBAT_ANNIHILATION" source="KDM">
+    <Prereqs> !ID_FMP_CLASS_FEATURE_2183, !ID_FMP_CLASS_FEATURE_401 </Prereqs>
+    <Category> ID_FMP_CLASS_3,1 </Category>
+    <Flavor> Although other warriors might focus on defense or fancy maneuvers, you have trained from your first day of combat to cut your foes down without mercy. </Flavor>
+    <specific name="Short Description"> You gain a bonus to the damage rolls of weapon attacks. The bonus equals your Dexterity or Wisdom modifier, whichever is higher. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> Bonus to the damage rolls of weapon attacks equal to your Dexterity or Wisdom modifier </specific>
+    <rules>
+      <drop name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
+      <drop name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+      <drop name="ID_FMP_CLASS_FEATURE_54" type="Class Feature" />
+      <drop name="ID_FMP_CLASS_FEATURE_401" type="Class Feature" />
+      <drop name="ID_FMP_CLASS_FEATURE_2183" type="Class Feature" />
+      <statadd name="Combat Annihilation Damage Bonus" value="+ABILITYMOD(dex)" type="Annihilation" />
+      <statadd name="Combat Annihilation Damage Bonus" value="+ABILITYMOD(wis)" type="Annihilation" />
+      <statadd name="weapon:damage" value="+Combat Annihilation Damage Bonus" />
+      <grant name="ID_KDM_CLASS_FEATURE_PARAGON_COMBAT_ANNIHILATION" type="Class Feature" Level="11" />
+      <grant name="ID_KDM_CLASS_FEATURE_EPIC_COMBAT_ANNIHILATION" type="Class Feature" Level="21" />
+    </rules>
+You forgo shield proficiency and the Combat Challenge and Combat Superiority or Combat Agility features.
+Instead, you gain a bonus to the damage rolls of weapon attacks equal to your Dexterity or Wisdom modifier, whichever is higher.
+</RulesElement>
+  <RulesElement name="Paragon Combat Annihilation" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_PARAGON_COMBAT_ANNIHILATION" source="KDM">
+    <Category> 11 </Category>
+    <Flavor> Your weapon attacks become even deadlier as your reputation and power grow. </Flavor>
+    <specific name="Short Description"> Combat Annihilation's bonus to weapon damage rolls increases to 5 + your Dexterity or Wisdom modifier. </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="_CS_ShortDescription"> Combat Annihilation increases to 5 + your Dexterity or Wisdom modifier </specific>
+    <rules>
+      <statadd name="Combat Annihilation Damage Bonus" value="+2" />
+    </rules>
+The bonus to weapon damage rolls granted by your Combat Annihilation class feature increases to 2 + your Dexterity or Wisdom modifier.
+</RulesElement>
+  <RulesElement name="Epic Combat Annihilation" type="Class Feature" internal-id="ID_KDM_CLASS_FEATURE_EPIC_COMBAT_ANNIHILATION" source="KDM">
+    <Category> 21 </Category>
+    <Flavor> Your weapon attacks become even deadlier as your reputation and power grow. </Flavor>
+    <specific name="Short Description"> Combat Annihilation's bonus to weapon damage rolls increases to 4 + your Dexterity or Wisdom modifier. </specific>
+    <specific name="Level"> 21 </specific>
+    <specific name="_CS_ShortDescription"> Combat Annihilation increases to 4 + your Dexterity or Wisdom modifier </specific>
+    <rules>
+      <statadd name="Combat Annihilation Damage Bonus" value="+2" />
+    </rules>
+The bonus to weapon damage rolls granted by your Combat Annihilation class feature increases to 4 + your Dexterity or Wisdom modifier.
+</RulesElement>
+</D20Rules>

@@ -1,0 +1,1031 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.05</Version>
+    <Filename>19-barbarian.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/19-barbarian.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/19-barbarian.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Barbarian -->
+  <!-- 19-barbarian.part, version 1.05 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-October-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 16-November-2011 Added the Berserker from heroes of the FeyWild
+ Updated 18-May-2012 DSH added.
+ Updated 11-June-2012 Zerker subclass fix.
+ Updated 19-October-2012 Cleanup Barbarian Class Feature and Berserker Heartland Class Features
+</Changelog>
+  <!-- Barbarian Powers, Dragon 395 -->
+  <RulesElement name="Earth Grasp Rage" type="Power" internal-id="ID_FMP_POWER_13772" source="Dragon Magazine 395" revision-date="8/27/2010 11:36:22 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> Your rage reaches out to Stone Brother, and arms of molten stone form to grab your foe. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Barbarian Attack 5 </specific>
+    <specific name="Keywords"> Fire, Primal, Rage, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 1[W] damage. The target takes ongoing 5 fire damage and is immobilized (save ends both).
+	Aftereffect: The target falls prone. </specific>
+    <specific name="Miss"> Half damage and the target falls prone. </specific>
+    <specific name="Effect"> You enter the rage of earth's grasp. Until the rage ends, your attacks against prone targets deal 5 extra fire damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_148 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  
+  
+  
+  
+  
+  
+  
+  <!-- Sub-Class Berserker -->
+  <!-- Heroes of the Feywild -->
+  
+  <RulesElement name="Berserker" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_BERSERKER" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_906 </specific>
+You count as a berserker for meeting prerequisites.
+	</RulesElement>
+	<RulesElement name="Defender and Striker" type="Role" internal-id="ID_FMP_ROLE_6" source="Heroes of the Feywild"></RulesElement>
+
+	<RulesElement name="Berserker" type="Class" internal-id="ID_FMP_CLASS_906" source="Heroes of the Feywild">
+		<specific name="Key Abilities"> Strength, Dexterity </specific>
+		<specific name="Armor Proficiencies"> Cloth, leather, hide; light shields </specific>
+		<specific name="Weapon Proficiencies"> Simple melee, military melee </specific>
+		<specific name="Bonus to Defense"> +2 Fortitude </specific>
+		<specific name="Hit Points at 1st Level"> 15+ Constitution Score </specific>
+		<specific name="Hit Points per Level Gained"> 6 </specific>
+		<specific name="Healing Surges"> 8+ Constitution Modifier </specific>
+		<specific name="Trained Skills"> From the class skills list below, choose 3 trained skills at 1st level. </specific>
+		<specific name="Class Skills"> Acrobatics (Dex), Athletics (Str), Endurance (Con), Heal (Wis), Intimidate (Cha), Nature (Wis), Perception (Wis) </specific>
+		<specific name="_PARSED_CLASS_FEATURE"> Berserker Fury, Defender Aura, Heartland, Poised Defender, Vengeful Guardian </specific>
+		<specific name="Role"> Defender and Striker. Your skill and experience make you good at defending others, but when your rage surfaces, you become an aggressive attacker. </specific>
+		<specific name="Power Source"> Martial and Primal. </specific>
+		<specific name="_RoleElement"> ID_FMP_ROLE_6 </specific>
+		<specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+		<specific name="_SecondaryPowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+		<specific name="Short Description"> Your skill and experience make you good at defending others, but when your rage surfaces, you become an aggressive attacker. </specific>
+		<specific name="_ParentClass"> ID_FMP_CLASS_148 </specific>
+		<specific name="_DisplayName"> Barbarian (Berserker) </specific>
+		<rules>
+			<grant name="ID_INTERNAL_GRANTS_BERSERKER" type="Grants" />
+			<select type="Power" number="2" Category="$$Class,at-will,1" />
+            <textstring name="_CLASSNAME" value="ID_FMP_CLASS_148 (ID_FMP_CLASS_906)" />
+			<statadd name="_LEVEL-ONE-HPS" value="+15" />
+			<statadd name="_PER-LEVEL-HPS" value="+6" />
+			<statadd name="Healing Surges" value="+8" />
+			<statadd name="Fortitude Defense Class Bonus" value="+2" />
+			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_148" />
+		</rules>
+  
+On the edge of civilization, far beyond the comfortable life within cities and towns, tribes of barbarian peoples maintain a simple yet primitive existence. Life for these people is not easy, and it is made more difficult because fey crossings commonly appear in their lands. As children, tribe members are taught about the perils of crossing into the Feywild, and about the monsters that emerge from that realm with malicious intent. Faced with this constant danger, the barbarians continually fight to maintain their way of life.
+	Some among them have fought so hard for so long that they know little other than violence as a means of protecting their tribes. These individuals, prone to rage that transforms them into whirling forces of destruction, are known as berserkers. Most berserkers are skilled warriors with keen survival instincts. When their ire is stoked, however, much of that experience and discipline is replaced by an animal fury unmatched among other warriors.
+	If fury and aggressiveness was all that berserkers had to protect them from harm, they would eventually tire and be overcome by their enemies. When the berserkers' unbridled rage overtakes them, they become beacons of the spirit world, and their rage sounds like a gong calling to the primal spirits. Those spirits are drawn to such strong emotion, and are able to inhabit berserkers during their rages, protecting them against harm. The spirits also lend their energy to the berserkers, allowing them to perform incredible, even supernatural, feats.
+	It is not just barbarians in the mortal world who become berserkers. Within the Feywild are many savage warriors, and that bright realm is a place where warriors who are as mercurial as the berserker fit right in. Many berserkers are found among the lycanthrope tribes of the Brokenstone Vale, others are among the elves who still dwell in the forests of the Feywild, and yet others can be found anywhere civilization has not yet encroached upon.
+	</RulesElement>
+
+	<RulesElement name="Berserker" type="Grants" internal-id="ID_INTERNAL_GRANTS_BERSERKER" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_906 </specific>
+		<rules>
+			<grant name="ID_INTERNAL_COUNTSASCLASS_BARBARIAN" type="CountsAsClass" />
+			<grant name="ID_FMP_ROLE_3" type="Role" />
+			<grant name="ID_FMP_ROLE_4" type="Role" />
+			<grant name="ID_FMP_ROLE_6" type="Role" />
+			<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+			<grant name="ID_FMP_POWER_SOURCE_4" type="Power Source" />
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+			<grant name="ID_INTERNAL_GRANTS_BERSERKER_IMPLEMENTS" type="Grants" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4134" type="Class Feature" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4127" type="Class Feature" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4132" type="Class Feature" />	
+			<grant name="ID_FMP_CLASS_FEATURE_4133" type="Class Feature" />	
+			<grant name="ID_WOG_BERSERKER_CLASS_FEATURE_3" type="Class Feature" />		 
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Berserker-Defender-Aura-Setup" type="Class Feature" internal-id="ID_WOG_BERSERKER_CLASS_FEATURE_3" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<specific name="Level"> 1 </specific>
+		<specific name="_CS_ShortDescription"> @ </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_3070" type="Class Feature" Level="1" />
+			<modify name="Defender Aura" type="Class Feature" Field="_CS_ShortDescription" value="@" />
+			<modify name="Defender Aura" type="Power" Field="Display" value=" Barbarian Utility " />
+			<modify name="Defender Aura" type="Power" Field="Class" value="ID_FMP_CLASS_906" />
+		</rules>
+	</RulesElement>
+
+	<RulesElement name="Berserker Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BERSERKER_IMPLEMENTS" source="Heroes of the Feywild">
+		<specific name="_SupportsID"> ID_FMP_CLASS_906 </specific>
+	</RulesElement>
+
+	<RulesElement name="Heartland" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4127" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> Berserkers live on the edge of civilization, where they are closer to the land and more shaped by the environment than other warriors are. You have cultivated certain abilities that are based on your experiences in your heartland's environment. </Flavor>
+		<specific name="Short Description"> Gain benefit from heartland terrain </specific>
+      <specific name="_CS_ShortDescription"> @ </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4128, ID_FMP_CLASS_FEATURE_4129, ID_FMP_CLASS_FEATURE_4130 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4127"/>
+		</rules>
+  
+You choose one of the following terrain types that best represents your heartland and gain its benefit.
+	</RulesElement>
+	
+	
+<!-- BERSERKER HEARTLAND CLASS FEATURES. CLEANED UP STATADD SYNTAX. -->
+
+<RulesElement name="Arid Desert" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4128" source="Heroes of the Feywild">
+	<Category> ID_FMP_CLASS_FEATURE_4127,1 </Category>
+    <Flavor> You hail from a hot, dry desert region and are accustomed to the blistering heat and searing sands of your heartland. Your people prize light protective clothing that keeps you from overheating, and compensate for lighter armor with greater agility. </Flavor>
+    <specific name="Short Description"> Gain +3 AC and +2 Reflex when wearing cloth/no armor and no shield; gain resist 5 fire at 4th level, resist fire 10 at 14th, resist fire 15 at 24th </specific>
+    <specific name="Level"> 1 </specific>
+        <rules>
+            <statadd name="AC" value="+3" not-wearing="armor:" />
+            <statadd name="AC" value="+3" wearing="armor:cloth" not-wearing="armor:shield"/>
+            <statadd name="Reflex Defense" value="+2" not-wearing="armor:" />
+            <statadd name="Reflex Defense" value="+2" wearing="armor:cloth" not-wearing="armor:shield"/>
+            <statadd name="Arid Desert Resist" value="+5" requires="4 level" />
+            <statadd name="Arid Desert Resist" value="+5" requires="14 level" />
+            <statadd name="Arid Desert Resist" value="+5" requires="24 level" />
+            <statadd name="resist:fire" value="+Arid Desert Resist" type="resist" zero="true" />
+            <statadd name="resist:fire" value="+Arid Desert Resist" type="resist" non-zero="true" />
+        </rules>
+While you are wearing cloth armor or no armor and not using a shield, you gain a +3 bonus to AC and a +2 bonus to Reflex.
+    At 4th level, you gain resist 5 fire. The resistance increases to 10 at 14th level and 15 at 24th level.
+</RulesElement>
+
+	<RulesElement name="Frozen Land" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4129" source="Heroes of the Feywild">
+		<Category> ID_FMP_CLASS_FEATURE_4127,1 </Category>
+		<Flavor> You hail from a land covered in ice and snow, and as such you know how to survive in cold environments. You are comfortable when others are shivering with cold, and you have become toughened by constant exposure to harsh temperatures. </Flavor>
+		<specific name="Short Description"> Gain +1 to Fortitude and Will; gain resist 5 cold at 4th level, resist cold 10 at 14th and resist cold 15 at 24th </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="Fortitude Defense" value="+1" type="Class Feature" />
+			<statadd name="Will Defense" value="+1" type="Class Feature" />
+			<statadd name="Frozen Land Resist" value="+5" requires="4 level"/>
+			<statadd name="Frozen Land Resist" value="+5" requires="14 level"/>
+			<statadd name="Frozen Land Resist" value="+5" requires="24 level"/>
+			<statadd name="resist:cold" value="+Frozen Land Resist" type="resist" zero="true" />
+			<statadd name="resist:cold" value="+Frozen Land Resist" type="resist" non-zero="true" />
+		</rules>
+
+You gain a +1 bonus to Fortitude and Will.
+	At 4th level, you gain resist 5 cold. The resistance increases to 10 at 14th level and 15 at 24th level.
+	</RulesElement>
+
+<RulesElement name="Temperate Land" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4130" source="Heroes of the Feywild">
+	<Category> ID_FMP_CLASS_FEATURE_4127,1 </Category>
+    <Flavor> You hail from a land covered in forests and plains. Your people are accustomed to having access to abundant resources and typically carry defensive gear such as shields. </Flavor>
+    <specific name="Short Description"> Gain +2 bonus to damage when wielding a one-handed weapon and shield; at 4th level, gain +1 speed while charging </specific>
+    <specific name="Level"> 1 </specific>
+        <rules>
+            <statadd name="one-hand:damage" value="+2" wearing="armor:shield" />
+            <statadd name="Speed" value="+1" condition="while charging" requires="level 4" />
+        </rules>
+While you are wielding a one-handed weapon and using a shield, you gain a +2 bonus to the damage rolls of any weapon attack you make with that weapon.
+    At 4th level, you gain a +1 bonus to speed while charging.
+</RulesElement>
+
+	<RulesElement name="Poised Defender" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4132" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> As long as your primal rage does not take over, your martial training helps you dodge and parry incoming attacks if you're not burdened by heavy armor. </Flavor>
+		<specific name="Short Description"> Gain +2 bonus to AC while defender aura is active and not wearing heavy armor </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="AC" value="+2" type="Class Feature" not-wearing="armor:heavy" condition="while your defender aura is active" />
+		</rules>
+
+While your defender aura is active and you're not wearing heavy armor, you gain a +2 bonus to AC.
+	</RulesElement>
+
+	<RulesElement name="Vengeful Guardian" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4133" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> Protecting your family while living on the frontier of civilization, or some other uncivilized land, has taught you how to draw attention to yourself and away from those you protect. When an enemy is foolish enough to ignore you and go after your loved ones, you punish it for its oversight. </Flavor>
+		<specific name="Short Description"> Gain the vengeful guardian power </specific>
+      <specific name="_CS_ShortDescription"> @ </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_15848 </specific>
+		<specific name="Type"> At-Will </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_15848 </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_15848" type="Power" />
+		</rules>
+  
+You gain the vengeful guardian power.
+	</RulesElement>
+
+	<RulesElement name="Berserker Fury" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4134" source="Heroes of the Feywild">
+		<Category> 1 </Category>
+		<Flavor> Though you are a warrior of skill and poise most of the time, when your ire is stoked you become a force of destruction on the battlefield. At times of desperation, or when the scent of your enemies' blood fills your senses, you fly into a frenzy of rage. While engulfed in this primal rage, you abandon much of your discipline and training, allowing primal spirits to flow into you and assume control. </Flavor>
+		<specific name="Short Description"> Enter berserker fury until end of encounter when you use a barbarian primal attack power or as a minor action when bloodied: defender's aura ends, melee basic attacks deal 1d8 extra damage (2d8 at 11th, 3d8 at 21st) </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field=" Berserker Fury" value="This attack deals 1d8 extra damage. This extra damage increases to 2d8 at 11th level and 3d8 at 21st level." />
+		</rules>
+		
+When you use a barbarian primal attack power, you enter your Berserker Fury until the end of the encounter. Alternatively, you can use a minor action while you are bloodied to enter the fury. The fury has the following effects. 
+* Your defender aura ends, if it was active, and you cannot use defender aura or vengeful guardian until the fury ends.
+* Some of your powers, such as your barbarian martial at-will attack powers, gain additional benefits, as noted in those powers.
+* Your melee basic attacks deal 1d8 extra damage. This extra damage increases to 2d8 at 11th level and 3d8 at 21st level.
+	</RulesElement>
+
+	<RulesElement name="Vengeful Guardian" type="Power" internal-id="ID_FMP_POWER_15848" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_4133,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_OPPORTUNITY_ACTION </Category>
+		<Flavor> Your nearby enemies learn the hard way that it is unwise to ignore you. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack  </specific>
+		<specific name="Keywords"> Martial </specific>
+		<specific name="Action Type"> Opportunity Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> An enemy subject to your defender aura either shifts or makes an attack that targets an ally of yours, without targeting you or an ally who has an active defender aura. </specific>
+		<specific name="Effect"> You make a melee basic attack against the triggering enemy and deal 1d8 extra damage to it.
+	Level 11: 2d8 extra damage.
+	Level 21: 3d8 extra damage. On a miss, the attack deals half damage to the triggering enemy. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4133 </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+	</RulesElement>
+
+	<RulesElement name="Aggressive Lunge" type="Power" internal-id="ID_FMP_POWER_14408" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You lunge forward at your enemy, hoping to send it reeling. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 1[W] + Strength modifier damage, and you push the target 1 square. You then shift 1 square into the space the target just left.
+	Level 21: 2[W] + Strength modifier damage. </specific>
+		<specific name=" Berserker Fury"> This attack gains the primal keyword and deals 1d6 extra damage.
+	Level 11: 2d6 damage.
+	Level 21: 3d6 damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+In the wild places of the world, you have encountered beasts and monstrous creatures that respond only to aggression. You've learned to show such creatures the same lack of fear, lunging toward them to force them back.
+	</RulesElement>
+
+	<RulesElement name="Jarring Smash" type="Power" internal-id="ID_FMP_POWER_14409" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You slam your weapon into your enemy, causing it to reel at the force of your blow. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 1[W] + Strength modifier damage, and the target grants combat advantage until the end of your next turn.
+	Level 21: 2[W] + Strength modifier damage. </specific>
+		<specific name=" Berserker Fury"> This attack gains the primal keyword and deals 1d8 extra damage.
+	Level 11: 2d8 damage.
+	Level 21: 3d8 damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+An enemy knocked off balance is one that can soon be taken out of the fight. You strike at your foes in such a way that they reel from your attack in pain and disorientation.
+	</RulesElement>
+
+	<RulesElement name="Run Down" type="Power" internal-id="ID_FMP_POWER_14410" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You smash your enemy in a vulnerable place, slowing it and keeping it from escaping you. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 1[W] + Strength modifier damage, and the target is slowed until the end of your next turn.
+	Level 21: 2[W] + Strength modifier damage. </specific>
+		<specific name=" Berserker Fury"> This attack gains the primal keyword and deals 1d8 extra damage.
+	Level 11: 2d8 damage.
+	Level 21: 3d8 damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You have spent much time hunting for food for yourself and your family, and you have learned methods of keeping your prey from escaping. A quick strike to the legs, a slash at a hamstring, or a well-placed shove keeps your opponent close.
+	</RulesElement>
+
+	<RulesElement name="Stalk and Strike" type="Power" internal-id="ID_FMP_POWER_14411" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You creep toward your enemy, low and lurking, and then strike with surprising speed. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Effect"> You shift up to 2 squares before the attack. </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 1[W] + Strength modifier damage.
+	Level 21: 2[W] + Strength modifier damage. </specific>
+		<specific name=" Berserker Fury"> This attack gains the primal keyword and deals 1d8 extra damage.
+	Level 11: 2d8 damage.
+	Level 21: 3d8 damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Nimble and skittish prey will startle and run when a pursuer gets too close. You have experience in stalking your prey from a distance, then suddenly striking, and have learned to apply those techniques to making quick dashes in combat.
+	</RulesElement>
+
+	<RulesElement name="Batter Down" type="Power" internal-id="ID_FMP_POWER_14412" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You hammer your enemy, knocking it to the ground before you. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + Strength modifier damage, and you knock the target prone. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+A cowed enemy is a defeated enemy. You know that once you can stand over your opponent, you have the advantage. You have learned how to throw your weight behind a strike to send a foe sprawling.
+	</RulesElement>
+
+	<RulesElement name="Savage Cut" type="Power" internal-id="ID_FMP_POWER_14413" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Flavor> You drive your weapon into your enemy in the way that the jaws of a wolf seek its prey's throat, and you rend it savagely. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + 1d8 + Strength modifier damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When the bloodlust takes hold of you, you swing your weapon with strength and fervor that can come only from some supernatural force. As you cede control to rage-filled primal spirits, you can push your body beyond its normal limits.
+	</RulesElement>
+
+	<RulesElement name="Life-Ending Strike" type="Power" internal-id="ID_FMP_POWER_14414" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+		<Flavor> You lash out at your enemy with a mighty strike that presages the end of its life. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Special"> When charging, you can use this power in place of a melee basic attack. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Death is a part of nature, and the primal spirits that inhabit your body when you give yourself over to your fury know this better than any other creature. When your enemies have been battered and beaten back, the spirits guide your hand and fuel your ferocity,  nsuring a quick demise for those who oppose you.
+	</RulesElement>
+
+	<RulesElement name="Sweeping Cut" type="Power" internal-id="ID_FMP_POWER_14415" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+		<Flavor> You sweep your weapon in a wide arc, driving your foes to the ground where they will be at your mercy. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 1 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each enemy you can see in the burst </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + Strength modifier damage, and you knock the target prone. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You have sometimes found yourself surrounded by enemies, seemingly with little hope of survival. But you have always come out victorious. When you find enemies on all sides, you know how to use techniques that work against multiple foes, making them pay for ganging up on you.
+	</RulesElement>
+
+	<RulesElement name="Ignore Pain" type="Power" internal-id="ID_FMP_POWER_14416" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,2 </Category>
+		<Flavor> When your enemies hurt you, the strength of your rage allows you to shove the pain aside for a time. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Utility 2 </specific>
+		<specific name="Keywords"> Primal </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You take damage. </specific>
+		<specific name="Effect"> You gain temporary hit points equal to the triggering damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 2 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When the rage overtakes you, part of your mind recedes, replaced by something primal and dangerous. For a short time, pain, hunger, and fear fall by the wayside, the troubles of a mortal body disregarded by the force of nature you have become.
+	</RulesElement>
+
+	<RulesElement name="Nomad's Rush" type="Power" internal-id="ID_FMP_POWER_14417" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MOVE_ACTION,2 </Category>
+		<Flavor> Your training allows you to spot rough terrain with ease-and dash over it without a second thought. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Utility 2 </specific>
+		<specific name="Keywords"> Martial </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed + 4. During this move, you ignore difficult terrain. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 2 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You have traveled through many kinds of dangerous terrain throughout your life. You know that you can't always avoid such places and must be able to pass through them unscathed. In battle you apply that same principle, moving through dangerous terrain as if it wasn't there.
+	</RulesElement>
+
+	<RulesElement name="Implacable Advance" type="Power" internal-id="ID_FMP_POWER_14418" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+		<Flavor> You advance on your enemy and strike, continuing to close with your foe even if it tries to flee. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 3 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + Strength modifier damage. In addition, the first time the target moves before the end of your next turn, you can shift up to your speed to a square adjacent to the target as a free action after its movement. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When you select your foe, you know it is your responsibility to keep it from harming your allies. Once an enemy becomes the target of your attention, it can do little to escape, because you press your attack when it tries to retreat.
+	</RulesElement>
+
+	<RulesElement name="Thundering Smash" type="Power" internal-id="ID_FMP_POWER_14419" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+		<Flavor> You attack your enemy with such crashing force that the foes around it feel the effect of the blow. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 3 </specific>
+		<specific name="Keywords"> Primal, Thunder, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + Strength modifier damage, and each enemy adjacent to the target takes 5 thunder damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Sometimes, the primal spirits that control you when your fury emerges also channel elemental power. You can funnel this power into your attacks, unleashing a weapon strike that carries a concussive effect.
+	</RulesElement>
+
+	<RulesElement name="Dangerous Presence" type="Power" internal-id="ID_FMP_POWER_14420" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+		<Flavor> You strike quickly and decisively, showing your deadly skill to your enemies and causing them to cower in fear. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 5 </specific>
+		<specific name="Keywords"> Fear, Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> Until the end of the encounter, enemies grant combat advantage while subject to your defender aura. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You've seen your share of battles, and you have the scars to prove it. When you set yourself against a group of foes and lay waste to one of their number, they see that you are an opponent to be feared.
+	</RulesElement>
+
+	<RulesElement name="Feral Rampage" type="Power" internal-id="ID_FMP_POWER_14421" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+		<Flavor> The passion of the predator flows through you, allowing you to move between your enemies and cut both of them down like stalks of wheat. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 5 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One or two creatures </specific>
+		<specific name="Effect"> You can shift up to your speed after the first attack. </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Your rage fuels your speed as well as your strength. When you succumb to your bloodlust, the spirits inhabiting you make your heart race and your reactions quicken, allowing you to dash from enemy to enemy like a wild beast.
+	</RulesElement>
+
+	<RulesElement name="Cull Weakness" type="Power" internal-id="ID_FMP_POWER_14422" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+		<Flavor> Only the strong survive, and you let your enemies know that you are a survivor as you strike down the weakest among them with ease. The others quail before you as their wounds mount. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Utility 6 </specific>
+		<specific name="Keywords"> Primal, Stance </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You assume the cull weakness stance. Until the stance ends, bloodied enemies grant combat advantage to you, and you gain a +4 power bonus to damage rolls against them. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 6 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You know the ways of the wild; nature demands that the strong survive and the weak be culled. The spirits that enhance your abilities while inhabiting your body enforce this law, giving you the strength to uphold the tenet of survival of the fittest.
+	</RulesElement>
+
+	<RulesElement name="Wilderness Step" type="Power" internal-id="ID_FMP_POWER_14423" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_FREE_ACTION,6 </Category>
+		<Flavor> Your skill in traversing the wilderness allows you to bypass hindering effects that would delay others. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Utility 6 </specific>
+		<specific name="Keywords"> Martial </specific>
+		<specific name="Action Type"> Free Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You start your turn subject to an immobilized, restrained, or slowed condition that a save can end. </specific>
+		<specific name="Effect"> You make a saving throw with a +2 power bonus against one triggering condition. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 6 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Vines cannot hold you, sand trap you, nor stones impair you. You've spent so much time in the wild, tackling the worst terrain that nature can create, that no obstacle can hinder you for long.
+	</RulesElement>
+
+	<RulesElement name="Deny Escape" type="Power" internal-id="ID_FMP_POWER_14424" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+		<Flavor> In your bloodlust, letting an enemy go isn't an option. You attack with great force, preventing your foe from escaping your fury. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 7 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + Strength modifier damage, and the target is immobilized until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 7 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When your enemies grow wary of your might, some try to flee the battlefield. You know how to ensure that they do not get away.
+	</RulesElement>
+
+	<RulesElement name="Shattering Strike" type="Power" internal-id="ID_FMP_POWER_14425" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+		<Flavor> The primal force flowing from your body enables your attack to strike true even against ethereal targets. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 7 </specific>
+		<specific name="Keywords"> Force, Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier force damage. This damage ignores the insubstantial quality. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 7 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When the primal spirits fight from within you, your attacks have the weight of supernatural force. By letting the magic of the spirits flow freely from you, you are able to wound creatures that are barely harmed by normal attacks.
+	</RulesElement>
+
+	<RulesElement name="Eye of the Maelstrom" type="Power" internal-id="ID_FMP_POWER_14426" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+		<Flavor> You attack your foes with incredible speed and strength, becoming a vortex of whirling strikes that seek out any foe that unwisely ignores you. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 9 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> Until the end of the encounter, your defender aura expands to an aura 2, and you can shift 1 square as a free action before making a melee basic attack granted by your vengeful guardian power. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 9 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When your back is to the wall and the odds against you are overwhelming, you call upon all your experience as a warrior, evening the odds. You dare enemies to come within striking distance, and then you punish them when they don't devote their full attention to you.
+	</RulesElement>
+
+	<RulesElement name="Wrath of the Storm" type="Power" internal-id="ID_FMP_POWER_14427" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+		<Flavor> Your rage is like that of the howling storm. When you attack, you violently sweep aside the foe that dared to stand in your way. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 9 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You push the target up to 4 squares and knock it prone. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 9 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+At the height of your rage, your weapon strike carries the power of a raging storm. The primal spirits that fuel your rage lend you their strength, and you blast an enemy away from you with the force of a roaring gale.
+	</RulesElement>
+
+	<RulesElement name="Circle of Battle" type="Power" internal-id="ID_FMP_POWER_14428" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+		<Flavor> You command your allies to clear out a space, allowing you to draw an enemy's focus to yourself. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Utility 10 </specific>
+		<specific name="Keywords"> Martial </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Melee 1 </specific>
+		<specific name="Target"> One enemy subject to your defender aura </specific>
+		<specific name="Effect"> As a free action, each of your allies adjacent to the target can shift up to 2 squares to a square that is not adjacent to the target. Additionally, until the start of your next turn, when you hit the target with an opportunity attack or a vengeful guardian attack, you immobilize it until the end of its next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 10 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Among the barbarian tribes you associate with, the rite of single combat is often used to determine which side of a conflict is in the right, avoiding the bloodshed of battle. You've learned how to apply that fighting style, enabling you to single out and defeat a foe as you would an opposing tribe's champion.
+	</RulesElement>
+
+	<RulesElement name="Surge of Fury" type="Power" internal-id="ID_FMP_POWER_14429" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_NO_ACTION,10 </Category>
+		<Flavor> You release a howl that blocks out the whispers of your enemies and fills you with a fury that gives you a clarity of purpose. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Utility 10 </specific>
+		<specific name="Keywords"> Primal </specific>
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> You start your turn subject to a dazing or dominating effect. </specific>
+		<specific name="Effect"> You end the triggering effect. Until the end of your next turn you are immune to effects that daze or dominate you. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 10 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When the primal spirits flow through you during your rage, they also offer you some protection. When an opponent seeks to incapacitate you or to overcome your will, the spirits help you ignore such threats.
+	</RulesElement>
+
+	<RulesElement name="Drive to the Ground" type="Power" internal-id="ID_FMP_POWER_14430" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+		<Flavor> You drive your weapon into your foe with such ferocity that it staggers away and crashes to the ground. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 13 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage, and you slide the target up to 2 squares and knock it prone. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 13 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+An unbalanced enemy is a quickly defeated enemy. You have mastered the ability to send your foes stumbling to the ground when you strike them. When you do so, your enemy is both at a disadvantage in combat and unable to threaten your allies effectively for a time.
+	</RulesElement>
+
+	<RulesElement name="Blood for Strength" type="Power" internal-id="ID_FMP_POWER_14431" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+		<Flavor> You deliver a brutal wound to your enemy, offering the result of your bloodlust to the spirits that fuel your rage. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 13 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + 2d8 + Strength modifier damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 13 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When you cleave your enemies, the blood that spills does more than whet your appetite. Such an offering strengthens your connection to the primal spirits, who must be placated lest they abandon you when you need them most.
+	</RulesElement>
+
+	<RulesElement name="Bloodletting Assault" type="Power" internal-id="ID_FMP_POWER_14432" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+		<Flavor> You sprint over the intervening ground, then drive your weapon into your enemy with an unnatural strength that cannot be denied. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 15 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 6[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Special"> When charging, you can use this power in place of a melee basic attack. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 15 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+With the spirits driving your fury, you can rush across the battlefield and deliver a massive strike against your enemy, harming it severely if not killing it outright.
+	</RulesElement>
+
+	<RulesElement name="Slash at the Knees" type="Power" internal-id="ID_FMP_POWER_14433" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+		<Flavor> Even though surrounded by foes, you become a whirlwind of death, hurting and incapacitating every one of them. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 15 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each enemy you can see in the burst </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage, and the target is immobilized until the end of your next turn. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 15 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+This attack is especially useful when you're at the center of a battle, which is where you like to be. You can wound and hinder a number of enemies at one time, making them easier targets for your allies.
+	</RulesElement>
+
+	<RulesElement name="Distracting Advance" type="Power" internal-id="ID_FMP_POWER_14434" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MOVE_ACTION,16 </Category>
+		<Flavor> You bolt into the fray, bellowing a battle cry that distracts your foe long enough for your comrades to move away. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Utility 16 </specific>
+		<specific name="Keywords"> Martial </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to half your speed. If you end this shift adjacent to an enemy, each of your allies adjacent to that enemy can shift up to 3 squares as a free action to a square that is not adjacent to that enemy. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 16 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You have learned how to attract an enemy's attention, making the foe hesitate so that your endangered allies can get to safety.
+	</RulesElement>
+
+	<RulesElement name="Path of the Predator" type="Power" internal-id="ID_FMP_POWER_14435" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MOVE_ACTION,16 </Category>
+		<Flavor> You lunge forward with such quickness and grace that you pounce on your foe before it sees you coming. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Utility 16 </specific>
+		<specific name="Keywords"> Primal </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You shift up to twice your speed. During this shift, you can make Athletics checks to climb, jump, and swim. If you end this shift adjacent to an enemy, that enemy grants combat advantage to you until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 16 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Primal animal spirits hunt alongside you, remaining invisible but lending you their strength. When you throw yourself against your enemies, overflowing with fury, these spirits surge with you, granting you newfound strength and speed.
+	</RulesElement>
+
+	<RulesElement name="Forceful Spirits" type="Power" internal-id="ID_FMP_POWER_14436" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+		<Flavor> Your attack is driven by the power of the spirits, sending foes near your enemy reeling. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 17 </specific>
+		<specific name="Keywords"> Force, Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + Strength modifier damage. In addition, each enemy adjacent to the target takes 5 force damage and is pushed up to 2 squares from the target. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 17 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When you unleash your fury, some of your strikes are more powerful than you can normally make because the spirits surround your weapon, lending their aid to increase the speed and strength of your blows.
+	</RulesElement>
+
+	<RulesElement name="Unavoidable Stalker" type="Power" internal-id="ID_FMP_POWER_14437" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+		<Flavor> You strike your target and then continue to track it, remaining in step with it no matter where it goes. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 17 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage. In addition, at the end of the target's next turn, if it is not adjacent to you, you can shift up to your speed + 2 to a square adjacent to the target as a free action. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 17 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You are a predator that cannot be escaped. Years of hunting, whether for wild game or fleeing enemies, have taught you how to relentlessly track your quarry before bringing it down.
+	</RulesElement>
+
+	<RulesElement name="Terrifying Presence" type="Power" internal-id="ID_FMP_POWER_14438" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+		<Flavor> You land a mighty blow and face your enemies, terrifying them with the visage of your battle lust. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 19 </specific>
+		<specific name="Keywords"> Fear, Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + Strength modifier damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> Until the end of the encounter or until your defender aura ends, enemies in your defender aura grant combat advantage and cannot make opportunity attacks. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 19 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When you enter your battle fury, your appearance takes on a dangerous cast, as if death is hovering near you. When you attack, you leave those near your foe quaking from your frightening countenance.
+	</RulesElement>
+
+	<RulesElement name="Torrent of Destruction" type="Power" internal-id="ID_FMP_POWER_14439" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+		<Flavor> The spirits spur you into action, giving you the speed and fury to sweep across the battlefield like a windstorm. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 19 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Effect"> You shift up to your speed. During the shift, you can make the following attack once against each creature to which you move adjacent. </specific>
+		<specific name=" Target"> One creature </specific>
+		<specific name=" Attack"> Strength vs. AC </specific>
+		<specific name=" Hit"> 4[W] + Strength modifier damage. </specific>
+		<specific name=" Miss"> Half damage. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 19 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Your rage sends ripples out through the world, attracting primal spirits as moths are drawn to a flame. When they come, you let the spirits take hold of you, turning you into a creature of primal power whose speed and strength is augmented by supernatural forces.
+	</RulesElement>
+
+	<RulesElement name="Limitless Advance" type="Power" internal-id="ID_FMP_POWER_14440" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MOVE_ACTION,22 </Category>
+		<Flavor> No enemy is beyond your reach, and you let no obstacle stop you from reaching a foe. </Flavor>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Utility 22 </specific>
+		<specific name="Keywords"> Martial, Primal </specific>
+		<specific name="Action Type"> Move Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You move up to your speed. During this movement, you can jump horizontally a number of squares up to your speed without needing to make an Athletics check, and you can climb and swim at full speed rather than half speed. Your total distance moved cannot exceed your speed. Additionally, any falling damage you take is reduced by 20 until the end of the turn. </specific>
+		<specific name="Special"> You can use this power only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 22 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+With the power of the primal spirits supporting you, you can surpass mortal limits of exertion. You can now leap across chasms, swim mighty rivers, and scale sheer surfaces without slowing.
+	</RulesElement>
+
+	<RulesElement name="Driving Smash" type="Power" internal-id="ID_FMP_POWER_14441" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+		<Flavor> As your weapon strikes home, you shatter your enemy's defenses in addition to dealing it a vicious blow. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 23 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + Strength modifier damage. This attack ignores the insubstantial quality and the target's resistances. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 23 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+When the spirits are fueling your rage and answering its call at the same time, nothing can stand between you and your foe. You know how to bend the spirits' power to your will, harnessing their magic to drive past any defenses.
+	</RulesElement>
+
+	<RulesElement name="Wracking Wound" type="Power" internal-id="ID_FMP_POWER_14442" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+		<Flavor> You slash at your foe, dealing it a wound that causes great pain when your enemy moves. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 23 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 3[W] + Strength modifier damage. Until the end of your next turn, the target takes damage equal to your Strength modifier for each square of voluntary movement it undertakes. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 23 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+A wounded enemy will take risks, sometimes causing itself as much injury as if you had struck it a heavy blow. You know how to inflict pain on a foe with every step it takes.
+	</RulesElement>
+
+	<RulesElement name="Unmatched Precision" type="Power" internal-id="ID_FMP_POWER_14443" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+		<Flavor> You strike down your foe with such focus and poise that it seems as though your attacks cannot miss. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 25 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 6[W] + Strength modifier damage. </specific>
+		<specific name=" Berserker Fury"> This attack gains the primal keyword and deals 2[W] extra damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> Until the end of the encounter, while you have no unused encounter attack powers, whenever you make an attack roll for a melee basic attack or a barbarian at-will attack power, you can roll twice and use either result. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 25 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Many warriors hear tales of becoming one with the flow of a battle, where it seems as though time slows down and all of one's attacks slip past enemy defenses with little effort. You are able to achieve this state, finding intense focus when the situation is most dire.
+	</RulesElement>
+
+	<RulesElement name="Forceful Evisceration" type="Power" internal-id="ID_FMP_POWER_14444" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+		<Flavor> You channel the primal power around you into your weapon and strike. The attack not only causes immense damage, it leaves your enemy devoid of its natural protection for a time. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 27 </specific>
+		<specific name="Keywords"> Force, Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + 3d8 + Strength modifier force damage, and the target loses all resistances until the end of your next turn. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 27 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+You have battled enemies that have defenses so tough that your allies' attacks barely scratch them. In a fight against such a foe, it is your responsibility to wound the enemy badly, opening it up to further assaults from your friends before it can recover.
+	</RulesElement>
+
+	<RulesElement name="Keep It Down" type="Power" internal-id="ID_FMP_POWER_14445" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+		<Flavor> You put your enemy down on the ground-and keep it there. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Barbarian Attack 27 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 4[W] + Strength modifier damage, and you knock the target prone. Until the end of your next turn, the target provokes opportunity attacks whenever it stands up. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 27 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Fighting from a disadvantageous position is dangerous, but if you can put an enemy into the same situation, its chances of survival drop rapidly. You've learned how to not only drop an opponent, but to keep it off balance, allowing anyone nearby to attack it as it tries to right itself.
+	</RulesElement>
+
+	<RulesElement name="Deadly Sweep" type="Power" internal-id="ID_FMP_POWER_14446" source="Heroes of the Feywild">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+		<Flavor> You execute a series of strikes so blindingly fast that your enemies fall before you or are driven back. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 29 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Target"> Each enemy you can see in the burst </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 5[W] + Strength modifier damage. </specific>
+		<specific name=" Berserker Fury"> This attack gains the primal keyword and deals 2[W] extra damage. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> You can choose to either push the target up to 2 squares or knock it prone. </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 29 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
+Whoever strikes the quickest remains standing at battle's end. You have perfected the technique of lashing out with several blows at those around you, which can make the difference between taking a life and losing your own.
+	</RulesElement>
+<!-- DSH -->
+  <RulesElement name="Crushing Charge" type="Power" internal-id="ID_FMP_POWER_16514" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> The impact of your charge smashes your foe back to crush it against solid terrain. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Barbarian Attack 7 </specific>
+    <specific name="Keywords"> Primal, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and you push the target up to 2 squares. If the target ends this push adjacent to blocking terrain, the target takes damage equal to your Strength modifier. </specific>
+    <specific name="Special"> When charging, you can use this power in place of a melee basic attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_148 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+The warriors of Cor Talcor have learned to wield the rocky terrain of their underground homes as a weapon. Crushing charge not only slams your foe into a wall, but does so hard enough to make the wall hit back.
+</RulesElement>
+
+
+<!-- BARBARIAN CLASS FEATURE. CLEANED UP STATADD SYNTAX -->
+
+<RulesElement name="Barbarian Agility" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1492" source="Player's Handbook 2" revision-date="10/5/2010 1:47:04 PM">
+	<Category> 1 </Category>
+    <specific name="Short Description"> Gain +1 AC and Reflex when not wearing heavy armor. (+2 at 11th level, +3 at 21st) </specific>
+    <specific name="Level"> 1 </specific>
+        <rules>
+            <statadd name="Barbarian Agility" value="+1" />
+            <statadd name="Barbarian Agility" value="+1" requires="Paragon Tier" />
+            <statadd name="Barbarian Agility" value="+1" requires="Epic Tier" />
+            <statadd name="AC" value="+Barbarian Agility" not-wearing="armor:heavy" />
+            <statadd name="Reflex Defense" value="+Barbarian Agility" not-wearing="armor:heavy" />
+        </rules>
+While you are not wearing heavy armor, you gain a +1 bonus to AC and Reflex. The bonus increases to +2 at 11th level and +3 at 21st level.
+</RulesElement>
+</D20Rules>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>RacesoftheShroud-TheHalf-dead.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/RacesoftheShroud-TheHalf-dead.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/RacesoftheShroud-TheHalf-dead.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Half-Dead" type="Race" internal-id="ID_TIV_RACE_1" source="Races of the Shroud: The Half-Dead" revision-date="12/31/2010 10:46:57 AM">
+    <Prereqs> ~HALFDEAD </Prereqs>
+    <Flavor> Tragic figures cursed to wander the earth, neither fully living nor fully dead </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Cynical, dedicated, outcast, persecuted, searching, self-reliant, solitary, unstoppable, vengeful, willful </specific>
+    <specific name="Physical Qualities"> Members of any race can find themselves among the half-dead. The half-dead's original race is still recognizable on some level, but all half-dead lose their original racial qualities and undergo the same changes. In appearance, all half-dead resemble a recently deceased version of their original race, but the specifics vary greatly among individuals. A half-dead's skin becomes a sickly pale color, often splotched with purple from the pooling blood from their semi-functional circulatory system. As they age, they become increasingly gaunt, no matter how much food they eat. After a few years they look to be perpetually starving. Their faces become sunken, tight-stretched masks with little expression. Some half-dead conceal their nature with makeup or clothing that conceals. However, their milky, blank eyes never can be hidden short of magic. This gives them a lost, haunted gaze that never seems to focus on anything at least anything in the land of the living. Many of the half-dead's bodily functions, such as hair growth or healing of injuries, stopped when they left the ranks of the fully living. Each half-dead is unique. Which processes continue differs among individual cases. Some are able to grow hair but cannot heal without scarring. Others quickly lose their teeth to rot but continue growing fingernails without a problem. All half-dead eventually smell like a graveyard, never quite rotting but giving the impression something is not right within them. This half life makes it difficult for the halfdead to conceal their true natures, the longer they exist.</specific>
+    <specific name="Playing"> The half-dead are drawn from all races, professions, and people among the Shroud, but they all have one thing in common: they were not willing to lie down and die. Without exception, all half-dead died with some great feat left unaccomplished. Their drive to finish this task and the power of the Shroud have given them a second chance. Thus half-dead are all driven, willful sorts who have the power to fight back death. Resolving a quest does not release a half-dead. Indeed, even when others have taken up the half-dead's lost quests and brought them closure, the half-dead continues to exist. Death is the only real escape from this half-life. Once the halfdead are returned to the land of the living, at least in part, they can only leave by dying again. Some half-dead are driven mad by this realization, having found no comfort in closure. There is no peace in this world for the half-dead, save what they make. Generally, all half-dead have the personality, cultural knowledge, and memories of their living existence, though most now see these beliefs through a dark and sardonic filter. The great causes they valued in life often look pale and empty through the eyes of the dead. Many half-dead are deeply sarcastic, cynical, and bitter people. Some manage to find new causes and beliefs to champion, but most avoid placing too much faith in anything but themselves. More than a few half-dead lose faith in their gods, who (the half-dead reason) must have abandoned them to this half-life rather than letting them rest in peace. Some of the half-dead try to reinsert themselves back into their old lives, but this rarely works. Few people are comfortable around the half-dead, especially when it's a husband, mother, or friend. This drives most half-dead to seek out new homes; often their search never ends due to the widespread fear and violence that greets them. Many people cannot differentiate between a halfdead and an undead, and angry mobs have executed more than a few well-meaning half-dead due to such confusion. Many half-dead live as hermits, wandering adventurers who conceal their true nature, or who reside among the more spiritual tribes of the Ghostcrag Peaks. where consorting with the dead is not such an issue. Many of the half-dead show a strange affinity for the ancient ruins scattered across the Ghostcrag Peaks. They explore and research these ancient and little known remains of an elder civilization. Some go mad in this pursuit. Others pay the mystery little mind aside from a quick investigation. Theories about this affinity to these mountainous ruins abound. Some believe that the energy animating the half-dead is the essence of the spirits of this long dead civilization, whereas others think the Shroud itself directs them to find something in these ancient ruins. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5' 4"-6'5" </specific>
+    <specific name="Average Weight"> 110-250 lb. </specific>
+    <specific name="Ability Scores"> +2 Strength, +2 to Constitution or Intelligence </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Endurance, +2 Intimidate </specific>
+    <specific name="Male Names"> Half-dead individuals usually set aside their "mortal names," and adopt monikers that better fit their accursed state. Those who do not take on a cursed name have names appropriate to the race they were when fully alive. Bonewalker, The Breaker of Graves, Dead Jack, Gaunt, Heinrich the Pale, The Lost Brother, The Mockery, Raven, Shadowheart, The Wronged Son. </specific>
+    <specific name="Short Description"> Infected with dark, necrotic magics while dying, the half-dead have returned only part-way to life, their flesh afflicted by an undead curse. </specific>
+    <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_01, ID_TIV_RACIAL_TRAIT_02, ID_TIV_RACIAL_TRAIT_03, ID_TIV_RACIAL_TRAIT_04 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_HALFDEAD" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5' 6&quot;-6'2&quot;" />
+      <textstring name="Average Weight" value="135-220 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" />
+      <select type="Language" number="1" Category="Starting" />
+    </rules>
+
+
+Play a Half-Dead if you want ...
+-to be a tragic hero cursed by necromancy.
+-to be death-resistant and relentless.
+-to be a member of a race that favors the defender role, particularly the fighter class.
+</RulesElement>
+  <RulesElement name="Half-Dead" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFDEAD" source="Races of the Shroud: The Half-Dead">
+    <specific name="_SupportsID"> ID_TIV_RACE_1 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_TIV_RACIAL_TRAIT_01" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_02" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_03" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_04" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Half-Dead" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_HALFDEAD" source="Races of the Shroud: The Half-Dead">
+    <specific name="_SupportsID"> ID_TIV_RACE_1 </specific>
+You count as a Half-Dead for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Horrified Wrath" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_01" source="Races of the Shroud: The Half-Dead" revision-date="12/5/2010 1:47:14 PM">
+    <specific name="Short Description"> Use Horrified Wrath as an encounter power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_01_01 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_01_01 </specific>
+    <rules>
+      <grant name="ID_TIV_POWER_01_01" type="Power" />
+    </rules>
+You have the Horrified Wrath Power.
+   </RulesElement>
+  <RulesElement name="horrified Wrath" type="Power" internal-id="ID_TIV_POWER_01_01" source="Races of the Shroud: The Half-Dead" revision-date="12/27/2010 11:28:07 AM">
+    <Category> ID_TIV_RACIAL_TRAIT_01,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
+    <Flavor> Your wounds overcome your living mind, and the undead brute within breaks free. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Half-Dead Racial Power </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You become bloodied by an attack. </specific>
+    <specific name="Effect"> Add your Constitution modifier as necrotic damage to your attacks until the end of your next turn. You are at -2 to your defenses vs. any fear attacks or abilities while this power is in effect. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_01 </specific>
+  </RulesElement>
+  <RulesElement name="The Dead Rise" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_02" source="Races of the Shroud: The Half-Dead" revision-date="12/5/2010 1:47:14 PM">
+    <specific name="Short Description"> Stand up as a minor action. </specific>
+    <specific name="Level"> 1 </specific>
+You may stand up as a minor action.
+</RulesElement>
+  <RulesElement name="Resistance and Weakness" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_03" source="Races of the Shroud: The Half-Dead" revision-date="12/5/2010 1:47:14 PM">
+    <specific name="Short Description"> You have resist necrotic 5, and vulnerable radiant 5. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="resist:necrotic" value="+5" type="resist" />
+      <statadd name="vulnerable:radiant" value="+5" type="vulnerable" />
+    </rules>
+You have resist necrotic 5, and vulnerable radiant 5.
+</RulesElement>
+  <RulesElement name="Relentless" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_04" source="Races of the Shroud: The Half-Dead" revision-date="12/5/2010 1:47:14 PM">
+    <specific name="Short Description"> You gain a +5 racial bonus to saving throws against dying. </specific>
+    <specific name="Level"> 1 </specific>
+You gain a +5 racial bonus to saving throws against dying.
+</RulesElement>
+</D20Rules>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>RacialVariants(Volume1).part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/RacialVariants(Volume1).part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/RacialVariants(Volume1).txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Racial Variants Volume 1" type="source" internal-id="ID_TIV_SOURCE_1" source="Core">
+    <specific name="IsBeta"> 1 </specific>
+    <specific name="Release Date"> 10/01/2010 </specific>
+  </RulesElement>
+  <RulesElement name="City-Elf" type="Race" internal-id="ID_TIV_RACE_2" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> ~City-Elf </Prereqs>
+    <Flavor> The City-Elf favors the concrete jungle to the one of wood. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 7 squares </specific>
+    <specific name="Characteristics"> Agile, friendly, intuitive, joyful, perceptive, quick, quiet, wild </specific>
+    <specific name="Physical Qualities"> Elves are slender, athletic folk about as tall as humans. They have the same range of complexions as humans, tending more toward tan or brown hues. A typical elf 's hair color is dark brown, autumn orange, mossy green, or deep gold. Elven ears are long and pointed, while an elf 's eyes are vibrant blue, violet, or green. Elves favor a wild and loose look to their hair.
+	Elves mature at about the same rate as humans, but they show few effects of age past adulthood. The first sign of an elf 's advancing age is typically a change in hair color sometimes graying but usually darkening or taking on more autumnal hues. Most elves live to be well over two hundred years old and remain vigorous almost to the end. </specific>
+    <specific name="Playing"> While a majority of their race have lived in the forests and among nature since the race divided from the original race that spawned the elves, eladrin, and drow, the City-elves found themselves gravitating to metropolises with tall towers and cramped alleyways. The City-Elf favors the concrete jungle to the one of wood. City-elves find their homes in cities either still alive with a population and commerce or in the ruins of great empires. City-elves have long abandoned the tall trees for the tall buildings; but they did not abandon their cunning. While toned less than their tree-bound cousins, they still have an advantage that the others don't, the ability to move freely around the walls, roofs, and gutters of a city than any other race. Most have become the defenders of the rooftops using hails of arrows to take on anyone that would do harm to their new homes.</specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5' 4"-6'0" </specific>
+    <specific name="Average Weight"> 130-170 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Intelligence or +2 Strength </specific>
+    <specific name="Languages"> Common, Elven </specific>
+    <specific name="Skill Bonuses"> +2 Acrobatics, +2 Athletics </specific>
+    <specific name="Male Names"> Adran, Aelar, Beiro, Carric, Erdan, Gennal, Heian, Lucan, Peren, Rolen, Theren, Varis. </specific>
+    <specific name="Female Names"> Adrie, Birel, Chaedi, Dara, Enna, Faral, Irann, Keyleth, Lia, Mialee, Shava, Thia, Valna . </specific>
+    <specific name="Short Description"> The elves have a deep love of nature, and their accuracy with bow, blade, or spell is unmatched. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_20, ID_FMP_RACIAL_TRAIT_353, ID_TIV_RACIAL_TRAIT_06, ID_FMP_RACIAL_TRAIT_641, ID_TIV_RACIAL_TRAIT_05 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_CITY-ELF" type="Grants" />
+      <statadd name="Speed" value="+7" />
+      <textstring name="Average Height" value="5' 4&quot;-6'0&quot;" />
+      <textstring name="Average Weight" value="130-170 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Strength" />
+    </rules>
+
+
+Play an City Elf if you want ...
+</RulesElement>
+  <RulesElement name="City-Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_CITY-ELF" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_2 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_20" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_353" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_06" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_05" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="City-Elf" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_CITY-ELF" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_2 </specific>
+You count as a City-Elf for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Free Run" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_05" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> You can move on Vertical Surfaces. </specific>
+    <specific name="Level"> 1 </specific>
+You may take any part of your movement on a non-horizontal surface. You must either make the appropriate climb check or end your turn on a horizontal surface; otherwise you fall and take the appropriate fall damage.
+</RulesElement>
+  <RulesElement name="Elven Agility" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_06" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
+    <specific name="Short Description"> Use Elven Agility as an encounter power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_RACIAL_TRAIT_06_06 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_RACIAL_TRAIT_06_06 </specific>
+    <rules>
+      <grant name="ID_TIV_RACIAL_TRAIT_06_06" type="Power" />
+    </rules>
+You have the Elven Agility power.
+   </RulesElement>
+  <RulesElement name="Elven Agility" type="Power" internal-id="ID_TIV_RACIAL_TRAIT_06_06" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_06,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+    <Flavor> Your hand may slip, your foot may slide, but you're steady and sturdy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> City-Elf Racial Power </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger" />
+    <specific name="Effect"> You may reroll a failed Acrobatics or Athletics check, you must use the second roll. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_06 </specific>
+  </RulesElement>
+  <RulesElement name="Couatl Dragonborn" type="Race" internal-id="ID_TIV_RACE_3" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> ~COUATL DRAGONBORN </Prereqs>
+    <Flavor> The Couatl Dragonborn found their strength in grace. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Driven, honor-bound, noble, perfectionist, proud, reliable, reserved, rooted in ancient religion </specific>
+    <specific name="Physical Qualities"> Dragonborn resemble humanoid dragons. They're covered in scaly hide, but they don't have tails. They are tall and strongly built, often standing close to 6 1/2 feet in height and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws, with three fingers and a thumb on each hand. A dragonborn's head features a blunt snout, a strong brow, and distinctive frills at the cheek and ear. Behind the brow, a crest of hornlike scales of various lengths resembles thick, ropy hair. Their eyes are shades of red or gold.
+	A typical dragonborn's scales can be scarlet, gold, rust, ocher, bronze, or brown. Rarely do an individual's scales match the hue of a chromatic or metallic dragon, and scale color gives no indication of the type of breath weapon a dragonborn uses. Most dragonborn have very fine scales over most of their body, giving their skin a leathery texture, with regions of larger scales on the forearms, lower legs and feet, shoulders, and thighs.
+	Young dragonborn grow faster than human children do. They walk hours after hatching, reach the size and development of a 10-year-old human child by the age of 3 and reach adulthood by 15. They live about as long as humans do. </specific>
+    <specific name="Playing"> The common dragonborn takes on characteristics of either a metallic or chromatic dragon that their ancestry is derived, but some have a long history with the couatls and their body reflects that history. Viewing their other dragonborn cousins as brash, lamenting for a legacy long since past; the couatl dragonborn found their strength in grace. Just as the normal dragonborn found power in the swing of their swords, the couatl dragonborn found stealth and subterfuge to be a sharper and stronger weapon. The final distinction between the two bloodlines is the way they project their heritage. Dragonborn vomit their power as a breath weapon, letting it harm whomever gets in the way, the couatl dragonborn injects their target with the precise dose needed to subdue them.</specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 6' 2"-6' 8" </specific>
+    <specific name="Average Weight"> 220-320 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Constitution </specific>
+    <specific name="Languages"> Common, Draconic </specific>
+    <specific name="Skill Bonuses"> +2 Religion, +2 Intimidate </specific>
+    <specific name="Male Names"> Arjhan, Balasar, Bharhash, Donaar, Ghesh, Heskan, Kriv, Medrash, Nadarr, Patrin, Rhogar, Shamash, Shedinn, Torinn. </specific>
+    <specific name="Female Names"> Akra, Biri, Daar, Harann, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava. </specific>
+    <specific name="Short Description"> Descended from couatl dragons, couatl dragonborn are a proud race of warriors. </specific>
+    <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_07,ID_FMP_RACIAL_TRAIT_631,ID_TIV_RACIAL_TRAIT_08 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_COUATL_DRAGONBORN" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="6' 2&quot;-6' 8&quot;" />
+      <textstring name="Average Weight" value="220-320 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
+    </rules>
+Born to fight, dragonborn are a race of wandering mercenaries, soldiers, and adventurers. Long ago, their empire contended for worldwide dominion, but now only a few rootless clans of these honorable warriors remain to pass on their legends of ancient glory.
+
+Play a Couatl Dragonborn if you want ...
+-	to look like a dragon.
+-	to be the proud heir of an ancient, fallen empire.
+-	to inject venom.
+-	to be a member of a race that favors the warlord, fighter, and paladin classes.
+   </RulesElement>
+  <RulesElement name="Couatl Dragonborn" type="Grants" internal-id="ID_INTERNAL_GRANTS_COUATL_DRAGONBORN" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_3 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_TIV_RACIAL_TRAIT_07" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_631" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_08" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_2" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Couatl Dragonborn" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_COUATL_DRAGONBORN" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_3 </specific>
+You count as a Couatl Dragonborn for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Twist Free" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_07" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> +2 to escape attempts, entering and exiting tight spaces. </specific>
+    <specific name="Level"> 1 </specific>
+You gain a +2 to all checks required for you to enter and exit tight spaces. You also gain this +2 to all escape attempts.
+</RulesElement>
+  <RulesElement name="Couatl Dragonborn Racial Power" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_08" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TIV_RACIAL_TRAIT_08_01, ID_TIV_RACIAL_TRAIT_08_02 </specific>
+    <rules>
+      <select type="Racial Trait" number="1" Category="Couatl Dragonborn Racial Power" />
+    </rules>
+When you select dragonborn as your character's race, choose one of the following powers. Your dragonborn character gains that power.
+   </RulesElement>
+  <RulesElement name="Couatl Dawn Venom" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_08_01" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_08 </Category>
+    <specific name="Short Description"> Use Dawn Venom as an encounter power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_08_01_01 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_08_01_01(Encounter) </specific>
+    <rules>
+      <grant name="ID_TIV_POWER_08_01_01" type="Power" />
+      <modify Field="Power Usage" value="Encounter" />
+    </rules>
+You can use Dawn Venom as an encounter power.
+   </RulesElement>
+  <RulesElement name="Dawn Venom" type="Power" internal-id="ID_TIV_POWER_08_01_01" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_08_01,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_14,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> As you leap upon your hapless enemy, you viciously bite down injecting a horrible venom from your gleaming fangs. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Couatl Dragonborn Racial Power </specific>
+    <specific name="Keywords"> Poison, Radiant </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee </specific>
+    <specific name="Targets"> One Creature. </specific>
+    <specific name="Attack"> Strength +2 vs. Reflex, Constitution +2 vs. Reflex, or Dexterity +2 vs. Reflex </specific>
+    <specific name="Hit"> 1d4 + Charisma modifier poison and radiant damage. The target also takes ongoing Charisma modifier poison and radiant damage, save ends. 
+Increase to 2d4 + Charisma modifier poison and radiant damage and ongoing 2 x Charisma modifier poison and radiant damage, save ends at 11th level, and to 3d4 + Charisma modifier poison and radiant damage and ongoing 3 x Charisma modifier poison and radiant damage, save ends at 21st level. </specific>
+    <specific name="Effect"> While the target is subject to the ongoing damage, anytime the target is hit in melee by you, you may perform this attack again as though it wasn't expended, the ongoing damage doesn't stack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_08_01 </specific>
+  </RulesElement>
+  <RulesElement name="Couatl Dragonfear" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_08_02" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_08 </Category>
+    <specific name="Short Description"> Instead of a breath weapon, you developed an ability to unhinge even the most stalwart of opponents.  Use dragonfear as an encounter power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_08_02_02 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_08_02_02 </specific>
+    <rules>
+      <grant name="ID_TIV_POWER_08_02_02" type="Power" />
+    </rules>
+You can use Couatl Dragonfear as an encounter power.
+   </RulesElement>
+  <RulesElement name="Couatl Dragonfear" type="Power" internal-id="ID_TIV_POWER_08_02_02" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_08_02,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> Your presence causes your enemies to quake and tremble. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Couatl Dragonborn Racial Power </specific>
+    <specific name="Keywords"> Fear </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 (increase to close burst 10 at 21st level) </specific>
+    <specific name="Target"> Each enemy in burst </specific>
+    <specific name="Attack"> Strength +2 vs. Will or Charisma +2 vs. Will
+Level 11: Strength + 4 vs. Will or Charisma + 4 vs. Will.
+Level 21: Strength + 6 vs. Will or Charisma + 6 vs. Will. </specific>
+    <specific name="Hit"> The target takes a -2 penalty to attack rolls and grants combat advantage until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_08_02 </specific>
+  </RulesElement>
+  <RulesElement name="Feral Eladrin" type="Race" internal-id="ID_TIV_RACE_4" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> ~FERAL ELADRIN </Prereqs>
+    <Flavor> Most Eladrin are refined and eloquent, the ferals among them are more warlike and eager for combat. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Aesthetic, deliberative, detached, free, graceful, magical, otherworldly, patient, perceptive </specific>
+    <specific name="Physical Qualities"> Eladrin are of human height. They are slim, and even the strongest simply look athletic rather than muscle-bound. They have the same range of complexions as humans, though they are more often fair than dark. Their straight, fine hair is often white, silver, or pale gold, and they wear it long and loose. Their ears are long and pointed, and their eyes are pearly and opalescent orbs of vibrant blue, violet, or green, lacking pupils. Eladrin can't grow facial hair and have little body hair.
+	Eladrin children grow much as human children do, but their aging process slows to a crawl when they reach maturity. They enjoy youth and health for most of their lives and don't begin to feel the effects of age until the middle of their third century. Most live for over 300 years, and even at the end they suffer few of the infirmities of old age. </specific>
+    <specific name="Playing"> Eladrin live by an aesthetic philosophy common to the Feywild and personified by Corellon, the god of beauty and patron of the fey. Eladrin seek to exemplify grace, skill, and learning in every part of life, from dance and song to swordplay and magic. Their cities are places of stunning beauty that shape and guide their natural surroundings into elegant forms. No one knows when the feral eladrin started, but the most commonly accepted theory is that deep in the Feywild, a cluster of eladrin got isolated from the rest of the worlds, and while isolated with beasts and monsters, they have become more aggressive to survive. The only weapons they have come to trust completely are their own body, their hands, feet, even elbows and knees. You view the others of your kind as weak because they must master additional weapons. While eladrin value things such as honor and valor in battle, the life of combat in the wild parts of the Feywild gave the ferals only one rule of combat, survive by being the last one standing. Beasts in the Feywild do not have these concepts and will hunt anything down and kill their prey; the ferals had to learn to do the same.</specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5' 5"-6'1" </specific>
+    <specific name="Average Weight"> 130-180 lb. </specific>
+    <specific name="Ability Scores"> +2 Intelligence, +2 Charisma or +2 Dexterity </specific>
+    <specific name="Languages"> Common, Elven </specific>
+    <specific name="Skill Bonuses"> +2 Arcana, +2 Nature </specific>
+    <specific name="Male Names"> Aramil, Arannis, Berrian, Dayereth, Erevan, Galinndan, Hadarai, Immeral, Mindartis, Paelias, Quarion, Riardon, Soveliss. </specific>
+    <specific name="Female Names"> Althaea, Anastrianna, Andraste, Bethrynna, Caelynna, Jelenneth, Leshanna, Meriele, Naivara, Quelenna, Sariel, Shanairra, Theirastra, Valenae . </specific>
+    <specific name="Short Description"> While isolated with beasts and monsters, they have become more aggressive to survive. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_14, ID_TIV_RACIAL_TRAIT_10, ID_TIV_RACIAL_TRAIT_09, ID_FMP_RACIAL_TRAIT_350, ID_TIV_RACIAL_TRAIT_11, ID_FMP_RACIAL_TRAIT_641 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_FERAL_ELADRIN" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5' 5&quot;-6'1&quot;" />
+      <textstring name="Average Weight" value="130-180 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+    </rules>
+
+
+Play an Feral Eladrin if you want ...
+
+</RulesElement>
+  <RulesElement name="Feral Eladrin" type="Grants" internal-id="ID_INTERNAL_GRANTS_FERAL_ELADRIN" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_4 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_14" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_10" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_09" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_11" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Feral Eladrin" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_FERAL_ELADRIN" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_4 </specific>
+You count as a Feral Eladrin for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Feral Endurance" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_09" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> +1 Fort Defense, +5 Saves against Poison. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Fortitude Defense" value="+1" type="Racial" />
+      <statadd name="Saving Throws" value="+5" type="Racial" condition="against poison effects" />
+    </rules>
+You gain a +1 racial bonus to your fortitude defense. In addition, you gain a +5 racial bonus to saving throws against poison.
+   </RulesElement>
+  <RulesElement name="Unarmed Weapon Proficiency" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_10" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> +3 bonus to unarmed attacks. Unarmed Damage 1d8. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Unarmed attack:attack" value="+3" />
+      <textstring name="Unarmed Damage Die" value="1d8" />
+      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d8" />
+    </rules>
+You gain a +3 proficiency bonus to unarmed attacks and attack with 1d8 rather than 1d4.
+   </RulesElement>
+  <RulesElement name="War Step" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_11" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> Use War Step as an encounter power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_11_11 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_11_11 </specific>
+    <rules>
+      <grant name="ID_TIV_POWER_11_11" type="Power" />
+    </rules>
+You have the War Step power.
+</RulesElement>
+  <RulesElement name="War Step" type="Power" internal-id="ID_TIV_POWER_11_11" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_11,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
+    <Flavor> You don't fear any creature, large or small, and you won't teleport away no matter what the cost. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Eladrin Racial Power </specific>
+    <specific name="Keywords"> Teleportation </specific>
+    <specific name="Action Type"> Move Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Teleport up to 10 squares towards an enemy. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_11 </specific>
+  </RulesElement>
+  <RulesElement name="Sinner Tiefling" type="Race" internal-id="ID_TIV_RACE_5" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> ~SINNER TIEFLING </Prereqs>
+    <Flavor> They relish in the fact that even among the tieflings, the sinners are feared. </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Cunning, disquieting, imposing, mysterious, proud, rebellious, self-reliant, sinister, sly, unconventional </specific>
+    <specific name="Physical Qualities"> Tieflings' appearance testifies to their infernal bloodline. They have large horns; thick , nonprehensile tails that range in length from 4 to 5 feet; sharply pointed teeth; and eyes that are solid orbs of black, red, white, silver, or gold. Their skin color covers the whole human range and also extends to reds, from a ruddy tan to a brick red. Their hair, cascading down from behind their horns, is as likely to be dark blue, red, or purple as more common human colors.
+	Tieflings favor dark colors and reds, leathers and glossy furs, small spikes and buckles. Tiefling-crafted arms and armor often have an archaic style, harkening back to the glory of their long-vanished empire. </specific>
+    <specific name="Playing"> Hundreds of years ago, the leaders of the human empire of Bael Turath made pacts with devils to solidify their hold over its enormous territory. Those humans became the first tieflings, and they governed their empire in the name of their infernal masters. In time, Bael Turath came into conflict with Arkhosia, the ancient empire of the dragonborn, and decades of warfare left both empires in ruins. Bael Turath's grand capital was thrown down in ruin.
+	Tieflings are the heirs of the surviving noble dynasties that ruled the empire. Their bloodline is tainted by their diabolical connections, passing to their descendants through all generations. In many ways, they are human; they can have children with humans, for example, but their offspring are always tieflings.
+	Centuries of other races' distrust and outright hatred have made tieflings self-reliant and often too willing to live up to the stereotypes imposed on them. As a race without a homeland, tieflings know that they have to make their own way in the world and that they have to be strong to survive, and they are not quick to trust anyone who claims to be a friend. However, when a tiefling's companions demonstrate that they trust him or her, the tiefling quickly learns to extend the same trust to them. And once a tiefling gives someone trust and loyalty, the tiefling is a firm friend and ally for life.
+	Although the nobles of Bael Turath subjugated themselves to devils, most tieflings of the present give little thought to gods or patrons of any kind, preferring to look out for themselves. Therefore, tieflings do not often follow the path of the divine; tiefling clerics or paladins are rare.
+	Tieflings are not numerous. Sometimes a tiefling merchant clan that is descended from a Bael Turath dynasty settles as a group in a land where wealth can purchase safety and comfort. But most tieflings are born outside such hidden dynasties and grow up in the roughest quarters of human cities and towns. These tieflings often become swindlers, thieves, or crime lords, who carve out a niche for themselves amid the squalor of their surroundings.
+	
+    Most tieflings would rather forget the infernal pact that began their race those centuries ago; sinner tieflings embrace what they have become and view it as a blessing rather than a curse and would rather use this power to revive the fallen empire that sired them. They relish in the fact that even among the tieflings, the sinners are feared. They wish to take back the empire that was lost and denied to them and have embraced the pact that was made by their human ancestors, becoming more infernal as generations pass.	</specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 5' 6"-6' 2" </specific>
+    <specific name="Average Weight"> 140-230 lb. </specific>
+    <specific name="Ability Scores"> +2 Charisma, +2 Intelligence or +2 Wisdom </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Intimidate, +2 Stealth </specific>
+    <specific name="Male Names"> Akmenos, Amnon, Art, Barakas, Carrion, Chant, Damakos, Despair, Ekemon, Fear, Gladness, Hope, Iados, Ideal, Kairon, Leucis, Melech, Morthos, Music, Nowhere, Open, Pelaios, Poetry, Quest, Random, Reverence, Skamos, Sorrow, Therai, Torment, Weary. </specific>
+    <specific name="Female Names"> Akta, Art, Bryseis, Carrion, Chant, Damaia, Despair, Ea, Fear, Gladness, Hope, Ideal, Kallista, Lerissa, Makaria, Music, Nemeia, Nowhere, Open, Orianna, Phelaia, Poetry, Quest, Random, Reverence, Rieta, Sorrow, Torment, Weary. </specific>
+    <specific name="Short Description"> Tieflings are descended from humans who bargained with infernal powers. </specific>
+    <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_13, ID_FMP_RACIAL_TRAIT_39, ID_TIV_RACIAL_TRAIT_12 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_SINNER_TIEFLING" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="5' 6&quot;-6' 2&quot;" />
+      <textstring name="Average Weight" value="140-230 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Language" number="1" Category="Starting" />
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom" />
+    </rules>
+Heirs to an ancient, infernal bloodline, tieflings have no realms of their own but instead live within human kingdoms and cities. They are descended from human nobles who bargained with dark powers, and long ago their empire subjugated half the world. But the empire was cast down into ruin, and tieflings were left to make their own way in a world that often fears and resents them.
+
+Play a Sinner Tiefling if you want ...
+-	to be a hero who has a dark side to overcome.
+-	to be good at tricking, intimidating, or persuading others to do your will.
+-	to be a member of a race that favors the warlock, warlord, and rogue classes.
+   </RulesElement>
+  <RulesElement name="Sinner Tiefling" type="Grants" internal-id="ID_INTERNAL_GRANTS_SINNER_TIEFLING" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_5 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_TIV_RACIAL_TRAIT_13" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_39" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_12" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Sinner Tiefling" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_SINNER_TIEFLING" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_5 </specific>
+You count as a Sinner Tiefling for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Baptize in Blood" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_12" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> While bloodied, +1 on attacks for each bloodied adjacent creature. </specific>
+    <specific name="Level"> 1 </specific>
+If you are blooded, you gain a +1 to attacks for each bloodied character adjacent to you.
+</RulesElement>
+  <RulesElement name="Hellfire Wreath" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_13" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> Use Hellfire Wreath as an Daily power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_13_13 </specific>
+    <specific name="type"> Daily </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_13_13(Daily) </specific>
+    <rules>
+      <grant name="ID_TIV_POWER_13_13" type="Power" />
+    </rules>
+You can use Hellfire Wreath as an Daily power.
+</RulesElement>
+  <RulesElement name="Hellfire Wreath" type="Power" internal-id="ID_TIV_POWER_13_13" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_13,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
+    <Flavor> The unholy aura around you, burns all. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sinner Tiefling Racial Power </specific>
+    <specific name="Keywords"> Fire </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Aura 2 </specific>
+    <specific name="Trigger" />
+    <specific name="Target"> All creatures within the aura </specific>
+    <specific name="Effect"> Until the end of the encounter, a character that begins their turn in the aura or enters the aura, takes 1d6 + Charisma modifier fire damage.
+Level 11: 2d6 + Charisma modifier.
+Level 21: 3d6 + Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_13 </specific>
+  </RulesElement>
+  <RulesElement name="Stone-Kin Dwarf" type="Race" internal-id="ID_TIV_RACE_6" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> ~STONE-KIN DWARF </Prereqs>
+    <Flavor> Stout warriors, master artisans, lords of the mountain peaks </Flavor>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 5 squares </specific>
+    <specific name="Characteristics"> Acquisitive, brave, hard-working, loyal, organized, stern, stubborn, tenacious, vengeful </specific>
+    <specific name="Physical Qualities"> Dwarves average about 4 1/2 feet in height and are very broad, weighing as much as adult humans. Dwarves have the same variety of skin, eye, and hair colors as humans, although red hair is more common among them. Male dwarves are often bald and braid their long beards into elaborate patterns.  Female dwarves braid their hair to show clan and ancestry. Dwarven attire and equipment, including weapons and shields, are decorated with bold geometric shapes, natural gems, and ancestral faces.
+	Although they reach physical maturity at roughly the same age as humans, dwarves age more slowly and remain vigorous well past 150 years of age, often living to see 200. </specific>
+    <specific name="Playing"> Some dwarves live in mountains and caves where riches lie, holding onto the traditions that have made them strong over millennia. The stone-kin found their home in the heart of the living rock of the mountain and have taken that essence into them.
+	  Most dwarves embrace their connection with the earth and stone around them; the stone-kin embody that and have for generations. While the rest of the dwarven races have made a mark for themselves as warriors and minors, willing to fight against those that wish them ill, stone-kin can do the one thing that only mountains have done for eons, endure.
+	To a dwarf, it is a gift and a mark of deep respect to stand beside an ally in battle, and a sign of deepest loyalty to shield that ally from enemy attack. Dwarven legends honor many heroes who gave their lives to save their clans or their friends. </specific>
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 4' 3"-4' 9" </specific>
+    <specific name="Average Weight"> 160-220 lb. </specific>
+    <specific name="Ability Scores"> +2 Constitution, +2 Strength or +2 Wisdom </specific>
+    <specific name="Languages"> Common, Dwarven </specific>
+    <specific name="Skill Bonuses"> +2 Dungeoneering, +2 Endurance </specific>
+    <specific name="Male Names"> Adrik, Baern, Berend, Darrak, Eberk, Fargrim, Gardain, Harbek, Kildrak, Morgran, Orsik, Rangrim, Thoradin, Thorfin, Tordek, Travok, Vondal. </specific>
+    <specific name="Female Names"> Artin, Bardryn, Diesa, Eldeth, Falkrunn, Gurdis, Helja, Kathra, Kristryd, Mardred, Riswynn, Torbera, Vistra. </specific>
+    <specific name="Short Description"> The stout dwarves are mountaineers and miners. They are the toughest of the common folk. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_9, ID_TIV_RACIAL_TRAIT_14, ID_TIV_RACIAL_TRAIT_15 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_STONE-KIN_DWARF" type="Grants" />
+      <statadd name="Speed" value="+5" />
+      <textstring name="Average Height" value="4' 3&quot;-4' 9&quot;" />
+      <textstring name="Average Weight" value="160-220 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+    </rules>
+
+
+Play a Stone-Kin Dwarf if you want ...
+
+</RulesElement>
+  <RulesElement name=" Stone-Kin Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_STONE-KIN_DWARF" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_6 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_9" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_14" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_15" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_3" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Stone-Kin Dwarf" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_STONE-KIN_DWARF" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_6 </specific>
+You count as a Stone-Kin Dwarf for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Mother Mountain" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_14" source="Racial Variants Volume 1" revision-date="10/5/2010 1:47:14 PM">
+    <specific name="Short Description"> You gain a +3 racial bonus to all defenses, AC, and saving throws. Resist all at 1/2 your level. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="AC" value="+3" type="Racial" />
+      <statadd name="Fortitude Defense" value="+3" type="Racial" />
+      <statadd name="Reflex Defense" value="+3" type="Racial" />
+      <statadd name="Will Defense" value="+3" type="Racial" />
+      <statadd name="Saving Throws" value="+3" type="Racial" />
+      <statadd name="_generic all resist" value="+HALF-LEVEL" />
+      <statadd name="resist:all" value="_generic all resist" type="Racial" />
+    </rules>
+You gain a +3 racial bonus to all defenses (including AC) and saving throws as well as a resist all equal to one-half your level.
+</RulesElement>
+  <RulesElement name="Immoveable Object" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_15" source="Racial Variants Volume 1" revision-date="10/5/2010 1:47:14 PM">
+    <specific name="Short Description"> You are not subject to forced movement nor can you be knocked prone. </specific>
+    <specific name="Level"> 1 </specific>
+When an effect forces you to move, through a pull, a push, or a slide, you can ignore the forced movement. This means an effect that normally pulls, pushes, or slides a target does not force you to move unless you want to. In addition, when an attack would knock you prone, you can ignore the effect of being knocked prone unless you want to.
+</RulesElement>
+  <RulesElement name="Timid Halfling" type="Race" internal-id="ID_TIV_RACE_7" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> ~TIMID HALFLING </Prereqs>
+    <Flavor> Resourceful wanderers, cunning scouts, travelers of forgotten roads </Flavor>
+    <specific name="Size"> Small </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> Brave, curious, determined, down-to-earth, friendly, good-natured, lucky, nimble, optimistic, practical, resourceful, warm </specific>
+    <specific name="Physical Qualities"> Halflings stand about 4 feet tall and weigh about 80 pounds. They resemble small humans and are proportioned like human adults. Halflings have the same range of complexions as humans, but most halflings have dark hair and eyes. Halfling males don't have beards, but many have long, full sideburns. Halflings of both genders often wear complicated hairstyles, featuring complex braiding and weaving techniques.
+	Halflings typically dress in clothes that match their surroundings, preferring earth tones and various shades of green. Their clothing and gear feature woven textures and stitching. Birds, river patterns, boats, and fish are common images in halfling art and decoration.
+	Halflings have life spans comparable to those of humans. </specific>
+    <specific name="Playing"> Halflings are an affable, warm, and cheerful people. They survive in a world full of larger creatures by avoiding notice or, barring that, avoiding offense. They appear harmless, and so have managed to survive for centuries in the shadow of empires and on the edges of wars and political strife.
+	Halflings are practical and down-to-earth. They concern themselves with basic needs and simple pleasures, harboring few dreams of gold or glory. Adventurers are no more rare among halflings than among other races, but they usually pursue the adventurer's life for reasons of community, friendship, wanderlust, or curiosity. Halfling adventurers are brave and faithful companions, relying on stealth and trickery in battle rather than raw might or magic.
+	Halflings are extremely curious. Most can't refrain from opening a door to see what it conceals, or to turn a corner or climb a hill just to find out what lies beyond. Along with this intense curiosity, many halflings seem possessed of a kind of fearlessness their curiosity and need to experience new things overcoming any hesitation brought on by anxiety.
+	In the absence of royalty or nobility, halflings instead look to family elders to guide them. This emphasis on family and community has enabled halflings to maintain a consistent culture for thousands of years, unaffected by the rise and fall of empires.
+	According to halfling legend, Melora and Sehanine created the halflings together, giving the race a love of nature and the gift of stealth. When their interest waned, these gods stopped looking after the race, or so the legends go, and halflings made their own way in the world. They say Avandra, the god of luck, admired their resourcefulness and adopted them, favoring them with good fortune. Not all halflings worship Avandra, but nearly all breathe a prayer of thanks to her when fortune favors them.
+    Most halflings are brave and adventurous, others, not so much. It is these timid halflings that have learned to go though the world with a worried eye upward and a sure foot below them. Other halflings enter the world with bold intentions and wanting to experience everything that it has to offer. Timids prefer to be on the outskirts of the tall-folk societies to avoid being crushed under-heel. Why timids adventure, no one, not even the other timid halflings understand that drive. Timid halflings move though the shadows and prefer to go unnoticed as they pass by. </specific>
+    <specific name="Vision"> Normal </specific>
+    <specific name="Average Height"> 3' 10"-4' 2" </specific>
+    <specific name="Average Weight"> 75-85 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Constitution </specific>
+    <specific name="Languages"> Common, choice of one other </specific>
+    <specific name="Skill Bonuses"> +2 Stealth, +2 Thievery </specific>
+    <specific name="Male Names"> Ander, Corrin, Dannad, Errich, Finnan, Garret, Lazam, Lindal, Merric, Nebin, Ostran, Perrin, Reed, Shardon, Ulmo, Wenner. </specific>
+    <specific name="Female Names"> Andrey, Bree, Callie, Chenna, Eida, Kithri, Lidda, Nedda, Paela, Shaena, Tryn, Vani, Verna, Wella. </specific>
+    <specific name="Short Description"> Clever wanderers and explorers, halflings who want to hide from prying eyes are almost impossible to spot. </specific>
+    <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_16, ID_TIV_RACIAL_TRAIT_17 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_TIMID_HALFLING" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;" />
+      <textstring name="Average Weight" value="75-85 lb." />
+      <textstring name="Size" value="Small" />
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
+      <select type="Language" number="1" Category="Starting" />
+    </rules>
+
+
+Play a Timid Halfling if you want ...
+
+   </RulesElement>
+  <RulesElement name="Timid Halfling" type="Grants" internal-id="ID_INTERNAL_GRANTS_TIMID_HALFLING" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_7 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
+      <grant name="ID_TIV_RACIAL_TRAIT_16" type="Racial Trait" />
+      <grant name="ID_TIV_RACIAL_TRAIT_17" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Timed Halffling" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_TIMID_HALFLING" source="Racial Variants Volume 1">
+    <specific name="_SupportsID"> ID_TIV_RACE_7 </specific>
+You count as a Timid Halfling for meeting prerequisites.
+</RulesElement>
+  <RulesElement name="Already Scared" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_16" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> You are immune to fear effects. </specific>
+    <specific name="Level"> 1 </specific>
+You are immune to fear effects, but not damage caused by fear. You automatically save against ongoing fear effects or fear effects that require a save.
+</RulesElement>
+  <RulesElement name="Run and Hide" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_17" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <specific name="Short Description"> Use Run and Hide as an encounter power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_17_17 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_17_17(Encounter) </specific>
+    <rules>
+      <grant name="ID_TIV_POWER_17_17" type="Power" />
+    </rules>
+You can use Run and Hide as an encounter power.
+</RulesElement>
+  <RulesElement name="Run and Hide" type="Power" internal-id="ID_TIV_POWER_17_17" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Category> ID_TIV_RACIAL_TRAIT_17,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
+    <Flavor> Its not so bad to run away and live another day. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Timid Halfling Racial Power </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You are bloodied. </specific>
+    <specific name="Effect"> You may shift your speed and make a Stealth check. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_17 </specific>
+  </RulesElement>
+  <RulesElement name="Brimstone" type="Feat" internal-id="ID_TIV_FEAT_9001_01" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> Sinner Tiefling </Prereqs>
+    <print-prereqs> Sinner Tiefling </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Extend the aura of your Hellfire Wreath by 1 square.</specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Extend the aura of your Hellfire Wreath by 1 square.
+</RulesElement>
+  <RulesElement name="Potent Dawn Venom" type="Feat" internal-id="ID_TIV_FEAT_9001_02" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> Couatl Dragonborn </Prereqs>
+    <print-prereqs> Couatl Dragonborn </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> The ongoing damage from Dawn Venom deals an extra 5 poison and radiant damage. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+The ongoing damage from Dawn Venom deals an extra 5 poison and radiant damage.
+</RulesElement>
+  <RulesElement name="Shrug-It Off" type="Feat" internal-id="ID_TIV_FEAT_9001_03" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> Stone-Kin Dwarf </Prereqs>
+    <print-prereqs> Stone-Kin Dwarf </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Once per encounter, you may automatically save against ongoing damage. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Once per encounter, you may automatically save against ongoing damage.
+</RulesElement>
+  <RulesElement name="Sure Footed" type="Feat" internal-id="ID_TIV_FEAT_9001_04" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> City-Elf </Prereqs>
+    <print-prereqs> City-Elf </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You gain a +2 to climb checks. This becomes a +4 when you use Elven Agility. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+You gain a +2 to climb checks. This becomes a +4 when you use Elven Agility.
+</RulesElement>
+  <RulesElement name="Tough Knuckles" type="Feat" internal-id="ID_TIV_FEAT_9001_05" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> Feral Eladrin </Prereqs>
+    <print-prereqs> Feral Eladrin </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You deal 1d10 damage when performing unarmed attacks instead of 1d8. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <textstring name="Unarmed Damage Die" value="1d10" />
+      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d10" />
+    </rules>
+You deal 1d10 damage when performing unarmed attacks instead of 1d8.
+</RulesElement>
+  <RulesElement name="Xenophobic" type="Feat" internal-id="ID_TIV_FEAT_9001_06" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> Timid Halfling </Prereqs>
+    <print-prereqs> Timid Halfling </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You gain a +2 to Stealth checks against non-halflings. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+You gain a +2 to Stealth checks against non-halflings.
+</RulesElement>
+  <RulesElement name="Hellfire Inferno" type="Feat" internal-id="ID_TIV_FEAT_9001_07" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> 11th level, Sinner Tiefling; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Sinner Tiefling </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> If a character is bloodied within the aura of Hellfire Wreath, the aura deals an extra 1d6 fire damage. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If a character is bloodied within the aura of Hellfire Wreath, the aura deals an extra 1d6 fire damage.
+</RulesElement>
+  <RulesElement name="Toxic Light" type="Feat" internal-id="ID_TIV_FEAT_9001_08" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> 11th level, Couatl Dragonborn; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Couatl Dragonborn </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you deal damage with Dawn Venom, you deal an extra 1d4. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you deal damage with Dawn Venom, you deal an extra 1d4.
+</RulesElement>
+  <RulesElement name="Stone's Endurance" type="Feat" internal-id="ID_TIV_FEAT_9001_09" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> 11th level, Stone-Kin Dwarf; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Stone-Kin Dwarf </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Gain 20 hit points. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Hit Points" value="+20" />
+    </rules>
+Gain 20 hit points.
+</RulesElement>
+  <RulesElement name="Skilled Fighter" type="Feat" internal-id="ID_TIV_FEAT_9001_10" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> 11th level, Feral Eladrin; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Feral Eladrin </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Your proficiency bonus for unarmed attacks increases from +3 to +4. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Unarmed attack:attack" value="+1" />
+    </rules>
+Your proficiency bonus for unarmed attacks increases from +3 to +4.
+</RulesElement>
+  <RulesElement name="Accurate Fist" type="Feat" internal-id="ID_TIV_FEAT_9001_11" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> 21st level, Feral Eladrin; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Feral Eladrin </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Your unarmed attacks are considered high crit weapons. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your unarmed attacks are considered high crit weapons.
+</RulesElement>
+  <RulesElement name="Blood and Fire" type="Feat" internal-id="ID_TIV_FEAT_9001_12" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
+    <Prereqs> 21st level, Sinner Tiefling; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Sinner Tiefling </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> If you are bloodied, you deal an extra 1d4 fire damage with Hellfire Wreath for each bloodied creature within the aura. </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you are bloodied, you deal an extra 1d4 fire damage with Hellfire Wreath for each bloodied creature within the aura.
+</RulesElement>
+</D20Rules>

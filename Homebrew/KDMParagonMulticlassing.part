@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMParagonMulticlassing.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMParagonMulticlassing.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMParagonMulticlassing.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Paragon Multiclassing" type="Paragon Path" internal-id="ID_INTERNAL_PARAGON_PATH_PARAGON_MULTICLASSING" source="Player's Handbook">
+    <Prereqs> Any multiclass feat </Prereqs>
+    <print-prereqs> Any multiclass feat </print-prereqs>
+    <Flavor> Specialize in your second class </Flavor>
+    <rules>
+      <replace name="at-will paragon multiclassing swap" requires="!Psionic First Class|Psionic Second Class" Level="11" multiclass="At-Will" optional="true" />
+      <select type="Power" number="1" Category="$$MULTICLASS,encounter,7" requires="!Psionic First Class|Psionic Second Class" />
+      <select type="Power" number="1" Category="$$MULTICLASS,utility,10" Level="12" />
+      <select type="Power" number="1" Category="$$MULTICLASS,daily,19" Level="20" />
+      <statadd name="Power Points" value="+2" requires="Psionic First Class&amp;Psionic Second Class" />
+      <select type="Power" number="1" Category="$$MULTICLASS,at-will,7" requires="Psionic First Class&amp;Psionic Second Class" />
+      <select type="Power" number="1" Category="$$MULTICLASS,at-will,1" requires="Psionic First Class&amp;(!Psionic Second Class)" />
+      <select type="Power" number="1" Category="$$MULTICLASS,encounter,7" requires="Psionic First Class&amp;(!Psionic Second Class)" />
+      <grant name="ID_INTERNAL_INTERNAL_SECONDNOTFIRSTPSIONIC" type="Internal" requires="(!Psionic First Class)&amp;Psionic Second Class" />
+      <select type="Feat" Category="Multiclass" level="11" number="2" />
+      <select type="Feat" level="16" />
+    </rules>
+You might choose to take on powers from a second class in place of a paragon path. If you have the Novice Power, Acolyte Power, and Adept Power feats for a class, you can choose to continue to gain powers from that class rather than take a paragon path. If you choose this option, you gain several benefits.
+    At 11th level, you can choose to replace one of your at-will powers with an at-will power from your second class.
+    In place of the paragon path encounter power gained at 11th level, you can select any encounter power of 7th level or lower from your second class.
+    In place of the paragon path utility power gained at 12th level, you can select any utility power of 10th level or lower from your second class.
+    In place of the paragon path daily power gained at 20th level, you can select any daily power of 19th level or lower from your second class.
+    At level 11, you receive two extra multiclass feats of your choice.
+    At level 16, you receive one free feat of any type you qualify for.
+    Psionic Augmentation: If either of your classes has the Psionic Augmentation class feature and you choose paragon multiclassing, the benefits you gain at 11th level are different from those noted above.
+    If your first and second classes both have the Psionic Augmentation class feature, at 11th level you gain 2 power points and an at-will attack power of 7th level or lower from your second class.
+    If your first class has the Psionic Augmentation class feature and your second class doesn't have it, at 11th level you gain an at-will attack power from your second class as well as an encounter attack power of 7th level or lower from that class.
+    If your first class doesn't have the Psionic Augmentation class feature and your second class does have it, at 11th level you lose one at-will attack power from your first class but gain 2 power points and an at-will attack power of 7th level or lower from your second class.</RulesElement>
+</D20Rules>

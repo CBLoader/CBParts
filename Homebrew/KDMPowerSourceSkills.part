@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMPowerSourceSkills.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMPowerSourceSkills.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMPowerSourceSkills.txt</VersionAddress>
+  </UpdateInfo>
+  <AppendNodes name="Bard" type="Class" internal-id="ID_FMP_CLASS_104" source="Player's Handbook 2" revision-date="8/27/2010 12:40:38 PM">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Bard" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_BARD" source="Player's Handbook 2">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Sorcerer" type="Class" internal-id="ID_FMP_CLASS_128" source="Player's Handbook 2" revision-date="8/27/2010 12:40:54 PM">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Sorcerer" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_SORCERER" source="Player's Handbook 2">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Warlock" type="Class" internal-id="ID_FMP_CLASS_7" source="Player's Handbook" revision-date="8/27/2010 12:40:06 PM">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Warlock" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_WARLOCK" source="Player's Handbook">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Hexblade" type="Class" internal-id="ID_FMP_CLASS_793" source="Player Essentials: Heroes of the Forgotten Kingdoms" revision-date="11/30/2010">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Hexblade" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_HEXBLADE" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <rules>
+      <modify name="Arcana" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Arcana" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Cleric" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_CLERIC" source="Player's Handbook">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Paladin" type="Class" internal-id="ID_FMP_CLASS_4" source="Player's Handbook" revision-date="8/27/2010 12:39:55 PM">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" requires="!Cavalier" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Paladin" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_PALADIN" source="Player's Handbook">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" requires="!Cavalier" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Avenger" type="Class" internal-id="ID_FMP_CLASS_129" source="Player's Handbook 2" revision-date="8/27/2010 12:40:56 PM">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Avenger" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_AVENGER" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_CLASS_129 </specific>
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Invoker" type="Class" internal-id="ID_FMP_CLASS_127" source="Player's Handbook 2" revision-date="8/27/2010 12:40:51 PM">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Invoker" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_INVOKER" source="Player's Handbook 2">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Runepriest" type="Class" internal-id="ID_FMP_CLASS_602" source="Player's Handbook 3" revision-date="8/27/2010 12:44:03 PM">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Runepriest" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_RUNEPRIEST" source="Player's Handbook 3">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Warpriest" type="Class" internal-id="ID_FMP_CLASS_705" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:42:41 PM">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Warpriest" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_WARPRIEST" source="Player Essentials: Heroes of the Fallen Lands">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Wisdom" />
+      <statadd name="Religion" value="+ABILITYMOD(Wisdom)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Cavalier" type="Class" internal-id="ID_FMP_CLASS_784" source="Player Essentials: Heroes of the Forgotten Kingdoms" revision-date="12/2/2010">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Religion" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Cavalier" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_CAVALIER" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <rules>
+      <modify name="Religion" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Religion" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Barbarian" type="Class" internal-id="ID_FMP_CLASS_148" source="Player's Handbook 2" revision-date="8/27/2010 12:41:07 PM">
+    <rules>
+      <modify name="Nature" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Nature" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+  <AppendNodes name="Barbarian" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_BARBARIAN" source="Player's Handbook 2">
+    <rules>
+      <modify name="Nature" type="Skill" Field="Key Ability" Value="Charisma" />
+      <statadd name="Nature" value="+ABILITYMOD(Charisma)" type="Ability" />
+    </rules>
+  </AppendNodes>
+</D20Rules>

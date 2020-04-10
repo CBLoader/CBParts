@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>SGPJudgingPaladinsBGUK.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/SGPJudgingPaladinsBGUK.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/SGPJudgingPaladinsBGUK.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="St Georges Prey" type="source" internal-id="ID_FMP_SOURCE_401" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.leedsdnd.co.uk </specific>
+    <specific name="Release Date"> 12/2/2010 </specific>
+  </RulesElement>
+  <RulesElement name="Hands of Healing  " type="Feat" internal-id="ID_FMP_FEAT_65101" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Paladin, lay on hands class feature </Prereqs>
+    <print-prereqs> Paladin, lay on hands class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Target of lay on hands can spend own surge to regain hp </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+In addition to the hit points regained from your healing surge, the target of your lay on hands power can also spend one of their own healing surges to regain hit points.
+   </RulesElement>
+  <RulesElement name="Hands of Mercy  " type="Feat" internal-id="ID_FMP_FEAT_65102" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Paladin, lay on hands class feature </Prereqs>
+    <print-prereqs> Paladin, lay on hands class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Target of lay on hands can spend own surge to save against a condition </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+In addition to the hit points regained from your healing surge, the target of your lay on hands power can also spend one of their own healing surges to make a save against a condition that a save can end.
+   </RulesElement>
+  <RulesElement name="Deadly Challenge  " type="Feat" internal-id="ID_FMP_FEAT_65103" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Paladin, divine challenge power </Prereqs>
+    <print-prereqs> Paladin, divine challenge power </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Divine Challenge target takes damage if you fail to engage </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you mark a target with Divine Challenge, and you fail to engage the target by the end of your turn, both you and the target take radiant damage equal to your Charisma modifier.
+   </RulesElement>
+  <RulesElement name="Beyond the Touch of God  " type="Feat" internal-id="ID_FMP_FEAT_65104" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
+    <Prereqs> Paladin, ardent vow or virtue's touch power </Prereqs>
+    <print-prereqs> Paladin, ardent vow or virtue's touch power </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Ardent Vow/Virtue's Touch become ranged 5 </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <modify name="Ardent Vow" type="Power" Field="Attack Type" value="Melee Touch or Ranged 5" />
+      <modify name="Virtue's Touch" type="Power" Field="Attack Type" value="Melee Touch or Ranged 5" />
+    </rules>
+The ardent vow or call of virtue power provided by your class feature becomes ranged 5 rather than melee touch.
+   </RulesElement>
+  <RulesElement name="Pious Burst  " type="Power" internal-id="ID_FMP_POWER_65201" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> With a the swish of your blade and you chanting prayers, you strike at all enemies surrounding you. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close Burst 1 </specific>
+    <specific name="Target"> All enemies in burst </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> Charisma modifier damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Guided Hand  " type="Power" internal-id="ID_FMP_POWER_65202" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Your hands and weapon are guided towards a target that your god has already determined should be destroyed. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Attack 1 </specific>
+    <specific name="Keywords"> Divine, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee Weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength + 2 vs. AC </specific>
+    <specific name="Hit"> 1[W] damage. If the target is marked by your Divine Challenge or Divine Sanction, it takes radiant damage equal to 1 + your Wisdom modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Conditional Transfer  " type="Power" internal-id="ID_FMP_POWER_65203" source="St Georges Prey" revision-date="8/27/2010 11:26:28 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You ask your god to empower your hands, healing your ally of an affliction that you are more capable of surviving. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Utility 6 </specific>
+    <specific name="Keywords"> Divine, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee Touch  </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Effect"> You remove one condition that can be saved against from the target, and you gain the condition instead. You gain a +2 bonus to saves against this condition. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Linked Hands  " type="Power" internal-id="ID_FMP_POWER_65204" source="St Georges Prey" revision-date="8/27/2010 11:26:28 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You link hands with an ally, supporting him and aiding his attacks, while healing him. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Utility 6 </specific>
+    <specific name="Keywords"> Divine, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee Touch  </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Effect"> The target gains a +2 bonus to its next attack. The target can also spend a healing surge. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Brutal Prayer  " type="Power" internal-id="ID_FMP_POWER_65205" source="St Georges Prey" revision-date="8/27/2010 11:26:28 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> Your prayers are at the forefront of your next attack, and your piety doesn't go unnoticed. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Utility 6 </specific>
+    <specific name="Keywords"> Divine, Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close Burst 1  </specific>
+    <specific name="Target"> All enemies in burst </specific>
+    <specific name="Effect"> Your next successful attack against the target deals additional damage equal to your Wisdom Modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+</D20Rules>

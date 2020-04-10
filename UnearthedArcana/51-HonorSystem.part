@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<UpdateInfo>
+		<Version>1.02</Version>
+		<Filename>51-HonorSystem.part</Filename>
+		<PartAddress>http://cbloader.com/UnearthedArcana/51-HonorSystem.part</PartAddress>
+		<VersionAddress>http://cbloader.com/UnearthedArcana/51-HonorSystem.txt</VersionAddress>
+	</UpdateInfo>
+	<!-- Unearthed Arcana Rules Variants: Honor System -->
+	<!-- 51-HonorSystem.part, version 1.02 -->
+	<!-- Original release: 20-April-2011; Last modified: 11-August-2012 -->
+	<!-- Test compiled with CBLoader build V1.3.0 -->
+	<!-- This part file is an unofficial Unearthed Arcana variant, and may cause problems with current .part files.  You have been warned! -->
+	<!-- Special thanks to the entire community for handling the materials. -->
+	<Changelog>
+		Updated 22-October-2011 File released under the new Index system.
+		Updated 11-August-2012 Honor System from Dragon 404 separated from Strange Gods.
+	</Changelog>
+	<RulesElement name="Honor-Bound" type="Feat" internal-id="ID_FMP_FEAT_HONOR_BOUND" source="Dragon Magazine 404">
+		<print-prereqs> Must have an honor code </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="type"> Honor Code </specific>
+		<specific name="Short Description"> You gain 3 honor points and the honorable action power. </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_HONORABLE_ACTION </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_HONORABLE_ACTION" type="Power" />
+		</rules>
+You gain 3 honor points and the honorable action power.
+	</RulesElement>
+	<RulesElement name="Honorable Action" type="Power" internal-id="ID_FMP_POWER_HONORABLE_ACTION" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+		<Flavor> You rise to the challenge when honor is on the line. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Feat Power </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger"> While acting honorably or avoiding dishonor, you make an ability check, an attack roll, a damage roll, or a skill check and dislike the result. </specific>
+		<specific name="Effect"> You spend 1 honor point. Roll 1d6 and add the result to the triggering roll. </specific>
+		<specific name="_Associated Feats" />
+	</RulesElement>
+	<RulesElement name="Honorable Mind" type="Feat" internal-id="ID_FMP_FEAT_HONORABLE_MIND" source="Dragon Magazine 404">
+		<Prereqs> Honor-Bound </Prereqs>
+		<print-prereqs> Honor-Bound feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="type"> Honor Code </specific>
+		<specific name="Short Description"> You roll 1d10 instead 1d6 using Honorable Action with mental skills and charm or fear effects. </specific>
+You roll a d10 instead of a d6 when you use honorable action to modify a skill check or ability check based on Intelligence, Wisdom, or Charisma.
+You can also use honorable action to modify a saving throw against charm or fear effects.
+	</RulesElement>
+	<RulesElement name="Strength Through Honor" type="Feat" internal-id="ID_FMP_FEAT_STRENGHT_THROUGHT_HONOR" source="Dragon Magazine 404">
+		<Prereqs> Honor-Bound </Prereqs>
+		<print-prereqs> Honor-Bound feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="type"> Honor Code </specific>
+		<specific name="Short Description"> You roll 1d10 instead 1d6 using Honorable Action with physical skills and initiative checks. </specific>
+You roll a d10 instead of a d6 when you use honorable action to modify a skill check or ability check based on Strength, Constitution, or Dexterity.
+You can also use honorable action to modify an initiative checks.
+	</RulesElement>
+	<RulesElement name="Honorable Reputation" type="Feat" internal-id="ID_FMP_FEAT_STRENGHT_HONORABLE_REPUTATION" source="Dragon Magazine 404">
+		<Prereqs> Honor-Bound </Prereqs>
+		<print-prereqs> Honor-Bound feat, Unreduced maximum honor threshold </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="type"> Honor Code </specific>
+		<specific name="Short Description"> Can reroll social skills checks. Gain 2 extra honor points each level. </specific>
+Once per encounter, you can reroll a Bluff, Diplomacy, Intimidate, or Streetwise check made against or among people who know and care about your honor.
+Whenever you gain a level, you gain 2 extra honor points.
+	</RulesElement>
+	<RulesElement name="Honorable Soul" type="Feat" internal-id="ID_FMP_FEAT_STRENGHT_HONORABLE_SOUL" source="Dragon Magazine 404">
+		<Prereqs> Honor-Bound, Honorable Mind, Strength Through Honor </Prereqs>
+		<print-prereqs> Honor-Bound feat, Honorable Mind feat, Strength Through Honor feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="type"> Honor Code </specific>
+		<specific name="Short Description">  You gain the honorable soul power. </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_HONORABLE_SOUL </specific>
+		<rules>
+			<grant name="ID_FMP_POWER_HONORABLE_SOUL" type="Power" />
+		</rules>
+You gain the Honorable Soul power.
+	</RulesElement>
+	<RulesElement name="Honorable Soul" type="Power" internal-id="ID_FMP_POWER_HONORABLE_SOUL" source="Dragon Magazine 404">
+		<Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+		<Flavor> You rise to the challenge when honor is on the line. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Feat Power </specific>
+		<specific name="Keywords" />
+		<specific name="Action Type"> No Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Trigger">  While acting honorably or avoiding dishonor, you make an ability check, an attack roll, an initiative check, a saving throw, or a skill check and dislike the result. </specific>
+		<specific name="Effect">  You spend 1 honor point. You reroll the triggering roll and use the higher result. In addition, you gain 10 temporary hit points. </specific>
+		<specific name="_Associated Feats" />
+	</RulesElement>
+</D20Rules>

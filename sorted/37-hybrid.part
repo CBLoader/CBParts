@@ -1,0 +1,1862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.25</Version>
+    <Filename>37-hybrid.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/37-hybrid.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/37-hybrid.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Hybrid -->
+  <!-- 37-hybrid.part, version 1.25 -->
+  <!-- Original release: 13-July-2011; Last modified: 19-September-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 16-July-2011 More Playtest Hybrid Options Added.
+ Updated 17-July-2011 Fixed Blood Thirst (from PHB1) over-write issue.
+ Updated 18-July 2011 Hybrid Executioner added.
+ Updated 21-July 2011 Hybrid Blackguard/Cavalier added.
+ Updated 23-July 2011 Hybrid Sentinel added.
+ Updated 24-July-2011 Fixed hybrid virtues over-writing regular virtues.
+ Updated 29-July-2011 Added Blood Drinker (Hybrid) feature for CS.
+ Updated 31-July-2011 Spelling update.
+ Updated 14-August-2011: Hybrid Binder and Playtest Updates.
+ Updated 22-August-2011 Fixes to Hybrid Sentinel, Ardent, Battlemind and Vampire
+ Updated 23-August-2011 Shaper, Discipline, Expanded discipline Fixes for Hybrids
+ Updated 25-August-2011 Dragon 400 iPlay4E Updates.
+ Updated 27-August-2011 More Dragon 400 iPlay4E Updates.
+ Updated 27-September-2011 Changed power source on Hybrid Blackguard to Divine
+ Updated 22-November-2011 Updated the ID for Hybrid Sentinel
+ Updated 28-December-2011 Fixed conflict with Shadow Twist.
+ Updated 9-April-2012 Updated Hybrid Cavalier.
+ Updated 11-August-2012 Hybrid Executioner hit point fix.
+ Updated 19-September-2012 Brawler Style (Hybrid) Fix
+</Changelog>
+  
+  <RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
+    <Category> 1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_7436 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_FMP_POWER_805 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_805" type="Power" />
+      <modify name="Divine Challenge" type="Power" Field="Effect" value="You mark the target. The mark lasts until you use this power again. The mark also ends at the end of your turn if you didn't engage the target, meaning you neither attacked it during your turn nor are adjacent to it at the end of your turn. Until the mark ends, the target takes radiant damage the first time each round when it targets any of your allies with an attack power that doesn't include you as a target. The damage equals to your Charisma modifier. Level 11: 2 + your Charisma modifier radiant damage.   Level 21: 4 + your Charisma modifier radiant damage. " />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DIVINE_CHALLENGE" type="CountsAsFeature" />
+    </rules>
+You gain the paladin power divine challenge. The power
+functions as normal, except that the radiant damage
+equals your Charisma modifier. The damage
+increases to 2 + your Charisma modifier at 11th level
+and 4 + your Charisma modifier at 21st level.
+   </RulesElement>
+  <!-- Hybrid Cleric Section -->
+  <RulesElement name="Hybrid Cleric" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_CLERIC" source="Player's Handbook 3">
+    <specific name="_SupportsID"> ID_FMP_HYBRID_CLASS_352 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass" />
+      <suggest name="ID_FMP_ABILITY_SCORE_5" type="Ability Score" />
+      <suggest name="ID_FMP_ABILITY_SCORE_1" type="Ability Score" />
+      <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
+      <grant name="ID_FMP_ROLE_2" type="Role" />
+      <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_395|ID_FMP_CLASS_FEATURE_4058" />
+      <grant name="ID_FMP_CLASS_FEATURE_1527" type="Class Feature" />
+      <grant name="ID_INTERNAL_GRANTS_HYBRID_CLERIC_IMPLEMENTS" type="Grants" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Hybrid Cleric Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_CLERIC_IMPLEMENTS" source="Player's Handbook 3">
+    <specific name="_SupportsID"> ID_FMP_HYBRID_CLASS_352 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Channel Divinity (Hybrid Cleric)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1826" source="Player's Handbook 3" revision-date="10/5/2010 1:47:05 PM">
+    <Category> ID_FMP_HYBRID_CLASS_352,1 </Category>
+    <specific name="Short Description"> Invoke a channel divinity class feature or other power; encounter. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_POWER_146|ID_FMP_POWER_14293|ID_FMP_POWER_7885|ID_FMP_POWER_1589|ID_FMP_POWER_14292" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature" />
+    </rules>
+This class feature functions as the cleric class feature, except that you start with a single cleric Channel Divinity power of your choice.
+   </RulesElement>
+  <RulesElement name="Healing Word (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1527" source="Player's Handbook 3" revision-date="3/9/2011 7:00:00 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> Healing word 1/encounter </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1455 </specific>
+    <specific name="type"> Feature </specific>
+    <specific name="Class"> ID_FMP_CLASS_2 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1455 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_1455" type="Power" />
+      <modify Field="Special" value="" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_HEALING_WORD" type="CountsAsFeature" />
+    </rules>
+You gain the cleric power healing word. The power functions as normal, except that you can use it only once per encounter.
+</RulesElement>
+  <!-- Hybrid Arena Fighter Fix -->
+  <RulesElement name="Fighter Combat Talent" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1830" source="Player's Handbook 3" revision-date="10/5/2010 1:47:05 PM">
+    <Category> ID_FMP_HYBRID_CLASS_353,1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2170, ID_FMP_CLASS_FEATURE_2460, ID_FMP_CLASS_FEATURE_2461, ID_FMP_CLASS_FEATURE_2462, ID_FMP_CLASS_FEATURE_2529, ID_DRU_CLASS_FEATURE_0001 </specific>
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_1830" />
+    </rules>
+When you select this option, you choose one of the following class features.
+  </RulesElement>
+  <!-- Hybrid Rogue -->
+  <RulesElement name="Rogue Weapon Talent (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2470" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2469,1 </Category>
+    <specific name="Short Description"> Damage die increases one size with shuriken; +1 on attacks with daggers. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <modify name="Shuriken" type="Weapon" Field="Damage" die-increase="1" />
+      <modify name="Shuriken (Large)" type="Weapon" Field="Damage" die-increase="1" />
+      <statadd name="weapon,Dagger:attack" value="+1" />
+      <statadd name="weapon,Kukri:attack" value="+1" requires="Weapon Proficiency (Kukri)" />
+      <statadd name="weapon,Parrying dagger:attack" value="+1" requires="Weapon Proficiency (Parrying dagger)" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_ROGUE_WEAPON_TALENT" type="CountsAsFeature" />
+    </rules>
+When you wield a shuriken, your weapon damage die increases by one size. In addition, you gain a +1 bonus to weapon attack rolls with daggers.
+   </RulesElement>
+   
+<!-- Playtest Section -->
+<!-- Vampire Hybrid -->
+
+<RulesElement name="Hybrid Vampire Defenses" type="Category" internal-id="ID_CDJ_HYBRID_CLASS_40002_DEFENSE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+
+<RulesElement name="Hybrid Vampire" type="Hybrid Class" internal-id="ID_CDJ_HYBRID_CLASS_40002" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:59 PM">
+  <specific name="Key Abilities"> Dexterity, Charisma </specific>
+  <specific name="Implements"> Holy symbols, ki focuses </specific>
+  <specific name="Armor Proficiencies"> Cloth </specific>
+  <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+  <specific name="Bonus to Defense"> +1 Fortitude or +1 Will </specific>
+  <specific name="Hit Points at 1st Level"> 6+ Constitution Score </specific>
+  <specific name="Hit Points per Level Gained"> 2.5 </specific>
+  <specific name="Healing Surges"> 2 </specific>
+  <specific name="Trained Skills"> </specific>
+  <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Diplomacy (Cha), History (Int), Intimidate (Cha), Perception (Wis), Religion (Int), Stealth (Dex), Thievery (Dex) </specific>
+  <specific name="Build Options" />
+  <specific name="_PARSED_CLASS_FEATURE"> Blood Drinker (Hybrid), Blood Is Life, Child of the Night (Hybrid), Enduring Soul, Hidden Might </specific>
+  <specific name="Role"> Striker. Infused with the power of darkness and having already experienced death, you are a lethal creature of the night. As your power increases, your supernatural nature comes to the fore&#x2014;but will your humanity pay the price? </specific>
+  <specific name="Power Source"> Shadow. </specific>
+  <specific name="Creating" />
+  <specific name="Class Features" />
+  <specific name="Supplemental" />
+  <specific name="Implement" />
+  <specific name="Powers" />
+  <specific name="Power Name" />
+  <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+  <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_6 </specific>
+  <specific name="_SecondaryPowerSourceElement" />
+  <specific name="Secondary Abilities" />
+  <specific name="Hybrid Talent Options"> Embrace Undeath, Vampiric Reflexes </specific>
+  <specific name="Short Description"> Infused with the power of darkness and having already experienced death, you are a lethal creature of the night. </specific>
+  <specific name="_ParentClass"> ID_FMP_CLASS_817 </specific>
+  <specific name="Trait Package" />
+  <specific name="_BaseClass"> ID_FMP_CLASS_817 </specific>
+  <specific name="_SUGGESTED_FEATS"> </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_HYBRID_VAMPIRE" type="Grants" />
+    <textstring name="_CLASSNAME" value="ID_CDJ_HYBRID_CLASS_40002" />
+    <statadd name="_LEVEL-ONE-HPS" value="+6" />
+    <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true" />
+    <grant name="ID_INTERNAL_VAMPIRE_HEALING_SURGES" type="Internal" />
+    <select type="Class Feature" number="1" Category="ID_CDJ_HYBRID_CLASS_40002_DEFENSE" />
+	<select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
+  </rules>
+You are a monster, fated and infected by a vile curse that transformed you into a creature of nightmare. Normal emotions have become alien to you. Only cold, gnawing hunger remains.
+	Most of those who become vampires are victims of monstrous attacks, created by a callous hunter who drained them dry of blood and life force, then cast them aside. Others seek out this path from their own fear of infirmity and death, discovering the arcane rites and alchemical formulas that promise dark power. In some cases, a character finds his or her vampirism invoked by an ancient family curse, or that he or she is a member of an extended clan of vampires who pass their blood down to those they deem worthy&#x2014;whether by choice or not.
+	Whatever their origins, vampire characters are not slaves to their creators. Even those beholden to an older vampire retain free will, and have a chance to avoid sinking into the bestial depravity so common among their kind. Vampire characters are the most exceptional examples of those who carry this dark curse, using their powers not solely for murder and personal gain. Some become the greatest of heroes, but even those vampires are aware that few among the common folk have the ability to see past the frightening reality of their dark nature. Avoiding the scrutiny of superstitious folk and disguising his or her needs and abilities serves a vampire best. Trusted companions, enemies to slay and feast upon, and reasons to avoid civilized areas for extended times make an adventuring life the perfect choice for such characters.
+</RulesElement>
+
+
+<RulesElement name="Hybrid Vampire" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_VAMPIRE" source="Dragon Magazine 400">
+  <specific name="_SupportsID"> ID_FMP_CLASS_817 </specific>
+  <rules>
+    <grant name="ID_FMP_ROLE_3" type="Role" />
+    <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+	<grant name="ID_INTERNAL_GRANTS_VAMPIRE_IMPLEMENTS" type="Grants" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_CHILD_OF_NIGHT" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_BLOOD_DRINKER" type="Class Feature" />
+	<grant name="ID_FMP_CLASS_FEATURE_3612" type="Class Feature" />
+	<grant name="ID_FMP_CLASS_FEATURE_3613" type="Class Feature" />
+	<grant name="ID_FMP_CLASS_FEATURE_3614" type="Class Feature" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_VAMPIRE" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Vampiric Reflexes" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3615" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+  <Category> ID_CDJ_HYBRID_CLASS_40002,1 </Category>
+  <Flavor> You move with an uncanny grace that makes it difficult for foes to strike you. </Flavor>
+  <specific name="Short Description"> Gain a +2 shield bonus to AC while you are wearing cloth armor or no armor and aren't using a shield </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="_CLASSNAME"> Vampire </specific>
+  <rules>
+    <statadd name="Vampiric Reflexes" value="+2" not-wearing="armor:shield" />
+    <statadd name="AC" value="+Vampiric Reflexes" wearing="armor:cloth" />
+    <statadd name="AC" value="+Vampiric Reflexes" not-wearing="armor:" />
+  </rules>
+You gain a +2 shield bonus to AC while you are wearing cloth armor or no armor and aren't using a shield.
+</RulesElement>
+
+<RulesElement name="Child of the Night (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_CHILD_OF_NIGHT" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+  <Category> 1 </Category>
+  <Flavor> You have been reborn into darkness, claiming the ancient power that will mark you for all time. You gain strength in the night even as you curse the sun, for its unwavering radiance is a bitter fire that drains your strength and power. </Flavor>
+  <specific name="Short Description"> You&apos;re an undead creature: gain vulnerable 5 radiant, can be destroyed by sunlight. You do require sleep. </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="_CLASSNAME"> Vampire </specific>
+You gain the following benefits and weaknesses.
+	* You are an undead creature. You are unaffected by anything that affects only living creatures. You don&apos;t need to breathe, which means you are immune to suffocation. You also don&apos;t age. Unlike most undead, you do need to sleep.
+	* You have vulnerable 5 radiant.
+	* If you end your turn in direct sunlight and lack a protective covering such as a cloak or other heavy clothing, you take 5 radiant damage (plus additional damage from your radiant vulnerability) from the sunlight, and you are weakened (save ends). If you drop below 1 hit point from this damage, you are instantly destroyed.
+</RulesElement>
+
+<RulesElement name="Blood Drinker (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_BLOOD_DRINKER" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+  <Category> 1 </Category>
+  <Flavor> Your curse demands that the life force of other creatures be sacrificed to maintain your undead form. Whether it consists of blood, ichor, or the unseen energy of life itself, only the essence of your foes can satisfy you. </Flavor>
+  <specific name="Short Description"> Gain access to the Blood Drinker attack power </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Powers"> </specific>
+  <specific name="Type"> </specific>
+  <specific name="Class"> ID_CDJ_HYBRID_CLASS_40002 </specific>
+  <specific name="_CLASSNAME"> Hybrid Vampire </specific>
+  <specific name="_DisplayPowers">  </specific>
+  <specific name="_CS_ShortDescription"> </specific>
+You gain access to the blood drinker power. You may have up to two uses of it, with access to the first use at lv 1 and the second at lv 7.
+</RulesElement>
+
+<RulesElement name="Hybrid Vampire Fortitude" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_VAMPIRE_FORTITUDE" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40002_DEFENSE </Category>
+      <rules>
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Fortitude Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Vampire Will" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_VAMPIRE_WILL" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40002_DEFENSE </Category>
+      <rules>
+         <statadd name="Will Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Will Defense Class Bonus.
+</RulesElement>
+
+
+<RulesElement name="Blood Drinker  " type="Power" internal-id="ID_CDJ_POWER_BLOOD_DRINKER_MULTICLASS" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:48:17 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_RYV_CLASS_41001,ID_RYV_CLASS_42001,ID_RYV_CLASS_42002,ID_RYV_CLASS_42003,ID_RYV_CLASS_42004,ID_TIV_CLASS_FH-SS_100_1,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CLASS_FH-SS_100_3,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_817,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_NO_ACTION,1 </Category>
+  <Prereqs> Blood Thirst [Multiclass Vampire] feat </Prereqs>
+  <Flavor> When your attack strikes true, you sweep past your foe&apos;s defenses to consume the essence of its life. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Vampire Attack </specific>
+  <specific name="Keywords"> Shadow </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> You hit an enemy with a vampire melee at-will attack power. </specific>
+  <specific name="Target"> The triggering enemy </specific>
+  <specific name="Effect"> The target takes 1d10 extra damage from the triggering attack, and you gain a healing surge.
+	Level 17: 2d10 extra damage.
+	Level 27: 3d10 extra damage. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_817 </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> </specific>
+  <specific name="_Subclasses"> </specific>
+</RulesElement>
+   
+<RulesElement name="Vampire Healing Surges" type="Internal" internal-id="ID_INTERNAL_VAMPIRE_HEALING_SURGES" source="Core">
+<rules>
+<statadd name="Vampire Surge Adjustment" value="-7" requires="ID_FMP_CLASS_2|ID_FMP_CLASS_8|ID_FMP_CLASS_104|ID_FMP_CLASS_126|ID_FMP_CLASS_129|ID_FMP_CLASS_147|ID_FMP_CLASS_362|ID_FMP_CLASS_472|ID_FMP_CLASS_529|ID_FMP_CLASS_602|ID_FMP_CLASS_779|ID_FMP_CLASS_705|ID_FMP_CLASS_811" />
+<statadd name="Vampire Surge Adjustment" value="-9" requires="ID_FMP_CLASS_3|ID_FMP_CLASS_124|ID_FMP_CLASS_134|ID_FMP_CLASS_713|ID_FMP_CLASS_716" />
+<statadd name="Vampire Surge Adjustment" value="-10" requires="ID_FMP_CLASS_4|ID_FMP_CLASS_784|ID_FMP_CLASS_813" />
+<statadd name="Vampire Surge Adjustment" value="-6" requires="ID_FMP_CLASS_5|ID_FMP_CLASS_6|ID_FMP_CLASS_7|ID_FMP_CLASS_9|ID_FMP_CLASS_125|ID_FMP_CLASS_127|ID_FMP_CLASS_128|ID_FMP_CLASS_437|ID_FMP_CLASS_466|ID_FMP_CLASS_788|ID_FMP_CLASS_790|ID_FMP_CLASS_793|ID_FMP_CLASS_719|ID_FMP_CLASS_722|ID_FMP_CLASS_821" />
+<statadd name="Vampire Surge Adjustment" value="-8" requires="ID_FMP_CLASS_53|ID_FMP_CLASS_148" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_352" /> 
+<statadd name="Vampire Surge Adjustment" value="-4" half-point="true" requires="ID_FMP_HYBRID_CLASS_353" /> 
+<statadd name="Vampire Surge Adjustment" value="-5" requires="ID_FMP_HYBRID_CLASS_354" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_355" /> 
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_356" />
+<statadd name="Vampire Surge Adjustment" value="-4" requires="ID_FMP_HYBRID_CLASS_357" /> 
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_358" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_359" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_360" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_439" />
+<statadd name="Vampire Surge Adjustment" value="-4" requires="ID_FMP_HYBRID_CLASS_440" /> 
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_441" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_442" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_443" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_444" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_445" />
+<statadd name="Vampire Surge Adjustment" value="-4" half-point="true" requires="ID_FMP_HYBRID_CLASS_446" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_536" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_588" /> 
+<statadd name="Vampire Surge Adjustment" value="-4" half-point="true" requires="ID_FMP_HYBRID_CLASS_590" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_609" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_610" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_611" /> 
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_612" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_641" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_CDJ_HYBRID_CLASS_40001" />
+<statadd name="Vampire Surge Adjustment" value="-5" half-point="true" requires="ID_CDJ_HYBRID_CLASS_40003" />
+<statadd name="Vampire Surge Adjustment" value="-5" half-point="true" requires="ID_CDJ_HYBRID_CLASS_40004" />
+<statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_894" />
+<statadd name="Vampire Surge Adjustment" value="-3" requires="ID_CDJ_HYBRID_CLASS_40006" /> 
+<statadd name="Healing Surges" value="-ABILITYMOD(Constitution)" />
+<statadd name="Healing Surges" value="+Vampire Surge Adjustment" />
+<statadd name="Healing Surges" value="+2" />
+</rules>
+</RulesElement>
+
+<RulesElement name="Embrace Undeath" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_EMBRACE_UNDEATH" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> ID_CDJ_HYBRID_CLASS_40002,1 </Category>
+  <Flavor> You fully embrace the fell power of undeath, gaining protection against the power of night and shadow. </Flavor>
+  <specific name="Short Description"> Gain darkvision, resist 5 necrotic. </specific>
+  <specific name="Level"> 1 </specific>
+   <rules>
+    <grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision" />
+    <statadd name="resist:necrotic" value="+5" type="resist" />
+  </rules>
+You gain darkvision and resist 5 necrotic.
+</RulesElement>
+
+<RulesElement name="Improved Blood Drinker" type="Power" internal-id="ID_CDJ_POWER_40012" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_817,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_NO_ACTION,7 </Category>
+  <Prereqs> Hybrid Vampire </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Vampire Attack </specific>
+  <specific name="Keywords"> Shadow </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power mimics the Improved Blood Drinker class feature, adding another Blood Drinker to your power suite. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_817 </specific>
+  <specific name="Level"> 7 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific> 
+  <rules>
+       <modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power twice per encounter, but you can use it only once per turn." />
+  </rules>
+</RulesElement>
+
+<!--Executioner Hybrid-->
+
+<RulesElement name="Poison Use" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_POISON_USE" source="Player Essentials: Heroes of Shadow">
+You count as having the Poison Use class feature.
+</RulesElement>
+<RulesElement name="Red Scales" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_RED_SCALES" source="Player Essentials: Heroes of Shadow">
+You count as a Red Scales Member for meeting prerequisites.
+</RulesElement>
+<RulesElement name="League of Whispers" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_LEAGUE_OF_WHISPERS" source="Player Essentials: Heroes of Shadow">
+You count as a League of Whispers member for meeting prerequisites.
+</RulesElement>
+<RulesElement name="Attack Finesse (Executioner)" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_ATTACK_FINESSE_EXECUTIONER" source="Player Essentials: Heroes of Shadow">
+You count as having the Attack Finesse class feature for meeting prerequisites.
+</RulesElement>
+<RulesElement name="Assassin&apos;s Strike" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_ASSASSINS_STRIKE" source="Player Essentials: Heroes of Shadow">
+You count as having the Assassin&apos;s Strike class feature for meeting prerequisites.
+</RulesElement>
+<RulesElement name="Hybrid Guilds" type="Category" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_GUILDS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="Executioner Guilds" type="Category" internal-id="ID_CDJ_CLASS_FEATURE_EXECUTIONER_GUILDS" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+<RulesElement name="Hybrid Executioner Defenses" type="Category" internal-id="ID_CDJ_HYBRID_CLASS_40001_DEFENSE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+
+<RulesElement name="Hybrid Executioner" type="Hybrid Class" internal-id="ID_CDJ_HYBRID_CLASS_40001" source="Dragon Magazine 400" revision-date="8/27/2010 12:42:25 PM" >
+      <Prereqs> !ID_FMP_HYBRID_CLASS_641 </Prereqs>
+	  <specific name="Key Abilities"> Dexterity, Charisma </specific>
+      <specific name="Implements"> Ki focuses </specific>
+      <specific name="Armor Proficiencies"> Cloth, leather </specific>
+      <specific name="Weapon Proficiencies"> Simple one-handed melee, military one-handed melee, simple ranged, blowgun, bola, garrote, shortbow </specific>
+      <specific name="Bonus to Defense"> +1 Fortitude or Will </specific>
+      <specific name="Hit Points at 1st Level"> 6 + Constitution Score </specific>
+      <specific name="Hit Points per Level Gained"> 2.5 </specific>
+      <specific name="Healing Surges"> 3.5 </specific>
+      <specific name="Trained Skills" />
+      <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Endurance (Con), Insight (Wis), Intimidate (Cha), Perception (Wis), Stealth (Dex), Streetwise (Cha), Thievery (Dex) </specific>
+      <specific name="Build Options" />
+      <specific name="_PARSED_CLASS_FEATURE"> Assassin&apos;s Strike (Hybrid), Attack Finesse (Hybrid), Guild Attacks (Hybrid), Poison Use (Hybrid) </specific>
+      <specific name="Role"> Striker. </specific>
+      <specific name="Power Source"> Martial and Shadow. </specific>
+      <specific name="Creating" />
+      <specific name="Class Features" />
+      <specific name="Supplemental"> </specific>
+      <specific name="Implement" />
+      <specific name="Powers" />
+      <specific name="Power Name" />
+      <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+      <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1, ID_FMP_POWER_SOURCE_6 </specific>
+      <specific name="_SecondaryPowerSourceElement" />
+      <specific name="Secondary Abilities" />
+      <specific name="Hybrid Talent Options"> Nimble Drop, Flawless Disguise </specific>
+      <specific name="Short Description"> You tap the raw arcane power of the cosmos, bending reality to your will with your focus. </specific>
+      <specific name="_ParentClass"> ID_FMP_CLASS_466 </specific>
+      <specific name="Trait Package" />
+      <specific name="_BaseClass"> ID_FMP_CLASS_466 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_GRANTS_HYBRID_EXECUTIONER" type="Grants" />
+         <textstring name="_CLASSNAME" value="ID_CDJ_HYBRID_CLASS_40001" />
+         <statadd name="_LEVEL-ONE-HPS" value="+6" />
+         <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true" />
+         <statadd name="Healing Surges" value="+3" half-point="true" />
+         <select type="Class Feature" number="1" Category="ID_CDJ_HYBRID_CLASS_40001_DEFENSE" />
+      </rules>
+Hybrid executioners are surprisingly common; many members of this class study arcane magic, worship deities of death, or cultivate other cover identities to mask their true talents.
+   </RulesElement>
+<RulesElement name="Hybrid Executioner" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_EXECUTIONER" source="Dragon Magazine 400" >
+      <specific name="_SupportsID"> ID_CDJ_HYBRID_CLASS_40001 </specific>
+      <rules>
+    <grant name="ID_FMP_ROLE_3" type="Role" />
+    <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
+    <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_ONE-HANDED_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_ONE-HANDED_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)" type="Proficiency" />
+	<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BOLA)" type="Proficiency" />
+	<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GARROTE)" type="Proficiency" />
+	<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BLOWGUN)" type="Proficiency" />
+	<grant name="ID_INTERNAL_GRANTS_EXECUTIONER_IMPLEMENTS" type="Grants" />
+    <grant name="ID_CDJ_CLASS_FEATURE_40003" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_40004" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_40012" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_ASSASSINS_STRIKE" type="Class Feature" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_EXECUTIONER" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
+	</rules>
+</RulesElement>
+
+<RulesElement name="Guild Attacks (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_40003" source="Player Essentials: Heroes of Shadow,Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> 1 </Category>
+  <Flavor> As a member of either the Red Scales or the League of Whispers, you have learned various deadly attack techniques. At the start of your career, you can use the techniques associated with your guild. </Flavor>
+  <specific name="Short Description"> You become a member of the Red Scales or League of Whispers. </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="_PARSED_SUB_FEATURES"> ID_CDJ_CLASS_FEATURE_HYBRID_RED_SCALES, ID_FMP_CLASS_FEATURE_HYBRID_LEAGUE_OF_WHISPERS </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <rules>
+     <select type="Class Feature" number="1" Category="ID_CDJ_CLASS_FEATURE_HYBRID_GUILDS" />
+  </rules>
+You become a member of the Red Scales or League of Whispers.
+</RulesElement><RulesElement name="Red Scales (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_RED_SCALES" source="Player Essentials: Heroes of Shadow,Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> ID_CDJ_CLASS_FEATURE_HYBRID_GUILDS,1 </Category>
+  <Flavor> The Red Scales are considered by many to be the masters of close-quarters combat. The techniques that their guild members learn combine decades of study of both martial arts and common assassination techniques, giving them an edge when they are unarmed, wielding a dagger, or using a garrote. </Flavor>
+  <specific name="Short Description"> You may choose two powers from among garrote strangle, poisoned dagger, and quick lunge. </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Powers"> ID_FMP_POWER_13793,ID_FMP_POWER_13794,ID_FMP_POWER_13795 </specific>
+  <specific name="Type"> At-Will </specific>
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="_DisplayPowers"> ID_FMP_POWER_13793,ID_FMP_POWER_13794,ID_FMP_POWER_13795 </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <rules>
+    <select number="2" category="ID_FMP_POWER_13793|ID_FMP_POWER_13794|ID_FMP_POWER_13795" type="Power" />
+	<grant name="ID_INTERNAL_COUNTSASFEATURE_RED_SCALES" type="CountsAsFeature" />
+   </rules>
+You may choose two powers from among garrote strangle, poisoned dagger, and quick lunge.
+</RulesElement><RulesElement name="League of Whispers (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_HYBRID_LEAGUE_OF_WHISPERS" source="Player Essentials: Heroes of Shadow,Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> ID_CDJ_CLASS_FEATURE_HYBRID_GUILDS,1 </Category>
+  <Flavor> Members of the League of Whispers specialize in the use of a variety of ranged weapons. This training allows them to perform special tricks that can help them execute a target or escape the local authorities. League members undergo training with bolas, hand crossbows, and blowguns to give them an edge against enemies both near and far. Like other executioners, members of the League are trained in the use of multiple weapons and usually carry a variety of weapons with which they are skilled. </Flavor>
+  <specific name="Short Description"> You may choose two powers from among bola takedown, precision dart, and quick shot. </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Powers"> ID_FMP_POWER_13796,ID_FMP_POWER_13797,ID_FMP_POWER_13798 </specific>
+  <specific name="Type"> At-Will </specific>
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="_DisplayPowers"> ID_FMP_POWER_13796,ID_FMP_POWER_13797,ID_FMP_POWER_13798 </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <rules>
+   <select number="2" category="ID_FMP_POWER_13796|ID_FMP_POWER_13797|ID_FMP_POWER_13798" type="Power" />
+	<grant name="ID_INTERNAL_COUNTSASFEATURE_LEAGUE_OF_WHISPERS" type="CountsAsFeature" />
+  </rules>
+You may choose two powers from among bola takedown, precision dart, and quick shot.
+</RulesElement>   
+
+<RulesElement name="Poison Use (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_40012" source="Player Essentials: Heroes of Shadow,Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> 1 </Category>
+  <Flavor> Executioners have a long history with poison. All become masters at mixing their own poisons. For most assassins, poison is only one of their many weapons. Most of the poisons used by executioners are merely the set-up for a later attack, a precursor to ensure that the target won&apos;t be able to stop the executioner once the assassination attempt begins in earnest.
+	Many poisons are outlawed in civilized realms, so executioners learn to craft simple, unstable venoms that quickly break down into inert components. In this manner, an assassin can travel with a seemingly innocent array of materials. When it is time to strike, the executioner quickly crafts a poison as needed. Because the poison is unstable, it decays rapidly and leaves no incriminating evidence if unused. A shrewd executioner can maintain an innocent facade even in the face of a thorough search of his or her person and quarters. </Flavor>
+  <specific name="Short Description"> You may replace your daily class powers with poisons. </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="_PARSED_SUB_FEATURES"> </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <specific name="_CS_ShortDescription"> @ </specific>
+  <rules>
+  <grant name="ID_INTERNAL_COUNTSASFEATURE_POISON_USE" type="CountsAsFeature" />
+  </rules>
+You gain the benefit of the Poison Use class feature, with the following exception. You do not start with access to any poison recipes. When you gain a daily attack power, you can instead opt to learn a poison recipe. When you replace a daily attack power, you can instead replace one of your poison recipes with one of a higher level or with a daily attack power from your other hybrid class. The recipe&apos;s level must be less than or equal to your level. For each daily attack power you forgo, you can prepare one poison per day.
+</RulesElement>
+
+<RulesElement name="Hybrid Executioner Fortitude" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_EXECUTIONER_FORTITUDE" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40001_DEFENSE </Category>
+      <rules>
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Fortitude Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Executioner Will" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_EXECUTIONER_WILL" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40001_DEFENSE </Category>
+      <rules>
+         <statadd name="Will Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Will Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Attack Finesse (Hybrid Executioner)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_40004" source="Dragon Magazine 400" revision-date="7/21/2011 10:09:00 PM">
+  <Category> 1 </Category>
+  <Flavor> For the executioner, speed, agility, and precision are more important than muscle. An executioner learns how to handle any weapon with a finesse that lends itself to more accurate strikes. </Flavor>
+  <specific name="Short Description"> 1/turn, deal 1d8/2d8/3d8 (by tier) extra dmg with a weapon attack using a one-handed weapon, garrote, blowgun, or shortbow. </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+      <textstring name="melee basic:key ability" value="Dexterity" />
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Dexterity vs. AC" />
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Dexterity modifier damage." />
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Level 21" value="2[W] + Dexterity modifier damage." />
+      <grant name="ID_ATTACK_FINESSE_HYBRID_HEROIC_TIER" type="Class Feature" Level="1-10" />
+      <grant name="ID_ATTACK_FINESSE_HYBRID_PARAGON_TIER" type="Class Feature" Level="11-20" />
+      <grant name="ID_ATTACK_FINESSE_HYBRID_EPIC_TIER" type="Class Feature" Level="21-30" />
+  </rules>
+You can use Dexterity instead of Strength for your melee basic attacks.
+	In addition, once per turn you can deal 1d8 extra damage on a basic attack, assassin attack power or assassin paragon path attack power with a weapon attack using a one-handed weapon, a garrote, a blowgun, or a shortbow. The extra damage increases to 2d8 at 11th level and 3d8 at 21st level.
+</RulesElement>
+
+<RulesElement name="Attack Finesse (Hybrid Executioner - Heroic)" type="Class Feature" internal-id="ID_ATTACK_FINESSE_HYBRID_HEROIC_TIER" source="Dragon Magazine 400" revision-date="7/21/2011 10:09:00 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> +1d8 damage once per turn with an attack with a one-handed weapon, garrote, blowgun, or shortbow </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <textstring name="one-hand,melee basic:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="one-hand,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="Garrote,melee basic:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="Blowgun,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="Shortbow,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="ID_FMP_CLASS_466,Garrote:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="ID_FMP_CLASS_466,Blowgun:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="ID_FMP_CLASS_466,Shortbow:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+      <textstring name="ID_FMP_CLASS_466,one-hand:damage" condition="once per turn (Attack Finesse)" value="+1d8" />
+    </rules>
+</RulesElement>
+
+<RulesElement name="Attack Finesse (Hybrid Executioner - Paragon)" type="Class Feature" internal-id="ID_ATTACK_FINESSE_HYBRID_PARAGON_TIER" source="Dragon Magazine 400" revision-date="7/21/2011 10:09:00 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> +2d8 damage once per turn with an attack with a one-handed weapon, garrote, blowgun, or shortbow </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <textstring name="one-hand,melee basic:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="one-hand,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="Garrote,melee basic:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="Blowgun,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="Shortbow,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="ID_FMP_CLASS_466,Garrote:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="ID_FMP_CLASS_466,Blowgun:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="ID_FMP_CLASS_466,Shortbow:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+      <textstring name="ID_FMP_CLASS_466,one-hand:damage" condition="once per turn (Attack Finesse)" value="+2d8" />
+    </rules>
+</RulesElement>
+
+<RulesElement name="Attack Finesse (Hybrid Executioner - Epic)" type="Class Feature" internal-id="ID_ATTACK_FINESSE_HYBRID_EPIC_TIER" source="Dragon Magazine 400" revision-date="7/21/2011 10:09:00 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description"> +3d8 damage once per turn with an attack with a one-handed weapon, garrote, blowgun, or shortbow </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <textstring name="one-hand,melee basic:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="one-hand,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="Garrote,melee basic:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="Blowgun,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="Shortbow,ranged basic:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="ID_FMP_CLASS_466,Garrote:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="ID_FMP_CLASS_466,Blowgun:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="ID_FMP_CLASS_466,Shortbow:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+      <textstring name="ID_FMP_CLASS_466,one-hand:damage" condition="once per turn (Attack Finesse)" value="+3d8" />
+    </rules>
+</RulesElement>
+
+<RulesElement name="Assassin&apos;s Strike (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_ASSASSINS_STRIKE" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> You gain the Assassin&apos;s Strike (Hybrid) power </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <select type="Class Feature" Category="ID_CDJ_CLASS_FEATURE_LV7_ASSASSINS_STRIKE_1" number="1" level="7" optional="true" />
+  <select type="Class Feature" Category="ID_CDJ_CLASS_FEATURE_LV13_ASSASSINS_STRIKE_1" number="1" level="13" optional="true" />
+  <select type="Class Feature" Category="ID_CDJ_CLASS_FEATURE_LV17_ASSASSINS_STRIKE_1|ID_CDJ_CLASS_FEATURE_LV17_ASSASSINS_STRIKE_2" number="1" level="17" optional="true" />
+  <select type="Class Feature" Category="ID_CDJ_CLASS_FEATURE_LV23_ASSASSINS_STRIKE_1|ID_CDJ_CLASS_FEATURE_LV23_ASSASSINS_STRIKE_2" number="1" level="23" optional="true" />
+  <select type="Class Feature" Category="ID_CDJ_CLASS_FEATURE_LV27_ASSASSINS_STRIKE_1|ID_CDJ_CLASS_FEATURE_LV27_ASSASSINS_STRIKE_2|ID_CDJ_CLASS_FEATURE_LV27_ASSASSINS_STRIKE_3" number="1" level="27" optional="true" />  
+ </rules>
+When you can choose an encounter attack power that has a level, you can choose the hybrid version of assassin&apos;s strike instead. This power counts as assassin&apos;s strike for purposes of feats and paragon path features. If you already have assassin&apos;s strike and already have an encounter attack power from your other hybrid class, then instead of choosing or replacing an encounter attack power, you can increase the extra damage dealt by your assassin&apos;s strike by 1d10.
+</RulesElement>
+
+<RulesElement name="Level 7 Assassin&apos;s Strike Upgrade 1" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV7_ASSASSINS_STRIKE_1" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> !Level 13 Assassin&apos;s Strike Upgrade 1, !Level 17 Assassin&apos;s Strike Upgrade 1, !Level 23 Assassin&apos;s Strike Upgrade 1, !Level 27 Assassin&apos;s Strike Upgrade 1 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 7 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV7_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV7_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 2d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized. The extra damage increases to 3d10 at 11th level and 4d10 at 21st." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 13 Assassin&apos;s Strike Upgrade 1" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV13_ASSASSINS_STRIKE_1" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> !Level 7 Assassin&apos;s Strike Upgrade 1, !Level 17 Assassin&apos;s Strike Upgrade 1, !Level 23 Assassin&apos;s Strike Upgrade 1, !Level 27 Assassin&apos;s Strike Upgrade 1 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 13 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV13_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV13_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 3d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized. The extra damage increases to 4d10 at 21st level." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 17 Assassin&apos;s Strike Upgrade 1" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV17_ASSASSINS_STRIKE_1" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> !Level 13 Assassin&apos;s Strike Upgrade 1, !Level 7 Assassin&apos;s Strike Upgrade 1, !Level 23 Assassin&apos;s Strike Upgrade 1, !Level 27 Assassin&apos;s Strike Upgrade 1 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 17 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV17_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV17_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 3d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized. The extra damage increases to 4d10 at 21st level." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 17 Assassin&apos;s Strike Upgrade 2" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV17_ASSASSINS_STRIKE_2" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> Level 13 Assassin&apos;s Strike Upgrade 1 or Level 7 Assassin&apos;s Strike Upgrade 1, !Level 23 Assassin&apos;s Strike Upgrade 2, !Level 27 Assassin&apos;s Strike Upgrade 2 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 17 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV17_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV17_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 4d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized. The extra damage increases to 5d10 at 21sh level." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 23 Assassin&apos;s Strike Upgrade 1" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV23_ASSASSINS_STRIKE_1" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> !Level 13 Assassin&apos;s Strike Upgrade 1, !Level 17 Assassin&apos;s Strike Upgrade 1, !Level 7 Assassin&apos;s Strike Upgrade 1, !Level 27 Assassin&apos;s Strike Upgrade 1 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 23 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV23_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV23_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 4d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 23 Assassin&apos;s Strike Upgrade 2" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV23_ASSASSINS_STRIKE_2" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> Level 13 Assassin&apos;s Strike Upgrade 1 or Level 7 Assassin&apos;s Strike Upgrade 1 or Level 17 Assassin&apos;s Strike Upgrade 1, !Level 27 Assassin&apos;s Strike Upgrade 2, !Level 17 Assassin&apos;s Strike Upgrade 2 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 23 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV23_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV23_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 5d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 27 Assassin&apos;s Strike Upgrade 1" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV27_ASSASSINS_STRIKE_1" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> !Level 13 Assassin&apos;s Strike Upgrade 1, !Level 17 Assassin&apos;s Strike Upgrade 1, !Level 23 Assassin&apos;s Strike Upgrade 1, !Level 7 Assassin&apos;s Strike Upgrade 1 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 27 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV27_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV27_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 4d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 27 Assassin&apos;s Strike Upgrade 2" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV27_ASSASSINS_STRIKE_2" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Prereqs> Level 13 Assassin&apos;s Strike Upgrade 1 or Level 7 Assassin&apos;s Strike Upgrade 1 or Level 17 Assassin&apos;s Strike Upgrade 1 or Level 23 Assassin&apos;s Strike Upgrade 1, !Level 23 Assassin&apos;s Strike Upgrade 2, !Level 17 Assassin&apos;s Strike Upgrade 2 </Prereqs>
+  <Category> </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 27 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV27_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV27_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 5d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Level 27 Assassin&apos;s Strike Upgrade 3" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_LV27_ASSASSINS_STRIKE_3" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+  <Category> Level 17 Assassin&apos;s Strike Upgrade 2 or Level 23 Assassin&apos;s Strike Upgrade 2 </Category>
+  <Flavor> </Flavor>
+  <specific name="Short Description"> Your Assassin&apos;s Strike improves </specific>
+  <specific name="Level"> 27 </specific>
+  <specific name="_CLASSNAME"> </specific>
+  <rules>
+  <grant type="Internal" name="ID_INTERNAL_NO_LV27_ENCOUNTER_POWER" />
+  <grant type="Internal" name="ID_INTERNAL_BLOCK_LV27_HYBRID_PSONICS" />
+  <modify type="Power" name="Assassin&apos;s Strike (Hybrid)" field="Effect" value="The target takes 6d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized." />
+  </rules>
+Your Assassin&apos;s Strike improves.
+</RulesElement>
+
+<RulesElement name="Assassin&apos;s Strike (Hybrid)" type="Power" internal-id="ID_CDJ_POWER_HYBRID_ASSASSINS_STRIKE" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,1 </Category>
+  <Flavor> You strike with precision at the exact right moment, landing an attack that can be instantly fatal. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Special </specific>
+  <specific name="Trigger"> You hit a creature within 5 squares of you with an attack using a weapon. </specific>
+  <specific name="Target"> The creature you hit </specific>
+  <specific name="Effect"> The target takes 1d10 extra damage from the triggering attack. If the target is helpless, this damage is maximized. The extra damage increases to 2d10 at 11th level and 3d10 at 21st. </specific>
+  <specific name="Special"> Nothing but a short or an extended rest can allow you to regain the use of this power. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific>
+  <rules>
+  <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_ASSASSINS_STRIKE" />
+  </rules>
+</RulesElement>
+	
+<RulesElement name="Hybrid Poison Use 5" type="Power" internal-id="ID_CDJ_POWER_40006" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,5 </Category>
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack  </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power grants access to the Level 5 Poison Use class feature for Hybrid Executioners. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 5 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific> 
+  <rules>
+       <select type="Class Feature" number="1" Category="Assassin Poison,1" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Hybrid Poison Use 9" type="Power" internal-id="ID_CDJ_POWER_40007" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,9 </Category>
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack  </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power grants access to the Level 9 Poison Use class feature for Hybrid Executioners. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 9 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific> 
+  <rules>
+       <select type="Class Feature" number="1" Category="Assassin Poison,1" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Hybrid Poison Use 15" type="Power" internal-id="ID_CDJ_POWER_40008" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,15 </Category>
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack  </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power grants access to the Level 15 Poison Use class feature for Hybrid Executioners. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 15 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific> 
+  <rules>
+       <select type="Class Feature" number="1" Category="Assassin Poison,15" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Hybrid Poison Use 19" type="Power" internal-id="ID_CDJ_POWER_40009" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,19 </Category>
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack  </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power grants access to the Level 19 Poison Use class feature for Hybrid Executioners. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 19 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific> 
+  <rules>
+       <select type="Class Feature" number="1" Category="Assassin Poison,15" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Hybrid Poison Use 25" type="Power" internal-id="ID_CDJ_POWER_40010" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,25 </Category>
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack  </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power grants access to the Level 25 Poison Use class feature for Hybrid Executioners. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 25 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific> 
+  <rules>
+       <select type="Class Feature" number="1" Category="Assassin Poison,25" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Hybrid Poison Use 29" type="Power" internal-id="ID_CDJ_POWER_40011" source="Dragon Magazine 400" revision-date="3/10/2011 12:46:52 PM">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_NO_ACTION,29 </Category>
+  <Prereqs> Hybrid Executioner </Prereqs>
+  <Flavor> </Flavor>
+  <specific name="Power Usage"> Daily </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Assassin Attack  </specific>
+  <specific name="Keywords"> Martial </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Personal  </specific>
+  <specific name="Trigger"> </specific>
+  <specific name="Target"> </specific>
+  <specific name="Effect"> </specific>
+  <specific name="Special"> This power grants access to the Level 29 Poison Use class feature for Hybrid Executioners. It has no other effect. Consider hiding it on your character sheet to avoid confusion. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_466 </specific>
+  <specific name="Level"> 29 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature" />
+  <specific name="_Subclasses"> </specific> 
+  <rules>
+       <select type="Class Feature" number="1" Category="Assassin Poison,25" />
+  </rules>
+</RulesElement>
+<!-- End Hybrid Executioner -->
+<!-- Hybrid Cavalier/Blackguard -->
+
+<RulesElement name="Hybrid Blackguard Defenses" type="Category" internal-id="ID_CDJ_HYBRID_CLASS_40003_DEFENSE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Hybrid Cavalier Defenses" type="Category" internal-id="ID_CDJ_HYBRID_CLASS_40004_DEFENSE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Hybrid Binder Defenses" type="Category" internal-id="ID_CDJ_HYBRID_CLASS_40006_DEFENSE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Dark Menace" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_DARK_MENACE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Dread Smite" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_DREAD_SMITE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Holy Smite" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_HOLY_SMITE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Spirit of Vice" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_SPIRIT_OF_VICE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Spirit of Virtue" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_SPIRIT_OF_VIRTUE" source="Core" revision-date="1/25/2011 10:34:07 AM">
+</RulesElement>
+
+<RulesElement name="Hybrid Blackguard" type="Hybrid Class" internal-id="ID_CDJ_HYBRID_CLASS_40003" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:59 PM">
+  <Prereqs> !ID_FMP_HYBRID_CLASS_354, !ID_CDJ_HYBRID_CLASS_40004 </Prereqs>
+  <specific name="Key Abilities"> Strength, Charisma </specific>
+  <specific name="Implements"> Holy symbols </specific>
+  <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale, plate; light shield, heavy shield </specific>
+  <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged, military ranged </specific>
+  <specific name="Bonus to Defense"> +1 Fortitude, Reflex or Will </specific>
+  <specific name="Hit Points at 1st Level"> 7.5+ Constitution Score </specific>
+  <specific name="Hit Points per Level Gained"> 3 </specific>
+  <specific name="Healing Surges"> 5 </specific>
+  <specific name="Trained Skills"> </specific>
+  <specific name="Class Skills"> Arcana (Int), Athletics (Str), Bluff (Cha), Endurance (Con), Heal (Wis), History (Int), Intimidate (Cha), Religion (Int), Thievery (Dex) </specific>
+  <specific name="Build Options" />
+  <specific name="_PARSED_CLASS_FEATURE"> Dark Menace (Hybrid), Dread Smite (Hybrid), Spirit of Vice (Hybrid) </specific>
+  <specific name="Role"> Striker.  You are a warrior who focuses divine power through a dark vice. You wield this vice as a weapon, using it to slay any who oppose you. </specific>
+  <specific name="Power Source"> Divine </specific>
+  <specific name="Creating" />
+  <specific name="Class Features" />
+  <specific name="Supplemental" />
+  <specific name="Implement" />
+  <specific name="Powers" />
+  <specific name="Power Name" />
+  <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+  <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
+  <specific name="_SecondaryPowerSourceElement" />
+  <specific name="Secondary Abilities" />
+  <specific name="Hybrid Talent Options"> Paladin Armor Proficiency, Shroud of Shadow (Hybrid) </specific>
+  <specific name="Short Description"> Embracing the dark desires within, you channel divine power to smite your foes. </specific>
+  <specific name="_ParentClass"> ID_FMP_CLASS_4 </specific>
+  <specific name="Trait Package" />
+  <specific name="_BaseClass"> ID_FMP_CLASS_4 </specific>
+  <specific name="_SUGGESTED_FEATS"> </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_HYBRID_BLACKGUARD" type="Grants" />
+    <textstring name="_CLASSNAME" value="ID_CDJ_HYBRID_CLASS_40003" />
+    <statadd name="_LEVEL-ONE-HPS" value="+7" half-point="true" />
+    <statadd name="_PER-LEVEL-HPS" value="+3" />
+    <statadd name="Healing Surges" value="+5" />
+    <select type="Class Feature" number="1" Category="ID_CDJ_HYBRID_CLASS_40003_DEFENSE" />
+ </rules>
+The world knows paladins to be shining paragons who champion lofty ideals such as compassion, nobility, sacrifice, and valor. Such virtuous figures are symbols to the common people, icons from which they draw the strength and courage to stand fast against the encroaching darkness. Yet in every light a shadow lurks - the brightness of these noble warriors is equaled by the shadow spreading from their sinister counterparts.
+</RulesElement>
+
+
+<RulesElement name="Hybrid Blackguard" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_BLACKGUARD" source="Dragon Magazine 400">
+  <specific name="_SupportsID"> ID_CDJ_HYBRID_CLASS_40003 </specific>
+  <rules>
+    <grant name="ID_FMP_ROLE_3" type="Role" />
+    <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
+      <grant name="ID_INTERNAL_GRANTS_BLACKGUARD_IMPLEMENTS" type="Grants" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_DARK_MENACE" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_DREAD_SMITE" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VICE" type="Class Feature" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_BLACKGUARD" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass" />
+  </rules>
+</RulesElement>
+ 
+ <RulesElement name="Hybrid Blackguard Will" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_BLACKGUARD_WILL" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40003_DEFENSE </Category>
+      <rules>
+         <statadd name="Will Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Will Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Blackguard Fortitude" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_BLACKGUARD_FORTITUDE" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40003_DEFENSE </Category>
+      <rules>
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Fortitude Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Blackguard Reflex" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_BLACKGUARD_REFLEX" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40003_DEFENSE </Category>
+      <rules>
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Reflex Defense Class Bonus.
+</RulesElement>
+ 
+<RulesElement name="Dark Menace (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_DARK_MENACE" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+    <Category> 1 </Category>
+    <Flavor> You are a warrior first and foremost, demonstrating your battle prowess through complex fighting maneuvers and weapon mastery. Even so, you are unconstrained by cumbersome notions of virtue, and you readily exploit any advantage available. You've found that the dark vice growing in your soul is a fighting boon. You draw on this darkness, spreading it to your enemies when they are vulnerable. </Flavor>
+    <specific name="Short Description"> Make a paladin weapon attack vs. an enemy granting combat advantage to you: enemy takes [Cha mod] extra damage </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CLASSNAME"> Blackguard </specific>
+    <rules>
+      <statadd name="Damage" value="+Charisma modifier" condition="against an enemy granting combat advantage to you" />
+	  <grant name="ID_INTERNAL_COUNTSASFEATURE_DARK_MENACE" type="CountsAsFeature" />
+    </rules>
+Whenever you make a paladin class or paragaon path weapon attack against an enemy granting combat advantage to you, that enemy takes extra damage equal to your Charisma modifier.
+</RulesElement>
+<RulesElement name="Dread Smite (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_DREAD_SMITE" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+    <Category> 1 </Category>
+    <Flavor> Filled with the strength of your convictions, you call upon divine power as you smite a foe. That power coalesces around your weapon as you strike, introducing your enemy to the power of your vice even before your attack connects. </Flavor>
+    <specific name="Short Description"> You may choose the Dread Smite attack power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> </specific>
+    <specific name="Type"> </specific>
+    <specific name="Class"> </specific>
+    <specific name="_CLASSNAME"> Hybrid Blackguard </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13815 </specific>
+    <specific name="_CS_ShortDescription"> </specific>
+	<rules>
+	 <grant name="ID_INTERNAL_COUNTSASFEATURE_DREAD_SMITE" type="CountsAsFeature" />
+	</rules>
+You can select the dread smite power whenever you have the opportunity to gain or replace a class encounter attack power that has a level. If you already have dread smite, you gain an additional use of the power if you select it again.
+</RulesElement>
+
+<RulesElement name="Spirit of Vice (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VICE" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+    <Category> 1 </Category>
+    <Flavor> Your devotion to your vice rewards you with a new level of power. </Flavor>
+    <specific name="Short Description"> Gain a benefit associated with your vice </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CLASSNAME"> Blackguard </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <select type="Trait Package" number="1" Category="ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VICE" />
+	  <grant name="ID_INTERNAL_COUNTSASFEATURE_SPIRIT_OF_VICE" type="CountsAsFeature" />
+    </rules>
+You choose a vice and gain the benefit of the Spirit of Vice class feature, except that the benefit applies only to your paladin powers and paladin paragon path powers.
+</RulesElement>
+  <RulesElement name="Vice of Domination (Hybrid)" type="Trait Package" internal-id="ID_CDJ_TRAIT_PACKAGE_HYBRID_DOMINATION" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:57 PM">
+    <Category> ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VICE </Category>
+    <print-prereqs> Unaligned or evil </print-prereqs>
+    <specific name="Short Description"> Once per round while you have temporary hit points, you can take a free action to deal damage to yourself right before making an attack roll against a target. The damage equals your Charisma modifier. You then gain a bonus to the damage roll against the target. The bonus equals the damage you took. </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> </specific>
+    <specific name="_CLASSNAME"> Hybrid Blackguard </specific>
+	<specific name="_DisplayPowers"> ID_FMP_POWER_13837 </specific>
+    <rules>
+       <grant name="ID_FMP_POWER_13837" type="Power" />
+    </rules>
+The world demands order. Chaos is a cancer, undermining civilization&apos;s advance, fomenting crimes, sowing discord, and encouraging upheaval. Understanding the world&apos;s crying need, you crusade for order at any cost. When necessary, you enforce your will harshly, making examples of the disobedient.
+	Good and evil are methods, not ends - they can both bring stability. You might attempt to serve the greater good even if your methods can be harsh. To channel your vice, you might seek out the basest threats to stability, such as demons, marauding monsters, and other chaotically minded evildoers. Only evil blackguards give in to true tyranny, destroying the hearts and minds of subjects to make certain they obey every command.
+	Within a group, you push for ideas that involve imposing order on the situation most efficiently. You might have little tolerance for disorganization, even if such a state encourages freedom. You support authority, acknowledging the most effective leader of a group you&apos;re in even if that individual is not you. However, you expect a leader to handle situations competently or to step down. Dominance is earned, not claimed.
+	Alignment: You must be unaligned or evil to focus on the vice of domination. Good can confuse the issue of order and authority, and chaos is unacceptable.
+	Once per round while you have temporary hit points, you can take a free action to deal damage to yourself right before making an attack roll against a target. The damage equals your Charisma modifier. You then gain a bonus to the damage roll against the target. The bonus equals the damage you took.
+</RulesElement>
+  <RulesElement name="Vice of Fury (Hybrid)" type="Trait Package" internal-id="ID_CDJ_TRAIT_PACKAGE_HYBRID_FURY" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:57 PM">
+    <Category> ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VICE </Category>
+    <Prereqs> !Lawful good </Prereqs>
+    <print-prereqs> Not lawful good alignment </print-prereqs>
+    <specific name="Short Description"> While you have combat advantage against an enemy, you gain a +2 bonus to damage rolls. The bonus increases to +4 while you are bloodied or adjacent to a bloodied creature. </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> </specific>
+    <specific name="_CLASSNAME"> Hybrid Blackguard </specific>
+	<specific name="_DisplayPowers"> ID_FMP_POWER_13843 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13843" type="Power" />
+	  <statadd name="damage rolls" value="+2" condition="while you have combat advantage against an enemy" />
+      <statadd name="damage rolls" value="+4" condition="while you are bloodied or adjacent to a bloodied creature" />
+    </rules>
+Anger is a common emotion on the battlefield. It&apos;s perfectly natural to feel fury when enemies kill a friend or when a traitor betrays you and your companions. Frustration is bound to arise when a foe slips away or an objective remains out of reach. Such rage is hardly a vice.
+	Fury&apos;s dark side arises when it occludes thought, when it rules action, and when it harms without thought for the consequences. Blackguards who indulge in their fury run the risk of losing control and striking out at anyone in their path. Guilt and innocence become meaningless concepts to a warrior in fury&apos;s throes. Such paladins can work terrible acts when consumed by their passions.
+	When fury is your vice, you might be temperamental and violent. You could erupt at the slightest provocation, resorting to hostility to solve your problems. Or you might make every effort to maintain control when you need to, letting the hound of fury loose only when it is needed. Even then, if pushed too far, you risk exploding. If you aim to keep your fury under control, your biggest fear is hurting someone or something you value.
+	Alignment: You can embrace the vice of fury as long as you are not lawful good. Most heroic blackguards of fury are unaligned. Rage clouds philosophical positions and overshadows peaceable solutions.
+	While you have combat advantage against an enemy, you gain a +2 bonus to damage rolls. The bonus increases to +4 while you are bloodied or adjacent to a bloodied creature.
+</RulesElement>
+
+<RulesElement name="Shroud of Shadow (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_SHROUD_OF_SHADOW_HYBRID" source="Dragon Magazine 400" revision-date="4/11/2011 1:43:54 PM">
+    <Category> ID_CDJ_HYBRID_CLASS_40003,1 </Category>
+    <Flavor> Shadow rises at your beck and call. You can command it to sheathe you in a protective swirl. </Flavor>
+    <specific name="Short Description"> Gain the Shroud of Shadow utility power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13816 </specific>
+    <specific name="Type"> Utility </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="_CLASSNAME"> Blackguard </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13816 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13816" type="Power" />
+	  <grant name="ID_FMP_CLASS_FEATURE_3574" type="Class Feature" level="7" />
+    </rules>
+You gain the shroud of shadow power.
+</RulesElement>
+<RulesElement name="Paladin Armor Proficiency" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1834" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_HYBRID_CLASS_354,ID_CDJ_HYBRID_CLASS_40003,ID_CDJ_HYBRID_CLASS_40004,1 </Category>
+      <specific name="Short Description"> Gain proficiency with leather, hide, chain, scale, plate, light and heavy shields </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
+      </rules>
+You gain proficiency with leather armor, hide armor, chainmail, scale armor, plate armor, light shields, and heavy shields.
+   </RulesElement>
+ 
+  <RulesElement name="Dread Smite (Second Use)" type="Power" internal-id="ID_CDJ_POWER_DREAD_SMITE_II" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:47:17 PM">
+    <Prereqs> Blackguard or Hybrid Blackguard </Prereqs>
+	<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_FREE_ACTION,7 </Category>
+    <Flavor> The dark coldness at the heart of your vice makes your strike all the more crippling. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Attack  </specific>
+    <specific name="Keywords"> Cold, Divine, Necrotic, Shadow </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You target an enemy with an at-will weapon attack power. </specific>
+    <specific name="Effect"> The target takes cold and necrotic damage equal to 2 + your Charisma modifier. If the triggering attack hits, the target also takes ongoing 5 cold and necrotic damage (save ends).
+	Level 7: 4 + Charisma modifier cold and necrotic damage.
+	Level 17: 7 + Charisma modifier cold and necrotic damage, and ongoing 10 cold and necrotic damage (save ends).
+	Level 27: 10 + Charisma modifier cold and necrotic damage, and ongoing 15 cold and necrotic damage (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_813 </specific>
+  </RulesElement>
+
+<RulesElement name="Hybrid Cavalier" type="Hybrid Class" internal-id="ID_CDJ_HYBRID_CLASS_40004" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:59 PM">
+  <Prereqs> !ID_FMP_HYBRID_CLASS_354, !ID_CDJ_HYBRID_CLASS_40003 </Prereqs>
+  <specific name="Key Abilities"> Strength, Charisma </specific>
+  <specific name="Implements"> Holy symbols </specific>
+  <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale, plate; light shield, heavy shield </specific>
+  <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged, military ranged </specific>
+  <specific name="Bonus to Defense"> +1 Fortitude, Reflex or Will </specific>
+  <specific name="Hit Points at 1st Level"> 7.5+ Constitution Score </specific>
+  <specific name="Hit Points per Level Gained"> 3 </specific>
+  <specific name="Healing Surges"> 5 </specific>
+  <specific name="Trained Skills"> </specific>
+  <specific name="Class Skills"> Athletics (Str), Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int) </specific>
+  <specific name="Build Options" />
+  <specific name="_PARSED_CLASS_FEATURE"> Defender Aura, Holy Smite (Hybrid), Righteous Radiance, Spirit of Virtue (Hybrid) </specific>
+  <specific name="Role"> Defender. You are a warrior of virtue, a champion of the righteous, and a defender of the weak. With your sword and your faith, you will shield the world from evil. </specific>
+  <specific name="Power Source"> Divine. </specific>
+  <specific name="Creating" />
+  <specific name="Class Features" />
+  <specific name="Supplemental" />
+  <specific name="Implement" />
+  <specific name="Powers" />
+  <specific name="Power Name" />
+  <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+  <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
+  <specific name="_SecondaryPowerSourceElement" />
+  <specific name="Secondary Abilities" />
+  <specific name="Hybrid Talent Options"> Paladin Armor Proficiency, Righteous Shield (Hybrid) </specific>
+  <specific name="Short Description"> A holy warrior devoted to a higher power, you smite enemies of your faith with divine power. </specific>
+  <specific name="_ParentClass"> ID_FMP_CLASS_4 </specific>
+  <specific name="Trait Package" />
+  <specific name="_BaseClass"> ID_FMP_CLASS_4 </specific>
+  <specific name="_SUGGESTED_FEATS"> </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_HYBRID_CAVALIER" type="Grants" />
+    <textstring name="_CLASSNAME" value="ID_CDJ_HYBRID_CLASS_40004" />
+    <statadd name="_LEVEL-ONE-HPS" value="+7" half-point="true" />
+    <statadd name="_PER-LEVEL-HPS" value="+3" />
+    <statadd name="Healing Surges" value="+5" />
+    <select type="Class Feature" number="1" Category="ID_CDJ_HYBRID_CLASS_40004_DEFENSE" />
+ </rules>
+Some warriors fight for gold. Others seek glory, power, or prestige. There are a few, however, who seek the warrior&apos;s path for reasons that transcend the material and mundane. Called by divine powers to stand as champions of the light against the ever-encroaching darkness, paladins fight not because they choose to, but because, deep within their souls, they know they must. The paladin&apos;s life is not a choice. It is a destiny.
+     Paladins are holy warriors, defenders of good and enemies of evil. Paladins are well trained with their weapons and armor, but they augment that skill with divine powers that allow them to shield their allies and smite their enemies. A single paladin can turn the tide of an entire war through a combination of skill at arms and inspiring leadership. As icons of virtue and heroism, paladins are a deadly threat to those who would rule through fear, intimidation, and violence.
+     Paladins typically wander the land either alone or in small groups. They seek out wrongs to right and villainy to defeat. Most paladins begin as squires to more experienced holy warriors. Through training and arduous tests, a squire&apos;s bravery, battle skill, and ethics are all tested to see if the squire is worthy of becoming a paladin.
+     A cavalier is a paladin who has embraced one of the heroic virtues, such as compassion, justice, sacrifice, or valor. His or her belief in this virtue is so strong that it manifests as divine magic. Although many cavaliers pledge their faith to the gods, others follow no specific religion. Regardless of one&apos;s divine affiliation (or lack thereof), a cavalier&apos;s virtue stands paramount. It guides his or her actions, pointing to the best way to protect the ever-flickering light of hope and civilization in the world.
+	 Opposing the cavaliers and the virtues that they champion are the blackguards, who embody the dreaded vices that the cavaliers stand against. Where cavaliers embrace compassion, justice, sacrifice, and valor, blackguards epitomize fury, tyranny, greed, and terror. Since the earliest days of history, these two factions have fought each other. Both wander the land, gathering allies and working to further the cause of their virtues or vices.
+     At one time, cavaliers formed into chivalrous orders that were dedicated to the ideal of protecting the civilized realms. The forgotten kingdoms that ruled the land relied on cavaliers to help keep the peace. Those cavaliers maintained not only the military security of the land, but also its moral strength. A cavalier might drive off a marauding troll, but she could also mediate a dispute between two farmers, break the power of a corrupt noble, or free a wrongly accused prisoner.
+     As with many things from the time of the forgotten kingdoms, the cavaliers&apos; glory proved fleeting. The kingdoms of old grew weak, and some of their decline could be laid at the feet of cavaliers who strayed from the righteous path. All too often, cavaliers fell victim to the very evils they had sworn to combat. Power corrupts, and in many cases cavaliers served as perfect examples of how power can twist the most resolute heart.
+     The grand orders of cavaliers have long since faded, but their glory is not forgotten. Even as evil casts its shadow across the land, there are those who hear the call to the cavalier&apos;s path. Many of the cavaliers of old strayed from their purpose, but that purpose and the power behind it remains strong for those who stay true to it.
+</RulesElement>
+
+<RulesElement name="Hybrid Cavalier" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_CAVALIER" source="Dragon Magazine 400">
+  <specific name="_SupportsID"> ID_CDJ_HYBRID_CLASS_40004 </specific>
+  <rules>
+    <grant name="ID_FMP_ROLE_4" type="Role" />
+    <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(PLATE)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
+    <grant name="ID_INTERNAL_GRANTS_CAVALIER_IMPLEMENTS" type="Grants" />
+	<grant name="ID_WOG_CAVALIER_CLASS_FEATURE_3" type="Class Feature" />
+	<grant name="ID_WOG_CAVALIER_CLASS_FEATURE_5" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HOLY_SMITE_HYBRID" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VIRTUE" type="Class Feature" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_CAVALIER" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass" />
+  </rules>
+</RulesElement>
+ 
+ <RulesElement name="Hybrid Cavalier Will" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_CAVALIER_WILL" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40004_DEFENSE </Category>
+      <rules>
+         <statadd name="Will Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Will Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Cavalier Fortitude" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_CAVALIER_FORTITUDE" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40004_DEFENSE </Category>
+      <rules>
+         <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Fortitude Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Cavalier Reflex" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_CAVALIER_REFLEX" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40004_DEFENSE </Category>
+      <rules>
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Reflex Defense Class Bonus.
+</RulesElement>
+ 
+ <RulesElement name="Holy Smite (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HOLY_SMITE_HYBRID" source="Dragon Magazine 400">
+    <Category> 1 </Category>
+    <Flavor> Filled with the strength of your convictions, you call upon divine power as you smite a foe. That power coalesces around your weapon as you strike, lancing your enemy with radiant energy before your attack connects. </Flavor>
+    <specific name="Short Description"> You may choose the holy smite power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13553 </specific>
+    <specific name="_CS_ShortDescription"> </specific>
+	<rules>
+	 <grant name="ID_INTERNAL_COUNTSASFEATURE_HOLY_SMITE" type="CountsAsFeature" />
+	</rules>
+You can select the holy smite power whenever you have the opportunity to gain a class encounter attack power. If you have holy smite, you can choose to replace it with another encounter attack power when you have the option to swap such powers. If you already have holy smite, you gain an additional use of the power if you select it again.
+</RulesElement>
+
+ <RulesElement name="Spirit of Virtue (Hybrid)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VIRTUE" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> Cavaliers respect and follow the ideals set forth by all the holy virtues, but each cavalier selects one virtue to embrace above all others. </Flavor>
+    <specific name="Short Description"> Gain virtue benefits. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> Gain virtue benefits </specific>
+    <specific name="_PARSED_SUB_FEATURES"> </specific>
+    <rules>
+      <select type="Trait Package" number="1" Category="ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VIRTUE" />
+	  <grant name="ID_INTERNAL_COUNTSASFEATURE_SPIRIT_OF_VIRTUE" type="CountsAsFeature" />
+    </rules>
+At 1st level, each cavalier chooses a virtue to embody, a path that you swear to adhere to, but you also become a symbol of that virtue to all who come into contact with you. It isn't an easy path, but the strength of your devotion gives you divine power to help on your journey.
+
+Your choice of virtue determines some of your class features and you gain the benefit associated with that virtue.
+</RulesElement>
+
+<RulesElement name="Virtue of Sacrifice (Hybrid)" type="Trait Package" internal-id="ID_CDJ_HYBRID_CAVALIER_SACRIFICE" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VIRTUE </Category>
+    <Prereqs> Cavalier </Prereqs>
+    <print-prereqs> Cavalier </print-prereqs>
+    <Flavor> A cavalier of sacrifice gives up his or her own safety to shield others from harm. Such a paladin shoulders injuries to keep comrades unharmed and compels enemies to strike him or her first, rather than the paladin&apos;s allies. By invoking divine magic, such cavaliers can sacrifice their vitality and strength to protect those who are weaker, and they gladly do so.
+     A cavalier of sacrifice must be ready to give up anything - money, status, power, or life itself - to defend those too weak to shield themselves from evil. Cavaliers of sacrifice are renowned because of the hardships they endure for the good of others. You sleep in a stable while your allies rest in an inn, to save a few coins for the poor. You wear little more than simple, peasant&apos;s garb when not in armor and are an ascetic devoted to your cause, willing to endure any ill or pain to prevent others from suffering it.
+     Even though the virtue of sacrifice carries a heavy cost, you must temper your actions with humility. You give up so much, but that sacrifice does not make you more noble than others. Pride is your enemy, because it threatens to lead you to arrogance and ultimately disdain for those you protect. Cavaliers of sacrifice who fall to evil become even more villainous due to the great distance they tumble.</Flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> </specific>
+    <specific name="Short Description"> +1 healing surge. May use second wind (minor action) to heal ally in 5sq.; ally regains hp equal to their surge value, you gain no benefit. </specific>
+    <specific name="_CS_ShortDescription"> +1 healing surge. May use second wind (minor action) to heal ally in 5sq.; ally regains hp equal to their surge value, you gain no benefit. </specific>
+	 <specific name="_DisplayPowers"> ID_FMP_POWER_13575 </specific>
+	 <rules>
+      <statadd name="Healing Surges" value="+1" />
+	  <grant name="ID_FMP_POWER_13575" type="Power" />
+    </rules>
+You gain an additional healing surge. In addition, you can use your second wind as a minor action to heal an ally of your choice within 5 squares of you. If you do so, you gain no benefit from using your second wind, but the ally regains hit points equal to his or her healing surge value.
+Alignment: A cavalier of sacrifice must be lawful good. The virtue of sacrifice demands much from its adherents. Only the most honorable cavaliers embrace it.
+</RulesElement>
+ 
+ <RulesElement name="Virtue of Valor (Hybrid)" type="Trait Package" internal-id="ID_CDJ_HYBRID_CAVALIER_VALOR" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_CDJ_CLASS_FEATURE_HYBRID_SPIRIT_OF_VIRTUE </Category>
+    <Prereqs> Cavalier </Prereqs>
+    <print-prereqs> Cavalier </print-prereqs>
+    <Flavor> A cavalier of valor focuses on martial prowess and aggressive attacks against enemies. He or she brings the fight to foes, protecting allies by forcing enemies to respond to divine attacks. The virtue of valor emphasizes unflinching bravery in the face of a powerful enemy, and bards&apos; stories are filled with tales of cavaliers of valor who lived up to the name, riding out to challenge dragons, demon lords, and other mighty champions of evil.
+     On the battlefield, you are the pinnacle of bravery. You stand resolute against any foe, from a seemingly endless wave of kobolds to a mountain-shaking titan. Without valor, the other virtues lose meaning and impact. To stand against a daunting foe or to hold tight to the exacting standards of the order of cavaliers both of these tasks require faultless valor. You stand at the forefront of a battle, taking the vanguard position to both strike at your foes and shield your allies from your enemies&apos; most ferocious attacks. In this manner, your adherence to valor ensures that your bravery serves as a stirring example.
+     Valor must be tempered with wisdom. The valorous cavalier does not fight for the sake of fighting, but for the just cause. Valor turns to bloodlust when a cavalier fails to see that skill at arms is only one solution. Tales abound of valorous cavaliers who have fallen to evil. They didn&apos;t abandon their virtue, but rather lost the wisdom needed to wield it for good. </Flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> </specific>
+    <specific name="Short Description"> You gain a +4 bonus to initiative checks, and your healing surge value increases by 2. </specific>
+    <specific name="_CS_ShortDescription"> You gain a +4 bonus to initiative checks, and your healing surge value increases by 2. </specific>
+	<specific name="_DisplayPowers"> ID_FMP_POWER_13580 </specific>
+	<rules>
+      <statadd name="Healing Surge Value" value="+2" />
+      <statadd name="Initiative Misc" value="+4" />
+	  <grant name="ID_FMP_POWER_13580" type="Power" />
+    </rules>
+You gain a +4 bonus to initiative checks, and your healing surge value increases by 2.
+Alignment: A cavalier of valor can be lawful good, good, or unaligned. While the ideal of valor demands bravery in combat, it asks only that its adherents refrain from attacking the weak or innocent.
+</RulesElement>
+
+<RulesElement name="Holy Smite (Second Use)" type="Power" internal-id="ID_CDJ_POWER_HOLY_SMITE_II" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Prereqs> Cavalier or Hybrid Cavalier </Prereqs>
+	<Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_4,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_FREE_ACTION,7 </Category>
+    <Flavor> Your weapon fills with divine radiant energy, which bursts forth as you strike your enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Paladin Attack </specific>
+    <specific name="Keywords"> Divine, Radiant </specific>
+    <specific name="Action Type"> Free action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Requirement"></specific>
+    <specific name="Trigger"> You target an enemy with an at-will weapon attack power. </specific>
+    <specific name="Target"> </specific>
+    <specific name="Attack"> </specific>
+    <specific name="Hit"> </specific>
+    <specific name="Effect"> The target takes radiant damage equal to 2 + your Charisma modifier. If the triggering attack hits, the target is also dazed until the end of your next turn.
+	Level 7: 4 + Charisma modifier radiant damage.
+	Level 17: 7 + Charisma modifier radiant damage.
+	Level 27: 10 + Charisma modifier radiant damage.</specific>
+    <specific name="Special"> </specific>
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+	<specific name="Level"> 7 </specific>
+	<specific name="Power Type"> Attack </specific>
+    <specific name="_Subclasses"> ID_FMP_CLASS_784 </specific>
+</RulesElement>
+<!-- End Hybrid Cavalier/Blackguard -->
+<!-- Start Hybrid Sentinel -->
+
+<RulesElement name="Hybrid Sentinel" type="Hybrid Class" internal-id="ID_FMP_HYBRID_CLASS_894" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:59 PM">
+  <Prereqs> !ID_FMP_CLASS_126, !ID_FMP_HYBRID_CLASS_442 </Prereqs>
+  <specific name="Key Abilities"> Wisdom, Constitution </specific>
+  <specific name="Implements"> Staffs, totems </specific>
+  <specific name="Armor Proficiencies"> Cloth, leather, hide; light shield </specific>
+  <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+  <specific name="Bonus to Defense"> +1 Fortitude </specific>
+  <specific name="Hit Points at 1st Level"> 6+ Constitution Score </specific>
+  <specific name="Hit Points per Level Gained"> 2.5 </specific>
+  <specific name="Healing Surges"> 3.5 </specific>
+  <specific name="Trained Skills"> </specific>
+  <specific name="Class Skills"> Arcana (Int), Athletics (Str), Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Nature (Wis), Perception (Wis) </specific>
+  <specific name="Build Options" />
+  <specific name="_PARSED_CLASS_FEATURE"> Acolyte of the Natural Cycle (Hybrid), Animal Companion, Combined Attack (Hybrid), Healing Word (Hybrid Sentinel) </specific>
+  <specific name="Role"> Leader. You wield the magic of the natural world, using your connection to the primal spirits to tend the wounds of your allies and lead them to victory. </specific>
+  <specific name="Power Source"> Primal. As a sentinel, you use primal power to shelter your allies and defeat those that would disrupt the balance of the natural world. </specific>
+  <specific name="Creating" />
+  <specific name="Class Features" />
+  <specific name="Supplemental" />
+  <specific name="Implement" />
+  <specific name="Powers" />
+  <specific name="Power Name" />
+  <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+  <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+  <specific name="_SecondaryPowerSourceElement" />
+  <specific name="Secondary Abilities" />
+  <specific name="Hybrid Talent Options"> Wilderness Knack (Hybrid), Druid Armor Proficiency, Paragon of the Natural Cycle, Animal Companion Power, Nature&apos;s Bounty </specific>
+  <specific name="Short Description"> You want to play a weapon-wielding master of primal magic who has an animal companion. </specific>
+  <specific name="_ParentClass"> ID_FMP_CLASS_126 </specific>
+  <specific name="Trait Package" />
+  <specific name="_BaseClass"> ID_FMP_CLASS_126 </specific>
+  <specific name="_SUGGESTED_FEATS"> </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_HYBRID_SENTINEL" type="Grants" />
+    <textstring name="_CLASSNAME" value="ID_FMP_HYBRID_CLASS_894" />
+    <statadd name="_LEVEL-ONE-HPS" value="+6"  />
+    <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true" />
+    <statadd name="Healing Surges" value="+3" half-point="true" />
+    <statadd name="Fortitude Defense Class Bonus" value="+1" />
+ </rules>
+The world experiences perpetual cycles of life, death, and rebirth. The four seasons are signposts that mark the world&apos;s progress through time, each with its own recognizable traits. The mortal races have learned to live in harmony with this cycle, using the bounty of spring, summer, and autumn to enable them to endure the desolation of winter. In you, that harmony manifests itself in a special way. You have learned to harness the greatest power of the natural world: that of primal magic.
+     Druids are guardians of the world. They provide guidance to the common folk and tend to villages, towns, and vast stretches of unspoiled land in the same way that a gardener keeps watch over his flowers and vegetables. A druid works to ensure that the natural order remains strong. A wise druid allows a band of hunting goblins to gather food and game for their survival. But if those same goblins wreak havoc purely for the joy of destruction, the druid calls upon primal magic to smite and scatter them. As long as creatures live within the cycle of nature, a druid lives and lets live.
+     Druids provide guidance and protection to farmers, wild animals, and plants in equal measure. In a druid&apos;s eyes, all living creatures have the same right to live within the world. A druid might help a village plant crops, but then turn against the villagers if they hunt to near extinction the wolves that prey on their cattle. Balance is the key to maintaining nature&apos;s integrity.
+</RulesElement>
+
+<RulesElement name="Hybrid Sentinel" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_SENTINEL" source="Dragon Magazine 400">
+  <specific name="_SupportsID"> ID_FMP_HYBRID_CLASS_894 </specific>
+  <rules>
+    <grant name="ID_FMP_ROLE_2" type="Role" />
+    <grant name="ID_FMP_POWER_SOURCE_4" type="Power Source" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+    <grant name="ID_INTERNAL_GRANTS_DRUID_IMPLEMENTS" type="Grants" />
+	<grant name="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_0" type="Class Feature" Level="1" />
+    <grant name="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1" type="Class Feature" Level="1" />
+	<grant name="ID_WOG_SENTINEL_CLASS_FEATURE_2" type="Class Feature" Level="1" />
+	<grant name="ID_CDJ_HYBRID_SENTINEL_COMBINED_ATTACK" type="Class Feature" Level="1" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_SENTINEL_HEALING_WORD" type="Class Feature" Level="1" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_SENTINEL" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_DRUID" type="CountsAsClass" />
+  </rules>
+</RulesElement>
+
+<RulesElement name="Season Choice (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_0" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> As a sentinel, you are charged with maintaining the balance inherent in the seasonal cycles of growth, death, and rebirth. </Flavor>
+    <specific name="Short Description"> Gain season benefits: skill bonus and animal companion. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> @ </specific>
+    <rules>
+      <select type="Trait Package" number="1" Category="ID_FMP_HYBRID_CLASS_894" />
+    </rules>
+At 1st level, each sentinel chooses a season that demonstrates his or her affinity for that aspect of nature&apos;s power. Your choice of season determines some of your class features, including the animal companion you gain.
+When you choose to become a hybrid druid of one of the four seasons, you gain some of the benefit associated with that season.
+
+Druid of Spring:
+You gain the following benefits.
+    * Your animal companion is a wolf.
+    * You gain a +2 bonus to Heal checks.
+
+Druid of Summer:
+You gain the following benefits.
+    * Your animal companion is a bear.
+     * You gain a +2 bonus to Athletics checks.
+</RulesElement>
+  <RulesElement name="Druid of Spring (Hybrid)" type="Trait Package" internal-id="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_FMP_HYBRID_CLASS_894 </Category>
+    <Prereqs> Hybrid Sentinel </Prereqs>
+    <print-prereqs> Hybrid Sentinel </print-prereqs>
+    <flavor> You draw your strength from the spring, a time when life emerges once more from the bleakness of winter and reaches for the sun. You believe that all things can be renewed, and you show your allies how to shrug off pain and injury, just as the spring sun melts away the last remnants of winter&apos;s snow.
+Your chosen weapons are the scimitar, the spear, the dagger, and the sickle. The bright steel of these weapons gleams like the spring sun. In battle, you rely on accuracy and precision rather than brute force to defeat your foes. </flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_2A,ID_WOG_SENTINEL_CLASS_FEATURE_18,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_28 </specific>
+    <specific name="Short Description"> You are a druid of spring and have a wolf companion. </specific>
+    <specific name="_CS_ShortDescription"> Spring is your chosen cycle </specific>
+You gain the following benefits.
+    * Your animal companion is a wolf.
+    * You gain a +2 bonus to Heal checks.
+</RulesElement>
+  <RulesElement name="Druid of Summer (Hybrid)" type="Trait Package" internal-id="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_FMP_HYBRID_CLASS_894 </Category>
+    <Prereqs> Hybrid Sentinel </Prereqs>
+    <print-prereqs> Hybrid Sentinel </print-prereqs>
+    <flavor> You feel the strongest association with the high heat of summer, a time when the life of the natural world stands in full bloom. You are a symbol of the power and vibrancy of life, embodying the full resilience of nature. You draw strength from the light of the sun, the green of the forest, and the blue of the sky, demonstrating to your allies that the present is always the season of their greatest strength.
+Your chosen weapons are the staff and the club. They represent summer&apos;s enduring strength, the trees that flourish in that season and persist through the darkest winter. Your fighting style reflects that strength, as you rely on overpowering force to batter your foes into submission. </flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_2B,ID_WOG_SENTINEL_CLASS_FEATURE_19,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_29 </specific>
+    <specific name="Short Description"> You are a druid of summer and have a bear companion. </specific>
+    <specific name="_CS_ShortDescription"> Summer is your chosen cycle </specific>
+You gain the following benefits.
+    * Your animal companion is a bear.
+    * You gain a +2 bonus to Athletics checks.
+</RulesElement>
+  <RulesElement name="Acolyte of the Natural Cycle (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor> As a sentinel, you are charged with maintaining the balance inherent in the seasonal cycles of growth, death, and rebirth. </Flavor>
+    <specific name="Short Description"> Gain season benefits: skill bonus and animal companion. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> Gain season benefits </specific>
+    <rules>
+      <grant name="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1A" type="Class Feature" requires="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1" />
+      <grant name="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1B" type="Class Feature" requires="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2" />
+    </rules>
+At 1st level, each sentinel chooses a season that demonstrates his or her affinity for that aspect of nature&apos;s power. Your choice of season determines some of your class features, including the animal companion you gain.
+When you choose to become a hybrid druid of one of the four seasons, you gain some of the benefit associated with that season.
+
+Druid of Spring:
+You gain the following benefits.
+    * Your animal companion is a wolf.
+    * You gain a +2 bonus to Heal checks.
+
+Druid of Summer:
+You gain the following benefits.
+    * Your animal companion is a bear.
+    * You gain a +2 bonus to Athletics checks.
+</RulesElement>
+  <RulesElement name="Druid of Spring (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1A" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1 </Category>
+    <flavor> You draw your strength from the spring, a time when life emerges once more from the bleakness of winter and reaches for the sun. You believe that all things can be renewed, and you show your allies how to shrug off pain and injury, just as the spring sun melts away the last remnants of winter&apos;s snow.
+Your chosen weapons are the scimitar, the spear, the dagger, and the sickle. The bright steel of these weapons gleams like the spring sun. In battle, you rely on accuracy and precision rather than brute force to defeat your foes. </flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_18,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_28 </specific>
+    <specific name="Short Description"> You are a druid of spring and have a wolf companion. </specific>
+    <specific name="_CS_ShortDescription"> Spring is your chosen cycle </specific>
+    <rules>
+     <statadd name="Heal Misc" value="+2" />
+    </rules>
+You gain the following benefits.
+    * Your animal companion is a wolf.
+    * You gain a +2 bonus to Heal checks.
+</RulesElement>
+  <RulesElement name="Druid of Summer (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1B" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_WOG_SENTINEL_CLASS_FEATURE_1 </Category>
+    <flavor> You feel the strongest association with the high heat of summer, a time when the life of the natural world stands in full bloom. You are a symbol of the power and vibrancy of life, embodying the full resilience of nature. You draw strength from the light of the sun, the green of the forest, and the blue of the sky, demonstrating to your allies that the present is always the season of their greatest strength.
+Your chosen weapons are the staff and the club. They represent summer&apos;s enduring strength, the trees that flourish in that season and persist through the darkest winter. Your fighting style reflects that strength, as you rely on overpowering force to batter your foes into submission. </flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_19,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_29 </specific>
+    <specific name="Short Description"> You are a druid of summer and have a bear companion. </specific>
+    <specific name="_CS_ShortDescription"> Summer is your chosen cycle </specific>
+    <rules>
+      <statadd name="Athletics Misc" value="+2" />
+    </rules>
+You gain the following benefits.
+    * Your animal companion is a bear.
+    * You gain a +2 bonus to Athletics checks.
+</RulesElement>
+
+
+<RulesElement name="Combined Attack (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_COMBINED_ATTACK" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> 1 </Category>
+    <Flavor>The iconic expression of the link you forge with your animal companion, combined attack lets you use your own attack to inspire your companion to greater fury. Used at the height of battle, this power allows the two of you to attack with the speed and grace of a single creature, unleashing a devastating combination strike.</Flavor>
+    <specific name="Short Description"> You may choose the combined attack power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> </specific>
+    <specific name="Powers"> </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13506 </specific>
+    <specific name="_CS_ShortDescription"> </specific>
+You can select the combined attack power whenever you have the opportunity to gain a class encounter attack power that has a level. If you already have combined attack, you gain an additional use of the power if you select it again.
+</RulesElement>
+
+<RulesElement name="Healing Word (Hybrid Sentinel)" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_SENTINEL_HEALING_WORD" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description"> Healing word 1/encounter </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_1455 </specific>
+      <specific name="type"> Utility </specific>
+      <specific name="Class"> ID_FMP_CLASS_126 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_1455 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_1455" type="Power" />
+         <modify Field="Special" value="" />
+		 <modify name="ID_FMP_POWER_1455" type="Power" Field="Display" value="Druid Utility" />
+         <modify name="ID_FMP_POWER_1455" type="Power" Field="Power Type" value="Utility" />
+         <modify name="ID_FMP_POWER_1455" type="Power" Field="Power Usage" value="Encounter" />
+         <modify name="ID_FMP_POWER_1455" type="Power" Field="Class" value="ID_FMP_CLASS_126" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_HEALING_WORD" type="CountsAsFeature" />
+      </rules>
+You gain the druid&apos;s healing word power. The power functions as normal except that you can use it only once per encounter.
+   </RulesElement>
+   
+   <RulesElement name="Druid Armor Proficiency" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1828" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:05 PM" >
+      <Category> ID_FMP_HYBRID_CLASS_442,ID_FMP_HYBRID_CLASS_894,1 </Category>
+      <specific name="Short Description"> Gain proficiency with leather and hide </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
+      </rules>
+You gain proficiency with leather armor and hide armor.
+   </RulesElement>
+   
+<RulesElement name="Wilderness Knack (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_WILDERNESS_KNACK" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_FMP_HYBRID_CLASS_894,1 </Category>
+    <Flavor> Druids, like rangers, are experts in outdoor survival. As a primal adept, you have learned several mundane tricks and techniques to aid you in traveling through the wilds. </Flavor>
+    <specific name="Short Description"> Gain a druid wilderness knack. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CS_ShortDescription"> Gain 1 wilderness knacks </specific>
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_WOG_SENTINEL_CLASS_FEATURE_4,ID_FMP_CLASS_126" />
+    </rules>
+You gain two of the following abilities of your choice.
+
+Beast Empathy:
+The beasts of the wilderness see and know most of what unfolds in their realm. Few folk heed them, but you have learned to understand and interpret their actions and attitudes. Your woodcraft is short of the magical ability to communicate with animals directly, but it is enough to reveal secrets that others miss.
+   *You gain a +2 bonus to Bluff, Diplomacy, and Intimidate checks against beasts. You can communicate simple concepts and commands to such creatures, though they are under no compulsion to obey you. With a successful Insight check (DC determined by the DM), you can read a creature&apos;s body language and vocalizations enough to understand basic messages from it.
+
+Herb Lore:
+You have studied the properties of various plants. Even in distant lands your lore serves you well in finding the right leaves and roots to harvest. By brewing a soothing tea or mixing a poultice, you help soothe the aches, bruises, and cuts you and your allies suffer.
+   *You and each ally can add 2 to his or her healing surge value when spending heading surges during a short rest. To gain this benefit, you must take the short rest in an area that offers easy access to plants. The additional hit points increase to 4 at 11th level and 6 at 21st level.
+
+Mountain Guide:
+You have clambered over steep cliffs and ranged across imposing mountains. Your knack for climbing allows you to pick out the easiest paths up even the most imposing slopes.
+   *Whenever you succeed on an Athletics check to climb, you reduce the DC of that climb by 2 for your allies until the end of the encounter. Only allies who see you make the climb gain this benefit.
+
+Watchful Rest:
+Long days spent in the wilds have taught you the best way to set up a camp. By picking out an easily defensible spot and carefully positioning your gear, you ensure that you and your allies have the best chance to avoid an ambush.
+   *When you take an extended rest, you and any allies also taking the rest do not take the -5 penalty to Perception checks for sleeping.
+
+Wilderness Tracker:
+You are an expert at reading the signs of a creature&apos;s passage. When you inspect an area, a splintered twig or a trampled leaf is enough for you to glean a significant amount of information. Even the slyest rogues and sneakiest warlocks leave behind some trace of their passage.
+   *During a short rest, you can make a Perception check (DC determined by the DM) to inspect the area around you. This area can be as large as 10 squares on a side. If your check succeeds, you determine the number and nature of the creatures that have moved through the area in the past 24 hours. You ascertain when and where they entered the area, as well as when and where they left.
+</RulesElement>
+
+<RulesElement name="Combined Attack (Second Use)" type="Power" internal-id="ID_CDJ_POWER_COMBINED_ATTACK_II" source="Player Essentials: Heroes of the Forgotten Kingdoms">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Prereqs> Sentinel or Hybrid Sentinel </Prereqs>
+    <print-prereqs></print-prereqs>
+    <Flavor>Your animal companion waits for the signal of your own attack, then pushes in with a devastating follow up that your foe never sees coming.</Flavor>
+    <specific name="Power Type">Attack</specific>
+    <specific name="Power Usage">Encounter</specific>
+    <specific name="_SkillPower" />
+    <specific name="Display">Druid Attack</specific>
+    <specific name="Keywords">Primal, Weapon</specific>
+    <specific name="Action Type">Standard Action </specific>
+    <specific name="Attack Type">Melee weapon</specific>
+    <specific name="Target">One creature </specific>
+    <specific name="Attack">Wisdom vs. AC</specific>
+    <specific name="Hit">1[W] + Wisdom modifier damage.
+Increase damage to 2[W] + Wisdom modifier damage at 17th level.
+Increase damage to 3[W] + Wisdom modifier damage at 27th level </specific>
+    <specific name="Effect">Your animal companion can take a free action to move up to its speed and then use its animal attack.</specific>
+    <specific name="Special"></specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class">ID_FMP_CLASS_126 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Prerequisite"></specific>
+    <specific name="_BasicAttack"></specific>
+    <rules></rules>
+  </RulesElement>
+  
+<!-- End Hybrid Sentinel -->
+<!-- Start Hybrid Binder -->
+<RulesElement name="Hybrid Binder" type="Hybrid Class" internal-id="ID_CDJ_HYBRID_CLASS_40006" source="Dragon Magazine 400" revision-date="3/29/2011 3:03:59 PM">
+  <Prereqs> !ID_FMP_CLASS_7, !ID_FMP_HYBRID_CLASS_358 </Prereqs>
+  <specific name="Key Abilities"> Charisma; Dexterity or Intelligence </specific>
+  <specific name="Implements"> Rods, wands </specific>
+  <specific name="Armor Proficiencies"> Cloth, leather </specific>
+  <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+  <specific name="Bonus to Defense"> +1 Reflex or Will </specific>
+  <specific name="Hit Points at 1st Level"> 6 + Constitution Score </specific>
+  <specific name="Hit Points per Level Gained"> 2.5 </specific>
+  <specific name="Healing Surges"> 3 + Constitution Modifier </specific>
+  <specific name="Trained Skills"> </specific>
+  <specific name="Class Skills"> Arcana (Int), Bluff (Cha), Dungeoneering (Wis), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int), Streetwise (Cha), Thievery (Dex) </specific>
+  <specific name="Build Options" />
+  <specific name="_PARSED_CLASS_FEATURE"> Pact Boon (Binder), Shadow Twist (Hybrid) </specific>
+  <specific name="Role"> Controller. </specific>
+  <specific name="Power Source"> Arcane. </specific>
+  <specific name="Creating" />
+  <specific name="Class Features" />
+  <specific name="Supplemental" />
+  <specific name="Implement" />
+  <specific name="Powers" />
+  <specific name="Power Name" />
+  <specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+  <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+  <specific name="_SecondaryPowerSourceElement" />
+  <specific name="Secondary Abilities" />
+  <specific name="Hybrid Talent Options"> Shadow Walk </specific>
+  <specific name="Short Description"> You bend extraplanar entities to your will as a means to channel arcane power. </specific>
+  <specific name="_ParentClass"> ID_FMP_CLASS_7 </specific>
+  <specific name="Trait Package" />
+  <specific name="_BaseClass"> ID_FMP_CLASS_7 </specific>
+  <specific name="_SUGGESTED_FEATS"> </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_HYBRID_BINDER" type="Grants" />
+    <textstring name="_CLASSNAME" value="ID_CDJ_HYBRID_CLASS_40006" />
+    <statadd name="_LEVEL-ONE-HPS" value="+6"  />
+    <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true" />
+    <statadd name="Healing Surges" value="+3" />
+	<select type="Class Feature" number="1" Category="ID_CDJ_HYBRID_CLASS_40006_DEFENSE" />
+   </rules>
+Warlocks manipulate arcane power, as wizards do, but their conduit to that power is vastly different. For a warlock, it&apos;s as much about who you know as what you know - and in effect, the two are the same.
+	All warlocks gain access to their power by entering into a pact with some force or entity in which that power rests. In return for their continuing loyalty and service to the source of their power, warlocks become more adept at their craft, and the abilities they bring to the battlefield grow more lethal.
+</RulesElement>
+
+<RulesElement name="Hybrid Binder" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_BINDER" source="Dragon Magazine 400">
+  <specific name="_SupportsID"> ID_FMP_HYBRID_CLASS_894 </specific>
+  <rules>
+    <grant name="ID_FMP_ROLE_1" type="Role" />
+    <grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
+    <grant name="ID_INTERNAL_GRANTS_WARLOCK_IMPLEMENTS" type="Grants" />
+	<grant name="ID_FMP_CLASS_FEATURE_3652" type="Class Feature" />
+	<grant name="ID_CDJ_CLASS_FEATURE_HYBRID_SHADOW_TWIST" type="Class Feature" Level="1" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_BINDER" type="CountsAsClass" />
+	<grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass" />
+  </rules>
+</RulesElement>
+
+ <RulesElement name="Shadow Twist [Hybrid]" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_HYBRID_SHADOW_TWIST" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
+    <Category> 1 </Category>
+    <Flavor> When a creature fights alone, the energy imbued in its shadow becomes more sharply defined. Your command of shadow magic allows you to channel your power through this shadow with added potency. </Flavor>
+    <specific name="Short Description"> +1 bonus to ranged warlock attack rolls and area attack rolls vs. any enemy that has no other creature adjacent to it </specific>
+    <specific name="_CS_ShortDescription"> +1 to ranged/area warlock attacks vs enemy with no creature adjacent </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_CLASSNAME"> Binder </specific>
+    <rules>
+      <statadd name="area:attack" value="+1" condition="against any enemy that has no other creature adjacent to it" />
+      <statadd name="ranged:attack" value="+1" condition="against any enemy that has no other creature adjacent to it" />
+    </rules>
+You gain a +1 bonus to ranged warlock and warlock paragon path powers&apos; attack rolls and area attack rolls against any enemy that has no other creature adjacent to it.
+</RulesElement>
+
+<RulesElement name="Hybrid Binder Will" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_BINDER_WILL" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40006_DEFENSE </Category>
+      <rules>
+         <statadd name="Will Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Will Defense Class Bonus.
+</RulesElement>
+
+<RulesElement name="Hybrid Binder Reflex" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HYBRID_BINDER_REFLEX" source="Core" >
+      <Category> ID_CDJ_HYBRID_CLASS_40006_DEFENSE </Category>
+      <rules>
+         <statadd name="Reflex Defense Class Bonus" value="+1" />
+      </rules>
+You gain a +1 bonus to Reflex Defense Class Bonus.
+</RulesElement>
+<!-- End Hybrid Binder -->
+
+<!-- Fixes to Hybrid Battlemind and Ardent-->
+<RulesElement name="Ardent Mantle (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2341" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> 1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2342, ID_FMP_CLASS_FEATURE_2343, ID_MMA_CLASS_FEATURE_000001 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2341" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_ARDENT_MANTLE" type="CountsAsFeature" />
+      </rules>
+This class feature functions as the ardent class feature, except that you don&apos;t gain the power associated with the mantle you choose.
+   </RulesElement>
+   <RulesElement name="Mantle of Impulsiveness (Hybrid)" type="Class Feature" internal-id="ID_MMA_CLASS_FEATURE_000001" source="Psionic Power" revision-date="10/5/2010 1:47:07 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_2341,1 </Category>
+      <specific name="Short Description"> Allies within 5 gain Con modifier to damage rolls if targeted by OA, +2 to Endurance and Intimidate. </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_MANTLE_OF_IMPULSIVENESS" type="CountsAsFeature" />
+      </rules>
+When an ally within 5 squares of you is targeted by an opportunity attack, that ally gains a power bonus to damage rolls equal to your Constitution modifier until the end of his or her turn.
+	In addition, each ally within 5 squares of you gains a +2 bonus to Endurance checks and Intimidate checks.
+   </RulesElement>
+   
+   <RulesElement name="Psionic Study (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2526" source="Player's Handbook 3" revision-date="10/14/2010 9:29:04 AM">
+     <Category> ID_FMP_HYBRID_CLASS_590,1 </Category>
+     <specific name="Short Description"> Battlemind may pick a psionic study power </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2527, ID_FMP_CLASS_FEATURE_2528, ID_FMP_CLASS_FEATURE_2663, ID_MMA_CLASS_FEATURE_000002 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2526" />
+      </rules>
+Battleminds learn to fight using their bodies as weapons. Some battleminds alter their own form to fit their needs. Other battleminds use their psionic power to predict
+ the best position for launching an attack.
+Choose one of these options.
+   </RulesElement>
+   <RulesElement name="Persistent Harrier (Hybrid)" type="Class Feature" internal-id="ID_MMA_CLASS_FEATURE_000002" source="Psionic Power" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_2526,1 </Category>
+      <specific name="Short Description"> Battlemind gets the persistent harrier class power. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_13024 </specific>
+      <specific name="type"> Encounter </specific>
+      <specific name="Class"> ID_FMP_CLASS_124 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_13024 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_13024" type="Power" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_PERSISTENT_HARRIER" type="CountsAsFeature" />
+      </rules>
+You gain the persistent harrier power, which reflects the ease with which you can outmaneuver your opponents.
+   </RulesElement>
+   <RulesElement name="Persistent Harrier" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_PERSISTENT_HARRIER" source="Core" >
+   </RulesElement>
+<!-- Fixes to Hybrid Battlemind and Ardent-->
+
+<RulesElement name="Shaper Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_SF" source="Psionic Power" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2415,1 </Category>
+    <specific name="Short Description"> Gain minor creation power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13301 </specific>
+    <specific name="type"> Encounter </specific>
+    <specific name="Class"> ID_FMP_CLASS_437 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13301 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13301" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_SHAPER_FOCUS" type="CountsAsFeature" />
+    </rules>
+You gain the power minor creation.
+   </RulesElement>
+
+  <RulesElement name="Discipline Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2415" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> 1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2534, ID_FMP_CLASS_FEATURE_2535, ID_FMP_CLASS_FEATURE_SF </specific>
+    <rules>
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2415" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DISCIPLINE_FOCUS" type="CountsAsFeature" />
+    </rules>
+Choose a Discipline Focus option. If you choose Telekinesis Focus, you gain the far hand power. If you choose Telepathy Focus, you gain the send thoughts power. If you choose Shaper Focus, you gain the minor creation power.
+   </RulesElement>
+
+  <RulesElement name="Expanded Discipline Focus" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2416" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_HYBRID_CLASS_610,1 </Category>
+    <specific name="Short Description" />
+    <specific name="Level"> 1 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13300, ID_FMP_POWER_11268,ID_FMP_POWER_8224  </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13300" type="Power" requires="Shaper Focus" />
+      <grant name="ID_FMP_POWER_11268" type="Power" requires="Telekinesis Focus" />
+      <grant name="ID_FMP_POWER_8224" type="Power" requires="Telepathy Focus" />
+    </rules>
+If you have Shaper Focus, you gain the shaped consciousness power. If you have Telekinesis Focus, you gain the forceful push power. If you have Telepathy Focus, you gain the distract power.
+   </RulesElement>
+
+   
+<!-- Martial Power 2 Fixes -->
+<RulesElement name="Brawler Style (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2529" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+      <Category> ID_FMP_CLASS_FEATURE_1830,1 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+1" wearing="weapon:" not-wearing="SLOT:off hand" />
+         <statadd name="Fortitude Defense" value="+2" wearing="weapon:" not-wearing="SLOT:off hand" />
+         <statadd name="Brawler Style (Hybrid)" value="+2" />
+         <statadd name="Brawler Style (Hybrid)" value="+2" requires="Paragon Tier" />
+         <statadd name="Brawler Style (Hybrid)" value="+2" requires="Epic Tier" />
+         <statadd name="Unarmed group:attack" value="+Brawler Style (Hybrid)" type="Enhancement" />
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_BRAWLER_STYLE" type="CountsAsFeature" />
+      </rules>
+While you wield a weapon in your primary hand and your off hand is free or grabbing a creature, you gain a +1 bonus to AC and a +2 bonus to Fortitude.
+
+In addition, you gain a +2 enhancement bonus to the attack rolls of unarmed attacks and a +2 bonus to the attack rolls of grab attacks and attacks to move a creature you're grabbing. These bonuses increase to +4 at 11th level and +6 at 21st level.
+</RulesElement>
+</D20Rules>

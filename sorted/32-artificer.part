@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.05</Version>
+    <Filename>32-artificer.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/32-artificer.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/32-artificer.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Artificer -->
+  <!-- 32-artificer.part, version 1.05 -->
+  <!-- Original release: 13-July-2011; Last modified: 18-May-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 01-August-2011 Moved main class from Dark Sun part file.
+ Updated 07-October-2011 Added Artificer Powers from Dragon 403.
+ Updated 25-December-2011 Compatibility Upgrades and General Fixes.
+ Updated 18-May-2012 DSH added.
+</Changelog>
+    <RulesElement name="Artificer" type="Class" internal-id="ID_FMP_CLASS_125" source="Eberron Player's Guide" revision-date="8/27/2010 12:40:46 PM">
+    <Flavor> “ I see the secret patterns of magic, and through the items I carry, I can use that magic to protect you, heal you . . . or make you explode.” </Flavor>
+    <specific name="Key Abilities"> Intelligence, Constitution, Wisdom </specific>
+    <specific name="Implements"> Rods, staffs, wands </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude, +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 12+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 5 </specific>
+    <specific name="Healing Surges"> 6+ Constitution Modifier </specific>
+    <specific name="Trained Skills"> Arcana. From the class skills list below, choose 4 more trained skills at 1st level. </specific>
+    <specific name="Class Skills"> Arcana (Int), Diplomacy (Cha), Dungeoneering (Wis), Heal (Wis), History (Int), Perception (Wis), Thievery (Dex) </specific>
+    <specific name="Build Options"> Battlesmith Artificer, Tinkerer Artificer, Warrior Forge Artificer </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Arcane Empowerment, Arcane Rejuvenation, Healing Infusion, Ritual Casting </specific>
+    <specific name="Role"> Leader. You channel arcane power into items that empower your allies and hinder your enemies. You lean toward controller as a secondary role. </specific>
+    <specific name="Power Source"> Arcane. The cryptic formulas of arcane magic and the complex recipes of alchemy appeal to you. You are especially knowledgeable about magic items. </specific>
+    <specific name="Creating"> Three artificer builds are presented here: the battlesmith, the tinkerer, and the warrior forge artificer. The tinkerer creates arcane constructs, the battlesmith infuses weapons and armor with magic, and the warrior forge artificer attacks from a distance with ranged weapons and implement attacks. All artificers rely on Intelligence to create and control their spells. In addition, Wisdom helps you animate constructs, while Constitution focuses your magic in nonanimate items. </specific>
+    <specific name="Class Features"> You have the following class features. </specific>
+    <specific name="Supplemental"> RITUAL BOOK
+You own a ritual book, and it contains the following rituals that you have mastered: Brew Potion, Disenchant Magic Item, Enchant Magic Item, and Make Whole. In addition, you can use Disenchant Magic Item without expending components. </specific>
+    <specific name="Implement"> Artificers make use of rods, staffs, and wands to help channel and direct their arcane powers. Without an implement, an artificer can still use artificer powers, including those that have the implement keyword. An artificer wielding a magic rod, staff, or wand can add its enhancement bonus to the attack rolls and the damage rolls of artificer powers, as well as artificer paragon path powers, that have the implement keyword.
+
+Some artificer powers have the weapon keyword and often require a  ranged weapon. If the ranged weapon fires ammunition, the ammunition carries the power's effect. Otherwise, the weapon carries the effect. When the attack is made, a mundane weapon returns to the artificer like a magic thrown weapon does. </specific>
+    <specific name="Powers"> Your arcane powers are called spells, though many artificers refer to spells that instill magic in objects as “infusions.” The powers here also introduce a new keyword: artifice.
+	Artifice: An artifice is an object that consists of inanimate materials that are infused with and animated by magic. It does not occupy a square unless a power states otherwise. As a minor action, you can make your artifice move a number of squares equal to your Constitution modifier, or you can shift it 1 square. The artifice's defenses equal your level + 4,and it has hit points equal to your healing surge value. If an artifice drops to 0 hit points or is consumed, it is destroyed. If the effect an artifice creates ends without the artifice being destroyed, the artifice reverts to its inert form. You can reuse an artifice that has reverted to its inert form. </specific>
+    <specific name="Power Name"> Spells </specific>
+    <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+    <specific name="_SecondaryPowerSourceElement" />
+    <specific name="Secondary Abilities" />
+    <specific name="Hybrid Talent Options" />
+    <specific name="Short Description"> You use magical formulae to channel energy into items, assembling a device for any situation. </specific>
+    <specific name="_ParentClass" />
+    <specific name="Trait Package" />
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_ARTIFICER" type="Grants" />
+      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_125" />
+      <statadd name="_LEVEL-ONE-HPS" value="+12" />
+      <statadd name="_PER-LEVEL-HPS" value="+5" />
+      <statadd name="Healing Surges" value="+6" />
+      <select type="Build" number="1" Category="$$CLASS" optional="true" />
+      <statadd name="Fortitude Defense Class Bonus" value="+1" />
+      <statadd name="Will Defense Class Bonus" value="+1" />
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_125" />
+    </rules>
+Artificers treat mastery of magic like a technical skill. They see patterns in energy and matter, and they understand how to manipulate the flow of magic in and around objects and creatures. Artificers channel energy into items using magical components, diagrams, and complex chains of sigils. Their skills let them assemble a magic device for any situation. 
+
+As an artificer, you might be a formal student of magic who became interested in artifacts and arcane items. Alternatively, you could be a tinkerer who devised magic tools in a musty basement. Or perhaps you are an explorer who found your knowledge in the forgotten places of the world. Whatever the source of your talents, a passion for the technical components of magic drives you to perfect your art. 
+
+With a bandolier slung across your chest, you carry an arsenal of alchemical compounds, magic implements, mundane materials, and tools. Your weapons, implements, and other gear are inscribed with runes and mystic patterns. You mix reagents, drink potions, and craft items. You use your knowledge to infuse yourself and your allies with arcane power. And one day, your magical skills will carry you into legend.
+   </RulesElement>
+  <RulesElement name="Ice Shard Traps" type="Power" internal-id="ID_FMP_POWER_14400" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You spread invisible patches of ice on the battlefield. When your enemies stumble into the traps, a hail of crystals erupts around them. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Artificer Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Cold, Conjuration, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Effect"> You conjure two ice shard traps in two different unoccupied squares on the ground within the burst. The traps are invisible to your enemies and last until the end of your next turn. When an enemy enters a trap's square, make the following attack against that enemy as a free action. Then the trap disappears. </specific>
+    <specific name=" Attack"> Intelligence vs. Fortitude </specific>
+    <specific name=" Hit"> 1d8 + Intelligence modifier cold damage, and the target gains vulnerable 5 cold and grants combat advantage until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+Artificers of Gond devised ice shard traps to protect their artifacts from thieves. Any enemy unwise enough to wander into this most elementary of artificer traps faces a shower of razor-sharp, frigid projectiles.
+</RulesElement>
+  <RulesElement name="Shadowy Figurine" type="Power" internal-id="ID_FMP_POWER_14401" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> Your magic creates an ebon figurine cloaked in shadow. Tendrils of dim light stretch from the figurine and envelop you and your allies in obscurity. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Artificer Utility 2 </specific>
+    <specific name="Keywords"> Arcane, Conjuration </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Effect"> You conjure a shadowy figurine in a square within ange. The figurine lasts until the end of your next turn. While within 2 squares of the figurine, you and your allies gain partial concealment and a +4 power bonus to Stealth checks. </specific>
+    <specific name="Sustain Minor"> The figurine persists until the end of your next turn, and you can move it up to 5 squares. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+Whether seeking to pilfer treasures from their rivals in Skyclave or exploring the perilous depths of Underhome, Gondsmen frequently use shadowy figurine to avoid unwanted attention. The diminutive carving summoned by this spell blankets you and your companions in darkness.
+</RulesElement>
+  <RulesElement name="Smokepowder Blast" type="Power" internal-id="ID_FMP_POWER_14402" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+    <Flavor> You hurl a vial of black powder at your enemy's feet, creating a fiery explosion. One of your allies takes advantage of the confusion and strikes while your opponent's guard is down. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Artificer Attack 5 </specific>
+    <specific name="Keywords"> Arcane, Fire, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence vs. Reflex </specific>
+    <specific name="Hit"> 2d8 + Intelligence modifier fire damage, and ongoing 5 fire damage (save ends). </specific>
+    <specific name="Effect"> One of your allies adjacent to the target can make a melee basic attack against it as a free action. If your attack hit the target, the ally gains a power bonus to his or her attack roll equal to your Constitution or Wisdom modifier. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+Although the secret of smokepowder sank along with the rest of Lantan, artificers honor the memory of this forgotten technological marvel through the smokepowder blast spell. After imbuing harmless black powder with arcane fire, you sling the dangerous concoction at your foe. The resulting explosion engulfs the enemy in flames and creates an opening for one of your allies.
+</RulesElement>
+  <RulesElement name="Arc Infusion" type="Power" internal-id="ID_FMP_POWER_14403" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> Lightning from your attack leaps to a nearby ally, infusing him or her with arcane energy, before streaking back and disorienting your foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Artificer Attack 7 </specific>
+    <specific name="Keywords"> Arcane, Lightning, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Intelligence vs. AC </specific>
+    <specific name="Hit"> 1[W] + Intelligence modifier lightning damage, and one ally within 5 squares of the target can make a saving throw with a power bonus equal to your Wisdom modifier. If the ally saves, the target takes 5 extra lightning damage and is dazed until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+Arc infusion combines the restorative effect of artificer infusions with the raw power of channeled lightning. The arcane energy surges from your foe to a nearby ally, relieving your companion of a harmful condition, then vaults back to the enemy and sends it reeling.
+</RulesElement>
+  <RulesElement name="Sigil of Admixture" type="Power" internal-id="ID_FMP_POWER_14404" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_56,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
+    <Flavor> You inscribe an arcane symbol on the weapon, imbuing it with a particular kind of energy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Artificer Utility 16 </specific>
+    <specific name="Keywords"> Arcane, Varies </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Melee touch </specific>
+    <specific name="Target"> One weapon or implement </specific>
+    <specific name="Effect"> Choose acid, cold, fire, force, lightning, necrotic, or thunder. Until the end of your next turn, any attack made using the target deals 1d6 extra damage of the chosen type. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+Artificers specialize in converting one type of arcane power into another. By etching a sigil of admixture onto a weapon, you can enable it to briefly channel whatever type of elemental energy the wielder desires.
+</RulesElement>
+  <RulesElement name="Siphon Fate" type="Power" internal-id="ID_FMP_POWER_14405" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> Your arcane strikes draw fortune's boon from your opponents, and you surround a nearby companion with a nimbus of luck. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Artificer Attack 17 </specific>
+    <specific name="Keywords"> Arcane, Psychic, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee or Ranged weapon </specific>
+    <specific name="Target"> One or two creatures </specific>
+    <specific name="Attack"> Intelligence vs. AC </specific>
+    <specific name="Hit"> 1[W] + Intelligence modifier psychic damage, and the target takes a -2 penalty to attack rolls and saving throws until the end of your next turn. </specific>
+    <specific name="Effect"> Until the end of your next turn, one ally within 5 squares of you gains a power bonus to attack rolls and saving throws equal to 2 + the number of targets you hit with this power. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+Artificers of Gond developed siphon fate for the occasions when Eartheart defenders found themselves vastly outnumbered. With this spell, you drain the luck from your foes and draw it into your weapon. You then channel the siphoned power to one of your nearby allies.
+</RulesElement>
+  <RulesElement name="Synchronized Weaponry" type="Power" internal-id="ID_FMP_POWER_14406" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_MINOR_ACTION,25 </Category>
+    <Flavor> You forge a mystical link between your weapon and that of your comrade's. Whenever one weapon strikes a foe, the other responds in kind. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="Display"> Artificer Attack 25 </specific>
+    <specific name="Keywords"> Arcane, Weapon </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 10 </specific>
+    <specific name="Target"> One ally in the burst </specific>
+    <specific name="Effect"> When the target hits an enemy with a weapon attack, you can use an arcane at-will attack power that has the weapon keyword against the same enemy as an immediate reaction. When you hit an enemy with a weapon attack, the target can make a basic attack with a weapon against the same enemy as an immediate reaction. This effect lasts until the end of your next turn. </specific>
+    <specific name="Sustain Minor"> The effect persists until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+When you stand alongside a seasoned warrior and use synchronized weaponry, the two of you become as one, striking simultaneously against a single foe.
+</RulesElement>
+  <RulesElement name="Coiled Spring Traps" type="Power" internal-id="ID_FMP_POWER_14407" source="Dragon Magazine 403">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You mine the battlefield with giant invisible springs. When your foes step onto them, the coils play havoc with their forward progress. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Artificer Attack 27 </specific>
+    <specific name="Keywords"> Arcane, Conjuration, Force, Implement </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Effect"> You conjure three coiled spring traps in three different unoccupied squares on the ground within range. The traps are invisible to your enemies and last until the end of your next turn. When an enemy enters a trap's square, make the following attack against that enemy as a free action. Then, the trap disappears. </specific>
+    <specific name=" Attack"> Intelligence vs. Reflex </specific>
+    <specific name=" Hit"> 2d10 + Intelligence modifier force damage, and you slide the target up to 5 squares and knock it prone. The target takes a penalty to AC and Fortitude equal to your Constitution or Wisdom modifier until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+Artificers of Gond devised coiled spring traps to defend sensitive areas from Underdark assaults. Concealed from view by arcane energy, the enormous springs created by this spell propel your unwary foes into the air. They then hit the ground hard, weakening their defenses.
+</RulesElement>
+<!-- DSH -->
+  <RulesElement name="Armor of Darkness" type="Power" internal-id="ID_FMP_POWER_16504" source="Dungeon Survival Handbook">
+    <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,7 </Category>
+    <Flavor> Your armor is imbued with a tenebrous and chaotic shadow, which lashes out in defense, sapping your foes' life force to bolster your own. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Artificer Attack 7 </specific>
+    <specific name="Keywords"> Arcane, Cold, Implement, Necrotic </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger"> An adjacent enemy attacks you. </specific>
+    <specific name="Target"> The triggering enemy </specific>
+    <specific name="Attack"> Intelligence vs. Fortitude </specific>
+    <specific name="Hit"> 1d6 + Intelligence modifier cold and necrotic damage. </specific>
+    <specific name="Effect"> You and each ally adjacent to you gain 5 temporary hit points. </specific>
+    <specific name="Class"> ID_FMP_CLASS_125 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+Maelbrathyr is home to unique artisans, armorsmiths, and weaponsmiths. Many of them have trained as artificers to create special arms and armor. Inevitably, some of these craftspeople experimented with the shadowy forces at play in the forsaken city, imbuing their creations with a dark energy.
+</RulesElement>
+</D20Rules>

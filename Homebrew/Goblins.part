@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>Goblins.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/Goblins.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/Goblins.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <RulesElement name="ObMeiste" type="source" internal-id="ID_MSR_SOURCE_242" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://forums.somethingawful.com/showthread.php?threadid=3390533 </specific>
+    <specific name="Release Date"> 2/18/2011 </specific>
+  </RulesElement>
+  <RulesElement name="Goblin-Blackblade" type="Background" internal-id="ID_MSR_BACKGROUND_200" source="ObMeiste" revision-date="10/5/2010 1:34:59 PM">
+    <specific name="type"> Striker </specific>
+    <specific name="Common Knowledge"> You carry with you your namesake weapon, sootblackened so that it's gleam might be as hidden as yourself, moments before you spring on an unsuspecting foe to stain it crimson.
+Of all goblins you most embody the soft-footed nature of your kind, going unseen and unheard when it is called for. For this reason you often take up the mantle of scout, or the front-line warrior as part of an ambush. In each role your talent is honed to see and take advantage of each slip up and opening presented by the opposition. </specific>
+    <specific name="Benefit"> Features
+-Stealthy: You gain the stealth skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill.
+-Combat Advantage: Deals 1d6 extra damage against any target it has combat advantage against.
+-Sneaky: When shifting you can move into a space occupied by an ally. The ally shifts into your previous space as a free action. </specific>
+    <specific name="Short Description" />
+    <specific name="Campaign"> General </specific>
+    <specific name="Associated Skills" />
+    <specific name="Associated Languages" />
+    <rules>
+      <grant name="ID_MSR_GOBLIN_BLACKBLADE_1" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_BLACKBLADE_2" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_BLACKBLADE_3" type="Class Feature" />
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Goblin-Stealthy" type="Class Feature" internal-id="ID_MSR_GOBLIN_BLACKBLADE_1" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the stealth skill as a class skill. </specific>
+    <specific name="Level" />
+You gain the stealth skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill.
+   </RulesElement>
+  <RulesElement name="Goblin Combat Advantage" type="Class Feature" internal-id="ID_MSR_GOBLIN_BLACKBLADE_2" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> Deals 1d6 extra damage against any target it has combat advantage against. </specific>
+    <specific name="Level" />
+Deals 1d6 extra damage against any target it has combat advantage against.
+   </RulesElement>
+  <RulesElement name="Goblin-Sneaky" type="Class Feature" internal-id="ID_MSR_GOBLIN_BLACKBLADE_3" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> When shifting you can move into a space occupied by an ally. </specific>
+    <specific name="Level" />
+When shifting you can move into a space occupied by an ally. The ally shifts into your previous space as a free action.
+   </RulesElement>
+  <RulesElement name="Goblin-Bloodthorn" type="Background" internal-id="ID_MSR_BACKGROUND_201" source="ObMeiste" revision-date="10/5/2010 1:34:59 PM">
+    <specific name="type"> Striker </specific>
+    <specific name="Common Knowledge"> Small and weak, goblins aren't much in a straight up fight and thus cleverly rarely get involved in them. Bloodthorns like the blackblades adhere to this principle, but instead of opting for going unseen they prefer to go untouched. Moving quickly about they evade their foes as they harry them with missile fire from position of great advantage.
+Even if their foes can manage to close, they deftly dive back from any blow before moving aside while delivering one more thorn into their foes side. </specific>
+    <specific name="Benefit"> Features
+-Nimble: You gain the acrobatics skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill.
+-Great position: If, on your turn, you ends your move at least 4 squares away from your starting position, you deal 1d6 extra damage on your ranged attack until the start of your next turn.
+-Mobile Ranged Attack: You gain the mobile ranged attack at-will </specific>
+    <specific name="Short Description" />
+    <specific name="Campaign"> General </specific>
+    <specific name="Associated Skills" />
+    <specific name="Associated Languages" />
+    <rules>
+      <grant name="ID_MSR_GOBLIN_BLOODTHORN_1" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_BLOODTHORN_2" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_BLOODTHORN_3" type="Class Feature" />
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Goblin-Nimble" type="Class Feature" internal-id="ID_MSR_GOBLIN_BLOODTHORN_1" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the acrobatics skill as a class skill. </specific>
+    <specific name="Level" />
+You gain the acrobatics skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill.
+   </RulesElement>
+  <RulesElement name="Great-Position" type="Class Feature" internal-id="ID_MSR_GOBLIN_BLOODTHORN_2" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You deal 1d6 extra damage on your ranged attack until the start of your next turn. </specific>
+    <specific name="Level" />
+If, on your turn, you ends your move at least 4 squares away from your starting position, you deal 1d6 extra damage on your ranged attack until the start of your next turn.
+   </RulesElement>
+  <RulesElement name="Mobile-Ranged-Attack" type="Class Feature" internal-id="ID_MSR_GOBLIN_BLOODTHORN_3" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the mobile ranged attack at-will </specific>
+    <specific name="Level" />
+    <rules>
+      <grant name="ID_MSR_POWER_BLOODTHORN" type="Power" />
+    </rules>
+You gain the mobile ranged attack at-will
+   </RulesElement>
+  <RulesElement name="Mobile-Ranged-Attack" type="Power" internal-id="ID_MSR_POWER_BLOODTHORN" source="ObMeiste" revision-date="8/27/2010 11:30:32 AM">
+    <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_MSR_BACKGROUND_201 </Category>
+    <Flavor> Moving quickly about they evade their foes as they harry them with missile fire from position of great advantage. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Bloodthorn Feature  </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You can move up to half your speed; at any point during that movement, you makes one ranged basic attack without provoking an opportunity attack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_MSR_GOBLIN_BLACKBLADE_3 </specific>
+  </RulesElement>
+  <RulesElement name="Goblin-Beast Marshall" type="Background" internal-id="ID_MSR_BACKGROUND_202" source="ObMeiste" revision-date="10/5/2010 1:34:59 PM">
+    <specific name="type"> Leader </specific>
+    <specific name="Common Knowledge"> Some measure of the legendary skill of goblin beastmasters from the ancient empire is carried on in you. For that reason you hold a great position in the tribe as the one to turn for council on dealing with the many savage beasts that come through the territory. A number of these creatures are often brought in to be tamed by you, to be used in the service of the clan as guardians. One of them even serves you loyally now, fighting by your side when need be and aiding you in your to show your mastery over other beasts. </specific>
+    <specific name="Benefit"> Features
+-Handler: You gain the nature skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill
+-Beast Companion: You gain an animal companion as per the ranger class's beast mastery fighting style, although it has 1 healing surge. (Note if you've picked the actual feature as part of your later stage development you do no get a second animal companion upon finishing your development. Instead your animal companion gains +1 to all defenses and 2 extra healing surges.)
+-Command the predator: You gain the command the predator at-will </specific>
+    <specific name="Short Description" />
+    <specific name="Campaign"> General </specific>
+    <specific name="Associated Skills" />
+    <specific name="Associated Languages" />
+    <rules>
+      <grant name="ID_MSR_GOBLIN_BEASTM_1" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_BEASTM_2" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_BEASTM_3" type="Class Feature" />
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Goblin-Handler" type="Class Feature" internal-id="ID_MSR_GOBLIN_BEASTM_1" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the nature skill as a class skill. </specific>
+    <specific name="Level" />
+You gain the nature skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill
+   </RulesElement>
+  <RulesElement name="Beast-Companion (Goblin)" type="Class Feature" internal-id="ID_MSR_GOBLIN_BEASTM_2" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain an animal companion. </specific>
+    <specific name="Level" />
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_1030" type="Class Feature" />
+    </rules>
+You gain an animal companion as per the ranger class's beast mastery fighting style, although it has 1 healing surge. (Note if you've picked the actual feature as part of your later stage development you do no get a second animal companion upon finishing your development. Instead your animal companion gains +1 to all defenses and 2 extra healing surges.)
+   </RulesElement>
+  <RulesElement name="Command-the-Predator" type="Class Feature" internal-id="ID_MSR_GOBLIN_BEASTM_3" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the command the predator at-will </specific>
+    <specific name="Level" />
+    <rules>
+      <grant name="ID_MSR_POWER_BEASTM" type="Power" />
+    </rules>
+You gain the command the predator at-will
+   </RulesElement>
+  <RulesElement name="Command-the-Predator" type="Power" internal-id="ID_MSR_POWER_BEASTM" source="ObMeiste" revision-date="8/27/2010 11:30:32 AM">
+    <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_MSR_BACKGROUND_202 </Category>
+    <Flavor> Fighting by your side when need be and aiding you in your to show your mastery over other beasts. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Beast Master Feature  </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Beast </specific>
+    <specific name="Effect"> One allied beast within 10 squares of you can use a free action to shift half it's speed and make a melee basic attack in either order. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_MSR_GOBLIN_BEASTM_3 </specific>
+  </RulesElement>
+  <RulesElement name="Goblin - Hexer" type="Background" internal-id="ID_MSR_BACKGROUND_203" source="ObMeiste" revision-date="10/5/2010 1:34:59 PM">
+    <specific name="type"> Controller </specific>
+    <specific name="Common Knowledge"> The Hexers have the mantle of spellcasters and fortune tellers of sorts in the tribe. They practice the dark art of curses, something well sought after by goblins to bring upon their foes and to have avoid having above their own head. As there is no need to make a short dangerous life even more so. For this reason the Hexers are treated well, but with suspicion (Though rarely obviously so)
+When called to battle for the sake of the tribe, they create areas that conceals their allies within and which disrupt their foes attacks. </specific>
+    <specific name="Benefit"> Features
+-Trickster: You gain the thievery skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill
+-Dabbler: You gain the ritual or alchemist caster feat.
+-Vexing Cloud: You gain the vexing cloud Encounter power. </specific>
+    <specific name="Short Description" />
+    <specific name="Campaign"> General </specific>
+    <specific name="Associated Skills" />
+    <specific name="Associated Languages" />
+    <rules>
+      <grant name="ID_MSR_GOBLIN_HEXER_1" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_HEXER_2" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_HEXER_3" type="Class Feature" />
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Goblin-Trickster" type="Class Feature" internal-id="ID_MSR_GOBLIN_HEXER_1" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the thievery skill as a class skill. </specific>
+    <specific name="Level" />
+You gain the thievery skill as a class skill. If your selected class already has it listed you gain +2 bonus to that skill
+   </RulesElement>
+  <RulesElement name="Goblin-Dabbler" type="Class Feature" internal-id="ID_MSR_GOBLIN_HEXER_2" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the ritual or alchemist caster feat. </specific>
+    <specific name="Level" />
+    <rules>
+      <select type="Feat" number="1" Category="Ritual Caster" default="Ritual Caster" />
+    </rules>
+You gain the ritual or alchemist caster feat.
+   </RulesElement>
+  <RulesElement name="Vexing-Cloud" type="Class Feature" internal-id="ID_MSR_GOBLIN_HEXER_3" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the command the predator at-will </specific>
+    <specific name="Level" />
+    <rules>
+      <grant name="ID_MSR_POWER_HEXER" type="Power" />
+    </rules>
+You gain the command the predator at-will
+   </RulesElement>
+  <RulesElement name="Vexing-Cloud" type="Power" internal-id="ID_MSR_POWER_HEXER" source="ObMeiste" revision-date="8/27/2010 11:30:32 AM">
+    <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_BACKGROUND_203 </Category>
+    <Flavor> When called to battle for the sake of the tribe, they create areas that conceals their allies within and which disrupt their foes attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Hexer Feature  </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area Burst 3 within 10 </specific>
+    <specific name="Target"> All enemies Within zone </specific>
+    <specific name="Effect"> All enemies within the zone take a -2 penalty to attack rolls. The zone grants concealment to the hexer and it's allies. </specific>
+    <specific name="Sustain Minor"> The zone persists and can be moved up to 5 squares. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_MSR_GOBLIN_HEXER_3 </specific>
+  </RulesElement>
+  <RulesElement name="Goblin - Acolyte of Maglubiyet" type="Background" internal-id="ID_MSR_BACKGROUND_204" source="ObMeiste" revision-date="10/5/2010 1:34:59 PM">
+    <specific name="type"> Leader </specific>
+    <specific name="Common Knowledge"> Although but an Exarch of Bane, Maglubiyet is held in the same reverence as the black hand himself among his goblin servants. So while those goblins who focus more outwards towards conquest call to Bane, those more inclined to helping preparing their community, for their time to march to war, look more towards Maglubiyet.
+While not a kind god, The Mighty One has foresight as a great general and provides through his servants as needed to goblin communities to help make them strong. His servants show the same skill of leadership and while some may be harsher than others, they do not accept defeat and do what they can to strengthen their tribes. </specific>
+    <specific name="Benefit"> Features
+-Priest: You gain the religion skill as a class skill. If your selected class already has it listed you gain a +2 bonus to that skill
+-Ritualist: You gain the ritual caster feat. If your developing class gains it for free you may switch it later for alchemist, expert ritualist, or 150 gp worth of rituals.
+-Maglubiyets warding hand: You gain Maglubiyets warding hand encounter power. </specific>
+    <specific name="Short Description" />
+    <specific name="Campaign"> General </specific>
+    <specific name="Associated Skills" />
+    <specific name="Associated Languages" />
+    <rules>
+      <grant name="ID_MSR_GOBLIN_ACOLYTE_1" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_ACOLYTE_2" type="Class Feature" />
+      <grant name="ID_MSR_GOBLIN_ACOLYTE_3" type="Class Feature" />
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
+    </rules>
+  </RulesElement>
+  <RulesElement name="Goblin-Priest" type="Class Feature" internal-id="ID_MSR_GOBLIN_ACOLYTE_1" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the religion skill as a class skill. </specific>
+    <specific name="Level" />
+You gain the religion skill as a class skill. If your selected class already has it listed you gain a +2 bonus to that skill
+   </RulesElement>
+  <RulesElement name="Goblin-Ritualist" type="Class Feature" internal-id="ID_MSR_GOBLIN_ACOLYTE_2" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain the ritual caster feat. </specific>
+    <specific name="Level" />
+    <rules>
+      <select type="Feat" number="1" Category="Ritual Caster" default="Ritual Caster" />
+    </rules>
+You gain the ritual caster feat. If your developing class gains it for free you may switch it later for alchemist, expert ritualist, or 150 gp worth of rituals.
+   </RulesElement>
+  <RulesElement name="Maglubiyets Warding Hand" type="Class Feature" internal-id="ID_MSR_GOBLIN_ACOLYTE_3" source="ObMeiste" revision-date="10/5/2010 1:47:04 PM">
+    <specific name="Short Description"> You gain Maglubiyets warding hand encounter power. </specific>
+    <specific name="Level" />
+    <rules>
+      <grant name="ID_MSR_POWER_ACOLYTE" type="Power" />
+    </rules>
+You gain Maglubiyets warding hand encounter power.
+   </RulesElement>
+  <RulesElement name="Maglubiyets Warding Hand" type="Power" internal-id="ID_MSR_POWER_ACOLYTE" source="ObMeiste" revision-date="8/27/2010 11:30:32 AM">
+    <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_BACKGROUND_204 </Category>
+    <Flavor> While not a kind god, The Mighty One has foresight as a great general and provides through his servants as needed to goblin communities to help make them strong. His servants show the same skill of leadership and while some may be harsher than others, they do not accept defeat and do what they can to strengthen their tribes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Acolyte of Maglubiyet Feature  </specific>
+    <specific name="Keywords"> Healing </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close Burst 5 </specific>
+    <specific name="Target"> All enemies Within zone </specific>
+    <specific name="Effect"> All enemies within the zone take a -2 penalty to attack rolls. The zone grants concealment to the hexer and it's allies. </specific>
+    <specific name="Sustain Minor"> The zone persists and can be moved up to 5 squares. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_MSR_GOBLIN_ACOLYTE_3 </specific>
+  </RulesElement>
+  <RulesElement name="Goblin" type="Race" internal-id="ID_FMP_RACE_21" source="Monster Manual" revision-date="9/1/2010 3:19:50 PM">
+    <Prereqs> ~GOBLIN </Prereqs>
+    <specific name="Size"> Medium </specific>
+    <specific name="Speed"> 6 squares </specific>
+    <specific name="Characteristics"> This race is currently detailed as a monster. For the full monster write-up, refer to its source. </specific>
+    <specific name="Physical Qualities" />
+    <specific name="Playing" />
+    <specific name="Vision"> Low-light </specific>
+    <specific name="Average Height"> 3'4"-3'8" </specific>
+    <specific name="Average Weight"> 40-55 lb. </specific>
+    <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Wisdom  </specific>
+    <specific name="Languages"> Common, Goblin </specific>
+    <specific name="Skill Bonuses"> +2 Stealth, +2 Thievery </specific>
+    <specific name="Male Names"> Brinjin, Drulyut, Eggilzo, Grint, Hellyug, Jigjo, Mingnog, Remgum, Rugulron, Snig, Thung, Vig. </specific>
+    <specific name="Female Names"> Fleng, Gultegga, Hrugga, Ijjer, Sungammem, Thurilyet, Yilmug. </specific>
+    <specific name="Short Description"> Vicious creatures that don't fight fair, goblins have learned to thrive in a harsh world. </specific>
+    <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_394, ID_FMP_RACIAL_TRAIT_714 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_GOBLIN" type="Grants" />
+      <statadd name="Speed" value="+6" />
+      <textstring name="Average Height" value="3'4&quot;-3'8&quot;" />
+      <textstring name="Average Weight" value="40-55 lb." />
+      <textstring name="Size" value="Medium" />
+      <select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma" />
+    </rules>
+
+
+Play a Goblin if you want ...
+
+   </RulesElement>
+  <RulesElement name="Goblin" type="Grants" internal-id="ID_INTERNAL_GRANTS_GOBLIN" source="Monster Manual">
+    <specific name="_SupportsID"> ID_FMP_RACE_21 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
+      <grant name="ID_FMP_RACIAL_TRAIT_394" type="Racial Trait" />
+      <grant name="ID_FMP_RACIAL_TRAIT_714" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
+      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
+      <grant name="ID_FMP_LANGUAGE_20" type="Language" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+    </rules>
+  </RulesElement>
+</D20Rules>

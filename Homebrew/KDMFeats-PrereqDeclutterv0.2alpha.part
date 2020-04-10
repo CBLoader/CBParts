@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>KDMFeats-PrereqDeclutterv0.2alpha.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/KDMFeats-PrereqDeclutterv0.2alpha.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/KDMFeats-PrereqDeclutterv0.2alpha.txt</VersionAddress>
+  </UpdateInfo>
+  <RulesElement name="Improved Inspiring Word" type="Feat" internal-id="ID_FMP_FEAT_218" source="Martial Power" revision-date="8/27/2010 12:17:54 PM">
+    <Prereqs> Warlord, Inspiring Word power </Prereqs>
+    <print-prereqs> Warlord, Inspiring Word power </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Add Cha modifier to inspiring word hp restored </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Add your Charisma modifier to the hit points restored by your inspiring word.
+   </RulesElement>
+  <RulesElement name="Light Blade Precision" type="Feat" internal-id="ID_FMP_FEAT_244" source="Player's Handbook" revision-date="8/27/2010 12:17:54 PM">
+    <Prereqs> 11th level, Dex 13; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Dex 13 </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> +2 damage against Large or larger targets </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="light blade group:damage" value="+2" condition="against large or larger targets" />
+    </rules>
+You gain a +2 bonus to damage rolls with light blades against Large or larger targets.
+   </RulesElement>
+  <RulesElement name="Expanded Spellbook" type="Feat" internal-id="ID_FMP_FEAT_276" source="Player's Handbook" revision-date="8/27/2010 12:17:55 PM">
+    <Prereqs> Wis 13, wizard, spellbook class feature </Prereqs>
+    <print-prereqs> Wis 13, wizard, spellbook </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Add additional daily spell to spellbook </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,1" spellbook="Power Daily 1" Level="1" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,1" Level="1" Prepare="ID_FMP_CLASS_9" requires="Mage" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,5" spellbook="Power Daily 5" Level="5" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,5" Level="5" Prepare="ID_FMP_CLASS_9" requires="Mage" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,9" spellbook="Power Daily 9" Level="9" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,15" spellbook="Power Daily 15" Level="15" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,15" Level="15" Prepare="ID_FMP_CLASS_9" requires="Mage" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,19" spellbook="Power Daily 19" Level="19" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,19" Level="19" Prepare="ID_FMP_CLASS_9" requires="Mage" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,25" spellbook="Power Daily 25" Level="25" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,25" Level="25" Prepare="ID_FMP_CLASS_9" requires="Mage" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,29" spellbook="Power Daily 29" Level="29" Prepare="ID_FMP_CLASS_9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,29" Level="29" Prepare="ID_FMP_CLASS_9" requires="Mage" />
+    </rules>
+Choose one daily wizard attack spell of every level you know. Add this spell to your spellbook.
+     Each time you gain a new level of daily wizard attack spells, you learn one extra spell of that level (in other words, add three spells to your spellbook instead of only two).
+     This feat doesn't change the number of daily attack spells you can prepare each day.
+   </RulesElement>
+  <RulesElement name="Arcane Reach" type="Feat" internal-id="ID_FMP_FEAT_310" source="Player's Handbook" revision-date="8/27/2010 12:17:58 PM">
+    <Prereqs> 11th level, Dex 15, any arcane class; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Dex 15, any arcane class </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Choose square within 2 as origin with close attack </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When using a close arcane attack power, you can choose a square within 2 squares of yours as the origin square. The power still follows the rules for close attacks.
+   </RulesElement>
+  <RulesElement name="Fey Charge" type="Feat" internal-id="ID_FMP_FEAT_388" source="Martial Power" revision-date="8/27/2010 12:18:01 PM">
+    <Prereqs> 11th level, eladrin, Fey Step power, fighter; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, eladrin, fighter </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Expend fey step as free action to sub 5 squares of your charge with teleportation; if you hit, don't expend fey step </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you charge, you can expend your fey step racial power as a free action to replace up to 5 squares of your charge movement with teleportation.
+	If the charge attack hits, you do not expend fey step.
+   </RulesElement>
+  <RulesElement name="Avandra's Gift" type="Feat" internal-id="ID_FMP_FEAT_393" source="Martial Power" revision-date="8/27/2010 12:18:01 PM">
+    <Prereqs> 11th level, halfling, Second Chance power, rogue; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, halfling, rogue </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Gain combat advantage with second chance </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your second chance racial power and the enemy's attack misses, you gain combat advantage for the next attack roll you make against that enemy before the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Fey Gambit" type="Feat" internal-id="ID_FMP_FEAT_418" source="Martial Power" revision-date="8/27/2010 12:18:02 PM">
+    <Prereqs> 11th level, eladrin, Fey Step power, rogue; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, eladrin, rogue </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Gain combat advantage against enemy you fey step next to </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your fey step racial power to move adjacent to an enemy, you gain combat advantage against that enemy until the end of your turn.
+   </RulesElement>
+  <RulesElement name="Component Modification" type="Feat" internal-id="ID_FMP_FEAT_443" source="Eberron Player's Guide" revision-date="8/27/2010 12:18:02 PM">
+    <Prereqs> Warforged, Con 17, Warforged Resolve power </Prereqs>
+    <print-prereqs> Warforged, Con 17 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> The warforged body takes better advantage of warforged componenets </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+For each warforged component you have, your warforged resolve racial power grants 1 extra temporary hit point, up to a maximum equal to your Constitution modifier.
+   </RulesElement>
+  <RulesElement name="Improved Warforged Resolve" type="Feat" internal-id="ID_FMP_FEAT_445" source="Eberron Player's Guide" revision-date="8/27/2010 12:18:02 PM">
+    <Prereqs> Warforged, Warforged Resolve power </Prereqs>
+    <print-prereqs> Warforged </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Warforged resolve grants 5 more temporary hp </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your warforged resolve racial power, you gain 5 extra temporary hit points.
+   </RulesElement>
+  <RulesElement name="Speaker of the Gods" type="Feat" internal-id="ID_FMP_FEAT_486" source="Player's Handbook 2" revision-date="8/27/2010 12:18:03 PM">
+    <Prereqs> 11th level, invoker, Channel Divinity class feature; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, invoker </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Score critical hit on 18 to 20 after Channel Divinity power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use any Channel Divinity power, you can score a critical hit on a roll of 18 to 20 with the next divine attack power that you use before the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Deadly Rage" type="Feat" internal-id="ID_FMP_FEAT_593" source="Player's Handbook 2" revision-date="8/27/2010 12:18:06 PM">
+    <Prereqs> Barbarian, Rampage class feature or Adept Power feat </Prereqs>
+    <print-prereqs> Barbarian </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 damage while raging </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Deadly Rage Bonus" value="+1" />
+      <statadd name="Deadly Rage Bonus" value="+1" requires="Paragon Tier" />
+      <statadd name="Deadly Rage Bonus" value="+1" requires="Epic Tier" />
+      <statadd name="damage rolls" value="+Deadly Rage bonus" condition="while raging" />
+      <statadd name="Deadly Rage" value="+1" requires="Paragon Tier" />
+      <statadd name="Deadly Rage" value="+1" requires="Epic Tier" />
+    </rules>
+You gain a +1 bonus to damage rolls while raging. The bonus increases to +2 at 11th level and +3 at 21st level.
+   </RulesElement>
+  <RulesElement name="Clutch of Darkness" type="Feat" internal-id="ID_FMP_FEAT_601" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:06 PM">
+    <Prereqs> Drow, Lolthtouched racial trait </Prereqs>
+    <print-prereqs> Drow </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Cloud of darkness becomes burst 2, darkfire becomes ranged 15 </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <modify name="Cloud of Darkness" type="Power" Field="Attack Type" value="Close burst 2" />
+      <modify name="Darkfire" type="Power" Field="Attack Type" value="Ranged 15" />
+    </rules>
+Your cloud of darkness power becomes a burst 2 instead of a burst 1. Your darkfire power becomes ranged 15 instead of ranged 10.
+   </RulesElement>
+  <RulesElement name="Elemental Assault" type="Feat" internal-id="ID_FMP_FEAT_602" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:06 PM">
+    <Prereqs> Genasi, Elemental Manifestation racial trait, swordmage with aegis of assault </Prereqs>
+    <print-prereqs> Genasi, swordmage with aegis of assault </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +3 to damage based on elemental manifestation </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="melee basic:damage" value="+3" condition="if the attack is granted by aegis of assault" />
+    </rules>
+When you make a melee basic attack granted by your aegis of assault, you gain a +3 bonus to damage of a type based on your current elemental manifestation.
+Earthsoul: Force
+Firesoul: Fire
+Stormsoul: Thunder
+Watersoul: Acid
+Windsoul: Cold
+If you are currently manifesting more than one element, choose one damage type when making the attack.
+   </RulesElement>
+  <RulesElement name="Extra Manifestation" type="Feat" internal-id="ID_FMP_FEAT_604" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:06 PM">
+    <Prereqs> Genasi, Elemental Manifestation racial trait </Prereqs>
+    <print-prereqs> Genasi </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Select one new elemental manifestation </specific>
+    <specific name="Special"> You can take this feat multiple times, choosing a new manifestation each time. When you take a short rest or an extended rest, you can choose to switch between any of the elemental manifestations you know. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Racial Trait" number="1" Category="earthsoul|firesoul|stormsoul|watersoul|windsoul|causticsoul|cindersoul|plaguesoul|voidsoul" />
+    </rules>
+Select a new genasi elemental manifestation. When you take a short rest or an extended rest, you can adopt this new elemental manifestation instead of the one you had been exhibiting.
+   </RulesElement>
+  <RulesElement name="Improved Swordbond" type="Feat" internal-id="ID_FMP_FEAT_612" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:07 PM">
+    <Prereqs> Swordmage, Swordbond class feature </Prereqs>
+    <print-prereqs> Swordmage </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Call bonded weapon with minor action from 20 squares away </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+You can call your bonded weapon to your hand from up to 20 squares away with a minor action.
+   </RulesElement>
+  <RulesElement name="Manifest Resistance" type="Feat" internal-id="ID_FMP_FEAT_615" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:07 PM">
+    <Prereqs> Genasi, Elemental Manifestation racial trait </Prereqs>
+    <print-prereqs> Genasi </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Add 5 to your resistance from elemental manifestation </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="_stormsoul resist" value="+5" />
+      <statadd name="_firesoul resist" value="+5" />
+      <statadd name="_windsoul resist" value="+5" />
+      <statadd name="Causticsoul Resists" value="+5" />
+      <statadd name="Cindersoul Resists" value="+5" />
+      <statadd name="Plaguesoul Resists" value="+5" />
+      <statadd name="Voidsoul Resists" value="+5" />
+    </rules>
+Increase the resist value provided by your elemental manifestation (if any) by 5. For example, when manifesting firesoul at 1st level to 10th level, you gain resist 10 fire (instead of resist 5 fire).
+   </RulesElement>
+  <RulesElement name="Moon Elf Resilience" type="Feat" internal-id="ID_FMP_FEAT_616" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:07 PM">
+    <Prereqs> Eladrin, fey step power, !Sun Elf Grace </Prereqs>
+    <print-prereqs> Eladrin </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Spend healing surge as free action when using fey step in certain situations </specific>
+    <specific name="Special"> You cannot select this feat if you have the Sun Elf Grace feat. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you use your fey step power when you are bloodied and no allies are within 5 squares of you, you can spend a healing surge as a free action.
+   </RulesElement>
+  <RulesElement name="Shield of Shadows" type="Feat" internal-id="ID_FMP_FEAT_624" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:08 PM">
+    <Prereqs> Drow, Lolthtouched racial trait </Prereqs>
+    <print-prereqs> Drow </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to Reflex defense while within your cloud of darkness </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Reflex Defense" value="+2" condition="while within the effect of your cloud of darkness power" />
+    </rules>
+You gain a +2 bonus to your Reflex defense while within the effect of your cloud of darkness power.
+   </RulesElement>
+  <RulesElement name="Student of Sword Magic" type="Feat" internal-id="ID_FMP_FEAT_627" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:08 PM">
+    <Prereqs> Swordmage, Swordmage Aegis class feature or Adept Power feat </Prereqs>
+    <print-prereqs> Swordmage </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain a spellbook to hold your swordmage spells </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,1" spellbook="Power Daily 1" Level="1" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,5" spellbook="Power Daily 5" Level="5" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,9" spellbook="Power Daily 9" Level="9" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,15" spellbook="Power Daily 15" Level="15" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,19" spellbook="Power Daily 19" Level="19" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,25" spellbook="Power Daily 25" Level="25" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_53,daily,29" spellbook="Power Daily 29" Level="29" />
+    </rules>
+You have a spellbook in which you record your swordmage spells.
+When you choose this feat, select a second swordmage daily attack power for each level at which you already know a swordmage daily attack power, and add those powers to your spellbook. After an extended rest, you can prepare a number  of daily spells according to what you can cast per day for your level. You can't prepare the same spell twice.
+Whenever you learn a new level of swordmage daily attack powers, add two different swordmage daily attack spells of that level to your spellbook.
+If you retrain a daily swordmage attack power, you replace only one of your two choices for that level. If you replace the power with a power from a different class (through multiclassing) or a swordmage daily attack power of a higher level, you replace both spell choices with the new power or powers.
+   </RulesElement>
+  <RulesElement name="Sun Elf Grace" type="Feat" internal-id="ID_FMP_FEAT_628" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:08 PM">
+    <Prereqs> Eladrin, fey step power, !Moon Elf Resilience </Prereqs>
+    <print-prereqs> Eladrin </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 bonus to all defenses if you use fey step before becoming bloodied </specific>
+    <specific name="Special"> You cannot select this feat if you have the Moon Elf Resilience feat. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you use your fey step power before you first become bloodied in an encounter, you gain a +1 bonus to all defenses until the end of your next turn. Once you've become bloodied in an encounter, you can't gain this benefit even if you are healed later in the fight.
+   </RulesElement>
+  <RulesElement name="Wild Elf Luck" type="Feat" internal-id="ID_FMP_FEAT_633" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:08 PM">
+    <Prereqs> Elf, elven accuracy power, !Wood Elf Agility </Prereqs>
+    <print-prereqs> Elf </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1d4 bonus on reroll when using elven accuracy </specific>
+    <specific name="Special"> You cannot select this feat if you have the Wood Elf Agility feat. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your elven accuracy power, you gain a +1d4 bonus to the reroll.
+   </RulesElement>
+  <RulesElement name="Master of Fire and Darkness" type="Feat" internal-id="ID_FMP_FEAT_640" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">
+    <Prereqs> 11th level, Drow, Lolthtouched racial trait; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Drow </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Use both cloud of darkness and darkfire once per encounter </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your Lolthtouched racial trait normally lets you use either cloud of darkness or darkfire as an encounter power. Now cloud of darkness and darkfire are two separate encounter powers. You can use each power once per encounter.
+   </RulesElement>
+  <RulesElement name="Shocking Flame" type="Feat" internal-id="ID_FMP_FEAT_643" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">
+    <Prereqs> 11th level, Genasi, firesoul or stormsoul racial trait; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Genasi </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> +2 damage when manifesting firesoul or stormsoul </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Shocking Flame" value="+2" />
+      <statadd name="Shocking Flame" value="+2" requires="Epic Tier" />
+      <statadd name="melee:damage" value="+Shocking Flame" condition="when manifesting firesoul or stormsoul" />
+    </rules>
+When manifesting firesoul or stormsoul, your melee attacks deal an extra 2 fire damage or an extra 2 lightning damage, respectively.
+	At 21st level, the extra damage increases to 4.
+   </RulesElement>
+  <RulesElement name="Stoneguard" type="Feat" internal-id="ID_FMP_FEAT_644" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">
+    <Prereqs> 11th level, Genasi, earthsoul racial trait; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Genasi </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> +2 AC against ranged attacks when manifesting earthsoul </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="AC" value="+2" condition="against ranged attacks while manifesting earthsoul" />
+    </rules>
+When manifesting earthsoul, you gain a +2 bonus to AC against ranged attacks.
+   </RulesElement>
+  <RulesElement name="Stormrider" type="Feat" internal-id="ID_FMP_FEAT_645" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">
+    <Prereqs> 11th level, Genasi, windsoul or watersoul racial trait; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Genasi </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> +1 speed when manifesting windsoul or watersoul </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Speed" value="+1" type="Feat" condition="when you are manifesting windsoul or watersoul" />
+    </rules>
+You gain a +1 feat bonus to speed when you are manifesting windsoul or watersoul. When flying, you hover.
+   </RulesElement>
+  <RulesElement name="War Wizardry" type="Feat" internal-id="ID_FMP_FEAT_647" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">
+    <Prereqs> 11th level, any arcane class; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Your arcane spells gain -5 to attacks, half damage when used against allies </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your arcane spells take a -5 penalty on attack rolls against allies, and deal only half their normal damage to allies.
+   </RulesElement>
+  <RulesElement name="Total Aegis" type="Feat" internal-id="ID_FMP_FEAT_649" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">
+    <Prereqs> 21st level, swordmage, Swordmage Aegis class feature; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, swordmage </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Mark any targets in burst with aegis of assault or aegis of shielding </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your Swordmage Aegis power, you can choose to mark any number of targets within burst.
+   </RulesElement>
+  <RulesElement name="Twist the Arcane Fabric" type="Feat" internal-id="ID_FMP_FEAT_714" source="Arcane Power" revision-date="8/27/2010 12:18:11 PM">
+    <Prereqs> Eladrin, fey step power, any arcane class, any arcane power </Prereqs>
+    <print-prereqs> Eladrin, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Fey step an ally out of your power's area of effect </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Before you use an area or close arcane power, you can use a free action to expend your fey step racial power to teleport an ally rather than yourself. If you do so, select one ally within the area of effect targeted by the arcane power and teleport that ally 3 squares.
+   </RulesElement>
+  <RulesElement name="Elven Arcane Precision" type="Feat" internal-id="ID_FMP_FEAT_715" source="Arcane Power" revision-date="8/27/2010 12:18:11 PM">
+    <Prereqs> Elf, elven accuracy power, any arcane class </Prereqs>
+    <print-prereqs> Elf, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Reroll elven accuracy against all targets of a power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+You can use your elven accuracy racial power to reroll the attack rolls of a single arcane attack power against every target you choose.
+   </RulesElement>
+  <RulesElement name="Wrathful Magic" type="Feat" internal-id="ID_FMP_FEAT_717" source="Arcane Power" revision-date="8/27/2010 12:18:11 PM">
+    <Prereqs> Tiefling, infernal wrath racial power, any arcane class </Prereqs>
+    <print-prereqs> Tiefling, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use infernal wrath against missed target of arcane attack power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you miss with an arcane attack power, you can use your infernal wrath racial power as a free action. You gain the benefits of infernal wrath against the target you missed, instead of against an enemy that hit you. Treat that target as the enemy that hit you for the purpose of other feats and abilities that modify the effects of infernal wrath.
+   </RulesElement>
+  <RulesElement name="Magic of the Ages" type="Feat" internal-id="ID_FMP_FEAT_718" source="Arcane Power" revision-date="8/27/2010 12:18:11 PM">
+    <Prereqs> Deva, memory of a thousand lifetimes power, any arcane class </Prereqs>
+    <print-prereqs> Deva, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 to attack roll with memory of a thousand lifetimes </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your memory of a thousand lifetimes racial power to add to the attack roll of an arcane power, you gain a +1 bonus to the triggering roll.
+   </RulesElement>
+  <RulesElement name="Magic of the Mists" type="Feat" internal-id="ID_FMP_FEAT_719" source="Arcane Power" revision-date="8/27/2010 12:18:11 PM">
+    <Prereqs> Gnome, fade away racial power, any arcane class </Prereqs>
+    <print-prereqs> Gnome, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Retain fade away effect when you attack </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your fade away racial power, making an attack with an arcane power does not end the effect.
+   </RulesElement>
+  <RulesElement name="Predatory Magic" type="Feat" internal-id="ID_FMP_FEAT_724" source="Arcane Power" revision-date="8/27/2010 12:18:11 PM">
+    <Prereqs> Razorclaw shifter, razorclaw shifting power, any arcane class </Prereqs>
+    <print-prereqs> Razorclaw shifter, any arcane class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Shift as free action while razorclaw shifting </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use a close arcane attack power while you are under the effect of your razorclaw shifting racial power, you can shift 1 square as a free action before or after using the power.
+   </RulesElement>
+  <RulesElement name="Fey Step Trailblazer" type="Feat" internal-id="ID_FMP_FEAT_742" source="Dragon Magazine 366" revision-date="8/27/2010 12:18:12 PM">
+    <Prereqs> 11th level, Eladrin, fey step power; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Eladrin </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Fey step teleports willing adjacent creature (not bigger than you); place creature next to you </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your fey step power, you can also teleport one adjacent willing creature that is your size or smaller with you at the same time. When you arrive at your destination, place the creature that traveled with you in any square adjacent to you.
+   </RulesElement>
+  <RulesElement name="Reactive Fey Step" type="Feat" internal-id="ID_FMP_FEAT_743" source="Dragon Magazine Annual 2009,Dragon Magazine 366" revision-date="8/27/2010 12:18:12 PM">
+    <Prereqs> 11th level, Eladrin, fey step power; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Eladrin </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Use fey step power as immediate reaction to negate forced movement </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you are the target of a push, pull, slide, or other form of forced movement, you can use your fey step power as an immediate interrupt. You negate the forced movement, but you do not teleport.
+   </RulesElement>
+  <RulesElement name="Sacrifice to Caiphon" type="Feat" internal-id="ID_FMP_FEAT_744" source="Dragon Magazine Annual 2009,Dragon Magazine 366" revision-date="8/27/2010 12:18:12 PM">
+    <Prereqs> Con 13, warlock, Eldritch Pact class feature or Warlock Pact class feature </Prereqs>
+    <print-prereqs> Con 13, warlock </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Recover encounter power that misses all targets but damage self, damage = level </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you attack with a warlock encounter power that has targets and you miss all targets, then you can deal damage to yourself equal to the level of the power. If you do, you immediately recover the power.
+   </RulesElement>
+  <RulesElement name="Bloodied Invigoration" type="Feat" internal-id="ID_FMP_FEAT_755" source="Martial Power" revision-date="8/27/2010 12:18:13 PM">
+    <Prereqs> Con 13, dragonborn, fighter, training in Endurance </Prereqs>
+    <print-prereqs> Con 13, dragonborn, fighter </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Invigorating powers grant +2 temporary hp when bloodied </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you hit with a power that has the invigorating keyword while you are bloodied, you gain an additional 2 temporary hit points.
+   </RulesElement>
+  <RulesElement name="Bracing Breath" type="Feat" internal-id="ID_FMP_FEAT_758" source="Martial Power" revision-date="8/27/2010 12:18:13 PM">
+    <Prereqs> Con 13, dragonborn, dragon breath power, fighter, training in Endurance </Prereqs>
+    <print-prereqs> Con 13, dragonborn, fighter </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Dragon breath gives +1 to attack with invigorating powers </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your dragon breath racial power, you gain a +1 bonus to attack rolls for powers that have the invigorating keyword until the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Breath-Resistant Beast" type="Feat" internal-id="ID_FMP_FEAT_760" source="Martial Power" revision-date="8/27/2010 12:18:13 PM">
+    <Prereqs> Dragonborn, dragon breath power, ranger, Beast Mastery class feature </Prereqs>
+    <print-prereqs> Dragonborn, ranger, Beast Mastery class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Beast gains resistance to your dragon breath's damage type </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="BRB Resist" value="+5" />
+      <statadd name="BRB Resist" value="+HALF-LEVEL" />
+      <statadd name="BEAST.resist:acid" value="BRB Resist" type="resist" requires="Dragon Breath Acid" />
+      <statadd name="BEAST.resist:cold" value="BRB Resist" type="resist" requires="Dragon Breath Cold" />
+      <statadd name="BEAST.resist:fire" value="BRB Resist" type="resist" requires="Dragon Breath Fire" />
+      <statadd name="BEAST.resist:lightning" value="BRB Resist" type="resist" requires="Dragon Breath Lightning" />
+      <statadd name="BEAST.resist:poison" value="BRB Resist" type="resist" requires="Dragon Breath Poison" />
+    </rules>
+Your beast companion gains resist 5 + one-half your level to the damage type of your dragon breath racial power.
+   </RulesElement>
+  <RulesElement name="Brutal Accuracy" type="Feat" internal-id="ID_FMP_FEAT_761" source="Martial Power" revision-date="8/27/2010 12:18:13 PM">
+    <Prereqs> Elf, elven accuracy power, ranger, Hunter's Quarry class feature </Prereqs>
+    <print-prereqs> Elf, ranger, Hunter's Quarry class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Hit with elven accuracy reroll gains extra damage </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If the rerolled attack granted by your elven accuracy racial power hits your quarry, the attack deals extra damage equal to 1d6 + your Wisdom modifier.
+   </RulesElement>
+  <RulesElement name="Command the Darkness" type="Feat" internal-id="ID_FMP_FEAT_765" source="Martial Power" revision-date="8/27/2010 12:18:14 PM">
+    <Prereqs> Drow, Lolthtouched racial trait, warlord </Prereqs>
+    <print-prereqs> Drow, warlord </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Change how much cloud of darkness obscures its area </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your cloud of darkness racial power, you can choose for it to lightly or heavily obscure its area, instead of totally obscuring it. If you reduce the darkness in this way, creatures inside the cloud are not blinded.
+   </RulesElement>
+  <RulesElement name="Cunning Ambusher" type="Feat" internal-id="ID_FMP_FEAT_767" source="Martial Power" revision-date="8/27/2010 12:18:14 PM">
+    <Prereqs> Tiefling, infernal wrath power, rogue, Dex 13 </Prereqs>
+    <print-prereqs> Tiefling, rogue </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Deal Dex modifier in extra damage when you use infernal wrath with combat advantage </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="ID_FMP_POWER_1628:damage" value="+Dexterity modifier" condition="when you have combat advantage against the target" />
+    </rules>
+If you use infernal wrath when you have combat advantage against the target, you gain a bonus to the damage roll equal to your Dexterity modifier.
+   </RulesElement>
+  <RulesElement name="Darkfire Targeting" type="Feat" internal-id="ID_FMP_FEAT_768" source="Martial Power" revision-date="8/27/2010 12:18:14 PM">
+    <Prereqs> Drow ranger or drow rogue, Lolthtouched racial trait, Wis 13, Sneak Attack class feature or Hunter's Quarry class feature </Prereqs>
+    <print-prereqs> Drow ranger or drow rogue </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Target of your darkfire takes extra damage </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="Darkfire:Sneak Attack" value="+ABILITYMOD(Wisdom)" />
+      <statadd name="Darkfire:Hunter's Quarry" value="+ABILITYMOD(Wisdom)" />
+    </rules>
+Whenever you deal Sneak Attack or Hunter's Quarry damage to the target of your darkfire power, the attack deals extra damage equal to your Wisdom modifier.
+   </RulesElement>
+  <RulesElement name="Devoted Challenge" type="Feat" internal-id="ID_FMP_FEAT_771" source="Martial Power" revision-date="8/27/2010 12:18:14 PM">
+    <Prereqs> Dwarf, fighter, Combat Challenge class feature, Wis 13 </Prereqs>
+    <print-prereqs> Dwarf, fighter, Combat Challenge class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Bonus to melee basic attacks equal to Wis modifier </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="melee basic:attack" value="+ABILITYMOD(Wisdom)" condition="if attack was granted by Combat Challenge" />
+      <statadd name="melee basic:damage" value="+ABILITYMOD(Wisdom)" condition="if attack was granted by Combat Challenge" />
+    </rules>
+When you make a melee basic attack granted by Combat Challenge, you gain a bonus to the attack and damage rolls equal to your Wisdom modifier.
+   </RulesElement>
+  <RulesElement name="Drow Beast Mastery" type="Feat" internal-id="ID_FMP_FEAT_773" source="Martial Power" revision-date="8/27/2010 12:18:14 PM">
+    <Prereqs> Drow, Lolthtouched racial trait, ranger, Beast Mastery class feature </Prereqs>
+    <print-prereqs> Drow, ranger, Beast Mastery class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Beast sees through your cloud of darkness </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your beast companion is immune to the effect of your cloud of darkness racial power.
+   </RulesElement>
+  <RulesElement name="Elven Beast Mastery" type="Feat" internal-id="ID_FMP_FEAT_776" source="Martial Power" revision-date="8/27/2010 12:18:14 PM">
+    <Prereqs> Elf, elven accuracy power, ranger, Beast Mastery class feature </Prereqs>
+    <print-prereqs> Elf, ranger, Beast Mastery class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Beast benefits from Wild Step and elven accuracy </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your beast companion ignores difficult terrain when it shifts.
+	You can use your elven accuracy racial power to reroll an attack roll you made or one your beast companion made.
+   </RulesElement>
+  <RulesElement name="Hunter of Wind and Wave" type="Feat" internal-id="ID_FMP_FEAT_786" source="Martial Power" revision-date="8/27/2010 12:18:15 PM">
+    <Prereqs> Genasi, swiftcurrent or windwalker racial power, ranger </Prereqs>
+    <print-prereqs> Genasi, ranger </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to movement with swiftcurrent or windwalker </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your swiftcurrent or windwalker racial power, add 2 squares to the distance the power allows you to move.
+   </RulesElement>
+  <RulesElement name="Inspired Defense" type="Feat" internal-id="ID_FMP_FEAT_793" source="Martial Power" revision-date="8/27/2010 12:18:16 PM">
+    <Prereqs> Human, warlord, inspiring word power </Prereqs>
+    <print-prereqs> Human, warlord </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Ally gains +1 to all defenses with inspiring word </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use inspiring word, the target also gains a +1 power bonus to all defenses until the start of your next turn.
+   </RulesElement>
+  <RulesElement name="Keeper of Storm" type="Feat" internal-id="ID_FMP_FEAT_795" source="Martial Power" revision-date="8/27/2010 12:18:16 PM">
+    <Prereqs> Genasi, stormsoul racial trait, fighter, Combat Challenge class feature </Prereqs>
+    <print-prereqs> Genasi, fighter, Combat Challenge class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Deal thunder or lightning damage when using stormsoul </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you are manifesting stormsoul when you make a melee basic attack granted by Combat Challenge, you can choose for the attack to deal thunder damage or lightning damage instead of its normal damage type.
+   </RulesElement>
+  <RulesElement name="Lingering Wrath" type="Feat" internal-id="ID_FMP_FEAT_798" source="Martial Power" revision-date="8/27/2010 12:18:16 PM">
+    <Prereqs> Tiefling, infernal wrath power, fighter, Combat Challenge class feature </Prereqs>
+    <print-prereqs> Tiefling, fighter, Combat Challenge class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain a +1 bonus to hit marked enemies you target with infernal wrath until mark ends </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use the infernal wrath racial power against an enemy marked by you, you gain a +1 bonus to attack rolls against that enemy until it is no longer marked by you.
+   </RulesElement>
+  <RulesElement name="Master of Rumbling Earth" type="Feat" internal-id="ID_FMP_FEAT_803" source="Martial Power" revision-date="8/27/2010 12:18:16 PM">
+    <Prereqs> Genasi, earthshock power, fighter </Prereqs>
+    <print-prereqs> Genasi, fighter </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Bonuses to attack rolls and damage with earthshock </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <statadd name="earthshock:attack" value="+1" />
+      <statadd name="earthshock:damage" value="+Strength modifier" condition="if the enemy is knocked prone by the power" />
+    </rules>
+You gain a +1 bonus to attack rolls with your earthshock racial power, and you deal damage equal to your Strength modifier to enemies knocked prone by the power.
+   </RulesElement>
+  <RulesElement name="Opportunistic Accuracy" type="Feat" internal-id="ID_FMP_FEAT_805" source="Martial Power" revision-date="8/27/2010 12:18:16 PM">
+    <Prereqs> Wis 13, elf, elven accuracy power, fighter </Prereqs>
+    <print-prereqs> Wis 13, elf, fighter </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Retain elven accuracy when you miss </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you use your elven accuracy racial power to reroll an opportunity attack and the second roll misses, you do not expend the power.
+   </RulesElement>
+  <RulesElement name="Rattling Wrath" type="Feat" internal-id="ID_FMP_FEAT_810" source="Martial Power" revision-date="8/27/2010 12:18:17 PM">
+    <Prereqs> Cha 15, tiefling, infernal wrath power, rogue, training in Intimidate </Prereqs>
+    <print-prereqs> Cha 15, tiefling, rogue </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Target of infernal wrath suffers -4 penalty to hit after use of rattling powers </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your infernal wrath racial power, any rattling powers you use against the target before the end of your next turn apply a -4 penalty to the target's attack rolls instead of a -2 penalty.
+   </RulesElement>
+  <RulesElement name="Saving Inspiration" type="Feat" internal-id="ID_FMP_FEAT_814" source="Martial Power" revision-date="8/27/2010 12:18:17 PM">
+    <Prereqs> Warlord, inspiring word power </Prereqs>
+    <print-prereqs> Warlord </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Ally gains saving throw with inspiring word </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use inspiring word, you can forgo any extra dice of healing granted by the power to instead grant the target a saving throw.
+   </RulesElement>
+  <RulesElement name="Shield Defense" type="Feat" internal-id="ID_FMP_FEAT_816" source="Martial Power" revision-date="8/27/2010 12:18:17 PM">
+    <Prereqs> Wis 13, fighter, !Two-handed Weapon Talent class feature </Prereqs>
+    <print-prereqs> Wis 13, fighter </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1 AC and Reflex when power requiring shield hits </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you hit with a power that requires a shield, you gain a +1 bonus to AC and Reflex until the end of your next turn or until you stop using the shield.
+   </RulesElement>
+  <RulesElement name="Sneaky Accuracy" type="Feat" internal-id="ID_FMP_FEAT_819" source="Martial Power" revision-date="8/27/2010 12:18:17 PM">
+    <Prereqs> Elf, elven accuracy power, rogue, Sneak Attack class feature </Prereqs>
+    <print-prereqs> Elf, rogue, Sneak Attack class feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Retain elven accuracy on an enemy's miss </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you use your elven accuracy racial power to reroll an attack against an enemy granting you combat advantage and the second roll misses, you do not expend elven accuracy.
+   </RulesElement>
+  <RulesElement name="Tactical Inspiration" type="Feat" internal-id="ID_FMP_FEAT_822" source="Martial Power" revision-date="8/27/2010 12:18:17 PM">
+    <Prereqs> Eladrin, warlord, inspiring word power, Int 15 </Prereqs>
+    <print-prereqs> Eladrin, warlord </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Add Int modifier to inspiring word hp restored </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Add your Intelligence modifier to the hit points restored by your inspiring word.
+   </RulesElement>
+  <RulesElement name="Unbalancing Wrath" type="Feat" internal-id="ID_FMP_FEAT_827" source="Martial Power" revision-date="8/27/2010 12:18:18 PM">
+    <Prereqs> Tiefling, infernal wrath power, warlord </Prereqs>
+    <print-prereqs> Tiefling, warlord </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Infernal wrath target grants combat advantage to allies </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+The target of your infernal wrath grants combat advantage to your allies until the end of the target's next turn.
+   </RulesElement>
+  <RulesElement name="Wielder of Piercing Flame" type="Feat" internal-id="ID_FMP_FEAT_829" source="Martial Power" revision-date="8/27/2010 12:18:18 PM">
+    <Prereqs> Genasi, firepulse power, rogue </Prereqs>
+    <print-prereqs> Genasi, rogue </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Firepulse ignores target's resistance or immunity when you have combat advantage </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you have combat advantage against the target of your firepulse racial power, that power ignores any fire resistance or immunity possessed by the target.
+   </RulesElement>
+  <RulesElement name="Bloody Inspiration" type="Feat" internal-id="ID_FMP_FEAT_834" source="Martial Power" revision-date="8/27/2010 12:18:18 PM">
+    <Prereqs> 11th level, dragonborn, warlord, inspiring word power, Con 15; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, dragonborn, warlord </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Second ally benefits from your inspiring word </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you use inspiring word while you are bloodied and do not target yourself, a second ally within the power's range gains temporary hit points equal to twice your Constitution modifier.
+   </RulesElement>
+  <RulesElement name="Darkhunter" type="Feat" internal-id="ID_FMP_FEAT_838" source="Martial Power" revision-date="8/27/2010 12:18:18 PM">
+    <Prereqs> 11th level, drow, Lolthtouched racial trait, ranger, Hunter's Quarry class feature; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, drow, ranger, Hunter's Quarry class feature </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Each enemy in cloud of darkness is designated as your quarry </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use the cloud of darkness racial power, each enemy within the cloud is designated as your quarry until it is no longer within the cloud. These quarries don't count toward the normal limit of one quarry, and any other creature designated as your quarry remains so. You can deal Hunter's Quarry damage against each quarry that you hit in the cloud.
+   </RulesElement>
+  <RulesElement name="Darkjumper" type="Feat" internal-id="ID_FMP_FEAT_839" source="Martial Power" revision-date="8/27/2010 12:18:18 PM">
+    <Prereqs> 11th level, drow, Lolthtouched racial trait, rogue; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, drow, rogue </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Teleport as free action within your cloud of darkness </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+On the turn when you use the cloud of darkness racial power, you can teleport once to any unoccupied square within the cloud as a free action.
+   </RulesElement>
+  <RulesElement name="Draconic Arrogance" type="Feat" internal-id="ID_FMP_FEAT_842" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, dragonborn, fighter, Str 15; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, dragonborn, fighter </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Deal damage to enemies you push or knock prone </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Whenever you push an enemy or knock an enemy prone, you deal damage to that enemy equal to your Strength modifier.
+   </RulesElement>
+  <RulesElement name="Dragonbreath Warrior" type="Feat" internal-id="ID_FMP_FEAT_843" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, dragonborn, dragon breath racial power, any martial class; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, dragonborn, any martial class </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Extra damage on melee attack after dragon breath </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your dragon breath racial power, your next melee weapon attack deals 1[W] extra damage on a hit. The damage type is the same as your dragon breath.
+   </RulesElement>
+  <RulesElement name="Elemental Companions" type="Feat" internal-id="ID_FMP_FEAT_844" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, genasi, elemental manifestation racial trait, warlord; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, genasi, warlord </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Adjacent allies share your racial energy resistance </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Adjacent allies benefit from any resistance or saving throw bonus you have because of your current elemental manifestation.
+   </RulesElement>
+  <RulesElement name="Elemental Guardian" type="Feat" internal-id="ID_FMP_FEAT_845" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, Con 15, genasi, elemental manifestation racial trait, fighter; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, Con 15, genasi, fighter </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Racial trait improves when you are adjacent to an ally </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+While you are adjacent to any ally, your  innate racial defensive talent improves. Apply the benefit for your current elemental manifestation.
+	Earthsoul: Increase racial bonus to saving throws to +2.
+	Firesoul, Stormsoul, or Windsoul: Increase resist value by 5.
+	Watersoul: Increase racial bonus to saving throws against ongoing damage to +4.
+   </RulesElement>
+  <RulesElement name="Enduring Wallop" type="Feat" internal-id="ID_FMP_FEAT_846" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, dwarf, fighter, Con 15; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, dwarf, fighter </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Deal ongoing CON modifier damage with fighter daily power </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you hit an enemy with a fighter daily attack power while wielding an axe, a hammer, or a pick, that enemy takes ongoing damage equal to your Constitution modifier (save ends). If the power already deals ongoing damage that has no damage type, instead increase that ongoing damage by an amount equal to your Constution modifier.
+   </RulesElement>
+  <RulesElement name="Fey Tactics" type="Feat" internal-id="ID_FMP_FEAT_848" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, eladrin, fey step power, warlord; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, eladrin, warlord </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Nearby ally can use fey step when you do </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use your fey step racial power, you can also teleport one ally within 5 squares of your starting position a distance equal to your fey step distance.
+   </RulesElement>
+  <RulesElement name="Fiendish Defender" type="Feat" internal-id="ID_FMP_FEAT_849" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, tiefling, infernal wrath power, fighter, Combat Challenge class feature; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, tiefling, fighter, Combat Challenge class feature </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Infernal wrath can be triggered by an enemy marked by you that hits ally with attack not including you </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your infernal wrath can also be triggered by an enemy marked by you that hits an ally with an attack that doesn't include you as a target.
+   </RulesElement>
+  <RulesElement name="Halfling Beast Mastery" type="Feat" internal-id="ID_FMP_FEAT_851" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, halfling, second chance power, ranger, Beast Mastery class feature; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, halfling, ranger, Beast Mastery class feature </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Beast companion gains second chance once per encounter </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Your beast companion can use the second chance racial power as an encounter power. This use doesn't count against your use of the power, and vice versa.
+   </RulesElement>
+  <RulesElement name="Infernal Sneak Attack" type="Feat" internal-id="ID_FMP_FEAT_854" source="Martial Power" revision-date="8/27/2010 12:18:19 PM">
+    <Prereqs> 11th level, tiefling, infernal wrath power, rogue, Sneak Attack class feature; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, tiefling, rogue, Sneak Attack class feature </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Expend infernal wrath when using sneak attack to inflict 1d6 extra fire damage for each die of sneak attack </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you deal your Sneak Attack damage, you can expend your infernal wrath to deal 1d6 extra fire damage for each die of Sneak Attack damage you deal.
+   </RulesElement>
+  <RulesElement name="Steadfast Tactics" type="Feat" internal-id="ID_FMP_FEAT_866" source="Martial Power" revision-date="8/27/2010 12:18:20 PM">
+    <Prereqs> 11th level, dwarf, warlord, inspiring word power; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, dwarf, warlord </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Inspiring word reduces effect of push, pull, or slide </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use inspiring word on an ally, that ally can reduce pull, push, and slide effects against him or her by 1 square until the end of the encounter.
+   </RulesElement>
+  <RulesElement name="Vital Inspiration" type="Feat" internal-id="ID_FMP_FEAT_869" source="Martial Power" revision-date="8/27/2010 12:18:20 PM">
+    <Prereqs> 11th level, half-elf, warlord, Cha 15; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, half-elf, warlord </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Allies regain more hp with second wind </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Any ally who can see and hear you adds your Charisma modifier to the hit points regained by using second wind.
+   </RulesElement>
+  <RulesElement name="Wrathful Hunter" type="Feat" internal-id="ID_FMP_FEAT_871" source="Martial Power" revision-date="8/27/2010 12:18:20 PM">
+    <Prereqs> 11th level, tiefling, infernal wrath power, ranger, Hunter's Quarry class feature; Paragon Tier </Prereqs>
+    <print-prereqs> 11th level, tiefling, ranger, Hunter's Quarry class feature </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> Gain +3 bonus to hit against quarry after targeting quarry with infernal wrath </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+If you use your infernal wrath racial power against your quarry, you gain a +3 power bonus to your next attack against the target made before the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Darkfire Warrior" type="Feat" internal-id="ID_FMP_FEAT_879" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, drow, Lolthtouched racial trait, any martial class; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, drow, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Regain use of darkfire after reducing target to 0 hp </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you reduce the target of your darkfire racial power to 0 hit points with a weapon attack, you regain the use of darkfire.
+   </RulesElement>
+  <RulesElement name="Dragon Warrior" type="Feat" internal-id="ID_FMP_FEAT_880" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, Con 17, dragonborn, dragon breath power, any martial class; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Con 17, dragonborn, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Regain dragon breath when first bloodied </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you are first bloodied in an encounter, you regain the use of the dragon breath racial power if you have used it during this encounter.
+   </RulesElement>
+  <RulesElement name="Elemental Warrior" type="Feat" internal-id="ID_FMP_FEAT_881" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, genasi, any martial class, elemental manifestation racial trait; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, genasi, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Regain use of racial power after scoring critical hit </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a melee weapon, you can regain the use of a genasi racial power you have used during this encounter. You can gain this benefit once per encounter.
+   </RulesElement>
+  <RulesElement name="Fortune's Warrior" type="Feat" internal-id="ID_FMP_FEAT_883" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, Dex 17, halfling, second chance power, any martial class; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Dex 17, halfling, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Gain combat advantage after using second chance </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use the second chance racial power against an attacker, you gain combat advantage with martial attack powers against that attacker until the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Hawkeye Warrior" type="Feat" internal-id="ID_FMP_FEAT_884" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, Wis 17, elf, elven accuracy power, any martial class; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Wis 17, elf, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> +1 to attack rolls after using elven accuracy </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you use the elven accuracy racial power, you gain a +1 bonus to attack rolls against the target of the attack until the end of the encounter.
+   </RulesElement>
+  <RulesElement name="Infernal Warrior" type="Feat" internal-id="ID_FMP_FEAT_885" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, Cha 17, tiefling, infernal wrath power, any martial class; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Cha 17, tiefling, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Retaliate against a critical hit with infernal wrath </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When an enemy scores a critical hit against you, you can use your infernal wrath racial power against that enemy as a free action, even if you have already used the power this encounter.
+   </RulesElement>
+  <RulesElement name="Invigorating Exploit" type="Feat" internal-id="ID_FMP_FEAT_886" source="Martial Power" revision-date="8/27/2010 12:18:21 PM">
+    <Prereqs> 21st level, any martial class, training in Endurance; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, any martial class, training in Endurance </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Martial attack power becomes invigorating </specific>
+    <specific name="Special"> Each time you gain a level, you can choose to assign this feat's benefit to a different power and remove it from the power to which it currently applies. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Power" number="1" Category="martial,encounter" existing="true" />
+    </rules>
+Choose a martial encounter attack power that you know. That power gains the invigorating keyword.
+   </RulesElement>
+  <RulesElement name="Rattling Exploit" type="Feat" internal-id="ID_FMP_FEAT_897" source="Martial Power" revision-date="8/27/2010 12:18:22 PM">
+    <Prereqs> 21st level, any martial class, training in Intimidate; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, any martial class </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Martial attack power becomes rattling </specific>
+    <specific name="Special"> Whenever you gain a level, you can choose to assign this feat's benefit to a different power and remove it from the power to which it currently applies. </specific>
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Power" number="1" Category="martial,encounter" existing="true" />
+      <modify Field="Keywords" list-addition="Rattling" />
+    </rules>
+Choose a martial encounter attack power that you know. That power gains the rattling keyword.
+   </RulesElement>
+  <RulesElement name="Supreme Inspiration" type="Feat" internal-id="ID_FMP_FEAT_903" source="Martial Power" revision-date="8/27/2010 12:18:22 PM">
+    <Prereqs> 21st level, Cha 19, warlord, inspiring word power; Epic Tier </Prereqs>
+    <print-prereqs> 21st level, Cha 19, warlord </print-prereqs>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> Heal one extra target with inspiring word </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Whenever you use inspiring word, you can heal two targets instead of one (either two allies or one ally and yourself ).
+   </RulesElement>
+  <RulesElement name="Primordial Surge" type="Feat" internal-id="ID_FMP_FEAT_925" source="Dragon Magazine 367" revision-date="8/27/2010 12:18:24 PM">
+    <Prereqs> Genasi, Elemental Manifestation racial trait </Prereqs>
+    <print-prereqs> Genasi </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you succeed with genasi power, gain temporary hp: 5 + Str, Con, or Dex mod </specific>
+    <specific name="Special" />
+    <specific name="type" />
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Whenever you successfully use a genasi racial power, you gain temporary hit points equal to 5 + your Strength, Constitution, or Dexterity modifier (your choice).
+   </RulesElement>
+</D20Rules>

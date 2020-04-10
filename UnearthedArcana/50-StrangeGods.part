@@ -1,0 +1,705 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+	<UpdateInfo>
+		<Version>2.1</Version>
+		<Filename>50-StrangeGods.part</Filename>
+		<PartAddress>http://cbloader.com/UnearthedArcana/50-StrangeGods.part</PartAddress>
+		<VersionAddress>http://cbloader.com/UnearthedArcana/50-StrangeGods.txt</VersionAddress>
+	</UpdateInfo>
+	<!-- Unearthed Arcana Rules Variants: Strange Gods -->
+	<!-- 50-StrangeGods.part, version 2.0 -->
+	<!-- Original release: 20-April-2011; Last modified: 11-August-2012 -->
+	<!-- Test compiled with CBLoader build V1.3.0 -->
+	<!-- This part file is an unofficial Unearthed Arcana variant, and may cause problems with current .part files.  You have been warned! -->
+	<!-- Special thanks to the entire community for handling the materials. -->
+	<Changelog>
+ Updated 22-October-2011 File released under the new Index system.
+ Updated 11-August-2012 File updated regarding conflicts with newer class features. This is not a guarantee that some conflicts still don't exist as with all Unearthed Arcana materials.
+ Updated 27-February-2013 Added Unearthed Arcana Ghost (Can be found by typing in "*Ghost" at item purchase screen)
+	</Changelog>
+	<RulesElement name="Unearthed Arcana: Strange Gods" type="source" internal-id="ID_CDJ_UA_SOURCE_STRANGE_GODS" source="Core">
+		<specific name="IsBeta"> 1 </specific>
+		<specific name="URL">http://www.wizards.com/default.asp?x=dnd/drtoc/398</specific> 
+		<specific name="Release Date"> 04/20/2011 </specific>
+	</RulesElement>
+	<RulesElement name="Divine Identification" type="Power" internal-id="ID_CDJ_POWER_75701" source="Unearthed Arcana: Strange Gods" >
+		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_129 </Category>
+		<Flavor> Believing your prey to be close, you whisper the name of your god to sharpen your perceptive powers. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Avenger Utility </specific>
+		<specific name="Keywords"> Divine, Channel Divinity </specific>
+		<specific name="Action Type"> Minor action </specific>
+		<specific name="Attack Type"> Personal </specific>
+		<specific name="Effect"> Until the end of your next turn, you know the location of your oath of enmity target, and it grants combat advantage to you, even if you can't see it. </specific>
+		<specific name="Special"> You can use only one channel divinity power per encounter </specific>
+		<specific name="Class"> ID_FMP_CLASS_129 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+	</RulesElement>
+	<RulesElement name="Negate Healing" type="Power" internal-id="ID_CDJ_POWER_75702" source="Unearthed Arcana: Strange Gods" >
+		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_FMP_CLASS_2 </Category>
+		<Flavor> Calling upon divine power, you deny an opponent a chance to heal during battle. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Cleric Utility </specific>
+		<specific name="Keywords"> Divine, Channel Divinity </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Trigger"> An enemy within 5 squares of you regains hit points or gains temporary hit points. </specific>
+		<specific name="Target"> The triggering enemy </specific>
+		<specific name="Effect"> The target doesn't regain the hit points or gain the temporary hit points. </specific>
+		<specific name="Special"> You can use only one channel divinity power per encounter </specific>
+		<specific name="Class"> ID_FMP_CLASS_2 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+	</RulesElement>
+	<RulesElement name="Spectre's Shield" type="Power" internal-id="ID_CDJ_POWER_75703" source="Unearthed Arcana: Strange Gods" >
+		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,ID_FMP_CLASS_4 </Category>
+		<Flavor> As your enemy strikes, your shield displays a distorted, ghastly reflection, revealing the shadowy, terrifying figure that awaits him in the near future. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Display"> Paladin Utility </specific>
+		<specific name="Keywords"> Divine, Channel Divinity, Fear </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Trigger">  An enemy within 5 squares of you attacks you. </specific>
+		<specific name="Target"> The triggering enemy </specific>
+		<specific name="Effect"> The target takes a penalty to all defenses equal to your Charisma modifier until the end of your next turn. </specific>
+		<specific name="Special"> You can use only one channel divinity power per encounter </specific>
+		<specific name="Class"> ID_FMP_CLASS_4 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+	</RulesElement>
+	<RulesElement name="Subversive Word" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_75704" source="Unearthed Arcana: Strange Gods" >
+		<Category> 1 </Category>
+		<specific name="Short Description"> Use subversive word as an encounter power; minor action. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_CDJ_POWER_75704 </specific>
+		<specific name="type"> Utility </specific>
+		<specific name="Class"> ID_FMP_CLASS_2 </specific>
+		<specific name="_DisplayPowers"> ID_CDJ_POWER_75704 </specific>
+		<rules>
+			<grant name="ID_CDJ_POWER_75704" type="Power" />
+		</rules>
+By foregoing some of your ability to heal, you gain a measure of the gods' destructive capacities.
+	</RulesElement>
+	<RulesElement name="Subversive Word" type="Power" internal-id="ID_CDJ_POWER_75704" source="Unearthed Arcana: Strange Gods" >
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_2 </Category>
+		<Flavor> Calling upon divine power, you deny an opponent a chance to heal during battle. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Cleric Attack </specific>
+		<specific name="Keywords"> Divine, Radiant, Necrotic </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Ranged 5 </specific>
+		<specific name="Requirement"> You must have at least one healing surge remaining. </specific>
+		<specific name="Target"> One enemy </specific>
+		<specific name="Effect"> You lose a healing surge, and the target takes necrotic and radiant damage equal to your healing surge value.
+Level 11: The target takes 1d6 extra necrotic and radiant damage.
+Level 21: The target takes 2d6 extra necrotic and radiant damage. </specific>
+		<specific name="Special"> At 16th level, you can use this power twice per encounter, but only once per round. </specific>
+		<specific name="Class"> ID_FMP_CLASS_2 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Attack </specific>
+		<specific name="_Associated Feats" />
+	</RulesElement>
+	<RulesElement name="Rune of Elemental Attuning" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_75705" source="Unearthed Arcana: Strange Gods" >
+		<Category> 1 </Category>
+		<specific name="Short Description"> Use rune of elemental attuning as an encounter power; minor action. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_CDJ_POWER_75705 </specific>
+		<specific name="type"> Utility </specific>
+		<specific name="Class"> ID_FMP_CLASS_602 </specific>
+		<specific name="_DisplayPowers"> ID_CDJ_POWER_75705 </specific>
+		<rules>
+			<grant name="ID_CDJ_POWER_75705" type="Power" />
+		</rules>
+By foregoing some of your ability to heal, you can focus on preventing damage to your allies.
+	</RulesElement>
+	<RulesElement name="Rune of Elemental Attuning" type="Power" internal-id="ID_CDJ_POWER_75705" source="Unearthed Arcana: Strange Gods" >
+		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_65,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_602 </Category>
+		<Flavor> You invoke this rune to shield you and an ally from an elemental attack. </Flavor>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="_SkillPower" />
+		<specific name="Display"> Runepriest Utility </specific>
+		<specific name="Keywords"> Divine, Runic </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Close burst 5 </specific>
+		<specific name="Requirement"> You must have at least one healing surge remaining. </specific>
+		<specific name="Target"> You and one ally in burst </specific>
+		<specific name="Effect">  Choose acid, cold, fire, lightning, or thunder. You lose a healing surge, and each target gains resist 5 to the chosen damage type until the end of the encounter.
+Level 11: Resist 10 to the chosen damage type.
+Level 21: Resist 15 to the chosen damage type </specific>
+		<specific name="Rune of Destruction"> The next attack made by each target before the end of your next turn deals 4 extra damage of the chosen type (6 extra damage at 11th level and 8 extra damage at 21st level). </specific>
+		<specific name="Rune of Protection"> The power can target one additional ally in the burst. </specific>
+		<specific name="Class"> ID_FMP_CLASS_602 </specific>
+		<specific name="Level" />
+		<specific name="Power Type"> Feature </specific>
+	</RulesElement>
+	<RulesElement name="Channel Divinity" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_324" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+		<Category> 1 </Category>
+		<specific name="Short Description"> Invoke a channel divinity class feature or other power; encounter. </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Powers"> ID_FMP_POWER_1589,ID_FMP_POWER_146,ID_FMP_POWER_1746,ID_FMP_POWER_1747,ID_FMP_POWER_5330,ID_FMP_POWER_5331,ID_FMP_POWER_5981,ID_FMP_POWER_5186,ID_FMP_POWER_8273,ID_FMP_POWER_7885,ID_FMP_POWER_14292,ID_FMP_POWER_14293,ID_CDJ_POWER_75702,ID_CDJ_POWER_75701,ID_CDJ_POWER_75703 </specific>
+		<specific name="type"> Encounter </specific>
+		<specific name="Class"> ID_FMP_CLASS_2 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_1589,ID_FMP_POWER_146,ID_FMP_POWER_1746,ID_FMP_POWER_1747,ID_FMP_POWER_5330,ID_FMP_POWER_5331,ID_FMP_POWER_5981,ID_FMP_POWER_5186,ID_FMP_POWER_8273,ID_FMP_POWER_7885,ID_FMP_POWER_14292,ID_FMP_POWER_14293,ID_CDJ_POWER_75702,ID_CDJ_POWER_75701,ID_CDJ_POWER_75703 </specific>
+		<rules>
+			<select type="Power" number="1" Category="ID_FMP_POWER_1589|ID_FMP_POWER_14292|ID_CDJ_POWER_75702" requires="ID_FMP_CLASS_2" />
+			<select type="Power" number="1" Category="ID_FMP_POWER_146|ID_FMP_POWER_14293|ID_FMP_POWER_7885" requires="ID_FMP_CLASS_2" />
+			<select type="Power" number="1" Category="ID_FMP_POWER_1746|ID_CDJ_POWER_75703" requires="ID_FMP_CLASS_4" />
+			<grant name="ID_FMP_POWER_1747" type="Power" requires="ID_FMP_CLASS_4" />
+			<grant name="ID_FMP_POWER_5330" type="Power" requires="ID_FMP_CLASS_129" />
+			<select type="Power" number="1" category="ID_FMP_POWER_5331|ID_CDJ_POWER_75701" requires="ID_FMP_CLASS_129" />
+			<grant name="ID_FMP_POWER_5186" type="Power" requires="ID_FMP_CLASS_127" />
+		</rules>
+Once per encounter you can invoke divine power, filling yourself with the might of your patron deity. With the divine might you invoke you can wield special powers. You can also learn other uses for this feature; for instance, the divinity feats grant characters with access to the Channel Divinity class feature the ability to use additional special powers.
+Regardless of how many different uses for Channel Divinity you know, you can use only one such ability per encounter. The special ability or power you invoke works just like your other powers.
+	</RulesElement>
+	<RemoveNodes name="Cleric" type="Grants" internal-id="ID_INTERNAL_GRANTS_CLERIC" source="Player's Handbook">
+			<grant name="ID_FMP_CLASS_FEATURE_64" type="Class Feature" />
+	</RemoveNodes>	
+	<AppendNodes name="Cleric" type="Grants" internal-id="ID_INTERNAL_GRANTS_CLERIC" source="Player's Handbook">
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_64|ID_CDJ_CLASS_FEATURE_75704" />
+		</rules>
+	</AppendNodes>	
+	<RemoveNodes name="Runepriest" type="Grants" internal-id="ID_INTERNAL_GRANTS_RUNEPRIEST" source="Player's Handbook 3">
+			<grant name="ID_FMP_CLASS_FEATURE_2387" type="Class Feature" />
+	</RemoveNodes>
+	<AppendNodes name="Runepriest" type="Grants" internal-id="ID_INTERNAL_GRANTS_RUNEPRIEST" source="Player's Handbook 3">
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2387|ID_CDJ_CLASS_FEATURE_75705" />
+		</rules>
+	</AppendNodes>
+	
+	
+	
+<!-- Dragon Magazine 420  -->
+<!-- Unearthed Arcana: Unfinished Business  -->
+<!-- Ghost Theme -->
+<RulesElement name="*Ghost" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DRAGON_MAGAZINE_420-5" source="Dragon Magazine 420">
+	<Flavor> Of all the undead threats found in the world, ghosts are among the most diverse. Ghosts can be mad, wicked, shrieking horrors that embody all mortal fears of what lies beyond. They can also be guides, helpers, protectors, advisors, and benevolent spirits trapped between worlds. Does a ghost haunt a lethal trap to lure other creatures to their doom, or to warn away the unwary from taking that final step? </Flavor>
+	<specific name="Level"> 1 </specific>
+	<specific name="Magic Item Type"> Alternative Reward </specific>
+	<specific name="Alternative Reward"> Divine Boon </specific>
+	<specific name="Special"> This is at DM Discretion. </specific>
+	<specific name="Property"> You become a Ghost, gaining the Ghost Theme.  </specific>
+	<specific name="Rarity"> Uncommon </specific>
+	<specific name="_DisplayPowers"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+		<rules>
+			<grant name="ID_TIV_THEME_DRAGON_MAGAZINE_420-3" type="Theme" />
+		</rules>
+</RulesElement>
+
+<RulesElement name="Ghost" type="Theme" internal-id="ID_TIV_THEME_DRAGON_MAGAZINE_420-3" source="Dragon Magazine 420">
+	<Prereqs> Unselectable </Prereqs>
+	<specific name="Creating a Ghost"> 
+Ghosts join new or established adventuring groups for a variety of reasons. You can use any of the following examples as your character's motivation for joining the group, or create one of your own.
+
+	* Haunted Item: Many ghosts haunt particular locations, but some instead have a connection to certain objects. You have a psychic bond with an item a player character carries. You might have owned this item in life, created the item, or been slain by it. Something about the item, or the character who now owns it, stirred your spirit into consciousness. You follow the item wherever it goes and are loath to let it out of your sight.
+	
+	* Vanquished Enemy: You are the ghost of someone the player characters killed. Perhaps you have no recollection of how you died, but you know the adventurers are important to you in some way. Or you might remember them and seek to make amends for your misdeeds and villainy. This option is a strong choice if you're joining a well-established party. The characters could be slow to trust you, though-if they do so at all. Although such tension can help create memorable roleplaying scenes, this option might not be appropriate for all groups.
+	
+	* Watchful Relation: You have a connection to a living player character. You might be a parent, sibling, or family friend, and you feel a responsibility to watch over the character and offer advice, protection, and assistance. The person could have a special destiny, be committed to completing a quest you began when you were alive, or simply be someone you loved a great deal.</specific>
+	<specific name="Becoming a Ghost"> 
+Converting an existing character to a ghost is an excellent option when being raised from the dead is not possible. Not every being comes back as a ghost, however, so you should work with your DM to come up with a suitable reason. The following examples are intended as starting points.
+	When you rise as the ghost of a dead character, you appear in an unoccupied space nearest to where you died, at a time of the DM's choosing. Manifestation can be instantaneous, or it can take hours, days, or even years.
+
+	* Dazed and Confused: Sudden, unexpected death can cause the soul to become disoriented, unwilling to believe it has died. You might linger for a time as a ghost until you come to terms with your demise. Your spirit might persist for one adventure or several.
+	
+	* Unfinished Business: Player characters might become ghosts if they die before completing an important quest. Your commitment to the cause is too great to let death stop you. Your status as a ghost lasts only until the quest is complete; then you move on.
+	
+	* Dark Circumstances: Unusual situations can give rise to a character's transformation into a ghost. For example, if you died on the Shadowfell, your soul might have become suffused with shadow energy. A vile spell might have ripped your soul from your body before death took you. Perhaps a curse barred your soul from its ultimate fate, dooming you to restless eternity unless you can find a way to escape or overcome the wicked magic.</specific>
+	<specific name="Playing a Ghost"> 
+Even in a world populated with crystal beings, demon spawn, and minotaurs, ghosts are scary. They remind people of their own mortality. With your deathly, ethereal form and odd behavior, you can expect screams instead of greetings wherever you go.
+	Your appearance is disturbing. The connections that bind you to the world also influence your physical appearance. As a newly formed ghost, you look much as you did during the last moments of life. You might sport horrific wounds, appear old and haggard, have a face frozen in a rictus of pain or terror, or otherwise demonstrate the cause of your death. Your memories manifest the clothing you wore in life, including armor and jewelry, and you carry the same equipment, albeit wispy and ethereal. After a time, you learn to distance yourself from your death and can assume a less disturbing appearance.
+	You remember-mostly. Just as you physically resemble your living form, so too do you retain your normal mannerisms, at least for a while. Your personality, morals, goals, and objectives might remain as they did in life, though being dead can render certain motivations less important. For example, physical wealth no longer has the practical appeal that it does to the living. Your memory is fuzzy at best, so you might forget small details, the names of other characters, locations, or specific events.
+	You are plagued by visions. Becoming a ghost is traumatic, both as a result of dying and because of what you encounter on the other side. You stand in two worlds and might experience strange visions while in this state if your DM so chooses. They could be mere hallucinations, or they might be messages from other trapped spirits.
+	You can play up your distraction from these visions, perhaps looking around as if you saw something out of the corner of your eye, or laughing or grunting as if in response to someone speaking. </specific>
+	<specific name="Ghost Traits"> 
+To make a new ghost, create a character as normal and then apply the following traits. If an existing character becomes a ghost, modify his or her statistics by applying these ghost traits.
+	As a ghost, you retain all the racial traits, class features, and powers you had in life. The ghost traits gained last only as long as you remain a ghost and are lost if you return to life.
+	
+	* Maximum Hit Points: Reduce your maximum hit points to your bloodied value. Then, recalculate your bloodied value from your new maximum hit point total.
+	
+	* Healing Surges: Your number of healing surges becomes 2.
+	
+	* Senses: You have darkvision.
+	
+	* Ghostly Presence: You have a +4 racial bonus to Stealth checks.
+	
+	* Undead: You are not a living creature. Effects that specifically target living creatures do not work on you. You do not eat, drink, breathe, or sleep. You are also immune to disease.
+	
+	* Insubstantial: You take half damage from all attacks, except those that deal force or psychic damage.
+	
+	* Limited Phasing: You ignore difficult terrain. In addition, you can move up to 1 square into a solid object large enough to accommodate a creature of your size. While in an object, you can move only if you leave the object; you have line of sight and line of effect to no creature, and no creature has line of sight or line of effect to you.
+	
+	* Rejuvenation: When you drop to 0 hit points or fewer, your ghostly form dissolves into ectoplasm, a residue some incorporeal creatures leave behind when they touch objects or are destroyed. You are removed from play. If you have any healing surges to spend, you can do so at the end of a short rest, reappearing with the appropriate number of hit points. Otherwise, at the end of each hour, make a saving throw. If you succeed, you reappear with your full normal hit points. In any case, when you reappear, you do so in the space you last occupied or the nearest unoccupied space to it of your choice.
+	
+	* Equipment: Upon becoming a ghost, your memory creates insubstantial versions of the equipment you carried when you were alive. If you drop any of these items or give one to another creature, the item loses coherency and dissolves into ectoplasm. As a standard action, you can re-create that item so it rejoins your possessions. You cannot pick up or manipulate physical objects, so you cannot add new items to your equipment or benefit from them. You can, however, benefit from alternative rewards that do not take physical forms.
+	
+	* Inherent Bonuses: You use the fixed enhancement bonus (inherent bonus) system described in Dungeon Master's Guide 2 and the Dark Sun Campaign Setting.
+	
+	* Powers: You retain all the attack powers and utility powers you had when you were alive. Your ghostly state imposes a few modifications to how you use these powers.
+		-Attacks: Any power you know that normally targets AC instead targets Reflex. You take a -2 penalty to attack rolls using such powers.
+		-Damage: Whenever you would deal untyped damage, you instead deal necrotic damage or psychic damage (your choice).</specific>
+	
+	<specific name="The Next Step">	
+The novelty of being a ghost is bound to wear off. At some point you must decide whether to move on to whatever awaits your soul, return to the world of the living, or linger as a ghost. 
+	
+	* Back among the Living: 
+	If you plan to return to life, you need your body, preferably intact. Raise Dead requires at least part of a corpse, for example. Time is also a factor; most magic can affect only the recently dead, though a Gentle Repose ritual can preserve your flesh (and prevent unwanted animation). It's always a good idea to keep your body safe and secure until you can gather the resources to come back from the dead.
+	Upon your return, you remember your existence as a ghost. In game terms, this means you keep any experience points you earned, as well as levels, feats, and race or class powers you gained. You lose all ghost traits, powers, and features.
+	
+	*Lingering On: 
+	If you intend to remain a ghost, your body can be a significant liability. A diabolic necromancer who finds your corpse might animate it as a mindless undead horror. Some rituals might use body parts to summon ghosts or compel them to reveal information. Unless you have the means to animate and control your own corpse, your best solution might be to destroy it.
+	Your ghostly existence continues for a time, but nothing lasts forever. Eventually, your memories fade until you cannot remember anyone or anything from your life. Your values, your beliefs, and finally your personality evaporate. If you don't leave the earthly realm, you will eventually become an undead monster under the DM's control, fated to wander endlessly until ultimately destroyed.</specific>
+	<specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-2, ID_TIV_POWER_DRAGON_420-3-1-3, ID_TIV_POWER_DRAGON_420-3-1-4, ID_TIV_POWER_DRAGON_420-3-1-5, ID_TIV_POWER_DRAGON_420-3-1-6 </specific>
+	<specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-1, ID_TIV_CLASS_FEATURE_DRAGON_420-3-2, ID_TIV_CLASS_FEATURE_DRAGON_420-3-3, ID_TIV_CLASS_FEATURE_DRAGON_420-3-4, ID_TIV_CLASS_FEATURE_DRAGON_420-3-5, ID_TIV_CLASS_FEATURE_DRAGON_420-3-6, ID_TIV_CLASS_FEATURE_DRAGON_420-3-7 </specific>
+    <rules>
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-1" type="Class Feature" />
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-2" type="Class Feature" />
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-3" type="Class Feature" />
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-7" type="Class Feature" />
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-4" type="Class Feature" level="4"/>
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-5" type="Class Feature" level="6"/>
+		<grant name="ID_TIV_CLASS_FEATURE_DRAGON_420-3-6" type="Class Feature" level="8"/>
+    </rules>
+Any mortal creature might become a ghost. Adventurers have reported encounters with ghostly hounds whose barking and baying chill the bone. Others have run across the shades of beautiful elf maidens, so tormented by their undead state that their shrieks can stop a beating heart. Even horrific monsters such as beholders might rise in ghostly form.
+	Still, extraordinary circumstances are required for a soul to refuse Letherna's call and linger in the world. Often, a disembodied spirit resists moving on due to unfinished business in life: a crucial quest unfulfilled, a responsibility not upheld, a duty not honored. Like anchors, these memories weigh on the ghost and force it to remain, at least until whatever troubles it has been resolved.
+	The Shadowfell can also form ghosts from the newly dead. Shadow's subtle influence can awaken memories, emotions, and sensations that quicken the spirit and prevent it from finding peace. Ghosts twisted by such power grow to resent and even hate the living, and in time they might lose all traces of their mortal existence, becoming vengeful wraiths.
+	Finally, rare individuals with strong personalities, great magical power, or an extraordinary ability can cheat death through sheer force of will. They refuse to move on, unmoved by the Raven Queen's demands. Such ghosts are the most powerful and feared of their kind, for they go wherever and do whatever they please.
+	Regardless of the reasons for their formation or the powers they possess, all ghosts gradually fade away. The longer a ghost remains, the more tenuous its hold becomes on who it was. Memories disappear. Familiar faces become strangers. Important places lose their prominence. As the centuries pass, more and more of the ghost's identity is lost, until it forgets its former life and knows only its undead existence.
+	All ghosts are hard to kill, coalescing into their former shape hours or days after their apparent destruction. The only way to put a ghost to rest for certain is to finish whatever task binds it to the world. Even then, some ghosts refuse to move on. The more baleful spirits might be banished only by breaking their connection to the Shadowfell, or by overcoming the magic that defies death's call.
+</RulesElement>
+
+<RulesElement name="Ghost Racial Features" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-1" source="Dragon Magazine 420">
+    <Category> 1 </Category>
+    <Flavor> The potential to become a ghost lies in every mortal creature-even adventurers. Death not need be an end for your character; it can be a beginning. Whether you want to continue the story of a living adventurer who fell afoul of a monster's attack, a trap, or some other peril, or play a character from beyond the grave who joins forces with the living, the rules presented here let you explore the world from a new perspective, between the living and the dead. </Flavor>
+    <specific name="Short Description"> Gain benefits and hindrances from being a ghost. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Type"/>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_RACIAL_TRAIT_DRAGON_420-3-1, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-2, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-3, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-4, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-5, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-6, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-7, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-8, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-9, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-10, ID_TIV_RACIAL_TRAIT_DRAGON_420-3-11 </specific>
+		<rules>
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-1" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-2" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-3" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-4" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-5" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-6" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-7" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-8" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-9" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-10" type="Racial Trait" />
+			<grant name="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-11" type="Racial Trait" />
+		</rules>
+To make a new ghost, create a character as normal and then apply the following traits. If an existing character becomes a ghost, modify his or her statistics by applying these ghost traits.
+	As a ghost, you retain all the racial traits, class features, and powers you had in life. The ghost traits gained last only as long as you remain a ghost and are lost if you return to life.
+</RulesElement>
+
+<RulesElement name="Ghost: Maximum Hit Points" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-1" source="Dragon Magazine 420">
+	<specific name="Short Description"> Reduce to Half HP and Bloodied Value </specific>
+	<specific name="Level"> 1 </specific>
+Reduce your maximum hit points to your bloodied value. Then, recalculate your bloodied value from your new maximum hit point total.
+</RulesElement>
+
+<RulesElement name="Ghost: Healing Surges" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-2" source="Dragon Magazine 420">
+	<specific name="Short Description"> Reduce to 2 Healing Surges </specific>
+	<specific name="Level"> 1 </specific>
+Your number of healing surges becomes 2.
+</RulesElement>
+
+<RulesElement name="Ghost: Senses" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-3" source="Dragon Magazine 420">
+	<specific name="Short Description"> Gain Darkvision </specific>
+	<specific name="Level"> 1 </specific>
+	    <rules>
+			<grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision" />
+		</rules>
+You have darkvision.
+</RulesElement>
+
+<RulesElement name="Ghost: Presence" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-4" source="Dragon Magazine 420">
+	<specific name="Short Description"> Gain +4 to Stealth. </specific>
+	<specific name="Level"> 1 </specific>
+	    <rules>
+			<statadd name="Stealth Misc" value="+4" type="item" />
+		</rules>
+You have a +4 racial bonus to Stealth checks.
+</RulesElement>
+
+<RulesElement name="Ghost: Undead" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-5" source="Dragon Magazine 420">
+	<specific name="Short Description"> You do not eat, drink, breathe, or sleep. You are also immune to disease. </specific>
+	<specific name="Level"> 1 </specific>
+You are not a living creature. Effects that specifically target living creatures do not work on you. You do not eat, drink, breathe, or sleep. You are also immune to disease.
+</RulesElement>
+
+<RulesElement name="Ghost: Insubstantial" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-6" source="Dragon Magazine 420">
+	<specific name="Short Description"> Take half damage from all attacks, except force or psychic damage. </specific>
+	<specific name="Level"> 1 </specific>
+You take half damage from all attacks, except those that deal force or psychic damage.
+</RulesElement>
+
+<RulesElement name="Ghost: Limited Phasing" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-7" source="Dragon Magazine 420">
+	<specific name="Short Description"> Ignore difficult terrain, move up to 1 square into a solid object large enough to accommodate a creature of your size. </specific>
+	<specific name="Level"> 1 </specific>
+You ignore difficult terrain.
+	In addition, you can move up to 1 square into a solid object large enough to accommodate a creature of your size. While in an object, you can move only if you leave the object; you have line of sight and line of effect to no creature, and no creature has line of sight or line of effect to you.
+</RulesElement>
+
+<RulesElement name="Ghost: Rejuvenation" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-8" source="Dragon Magazine 420">
+	<specific name="Short Description"> When you drop to 0 hit points or fewer, your ghostly form dissolves into ectoplasm. </specific>
+	<specific name="Level"> 1 </specific>
+When you drop to 0 hit points or fewer, your ghostly form dissolves into ectoplasm, a residue some incorporeal creatures leave behind when they touch objects or are destroyed. You are removed from play. If you have any healing surges to spend, you can do so at the end of a short rest, reappearing with the appropriate number of hit points. Otherwise, at the end of each hour, make a saving throw. If you succeed, you reappear with your full normal hit points. In any case, when you reappear, you do so in the space you last occupied or the nearest unoccupied space to it of your choice.
+</RulesElement>
+
+<RulesElement name="Ghost: Equipment" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-9" source="Dragon Magazine 420">
+	<specific name="Short Description"> Your memory creates insubstantial versions of the equipment you carried when you were alive. </specific>
+	<specific name="Level"> 1 </specific>
+Upon becoming a ghost, your memory creates insubstantial versions of the equipment you carried when you were alive. If you drop any of these items or give one to another creature, the item loses coherency and dissolves into ectoplasm. As a standard action, you can re-create that item so it rejoins your possessions.
+	You cannot pick up or manipulate physical objects, so you cannot add new items to your equipment or benefit from them. You can, however, benefit from alternative rewards that do not take physical forms.
+</RulesElement>
+
+<RulesElement name="Ghost: Inherent Bonuses" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-10" source="Dragon Magazine 420">
+	<specific name="Short Description"> Use Inherent Bonuses. </specific>
+	<specific name="Level"> 1 </specific>
+You use the fixed enhancement bonus (inherent bonus) system described in Dungeon Master's Guide 2 and the Dark Sun Campaign Setting.
+</RulesElement>
+
+<RulesElement name="Ghost: Powers" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_420-3-11" source="Dragon Magazine 420">
+	<specific name="Short Description"> Retain all the attack powers and utility powers you had when you were alive. </specific>
+	<specific name="Level"> 1 </specific>
+You retain all the attack powers and utility powers you had when you were alive. Your ghostly state imposes a few modifications to how you use these powers.
+	Attacks: Any power you know that normally targets AC instead targets Reflex. You take a -2 penalty to attack rolls using such powers.
+	Damage: Whenever you would deal untyped damage, you instead deal necrotic damage or psychic damage (your choice).
+</RulesElement>
+
+<RulesElement name="Level 1 Ghost Feature: Corrupting Touch" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-2" source="Dragon Magazine 420">
+    <Category> 1 </Category>
+    <Flavor> Although ghosts lack substance, mere contact with an unbound spirit can corrupt the soul of a living creature, causing it to sicken and possibly die. Even if the creature survives the touch, the pain is excruciating, so much so that the target becomes more susceptible to other attacks. </Flavor>
+    <specific name="Short Description"> Gain the corrupting touch power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-2 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-2 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-2" type="Power" />
+		</rules>
+You gain the corrupting touch power.
+</RulesElement>
+
+<RulesElement name="Corrupting Touch" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-2" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_TIV_CLASS_FEATURE_DRAGON_420-3-2,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_38,1 </Category>
+    <Flavor> You reach into a creature's body to disrupt it. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ghost Attack 1 </specific>
+    <specific name="Keywords"> Necrotic, Shadow </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+	<specific name="Attack"> Level + 3 vs. Reflex
+Level 11: Level + 5 vs. Reflex
+Level 21: Level + 7 vs. Reflex </specific>
+	<specific name="Attack"> 1d10 necrotic damage, and the target gains vulnerable 1 to all damage until the end of your next turn. 
+Level 21: 2d10 necrotic damage, and the target gains vulnerable 3 to all damage until the end of your next turn. </specific>
+	<specific name="Special"> You can use this power in place of a melee basic attack. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-2 </specific>
+</RulesElement>
+
+<RulesElement name="Level 1 Ghost Feature: Stolen Years" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-3" source="Dragon Magazine 420">
+    <Category> 1 </Category>
+    <Flavor> Ghosts drain life energy from living creatures they touch, stealing years away from the living. A creature subject to this effect undergoes a brief transformation, growing old and infirm for a moment before resuming its normal appearance. </Flavor>
+    <specific name="Short Description"> Gain the stolen years power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-3 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-3 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-3" type="Power" />
+		</rules>
+You gain the stolen years power.
+</RulesElement>
+
+<RulesElement name="Stolen Years" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-3" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_TIV_CLASS_FEATURE_DRAGON_420-3-3,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_NO_ACTION,ID_FMP_CATEGORY_38,1 </Category>
+    <Flavor> You drain life from another creature to sustain your undead existence. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ghost Attack 1 </specific>
+    <specific name="Keywords"> Shadow </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+	<specific name="Trigger"> You hit an enemy with corrupting touch. </specific>
+	<specific name="Target"> The enemy you hit. </specific>
+	<specific name="Effect"> The target is weakened (save ends), and you gain a healing surge. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-3 </specific>
+</RulesElement>
+
+<RulesElement name="Level 4 Ghost Feature: Ethereal Retreat" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-4" source="Dragon Magazine 420">
+    <Category> 4 </Category>
+    <Flavor> As a ghost, you exist only partly in the natural world. When threatened, you can withdraw deeper into your shadowy existence so other creatures cannot see you. </Flavor>
+    <specific name="Short Description"> Gain the ethereal retreat power. </specific>
+    <specific name="Level"> 4 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-4 </specific>
+    <specific name="Type"> Utility </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-4 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-4" type="Power" />
+		</rules>
+You gain the ethereal retreat power.
+</RulesElement>
+
+<RulesElement name="Ethereal Retreat" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-4" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_TIV_CLASS_FEATURE_DRAGON_420-3-4,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_38,4 </Category>
+    <Flavor> You withdraw from the world, fading away until you disappear. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ghost Utility 4 </specific>
+    <specific name="Keywords"> Healing, Shadow </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Personal </specific>
+	<specific name="Requirement"> You must have at least one healing surge. </specific>
+	<specific name="Trigger"> You take damage. </specific>
+	<specific name="Effect"> You spend a healing surge, regaining hit points as normal. In addition, you become invisible and cannot attack until the end of your next turn or until you take a minor action to become visible. </specific>
+	<specific name="Sustain Minor"> You remain invisible and cannot attack until the end of your next turn or until you take a minor action to become visible. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 4 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-4 </specific>
+</RulesElement>
+
+<RulesElement name="Level 6 Ghost Feature: Malevolence" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-5" source="Dragon Magazine 420">
+    <Category> 6 </Category>
+    <Flavor> You can possess living creatures. You expend a measure of your energy to shoulder aside the target's spirit, replacing it with your own. Until your target forces you out, you control it as if it were your puppet. </Flavor>
+    <specific name="Short Description"> Gain the malevolence power. </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-5 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-5 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-5" type="Power" />
+		</rules>
+You gain the malevolence power.
+</RulesElement>
+
+<RulesElement name="Malevolence" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-5" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_TIV_CLASS_FEATURE_DRAGON_420-3-5,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_NO_ACTION,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_38,6 </Category>
+    <Flavor> You occupy another creature and take control of its body. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ghost Attack 6 </specific>
+    <specific name="Keywords"> Charm, Shadow </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+	<specific name="Requirement"> You must have at least one healing surge. </specific>
+	<specific name="Trigger"> You hit an enemy with corrupting touch. </specific>
+	<specific name="Target"> The enemy you hit. </specific>
+	<specific name="Effect"> You spend a healing surge but regain no hit points. Instead, you move into the target's space, and the target is dominated (save ends). While the target is dominated by you, you are removed from play, but you still determine the target's actions. </specific>
+	<specific name="Aftereffect"> You return to play in an unoccupied space adjacent to the target. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-5 </specific>
+</RulesElement>
+
+<RulesElement name="Level 8 Ghost Feature: Walk Through Walls" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-6" source="Dragon Magazine 420">
+    <Category> 8 </Category>
+    <Flavor> Your memories of being alive and the rules reality imposed on you as a living creature prevent you from fully embracing the freedom of insubstantiality. Only by shedding your mortal ties can you truly go where you wish. </Flavor>
+    <specific name="Short Description"> Gain the walk Through walls power. </specific>
+    <specific name="Level"> 8 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-6 </specific>
+    <specific name="Type"> Utility </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-6 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-6" type="Power" />
+		</rules>
+You gain the walk through walls power.
+</RulesElement>
+
+<RulesElement name="Walk Through Walls" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-6" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_TIV_CLASS_FEATURE_DRAGON_420-3-6,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION,ID_FMP_CATEGORY_38,8 </Category>
+    <Flavor> You occupy another creature and take control of its body. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ghost Utility 8 </specific>
+    <specific name="Keywords"> Shadow </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+	<specific name="Requirement"> You must have at least one healing surge. </specific>
+	<specific name="Trigger"> You start your turn. </specific>
+	<specific name="Effect"> You spend a healing surge but regain no hit points. Instead, you are phasing until the end of the encounter. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 8 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-6 </specific>
+</RulesElement>
+
+<RulesElement name="Level 1 Ghost Feature: Cause of Death" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-7" source="Dragon Magazine 420">
+    <Category> 1 </Category>
+    <Flavor> Dying is traumatic to the spirit, and the experience stays with a newly formed ghost, shaping its existence and capabilities. When you become a ghost, you gain one of the following features. Choose the one that best fits the manner of your death. </Flavor>
+    <specific name="Short Description"> Gain a Cause of Death benefit of your choice. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Type"> Utility </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-8, ID_TIV_CLASS_FEATURE_DRAGON_420-3-9, ID_TIV_CLASS_FEATURE_DRAGON_420-3-10, ID_TIV_CLASS_FEATURE_DRAGON_420-3-11, ID_TIV_CLASS_FEATURE_DRAGON_420-3-12 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_DRAGON_420-3-7" />
+		</rules>
+Choose one of the following Cause of Death benefits: Corrupting Gaze, Draining Touch, Frightful Moan, or Horrific Appearance.
+</RulesElement>
+
+<RulesElement name="Cause of Death: Corrupting Gaze" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-8" source="Dragon Magazine 420">
+    <Category> ID_TIV_CLASS_FEATURE_DRAGON_420-3-7,1 </Category>
+    <Flavor> You saw your death in another's eyes, and your own eyes have become windows to what lies beyond. Creatures that meet your gaze recoil in horror as their instinct of self-preservation causes them to avoid what they glimpsed. </Flavor>
+    <specific name="Short Description"> Gain the Corrupting Gaze power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-8 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-8 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-8" type="Power" />
+		</rules>
+You gain the corrupting gaze power.
+
+Requirement: You must have been killed by a gaze effect.
+</RulesElement>
+
+<RulesElement name="Corrupting Gaze" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-8" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_TIV_CLASS_FEATURE_DRAGON_420-3-8,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_16,1 </Category>
+    <Flavor> You blast a living creature with a glance, your baleful gaze shattering its mind. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Ghost Attack 1 </specific>
+    <specific name="Keywords"> Fear, Psychic, Shadow </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+	<specific name="Target"> One creature you can see </specific>
+	<specific name="Attack"> Level + 3 vs. Reflex
+Level 11: Level + 5
+Level 21: Level + 7 </specific>
+	<specific name="Hit"> 1d12 psychic damage, and the target can take actions only during its turn until the end of your next turn.
+Level 21: 2d12 psychic damage. </specific>
+	<specific name="Special"> You can use this power in place of a ranged basic attack. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-8 </specific>
+</RulesElement>
+
+<RulesElement name="Cause of Death: Draining Touch" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-9" source="Dragon Magazine 420">
+    <Category> ID_TIV_CLASS_FEATURE_DRAGON_420-3-7,1 </Category>
+    <Flavor> Shadow energy lingers in your undead form, an echo of the attack that killed you. You can channel this dark power into creatures you touch to speed them to the grave. </Flavor>
+    <specific name="Short Description"> Gain resist 10 necrotic; bonuses to Corrupting Touch and Stolen Years powers. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Type"></specific>
+    <specific name="Class" />
+		<rules>
+			<statadd name="resist:necrotic" value="10" type="resist" />
+			<modify name="Corrupting Touch" type="Power" Field="Attack" value="Level + 4 vs. Reflex; Level 11: Level + 6 vs. Reflex; Level 21: Level + 8 vs. Reflex "/>
+			<modify name="Stolen Years" type="Power" Field="Attack" value="The target is weakened (save - 2 ends), and you gain a healing surge."/>
+		</rules>
+You have resist 10 necrotic.
+	In addition, you gain a +1 bonus to attack rolls with corrupting touch, and targets weakened by your stolen years power take a -2 penalty to saving throws made to end the weakened condition.
+
+Requirement: You must have been killed by necrotic damage.	
+</RulesElement>
+
+<RulesElement name="Cause of Death: Frightful Moan" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-10" source="Dragon Magazine 420">
+    <Category> ID_TIV_CLASS_FEATURE_DRAGON_420-3-7,1 </Category>
+    <Flavor> You can loose a banshee wail that unravels your enemies' courage and sends them fleeing. The sound reverberates around you, carrying with it all the loss and sorrow death entails. </Flavor>
+    <specific name="Short Description"> Gain the Frightful Moan power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-10 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-10 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-10" type="Power" />
+		</rules>
+You gain the frightful moan power.
+
+Requirement: You must have been killed by a psychic or thunder attack, or by an ally's attack.
+</RulesElement>
+
+<RulesElement name="Frightful Moan" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-10" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_TIV_CLASS_FEATURE_DRAGON_420-3-10,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_7,1 </Category>
+    <Flavor> You blast a living creature with a glance, your baleful gaze shattering its mind. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ghost Attack 1 </specific>
+    <specific name="Keywords"> Fear, Shadow </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+	<specific name="Requirement"> You must have at least one healing surge. </specific>
+	<specific name="Effect"> You spend a healing surge but regain no hit points. </specific>
+	<specific name="Target"> Each enemy in the burst. </specific>
+	<specific name="Attack"> Level + 2 vs. Will
+Level 11: Level + 4
+Level 21: Level + 6 </specific>
+	<specific name="Hit"> The target is dazed until the end of your next turn, and on the target's next turn, it must use its move action to move as far away from you as it can. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-10 </specific>
+</RulesElement>
+
+<RulesElement name="Cause of Death: Horrific Appearance" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-11" source="Dragon Magazine 420">
+    <Category> ID_TIV_CLASS_FEATURE_DRAGON_420-3-7,1 </Category>
+    <Flavor> Many ghosts display the cause of their death in their undead forms. The more horrific the end, the more disturbing the ghost's appearance becomes. You learn how to magnify the image of your death to terrorize your opponents. </Flavor>
+    <specific name="Short Description"> Gain the Horrific Appearance power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_TIV_POWER_DRAGON_420-3-1-11 </specific>
+    <specific name="Type"> Attack </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_TIV_POWER_DRAGON_420-3-1-11 </specific>
+		<rules>
+			<grant name="ID_TIV_POWER_DRAGON_420-3-1-11" type="Power" />
+		</rules>
+You gain the horrific appearance power.
+
+Requirement: You must have been killed by a disfiguring attack (such as from acid, fire, or lightning) or by a painful or terrifying experience (for example, torture, drowning, or suffocating).
+</RulesElement>
+
+<RulesElement name="Horrific Appearance" type="Power" internal-id="ID_TIV_POWER_DRAGON_420-3-1-11" source="Dragon Magazine 420">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_TIV_CLASS_FEATURE_DRAGON_420-3-11,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_7,1 </Category>
+    <Flavor> You amplify the dreadful cause of death in your appearance and drive your foes mad. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Ghost Attack 1 </specific>
+    <specific name="Keywords"> Fear, Shadow </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+	<specific name="Requirement"> You must have at least two healing surges. </specific>
+	<specific name="Effect"> You spend two healing surges but regain no hit points. </specific>
+	<specific name="Target"> Each enemy in the burst. </specific>
+	<specific name="Attack"> Level + 2 vs. Will
+Level 11: Level + 4
+Level 21: Level + 6 </specific>
+	<specific name="Hit"> The target is stunned until the end of your next
+turn.. </specific>
+    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_420-3 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_420-3-11 </specific>
+</RulesElement>
+
+<RulesElement name="Cause of Death: Poltergiest" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_DRAGON_420-3-12" source="Dragon Magazine 420">
+    <Category> ID_TIV_CLASS_FEATURE_DRAGON_420-3-7,1 </Category>
+    <Flavor> You focus your will to move and manipulate objects and create ghostly sounds. Player character ghosts typically have this feature if the manner of their death does not fit one of the others described in this section. </Flavor>
+    <specific name="Short Description"> Gain the ghost sound and mage hand cantrips. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Type"></specific>
+    <specific name="Class" />
+		<rules>
+			<grant name="ID_FMP_POWER_1217" type="Power" />
+			<modify name="Ghost Sound" type="Power" Field="Action Type" value="Minor action"/>
+			<grant name="ID_FMP_POWER_1227" type="Power" />
+			<modify name="Mage Hand" type="Power" Field="Effect" value="You conjure a spectral, floating hand in an unoccupied square within range, that is invisible to all creatures other than you. The hand lasts until the end of your next turn or until you use this power again. If you are holding an object when you use this power, the hand can move the object into a pack, a pouch, a sheath, or a similar container and simultaneously move any one object carried or worn anywhere on your body into your hand. While the hand persists, you can take the following actions."/>
+		</rules>
+You gain the ghost sound and mage hand cantrips if you don't have them already. You can use ghost sound as a minor action, and the spectral hand created by mage hand is invisible to all creatures other than you.
+
+Requirement: Player character ghosts typically have this feature if the manner of their death does not fit one of the others described.	
+</RulesElement>	
+</D20Rules>

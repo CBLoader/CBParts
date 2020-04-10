@@ -1,0 +1,1699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.05</Version>
+    <Filename>16-warlord.part</Filename>
+    <PartAddress>http://cbloader.com/sorted/16-warlord.part</PartAddress>
+    <VersionAddress>http://cbloader.com/sorted/16-warlord.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Warlord -->
+  <!-- 16-warlord.part, version 1.05 -->
+  <!-- Original release: 13-July-2011; Last modified: 30-March-2012 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File released.
+ Updated 22-August-2011 Interrupting Strike parsing error corrected
+ Updated 20-January-2011 Captain of Fortune corrections.
+ Updated 30-March-2012 March Errata Band of Fellows
+</Changelog>
+  <!-- Warlord Updates by Drewjitsu and GreySector -->
+  <RulesElement name="Inspiring Presence" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_32" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_316,1 </Category>
+    <specific name="Short Description"> Ally that sees you and spends an action point for extra action regains lost hp: 1/2 your level + Cha mod. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <textstring name="ALLY.Action Point" value="Inspiring Presence:When an ally who can see you spends an action point to take an extra action, that ally also regains hit points equal to one-half your level + your Charisma modifier." />
+    </rules>
+When an ally who can see you spends an action point to take an extra action, that ally also regains hit points equal to one-half your level + your Charisma modifier.
+If the ally can see multiple warlord allies who have this class feature, the ally regains hit points from only one of them (the ally's choice).
+   </RulesElement>
+  <RulesElement name="Tactical Presence" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_783" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> ID_FMP_CLASS_FEATURE_316,1 </Category>
+    <specific name="Short Description"> Ally you can see that spends an action point to attack gains bonus to attack: 1/2 Int mod. </specific>
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <textstring name="ALLY.Action Point" value="Tactical Presence:When an ally you can see spends an action point to make an attack, the ally gains a bonus to the first attack roll of that attack.  The bonus equals half your Intelligence modifier." />
+    </rules>
+When an ally you can see spends an action point to make an attack, the ally gains a bonus to the first attack roll of that attack.  The bonus equals half your Intelligence modifier.  
+If multiple warlord allies who have this class feature can see the ally, he or she gains the bonus from only one of them (ally's choice).
+   </RulesElement>
+  <!-- Warlord Power Updates -->
+  <RulesElement name="Commander's Strike" type="Power" internal-id="ID_FMP_POWER_1061" source="Player's Handbook" revision-date="8/27/2010 11:23:48 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> With a shout, you command an ally to attack. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Effect"> One of your allies can take a free action to make a melee basic attack against the target.  The ally gains a bonus to the damage roll equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_972, ID_FMP_FEAT_979, ID_FMP_FEAT_985, ID_FMP_FEAT_987, ID_FMP_FEAT_994 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Furious Smash" type="Power" internal-id="ID_FMP_POWER_315" source="Player's Handbook" revision-date="8/27/2010 11:22:18 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You deliver a smashing blow to a foe that gets its attention more than harms it, encouraging an ally to hit the enemy where it hurts. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Fortitude </specific>
+    <specific name="Hit"> Strength modifier damage.  Choose an ally adjacent to you or the target.  The ally gains a power bonus to the next attack roll and damage roll that he or she makes against the target before the end of his or her next turn.  The power bonus equals your Charisma modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_981, ID_FMP_FEAT_992, ID_FMP_FEAT_2363 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Viper's Strike" type="Power" internal-id="ID_FMP_POWER_1063" source="Player's Handbook" revision-date="8/27/2010 11:23:48 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You trick your adversary into making a tactical error that gives your comrade a chance to strike. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+  Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> If the target shifts before the start of your next turn, it provokes an opportunity attack from an ally of your choice. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_1319, ID_FMP_FEAT_1311, ID_FMP_FEAT_973, ID_FMP_FEAT_980, ID_FMP_FEAT_982, ID_FMP_FEAT_990, ID_FMP_FEAT_2356, ID_FMP_FEAT_2371, ID_FMP_FEAT_2382, ID_FMP_FEAT_2714 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Wolf Pack Tactics" type="Power" internal-id="ID_FMP_POWER_620" source="Player's Handbook" revision-date="8/27/2010 11:22:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You attack your enemy with a well-placed blow, allowing a comrade to get into better position. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Special"> Before the attack, an ally adjacent to you or to the target can shift 1 square as a free action. </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage.
+  Level 21: 2[W] + Strength modifier damage. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_975, ID_FMP_FEAT_2071, ID_FMP_FEAT_2326, ID_FMP_FEAT_2347 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Guarding Attack" type="Power" internal-id="ID_FMP_POWER_1064" source="Player's Handbook" revision-date="8/27/2010 11:23:49 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> With a calculated strike, you knock your enemy off balance, granting some protection against the villain's attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. One ally adjacent to you or the target gains a +2 power bonus to AC against the target's attacks. The bonus lasts until the end of your next turn. </specific>
+    <specific name=" Inspiring Presence"> The bonus equals 1 + your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Hammer and Anvil" type="Power" internal-id="ID_FMP_POWER_1412" source="Player's Handbook" revision-date="8/27/2010 11:24:55 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You land a ringing blow against your foe, inspiring a nearby ally to do the same, but harder. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage. One ally adjacent to the target can make a melee basic attack against it as a free action, with a bonus to the damage roll equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Leaf on the Wind" type="Power" internal-id="ID_FMP_POWER_1554" source="Player's Handbook" revision-date="8/27/2010 11:25:36 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> As if your enemy were a leaf caught in the autumn wind, your attack maneuvers it as you wish, forcing it to yield ground to one of your allies. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. You (only if you are adjacent to the target) or one ally adjacent to the target can take a free action to swap places with it, sliding it 1 square and shifting 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Warlord's Favor" type="Power" internal-id="ID_FMP_POWER_1066" source="Player's Handbook" revision-date="8/27/2010 11:23:49 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> With a calculated blow, you leave your enemy exposed to a comrade's attack. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. One ally within 5 squares of you gains a +2 power bonus to attack rolls against the target until the end of your next turn. </specific>
+    <specific name=" Tactical Presence"> The bonus equals 1 + your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Bastion of Defense" type="Power" internal-id="ID_FMP_POWER_154" source="Player's Handbook" revision-date="8/27/2010 11:22 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You strike your foe a mighty blow, rallying your friends as they witness the path to glory. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. Each ally within 5 squares of you gains a +1 power bonus to all defenses until the end of the encounter. </specific>
+    <specific name="Effect"> Each ally within 5 squares of you gains temporary hit points equal to 5 + your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Pin the Foe" type="Power" internal-id="ID_FMP_POWER_431" source="Player's Handbook" revision-date="8/27/2010 11:22:27 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> Your attack positions your enemy so that no matter where it turns, one of your allies is waiting. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, the target cannot shift if at least two of your allies (or you and one ally) are adjacent to it. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="White Raven Onslaught" type="Power" internal-id="ID_FMP_POWER_1572" source="Player's Handbook" revision-date="8/27/2010 11:25:42 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
+    <Flavor> You deliver a slashing blow, moving your foe as you wish about the battlefield and showing your comrades how to take advantage of your enemy's poor positioning. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 1 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and you can slide an ally adjacent to you 1 square. Until the end of the encounter, immediately after you or an ally within 10 squares of you hits with an attack, that attacker can slide an ally adjacent to him or her 1 square. </specific>
+    <specific name="Miss"> Choose an ally within 10 squares of you. Until the end of the encounter, immediately after the ally hits with an attack, he or she can slide an ally adjacent to him or her 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Aid the Injured" type="Power" internal-id="ID_FMP_POWER_1137" source="Player's Handbook" revision-date="8/27/2010 11:24:03 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,2 </Category>
+    <Flavor> Your presence is both a comfort and an inspiration to an ally. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 2 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target can spend a healing surge. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Crescendo of Violence" type="Power" internal-id="ID_FMP_POWER_1310" source="Player's Handbook" revision-date="8/27/2010 11:24:38 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,2 </Category>
+    <Flavor> When one of your allies delivers a telling blow on a foe, you offer encouragement to help your friend finish the fight. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 2 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Trigger"> An ally within 5 squares of you scores a critical hit </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The target gains temporary hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Knight's Move" type="Power" internal-id="ID_FMP_POWER_1139" source="Player's Handbook" revision-date="8/27/2010 11:24:03 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MOVE_ACTION,2 </Category>
+    <Flavor> With a sharp wave of your arm, you direct one of your allies to a more tactically advantageous position. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 2 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Move Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One ally </specific>
+    <specific name="Effect"> The target takes can a move action as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Shake It Off" type="Power" internal-id="ID_FMP_POWER_1136" source="Player's Handbook" revision-date="8/27/2010 11:24:03 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
+    <Flavor> You offer strong words of encouragement to offset a debilitating effect. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 2 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target makes a saving throw with a power bonus equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Hold the Line" type="Power" internal-id="ID_FMP_POWER_158" source="Player's Handbook" revision-date="8/27/2010 11:22:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> With a snap series of commands, you keep your allies in formation and well defended as you assault your adversary. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 3 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, allies gain a +2 power bonus to AC and cannot be pulled, pushed, or slid while adjacent to you. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2327, ID_FMP_FEAT_2333, ID_FMP_FEAT_2357, ID_FMP_FEAT_2368, ID_FMP_FEAT_2711, ID_FMP_FEAT_2716 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Inspiring War Cry" type="Power" internal-id="ID_FMP_POWER_1556" source="Player's Handbook" revision-date="8/27/2010 11:25:36 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> As you strike, you shout a fierce war cry that heartens a nearby ally, jolting your friend out of succumbing to his or her troubles. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 3 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> One ally who can hear you and is within 5 squares of you can make a saving throw. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2070, ID_FMP_FEAT_2072, ID_FMP_FEAT_2342, ID_FMP_FEAT_2353, ID_FMP_FEAT_2372, ID_FMP_FEAT_2385 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Steel Monsoon" type="Power" internal-id="ID_FMP_POWER_1413" source="Player's Handbook" revision-date="8/27/2010 11:24:55 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> You leap into the fray with a wild, whirling attack, but your movements are carefully calculated to distract nearby enemies and give your allies a chance to move into position. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 3 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and one ally within 5 squares of you can shift 1 square as a free action. </specific>
+    <specific name=" Tactical Presence"> The number of allies who can shift equals your Intelligence modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2365, ID_FMP_FEAT_1312, ID_FMP_FEAT_2713 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Warlord's Strike" type="Power" internal-id="ID_FMP_POWER_1065" source="Player's Handbook" revision-date="8/27/2010 11:23:49 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+    <Flavor> One convincing strike is all you need to expose the enemy's weakness and spur your allies into finishing it off. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 3 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. Until the end of your next turn, each of your allies gains a +2 bonus to damage rolls against the target. </specific>
+    <specific name=" Inspiring Presence"> The bonus equals 1 + your Charisma modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2336, ID_FMP_FEAT_2344, ID_FMP_FEAT_2348, ID_FMP_FEAT_2377, ID_FMP_FEAT_2710 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 3 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Stand the Fallen" type="Power" internal-id="ID_FMP_POWER_1575" source="Player's Handbook" revision-date="8/27/2010 11:25:42 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+    <Flavor> You make a powerful strike against your enemy and call to your comrades, lifting their spirits and restoring their battle lust. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 5 </specific>
+    <specific name="Keywords"> Healing, Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Each ally within 10 squares of you can spend a healing surge and regains additional hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Turning Point" type="Power" internal-id="ID_FMP_POWER_1574" source="Player's Handbook" revision-date="8/27/2010 11:25:42 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+    <Flavor> A well-placed strike catches your foe off guard and allows you or a nearby ally to shake off a hindering effect. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. You or one ally within 5 squares of you can make a saving throw. </specific>
+    <specific name="Miss"> You or one ally within 5 squares of you can make a saving throw against one effect that the target caused and that a save can end. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Villain's Nightmare" type="Power" internal-id="ID_FMP_POWER_1414" source="Player's Handbook" revision-date="8/27/2010 11:24:56 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+    <Flavor> You use weapon thrusts, lunges, and parries to hedge in your adversary, preventing it from moving away from you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 5 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, when you are adjacent to the target and it walks or runs, you can cancel that movement as an immediate interrupt. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 5 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Guide the Charge" type="Power" internal-id="ID_FMP_POWER_1141" source="Player's Handbook" revision-date="8/27/2010 11:24:04 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,6 </Category>
+    <Flavor> You direct your ally's charge, allowing him or her to strike a deadly blow that pushes the foe backward. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally within 10 squares of you charges a creature. </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> If the charge attack hits, the target gains a bonus to the damage roll equal to your Intelligence modifier, and he or she pushes the charged creature up 2 squares. The target can then shift up to 2 squares to a square adjacent to the creature. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Inspiring Reaction" type="Power" internal-id="ID_FMP_POWER_3244" source="Player's Handbook" revision-date="8/27/2010 11:30:16 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,6 </Category>
+    <Flavor> As soon as an ally is wounded, you spring forward to keep your friend standing. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 6 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Melee 1 </specific>
+    <specific name="Trigger"> You or an ally adjacent to you takes damage </specific>
+    <specific name="Target"> The character who takes the damage. </specific>
+    <specific name="Effect"> The target can spend a healing surge and regains additional hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Quick Step" type="Power" internal-id="ID_FMP_POWER_1143" source="Player's Handbook" revision-date="8/27/2010 11:24:04 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You spur an ally to move faster. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 6 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> One ally </specific>
+    <specific name="Effect"> The target gains a +2 power bonus to speed until the end of the encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Stand Tough" type="Power" internal-id="ID_FMP_POWER_1140" source="Player's Handbook" revision-date="8/27/2010 11:24:04 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You fortify your allies with a few words of encouragement. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 6 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Targets"> You and each ally in the burst </specific>
+    <specific name="Effect"> Each target regains hit points equal to 10 + your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Lion's Roar" type="Power" internal-id="ID_FMP_POWER_1076" source="Player's Handbook" revision-date="8/27/2010 11:23:51 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> With a bloodcurdling roar, you attack your foe, breaking through its defenses. The ferocity of the attack reinvigorates you or an ally in need. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 7 </specific>
+    <specific name="Keywords"> Healing, Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> You or one ally within 5 squares of you can spend a healing surge. </specific>
+    <specific name=" Inspiring Presence"> If an ally spends the healing surge, he or she gains additional hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sunder Armor" type="Power" internal-id="ID_FMP_POWER_1074" source="Player's Handbook" revision-date="8/27/2010 11:23:50 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You probe the defenses of your foe until you land a blow that momentarily leaves it susceptible to other attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. Until the end of your next turn, you and your allies can score a critical hit against the target on a roll of 18–20. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2070, ID_FMP_FEAT_2348 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Surprise Attack" type="Power" internal-id="ID_FMP_POWER_1075" source="Player's Handbook" revision-date="8/27/2010 11:23:51 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> As you attack amid the chaos of battle, you take an opportunity to direct an ally to attack a distracted foe. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage. One ally within 5 squares of you can take a free action to make a basic attack with combat advantage against a creature of his or her choice. </specific>
+    <specific name=" Tactical Presence"> The ally gains a bonus to the attack roll equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2333, ID_FMP_FEAT_2353, ID_FMP_FEAT_1312 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Surround Foe" type="Power" internal-id="ID_FMP_POWER_450" source="Player's Handbook" revision-date="8/27/2010 11:22:29 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> You contain your foe, enabling one of your allies to move behind it. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 7 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> You slide one ally adjacent to the target up to 5 squares to another square adjacent to the target. You can slide the ally through the target's space. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2327, ID_FMP_FEAT_2342 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Iron Dragon Charge" type="Power" internal-id="ID_FMP_POWER_137" source="Player's Handbook" revision-date="8/27/2010 11:21:58 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> Like a rampaging iron dragon, you hurl yourself at your adversary, landing a terrific blow that inspires your allies to charge as well. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 9 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Effect"> You charge and make the following attack in place of a basic melee attack. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, when you charge a creature, choose an ally within 5 squares of where you start the charge.  That ally can charge the same creature as an immediate reaction. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Knock Them Down" type="Power" internal-id="ID_FMP_POWER_1114" source="Player's Handbook" revision-date="8/27/2010 11:23:59 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+    <Flavor> Seeing a weakness among your foe's defenses, you deliver a low, sweeping blow that knocks your enemy off its feet.  Your allies follow your lead. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 9 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and the target falls prone. In additoin, each ally within 10 squares of you can take a free action to move up to 3 squares and make a melee basic attack. If that attack hits, its target takes no damage, but falls prone. </specific>
+    <specific name="Miss"> Half damage, and the target falls prone. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="White Raven Strike" type="Power" internal-id="ID_FMP_POWER_1115" source="Player's Handbook" revision-date="8/27/2010 11:23:59 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
+    <Flavor> You land a punishing blow that ignites the fire within your allies and keeps them alive on the battlefield. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 9 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Up to two allies within 10 squares gain 15 temporary hit points apiece. If you reduce the target to 0 hit points with this attack, the allis gain additional temporary hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 9 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Defensive Rally" type="Power" internal-id="ID_FMP_POWER_1112" source="Player's Handbook" revision-date="8/27/2010 11:23:58 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10 </Category>
+    <Flavor> You address your comrades with instructions to help them prevail. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 10 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> Each ally in the burst </specific>
+    <specific name="Effect"> Each target can spend a healing surge and make a saving throw against one effect that a save can end. In addition, each target gains a +2 power bonus to all defenses until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Ease Suffering" type="Power" internal-id="ID_FMP_POWER_1147" source="Player's Handbook" revision-date="8/27/2010 11:24:05 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Flavor> Your nearby presence is enough to soften the plight of your allies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 10 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Effect"> Until the end of the encounter, allies ignore ongoing damage on any turn they start adjacent to you, neither taking ongoing damage nor making saving throws to end it. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Tactical Shift" type="Power" internal-id="ID_FMP_POWER_1146" source="Player's Handbook" revision-date="8/27/2010 11:24:05 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,10 </Category>
+    <Flavor> Your mastery of battle tactics and stern commands allow you to move an ally out of harm's way. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 10 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An ally is hit by a melee or a ranged attack </specific>
+    <specific name="Effect"> The ally can take a free action to shift a number of squares up to 1 + your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Beat Them Into the Ground" type="Power" internal-id="ID_FMP_POWER_600" source="Player's Handbook" revision-date="8/27/2010 11:22:43 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> You sweep the legs out from under your adversary and knock it to the ground with a mighty overhead swing. Your allies, inspired by the sight, follow suit. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Fortitude </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and the target falls prone. In addition, each ally within 5 squares of you can take a free action to make a basic attack.  If that attack hits, its target takes no damage, but falls prone. </specific>
+    <specific name=" Tactical Presence"> Each ally gains a bonus to the attack roll equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2713 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Bolstering Blow" type="Power" internal-id="ID_FMP_POWER_1558" source="Player's Handbook" revision-date="8/27/2010 11:25:37 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> Your overwhelming attack against your enemy inspires a nearby ally to continue the fight. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and one ally within 5 squares of you gains 10 temporary hit points. </specific>
+    <specific name=" Inspiring Presence"> The temporary hit points equal 10 + your Charisma modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2385, ID_FMP_FEAT_2710 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Denying Smite" type="Power" internal-id="ID_FMP_POWER_1079" source="Player's Handbook" revision-date="8/27/2010 11:23:52 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> No matter how your enemy maneuvers, something comes between it and its quarry–and that something is you. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Choose one ally within 5 squares of you. The target cannot attack that ally with melee attacks or ranged attacks until the end of your next turn. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2070, ID_FMP_FEAT_2336, ID_FMP_FEAT_2348, ID_FMP_FEAT_2372 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Fury of the Sirocco" type="Power" internal-id="ID_FMP_POWER_1557" source="Player's Handbook" revision-date="8/27/2010 11:25:36 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
+    <Flavor> The sirocco drives the desert sands in a thousand directions. So too does your furious attack scatter your enemies and drive them where you want them to go. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 13 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each enemy you can see in the burst  </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage, and you can slide the target 1 square. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2342 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 13 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Make Them Bleed" type="Power" internal-id="ID_FMP_POWER_1084" source="Player's Handbook" revision-date="8/27/2010 11:23:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+    <Flavor> You bleed your foe with a wicked strike, exposing a fatal flaw in its armor. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 15 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and ongoing 5 damage (save ends). </specific>
+    <specific name="Effect"> Until the end of the encounter, when you or an ally hits the target, it takes ongoing 5 damage (save ends). </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Renew the Troops" type="Power" internal-id="ID_FMP_POWER_1571" source="Player's Handbook" revision-date="8/27/2010 11:25:41 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
+    <Flavor> Seeing your enemy quail before your onslaught gives your allies the courage to fight on. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 15 </specific>
+    <specific name="Keywords"> Healing, Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. Each ally who can see you regains hit points equal to his or her healing surge value + your Charisma modifier. </specific>
+    <specific name="Miss"> Each ally who can see you regains hit points equal to 10 + your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Warlord's Gambit" type="Power" internal-id="ID_FMP_POWER_1080" source="Player's Handbook" revision-date="8/27/2010 11:23:52 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+    <Flavor> You provoke your adversary with a bold stroke. Each time it lunges at you, it recklessly sets up your forces for victory. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 15 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 4[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, the target gains a +2 bonus to attack rolls and damage rolls against you, and whenever it attacks you, you choose an ally within a number of squares equal to your Intelligence modifier. That ally can make a basic attack against the target as an immediate interrupt. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 15 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Hero's Defiance" type="Power" internal-id="ID_FMP_POWER_1150" source="Player's Handbook" revision-date="8/27/2010 11:24:06 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> You fight off an adverse condition or enable an ally to do the same. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 16 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target can end one effect on it that a save can end. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Warlord's Banner" type="Power" internal-id="ID_FMP_POWER_1149" source="Player's Handbook" revision-date="8/27/2010 11:24:06 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> You rally your comrades before sending them into battle. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 16 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> Each ally in the burst </specific>
+    <specific name="Effect"> Each target can spend a healing surge. Until the end of your next turn, each target gains a +2 power bonus to attack rolls. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="White Raven Formation" type="Power" internal-id="ID_FMP_POWER_1148" source="Player's Handbook" revision-date="8/27/2010 11:24:06 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
+    <Flavor> You forego attacks to focus on redirecting your allies' positioning. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 16 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> Each ally in the burst </specific>
+    <specific name="Effect"> Each target can take a move action as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 16 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Battle On" type="Power" internal-id="ID_FMP_POWER_1082" source="Player's Handbook" revision-date="8/27/2010 11:23:52 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You rally your forces with a battle cry and a calculated blow against the enemy. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 17 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and each ally within 5 squares of you can make a saving throw. </specific>
+    <specific name=" Inspiring Presence"> Each ally gains a bonus to the saving throw equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2348, ID_FMP_FEAT_2353, ID_FMP_FEAT_2357, ID_FMP_FEAT_2372 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Hail of Steel" type="Power" internal-id="ID_FMP_POWER_1559" source="Player's Handbook" revision-date="8/27/2010 11:25:37 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You deliver a well–placed strike against your foe and call your commrades to do the same. They pelt the enemy with attacks. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 17 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and each ally within 5 squares of you can make a basic attack against the target as a free action. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2333, ID_FMP_FEAT_2365 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Thunderous Fury" type="Power" internal-id="ID_FMP_POWER_1085" source="Player's Handbook" revision-date="8/27/2010 11:23:53 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
+    <Flavor> You strike your enemy with a furious blow that creates a momentary lull in the fighting, giving you a chance to direct your allies to victory. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 17 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and the target is dazed until the end of your next turn. </specific>
+    <specific name=" Tactical Presence"> Until the end of your next turn, each of your allies gains a power bonus to attack rolls against the target equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2368, ID_FMP_FEAT_2377, ID_FMP_FEAT_1312 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Warlord's Rush" type="Power" internal-id="ID_FMP_POWER_1560" source="Player's Handbook" revision-date="8/27/2010 11:25:37 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,17 </Category>
+    <Flavor> Like a wild, terrible storm, you hurl yourself at your foe. Your allies are swept along by the force of your wrath. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 17 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and each ally who can see you can move up to his or her speed as a free action. </specific>
+    <specific name="Miss"> One ally who you can see can move up to his or her speed as a free action. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2327 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 17 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Break the Tempo" type="Power" internal-id="ID_FMP_POWER_1576" source="Player's Handbook" revision-date="8/27/2010 11:25:43 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,19 </Category>
+    <Flavor> You deliver a punishing blow to your foe and then watch how it reacts, striking it when it leaves itself open and throwing it off balance. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 19 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 4[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, you can use an immediate interrupt to move up to 4 squares and make a melee basic attack against the target if it makes an attack roll. If you deal damage, the target takes a penalty to its attack roll equal to your Intelligence modifier. </specific>
+    <specific name="Sustain Minor"> The effect persists until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Victory Surge" type="Power" internal-id="ID_FMP_POWER_1123" source="Player's Handbook" revision-date="8/27/2010 11:24 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> With a triumphant roar, you urge your allies to seize every opportunity and fight like never before. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 19 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. Until the start of your next turn, each ally within 10 squares of you can follow up a standard action with a basic attack made as a free action. </specific>
+    <specific name="Miss"> Until the start of your next turn, one ally within 10 squares of you can follow up a standard action with a basic attack made as a free action. </specific>
+    <specific name="Sustain Minor"> Until the start of your next turn, one ally within 10 squares of you can follow up a standard action with a basic attack made as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Windmill of Doom" type="Power" internal-id="ID_FMP_POWER_2226" source="Player's Handbook" revision-date="8/27/2010 11:27:18 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+    <Flavor> You cleverly maneuver your adversary into a perfect flanking position. As you land the deciding blow, your surrounding allies strike hard from all sides. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 19 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and each ally of yours adjacent to the target can make a melee basic attack against it as a free action. </specific>
+    <specific name="Miss"> One ally of your choice adjacent to the target can make a melee basic attack against it as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 19 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Heart of the Titan" type="Power" internal-id="ID_FMP_POWER_1153" source="Player's Handbook" revision-date="8/27/2010 11:24:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> With great words of encouragement about glorious victory, you turn yourself or an ally into a battle-hardened juggernaut. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Target"> You or one ally </specific>
+    <specific name="Effect"> The target gains temporary hit points equal to his or her healing surge value + your Charisma modifier. Until the target loses as many temporary hit points as he or she gained from this power, the target adds your Charisma modifier to damage rolls and can't be dazed, immobilized, pulled, pushed, restrained, slid, slowed, stunned, or weakened. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Heroic Surge" type="Power" internal-id="ID_FMP_POWER_1151" source="Player's Handbook" revision-date="8/27/2010 11:24:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,22 </Category>
+    <Flavor> The sight of one of your allies being harmed fills you with resolve and compassion, and you turn that dark moment into a heroic surge toward victory. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 22 </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Immediate Reaction </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Trigger"> You or an ally within 5 squares of you takes damage </specific>
+    <specific name="Target"> You and each ally in the burst </specific>
+    <specific name="Effect"> Each target can spend a healing surge and regain additional hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Own the Battlefield" type="Power" internal-id="ID_FMP_POWER_2227" source="Player's Handbook" revision-date="8/27/2010 11:27:19 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+    <Flavor> Like a puppet master, you position your enemies exactly where you want them. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Utility 22 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> Each enemy you can see in the burst </specific>
+    <specific name="Effect"> You slide the target a number of squares up to your Intelligence modifier, but not into hindering terrain. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 22 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Great Dragon War Cry" type="Power" internal-id="ID_FMP_POWER_1086" source="Player's Handbook" revision-date="8/27/2010 11:23:54 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You shout a terrifying battle cry as you attack, driving a wedge of doubt into your foe's mind. our comrades, sensing the enemy's will breaking, redouble their efforts. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 23 </specific>
+    <specific name="Keywords"> Fear, Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and the target is weakened until the end of your next turn. </specific>
+    <specific name=" Inspiring Presence"> Until the end of the encounter, your allies gain a power bonus to their attack rolls against weakened enemies. The bonus equals your Charisma modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2357, ID_FMP_FEAT_2711 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Pillar to Post" type="Power" internal-id="ID_FMP_POWER_2231" source="Player's Handbook" revision-date="8/27/2010 11:27:20 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> You strike your foe and send it stumbling into a waiting ally, who drives the foe back toward you. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 23 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type" />
+    <specific name="Target"> One creature flanked by you and an ally </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and the ally can make a melee basic attack against the target as a free action. If the ally's attack hits, you make the secondary attack against the target. </specific>
+    <specific name="  Secondary Attack">.  </specific>
+    <specific name="      Attack">Strength vs. AC </specific>
+    <specific name="      Hit">1[W] + Strength modifier damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Rabbits and Wolves" type="Power" internal-id="ID_FMP_POWER_1562" source="Player's Handbook" revision-date="8/27/2010 11:25:38 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Between swings and parries, you direct beleaguered allies to safety while calling in assistance from across the field. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 23 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 4[W] + Strength modifier damage. Choose one or two allies within 10 squares of you.  Each of those allies can shift up to her or her speed as a free action. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2327, ID_FMP_FEAT_2336, ID_FMP_FEAT_2353, ID_FMP_FEAT_2716 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sudden Assault" type="Power" internal-id="ID_FMP_POWER_1088" source="Player's Handbook" revision-date="8/27/2010 11:23:54 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
+    <Flavor> Your quick, slashing blow against your enemy spurs an ally into action. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 23 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage, and one ally within 5 squares of you can take a standard action as a free action. </specific>
+    <specific name=" Tactical Presence"> The ally gains a power bonus to attack rolls against creatures adjacent to you.  The bonus equals your Intelligence modifier and applies only to attack rolls made using the standard action granted by this power. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 23 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Relentless Assault" type="Power" internal-id="ID_FMP_POWER_1130" source="Player's Handbook" revision-date="8/27/2010 11:24:02 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,25 </Category>
+    <Flavor> You deliver a punishing strike that leaves your foe reeling.  Your allies can see its distress and are inspired to greater heights of battle fury. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 25 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 5[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of the encounter, when you or an ally scores a critical hit, you and each ally can make a basic attack as an opportunity action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Stir the Hornet's Nest" type="Power" internal-id="ID_FMP_POWER_117" source="Player's Handbook" revision-date="8/27/2010 11:21:56 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> You make a vicious strike against your foe, wounding it badly and making it an easy target for your allies' ranged attacks. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 25 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged weapon </specific>
+    <specific name="Requirement"> You must make this attack with a heavy thrown weapon. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 6[W] + Strength modifier damage. Until the end of the encounter, each of your allies gains a power bonus to the damage rolls of ranged attacks against the target.  The bonus equals your Intelligence modifier. </specific>
+    <specific name="Miss"> One of your allies can make a ranged basic attack against the target as a free action, with a power bonus to the damage roll equal to your Intelligence modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="White Raven's Call" type="Power" internal-id="ID_FMP_POWER_1129" source="Player's Handbook" revision-date="8/27/2010 11:24:01 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
+    <Flavor> You release a deluge of brutal attacks upon your foe while calling out to your allies to stand their ground and shake off their weariness. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 25 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 6[W] + Strength modifier damage, and you and each ally within 10 squares of you can make a saving throw against one effect that a save can end. </specific>
+    <specific name="Miss"> Each of your allies within 10 squares of you can make a saving throw against one effect that the target caused and that a save can end. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 25 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Chimera Battlestrike" type="Power" internal-id="ID_FMP_POWER_1563" source="Player's Handbook" revision-date="8/27/2010 11:25:38 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> With a roaring battle cry, you strike nearby foes and thrust them back, changing the complexion of the battlefield. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 27 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each enemy you can see in the burst </specific>
+    <specific name="Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and you slide the target up to 2 squares. </specific>
+    <specific name=" Tactical Presence"> The distance of the slide is up to 1 + your Intelligence modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2333 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Devastating Charge" type="Power" internal-id="ID_FMP_POWER_1565" source="Player's Handbook" revision-date="8/27/2010 11:25:39 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You rush forward and furiously assault your enemy, encouraging all who see your courage to do the same. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 27 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Effect"> You charge and make the following attack in place of a basic melee attack. </specific>
+    <specific name="  Target"> One creature </specific>
+    <specific name="  Attack"> Strength vs. AC </specific>
+    <specific name="  Hit"> 4[W] + Strength modifier damage. Until the end of your next turn, if any ally can see you when he or she charges, the ally gains a bonus to the damage roll of the charge attack. The bonus equals your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Incite Heroism" type="Power" internal-id="ID_FMP_POWER_1564" source="Player's Handbook" revision-date="8/27/2010 11:25:38 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You deliver a great blow to your enemy and usher your allies ever closer toward victory. Your words and deeds raise their spirits and inspire them to new acts of heroism. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 27 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 4[W] + Strength modifier damage, and each ally you can see gains 20 temporary hit points. </specific>
+    <specific name=" Inspiring Presence"> Each of the allies gains additional temporary hit points equal to your Charisma modifier. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2336, ID_FMP_FEAT_2342, ID_FMP_FEAT_2348, ID_FMP_FEAT_2365, ID_FMP_FEAT_2372 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Warlord's Doom" type="Power" internal-id="ID_FMP_POWER_1090" source="Player's Handbook" revision-date="8/27/2010 11:23:54 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+    <Flavor> You break your adversary's resolve with a ferocious strike. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 27 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 4[W] + Strength modifier damage, and you can choose an effect on the target that a save can end. The target fails its next saving throw against that effect. </specific>
+    <specific name="_Associated Feats"> ID_FMP_FEAT_2072, ID_FMP_FEAT_2070, ID_FMP_FEAT_2368, ID_FMP_FEAT_2385, ID_FMP_FEAT_2710 </specific>
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 27 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Defy Death" type="Power" internal-id="ID_FMP_POWER_1132" source="Player's Handbook" revision-date="8/27/2010 11:24:02 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_INTERNAL_CATEGORY_MISS,29 </Category>
+    <Flavor> You leap to your ally's side, sparing your comrade from the jaws of death. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 29 </specific>
+    <specific name="Keywords"> Healing, Martial, Weapon </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> A creature attacks your ally </specific>
+    <specific name="Effect"> You move up to twice your speed to a square where you can reach the triggering creature with your melee weapon.  Your move doesn't provoke opportunity attacks.  You then make the following attack. </specific>
+    <specific name="Target"> The triggering creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 7[W] + Strength modifier damage, and the target's attack misses the ally. </specific>
+    <specific name="Miss"> Half damage, and the target's attack deals half damage if it hits the ally. </specific>
+    <specific name="Effect"> The ally can spend a healing surge immediately after the target's attack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Stand Invincible" type="Power" internal-id="ID_FMP_POWER_1133" source="Player's Handbook" revision-date="8/27/2010 11:24:02 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,29 </Category>
+    <Flavor> You throw everything you have at your enemy, delivering a punishing blow to your foe and showing your allies that together you stand invincible. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Attack 29 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 7[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, you and each ally within 5 squares of you gain resist 5 to all damage and a +4 power bonus to all defenses. </specific>
+    <specific name="Sustain Minor"> The benefits persist until the end of your next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level"> 29 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Warlord Paragon Path Updates -->
+  <!-- Battle Captain -->
+  <RulesElement name="Battle Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_668" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend action point to take action, allies get +1 to attack until start of your next turn if they see and hear you </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Battle Action:When you spend an action point to take an extra action, your allies gain a +1 bonus to attack rolls until the start of your next turn. To gain this bonus an ally has to see and hear you when you spend the action point." />
+    </rules>
+When you spend an action point to take an extra action, your allies gain a +1 bonus to attack rolls until the start of your next turn. To gain this bonus an ally has to see and hear you when you spend the action point.
+   </RulesElement>
+  <RulesElement name="Force Retreat" type="Power" internal-id="ID_FMP_POWER_1668" source="Player's Handbook" revision-date="8/27/2010 11:26:06 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_46,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Battle Captain </Prereqs>
+    <Flavor> You hurl yourself into your adversary, knocking him back into his allies and causing them all to stumble away from you. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Battle Captain Attack 11 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Primary Target"> One creature </specific>
+    <specific name="Primary Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 1[W] damage, and you push the target a number of squares up to your Intelligence modifier. Make the secondary attack. </specific>
+    <specific name="  Secondary Attack"> . </specific>
+    <specific name="    Secondary Target"> Each enemy that was adjacent to the primary target before the push, is its size or smaller, and is within your melee reach </specific>
+    <specific name="    Attack"> Strength vs. Fortitude </specific>
+    <specific name="    Hit"> 2d6 + Strength modifier damage, and you can push the secondary target 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_46 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Cry Havoc" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_491" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> First round (plus surprise round if any), allies that start turn within 10 get +2 to attacks </specific>
+    <specific name="Level"> 11 </specific>
+On the first round of combat (or both the first and the surprise round if your allies act during the surprise round), any ally who starts his or her turn within 10 squares of you gains a +2 bonus to attack rolls.
+   </RulesElement>
+  <RulesElement name="Bolt of Genius" type="Power" internal-id="ID_FMP_POWER_1667" source="Player's Handbook" revision-date="8/27/2010 11:26:06 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_46,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_STANDARD_ACTION,12 </Category>
+    <Prereqs> Battle Captain </Prereqs>
+    <Flavor> You share a moment of brilliant clarity with a close comrade. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Battle Captain Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Ranged 5 </specific>
+    <specific name="Target"> One ally </specific>
+    <specific name="Effect"> The target regains an encounter attack power he or she has already used during this encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_46 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Battle Inspiration" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_492" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Inspiring word grants +1 attack and speed until end of your next turn (or + Int mod if Tactical Presence) </specific>
+    <specific name="Level"> 16 </specific>
+When you heal an ally with your inspiring word, the ally gains a +1 power bonus to attack rolls and a +1 and speed until the end of your next turn. If you have the Tactical Presence class feature, the bonus equals your Intelligence modifier.
+   </RulesElement>
+  <RulesElement name="Cunning Flurry" type="Power" internal-id="ID_FMP_POWER_1669" source="Player's Handbook" revision-date="8/27/2010 11:26:06 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_46,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Battle Captain </Prereqs>
+    <Flavor> You whirl around like a cyclone of steel terror, slashing at foes. With each landed blow, you knock your enemy prone or send it stumbling backward. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Battle Captain Attack 20 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Close burst 1 </specific>
+    <specific name="Target"> Each enemy you can see in the burst </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and you either push the target 1 square or knock it prone. </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_46 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Combat Veteran -->
+  <RulesElement name="Combat Veteran" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_45" source="Player's Handbook" revision-date="8/27/2010 12:40:21 PM">
+    <Prereqs> Warlord class </Prereqs>
+    <print-prereqs> Warlord class </print-prereqs>
+    <Flavor> "Stick with me. I'll keep us alive, and I may even figure out a way to win this fight while we're at it." </Flavor>
+    <specific name="Power Name" />
+    <specific name="Class Features"> ID_FMP_CLASS_FEATURE_489, ID_FMP_CLASS_FEATURE_490, ID_FMP_CLASS_FEATURE_669 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1664,ID_FMP_POWER_1665,ID_FMP_POWER_1666 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1664,ID_FMP_POWER_1665,ID_FMP_POWER_1666 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_489" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_490" type="Class Feature" Level="16" />
+      <grant name="ID_FMP_CLASS_FEATURE_669" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_POWER_1664" type="Power" Level="12" />
+      <grant name="ID_FMP_POWER_1665" type="Power" Level="11" />
+      <grant name="ID_FMP_POWER_1666" type="Power" Level="20" />
+    </rules>
+You are a veteran of many battles, and it shows. You have learned tricks and techniques that can be picked up only on the field of battle, and you have learned more than just how to survive – you have learned how to win. Moreover, your combat skills and innate leadership translate to those who fight beside you. You make those around you better, and your allies are happy to have you fighting at their side.
+   </RulesElement>
+  <RulesElement name="Skirmish Ploy" type="Power" internal-id="ID_FMP_POWER_1665" source="Player's Handbook" revision-date="8/27/2010 11:26:05 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_45,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Combat Veteran </Prereqs>
+    <Flavor> You score a glancing blow, which you turn into an opportunity to thrust your enemy out of position and into the path of a nearby ally. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Combat Veteran Attack 11 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. Reflex </specific>
+    <specific name="Hit"> 1[W] + Strength modifier damage, and the target is dazed until the end of your next turn. In addition, you slide the target up to 2 squares, and an ally within 2 squares of you can shift 1 square closer to the target as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_45 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Tough as Nails" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_489" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Gain extra healing surge; add Con mod to hp regained when spending a surge </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <statadd name="Healing Surges" value="+1" />
+    </rules>
+You gain an extra healing surge. In addition, Whenever you spend a healing surge to regain hit points, add your Constitution modifier to the hit points you regain.
+   </RulesElement>
+  <RulesElement name="Miss Me Once" type="Power" internal-id="ID_FMP_POWER_1664" source="Player's Handbook" revision-date="8/27/2010 11:26:05 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_45,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,12 </Category>
+    <Prereqs> Combat Veteran </Prereqs>
+    <Flavor> You dodge an enemy's attack, then look at him as though he were already dead. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Combat Veteran Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Immediate Interrupt </specific>
+    <specific name="Attack Type"> Ranged 10 </specific>
+    <specific name="Trigger"> An enemy within 10 squares of you and that you can see misses you with an attack </specific>
+    <specific name="Effect"> The enemy grants combat advantage until the start of its next turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_45 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Battle Healer" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_490" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Inspiring word also lets target make a saving throw </specific>
+    <specific name="Level"> 16 </specific>
+When you use your inspiring word, the target can also make a saving throw.
+   </RulesElement>
+  <RulesElement name="Superior Tactics" type="Power" internal-id="ID_FMP_POWER_1666" source="Player's Handbook" revision-date="8/27/2010 11:26:05 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_45,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Combat Veteran </Prereqs>
+    <Flavor> Your experience on the battlefield allows you to deal terrible wounds to your enemy and also brings out the best in your allies. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Combat Veteran Attack 20 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage, and you grant an action point to an ally within 10 squares of you who has not spent an action point during this encounter. The action point disappears if it's not used by the end of the encounter. </specific>
+    <specific name="Miss"> An ally within 10 squares of you can make a basic attack as a free action. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_45 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Knight Commander -->
+  <RulesElement name="Knight Commander" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_47" source="Player's Handbook" revision-date="8/27/2010 12:40:21 PM">
+    <Prereqs> Warlord class, proficiency with heavy armor </Prereqs>
+    <print-prereqs> Warlord class, proficiency with heavy armor </print-prereqs>
+    <Flavor> "Chivalry and honor are my sword and shield, and strategy and tactics my armor." </Flavor>
+    <specific name="Power Name" />
+    <specific name="Class Features"> ID_FMP_CLASS_FEATURE_493, ID_FMP_CLASS_FEATURE_494, ID_FMP_CLASS_FEATURE_670 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1670,ID_FMP_POWER_1671,ID_FMP_POWER_1672 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1670,ID_FMP_POWER_1671,ID_FMP_POWER_1672 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_493" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_494" type="Class Feature" Level="16" />
+      <grant name="ID_FMP_CLASS_FEATURE_670" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_POWER_1670" type="Power" Level="12" />
+      <grant name="ID_FMP_POWER_1671" type="Power" Level="11" />
+      <grant name="ID_FMP_POWER_1672" type="Power" Level="20" />
+    </rules>
+Your path as a warlord has led you to assume the status of a knight commander, an armored epitome of leadership and combat who has no fear of leading from the front–and who has the requisite skills and abilities to handle that responsibility. You inspire by example, you press every offensive, and you rally your allies with powerful attacks and stirring tactics.
+   </RulesElement>
+  <RulesElement name="Honor and Glory" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_493" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Adjacent allies get +2 to attacks </specific>
+    <specific name="Level"> 11 </specific>
+Allies gain a +2 power bonus to attack rolls while adjacent to you.
+   </RulesElement>
+  <RulesElement name="Knight Commander's Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_670" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you spend action point to take action, allies get +1 to defenses unti start of your next turn if they can see and hear you </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Knight Commander's Action:When you spend an action point to take an extra action, your allies gain a +1 bonus to all defenses until the start of your next turn. To gain this bonu, an ally has to be able to see and hear you when you spend the action point." />
+    </rules>
+When you spend an action point to take an extra action, your allies gain a +1 bonus to all defenses until the start of your next turn. To gain this bonu, an ally has to be able to see and hear you when you spend the action point.
+   </RulesElement>
+  <RulesElement name="Slash and Press" type="Power" internal-id="ID_FMP_POWER_1671" source="Player's Handbook" revision-date="8/27/2010 11:26:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_47,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Knight Commander </Prereqs>
+    <Flavor> You slash your enemy across the midsection and push it back. You then turn with a snarl and beat back all other nearby foes. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Knight Commander Attack 11 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> After making the attack, you can push each enemy adjacent to you 1 square. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_47 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Press of Arms" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_494" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> You and allies within 3 add Cha mod to damage with opportunity attacks </specific>
+    <specific name="Level"> 16 </specific>
+    <rules>
+      <statadd name="damage rolls" value="+ABILITYMOD(cha)" condition="when making opportunity attacks" />
+    </rules>
+When you or an ally within 3 squares of you makes an opportunity attack, that attacker gains a bonus to damage roll.  The bonus equals your Charisma modifier.
+   </RulesElement>
+  <RulesElement name="Control the Field" type="Power" internal-id="ID_FMP_POWER_1672" source="Player's Handbook" revision-date="8/27/2010 11:26:07 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_47,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,20 </Category>
+    <Prereqs> Knight Commander </Prereqs>
+    <Flavor> You dominate the field of battle so strongly that enemies find your mere presence overwhelming. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Knight Commander Attack 20 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 3[W] + Strength modifier damage. </specific>
+    <specific name="Effect"> Each enemy within 5 squares of you is marked until the end of your next turn, and each takes ongoing 10 damage (save ends).  While adjacent to you, an enemy takes a penalty to saving throws against this ongoing damage.  The penalty equals your Charisma modifier. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_47 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <!-- Sword Marshal -->
+  <RulesElement name="Sword Marshal" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_48" source="Player's Handbook" revision-date="8/27/2010 12:40:21 PM">
+    <Prereqs> Warlord class, proficiency with heavy blade </Prereqs>
+    <print-prereqs> Warlord class, proficiency with heavy blade </print-prereqs>
+    <Flavor> "This weapon is my symbol of office, and it shines over the field of battle as I weild it against our enemies." </Flavor>
+    <specific name="Power Name" />
+    <specific name="Class Features"> ID_FMP_CLASS_FEATURE_495, ID_FMP_CLASS_FEATURE_496, ID_FMP_CLASS_FEATURE_671 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1673,ID_FMP_POWER_1674,ID_FMP_POWER_1675 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1673,ID_FMP_POWER_1674,ID_FMP_POWER_1675 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_495" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_CLASS_FEATURE_496" type="Class Feature" Level="16" />
+      <grant name="ID_FMP_CLASS_FEATURE_671" type="Class Feature" Level="11" />
+      <grant name="ID_FMP_POWER_1673" type="Power" Level="12" />
+      <grant name="ID_FMP_POWER_1674" type="Power" Level="11" />
+      <grant name="ID_FMP_POWER_1675" type="Power" Level="20" />
+    </rules>
+You have extensively studied the use of light blades and heavy blades, and your weapon of choice has become a symbol of your power and leadership. You never enter a battle without your blade in hand, and your allies know to look for that gleaming weapon when they need help or inspiration.
+   </RulesElement>
+  <RulesElement name="Blade Flurry" type="Power" internal-id="ID_FMP_POWER_1674" source="Player's Handbook" revision-date="8/27/2010 11:26:08 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_48,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Prereqs> Sword Marshal </Prereqs>
+    <Flavor> You slash a foe, swoop to one side, and swing your blade against the same foe or another enemy within your reach. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sword Marshal Attack 11 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Requirement"> You must be wielding a heavy blade. </specific>
+    <specific name="Primary Target"> One creature </specific>
+    <specific name="Primary Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage, and you can shift 1 square. Make the secondary attack. </specific>
+    <specific name=" Secondary Attack"> . </specific>
+    <specific name="     Secondary Target"> One creature </specific>
+    <specific name="     Attack"> Strength vs. AC </specific>
+    <specific name="     Hit"> 1[W] + Strength modifier damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_48 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Disciplined Blade" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_495" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> When you miss foe with heavy blade melee attack, +2 to your next attack roll with that weapon against that foe </specific>
+    <specific name="Level"> 11 </specific>
+When you miss an enemy with a melee attack using a heavy blade, you gain a +2 bonus to your next attack roll with that weapon against the same enemy.
+   </RulesElement>
+  <RulesElement name="Sword Marshal's Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_671" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Can spend action point to regain an warlord encounter attack power </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Sword Marshal's Action:You can spend an action point to regain one warlord encounter attack power you have already used during this encounter, instead of taking an extra action." />
+    </rules>
+You can spend an action point to regain one warlord encounter attack power you have already used during this encounter, instead of taking an extra action.
+   </RulesElement>
+  <RulesElement name="Sword Marshal's Boon" type="Power" internal-id="ID_FMP_POWER_1673" source="Player's Handbook" revision-date="8/27/2010 11:26:08 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_48,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_FREE_ACTION,12 </Category>
+    <Prereqs> Sword Marshal </Prereqs>
+    <Flavor> Warlord, help thyself! </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sword Marshal Utility 12 </specific>
+    <specific name="Keywords"> Martial </specific>
+    <specific name="Action Type"> Free Action </specific>
+    <specific name="Attack Type"> Personal  </specific>
+    <specific name="Trigger"> You use a warlord utility power that can target you or an ally. </specific>
+    <specific name="Effect"> The power targets both you and ally. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_48 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Skewer the Weak" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_496" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> On critical hit with heavy blade, until end of your next turn foe grants combat advantage to you and allies </specific>
+    <specific name="Level"> 16 </specific>
+When you score a critical hit against an enemy with a heavy blade, you and your allies gain combat advantage against that enemy until the end of your next turn.
+   </RulesElement>
+  <RulesElement name="Diamond Blade of Victory" type="Power" internal-id="ID_FMP_POWER_1675" source="Player's Handbook" revision-date="8/27/2010 11:26:08 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_48,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Sword Marshal </Prereqs>
+    <Flavor> The presence of stalwart allies adds to the fury of your strike, which slices through the armored shell of your enemy and cuts deep into bone. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Sword Marshal Attack 20 </specific>
+    <specific name="Keywords"> Martial, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Requirement"> You must be wielding a heavy blade. </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Strength vs. AC </specific>
+    <specific name="Hit"> 2[W] + Strength modifier damage. For each ally within 2 squares of you, the target takes 1[W] extra damage (maximum 4[W] extra damage). </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_PARAGON_PATH_48 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Inspiring Word" type="Power" internal-id="ID_FMP_POWER_1590" source="Player's Handbook" revision-date="8/27/2010 11:25:46 AM">
+    <Flavor> You call out to a wounded ally and offer inspiring words of courage and determination that helps that ally heal. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Warlord Feature  </specific>
+    <specific name="Keywords"> Healing, Martial </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 (10 at 11th level, 15 at 21st level) </specific>
+    <specific name="Target"> You or one ally in burst </specific>
+    <specific name="Effect"> The target can spend a healing surge and regain 1d6 additional hit points.
+Level 6: 2d6 additional hit points.
+Level 11: 3d6 additional hit points.
+Level 16: 4d6 additional hit points.
+Level 21: 5d6 additional hit points.
+Level 26: 6d6 additional hit points. </specific>
+    <specific name="Special"> You can use this power twice per encounter, but only once per round. At 16th level, you can use inspiring word three times per encounter. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_8 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_317,ID_FMP_CLASS_FEATURE_1534 </specific>
+  </RulesElement>
+  <RulesElement name="Interrupting Strike" type="Power" internal-id="ID_FMP_POWER_11606" source="Dragon Magazine 384" revision-date="8/27/2010 12:00:50 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> Your weapon strikes the foe and, if it seeks to attack another, your waiting ally can attempt an attack of his or her own first. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Warlord Attack 3 </specific>
+      <specific name="Keywords"> Martial, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Strength vs. AC </specific>
+      <specific name="Hit"> 2[W] + Strength modifier damage, and you mark the target until the end of your next turn. If the target makes an attack before the end of your next turn that does not include you as a target, one ally adjacent to the target can make a basic attack against it as an immediate interrupt. If the ally&apos;s attack hits, the target takes a -2 penalty to the attack roll. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_8 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+<!-- Captain of Fortune corrections -->
+<RulesElement name="Captain of Fortune" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_577" source="Martial Power 2" revision-date="8/27/2010 12:43:53 PM" >
+      <Prereqs> Warlord </Prereqs>
+      <print-prereqs> Warlord </print-prereqs>
+      <Flavor> "Fortune is on our side. It is up to us to seize our chance!" </Flavor>
+      <specific name="Power Name"> Exploits </specific>
+      <specific name="Class Features"> ID_FMP_CLASS_FEATURE_2300, ID_FMP_CLASS_FEATURE_2301, ID_FMP_CLASS_FEATURE_2302 </specific>
+      <specific name="Powers"> ID_FMP_POWER_11008,ID_FMP_POWER_11009,ID_FMP_POWER_11010 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_11008,ID_FMP_POWER_11009,ID_FMP_POWER_11010 </specific>
+      <rules>
+         <grant name="ID_FMP_CLASS_FEATURE_2300" type="Class Feature" Level="11" />
+         <grant name="ID_FMP_CLASS_FEATURE_2301" type="Class Feature" Level="11" />
+         <grant name="ID_FMP_CLASS_FEATURE_2302" type="Class Feature" Level="16" />
+         <grant name="ID_FMP_POWER_11008" type="Power" Level="11" />
+         <grant name="ID_FMP_POWER_11009" type="Power" Level="20" />
+         <grant name="ID_FMP_POWER_11010" type="Power" Level="12" />
+      </rules>
+You believe that a great destiny awaits anyone who has the audacity to take fate into his or her own hands. Self-awareness, confidence, and a sharp eye for opportunity allow a hero to reach a destiny, yet sometimes destiny needs a little bit of help. And that&apos;s where you come in.
+
+You teach your comrades and followers the principles of self-empowerment to help them reach for greater heights. You believe that someone who is alert and grabs opportunities as they come can triumph against any adversary. A force of balance is at work within the world, and fortune, fate, luck, or chance&#x2014;whatever you care to call it&#x2014;gathers around the bold like an invisible mantle. Fortune rarely smiles for long on those who prey on others or who stand on the side of iniquity; their day of ill fortune comes eventually. You intend to be there when it does.
+
+Those you lead see you as a good luck charm. They feel empowered in your presence, believing that you have a supernatural gift that improves their chances. You, on the other hand, understand that luck is made, not found. You know that if luck and fate do guide the destinies of you and your friends, without the proper effort and outlook, those destinies will never be fulfilled.
+</RulesElement>   
+<RulesElement name="Presence of Greatness" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2302" source="Martial Power 2" revision-date="10/5/2010 1:47:06 PM" >
+      <Category> 16 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 16 </specific>
+      <rules>
+         <textstring name="Action Point" value="Presence of Greatness:You can spend two action points during an encounter, but no more than one per round" />
+      </rules>
+You can spend two action points during an encounter, but no more than one per round.
+</RulesElement>
+
+
+<!-- March 2012 Errata Update -->
+<RulesElement name="Band of Fellows" type="Power" internal-id="ID_FMP_POWER_10960" source="Martial Power 2" revision-date="8/27/2010 11:57:16 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
+      <Flavor> Your foe is a fool for thinking it escaped the brunt of your attack. You are only setting it up for your allies. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Warlord Attack 15 </specific>
+      <specific name="Keywords"> Martial, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Strength vs. AC </specific>
+      <specific name="Hit"> 2[W] + Strength modifier damage. </specific>
+      <specific name="Effect"> Each ally can make a melee basic attack against the target as a free action. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_8 </specific>
+      <specific name="Level"> 15 </specific>
+      <specific name="Power Type"> Attack </specific>
+</RulesElement>
+</D20Rules>

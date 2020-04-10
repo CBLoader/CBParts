@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+
+  <UpdateInfo>
+    <Version>11</Version>
+    <Filename>CriticalAugmentationFeats.part</Filename>
+    <PartAddress>http://cbloader.com/3rdParty/CriticalAugmentationFeats.part</PartAddress>
+    <VersionAddress>http://cbloader.com/3rdParty/CriticalAugmentationFeats.txt</VersionAddress>
+  </UpdateInfo>
+
+<RulesElement name="Critical Augmentation Feats" type="source" internal-id="ID_TIV_SOURCE_CAF_01" source="Core">
+  <specific name="IsBeta">0</specific>
+  <specific name="URL"> http://www.rpgnow.com/product_info.php?products_id=64013 </specific>
+  <specific name="Release Date"> 1/1/2009 </specific>
+</RulesElement>
+
+<!-- Coded by Tivaan -->
+
+<RulesElement name="Critical Expertise" type="Feat" internal-id="ID_TIV_FEAT_9000_01" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+    <Flavor> You have trained extensively with the weapon of your choice and during battle, when the opportunity presents itself, you strike deeper into flesh and bone then ever previously seen. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You deal 1d6 extra critical damage with a chosen weapon or implement.
+Level 11: 2d6 extra critical damage
+Level 21: 3d6 extra critical damage </specific>
+    <specific name="Special"> You can take this feat more than once. Each time you select this feat, choose a different weapon group or implement type. </specific>
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Choose a weapon group or an implement type, such as axes or wands. When you score a critical hit with that weapon or implement, you deal 1d6 extra critical damage.
+Level 11: 2d6 extra critical damage
+Level 21: 3d6 extra critical damage
+</RulesElement>
+
+<RulesElement name="Critical Resolve" type="Feat" internal-id="ID_TIV_FEAT_9000_22" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Str 13 or Con 13, Dex13 or Int 13, Wis 13 or Cha 13 </Prereqs>
+<print-prereqs> Str 13 or Con 13, Dex13 or Int 13, Wis 13 or Cha 13 </print-prereqs> 
+    <Flavor> You hit your foe with such powerful contempt that it wipes away the ailments against you. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit, you automatically save against every condition affecting you that a save can end. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit, you automatically save against every condition affecting you that a save can end.
+</RulesElement>
+
+<RulesElement name="Critical Retreat" type="Feat" internal-id="ID_TIV_FEAT_9000_02" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Dex 13 or Int 13 </Prereqs>
+<print-prereqs> Dex 13 or Int 13 </print-prereqs>
+    <Flavor> Seeing an opening in your foes defense, you strike and then exit without any chance of a retaliation from that foe. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit, while wearing no armor or light armor you can shift 3 squares as a Free Action. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit while wearing no armor or light armor, you can shift 3 squares as a free action.
+</RulesElement>
+
+<RulesElement name="Critical Sacrifice" type="Feat" internal-id="ID_TIV_FEAT_9000_03" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+    <Flavor> Your foe falls to the floor, from the massive blow you dealt it. The warmth of its blood on your hands revitalizes you. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Regain hit points as if you had spent a healing surge when you score a critical hit on your enemy and reduce it to 0 hit points. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit which reduces a creature to 0 hit points, you regain hit points as though you had spent a healing surge.
+</RulesElement>
+
+<RulesElement name="Critical Surge" type="Feat" internal-id="ID_TIV_FEAT_9000_23" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> critical expertise feat </Prereqs>
+<print-prereqs> Critical Expertise Feat </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Once per Encounter, you can score a critical hit on a roll of a natural 18-20, with the weapon or implement you chose with Critical Expertise. You choose the time its used after the attack roll has been made. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Once per Encounter, you can score a critical hit on a roll of a natural 18-20, with the weapon or implement you chose with Critical Expertise. You choose the time its used after the attack roll has been made.
+</RulesElement>
+
+<RulesElement name="Defensive Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_24" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Dex 13, proficient with a shield </Prereqs>
+<print-prereqs> Dex 13, Proficient with a shield </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit while using a shield, you gain a +2 bonus to AC and Reflex until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+	<rules>
+         <statadd name="AC" value="+2" type="Feat" condition="when you score a critical hit while using a shield, until the end of your next turn" />
+		 <statadd name="Reflex Defense" value="+2" type="Feat" condition="when you score a critical hit while using a shield, until the end of your next turn" />
+    </rules>
+When you score a critical hit while using a shield, you gain a +2 bonus to AC and Reflex until the end of your next turn.
+</RulesElement>
+
+<RulesElement name="Dwarven Steadfastness" type="Feat" internal-id="ID_TIV_FEAT_9000_04" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Dwarf </Prereqs>
+<print-prereqs> Dwarf </print-prereqs>
+    <Flavor> Your Dwarven heritage shines through after striking your foe hard and fast, you recover once spent reserves. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Once during an encounter when you score a critical hit, and your second wind has been expended, you regain the use of it. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Once during an encounter when you score a critical hit, and your second wind has been expended, you regain the use of it.
+</RulesElement>
+
+<RulesElement name="Hamstring Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_05" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+    <Flavor> You catch your foe offguard, you easily slice your blade through its hindquarters, crippling it. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit with a melee attack against a humanoid creature, the target of your attack is slowed (save ends).</specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit with a melee attack against a humanoid creature, the target of your attack is slowed (save ends).
+</RulesElement>
+
+<RulesElement name="Hounding Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_25" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+    <Flavor> You catch your foe offguard, you easily slice your blade through its hindquarters, crippling it. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit, against your marked target it takes an additional -2 penalty to attack rolls with attacks that do not include you as a target until it is no longer marked by you.</specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit against a creature that is marked by you, or when you mark a creature that you scored a critical hit against since the end of your last turn, the target of your attack takes an additional -2 penalty to attack rolls with attacks that do not include you as a target until it is no longer marked by you.
+</RulesElement>
+
+<RulesElement name="Human Determination" type="Feat" internal-id="ID_TIV_FEAT_9000_06" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Human </Prereqs>
+<print-prereqs> Human </print-prereqs>
+    <Flavor> Driven by the battle, you strike your enemy hard and then follow up with another blow while your foe reels from the first. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Once during an encounter when you score a critical hit, you can make a melee basic attack or ranged basic attack as a free action. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+Once during an encounter when you score a critical hit, you can make a melee basic attack or ranged basic attack as a free action.
+</RulesElement>
+
+<RulesElement name="Inspiring Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_07" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Cha 15 </Prereqs>
+<print-prereqs> Cha 15 </print-prereqs>
+    <Flavor> Your powerful blows to the enemy inspires your allies. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit, one ally within 5 squares of you regains 1d6 hit points.
+Level 11: 2d6 hit points
+Level 21: 3d6 hit points. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit, one ally within 5 squares of you regains 1d6 hit points.
+Level 11: 2d6 hit points
+Level 21: 3d6 hit points.
+</RulesElement>
+
+<RulesElement name="Imposing Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_26" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit with an attack that causes a condition that a save can end, the target of your attack takes a -3 penalty to its saving throws against that condition. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit with an attack that causes a condition that a save can end, the target of your attack takes a -3 penalty to its saving throws against that condition.
+</RulesElement>
+
+<RulesElement name="Invigorating Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_08" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Con 15 </Prereqs>
+<print-prereqs> Con 15 </print-prereqs>
+    <Flavor> Invigorations flow from your enemies wounds to you. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit, you gain 1d6 temporary hit points.
+Level 11: 2d6 temporary hit points
+Level 21: 3d6 temporary hit points </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit, you gain 1d6 temporary hit points.
+Level 11: 2d6 temporary hit points
+Level 21: 3d6 temporary hit points
+</RulesElement>
+
+<RulesElement name="Power Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_27" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Str 15, power attack feat </Prereqs>
+<print-prereqs> Str 15 and Power Attack Feat </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit with an attack that you made using the Power Attack Feat, the bonus damage you gain is multiplied by 3. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit with an attack that you made using the Power Attack Feat, the bonus damage you gain is multiplied by 3.
+</RulesElement>
+
+<RulesElement name="Precision Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_28" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Sneak attack class feature or hunter's quarry class feature or warlock's curse class feature </Prereqs>
+<print-prereqs> Sneak Attack Class Feature or Hunter's Quarry Class Feature or Warlock's Curse Class Feature </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit with an attack to which you are adding the extra damage from your class feature, you can apply that extra damage again this round as though you hadn't applied it to your attack. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+When you score a critical hit with an attack to which you are adding the extra damage from your class feature, you can apply that extra damage again this round as though you hadn't applied it to your attack.
+</RulesElement>
+
+<RulesElement name="Racial Resurgence" type="Feat" internal-id="ID_TIV_FEAT_9000_29" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<print-prereqs> Racial encounter power that does not have an effect that lasts until the end of the encounter, or dilettante racial trait. </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Once during an encounter when you score a critical hit, and your racial power or dilettante power has been expended, you regain the use of it. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+Once during an encounter when you score a critical hit, and your racial power or dilettante power has been expended, you regain the use of it.
+</RulesElement>
+
+<RulesElement name="Shifter Fury" type="Feat" internal-id="ID_TIV_FEAT_9000_30" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Shifter </Prereqs>
+<print-prereqs> Shifter </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Once during an encounter when you score a critical hit, you deal extra critical damage equal to your Wisdom modifier and gain a bonus to damage rolls equal to your Wisdom modifier until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+Once during an encounter when you score a critical hit, you deal extra critical damage equal to your Wisdom modifier and gain a bonus to damage rolls equal to your Wisdom modifier until the end of your next turn.
+</RulesElement>
+
+<RulesElement name="Unyielding Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_09" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> Con 15, proficiency with heavy armor </Prereqs>
+<print-prereqs> Con 15, Proficiency with heavy armor  </print-prereqs>
+    <Flavor> Invigorations flow from your enemies wounds to you. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> When you score a critical hit while wearing heavy armor, you gain a +2 bonus to Fortitude, and when you are pulled, pushed or slid, you can reduce the distance you are moved by 2 squares, until the end of your next turn.
+    </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" /> 
+	   <rules>
+         <statadd name="Fortitude Defense" value="+2" type="Feat" condition="when you score a critical hit while wearing heavy armor, until the end of your next turn."/>
+       </rules>
+When you score a critical hit while wearing heavy armor, you gain a +2 bonus to Fortitude, and when you are pulled, pushed or slid, you can reduce the distance you are moved by 2 squares, until the end of your next turn.
+</RulesElement>
+
+<RulesElement name="Critical Arcana" type="Feat" internal-id="ID_TIV_FEAT_9000_10" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level, Int 18, Arcane Class; Paragon Tier </Prereqs>
+<print-prereqs> 11th level, Intelligence 18, Any Arcane Class </print-prereqs>
+    <Flavor> Fighting with magic is what your accustomed to, destroying things with arcane powers is what you love to do. </Flavor>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a hit with an arcane attack, that enemy takes a -2 to its attack rolls until the end of its next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with an arcane attack, the target takes a -2 penalty to attack rolls until the end of its next turn.
+</RulesElement>
+
+<RulesElement name="Bewildering Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_11" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level; Paragon Tier </Prereqs>
+<print-prereqs> 11th level </print-prereqs>
+    <Flavor> You flash your weapon as a distraction and land a backhand against your foes exposed head. </Flavor>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit, the target of your attack grants combat advantage to you until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit, the target of your attack grants combat advantage to you until the end of your next turn.
+</RulesElement>
+
+<RulesElement name="Bleeding Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_12" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level, martial class; Paragon Tier </Prereqs>
+<print-prereqs> 11th level, Any Martial Class </print-prereqs>
+     <Flavor> You slash your blade across your foe's chest, leaving a wound so deep the bleeding just won't stop. </Flavor>
+     <specific name="Tier"> Paragon </specific>
+     <specific name="Short Description"> When you score a critical hit with a martial attack, the target of your attack takes ongoing 5 damage (save ends).
+Level 21: Ongoing 10 damage (save ends) </specific>
+     <specific name="Special" />
+     <specific name="type"> Critical Augmentation </specific>
+     <specific name="Associated Power Info" />
+     <specific name="Associated Powers" />
+When you score a critical hit with a martial attack, the target of your attack takes ongoing 5 damage (save ends).
+Level 21: Ongoing 10 damage (save ends)
+</RulesElement>
+
+<RulesElement name="Critical Recovery" type="Feat" internal-id="ID_TIV_FEAT_9000_13" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level, primal class; Paragon Tier </Prereqs>
+<print-prereqs> 11th level, Any Primal Class </print-prereqs>
+    <Flavor> You strike your foe horribly, feeling the warmth of its blood across your brow, you smile and fight harder, being invigorated. </Flavor>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit, you can spend a healing surge.</specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a primal attack, you can spend a healing surge.
+</RulesElement>
+
+<RulesElement name="Empowering Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_14" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level; Paragon Tier </Prereqs>
+<print-prereqs> 11th level </print-prereqs>
+    <Flavor> Bashing your foe and seeing it reel under your massive attacks, only makes it easier for you to hit it, and it harder to dodge. </Flavor>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit, you gain a cumulative +1 bonus to damage rolls until the end of the encounter.</specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit, you gain a cumulative +1 bonus to damage rolls until the end of the encounter.
+</RulesElement>
+
+<RulesElement name="Enervating Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_15" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level, critical expertise feat; Paragon Tier </Prereqs>
+<print-prereqs> 11th level, Critical Expertise Feat </print-prereqs>
+    <Flavor> Your foe weakens as you come down on its head with a smashing blow.</Flavor>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit, the target is weakened (save ends).</specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with an implement with which you have Critical Expertise, the target of your attack is weakened (save ends).
+</RulesElement> 
+
+<RulesElement name="Exposing Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_16" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level; Paragon Tier </Prereqs>
+<print-prereqs> 11th level </print-prereqs>
+    <Flavor> Your foes defenses drop as you pound away. </Flavor>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit, your foe takes a -2 to defense, until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit, the target of your attack takes a -2 penalty to all defenses until the end of your next turn.
+</RulesElement> 
+
+<RulesElement name="Explosive Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_31" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level; Paragon Tier </Prereqs>
+<print-prereqs> 11th level </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit with a burst attack, you slide the target of your attack 3 squares. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a burst attack, you slide the target of your attack 3 squares.
+</RulesElement> 
+
+<RulesElement name="Sacred Judgment" type="Feat" internal-id="ID_TIV_FEAT_9000_32" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level, divine class; Paragon Tier </Prereqs>
+<print-prereqs> 11th level, Any Divine Class </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit with a divine attack, the target gains vulnerability 3 to all damage until the end of your next turn.
+Level 21: Vulnerability 6 to all damage </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a divine attack, the target gains vulnerability 3 to all damage until the end of your next turn.
+Level 21: Vulnerability 6 to all damage
+</RulesElement> 
+
+<RulesElement name="Sweeping Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_17" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 11th level, Dex 15, critical expertise feat; Paragon Tier </Prereqs>
+<print-prereqs> 11th level, Dex 15, Critical Expertise Feat </print-prereqs>
+    <specific name="Tier"> Paragon </specific>
+    <specific name="Short Description"> When you score a critical hit with a flail, you knock the target prone. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a flail, you knock the target of your attack prone.
+</RulesElement> 
+
+<RulesElement name="Blinding Inferno" type="Feat" internal-id="ID_TIV_FEAT_9000_18" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 21st level; Epic Tier </Prereqs>
+<print-prereqs> 21st level </print-prereqs>
+    <Flavor> Fighting with blinding speed and power, sparks fly temporarily blinding your foe. </Flavor>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> When you score a critical hit with a power that has the fire keyword, the target of your attack is blinded until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a power that has the fire keyword, the target of your attack is blinded until the end of your next turn.
+</RulesElement>
+
+<RulesElement name="Commanding Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_19" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 21st level, Int 19 or Cha 19; Epic Tier </Prereqs>
+<print-prereqs> 21st level, Int 19 or Cha 19 </print-prereqs>
+    <Flavor> Leading the charge, your allies take advantage of the opening and make their attack. </Flavor>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> When you score a critical hit with a melee attack, one ally can make a melee basic attack or ranged basic attack against the target of your attack as a free action. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a melee attack, one ally can make a melee basic attack or ranged basic attack against the target of your attack as a free action.
+</RulesElement>
+
+<RulesElement name="Execruciating Critical" type="Feat" internal-id="ID_TIV_FEAT_9000_20" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 21st level, critical expertise feat; Epic Tier </Prereqs>
+<print-prereqs> 21st level, Critical Expertise Feat </print-prereqs>
+    <Flavor> You know how to wield your weapon and it shows. </Flavor>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> When you score a critical hit with a weapon with which you have Critical Expertise, the target of your attack is dazed until the end of your next turn. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit with a weapon with which you have Critical Expertise, the target of your attack is dazed until the end of your next turn.
+</RulesElement> 
+
+<RulesElement name="Unstoppable Force" type="Feat" internal-id="ID_TIV_FEAT_9000_21" source="Critical Augmentation Feats" revision-date="00/00/0000 00:00:00 PM" >
+<Prereqs> 21st level; Epic Tier </Prereqs>
+<print-prereqs> 21st level </print-prereqs>
+    <Flavor> Dropping your foes simply make you stronger. </Flavor>
+    <specific name="Tier"> Epic </specific>
+    <specific name="Short Description"> When you score a critical hit which reduces a creature to 0 hit points, you regain a healing surge. </specific>
+    <specific name="Special" />
+    <specific name="type"> Critical Augmentation </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+When you score a critical hit which reduces a creature to 0 hit points, you regain a healing surge.
+</RulesElement> 
+
+</D20Rules>

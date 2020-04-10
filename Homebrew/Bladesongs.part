@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.01</Version>
+    <Filename>Bladesongs.part</Filename>
+    <PartAddress>http://cbloader.com/Homebrew/Bladesongs.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/Bladesongs.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Wizard -->
+  <!-- Bladesongs.part, version 1.00 -->
+  <!-- Original release: 26-August-2011; Last modified: 26-August-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog> </Changelog>
+  
+  <!-- Bladesong Modifications -->
+  
+<RulesElement name="Dancing Fire" type="Power" internal-id="ID_FMP_POWER_14286" source="Player Essentials: Neverwinter Campaign Guide">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+  <Flavor> A leaping flame dances over your enemy, driving it to distraction. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Wizard Attack </specific>
+  <specific name="Keywords"> Arcane, Bladespell, Fire </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Trigger"> During your turn, you hit an enemy with a melee basic attack using a one-handed weapon while your other hand holds no weapon or shield. </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Effect"> Dexterity modifier x 2 fire damage.
+Level 11: Dexterity modifier x 3 fire damage.
+Level 21: Dexterity modifier x 4 fire damage. </specific>
+  <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+  <specific name="Level" /> 
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
+  <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
+Elves and eladrin must take care when using flame in the forest homes of their people, and thus many bladesingers learn to command the fires that their magic produces. The blow of a sword provides the opening to unleash a spritelike fire that burns an enemy without fear of anything else being set to smolder.
+</RulesElement>
+<RulesElement name="Frost Bite" type="Power" internal-id="ID_FMP_POWER_14288" source="Player Essentials: Neverwinter Campaign Guide">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_1,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+  <Flavor> Sparkling snow swirls around your enemy, numbing its limbs and making it struggle to move. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Wizard Attack </specific>
+  <specific name="Keywords"> Arcane, Bladespell, Cold </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Trigger"> During your turn, you hit an enemy with a melee basic attack using a one-handed weapon while your other hand holds no weapon or shield. </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Effect"> Dexterity modifier cold damage, and the target is slowed and grants combat advantage until the start of your next turn.
+Level 11: 2 + Dexterity modifier cold damage.
+Level 21: 4 + Dexterity modifier cold damage. </specific>
+  <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+  <specific name="Level" /> 
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
+  <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
+Even though the world has drastic extremes of weather, never does it approach the treacherous beauty of winter in the Feywild.  Bladesiners who learn how to harness that frigid fey power can turn it to their advantage whenever they want.
+</RulesElement>
+<RulesElement name="Lightning Ring" type="Power" internal-id="ID_FMP_POWER_14289" source="Player Essentials: Neverwinter Campaign Guide">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+  <Flavor> You stab your opponent, and an arc of lightning leaps from your hand to encircle a foe in a crackling ring. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Wizard Attack </specific>
+  <specific name="Keywords"> Arcane, Bladespell, Lightning </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Trigger"> During your turn, you hit an enemy with a melee basic attack using a one-handed weapon while your other hand holds no weapon or shield. </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Effect"> Dexterity modifier lightning damage to the target and each adjacent enemy.
+Level 11: 2 + Dexterity modifier lightning damage.
+Level 21: 4 + Dexterity modifier lightning damage. </specific>
+  <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+  <specific name="Level" /> 
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
+  <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
+A bladesinger&apos;s prowess comes from more sources than the Feywild. Like other wizards, bladesingers draw upon the Elemental Chaos, the Shadowfell, the Astral Sea, and the latent magic of the world to craft enchantments amid the swirl of their swords. With lightning ring, you use elemental forces to set a lightning bolt to chasing itself around a foe.
+</RulesElement>
+<RulesElement name="Moment of Terror" type="Power" internal-id="ID_RYV_POWER_14290" source="Player Essentials: Neverwinter Campaign Guide">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+  <Flavor> You heighten the sounds and sights of battle in an enemy&apos;s perception. Some illusory blood on your sword now may minimize the amount of real blood on it later. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Wizard Attack </specific>
+  <specific name="Keywords"> Arcane, Bladespell, Psychic, Fear, Illusion </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Trigger"> During your turn, you hit an enemy with a melee basic attack using a one-handed weapon while your other hand holds no weapon or shield. </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Effect"> Dexterity modifier psychic damage, and the target takes a -2 penalty to all defenses until the end of your next turn.
+Level 11: 2 + Dexterity modifier psychic damage.
+Level 21: 4 + Dexterity modifier psychic damage. </specific>
+  <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+  <specific name="Level" /> 
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
+  <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
+A simple but meaningful threat is often enough to create an opening for an ally to finish the job. The magical resonance of your blade magnifies your foe&apos;s shrieks of pain and fear and illusory gore briefly spurts around you. Enemies are cowed by the apparent display of brutality.
+</RulesElement>
+<RulesElement name="Noxious Mist" type="Power" internal-id="ID_RYV_POWER_14291" source="Player Essentials: Neverwinter Campaign Guide">
+  <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
+  <Flavor> One foe attempts to fight off your blade while another chokes on a cloud of caustic fumes. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Wizard Attack </specific>
+  <specific name="Keywords"> Arcane, Bladespell, Acid, Poison </specific>
+  <specific name="Action Type"> No Action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Trigger"> During your turn, you hit an enemy with a melee basic attack using a one-handed weapon while your other hand holds no weapon or shield. </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Effect"> Dexterity modifier ongoing acid and poison damage and takes a -1 penalty to all saving throws (save ends both).
+Level 11: 2 + Dexterity modifier ongoing poison and acid damage and a -1 penalty to saves.
+Level 21: 4 + Dexterity modifier ongoing poison and acid damage and a -2 penalty to saves. </specific>
+  <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_9 </specific>
+  <specific name="Level" /> 
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
+  <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
+The most insidious and subtle trick in the bladesinger&apos;s book, this bladespell diminishes an enemy&apos;s ability to recover from continuing injury. Though the bladesinger is personally not often able to make good use of the effect, allies find it invaluable for whittling down a single tough foe.
+</RulesElement>
+</D20Rules>

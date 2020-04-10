@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<D20Rules>
+  <UpdateInfo>
+    <Version>1</Version>
+    <Filename>74-DivineChallengeUpdateAt-WillBlog.part</Filename>
+    <PartAddress>http://cbloader.com/Hombrew/74-DivineChallengeUpdateAt-WillBlog.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Hombrew/74-DivineChallengeUpdateAt-WillBlog.txt</VersionAddress>
+  </UpdateInfo>
+  
+  <RulesElement name="At-Will Blog" type="source" internal-id="ID_RYV_SOURCE_AW001" source="Core">
+    <specific name="IsBeta"> 0 </specific>
+    <specific name="URL"> http://www.4eatwill.net </specific>
+    <specific name="Release Date"> 01/01/2011 </specific>
+  </RulesElement>
+  <RulesElement name="Divine Challenge" type="Power" internal-id="ID_FMP_POWER_805" source="At-Will Blog" revision-date="8/27/2010 11:22:55 AM">
+    <Prereqs> Unselectable </Prereqs>
+    <Flavor> You boldly confront a nearby enemy, searing it with divine light if it ignores your challenge. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Paladin Feature  </specific>
+    <specific name="Keywords"> Divine, Radiant </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Target"> One creature in burst </specific>
+    <specific name="Effect"> You mark the target. The target remains marked until you use this power against another target, or if you fail to engage the target (see below). A creature can be subject to only one mark at a time. A new mark supersedes a mark that was already in place. While a target is marked, it takes a -2 penalty to attack rolls for any attack that doesn't include you as a target. 
+	  On your turn, you must engage the target you challenged or challenge a different target. To engage the target, you must either attack it or end your turn adjacent to it. If none of these events occur by the end of your turn, the marked condition ends and you can't use divine challenge on your next turn.
+	 The first time it makes an attack that doesn't include you as a target before the start of your next turn, make an attack against the target </specific>
+    <specific name=" Secondary Attack"> Strength or Charisma vs. Will </specific>
+    <specific name=" Hit"> 1d6 + Strength or Charisma modifier radiant damage. 
+Level 5: 2d6  + Strength or Charisma modifier radiant damage.
+Level 10: 3d6  + Strength or Charisma modifier radiant damage.
+Level 15: 4d6  + Strength or Charisma modifier radiant damage.
+Level 20: 5d6  + Strength or Charisma modifier radiant damage.
+Level 25: 6d6  + Strength or Charisma modifier radiant damage. 	</specific>
+    <specific name="Special"> Even though this ability is called a challenge, it doesn't rely on the intelligence or language ability of the target. It's a magical compulsion that affects the creature's behavior, regardless of the creature's nature. You can't place a divine challenge on a creature that is already affected by your or another character's divine challenge. 
+	  You can use divine challenge once per turn. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_4 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Feature </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_72,ID_FMP_CLASS_FEATURE_473 </specific>
+  </RulesElement>
+</D20Rules>

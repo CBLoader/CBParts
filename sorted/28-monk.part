@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.09</Version>
+		<Version>1.10</Version>
 		<Filename>28-monk.part</Filename>
 		<PartAddress>https://vorpald20.com/cbloader/28-monk.part</PartAddress>
 		<VersionAddress>https://vorpald20.com/cbloader/version.php?part=28-monk</VersionAddress>
-	</UpdateInfo>
+	</UpdateInfo>	
 	<!-- Monk -->
 	<!-- 28-monk.part, version 1.09 -->
 	<!-- Original release: 13-July-2011; Last modified: 1-July-2012 -->
@@ -22,6 +22,7 @@
  Updated 25-December-2011 Compatibility Upgrades and General Fixes.
  updated 3-March-2012 Added Heroes of the Elemental Chaos Desert Wind and Eternal Tide.
  Updated 1-July-2012 Fallen Needle June 2012 Update.
+ Updated 12-April-2020 MC Flurry fix
 	</Changelog>
 	<RulesElement name="Centered Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_7448" source="Player's Handbook 3" revision-date="8/27/2010 11:45:44 AM">
 		<Flavor> Your fists become a blur as you follow up your initial attack with another, shifting your foes' positions to your advantage. </Flavor>
@@ -313,7 +314,6 @@ If you choose the Desert Wind monastic tradition, you gain the following class f
 	</RulesElement>
 	<RulesElement name="Desert Wind Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_16131" source="Heroes of the Elemental Chaos">
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER </Category>
-		<Prereqs> Unselectable </Prereqs>
 		<Flavor> A successful attack ignites your mind's power, causing lambent flames to dance across your body and sear your enemies. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
 		<specific name="Display"> Monk Feature  </specific>
@@ -352,7 +352,6 @@ If you choose the Eternal Tide monastic tradition, you gain the following class 
 	</RulesElement>
 	<RulesElement name="Eternal Tide Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_16132" source="Heroes of the Elemental Chaos">
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER </Category>
-		<Prereqs> Unselectable </Prereqs>
 		<Flavor> You unleash psionic energy in the wake of your initial attack to wrench another enemy into your reach. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
 		<specific name="Display"> Monk Feature  </specific>
@@ -1795,4 +1794,32 @@ Increase damage to 2d10 + Dexterity modifier damage at 21st level. </specific>
 		<specific name="_ParentPower"> ID_FMP_POWER_13219 </specific>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
 	</RulesElement>
+	  <!-- Monastic Disciple Fix -->
+  <RulesElement name="Monastic Disciple" type="Feat" internal-id="ID_FMP_FEAT_2694" source="Player's Handbook 3" revision-date="8/27/2010 12:20:31 PM">
+    <Category> ID_INTERNAL_CATEGORY_MULTICLASS_MONK,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
+    <Prereqs> Dex 13; ~MULTICLASS or Unlimited Multiclass or Monk CountsAsClass; !ID_FMP_CLASS_362; !ID_FMP_HYBRID_CLASS_609 </Prereqs>
+    <print-prereqs> Dex 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Monk: Skill training; one Flurry of Blows power 1/encounter </specific>
+    <specific name="Special" />
+    <specific name="type"> Multiclass Monk </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <select type="Skill Training" number="1" Category="monk class" />
+      <select type="Power" number="1" Category="ID_FMP_POWER_7448|ID_FMP_POWER_11207|ID_FMP_POWER_13123|ID_FMP_POWER_16131|ID_FMP_POWER_16132" />
+      <modify Field="Power Usage" value="Encounter" />
+      <modify Field="Power Usage" value="Encounter" />
+      <modify Field="Power Usage" value="Encounter" />
+	  <modify Field="Power Usage" value="Encounter" />
+	  <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_GRANTS_MONK_IMPLEMENTS" type="Grants" />
+      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
+      <grant name="ID_INTERNAL_COUNTSASCLASS_MONK" type="CountsAsClass" />
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+    </rules>
+You gain training in one skill from the monk's class skills list.
+Choose one of the monk's Flurry of Blows powers. You can use that power once per encounter.
+	In addition, you can wield monk implements.
+   </RulesElement>
 </D20Rules>

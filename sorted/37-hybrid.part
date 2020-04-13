@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.25</Version>
+    <Version>1.26</Version>
     <Filename>37-hybrid.part</Filename>
     <PartAddress>https://vorpald20.com/cbloader/37-hybrid.part</PartAddress>
     <VersionAddress>https://vorpald20.com/cbloader/version.php?part=37-hybrid</VersionAddress>
@@ -33,6 +33,8 @@
  Updated 9-April-2012 Updated Hybrid Cavalier.
  Updated 11-August-2012 Hybrid Executioner hit point fix.
  Updated 19-September-2012 Brawler Style (Hybrid) Fix
+ Updated 12-April-2020 Cavalier and Blackguard first level power pick
+ Updated 13-April-2020 Desert wind and Eternal Tide added to hybrid and monastic talent
 </Changelog>
   
   <RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
@@ -1100,7 +1102,7 @@ You choose a vice and gain the benefit of the Spirit of Vice class feature, exce
     <specific name="_CLASSNAME"> Hybrid Blackguard </specific>
 	<specific name="_DisplayPowers"> ID_FMP_POWER_13837 </specific>
     <rules>
-       <grant name="ID_FMP_POWER_13837" type="Power" />
+       <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
     </rules>
 The world demands order. Chaos is a cancer, undermining civilization&apos;s advance, fomenting crimes, sowing discord, and encouraging upheaval. Understanding the world&apos;s crying need, you crusade for order at any cost. When necessary, you enforce your will harshly, making examples of the disobedient.
 	Good and evil are methods, not ends - they can both bring stability. You might attempt to serve the greater good even if your methods can be harsh. To channel your vice, you might seek out the basest threats to stability, such as demons, marauding monsters, and other chaotically minded evildoers. Only evil blackguards give in to true tyranny, destroying the hearts and minds of subjects to make certain they obey every command.
@@ -1117,7 +1119,7 @@ The world demands order. Chaos is a cancer, undermining civilization&apos;s adva
     <specific name="_CLASSNAME"> Hybrid Blackguard </specific>
 	<specific name="_DisplayPowers"> ID_FMP_POWER_13843 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_13843" type="Power" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
 	  <statadd name="damage rolls" value="+2" condition="while you have combat advantage against an enemy" />
       <statadd name="damage rolls" value="+4" condition="while you are bloodied or adjacent to a bloodied creature" />
     </rules>
@@ -1328,7 +1330,7 @@ Your choice of virtue determines some of your class features and you gain the be
 	 <specific name="_DisplayPowers"> ID_FMP_POWER_13575 </specific>
 	 <rules>
       <statadd name="Healing Surges" value="+1" />
-	  <grant name="ID_FMP_POWER_13575" type="Power" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
     </rules>
 You gain an additional healing surge. In addition, you can use your second wind as a minor action to heal an ally of your choice within 5 squares of you. If you do so, you gain no benefit from using your second wind, but the ally regains hit points equal to his or her healing surge value.
 Alignment: A cavalier of sacrifice must be lawful good. The virtue of sacrifice demands much from its adherents. Only the most honorable cavaliers embrace it.
@@ -1348,7 +1350,7 @@ Alignment: A cavalier of sacrifice must be lawful good. The virtue of sacrifice 
 	<rules>
       <statadd name="Healing Surge Value" value="+2" />
       <statadd name="Initiative Misc" value="+4" />
-	  <grant name="ID_FMP_POWER_13580" type="Power" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
     </rules>
 You gain a +4 bonus to initiative checks, and your healing surge value increases by 2.
 Alignment: A cavalier of valor can be lawful good, good, or unaligned. While the ideal of valor demands bravery in combat, it asks only that its adherents refrain from attacking the weak or innocent.
@@ -1859,4 +1861,64 @@ While you wield a weapon in your primary hand and your off hand is free or grabb
 
 In addition, you gain a +2 enhancement bonus to the attack rolls of unarmed attacks and a +2 bonus to the attack rolls of grab attacks and attacks to move a creature you're grabbing. These bonuses increase to +4 at 11th level and +6 at 21st level.
 </RulesElement>
+<!-- Monk Fixes -->
+  <RulesElement name="Desert Wind (Hybrid)" type="Class Feature" internal-id="ID_RGC_CLASS_FEATURE_3175" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2413,1 </Category>
+	<Flavor> After the fall of Arkhosia, many dragonborn retreated to the deep deserts to contemplate their empire's collapse and find a way to overcome the loss. What began as refugee camps evolved into genuine communities, their members united by a common belief and hope for the future-and in some cases these ideas became something more. The Desert Wind tradition reflects these survivors' triumph over the harshness of a life spent under the desert sun. These warriors learned to ease their discomfort by using the elemental fire within themselves as a shield and a weapon.
+	Monks of the Desert Wind tradition emulate these predecessors as they rush into battle, spin away from threats, and scorch enemies with strikes bolstered by elemental fire. Like all monks, you need a high Dexterity score to perform your disciplines. manifesting elemental fire requires a strong, confident outlook, so Charisma should be your second-highest ability score. Consider Constitution for your third-best score to increase your durability. </Flavor>
+    <specific name="Short Description"> Gain Desert Wind Flurry of Blows </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16131 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_362 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_16131 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_16131" type="Power" />
+      <modify name="Desert Wind Flurry of Blows" type="Power" Field="_ExtraKeywords" value="Flurry of Blows" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DESERT_WIND" type="CountsAsFeature" />
+    </rules>
+	  Flurry of Blows: You gain the desert wind flurry of blows power.
+   </RulesElement>
+  <RulesElement name="Desert Wind" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_DESERT_WIND" source="Core"></RulesElement>
+
+  <RulesElement name="Eternal Tide (Hybrid)" type="Class Feature" internal-id="ID_RGC_CLASS_FEATURE_3176" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category> ID_FMP_CLASS_FEATURE_2413,1 </Category>
+	<Flavor> History tells how the githzerai fled from their corrupted cousins, the githyanki, and of their own struggles to come to terms with the conflict shaping their thoughts. They sought refuge in the Elemental Chaos, thinking their estranged kin would not follow, not realizing that the tumultuous landscape was like a mirror of their souls. As the githzerai became acclimated to their new environment, they discovered that by concentrating on their surroundings, they could control the swirling chaos. And then they realized that if they could control the chaos without, they could do the same for the chaos in their hearts.
+	Since the githzerai established the Eternal Tide tradition, its methods have spread beyond the Elemental Chaos, and its disciplines are now taught in some academies.
+	As with any monk, Dexterity should be your highest ability score. Many disciplines require you to respond to force with equal force, so Strength should be your next highest ability score. Wisdom is a good choice for your third-highest ability score, to improve your awareness and resist mental assaults. </Flavor>
+    <specific name="Short Description"> Gain Eternal Tide Flurry of Blows </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_16132 </specific>
+    <specific name="type"> At-Will </specific>
+    <specific name="Class"> ID_FMP_CLASS_362 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_16132 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_16132" type="Power" />
+      <modify name="Eternal Tide Flurry of Blows" type="Power" Field="_ExtraKeywords" value="Flurry of Blows" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_ETERNAL_TIDE" type="CountsAsFeature" />
+    </rules>
+	  Flurry of Blows: You gain the eternal tide flurry of blows power.
+   </RulesElement>
+  <RulesElement name="Eternal Tide" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_ETERNAL_TIDE" source="Core"></RulesElement>
+    <RulesElement internal-id="ID_FMP_CLASS_FEATURE_2414" name="Expanded Tradition" type="Class Feature" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
+    <Category>ID_FMP_HYBRID_CLASS_609,1</Category>
+    <specific name="Short Description"> Gain all features from Monastic Tradition </specific>
+    
+    <specific name="Level"> 1 </specific>
+    <rules>
+      <statadd name="Expanded Tradition" value="+1" />
+      <statadd name="Expanded Tradition" value="+1" requires="Paragon Tier" />
+      <statadd name="Expanded Tradition" value="+1" requires="Epic Tier" />
+      <statadd name="Fortitude Defense" value="+Expanded Tradition" requires="Centered Breath (Hybrid)" />
+      <statadd name="Will Defense" value="+Expanded Tradition" requires="Stone Fist (Hybrid)" />
+      <statadd name="Expanded Tradition AC" value="+1" wearing="weapon:" />
+      <statadd name="AC" value="+Expanded Tradition" type="Shield" requires="Iron Soul (Hybrid)" not-wearing="weapon:unarmed" />
+      <statadd name="Mental Crucible" value="+5"/>
+      <statadd name="Mental Crucible" value="+5" requires="Paragon tier"/>
+      <statadd name="Mental Crucible" value="+5" requires="epic tier"/>  
+      <statadd name="resist:fire" value="+Mental Crucible" type="Class Feature" requires="Desert Wind (Hybrid)" zero="true"/>
+	  <modify name="Expanded Tradition" type="Class Feature" Field="Short Description" requires="Eternal Tide (Hybrid)" value="Reduce forced movement by 1 square, and shift 1 square after the forced movement" />
+    </rules>
+	You gain all the features associated with your Monastic Tradition.
+   </RulesElement>
 </D20Rules>

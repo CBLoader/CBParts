@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>2.18</Version>
+    <Version>2.19</Version>
     <Filename>08-themes.part</Filename>
     <PartAddress>https://vorpald20.com/cbloader/08-themes.part</PartAddress>
     <VersionAddress>https://vorpald20.com/cbloader/version.php?part=08-themes</VersionAddress>
   </UpdateInfo>
+  
   <!-- Themes -->
   <!-- 08-themes.part, version 2.18 -->
   <!-- Original release: 13-July-2011; Last modified: 18-January-2014 -->
@@ -31,6 +32,7 @@
  Updated 20-February-2013 Added Dragon Magazine 420 - Character Themes: Driven By Ambition
  Updated 1-September-2013 Added Dragon Magazine 426 - Character Themes
  Updated 18-January-2014 Added Dragon Magazine 430 Character Themes
+ Updated 12-April-2020 Fixed Order Adept and Wizard's Apprentice.
 </Changelog>
 <!-- Dark Sun Themes -->
   <RulesElement name="Athasian Minstrel" type="Theme" internal-id="ID_FMP_THEME_642" source="Dark Sun Campaign Setting" >
@@ -2224,9 +2226,11 @@ Great wizards are forged, not born. Natural talent and a quick mind are only the
 Each arcane brotherhood or wizardly order has its own signature battle tactic. In the case of your order, it's a spell that blisters an area with fiery pellets.
   Benefit: You gain the argent rain power.
 </RulesElement>
+  <!-- I think they all already exist?
   <MassAppend ids="ID_FMP_POWER_32,ID_FMP_POWER_402,ID_FMP_POWER_483,ID_FMP_POWER_513,ID_FMP_POWER_1208,ID_FMP_POWER_1209,ID_FMP_POWER_1212,ID_FMP_POWER_1213,ID_FMP_POWER_1215,ID_FMP_POWER_1219,ID_FMP_POWER_1223,ID_FMP_POWER_1229,ID_FMP_POWER_1231,ID_FMP_POWER_1235,ID_FMP_POWER_1237,ID_FMP_POWER_1543,ID_FMP_POWER_1548,ID_FMP_POWER_1550,ID_FMP_POWER_2273,ID_FMP_POWER_2274,ID_FMP_POWER_2276,ID_FMP_POWER_2835,ID_FMP_POWER_2836,ID_FMP_POWER_2837,ID_FMP_POWER_2838,ID_FMP_POWER_2839,ID_FMP_POWER_2840,ID_FMP_POWER_3217,ID_FMP_POWER_3220,ID_FMP_POWER_3222,ID_FMP_POWER_3684,ID_FMP_POWER_4105,ID_FMP_POWER_4106,ID_FMP_POWER_4110,ID_FMP_POWER_4111,ID_FMP_POWER_4112,ID_FMP_POWER_4113,ID_FMP_POWER_4117,ID_FMP_POWER_4118,ID_FMP_POWER_4236,ID_FMP_POWER_4237,ID_FMP_POWER_5805,ID_FMP_POWER_5810,ID_FMP_POWER_6899,ID_FMP_POWER_6900,ID_FMP_POWER_6902,ID_FMP_POWER_6905,ID_FMP_POWER_7377,ID_FMP_POWER_7401,ID_FMP_POWER_7511,ID_FMP_POWER_9295,ID_FMP_POWER_9296,ID_FMP_POWER_9297,ID_FMP_POWER_9298,ID_FMP_POWER_9299,ID_FMP_POWER_9300,ID_FMP_POWER_9301,ID_FMP_POWER_9302,ID_FMP_POWER_9303,ID_FMP_POWER_9304,ID_FMP_POWER_9305,ID_FMP_POWER_9306,ID_FMP_POWER_9307,ID_FMP_POWER_9309,ID_FMP_POWER_9310,ID_FMP_POWER_9311,ID_FMP_POWER_9312,ID_FMP_POWER_9313,ID_FMP_POWER_9314,ID_FMP_POWER_9315,ID_FMP_POWER_9317,ID_FMP_POWER_9318,ID_FMP_POWER_9319,ID_FMP_POWER_9320,ID_FMP_POWER_9321,ID_FMP_POWER_9322,ID_FMP_POWER_9323,ID_FMP_POWER_9324,ID_FMP_POWER_9325,ID_FMP_POWER_9326,ID_FMP_POWER_9327,ID_FMP_POWER_9328,ID_FMP_POWER_9329,ID_FMP_POWER_9330,ID_FMP_POWER_9331,ID_FMP_POWER_9332,ID_FMP_POWER_9333,ID_FMP_POWER_9334,ID_FMP_POWER_9335,ID_FMP_POWER_9336,ID_FMP_POWER_9337,ID_FMP_POWER_9338,ID_FMP_POWER_9339,ID_FMP_POWER_9340,ID_FMP_POWER_9341,ID_FMP_POWER_9342,ID_FMP_POWER_9343,ID_FMP_POWER_9344,ID_FMP_POWER_9345,ID_FMP_POWER_9346,ID_FMP_POWER_9349,ID_FMP_POWER_10072,ID_FMP_POWER_10074,ID_FMP_POWER_10077,ID_FMP_POWER_10140,ID_FMP_POWER_10141,ID_FMP_POWER_10143,ID_FMP_POWER_10145,ID_FMP_POWER_10147,ID_FMP_POWER_10149,ID_FMP_POWER_10350,ID_FMP_POWER_10354,ID_FMP_POWER_10418,ID_FMP_POWER_10420,ID_FMP_POWER_10422,ID_FMP_POWER_10424,ID_FMP_POWER_10426,ID_FMP_POWER_11032,ID_FMP_POWER_11035,ID_FMP_POWER_11527,ID_FMP_POWER_11528,ID_FMP_POWER_11529,ID_FMP_POWER_11530,ID_FMP_POWER_11531,ID_FMP_POWER_11532,ID_FMP_POWER_11533,ID_FMP_POWER_11534,ID_FMP_POWER_11535,ID_FMP_POWER_11536,ID_FMP_POWER_11537,ID_FMP_POWER_11538,ID_FMP_POWER_11539,ID_FMP_POWER_11540,ID_FMP_POWER_11541,ID_FMP_POWER_11542,ID_FMP_POWER_11543,ID_FMP_POWER_11544,ID_FMP_POWER_11545,ID_FMP_POWER_11546,ID_FMP_POWER_11547,ID_FMP_POWER_11548,ID_FMP_POWER_11549,ID_FMP_POWER_11550,ID_FMP_POWER_11551,ID_FMP_POWER_11552,ID_FMP_POWER_11553,ID_FMP_POWER_11554,ID_FMP_POWER_11555,ID_FMP_POWER_11580,ID_FMP_POWER_11581,ID_FMP_POWER_11582,ID_FMP_POWER_11583,ID_FMP_POWER_11584,ID_FMP_POWER_11585,ID_FMP_POWER_11586,ID_FMP_POWER_11587,ID_FMP_POWER_11588,ID_FMP_POWER_11589,ID_FMP_POWER_11590,ID_FMP_POWER_11591,ID_FMP_POWER_11593,ID_FMP_POWER_11594,ID_FMP_POWER_11595,ID_FMP_POWER_11596,ID_FMP_POWER_11597,ID_FMP_POWER_11598,ID_FMP_POWER_11599,ID_FMP_POWER_11600,ID_FMP_POWER_11601,ID_FMP_POWER_12162,ID_FMP_POWER_12163,ID_FMP_POWER_12164,ID_FMP_POWER_12165,ID_FMP_POWER_12166,ID_FMP_POWER_12167,ID_FMP_POWER_12168,ID_FMP_POWER_12169,ID_FMP_POWER_12170,ID_FMP_POWER_12171,ID_FMP_POWER_12549,ID_FMP_POWER_12553,ID_FMP_POWER_12555,ID_FMP_POWER_12826,ID_FMP_POWER_12827,ID_FMP_POWER_12828,ID_FMP_POWER_12829,ID_FMP_POWER_12830,ID_FMP_POWER_13216,ID_FMP_POWER_13240,ID_FMP_POWER_13432,ID_FMP_POWER_13435,ID_FMP_POWER_13438,ID_FMP_POWER_11750,ID_FMP_POWER_11762,ID_FMP_POWER_11769,ID_FMP_POWER_11781,ID_FMP_POWER_11789,ID_FMP_POWER_11796,ID_FMP_POWER_11807,ID_FMP_POWER_11814,ID_FMP_POWER_11821,ID_FMP_POWER_11869,ID_FMP_POWER_12234,ID_FMP_POWER_12237,ID_FMP_POWER_12245,ID_FMP_POWER_12248,ID_FMP_POWER_12251,ID_FMP_POWER_12259,ID_FMP_POWER_12260,ID_FMP_POWER_12261,ID_FMP_POWER_12316,ID_FMP_POWER_12320,ID_FMP_POWER_12323,ID_FMP_POWER_12339,ID_FMP_POWER_12342,ID_FMP_POWER_12345,ID_FMP_POWER_12361,ID_FMP_POWER_12364,ID_FMP_POWER_12367,ID_FMP_POWER_12376,ID_FMP_POWER_12379,ID_FMP_POWER_12382,ID_FMP_POWER_12742,ID_FMP_POWER_12749,ID_FMP_POWER_12757,ID_FMP_POWER_12763,ID_FMP_POWER_13690,ID_FMP_POWER_13691,ID_FMP_POWER_13692,ID_FMP_POWER_13693,ID_FMP_POWER_13694,ID_FMP_POWER_13695,ID_D399_POWER_AQUA_REGIA,ID_D399_POWER_ALCHEMISTS_ESCAPE,ID_D399_POWER_GOBLIN_OIL,ID_D399_POWER_TIMELY_TRICK,ID_D399_POWER_GUARD_MY_BACK,ID_D399_POWER_SHARED_SIGHT,ID_D399_POWER_EXTENSION,ID_D399_POWER_FAR_REACHING,ID_D399_POWER_MNEMONIC_ENHANCER,ID_D399_POWER_DISAPPEAR,ID_D399_POWER_WINGED_STEP,ID_D399_POWER_MINOR_POLYMORPH,ID_D399_POWER_WORD_OF_COMFORT,ID_D399_POWER_WORD_OF_PROTECTION,ID_D399_POWER_SANCTIFYING_WORD,ID_D399_POWER_USEFUL_LORE,ID_D399_POWER_INIMICAL_LORE,ID_D399_POWER_DEFENSIVE_LORE,ID_D399_POWER_CLAIRVOYANCE,ID_D399_POWER_MOMENT_OF_PERIL,ID_D399_POWER_EYE_OF_SEEING,ID_D399_POWER_BATTLE_RIDING,ID_D399_POWER_INDEFATIGABLE,ID_D399_POWER_LOYAL_STAND,ID_D399_POWER_GUARDIANS_DEFENSE,ID_D399_POWER_READY_FOR_ANYTHING,ID_D399_POWER_WATCH_OUT,ID_D399_POWER_HOSPITALERS_PRAYER,ID_D399_POWER_RADIANT_STRIDE,ID_D399_POWER_FIGHT_ON_FRIEND,ID_D399_POWER_NOBLE_INFLUENCE,ID_D399_POWER_INSPIRING_RECOVER,ID_D399_POWER_URGE_TO_ACTION,ID_D399_POWER_STAGS_BOUND,ID_D399_POWER_EAGLES_EYE,ID_D399_POWER_LYNXS_REFLEXES,ID_D399_POWER_INFURIATING_TAUNT,ID_D399_POWER_FOOLS_DANCE,ID_D399_POWER_UNLIKELY_ESCAPE,ID_D399_POWER_SELLSWORDS_PLOY,ID_D399_POWER_IM_RIGHT_HERE,ID_D399_POWER_BRUTAL_SURVIVOR,ID_D399_POWER_BURST_OF_SPEED,ID_D399_POWER_OUT_OF_SIGHT,ID_FMP_POWER_13970,ID_FMP_POWER_13971,ID_FMP_POWER_13980,ID_FMP_POWER_13985,ID_FMP_POWER_13986,ID_FMP_POWER_13992,ID_FMP_POWER_13993,ID_FMP_POWER_13998,ID_FMP_POWER_13999,ID_FMP_POWER_14002,ID_FMP_POWER_14003,ID_FMP_POWER_14016,ID_FMP_POWER_14017,ID_FMP_POWER_14018,ID_FMP_POWER_14019,ID_FMP_POWER_14020,ID_FMP_POWER_14021,ID_FMP_POWER_14022,ID_FMP_POWER_14023,ID_FMP_POWER_14024,ID_FMP_POWER_14025,ID_WOTBS_POWER_WAYFARERS_STEP">
     <Category>ID_FMP_CLASS_ORDER_ADEPT</Category>
   </MassAppend>
+  -->
   <RulesElement name="Order Adept Pseudoclass" type="Class" internal-id="ID_FMP_CLASS_ORDER_ADEPT" source="Dragon Magazine 399" >
     <Prereqs> Order Adept Theme, Level 5, Not Selectable </Prereqs>
 A level 5 Order Adept can take Wizard Utility Powers.  The MassAppend Element above gives every Wizard Utility power to this pseudoclass as well.  Then we can say counts as Order Adept Pseudo Class, rather than wizard.  (Note:  An actual Pseudoclass didn't work.  I tried.)
@@ -2283,11 +2287,10 @@ Level 21: The creature takes 15 fire damage </specific>
     <specific name="Level"> 1 </specific>
   </RulesElement>
   <RulesElement name="Extension" type="Power" internal-id="ID_FMP_POWER_14124" source="Dragon Magazine 399" >
-    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION,2 </Category>
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION,2,ID_FMP_CLASS_ORDER_ADEPT </Category>
     <Prereqs> Order Adept </Prereqs>
     <Flavor> You extend the duration of a spell for just a few more seconds. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
     <specific name="Display"> Order Adept Utility 2 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Free action </specific>
@@ -2301,8 +2304,8 @@ Level 21: The creature takes 15 fire damage </specific>
     <specific name="Power Type"> Utility </specific>
 You weave a spell that helps you sustain multiple powers at once. Staying invisible a little longer or remaining aloft with magical flight might make the difference between life and death.
   </RulesElement>
- <RulesElement name="Far Reaching" type="Power" internal-id="ID_FMP_POWER_14125" source="Dragon Magazine 399" >
-    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION,6 </Category>
+  <RulesElement name="Far Reaching" type="Power" internal-id="ID_FMP_POWER_14125" source="Dragon Magazine 399" >
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_FREE_ACTION,6,ID_FMP_CLASS_ORDER_ADEPT </Category>
     <Prereqs> Order Adept </Prereqs>
     <Flavor> You extend the range of a spell far beyond its normal limit. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
@@ -2318,9 +2321,9 @@ You weave a spell that helps you sustain multiple powers at once. Staying invisi
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
 You know a metamagic spell that greatly increases the range of certain spells. Any spellcaster knows that the best way to deal with a threat is from the greatest distance possible, and you are nothing if not practical in such matters.
-</RulesElement>
+  </RulesElement>
   <RulesElement name="Mnemonic Enhancer" type="Power" internal-id="ID_FMP_POWER_14126" source="Dragon Magazine 399" >
-    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION,10,ID_FMP_CLASS_ORDER_ADEPT </Category>
     <Prereqs> Order Adept </Prereqs>
     <Flavor> You recall to mind a spell you've already used in this battle. </Flavor>
     <specific name="Power Usage"> Daily </specific>
@@ -2336,7 +2339,7 @@ You know a metamagic spell that greatly increases the range of certain spells. A
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
 This potent spell replenishes your ability to use a spell you have expended, giving you a second use of a spell you could otherwise cast only once per battle. With mnemonic enhancer, you need never fear finding yourself in the position of having just used the one spell that you now desperately need
-</RulesElement>
+  </RulesElement>
   <!-- Wizard's Apprentice -->
   <RulesElement name="Wizard's Apprentice" type="Theme" internal-id="ID_FMP_THEME_852" source="Dragon Magazine 399" >
     <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_3875,ID_FMP_CLASS_FEATURE_3876,ID_FMP_CLASS_FEATURE_3877 </specific>
@@ -2398,8 +2401,8 @@ After lengthy adventures and much experience, you discover that you now understa
     <specific name="Hit"> 1d8 + Strength, Constitution, Dexterity, Intelligence, Wisdom, or Charisma radiant damage, and the target is dazed until the end of your next turn.
 Level 11: 2d8 + Strength, Constitution, Dexterity, Intelligence, Wisdom, or Charisma radiant damage.
 Level 21: 3d8 + Strength, Constitution, Dexterity, Intelligence, Wisdom, or Charisma radiant damage. </specific>
-    <specific name="_ThemePower"> ID_FMP_THEME_851 </specific>
-    <specific name="Class"> ID_FMP_THEME_851 </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_852 </specific>
+    <specific name="Class"> ID_FMP_THEME_852 </specific>
     <specific name="Level"> 1 </specific>
   </RulesElement>
   <RulesElement name="Disappear  " type="Power" internal-id="ID_FMP_POWER_14128" source="Dragon Magazine 399" >
@@ -2414,8 +2417,8 @@ Level 21: 3d8 + Strength, Constitution, Dexterity, Intelligence, Wisdom, or Char
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You become invisible until the end of this turn. </specific>
     <specific name="_Associated Feats" />
-    <specific name="_ThemePower"> ID_FMP_THEME_851 </specific>
-    <specific name="Class"> ID_FMP_THEME_851 </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_852 </specific>
+    <specific name="Class"> ID_FMP_THEME_852 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
 You know a very useful spell of minor invisibility. It doesn't last long, but it can give you the opportunity to duck around a corner or through a doorway before your foes realize where you've gone. It's also a fine way to steal up on an enemy and catch it off guard.
@@ -2431,8 +2434,8 @@ You know a very useful spell of minor invisibility. It doesn't last long, but it
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You fly up to 6 squares and land. This movement does not provoke opportunity attacks. </specific>
     <specific name="_Associated Feats" />
-    <specific name="_ThemePower"> ID_FMP_THEME_851 </specific>
-    <specific name="Class"> ID_FMP_THEME_851 </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_852 </specific>
+    <specific name="Class"> ID_FMP_THEME_852 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
 With a whispered word and a single graceful leap, you can soar into the air. You can't stay airborne for long, but there's nothing handier for ascending to a rooftop or getting away from threatening enemies.
@@ -2449,8 +2452,8 @@ With a whispered word and a single graceful leap, you can soar into the air. You
     <specific name="Effect"> You assume the form of a Tiny natural beast until the end of your next turn. While in this form, you cannot attack, but you have the senses of your chosen form and gain its movement modes. If your chosen form has the aquatic keyword, you also gain it while in this form. You can return to your normal form as a minor action. If you are flying when you return to your normal form, you descend to the ground without taking falling damage. Observers can tell that you're a super  natural version of your animal form by making a successful Insight check against a DC equal to 15 + one-half your level.  </specific>
     <specific name="Sustain Minor"> Your animal form persists until the end of your next turn. </specific>
     <specific name="_Associated Feats" />
-    <specific name="_ThemePower"> ID_FMP_THEME_851 </specific>
-    <specific name="Class"> ID_FMP_THEME_851 </specific>
+    <specific name="_ThemePower"> ID_FMP_THEME_852 </specific>
+    <specific name="Class"> ID_FMP_THEME_852 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
 You learn a spell of polymorphing (or shapechanging) into a small, harmless animal. You can't fight effectively in this form, but you find it extremely handy for getting into places your own two feet couldn't normally carry you, or spying on enemies who don't realize that you're not what you seem to be. And, as generations of wizards' apprentices can attest, it's fun to turn yourself into something else for a time.

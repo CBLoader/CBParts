@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
 		<Version>1.10</Version>
 		<Filename>28-monk.part</Filename>
-		<PartAddress>https://vorpald20.com/cbloader/28-monk.part</PartAddress>
-		<VersionAddress>https://vorpald20.com/cbloader/version.php?part=28-monk</VersionAddress>
+		<PartAddress>https://cbloader.vorpald20.com/sorted/28-monk.part</PartAddress>
+		<VersionAddress>https://cbloader.vorpald20.com/sorted/28-monk.txt</VersionAddress>
 	</UpdateInfo>	
 	<!-- Monk -->
 	<!-- 28-monk.part, version 1.09 -->
@@ -27,7 +27,7 @@
 	<RulesElement name="Centered Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_7448" source="Player's Handbook 3" revision-date="8/27/2010 11:45:44 AM">
 		<Flavor> Your fists become a blur as you follow up your initial attack with another, shifting your foes' positions to your advantage. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Monk Feature  </specific>
 		<specific name="Keywords"> Psionic </specific>
 		<specific name="Action Type"> No Action </specific>
@@ -38,16 +38,16 @@ Level 11: One or two creatures
 Level 21: Each enemy adjacent to you </specific>
 		<specific name="Effect"> The target takes damage equal to 2 + your Wisdom modifier, and you slide it 1 square to a square adjacent to you, or 1 square in any direction if the target wasn't targeted by the triggering attack. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Feature </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_1544,ID_FMP_CLASS_FEATURE_2532 </specific>
 	</RulesElement>
 	<RulesElement name="Stone Fist Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_11207" source="Player's Handbook 3" revision-date="8/27/2010 11:58:41 AM">
 		<Flavor> You lash out at another enemy after your first attack, a casual reminder of your great strength. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Monk Feature  </specific>
 		<specific name="Keywords"> Psionic </specific>
 		<specific name="Action Type"> No Action </specific>
@@ -58,16 +58,16 @@ Level 11: One or two creatures
 Level 21: Each enemy adjacent to you </specific>
 		<specific name="Effect"> The target takes damage equal to 3 + your Strength modifier. If the target wasn't targeted by the triggering attack, the damage increases by 2 (4 at 11th level and 6 at 21st level). </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Feature </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2360,ID_FMP_CLASS_FEATURE_2533 </specific>
 	</RulesElement>
 	<RulesElement name="Iron Soul Flurry of Blows" type="Power" internal-id="ID_FMP_POWER_13123" source="Psionic Power" revision-date="9/21/2010 2:10:35 PM">
 		<Flavor> You follow up an initial assault with a quick strike that disorients your enemy, curtailing its combat options. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Monk Feature  </specific>
 		<specific name="Keywords"> Psionic </specific>
 		<specific name="Action Type"> No Action </specific>
@@ -78,18 +78,18 @@ Level 11: One or two creatures
 Level 21: Each enemy adjacent to you </specific>
 		<specific name="Effect"> The target takes damage equal to 2 + your Constitution modifier, and it cannot shift until the start of your next turn. If the target was not a target of the triggering attack, it also can't make opportunity attacks until the end of your turn. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Feature </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2952 </specific>
 	</RulesElement>
 	<!-- Errata for August 2011 -->
-	<RulesElement name="Lashing Rain" type="Power" internal-id="ID_FMP_POWER_13139" source="Psionic Power" revision-date="9/14/2011 6:15:00 PM" >
+	<RulesElement name="Lashing Rain" type="Power" internal-id="ID_FMP_POWER_13139" source="Psionic Power" revision-date="9/14/2011 6:15:00 PM">
 		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
 		<Flavor> Your savage strike draws an enemy close, leaving you in an aggressive stance that lets you punish any foe that approaches you. </Flavor>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Monk Attack 1 </specific>
 		<specific name="Keywords"> Implement, Psionic, Stance </specific>
 		<specific name="Action Type"> Standard action </specific>
@@ -98,49 +98,49 @@ Level 21: Each enemy adjacent to you </specific>
 		<specific name="Attack"> Dexterity vs. Fortitude </specific>
 		<specific name="Hit"> 2d10 + Dexterity modifier damage, and you slide the target 2 squares to a square adjacent to you. </specific>
 		<specific name="Effect"> You assume the lashing rain stance. Once per turn, when an enemy you can see enters a square adjacent to you while you are able to make opportunity attacks, you deal 5 damage to that enemy and slide it 2 squares to any unoccupied square adjacent to you. You are slowed while you are in this stance. You can end the stance as a free action. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
 		<specific name="Level"> 1 </specific>
 		<specific name="Power Type"> Attack </specific>
 	</RulesElement>
-	<RulesElement name="Supreme Parry" type="Power" internal-id="ID_FMP_POWER_13249" source="Psionic Power" revision-date="9/14/2011 6:17:00 PM" >
+	<RulesElement name="Supreme Parry" type="Power" internal-id="ID_FMP_POWER_13249" source="Psionic Power" revision-date="9/14/2011 6:17:00 PM">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
 		<Flavor> Your weapon blurs as you spin it around you in an impenetrable barrier. </Flavor>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Monk Utility 22 </specific>
 		<specific name="Keywords"> Psionic, Stance </specific>
 		<specific name="Action Type"> Minor Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
 		<specific name="Effect"> You assume the supreme parry stance. Until the stance ends, you add the proficiency bonus of your main weapon as a power bonus to AC and Reflex. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
 		<specific name="Level"> 22 </specific>
 		<specific name="Power Type"> Utility </specific>
 	</RulesElement>
-	<RulesElement name="Basilisk Nature Defense" type="Power" internal-id="ID_FMP_POWER_13279" source="Psionic Power" revision-date="9/14/2011 6:18:00 PM" >
+	<RulesElement name="Basilisk Nature Defense" type="Power" internal-id="ID_FMP_POWER_13279" source="Psionic Power" revision-date="9/14/2011 6:18:00 PM">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_749,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,12 </Category>
-		<Prereqs> Basilisk&apos;s Fury Adept </Prereqs>
+		<Prereqs> Basilisk's Fury Adept </Prereqs>
 		<Flavor> The power of your mind transforms your body into stone. </Flavor>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="_SkillPower" />
-		<specific name="Display"> Basilisk&apos;s Fury Adept Utility 12 </specific>
+		<specific name="_SkillPower"/>
+		<specific name="Display"> Basilisk's Fury Adept Utility 12 </specific>
 		<specific name="Keywords"> Healing, Psionic </specific>
 		<specific name="Action Type"> Immediate Interrupt </specific>
 		<specific name="Attack Type"> Personal  </specific>
 		<specific name="Trigger"> An attack makes you unconscious or stuns you </specific>
 		<specific name="Effect"> You are instead petrified for as long as you would be unconscious or stunned by the triggering attack. You gain a +2 power bonus to saving throws until you are no longer petrified. When the petrification ends, you can spend a healing surge. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_PARAGON_PATH_749 </specific>
 		<specific name="Level"> 12 </specific>
 		<specific name="Power Type"> Utility </specific>
 	</RulesElement>
-	<RulesElement name="Unseen Ambush" type="Power" internal-id="ID_FMP_POWER_13297" source="Psionic Power" revision-date="9/14/2011 6:19:00 PM" >
+	<RulesElement name="Unseen Ambush" type="Power" internal-id="ID_FMP_POWER_13297" source="Psionic Power" revision-date="9/14/2011 6:19:00 PM">
 		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_754,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
 		<Prereqs> Unseen Hand </Prereqs>
 		<Flavor> You slip through space to cut down a foe with a crippling attack, then step away to vanish in the shadows. </Flavor>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Unseen Hand Attack 20 </specific>
 		<specific name="Keywords"> Implement, Psionic, Teleportation </specific>
 		<specific name="Action Type"> Standard action </specific>
@@ -151,7 +151,7 @@ Level 21: Each enemy adjacent to you </specific>
 		<specific name="Hit"> 3d6 + Dexterity modifier damage, and the target is stunned and gains vulnerable 10 to your attacks (save ends). </specific>
 		<specific name="Miss"> Half damage. </specific>
 		<specific name="Effect"> After the attack, you teleport your speed. If you teleport to a square that grants you concealment or cover, you can make a Stealth check to hide. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 		<specific name="Class"> ID_FMP_PARAGON_PATH_754 </specific>
 		<specific name="Level"> 20 </specific>
 		<specific name="Power Type"> Attack </specific>
@@ -187,7 +187,7 @@ Level 21: Each enemy adjacent to you </specific>
 		<specific name="Level"> 3 </specific>
 		<specific name="Power Type"> Attack </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_15985" type="Power" />
+			<grant name="ID_FMP_POWER_15985" type="Power"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Wind Through the Willows [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_15985" source="Dragon Magazine 404">
@@ -195,7 +195,7 @@ Level 21: Each enemy adjacent to you </specific>
 		<Prereqs> Unselectable </Prereqs>
 		<Flavor> You move like a furious wind through the line of your enemies, hobbling them. </Flavor>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Melee 1 </specific>
@@ -237,7 +237,7 @@ Level 21: Each enemy adjacent to you </specific>
 		<specific name="Level"> 7 </specific>
 		<specific name="Power Type"> Attack </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_15988" type="Power" />
+			<grant name="ID_FMP_POWER_15988" type="Power"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Brilliant Counterstrike [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_15988" source="Dragon Magazine 404">
@@ -245,7 +245,7 @@ Level 21: Each enemy adjacent to you </specific>
 		<Prereqs> Unselectable </Prereqs>
 		<Flavor> You ready yourself for the blows of your enemies and prepare a sudden counterattack. </Flavor>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -275,8 +275,8 @@ Level 21: Each enemy adjacent to you </specific>
 		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
 		<specific name="Level"> 11 </specific>
 		<rules>
-			<statadd name="Monk Unarmed Strike,weapon:attack" value="+1" />
-			<statadd name="Monk Unarmed Strike,weapon:damage" value="+4" requires="Kensei Mastery" />
+			<statadd name="Monk Unarmed Strike,weapon:attack" value="+1"/>
+			<statadd name="Monk Unarmed Strike,weapon:damage" value="+4" requires="Kensei Mastery"/>
 		</rules>
 You gain a +1 bonus to weapon attack rolls with Monk Unarmed Strike.
 	</RulesElement>
@@ -288,7 +288,7 @@ You gain a +1 bonus to weapon attack rolls with Monk Unarmed Strike.
 		<specific name="Level"> 1 </specific>
 		<specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_1544, ID_FMP_CLASS_FEATURE_2360, ID_FMP_CLASS_FEATURE_2952, ID_CDJ_CLASS_FEATURE_SWIFT_WIND, ID_CDJ_CLASS_FEATURE_JADE_HAND, ID_CDJ_CLASS_FEATURE_LASHING_VINE, ID_CDJ_CLASS_FEATURE_RENDING_CLAW,ID_FMP_CLASS_FEATURE_4331,ID_FMP_CLASS_FEATURE_4332 </specific>
 		<rules>
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_1543" />
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_1543"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Desert Wind" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4331" source="Heroes of the Elemental Chaos">
@@ -306,7 +306,7 @@ You gain a +1 bonus to weapon attack rolls with Monk Unarmed Strike.
 			<statadd name="Mental Crucible" value="+5" requires="Paragon tier"/>
 			<statadd name="Mental Crucible" value="+5" requires="epic tier"/>
 			<statadd name="resist:fire" value="+Mental Crucible" type="Class Feature" zero="true"/>
-			<grant name="ID_FMP_POWER_16131" type="Power" />
+			<grant name="ID_FMP_POWER_16131" type="Power"/>
 		</rules>
 If you choose the Desert Wind monastic tradition, you gain the following class features.
 	Flurry of Blows: You gain the desert wind flurry of blows power.
@@ -327,7 +327,7 @@ If you choose the Desert Wind monastic tradition, you gain the following class f
 		<specific name="Effect"> The target takes 2 + your Charisma modifier fire damage. If the target wasn't targeted by the triggering attack, it also takes a -2 penalty to attack rolls for any attack that includes you as a target until the end of your next turn. You can then shift 1 square. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Feature </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4331 </specific>
 You are as a screaming blast of heat that blisters anything in your path. Your strikes release elemental flame that you can hurl against your enemies.
@@ -344,7 +344,7 @@ You are as a screaming blast of heat that blisters anything in your path. Your s
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16132 </specific>
 		<rules>	
-			<grant name="ID_FMP_POWER_16132" type="Power" />
+			<grant name="ID_FMP_POWER_16132" type="Power"/>
 		</rules>
 If you choose the Eternal Tide monastic tradition, you gain the following class features.
 	Flurry of Blows: You gain the eternal tide flurry of blows power.
@@ -365,7 +365,7 @@ If you choose the Eternal Tide monastic tradition, you gain the following class 
 		<specific name="Effect"> The target takes damage equal to your Strength modifier, and you can pull the target 1 square. If the target wasn't targeted by the triggering attack, it is slowed until the end of your next turn. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
 		<specific name="Class"> ID_FMP_CLASS_362 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Feature </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4332 </specific>
 When you strike a foe, you can compel another to face you. The stronger you become, the greater the number of enemies that find themselves drawn toward you.
@@ -392,7 +392,7 @@ When you perform blistering flourish, you fix in your mind the image of a candle
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable; Unselectable </Prereqs>
 		<specific name="Power Usage"> At-Will </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -422,7 +422,7 @@ No barrier can stop a tidal wave; no obstacle can halt its progress. Crashing wa
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable; Unselectable </Prereqs>
 		<specific name="Power Usage"> At-Will </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -451,7 +451,7 @@ Monks of the Eternal Tide adopt fighting styles that enable them to turn their e
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -481,7 +481,7 @@ Your emotions stir up the air. The winds follow your movement, helping you acros
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -511,7 +511,7 @@ Focusing your mind on elemental fire while you meditate makes it easier for you 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Aura, Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -610,7 +610,7 @@ By emptying your mind of all distractions, you elevate your awareness and thereb
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Psionic </specific>
 		<specific name="Action Type"> Immediate Interrupt </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -656,7 +656,7 @@ Drawing from your psionic reservoir enables you to focus your thoughts and their
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -685,7 +685,7 @@ One of the signature disciplines of the Desert Wind tradition, burning brand lod
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -714,7 +714,7 @@ The Eternal Tide teaches that reality is not unlike a vast ocean, and all things
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Cold, Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -746,7 +746,7 @@ Clearing your mind of fear and doubt helps you achieve enough clarity to anticip
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,ID_INTERNAL_CATEGORY_MISS </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Implement, Psionic </specific>
 		<specific name="Action Type"> Immediate Interrupt </specific>
 		<specific name="Attack Type"> Melee 1 </specific>
@@ -861,7 +861,7 @@ Monks who know how to manipulate elemental air can draw the substance from the P
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic, Thunder </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -891,7 +891,7 @@ Monks who study the Desert Wind tradition wield elemental fire as a weapon. Fier
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -921,7 +921,7 @@ This power enables you to ensnare an enemy and drag it with you in an almost unb
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -942,7 +942,7 @@ This power enables you to ensnare an enemy and drag it with you in an almost unb
 		<specific name="Hit"> 1d8 + Dexterity modifier lightning damage. </specific>
 		<specific name="Miss"> Half damage. </specific>
 		<specific name="Effect"> You jump up to 5 squares without provoking opportunity attacks. Then make the secondary attack. </specific>
-		<specific name=" Close burst 1" />
+		<specific name=" Close burst 1"/>
 		<specific name=" Secondary Target"> Each creature in the burst </specific>
 		<specific name=" Secondary Attack"> Dexterity vs. Fortitude </specific>
 		<specific name=" Hit"> 1d8 + Dexterity modifier thunder damage. </specific>
@@ -972,7 +972,7 @@ Some seekers of the Sublime Way can transform themselves by using their minds to
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Implement, Psionic </specific>
 		<specific name="Action Type"> Standard Action </specific>
 		<specific name="Attack Type"> Melee touch </specific>
@@ -1056,7 +1056,7 @@ Synchronizing your movements with an enemy's enables you to keep pace with your 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Psionic </specific>
 		<specific name="Action Type"> Immediate Reaction </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1087,7 +1087,7 @@ Your ability to protect yourself reaches a new plateau when you learn break the 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1117,7 +1117,7 @@ As your fury grows, the winds respond and bear down on your enemies to hurl them
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1147,7 +1147,7 @@ You visibly manifest an impressive display of flames, which causes burns and rai
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Aura, Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1246,7 +1246,7 @@ A subtle discipline of defense, often incredibly frustrating to your enemies, on
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Psionic, Teleportation </specific>
 		<specific name="Action Type"> Immediate Reaction </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1292,7 +1292,7 @@ Eternal Tide monks often draw force from the Elemental Chaos, deploying elementa
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Cold, Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1322,7 +1322,7 @@ The thunderstorm reflects the turmoil in your heart, and training your focus on 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Aura, Elemental, Full Discipline, Lightning, Psionic, Thunder </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1352,7 +1352,7 @@ The flames this discipline draws from the Elemental Chaos seem almost eager to f
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1475,7 +1475,7 @@ The more you study and work with elemental fire, the more versatile your applica
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1505,7 +1505,7 @@ This power lets you channel the elemental fury found in storms, and infuses you 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Lightning, Psionic, Thunder </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1535,7 +1535,7 @@ The greatest disciplines taught by masters of the Eternal Tide help students sof
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic, Teleportation </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1620,7 +1620,7 @@ can wound them and scatter them at the same time. Foes that don't learn to keep 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1649,7 +1649,7 @@ The winds you call forth with loose the screaming gale originate from beyond the
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1679,7 +1679,7 @@ Your expertise with elemental fire culminates in wildfire unleashed. This power 
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_60,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Elemental, Fire, Full Discipline, Psionic, Zone </specific>
 		<specific name="Action Type"> Move Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1749,7 +1749,7 @@ Attuning your senses to be especially sensitive to your enemies helps you to ass
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_362,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Fear, Psionic, Psychic </specific>
 		<specific name="Action Type"> Immediate Reaction </specific>
 		<specific name="Attack Type"> Melee 1 </specific>
@@ -1778,7 +1778,7 @@ Increase damage to 2d10 + Dexterity modifier damage at 21st level. </specific>
 		<specific name="Level"> 1 </specific>
 		<specific name="Power Type"> Attack </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_13220" type="Power" />
+			<grant name="ID_FMP_POWER_13220" type="Power"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Fallen Needle [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_13220" source="Dragon Magazine 389">
@@ -1786,7 +1786,7 @@ Increase damage to 2d10 + Dexterity modifier damage at 21st level. </specific>
 		<Prereqs> Unselectable; Unselectable </Prereqs>
 		<Flavor> A single, sharp blow readies you to step away at a moment's notice. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
-		<specific name="Display" />
+		<specific name="Display"/>
 		<specific name="Keywords"> Full Discipline, Psionic </specific>
 		<specific name="Action Type"> Minor Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
@@ -1801,22 +1801,22 @@ Increase damage to 2d10 + Dexterity modifier damage at 21st level. </specific>
     <print-prereqs> Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Monk: Skill training; one Flurry of Blows power 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Monk </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="monk class" />
-      <select type="Power" number="1" Category="ID_FMP_POWER_7448|ID_FMP_POWER_11207|ID_FMP_POWER_13123|ID_FMP_POWER_16131|ID_FMP_POWER_16132" />
-      <modify Field="Power Usage" value="Encounter" />
-      <modify Field="Power Usage" value="Encounter" />
-      <modify Field="Power Usage" value="Encounter" />
-	  <modify Field="Power Usage" value="Encounter" />
-	  <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_GRANTS_MONK_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_MONK" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="monk class"/>
+      <select type="Power" number="1" Category="ID_FMP_POWER_7448|ID_FMP_POWER_11207|ID_FMP_POWER_13123|ID_FMP_POWER_16131|ID_FMP_POWER_16132"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <modify Field="Power Usage" value="Encounter"/>
+	  <modify Field="Power Usage" value="Encounter"/>
+	  <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_GRANTS_MONK_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_MONK" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the monk's class skills list.
 Choose one of the monk's Flurry of Blows powers. You can use that power once per encounter.

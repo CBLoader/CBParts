@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>NPC.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/NPC.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/NPC.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/NPC.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/NPC.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Tivaan's Homebrew" type="source" internal-id="ID_TIV_SOURCE_TIVAAN'S_HOMEBREW_01_01" source="Core">
     <specific name="IsBeta"> 0 </specific>
@@ -93,16 +93,16 @@ Supporters offer assistance to the leaders and comrades. They favor defense, usi
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Short Description"> Maids are servants that clean, wash, dust, and generally do all the menial tasks in the home of the employer. </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_NPC_MAID" type="Grants" />
-      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-1" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <statadd name="_LEVEL-ONE-HPS" value="+12" />
-      <statadd name="_PER-LEVEL-HPS" value="+5" />
-      <statadd name="Healing Surges" value="+6" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Will Defense Class Bonus" value="+1" />
-      <statadd name="Reflex Defense Class Bonus" value="+1" />
-      <select type="Skill Training" number="4" Category="ID_TIV_CLASS_HOMEBREW_01_01-1" />
+      <grant name="ID_INTERNAL_GRANTS_NPC_MAID" type="Grants"/>
+      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-1"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+      <statadd name="_PER-LEVEL-HPS" value="+5"/>
+      <statadd name="Healing Surges" value="+6"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Will Defense Class Bonus" value="+1"/>
+      <statadd name="Reflex Defense Class Bonus" value="+1"/>
+      <select type="Skill Training" number="4" Category="ID_TIV_CLASS_HOMEBREW_01_01-1"/>
     </rules>
 A maid is a full time or part time, lower class, female, servants who is generally assigned the responsibility to clean and maintain a certain area of a large keep or formal home, usually working under the supervision of a housekeeper. The maid may live in or live out. 
 A maid's duties may include the following:
@@ -116,22 +116,22 @@ A personal maid may additionally be responsible to prepare the lord's hair, help
   <RulesElement name="NPC Maid" type="Grants" internal-id="ID_INTERNAL_GRANTS_NPC_MAID" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_CLASS_HOMEBREW_01_01-1 </specific>
     <rules>
-      <grant name="ID_FMP_ROLE_3" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RUSHES)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SERVANT'S_DAGGER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUR_RUSHES)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" type="Proficiency" />
-      <grant name="ID_TIV_CLASS_FEATURE_THB_01-1" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_THB_01-2" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_THB_01-3" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_THB_01-4" type="Class Feature" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" type="Skill Training" />
+      <grant name="ID_FMP_ROLE_3" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RUSHES)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SERVANT'S_DAGGER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUR_RUSHES)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" type="Proficiency"/>
+      <grant name="ID_TIV_CLASS_FEATURE_THB_01-1" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_THB_01-2" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_THB_01-3" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_THB_01-4" type="Class Feature"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_DIPLOMACY" type="Skill Training"/>
     </rules>
   </RulesElement>
   <RulesElement name="Maid's Defensive Talent" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_THB_01-1" source="Tivaan's Homebrew" revision-date="05/12/2011 10:46:57 AM">
@@ -139,8 +139,8 @@ A personal maid may additionally be responsible to prepare the lord's hair, help
     <specific name="Short Description"> When your enemy wields a dagger, you gain a bonus to your AC. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Maid Defensive Talent" value="+HALF-LEVEL" />
-      <statadd name="AC" value="+Maid Defensive Talent" type="Class Feature" condition="Against a dagger-wielding enemy." />
+      <statadd name="Maid Defensive Talent" value="+HALF-LEVEL"/>
+      <statadd name="AC" value="+Maid Defensive Talent" type="Class Feature" condition="Against a dagger-wielding enemy."/>
     </rules>
 When your enemy wields a dagger, you gain a +1 bonus to AC per 1/2 level
 </RulesElement>
@@ -167,10 +167,10 @@ Once per round, when your enemy has combat advantage against you and you are usi
     <specific name="Suggested"> Skills: Acrobatics, Perception, Bluff, Intimidate, Thievery </specific>
     <specific name="Key Abilities"> Int, Dex, Cha </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_HOMEBREW_01_01-1 </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_WENCH_MAID" type="Build Suggestions" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1" type="Power" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_WENCH_MAID" type="Build Suggestions"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1" type="Power"/>
     </rules>
 You like the social scene, mixing with dangerous men, moving with ease among the crowd, waiting to pounce to your next victim, your charm is your greatest weapon, catching men off guard as you use your promiscuous behavior against them. 
 </RulesElement>
@@ -178,11 +178,11 @@ You like the social scene, mixing with dangerous men, moving with ease among the
     <Category> ID_TIV_CLASS_HOMEBREW_01_01-1 </Category>
     <specific name="Suggested"> Skills: Insight, Perception, Bluff, Stealth, Thievery </specific>
     <specific name="Key Abilities"> Int, Dex, Cha </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_HOMEBREW_01_01-2 </specific>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_MARIAN_MAID" type="Build Suggestions" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2" type="Power" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_MARIAN_MAID" type="Build Suggestions"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2" type="Power"/>
     </rules>
 You use your sophistication and manors to aid you in your endeavors, men find you charming and intriguing, your expensive and intimidate lesser men. your prey is wealthy men and you stun them with your Dominatrix skills. You have picked up knowledge about Sex-related lore and Sex effects. This knowledge extends to information about the following: submissive and dominant Roles, bondage, and discipline.
 </RulesElement>
@@ -190,7 +190,7 @@ You use your sophistication and manors to aid you in your endeavors, men find yo
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-1,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
     <Flavor> "Don't touch me, you lout, I'm not a whore!" </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wench Maid Utility </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Free Action </specific>
@@ -214,7 +214,7 @@ Final State: The target dies.</specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
     <Flavor> Your foe's heart sways with lust as it hobbles in pain. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Marian Maid Utility </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Free Action </specific>
@@ -248,31 +248,31 @@ Final State: The target dies.</specific>
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Short Description"> Chefs excel at the culinary arts, you find peace in presenting allies with tasty treats, but that's not your only flavor, you know the dark side of eatable dishes as well. </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_NPC_CHEF" type="Grants" />
-      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-2" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <statadd name="_LEVEL-ONE-HPS" value="+10" />
-      <statadd name="_PER-LEVEL-HPS" value="+4" />
-      <statadd name="Healing Surges" value="+6" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Will Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="3" Category="ID_TIV_CLASS_HOMEBREW_01_01-2" />
+      <grant name="ID_INTERNAL_GRANTS_NPC_CHEF" type="Grants"/>
+      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-2"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+10"/>
+      <statadd name="_PER-LEVEL-HPS" value="+4"/>
+      <statadd name="Healing Surges" value="+6"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Will Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="3" Category="ID_TIV_CLASS_HOMEBREW_01_01-2"/>
     </rules>
 As the chief cook, especially in a Bar or Inn, usually is responsible for planning menus, ordering foodstuffs, overseeing food preparation, and supervising the kitchen staff. The chef also experiments with differant meats and spices to create new dishes that help benefit his comrades in arms. 
 </RulesElement>
   <RulesElement name="NPC Chef" type="Grants" internal-id="ID_INTERNAL_GRANTS_NPC_CHEF" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_CLASS_HOMEBREW_01_01-2 </specific>
     <rules>
-      <grant name="ID_TIV_ROLE_1" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(COMBAT_FRYING_PAN)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_KNIFE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_COOKING_FORK)" type="Proficiency" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_02-1" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_02-2" type="Class Feature" />
-      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_TIV_SKILL_HOMEBREW_01" />
-      <grant name="ID_INTERNAL_GRANTS_NPC_CHEF_IMPLEMENTS" type="Grants" />
+      <grant name="ID_TIV_ROLE_1" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_2" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(COMBAT_FRYING_PAN)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_KNIFE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_COOKING_FORK)" type="Proficiency"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_02-1" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_02-2" type="Class Feature"/>
+      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_TIV_SKILL_HOMEBREW_01"/>
+      <grant name="ID_INTERNAL_GRANTS_NPC_CHEF_IMPLEMENTS" type="Grants"/>
     </rules>
   </RulesElement>
   <RulesElement name="Chef's Cooking Implement Mastery" type="Grants" internal-id="ID_INTERNAL_GRANTS_NPC_CHEF_IMPLEMENTS" source="Tivaan's Homebrew" revision-date="05/12/2011 10:46:57 AM">
@@ -282,7 +282,7 @@ As the chief cook, especially in a Bar or Inn, usually is responsible for planni
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_HOMEBREW_02-1-1,ID_TIV_CLASS_FEATURE_HOMEBREW_02-1-2,ID_TIV_CLASS_FEATURE_HOMEBREW_02-1-3 </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_INTERNAL_GRANTS_NPC_CHEF_IMPLEMENTS" />
+      <select type="Class Feature" number="1" Category="ID_INTERNAL_GRANTS_NPC_CHEF_IMPLEMENTS"/>
     </rules>
  Choose one of the following implements to start your culinary career: Chef's Hat, The ladle, or cooking fork.
 </RulesElement>
@@ -291,7 +291,7 @@ As the chief cook, especially in a Bar or Inn, usually is responsible for planni
     <specific name="Short Description"> You are proficient with the use of the Chef's hat and gain the bonus's associated with the use of it.  </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-1" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-1" value="+1"/>
     </rules>
 You are proficient with the use of the Chef's hat and gain the bonus's associated with the use of it
 </RulesElement>
@@ -300,7 +300,7 @@ You are proficient with the use of the Chef's hat and gain the bonus's associate
     <specific name="Short Description"> You are proficient with the use of the Chef's Ladle and gain the bonus's associated with the use of it.  </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-2" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-2" value="+1"/>
     </rules>
 You are proficient with the use of the Chef's Ladle and gain the bonus's associated with the use of it.
 </RulesElement>
@@ -309,7 +309,7 @@ You are proficient with the use of the Chef's Ladle and gain the bonus's associa
     <specific name="Short Description"> You are proficient with the use of the Cooking Fork and gain the bonus's associated with the use of it.  </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-3" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-3" value="+1"/>
     </rules>
 You are proficient with the use of the Cooking Fork and gain the bonus's associated with the use of it.
 </RulesElement>
@@ -318,7 +318,7 @@ You are proficient with the use of the Cooking Fork and gain the bonus's associa
     <specific name="Short Description"> Your Chef's Battle Cookbook is filled with tasty and curious recipes. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <select type="Feat" number="1" Category="Ritual Casting" default="Ritual Caster" />
+      <select type="Feat" number="1" Category="Ritual Casting" default="Ritual Caster"/>
     </rules>
 Your Chef's Battle Cookbook is filled with tasty and curious recipes.
 </RulesElement>
@@ -327,7 +327,7 @@ Your Chef's Battle Cookbook is filled with tasty and curious recipes.
     <specific name="Short Description"> All great chef's keep their cooking secrets hidden away in their massive cookbooks. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-4" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-2-4" value="+1"/>
     </rules>
 All great chef's keep their cooking secrets hidden away in their massive cookbooks.
 </RulesElement>
@@ -336,22 +336,22 @@ All great chef's keep their cooking secrets hidden away in their massive cookboo
     <specific name="Suggested"> Skills: Cooking, History, Nature, Religion </specific>
     <specific name="Key Abilities"> Int, Dex, Str </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_HOMEBREW_01_01-1-1,ID_TIV_POWER_HOMEBREW_01_01-1-2 </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_IRON_CHEF" type="Build Suggestions" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-1" type="Power" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-2" type="Power" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-1" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-2" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-3" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-4" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-5" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-6" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-7" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-8" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-9" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-10" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-11" value="+1" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_IRON_CHEF" type="Build Suggestions"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-1" type="Power"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-2" type="Power"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-1" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-2" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-3" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-4" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-5" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-6" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-7" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-8" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-9" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-10" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-200-11" value="+1"/>
     </rules>
 Having traveled the road as an adventurer you know the hardships of eating twigs and berries Between slaying dragons and fending off endless hordes of orcs, your tougher for it, and learned a few tricks for survival, your culinary muscles extend beyond the frying pan. You're a master of meals and you can sling a blade when needed. 
 </RulesElement>
@@ -359,7 +359,7 @@ Having traveled the road as an adventurer you know the hardships of eating twigs
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-1-1,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> You strike with with offensive strength </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Iron Chef Attack </specific>
     <specific name="Keywords"> Primal </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -377,7 +377,7 @@ Level 21: 2[W] + 3d6 + Strength modifier damage. </specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-1-1,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> With a scream, you throw yourself towards the enemy. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Iron Chef Attack </specific>
     <specific name="Keywords"> Primal </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -396,22 +396,22 @@ Level 21: 2[W] + 3d6 + Strength modifier damage. </specific>
     <specific name="Suggested"> Skills: Cooking, History, Nature, Religion </specific>
     <specific name="Key Abilities"> Int, Dex, Wis </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_HOMEBREW_01_01-1-3,ID_TIV_POWER_HOMEBREW_01_01-1-4 </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_MYSTIC_CHEF" type="Build Suggestions" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-3" type="Power" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-4" type="Power" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-1" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-2" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-3" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-4" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-5" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-6" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-7" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-8" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-9" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-10" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-11" value="+1" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_MYSTIC_CHEF" type="Build Suggestions"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-3" type="Power"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-1-4" type="Power"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-1" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-2" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-3" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-4" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-5" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-6" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-7" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-8" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-9" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-10" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01-300-11" value="+1"/>
     </rules>
 You prefer the minds eye approach to creation, filling your allies with wholesome food direct from your culinary wand. The arcane arts mix with your culinary skill to create a truly magical experience on the tongue. Your food leaves the adventurer with a lasting impression, often accompanied with bonuses to stats.
 </RulesElement>
@@ -419,7 +419,7 @@ You prefer the minds eye approach to creation, filling your allies with wholesom
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-1-2,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> A sleak tapeworm streaks to your target. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Mystic Chef Attack </specific>
     <specific name="Keywords"> Arcane, Famine, Implement </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -434,7 +434,7 @@ Level 21: Increase damage to 2d6 + Intelligence modifier. </specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-1-2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> A severe burst of Hunger weakens nearby foes. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Mystic Chef Attack </specific>
     <specific name="Keywords"> Arcane, Famine, Implement </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -470,35 +470,35 @@ Level 21: Increase damage to 2d6 + Intelligence modifier. </specific>
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Short Description"> You are a crafter who has stayed behind to perfect your skill and supply adventures with needed weapons,armor and other supplies. you take great pride in your work, placing only the best up for sale. </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_NPC_JOURNEYMAN" type="Grants" />
-      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-3" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <statadd name="_LEVEL-ONE-HPS" value="+15" />
-      <statadd name="_PER-LEVEL-HPS" value="+6" />
-      <statadd name="Healing Surges" value="+9" />
-      <statadd name="Strength" value="+4" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Fortitude Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="3" Category="ID_TIV_CLASS_HOMEBREW_01_01-3" />
+      <grant name="ID_INTERNAL_GRANTS_NPC_JOURNEYMAN" type="Grants"/>
+      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-3"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+15"/>
+      <statadd name="_PER-LEVEL-HPS" value="+6"/>
+      <statadd name="Healing Surges" value="+9"/>
+      <statadd name="Strength" value="+4"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Fortitude Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="3" Category="ID_TIV_CLASS_HOMEBREW_01_01-3"/>
     </rules>
 A journeyman is a trader or crafter who has completed an apprenticeship. A journeyman was a craftsman who had fully learned his trade and earned money but was not yet a master. To become a master, a journeyman had to submit a master work piece to a guild for judgment. If the work were deemed worthy, the journeyman would be admitted to the guild as a master.
 </RulesElement>
   <RulesElement name="NPC Journeyman" type="Grants" internal-id="ID_INTERNAL_GRANTS_NPC_JOURNEYMAN" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_CLASS_HOMEBREW_01_01-3 </specific>
     <rules>
-      <grant name="ID_TIV_ROLE_1" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_CRAFTING" type="Skill Training" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_03-1" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_03-2" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_03-3" type="Class Feature" />
+      <grant name="ID_TIV_ROLE_1" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_CRAFTING" type="Skill Training"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_03-1" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_03-2" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_03-3" type="Class Feature"/>
     </rules>
   </RulesElement>
   <RulesElement name="Journeyman's Defensive Superiority" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_HOMEBREW_03-1" source="Tivaan's Homebrew" revision-date="05/12/2011 10:46:57 AM">
@@ -506,7 +506,7 @@ A journeyman is a trader or crafter who has completed an apprenticeship. A journ
     <specific name="Short Description"> You gain a bonus to opportunity attacks equal to your Strength modifier, when your defending your workshop, town or fort. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="attack rolls" value="+ABILITYMOD(str)" type="Class Feature" condition="to Opportunity Attacks, when your defending your workshop, town or fort" />
+      <statadd name="attack rolls" value="+ABILITYMOD(str)" type="Class Feature" condition="to Opportunity Attacks, when your defending your workshop, town or fort"/>
     </rules>
 You gain a bonus to opportunity attacks equal to your Strength modifier, when your defending your workshop, town or fort.
 </RulesElement>
@@ -527,17 +527,17 @@ Depending on the Journeyman Biuld you chose, you gain one of the following imple
     <specific name="Suggested"> Skills: Crafting, History, Nature, Religion </specific>
     <specific name="Key Abilities"> Str, Dex, Con </specific>
     <specific name="_DisplayPowers"> ID_TIV_RITUAL_HOMEBREW_01_1-22,ID_TIV_RITUAL_HOMEBREW_01_1-21,ID_TIV_RITUAL_HOMEBREW_01_1-20,ID_TIV_RITUAL_HOMEBREW_01_1-19,ID_TIV_RITUAL_HOMEBREW_01_1-18 </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_BLACKSMITH" type="Build Suggestions" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" type="Proficiency" />
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-3-1" value="+1" />
-      <statadd name="FREEBEE:ID_FMP_WEAPON_40" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-18" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-19" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-20" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-21" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-22" value="+1" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_BLACKSMITH" type="Build Suggestions"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" type="Proficiency"/>
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-3-1" value="+1"/>
+      <statadd name="FREEBEE:ID_FMP_WEAPON_40" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-18" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-19" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-20" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-21" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-22" value="+1"/>
     </rules>
 A blacksmith is a person who creates objects from iron or steel by forging the metal; that is, by using tools to hammer, bend, and cut. Blacksmiths produce objects such as wrought iron gates, grills, railings, light fixtures, furniture, sculpture, tools, agricultural implements, decorative and religious items, cooking utensils, horseshoes and weapons. 
 </RulesElement>
@@ -546,17 +546,17 @@ A blacksmith is a person who creates objects from iron or steel by forging the m
     <specific name="Suggested"> Skills: Crafting, History, Nature, Religion </specific>
     <specific name="Key Abilities"> Str, Dex, Con </specific>
     <specific name="_DisplayPowers"> ID_TIV_RITUAL_HOMEBREW_01_1-28-1,ID_TIV_RITUAL_HOMEBREW_01_1-29,ID_TIV_RITUAL_HOMEBREW_01_1-30,ID_TIV_RITUAL_HOMEBREW_01_1-31,ID_TIV_RITUAL_HOMEBREW_01_1-32 </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_BOWYER" type="Build Suggestions" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAWKNIFE)" type="Proficiency" />
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-3-2" value="+1" />
-      <statadd name="FREEBEE:ID_FMP_WEAPON_40" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-28-1" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-29" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-30" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-31" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-32" value="+1" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_BOWYER" type="Build Suggestions"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAWKNIFE)" type="Proficiency"/>
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-3-2" value="+1"/>
+      <statadd name="FREEBEE:ID_FMP_WEAPON_40" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-28-1" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-29" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-30" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-31" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-32" value="+1"/>
     </rules>
 A bowyer is someone who makes or sells bows. Bows are used for hunting and for archery. The development of gunpowder and muskets slowly led to the replacement of bows as weapons of war which decreased the importance of bowyers. Someone who makes arrows is a fletcher. 
 </RulesElement>
@@ -575,16 +575,16 @@ Group:
 Broom (Much like maces are blunt weapons that have a heavier head than handle, they're useful for delivering smacking blows to rugs, sheets or any other object.). </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> Two-Handed </specific>
     <specific name="Item Slot"> Two-Hands </specific>
     <specific name="Group"> Mace </specific>
-    <specific name="Properties" />
+    <specific name="Properties"/>
   </RulesElement>
   <RulesElement name="Weapon Proficiency (Broom)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" source="Core">
     <Category> ID_FMP_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_MELEE </Category>
@@ -595,13 +595,13 @@ Broom (Much like maces are blunt weapons that have a heavier head than handle, t
     <specific name="Short Description"> Gain proficiency with the Broom. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" type="Proficiency"/>
     </rules> 
 You gain proficiency with the Broom.
 </RulesElement>
   <AppendNodes name="Weapon Group (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(MACE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROOM)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Chastise Broom" type="Weapon" internal-id="ID_TIV_WEAPON_01-4" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -618,16 +618,16 @@ Group:
 Broom (Much like maces are blunt weapons that have a heavier head than handle, they're useful for delivering smacking blows to rugs, sheets or any other object.). </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 + Knockdown </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> Two-Handed </specific>
     <specific name="Item Slot"> Two-Hands </specific>
     <specific name="Group"> Mace </specific>
-    <specific name="Properties" />
+    <specific name="Properties"/>
   </RulesElement>
   <RulesElement name="Weapon Proficiency (Chastise Broom)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" source="Core">
     <Category> ID_FMP_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_MELEE </Category>
@@ -638,13 +638,13 @@ Broom (Much like maces are blunt weapons that have a heavier head than handle, t
     <specific name="Short Description"> Gain proficiency with the Chastise Broom. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" type="Proficiency"/>
     </rules> 
 You gain proficiency with the Chastise Broom.
 </RulesElement>
   <AppendNodes name="Weapon Group (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(MACE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHASTISE_BROOM)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Mop" type="Weapon" internal-id="ID_TIV_WEAPON_01-5" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -661,16 +661,16 @@ Group:
 Mop (Much like flails, mops have a flexible material, usually a mass or bundle of coarse strings or yarn, attached to a solid handle.). </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> Two-Handed </specific>
     <specific name="Item Slot"> Two-Hands </specific>
     <specific name="Group"> Flail </specific>
-    <specific name="Properties" />
+    <specific name="Properties"/>
   </RulesElement>
   <RulesElement name="Weapon Proficiency (Mop)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" source="Core">
     <Category> ID_FMP_WEAPON_GROUP_10,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_MELEE </Category>
@@ -681,13 +681,13 @@ Mop (Much like flails, mops have a flexible material, usually a mass or bundle o
     <specific name="Short Description"> Gain proficiency with the Mop. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" type="Proficiency"/>
     </rules> 
 You gain proficiency with the Mop.
 </RulesElement>
   <AppendNodes name="Weapon Group (Flail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FLAIL)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(MOP)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Lethargic Mop" type="Weapon" internal-id="ID_TIV_WEAPON_01-6" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -704,16 +704,16 @@ Group:
 Mop (Much like flails, mops have a flexible material, usually a mass or bundle of coarse strings or yarn, attached to a solid handle.). </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 + Dazed until the end of your next turn. </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> Two-Handed </specific>
     <specific name="Item Slot"> Two-Hands </specific>
     <specific name="Group"> Flail </specific>
-    <specific name="Properties" />
+    <specific name="Properties"/>
   </RulesElement>
   <RulesElement name="Weapon Proficiency (Lethargic Mop)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" source="Core">
     <Category> ID_FMP_WEAPON_GROUP_10,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_MELEE </Category>
@@ -724,13 +724,13 @@ Mop (Much like flails, mops have a flexible material, usually a mass or bundle o
     <specific name="Short Description"> Gain proficiency with the Lethargic Mop. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" type="Proficiency"/>
     </rules> 
 You gain proficiency with the Mop.
 </RulesElement>
   <AppendNodes name="Weapon Group (Flail)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(FLAIL)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LETHARGIC_MOP)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Rushes" type="Weapon" internal-id="ID_TIV_WEAPON_01-2" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -755,7 +755,7 @@ Rushes (Rush: Any of several flowering plants distinguished by cylindrical stalk
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Ranged </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> One-hand </specific>
@@ -771,13 +771,13 @@ Rushes (Rush: Any of several flowering plants distinguished by cylindrical stalk
     <specific name="Short Description"> Gain proficiency with Rushes. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RUSHES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RUSHES)" type="Proficiency"/>
     </rules> 
 You gain proficiency with Rushes.
 </RulesElement>
   <AppendNodes name="Weapon Group (Sling)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SLING)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RUSHES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(RUSHES)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Sour Rushes" type="Weapon" internal-id="ID_TIV_WEAPON_01-3" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -804,7 +804,7 @@ Rushes (Rush: Any of several flowering plants distinguished by cylindrical stalk
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 + Stench </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Ranged </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> One-hand </specific>
@@ -820,13 +820,13 @@ Rushes (Rush: Any of several flowering plants distinguished by cylindrical stalk
     <specific name="Short Description"> Gain proficiency with Sour Rushes. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUR_RUSHES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUR_RUSHES)" type="Proficiency"/>
     </rules> 
 You gain proficiency with Sour Rushes.
 </RulesElement>
   <AppendNodes name="Weapon Group (Sling)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(SLING)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUR_RUSHES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SOUR_RUSHES)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Servant's Dagger" type="Weapon" internal-id="ID_TIV_WEAPON_01-7" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -852,7 +852,7 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Damage"> Half (Min 1) 1d4 </specific>
     <specific name="Critical"> 2d4 </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -868,13 +868,13 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Short Description"> Gain proficiency with a Servant's Dagger. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SERVANT'S_DAGGER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SERVANT'S_DAGGER)" type="Proficiency"/>
     </rules> 
 You gain proficiency with a Servant's Dagger.
 </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SERVANT'S_DAGGER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SERVANT'S_DAGGER)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Chef's Cooking Fork" type="Weapon" internal-id="ID_TIV_WEAPON_01-8" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -900,7 +900,7 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 2d6  </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -916,13 +916,13 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Short Description"> Gain proficiency with a Chef's Cooking Fork. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_COOKING_FORK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_COOKING_FORK)" type="Proficiency"/>
     </rules> 
 You gain proficiency with a Chef's Cooking Fork.
 </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_COOKING_FORK)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_COOKING_FORK)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Chef's Knife" type="Weapon" internal-id="ID_TIV_WEAPON_01-9" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -948,7 +948,7 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 2d6  </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -964,13 +964,13 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Short Description"> Gain proficiency with a Chef's Knife. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_KNIFE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_KNIFE)" type="Proficiency"/>
     </rules> 
 You gain proficiency with a Chef's Knife.
 </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_KNIFE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHEF'S_KNIFE)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Combat Frying Pan" type="Weapon" internal-id="ID_TIV_WEAPON_01-10" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -995,7 +995,7 @@ Heavy blade (Blades are balanced edged weapons. Heavy blades share some of the p
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 2d6  </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Superior Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> One-hand </specific>
@@ -1011,13 +1011,13 @@ Heavy blade (Blades are balanced edged weapons. Heavy blades share some of the p
     <specific name="Short Description"> Gain proficiency with a Combat Frying Pan. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(COMBAT_FRYING_PAN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(COMBAT_FRYING_PAN)" type="Proficiency"/>
     </rules> 
 You gain proficiency with a Combat Frying Pan.
 </RulesElement>
   <AppendNodes name="Weapon Group (Heavy Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HEAVY_BLADE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(COMBAT_FRYING_PAN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(COMBAT_FRYING_PAN)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Drawknife" type="Weapon" internal-id="ID_TIV_WEAPON_01-11" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1043,7 +1043,7 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 2d6  </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -1059,13 +1059,13 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Short Description"> Gain proficiency with a Drawknife. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAWKNIFE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAWKNIFE)" type="Proficiency"/>
     </rules> 
 You gain proficiency with a Drawknife.
 </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAWKNIFE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAWKNIFE)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Smithing Hammer" type="Weapon" internal-id="ID_TIV_WEAPON_01-12" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1082,16 +1082,16 @@ Group:
 Hammers (Much like maces are blunt weapons that have a heavier head than handle, they're useful for delivering smacking blows to rugs, sheets or any other object.). </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 1d6 + Knockdown </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> One-hand </specific>
     <specific name="Group"> Mace </specific>
-    <specific name="Properties" />
+    <specific name="Properties"/>
   </RulesElement>
   <RulesElement name="Weapon Proficiency (Smithing Hammer)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" source="Core">
     <Category> ID_FMP_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_MELEE </Category>
@@ -1102,13 +1102,13 @@ Hammers (Much like maces are blunt weapons that have a heavier head than handle,
     <specific name="Short Description"> Gain proficiency with the Smithing Hammer. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" type="Proficiency"/>
     </rules> 
 You gain proficiency with the Smithing Hammer.
 </RulesElement>
   <AppendNodes name="Weapon Group (Mace)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(MACE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SMITHING_HAMMER)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Horse Whip" type="Weapon" internal-id="ID_TIV_WEAPON_01-13" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1131,10 +1131,10 @@ Group:
 Flail (Weapons in the flail group have a flexible material, usually a length of chain, between a solid handle and the damage-dealing end of the weapon.). </specific>
     <specific name="Weight"> 2 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> 1d4 </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Superior Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -1151,13 +1151,13 @@ Although an impractical weapon in most hands, a well-placed whip strike can put 
     <specific name="Short Description"> Gain proficiency with the Horse Whip. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HORSE_WHIP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HORSE_WHIP)" type="Proficiency"/>
     </rules> 
 You gain proficiency with the Horse Whip.
 </RulesElement>
   <AppendNodes name="Weapon Group (Whip)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HORSE_WHIP)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HORSE_WHIP)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Branding Iron" type="Weapon" internal-id="ID_TIV_WEAPON_01-14" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1183,7 +1183,7 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Damage"> Half (Min 1) 1d6 </specific>
     <specific name="Critical"> 2d6  </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -1199,13 +1199,13 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Short Description"> Gain proficiency with a Branding Iron. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BRANDING_IRON)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BRANDING_IRON)" type="Proficiency"/>
     </rules> 
 You gain proficiency with a Branding Iron.
 </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BRANDING_IRON)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BRANDING_IRON)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Chef's Hat" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-2-1" source="Advanced Player's Guide">
@@ -1215,12 +1215,12 @@ Price: 1 gp
 Description: Using a non-magical Chef's hat confers no benefit. You should use a non-magical Chef's hat if you have feats or a class that gives you a benefit with them. </specific>
     <specific name="Weight"> 0 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Using a non-magical Chef's hat confers no benefit. You should use a non-magical Chef's hat if you have feats or a class that gives you a benefit with them.
 </RulesElement>
   <RulesElement name="Chef's Ladle" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-2-2" source="Advanced Player's Guide">
@@ -1230,12 +1230,12 @@ Price: 1 gp
 Description: Using a non-magical Chef's Ladle confers no benefit. You should use a non-magical Chef's Ladle if you have feats or a class that gives you a benefit with them. </specific>
     <specific name="Weight"> 0 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Using a non-magical Chef's Ladle confers no benefit. You should use a non-magical Chef's Ladle if you have feats or a class that gives you a benefit with them.
 </RulesElement>
   <RulesElement name="Chef's Cooking Fork" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-2-3" source="Advanced Player's Guide">
@@ -1245,12 +1245,12 @@ Price: 1 gp
 Description: Using a non-magical Chef's Cooking Fork confers no benefit. You should use a non-magical Chef's Cooking Fork if you have feats or a class that gives you a benefit with them. </specific>
     <specific name="Weight"> 0 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Using a non-magical Chef's Cooking Fork confers no benefit. You should use a non-magical Chef's Cooking Fork if you have feats or a class that gives you a benefit with them.
 </RulesElement>
   <RulesElement name="Chef's Battle Cookbook" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-2-4" source="Tivaan's Homebrew">
@@ -1261,12 +1261,12 @@ Weight: 3 lb
 Description: Chefs use a Chef's Battle Cookbook to store the recipes they have mastered. </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 50 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Chefs use a Chef's Battle Cookbook to store the recipes they have mastered.
 </RulesElement>
   <RulesElement name="Blacksmith Anvil" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-3-1" source="Tivaan's Homebrew">
@@ -1277,12 +1277,12 @@ Weight: 150 lb
 Description: A heavy block of iron with a smooth, flat top on which metals are shaped by hammering. </specific>
     <specific name="Weight"> 150 </specific>
     <specific name="Gold"> 50 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 A heavy block of iron with a smooth, flat top on which metals are shaped by hammering. 
 </RulesElement>
   <RulesElement name="Bowyer Drawknife" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-3-2" source="Tivaan's Homebrew">
@@ -1293,12 +1293,12 @@ Weight: 1 lb
 Description: Woodcutting tool with two handles at right angles to the blade. </specific>
     <specific name="Weight"> 1 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Woodcutting tool with two handles at right angles to the blade.
 </RulesElement>
   <RulesElement name="Horse Whip" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-4-1" source="Tivaan's Homebrew">
@@ -1309,12 +1309,12 @@ Weight: 1 lb
 Description: A tool used as an artificial riding aid. </specific>
     <specific name="Weight"> 1 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 A tool used as an artificial riding aid.
 </RulesElement>
   <RulesElement name="Branding Iron" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-4-2" source="Tivaan's Homebrew">
@@ -1326,12 +1326,12 @@ Description: A branding iron is a tool which uses the process of pressing a heat
  </specific>
     <specific name="Weight"> 3 </specific>
     <specific name="Gold"> 1 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 A branding iron is a tool which uses the process of pressing a heated metal shape against an object or livestock with the intention of leaving a mark.
 </RulesElement>
   <RulesElement name="Dog Saddle" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-4-3" source="Tivaan's Homebrew">
@@ -1343,12 +1343,12 @@ Description: A brownish leather saddle made for riding a dog.
  </specific>
     <specific name="Weight"> 5 </specific>
     <specific name="Gold"> 80 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 A brownish leather saddle made for riding a dog.
 </RulesElement>
   <RulesElement name="Breeding Mount" type="Gear" internal-id="ID_TIV_GEAR_HOMEBREW_01-4-4" source="Tivaan's Homebrew">
@@ -1360,12 +1360,12 @@ Description: A Breeding Mount is a tool which Ranchers use in the process of Bre
  </specific>
     <specific name="Weight"> 13 </specific>
     <specific name="Gold"> 50 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Gear </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals.
 </RulesElement>
   <!-- Armor -->
@@ -1374,21 +1374,21 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 4 </specific>
     <specific name="Gold"> 840 </specific>
     <specific name="Magic Item Type"> Armor </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
     <specific name="Armor"> Cloth </specific>
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Property"> Gain a +2 item bonus to AC against the first attack made against you in each encounter. </specific>
     <specific name="Power"> Power (Daily): When your opponent is dazed by you, you gain a free action at the end of your turn, or before the start of your next turn. </specific>
     <specific name="_Rarity"> Common </specific>
     <specific name="Enhancement"> +1 AC </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <rules>
-      <statadd name="Armor Class" value="+1" type="Enhancement" />
-      <statadd name="Armor Enhancement Bonus" value="+1" />
+      <statadd name="Armor Class" value="+1" type="Enhancement"/>
+      <statadd name="Armor Enhancement Bonus" value="+1"/>
     </rules>
   </RulesElement>
   <RulesElement name="Bodices Seduction +2" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-2" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1396,21 +1396,21 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 9 </specific>
     <specific name="Gold"> 4200 </specific>
     <specific name="Magic Item Type"> Armor </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
     <specific name="Armor"> Cloth </specific>
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Property"> Gain a +2 item bonus to AC against the first attack made against you in each encounter. </specific>
     <specific name="Power"> Power (Daily): When your opponent is dazed by you, you gain a free action at the end of your turn, or before the start of your next turn. </specific>
     <specific name="_Rarity"> Common </specific>
     <specific name="Enhancement"> +2 AC </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <rules>
-      <statadd name="Armor Class" value="+2" type="Enhancement" />
-      <statadd name="Armor Enhancement Bonus" value="+2" />
+      <statadd name="Armor Class" value="+2" type="Enhancement"/>
+      <statadd name="Armor Enhancement Bonus" value="+2"/>
     </rules>
   </RulesElement>
   <RulesElement name="Bodices Seduction +3" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-3" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1418,21 +1418,21 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 14 </specific>
     <specific name="Gold"> 21000 </specific>
     <specific name="Magic Item Type"> Armor </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
     <specific name="Armor"> Cloth </specific>
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Property"> Gain a +2 item bonus to AC against the first attack made against you in each encounter. </specific>
     <specific name="Power"> Power (Daily): When your opponent is dazed by you, you gain a free action at the end of your turn, or before the start of your next turn. </specific>
     <specific name="_Rarity"> Common </specific>
     <specific name="Enhancement"> +3 AC </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <rules>
-      <statadd name="Armor Class" value="+3" type="Enhancement" />
-      <statadd name="Armor Enhancement Bonus" value="+3" />
+      <statadd name="Armor Class" value="+3" type="Enhancement"/>
+      <statadd name="Armor Enhancement Bonus" value="+3"/>
     </rules>
   </RulesElement>
   <RulesElement name="Bodices Seduction +4" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-4" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1440,21 +1440,21 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 19 </specific>
     <specific name="Gold"> 105000 </specific>
     <specific name="Magic Item Type"> Armor </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
     <specific name="Armor"> Cloth </specific>
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Property"> Gain a +2 item bonus to AC against the first attack made against you in each encounter. </specific>
     <specific name="Power"> Power (Daily): When your opponent is dazed by you, you gain a free action at the end of your turn, or before the start of your next turn. </specific>
     <specific name="_Rarity"> Common </specific>
     <specific name="Enhancement"> +4 AC </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <rules>
-      <statadd name="Armor Class" value="+4" type="Enhancement" />
-      <statadd name="Armor Enhancement Bonus" value="+4" />
+      <statadd name="Armor Class" value="+4" type="Enhancement"/>
+      <statadd name="Armor Enhancement Bonus" value="+4"/>
     </rules>
   </RulesElement>
   <RulesElement name="Bodices Seduction +5" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-5" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1462,21 +1462,21 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 24 </specific>
     <specific name="Gold"> 525000 </specific>
     <specific name="Magic Item Type"> Armor </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
     <specific name="Armor"> Cloth </specific>
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Property"> Gain a +2 item bonus to AC against the first attack made against you in each encounter. </specific>
     <specific name="Power"> Power (Daily): When your opponent is dazed by you, you gain a free action at the end of your turn, or before the start of your next turn. </specific>
     <specific name="_Rarity"> Common </specific>
     <specific name="Enhancement"> +5 AC </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <rules>
-      <statadd name="Armor Class" value="+5" type="Enhancement" />
-      <statadd name="Armor Enhancement Bonus" value="+5" />
+      <statadd name="Armor Class" value="+5" type="Enhancement"/>
+      <statadd name="Armor Enhancement Bonus" value="+5"/>
     </rules>
   </RulesElement>
   <RulesElement name="Bodices Seduction +6" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-6" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1484,21 +1484,21 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 29 </specific>
     <specific name="Gold"> 2625000 </specific>
     <specific name="Magic Item Type"> Armor </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
     <specific name="Armor"> Cloth </specific>
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Property"> Gain a +2 item bonus to AC against the first attack made against you in each encounter. </specific>
     <specific name="Power"> Power (Daily): When your opponent is dazed by you, you gain a free action at the end of your turn, or before the start of your next turn. </specific>
     <specific name="_Rarity"> Common </specific>
     <specific name="Enhancement"> +6 AC </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <rules>
-      <statadd name="Armor Class" value="+6" type="Enhancement" />
-      <statadd name="Armor Enhancement Bonus" value="+6" />
+      <statadd name="Armor Class" value="+6" type="Enhancement"/>
+      <statadd name="Armor Enhancement Bonus" value="+6"/>
     </rules>
   </RulesElement>
   <RulesElement name="Chef's Hat (herioc tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-7" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
@@ -1506,289 +1506,289 @@ A Breeding Mount is a tool which Ranchers use in the process of Breeding Animals
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Head Slot Item </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +3 bonus to Cooking Checks </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Chef's Hat (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-8" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional White chefs Hat. </Flavor>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Head Slot Item </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +6 bonus to Cooking Checks </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Chef's Hat (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-9" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional White chefs Hat. </Flavor>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Head Slot Item </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +12 bonus to Cooking Checks </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Ladle of Famine (herioc tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-10" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional chef's ladle. </Flavor>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +3 bonus to Famine Damage </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Ladle of Famine (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-11" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional chef's ladle. </Flavor>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +6 bonus to Famine Damage </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Ladle of Famine (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-12" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional chef's ladle. </Flavor>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +12 bonus to Famine Damage </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Chef's Fork of Famine (herioc tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-13" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional chef's fork. </Flavor>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +3 bonus to Famine Damage </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Chef's Fork of Famine (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-14" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional chef's fork. </Flavor>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +6 bonus to Famine Damage </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Chef's Fork of Famine (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-15" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Traditional chef's fork. </Flavor>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +12 bonus to Famine Damage </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Blacksmith Anvil (herioc tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-16" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> A heavy block of iron with a smooth, flat top on which metals are shaped by hammering. </Flavor>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Helmet </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +3 bonus to Crafting Checks. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Blacksmith Anvil (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-17" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> A heavy block of iron with a smooth, flat top on which metals are shaped by hammering. </Flavor>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Helmet </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +6 bonus to Crafting Checks. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Blacksmith Anvil (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-18" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> A heavy block of iron with a smooth, flat top on which metals are shaped by hammering. </Flavor>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Helmet </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +12 bonus to Crafting Checks. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Drawknife (herioc tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-19" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Woodcutting tool with two handles at right angles to the blade. </Flavor>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Helmet </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +3 bonus to Crafting Checks. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Drawknife (paragon tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-20" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Woodcutting tool with two handles at right angles to the blade. </Flavor>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Helmet </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +6 bonus to Crafting Checks. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Drawknife (epic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-21" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> Woodcutting tool with two handles at right angles to the blade. </Flavor>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Helmet </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Head </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> +12 bonus to Crafting Checks. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Saddle of the Blink (heroic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-22" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> This black, twisted leather bridle lets you take advantage of your mount's ability to teleport. </Flavor>
     <specific name="Level"> 3 </specific>
     <specific name="Gold"> 800 </specific>
     <specific name="Magic Item Type"> Mount </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Mount </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> When a mount teleports, the rider on the mount can remain mounted and teleport along with the mount even if the mount's movement doesn't normally allow it. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Saddle of the Hellhound (heroic tier)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_THB_01_01-23" source="Tivaan's Homebrew" revision-date="8/27/2010 1:16:11 PM">
     <Flavor> This red and black, leather Saddle lets you take advantage of your mount's ability to use Fire Shield (Fire) aura 1. </Flavor>
     <specific name="Level"> 17 </specific>
     <specific name="Gold"> 30800 </specific>
     <specific name="Magic Item Type"> Mount </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Mount </specific>
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Property"> While mounted, you have the abilites of the Hellhound, Fire Shield (Fire) aura 1. Taking no Damage from the fire. </specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <!-- Cooking Skill -->
   <RulesElement name="Cooking" type="Skill" internal-id="ID_TIV_SKILL_HOMEBREW_01" source="Houserule">
@@ -1797,17 +1797,17 @@ You can create deliciously dishes from just about anything. This also includes d
 </RulesElement>
   <AppendNodes name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES">
     <rules>
-      <grant name="ID_TIV_SKILL_HOMEBREW_01" type="Skill" />
-      <statadd name="Cooking" value="+HALF-LEVEL" />
-      <statadd name="Cooking" value="+ABILITYMOD(Intelligence)" type="Ability" />
-      <statadd name="Cooking" value="+Cooking Trained" />
-      <statadd name="Cooking" value="+Cooking Misc" />
+      <grant name="ID_TIV_SKILL_HOMEBREW_01" type="Skill"/>
+      <statadd name="Cooking" value="+HALF-LEVEL"/>
+      <statadd name="Cooking" value="+ABILITYMOD(Intelligence)" type="Ability"/>
+      <statadd name="Cooking" value="+Cooking Trained"/>
+      <statadd name="Cooking" value="+Cooking Misc"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Cooking" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_COOKING" source="Houserule">
     <Category> ID_TIV_SKILL_HOMEBREW_01 </Category>
     <rules>
-      <statadd name="Cooking Trained" value="+5" type="trained" />
+      <statadd name="Cooking Trained" value="+5" type="trained"/>
     </rules>
   </RulesElement>
   <RulesElement name="Skill Training (Cooking)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(COOKING)" source="Houserule">
@@ -1816,7 +1816,7 @@ You can create deliciously dishes from just about anything. This also includes d
     <specific name="Short Description"> Gain training in Cooking </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_COOKING" type="Skill Training" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_COOKING" type="Skill Training"/>
     </rules>
 You gain training in the Cooking skill.
 </RulesElement>
@@ -1828,7 +1828,7 @@ You gain training in the Cooking skill.
     <specific name="Short Description"> +3 to Cooking checks </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <statadd name="Cooking Misc" value="+3" type="Feat" />
+      <statadd name="Cooking Misc" value="+3" type="Feat"/>
     </rules>
 You gain a +3 feat bonus to Cooking checks.
 </RulesElement>
@@ -1839,17 +1839,17 @@ Crafting is a form of art. A person is able to create fine pieces of armor, weap
 </RulesElement>
   <AppendNodes name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES">
     <rules>
-      <grant name="ID_TIV_SKILL_HOMEBREW_02" type="Skill" />
-      <statadd name="Crafting" value="+HALF-LEVEL" />
-      <statadd name="Crafting" value="+ABILITYMOD(Strength)" type="Ability" />
-      <statadd name="Crafting" value="+Crafting Trained" />
-      <statadd name="Crafting" value="+Crafting Misc" />
+      <grant name="ID_TIV_SKILL_HOMEBREW_02" type="Skill"/>
+      <statadd name="Crafting" value="+HALF-LEVEL"/>
+      <statadd name="Crafting" value="+ABILITYMOD(Strength)" type="Ability"/>
+      <statadd name="Crafting" value="+Crafting Trained"/>
+      <statadd name="Crafting" value="+Crafting Misc"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Crafting" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_CRAFTING" source="Houserule">
     <Category> ID_TIV_SKILL_HOMEBREW_02 </Category>
     <rules>
-      <statadd name="Crafting Trained" value="+5" type="trained" />
+      <statadd name="Crafting Trained" value="+5" type="trained"/>
     </rules>
   </RulesElement>
   <RulesElement name="Skill Training (Crafting)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(CRAFTING)" source="Houserule">
@@ -1858,7 +1858,7 @@ Crafting is a form of art. A person is able to create fine pieces of armor, weap
     <specific name="Short Description"> Gain training in Crafting </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_CRAFTING" type="Skill Training" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_CRAFTING" type="Skill Training"/>
     </rules>
 You gain training in the Crafting skill.
 </RulesElement>
@@ -1870,7 +1870,7 @@ You gain training in the Crafting skill.
     <specific name="Short Description"> +3 to Crafting checks </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <statadd name="Crafting Misc" value="+3" type="Feat" />
+      <statadd name="Crafting Misc" value="+3" type="Feat"/>
     </rules>
 You gain a +3 feat bonus to Crafting checks.
 </RulesElement>
@@ -1880,17 +1880,17 @@ You know the power of controlled breeding; you pick your selections carefully, w
 </RulesElement>
   <AppendNodes name="SkillRules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_SKILLRULES">
     <rules>
-      <grant name="ID_TIV_SKILL_HOMEBREW_03" type="Skill" />
-      <statadd name="Breeding" value="+HALF-LEVEL" />
-      <statadd name="Breeding" value="+ABILITYMOD(Dexterity)" type="Ability" />
-      <statadd name="Breeding" value="+Breeding Trained" />
-      <statadd name="Breeding" value="+Breeding Misc" />
+      <grant name="ID_TIV_SKILL_HOMEBREW_03" type="Skill"/>
+      <statadd name="Breeding" value="+HALF-LEVEL"/>
+      <statadd name="Breeding" value="+ABILITYMOD(Dexterity)" type="Ability"/>
+      <statadd name="Breeding" value="+Breeding Trained"/>
+      <statadd name="Breeding" value="+Breeding Misc"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Breeding" type="Skill Training" internal-id="ID_INTERNAL_SKILL_TRAINING_BREEDING" source="Amethyst">
     <Category> ID_TIV_SKILL_HOMEBREW_03 </Category>
     <rules>
-      <statadd name="Breeding Trained" value="+5" type="trained" />
+      <statadd name="Breeding Trained" value="+5" type="trained"/>
     </rules>
   </RulesElement>
   <RulesElement name="Skill Training (Breeding)" type="Feat" internal-id="ID_INTERNAL_FEAT_SKILL_TRAINING_(BREEDING)" source="Amethyst">
@@ -1899,7 +1899,7 @@ You know the power of controlled breeding; you pick your selections carefully, w
     <specific name="Short Description"> Gain training in Breeding </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_BREEDING" type="Skill Training" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_BREEDING" type="Skill Training"/>
     </rules>
 You gain training in the Breeding skill.
 </RulesElement>
@@ -1911,7 +1911,7 @@ You gain training in the Breeding skill.
     <specific name="Short Description"> +3 to Breeding checks </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <statadd name="Breeding Misc" value="+3" type="Feat" />
+      <statadd name="Breeding Misc" value="+3" type="Feat"/>
     </rules>
 You gain a +3 feat bonus to Breeding checks.
 </RulesElement>
@@ -1920,11 +1920,11 @@ You gain a +3 feat bonus to Breeding checks.
     <specific name="Category"> Poison </specific>
     <specific name="Key Skill"> Nature (no check) </specific>
     <specific name="Component Cost"> 25 </specific>
-    <specific name="Duration" />
+    <specific name="Duration"/>
     <specific name="Level"> 5 </specific>
     <specific name="Time"> 10 Minutes </specific>
     <specific name="Market Price"> 250 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Alchemical Formula </specific>
     <specific name="_RELATED_ITEMS"> ID_TIV_MAGIC_ITEM_HOMEBREW_01-1 </specific>
 Calcium oxide, commonly known as quicklime or burnt lime, is a widely used chemical compound. It is a white, caustic, alkaline crystalline solid at room temperature. 
@@ -1936,17 +1936,17 @@ Calcium oxide is usually made by the thermal decomposition of materials such as 
     <specific name="Level"> 5 </specific>
     <specific name="Gold"> 25 </specific>
     <specific name="Magic Item Type"> Alchemical </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Power"> Power (Inhale * Poison): +2 vs. Fortitude; the target receives ongoing 3 poison damage and immobilized (save ends both). Aftereffect: The target is immobilized (save ends).</specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Scroll of Quicklime" type="Ritual Scroll" internal-id="ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_QUICKLIME" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_RITUAL_HOMEBREW_01-1 </specific>
@@ -1959,11 +1959,11 @@ A scroll containing the alchemical formula for Quicklime.
     <specific name="Category"> Oil </specific>
     <specific name="Key Skill"> Dominance (no check) </specific>
     <specific name="Component Cost"> See Below </specific>
-    <specific name="Duration" />
+    <specific name="Duration"/>
     <specific name="Level"> 5 </specific>
     <specific name="Time"> 15 Minutes </specific>
     <specific name="Market Price"> 200 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Alchemical Formula </specific>
     <specific name="_RELATED_ITEMS"> ID_TIV_MAGIC_ITEM_HOMEBREW_01-2-2,ID_TIV_RITUAL_HOMEBREW_01-2-3,ID_TIV_RITUAL_HOMEBREW_01-2-4 </specific>
 This hallucinogenic is said to come from the veins of the Red Lady of War. You can apply this Hallucinogen liquid to a weapon to give it the hallucinogenic property, allowing the wielder to daze and take advantage of the prey.
@@ -1980,17 +1980,17 @@ Level 25: The weapon deals an extra 2d6 damage Against male characters Alchemica
     <specific name="Level"> 5 </specific>
     <specific name="Gold"> 50 </specific>
     <specific name="Magic Item Type"> Alchemical </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Power"> Power (Consumable): Standard Action. Your weapon or one group of ammunition (30 arrows, 10 crossbow bolts, 20 sling bullets, or 5 shuriken) attacks as a hallucinogenic weapon until the end of the encounter or for the next 5 minutes. Alchemical Hallucinogen can be applied to nonmagical weapons and to magic weapons of 14th level or lower.</specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Scroll of Grove of Passions (Level 5)" type="Ritual Scroll" internal-id="ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_GROVE_OF_PASSIONS_(LEVEL_5)" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_RITUAL_HOMEBREW_01-2-2 </specific>
@@ -2004,17 +2004,17 @@ A scroll containing the alchemical formula for Grove of Passions (Level 5).
     <specific name="Level"> 15 </specific>
     <specific name="Gold"> 1,000 </specific>
     <specific name="Magic Item Type"> Alchemical </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Power"> Power (Consumable): Standard Action. Your weapon or one group of ammunition (30 arrows, 10 crossbow bolts, 20 sling bullets, or 5 shuriken) attacks as a hallucinogenic weapon until the end of the encounter or for the next 5 minutes. The weapon deals an extra 1d6 damage against male Charaters Alchemical Hallucinogen can be applied to nonmagical weapons and to magic weapons of 24th level or lower.</specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Scroll of Grove of Passions (Level 15)" type="Ritual Scroll" internal-id="ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_GROVE_OF_PASSIONS_(LEVEL_15)" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_RITUAL_HOMEBREW_01-2-3 </specific>
@@ -2028,17 +2028,17 @@ A scroll containing the alchemical formula for Grove of Passions (Level 15).
     <specific name="Level"> 25 </specific>
     <specific name="Gold"> 25,000 </specific>
     <specific name="Magic Item Type"> Alchemical </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
-    <specific name="Special" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
+    <specific name="Special"/>
     <specific name="Power"> Power (Consumable): Standard Action. Your weapon or one group of ammunition (30 arrows, 10 crossbow bolts, 20 sling bullets, or 5 shuriken) attacks as a hallucinogenic weapon until the end of the encounter or for the next 5 minutes. The weapon deals an extra 2d6 damage Against male characters Alchemical Hallucinogen can be applied to nonmagical weapons and to magic weapons of 34th level or lower.</specific>
     <specific name="_Rarity"> Common </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Scroll of Grove of Passions (Level 25)" type="Ritual Scroll" internal-id="ID_INTERNAL_RITUAL_SCROLL_SCROLL_OF_GROVE_OF_PASSIONS_(LEVEL_25)" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_RITUAL_HOMEBREW_01-2-4 </specific>
@@ -2056,7 +2056,7 @@ A scroll containing the alchemical formula for Grove of Passions (Level 25).
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Drink type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Drinks at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2085,7 +2085,7 @@ A sturdy black coffee with a pungent bite
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Drink type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Drinks at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2114,7 +2114,7 @@ This Rot gut sludge will jolt even the toughest of the adventuring breed.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Soup type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's soups at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2143,7 +2143,7 @@ A blend of nuts and berrys, for getting in touch with nature.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Soup type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's soups at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2172,7 +2172,7 @@ Heat it up a notch with this warming pack of spices
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Small Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Small Meat at an additional cost and bonus.
 
@@ -2202,7 +2202,7 @@ A timeless tradition, you cant beat a good bowl of old fanshined chili.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Small Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Small Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2231,7 +2231,7 @@ If you can eat this meat and endure the psychedelic induced delusions, you can h
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Small Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Small Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2260,7 +2260,7 @@ Its not always best to know what your eating.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Large Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Large Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2289,7 +2289,7 @@ Made from the hottest peppers around, this pack of seasons will bring even the t
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Large Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Large Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2318,7 +2318,7 @@ Made from real death, this pack of seasons adds that extra touch of flavor
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Large Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Large Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2347,7 +2347,7 @@ A glow embraces your creation.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Desert type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Desert at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2376,7 +2376,7 @@ Just like grandma used to make, this pie pack brings those wholesome flavors rig
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Drink type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Drinks at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2405,7 +2405,7 @@ A cool refreshing drink is all you need to regain your thoughts
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Drink type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Drinks at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2434,7 +2434,7 @@ Take you mind off those pesky blows with this mystical tea.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Soup type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's soups at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2463,7 +2463,7 @@ A blend of nuts and berrys, for getting in touch with nature.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Soup type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's soups at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2492,7 +2492,7 @@ Spread the heat with this Blazing Soup.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Small Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Small Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2521,7 +2521,7 @@ You fill your belly with a Tale of Two Chillies.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Small Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Small Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2550,7 +2550,7 @@ This near death experence hardens your soul.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Small Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Small Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2579,7 +2579,7 @@ A glow embraces your creation.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Large Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Large Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2609,7 +2609,7 @@ Made from ice gargoyle extract, this mystic Pack of seasons will protect you fro
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Large Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Large Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2638,7 +2638,7 @@ Made from death himself, this mystic pack of seasons adds that extra touch of fl
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Large Meat type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Large Meat at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2667,7 +2667,7 @@ You feel like you could lift a mountain.
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The ritual's component cost is equal to the price of the Desert type created. (DM's discretion) See below for seasoning packets that can be added to the Chef's Desert at an additional cost and bonus.
 &lt;table&gt;Cooking Check Result	Outcome	Component Cost
@@ -2794,7 +2794,7 @@ Level 21: Increase damage to 3[W] + Dexterity modifier.	</specific>
     <Flavor> You use 1/12 serving of premade pot of black coffee </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Chef Cooking Ritual </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one ally </specific>
@@ -2810,7 +2810,7 @@ Level 21: Increase damage to 3[W] + Dexterity modifier.	</specific>
     <Flavor> You use 1/12 serving of premade pie. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Chef Cooking Ritual </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one ally </specific>
@@ -2826,7 +2826,7 @@ Level 21: Increase damage to 3[W] + Dexterity modifier.	</specific>
     <Flavor> You use 1/10 serving of a premade pot of soup. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Chef Cooking Ritual </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one ally </specific>
@@ -2842,7 +2842,7 @@ Level 21: Increase damage to 3[W] + Dexterity modifier.	</specific>
     <Flavor> You use 1/10 serving of premade Roasted Black Dragon (Large Meat). </Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Chef Cooking Ritual </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one ally </specific>
@@ -2858,7 +2858,7 @@ Level 21: Increase damage to 3[W] + Dexterity modifier.	</specific>
     <Flavor> You use 1 Smoked Sausage (Small Meat). </Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Chef Cooking Ritual </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one ally </specific>
@@ -2874,7 +2874,7 @@ Level 21: Increase damage to 3[W] + Dexterity modifier.	</specific>
     <Flavor> You use 1 pot of chili. </Flavor>
     <specific name="Power Usage"> Daily </specific>
     <specific name="Display"> Chef Cooking Ritual </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type">  Close burst 5 </specific>
     <specific name="Target"> You and each ally in burst </specific>
@@ -3067,7 +3067,7 @@ Increase damage to 2[W] + Strength modifier at 21st level </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Horseshoes, Shovels, and other basic items. Cost and Item value are determeined by DM.
 
@@ -3082,7 +3082,7 @@ Crafting Check: 10 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Simple Weapons, Military Weapons, Heroic Tier Armor, and most Heroic Tier magic items. Cost and Item value are determeined by DM.
 
@@ -3097,7 +3097,7 @@ Crafting Check: 12 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Superior Weapons, Paragon Tier Armor, and most Paragon Tier magic items. Cost and Item value are determeined by DM.
 
@@ -3112,7 +3112,7 @@ Crafting Check: 15 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Epic Tier Armor, and most Epic Tier magic items. Cost and Item value are determeined by DM.
 
@@ -3127,7 +3127,7 @@ Crafting Check: 22 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create DM's discretion. exceptionally complex magic items. Cost and Item value are determeined by DM.
 
@@ -3142,7 +3142,7 @@ Crafting Check: 28 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Horseshoes, Shovels, and other basic items. Cost and Item value are determeined by DM.
 
@@ -3157,7 +3157,7 @@ Crafting Check: 10 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Simple Weapons, Military Weapons, Heroic Tier Armor, and most Heroic Tier magic items. Cost and Item value are determeined by DM.
 
@@ -3172,7 +3172,7 @@ Crafting Check: 12 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Superior Weapons, Paragon Tier Armor, and most Paragon Tier magic items. Cost and Item value are determeined by DM.
 
@@ -3187,7 +3187,7 @@ Crafting Check: 15 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create Epic Tier Armor, and most Epic Tier magic items. Cost and Item value are determeined by DM.
 
@@ -3202,7 +3202,7 @@ Crafting Check: 22 or lower Failed
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 hour </specific>
     <specific name="Market Price"> Depends on the item created </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create DM's discretion. exceptionally complex magic items. Cost and Item value are determeined by DM.
 
@@ -3235,34 +3235,34 @@ Crafting Check: 28 or lower Failed
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Short Description"> The Land has made you very tough and hearty. You love the land. You care for it and in turn it cares for you. </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_NPC_PEASANT" type="Grants" />
-      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-4" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <statadd name="_LEVEL-ONE-HPS" value="+15" />
-      <statadd name="_PER-LEVEL-HPS" value="+6" />
-      <statadd name="Healing Surges" value="+9" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Fortitude Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="3" Category="ID_TIV_CLASS_HOMEBREW_01_01-4" />
+      <grant name="ID_INTERNAL_GRANTS_NPC_PEASANT" type="Grants"/>
+      <textstring name="_CLASSNAME" value="ID_TIV_CLASS_HOMEBREW_01_01-4"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+15"/>
+      <statadd name="_PER-LEVEL-HPS" value="+6"/>
+      <statadd name="Healing Surges" value="+9"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Fortitude Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="3" Category="ID_TIV_CLASS_HOMEBREW_01_01-4"/>
     </rules>
 A peasant is an agricultural worker who generally owns or rents only a small plot of ground. The word is derived from 15th century French paisant meaning one from the pays, or countryside, ultimately from the Latin pagus, or outlying administrative district (when the Roman Empire became Christian, these outlying districts were the last to Christianise, and this gave rise to "pagan" as a religious term). The term peasant today is sometimes used in a pejorative sense for impoverished farmers.
 </RulesElement>
   <RulesElement name="NPC Peasant" type="Grants" internal-id="ID_INTERNAL_GRANTS_NPC_PEASANT" source="Tivaan's Homebrew">
     <specific name="_SupportsID"> ID_TIV_CLASS_HOMEBREW_01_01-4 </specific>
     <rules>
-      <grant name="ID_TIV_ROLE_1" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_RELIGION" type="Skill Training" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-1" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-2" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-3" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-4" type="Class Feature" />
+      <grant name="ID_TIV_ROLE_1" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_3" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_RELIGION" type="Skill Training"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-1" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-2" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-3" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-4" type="Class Feature"/>
     </rules>
   </RulesElement>
   <RulesElement name="Peasant's Animal Companion" type="Class Feature" internal-id="ID_TIV_CLASS_FEATURE_HOMEBREW_04-1" source="Tivaan's Homebrew" revision-date="05/12/2011 10:46:57 AM">
@@ -3271,8 +3271,8 @@ A peasant is an agricultural worker who generally owns or rents only a small plo
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK </specific>
     <rules>
-      <grant name="ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK" type="Power" />
-      <select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_HOMEBREW_04-1" />
+      <grant name="ID_INTERNAL_POWER_BEAST_MELEE_BASIC_ATTACK" type="Power"/>
+      <select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_HOMEBREW_04-1"/>
     </rules> 
 The Peasant's Animal Companion class feature is available to any peasant who wishes to gain a loyal animal companion. 
 You gain a animal companion, chosen from one of these categories: bull, horse, or ox. These categories do not describe specific animals, but rather groups of similarly themed creatures in the D&amp;D world. You decide the creature's relevant details- its species, physical details, and so forth- making sure they are appropriate for its category and the campaign.
@@ -3286,7 +3286,7 @@ You gain a animal companion, chosen from one of these categories: bull, horse, o
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_TIV_GEAR_OX </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_OX" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_OX" value="+1"/>
     </rules>
 Oxen are used for plowing, for transport (pulling carts, hauling wagons and even riding), for threshing grain by trampling, and for powering machines that grind grain or supply irrigation among other purposes. Oxen may be also used to skid logs in forests, particularly in low-impact, select-cut logging.
 </RulesElement>
@@ -3299,12 +3299,12 @@ Description: Oxen are used for plowing, for transport (pulling carts, hauling wa
  </specific>
     <specific name="Weight"> Up to 3000 </specific>
     <specific name="Gold"> 250 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Mount </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Ox - Level 1 Minion 
 Large  natural beast (mount) - XP 275
 Large  natural beast - XP 100 
@@ -3329,7 +3329,7 @@ Alignment Unaligned Languages
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_TIV_GEAR_BULL </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_BULL" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_BULL" value="+1"/>
     </rules>
 A bull is an intact (not castrated) adult male of the species Bos taurus (cattle). More muscular and aggressive than the female of the species, the cow, the bull has long been an important symbol in many cultures, and plays a significant role in both beef and dairy farming, and in a variety of other cultural activities.
 </RulesElement>
@@ -3342,12 +3342,12 @@ Description: A bull is an intact (not castrated) adult male of the species Bos t
  </specific>
     <specific name="Weight"> Up to 2000 </specific>
     <specific name="Gold"> 250 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Mount </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Ox - Level 1 Minion 
 Large  natural beast (mount) - XP 275
 Large  natural beast - XP 100 
@@ -3372,7 +3372,7 @@ Alignment Unaligned Languages
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_TIV_GEAR_HERDING_HORSE </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_HERDING_HORSE" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_HERDING_HORSE" value="+1"/>
     </rules>
 Most horses of labor fall into this category. Horses' anatomy enables them to make use of speed to escape predators and they have a well-developed sense of balance and a strong fight-or-flight instinct.
 </RulesElement>
@@ -3385,12 +3385,12 @@ Description: Most horses of labor fall into this category. Horses' anatomy enabl
  </specific>
     <specific name="Weight"> Up to 1500 </specific>
     <specific name="Gold"> 250 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Mount </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Ox - Level 1 Minion 
 Large  natural beast (mount) - XP 275
 Large  natural beast - XP 100 
@@ -3415,7 +3415,7 @@ Alignment Unaligned Languages
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_TIV_GEAR_DRAFT_HORSE </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_GEAR_DRAFT_HORSE" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_GEAR_DRAFT_HORSE" value="+1"/>
     </rules>
 Most horses of labor fall into this category. Horses' anatomy enables them to make use of speed to escape predators and they have a well-developed sense of balance and a strong fight-or-flight instinct.
 </RulesElement>
@@ -3428,12 +3428,12 @@ Description: Most horses of labor fall into this category. Horses' anatomy enabl
  </specific>
     <specific name="Weight"> Up to 1500 </specific>
     <specific name="Gold"> 250 </specific>
-    <specific name="Silver" />
-    <specific name="Copper" />
+    <specific name="Silver"/>
+    <specific name="Copper"/>
     <specific name="Category"> Mount </specific>
-    <specific name="_RelatedElement" />
+    <specific name="_RelatedElement"/>
     <specific name="count"> 1 </specific>
-    <specific name="_Monster" />
+    <specific name="_Monster"/>
 Ox - Level 1 Minion 
 Large  natural beast (mount) - XP 275
 Large  natural beast - XP 100 
@@ -3475,16 +3475,16 @@ You gain immunity to all forms of disease, magical or otherwise.
     <specific name="Suggested"> Skills: Athletics, History, Nature, Religion </specific>
     <specific name="Key Abilities"> Int, Dex, Str </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_HOMEBREW_01_01-2-1,ID_TIV_POWER_HOMEBREW_01_01-2-2,ID_TIV_POWER_HOMEBREW_01_01-2-3,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5,ID_TIV_CLASS_FEATURE_HOMEBREW_04-6</specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_FARMER" type="Build Suggestions" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" type="Proficiency" />
-      <statadd name="FREEBEE:ID_FMP_WEAPON_11" value="+1" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-1" type="Power" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-2" type="Power" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-3" type="Power" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-5" type="Class Feature" />
-      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-6" type="Class Feature" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_FARMER" type="Build Suggestions"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" type="Proficiency"/>
+      <statadd name="FREEBEE:ID_FMP_WEAPON_11" value="+1"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-1" type="Power"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-2" type="Power"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-3" type="Power"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-5" type="Class Feature"/>
+      <grant name="ID_TIV_CLASS_FEATURE_HOMEBREW_04-6" type="Class Feature"/>
     </rules>
 You farm the land, planting seeds and caring for your crops and your animal stock. when the time is right you harvest your crops, slaughter a pig, harvest some eggs or milk that cow for either sale to the market or to feed your family or village.
 A farmer is a person, engaged in agriculture, who raises living organisms for food or raw materials, generally including livestock husbandry and growing crops such as produce and grain. A farmer might own the farmed land or might work as a labourer on land owned by others; but in advanced economies, a farmer is usually a farm owner, while employees of the farm are farm workers, farmhands, etc. 
@@ -3495,7 +3495,7 @@ A farmer is a person, engaged in agriculture, who raises living organisms for fo
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-1,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-2,ID_TIV_CLASS_FEATURE_HOMEBREW_004-5-3,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-4,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-5,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-6,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-7,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-8,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-9,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-10,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-11,ID_TIV_CLASS_FEATURE_HOMEBREW_04-5-12 </specific>
     <rules>
-      <select type="Class Feature" number="3" Category="ID_TIV_CLASS_FEATURE_HOMEBREW_04-5" />
+      <select type="Class Feature" number="3" Category="ID_TIV_CLASS_FEATURE_HOMEBREW_04-5"/>
     </rules>
 You farm the land, planting seeds and caring for your crops. Choose 3 differant seeds to plant in your field. The seeds available to you are:
 Corn Seeds: 10gp for 50 seeds
@@ -3589,7 +3589,7 @@ You are proficient with the farming and the use of Squash seeds. Cost of 50 seed
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_HOMEBREW_04-6-1,ID_TIV_CLASS_FEATURE_HOMEBREW_04-6-2,ID_TIV_CLASS_FEATURE_HOMEBREW_004-6-3,ID_TIV_CLASS_FEATURE_HOMEBREW_04-6-4 </specific>
     <rules>
-      <select type="Class Feature" number="2" Category="ID_TIV_CLASS_FEATURE_HOMEBREW_04-6" />
+      <select type="Class Feature" number="2" Category="ID_TIV_CLASS_FEATURE_HOMEBREW_04-6"/>
     </rules>
 You raise a few cows or chickens for eggs or a pig or two.  Choose 2 differant livestock on your farm. The livestock available to you are:
 Dairy Cows
@@ -3625,7 +3625,7 @@ You are proficient with raising and tending Beef Cattle on your farm. The Beef C
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2-1,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> You swing your weapon low and hard clipping all in its path. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Farmer Attack 1 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -3640,7 +3640,7 @@ Increase damage to 3[W] + Strength modifier damage at 21st level. </specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2-1,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Your divine touch instantly Heal Wounds. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Farmer Attack 1 </specific>
     <specific name="Keywords"> Divine, Healing </specific>
     <specific name="Special"> You can use this power a number of times per day equal to your Wisdom modifier (minimum 1), but only once per round. </specific>
@@ -3654,7 +3654,7 @@ Increase damage to 3[W] + Strength modifier damage at 21st level. </specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2-1,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> You strike a foe with your weapon, the anger forces the blow against him to shock him enough he second-guess himself. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Farmer Attack 1 </specific>
     <specific name="Keywords"> Divine, Fear, Weapon </specific>
     <specific name="Special"> You can use this power a number of times per day equal to your Wisdom modifier (minimum 1), but only once per round. </specific>
@@ -3671,24 +3671,24 @@ Increase damage to 3[W] + Strength modifier damage at 21st level. </specific>
     <specific name="Suggested"> Skills: Athletics, History, Nature, Religion </specific>
     <specific name="Key Abilities"> Int, Dex, Str </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_HOMEBREW_01_01-2-4,ID_TIV_POWER_HOMEBREW_01_01-2-5,ID_TIV_POWER_HOMEBREW_01_01-2-6 </specific>
-    <specific name="_SUGGESTED_POWERS" />
+    <specific name="_SUGGESTED_POWERS"/>
     <rules>
-      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_RANCHER" type="Build Suggestions" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HORSE_WHIP)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BRANDING_IRON)" type="Proficiency" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_BREEDING" type="Skill Training" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-4" type="Power" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-5" type="Power" />
-      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-6" type="Power" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-23" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-24" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-25" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-26" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-27" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-28" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-4-1" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-4-2" value="+1" />
-      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-4-3" value="+1" />
+      <grant name="ID_INTERNAL_BUILD_SUGGESTIONS_RANCHER" type="Build Suggestions"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HORSE_WHIP)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BRANDING_IRON)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_BREEDING" type="Skill Training"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-4" type="Power"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-5" type="Power"/>
+      <grant name="ID_TIV_POWER_HOMEBREW_01_01-2-6" type="Power"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-23" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-24" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-25" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-26" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-27" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_RITUAL_HOMEBREW_01_1-28" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-4-1" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-4-2" value="+1"/>
+      <statadd name="FREEBEE:ID_TIV_GEAR_HOMEBREW_01-4-3" value="+1"/>
     </rules>
 You feed and raise your animals for profit, you enjoy breeding new stock and showing them off. Perhaps it was that last kick to the head that made you so stubborn, but your determination to domesticate new animals is what sets you apart from the average peasent.
 	  
@@ -3700,7 +3700,7 @@ The people who are employees of the rancher and involved in handling livestock a
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2-2,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> You Swing at one enemy, then Swing into another. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rancher Attack 1 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -3715,7 +3715,7 @@ Increase damage to 2[W] + Dexterity modifier at 21st level. </specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2-2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> A barrage of Strikes from your horse whip fills the area with lighting fast speed. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rancher Attack 1 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -3730,7 +3730,7 @@ Increase damage to 2[W] + Dexterity modifier at 21st level. </specific>
     <Category> ID_TIV_BUILD_HOMEBREW_01_01-2-2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> With a quick strike from your branding Iron, you knock your opponent senseless. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rancher Attack 1 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -3750,7 +3750,7 @@ Increase damage to 2[W] + Dexterity modifier at 21st level. </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Time"> See Below </specific>
     <specific name="Market Price"> See Below </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 The Following mounts Require a Successful Breeding Check Before usage.
 Breeding: Before any Breeding may be attempted, the rancher must first acquire the selected stock, complete the Breeding check and then once both parent animals are Domesticated the rancher may attempt to breed or crossbreed. For Crossbreeding an additional breeding check must be made for a successful new breed to be born.
@@ -3795,7 +3795,7 @@ Firebred Hell Hound
     <specific name="Level"> 1 </specific>
     <specific name="Time"> Depends on the creature being bred </specific>
     <specific name="Market Price"> Depends on creature being bred </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You can attempt to Breed or Crossbreed natural beast.
 
@@ -3820,7 +3820,7 @@ Natural beast Breeding Check
     <specific name="Level"> 1 </specific>
     <specific name="Time"> Depends on the creature being bred </specific>
     <specific name="Market Price"> Depends on creature being bred </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You can attempt to Breed or Crossbreed Magical.
 
@@ -3845,7 +3845,7 @@ Magical Breeding Check
     <specific name="Level"> 1 </specific>
     <specific name="Time"> Depends on the creature being bred </specific>
     <specific name="Market Price"> Depends on creature being bred </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You can attempt to Breed or Crossbreed a shadow beast.
 
@@ -3870,7 +3870,7 @@ Shadow beast Breeding Check
     <specific name="Level"> 1 </specific>
     <specific name="Time"> Depends on the creature being bred </specific>
     <specific name="Market Price"> Depends on creature being bred </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You can attempt to Breed or Crossbreed immortal beast..
 
@@ -3895,7 +3895,7 @@ Immortal beast Breeding Check
     <specific name="Level"> 1 </specific>
     <specific name="Time"> Depends on the creature being bred </specific>
     <specific name="Market Price"> Depends on creature being bred </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 DM's discretion. exceptionally complex Breeding or Crossbreeding of celestial beast.
 
@@ -3975,15 +3975,15 @@ Celestial beast Breeding Check
   </RulesElement>
   <RulesElement name="Riding Pony" type="Gear" internal-id="ID_TIV_GEAR_130" source="Tivaan's Homebrew">
     <rules>
-      <grant name="ID_TIV_GEAR_130" type="Companion" />
-      <grant name="ID_TIV_GEAR_131" type="Companion" />
-      <grant name="ID_TIV_GEAR_132" type="Companion" />
-      <grant name="ID_TIV_GEAR_133" type="Companion" />
-      <grant name="ID_TIV_GEAR_134" type="Companion" />
-      <grant name="ID_TIV_GEAR_135" type="Companion" />
-      <grant name="ID_TIV_GEAR_136" type="Companion" />
-      <grant name="ID_TIV_GEAR_137" type="Companion" />
-      <grant name="ID_TIV_GEAR_138" type="Companion" />
+      <grant name="ID_TIV_GEAR_130" type="Companion"/>
+      <grant name="ID_TIV_GEAR_131" type="Companion"/>
+      <grant name="ID_TIV_GEAR_132" type="Companion"/>
+      <grant name="ID_TIV_GEAR_133" type="Companion"/>
+      <grant name="ID_TIV_GEAR_134" type="Companion"/>
+      <grant name="ID_TIV_GEAR_135" type="Companion"/>
+      <grant name="ID_TIV_GEAR_136" type="Companion"/>
+      <grant name="ID_TIV_GEAR_137" type="Companion"/>
+      <grant name="ID_TIV_GEAR_138" type="Companion"/>
     </rules>
   </RulesElement>
   <RulesElement name="Riding Pony" type="Gear" internal-id="ID_TIV_GEAR_130" source="Tivaan's Homebrew">

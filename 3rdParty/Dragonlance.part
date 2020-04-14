@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.01</Version>
     <Filename>Dragonlance.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/Dragonlance.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/Dragonlance.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/Dragonlance.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/Dragonlance.txt</VersionAddress>
   </UpdateInfo>
 <!-- DragonLance -->
 <!-- 82-dragonlance.part, version 1.01 -->
@@ -29,10 +29,10 @@
       <specific name="Size"> Medium </specific>
       <specific name="Speed"> 5 squares </specific>
       <specific name="Characteristics"> Acquisitive, brave, demanding, hard-working, organized, stern, loud, stubborn, suspicious, vengeful </specific>
-      <specific name="Physical Qualities"> The Daergar clan of Dark Dwarves are similar to their light-loving cousins in appearance. They range from 4&apos; to 4&apos;6&quot; in height and are often nearly as wide as they are tall. Hair color ranges from light brown to black; their eyes cover the same spectrum of color. The Theiwar clan, through centures of inbreeding and isolation, have developed two interesting physical traits. First, they are extremely fair, with many true albinos among their number. Second, while they are roughly the same height as other dwarves, they tend to be somewhat skinny and are more wiry than their bretheren. A Zhakar clan Dark Dwarf begins his life looking as any other dwarf. However, as his life progress, the mold plague carried by his clan changes his appearance to something considered grotesque by other dwarves. By middle age, all of the Zhakar&apos;s hair will have fallen out, and his eyes will have become a milky-white. His skin will be discolored and splotchy, with odd patches of skin that molt continuously. Not enough time has passed since Severus Stonehand cured some of the Zhakar of their plague to know what impact this will have on the the clan and their appearance. </specific>
+      <specific name="Physical Qualities"> The Daergar clan of Dark Dwarves are similar to their light-loving cousins in appearance. They range from 4' to 4'6" in height and are often nearly as wide as they are tall. Hair color ranges from light brown to black; their eyes cover the same spectrum of color. The Theiwar clan, through centures of inbreeding and isolation, have developed two interesting physical traits. First, they are extremely fair, with many true albinos among their number. Second, while they are roughly the same height as other dwarves, they tend to be somewhat skinny and are more wiry than their bretheren. A Zhakar clan Dark Dwarf begins his life looking as any other dwarf. However, as his life progress, the mold plague carried by his clan changes his appearance to something considered grotesque by other dwarves. By middle age, all of the Zhakar's hair will have fallen out, and his eyes will have become a milky-white. His skin will be discolored and splotchy, with odd patches of skin that molt continuously. Not enough time has passed since Severus Stonehand cured some of the Zhakar of their plague to know what impact this will have on the the clan and their appearance. </specific>
       <specific name="Playing"> Dark dwarves are naturally suspicious of others. They tend to keep to themselves and only surrender information when they feel it is necessary; trust is almost an alien concept. Dark dwarves trust only the backstabbing nature they see in every race. They usually only interact with other races if they feel they can gain something in the exchange. If a dark dwarf saves a companion in a fight, it just means the dwarf has other uses for that person. </specific>
       <specific name="Vision"> Darkvision </specific>
-      <specific name="Average Height"> 4&apos;-4&apos;6&quot; </specific>
+      <specific name="Average Height"> 4'-4'6" </specific>
       <specific name="Average Weight"> 140-200 lb. </specific>
       <specific name="Ability Scores"> +2 Constitution, +2 Strength or +2 Wisdom </specific>
       <specific name="Languages"> Common, Dwarven </specific>
@@ -41,12 +41,12 @@
       <specific name="Short Description"> The dark dwarves are mountaineers and miners. They are suspicious of others and always look for the advantage. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_9, ID_FMP_RACIAL_TRAIT_10, ID_FMP_RACIAL_TRAIT_11, ID_FMP_RACIAL_TRAIT_12 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_DARKDWARF" type="Grants" />
-         <statadd name="Speed" value="+5" />
-         <textstring name="Average Height" value="4'-4' 6&quot;" />
-         <textstring name="Average Weight" value="140-200 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+         <grant name="ID_INTERNAL_GRANTS_DARKDWARF" type="Grants"/>
+         <statadd name="Speed" value="+5"/>
+         <textstring name="Average Height" value="4'-4' 6&quot;"/>
+         <textstring name="Average Weight" value="140-200 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom"/>
       </rules>
 Play a Dark Dwarf if you want ...
    </RulesElement>
@@ -54,18 +54,18 @@ Play a Dark Dwarf if you want ...
 <RulesElement name="Dark Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_DARKDWARF" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision" />
-         <grant name="ID_FMP_RACIAL_TRAIT_9" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_10" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_11" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_3" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
-		 <grant name="ID_INTERNAL_COUNTSASRACE_DWARF" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_9" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_10" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_11" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_3" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
+		 <grant name="ID_INTERNAL_COUNTSASRACE_DWARF" type="CountsAsRace"/>
       </rules>
 </RulesElement>
 
@@ -80,10 +80,10 @@ You count as a dark dwarf for meeting prerequisites.
       <specific name="Size"> Small </specific>
       <specific name="Speed"> 5 squares </specific>
       <specific name="Characteristics"> Alert, curious, observant, stupid </specific>
-      <specific name="Physical Qualities"> Gully dwarves are short and squat, averaging 3&apos;6&quot; to 4&apos; in height. They are not as stocky as other dwarves, with slender arms and fingers. Most gully dwarves, regardless of gender, have potbellies. Skin tones range from pasty, pale white to dirty gray brown. Eye colors run from a pale watery blue to dull hazel. Males have long, scruffy beards, while females have small tufts of hair on their cheekbones. </specific>
+      <specific name="Physical Qualities"> Gully dwarves are short and squat, averaging 3'6" to 4' in height. They are not as stocky as other dwarves, with slender arms and fingers. Most gully dwarves, regardless of gender, have potbellies. Skin tones range from pasty, pale white to dirty gray brown. Eye colors run from a pale watery blue to dull hazel. Males have long, scruffy beards, while females have small tufts of hair on their cheekbones. </specific>
       <specific name="Playing"> Dirty, smelly, socially inept, and natural scavengers, the gully dwarves are rarely seen in public, unless they have been put into the service of someone brave enough to use them. Occasionally, the rare gully dwarf climbs out of his or her dung heap in order to start an adventuring career. </specific>
       <specific name="Vision"> Low-light </specific>
-      <specific name="Average Height"> 3&apos;6&quot;-4&apos; </specific>
+      <specific name="Average Height"> 3'6"-4' </specific>
       <specific name="Average Weight"> 100-140 lb. </specific>
       <specific name="Ability Scores"> +2 Constitution, +2 Strength or +2 Dexterity </specific>
       <specific name="Languages"> Common, Dwarven </specific>
@@ -92,12 +92,12 @@ You count as a dark dwarf for meeting prerequisites.
       <specific name="Short Description"> The gully dwarves are scavengers and survivors. They are not afraid of getting dirty or trying new things. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_10, ID_FMP_RACIAL_TRAIT_11, ID_FMP_RACIAL_TRAIT_12, ID_WOG_DL_RACIAL_TRAIT_1, ID_WOG_DL_RACIAL_TRAIT_2 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_GULLYDWARF" type="Grants" />
-         <statadd name="Speed" value="+5" />
-         <textstring name="Average Height" value="3&apos;6&quot;-4&apos;" />
-         <textstring name="Average Weight" value="100-140 lb." />
-         <textstring name="Size" value="Small" />
-         <select type="Race Ability Bonus" number="1" Category="Strength|Dexterity" />
+         <grant name="ID_INTERNAL_GRANTS_GULLYDWARF" type="Grants"/>
+         <statadd name="Speed" value="+5"/>
+         <textstring name="Average Height" value="3'6&quot;-4'"/>
+         <textstring name="Average Weight" value="100-140 lb."/>
+         <textstring name="Size" value="Small"/>
+         <select type="Race Ability Bonus" number="1" Category="Strength|Dexterity"/>
       </rules>
 Play a Dwarf if you want ...
    </RulesElement>
@@ -108,19 +108,19 @@ Play a Dwarf if you want ...
 You have a +2 proficiency bonus to attacks with any melee or ranged improvised weapon.
 </RulesElement>
 
-<RulesElement name="Weapon Proficiency (Gully dwarf&apos;s improvised melee weapon)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_MELEE)" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
+<RulesElement name="Weapon Proficiency (Gully dwarf's improvised melee weapon)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_MELEE)" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Prereqs> Unselectable </Prereqs>
       <Category> ID_WOG_DL_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_MELEE </Category>
 </RulesElement>
 
-<RulesElement name="Weapon Proficiency (Gully dwarf&apos;s improvised ranged weapon)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_RANGED)" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
+<RulesElement name="Weapon Proficiency (Gully dwarf's improvised ranged weapon)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_RANGED)" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Prereqs> Unselectable </Prereqs>
       <Category> ID_WOG_DL_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_SIMPLE,ID_INTERNAL_CATEGORY_RANGED </Category>
 </RulesElement>
 
-<RulesElement name="Gully dwarf&apos;s improvised melee weapon" type="Weapon" internal-id="ID_WOG_DL_WEAPON_1" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
+<RulesElement name="Gully dwarf's improvised melee weapon" type="Weapon" internal-id="ID_WOG_DL_WEAPON_1" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_WOG_DL_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
-      <specific name="Full Text"> Gully dwarf&apos;s improvised melee weapon
+      <specific name="Full Text"> Gully dwarf's improvised melee weapon
 Simple one-handed improvished melee weapon
 Cost: -
 Damage: 1d4
@@ -131,20 +131,20 @@ Gully Dwarf
 Improvised weapons include anything you happen to pick up, from a rock to a chair. </specific>
       <specific name="Weight"> 0 </specific>
       <specific name="Gold"> 0 </specific>
-      <specific name="Range" />
+      <specific name="Range"/>
       <specific name="Damage"> 1d4 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Simple Melee </specific>
       <specific name="Hands Required"> One-Handed </specific>
       <specific name="Item Slot"> One-hand </specific>
       <specific name="Group"> Gully Dwarf </specific>
-      <specific name="Properties" />
+      <specific name="Properties"/>
 </RulesElement>
 
-<RulesElement name="Gully dwarf&apos;s improvised ranged weapon" type="Weapon" internal-id="ID_WOG_DL_WEAPON_2" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
+<RulesElement name="Gully dwarf's improvised ranged weapon" type="Weapon" internal-id="ID_WOG_DL_WEAPON_2" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ONE-HAND,ID_WOG_DL_WEAPON_GROUP_1,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
-      <specific name="Full Text"> Gully dwarf&apos;s improvised melee weapon
+      <specific name="Full Text"> Gully dwarf's improvised melee weapon
 Simple one-handed improvished ranged weapon
 Cost: -
 Damage: 1d4
@@ -155,43 +155,43 @@ Gully Dwarf
 Improvised weapons include anything you happen to pick up, from a rock to a chair. </specific>
       <specific name="Weight"> 0 </specific>
       <specific name="Gold"> 0 </specific>
-      <specific name="Range" />
+      <specific name="Range"/>
       <specific name="Damage"> 1d4 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Simple Ranged </specific>
       <specific name="Hands Required"> One-Handed </specific>
       <specific name="Item Slot"> One-hand </specific>
       <specific name="Group"> Gully Dwarf </specific>
-      <specific name="Properties" />
+      <specific name="Properties"/>
 </RulesElement>
 
 <RulesElement name="Sticks and Stones" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_1" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="Short Description"> +2 to attacks with improvised weapons </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_MELEE)" type="Proficiency" />
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_RANGED)" type="Proficiency" />
-	     <statadd name="FREEBEE:ID_WOG_DL_WEAPON_1" value="+1" />
-	     <statadd name="FREEBEE:ID_WOG_DL_WEAPON_2" value="+1" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_MELEE)" type="Proficiency"/>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GULLYDWARF_IMPROVISED_RANGED)" type="Proficiency"/>
+	     <statadd name="FREEBEE:ID_WOG_DL_WEAPON_1" value="+1"/>
+	     <statadd name="FREEBEE:ID_WOG_DL_WEAPON_2" value="+1"/>
       </rules>
 You have a +2 proficiency bonus to attacks with any melee or ranged improvised weapon.
 </RulesElement>
 
-<RulesElement name="Coward&apos;s Shift" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_2" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
-      <specific name="Short Description"> You have the coward&apos;s shift power </specific>
+<RulesElement name="Coward's Shift" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_2" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
+      <specific name="Short Description"> You have the coward's shift power </specific>
       <specific name="Powers"> ID_WOG_DL_RACE_POWER_1 </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Type"> Utility </specific>
       <specific name="Class"> ID_WOG_DL_RACE_2 </specific>
       <specific name="_DisplayPowers"> ID_WOG_DL_RACE_POWER_1 </specific>
       <rules>
-         <grant name="ID_WOG_DL_RACE_POWER_1" type="Power" />
+         <grant name="ID_WOG_DL_RACE_POWER_1" type="Power"/>
       </rules>
-You have the coward&apos;s shift power.
+You have the coward's shift power.
    </RulesElement>
 
-<RulesElement name="Coward&apos;s Shift" type="Power" internal-id="ID_WOG_DL_RACE_POWER_1" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
+<RulesElement name="Coward's Shift" type="Power" internal-id="ID_WOG_DL_RACE_POWER_1" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
   <Category> ID_WOG_DL_RACIAL_TRAIT_2,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
   <specific name="Flavor"> Given the choice to fight or flee, you opt for the safer option. </specific>
   <specific name="Power Usage"> At-Will </specific>
@@ -201,7 +201,7 @@ You have the coward&apos;s shift power.
   <specific name="Attack Type"> Personal </specific>
   <specific name="Effect"> You shift 1 square away from the enemy instead of making an opportunity attack. </specific>
   <specific name="Class"> ID_WOG_DL_RACE_2 </specific>
-  <specific name="Level" />
+  <specific name="Level"/>
   <specific name="Power Type"> Utility </specific>
   <specific name="_ParentFeature"> ID_WOG_DL_RACIAL_TRAIT_2 </specific>
 </RulesElement>
@@ -209,19 +209,19 @@ You have the coward&apos;s shift power.
 <RulesElement name="Gully Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_GULLYDWARF" source="DragonLance">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_2 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_1" type="Racial Trait" />
-		 <grant name="ID_WOG_DL_RACIAL_TRAIT_2" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_10" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_11" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_3" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
-		 <grant name="ID_INTERNAL_COUNTSASRACE_DWARF" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_1" type="Racial Trait"/>
+		 <grant name="ID_WOG_DL_RACIAL_TRAIT_2" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_10" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_11" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_3" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
+		 <grant name="ID_INTERNAL_COUNTSASRACE_DWARF" type="CountsAsRace"/>
       </rules>
 </RulesElement>
 
@@ -232,7 +232,7 @@ You count as a gully dwarf for meeting prerequisites.
 
 <RulesElement name="Half-Dwarf" type="Race" internal-id="ID_WOG_DL_RACE_3" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Prereqs> ~HALFDWARF </Prereqs>
-      <Flavor> Half-dwarves inherit some of the traits of their dwarven parent, as well as a measure of their human parent&apos;s adaptability. </Flavor>
+      <Flavor> Half-dwarves inherit some of the traits of their dwarven parent, as well as a measure of their human parent's adaptability. </Flavor>
       <specific name="Size"> Medium </specific>
       <specific name="Speed"> 6 squares </specific>
       <specific name="Characteristics"> Adventurous, Gruff, Idealist, Steadfast</specific>
@@ -243,16 +243,16 @@ You count as a gully dwarf for meeting prerequisites.
       <specific name="Average Weight"> 140-210 lb. </specific>
       <specific name="Ability Scores"> +2 Constitution, +2 Strength or +2 Wisdom </specific>
       <specific name="Languages"> Common, Dwarven </specific>
-      <specific name="Names"> As with most half-breeds, the name of a half-dwarf depends largely on where he was raised. If raised in a human community, he will conform to the naming conventions of that region, and if part of a dwarven family, he will take on the names common to that clan. Since half-dwarves are rare and are often viewed with curiosity, he will sometimes adopt a nickname that illustrates his heritage, such as &quot;Half-Dwarven&quot;. </specific>
+      <specific name="Names"> As with most half-breeds, the name of a half-dwarf depends largely on where he was raised. If raised in a human community, he will conform to the naming conventions of that region, and if part of a dwarven family, he will take on the names common to that clan. Since half-dwarves are rare and are often viewed with curiosity, he will sometimes adopt a nickname that illustrates his heritage, such as "Half-Dwarven". </specific>
       <specific name="Short Description"> Half-dwarves are adventurers and travelers. They are tough and train well in combat. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_34,ID_FMP_RACIAL_TRAIT_10,ID_WOG_DL_RACIAL_TRAIT_3,ID_FMP_RACIAL_TRAIT_12,ID_FMP_RACIAL_TRAIT_632 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_HALFDWARF" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="5'-5' 6&quot;" />
-         <textstring name="Average Weight" value="140-210 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+         <grant name="ID_INTERNAL_GRANTS_HALFDWARF" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="5'-5' 6&quot;"/>
+         <textstring name="Average Weight" value="140-210 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom"/>
       </rules>
 Play a Half-Dwarf if you want ...
    </RulesElement>
@@ -261,8 +261,8 @@ Play a Half-Dwarf if you want ...
       <specific name="Short Description"> Count as dwarf, half-dwarf, and human for choosing feats. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_COUNTSASRACE_DWARF" type="CountsAsRace" />
-         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_COUNTSASRACE_DWARF" type="CountsAsRace"/>
+         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace"/>
       </rules>
 You can take feats that have either dwarf or human as a prerequisite (as well as those specifically for half-dwarves), as long as you meet any other requirements.
    </RulesElement>
@@ -270,16 +270,16 @@ You can take feats that have either dwarf or human as a prerequisite (as well as
 <RulesElement name="Half-Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFDWARF" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_3 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-         <grant name="ID_FMP_RACIAL_TRAIT_34" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_10" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_3" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_632" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_3" type="Language" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_34" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_10" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_3" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_632" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_3" type="Language"/>
       </rules>
 </RulesElement>
 
@@ -294,10 +294,10 @@ You count as a half-dwarf for meeting prerequisites.
       <specific name="Size"> Medium </specific>
       <specific name="Speed"> 7 squares </specific>
       <specific name="Characteristics"> Agile, intuitive, joyful, perceptive, quick, quiet, suspicious, wild </specific>
-      <specific name="Physical Qualities"> Kagonesti look the least like the stereotypical elf. They tend to be shorter in stature but more muscular than other elves. Their skin is usually a rich brown-darker than their more civilized cousins-ranging from the hue of honeystained oak to the deep bronze of weathered mahogany. Their hair is often darker than other elves&apos; as well, with shades from the silky red-black of ironwood to the sandy tan of pine. Some Kagonesti have been known to have silvery white hair, starkly contrasting with their darker complexion. Many women wear their hair in a long single braid, a fashion popularized by Kerianseray. Their eyes are almost always the brown of hazel nuts. Their faces tend to be more weathered than other elves, a consequence of spending so many years in the elements. Despite this, even the most rugged and weather-beaten Kagonesti face appears the very picture of perfection compared to most humans. </specific>
+      <specific name="Physical Qualities"> Kagonesti look the least like the stereotypical elf. They tend to be shorter in stature but more muscular than other elves. Their skin is usually a rich brown-darker than their more civilized cousins-ranging from the hue of honeystained oak to the deep bronze of weathered mahogany. Their hair is often darker than other elves' as well, with shades from the silky red-black of ironwood to the sandy tan of pine. Some Kagonesti have been known to have silvery white hair, starkly contrasting with their darker complexion. Many women wear their hair in a long single braid, a fashion popularized by Kerianseray. Their eyes are almost always the brown of hazel nuts. Their faces tend to be more weathered than other elves, a consequence of spending so many years in the elements. Despite this, even the most rugged and weather-beaten Kagonesti face appears the very picture of perfection compared to most humans. </specific>
       <specific name="Playing"> When creating an elf adventurer, here are a few points to consider.
 	Protect all that is good and beautiful. The natural progression of the universe seems intent on destroying the fleeting grace of beauty, love, and peace. Thus, you must fight to ensure that these things survive. An elf might remain unmoved by the plight of a human city facing an orc invasion, even as an idyllic village of farmers in the horde's path spurs him to action. Elves appreciate beauty because their history has forced them to watch it gradually fade from the world. From the first days of the bitter fey war, through the rise and fall of a succession of worldly empires, the elves know all too well that anything worth enjoying or loving is worth fighting for.
-	Life is measured in years, not days. You are acutely aware of the unfurling of years and the grand tapestry of history. Elves plan for the long term, and you are no different. &quot;Enjoy the day; prepare for the year,&quot; is a common elf saying that expresses this attitude. You might spend your days in song and drink easily enough, but all the while in the back of your mind, you watch a web of events unfold around you. You understand that an action now leads to a reaction-a change in the world-that might not become evident for years. When you adventure, you keep one eye on the future and your role in the grand scheme of events.
+	Life is measured in years, not days. You are acutely aware of the unfurling of years and the grand tapestry of history. Elves plan for the long term, and you are no different. "Enjoy the day; prepare for the year," is a common elf saying that expresses this attitude. You might spend your days in song and drink easily enough, but all the while in the back of your mind, you watch a web of events unfold around you. You understand that an action now leads to a reaction-a change in the world-that might not become evident for years. When you adventure, you keep one eye on the future and your role in the grand scheme of events.
 	The strongest sword is guided with wisdom, not might. The best battles are those that are short, decisive, and as bloodless as possible. The elves are too few in number to wage wars of attrition, and they view risky tactics and frontal assaults as foolish at best. As an elf, you employ the most direct methods to defeat your enemy. Why waste time battling goblin patrols when the entire tribe will scatter with the death of its conquest-minded king? Keep the long-term view in mind, and settle all problems with quick, decisive resolution.
 	Tales and songs. The elves preserve their history through songs and tales told in the oral tradition. As a young elf, you would have heard and memorized these stories of great elf heroes, their legendary deeds, and the struggles of your people. You might draw on the nature, events, or themes of such stories for inspiration, or to express your elven point of view to your allies. </specific>
       <specific name="Vision"> Low-light </specific>
@@ -306,16 +306,16 @@ You count as a half-dwarf for meeting prerequisites.
       <specific name="Ability Scores"> +2 Dexterity, +2 Strength or +2 Wisdom </specific>
       <specific name="Languages"> Common, Elven </specific>
       <specific name="Skill Bonuses"> +2 Nature, +2 Perception </specific>
-      <specific name="Names"> Kagonesti are given a name at the ceremony of their Life-Gift. These names are usually evocative of nature; the Kagonesti Elven words for Greenleaf, Nighthawk, Whitestag, and the like are common infant boys&apos; names, while Ashwood, Running Brook, and Star-Eyes are acceptable little girls&apos; names. During their rite of majority, Kagonesti will take on a new name, each related somehow to the individual&apos;s life at the time. Some Kagonesti will further change their names as the circumstances of their lives change. They do not take on surnames or family names, instead referring to themselves as being of a certain clan (Kerianseray of White Osprey, for instance). Kagonesti love nicknames, and each can expect to have many applied to her throughout her life. </specific>
+      <specific name="Names"> Kagonesti are given a name at the ceremony of their Life-Gift. These names are usually evocative of nature; the Kagonesti Elven words for Greenleaf, Nighthawk, Whitestag, and the like are common infant boys' names, while Ashwood, Running Brook, and Star-Eyes are acceptable little girls' names. During their rite of majority, Kagonesti will take on a new name, each related somehow to the individual's life at the time. Some Kagonesti will further change their names as the circumstances of their lives change. They do not take on surnames or family names, instead referring to themselves as being of a certain clan (Kerianseray of White Osprey, for instance). Kagonesti love nicknames, and each can expect to have many applied to her throughout her life. </specific>
       <specific name="Short Description"> The elves have a deep love of nature, and their accuracy with bow and blade is unmatched. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_20, ID_FMP_RACIAL_TRAIT_353, ID_FMP_RACIAL_TRAIT_359, ID_FMP_RACIAL_TRAIT_642 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_KAGONESTIELF" type="Grants" />
-         <statadd name="Speed" value="+7" />
-         <textstring name="Average Height" value="5' 4&quot;-6'0&quot;" />
-         <textstring name="Average Weight" value="130-170 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+         <grant name="ID_INTERNAL_GRANTS_KAGONESTIELF" type="Grants"/>
+         <statadd name="Speed" value="+7"/>
+         <textstring name="Average Height" value="5' 4&quot;-6'0&quot;"/>
+         <textstring name="Average Weight" value="130-170 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom"/>
       </rules>
 Play an Elf if you want ...
    </RulesElement>
@@ -323,18 +323,18 @@ Play an Elf if you want ...
    <RulesElement name="Kagonesti Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_KAGONESTIELF" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_4 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-         <grant name="ID_FMP_RACIAL_TRAIT_20" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_353" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_359" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_642" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
-		 <grant name="ID_INTERNAL_COUNTSASRACE_ELF" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_20" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_353" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_359" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_642" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
+		 <grant name="ID_INTERNAL_COUNTSASRACE_ELF" type="CountsAsRace"/>
       </rules>
 </RulesElement>
 
@@ -347,8 +347,8 @@ You count as a Kagonesti for meeting prerequisites.
       <specific name="Short Description"> Count as eladrin or elf for choosing feats. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-		 <grant name="ID_INTERNAL_COUNTSASRACE_ELADRIN" type="CountsAsRace" />
-		 <grant name="ID_INTERNAL_COUNTSASRACE_ELF" type="CountsAsRace" />
+		 <grant name="ID_INTERNAL_COUNTSASRACE_ELADRIN" type="CountsAsRace"/>
+		 <grant name="ID_INTERNAL_COUNTSASRACE_ELF" type="CountsAsRace"/>
       </rules>
 You can take feats that have either eladrin or elf as a prerequisite (as well as those specifically for your clan), as long as you meet any other requirements.
 </RulesElement>
@@ -367,16 +367,16 @@ You can take feats that have either eladrin or elf as a prerequisite (as well as
       <specific name="Ability Scores"> +2 Intelligence, +2 Charisma or +2 Dexterity </specific>
       <specific name="Languages"> Common, Elven </specific>
       <specific name="Skill Bonuses"> +2 Diplomacy, +2 Perception </specific>
-      <specific name="Names"> Some Qualinesti names are many syllables long, and most will have a shortened version used by family and friends; examples include Lauralanthalasa &quot;Laurana&quot; and Tanthalas &quot;Tanis.&quot; Like the Kagonesti, most do not take on surnames. </specific>
+      <specific name="Names"> Some Qualinesti names are many syllables long, and most will have a shortened version used by family and friends; examples include Lauralanthalasa "Laurana" and Tanthalas "Tanis." Like the Kagonesti, most do not take on surnames. </specific>
       <specific name="Short Description"> Qualinesti are powerful warriors and masters of arcane power. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_4,ID_FMP_RACIAL_TRAIT_15, ID_FMP_RACIAL_TRAIT_17, ID_FMP_RACIAL_TRAIT_350, ID_FMP_RACIAL_TRAIT_359 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_QUALINESTIELF" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="5' 5&quot;-6'1&quot;" />
-         <textstring name="Average Weight" value="130-180 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+         <grant name="ID_INTERNAL_GRANTS_QUALINESTIELF" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="5' 5&quot;-6'1&quot;"/>
+         <textstring name="Average Weight" value="130-180 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
       </rules>
 Play an Elf if you want ...
    </RulesElement>
@@ -384,18 +384,18 @@ Play an Elf if you want ...
    <RulesElement name="Qualinesti Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_QUALINESTIELF" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_5 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_4" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_15" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_17" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_359" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_4" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_15" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_17" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_359" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
       </rules>
    </RulesElement>
  
@@ -410,7 +410,7 @@ You count as a Qualinesti for meeting prerequisites.
       <specific name="Size"> Medium </specific>
       <specific name="Speed"> 6 squares </specific>
       <specific name="Characteristics"> Aesthetic, deliberative, detached, graceful, magical, otherworldly, patient, perceptive </specific>
-      <specific name="Physical Qualities"> Most Silvanesti are taller and slighter than the Qualinesti, noticeably more so than the Kagonesti. The grace and beauty of a Silvanesti is often described as ethereal; while humans and many other races find Kagonesti and Qualinesti elves beautiful, most find the beauty of Silvanesti entrancing and otherworldly. Their skin is the color of white pine, with some even fairer still. Their hair ranges from the light brown of maple to aspenbark white, and it&apos;s often worn in long, elaborate braids and arrangements. A few Silvanesti are born with hair the charcoal black of fire-tested firs. </specific>
+      <specific name="Physical Qualities"> Most Silvanesti are taller and slighter than the Qualinesti, noticeably more so than the Kagonesti. The grace and beauty of a Silvanesti is often described as ethereal; while humans and many other races find Kagonesti and Qualinesti elves beautiful, most find the beauty of Silvanesti entrancing and otherworldly. Their skin is the color of white pine, with some even fairer still. Their hair ranges from the light brown of maple to aspenbark white, and it's often worn in long, elaborate braids and arrangements. A few Silvanesti are born with hair the charcoal black of fire-tested firs. </specific>
       <specific name="Playing">  The Silvanesti are members of the oldest and, by many measures, most advanced civilization on Ansalon. Some of the greatest mages, warriors, and artists ever known on Ansalon have been Silvanesti. The Silvanesti know this and take it to heart, leading to a vast cultural superiority complex. They are among the most arrogant and selfimportant mortals in existence, and their air of assumed superiority regularly insults those of other races. </specific>
       <specific name="Vision"> Low-light </specific>
       <specific name="Average Height"> 5' 5"-6'1" </specific>
@@ -422,12 +422,12 @@ You count as a Qualinesti for meeting prerequisites.
       <specific name="Short Description"> Silvanesti are powerful warriors and masters of arcane power and they know it. They will not let you forget that fact either. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_4,ID_FMP_RACIAL_TRAIT_15, ID_FMP_RACIAL_TRAIT_17, ID_FMP_RACIAL_TRAIT_350, ID_FMP_RACIAL_TRAIT_359 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_SILVANESTIELF" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="5' 5&quot;-6'1&quot;" />
-         <textstring name="Average Weight" value="130-180 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+         <grant name="ID_INTERNAL_GRANTS_SILVANESTIELF" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="5' 5&quot;-6'1&quot;"/>
+         <textstring name="Average Weight" value="130-180 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
       </rules>
 Play an Elf if you want ...
    </RulesElement>
@@ -435,18 +435,18 @@ Play an Elf if you want ...
    <RulesElement name="Silvanesti Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_SILVANESTIELF" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_6 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_4" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_15" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_17" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_359" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" type="Racial Trait" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_4" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_15" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_17" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_359" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" type="Racial Trait"/>
       </rules>
 </RulesElement>
  
@@ -458,14 +458,14 @@ You count as a Silvanesti for meeting prerequisites.
 <RulesElement name="Gnome" type="Language" internal-id="ID_WOG_DL_LANGUAGE_1" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Category> ID_INTERNAL_CATEGORY_STARTING </Category>
       <rules>
-         <statadd name="Language Count" value="+1" />
+         <statadd name="Language Count" value="+1"/>
       </rules>
 Gnome is a language spoken in the DragonLance and Greyhawk campaign settings. Gnomes speak Elven in modern fourth edition settings.
 </RulesElement>
    
 <RulesElement name="Tinker Gnome" type="Race" internal-id="ID_WOG_DL_RACE_7" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Prereqs> ~TINKERGNOME </Prereqs>
-      <Flavor> &quot;Time stands still for no gnome, unless you involve magic, which is cheating&quot;, spoke ancient gnomish theorist Gneinstein. </Flavor>
+      <Flavor> "Time stands still for no gnome, unless you involve magic, which is cheating", spoke ancient gnomish theorist Gneinstein. </Flavor>
       <specific name="Size"> Small </specific>
       <specific name="Speed"> 5 squares </specific>
       <specific name="Characteristics"> Clever, crafty, curious, inventive </specific>
@@ -477,16 +477,16 @@ Gnome is a language spoken in the DragonLance and Greyhawk campaign settings. Gn
       <specific name="Ability Scores"> +2 Intelligence, +2 Charisma or +2 Dexterity </specific>
       <specific name="Languages"> Common, Gnome </specific>
       <specific name="Skill Bonuses"> +2 Endurance, +2 Perception </specific>
-      <specific name="Names"> Gnomes have three different names. The first name is given by the family and comprised of a lengthy history of the gnomes&apos; ancestors. Their second name is a summary of the longer name and only takes ten to thirty minutes to recite; it is usually used in formal settings. Their third name is a nickname comprised of only the first few syllables of the gnome&apos;s name. Common abbreviated male names include Cogg, Deddalo, Gear, Gnerd, Innova, and Snork; Bethi, Gauge, Gnorra, Nano, Pidge, Pestle, and Sulfie are common female names. </specific>
+      <specific name="Names"> Gnomes have three different names. The first name is given by the family and comprised of a lengthy history of the gnomes' ancestors. Their second name is a summary of the longer name and only takes ten to thirty minutes to recite; it is usually used in formal settings. Their third name is a nickname comprised of only the first few syllables of the gnome's name. Common abbreviated male names include Cogg, Deddalo, Gear, Gnerd, Innova, and Snork; Bethi, Gauge, Gnorra, Nano, Pidge, Pestle, and Sulfie are common female names. </specific>
       <specific name="Short Description"> Clever inventors and skilled wielders of technology, gnomes use their gadgets to survive. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_5, ID_WOG_DL_RACIAL_TRAIT_6, ID_WOG_DL_RACIAL_TRAIT_7 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_TINKERGNOME" type="Grants" />
-         <statadd name="Speed" value="+5" />
-         <textstring name="Average Height" value="3'-4'" />
-         <textstring name="Average Weight" value="40-60 lb." />
-         <textstring name="Size" value="Small" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+         <grant name="ID_INTERNAL_GRANTS_TINKERGNOME" type="Grants"/>
+         <statadd name="Speed" value="+5"/>
+         <textstring name="Average Height" value="3'-4'"/>
+         <textstring name="Average Weight" value="40-60 lb."/>
+         <textstring name="Size" value="Small"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
       </rules>
 Play a Tinker Gnome if you want ...
 </RulesElement>
@@ -495,7 +495,7 @@ Play a Tinker Gnome if you want ...
       <specific name="Short Description"> Gain guild affiliated skill </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_FMP_SKILL_7|ID_FMP_SKILL_11|ID_FMP_SKILL_18|ID_FMP_SKILL_23" />
+         <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_FMP_SKILL_7|ID_FMP_SKILL_11|ID_FMP_SKILL_18|ID_FMP_SKILL_23"/>
       </rules>
 You gain training in one of the following skills: Arcana, Dungeoneering, History, Religion, or Thievery.
    </RulesElement>
@@ -504,12 +504,12 @@ You gain training in one of the following skills: Arcana, Dungeoneering, History
       <specific name="Short Description"> +2 to checks and +1 to defenses with traps or hazards </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <statadd name="AC" value="+1" condition="against traps and hazards" />
-         <statadd name="Fortitude Defense" value="+1" condition="against traps and hazards" />
-         <statadd name="Reflex Defense" value="+1" condition="against traps and hazards" />
-         <statadd name="Will Defense" value="+1" condition="against traps and hazards" />
-         <statadd name="Perception Misc" value="+2" condition="to find traps" />
-         <statadd name="Thievery Misc" value="+2" condition="to disable traps" />
+         <statadd name="AC" value="+1" condition="against traps and hazards"/>
+         <statadd name="Fortitude Defense" value="+1" condition="against traps and hazards"/>
+         <statadd name="Reflex Defense" value="+1" condition="against traps and hazards"/>
+         <statadd name="Will Defense" value="+1" condition="against traps and hazards"/>
+         <statadd name="Perception Misc" value="+2" condition="to find traps"/>
+         <statadd name="Thievery Misc" value="+2" condition="to disable traps"/>
 		 </rules>
 You gain a +2 racial bonus to skill checks and a +1 racial bonus to your defenses when interacting with traps and hazards.
    </RulesElement>
@@ -517,15 +517,15 @@ You gain a +2 racial bonus to skill checks and a +1 racial bonus to your defense
 <RulesElement name="Gnomish Focus" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_7" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
       <specific name="Short Description"> Use gnomish focus as an encounter power. </specific>
       <specific name="Powers"> ID_WOG_DL_RACE_POWER_2 </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Type"> Utility </specific>
-      <specific name="Class" />
+      <specific name="Class"/>
       <specific name="_DisplayPowers"> ID_WOG_DL_RACE_POWER_2 </specific>
       <rules>
-         <grant name="ID_WOG_DL_RACE_POWER_2" type="Power" />
-         <modify name="ID_WOG_DL_RACE_POWER_2" type="Power" Field="Class" value="ID_WOG_DL_RACE_7" requires="ID_WOG_DL_RACE_7" />
-         <modify name="ID_WOG_DL_RACE_POWER_2" type="Power" Field="Class" value="ID_WOG_DL_RACE_8" requires="ID_WOG_DL_RACE_8" />
-         <modify name="ID_WOG_DL_RACE_POWER_2" type="Power" Field="Class" value="ID_WOG_DL_RACE_9" requires="ID_WOG_DL_RACE_9" />
+         <grant name="ID_WOG_DL_RACE_POWER_2" type="Power"/>
+         <modify name="ID_WOG_DL_RACE_POWER_2" type="Power" Field="Class" value="ID_WOG_DL_RACE_7" requires="ID_WOG_DL_RACE_7"/>
+         <modify name="ID_WOG_DL_RACE_POWER_2" type="Power" Field="Class" value="ID_WOG_DL_RACE_8" requires="ID_WOG_DL_RACE_8"/>
+         <modify name="ID_WOG_DL_RACE_POWER_2" type="Power" Field="Class" value="ID_WOG_DL_RACE_9" requires="ID_WOG_DL_RACE_9"/>
       </rules>
 You can use gnomish focus as an encounter power.
 </RulesElement>
@@ -534,16 +534,16 @@ You can use gnomish focus as an encounter power.
       <Category> ID_WOG_DL_RACIAL_TRAIT_7,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
       <Flavor> With a moment of inspiration, you find another way around an obstacle. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Gnome Racial Utility </specific>
-      <specific name="Keywords" />
+      <specific name="Keywords"/>
       <specific name="Action Type"> Free Action </specific>
       <specific name="Attack Type"> Personal  </specific>
       <specific name="Trigger"> You make a skill roll and dislike the result. </specific>
       <specific name="Effect"> Reroll the skill check. Use the second roll, even if it's lower. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_WOG_DL_RACE_7 </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Power Type"> Utility </specific>
       <specific name="_ParentFeature"> ID_WOG_DL_RACIAL_TRAIT_7 </specific>
 </RulesElement>
@@ -551,17 +551,17 @@ You can use gnomish focus as an encounter power.
 <RulesElement name="Tinker Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_TINKERGNOME" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_7 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_5" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_6" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_7" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />	 
-         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_5" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_6" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_7" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>	 
+         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace"/>
       </rules>
 </RulesElement>
 
@@ -577,23 +577,23 @@ You count as a tinker gnome for meeting prerequisites.
       <specific name="Speed"> 5 squares </specific>
       <specific name="Characteristics"> Clever, crafty, private, solitary </specific>
       <specific name="Physical Qualities"> Gnomes average a height of 3 feet and weigh between 45 and 50 pounds. They tend to have walnut-colored skin that darkens with exposure to the sun. Their hair is thin and naturally curly. Young gnomes have hair of silver, red, or light brown, which often turns entirely white by adulthood, although streaks of their original hair color may exist into old age. Gnomish hair is nearly always messy or hastily tied up to get it out of the way. Throughout the ages, it has been determined that hair cutting inventions are best left tested on mannequins or livestock; consequently, gnomes rarely cut their hair. However, it grows rather slowly, and male gnomes tend to only ever grow short curly beards. </specific>
-      <specific name="Playing"> There are a number of different ways a gnome might become branded a mad gnome. The gnome may continually break the laws of their guild, sabotage another gnome&apos;s work, persistently display thought processes that do not resonate with gnomish culture (such as believing in Cause and Effect), always creating devices that work and are considered complete, or even displaying no inclination for tinkering or science. The fun of playing a mad gnome character lies in the flexibility of playing a gnome outside of the tinker gnome stereotype. The personality traits of gnomish condescension and uncaring can be put aside when you&apos;re a mad gnome. In addition, it allows you the challenge of roleplaying a character that has been ostracized from their own society, while at the same time, having to deal with the discrimination other races have toward gnomes in general.</specific>
+      <specific name="Playing"> There are a number of different ways a gnome might become branded a mad gnome. The gnome may continually break the laws of their guild, sabotage another gnome's work, persistently display thought processes that do not resonate with gnomish culture (such as believing in Cause and Effect), always creating devices that work and are considered complete, or even displaying no inclination for tinkering or science. The fun of playing a mad gnome character lies in the flexibility of playing a gnome outside of the tinker gnome stereotype. The personality traits of gnomish condescension and uncaring can be put aside when you're a mad gnome. In addition, it allows you the challenge of roleplaying a character that has been ostracized from their own society, while at the same time, having to deal with the discrimination other races have toward gnomes in general.</specific>
       <specific name="Vision"> Normal </specific>
       <specific name="Average Height"> 3'-4' </specific>
       <specific name="Average Weight"> 40-60 lb. </specific>
       <specific name="Ability Scores"> +2 Intelligence, +2 Charisma or +2 Dexterity </specific>
       <specific name="Languages"> Common, Gnome </specific>
       <specific name="Skill Bonuses"> +2 Perception, +2 Thievery </specific>
-      <specific name="Names"> Gnomes have three different names. The first name is given by the family and comprised of a lengthy history of the gnomes&apos; ancestors. Their second name is a summary of the longer name and only takes ten to thirty minutes to recite; it is usually used in formal settings. Their third name is a nickname comprised of only the first few syllables of the gnome&apos;s name. Common abbreviated male names include Cogg, Deddalo, Gear, Gnerd, Innova, and Snork; Bethi, Gauge, Gnorra, Nano, Pidge, Pestle, and Sulfie are common female names. </specific>
+      <specific name="Names"> Gnomes have three different names. The first name is given by the family and comprised of a lengthy history of the gnomes' ancestors. Their second name is a summary of the longer name and only takes ten to thirty minutes to recite; it is usually used in formal settings. Their third name is a nickname comprised of only the first few syllables of the gnome's name. Common abbreviated male names include Cogg, Deddalo, Gear, Gnerd, Innova, and Snork; Bethi, Gauge, Gnorra, Nano, Pidge, Pestle, and Sulfie are common female names. </specific>
       <specific name="Short Description"> Cast out of Tinker gnome society a mad gnome finds a home elsewhere. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_29, ID_WOG_DL_RACIAL_TRAIT_6, ID_WOG_DL_RACIAL_TRAIT_7 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_MADGNOME" type="Grants" />
-         <statadd name="Speed" value="+5" />
-         <textstring name="Average Height" value="3'-4'" />
-         <textstring name="Average Weight" value="40-60 lb." />
-         <textstring name="Size" value="Small" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+         <grant name="ID_INTERNAL_GRANTS_MADGNOME" type="Grants"/>
+         <statadd name="Speed" value="+5"/>
+         <textstring name="Average Height" value="3'-4'"/>
+         <textstring name="Average Weight" value="40-60 lb."/>
+         <textstring name="Size" value="Small"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
       </rules>
 Play a Mad Gnome if you want ...
 </RulesElement>
@@ -601,17 +601,17 @@ Play a Mad Gnome if you want ...
 <RulesElement name="Mad Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_MADGNOME" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_8 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_FMP_RACIAL_TRAIT_29" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_6" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_7" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
-		 <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_29" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_6" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_7" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
+		 <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace"/>
       </rules>
 </RulesElement>
 
@@ -626,24 +626,24 @@ You count as a mad gnome for meeting prerequisites.
       <specific name="Size"> Small </specific>
       <specific name="Speed"> 5 squares </specific>
       <specific name="Characteristics"> Nature Loving, Rustic, Unpredictable, Wise </specific>
-      <specific name="Physical Qualities"> Wild gnomes range from 3'6 &quot; to a little over 4&quot; in height. They have dark brown skin, usually covered in paints, oils, or herbal poultices. Their hair is naturally white, but they keep it in long ropey dreadlocks or bound up in braids and stiffened with fat or gum. Their eyes are a bright cobalt blue. </specific>
+      <specific name="Physical Qualities"> Wild gnomes range from 3'6 " to a little over 4" in height. They have dark brown skin, usually covered in paints, oils, or herbal poultices. Their hair is naturally white, but they keep it in long ropey dreadlocks or bound up in braids and stiffened with fat or gum. Their eyes are a bright cobalt blue. </specific>
       <specific name="Playing"> The wild gnomes have adapted rapidly to a life of rustic inventiveness and communal living. These gnomes have become highly skilled, if erratic and unpredictable, biological tinkers, producing some of the most bizarre and unexpected plants and creatures on Ansalon. Wild gnomes are obsessed with life and living things. Despite their name, they are not barbaric, merely unconcerned with civilization. Wild gnomes are a distinct change of pace from the standard tinker gnome, yet have just as much of the gnomish tendency to want to experiment and research as their cousins. Choose a wild gnome if you want a new approach to a wilderness-oriented class, such as druid or ranger, or if you like gnomes but not their inventions and gadgets. </specific>
       <specific name="Vision"> Normal </specific>
-      <specific name="Average Height"> 3'6&quot;-4' </specific>
+      <specific name="Average Height"> 3'6"-4' </specific>
       <specific name="Average Weight"> 40-60 lb. </specific>
       <specific name="Ability Scores"> +2 Wisdom, +2 Dexterity or +2 Constitution </specific>
       <specific name="Languages"> Common, Gnome </specific>
       <specific name="Skill Bonuses"> +2 Endurance, +2 Nature </specific>
-      <specific name="Names"> Much like other gnomes, wild gnomes have three names. One is genealogical and includes comments about various inherited traits deemed significant by the gnome&apos;s family. The second is a shorter version and consists primarily of a breeding record. The third is their commune name, used in daily parlance and typically a combination of nature-sounding words. Wild gnome names are genderless. </specific>
+      <specific name="Names"> Much like other gnomes, wild gnomes have three names. One is genealogical and includes comments about various inherited traits deemed significant by the gnome's family. The second is a shorter version and consists primarily of a breeding record. The third is their commune name, used in daily parlance and typically a combination of nature-sounding words. Wild gnome names are genderless. </specific>
       <specific name="Short Description"> Wild gnomes seek to explore the wider world with greater understanding and the analysis of living things. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_9, ID_WOG_DL_RACIAL_TRAIT_6, ID_WOG_DL_RACIAL_TRAIT_7, ID_WOG_DL_RACIAL_TRAIT_8 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_WILDGNOME" type="Grants" />
-         <statadd name="Speed" value="+5" />
-         <textstring name="Average Height" value="3'6&quot;-4'" />
-         <textstring name="Average Weight" value="40-60 lb." />
-         <textstring name="Size" value="Small" />
-         <select type="Race Ability Bonus" number="1" Category="Dexterity|Constitution" />
+         <grant name="ID_INTERNAL_GRANTS_WILDGNOME" type="Grants"/>
+         <statadd name="Speed" value="+5"/>
+         <textstring name="Average Height" value="3'6&quot;-4'"/>
+         <textstring name="Average Weight" value="40-60 lb."/>
+         <textstring name="Size" value="Small"/>
+         <select type="Race Ability Bonus" number="1" Category="Dexterity|Constitution"/>
       </rules>
 Play a Wild Gnome if you want ...
 </RulesElement>
@@ -652,7 +652,7 @@ Play a Wild Gnome if you want ...
       <specific name="Short Description"> +5 bonus to saving throws against poison. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <statadd name="Saving Throws" value="+5" type="Racial" condition="against poison" />
+         <statadd name="Saving Throws" value="+5" type="Racial" condition="against poison"/>
       </rules>
 You have a +5 racial bonus to saving throws against poison.
    </RulesElement>
@@ -661,7 +661,7 @@ You have a +5 racial bonus to saving throws against poison.
       <specific name="Short Description"> Gain guild affiliated skill </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <select type="Skill Training" number="1" Category="ID_FMP_SKILL_13|ID_FMP_SKILL_16|ID_FMP_SKILL_18|ID_FMP_SKILL_20" />
+         <select type="Skill Training" number="1" Category="ID_FMP_SKILL_13|ID_FMP_SKILL_16|ID_FMP_SKILL_18|ID_FMP_SKILL_20"/>
       </rules>
 You gain training in one of the following skills: Insight, Nature, Religion, or Stealth.
    </RulesElement>
@@ -669,18 +669,18 @@ You gain training in one of the following skills: Insight, Nature, Religion, or 
 <RulesElement name="Wild Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_WILDGNOME" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_9 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_9" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_6" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_7" type="Racial Trait" />
-		 <grant name="ID_WOG_DL_RACIAL_TRAIT_8" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />	 
-         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_9" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_6" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_7" type="Racial Trait"/>
+		 <grant name="ID_WOG_DL_RACIAL_TRAIT_8" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>	 
+         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace"/>
       </rules>
 </RulesElement>
 
@@ -703,16 +703,16 @@ are between 4'6" and 4'6"-5'6" tall. Male half-gnomes have difficulty growing fa
       <specific name="Average Weight"> 70-140 lb. </specific>
       <specific name="Ability Scores"> +2 Intelligence, +2 Constitution or +2 Dexterity </specific>
       <specific name="Languages"> Common, Gnome </specific>
-      <specific name="Names"> As with most half-breeds, the name of a half-gnome depends largely on where he was raised or lives. This name may change repeatedly throughout a half-gnome&apos;s life; many half-gnomes like to reinvent themselves on a regular basis, including their name and outward identity. </specific>
+      <specific name="Names"> As with most half-breeds, the name of a half-gnome depends largely on where he was raised or lives. This name may change repeatedly throughout a half-gnome's life; many half-gnomes like to reinvent themselves on a regular basis, including their name and outward identity. </specific>
       <specific name="Short Description"> Half-gnomes are adventurers and wanderers. They are adaptable and thrive on change. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_10,ID_WOG_DL_RACIAL_TRAIT_11,ID_WOG_DL_RACIAL_TRAIT_12,ID_WOG_DL_RACIAL_TRAIT_13 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_HALFGNOME" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="4'6&quot;-5'6&quot;" />
-         <textstring name="Average Weight" value="70-140 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Constitution|Dexterity" />
+         <grant name="ID_INTERNAL_GRANTS_HALFGNOME" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="4'6&quot;-5'6&quot;"/>
+         <textstring name="Average Weight" value="70-140 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Constitution|Dexterity"/>
       </rules>
 Play a Half-Gnome if you want ...
    </RulesElement>
@@ -721,8 +721,8 @@ Play a Half-Gnome if you want ...
       <specific name="Short Description"> Count as gnome, half-gnome, and human for choosing feats. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace" />
-         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace"/>
+         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace"/>
       </rules>
 You can take feats that have either gnome or human as a prerequisite (as well as those specifically for half-gnomes), as long as you meet any other requirements.
    </RulesElement>
@@ -737,7 +737,7 @@ Using Bluff to feint and gain combat advantage against your opponent is a move a
       <specific name="Short Description"> +1 Will </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <statadd name="Will Defense" value="+1" type="Racial" />
+         <statadd name="Will Defense" value="+1" type="Racial"/>
       </rules>
 You gain a +1 racial bonus to your Will defense.
 </RulesElement>
@@ -746,7 +746,7 @@ You gain a +1 racial bonus to your Will defense.
       <specific name="Short Description"> Gain your skill extremist option </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <select type="Racial Trait" number="1" Category="ID_WOG_DL_RACIAL_TRAIT_13" />
+         <select type="Racial Trait" number="1" Category="ID_WOG_DL_RACIAL_TRAIT_13"/>
       </rules>
 Choose one of the following racial benefits at 1st level:
 Single-Minded: You gain training in one skill of your choice.
@@ -758,7 +758,7 @@ Broad-Minded: You gain the Jack of All Trades feat as a bonus feat, even if you 
   <specific name="Short Description"> Training in any one additional skill. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <select type="Skill Training" number="1" />
+         <select type="Skill Training" number="1"/>
       </rules>
 You gain training in one skill of your choice.
 </RulesElement>
@@ -768,7 +768,7 @@ You gain training in one skill of your choice.
   <specific name="Short Description"> Gain Jack of All Trades feat as a bonus feat. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_FMP_FEAT_245" type="Feat" />
+         <grant name="ID_FMP_FEAT_245" type="Feat"/>
       </rules>
 You gain the Jack of All Trades feat as a bonus feat, even if you do not meet the prerequisites.
 </RulesElement>
@@ -776,15 +776,15 @@ You gain the Jack of All Trades feat as a bonus feat, even if you do not meet th
 <RulesElement name="Half-Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFGNOME" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_10 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_10" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_11" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_12" type="Racial Trait" />
-		 <grant name="ID_WOG_DL_RACIAL_TRAIT_13" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_10" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_11" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_12" type="Racial Trait"/>
+		 <grant name="ID_WOG_DL_RACIAL_TRAIT_13" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_1" type="Language"/>
       </rules>
 </RulesElement>
 
@@ -800,23 +800,23 @@ You count as a half-gnome for meeting prerequisites.
       <specific name="Speed"> 6 squares </specific>
       <specific name="Characteristics"> Confident, Self-assured, Zealous </specific>
       <specific name="Physical Qualities"> Half-goblins are scrawny, hunched humanoids who share the height and musculature of their human parent and the flattened features, pointed ears, and awkward posture of their goblin parent. Although half-goblin skin tones can vary greatly, most have a reddish or rust-colored tinge to their complexions. Some half-goblins, such as those with bugbear ancestry, are hairy and bulky around the shoulders; those with goblin ancestry are smaller. Half-goblins, while of a similar size to hobgoblins, look quite different; they do not have the sharp teeth of goblins, and their human-looking eyes betray their mixed blood. </specific>
-      <specific name="Playing"> Throughout Krynn&apos;s history, goblins and humans have lived in close proximity to each other. Whether by accident or design, a child is occasionally born out of a union of both races. These tortured progeny, if not abandoned at birth to the elements, are raised within cultures that both hate and inspire them. They inherit all the ambition and drive of their human parent and the ferocity and mob mentality of their goblin parent. If left to reach adulthood, the result is a zealous outcast who seeks to right all of the wrongs inflicted on his ancestors. Although some half-goblins rise to positions of power in goblin or human communities, most spend their entire lives trying to convince either race that the future lies with them. </specific>
+      <specific name="Playing"> Throughout Krynn's history, goblins and humans have lived in close proximity to each other. Whether by accident or design, a child is occasionally born out of a union of both races. These tortured progeny, if not abandoned at birth to the elements, are raised within cultures that both hate and inspire them. They inherit all the ambition and drive of their human parent and the ferocity and mob mentality of their goblin parent. If left to reach adulthood, the result is a zealous outcast who seeks to right all of the wrongs inflicted on his ancestors. Although some half-goblins rise to positions of power in goblin or human communities, most spend their entire lives trying to convince either race that the future lies with them. </specific>
       <specific name="Vision"> Low-light </specific>
       <specific name="Average Height"> 4'-5' 6" </specific>
       <specific name="Average Weight"> 80-120 lb. </specific>
       <specific name="Ability Scores"> +2 Constitution, +2 Dexterity or +2 Charisma </specific>
       <specific name="Languages"> Common, Goblin </specific>
 	  <specific name="Skill Bonuses"> +2 Bluff, +2 Stealth </specific>
-      <specific name="Names"> A half-goblin is named according to the culture in which he is raised. Half-goblins from human settlements are given human names, and in much the same way, a goblin raised half-goblin will take a goblin name. Interestingly, when the half-goblin matures and explores the diverse world outside his community, he may take on another name from the culture in which he wasn&apos;t raised. </specific>
+      <specific name="Names"> A half-goblin is named according to the culture in which he is raised. Half-goblins from human settlements are given human names, and in much the same way, a goblin raised half-goblin will take a goblin name. Interestingly, when the half-goblin matures and explores the diverse world outside his community, he may take on another name from the culture in which he wasn't raised. </specific>
       <specific name="Short Description"> Half-goblins are misfits that seldom fit into society. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_16, ID_WOG_DL_RACIAL_TRAIT_17, ID_WOG_DL_RACIAL_TRAIT_18 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_HALFGOBLIN" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="4'-5' 6&quot;" />
-         <textstring name="Average Weight" value="80-120 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Dexterity|Charisma" />
+         <grant name="ID_INTERNAL_GRANTS_HALFGOBLIN" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="4'-5' 6&quot;"/>
+         <textstring name="Average Weight" value="80-120 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Dexterity|Charisma"/>
       </rules>
 Play a Half-Goblin if you want ...
    </RulesElement>
@@ -825,8 +825,8 @@ Play a Half-Goblin if you want ...
       <specific name="Short Description"> Count as goblin, half-goblin, and human for choosing feats. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_COUNTSASRACE_GOBLIN" type="CountsAsRace" />
-         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_COUNTSASRACE_GOBLIN" type="CountsAsRace"/>
+         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace"/>
       </rules>
 You can take feats that have either goblin or human as a prerequisite (as well as those specifically for half-goblins), as long as you meet any other requirements.
    </RulesElement>
@@ -835,7 +835,7 @@ You can take feats that have either goblin or human as a prerequisite (as well a
       <specific name="Short Description"> +1 Will </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <statadd name="Will Defense" value="+1" type="Racial" />
+         <statadd name="Will Defense" value="+1" type="Racial"/>
       </rules>
 You gain a +1 racial bonus to your Will defense.
 </RulesElement>
@@ -843,12 +843,12 @@ You gain a +1 racial bonus to your Will defense.
 <RulesElement name="Zealot Tactics" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_18" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
       <specific name="Short Description"> Use zealot tactics as an encounter power. </specific>
       <specific name="Powers"> ID_WOG_DL_RACE_POWER_3 </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Type"> Utility </specific>
       <specific name="Class"> ID_WOG_DL_RACE_11 </specific>
       <specific name="_DisplayPowers"> ID_WOG_DL_RACE_POWER_3 </specific>
       <rules>
-         <grant name="ID_WOG_DL_RACE_POWER_3" type="Power" />
+         <grant name="ID_WOG_DL_RACE_POWER_3" type="Power"/>
       </rules>
 You can use zealot tactics as an encounter power.
 </RulesElement>
@@ -857,16 +857,16 @@ You can use zealot tactics as an encounter power.
       <Category> ID_WOG_DL_RACIAL_TRAIT_18,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
       <Flavor> Your aggressive movement inspires your companions toward victory. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Half-Goblin Racial Utility </specific>
-      <specific name="Keywords" />
+      <specific name="Keywords"/>
       <specific name="Action Type"> Free Action </specific>
       <specific name="Attack Type"> Ranged 5 </specific>
       <specific name="Trigger"> You charge an enemy and do damage. </specific>
       <specific name="Effect"> Until the end of the encounter, all of your allies within range gain a +1 power bonus to melee attack rolls against the enemy you charged. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_WOG_DL_RACE_11 </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Power Type"> Utility </specific>
       <specific name="_ParentFeature"> ID_WOG_DL_RACIAL_TRAIT_18 </specific>
 </RulesElement>
@@ -874,16 +874,16 @@ You can use zealot tactics as an encounter power.
 <RulesElement name="Half-Goblin" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFGOBLIN" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_11 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_16" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_17" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_18" type="Racial Trait" />		 
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_FMP_LANGUAGE_20" type="Language" />
-		 <grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_16" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_17" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_18" type="Racial Trait"/>		 
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_FMP_LANGUAGE_20" type="Language"/>
+		 <grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
       </rules>
 </RulesElement>
 
@@ -897,9 +897,9 @@ You count as a half-goblin for meeting prerequisites.
 <RulesElement name="Kenderspeak" type="Language" internal-id="ID_WOG_DL_LANGUAGE_2" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Category> ID_INTERNAL_CATEGORY_STARTING </Category>
       <rules>
-         <statadd name="Language Count" value="+1" />
+         <statadd name="Language Count" value="+1"/>
       </rules>
-Kenderspeak is a language spoken by Kender in the DragonLance campaign setting. While Kender primarily speak Common, they also have their own language which borrows heavily from other cultures&apos; words, phrases, and slang.
+Kenderspeak is a language spoken by Kender in the DragonLance campaign setting. While Kender primarily speak Common, they also have their own language which borrows heavily from other cultures' words, phrases, and slang.
 </RulesElement>
 
 <!-- Hoopak Code -->
@@ -917,7 +917,7 @@ Weight: 8 lb.
 The hoopak is probably the most well known of the kender weapons. It is typically a 3-foot staff made of hard yet supple wood that is forked at one end and has a metal tip at the other. The metal tip can be sharpened and the hoopak can be thrown like a shortspear. The hoopak can also be stuck into the ground so that missiles can be fired from the forked end like a slingshot. It can also be twirled over the head like a sling to launch sling bullets or stones, or it may be used as a traditional sling staff.
 
 Properties:
-Load Free (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows &quot;load free&quot; on the ranged weapons table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it).
+Load Free (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows "load free" on the ranged weapons table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it).
 Small (This property describes a two-handed or a versatile weapon that a Small character can use in the same way a Medium character can. A kender can use a hoopak, for example, even though kender can't normally use two-handed weapons).
 
 Group:
@@ -928,7 +928,7 @@ Staff (In its most basic form, a staff is a long piece of wood or some other sub
       <specific name="Range"> 10/20 </specific>
       <specific name="Damage"> 1d6 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Superior Melee or Ranged </specific>
       <specific name="Hands Required"> Two-Handed </specific>
       <specific name="Item Slot"> Two-Hands </specific>
@@ -947,7 +947,7 @@ The hoopak is probably the most well known of the kender weapons.
       <specific name="Short Description"> Gain proficiency with the hoopak. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HOOPAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HOOPAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the hoopak.
 </RulesElement>
@@ -957,8 +957,8 @@ You gain proficiency with the hoopak.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Hoopak:attack" value="+1" />
-         <statadd name="Hoopak:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Hoopak:attack" value="+1"/>
+         <statadd name="Hoopak:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a hoopak.
 </RulesElement>
@@ -977,18 +977,18 @@ Weight: 4 lb.
 The battak is a studded club-shaped walking stick favored by young kender. The grip ends in a tapered metal wedge that can be used for prying. A battak attacks as a club or spear.
 
 Properties: 
-Versatile (Versatile weapons are one-handed, but you can use them two-handed. If you do, you deal an extra 1 point of damage when you roll damage for the weapon. A Small character such as a halfling must use a versatile weapon two-handed, and doesn&apos;t deal extra damage).
+Versatile (Versatile weapons are one-handed, but you can use them two-handed. If you do, you deal an extra 1 point of damage when you roll damage for the weapon. A Small character such as a halfling must use a versatile weapon two-handed, and doesn't deal extra damage).
 Small (This property describes a two-handed or a versatile weapon that a Small character can use in the same way a Medium character can).
 
 Group:
-Mace (Much like hammers, maces are blunt weapons that have a heavier head than handle, but they&apos;re more balanced than hammers. They&apos;re useful for delivering crushing blows).
+Mace (Much like hammers, maces are blunt weapons that have a heavier head than handle, but they're more balanced than hammers. They're useful for delivering crushing blows).
 Spear (Consisting of a stabbing head on the end of a shaft, a spear is great for lunging attacks). </specific>
       <specific name="Weight"> 4 </specific>
       <specific name="Gold"> 10 </specific>
-      <specific name="Range" />
+      <specific name="Range"/>
       <specific name="Damage"> 1d6 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Superior Melee </specific>
       <specific name="Hands Required"> One-Handed </specific>
       <specific name="Item Slot"> One-hand </specific>
@@ -1007,7 +1007,7 @@ The Battak is a club-shaped walking stick used by young kender.
       <specific name="Short Description"> Gain proficiency with the battak. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the battak.
 </RulesElement>
@@ -1017,8 +1017,8 @@ You gain proficiency with the battak.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Battak:attack" value="+1" />
-         <statadd name="Battak:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Battak:attack" value="+1"/>
+         <statadd name="Battak:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a battak.
 </RulesElement>
@@ -1038,18 +1038,18 @@ Weight: 4 lb.
 A chapak is a Kender weapon that resembles a handaxe with two metal prongs extending from the back of the axe head. The prongs can be used for prying, or catgut can be strung between them and used as a sling.
 
 Properties:
-Load Free (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows &quot;load free&quot; on the ranged weapons table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon).
+Load Free (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows "load free" on the ranged weapons table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon).
 Small (This property describes a two-handed or a versatile weapon that a Small character can use in the same way a Medium character can. A kender can use a hoopak, for example, even though kender can't normally use two-handed weapons).
 
 Group:
-Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An axe&apos;s weight makes it fine for delivering crushing blows).
+Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An axe's weight makes it fine for delivering crushing blows).
 Sling (Slings are leather straps used to hurl stones or metal pellets. They are projectile weapons). </specific>
       <specific name="Weight"> 4 </specific>
       <specific name="Gold"> 35 </specific>
       <specific name="Range"> 10/20 </specific>
       <specific name="Damage"> 1d6 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Superior Melee or Ranged </specific>
       <specific name="Hands Required"> One-Handed </specific>
       <specific name="Item Slot"> One-hand </specific>
@@ -1068,7 +1068,7 @@ The chapak resembles a handaxe with a sling shot on the back.
       <specific name="Short Description"> Gain proficiency with the chapak. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHAPAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHAPAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the chapak.
 </RulesElement>
@@ -1078,8 +1078,8 @@ You gain proficiency with the chapak.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Chapak:attack" value="+1" />
-         <statadd name="Chapak:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Chapak:attack" value="+1"/>
+         <statadd name="Chapak:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a chapak.
 </RulesElement>
@@ -1103,14 +1103,14 @@ Heavy Thrown (You hurl a thrown weapon from your hand, rather than using it to l
 Small (This property describes a two-handed or a versatile weapon that a Small character can use in the same way a Medium character can. A kender can use a hoopak, for example, even though kender can't normally use two-handed weapons).
 
 Group:
-Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An axe&apos;s weight makes it fine for delivering crushing blows).
+Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An axe's weight makes it fine for delivering crushing blows).
 Hammer (A hammer has a blunt, heavy head with one or more flat striking surfaces attached to a haft). </specific>
       <specific name="Weight"> 15 </specific>
       <specific name="Gold"> 60 </specific>
       <specific name="Range"> 5/10 </specific>
       <specific name="Damage"> 1d8 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Superior Melee or Ranged </specific>
       <specific name="Hands Required"> Two-Handed </specific>
       <specific name="Item Slot"> Two-Hands </specific>
@@ -1129,7 +1129,7 @@ The hachak resembles a handaxe with a hammer on the other end.
       <specific name="Short Description"> Gain proficiency with the hachak. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HACHAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HACHAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the hachak.
 </RulesElement>
@@ -1139,8 +1139,8 @@ You gain proficiency with the hachak.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Hachak:attack" value="+1" />
-         <statadd name="Hachak:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Hachak:attack" value="+1"/>
+         <statadd name="Hachak:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a hachak.
 </RulesElement>
@@ -1167,10 +1167,10 @@ Polearm (Polearms are weapons mounted at the end of long hafts. All polearms als
 Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lunges, and agile defenses are the strong points of these weapons). </specific>
       <specific name="Weight"> 14 </specific>
       <specific name="Gold"> 30 </specific>
-      <specific name="Range" />
+      <specific name="Range"/>
       <specific name="Damage"> 1d10 </specific>
       <specific name="Proficiency Bonus"> 3 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Superior Melee </specific>
       <specific name="Hands Required"> Two-Handed </specific>
       <specific name="Item Slot"> Two-Hands </specific>
@@ -1189,7 +1189,7 @@ The polpak is a polearm with a light blade attached.
       <specific name="Short Description"> Gain proficiency with the polpak. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(POLPAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(POLPAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the polpak.
 </RulesElement>
@@ -1199,8 +1199,8 @@ You gain proficiency with the polpak.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Polpak:attack" value="+1" />
-         <statadd name="Polpak:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Polpak:attack" value="+1"/>
+         <statadd name="Polpak:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a polpak.
 </RulesElement>
@@ -1222,15 +1222,15 @@ Group:
 Flail (Weapons in the flail group have a flexible material, usually a length of chain, between a solid handle and the damage-dealing end of the weapon).</specific>
       <specific name="Weight"> 3 </specific>
       <specific name="Gold"> 20 </specific>
-      <specific name="Range" />
+      <specific name="Range"/>
       <specific name="Damage"> 1d4 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Superior Melee </specific>
       <specific name="Hands Required"> One-Handed </specific>
       <specific name="Item Slot"> One-hand </specific>
       <specific name="Group"> Flail </specific>
-      <specific name="Properties" />
+      <specific name="Properties"/>
 The sashik is a weighted rope flail.
    </RulesElement>
 
@@ -1244,7 +1244,7 @@ The sashik is a weighted rope flail.
       <specific name="Short Description"> Gain proficiency with the sashik. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SASHIK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SASHIK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the sashik.
 </RulesElement>
@@ -1254,8 +1254,8 @@ You gain proficiency with the sashik.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Sashik:attack" value="+1" />
-         <statadd name="Sashik:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Sashik:attack" value="+1"/>
+         <statadd name="Sashik:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a sashik.
 </RulesElement>
@@ -1273,7 +1273,7 @@ Range: 10/20
 Weight: 1 lb.
 
 Properties: 
-Load Free (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows &quot;load free&quot; on the ranged weapons table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The crossbow is &quot;load minor,&quot; which means it requires a minor action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power).
+Load Free (Ranged weapons that loose projectiles, including bows, crossbows, and slings, take some time to load. When a weapon shows "load free" on the ranged weapons table, that means you draw and load ammunition as a free action, effectively part of the action used to attack with the weapon. Any weapon that has the load property requires two hands to load, even if you can use only one hand to attack with it. (The sling, for example, is a one-handed weapon, but you need a free hand to load it.) The crossbow is "load minor," which means it requires a minor action to load a bolt into the weapon. If a power allows you to hit multiple targets, the additional load time is accounted for in the power).
 
 Group: 
 Sling (Slings are leather straps used to hurl stones or metal pellets. They are projectile weapons.). </specific>
@@ -1282,7 +1282,7 @@ Sling (Slings are leather straps used to hurl stones or metal pellets. They are 
       <specific name="Range"> 10/20 </specific>
       <specific name="Damage"> 1d6 </specific>
       <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End" />
+      <specific name="_Primary End"/>
       <specific name="Weapon Category"> Simple Ranged </specific>
       <specific name="Hands Required"> One-Handed </specific>
       <specific name="Item Slot"> One-hand </specific>
@@ -1300,7 +1300,7 @@ Sling (Slings are leather straps used to hurl stones or metal pellets. They are 
       <specific name="Short Description"> Gain proficiency with the whippik. </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIPPIK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIPPIK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the whippik.
    </RulesElement>
@@ -1310,37 +1310,37 @@ You gain proficiency with the whippik.
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Whippik:attack" value="+1" />
-         <statadd name="Whippik:damage" value="+4" requires="Kensei Mastery" />
+         <statadd name="Whippik:attack" value="+1"/>
+         <statadd name="Whippik:damage" value="+4" requires="Kensei Mastery"/>
       </rules>
 You gain a +1 bonus to attack rolls with a whippik.
 </RulesElement>
 
 <RulesElement name="Kender" type="Race" internal-id="ID_WOG_DL_RACE_12" source="DragonLance" revision-date="3/02/2011 10:00:00 PM">
       <Prereqs> ~KENDER </Prereqs>
-      <Flavor> &quot;It must be magical, because it just appeared in my pouch!&quot; </Flavor>
+      <Flavor> "It must be magical, because it just appeared in my pouch!" </Flavor>
       <specific name="Size"> Small </specific>
       <specific name="Speed"> 6 squares </specific>
       <specific name="Characteristics"> Brave, bold, curious, down-to-earth, friendly, good-natured, lucky, nimble, optimistic, resourceful, warm </specific>
-      <specific name="Physical Qualities"> Kender typically stand no more than 3 to 4 feet tall, with the males usually being taller than the females. They weigh between 80 and 100 pounds. Adult kender are well muscled, despite being thin and light of build. Kender are sometimes mistaken for young humans, but closer inspection reveals the pointed ears, face wrinkles, and many pouches indicative of kender. Kender find their face wrinkles, also called crow&apos;s feet or laugh-lines, highly attractive. Kender hair color ranges from light blond to deep brown to black with a few sporting red-orange hues. Most kender wear their hair long. The most common hairstyle is the topknot. It&apos;s also common among kender nobility to braid their sideburns as a sign of their status. Kender typically favor bright colors and gaudy apparel that is at the same time rugged and rustic. Most kender add accents to their clothing and weapons by tagging them with ribbons, feathers, beads, or colorful scarves. All kender-made clothing, regardless of what it is, has pockets and lots of them. The staple of all kender outfits, however, is the many pouches. It is rare to see a kender with less than two pouches, though they usually have many more than that. </specific>
-      <specific name="Playing"> Kender are born with the heart of an explorer and an intense curiosity that can not be denied. This leads them to explore every nook and cranny, check behind every door, and snoop in every pocket. Over time, a kender can learn to understand the need for caution in some situations, such as when their friends may be hurt as a direct result of their actions. Kender are attracted to magic and gadgets like dwarves to ale. Kender are in awe of anything magical: items, spells, and creatures pique a kender&apos;s interest, and they can often be found wandering around places rumored to be magical.
-The best way to play a kender character is to rein in some of the more overbearing kender personality traits. Many DMs have banned kender characters from their games, because most players feel in order to successfully play a kender they must be foolish and disruptive to the game. Be friendly without talking endlessly, be fearless but not foolhardy, be curious but smart. If you are a true kender, don&apos;t always attempt to steal valuable items. Keep in mind that to a kender a shiny river stone is just as enticing as a diamond.</specific>
+      <specific name="Physical Qualities"> Kender typically stand no more than 3 to 4 feet tall, with the males usually being taller than the females. They weigh between 80 and 100 pounds. Adult kender are well muscled, despite being thin and light of build. Kender are sometimes mistaken for young humans, but closer inspection reveals the pointed ears, face wrinkles, and many pouches indicative of kender. Kender find their face wrinkles, also called crow's feet or laugh-lines, highly attractive. Kender hair color ranges from light blond to deep brown to black with a few sporting red-orange hues. Most kender wear their hair long. The most common hairstyle is the topknot. It's also common among kender nobility to braid their sideburns as a sign of their status. Kender typically favor bright colors and gaudy apparel that is at the same time rugged and rustic. Most kender add accents to their clothing and weapons by tagging them with ribbons, feathers, beads, or colorful scarves. All kender-made clothing, regardless of what it is, has pockets and lots of them. The staple of all kender outfits, however, is the many pouches. It is rare to see a kender with less than two pouches, though they usually have many more than that. </specific>
+      <specific name="Playing"> Kender are born with the heart of an explorer and an intense curiosity that can not be denied. This leads them to explore every nook and cranny, check behind every door, and snoop in every pocket. Over time, a kender can learn to understand the need for caution in some situations, such as when their friends may be hurt as a direct result of their actions. Kender are attracted to magic and gadgets like dwarves to ale. Kender are in awe of anything magical: items, spells, and creatures pique a kender's interest, and they can often be found wandering around places rumored to be magical.
+The best way to play a kender character is to rein in some of the more overbearing kender personality traits. Many DMs have banned kender characters from their games, because most players feel in order to successfully play a kender they must be foolish and disruptive to the game. Be friendly without talking endlessly, be fearless but not foolhardy, be curious but smart. If you are a true kender, don't always attempt to steal valuable items. Keep in mind that to a kender a shiny river stone is just as enticing as a diamond.</specific>
       <specific name="Vision"> Normal </specific>
       <specific name="Average Height"> 3' 10"-4' 2" </specific>
       <specific name="Average Weight"> 80-100 lb. </specific>
       <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Constitution </specific>
       <specific name="Languages"> Common, Kenderspeak </specific>
       <specific name="Skill Bonuses"> +2 Stealth, +2 Thievery </specific>
-      <specific name="Names"> Tradition dictates kender parents select a name for their child around the moment of birth. The child&apos;s first name can be based off any combination of factors. The most common method is to name the child after an existing relative; Kipper, Kronin, Tavin, Rufus, or Meridon are a few. Occasionally, parents name the kender after an event in a recent adventure, such as Triplever, Mudskipper, or Thistleprick, or after common kender objects like Lockpick, Toolkit, and Topknot. There are countless other variations of kender first names. Each kender takes their parent&apos;s last name. There are specific family names, which have survived the ages; Metwinger, Thistleknott, Thistleswitch, and Burrfoot are some examples, but it is common practice for kender to adopt a more descriptive name later on in life after their adventures, such as Springheel, Lightfingers, Pakslinger, or Lampwick. Usually during their wanderlust, they leave home to make a name for themselves, literally. Some also decide that they want to be like famous kender who came before them, and take on that kender&apos;s name. This happened in the decades following the War of the Lance when a large number of kender took the name Tasslehoff Burrfoot. </specific>
+      <specific name="Names"> Tradition dictates kender parents select a name for their child around the moment of birth. The child's first name can be based off any combination of factors. The most common method is to name the child after an existing relative; Kipper, Kronin, Tavin, Rufus, or Meridon are a few. Occasionally, parents name the kender after an event in a recent adventure, such as Triplever, Mudskipper, or Thistleprick, or after common kender objects like Lockpick, Toolkit, and Topknot. There are countless other variations of kender first names. Each kender takes their parent's last name. There are specific family names, which have survived the ages; Metwinger, Thistleknott, Thistleswitch, and Burrfoot are some examples, but it is common practice for kender to adopt a more descriptive name later on in life after their adventures, such as Springheel, Lightfingers, Pakslinger, or Lampwick. Usually during their wanderlust, they leave home to make a name for themselves, literally. Some also decide that they want to be like famous kender who came before them, and take on that kender's name. This happened in the decades following the War of the Lance when a large number of kender took the name Tasslehoff Burrfoot. </specific>
       <specific name="Short Description"> Clever wanderers and explorers, kender seeks out magic and shiny objects everywhere. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_25, ID_FMP_RACIAL_TRAIT_361 ,ID_WOG_DL_RACIAL_TRAIT_19, ID_WOG_DL_RACIAL_TRAIT_27 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_KENDER" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;" />
-         <textstring name="Average Weight" value="80-100 lb." />
-         <textstring name="Size" value="Small" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
+         <grant name="ID_INTERNAL_GRANTS_KENDER" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;"/>
+         <textstring name="Average Weight" value="80-100 lb."/>
+         <textstring name="Size" value="Small"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
       </rules>
 Play a Kender if you want ...
    </RulesElement>
@@ -1349,7 +1349,7 @@ Play a Kender if you want ...
       <specific name="Short Description"> Gain two kender weapon proficiencies </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <select type="Racial Trait" number="2" Category="ID_WOG_DL_RACIAL_TRAIT_19" />
+         <select type="Racial Trait" number="2" Category="ID_WOG_DL_RACIAL_TRAIT_19"/>
       </rules>
 You gain proficiency with two of the following kender weapons: battak, chapak, hachak, hoopak, polpak, sashik, or whippik.
 </RulesElement>
@@ -1359,7 +1359,7 @@ You gain proficiency with two of the following kender weapons: battak, chapak, h
   <specific name="Short Description"> Gain proficiency with the battak. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the battak.
 </RulesElement>
@@ -1369,7 +1369,7 @@ You gain proficiency with the battak.
   <specific name="Short Description"> Gain proficiency with the chapak. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHAPAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CHAPAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the chappak.
 </RulesElement>
@@ -1379,7 +1379,7 @@ You gain proficiency with the chappak.
   <specific name="Short Description"> Gain proficiency with the hachak. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HACHAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HACHAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the hachak.
 </RulesElement>
@@ -1389,7 +1389,7 @@ You gain proficiency with the hachak.
   <specific name="Short Description"> Gain proficiency with the hoopak. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HOOPAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HOOPAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the hoopak.
 </RulesElement>
@@ -1399,7 +1399,7 @@ You gain proficiency with the hoopak.
   <specific name="Short Description"> Gain proficiency with the polpak. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(POLPAK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(POLPAK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the polpak.
 </RulesElement>
@@ -1409,7 +1409,7 @@ You gain proficiency with the polpak.
   <specific name="Short Description"> Gain proficiency with the sashik. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SASHIK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SASHIK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the sashik.
 </RulesElement>
@@ -1419,20 +1419,20 @@ You gain proficiency with the sashik.
   <specific name="Short Description"> Gain proficiency with the whippik. </specific>
   <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIPPIK)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIPPIK)" type="Proficiency"/>
       </rules>
 You gain proficiency with the whippik.
 </RulesElement>
 
 <RulesElement name="Insulting Taunt" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_27" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
       <specific name="Short Description"> You have the insulting taunt power </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Powers"> ID_WOG_DL_RACE_POWER_4 </specific>
       <specific name="type"> Encounter </specific>
       <specific name="Class"> ID_WOG_DL_RACE_12 </specific>
       <specific name="_DisplayPowers"> ID_WOG_DL_RACE_POWER_4 </specific>
       <rules>
-         <grant name="ID_WOG_DL_RACE_POWER_4" type="Power" />
+         <grant name="ID_WOG_DL_RACE_POWER_4" type="Power"/>
       </rules>
 You have the insulting taunt encounter power.
    </RulesElement>
@@ -1459,17 +1459,17 @@ Increase to Charisma + 6 at 21th level.</specific>
 <RulesElement name="Kender" type="Grants" internal-id="ID_INTERNAL_GRANTS_KENDER" source="Player's Handbook">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_12 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_FMP_RACIAL_TRAIT_25" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_19" type="Racial Trait" />
-		 <grant name="ID_WOG_DL_RACIAL_TRAIT_27" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_2" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_25" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_19" type="Racial Trait"/>
+		 <grant name="ID_WOG_DL_RACIAL_TRAIT_27" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_2" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
       </rules>
    </RulesElement>
    
@@ -1484,7 +1484,7 @@ You count as a kender for meeting prerequisites.
       <specific name="Size"> Medium </specific>
       <specific name="Speed"> 6 squares </specific>
       <specific name="Characteristics"> Adaptable, brave, curious, down-to-earth, friendly, resourceful, warm </specific>
-      <specific name="Physical Qualities"> Half-kender can often pass for slightly smaller, thinner humans. They can be anywhere between 4'-5' 6" tall and weigh between 100 and 130 pounds. A half-kender&apos;s hair and eye color are usually determined by the nationality of her human parent. Most half-kender will wear their hair long, but only some adopt the famous kender topknot style. Their ears can have a slight point, but it is easily concealed. Half-kender will also develop face wrinkles as true kender do; however, they will not be nearly as pronounced. </specific>
+      <specific name="Physical Qualities"> Half-kender can often pass for slightly smaller, thinner humans. They can be anywhere between 4'-5' 6" tall and weigh between 100 and 130 pounds. A half-kender's hair and eye color are usually determined by the nationality of her human parent. Most half-kender will wear their hair long, but only some adopt the famous kender topknot style. Their ears can have a slight point, but it is easily concealed. Half-kender will also develop face wrinkles as true kender do; however, they will not be nearly as pronounced. </specific>
       <specific name="Playing"> Most half-kender become adventurers. Their tendency for wanderlust combined with general discomfort in the world makes them willing to take to the open road. They find they are more accepted in small group situations where their personal strengths and weaknesses are better understood. A half-kender is a valued party member, as his sense of wonder and childishness is tempered by his non-kender half. While some half-kender do inherit handling tendencies, they tend to have a stronger sense of personal property and are less a nuisance to fellow party members. </specific>
       <specific name="Average Height"> 4'-5' 6" </specific>
       <specific name="Average Weight"> 100-130 lb. </specific>
@@ -1495,12 +1495,12 @@ You count as a kender for meeting prerequisites.
       <specific name="Short Description"> Clever wanderers and explorers, half-kender seek out understanding companions. </specific>
       <specific name="Racial Traits"> ID_WOG_DL_RACIAL_TRAIT_28, ID_WOG_DL_RACIAL_TRAIT_29, ID_WOG_DL_RACIAL_TRAIT_30, ID_WOG_DL_RACIAL_TRAIT_31 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_HALFKENDER" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="4'-5' 6&quot;" />
-         <textstring name="Average Weight" value="100-130 lb." />
-         <textstring name="Size" value="Medium" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
+         <grant name="ID_INTERNAL_GRANTS_HALFKENDER" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="4'-5' 6&quot;"/>
+         <textstring name="Average Weight" value="100-130 lb."/>
+         <textstring name="Size" value="Medium"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
       </rules>
 Play a Half-Kender if you want ...
    </RulesElement>
@@ -1509,7 +1509,7 @@ Play a Half-Kender if you want ...
       <specific name="Short Description"> +2 to saving throws against fear. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <statadd name="Saving Throws" value="+2" type="Racial" condition="against fear" />
+         <statadd name="Saving Throws" value="+2" type="Racial" condition="against fear"/>
       </rules>
 You gain a +2 racial bonus to saving throws against fear.
 </RulesElement>
@@ -1518,8 +1518,8 @@ You gain a +2 racial bonus to saving throws against fear.
       <specific name="Short Description"> Count as kender, half-kender, and human for choosing feats. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <grant name="ID_INTERNAL_COUNTSASRACE_KENDER" type="CountsAsRace" />
-         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_COUNTSASRACE_KENDER" type="CountsAsRace"/>
+         <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace"/>
       </rules>
 You can take feats that have either kender or human as a prerequisite (as well as those specifically for half-kender), as long as you meet any other requirements.
    </RulesElement>
@@ -1528,20 +1528,20 @@ You can take feats that have either kender or human as a prerequisite (as well a
       <specific name="Short Description"> Gain one kender weapon proficiency </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <select type="Racial Trait" number="1" Category="ID_WOG_DL_RACIAL_TRAIT_19" />
+         <select type="Racial Trait" number="1" Category="ID_WOG_DL_RACIAL_TRAIT_19"/>
       </rules>
 You gain proficiency with one of the following kender weapons: battak, chapak, hachak, hoopak, polpak, sashik, or whippik.
 </RulesElement>
 
 <RulesElement name="Defensive Bluster" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_31" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
       <specific name="Short Description"> You have the defensive bluster power </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Powers"> ID_WOG_DL_RACE_POWER_5 </specific>
       <specific name="type"> Encounter </specific>
       <specific name="Class"> ID_WOG_DL_RACE_13 </specific>
       <specific name="_DisplayPowers"> ID_WOG_DL_RACE_POWER_5 </specific>
       <rules>
-         <grant name="ID_WOG_DL_RACE_POWER_5" type="Power" />
+         <grant name="ID_WOG_DL_RACE_POWER_5" type="Power"/>
       </rules>
 You can use defensive bluster as an encounter power.
    </RulesElement>
@@ -1561,24 +1561,24 @@ Increase to Charisma + 6 at 21th level.</specific>
   <specific name="Hit"> Your target is dazed (save ends). You may shift 1 square. </specific>
   <specific name="Miss"> You may shift 1 square. </specific>
   <specific name="Class"> ID_WOG_DL_RACE_13 </specific>
-  <specific name="Level" />
+  <specific name="Level"/>
   <specific name="_ParentFeature"> ID_WOG_DL_RACIAL_TRAIT_31 </specific>
 </RulesElement>
 
 <RulesElement name="Half-Kender" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFKENDER" source="Player's Handbook">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_13 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_28" type="Racial Trait" />
-		 <grant name="ID_WOG_DL_RACIAL_TRAIT_29" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_30" type="Racial Trait" />
-		 <grant name="ID_WOG_DL_RACIAL_TRAIT_31" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_2" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+         <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_28" type="Racial Trait"/>
+		 <grant name="ID_WOG_DL_RACIAL_TRAIT_29" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_30" type="Racial Trait"/>
+		 <grant name="ID_WOG_DL_RACIAL_TRAIT_31" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_2" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
       </rules>
    </RulesElement>
    
@@ -1589,12 +1589,12 @@ You count as a half-kender for meeting prerequisites.
 
 <RulesElement name="Afflicted Kender" type="Race" internal-id="ID_WOG_DL_RACE_14" source="DragonLance" revision-date="3/02/2011 11:40:00 PM">
       <Prereqs> ~AFFLICTEDKENDER </Prereqs>
-      <Flavor> &quot;Anything easy is more trouble than it&apos;s worth&quot; </Flavor>
+      <Flavor> "Anything easy is more trouble than it's worth" </Flavor>
       <specific name="Size"> Small </specific>
       <specific name="Speed"> 6 squares </specific>
       <specific name="Characteristics"> calculating, depressed, hard, quiet, reserved, timid </specific>
-      <specific name="Physical Qualities"> Kender typically stand no more than 3 to 4 feet tall, with the males usually being taller than the females. They weigh between 80 and 100 pounds. Adult kender are well muscled, despite being thin and light of build. Kender are sometimes mistaken for young humans, but closer inspection reveals the pointed ears, face wrinkles, and many pouches indicative of kender. Kender find their face wrinkles, also called crow&apos;s feet or laugh-lines, highly attractive. Kender hair color ranges from light blond to deep brown to black with a few sporting red-orange hues. Most kender wear their hair long. The most common hairstyle is the topknot. It&apos;s also common among kender nobility to braid their sideburns as a sign of their status. Kender typically favor bright colors and gaudy apparel that is at the same time rugged and rustic. Most kender add accents to their clothing and weapons by tagging them with ribbons, feathers, beads, or colorful scarves. All kender-made clothing, regardless of what it is, has pockets and lots of them. The staple of all kender outfits, however, is the many pouches. It is rare to see a kender with less than two pouches, though they usually have many more than that. </specific>
-      <specific name="Playing"> After the Chaos War, Malystryx the great red dragon, began to use her magic to transform the lands into a habitat more suitable for her. Eventually, every living thing on the Goodlund Peninsula was affected by her magic. The kender living there could feel it, and it changed them. It saddened them to see the lands that they called home dying, knowing there was nothing they could do to stop it. They were powerless to prevent this perversion. Within a year of Malystryx&apos;s arrival, she had made her way to Kendermore. Once there, she slaughtered thousands of kender. The destruction was so horrible and on such a grand scale that any living kender who was tainted by the Overlord&apos;s magic or witnessed the horrors of the attack learned the one thing kender had blissfully been immune to since their creation: fear. Some afflicted kender are depressed, timid and jump at every encounter. Others are similar to true kender, those whose parents experienced the Kender Flight, but they always seem to shy away from anything too dangerous. Afflicted kender tend to over analyze situations. They don&apos;t like surprises and do their best to discover them before they happen or avoid them completely. If this means checking every chest, opening every door, and rifling through people&apos;s pouches when necessary, so be it. Afflicted kender are motivated by a need to feel safe and secure at all times. This need does not make them shutins, but instead, they feel motivated to do what they can to ensure their own safety and that of their friends and companions.</specific>
+      <specific name="Physical Qualities"> Kender typically stand no more than 3 to 4 feet tall, with the males usually being taller than the females. They weigh between 80 and 100 pounds. Adult kender are well muscled, despite being thin and light of build. Kender are sometimes mistaken for young humans, but closer inspection reveals the pointed ears, face wrinkles, and many pouches indicative of kender. Kender find their face wrinkles, also called crow's feet or laugh-lines, highly attractive. Kender hair color ranges from light blond to deep brown to black with a few sporting red-orange hues. Most kender wear their hair long. The most common hairstyle is the topknot. It's also common among kender nobility to braid their sideburns as a sign of their status. Kender typically favor bright colors and gaudy apparel that is at the same time rugged and rustic. Most kender add accents to their clothing and weapons by tagging them with ribbons, feathers, beads, or colorful scarves. All kender-made clothing, regardless of what it is, has pockets and lots of them. The staple of all kender outfits, however, is the many pouches. It is rare to see a kender with less than two pouches, though they usually have many more than that. </specific>
+      <specific name="Playing"> After the Chaos War, Malystryx the great red dragon, began to use her magic to transform the lands into a habitat more suitable for her. Eventually, every living thing on the Goodlund Peninsula was affected by her magic. The kender living there could feel it, and it changed them. It saddened them to see the lands that they called home dying, knowing there was nothing they could do to stop it. They were powerless to prevent this perversion. Within a year of Malystryx's arrival, she had made her way to Kendermore. Once there, she slaughtered thousands of kender. The destruction was so horrible and on such a grand scale that any living kender who was tainted by the Overlord's magic or witnessed the horrors of the attack learned the one thing kender had blissfully been immune to since their creation: fear. Some afflicted kender are depressed, timid and jump at every encounter. Others are similar to true kender, those whose parents experienced the Kender Flight, but they always seem to shy away from anything too dangerous. Afflicted kender tend to over analyze situations. They don't like surprises and do their best to discover them before they happen or avoid them completely. If this means checking every chest, opening every door, and rifling through people's pouches when necessary, so be it. Afflicted kender are motivated by a need to feel safe and secure at all times. This need does not make them shutins, but instead, they feel motivated to do what they can to ensure their own safety and that of their friends and companions.</specific>
       <specific name="Vision"> Normal </specific>
       <specific name="Average Height"> 3' 10"-4' 2" </specific>
       <specific name="Average Weight"> 80-100 lb. </specific>
@@ -1605,26 +1605,26 @@ You count as a half-kender for meeting prerequisites.
       <specific name="Short Description"> Clever wanderers and explorers, kender seeks out magic and shiny objects everywhere. </specific>
       <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_361, ID_WOG_DL_RACIAL_TRAIT_30, ID_WOG_DL_RACIAL_TRAIT_33, ID_WOG_DL_RACIAL_TRAIT_32 </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_AFFLICTEDKENDER" type="Grants" />
-         <statadd name="Speed" value="+6" />
-         <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;" />
-         <textstring name="Average Weight" value="80-100 lb." />
-         <textstring name="Size" value="Small" />
-         <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
+         <grant name="ID_INTERNAL_GRANTS_AFFLICTEDKENDER" type="Grants"/>
+         <statadd name="Speed" value="+6"/>
+         <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;"/>
+         <textstring name="Average Weight" value="80-100 lb."/>
+         <textstring name="Size" value="Small"/>
+         <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
       </rules>
 Play a Afflicted Kender if you want ...
    </RulesElement>
 
 <RulesElement name="Afflicted Second Chance" type="Racial Trait" internal-id="ID_WOG_DL_RACIAL_TRAIT_33" source="DragonLance" revision-date="7/16/2011 11:00:00 PM">
       <specific name="Short Description"> Use second chance as an encounter power. </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Powers"> ID_FMP_POWER_1452 </specific>
       <specific name="Type"> Utility </specific>
       <specific name="Class"> ID_WOG_DL_RACE_14 </specific>
       <rules>
-         <grant name="ID_FMP_POWER_1452" type="Power" />
-         <modify name="Second Chance" type="Power" Field="Display" value="Afflicted Kender Racial Utility" />
-         <modify name="Second Chance" type="Power" Field="Class" value="ID_WOG_DL_RACE_14" />
+         <grant name="ID_FMP_POWER_1452" type="Power"/>
+         <modify name="Second Chance" type="Power" Field="Display" value="Afflicted Kender Racial Utility"/>
+         <modify name="Second Chance" type="Power" Field="Class" value="ID_WOG_DL_RACE_14"/>
       </rules>
 	  <specific name="_DisplayPowers"> ID_FMP_POWER_1452 </specific>
 You can use second chance as an encounter power.
@@ -1639,19 +1639,19 @@ When you become bloodied, you may immediately make a saving throw to eliminate a
 <RulesElement name="Afflicted Kender" type="Grants" internal-id="ID_INTERNAL_GRANTS_AFFLICTEDKENDER" source="Player's Handbook">
       <specific name="_SupportsID"> ID_WOG_DL_RACE_14 </specific>
       <rules>
-         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_30" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_31" type="Racial Trait" />
-         <grant name="ID_WOG_DL_RACIAL_TRAIT_32" type="Racial Trait" />
-         <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-         <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-         <grant name="ID_WOG_DL_LANGUAGE_2" type="Language" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
-         <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
-		 <grant name="ID_INTERNAL_COUNTSASRACE_KENDER" type="CountsAsRace" />
-		 <grant name="ID_INTERNAL_COUNTSASRACE_HALFLING" type="CountsAsRace" />
+         <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+         <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_30" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_31" type="Racial Trait"/>
+         <grant name="ID_WOG_DL_RACIAL_TRAIT_32" type="Racial Trait"/>
+         <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+         <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+         <grant name="ID_WOG_DL_LANGUAGE_2" type="Language"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
+         <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
+		 <grant name="ID_INTERNAL_COUNTSASRACE_KENDER" type="CountsAsRace"/>
+		 <grant name="ID_INTERNAL_COUNTSASRACE_HALFLING" type="CountsAsRace"/>
       </rules>
    </RulesElement>
    

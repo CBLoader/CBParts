@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules>
   <UpdateInfo>
     <Version>1</Version>
     <Filename>85-ThemeMulticlassing.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/85-ThemeMulticlassing.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/85-ThemeMulticlassing.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/85-ThemeMulticlassing.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/85-ThemeMulticlassing.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="At-Will Blog" type="source" internal-id="ID_RYV_SOURCE_AW001" source="Core">
     <specific name="IsBeta"> 0 </specific>
@@ -19,12 +19,12 @@
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
-    <specific name="Creating"></specific>
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_970 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_970,ID_RYV_POWER_110001,ID_RYV_POWER_110002,ID_RYV_POWER_110003,ID_RYV_POWER_110004,ID_RYV_POWER_110005,ID_RYV_POWER_110006,ID_RYV_POWER_110007 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_970" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_POWER_970" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use the Sly Flourish power once per encounter.
 </RulesElement>
@@ -35,11 +35,11 @@ You can use the Sly Flourish power once per encounter.
     <specific name="Role"> ID_FMP_ROLE_2 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
-    <specific name="Creating"></specific>
-    <specific name="Granted Powers" />
+    <specific name="Creating"/>
+    <specific name="Granted Powers"/>
     <specific name="_DisplayPowers"> ID_RYV_POWER_110008,ID_RYV_POWER_110009,ID_RYV_POWER_110010,ID_RYV_POWER_110011,ID_RYV_POWER_110012,ID_RYV_POWER_110013,ID_RYV_POWER_110014 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_395" type="Class Feature" />
+      <grant name="ID_FMP_CLASS_FEATURE_395" type="Class Feature"/>
     </rules>
 Instead of a theme feature power, you gain the Healer's Lore class feature.
 </RulesElement>
@@ -50,11 +50,11 @@ Instead of a theme feature power, you gain the Healer's Lore class feature.
     <specific name="Role"> ID_FMP_ROLE_1 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
-    <specific name="Creating" />
-    <specific name="Granted Powers" />
+    <specific name="Creating"/>
+    <specific name="Granted Powers"/>
     <specific name="_DisplayPowers"> ID_RYV_POWER_110015,ID_RYV_POWER_110016,ID_RYV_POWER_110017,ID_RYV_POWER_110018,ID_RYV_POWER_110019,ID_RYV_POWER_110020,ID_RYV_POWER_110021 </specific>
     <rules>
-      <select number="1" type="Class Feature" category="ID_RYV_CLASS_FEATURE_110001|ID_FMP_CLASS_FEATURE_130" />
+      <select number="1" type="Class Feature" category="ID_RYV_CLASS_FEATURE_110001|ID_FMP_CLASS_FEATURE_130"/>
     </rules>
 Instead of a theme feature power, you may choose to have either cantrips or an apprentice spellbook.
 </RulesElement>
@@ -63,11 +63,11 @@ Instead of a theme feature power, you may choose to have either cantrips or an a
     <specific name="Short Description"> Twice the daily and utility spells you can use; choose from among these at each extended rest. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,5" spellbook="Power Daily 5" Level="5" requires="Web  " />
-      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,9" spellbook="Power Daily 9" Level="9" requires="Lightning Bolt  " />
-      <select type="Power" number="1" Category="ID_FMP_CLASS_9,utility,2" spellbook="Power Utility 2" Level="2" requires="Shield  " />
-      <select type="Power" number="1" Category="ID_FMP_CLASS_9,utility,6" spellbook="Power Utility 6" Level="6" requires="Levitate  " />
-      <select type="Power" number="1" Category="ID_FMP_CLASS_9,utility,10" spellbook="Power Utility 10" Level="10" requires="Arcane Gate  " />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,5" spellbook="Power Daily 5" Level="5" requires="Web  "/>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,daily,9" spellbook="Power Daily 9" Level="9" requires="Lightning Bolt  "/>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,utility,2" spellbook="Power Utility 2" Level="2" requires="Shield  "/>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,utility,6" spellbook="Power Utility 6" Level="6" requires="Levitate  "/>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_9,utility,10" spellbook="Power Utility 10" Level="10" requires="Arcane Gate  "/>
     </rules>
 You possess an apprentice spellbook, a book full of mystic lore in which you store your daily and utility spells. Each time you replace one of your main class powers with an Apprentice multiclass power, you may choose another spell of that type to store in your spellbook.
 You may only prepare one utility or daily spell per day per level from your spellbook.	
@@ -79,12 +79,12 @@ You may only prepare one utility or daily spell per day per level from your spel
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
-    <specific name="Creating" />
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_10472 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_10472,ID_RYV_POWER_110022,ID_RYV_POWER_110023,ID_RYV_POWER_110024,ID_RYV_POWER_110025,ID_RYV_POWER_110026,ID_RYV_POWER_110027,ID_RYV_POWER_110028 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_10472" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_POWER_10472" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 This is the multiclass theme for weapon-based fighters. You can use the Threatening Rush power once per encounter.
 </RulesElement>
@@ -95,12 +95,12 @@ This is the multiclass theme for weapon-based fighters. You can use the Threaten
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
-    <specific name="Creating" />
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_10470 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_10470,ID_RYV_POWER_110029,ID_RYV_POWER_110030,ID_RYV_POWER_110031,ID_RYV_POWER_110032,ID_RYV_POWER_110033,ID_RYV_POWER_110034,ID_RYV_POWER_110035 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_10470" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_POWER_10470" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 This is the multiclass theme for grappling fighters. You can use the Grappling Strike power once per encounter.
 </RulesElement>
@@ -111,18 +111,18 @@ This is the multiclass theme for grappling fighters. You can use the Grappling S
     <specific name="Role"> ID_FMP_ROLE_2 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
-    <specific name="Creating" />
-    <specific name="Granted Powers" />
+    <specific name="Creating"/>
+    <specific name="Granted Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_10888,ID_RYV_POWER_110036,ID_RYV_POWER_110037,ID_RYV_POWER_110038,ID_RYV_POWER_110039,ID_RYV_POWER_110040,ID_RYV_POWER_110041,ID_RYV_POWER_110042 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_BRAVURA_PRESENCE" type="CountsAsFeature" requires="Bravura Leader" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_INSIGHTFUL_PRESENCE" type="CountsAsFeature" requires="Insightful Leader" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_INSPIRING_PRESENCE" type="CountsAsFeature" requires="Inspiring Leader" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_RESOURCEFUL_PRESENCE" type="CountsAsFeature" requires="Resourceful Leader" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_TACTICAL_PRESENCE" type="CountsAsFeature" requires="Tactical Leader" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_SKIRMISHING_PRESENCE" type="CountsAsFeature" requires="Skirmishing Leader" />
-      <grant name="ID_FMP_POWER_10888" type="Power" requires="Student of Battle" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_BRAVURA_PRESENCE" type="CountsAsFeature" requires="Bravura Leader"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_INSIGHTFUL_PRESENCE" type="CountsAsFeature" requires="Insightful Leader"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_INSPIRING_PRESENCE" type="CountsAsFeature" requires="Inspiring Leader"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_RESOURCEFUL_PRESENCE" type="CountsAsFeature" requires="Resourceful Leader"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_TACTICAL_PRESENCE" type="CountsAsFeature" requires="Tactical Leader"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_SKIRMISHING_PRESENCE" type="CountsAsFeature" requires="Skirmishing Leader"/>
+      <grant name="ID_FMP_POWER_10888" type="Power" requires="Student of Battle"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 If you took a Warlord multiclass feat that is related to a Commanding Presence, you count as having that class feature for meeting prerequisites. If you took Student of Battle, you can instead use the Direct the Strike power once per encounter.
 </RulesElement>
@@ -133,12 +133,12 @@ If you took a Warlord multiclass feat that is related to a Commanding Presence, 
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
-    <specific name="Creating" />
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_3701 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_3701,ID_RYV_POWER_110043,ID_RYV_POWER_110044,ID_RYV_POWER_110045,ID_RYV_POWER_110046,ID_RYV_POWER_110047,ID_RYV_POWER_110048,ID_RYV_POWER_110049 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_3701" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_POWER_3701" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use the Burning Spray power once per encounter.
 </RulesElement>
@@ -149,12 +149,12 @@ You can use the Burning Spray power once per encounter.
     <specific name="Role"> ID_FMP_ROLE_2 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
-    <specific name="Creating" />
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_2365 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_2365,ID_RYV_POWER_110050,ID_RYV_POWER_110051,ID_RYV_POWER_110052,ID_RYV_POWER_110053,ID_RYV_POWER_110054,ID_RYV_POWER_110055,ID_RYV_POWER_110056 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_2365" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_POWER_2365" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use the Misdirected Mark power once per encounter.
 </RulesElement>
@@ -165,12 +165,12 @@ You can use the Misdirected Mark power once per encounter.
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_4 </specific>
     <specific name="Power Name"> Evocations </specific>
-    <specific name="Creating" />
-    <specific name="Granted Powers"></specific>
+    <specific name="Creating"/>
+    <specific name="Granted Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_5094,ID_FMP_POWER_5097,ID_RYV_POWER_110057,ID_RYV_POWER_110058,ID_RYV_POWER_110059,ID_RYV_POWER_110060,ID_RYV_POWER_110061,ID_RYV_POWER_110062,ID_RYV_POWER_110063 </specific>
     <rules>
-      <select number="1" type="Power" category="ID_FMP_POWER_5094|ID_FMP_POWER_5097" />
-      <modify Field="Power Usage" value="Encounter" />
+      <select number="1" type="Power" category="ID_FMP_POWER_5094|ID_FMP_POWER_5097"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use either Warden's Grasp or Thorn Strike once per encounter.
 </RulesElement>
@@ -179,41 +179,41 @@ You can use either Warden's Grasp or Thorn Strike once per encounter.
     <specific name="Short Description"> You count as having the Wildblood warden class feature. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_WILDBLOOD" />
+      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_WILDBLOOD"/>
     </rules>
 You count as having the Wildblood warden class feature.	
 </RulesElement>
-  <RulesElement name="Wildblood" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_WILDBLOOD" source="Core"></RulesElement>
+  <RulesElement name="Wildblood" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_WILDBLOOD" source="Core"/>
   <RulesElement name="Multiclass Stormheart" type="Class Feature" internal-id="ID_RYV_CLASS_FEATURE_110003" source="At-Will Blog" revision-date="10/5/2010 1:47:04 PM">
     <Category> 1 </Category>
     <specific name="Short Description"> You count as having the Stormheart warden class feature. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_STORMHEART" />
+      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_STORMHEART"/>
     </rules>
 You count as having the Stormheart warden class feature.	
 </RulesElement>
-  <RulesElement name="Stormheart" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_STORMHEART" source="Core"></RulesElement>
+  <RulesElement name="Stormheart" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_STORMHEART" source="Core"/>
   <RulesElement name="Multiclass Lifespirit" type="Class Feature" internal-id="ID_RYV_CLASS_FEATURE_110004" source="At-Will Blog" revision-date="10/5/2010 1:47:04 PM">
     <Category> 1 </Category>
     <specific name="Short Description"> You count as having the Lifespirit warden class feature. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_LIFESPIRIT" />
+      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_LIFESPIRIT"/>
     </rules>
 You count as having the Lifespirit warden class feature.	
 </RulesElement>
-  <RulesElement name="Lifespirit" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_LIFESPIRIT" source="Core"></RulesElement>
+  <RulesElement name="Lifespirit" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_LIFESPIRIT" source="Core"/>
   <RulesElement name="Multiclass Earthstrength" type="Class Feature" internal-id="ID_RYV_CLASS_FEATURE_110005" source="At-Will Blog" revision-date="10/5/2010 1:47:04 PM">
     <Category> 1 </Category>
     <specific name="Short Description"> You count as having the Earthstrength warden class feature. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_EARTHSTRENGTH" />
+      <grant type="CountsAsFeature" name="ID_INTERNAL_COUNTSASFEATURE_EARTHSTRENGTH"/>
     </rules>
 You count as having the Earthstrength warden class feature.	
 </RulesElement>
-  <RulesElement name="Earthstrength" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_EARTHSTRENGTH" source="Core"></RulesElement>
+  <RulesElement name="Earthstrength" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_EARTHSTRENGTH" source="Core"/>
   <RulesElement name="Eldritch Hexer (Multiclass Warlock)" type="Theme" internal-id="ID_RYV_THEME_1010" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "The darkness holds no terror for me, demon! I curse you now under the Sign of Ill Omen!" </Flavor>
     <Prereqs> Warlock </Prereqs>
@@ -221,12 +221,12 @@ You count as having the Earthstrength warden class feature.
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
-    <specific name="Creating" />
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_1333 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_1333,ID_FMP_POWER_7402,ID_RYV_POWER_110064,ID_RYV_POWER_110065,ID_RYV_POWER_110066,ID_RYV_POWER_110067,ID_RYV_POWER_110068,ID_RYV_POWER_110069,ID_RYV_POWER_110070 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_POWER_1333|ID_FMP_POWER_7402" default="Eldritch Blast" />
-      <modify Field="Power Usage" value="Encounter" />
+      <select type="Power" number="1" Category="ID_FMP_POWER_1333|ID_FMP_POWER_7402" default="Eldritch Blast"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use either Eldritch Blast or Eldritch Strike once per encounter.
 </RulesElement>
@@ -235,14 +235,14 @@ You can use either Eldritch Blast or Eldritch Strike once per encounter.
     <specific name="Short Description"> Misty Step boon 1/encounter: When foe is dropped to 0 hp, you can teleport 3 squares (free). </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_FMP_POWER_2094 </specific>
-    <specific name="type" />
-    <specific name="Class" />
+    <specific name="type"/>
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_2094 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_2094" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer." />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_FEY_PACT" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_2094" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer."/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_FEY_PACT" type="CountsAsFeature"/>
     </rules>
 You have forged a bargain with ancient, amoral powers of the Feywild. Some are primitive earth spirits, grim and menacing; some are capricious wood, sky, or water spirits; and others are incarnations of seasons or natural forces who roam the faerie realm like wild gods. They bestow magic that ranges from feral and savage to wondrous and enchanting.
 Misty Step: You have the Misty Step pact boon. You instantly transform into silver mist that streams a short distance and reforms, allowing you to flee or maneuver to set up a deadly attack. When you drop an enemy to 0 hit points or fewer, you can immediately teleport 3 squares as a free action.
@@ -252,14 +252,14 @@ Misty Step: You have the Misty Step pact boon. You instantly transform into silv
     <specific name="Short Description"> Dark One's Blessing boon 1/encounter: When foe is dropped to 0 hp, gain temporary hp equal to your level. </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_FMP_POWER_2095 </specific>
-    <specific name="type" />
-    <specific name="Class" />
+    <specific name="type"/>
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_2095 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_2095" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer." />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_INFERNAL_PACT" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_2095" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer."/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_INFERNAL_PACT" type="CountsAsFeature"/>
     </rules>
 Long ago a forgotten race of devils created a secret path to power and taught it to the tieflings of old to weaken their fealty to Asmodeus. In his wrath, Asmodeus destroyed the scheming devils and struck their very names from the memory of all beings - but you dare to study their perilous secrets anyway.
 Dark One's Blessing: You have the Dark One's Blessing pact boon. You instantly gain vitality from a cursed enemy when that enemy falls. When you drop an enemy to 0 hit points or fewer, you immediately gain temporary hit points equal to your level.
@@ -269,14 +269,14 @@ Dark One's Blessing: You have the Dark One's Blessing pact boon. You instantly g
     <specific name="Short Description"> Fate of the Void boon 1/encounter: foe dropped to 0 hp gives you +1 on one d20 roll during your next turn (+2 for two foes, etc.). </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_FMP_POWER_2263 </specific>
-    <specific name="type" />
-    <specific name="Class" />
+    <specific name="type"/>
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_2263 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_2263" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer." />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_STAR_PACT" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_2263" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <modify Field="Trigger" value="You drop an enemy to 0 HP or fewer."/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_STAR_PACT" type="CountsAsFeature"/>
     </rules>
 You have mastered the astrologer's art, learning the secret names of the stars and gazing into the Far Realm beyond, gaining great power thereby. You can call upon powers that madden or terrify your enemies, manipulate chance and fate, or scour your foes with icy banes and curses drawn from beyond the night sky.
 Fate of the Void: You have the Fate of the Void pact boon. Your curse intermingles with the lost vitality of a cursed enemy to reveal a glimpse of the future to you. 	When you drop an enemy to 0 hit points or fewer, you gain a +1 bonus to any single d20 roll you make during your next turn (attack roll, saving throw, skill check, or ability check). If you don't use this bonus by the end of your turn, it is lost.
@@ -287,13 +287,13 @@ This bonus is cumulative; if three enemies drop to 0 hit points or fewer before 
     <specific name="Short Description"> You have the Darkspiral Aura pact boon, useable once per encounter. </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_FMP_POWER_4311 </specific>
-    <specific name="type" />
-    <specific name="Class" />
+    <specific name="type"/>
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_4311 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_4311" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_DARK_PACT" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_4311" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DARK_PACT" type="CountsAsFeature"/>
     </rules>
 You have forged a pact with the dark beings that lurk in the shadows of the drow civilization. Spells of darkness, poison, madness, and spite fill your mind. You might turn your powers to noble ends, but you always face the temptation to enhance your spells by hurting your friends - just a little. 
 Darkspiral Aura: You have the Darkspiral Aura pact boon. As your cursed enemies fall in battle, your  Darkspiral Aura grows in power. You can unleash it on an enemy, blasting its mind and body.
@@ -306,13 +306,13 @@ Darkspiral Aura: You have the Darkspiral Aura pact boon. As your cursed enemies 
     <specific name="Short Description"> You forge a pact with a chosen vestige and gain vestige powers and a pact boon for that vestige. </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_FMP_POWER_7545 </specific>
-    <specific name="type" />
-    <specific name="Class" />
+    <specific name="type"/>
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_7545 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_7545" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_VESTIGE_PACT" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_7545" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_VESTIGE_PACT" type="CountsAsFeature"/>
     </rules>
 You have forged relationships with vestiges - the remnants of powerful forces and entities that once exercised great authority or demonstrated awful capabilities. These remnants are diverse in their backgrounds and motives. As a vestige pact warlock, you can choose from between two or more vestige pacts to fuel your arcane power.
 Pact Boon: You have a pact boon associated with your active vestige. When you drop an enemy to 0 hit points or fewer, you gain the benefit of your active vestige's pact boon.
@@ -326,12 +326,12 @@ In addition, certain benefits allow you to change your vestige at a different ti
   <RulesElement name="Sorcerer-King Pact (Multiclass)" type="Class Feature" internal-id="ID_RYV_CLASS_FEATURE_110010" source="At-Will Blog" revision-date="10/14/2010 9:29:04 AM">
     <Category> ID_RYV_CATEGORY_MULTICLASS_PACTS,1 </Category>
     <specific name="Level"> 1 </specific>
-    <specific name="Powers" />
-    <specific name="type" />
-    <specific name="Class" />
-    <specific name="_DisplayPowers" />
+    <specific name="Powers"/>
+    <specific name="type"/>
+    <specific name="Class"/>
+    <specific name="_DisplayPowers"/>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_SORCERER-KING_PACT" type="CountsAsFeature" />
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_SORCERER-KING_PACT" type="CountsAsFeature"/>
     </rules>
 You have pledged yourself to the service of a sorcerer-king. In return, your master transformed you into an arcane spellcaster by means of eldritch rituals. What you do with this new power is up to you - the sorcerer-king has no special ability to observe you or to strip you of your power. However, all sorcerer-kings are suspicious and ruthless, so if you defy one, you do so at your own peril.
 Fell Scorn: You have the Fell Scorn pact boon, which enables you to draw upon your sorcerer-king'ss magical prowess and enhance a power by spending your fell might. You start each encounter with your fell might spent. Once per encounter when you drop an enemy to 0 hit points, your pact boon triggers, restoring your fell might, which you can then spend during the encounter.
@@ -344,12 +344,12 @@ You must decide whether or not to spend your fell might when you choose to use a
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
-    <specific name="Creating"></specific>
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_10593 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_10593,ID_RYV_POWER_110071,ID_RYV_POWER_110072,ID_RYV_POWER_110073,ID_RYV_POWER_110074,ID_RYV_POWER_110075,ID_RYV_POWER_110076,ID_RYV_POWER_110077 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_10593" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_POWER_10593" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use the Throw and Stab power once per encounter.
 </RulesElement>
@@ -360,12 +360,12 @@ You can use the Throw and Stab power once per encounter.
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
-    <specific name="Creating"></specific>
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_5330 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_5330,ID_RYV_POWER_110078,ID_RYV_POWER_110079,ID_RYV_POWER_110080,ID_RYV_POWER_110081,ID_RYV_POWER_110082,ID_RYV_POWER_110083,ID_RYV_POWER_110084 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_5330" type="Power" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_5330" type="Power"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature"/>
     </rules>
 You gain the Abjure Undead Channel Divinity power.
 </RulesElement>
@@ -376,12 +376,12 @@ You gain the Abjure Undead Channel Divinity power.
     <specific name="Role"> ID_FMP_ROLE_1 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
-    <specific name="Creating"></specific>
+    <specific name="Creating"/>
     <specific name="Granted Powers"> ID_FMP_POWER_5186 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_5186,ID_RYV_POWER_110085,ID_RYV_POWER_110086,ID_RYV_POWER_110087,ID_RYV_POWER_110088,ID_RYV_POWER_110089,ID_RYV_POWER_110090,ID_RYV_POWER_110091 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_5186" type="Power" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature" />
+      <grant name="ID_FMP_POWER_5186" type="Power"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature"/>
     </rules>
 You gain the Rebuke Undead Channel Divinity power.
 </RulesElement>
@@ -392,12 +392,12 @@ You gain the Rebuke Undead Channel Divinity power.
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
-    <specific name="Creating"></specific>
-    <specific name="Granted Powers" />
+    <specific name="Creating"/>
+    <specific name="Granted Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_1566,ID_FMP_POWER_8097,ID_FMP_POWER_7240,ID_RYV_POWER_110092,ID_RYV_POWER_110093,ID_RYV_POWER_110094,ID_RYV_POWER_110095,ID_RYV_POWER_110096,ID_RYV_POWER_110097,ID_RYV_POWER_110098 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_434" type="Class Feature" />
-      <modify name="Lay On Hands" Field="Power Usage" value="Encounter" />
+      <grant name="ID_FMP_CLASS_FEATURE_434" type="Class Feature"/>
+      <modify name="Lay On Hands" Field="Power Usage" value="Encounter"/>
     </rules>
 You gain the Lay on Hands class feature and may use it once per encounter. That is to say, you can use Lay on Hands only once per encounter but a number of times per day equal to your Wisdom modifier. Per the Paladin class feature, you could trade it out for Ardent Vow or Virtue's Touch under the same restrictions.
 </RulesElement>
@@ -408,14 +408,14 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <Prereqs> Mugger (Multiclass Rogue), trained in Acrobatics </Prereqs>
     <Flavor> You dodge and tumble past your foes with such speed and precision that they are unable to react. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Prerequisite"> You must be trained in Acrobatics. </specific>
     <specific name="Effect"> You shift up to your speed. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -425,7 +425,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <Prereqs> Mugger (Multiclass Rogue) </Prereqs>
     <Flavor> Your blade bites your enemy's legs, momentarily hobbling him. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 3 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -434,7 +434,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 1[W] + Dexterity modifier damage, you slide the target 1 square, and the target is slowed until the end of your next turn. If you're flanking the target, the attack deals extra damage equal to your Strength modifier or Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 3 </specific>
@@ -445,7 +445,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <Prereqs> Mugger (Multiclass Rogue) </Prereqs>
     <Flavor> You topple your enemy with a crippling blow and force him to stumble around the battlefield. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 5 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -455,7 +455,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <specific name="Attack"> Dexterity vs. Fortitude </specific>
     <specific name="Hit"> 2[W] + Dexterity modifier damage, and the target is knocked prone. Until the end of the encounter, if the target moves more than half its speed in a single action, it falls prone at the end of its movement. </specific>
     <specific name="Miss"> Half damage, and the target is not knocked prone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 5 </specific>
@@ -466,7 +466,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <Prereqs> Mugger (Multiclass Rogue) </Prereqs>
     <Flavor> You scoop up a handful of sand or dirt or pebbles, strike your foe, and throw the grit in his face to blind him. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -475,7 +475,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 1[W] + Dexterity modifier damage, and the target is blinded until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 7 </specific>
@@ -486,7 +486,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <Prereqs> Mugger (Multiclass Rogue) </Prereqs>
     <Flavor> You step aside as the enemy's attack sweeps toward you. You then slide your blade into a place where the foe is vulnerable. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 9 </specific>
     <specific name="Keywords"> Martial, Rattling, Weapon </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -499,7 +499,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> You knock the target prone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 9 </specific>
@@ -511,14 +511,14 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <print-prereqs> You must be trained in Acrobatics. </print-prereqs>
     <Flavor> You deftly somersault into position. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 10 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Prerequisite"> You must be trained in Acrobatics. </specific>
     <specific name="Effect"> You can shift your speed and can shift through squares occupied by enemies during this movement. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -529,7 +529,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <print-prereqs> You must be trained in Bluff. </print-prereqs>
     <Flavor> Your feint takes everyone by surprise. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 6 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -537,7 +537,7 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <specific name="Prerequisite"> You must be trained in Bluff. </specific>
     <specific name="Target"> Each enemy in burst you can see </specific>
     <specific name="Effect"> Each target grants combat advantage to you until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1001 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -547,14 +547,14 @@ You gain the Lay on Hands class feature and may use it once per encounter. That 
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> You utter a simple prayer, and your touch momentarily suffuses you or a wounded creature with a dim silver light that heals minor injuries. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Utility 2 </specific>
     <specific name="Keywords"> Divine, Healing </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one creature </specific>
     <specific name="Effect"> The target regains hit points as if it had spent a healing surge. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -565,7 +565,7 @@ In the thick of combat, you forgo an attack or other action to channel divine en
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> You utter a single word to your foe, a word that demands obedience. You can choose to drive the foe back, order it closer, or cause the foe to throw itself to the ground. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Attack 3 </specific>
     <specific name="Keywords"> Charm, Divine, Implement </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -573,7 +573,7 @@ In the thick of combat, you forgo an attack or other action to channel divine en
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Wisdom vs. Will </specific>
     <specific name="Hit"> The target is dazed until the end of your next turn. In addition, you can choose to knock the target prone or slide the target a number of squares equal to 3 + your Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -583,7 +583,7 @@ In the thick of combat, you forgo an attack or other action to channel divine en
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> You conjure a glowing weapon adorned with the symbol of your deity. The weapon attacks one of your foes and guides your allies' attacks against the same target. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Attack 5 </specific>
     <specific name="Keywords"> Conjuration, Divine, Implement </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -593,7 +593,7 @@ In the thick of combat, you forgo an attack or other action to channel divine en
     <specific name="Hit"> 1d10 + Wisdom modifier damage. </specific>
     <specific name="Effect"> You conjure a weapon that appears in the target's square and attacks. Your allies gain combat advantage against the target. You can move the weapon up to 10 squares to another enemy's square, within range, as a move action. The weapon lasts until the end of your next turn. </specific>
     <specific name="Sustain Minor"> When you sustain the power, repeat the attack. Your allies continue to gain combat advantage against the weapon's target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -603,14 +603,14 @@ In the thick of combat, you forgo an attack or other action to channel divine en
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> You utter a simple prayer and gain the power to instantly heal wounds. Your touch suffuses you or a wounded creature with a bright silver light that restores health and vigor. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Utility 6 </specific>
     <specific name="Keywords"> Divine, Healing </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Target"> You or one creature </specific>
     <specific name="Effect"> The target regains hit points as if it had spent two healing surges. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -621,7 +621,7 @@ In the heat of combat, you channel your divine power through a life-giving touch
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> You name your foe an enemy of your god. Divine power sears it and heals any who strike it. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Attack 7 </specific>
     <specific name="Keywords"> Divine, Healing, Implement, Radiant </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -629,7 +629,7 @@ In the heat of combat, you channel your divine power through a life-giving touch
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Wisdom vs. Will </specific>
     <specific name="Hit"> 2d8 + Wisdom modifier radiant damage. The first time any ally hits the target before the end of your next turn, that ally can spend a healing surge. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -639,7 +639,7 @@ In the heat of combat, you channel your divine power through a life-giving touch
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> A barrier of whirling blades appears, slashing at those who come too close or try to pass through. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Attack 9 </specific>
     <specific name="Keywords"> Conjuration, Divine, Implement </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -647,7 +647,7 @@ In the heat of combat, you channel your divine power through a life-giving touch
     <specific name="Effect"> You conjure a wall of contiguous squares filled with spinning blades of astral energy that lasts until the end of your next turn. The wall can be up to 5 squares long and up to 2 squares high. The spaces occupied by the blade barrier are difficult terrain.
 	If a creature enters the barrier's space or starts its turn there, it takes 3d6 + Wisdom modifier damage plus ongoing 5 damage (save ends). </specific>
     <specific name="Sustain Minor"> The barrier persists. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -657,14 +657,14 @@ In the heat of combat, you channel your divine power through a life-giving touch
     <Prereqs> Vicar (Multiclass Cleric) </Prereqs>
     <Flavor> With a wave of your hand, healing motes of silver light engulf you and all nearby allies. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cleric Utility 10 </specific>
     <specific name="Keywords"> Divine, Healing </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Close burst 5 </specific>
     <specific name="Targets"> You and each ally in burst </specific>
     <specific name="Effect"> The targets regain hit points as if they had spent a healing surge. Add your Charisma modifier to the hit points regained. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1002 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -674,14 +674,14 @@ In the heat of combat, you channel your divine power through a life-giving touch
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> You throw up your hand, and a shield of arcane energy springs into existence, protecting you against imminent attacks. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Utility 2 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> You are hit by an attack </specific>
     <specific name="Effect"> You gain a +4 power bonus to AC and Reflex until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -692,7 +692,7 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> A brilliant blast of flashing colors springs from your outstretched fingers, knocking nearby enemies senseless. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Attack 3 </specific>
     <specific name="Keywords"> Arcane, Implement, Radiant </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -700,7 +700,7 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <specific name="Target"> Each creature in blast </specific>
     <specific name="Attack"> Intelligence vs. Will </specific>
     <specific name="Hit"> 1d6 + Intelligence modifier radiant damage, and the target is dazed until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -710,7 +710,7 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> You call into being a giant web made of thick magical strands that hang in midair, trapping those within it. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Attack 5 </specific>
     <specific name="Keywords"> Arcane, Implement, Zone </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -719,7 +719,7 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <specific name="Attack"> Intelligence vs. Reflex </specific>
     <specific name="Hit"> The target is immobilized (save ends). </specific>
     <specific name="Effect"> The burst creates a zone of webs that fills the area until the end of the encounter or for 5 minutes. The zone is considered difficult terrain. Any creature that ends its move in the web is immobilized (save ends). </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -729,14 +729,14 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> You hold out your hands, and suddenly you feel air beneath your feet. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Utility 6 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> You can move 4 squares vertically and remain there, hovering above the ground. While aloft, you are unsteady, taking a -2 penalty to AC and Reflex defense. If some effect, such as a pit opening below you, causes you to be more than 4 squares above the ground, you drop down to 4 squares above the ground. You do not take damage from such a fall. </specific>
     <specific name="Sustain Move"> You can sustain this power until the end of the encounter or for 5 minutes. When you sustain this power, you can move 3 squares up or down or 1 square horizontally. You cannot go higher than 4 squares above the ground. If you don't sustain the power, you descend to the ground without taking falling damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -746,7 +746,7 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> Brilliant strokes of blue-white lightning erupt from your outstretched hand. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Attack 7 </specific>
     <specific name="Keywords"> Arcane, Evocation, Implement, Lightning </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -755,7 +755,7 @@ Shield is a potent defensive spell whose power remains dormant until you need it
     <specific name="Attack"> Intelligence vs. Reflex </specific>
     <specific name="Hit"> 2d6 + Intelligence modifier lightning damage. </specific>
     <specific name="Miss"> Half damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -766,14 +766,14 @@ One of the most famous evocation spells, lightning bolt lashes out against only 
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> A blazing wall of flame erupts from the ground at your command. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Attack 9 </specific>
     <specific name="Keywords"> Arcane, Conjuration, Fire, Implement </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Area wall 8 within 10 squares </specific>
     <specific name="Effect"> You conjure a wall that consists of contiguous squares filled with arcane fire. It can be up to 8 squares long and up to 4 squares high. The wall lasts until the end of your next turn. Any creature that starts its turn adjacent to the wall takes 1d6 + Intelligence modifier fire damage. If a creature moves into the wall's space or starts its turn there, the creature takes 3d6 + Intelligence modifier fire damage. Entering a square occupied by the wall costs 3 extra squares of movement. The wall blocks line of sight. </specific>
     <specific name="Sustain Minor"> The wall persists. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -783,14 +783,14 @@ One of the most famous evocation spells, lightning bolt lashes out against only 
     <Prereqs> Apprentice (Multiclass Wizard) </Prereqs>
     <Flavor> You open a dimensional rift connecting two nearby locations. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Utility 10 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Ranged 20 </specific>
     <specific name="Effect"> You create a dimensional rift between two unoccupied squares in range. The rift lasts until the end of your next turn. Until the rift ends, the two squares are effectively adjacent to each other, but for movement only. </specific>
     <specific name="Sustain Minor"> The rift persists until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1003 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -801,7 +801,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Warrior (Multiclass Fighter) </Prereqs>
     <Flavor> You shove an ally out of harm's way with your shield. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -809,7 +809,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Requirement"> You must be using a shield. </specific>
     <specific name="Target"> One ally </specific>
     <specific name="Effect"> You push the target 3 squares. Then you can mark an enemy adjacent to you until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1004 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -835,13 +835,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Warrior (Multiclass Fighter) </Prereqs>
     <Flavor> You constantly swing your weapon about, slashing and cutting into nearby enemies. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 5 </specific>
     <specific name="Keywords"> Martial, Stance, Weapon </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Any enemy that starts its turn adjacent to you takes 1[W] damage, as long as you are able to make opportunity attacks. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1004 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -866,7 +866,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Warrior (Multiclass Fighter) </Prereqs>
     <Flavor> You call your opponents toward you and deliver a blow they will never forget. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -875,7 +875,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Effect"> You pull each target 2 squares to a space adjacent to you. You cannot pull a target that cannot end adjacent to you. You then make a close attack targeting each adjacent enemy. </specific>
     <specific name="Attack"> Strength vs. AC </specific>
     <specific name="Hit"> 1[W] + Strength modifier damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1004 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -885,7 +885,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Warrior (Multiclass Fighter) </Prereqs>
     <Flavor> You sting and hinder nearby foes with a savage flurry of strikes aimed at their legs. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 9 </specific>
     <specific name="Keywords"> Martial, Reliable, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -893,7 +893,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Target"> Each enemy in burst you can see </specific>
     <specific name="Attack"> Strength vs. AC </specific>
     <specific name="Hit"> 3[W] + Strength modifier damage, and the target is slowed (save ends). </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1004 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -903,13 +903,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Warrior (Multiclass Fighter) </Prereqs>
     <Flavor> You buck up under the pressure and redouble your defensive efforts. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Utility 10 </specific>
     <specific name="Keywords"> Healing, Martial </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> You can spend a healing surge. Until the start of your next turn, you gain a bonus to AC equal to your Dexterity modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1004 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -919,7 +919,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> When you're knocked off balance, you grab hold of the enemy in front of you and bring it staggering along with you. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Reaction </specific>
@@ -927,7 +927,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Trigger"> An enemy adjacent to you knocks you prone or forces you to move </specific>
     <specific name="Target"> The triggering enemy in burst </specific>
     <specific name="Effect"> If the target forced you to move, you can pull it to a square adjacent to you. If the target knocked you prone, you knock it prone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -937,7 +937,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> You yank your grabbed foe across the battlefield. Upon reaching your destination, you slam it to the ground. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 3 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -946,7 +946,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Effect"> You move your speed. For each square you move, you slide the target 1 square to a square adjacent to you. The creature remains grabbed, and you do not provoke an opportunity attack from the target during this movement. </specific>
     <specific name="Attack"> Strength vs. Fortitude (unarmed) </specific>
     <specific name="Hit"> 1[W] + Strength modifier damage, and you knock the target prone. If the target is adjacent to blocking terrain, add your Dexterity modifier to the damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -956,7 +956,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> You grab your foe and smash it to the ground. You then place your foot on its neck to keep the creature down. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 5 </specific>
     <specific name="Keywords"> Invigorating, Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -966,7 +966,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 2[W] + Strength modifier damage. Until the end of the encounter, the target cannot move on its turn if it was grabbed by you at the start of its turn. </specific>
     <specific name="Miss"> 1[W] + Strength modifier damage. </specific>
     <specific name="Effect"> You knock the target prone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -976,7 +976,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> You snatch a piece of furniture, a body, or a discarded item to block an enemy's attack. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Utility 6 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -984,7 +984,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Requirement"> You must have a hand free. </specific>
     <specific name="Trigger"> An enemy hits you with a close or a melee attack </specific>
     <specific name="Effect"> You gain a a bonus to defenses against the attack equal to your Dexterity modifer. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -994,7 +994,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> Your weapon crunches down on your enemy's skull. You then drive your fist into your foe's face. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1005,7 +1005,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 1[W] + Strength modifier damage, and the target is dazed until the end of your next turn. Make a secondary attack against the target. </specific>
     <specific name=" Secondary Attack"> Strength vs. Fortitude (unarmed) </specific>
     <specific name=" Hit"> 1[W] damage, and you knock the target prone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1015,7 +1015,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> You batter your enemy with a powerful blow and send it stumbling away from you. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Attack 9 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1025,7 +1025,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Attack"> Strength vs. AC </specific>
     <specific name="Hit"> 3[W] + Strength modifier damage, and you push the target 3 squares. The target is dazed (save ends). </specific>
     <specific name="Miss"> Half damage, and you push the target 1 square. The target is dazed until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1035,7 +1035,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Pugilist (Multiclass Fighter) </Prereqs>
     <Flavor> You yank a foe into the path of an enemy's attack. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Fighter Utility 10 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -1044,7 +1044,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Requirement"> You must have a hand free. </specific>
     <specific name="Target"> One creature other than the triggering enemy </specific>
     <specific name="Effect"> Make a grab attack against the target. If you grab the target, the triggering enemy's attack deals half damage to you and half damage to the target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1005 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1054,7 +1054,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> Your daring attack inspires an ally to follow your lead. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Free Action </specific>
@@ -1062,7 +1062,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Trigger"> An enemy is hit by your attack </specific>
     <specific name="Target"> Each ally in burst who can see you </specific>
     <specific name="Effect"> Until the end of your next turn, any target who spends an action point to make an attack against the triggering enemy gains a +2 power bonus to the attack roll. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1072,7 +1072,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> You knock the enemy aside and call forth a nearby ally for a combined assault. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Attack 3 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1082,7 +1082,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 1[W] + Strength modifier damage. You slide the target 1 square and slide one ally adjacent to you 3 squares to the square the target vacated. Then the ally can make a melee basic attack against the target as a free action. </specific>
     <specific name=" Resourceful Presence"> Your ally gains a power bonus to attack rolls on the melee basic attack equal to one-half your Charisma modifier (minimum +1). </specific>
     <specific name=" Tactical Presence"> Your ally gains a power bonus to damage rolls on the melee basic attack equal to your Intelligence modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1092,7 +1092,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> Your series of feints and slashes cows your foe, preparing it for your allies. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Attack 5 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1101,7 +1101,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Attack"> Strength vs. Will </specific>
     <specific name="Hit"> 1[W] + Strength modifier damage, and the target is weakened and grants combat advantage (save ends both). Until the target is no longer affected by this power, your and your allies' attacks deal 5 extra damage against the target. </specific>
     <specific name="Miss"> The target is weakened and grants combat advantage until the end of your next turn. In addition, your and your allies' attacks deal 2 extra damage against the target until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1111,14 +1111,14 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> As soon as an ally is wounded, you spring forward with help and healing. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Utility 6 </specific>
     <specific name="Keywords"> Healing, Martial </specific>
     <specific name="Action Type"> Immediate Reaction </specific>
     <specific name="Attack Type"> Melee touch </specific>
     <specific name="Trigger"> You or an adjacent ally takes damage </specific>
     <specific name="Effect"> You or the ally can spend a healing surge and regain additional hit points equal to your Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1128,7 +1128,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> One strike from your weapon knocks the enemy off balance; each strike from an ally pushes it farther over the edge. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1138,7 +1138,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 2[W] + Strength modifier damage, and each ally who hits the target before the end of your next turn gives it a cumulative -1 penalty to its attack rolls until the end of your next turn, to a maximum of -5. </specific>
     <specific name=" Bravura Presence"> Any ally adjacent to you gains a power bonus to damage rolls equal to your Charisma modifier against the target until the end of your next turn. </specific>
     <specific name=" Inspiring Presence"> Any ally adjacent to you gains combat advantage against the target while it is taking a penalty to its attack rolls from this attack. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1148,14 +1148,14 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> You point out an opportunity perfect for an ally's attacks, renewing your own determination to end this fight. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Attack 9 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Close burst 5 </specific>
     <specific name="Target"> One ally in burst </specific>
     <specific name="Effect"> As a free action, the target can make an attack using an encounter attack power that he or she has already used during this encounter. Also, if you have used all your encounter attack powers, you regain the use of a warlord encounter attack power you have used during this encounter. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1165,7 +1165,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Seargent (Multiclass Warlord) </Prereqs>
     <Flavor> As your ally misses, you spot an opening that the attack created. You point it out so that your friend can immediately take advantage of it. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlord Utility 10 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Reaction </specific>
@@ -1173,7 +1173,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Trigger"> An ally within 5 squares of you misses with an attack </specific>
     <specific name="Target"> The triggering ally in burst </specific>
     <specific name="Effect"> The target can reroll the attack and has combat advantage for it. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1006 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1183,13 +1183,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> You spin around, releasing a blaze of golden energy. As you finish your revolution, you disappear and reappear a short distance away. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Utility 2 </specific>
     <specific name="Keywords"> Arcane, Teleportation </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> You teleport a number of squares equal to half your speed. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1199,7 +1199,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> A cyclonic cloud of starry motes descends on the batlefield, following your gesticulations to land in your enemies' midst. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Attack 3 </specific>
     <specific name="Keywords"> Arcane, Cold, Implement, Thunder </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1208,7 +1208,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name=" Cosmic Magic"> You can choose not to target a creature in the origin square of the burst. </specific>
     <specific name="Attack"> Charisma vs. Reflex </specific>
     <specific name="Hit"> 2d8 + Charisma modifier cold and thunder damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1218,7 +1218,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> You tap into chaos just as a foe is about to hit you. A greenish hue flickers across your skin as you teleport away, then make your own attack. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Attack 5 </specific>
     <specific name="Keywords"> Arcane, Implement, Psychic, Teleportation </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -1229,7 +1229,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Attack"> Charisma vs. Will </specific>
     <specific name="Hit"> 2d10 + Charisma modifier psychic damage. </specific>
     <specific name="Miss"> Half damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1239,7 +1239,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> Dragon scales cover your form in reaction to an assault, as arcane power shields your mind and body from harm. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Utility 6 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -1247,7 +1247,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Trigger"> You are hit by an attack </specific>
     <specific name="Effect"> You gain a +4 bonus to all defenses against the triggering attack. </specific>
     <specific name=" Dragon Magic"> The bonus to all defenses equals 3 + your Strength modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1257,7 +1257,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> With a wild gesture, you release a bolt of dazzling, multicolored chaos that folds space and makes your opponent's mind reel. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Attack 7 </specific>
     <specific name="Keywords"> Arcane, Implement, Psychic, Teleportation </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1265,7 +1265,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Charisma vs. Will </specific>
     <specific name="Hit"> 2d8 + Charisma modifier psychic damage, and the target swaps positions with a creature within 3 squares of it. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1275,7 +1275,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> A cloud of poison gas coils around your foe, warding off help. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Attack 9 </specific>
     <specific name="Keywords"> Arcane, Implement, Poison </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1285,7 +1285,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 2d10 + Charisma modifier poison damage. </specific>
     <specific name="Effect"> You slide the target a number of squares equal to your Charisma modifier. The target is poisonous to your enemies (save ends). While the target is poisonous, any enemy that starts its turn adjacent to the target takes 1d10 poison damage. </specific>
     <specific name=" Wild Magic"> If you rolled an even number on the attack roll, any enemy that starts its turn within 2 squares of the poisonous target takes 1d10 poison damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1295,14 +1295,14 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Thaumaturge (Multiclass Sorcerer) </Prereqs>
     <Flavor> In an instant, your body melts into a cloud of fog. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sorcerer Utility 10 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> You are hit by an attack </specific>
     <specific name="Effect"> You become insubstantial until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1007 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1312,14 +1312,14 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> Your magic channels the skill of ancient experts to help with the task at hand. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility 2 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close burst 5 </specific>
     <specific name="Target"> You and each ally in burst </specific>
     <specific name="Effect"> Choose a skill. Until the end of the encounter, each target gains a +2 power bonus to his or her next check using that skill. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1329,14 +1329,14 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> Your song describes the nobility and magic of a Feywild unicorn, inspiring your ally to come to the rescue. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 3 </specific>
     <specific name="Keywords"> Arcane, Healing, Teleportation </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Target"> One creature </specific>
     <specific name="Effect"> One ally within range can charge the target as a free action. If the ally hits, each ally adjacent to the target can regain hit points equal to your Charisma modifier or, as a free action, teleport 1 square. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1346,7 +1346,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> Your verse mocks your foes' courage, forcing them to become the cowards you describe. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 5 </specific>
     <specific name="Keywords"> Arcane, Implement, Psychic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1356,7 +1356,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 2d6 + Charisma modifier psychic damage, and the target is affected by your satire of bravery (save ends). While the target is affected by the satire, if the target ends its turn closer to you than where it started its turn, the target takes 1d6 + Charisma modifier psychic damage and is dazed until the end of its next turn. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> You push the target 3 squares. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1366,13 +1366,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> Your arcane song bolsters your allies, so they fight your foes with renewed vigor. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility 6 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the end of your next turn, any ally within 5 squares of you who hits an enemy gains temporary hit points equal to 3 + your Constitution modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1382,7 +1382,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> You manipulate what was once an ode to fate, speaking it in reverse and warping the weave of fortune. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 7 </specific>
     <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1390,7 +1390,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Charisma vs. Reflex </specific>
     <specific name="Hit"> 1d8 + Charisma modifier necrotic damage. The next time the target makes an attack roll before the end of your next turn, you roll 1d20 and can replace the target's roll with yours. In addition, choose an ally within 5 squares of you. The next time that ally attacks the target before the end of your next turn, you roll 1d20 and can replace the ally's roll with yours. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1400,7 +1400,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> You punctuate a tale of bloody vengeance with your shot, each word inspiring your allies. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 9 </specific>
     <specific name="Keywords"> Arcane, Healing, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1410,7 +1410,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 3[W] + Charisma modifier damage. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> Until the end of the encounter, whenever an ally hits the target with an attack, that ally can choose to roll a saving throw or to regain hit points equal to your Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1420,13 +1420,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Charming Rake (Multiclass Bard) </Prereqs>
     <Flavor> You instill a sense of perseverance in your allies with an inspiring song. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility 10 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the end of your next turn, any ally within 5 squares of you gains a +2 power bonus to saving throws. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1008 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1436,13 +1436,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> Plants burst into life around you. They sway back and forth to shield your allies, parting to allow attacks against your foes. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warden Utility 2 </specific>
     <specific name="Keywords"> Primal, Zone </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Close burst 3 </specific>
     <specific name="Effect"> The burst creates a zone of plants that lasts until the end of the encounter. You and your allies have cover while within the zone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1452,7 +1452,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> You slam your weapon into the ground, causing the earth to toss and churn as if from an earthquake. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warden Attack 3 </specific>
     <specific name="Keywords"> Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1460,7 +1460,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Target"> Each enemy in burst </specific>
     <specific name="Attack"> Strength vs. AC </specific>
     <specific name="Hit"> 1[W] + Strength modifier damage, and the target cannot shift until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1470,7 +1470,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> The spectral essence of a primeval forest erupts around the target, impeding your foes' movement. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warden Attack 5 </specific>
     <specific name="Keywords"> Primal, Weapon, Zone </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1480,7 +1480,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Hit"> 2[W] + Strength modifier damage. The target's space and each square adjacent to it become a zone of difficult terrain for your enemies until the end of the encounter. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> Until the end of the encounter, when you first hit any enemy after using this power, that enemy's current space and each square adjacent to it become a zone of difficult terrain for your enemies until the end of the encounter. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1490,13 +1490,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> Ice forms on the ground around you as you fight, limiting your foes' movement. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warden Utility 6 </specific>
     <specific name="Keywords"> Primal, Stance </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the stance ends, enemies can't shift into or out of squares adjacent to you. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1506,7 +1506,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> You stab your weapon arm straight up, and it sprouts long, sharp wooden protrusions that stab out at your enemies like spider legs. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warden Attack 7 </specific>
     <specific name="Keywords"> Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1514,7 +1514,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Target"> Two creatures in burst </specific>
     <specific name="Attack"> Strength vs. AC </specific>
     <specific name="Hit"> 1[W] + Strength modifier damage </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1524,7 +1524,7 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> Your body transforms to give you the thick hide and determined pace of the mighty mastodon, allowing you to knock creatures across the battlefield. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="_ChildPower"> ID_FMP_POWER_9865 </specific>
     <specific name="Display"> Warden Attack 9 </specific>
     <specific name="Keywords"> Polymorph, Primal </specific>
@@ -1532,13 +1532,13 @@ At the height of the heroic tier, you and your allies fight with a singular unit
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> You assume the guardian form of the stalwart mastodon until the end of the encounter. While you are in this form, you gain a +2 bonus to all defenses while bloodied. In addition, when you push or slide an enemy, you can increase the distance of the forced movement by 1 square.
 Once during this encounter, you can use the Form of the Stalwart Mastodon power while you are in this form. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_9865 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_9865" type="Power" />
+      <grant name="ID_FMP_POWER_9865" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Warding Vines  " type="Power" internal-id="ID_RYV_POWER_110063" source="Player's Handbook 2" revision-date="8/27/2010 11:37:57 AM">
@@ -1546,13 +1546,13 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Nature's Reservist (Multiclass Warden) </Prereqs>
     <Flavor> Spectral vines bloom around you to shield you and your allies. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warden Utility 10 </specific>
     <specific name="Keywords"> Primal, Zone </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close burst 2 </specific>
     <specific name="Effect"> The burst creates a zone of protective vines that lasts until the end of the encounter. While within the zone, you and your allies gain resistance to all damage equal to your Constitution modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1009 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1562,13 +1562,13 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Eldritch Hexer (Multiclass Warlock) </Prereqs>
     <Flavor> You shift your body out of phase with the world for an instant, teleporting a short distance. When you reappear, you are still somewhat out of phase and difficult to harm or hinder for a short time. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlock Utility 2 </specific>
     <specific name="Keywords"> Arcane, Teleportation </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> You can teleport 3 squares, and you gain a +2 power bonus to all defenses until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1010 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1578,7 +1578,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Eldritch Hexer (Multiclass Warlock) </Prereqs>
     <Flavor> A bolt of frigid starlight shines down and bathes your foe, causing the creature to suffer a spasm of agony just as it attacks you. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlock Attack 3 </specific>
     <specific name="Keywords"> Arcane, Implement, Necrotic </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -1588,7 +1588,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Attack"> Charisma vs. Will </specific>
     <specific name="Hit"> 1d8 + Charisma modifier necrotic damage. The target chooses either to deal half damage to you with its melee attack or to take 1d8 extra necrotic damage. </specific>
     <specific name=" Star Pact"> The attack deals 1d8 + your Intelligence modifier extra necrotic damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1010 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1615,14 +1615,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Eldritch Hexer (Multiclass Warlock) </Prereqs>
     <Flavor> Wriggling scarlet worms writhe suddenly across your foe's body before dissolving just as quickly into odious vapor. When their rank odor stings your nostrils, stolen energy shudders through you. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlock Utility 6 </specific>
     <specific name="Keywords"> Arcane, Implement </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Trigger"> One target in range spends an action point or a healing surge. </specific>
     <specific name="Effect"> You gain a number of temporary hit points equal to your second wind value. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1010 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1649,7 +1649,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Eldritch Hexer (Multiclass Warlock) </Prereqs>
     <Flavor> You slam your fists together and a resonating circle of darkness engulfs your foe, crushing its will until the darkness leaps to a stronger target. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlock Attack 9 </specific>
     <specific name="Keywords"> Arcane, Implement, Psychic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1659,7 +1659,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Hit"> 2d10 + Charisma modifier psychic damage. </specific>
     <specific name="Effect"> The target takes ongoing 10 psychic damage (save ends). The first time the target fails a saving throw against this ongoing damage, you choose a second creature within 10 squares of you and deal ongoing 5 psychic damage to it (save ends) </specific>
     <specific name=" Dark Pact"> Add your Intelligence modifier to the ongoing damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1010 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1669,7 +1669,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Eldritch Hexer (Multiclass Warlock) </Prereqs>
     <Flavor> You transform your bad luck into your enemy's misfortune. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Warlock Utility 10 </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Free Action </specific>
@@ -1677,7 +1677,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Trigger"> You miss an enemy with an attack </specific>
     <specific name="Target"> The enemy you missed </specific>
     <specific name="Effect"> The target takes a -5 penalty to saving throws until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1010 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1687,13 +1687,13 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Wilderness Predator (Multiclass Ranger) </Prereqs>
     <Flavor> You back away from danger and catch your breath. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Utility 2 </specific>
     <specific name="Keywords"> Healing, Martial </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> You shift a number of squares equal to your Wisdom modifier and must not end the shift adjacent to any enemy. You can use your second wind. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1011 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1703,7 +1703,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Wilderness Predator (Multiclass Ranger) </Prereqs>
     <Flavor> You thwart an enemy's attack with a timely thrust of your blade or a quick shot from your bow. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 3 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -1712,7 +1712,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Target"> The attacking creature </specific>
     <specific name="Attack"> Strength vs. AC (melee) or Dexterity vs. AC (ranged) </specific>
     <specific name="Hit"> 1[W] + Strength modifier damage (melee) or 1[W] + Dexterity modifier damage (ranged). The target takes a penalty to its attack roll for the triggering attack equal to 3 + your Wisdom modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1011 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1722,7 +1722,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Wilderness Predator (Multiclass Ranger) </Prereqs>
     <Flavor> You drive your weapons into a nearby enemy and then hurl a weapon into the face of another foe. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 5 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1739,7 +1739,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name=" Tertiary Attack"> Strength vs. AC (thrown weapon) </specific>
     <specific name=" Hit"> 2[W] + Strength modifier damage, and the tertiary target takes a -2 penalty to attack rolls (save ends). </specific>
     <specific name=" Miss"> You do not expend this power. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1011 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1749,14 +1749,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Wilderness Predator (Multiclass Ranger) </Prereqs>
     <Flavor> You dodge through the thick of the fight, denying your foes a chance to pin you down in one spot. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Utility 6 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> An enemy moves adjacent to you </specific>
     <specific name="Effect"> You can shift a number of squares equal to your Wisdom modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1011 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1766,7 +1766,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Wilderness Predator (Multiclass Ranger) </Prereqs>
     <Flavor> Like the hawk, you strike with calculated precision. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1784,7 +1784,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Wilderness Predator (Multiclass Ranger) </Prereqs>
     <Flavor> A carefully aimed shot imperils your quarry. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 9 </specific>
     <specific name="Keywords"> Martial, Reliable, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1792,7 +1792,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Target"> One creature designated as your quarry </specific>
     <specific name="Attack"> Strength (melee) or Dexterity (ranged) vs. AC </specific>
     <specific name="Hit"> 3[W] + Strength modifier (melee) or 3[W] + Dexterity modifier (ranged) damage, and you mark the target until the end of your next turn. Until the end of the encounter, your Hunter's Quarry deals two extra dice of Hunter's Quarry damage against the target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1011 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1802,14 +1802,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_RYV_CLASS_41001,ID_RYV_CLASS_42001,ID_RYV_CLASS_42002,ID_RYV_CLASS_42003,ID_RYV_CLASS_42004,ID_TIV_CLASS_FH-SS_100_1,ID_TIV_CLASS_FH-SS_100_2,ID_TIV_CLASS_FH-SS_100_3,ID_FMP_CLASS_2,ID_FMP_CLASS_3,ID_FMP_CLASS_4,ID_FMP_CLASS_5,ID_FMP_CLASS_6,ID_FMP_CLASS_7,ID_FMP_CLASS_8,ID_FMP_CLASS_9,ID_FMP_CLASS_53,ID_FMP_CLASS_104,ID_FMP_CLASS_124,ID_FMP_CLASS_125,ID_FMP_CLASS_126,ID_FMP_CLASS_127,ID_FMP_CLASS_128,ID_FMP_CLASS_129,ID_FMP_CLASS_134,ID_FMP_CLASS_147,ID_FMP_CLASS_148,ID_FMP_CLASS_362,ID_FMP_CLASS_437,ID_FMP_CLASS_466,ID_FMP_CLASS_472,ID_FMP_CLASS_529,ID_FMP_CLASS_602,ID_FMP_CLASS_705,ID_FMP_CLASS_713,ID_FMP_CLASS_716,ID_FMP_CLASS_719,ID_FMP_CLASS_722,ID_INTERNAL_CLASS_HYBRID,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MOVE_ACTION,10 </Category>
     <Flavor> Your enemies can't keep track of your fast movements. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Utility 10 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Requirement"> You must be marked. </specific>
     <specific name="Effect"> The marked condition ends, and you can shift 1 square. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1011 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1819,14 +1819,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> After searching your soul, you realize who your true foe is and swear an oath against it. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Utility 2 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close burst 10 </specific>
     <specific name="Target"> One creature you can see in burst </specific>
     <specific name="Effect"> The target becomes the target of your oath of enmity, replacing the current target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1836,7 +1836,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> No obstacle can stop you from visiting righteous fury on your foe. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Attack 3 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1845,7 +1845,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Wisdom vs. AC </specific>
     <specific name="Hit"> 2[W] + Wisdom modifier damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1855,7 +1855,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> You attack and then emanate divine menace, weakening the resolve of nearby foes. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Attack 5 </specific>
     <specific name="Keywords"> Divine, Fear, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1865,7 +1865,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Hit"> 3[W] + Wisdom modifier damage. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> Until the end of the encounter, any enemy that starts its turn adjacent to you takes a -2 penalty to AC until the end of its next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1875,14 +1875,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> You call forth a spirit of necromantic hunger, allowing it to harvest the life force of your enemies. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Utility 6 </specific>
     <specific name="Keywords"> Conjuration, Divine, Healing </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Effect"> A soul-consuming spirit from the land of the dead appears in an unoccupied square within range. The soul seeker counts as an ally for the purpose of flanking. Whenever you reduce an enemy that is adjacent to the soul seeker to 0 hit points or fewer, you heal a number of hit points equal to your Wisdom modifier. If you reduce the target of your oath of enmity to 0 hit points or fewer, you can use your oath of enmity power as a free action against a target adjacent to your soul seeker. </specific>
     <specific name="Sustain Minor"> The soul seeker persists and you can move it 5 squares. The soul seeker ignores difficult terrain. The soul seeker vanishes at the end of your turn if it is out of your line of sight. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1892,7 +1892,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> As you deliver a punishing blow with your weapon, your prayer invokes spectral chains to immobilize a foe. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Attack 7 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1901,7 +1901,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Attack"> Wisdom vs. AC </specific>
     <specific name="Hit"> 2[W] + Wisdom modifier damage. You choose to immobilize either the target or an enemy within 5 squares of it until the end of your next turn. </specific>
     <specific name=" Censure of Pursuit"> If no other creatures are adjacent to you or to the target, the attack deals extra damage equal to your Dexterity modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1911,7 +1911,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> You guarantee that none who approach you can get in the way of your sworn oath. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Attack 9 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1921,7 +1921,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Hit"> 3[W] + Wisdom modifier damage. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> Until the end of the encounter, when any enemy that is not your oath of enmity target ends its turn adjacent to you, you can push that enemy 3 squares as a free action. In addition, if the target of your oath of enmity ends its turn adjacent to you, it is slowed until the end of its next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1931,13 +1931,13 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Steeled Zealot (Multiclass Avenger) </Prereqs>
     <Flavor> Ephemeral wings carry you across the battlefield to strike where you are most needed. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Avenger Utility 10 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the end of your next turn, you gain a fly speed of 7, and you can hover. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1012 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1947,14 +1947,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> You intone a word of power to rally your allies to your side. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Utility 2 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Target"> One or two allies </specific>
     <specific name="Effect"> You pull each target 3 squares. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1964,7 +1964,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> Autumn leaves of golden light fall into the world from the mighty trees of Arvandor, clinging to your enemies and allies. They carry the echoes of summer and the preludes of winter. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Attack 3 </specific>
     <specific name="Keywords"> Divine, Implement, Radiant </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1972,7 +1972,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Target"> Each enemy in burst </specific>
     <specific name="Attack"> Wisdom vs. Reflex </specific>
     <specific name="Hit"> 2d8 + Wisdom modifier radiant damage, and if the target ends its next turn adjacent to an ally, it takes 5 radiant damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1982,7 +1982,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> You speak an ancient curse. Your enemies gnash their teeth and wail at the doom you promise, distracted from their own defense. Your and your allies' attacks take advantage of this distraction. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Attack 5 </specific>
     <specific name="Keywords"> Divine, Implement, Psychic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1991,7 +1991,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Attack"> Wisdom vs. Will </specific>
     <specific name="Hit"> 2d8 + Wisdom modifier psychic damage, and the target grants combat advantage and cannot shift (save ends both). </specific>
     <specific name="Effect"> Until the end of the encounter, when you or any ally within 5 squares of you attacks an enemy and has combat advantage against it, the attack deals extra damage equal to your Constitution modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2001,7 +2001,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> Whether an ally labors under a deadly effect or a foe seeks to escape the just end wrought by your magic, you tilt fate in your favor. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Utility 6 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -2009,7 +2009,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Trigger"> A creature within 10 squares of you makes a saving throw </specific>
     <specific name="Target"> The triggering creature </specific>
     <specific name="Effect"> The target rerolls the saving throw and must use the new result. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -2019,7 +2019,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> You fix your wrathful glare upon a group of enemies, filling them with awe and terror. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Attack 7 </specific>
     <specific name="Keywords"> Divine, Fear, Implement, Psychic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2027,7 +2027,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Target"> Each creature in burst </specific>
     <specific name="Attack"> Wisdom vs. Will </specific>
     <specific name="Hit"> 2d8 + Wisdom modifier psychic damage, and the target takes a -2 penalty to attack rolls until the end of its next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2037,7 +2037,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> As you speak the four verses of doom, your foes wilt in fear, their enthusiasm for the battle doused. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Attack 9 </specific>
     <specific name="Keywords"> Divine, Fear, Implement, Psychic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2047,7 +2047,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Hit"> The target is dazed (save ends). </specific>
     <specific name="Miss"> The target is dazed until the end of your next turn. </specific>
     <specific name="Effect"> Until the end of the encounter, any creature that hits or misses you takes 5 psychic damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2057,14 +2057,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Minor Prophet (Multiclass Invoker) </Prereqs>
     <Flavor> You recite the ancient declaration of war against the primordials. Friends who hear it are filled with righteous indignation against their attackers. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Invoker Utility 10 </specific>
     <specific name="Keywords"> Divine, Zone </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close burst 3 </specific>
     <specific name="Effect"> The burst creates a zone of retribution that lasts until the end of your next turn. When any ally within the zone takes damage from an attack, that ally gains a +2 power bonus to attack rolls against the attacker until the end of the ally's next turn. </specific>
     <specific name="Sustain Minor"> The zone persists. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1013 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -2074,14 +2074,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> You brandish your weapon and demand that all foes nearby face you in battle. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Utility 2 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close burst 3 </specific>
     <specific name="Target"> Each enemy in burst </specific>
     <specific name="Effect"> Each target is subject to your divine sanction until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -2091,7 +2091,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> You engage your foe and prevent it from advancing on your allies. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Attack 3 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2100,13 +2100,13 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Attack"> Strength or Charisma vs. AC </specific>
     <specific name="Hit"> 2[W] + Strength or Charisma modifier damage, and the target is immobilized until the end of your next turn. </specific>
     <specific name="Special"> You can use this power in place of a melee basic attack. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_BasicAttack"> Melee </specific>
     <rules>
-      <modify name="this" Field="_BasicAttack" value="Melee" />
+      <modify name="this" Field="_BasicAttack" value="Melee"/>
     </rules>
   </RulesElement>
   <RulesElement name="Arc of Vengeance  " type="Power" internal-id="ID_RYV_POWER_110094" source="Divine Power" revision-date="8/27/2010 11:44:43 AM">
@@ -2114,7 +2114,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> Your flashing weapon promises a swift end to your foes. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Attack 5 </specific>
     <specific name="Keywords"> Divine, Radiant, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2124,7 +2124,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Hit"> 2[W] + Strength modifier radiant damage. </specific>
     <specific name="Miss"> Half damage. </specific>
     <specific name="Effect"> The target is subject to your divine sanction until the end of your next turn. If the target was already marked by you, it also takes radiant damage equal to your Wisdom modifier whenever it deals damage to you or any ally (save ends). </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2134,14 +2134,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> Failure breeds frustration and frustration breeds unchecked fury, which you channel into your ability to wound your foes. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Utility 6 </specific>
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Free Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> You miss a target with a paladin encounter or daily attack power </specific>
     <specific name="Effect"> The targets you missed with the power are subject to your divine sanction until the end of your next turn. You gain a +2 power bonus to damage rolls on the next attack you make before the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -2151,7 +2151,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> Your inspiring attack bestows health on your ally. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Attack 7 </specific>
     <specific name="Keywords"> Divine, Healing, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2159,7 +2159,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Strength or Charisma vs. AC </specific>
     <specific name="Hit"> 2[W] + Strength or Charisma modifier damage, and an ally within 5 squares of you can spend a healing surge. If the attack deals at least 20 damage, the ally gains additional hit points equal to twice your Wisdom modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2169,7 +2169,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> You command a foe to attack you instead of your companion. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Attack 9 </specific>
     <specific name="Keywords"> Divine, Weapon </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -2179,7 +2179,7 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <specific name="Effect"> The triggering attack hits you instead of the ally. You pull the target to a square adjacent to you and then make the following attack against it. </specific>
     <specific name=" Attack"> Strength vs. AC </specific>
     <specific name=" Hit"> 2[W] + Strength modifier damage, and the target is subject to your divine sanction until the end of the encounter. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2189,13 +2189,13 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <Prereqs> Burgeoning Justiciar (Multiclass Paladin) </Prereqs>
     <Flavor> Your awareness expands to allow you to protect your allies in an instant, punishing those who would weaken your allies' resolve. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Paladin Utility 10 </specific>
     <specific name="Keywords"> Divine, Stance </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the stance ends, any time an enemy within 5 squares of you makes an attack that does not include you, you can use divine challenge on that enemy as a free action. If the triggering attack is against Will and you mark the attacker, it immediately takes the damage your divine challenge mark normally deals. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ThemePower"> ID_RYV_THEME_1014 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -2208,14 +2208,14 @@ Once during this encounter, you can use the Form of the Stalwart Mastodon power 
     <print-prereqs> Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Rogue: Sneak Attack with Rogue powers </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Rogue </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_1531" type="Class Feature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_CLASS_FEATURE_1531" type="Class Feature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 	You count as a Rogue for all feat, theme and paragon path requirements. In addition, you gain the Sneak Attack class feature and may use it with Rogue class and paragon path powers.
 
@@ -2227,17 +2227,17 @@ If you choose to apply sneak attack damage to a power, you may not simultaneousl
     <print-prereqs> Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Cleric: healing word 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Cleric </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_1455 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_1455" type="Power" />
-      <modify Field="Special" value="" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_POWER_1455" type="Power"/>
+      <modify Field="Special" value=""/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Once per encounter, you can use the cleric's healing word power. In addition, you can use a holy symbol as an implement.
    </RulesElement>
@@ -2247,14 +2247,14 @@ Once per encounter, you can use the cleric's healing word power. In addition, yo
     <print-prereqs> Str 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: combat challenge power </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant type="Class Feature" name="ID_FMP_CLASS_FEATURE_1528" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant type="Class Feature" name="ID_FMP_CLASS_FEATURE_1528"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You count as a Fighter for all feat, theme and paragon path requirements. You gain the Combat Challenge class feature, though you may only mark when you use Fighter class or paragon path powers. If an enemy violates your mark and you have another punishment feature (Divine Challenge, Aegis, etc), you must choose which feature to use.
    </RulesElement>
@@ -2264,18 +2264,18 @@ You count as a Fighter for all feat, theme and paragon path requirements. You ga
     <print-prereqs> Str 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: brawler bonuses to unarmed attacks and grabs </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Brawler Style" value="+2" />
-      <statadd name="Brawler Style" value="+2" requires="Paragon Tier" />
-      <statadd name="Brawler Style" value="+2" requires="Epic Tier" />
-      <statadd name="Unarmed group:attack" value="+Brawler Style" type="Enhancement" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_BRAWLER_STYLE" type="CountsAsFeature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <statadd name="Brawler Style" value="+2"/>
+      <statadd name="Brawler Style" value="+2" requires="Paragon Tier"/>
+      <statadd name="Brawler Style" value="+2" requires="Epic Tier"/>
+      <statadd name="Unarmed group:attack" value="+Brawler Style" type="Enhancement"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_BRAWLER_STYLE" type="CountsAsFeature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You count as a Fighter with the Brawler Style for all feat, theme and paragon path requirements. In addition, you gain a +2 enhancement bonus to the attack rolls of unarmed attacks and a +2 bonus to the attack rolls of grab attacks and attacks to move a creature you're grabbing. These bonuses increase to +4 at 11th level and +6 at 21st level.
    </RulesElement>
@@ -2285,15 +2285,15 @@ You count as a Fighter with the Brawler Style for all feat, theme and paragon pa
     <print-prereqs> Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Sorcerer: bonus damage to sorcerer powers; sorcerer implements </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Sorcerer </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_1840" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_SORCERER_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_SORCERER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_CLASS_FEATURE_1840" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_SORCERER_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_SORCERER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain the Sorcerous Power class feature; add the better of your Strength or Dexterity modifier to the damage rolls of sorcerer powers. In addition, you can wield sorcerer implements.
    </RulesElement>
@@ -2303,15 +2303,15 @@ You gain the Sorcerous Power class feature; add the better of your Strength or D
     <print-prereqs> Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Bard: Words of Friendship class feature; bard implements </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Bard </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_1120" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_BARD_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_BARD" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_CLASS_FEATURE_1120" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_BARD_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_BARD" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain the Sorcerous Power class feature; add the better of your Strenth or Dexterity modifier to the damage rolls of sorcerer powers. In addition, you can wield sorcerer implements.
    </RulesElement>
@@ -2321,15 +2321,15 @@ You gain the Sorcerous Power class feature; add the better of your Strenth or De
     <print-prereqs> Str 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Warden: count as Earthstrength, Lifespirit, Wildblood or Stormheart </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Warden </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select number="1" category="ID_RYV_CLASS_FEATURE_110002|ID_RYV_CLASS_FEATURE_110003|ID_RYV_CLASS_FEATURE_110004|ID_RYV_CLASS_FEATURE_110005" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_WARDEN_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_WARDEN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select number="1" category="ID_RYV_CLASS_FEATURE_110002|ID_RYV_CLASS_FEATURE_110003|ID_RYV_CLASS_FEATURE_110004|ID_RYV_CLASS_FEATURE_110005" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_WARDEN_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_WARDEN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Choose Earthstrength, Wildblood, Stormheart or Lifespirit. You may take feats and paragon paths as if you were a Warden with the chosen class feature.
    </RulesElement>
@@ -2339,33 +2339,33 @@ Choose Earthstrength, Wildblood, Stormheart or Lifespirit. You may take feats an
     <print-prereqs> Cha 13 or Con 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Warlock: Choose a pact, gain the pact boon once per encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Warlock </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select number="1" category="ID_RYV_CATEGORY_MULTICLASS_PACTS" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_WARLOCK_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select number="1" category="ID_RYV_CATEGORY_MULTICLASS_PACTS" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_WARLOCK_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Choose a Warlock pact. You count as a Warlock of that pact for the purpose of taking feats and paragon paths. Once per encounter when you drop an enemy to 0 or fewer HP, you gain the benefits of that pact's Boon. In addition, you may use Warlock implements with Warlock and Warlock Paragon Path powers.
    </RulesElement>
-  <RulesElement name="Multiclass Pacts" type="Category" internal-id="ID_RYV_CATEGORY_MULTICLASS_PACTS" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Multiclass Pacts" type="Category" internal-id="ID_RYV_CATEGORY_MULTICLASS_PACTS" source="Core" revision-date="1/25/2011 10:34:07 AM"/>
   <RulesElement name="Precise Stalker" type="Feat" internal-id="ID_RYV_FEAT_110009" source="At-Will Blog" revision-date="8/27/2010 12:17:55 PM">
     <Category> ID_INTERNAL_CATEGORY_MULTICLASS_RANGER,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
     <Prereqs> Dex 13 or Str 13; ~MULTICLASS or Unlimited Multiclass or Ranger CountsAsClass; !ID_FMP_CLASS_5; !ID_FMP_HYBRID_CLASS_355 </Prereqs>
     <print-prereqs> Dex 13 or Str 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Ranger: Hunter's Quarry with Ranger powers </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Ranger </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_602" type="Class Feature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_CLASS_FEATURE_602" type="Class Feature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 	You count as a Ranger for all feat, theme and paragon path requirements. In addition, you gain the Hunter's Quarry class feature and may use it with Ranger class and paragon path powers.
 
@@ -2377,14 +2377,14 @@ If you choose to apply Hunter's Quarry damage to a power, you may not simultaneo
     <print-prereqs> Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Avenger: Oath of Enmity with Avenger powers </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Avenger </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_787" type="Class Feature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_AVENGER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_CLASS_FEATURE_787" type="Class Feature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_AVENGER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You count as an Avenger for all feat, theme and paragon path requirements. In addition, you gain the Oath of Enmity class feature and may use it with Avenger class and paragon path powers.
 
@@ -2396,19 +2396,19 @@ If you choose to apply your Oath of Enmity feature to a power, you may not simul
     <print-prereqs> Str 13 or Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Paladin: divine challenge 2/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Paladin </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_805(Encounter) </specific>
     <rules>
-      <grant name="ID_FMP_POWER_805" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <modify Field="Soldier of Virtue" value="You may use this power twice per encounter." />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_DIVINE_CHALLENGE" type="CountsAsFeature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_POWER_805" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <modify Field="Soldier of Virtue" value="You may use this power twice per encounter."/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_DIVINE_CHALLENGE" type="CountsAsFeature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Twice per encounter, you can use the paladin's divine challenge power.  In addition, you can use a holy symbol or a holy avenger as an implement for paladin and paladin paragon path powers.
 If an enemy violates your mark and you have another punishment feature (Combat Challenge, Aegis, etc), you must choose which feature to use.
@@ -2418,12 +2418,12 @@ If an enemy violates your mark and you have another punishment feature (Combat C
     <print-prereqs> Cleric, healing word </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Target of healing word gainst +4 to Fortitude, +4 to saving throws vs. poison </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <modify name="Healing Word" type="Power" Field="Fortifying Word" value="Targets also gain a +4 power bonus to Fortitude and to saving throws against poison until the end of your next turn." />
+      <modify name="Healing Word" type="Power" Field="Fortifying Word" value="Targets also gain a +4 power bonus to Fortitude and to saving throws against poison until the end of your next turn."/>
     </rules>
 Targets of your healing word also gain a +4 power bonus to Fortitude and to saving throws against poison until the end of your next turn.
    </RulesElement>
@@ -2432,7 +2432,7 @@ Targets of your healing word also gain a +4 power bonus to Fortitude and to savi
     <Prereqs> Ranger and healing word, Aglarond regional benefit </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2174 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_6023" type="Power" />
+      <grant name="ID_FMP_POWER_6023" type="Power"/>
     </rules>
 You gain the Holy Barrage power, the 20th level power from the Thay Infiltrator paragon path.
 
@@ -2446,12 +2446,12 @@ You gain the Holy Barrage power, the 20th level power from the Thay Infiltrator 
     <specific name="Powers"> ID_FMP_POWER_6021,ID_FMP_POWER_6022,ID_FMP_POWER_6023 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_6021,ID_FMP_POWER_6022,ID_FMP_POWER_6023 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_1128" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_1129" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_1130" type="Class Feature" Level="16" />
-      <grant name="ID_FMP_POWER_6021" type="Power" Level="11" />
-      <grant name="ID_FMP_POWER_6022" type="Power" Level="12" />
-      <grant name="ID_FMP_POWER_6023" type="Power" Level="20" />
+      <grant name="ID_FMP_CLASS_FEATURE_1128" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1129" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1130" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_POWER_6021" type="Power" Level="11"/>
+      <grant name="ID_FMP_POWER_6022" type="Power" Level="12"/>
+      <grant name="ID_FMP_POWER_6023" type="Power" Level="20"/>
     </rules>
 You are one of a few brave souls that strike out into Thay, using your stealth and holy might to protect yourself as you pursue your mission. Sometimes you're asked to reconnoiter for the army, other times you're sent in to recover a lost object or rescue an abducted citizen before he or she succumbs to a dark fate.
 	You serve as an expert guide to any team you accompany into the undead realm of Thay, and your natural leadership helps you navigate your group to your objective as quickly and efficiently as possible.
@@ -2461,17 +2461,17 @@ You are one of a few brave souls that strike out into Thay, using your stealth a
     <print-prereqs> Elf, warden, warden's grasp power </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Pull target of warden's grasp 3 squares instead of sliding; slow giants, goblins </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When you use warden's grasp, you can pull the target 3 squares instead of sliding it. If the target is a giant or goblin, the target is also slowed until the end of its next turn.
    </RulesElement>
   <!--This section is derived from the Aberrant Blood Sorcerer by Silent7 Games. The product is enirely too small to be its own class build but makes for a solid Theme/Paragon Path combination-->
   <RulesElement name="Silent7 Games" type="source" internal-id="ID_RYV_SOURCE_S7001" source="Core">
     <specific name="IsBeta"> 0 </specific>
-    <specific name="URL" />
-    <specific name="Release Date" />
+    <specific name="URL"/>
+    <specific name="Release Date"/>
   </RulesElement>
   <RulesElement name="Aberrant Manifester" type="Theme" internal-id="ID_RYV_THEME_2001" source="Silent7 Games" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "People say there's something a little strange about me. They don't know the half of it." </Flavor>
@@ -2480,14 +2480,14 @@ When you use warden's grasp, you can pull the target 3 squares instead of slidin
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Evocations </specific>
-    <specific name="Creating"></specific>
-    <specific name="Granted Powers" />
+    <specific name="Creating"/>
+    <specific name="Granted Powers"/>
     <specific name="_DisplayPowers"> ID_RYV_POWER_210005,ID_RYV_POWER_210006,ID_RYV_POWER_210007,ID_RYV_POWER_210008,ID_RYV_POWER_210009,ID_RYV_POWER_210010,ID_RYV_POWER_210011 </specific>
     <rules>
-      <statadd name="Manifester Resistance" value="+5" />
-      <statadd name="Manifester Resistance" value="+5" requires="Paragon Tier" />
-      <statadd name="Manifester Resistance" value="+5" requires="Epic Tier" />
-      <grant type="Racial Trait" name="ID_RYV_RACIAL_TRAIT_210005" />
+      <statadd name="Manifester Resistance" value="+5"/>
+      <statadd name="Manifester Resistance" value="+5" requires="Paragon Tier"/>
+      <statadd name="Manifester Resistance" value="+5" requires="Epic Tier"/>
+      <grant type="Racial Trait" name="ID_RYV_RACIAL_TRAIT_210005"/>
     </rules>  
 Your blood runs a sickly purple-black with the presence of an aberration. Perhaps a tentacled fiend was one of your parents or further ancestors; or maybe you were experimented upon as a newborn by deranged and devious minds from the forces of the farthest realm. In any case, this cursed inheritance grants you the ability to wield powerful arcane powers.. but is it worth having such a twisted form, such as to be nigh unrecognizable from others of your race?
   </RulesElement>
@@ -2495,17 +2495,17 @@ Your blood runs a sickly purple-black with the presence of an aberration. Perhap
     <Prereqs> Aberrant Manifester </Prereqs>
     <print-prereqs> Aberrant Manifester </print-prereqs>
     <Flavor> "You wouldn't like me when I'm mad." </Flavor>
-    <specific name="Power Name" />
+    <specific name="Power Name"/>
     <specific name="Class Features"> ID_RYV_CLASS_FEATURE_210001, ID_RYV_CLASS_FEATURE_210002, ID_RYV_CLASS_FEATURE_210003 </specific>
     <specific name="Powers"> ID_RYV_POWER_210012,ID_RYV_POWER_210013,ID_RYV_POWER_210014 </specific>
     <specific name="_DisplayPowers"> ID_RYV_POWER_210012,ID_RYV_POWER_210013,ID_RYV_POWER_210014 </specific>
     <rules>
-      <grant name="ID_RYV_CLASS_FEATURE_210001" type="Class Feature" Level="11" />
-      <grant name="ID_RYV_CLASS_FEATURE_210002" type="Class Feature" Level="11" />
-      <grant name="ID_RYV_CLASS_FEATURE_210003" type="Class Feature" Level="16" />
-      <grant name="ID_RYV_POWER_210012" type="Power" Level="11" />
-      <grant name="ID_RYV_POWER_210013" type="Power" Level="12" />
-      <grant name="ID_RYV_POWER_210014" type="Power" Level="20" />
+      <grant name="ID_RYV_CLASS_FEATURE_210001" type="Class Feature" Level="11"/>
+      <grant name="ID_RYV_CLASS_FEATURE_210002" type="Class Feature" Level="11"/>
+      <grant name="ID_RYV_CLASS_FEATURE_210003" type="Class Feature" Level="16"/>
+      <grant name="ID_RYV_POWER_210012" type="Power" Level="11"/>
+      <grant name="ID_RYV_POWER_210013" type="Power" Level="12"/>
+      <grant name="ID_RYV_POWER_210014" type="Power" Level="20"/>
     </rules>
 Among members of humanoid races who are twisted by their maddening heritage, few also are imbued with the power of aberrant sorcery. Among those, there are even fewer who fully embrace this ancestry of the farthest realm.
 You are one such twisted descendant, though perhaps not proud of your heritage, but nonetheless willing to delve into its mysteries and to unlock the power of the distortion and insanity within you. The further you delve, though, the more your own shape is distorted, and the closer to insanity you come.
@@ -2515,7 +2515,7 @@ You are one such twisted descendant, though perhaps not proud of your heritage, 
     <specific name="Short Description"> Gain a bonus to arcane damage while manifesting. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="arcane:damage" value="+Constitution modifier" condition="while manifesting your aberrant racial trait" />
+      <statadd name="arcane:damage" value="+Constitution modifier" condition="while manifesting your aberrant racial trait"/>
     </rules>
 While you are manifesting your Aberrant racial trait, you gain a bonus to the damage rolls of arcane powers equal to your Constitution modifier.
 </RulesElement>
@@ -2524,7 +2524,7 @@ While you are manifesting your Aberrant racial trait, you gain a bonus to the da
     <specific name="Short Description"> Use an action point to manifest your aberrant racial trait. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="While you are bloodied, you can spend an action point as a free action during your turn to manifest your aberrant racial trait instead of taking an extra action." />
+      <textstring name="Action Point" value="While you are bloodied, you can spend an action point as a free action during your turn to manifest your aberrant racial trait instead of taking an extra action."/>
     </rules>
 While you are bloodied, you can spend an action point as a free action during your turn to manifest your aberrant racial trait instead of taking an extra action. The manifestation ends at the end of the encounter or until you are no longer bloodied, instead of its normal duration. This usage doesn't expend the trait power and can occur even if you have already expended the use of your trait power this encounter.
 </RulesElement>
@@ -2685,8 +2685,8 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <specific name="Requirement"> You must be manifesting your slimeskin racial trait. </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal </specific>
-    <specific name="Target" />
-    <specific name="Attack" />
+    <specific name="Target"/>
+    <specific name="Attack"/>
     <specific name="Effect"> Each enemy that hits you with or you hit with a melee attack is coated in the catalyzing slime from your slimeskin (save ends; no save on the same turn it attacked you). In addition to triggering when an affected creature hits you, the penalties of the slime are also triggered when you hit an affected creature with a melee attack.
   This stance and the manifestation end when no creature is affected by your slime. 
   Level 13: Affected targets take a -2 penalty to their saving throws to remove the catalyzing slime. 
@@ -2741,7 +2741,7 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <Prereqs> Twisted Descendant </Prereqs>
     <Flavor> A thick, congealed orb of acid takes form in your hands, which you hurl toward your enemy to melt his flesh. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Twisted Descendant Attack 11 </specific>
     <specific name="Keywords"> Arcane, Implement, Acid </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2749,7 +2749,7 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Primary ability vs. Reflex </specific>
     <specific name="Hit"> 2d8 + primary ability modifier acid damage, and ongoing 10 acid damage and the target takes a -2 penalty to its defenses and attack rolls (save ends both). For each failed save, the penalty increases by 1. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_RYV_PARAGON_PATH_210001 </specific>
     <specific name="Level"> 11 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2759,13 +2759,13 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <Prereqs> Twisted Descendant </Prereqs>
     <Flavor> You unleash a rippling field of energy. Emanations from the farthest realm cause distortions in reality. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Twisted Descendant Utility 12 </specific>
     <specific name="Keywords"> Arcane, Teleportation </specific>
     <specific name="Action Type"> Move action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You teleport up to 5 squares. You push 1 square any large or smaller creature you start or end adjacent to. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_RYV_PARAGON_PATH_210001 </specific>
     <specific name="Level"> 12 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -2775,7 +2775,7 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <Prereqs> Twisted Descendant </Prereqs>
     <Flavor> A pulse of energy you channel from the farthest realm warps reality nearby and damages minds. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Twisted Descendant Attack 20 </specific>
     <specific name="Keywords"> Arcane, Implement, Psychic, Teleportation </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -2785,7 +2785,7 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <specific name="Hit (Fortitude)"> Teleport the target 2 squares to a surface that can support it. </specific>
     <specific name="Hit (Will)"> 3d12 + Charisma modifier psychic damage. </specific>
     <specific name="Effect"> You can teleport to anywhere in the burst. In addition, you gain a teleport speed of 3 until the end of the encounter. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_RYV_PARAGON_PATH_210001 </specific>
     <specific name="Level"> 20 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -2796,15 +2796,15 @@ Pulse Ray (Force): The target is knocked prone. </specific>
     <print-prereqs> Natural humanoid </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Origin becomes aberrant, gain an aberrant manifestation </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Foulborn Bloodline </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <specific name="_DisplayPowers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <specific name="_DisplayPowers"/>
     <rules>
-      <select type="Racial Trait" number="1" Category="ID_RYV_RACIAL_TRAIT_210001|ID_RYV_RACIAL_TRAIT_210002|ID_RYV_RACIAL_TRAIT_210003|ID_RYV_RACIAL_TRAIT_210004" optional="true" />
-      <grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal" />
-      <grant name="ID_INTERNAL_INTERNAL_FOULBORN_BLOODLINE" type="Internal" />
+      <select type="Racial Trait" number="1" Category="ID_RYV_RACIAL_TRAIT_210001|ID_RYV_RACIAL_TRAIT_210002|ID_RYV_RACIAL_TRAIT_210003|ID_RYV_RACIAL_TRAIT_210004" optional="true"/>
+      <grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+      <grant name="ID_INTERNAL_INTERNAL_FOULBORN_BLOODLINE" type="Internal"/>
     </rules>
 You are a foulborn. Your origin changes to aberrant, and you are considered an aberrant creature for the purpose of effects that relate to creature origin.
 You may choose one aberrant manifestation.
@@ -2814,7 +2814,7 @@ You may choose one aberrant manifestation.
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_RYV_POWER_210001 </specific>
     <rules>
-      <grant name="ID_RYV_POWER_210001" type="Power" />
+      <grant name="ID_RYV_POWER_210001" type="Power"/>
     </rules>
 You gain the Coiling Tentacles power.
    </RulesElement>
@@ -2823,9 +2823,9 @@ You gain the Coiling Tentacles power.
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_RYV_POWER_210002 </specific>
     <rules>
-      <grant name="ID_RYV_POWER_210002" type="Power" />
-      <grant name="ID_FMP_LANGUAGE_18" type="Language" />
-      <statadd name="Saving Throws" value="+2" condition="against charm and fear effects" />
+      <grant name="ID_RYV_POWER_210002" type="Power"/>
+      <grant name="ID_FMP_LANGUAGE_18" type="Language"/>
+      <statadd name="Saving Throws" value="+2" condition="against charm and fear effects"/>
     </rules>
 You gain the Gibbering Mouths power.
    </RulesElement>
@@ -2834,8 +2834,8 @@ You gain the Gibbering Mouths power.
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_RYV_POWER_210003 </specific>
     <rules>
-      <grant name="ID_RYV_POWER_210003" type="Power" />
-      <statadd name="Perception Misc" value="+2" type="racial" />
+      <grant name="ID_RYV_POWER_210003" type="Power"/>
+      <statadd name="Perception Misc" value="+2" type="racial"/>
     </rules>
 You gain the One Thousand Eyes power.
    </RulesElement>
@@ -2844,7 +2844,7 @@ You gain the One Thousand Eyes power.
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_RYV_POWER_210004 </specific>
     <rules>
-      <grant name="ID_RYV_POWER_210004" type="Power" />
+      <grant name="ID_RYV_POWER_210004" type="Power"/>
     </rules>
 You gain the Slimeskin power.
    </RulesElement>
@@ -2853,8 +2853,8 @@ You gain the Slimeskin power.
     <specific name="Short Description"> Gain psychic and acid resistance while manifesting your aberrant racial trait. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="resist:psychic" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait" />
-      <statadd name="resist:acid" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait" />
+      <statadd name="resist:psychic" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait"/>
+      <statadd name="resist:acid" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait"/>
     </rules>
 You gain resist 5 acid and psychic while manifesting your aberrant racial trait. This increases to 10 at Paragon and 15 at Epic Tier.
 </RulesElement>
@@ -2863,7 +2863,7 @@ You gain resist 5 acid and psychic while manifesting your aberrant racial trait.
     <specific name="Short Description"> Gain psychic resistance even while not manifesting your aberrant racial trait. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="resist:psychic" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait" />
+      <statadd name="resist:psychic" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait"/>
     </rules>
 You gain resist 5 psychic.  This increases to 10 at Paragon and 15 at Epic Tier.
 </RulesElement>
@@ -2872,7 +2872,7 @@ You gain resist 5 psychic.  This increases to 10 at Paragon and 15 at Epic Tier.
     <specific name="Short Description"> Gain acid resistance even while not manifesting your aberrant racial trait. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="resist:acid" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait" />
+      <statadd name="resist:acid" value="+Manifester Resistance" type="resist" condition="while manifesting your aberrant racial trait"/>
     </rules>
 You gain resist 5 acid.  This increases to 10 at Paragon and 15 at Epic Tier.
 </RulesElement>
@@ -2881,12 +2881,12 @@ You gain resist 5 acid.  This increases to 10 at Paragon and 15 at Epic Tier.
     <print-prereqs> Aberrant Manifester </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Trade out one resistance type to make the other permanent </specific>
-    <specific name="Special" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <drop type="Racial Trait" name="ID_RYV_RACIAL_TRAIT_210005" />
-      <select type="Racial Trait" name="ID_RYV_RACIAL_TRAIT_210006|ID_RYV_RACIAL_TRAIT_210007" number="1" />
+      <drop type="Racial Trait" name="ID_RYV_RACIAL_TRAIT_210005"/>
+      <select type="Racial Trait" name="ID_RYV_RACIAL_TRAIT_210006|ID_RYV_RACIAL_TRAIT_210007" number="1"/>
     </rules>
 Choose either acid or psychic. You resist the chosen damage type as per your theme feature even when not manifesting one of your aberrant aspects, but you lose the other damage resistance (even while manifesting).
    </RulesElement>

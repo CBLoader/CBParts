@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>RacesoftheShroud-TheHalf-dead.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/RacesoftheShroud-TheHalf-dead.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/RacesoftheShroud-TheHalf-dead.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/RacesoftheShroud-TheHalf-dead.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/RacesoftheShroud-TheHalf-dead.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Half-Dead" type="Race" internal-id="ID_TIV_RACE_1" source="Races of the Shroud: The Half-Dead" revision-date="12/31/2010 10:46:57 AM">
     <Prereqs> ~HALFDEAD </Prereqs>
@@ -24,13 +24,13 @@
     <specific name="Short Description"> Infected with dark, necrotic magics while dying, the half-dead have returned only part-way to life, their flesh afflicted by an undead curse. </specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_01, ID_TIV_RACIAL_TRAIT_02, ID_TIV_RACIAL_TRAIT_03, ID_TIV_RACIAL_TRAIT_04 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_HALFDEAD" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 6&quot;-6'2&quot;" />
-      <textstring name="Average Weight" value="135-220 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" />
-      <select type="Language" number="1" Category="Starting" />
+      <grant name="ID_INTERNAL_GRANTS_HALFDEAD" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 6&quot;-6'2&quot;"/>
+      <textstring name="Average Weight" value="135-220 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1"/>
+      <select type="Language" number="1" Category="Starting"/>
     </rules>
 
 
@@ -42,17 +42,17 @@ Play a Half-Dead if you want ...
   <RulesElement name="Half-Dead" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFDEAD" source="Races of the Shroud: The Half-Dead">
     <specific name="_SupportsID"> ID_TIV_RACE_1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_01" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_02" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_03" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_04" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_01" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_02" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_03" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_04" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Half-Dead" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_HALFDEAD" source="Races of the Shroud: The Half-Dead">
@@ -64,10 +64,10 @@ You count as a Half-Dead for meeting prerequisites.
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_POWER_01_01 </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_01_01 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_01_01" type="Power" />
+      <grant name="ID_TIV_POWER_01_01" type="Power"/>
     </rules>
 You have the Horrified Wrath Power.
    </RulesElement>
@@ -75,14 +75,14 @@ You have the Horrified Wrath Power.
     <Category> ID_TIV_RACIAL_TRAIT_01,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
     <Flavor> Your wounds overcome your living mind, and the undead brute within breaks free. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Half-Dead Racial Power </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Immediate Reaction </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> You become bloodied by an attack. </specific>
     <specific name="Effect"> Add your Constitution modifier as necrotic damage to your attacks until the end of your next turn. You are at -2 to your defenses vs. any fear attacks or abilities while this power is in effect. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_01 </specific>
   </RulesElement>
   <RulesElement name="The Dead Rise" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_02" source="Races of the Shroud: The Half-Dead" revision-date="12/5/2010 1:47:14 PM">
@@ -94,8 +94,8 @@ You may stand up as a minor action.
     <specific name="Short Description"> You have resist necrotic 5, and vulnerable radiant 5. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="resist:necrotic" value="+5" type="resist" />
-      <statadd name="vulnerable:radiant" value="+5" type="vulnerable" />
+      <statadd name="resist:necrotic" value="+5" type="resist"/>
+      <statadd name="vulnerable:radiant" value="+5" type="vulnerable"/>
     </rules>
 You have resist necrotic 5, and vulnerable radiant 5.
 </RulesElement>

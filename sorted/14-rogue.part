@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.13</Version>
     <Filename>14-rogue.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/14-rogue.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=14-rogue</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/14-rogue.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/14-rogue.txt</VersionAddress>
   </UpdateInfo>
   <!-- Rogue -->
   <!-- 14-rogue.part, version 1.13 -->
@@ -35,11 +35,11 @@
     <specific name="Short Description"> Damage die increases one size with shuriken; +1 on attacks with daggers. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <modify name="Shuriken" type="Weapon" Field="Damage" die-increase="1" />
-      <modify name="Shuriken (Large)" type="Weapon" Field="Damage" die-increase="1" />
-      <statadd name="weapon,Dagger:attack" value="+1" />
-      <statadd name="weapon,Kukri:attack" value="+1" requires="Weapon Proficiency (Kukri)" />
-      <statadd name="weapon,Parrying dagger:attack" value="+1" requires="Weapon Proficiency (Parrying dagger)" />
+      <modify name="Shuriken" type="Weapon" Field="Damage" die-increase="1"/>
+      <modify name="Shuriken (Large)" type="Weapon" Field="Damage" die-increase="1"/>
+      <statadd name="weapon,Dagger:attack" value="+1"/>
+      <statadd name="weapon,Kukri:attack" value="+1" requires="Weapon Proficiency (Kukri)"/>
+      <statadd name="weapon,Parrying dagger:attack" value="+1" requires="Weapon Proficiency (Parrying dagger)"/>
     </rules>
 When you wield a shuriken, your weapon damage die increases by one size. In addition, you gain a +1 bonus to weapon attack rolls with daggers.
    </RulesElement>
@@ -63,13 +63,13 @@ When you wield a shuriken, your weapon damage die increases by one size. In addi
     <specific name="_ParentClass"> ID_FMP_CLASS_6 </specific>
     <specific name="_SUGGESTED_FEATS"> ID_FMP_FEAT_3145,ID_FMP_FEAT_3126,ID_FMP_FEAT_3119,ID_FMP_FEAT_396,ID_FMP_FEAT_3144,ID_FMP_FEAT_109,ID_FMP_FEAT_3128,ID_FMP_FEAT_127,ID_FMP_FEAT_3121,ID_FMP_FEAT_3137,ID_FMP_FEAT_272,ID_FMP_FEAT_3135,ID_FMP_FEAT_3154,ID_FMP_FEAT_3133,ID_FMP_FEAT_171,ID_FMP_FEAT_165,ID_FMP_FEAT_3138,ID_FMP_FEAT_245,ID_FMP_FEAT_131 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_THIEF" type="Grants" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_6 (ID_FMP_CLASS_719)" />
-      <statadd name="_LEVEL-ONE-HPS" value="+12" />
-      <statadd name="_PER-LEVEL-HPS" value="+5" />
-      <statadd name="Healing Surges" value="+6" />
-      <statadd name="Reflex Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_719" />
+      <grant name="ID_INTERNAL_GRANTS_THIEF" type="Grants"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_6 (ID_FMP_CLASS_719)"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+      <statadd name="_PER-LEVEL-HPS" value="+5"/>
+      <statadd name="Healing Surges" value="+6"/>
+      <statadd name="Reflex Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_719"/>
     </rules>
 A thief specializes in agility and trickery, using hard-earned skills to pilfer and hide, escape from tight situations, and overcome deadly traps. A thief has powerful combat abilities, but relies first and foremost on circumventing an enemy's defenses through acrobatics and stealth. Brute strength and arcane power have their uses, but a thief 's quick reflexes and agile touch can get the drop on enemies before they know what hit them.
 	Most thief adventurers are explorers and treasure hunters, keen on delving into long-forgotten ruins in the hope of finding valuable lore, treasure, or magic. Many thieves learn their skills on the streets or as unapologetic criminals. However, such characters often develop noble intentions, choosing to steal only from the wealthy or from those in need of being taught a lesson. After all, sometimes bad guys make the best good guys.
@@ -77,47 +77,47 @@ A thief specializes in agility and trickery, using hard-earned skills to pilfer 
   <RulesElement name="Thief" type="Grants" internal-id="ID_INTERNAL_GRANTS_THIEF" source="Player Essentials: Heroes of the Fallen Lands">
     <specific name="_SupportsID"> ID_FMP_CLASS_719 </specific>
     <rules>
-      <grant name="ID_FMP_ROLE_3" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)" type="Proficiency" />
-      <grant name="ID_FMP_CLASS_FEATURE_368" type="Class Feature" />
-      <grant name="ID_FMP_CLASS_FEATURE_322" type="Class Feature" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_THIEVERY" type="Skill Training" />
-      <grant name="ID_FMP_CLASS_FEATURE_2859" type="Class Feature" />
-      <grant name="ID_FMP_CLASS_FEATURE_2788" type="Class Feature" />
-      <grant name="ID_FMP_CLASS_FEATURE_2860" type="Class Feature" />
-      <grant name="ID_FMP_CLASS_FEATURE_3028" type="Class Feature" Level="2" />
-      <grant name="ID_FMP_CLASS_FEATURE_2789" type="Class Feature" Level="2" />
-      <grant name="ID_FMP_CLASS_FEATURE_2861" type="Class Feature" Level="2" />
-      <grant name="ID_FMP_CLASS_FEATURE_2790" type="Class Feature" Level="3" />
-      <grant name="ID_FMP_CLASS_FEATURE_2862" type="Class Feature" Level="4" />
-      <grant name="ID_FMP_CLASS_FEATURE_2863" type="Class Feature" Level="5" />
-      <grant name="ID_FMP_CLASS_FEATURE_3029" type="Class Feature" Level="6" />
-      <grant name="ID_FMP_CLASS_FEATURE_3030" type="Class Feature" Level="7" />
-      <grant name="ID_FMP_CLASS_FEATURE_3096" type="Class Feature" Level="9" />
-      <grant name="ID_FMP_CLASS_FEATURE_2793" type="Class Feature" Level="9" />
-      <grant name="ID_FMP_CLASS_FEATURE_3031" type="Class Feature" Level="10" />
-      <grant name="ID_FMP_CLASS_FEATURE_3033" type="Class Feature" Level="13" />
-      <grant name="ID_FMP_CLASS_FEATURE_2796" type="Class Feature" Level="15" />
-      <grant name="ID_FMP_CLASS_FEATURE_3034" type="Class Feature" Level="16" />
-      <grant name="ID_FMP_CLASS_FEATURE_3035" type="Class Feature" Level="17" />
-      <grant name="ID_FMP_CLASS_FEATURE_2798" type="Class Feature" Level="19" />
-      <grant name="ID_FMP_CLASS_FEATURE_3036" type="Class Feature" Level="22" />
-      <grant name="ID_FMP_CLASS_FEATURE_2800" type="Class Feature" Level="23" />
-      <grant name="ID_FMP_CLASS_FEATURE_2801" type="Class Feature" Level="25" />
-      <grant name="ID_FMP_CLASS_FEATURE_2802" type="Class Feature" Level="27" />
-      <grant name="ID_FMP_CLASS_FEATURE_2803" type="Class Feature" Level="29" />
-      <grant name="ID_INTERNAL_GRANTS_THIEF_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_THIEF" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass" />
+      <grant name="ID_FMP_ROLE_3" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DAGGER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORTBOW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HAND_CROSSBOW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SLING)" type="Proficiency"/>
+      <grant name="ID_FMP_CLASS_FEATURE_368" type="Class Feature"/>
+      <grant name="ID_FMP_CLASS_FEATURE_322" type="Class Feature"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_THIEVERY" type="Skill Training"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2859" type="Class Feature"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2788" type="Class Feature"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2860" type="Class Feature"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3028" type="Class Feature" Level="2"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2789" type="Class Feature" Level="2"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2861" type="Class Feature" Level="2"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2790" type="Class Feature" Level="3"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2862" type="Class Feature" Level="4"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2863" type="Class Feature" Level="5"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3029" type="Class Feature" Level="6"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3030" type="Class Feature" Level="7"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3096" type="Class Feature" Level="9"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2793" type="Class Feature" Level="9"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3031" type="Class Feature" Level="10"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3033" type="Class Feature" Level="13"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2796" type="Class Feature" Level="15"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3034" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3035" type="Class Feature" Level="17"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2798" type="Class Feature" Level="19"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3036" type="Class Feature" Level="22"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2800" type="Class Feature" Level="23"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2801" type="Class Feature" Level="25"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2802" type="Class Feature" Level="27"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2803" type="Class Feature" Level="29"/>
+      <grant name="ID_INTERNAL_GRANTS_THIEF_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_THIEF" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass"/>
     </rules>
   </RulesElement>
   <RulesElement name="Thief Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_THIEF_IMPLEMENTS" source="Player Essentials: Heroes of the Fallen Lands">
@@ -137,7 +137,7 @@ You count as a thief for meeting prerequisites.
     <specific name="_DisplayPowers"> ID_FMP_POWER_12710 </specific>
     <specific name="_CS_ShortDescription"> @Level 3 Improved Backstab </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12710" type="Power" />
+      <grant name="ID_FMP_POWER_12710" type="Power"/>
     </rules>
 You gain the backstab power.
 </RulesElement>
@@ -147,15 +147,14 @@ You gain the backstab power.
     <specific name="Short Description"> Use Dex (not Str) for melee basic attacks, damage. +2 damage with light blades, hand crossbows, shortbows, slings </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Strength or Dexterity vs. AC" />
-      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Strength or Dexterity modifier damage.
-Increase damage to 2[W] + Strength or Dexterity modifier damage at 21st level." />
-      <textstring name="melee basic:key ability" value="Strength,Dexterity" />
-      <statadd name="Weapon Finesse Damage Bonus" value="+2" />
-      <statadd name="light blade group:damage" value="+Weapon Finesse Damage Bonus" />
-      <statadd name="hand crossbow:damage" value="+Weapon Finesse Damage Bonus" />
-      <statadd name="shortbow:damage" value="+Weapon Finesse Damage Bonus" />
-      <statadd name="sling:damage" value="+Weapon Finesse Damage Bonus" />
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Strength or Dexterity vs. AC"/>
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Strength or Dexterity modifier damage. Increase damage to 2[W] + Strength or Dexterity modifier damage at 21st level."/>
+      <textstring name="melee basic:key ability" value="Strength,Dexterity"/>
+      <statadd name="Weapon Finesse Damage Bonus" value="+2"/>
+      <statadd name="light blade group:damage" value="+Weapon Finesse Damage Bonus"/>
+      <statadd name="hand crossbow:damage" value="+Weapon Finesse Damage Bonus"/>
+      <statadd name="shortbow:damage" value="+Weapon Finesse Damage Bonus"/>
+      <statadd name="sling:damage" value="+Weapon Finesse Damage Bonus"/>
     </rules>
 When you make a melee basic attack, you can use Dexterity instead of Strength for the attack roll and the damage roll. In addition, you gain a +2 bonus to damage rolls with light blades, hand crossbows, shortbows, and slings.
 </RulesElement>
@@ -173,7 +172,7 @@ When you make a melee basic attack, you can use Dexterity instead of Strength fo
     <specific name="_DisplayPowers"> ID_FMP_POWER_12711,ID_FMP_POWER_12712,ID_FMP_POWER_12713,ID_FMP_POWER_12714,ID_FMP_POWER_12715,ID_FMP_POWER_12716,ID_FMP_POWER_12717,ID_FMP_POWER_12718,ID_FMP_POWER_12719 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Power" number="2" Category="ID_FMP_CLASS_FEATURE_2860" />
+      <select type="Power" number="2" Category="ID_FMP_CLASS_FEATURE_2860"/>
     </rules>
 You gain two of the following powers of your choice.
 </RulesElement>
@@ -188,7 +187,7 @@ You gain two of the following powers of your choice.
     <specific name="_DisplayPowers"> ID_FMP_POWER_10169,ID_FMP_POWER_1038,ID_FMP_POWER_12721,ID_FMP_POWER_1395 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Power" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_UTILITY,2" />
+      <select type="Power" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_UTILITY,2"/>
     </rules>
 You gain one of the following powers of your choice.
 </RulesElement>
@@ -198,7 +197,7 @@ You gain one of the following powers of your choice.
     <specific name="Short Description"> +1 additional trained skill. Natural 20 on a skill challenge check automatically succeeds, +1 additional success. </specific>
     <specific name="Level"> 2 </specific>
     <rules>
-      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_3|ID_FMP_SKILL_7|ID_FMP_SKILL_13|ID_FMP_SKILL_14|ID_FMP_SKILL_17|ID_FMP_SKILL_21" />
+      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_3|ID_FMP_SKILL_7|ID_FMP_SKILL_13|ID_FMP_SKILL_14|ID_FMP_SKILL_17|ID_FMP_SKILL_21"/>
     </rules>
 You gain an additional trained skill, chosen from the following list: Bluff, Dungeoneering, Insight, Intimidate, Perception, and Streetwise.
 	Also, during a skill challenge, whenever you roll a natural 20 on a skill check that would contribute one or more successes to the skill challenge, that check automatically succeeds and counts as one additional success.
@@ -210,10 +209,10 @@ You gain an additional trained skill, chosen from the following list: Bluff, Dun
     <specific name="Level"> 2 </specific>
     <specific name="_CS_ShortDescription"> +1 bonus to attack rolls with light blades, hand crossbows, shortbows, and slings </specific>
     <rules>
-      <statadd name="light blade group,weapon:attack" value="+1" />
-      <statadd name="hand crossbow,weapon:attack" value="+1" />
-      <statadd name="shortbow,weapon:attack" value="+1" />
-      <statadd name="sling,weapon:attack" value="+1" />
+      <statadd name="light blade group,weapon:attack" value="+1"/>
+      <statadd name="hand crossbow,weapon:attack" value="+1"/>
+      <statadd name="shortbow,weapon:attack" value="+1"/>
+      <statadd name="sling,weapon:attack" value="+1"/>
     </rules>
 You gain a +1 bonus to attack rolls with light blades, hand crossbows, shortbows, and slings.
 </RulesElement>
@@ -224,7 +223,7 @@ You gain a +1 bonus to attack rolls with light blades, hand crossbows, shortbows
     <specific name="Level"> 3 </specific>
     <specific name="_CS_ShortDescription"> Use backstab power twice per encounter.@Level 13 Improved Backstab </specific>
     <rules>
-      <modify type="Power" name="Backstab" field="Special" value="You can use backstab twice per encounter, but only once per turn." />
+      <modify type="Power" name="Backstab" field="Special" value="You can use backstab twice per encounter, but only once per turn."/>
     </rules>
 You gain one more use of backstab per encounter, but you can still use it only once per turn.
 </RulesElement>
@@ -240,7 +239,7 @@ You gain one more use of backstab per encounter, but you can still use it only o
     <specific name="_DisplayPowers"> ID_FMP_POWER_12711,ID_FMP_POWER_12712,ID_FMP_POWER_12713,ID_FMP_POWER_12714,ID_FMP_POWER_12715,ID_FMP_POWER_12716,ID_FMP_POWER_12717,ID_FMP_POWER_12718,ID_FMP_POWER_12719 </specific>
     <specific name="_CS_ShortDescription"> Gain one additional rogue trick </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_2862" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_2862"/>
     </rules>
 You gain one additional rogue trick.
 </RulesElement>
@@ -254,7 +253,7 @@ You gain one additional rogue trick.
     <specific name="_DisplayPowers"> ID_FMP_POWER_12722 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12722" type="Power" />
+      <grant name="ID_FMP_POWER_12722" type="Power"/>
     </rules>  
 You gain the cunning escape power.
 </RulesElement>
@@ -269,7 +268,7 @@ You gain the cunning escape power.
     <specific name="_DisplayPowers"> ID_FMP_POWER_7399,ID_FMP_POWER_365,ID_FMP_POWER_12724,ID_FMP_POWER_10172 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Power" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_UTILITY,6" />
+      <select type="Power" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_UTILITY,6"/>
     </rules>
 You gain one of the following powers of your choice.
 </RulesElement>
@@ -285,7 +284,7 @@ You gain one of the following powers of your choice.
     <specific name="_DisplayPowers"> ID_FMP_POWER_12711,ID_FMP_POWER_12712,ID_FMP_POWER_12713,ID_FMP_POWER_12714,ID_FMP_POWER_12715,ID_FMP_POWER_12716,ID_FMP_POWER_12717,ID_FMP_POWER_12718,ID_FMP_POWER_12719 </specific>
     <specific name="_CS_ShortDescription"> Choose one additional rogue trick </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_3030" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_3030"/>
     </rules>
 You gain one additional rogue trick.
 </RulesElement>
@@ -296,7 +295,7 @@ You gain one additional rogue trick.
     <specific name="Level"> 9 </specific>
     <specific name="_CS_ShortDescription"> +2 bonus to initiative </specific>
     <rules>
-      <statadd name="Initiative Misc" value="+2" />
+      <statadd name="Initiative Misc" value="+2"/>
     </rules>
 You gain a +2 bonus to initiative.
 </RulesElement>
@@ -307,7 +306,7 @@ You gain a +2 bonus to initiative.
     <specific name="Level"> 9 </specific>
     <specific name="_CS_ShortDescription"> @Paragon Finesse </specific>
     <rules>
-      <statadd name="Weapon Finesse Damage Bonus" value="+1" />
+      <statadd name="Weapon Finesse Damage Bonus" value="+1"/>
     </rules>
 The bonus to damage rolls granted by your Weapon Finesse class feature increases to +3.
 </RulesElement>
@@ -322,7 +321,7 @@ The bonus to damage rolls granted by your Weapon Finesse class feature increases
     <specific name="_DisplayPowers"> ID_FMP_POWER_12725,ID_FMP_POWER_12726,ID_FMP_POWER_12727,ID_FMP_POWER_1396 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Power" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_UTILITY,10" />
+      <select type="Power" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_UTILITY,10"/>
     </rules>
 You gain one of the following powers of your choice.
 </RulesElement>
@@ -333,7 +332,7 @@ You gain one of the following powers of your choice.
     <specific name="Level"> 13 </specific>
     <specific name="_CS_ShortDescription"> Can backstab three times per encounter </specific>
     <rules>
-      <modify type="Power" name="Backstab" field="Special" value="You can use backstab three times per encounter, but only once per turn." />
+      <modify type="Power" name="Backstab" field="Special" value="You can use backstab three times per encounter, but only once per turn."/>
     </rules>
 You gain one more use of backstab per encounter, but you can still use it only once per turn.
 </RulesElement>
@@ -344,7 +343,7 @@ You gain one more use of backstab per encounter, but you can still use it only o
     <specific name="Level"> 15 </specific>
     <specific name="_CS_ShortDescription"> @Epic Finesse </specific>
     <rules>
-      <statadd name="Weapon Finesse Damage Bonus" value="+1" />
+      <statadd name="Weapon Finesse Damage Bonus" value="+1"/>
     </rules>
 The bonus to damage rolls granted by your Weapon Finesse class feature increases to +4.
 </RulesElement>
@@ -358,7 +357,7 @@ The bonus to damage rolls granted by your Weapon Finesse class feature increases
   <specific name="_DisplayPowers"> ID_FMP_POWER_12729 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12729" type="Power" />
+      <grant name="ID_FMP_POWER_12729" type="Power"/>
     </rules>  
 You gain the slip from the grasp power.
 </RulesElement>
@@ -374,7 +373,7 @@ You gain the slip from the grasp power.
     <specific name="_DisplayPowers"> ID_FMP_POWER_12711,ID_FMP_POWER_12712,ID_FMP_POWER_12713,ID_FMP_POWER_12714,ID_FMP_POWER_12715,ID_FMP_POWER_12716,ID_FMP_POWER_12717,ID_FMP_POWER_12718,ID_FMP_POWER_12719 </specific>
     <specific name="_CS_ShortDescription"> +1 additional rogue trick </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_3035" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_3035"/>
     </rules>
 You gain one additional rogue trick.
 </RulesElement>
@@ -384,7 +383,7 @@ You gain one additional rogue trick.
     <specific name="Short Description"> After you use backstab, you can immediately shift up to 3 squares as a free action. </specific>
     <specific name="Level"> 19 </specific>
     <rules>
-      <modify name="Backstab" type="Power" Field="Evasive Backstab" value="After you use backstab, you can immediately shift up to 3 squares as a free action." />
+      <modify name="Backstab" type="Power" Field="Evasive Backstab" value="After you use backstab, you can immediately shift up to 3 squares as a free action."/>
     </rules>
 After you use backstab, you can immediately shift up to 3 squares as a free action.
 </RulesElement>
@@ -399,7 +398,7 @@ After you use backstab, you can immediately shift up to 3 squares as a free acti
     <specific name="_DisplayPowers"> ID_FMP_POWER_12730 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12730" type="Power" />
+      <grant name="ID_FMP_POWER_12730" type="Power"/>
     </rules>
 You gain the invisible stalker power.
 </RulesElement>
@@ -416,7 +415,7 @@ Whenever you make an Acrobatics check or an Athletics check as part of the escap
     <specific name="Short Description"> Weapon Finesse's bonus to damage rolls increases to +5 </specific>
     <specific name="Level"> 25 </specific>
     <rules>
-      <statadd name="Weapon Finesse Damage Bonus" value="+1" />
+      <statadd name="Weapon Finesse Damage Bonus" value="+1"/>
     </rules>
 The bonus to damage rolls granted by your Weapon Finesse class feature increases to +5.
 </RulesElement>
@@ -434,23 +433,23 @@ Whenever you make a Stealth check or a Thievery check, you can roll twice and us
     <specific name="Level"> 29 </specific>
     <specific name="_CS_ShortDescription"> Gain a +3 bonus to all skill checks </specific>
     <rules>
-      <statadd name="Acrobatics Misc" value="+3" />
-      <statadd name="Arcana Misc" value="+3" />
-      <statadd name="Athletics Misc" value="+3" />
-      <statadd name="Bluff Misc" value="+3" />
-      <statadd name="Diplomacy Misc" value="+3" />
-      <statadd name="Dungeoneering Misc" value="+3" />
-      <statadd name="Endurance Misc" value="+3" />
-      <statadd name="Heal Misc" value="+3" />
-      <statadd name="History Misc" value="+3" />
-      <statadd name="Insight Misc" value="+3" />
-      <statadd name="Intimidate Misc" value="+3" />
-      <statadd name="Nature Misc" value="+3" />
-      <statadd name="Perception Misc" value="+3" />
-      <statadd name="Religion Misc" value="+3" />
-      <statadd name="Stealth Misc" value="+3" />
-      <statadd name="Streetwise Misc" value="+3" />
-      <statadd name="Thievery Misc" value="+3" />
+      <statadd name="Acrobatics Misc" value="+3"/>
+      <statadd name="Arcana Misc" value="+3"/>
+      <statadd name="Athletics Misc" value="+3"/>
+      <statadd name="Bluff Misc" value="+3"/>
+      <statadd name="Diplomacy Misc" value="+3"/>
+      <statadd name="Dungeoneering Misc" value="+3"/>
+      <statadd name="Endurance Misc" value="+3"/>
+      <statadd name="Heal Misc" value="+3"/>
+      <statadd name="History Misc" value="+3"/>
+      <statadd name="Insight Misc" value="+3"/>
+      <statadd name="Intimidate Misc" value="+3"/>
+      <statadd name="Nature Misc" value="+3"/>
+      <statadd name="Perception Misc" value="+3"/>
+      <statadd name="Religion Misc" value="+3"/>
+      <statadd name="Stealth Misc" value="+3"/>
+      <statadd name="Streetwise Misc" value="+3"/>
+      <statadd name="Thievery Misc" value="+3"/>
     </rules>
 You gain a +3 bonus to all skill checks.
 </RulesElement>
@@ -461,12 +460,12 @@ You gain a +3 bonus to all skill checks.
     <specific name="Class Features"> ID_FMP_CLASS_FEATURE_2794, ID_FMP_CLASS_FEATURE_2795, ID_FMP_CLASS_FEATURE_2864, ID_FMP_CLASS_FEATURE_2799, ID_FMP_CLASS_FEATURE_3032, ID_FMP_CLASS_FEATURE_3093 </specific>
     <specific name="Powers"> ID_FMP_POWER_12728 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_2794" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_2795" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_3032" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_3093" type="Class Feature" Level="12" />
-      <grant name="ID_FMP_CLASS_FEATURE_2864" type="Class Feature" Level="16" />
-      <grant name="ID_FMP_CLASS_FEATURE_2799" type="Class Feature" Level="20" />
+      <grant name="ID_FMP_CLASS_FEATURE_2794" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2795" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3032" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3093" type="Class Feature" Level="12"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2864" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2799" type="Class Feature" Level="20"/>
     </rules>
 To a thief in the paragon tier, mundane guardians, traps, and locks are the stuff of mockery. In any human or dwarven city, there are few items you could not have if you wanted them. Your attention now turns to far greater quarry: treasures lost to time, and riches sealed away by titans, demon lords, and worse.
 </RulesElement>
@@ -483,7 +482,7 @@ Once during your first turn in an encounter, you can shift up to 3 squares as a 
     <specific name="Short Description"> Action point spent to attack: deal sneak attack damage to target you have combat advantage against </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Masterful Action:When you spend an action point to use an attack power, you can deal your Sneak Attack damage to a target of the power regardless of whether you hit it or whether you have dealt Sneak Attack damage to it this turn, but you must have combat advantage against the target." />
+      <textstring name="Action Point" value="Masterful Action:When you spend an action point to use an attack power, you can deal your Sneak Attack damage to a target of the power regardless of whether you hit it or whether you have dealt Sneak Attack damage to it this turn, but you must have combat advantage against the target."/>
     </rules>
 When you spend an action point to use an attack power, you can deal your Sneak Attack damage to a target of the power regardless of whether you hit it or whether you have dealt Sneak Attack damage to it this turn, but you must have combat advantage against the target.
 </RulesElement>
@@ -494,7 +493,7 @@ When you spend an action point to use an attack power, you can deal your Sneak A
     <specific name="Level"> 11 </specific>
     <specific name="_CS_ShortDescription"> You can use the backstab power one more time per encounter. </specific>
     <rules>
-      <modify type="Power" name="Backstab" field="Level 11" value="You gain an additonal use of backstab per encounter from your Paragon Path feature." />
+      <modify type="Power" name="Backstab" field="Level 11" value="You gain an additonal use of backstab per encounter from your Paragon Path feature."/>
     </rules>
 You gain one more use of backstab per encounter, but you can still use it only once per turn.
 </RulesElement>
@@ -508,7 +507,7 @@ You gain one more use of backstab per encounter, but you can still use it only o
     <specific name="_DisplayPowers"> ID_FMP_POWER_12728 </specific>
     <specific name="_CS_ShortDescription"> Gain the fading retreat power </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12728" type="Power" />
+      <grant name="ID_FMP_POWER_12728" type="Power"/>
     </rules>
 You gain the fading retreat power.
 </RulesElement>
@@ -714,7 +713,7 @@ Over the course of countless close calls in battle, you have learned the value o
     <specific name="Trigger"> An enemy attacks you </specific>
     <specific name="Effect"> You gain a +4 bonus to all defenses against the triggering enemy's attack. At the end of the triggering enemy's turn, you can also shift up to 3 squares as a free action. </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2863 </specific>
     <specific name="_Subclasses"> ID_FMP_CLASS_719 </specific>
@@ -903,28 +902,28 @@ This trick allows you to ignore obstacles in your path and gain an increased imp
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
     <Flavor> The way you stand appears to allow a foe an opening, but in truth your skill is such that you use your foe's attack to draw it in for your own quick strike. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="_ChildPower"> ID_FMP_POWER_10168 </specific>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Stance </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the stance ends, each time an enemy hits or misses you, you can use the Duelist's Prowess Attack power against it. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_10168 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_10168" type="Power" />
+      <grant name="ID_FMP_POWER_10168" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Duelist's Prowess Attack" type="Power" internal-id="ID_FMP_POWER_10168" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:51 AM">
     <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
     <Prereqs> Unselectable; Unselectable </Prereqs>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
-    <specific name="Display" />
+    <specific name="_SkillPower"/>
+    <specific name="Display"/>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
     <specific name="Attack Type"> Melee weapon </specific>
@@ -934,7 +933,7 @@ This trick allows you to ignore obstacles in your path and gain an increased imp
     <specific name="Target"> The triggering enemy </specific>
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 1[W] + Dexterity modifier damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentPower"> ID_FMP_POWER_10167 </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
   </RulesElement>
@@ -942,28 +941,28 @@ This trick allows you to ignore obstacles in your path and gain an increased imp
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
     <Flavor> A foe near you feels the sting of your blade as you lash out, but you attack so with such agility that this enemy has a problem returning the favor. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="_ChildPower"> ID_FMP_POWER_10174 </specific>
     <specific name="Display"> Rogue Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee weapon </specific>
     <specific name="Effect"> Until the end of your next turn, you can use the Lashing Blade Attack power. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_10174 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_10174" type="Power" />
+      <grant name="ID_FMP_POWER_10174" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Lashing Blade Attack" type="Power" internal-id="ID_FMP_POWER_10174" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:54 AM">
     <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_OPPORTUNITY_ACTION </Category>
     <Prereqs> Unselectable; Unselectable </Prereqs>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
-    <specific name="Display" />
+    <specific name="_SkillPower"/>
+    <specific name="Display"/>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Opportunity Action </specific>
     <specific name="Attack Type"> Melee weapon </specific>
@@ -974,7 +973,7 @@ This trick allows you to ignore obstacles in your path and gain an increased imp
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 1[W] + Dexterity modifier damage, and the target takes a penalty to attacks against you equal to your Charisma modifier until the end of your next turn. </specific>
     <specific name=" Artful Dodger"> The attack penalty equals 2 + your Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentPower"> ID_FMP_POWER_10173 </specific>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
   </RulesElement>
@@ -982,7 +981,7 @@ This trick allows you to ignore obstacles in your path and gain an increased imp
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> A final lunge brings you into an advantageous position. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1003,7 +1002,7 @@ Location is everything to a scoundrel. Get into the right place, and you can hit
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> You drive your weapon past your foe's guard and into a tender spot. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1023,7 +1022,7 @@ You have an eye for spotting gaps in armor and weak points where your weapon can
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> With a calculated strike, you leave your foe vulnerable to an adroit riposte should if it dares to attack you. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1043,7 +1042,7 @@ Delivering a telling strike is the surest way to get an enemy's attention. If yo
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> You use a distracting flourish with your off hand to land a solid blow. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1063,7 +1062,7 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> You make a stinging strike against your foe and then retreat behind a nearby ally. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1073,7 +1072,7 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
     <specific name="Effect"> You and an adjacent ally can swap places (the ally slides 1 square, and you shift 1 square). </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1082,7 +1081,7 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> A false stumble and a shove place the enemy exactly where you want him. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1092,7 +1091,7 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <specific name="Attack"> Dexterity vs. Will </specific>
     <specific name="Hit"> 1[W] + Dexterity modifier damage, and you slide the target 1 square. </specific>
     <specific name=" Artful Dodger"> The distance of the slide can be up to your Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1101,7 +1100,7 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
     <Flavor> A rapid flurry of projectiles leaves your enemies clearing the blood from their eyes. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1111,7 +1110,7 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> Dexterity modifier damage, and the target is blinded until the end of your next turn. </specific>
     <specific name="Miss"> Dexterity modifier damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1122,14 +1121,14 @@ Many scoundrels rely on misdirection to get the better of their foes. With this 
     <print-prereqs> You must be trained in Stealth. </print-prereqs>
     <Flavor> You are stealthy and fleet of foot at the same time. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Prerequisite"> You must be trained in Stealth. </specific>
     <specific name="Effect"> You move up to your speed and can make a Stealth check to hide. You take no penalty to the Stealth check for the movement, though you must still meet the normal requirements to hide. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1141,14 +1140,14 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <print-prereqs> You must be trained in Athletics. </print-prereqs>
     <Flavor> You leap a great distance without a running start. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Prerequisite"> You must be trained in Athletics. </specific>
     <specific name="Effect"> You make an Athletics check to jump. You are considered to have a running start, and the distance of the jump isn't limited by your speed. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1159,7 +1158,7 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <print-prereqs> You must have training in Bluff. </print-prereqs>
     <Flavor> The line between truth and deception is thin, and you cross it with ease. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 2 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Free Action </specific>
@@ -1167,7 +1166,7 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <specific name="Prerequisite"> You must having training in Bluff. </specific>
     <specific name="Trigger"> You roll a Bluff check and dislike the result </specific>
     <specific name="Effect"> You reroll the Bluff check and must use the second result. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1176,7 +1175,7 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
     <Flavor> You follow up a fierce attack with a series of quick, painful strikes woven between your enemy's attacks. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 5 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1186,7 +1185,7 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
     <specific name="Effect"> Until the end of the encounter, the target takes damage equal to your Dexterity modifier immediately after attacking you, and you can shift 1 square as an immediate reaction after such an attack. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1197,7 +1196,7 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <print-prereqs> You must be trained in Stealth. </print-prereqs>
     <Flavor> You blend into your surroundings. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Utility 6 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -1205,7 +1204,7 @@ The most successful scoundrels combine stealth with speed, and you have practice
     <specific name="Trigger"> You are hidden and lose cover or concealment against an enemy </specific>
     <specific name="Prerequisite"> You must be trained in Stealth. </specific>
     <specific name="Effect"> You make a Stealth check. If your check beats the triggering enemy's passive Perception, you remain hidden from it, and until the end of your next turn you can remain hidden from it without needing any cover or concealment. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1215,7 +1214,7 @@ All scoundrels know the value of secrecy. Stealth is crucial to moving into posi
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
     <Flavor> You scoop up a handful of sand or dirt or pebbles, strike your foe, and throw the grit in his face to blind him. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1224,7 +1223,7 @@ All scoundrels know the value of secrecy. Stealth is crucial to moving into posi
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 1[W] + Dexterity modifier damage, and the target is blinded until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1233,7 +1232,7 @@ All scoundrels know the value of secrecy. Stealth is crucial to moving into posi
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
     <Flavor> A well-placed blow takes your foe out of the fight. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 9 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1243,7 +1242,7 @@ All scoundrels know the value of secrecy. Stealth is crucial to moving into posi
     <specific name="Attack"> Dexterity vs. Fortitude </specific>
     <specific name="Hit"> 2[W] + Dexterity modifier damage, and the target falls unconscious (save ends). If the unconscious target takes any damage, this unconsciousness ends. </specific>
     <specific name="Miss"> Half damage, and the target is dazed until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1253,7 +1252,7 @@ A well-placed strike in a vulnerable spot can knock a foe senseless. You lure th
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
     <Flavor> You bait your foe into attacking you, and then turn his blow straight against it. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 13 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1272,7 +1271,7 @@ Your taunts and jibes provoke an enemy to rash action. It roars as it lashes out
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_22,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
     <Flavor> You put your foe into a hold that will soon take it out of the fight. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 15 </specific>
     <specific name="Keywords"> Martial, Reliable, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1283,7 +1282,7 @@ Your taunts and jibes provoke an enemy to rash action. It roars as it lashes out
     <specific name="Hit"> 2[W] + Dexterity modifier damage, and you grab the target until the end of your next turn. Until the grab ends, you have partial cover, and any melee attack or ranged attack that misses you hits the target instead. </specific>
     <specific name="Sustain Minor"> The grab persists until the end of your next turn. The third time you sustain the grab after using this power, the target falls unconscious. If an unconscious target takes any damage, the unconsciousness ends. </specific>
     <specific name="Special"> You can use this power as a minor action if you are grabbing a creature, and you automatically hit that creature. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 15 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1293,7 +1292,7 @@ This power enables you to catch a foe in a death grip using your weapon. As you 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
     <Flavor> You grab your foe with one hand and deliver a quick, deadly jab with the other. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 17 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1313,7 +1312,7 @@ This exploit can turn an enemy into a useful bargaining chip in a negotiation. K
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
     <Flavor> As soon as your foe is off-balance, you deliever a powerful strike, then easily shove it where you want it to go. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 19 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1323,7 +1322,7 @@ This exploit can turn an enemy into a useful bargaining chip in a negotiation. K
     <specific name="Attack"> Dexterity vs. Fortitude </specific>
     <specific name="Hit"> 4[W] + Dexterity modifier damage, and you slide the target a number of squares up to your Strength modifier. If you end the silde with the target adjacent to one of more objects or creatures, you can cause both the target and one of those objects or creatures to take 10 damage. </specific>
     <specific name="Miss"> Half damage, and you slide the target a number of squares equal to your Strength modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 19 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1333,7 +1332,7 @@ Use this power when you can't otherwise shake an enemy. A hit teaches the foe wh
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
     <Flavor> You vanish from your foe's sight, only to appear out of nowhere and strike a devistating blow. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 25 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1343,7 +1342,7 @@ Use this power when you can't otherwise shake an enemy. A hit teaches the foe wh
     <specific name="Attack"> Dexterity vs. Will </specific>
     <specific name="Hit"> 6[W] + Dexterity modifier damage, and have combat advantage against the target until the end of your next turn.  You become invisible, and you can shift up to 5 squares to a square adjacent to the target. You reappear at the start of your next turn. </specific>
     <specific name="Miss"> Half damage, and you have combat advantage against the target until the end of your next turn. You can shift 1 square to another square adjacent to the target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 25 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1354,7 +1353,7 @@ This exploit is another example of how you bend reality to suit your purposes. N
     <specific name="Short Description"> When you spend action point to take action, also gain move action </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Acrobatic Action:When you spend an action point to take an extra action, you also gain an extra move action that you must use this turn." />
+      <textstring name="Action Point" value="Acrobatic Action:When you spend an action point to take an extra action, you also gain an extra move action that you must use this turn."/>
     </rules>
 When you spend an action point to take an extra action, you also gain an extra move action that you must use this turn.
    </RulesElement>
@@ -1363,7 +1362,7 @@ When you spend an action point to take an extra action, you also gain an extra m
     <Prereqs> Cat Burglar </Prereqs>
     <Flavor> You spring into action, expertly strike, and then sidestep to position yourself for either certain glory or imminent doom. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cat Burglar Attack 11 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
@@ -1374,7 +1373,7 @@ When you spend an action point to take an extra action, you also gain an extra m
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> 3[W] + Dexterity modifier damage. </specific>
     <specific name="Effect"> You shift up to 5 squares to a square adjacent to the target </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_PARAGON_PATH_36 </specific>
     <specific name="Level"> 11 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -1384,14 +1383,14 @@ When you spend an action point to take an extra action, you also gain an extra m
     <Prereqs> Cat Burglar </Prereqs>
     <Flavor> With supreme effort, you escape. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Cat Burglar Utility 12 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Immediate Reaction </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> An effect immobilizes, restraines, or slows you </specific>
     <specific name="Effect"> The triggering effect ends on you. You then shift up to 2 squares. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_PARAGON_PATH_36 </specific>
     <specific name="Level"> 12 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1401,13 +1400,13 @@ When you spend an action point to take an extra action, you also gain an extra m
     <Prereqs> Daggermaster </Prereqs>
     <Flavor> With a moment of concentration, you focus your will into the point of your blade. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Daggermaster Utility 12 </specific>
     <specific name="Keywords"> Martial </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the end of the encounter, your dagger's damage die increases by one size </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_PARAGON_PATH_34 </specific>
     <specific name="Level"> 12 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -1417,7 +1416,7 @@ When you spend an action point to take an extra action, you also gain an extra m
     <specific name="Short Description"> When you spend action point to take action, also gain move action </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Infiltrator's Action:When you spend an action point to take an extra action, you also gain an extra move action that you must use this turn." />
+      <textstring name="Action Point" value="Infiltrator's Action:When you spend an action point to take an extra action, you also gain an extra move action that you must use this turn."/>
     </rules>
 When you spend an action point to take an extra action, you also gain an extra move action that you must use this turn.
    </RulesElement>
@@ -1439,7 +1438,7 @@ While you have any concealment, you can deal your Sneak Attack damage when you m
     <Prereqs> Watcher of the Night </Prereqs>
     <Flavor> You snatch arcane power from the Feywild, wreathing your dagger in energy. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Watcher of the Night Attack 11 </specific>
     <specific name="Keywords"> Arcane, Martial, Weapon ; Varies </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -1449,7 +1448,7 @@ While you have any concealment, you can deal your Sneak Attack damage when you m
     <specific name="Special"> Choose cold, fire, lightning, or thunder whenever you use this power. Your choice determines the power's damage type. </specific>
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 3[W] + Dexterity modifier damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_PARAGON_PATH_155 </specific>
     <specific name="Level"> 11 </specific>
     <specific name="Power Type"> Attack </specific>

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>SGPCutpurseRoguesBGUK.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/SGPCutpurseRoguesBGUK.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/SGPCutpurseRoguesBGUK.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/SGPCutpurseRoguesBGUK.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/SGPCutpurseRoguesBGUK.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="St Georges Prey" type="source" internal-id="ID_FMP_SOURCE_401" source="Core">
     <specific name="IsBeta"> 0 </specific>
@@ -16,10 +16,10 @@
     <print-prereqs> Rogue, wielding a dagger </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Apply weapon bonus to Thievery checks </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You can apply your dagger's enhancement bonus to Thievery checks
    </RulesElement>
   <RulesElement name="Puncture the Kidneys  " type="Feat" internal-id="ID_FMP_FEAT_65122" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -27,14 +27,14 @@ You can apply your dagger's enhancement bonus to Thievery checks
     <print-prereqs> Rogue, Sneak Attack class feature, wielding a dagger </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Deal additional sneak attack damage with daggers </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <textstring name="Sneak Attack" value="+2" wearing="weapon:dagger" />
-      <statadd name="Sneak Attack" value="+2" requires="Paragon Tier" wearing="weapon:dagger" />
-      <statadd name="Sneak Attack" value="+2" requires="Epic Tier" wearing="weapon:dagger" />
+      <textstring name="Sneak Attack" value="+2" wearing="weapon:dagger"/>
+      <statadd name="Sneak Attack" value="+2" requires="Paragon Tier" wearing="weapon:dagger"/>
+      <statadd name="Sneak Attack" value="+2" requires="Epic Tier" wearing="weapon:dagger"/>
     </rules>
 You deal a +2 feat bonus to damage when applying your sneak attack damage when using a dagger. This bonus increases to +4 at 11th level, and +6 at 21st level.
    </RulesElement>
@@ -43,10 +43,10 @@ You deal a +2 feat bonus to damage when applying your sneak attack damage when u
     <print-prereqs> Rogue </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Gain bonus to bluff checks to gain combat advantage </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You gain a +1 feat bonus to Bluff checks to gain combat advantage. This bonus increases to +2 at 11th level and +3 at 21st level.
    </RulesElement>
   <RulesElement name="Swift Weapon  " type="Feat" internal-id="ID_FMP_FEAT_65124" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -54,10 +54,10 @@ You gain a +1 feat bonus to Bluff checks to gain combat advantage. This bonus in
     <print-prereqs> Rogue, wielding a dagger </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Apply weapon bonus to initiative </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You can apply your daggers enhancement bonus to initiative rolls
    </RulesElement>
   <RulesElement name="Trained Eye  " type="Feat" internal-id="ID_FMP_FEAT_65125" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -65,17 +65,17 @@ You can apply your daggers enhancement bonus to initiative rolls
     <print-prereqs> Rogue </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Use thievery to check for traps </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You can make a Thievery, rather than Perception check to detect traps.
    </RulesElement>
   <RulesElement name="Hidden Blade  " type="Power" internal-id="ID_FMP_POWER_65231" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> Your weapon seemingly appears from nowhere, giving your opponent no chance to react to the imminent danger. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -84,7 +84,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity + 2 vs. AC </specific>
     <specific name="Hit"> 1[W] damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -93,7 +93,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> Your blade flashes out of your hand in a blur, striking at multiple foes in range. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -102,7 +102,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <specific name="Target"> 1, 2 or 3 creatures </specific>
     <specific name="Attack"> Dexterity vs. Reflex </specific>
     <specific name="Hit"> 1[W] damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -111,7 +111,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
     <Flavor> The weapon in your hand moves faster than your foe can react, allowing you to strike him again </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 1 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Minor action </specific>
@@ -120,7 +120,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> 1[W] damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -129,7 +129,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
     <Flavor> After sinking your blade in, the act of wrenching the weapon out causes a wound that won't heal quickly. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 3 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -138,7 +138,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> 2[W] damage and the target takes ongoing 3 damage (save ends). </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -147,7 +147,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
     <Flavor> You slip your blade into the target with extreme precision, puncturing a major organ. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 3 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -156,7 +156,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> 2[W] damage and the target is weakened (save ends). </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -165,7 +165,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_6,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
     <Flavor> Using the distraction that an ally is causing, you slip in behind the target, and stab it in the back. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Rogue Attack 7 </specific>
     <specific name="Keywords"> Martial, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -174,7 +174,7 @@ You can make a Thievery, rather than Perception check to detect traps.
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Dexterity vs. AC </specific>
     <specific name="Hit"> 2[W] + Dexterity modifier damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_6 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>

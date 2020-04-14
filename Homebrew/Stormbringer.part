@@ -1,24 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>Stormbringer.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/Stormbringer.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/Stormbringer.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/Stormbringer.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/Stormbringer.txt</VersionAddress>
   </UpdateInfo>
   
   <RulesElement name="Stormbringer" type="Magic Item" internal-id="ID_JWC_MAGIC_ITEM_9999" source="Jay Custom" revision-date="1/4/2011">
     <Flavor> This bastard sword is silver-white, with a hilt cap depicting a shield emblazoned with lightning. </Flavor>
-    <specific name="Level" />
-    <specific name="Gold" />
+    <specific name="Level"/>
+    <specific name="Gold"/>
     <specific name="Magic Item Type"> Artifact </specific>
-    <specific name="Tier" />
-    <specific name="Armor" />
+    <specific name="Tier"/>
+    <specific name="Armor"/>
     <specific name="Weapon"> Bastard Sword </specific>
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
     <specific name="Critical"> +3d6 thunder damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily * Thunder): Free action. Use this power when you hit with Stormbringer. Deal 2d8 thunder damage and push the target 1 square. </specific>
     <specific name="Power"> Power (Daily): Minor action. You grant one ally within 5 squares a power bonus to AC and Reflex equal to the enhancement bonus of this weapon. The bonus lasts until the end of your next turn. </specific>
     <specific name="Power"> Power (Daily): Standard Action. As the paladin’s (encounter 13) Whirlwind Smite power, which is reproduced below. </specific>
@@ -31,11 +31,11 @@
     <specific name="_DisplayPowers"> ID_FMP_POWER_1260 </specific>
     <specific name="_ImplementEquiv"> Holy Symbol </specific>
     <rules>
-      <statadd name="Insight Misc" value="+2" type="item" />
-      <statadd name="Endurance Misc" value="+2" type="item" />
-      <statadd name="attack rolls" value="+1" type="item" condition="against any creature adjacent to an ally with AC lower than yours" />
-      <modify name="this" Field="_ImplementEquiv" value="Holy Symbol" />
-      <grant name="ID_FMP_POWER_1260" type="Power" />
+      <statadd name="Insight Misc" value="+2" type="item"/>
+      <statadd name="Endurance Misc" value="+2" type="item"/>
+      <statadd name="attack rolls" value="+1" type="item" condition="against any creature adjacent to an ally with AC lower than yours"/>
+      <modify name="this" Field="_ImplementEquiv" value="Holy Symbol"/>
+      <grant name="ID_FMP_POWER_1260" type="Power"/>
     </rules>
   </RulesElement>
 </D20Rules>

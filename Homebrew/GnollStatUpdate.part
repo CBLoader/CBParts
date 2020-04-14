@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>GnollStatUpdate.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/GnollStatUpdate.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/GnollStatUpdate.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/GnollStatUpdate.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/GnollStatUpdate.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Gnoll" type="Race" internal-id="ID_FMP_RACE_19" source="Dragon Magazine 367" revision-date="9/1/2010 3:19:25 PM">
     <Prereqs> ~GNOLL </Prereqs>
@@ -29,12 +29,12 @@
     <specific name="Short Description"> Often feral demon worshipers, gnolls are quick, brutal fighters who strike without mercy. </specific>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_713, ID_FMP_RACIAL_TRAIT_712, ID_FMP_RACIAL_TRAIT_413 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_GNOLL" type="Grants" />
-      <statadd name="Speed" value="+7" />
-      <textstring name="Average Height" value="7'0&quot;-7'6&quot;" />
-      <textstring name="Average Weight" value="280-320 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Strength|Constitution" />
+      <grant name="ID_INTERNAL_GRANTS_GNOLL" type="Grants"/>
+      <statadd name="Speed" value="+7"/>
+      <textstring name="Average Height" value="7'0&quot;-7'6&quot;"/>
+      <textstring name="Average Weight" value="280-320 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Strength|Constitution"/>
     </rules>
 
 Play a Gnoll if you want ...
@@ -46,16 +46,16 @@ Play a Gnoll if you want ...
   <RulesElement name="Gnoll" type="Grants" internal-id="ID_INTERNAL_GRANTS_GNOLL" source="Dragon Magazine 367">
     <specific name="_SupportsID"> ID_FMP_RACE_19 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_713" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_712" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_413" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_7" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_713" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_712" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_413" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_7" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
 </D20Rules>

@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
 		<Version>1.13</Version>
 		<Filename>24-sorcerer.part</Filename>
-		<PartAddress>https://vorpald20.com/cbloader/24-sorcerer.part</PartAddress>
-		<VersionAddress>https://vorpald20.com/cbloader/version.php?part=24-sorcerer</VersionAddress>
+		<PartAddress>https://cbloader.vorpald20.com/sorted/24-sorcerer.part</PartAddress>
+		<VersionAddress>https://cbloader.vorpald20.com/sorted/24-sorcerer.txt</VersionAddress>
 	</UpdateInfo>
 	<!-- Sorcerer -->
 	<!-- 24-sorcerer.part, version 1.13 -->
@@ -44,7 +44,7 @@
 		<specific name="Role"> Striker. You channel powerful magical energy through your body, exerting control over wild arcane magic to blast foes. You lean toward controller as a secondary role. </specific>
 		<specific name="Power Source"> Arcane. Arcane magic is in your blood, as a touch of either ancient draconic power or untamed chaos energy, and you unleash it through sheer force of will and physical discipline. </specific>
 		<specific name="Creating"> Charisma, Dexterity, and Strength are the most important ability scores for a sorcerer. You can choose any powers you like, but many sorcerers choose feats, skills, and powers to complement their Spell Source choice. </specific>
-		<specific name="Class Features" />
+		<specific name="Class Features"/>
 		<specific name="Supplemental"> SORCERER OVERVIEW
 As an arcane striker, you have a resemblance to the warlock. However, more of your powers create bursts or blasts of elemental forces to damage multiple foes, and your magic is the result of powerful arcane forces in your blood rather than the result of pacts you have made with mysterious entities. </specific>
 		<specific name="Implement"> Sorcerers wield daggers and staffs to channel their wild arcane power. When you wield a magic dagger or a magic staff, you can add its enhancement bonus to the attack rolls and the damage rolls of sorcerer powers and sorcerer paragon path powers that have the implement keyword. Without an implement, you can still use these powers.
@@ -53,22 +53,22 @@ As an arcane striker, you have a resemblance to the warlock. However, more of yo
 		<specific name="Power Name"> Spells </specific>
 		<specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
 		<specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
-		<specific name="_SecondaryPowerSourceElement" />
-		<specific name="Secondary Abilities" />
-		<specific name="Hybrid Talent Options" />
+		<specific name="_SecondaryPowerSourceElement"/>
+		<specific name="Secondary Abilities"/>
+		<specific name="Hybrid Talent Options"/>
 		<specific name="Short Description"> You channel wild, unpredictable arcane energy, harnessing the magic inherent in your blood. </specific>
-		<specific name="_ParentClass" />
-		<specific name="Trait Package" />
+		<specific name="_ParentClass"/>
+		<specific name="Trait Package"/>
 		<rules>
-			<grant name="ID_INTERNAL_GRANTS_SORCERER" type="Grants" />
-			<select type="Power" number="2" Category="$$CLASS,at-will,1" />
-			<textstring name="_CLASSNAME" value="ID_FMP_CLASS_128" />
-			<statadd name="_LEVEL-ONE-HPS" value="+12" />
-			<statadd name="_PER-LEVEL-HPS" value="+5" />
-			<statadd name="Healing Surges" value="+6" />
-			<select type="Build" number="1" Category="$$CLASS" optional="true" />
-			<statadd name="Will Defense Class Bonus" value="+2" />
-			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_128" />
+			<grant name="ID_INTERNAL_GRANTS_SORCERER" type="Grants"/>
+			<select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+			<textstring name="_CLASSNAME" value="ID_FMP_CLASS_128"/>
+			<statadd name="_LEVEL-ONE-HPS" value="+12"/>
+			<statadd name="_PER-LEVEL-HPS" value="+5"/>
+			<statadd name="Healing Surges" value="+6"/>
+			<select type="Build" number="1" Category="$$CLASS" optional="true"/>
+			<statadd name="Will Defense Class Bonus" value="+2"/>
+			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_128"/>
 		</rules>
 The sorcerer is the arcane antithesis of the wizard. Wielding raw, barely contained magical power, sorcerers channel bursts and blasts of arcane energy through their bodies. They gain their power not through rigorous study of esoteric tomes, but by harnessing magic in their blood, waiting to be tapped and shaped. If wizards wield magic as fighters wield swords, a sorcerer's magic is the arcing greataxe of a raging barbarian.
 You might be a proud dragonborn scion of ancient Arkhosia, calling on the draconic power of your heritage, or perhaps you were bathed in dragon blood as an infant to fill you with that power. You might have been born in a place where planar forces converged in strange eddies, infusing you with chaos, or perhaps you survived implantation of a slaad embryo, which left the taint of chaos upon you.
@@ -101,13 +101,13 @@ Your elementalist sorcerer requires a superior Charisma score, since all your at
 		<specific name="_ParentClass"> ID_FMP_CLASS_128 </specific>
 		<specific name="_DisplayName"> Sorcerer (Elementalist) </specific>
 		<rules>
-			<grant name="ID_INTERNAL_GRANTS_ELEMENTALIST" type="Grants" />
-			<textstring name="_CLASSNAME" value="ID_FMP_CLASS_2 (ID_FMP_CLASS_956)" />
-			<statadd name="_LEVEL-ONE-HPS" value="+12" />
-			<statadd name="_PER-LEVEL-HPS" value="+5" />
-			<statadd name="Healing Surges" value="+6" />
-			<statadd name="Will Defense Class Bonus" value="+2" />
-			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_128" />
+			<grant name="ID_INTERNAL_GRANTS_ELEMENTALIST" type="Grants"/>
+			<textstring name="_CLASSNAME" value="ID_FMP_CLASS_2 (ID_FMP_CLASS_956)"/>
+			<statadd name="_LEVEL-ONE-HPS" value="+12"/>
+			<statadd name="_PER-LEVEL-HPS" value="+5"/>
+			<statadd name="Healing Surges" value="+6"/>
+			<statadd name="Will Defense Class Bonus" value="+2"/>
+			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_128"/>
 		</rules>
 Disdaining the framework of theories of magic and sympathetic principles, elementalists seize the raw stuff of creation with simple force of will, bending the elements to their whim. Elementalist sorcerers might fashion whips or darts out of fire, create shields and armor from living rock, or inundate their enemies beneath torrents of water.
 	Since elementalists arise from very different magic-using traditions, other users of arcane power shun them. These sorcerers practice their arts in isolated monasteries, secretive cabals, and occasionally elemental cults. Often accused of being more reckless and destructive than other kinds of sorcerers, elementalists in turn sneer at spellcasters who seek to create tools and systems for shaping magic at a safe distance. To elementalists, the only right way to wield magic is to dive in headlong and seize power with both hands. Some believe that elementalists are prone to evil or that they revel in reckless destruction, but neither assertion is necessarily true. Like more conventional arcane magic, the elementalist's magic is a tool—and like any tool, it can be turned to evil ends or to good.
@@ -115,37 +115,37 @@ Disdaining the framework of theories of magic and sympathetic principles, elemen
 	<RulesElement name="Elementalist" type="Grants" internal-id="ID_INTERNAL_GRANTS_ELEMENTALIST" source="Heroes of the Elemental Chaos">
 		<specific name="_SupportsID"> ID_FMP_CLASS_956 </specific>
 		<rules>
-			<grant name="ID_FMP_ROLE_3" type="Role" />
-			<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
-			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-			<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
-			<grant name="ID_INTERNAL_GRANTS_ELEMENTALIST_IMPLEMENTS" type="Grants" />
-			<grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal" />
-			<grant name="ID_INTERNAL_COUNTSASCLASS_ELEMENTALIST" type="CountsAsClass" />
-			<grant name="ID_INTERNAL_COUNTSASCLASS_SORCERER" type="CountsAsClass" />
-			<grant name="ID_FMP_CLASS_FEATURE_4333" type="Class Feature" />
-			<grant name="ID_FMP_CLASS_FEATURE_4334" type="Class Feature" />
-			<grant name="ID_FMP_CLASS_FEATURE_4335" type="Class Feature" />
-			<grant name="ID_FMP_CLASS_FEATURE_4340" type="Class Feature" />
-			<grant name="ID_FMP_CLASS_FEATURE_4427" type="Class Feature" Level="2" />
-			<grant name="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_3" type="Class Feature" Level="3" />
-			<grant name="ID_FMP_CLASS_FEATURE_4428" type="Class Feature" Level="6" />
-			<grant name="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_7" type="Class Feature" Level="7" />
-			<grant name="ID_FMP_CLASS_FEATURE_4429" type="Class Feature" Level="10" />
-			<grant name="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_13" type="Class Feature" Level="13" />
-			<grant name="ID_FMP_CLASS_FEATURE_4430" type="Class Feature" Level="16" />
-			<grant name="ID_FMP_CLASS_FEATURE_4431" type="Class Feature" Level="22" />
-			<grant name="ID_FMP_CLASS_FEATURE_4335_1" type="Class Feature" Level="5" />
-			<grant name="ID_FMP_CLASS_FEATURE_4335_2" type="Class Feature" Level="15" />
+			<grant name="ID_FMP_ROLE_3" type="Role"/>
+			<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+			<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training"/>
+			<grant name="ID_INTERNAL_GRANTS_ELEMENTALIST_IMPLEMENTS" type="Grants"/>
+			<grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal"/>
+			<grant name="ID_INTERNAL_COUNTSASCLASS_ELEMENTALIST" type="CountsAsClass"/>
+			<grant name="ID_INTERNAL_COUNTSASCLASS_SORCERER" type="CountsAsClass"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4333" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4334" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4335" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4340" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4427" type="Class Feature" Level="2"/>
+			<grant name="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_3" type="Class Feature" Level="3"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4428" type="Class Feature" Level="6"/>
+			<grant name="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_7" type="Class Feature" Level="7"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4429" type="Class Feature" Level="10"/>
+			<grant name="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_13" type="Class Feature" Level="13"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4430" type="Class Feature" Level="16"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4431" type="Class Feature" Level="22"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4335_1" type="Class Feature" Level="5"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4335_2" type="Class Feature" Level="15"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Elementalist Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_ELEMENTALIST_IMPLEMENTS" source="Heroes of the Elemental Chaos">
 		<specific name="_SupportsID"> ID_FMP_CLASS_956 </specific>
 		<rules>
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Elementalist" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_ELEMENTALIST" source="Heroes of the Elemental Chaos">
@@ -163,7 +163,7 @@ You count as an elementalist for meeting prerequisites.
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16222 </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16222" type="Power" />
+			<grant name="ID_FMP_POWER_16222" type="Power"/>
 		</rules>
 You gain the elemental bolt power.
 	</RulesElement>
@@ -174,13 +174,13 @@ You gain the elemental bolt power.
 		<specific name="Level"> 1 </specific>
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<rules>
-			<statadd name="arcane:damage" value="+Constitution modifier" />
-			<statadd name="arcane:damage" value="+2" requires="5 level" />
-			<statadd name="arcane:damage" value="+3" requires="15 level" />
-			<statadd name="arcane:damage" value="+3" requires="25 level" />
-			<statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
-			<select type="Power" number="1" Category="$$Class,at-will" Level="9" />
-			<select type="Power" number="1" Category="$$Class,at-will" Level="19" />
+			<statadd name="arcane:damage" value="+Constitution modifier"/>
+			<statadd name="arcane:damage" value="+2" requires="5 level"/>
+			<statadd name="arcane:damage" value="+3" requires="15 level"/>
+			<statadd name="arcane:damage" value="+3" requires="25 level"/>
+			<statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy"/>
+			<select type="Power" number="1" Category="$$Class,at-will" Level="9"/>
+			<select type="Power" number="1" Category="$$Class,at-will" Level="19"/>
 		</rules>
 You gain the following benefits.
 	Elemental Power: You gain a bonus to the damage rolls of arcane powers equal to your Constitution modifier. This bonus increases to 2 + your Constitution modifier at 5th level, 5 + your Constitution modifier at 15th level, and 8 + your Constitution modifier at 25th level.
@@ -209,10 +209,10 @@ Choose an elemental specialty. You gain the benefits of that specialty.
 		<specific name="Type"> At-Will </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Lightning" />
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Air Elementalist" value="The attack deals lightning damage. On a hit, the target gains vulnerable 3 to your elemental attacks until the end of your next turn." />
-			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_HOWLING_ZEPHYR|ID_INTERNAL_CLASS_FEATURE_STATIC_CHARGE" />
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4336" Level="25" />
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Lightning"/>
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Air Elementalist" value="The attack deals lightning damage. On a hit, the target gains vulnerable 3 to your elemental attacks until the end of your next turn."/>
+			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_HOWLING_ZEPHYR|ID_INTERNAL_CLASS_FEATURE_STATIC_CHARGE"/>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4336" Level="25"/>
 		</rules>
 You gain the following features.
 	Attack Power: You gain either the howling zephyr or the static charge power.
@@ -230,10 +230,10 @@ You gain the following features.
 		<specific name="Type"> At-Will </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Acid" />
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Acid"/>
 			<modify name="ID_FMP_POWER_16222" type="Power" Field="Earth Elementalist" value="The attack deals acid damage. On a hit, the target is slowed until the end of your next turn."/>
-			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_ERUPTING_EARTH|ID_INTERNAL_CLASS_FEATURE_SEISMIC_SHOCK" />
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4337" Level="25" />
+			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_ERUPTING_EARTH|ID_INTERNAL_CLASS_FEATURE_SEISMIC_SHOCK"/>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4337" Level="25"/>
 		</rules>
 You gain the following features.
 	Attack Power: You gain either the erupting earth or the seismic shock power.
@@ -251,12 +251,12 @@ You gain the following features.
 		<specific name="Type"> At-Will </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Fire" />
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Fire Elementalist" value="The attack deals fire damage, and the damage increases by 1d6." />
-			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_BLAZING_CLOUD|ID_INTERNAL_CLASS_FEATURE_IGNITION" />
-			<statadd name="attack" value="+1" type="power" />
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4338" Level="25" />
-			<textstring name="Elemental Bolt:damage" value="+1d6" />
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Fire"/>
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Fire Elementalist" value="The attack deals fire damage, and the damage increases by 1d6."/>
+			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_BLAZING_CLOUD|ID_INTERNAL_CLASS_FEATURE_IGNITION"/>
+			<statadd name="attack" value="+1" type="power"/>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4338" Level="25"/>
+			<textstring name="Elemental Bolt:damage" value="+1d6"/>
 		</rules>
 You gain the following features.
 	Attack Power: You gain either the blazing cloud or the ignition power.
@@ -274,10 +274,10 @@ You gain the following features.
 		<specific name="Type"> At-Will </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Cold" />
-			<modify name="ID_FMP_POWER_16222" type="Power" Field="Water Elementalist" value="The attack deals cold damage. On a hit, you can slide each creature adjacent to its target 1 square." />
-			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_DELUGE|ID_INTERNAL_CLASS_FEATURE_ICE_PRISON" />
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4339" Level="25" />
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Keywords" value="Arcane, Elemental, Implement, Cold"/>
+			<modify name="ID_FMP_POWER_16222" type="Power" Field="Water Elementalist" value="The attack deals cold damage. On a hit, you can slide each creature adjacent to its target 1 square."/>
+			<select name="Elemental Specialty" type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_DELUGE|ID_INTERNAL_CLASS_FEATURE_ICE_PRISON"/>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4339" Level="25"/>
 		</rules>
 You gain the following features.
 	Attack Power: You gain either the deluge or the ice prison power.
@@ -289,7 +289,7 @@ You gain the following features.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16231 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant type="Power" name="ID_FMP_POWER_16231" />
+			<grant type="Power" name="ID_FMP_POWER_16231"/>
 		</rules>
 You gain the Howling Zephyr power.
 	</RulesElement>
@@ -297,7 +297,7 @@ You gain the Howling Zephyr power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16235 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16235" type="Power" />
+			<grant name="ID_FMP_POWER_16235" type="Power"/>
 		</rules>
 You gain the Static Charge power.
 	</RulesElement>
@@ -305,7 +305,7 @@ You gain the Static Charge power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16230 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16230" type="Power" />
+			<grant name="ID_FMP_POWER_16230" type="Power"/>
 		</rules>
 You gain the Erupting Earth power.
 	</RulesElement>
@@ -313,7 +313,7 @@ You gain the Erupting Earth power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16234 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16234" type="Power" />
+			<grant name="ID_FMP_POWER_16234" type="Power"/>
 		</rules>
 You gain the Seismic Shock power.
 	</RulesElement>
@@ -321,7 +321,7 @@ You gain the Seismic Shock power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16228 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16228" type="Power" />
+			<grant name="ID_FMP_POWER_16228" type="Power"/>
 		</rules>
 You gain the Blazing Cloud power.
 	</RulesElement>
@@ -329,7 +329,7 @@ You gain the Blazing Cloud power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16233 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16233" type="Power" />
+			<grant name="ID_FMP_POWER_16233" type="Power"/>
 		</rules>
 You gain the Ignition power.
 	</RulesElement>
@@ -337,7 +337,7 @@ You gain the Ignition power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16229 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16229" type="Power" />
+			<grant name="ID_FMP_POWER_16229" type="Power"/>
 		</rules>
 You gain the Deluge power.
 	</RulesElement>
@@ -345,26 +345,26 @@ You gain the Deluge power.
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16232 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16232" type="Power" />
+			<grant name="ID_FMP_POWER_16232" type="Power"/>
 		</rules>
 You gain the Ice Prison power.
 	</RulesElement>
 	<RulesElement name="Elemental Specialty (resist)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4335_1" source="Heroes of the Elemental Chaos">
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<statadd name="resist:lightning" value="+10" requires="ID_FMP_CLASS_FEATURE_4336" type="resist" />
-			<statadd name="resist:acid" value="+10" requires="ID_FMP_CLASS_FEATURE_4337" type="resist" />
-			<statadd name="resist:fire" value="+10" requires="ID_FMP_CLASS_FEATURE_4338" type="resist" />
-			<statadd name="resist:cold" value="+10" requires="ID_FMP_CLASS_FEATURE_4339" type="resist" />
+			<statadd name="resist:lightning" value="+10" requires="ID_FMP_CLASS_FEATURE_4336" type="resist"/>
+			<statadd name="resist:acid" value="+10" requires="ID_FMP_CLASS_FEATURE_4337" type="resist"/>
+			<statadd name="resist:fire" value="+10" requires="ID_FMP_CLASS_FEATURE_4338" type="resist"/>
+			<statadd name="resist:cold" value="+10" requires="ID_FMP_CLASS_FEATURE_4339" type="resist"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Elemental Specialty (saves)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4335_2" source="Heroes of the Elemental Chaos">
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<statadd name="Saving Throws" value="+2" condition="against ongoing lightning damage" requires="ID_FMP_CLASS_FEATURE_4336" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing acid damage" requires="ID_FMP_CLASS_FEATURE_4337" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing fire damage" requires="ID_FMP_CLASS_FEATURE_4338" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing cold damage" requires="ID_FMP_CLASS_FEATURE_4339" />
+			<statadd name="Saving Throws" value="+2" condition="against ongoing lightning damage" requires="ID_FMP_CLASS_FEATURE_4336"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing acid damage" requires="ID_FMP_CLASS_FEATURE_4337"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing fire damage" requires="ID_FMP_CLASS_FEATURE_4338"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing cold damage" requires="ID_FMP_CLASS_FEATURE_4339"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Air Elementalist (Cold)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_AIR_ELEMENTALIST_(COLD)" source="Heroes of the Elemental Chaos">
@@ -373,8 +373,8 @@ You gain the Ice Prison power.
 		<specific name="Short Description"> Gain resist Cold 10 and +2 to saving throws against ongoing Cold damage. </specific>
 		<specific name="_DisplayName"> Cold </specific>
 		<rules>
-			<statadd name="resist:cold" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing cold damage" />
+			<statadd name="resist:cold" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing cold damage"/>
 		</rules>
 You gain resist 10 Cold. You gain a +2 bonus to saving throws against Cold ongoing damage.
 	</RulesElement>
@@ -384,8 +384,8 @@ You gain resist 10 Cold. You gain a +2 bonus to saving throws against Cold ongoi
 		<specific name="Short Description"> Gain resist thunder 10 and +2 to saving throws against ongoing thunder damage. </specific>
 		<specific name="_DisplayName"> Thunder </specific>
 		<rules>
-			<statadd name="resist:thunder" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage" />
+			<statadd name="resist:thunder" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage"/>
 		</rules>
 You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder ongoing damage.
 	</RulesElement>
@@ -395,8 +395,8 @@ You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder
 		<specific name="Short Description"> Gain resist Fire 10 and +2 to saving throws against ongoing Fire damage. </specific>
 		<specific name="_DisplayName"> Fire </specific>
 		<rules>
-			<statadd name="resist:fire" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing fire damage" />
+			<statadd name="resist:fire" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing fire damage"/>
 		</rules>
 You gain resist 10 Fire. You gain a +2 bonus to saving throws against Fire ongoing damage.
 	</RulesElement>
@@ -406,8 +406,8 @@ You gain resist 10 Fire. You gain a +2 bonus to saving throws against Fire ongoi
 		<specific name="Short Description"> Gain resist thunder 10 and +2 to saving throws against ongoing thunder damage. </specific>
 		<specific name="_DisplayName"> Thunder </specific>
 		<rules>
-			<statadd name="resist:thunder" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage" />
+			<statadd name="resist:thunder" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage"/>
 		</rules>
 You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder ongoing damage.
 	</RulesElement>
@@ -417,8 +417,8 @@ You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder
 		<specific name="Short Description"> Gain resist Lightning 10 and +2 to saving throws against ongoing Lightning damage. </specific>
 		<specific name="_DisplayName"> Lightning </specific>
 		<rules>
-			<statadd name="resist:lightning" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing lightning damage" />
+			<statadd name="resist:lightning" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing lightning damage"/>
 		</rules>
 You gain resist 10 Lightning. You gain a +2 bonus to saving throws against Lightning ongoing damage.
 	</RulesElement>
@@ -428,8 +428,8 @@ You gain resist 10 Lightning. You gain a +2 bonus to saving throws against Light
 		<specific name="Short Description"> Gain resist thunder 10 and +2 to saving throws against ongoing thunder damage. </specific>
 		<specific name="_DisplayName"> Thunder </specific>
 		<rules>
-			<statadd name="resist:thunder" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage" />
+			<statadd name="resist:thunder" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage"/>
 		</rules>
 You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder ongoing damage.
 	</RulesElement>
@@ -439,8 +439,8 @@ You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder
 		<specific name="Short Description"> Gain resist Acid 10 and +2 to saving throws against ongoing Acid damage. </specific>
 		<specific name="_DisplayName"> Acid </specific>
 		<rules>
-			<statadd name="resist:acid" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against acid thunder damage" />
+			<statadd name="resist:acid" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against acid thunder damage"/>
 		</rules>
 You gain resist 10 Acid. You gain a +2 bonus to saving throws against Acid ongoing damage.
 	</RulesElement>
@@ -450,8 +450,8 @@ You gain resist 10 Acid. You gain a +2 bonus to saving throws against Acid ongoi
 		<specific name="Short Description"> Gain resist thunder 10 and +2 to saving throws against ongoing thunder damage. </specific>
 		<specific name="_DisplayName"> Thunder </specific>
 		<rules>
-			<statadd name="resist:thunder" value="+10" type="resist" />
-			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage" />
+			<statadd name="resist:thunder" value="+10" type="resist"/>
+			<statadd name="Saving Throws" value="+2" condition="against ongoing thunder damage"/>
 		</rules>
 You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder ongoing damage.
 	</RulesElement>
@@ -466,10 +466,10 @@ You gain resist 10 thunder. You gain a +2 bonus to saving throws against thunder
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_DisplayPowers"> ID_FMP_POWER_16224,ID_FMP_POWER_16225,ID_FMP_POWER_16227,ID_FMP_POWER_16226 </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_16224" type="Power" requires="ID_FMP_CLASS_FEATURE_4336" />
-			<grant name="ID_FMP_POWER_16225" type="Power" requires="ID_FMP_CLASS_FEATURE_4337" />
-			<grant name="ID_FMP_POWER_16226" type="Power" requires="ID_FMP_CLASS_FEATURE_4338" />
-			<grant name="ID_FMP_POWER_16227" type="Power" requires="ID_FMP_CLASS_FEATURE_4339" />
+			<grant name="ID_FMP_POWER_16224" type="Power" requires="ID_FMP_CLASS_FEATURE_4336"/>
+			<grant name="ID_FMP_POWER_16225" type="Power" requires="ID_FMP_CLASS_FEATURE_4337"/>
+			<grant name="ID_FMP_POWER_16226" type="Power" requires="ID_FMP_CLASS_FEATURE_4338"/>
+			<grant name="ID_FMP_POWER_16227" type="Power" requires="ID_FMP_CLASS_FEATURE_4339"/>
 		</rules>
 You gain the elemental escalation power associated with your Elemental Specialty: air, earth, fire, or water.
 	At 3rd, 7th, and 13th level, you gain an additional use of the power each encounter, but you can still use the power only once per round.
@@ -484,17 +484,17 @@ You gain the elemental escalation power associated with your Elemental Specialty
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,2" />
+			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,2"/>
 		</rules>
 You gain a 2nd-level sorcerer utility power of your choice.
 	</RulesElement>
 	<RulesElement name="Lvl 3 Elemental Escalation explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_3">
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round." />
+			<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power twice per encounter, but only once per round."/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Level 6 Elementalist Utility Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4428" source="Heroes of the Elemental Chaos">
@@ -507,17 +507,17 @@ You gain a 2nd-level sorcerer utility power of your choice.
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,6" />
+			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,6"/>
 		</rules>
 You gain a 6th-level sorcerer utility power of your choice.
 	</RulesElement>
 	<RulesElement name="Lvl 7 Elemental Escalation explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_7">
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round." />
+			<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power three times per encounter, but only once per round."/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Level 10 Elementalist Utility Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4429" source="Heroes of the Elemental Chaos">
@@ -530,17 +530,17 @@ You gain a 6th-level sorcerer utility power of your choice.
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,10" />
+			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,10"/>
 		</rules>
 You gain a 10th-level sorcerer utility power of your choice.
 	</RulesElement>
 	<RulesElement name="Lvl 13 Elemental Escalation explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_ELEMENTAL_ESCALATION_13">
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." />
-			<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round." />
+			<modify name="ID_FMP_POWER_16224" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16225" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16226" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round."/>
+			<modify name="ID_FMP_POWER_16227" type="Power" Field="Special" value="You can use this power four times per encounter, but only once per round."/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Level 16 Elementalist Utility Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4430" source="Heroes of the Elemental Chaos">
@@ -553,7 +553,7 @@ You gain a 10th-level sorcerer utility power of your choice.
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,16" />
+			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,16"/>
 		</rules>
 You gain a 16th-level sorcerer utility power of your choice.
 	</RulesElement>
@@ -567,7 +567,7 @@ You gain a 16th-level sorcerer utility power of your choice.
 		<specific name="_CLASSNAME"> Elementalist </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,22" />
+			<select type="Power" number="1" Category="$$Class,ID_INTERNAL_CATEGORY_UTILITY,22"/>
 		</rules>
 You gain a 22nd-level sorcerer utility power of your choice.
 	</RulesElement>
@@ -585,7 +585,7 @@ You gain a 22nd-level sorcerer utility power of your choice.
 	Level 21: 2d12 + Charisma modifier damage. </specific>
 		<specific name="Special"> This power can be used as a ranged basic attack. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4333 </specific>
 		<specific name="_Subclasses"> ID_FMP_CLASS_956 </specific>
@@ -606,7 +606,7 @@ You gain a 22nd-level sorcerer utility power of your choice.
 	Level 27: 3d10 extra damage, and the target is also blinded until the end of your next turn. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4340 </specific>
 		<specific name="_Subclasses"> ID_FMP_CLASS_956 </specific>
@@ -626,7 +626,7 @@ You gain a 22nd-level sorcerer utility power of your choice.
 	Level 27: 3d10 extra damage, and you also gain resistance to all damage equal to one-half your level until the end of your next turn. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4340 </specific>
 		<specific name="_Subclasses"> ID_FMP_CLASS_956 </specific>
@@ -646,7 +646,7 @@ You gain a 22nd-level sorcerer utility power of your choice.
 	Level 27: 3d10 extra damage, and the attack also deals half damage on a miss. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4340 </specific>
 		<specific name="_Subclasses"> ID_FMP_CLASS_956 </specific>
@@ -666,7 +666,7 @@ You gain a 22nd-level sorcerer utility power of your choice.
 	Level 27: 3d10 extra damage, and the target also falls prone. </specific>
 		<specific name="Special"> You can use this power only once per round. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4340 </specific>
 		<specific name="_Subclasses"> ID_FMP_CLASS_956 </specific>
@@ -685,7 +685,7 @@ You gain a 22nd-level sorcerer utility power of your choice.
 	Level 21: 2d8 + Charisma modifier fire damage. </specific>
 		<specific name="Effect"> You gain a +2 power bonus to AC and Reflex until the start of your next turn. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4338 </specific>
 By concentrating your blistering flames in a sphere around yourself, you can attack numerous close-up foes at once. Better yet, this spell's effects linger, creating a ring of fire that helps to turn away incoming attacks.
@@ -703,7 +703,7 @@ By concentrating your blistering flames in a sphere around yourself, you can att
 		<specific name="Hit"> 1d8 + Charisma modifier damage, and you push the target 1 square.
 	Level 21: 2d8 + Charisma modifier damage. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4339 </specific>
 Water is the lifeblood of living creatures. It is a subtle element, one able to sustain life, dissolve solids, and scour worlds over thousands of years to create amazing terrain. It can also be used as a blunt attack when an area is suddenly flooded with it.
@@ -722,7 +722,7 @@ Water is the lifeblood of living creatures. It is a subtle element, one able to 
 	Level 21: 2d6 + Charisma modifier damage. </specific>
 		<specific name="Effect"> The area becomes difficult terrain until the end of your next turn. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4337 </specific>
 Wherever you stand, you can call up stones, pebbles, and slabs of rock, and smash your enemies from below, and perhaps pin them beneath earthy debris.
@@ -740,7 +740,7 @@ Wherever you stand, you can call up stones, pebbles, and slabs of rock, and smas
 		<specific name="Hit"> 1d8 + Charisma modifier thunder damage, and you can slide the target 1 square.
 	Level 21: 2d8 + Charisma modifier thunder damage. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4336 </specific>
 A sorcerer of the air knows how to summon screaming winds from the Elemental Chaos and send them against foes. Creatures caught in the zephyr are moved every which way.
@@ -758,7 +758,7 @@ A sorcerer of the air knows how to summon screaming winds from the Elemental Cha
 		<specific name="Hit"> 1d8 + Charisma modifier cold damage, and the target is slowed until the end of your next turn.
 	Level 21: 2d8 + Charisma modifier cold damage. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4339 </specific>
 A lethal swirl of icicles forms out of the air when you cast this spell. The icicles partially encase creatures in the area for a short time, slowing their movements.
@@ -777,7 +777,7 @@ A lethal swirl of icicles forms out of the air when you cast this spell. The ici
 	Level 21: 2d10 + Charisma modifier damage. </specific>
 		<specific name="Effect"> The burst creates a zone that lasts until the start of your next turn. Any creature that enters the zone or ends its turn there takes fire damage equal to your Constitution modifier. A creature can take this damage only once per turn. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4338 </specific>
 The fires that burn in the Elemental Chaos are so hot that they can radiate even across dimensional walls when you stoke them. When an area begins to smolder, the roar of catching fire soon follows.
@@ -795,7 +795,7 @@ The fires that burn in the Elemental Chaos are so hot that they can radiate even
 		<specific name="Hit"> 1d8 + Charisma modifier thunder damage, and the target grants combat advantage until the end of your next turn.
 	Level 21: 2d8 + Charisma modifier thunder damage. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4337 </specific>
 This spell unleashes intense vibrations all around you, shaking the ground and disorienting your foes. Even if you aren't in contact with the ground, you can channel the seismic energy through almost any medium.
@@ -813,7 +813,7 @@ This spell unleashes intense vibrations all around you, shaking the ground and d
 		<specific name="Hit"> 1d8 lightning damage, and one enemy adjacent to the target takes lightning damage equal to your Charisma modifier.
 	Level 21: 2d8 lightning damage. </specific>
 		<specific name="Class"> ID_FMP_CLASS_128 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4336 </specific>
 Lightning arcs from one conductor to another. You take advantage of that characteristic with this spell.
@@ -1156,21 +1156,21 @@ After you hit with a lightning power, until the end of your next turn, each enem
 	</RulesElement>
 	
 <!-- Storm Soul Update -->
-<RulesElement name="Storm Soul" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1562" source="Arcane Power,Player&apos;s Handbook 3" revision-date="5/17/2013 12:47:04 AM" >
+<RulesElement name="Storm Soul" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1562" source="Arcane Power,Player's Handbook 3" revision-date="5/17/2013 12:47:04 AM">
       <Category> 1 </Category>
       <specific name="Short Description"> Resist/pierce thunder and lightning. Immediate Interrupt: End your resistance for the encounter to gain +4 to all defenses until EoNT. </specific>
       <specific name="Level"> 1 </specific>
       <rules>
-         <statadd name="Storm Soul" value="+5" />
-         <statadd name="Storm Soul" value="+5" requires="Paragon Tier" />
-         <statadd name="Storm Soul" value="+5" requires="Epic Tier" />
-         <statadd name="Storm Soul" value="+Spell Source Resist" />
-         <statadd name="resist:thunder" value="+Storm Soul" type="resist" />
-         <statadd name="resist:lightning" value="+Storm Soul" type="resist" />
-         <grant name="ID_INTERNAL_COUNTSASFEATURE_STORM_MAGIC" type="CountsAsFeature" />
+         <statadd name="Storm Soul" value="+5"/>
+         <statadd name="Storm Soul" value="+5" requires="Paragon Tier"/>
+         <statadd name="Storm Soul" value="+5" requires="Epic Tier"/>
+         <statadd name="Storm Soul" value="+Spell Source Resist"/>
+         <statadd name="resist:thunder" value="+Storm Soul" type="resist"/>
+         <statadd name="resist:lightning" value="+Storm Soul" type="resist"/>
+         <grant name="ID_INTERNAL_COUNTSASFEATURE_STORM_MAGIC" type="CountsAsFeature"/>
       </rules>
 You gain resist 5 thunder and resist 5 lightning. This resistance increases to 10 at 11th level and 15 at 21st level.
-While this resistance is active, your arcane powers ignore all targets&apos; resistance to that damage type up to the value of your resistance.
+While this resistance is active, your arcane powers ignore all targets' resistance to that damage type up to the value of your resistance.
 If you are hit by an attack, you can end this resistance as an immediate interrupt to gain a +4 power bonus to all defenses until the end of your next turn. If you do so, the resistance returns after you take a short rest or an extended rest.
 </RulesElement>
 </D20Rules>

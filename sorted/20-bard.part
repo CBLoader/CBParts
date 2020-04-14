@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.16</Version>
     <Filename>20-bard.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/20-bard.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=20-bard</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/20-bard.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/20-bard.txt</VersionAddress>
   </UpdateInfo>
   <!-- Bard -->
   <!-- 20-bard.part, version 1.16 -->
@@ -47,30 +47,30 @@ The hero's war, a song." </Flavor>
     <specific name="Power Source"> Arcane. You channel magical power through words and music, studying long and hard to master the power contained in the lore and sagas of old. </specific>
     <specific name="Creating"> Your choice of ability scores, class features, and powers suggests one of two builds based on the storied virtues of cunning and valor. All bards use Charisma for their attacks. Intelligence increases the effect of tricky attacks, and Constitution is best for powers that inspire allies. </specific>
     <specific name="Class Features"> Each bard has the powers majestic word and words of friendship. </specific>
-    <specific name="Supplemental" />
+    <specific name="Supplemental"/>
     <specific name="Implement"> Bards use wands to direct and control their spells. When you wield a magic wand, you can add its enhancement bonus to the attack rolls and the damage rolls of bard powers and bard paragon path powers that have the implement keyword. Without a wand, you can still use these powers.
 	Songblades and some magic musical instruments (see Chapter 3) can be used as implements for bard powers and bard paragon path powers. Bards treasure these magic musical instruments not only for the power they offer, but for the wondrous melodies they produce in the hands of a skilled musician. </specific>
     <specific name="Powers"> Your powers are called spells, and you create them by gracefully mixing art, magic, and weapons skill. </specific>
     <specific name="Power Name"> Spells </specific>
     <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
-    <specific name="_SecondaryPowerSourceElement" />
-    <specific name="Secondary Abilities" />
-    <specific name="Hybrid Talent Options" />
+    <specific name="_SecondaryPowerSourceElement"/>
+    <specific name="Secondary Abilities"/>
+    <specific name="Hybrid Talent Options"/>
     <specific name="Short Description"> You channel your arcane prowess through an artistic medium, using your power to warp reality. </specific>
-    <specific name="_ParentClass" />
-    <specific name="Trait Package" />
+    <specific name="_ParentClass"/>
+    <specific name="Trait Package"/>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_BARD" type="Grants" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_104" />
-      <statadd name="_LEVEL-ONE-HPS" value="+12" />
-      <statadd name="_PER-LEVEL-HPS" value="+5" />
-      <statadd name="Healing Surges" value="+7" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Reflex Defense Class Bonus" value="+1" />
-      <statadd name="Will Defense Class Bonus" value="+1" />
-      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_104" />
+      <grant name="ID_INTERNAL_GRANTS_BARD" type="Grants"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_104"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+      <statadd name="_PER-LEVEL-HPS" value="+5"/>
+      <statadd name="Healing Surges" value="+7"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Reflex Defense Class Bonus" value="+1"/>
+      <statadd name="Will Defense Class Bonus" value="+1"/>
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_104"/>
     </rules>
 Bards are artists first and foremost, and they practice magic just as they practice song, drama, or poetry. They have a clear sense of how people perceive reality, so they master charm magic and some illusions. Sagas of great heroes are part of a bard's repertoire, and most bards follow the example of many fables and become skilled in a variety of fields. A bard's artistic ability, knowledge of lore, and arcane might are widely respected, particularly among the world's rulers.
 Art and magic share a sublime beauty, and, as a bard, you seek the place where the two meet. You might be a naturally talented wanderer who casts impressive spells almost instinctively, a student of a bardic college who learned ordered systems of magic and epic poetry, a warrior skald who mixes skill at arms with thundering music, a dashing performer known for putting on a good show even for your enemies, or a perfectionist who seeks the consummate formula that blends art and magic into a higher force.
@@ -82,8 +82,8 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
 <RulesElement name="Bard Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD_IMPLEMENTS" source="Player's Handbook 2">
       <specific name="_SupportsID"> ID_FMP_CLASS_104 </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
-		 <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency"/>
+		 <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" type="Proficiency"/>
       </rules>
 </RulesElement>
 
@@ -93,7 +93,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
     <Flavor> An aggressive strike calls forth the spirits of fallen warriors to stand at your side. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 3 </specific>
     <specific name="Keywords"> Arcane, Aura, Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -102,7 +102,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <specific name="Attack"> Charisma vs. AC </specific>
     <specific name="Hit"> 2[W] + Charisma modifier damage. </specific>
     <specific name="Effect"> You activate an aura 2 that lasts until the end of your next turn. While in the aura, any ally gains a +1 power bonus to attack rolls and a +2 power bonus to damage rolls. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -111,7 +111,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
     <Flavor> You conjure the spirit of a Wolfstone berserker and use arcane magic to focus its wild fury against your foes. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 7 </specific>
     <specific name="Keywords"> Arcane, Cold, Conjuration, Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -120,7 +120,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <specific name="Attack"> Charisma vs. Reflex </specific>
     <specific name="Hit"> 2[W] + Charisma modifier cold damage. </specific>
     <specific name="Effect"> You conjure the spirit of a Wolfstone berserker in an unoccupied square adjacent to the target. The conjuration lasts until the end of your next turn or until you dismiss it as a free action. Any enemy that ends its turn adjacent to the berserker takes 5 cold damage, and you can slide the enemy 1 square. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -129,7 +129,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
     <Flavor> As you swing your blade, you shout lines from an ancient saga, summoning forth its heroes to lend their aid. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 17 </specific>
     <specific name="Keywords"> Arcane, Aura, Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -138,7 +138,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <specific name="Attack"> Charisma vs. AC </specific>
     <specific name="Hit"> 3[W] + Charisma modifier damage. </specific>
     <specific name="Effect"> You activate an aura 3 that lasts until the end of your next turn. While in the aura, you and your allies have a +2 power bonus to all defenses. In addition, whenever any enemy ends its turn in the aura, you can slide it up to 2 squares. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
     <specific name="Level"> 17 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -147,7 +147,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
     <Flavor> You lament the lives lost to the white wolves. So stirring is your song that it draws the howling pack from the spirit world. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Attack 23 </specific>
     <specific name="Keywords"> Arcane, Cold, Zone, Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -156,7 +156,7 @@ A steady rhythm beats in the back of your mind as you brandish your sword. Your 
     <specific name="Attack"> Charisma vs. Fortitude </specific>
     <specific name="Hit"> 2[W] + Charisma modifier cold damage and the target falls prone. </specific>
     <specific name="Effect"> The blast creates a zone that lasts until the end of your next turn. Any enemy that ends its turn in the zone takes 5 cold damage, and it is immobilized until the end of its next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
     <specific name="Level"> 23 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -189,28 +189,28 @@ A skald lacks several of the bard class features from Player's Handbook 2: Bardi
 Virtue, majestic word, and Multiclass Versatility. A skald gains new class features: Deceptive Duelist, skald's aura, and Master of Story and Song. </specific>
       <specific name="Class Features"/>	  
 	  <specific name="Skald Powers"> You can choose Bard powers when choosing or retraining class powers. </specific>
-      <specific name="Supplemental" />
+      <specific name="Supplemental"/>
       <specific name="Powers"> Your powers are called spells, and you create them by gracefully mixing art, magic, and weapons skill. </specific>
       <specific name="Power Name"> Spells </specific>
       <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
       <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
       <specific name="_SecondaryPowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
-      <specific name="_SecondaryPowerSourceElement" />
-      <specific name="Secondary Abilities" />
-      <specific name="Hybrid Talent Options" />
+      <specific name="_SecondaryPowerSourceElement"/>
+      <specific name="Secondary Abilities"/>
+      <specific name="Hybrid Talent Options"/>
       <specific name="Short Description"> You combine a strong tradition of martial training and expertise with arcane tricks that you pick up along the way. </specific>
       <specific name="_ParentClass"> ID_FMP_CLASS_104 </specific>
       <specific name="_DisplayName"> Bard (Skald) </specific>
       <rules>
-         <grant name="ID_INTERNAL_GRANTS_SKALD" type="Grants" />
-         <select type="Power" number="2" Category="$$Class,at-will,1" />
-         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_104 (ID_FMP_CLASS_907)" />
-         <statadd name="_LEVEL-ONE-HPS" value="+12" />
-         <statadd name="_PER-LEVEL-HPS" value="+5" />
-         <statadd name="Healing Surges" value="+7" />
-         <statadd name="Reflex Defense Class Bonus" value="+1" />
-         <statadd name="Will Defense Class Bonus" value="+1" />
-         <select type="Skill Training" number="4" Category="ID_FMP_CLASS_104" />
+         <grant name="ID_INTERNAL_GRANTS_SKALD" type="Grants"/>
+         <select type="Power" number="2" Category="$$Class,at-will,1"/>
+         <textstring name="_CLASSNAME" value="ID_FMP_CLASS_104 (ID_FMP_CLASS_907)"/>
+         <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+         <statadd name="_PER-LEVEL-HPS" value="+5"/>
+         <statadd name="Healing Surges" value="+7"/>
+         <statadd name="Reflex Defense Class Bonus" value="+1"/>
+         <statadd name="Will Defense Class Bonus" value="+1"/>
+         <select type="Skill Training" number="4" Category="ID_FMP_CLASS_104"/>
 	  </rules>
 Those who live on the fringes of civilization, or who come from places where civilization is nothing like what the mortal races understand, rely on chroniclers and historians who maintain their history as oral tradition. These individuals, respected for their knowledge and insights, serve as the keepers of the heritage of their people. It is their responsibility to make sure that none forget the past. They are both observers and storytellers; what they see becomes the legends and tales passed on from one generation to the next. These historians are known as skalds.
 	A skald is no mere entertainer. Skalds are responsible for witnessing firsthand the great events of their time, committing those events to memory, and then passing on those tales. They learned all the tales of the previous generation as well, and theirs is a line of storytellers who pass on the entire history of their people. Skalds travel from one place to the next, acting as witnesses to the events of their time. Along the way they pick up new stories and bits of magic and other tricks that add to their mystique.
@@ -221,49 +221,49 @@ Those who live on the fringes of civilization, or who come from places where civ
 <RulesElement name="Skald" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD" source="Heroes of the Feywild">
 	<specific name="_SupportsID"> ID_FMP_CLASS_907 </specific>
 	<rules>
-		<grant name="ID_INTERNAL_COUNTSASCLASS_BARD" type="CountsAsClass" />
-		<grant name="ID_FMP_ROLE_2" type="Role" />
-		<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
-		<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source" />
-		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency" />
-		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
-		<grant name="ID_INTERNAL_GRANTS_SKALD_IMPLEMENTS" type="Grants" />
-		<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
+		<grant name="ID_INTERNAL_COUNTSASCLASS_BARD" type="CountsAsClass"/>
+		<grant name="ID_FMP_ROLE_2" type="Role"/>
+		<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source"/>
+		<grant name="ID_FMP_POWER_SOURCE_2" type="Power Source"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_RANGED" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency"/>
+		<grant name="ID_INTERNAL_GRANTS_SKALD_IMPLEMENTS" type="Grants"/>
+		<grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training"/>
 		<grant name="ID_INTERNAL_NO_LV15_DAILY_POWER" type="Internal"/>
 		<grant name="ID_INTERNAL_NO_LV19_DAILY_POWER" type="Internal"/>
 		<grant name="ID_INTERNAL_NO_LV25_DAILY_POWER" type="Internal"/>
 		<grant name="ID_INTERNAL_NO_LV29_DAILY_POWER" type="Internal"/>
-		<grant name="ID_FMP_CLASS_FEATURE_698" type="Class Feature" />
-		<grant name="ID_FMP_CLASS_FEATURE_699" type="Class Feature" />
-		<grant name="ID_FMP_CLASS_FEATURE_1120" type="Class Feature" />		 
-		<grant name="ID_FMP_CLASS_FEATURE_4135" type="Class Feature" />	
-		<grant name="ID_FMP_CLASS_FEATURE_4136" type="Class Feature" />	
-		<grant name="ID_FMP_CLASS_FEATURE_4137" type="Class Feature" />		 
-		<grant name="ID_FMP_CLASS_FEATURE_SKALD_LVL5" type="Class Feature" Level="5-8" />		 
-		<grant name="ID_FMP_CLASS_FEATURE_SKALD_LVL9" type="Class Feature" Level="9" />		 
+		<grant name="ID_FMP_CLASS_FEATURE_698" type="Class Feature"/>
+		<grant name="ID_FMP_CLASS_FEATURE_699" type="Class Feature"/>
+		<grant name="ID_FMP_CLASS_FEATURE_1120" type="Class Feature"/>		 
+		<grant name="ID_FMP_CLASS_FEATURE_4135" type="Class Feature"/>	
+		<grant name="ID_FMP_CLASS_FEATURE_4136" type="Class Feature"/>	
+		<grant name="ID_FMP_CLASS_FEATURE_4137" type="Class Feature"/>		 
+		<grant name="ID_FMP_CLASS_FEATURE_SKALD_LVL5" type="Class Feature" Level="5-8"/>		 
+		<grant name="ID_FMP_CLASS_FEATURE_SKALD_LVL9" type="Class Feature" Level="9"/>		 
 	</rules>
 </RulesElement>
 
 <RulesElement name="Skald Lvl 5 Daily Explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_SKALD_LVL5" source="Heroes of the Feywild">
 	<specific name="_CS_ShortDescription"> @ </specific>
 	<rules>
-		<modify name="Master of Story and Song" type="Class Feature" Field="_CS_ShortDescription" value="Can use only two bard daily attack powers per day, and only one of a given level." />
+		<modify name="Master of Story and Song" type="Class Feature" Field="_CS_ShortDescription" value="Can use only two bard daily attack powers per day, and only one of a given level."/>
 	</rules>
 </RulesElement>
 
 <RulesElement name="Skald Lvl 9 Daily Explanation" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_SKALD_LVL9" source="Heroes of the Feywild">
 	<specific name="_CS_ShortDescription"> @ </specific>
 	<rules>
-		<modify name="Master of Story and Song" type="Class Feature" Field="_CS_ShortDescription" value="Can use only three bard daily attack powers per day, and only one of a given level." />
+		<modify name="Master of Story and Song" type="Class Feature" Field="_CS_ShortDescription" value="Can use only three bard daily attack powers per day, and only one of a given level."/>
 	</rules>
 </RulesElement>
 
@@ -277,8 +277,8 @@ You count as a skald for meeting prerequisites.
 <RulesElement name="Skald Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD_IMPLEMENTS" source="Heroes of the Feywild">
     <specific name="_SupportsID"> ID_FMP_CLASS_907 </specific>
 		<rules>
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" type="Proficiency" />
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(INSTRUMENT)" type="Proficiency"/>
 		</rules>
 </RulesElement>
 
@@ -290,9 +290,9 @@ You count as a skald for meeting prerequisites.
 	  <specific name="_PARSED_SUB_FEATURES"/>
 	  <specific name="_DisplayPowers"/>
 		<rules>
-			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Strength or Charisma vs. AC" />
-			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Strength or Charisma modifier damage. Increase damage to 2[W] + Strength or Charisma modifier damage at 21st level." />
-			<textstring name="melee basic:key ability" value="Strength,Charisma" />
+			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Strength or Charisma vs. AC"/>
+			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Strength or Charisma modifier damage. Increase damage to 2[W] + Strength or Charisma modifier damage at 21st level."/>
+			<textstring name="melee basic:key ability" value="Strength,Charisma"/>
 		</rules>
 When you make a melee basic attack with a one-handed weapon, you can use Charisma instead of Strength for the attack roll and the damage roll.
 </RulesElement>
@@ -307,7 +307,7 @@ When you make a melee basic attack with a one-handed weapon, you can use Charism
       <specific name="Class"> ID_FMP_CLASS_104 </specific>
       <specific name="_DisplayPowers"> ID_FMP_POWER_15849 </specific>
       <rules>
-         <grant name="ID_FMP_POWER_15849" type="Power" />
+         <grant name="ID_FMP_POWER_15849" type="Power"/>
       </rules>
 You gain the Skald's Aura power.
 </RulesElement>
@@ -317,7 +317,7 @@ You gain the Skald's Aura power.
 		<Prereqs> Skald </Prereqs>
 		<Flavor> You chant, sing, or otherwise inspire your allies with your words, allowing them to draw the strength to battle on from your encouragement. </Flavor>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Bard Utility </specific>
 		<specific name="Keywords"> Aura, Healing, Martial </specific>
 		<specific name="Action Type"> Minor Action </specific>
@@ -342,7 +342,7 @@ Level 26: 6d6 additional hit points, and the healing can be used three times per
 	  <specific name="_PARSED_SUB_FEATURES"/>
 	  <specific name="_DisplayPowers"/>
       <rules>
-         <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,1" />
+         <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,1"/>
 		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,15" Level="15"/>
 		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,19" Level="19"/>
 		 <select type="Power" number="1" Category="ID_FMP_CLASS_104,daily,25" Level="25"/>
@@ -1171,9 +1171,9 @@ You can use three bard daily attack powers per day.
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4140, ID_FMP_CLASS_FEATURE_4141, ID_FMP_CLASS_FEATURE_4142, ID_FMP_CLASS_FEATURE_4143, ID_FMP_CLASS_FEATURE_4144 </specific>
 	<rules>
-		<select type="Class Feature" number="2" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" />
-		<select type="Class Feature" number="1" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" Level="13" />
-		<select type="Class Feature" number="1" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" Level="17" />
+		<select type="Class Feature" number="2" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144"/>
+		<select type="Class Feature" number="1" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" Level="13"/>
+		<select type="Class Feature" number="1" category="ID_FMP_CLASS_FEATURE_4140|ID_FMP_CLASS_FEATURE_4141|ID_FMP_CLASS_FEATURE_4142|ID_FMP_CLASS_FEATURE_4143|ID_FMP_CLASS_FEATURE_4144" Level="17"/>
 	</rules>	
 	
 At 1st level, your bard gains two Signs of Influence options of your choice. At 13th level and 17th level, you can choose an additional option.
@@ -1210,15 +1210,15 @@ Whenever you are in a village, town, or other civilized location where horses, c
 Whenever you are in a village, a town, or a city that has a public inn where bards are revered, you can use your influence (and perhaps the promise of a performance) to obtain meals and a comfortable room for you and up to seven of your allies for the duration of your stay in that location.
 </RulesElement>
 
-<AppendNodes name="Skald" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD" >
+<AppendNodes name="Skald" type="Grants" internal-id="ID_INTERNAL_GRANTS_SKALD">
 	<rules>
-		<select type="Class Feature" category="ID_FMP_CLASS_FEATURE_4139" optional="true" />
+		<select type="Class Feature" category="ID_FMP_CLASS_FEATURE_4139" optional="true"/>
 	</rules>
 </AppendNodes>
 
-<AppendNodes name="Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD" >
+<AppendNodes name="Bard" type="Grants" internal-id="ID_INTERNAL_GRANTS_BARD">
 	<rules>
-		<select type="Class Feature" category="ID_FMP_CLASS_FEATURE_4139" optional="true" />
+		<select type="Class Feature" category="ID_FMP_CLASS_FEATURE_4139" optional="true"/>
 	</rules>
 </AppendNodes>
 <!-- DSH -->

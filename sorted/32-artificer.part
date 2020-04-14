@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.05</Version>
     <Filename>32-artificer.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/32-artificer.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=32-artificer</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/32-artificer.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/32-artificer.txt</VersionAddress>
   </UpdateInfo>
   <!-- Artificer -->
   <!-- 32-artificer.part, version 1.05 -->
@@ -47,23 +47,23 @@ Some artificer powers have the weapon keyword and often require a  ranged weapon
     <specific name="Power Name"> Spells </specific>
     <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
-    <specific name="_SecondaryPowerSourceElement" />
-    <specific name="Secondary Abilities" />
-    <specific name="Hybrid Talent Options" />
+    <specific name="_SecondaryPowerSourceElement"/>
+    <specific name="Secondary Abilities"/>
+    <specific name="Hybrid Talent Options"/>
     <specific name="Short Description"> You use magical formulae to channel energy into items, assembling a device for any situation. </specific>
-    <specific name="_ParentClass" />
-    <specific name="Trait Package" />
+    <specific name="_ParentClass"/>
+    <specific name="Trait Package"/>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_ARTIFICER" type="Grants" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_125" />
-      <statadd name="_LEVEL-ONE-HPS" value="+12" />
-      <statadd name="_PER-LEVEL-HPS" value="+5" />
-      <statadd name="Healing Surges" value="+6" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Fortitude Defense Class Bonus" value="+1" />
-      <statadd name="Will Defense Class Bonus" value="+1" />
-      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_125" />
+      <grant name="ID_INTERNAL_GRANTS_ARTIFICER" type="Grants"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_125"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+      <statadd name="_PER-LEVEL-HPS" value="+5"/>
+      <statadd name="Healing Surges" value="+6"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Fortitude Defense Class Bonus" value="+1"/>
+      <statadd name="Will Defense Class Bonus" value="+1"/>
+      <select type="Skill Training" number="4" Category="ID_FMP_CLASS_125"/>
     </rules>
 Artificers treat mastery of magic like a technical skill. They see patterns in energy and matter, and they understand how to manipulate the flow of magic in and around objects and creatures. Artificers channel energy into items using magical components, diagrams, and complex chains of sigils. Their skills let them assemble a magic device for any situation. 
 

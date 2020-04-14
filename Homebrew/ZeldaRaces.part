@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>ZeldaRaces.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/ZeldaRaces.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/ZeldaRaces.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/ZeldaRaces.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/ZeldaRaces.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Christo's Zelda Races" type="source" internal-id="ID_FMP_SOURCE_Christo's Zelda Races" source="Core">
     <specific name="IsBeta"> 0 </specific>
@@ -14,45 +14,45 @@
   <RulesElement name="Hyrulean" type="Language" internal-id="ID_MSR_LANGUAGE_HYRULEAN" source="Christo's Zelda Races" revision-date="8/30/2010 3:41:50 PM">
     <Category> ID_INTERNAL_CATEGORY_ZELDA </Category>
     <rules>
-      <statadd name="Language Count" value="+1" />
+      <statadd name="Language Count" value="+1"/>
     </rules>
 The Hyrulean Language is the main language that is used throughout the Legend of Zelda series. The language is spoken within the lands of Hyrule, Termina, Holodrum, Labrynna, and almost all other surrounding regions, although some other languages such as Sky Writing and the Language of the Minish are also used by other races.
    </RulesElement>
   <RulesElement name="Goron" type="Language" internal-id="ID_MSR_LANGUAGE_GORON" source="Christo's Zelda Races" revision-date="8/30/2010 3:41:50 PM">
     <Category> ID_INTERNAL_CATEGORY_ZELDA </Category>
     <rules>
-      <statadd name="Language Count" value="+1" />
+      <statadd name="Language Count" value="+1"/>
     </rules>
 The Language of the Goron people, usually grunts and arm gestures.
    </RulesElement>
   <RulesElement name="Lost" type="Language" internal-id="ID_MSR_LANGUAGE_LOST" source="Christo's Zelda Races" revision-date="8/30/2010 3:41:50 PM">
     <Category> ID_INTERNAL_CATEGORY_ZELDA </Category>
     <rules>
-      <statadd name="Language Count" value="+1" />
+      <statadd name="Language Count" value="+1"/>
     </rules>
 The Language of the people of the Lost Woods.
    </RulesElement>
   <RulesElement name="Zoran" type="Language" internal-id="ID_MSR_LANGUAGE_ZORAN" source="Christo's Zelda Races" revision-date="8/30/2010 3:41:50 PM">
     <Category> ID_INTERNAL_CATEGORY_ZELDA </Category>
     <rules>
-      <statadd name="Language Count" value="+1" />
+      <statadd name="Language Count" value="+1"/>
     </rules>
 The Language of the people of the Lost Woods.
    </RulesElement>
   <RulesElement name="Gerudo" type="Language" internal-id="ID_MSR_LANGUAGE_GERUDO" source="Christo's Zelda Races" revision-date="8/30/2010 3:41:50 PM">
     <Category> ID_INTERNAL_CATEGORY_ZELDA </Category>
     <rules>
-      <statadd name="Language Count" value="+1" />
+      <statadd name="Language Count" value="+1"/>
     </rules>
 The Language of the people of the Lost Woods.
    </RulesElement>
-  <RulesElement name="Zelda" type="Category" internal-id="ID_INTERNAL_CATEGORY_ZELDA" source="Core"></RulesElement>
+  <RulesElement name="Zelda" type="Category" internal-id="ID_INTERNAL_CATEGORY_ZELDA" source="Core"/>
   <RulesElement name="Goron" type="Race" internal-id="ID_MSR_RACE_9999" source="Christo's Zelda Races">
     <Prereqs> ~GORON </Prereqs>
     <Flavor> I am one of the Gorons, the stone-eating people who live on Death Mountain </Flavor>
     <specific name="Size"> Medium </specific>
     <specific name="Speed"> 5 squares </specific>
-    <specific name="Characteristics" />
+    <specific name="Characteristics"/>
     <specific name="Physical Qualities"> Gorons are physically intimidating, as their height and sheer size are almost double that of an average human, at least in some games. They are presumably silicon-based due to a strict diet of rocks and, possibly as a result, they develop rocky growths on their backs as they age. The apparent immunity to drowning shown in Twilight Princess would also stem from this, as the silicate minerals and rocks are extremely common and contain oxygen (This does not, however, explain Goron Link's weakness to water; however, it may be because Gorons must activate it somehow, which Link may not know how to do.) </specific>
     <specific name="Playing"> The Gorons are a humanoid, rock-eating race that dwell in the mountains. Despite their hulking appearance, Gorons are a relatively peaceful species. They are usually considered, perhaps superficially, to be of low intelligence, although there is no particular indication of this in the games; in fact, there is evidence to the contrary, such as their ability to industrialize ahead of all the other races in The Legend of Zelda: Twilight Princess.   </specific>
     <specific name="Vision"> Low-Light </specific>
@@ -61,17 +61,17 @@ The Language of the people of the Lost Woods.
     <specific name="Ability Scores"> +2 Constitution, +2 Strength or +2 Wisdom </specific>
     <specific name="Languages"> Hyrulean, Goron </specific>
     <specific name="Skill Bonuses"> +2 Dungeoneering, +2 Athletics </specific>
-    <specific name="Male Names" />
-    <specific name="Female Names" />
+    <specific name="Male Names"/>
+    <specific name="Female Names"/>
     <specific name="Short Description"> Simple mountain-dwelling folk, wielding immense physical might </specific>
     <specific name="Racial Traits"> ID_MSR_RACIAL_TRAIT_GORON_1, ID_MSR_RACIAL_TRAIT_GORON_2, ID_MSR_RACIAL_TRAIT_GORON_3 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_GORON" type="Grants" />
-      <statadd name="Speed" value="+5" />
-      <textstring name="Average Height" value="6' 4&quot;-6' 10&quot;" />
-      <textstring name="Average Weight" value="280-340 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+      <grant name="ID_INTERNAL_GRANTS_GORON" type="Grants"/>
+      <statadd name="Speed" value="+5"/>
+      <textstring name="Average Height" value="6' 4&quot;-6' 10&quot;"/>
+      <textstring name="Average Weight" value="280-340 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom"/>
     </rules>
 Play a goron if you want...
 •   to tower over the other races.
@@ -81,16 +81,16 @@ Play a goron if you want...
   <RulesElement name="Goron" type="Grants" internal-id="ID_INTERNAL_GRANTS_GORON" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_9999 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GORON_1" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GORON_2" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GORON_3" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language" />
-      <grant name="ID_MSR_LANGUAGE_GORON" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GORON_1" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GORON_2" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GORON_3" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language"/>
+      <grant name="ID_MSR_LANGUAGE_GORON" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Goron" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_GORON" source="Player's Handbook">
@@ -103,7 +103,7 @@ You count as a Goron for meeting prerequisites.
     <specific name="Powers"> ID_MSR_POWER_BOULDER_DASH </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_BOULDER_DASH </specific>
     <rules>
-      <grant name="ID_MSR_POWER_BOULDER_DASH" type="Power" />
+      <grant name="ID_MSR_POWER_BOULDER_DASH" type="Power"/>
     </rules>
 You have the boulder dash power.
    </RulesElement>
@@ -113,32 +113,32 @@ You have the boulder dash power.
 Your diet consists solely of nutrient-rich stones. You gain temporary hit points equal to 1 + one-half your level at the end of any short rest spent in a mountain or otherwise rocky environment.
    </RulesElement>
   <RulesElement name="Mountain Dweller" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_GORON_3" source="Christo's Zelda Races">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_MSR_RACIAL_TRAIT_499, ID_MSR_RACIAL_TRAIT_498 </specific>
     <rules>
-      <select type="Racial Trait" number="1" Category="ID_MSR_RACIAL_TRAIT_GORON_3" />
+      <select type="Racial Trait" number="1" Category="ID_MSR_RACIAL_TRAIT_GORON_3"/>
     </rules>
 You have your choice of either resist fire 5 + one-half your level or resist cold 5 + one-half your level.   </RulesElement>
   <RulesElement name="Mountain Dweller (Fire)" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_499" source="Christo's Zelda Races">
     <Category> ID_MSR_RACIAL_TRAIT_GORON_3 </Category>
     <specific name="Short Description"> You can use puppy eyes as an encounter power. </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <rules>
-      <statadd name="Mountain Dweller (Fire)" value="+HALF-LEVEL" />
-      <statadd name="Mountain Dweller (Fire)" value="+5" />
-      <statadd name="resist:fire" value="+Mountain Dweller (Fire)" type="resist" />
+      <statadd name="Mountain Dweller (Fire)" value="+HALF-LEVEL"/>
+      <statadd name="Mountain Dweller (Fire)" value="+5"/>
+      <statadd name="resist:fire" value="+Mountain Dweller (Fire)" type="resist"/>
     </rules>
 You resist fire 5 + one-half your level.
    </RulesElement>
   <RulesElement name="Mountain Dweller (Cold)" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_498" source="Christo's Zelda Races">
     <Category> ID_MSR_RACIAL_TRAIT_GORON_3 </Category>
     <specific name="Short Description"> You resist cold 5 + one-half your level. </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <rules>
-      <statadd name="Mountain Dweller (Cold)" value="+HALF-LEVEL" />
-      <statadd name="Mountain Dweller (Cold)" value="+5" />
-      <statadd name="resist:cold" value="+Mountain Dweller (Cold)" type="resist" />
+      <statadd name="Mountain Dweller (Cold)" value="+HALF-LEVEL"/>
+      <statadd name="Mountain Dweller (Cold)" value="+5"/>
+      <statadd name="resist:cold" value="+Mountain Dweller (Cold)" type="resist"/>
     </rules>
 You resist cold 5 + one-half your level.
    </RulesElement>
@@ -146,28 +146,28 @@ You resist cold 5 + one-half your level.
     <Prereqs> Goron Race, Str 13 </Prereqs>
     <print-prereqs> Goron, Str 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="two-hands:damage" value="+2" requires="Biggoron Weapon Training" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LOTULIS)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ZULAAT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGON_PAW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SWORD)" type="Proficiency" />
+      <statadd name="two-hands:damage" value="+2" requires="Biggoron Weapon Training"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BROADSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_TANGAT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SCIMITAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LOTULIS)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ZULAAT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DRAGON_PAW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TALENTA_SHARRASH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(CLAW_FIGHTER_CLAW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_SWORD)" type="Proficiency"/>
     </rules>
 You gain proficiency with all two-handed heavy blades and two-handed light blades. You also gain a +2 feat bonus to damage rolls with these weapons.
 </RulesElement>
@@ -175,49 +175,49 @@ You gain proficiency with all two-handed heavy blades and two-handed light blade
     <Prereqs> Goron Race </Prereqs>
     <print-prereqs> Goron </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When an effect knocks you prone, you may make a saving throw. On a success, you remain standing.
    </RulesElement>
   <RulesElement name="Dodongo's Bane " type="Feat" internal-id="ID_MSR_FEAT_GORON_003" source="Christo's Zelda Races">
     <Prereqs> Goron Race </Prereqs>
     <print-prereqs> Goron </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You gain a +2 feat bonus to attack when you target at least one creature of large size or bigger with an area attack.
    </RulesElement>
   <RulesElement name="Eruptive Stance" type="Feat" internal-id="ID_MSR_FEAT_GORON_004" source="Christo's Zelda Races">
     <Prereqs> Goron Race, boulder dash racial power </Prereqs>
     <print-prereqs> Goron, boulder dash racial power </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When you make an attack which ends the boulder dash stance, that attack gains a +2 feat bonus to attack rolls and a +2 feat bonus to damage rolls.
    </RulesElement>
   <RulesElement name="Mountain Settler" type="Feat" internal-id="ID_MSR_FEAT_GORON_005" source="Christo's Zelda Races">
     <Prereqs> Goron Race, Con 15 </Prereqs>
     <print-prereqs> Goron, Con 15 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Mountain Settler" value="+HALF-LEVEL" />
-      <statadd name="Mountain Settler" value="+5" />
-      <statadd name="resist:cold" value="+Mountain Settler" type="resist" requires="Mountain Dweller (Fire)" />
-      <statadd name="resist:fire" value="+Mountain Settler" type="resist" requires="Mountain Dweller (Cold)" />
+      <statadd name="Mountain Settler" value="+HALF-LEVEL"/>
+      <statadd name="Mountain Settler" value="+5"/>
+      <statadd name="resist:cold" value="+Mountain Settler" type="resist" requires="Mountain Dweller (Fire)"/>
+      <statadd name="resist:fire" value="+Mountain Settler" type="resist" requires="Mountain Dweller (Cold)"/>
     </rules> 
 	    
 You have both resist 5 fire and resist 5 cold.
@@ -227,7 +227,7 @@ You have both resist 5 fire and resist 5 cold.
     <Prereqs> !Goron Race,!Goron CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_GORON" type="CountsAsRace" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_GORON" type="CountsAsRace"/>
     </rules>
 You are considered a Goron for the purpose of meeting feat prerequisites.
    </RulesElement>
@@ -236,7 +236,7 @@ You are considered a Goron for the purpose of meeting feat prerequisites.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> You curl into a rough boulder-like shape and bowl into your enemies. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Goron Racial Power </specific>
     <specific name="Keywords"> Stance </specific>
     <specific name="Action Type"> Minor action </specific>
@@ -250,7 +250,7 @@ You are considered a Goron for the purpose of meeting feat prerequisites.
     <Flavor> Sneaky little bastards who appear more plant than person. </Flavor>
     <specific name="Size"> Small </specific>
     <specific name="Speed"> 6 squares </specific>
-    <specific name="Characteristics" />
+    <specific name="Characteristics"/>
     <specific name="Physical Qualities"> The Deku are a recurring race in the Legend of Zelda series. The Deku are a race of humanoid plant-like beings that often co-exist with other races.  </specific>
     <specific name="Playing"> The majority of the Deku race live south of Clock Town in the region of Woodfall. They have full monarchistic government ruled by a King Deku and a Princess Deku. They also have a Deku Butler and even Deku Palace Guards to patrol the area so intruders can't break in.  </specific>
     <specific name="Vision"> Normal </specific>
@@ -259,17 +259,17 @@ You are considered a Goron for the purpose of meeting feat prerequisites.
     <specific name="Ability Scores"> +2 Charisma, +2 Dexterity or +2 Constitution </specific>
     <specific name="Languages"> Hyrulean, Lost </specific>
     <specific name="Skill Bonuses"> +2 Nature, +2 Bluff </specific>
-    <specific name="Male Names" />
-    <specific name="Female Names" />
+    <specific name="Male Names"/>
+    <specific name="Female Names"/>
     <specific name="Short Description"> Sneaky little bastards who appear more plant than person. </specific>
     <specific name="Racial Traits"> ID_MSR_RACIAL_TRAIT_497, ID_MSR_RACIAL_TRAIT_496, ID_MSR_RACIAL_TRAIT_495, ID_MSR_RACIAL_TRAIT_494, ID_MSR_RACIAL_TRAIT_493 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_DEKU" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="2' 10&quot;-3' 5&quot;" />
-      <textstring name="Average Weight" value="20-35 lb." />
-      <textstring name="Size" value="Small" />
-      <select type="Race Ability Bonus" number="1" Category="Dexterity|Constitution" />
+      <grant name="ID_INTERNAL_GRANTS_DEKU" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="2' 10&quot;-3' 5&quot;"/>
+      <textstring name="Average Weight" value="20-35 lb."/>
+      <textstring name="Size" value="Small"/>
+      <select type="Race Ability Bonus" number="1" Category="Dexterity|Constitution"/>
     </rules>
 Play a deku if you want...
 •   to have one of the oddest practicalities in Hyrule.
@@ -279,25 +279,25 @@ Play a deku if you want...
   <RulesElement name="Deku" type="Grants" internal-id="ID_INTERNAL_GRANTS_DEKU" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_9998 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_MSR_RACIAL_TRAIT_497" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_496" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_495" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_494" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_493" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
-      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language" />
-      <grant name="ID_MSR_LANGUAGE_LOST" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_497" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_496" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_495" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_494" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_493" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus"/>
+      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language"/>
+      <grant name="ID_MSR_LANGUAGE_LOST" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Camouflage" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_497" source="Christo's Zelda Races">
     <specific name="Short Description"> You gain a +2 racial bonus to stealth checks made amongst plants. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Stealth Misc" value="+2" type="Racial" condition="amongst plants" />
+      <statadd name="Stealth Misc" value="+2" type="Racial" condition="amongst plants"/>
     </rules>
 You gain a +2 racial bonus to stealth checks made amongst plants.
    </RulesElement>
@@ -317,7 +317,7 @@ You can move across the surface of any still body of water as if it were normal 
     <specific name="Powers"> ID_MSR_POWER_SEED_SPIT </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_SEED_SPIT </specific>
     <rules>
-      <grant name="ID_MSR_POWER_SEED_SPIT" type="Power" />
+      <grant name="ID_MSR_POWER_SEED_SPIT" type="Power"/>
     </rules>
 You have the seed spit power.
    </RulesElement>
@@ -325,7 +325,7 @@ You have the seed spit power.
     <specific name="Short Description"> +2 AC against opportunity attacks. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="AC" value="+2" type="Racial" condition="against opportunity attacks" />
+      <statadd name="AC" value="+2" type="Racial" condition="against opportunity attacks"/>
     </rules>
 You gain a +2 racial bonus to AC against opportunity attacks.
    </RulesElement>
@@ -334,7 +334,7 @@ You gain a +2 racial bonus to AC against opportunity attacks.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> You pepper your foe with deku seeds spit from your mouth. They explode in a disorienting flash upon impact. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Deku Racial Power </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Ranged 5 </specific>
@@ -343,7 +343,7 @@ You gain a +2 racial bonus to AC against opportunity attacks.
     <specific name="Hit"> 1d4 damage and the target is blind until the end of your next turn.
 Increase to +4 bonus and 2d4 at 11th level, and to +6 and 3d4 at 21st level. </specific>
     <specific name="Special"> When you create your character, choose Charisma, Dexterity or Constitution as the ability score you use when making attack rolls with this power. This choice remains throughout your character's life and does not change the power's other effects.  </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_495 </specific>
   </RulesElement>
   <RulesElement name="Deku" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_DEKU" source="Christo's Zelda Races">
@@ -354,13 +354,13 @@ You count as a Deku for meeting prerequisites.
     <Prereqs> Deku race, Dex 13 </Prereqs>
     <print-prereqs> Deku, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Athletics checks to swim" value="+5" type="Feat" />
+      <statadd name="Athletics checks to swim" value="+5" type="Feat"/>
     </rules>
 You gain a +5 feat bonus to Athletics checks related to swimming.   
 </RulesElement>
@@ -368,13 +368,13 @@ You gain a +5 feat bonus to Athletics checks related to swimming.
     <Prereqs> Deku race, seed spit racial power, Dex 13 </Prereqs>
     <print-prereqs> Deku, seed spit racial power, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <modify name="Seed Spit" type="Power" Field="Attack Type" value="Ranged 10" />
+      <modify name="Seed Spit" type="Power" Field="Attack Type" value="Ranged 10"/>
     </rules>
 Your seed spit power has range 10/20.
    </RulesElement>
@@ -382,25 +382,25 @@ Your seed spit power has range 10/20.
     <Prereqs> Deku race </Prereqs>
     <print-prereqs> Deku </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You subtract 10 feet from the total distance fallen before determining damage after a fall.
    </RulesElement>
   <RulesElement name="Swamp-born" type="Feat" internal-id="ID_MSR_FEAT_DEKU_004" source="Christo's Zelda Races">
     <Prereqs> Deku race </Prereqs>
     <print-prereqs> Deku </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Saving Throws" value="+5" type="Feat" condition="against poison" />
-      <statadd name="resist:acid" value="5" type="resist" />
+      <statadd name="Saving Throws" value="+5" type="Feat" condition="against poison"/>
+      <statadd name="resist:acid" value="5" type="resist"/>
     </rules>
 You gain resist 5 acid and +5 feat bonus to saving throws against poison.
    </RulesElement>
@@ -408,14 +408,14 @@ You gain resist 5 acid and +5 feat bonus to saving throws against poison.
     <Prereqs> Deku race, seed spit racial power, Dex 13 </Prereqs>
     <print-prereqs> Deku, seed spit racial power, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <modify name="Seed Spit" type="Power" Field="Target" value="One or Two creatures within range." />
-      <modify name="Seed Spit" type="Power" Field="Hit" value="1d4 damage" />
+      <modify name="Seed Spit" type="Power" Field="Target" value="One or Two creatures within range."/>
+      <modify name="Seed Spit" type="Power" Field="Hit" value="1d4 damage"/>
     </rules>
 Your seed spit power can target one or two creatures within range, but no longer blinds the target on a hit.
    </RulesElement>
@@ -424,8 +424,8 @@ Your seed spit power can target one or two creatures within range, but no longer
     <Prereqs> !Deku Race,!Deku CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_DEKU" type="CountsAsRace" />
-      <grant name="ID_MSR_POWER_SEED_SPIT" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_DEKU" type="CountsAsRace"/>
+      <grant name="ID_MSR_POWER_SEED_SPIT" type="Power"/>
     </rules>
 You are considered a Deku for the purpose of meeting feat prerequisites.
    </RulesElement>
@@ -434,7 +434,7 @@ You are considered a Deku for the purpose of meeting feat prerequisites.
     <Flavor> The Zoras come from Zora's Domain in northeast Hyrule. An aquatic race, they are longtime allies of Hyrule's Royal Family. I heard that only the Royal Family of Hyrule can enter Zora's Domain... </Flavor>
     <specific name="Size"> Medium </specific>
     <specific name="Speed"> 6 squares (Swim 6) </specific>
-    <specific name="Characteristics"></specific>
+    <specific name="Characteristics"/>
     <specific name="Physical Qualities"> While still visibly humanoid in some cases, the Zoras resemble various marine creatures in their body structure. Most of them wear no clothes, but certain members of their species do wear clothing, or, as shown by the Zora guards in Twilight Princess, a helmet that completely encases their head. They are generally covered in silver scales, which give them a pale blue sheen from a distance, and they have dark blue spots on their extremities. Where humans sometimes have long hair, average Zoras have rear-hanging caudal extensions of their heads shaped like the tails of dolphins, perhaps as a cephalic form of dorsal fin. These tails undulate periodically, which gives a Zora's head the unique semblance of a fish. </specific>
     <specific name="Playing"> The Zora are a recurring race in the Legend of Zelda series. Zoras are aquatic, blue-skinned humanoid creatures that exist in Hyrule, Labrynna and Termina. They are incredibly skilled natural swimmers. The appearance of Zoras can vary greatly; some are large and round, like King Zora XVI, while others are slender and small, such as Prince Ralis. This suggests the possible existence of subspecies within the Zora race.  </specific>
     <specific name="Vision"> Low-light </specific>
@@ -443,18 +443,18 @@ You are considered a Deku for the purpose of meeting feat prerequisites.
     <specific name="Ability Scores"> +2 Wisdom, +2 Intelligence or +2 Dexterity </specific>
     <specific name="Languages"> Hyrulean, Zoran, Choice of one language </specific>
     <specific name="Skill Bonuses"> +2 Acrobatics, +2 Heal </specific>
-    <specific name="Male Names"></specific>
-    <specific name="Female Names"></specific>
-    <specific name="Short Description"></specific>
+    <specific name="Male Names"/>
+    <specific name="Female Names"/>
+    <specific name="Short Description"/>
     <specific name="Racial Traits"> ID_MSR_RACIAL_TRAIT_ZORA_1, ID_MSR_RACIAL_TRAIT_ZORA_2, ID_MSR_RACIAL_TRAIT_ZORA_3, ID_MSR_RACIAL_TRAIT_ZORA_4 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_ZORA" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 5&quot;-6'1&quot;" />
-      <textstring name="Average Weight" value="110-170 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Intelligence|Dexterity" />
-      <select type="Language" number="1" Category="Zelda" />
+      <grant name="ID_INTERNAL_GRANTS_ZORA" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 5&quot;-6'1&quot;"/>
+      <textstring name="Average Weight" value="110-170 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Dexterity"/>
+      <select type="Language" number="1" Category="Zelda"/>
     </rules>
 Play a zora if you want...
 •   to swim circles around your opponents.
@@ -464,17 +464,17 @@ Play a zora if you want...
   <RulesElement name="Zora" type="Grants" internal-id="ID_INTERNAL_GRANTS_ZORA" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_9997 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_1" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_2" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_3" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_4" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus" />
-      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language" />
-      <grant name="ID_MSR_LANGUAGE_ZORAN" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_HEAL_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_1" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_2" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_3" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_ZORA_4" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus"/>
+      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language"/>
+      <grant name="ID_MSR_LANGUAGE_ZORAN" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_HEAL_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Gilled" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_ZORA_1" source="Christo's Zelda Races">
@@ -488,7 +488,7 @@ You are considered an aquatic creature. You can breathe underwater and do not su
     <specific name="Powers"> ID_MSR_POWER_SMOOTH_SKIN </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_SMOOTH_SKIN </specific>
     <rules>
-      <grant name="ID_MSR_POWER_SMOOTH_SKIN" type="Power" />
+      <grant name="ID_MSR_POWER_SMOOTH_SKIN" type="Power"/>
     </rules>
 You have the smooth skin power.
 </RulesElement>
@@ -496,31 +496,31 @@ You have the smooth skin power.
     <Category> ID_MSR_RACIAL_TRAIT_ZORA_2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
     <Flavor> Your slick skin helps you shed that which hinders you. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Zora Racial Power </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Immediate Reaction </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> You are slowed or immobilized </specific>
     <specific name="Effect"> The triggering condition ends immediately. You gain a +2 power bonus to AC and a +2 power bonus to speed until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_ZORA_2 </specific>
   </RulesElement>
   <RulesElement name="Strong Swimmer" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_ZORA_3" source="Christo's Zelda Races">
     <specific name="Short Description"> You grant any non-zora ally within 10 squares of you a +1 racial bonus to Athletics checks and Endurance checks related to swimming. </specific>
     <specific name="Level"> 1 </specific>
-    <specific name="Powers"></specific>
-    <specific name="_DisplayPowers"></specific>
+    <specific name="Powers"/>
+    <specific name="_DisplayPowers"/>
 You grant any non-zora ally within 10 squares of you a +1 racial bonus to Athletics checks and Endurance checks related to swimming.
 </RulesElement>
   <RulesElement name="Zoran Weapon Proficiency" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_ZORA_4" source="Christo's Zelda Races">
     <specific name="Short Description"> You grant any non-zora ally within 10 squares of you a +1 racial bonus to Athletics checks and Endurance checks related to swimming. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSPEAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" type="Proficiency"/>
     </rules>		
 You gain proficiency with the longspear, javelin, spear and trident.
 </RulesElement>
@@ -528,24 +528,24 @@ You gain proficiency with the longspear, javelin, spear and trident.
     <Prereqs> Zora race </Prereqs>
     <print-prereqs> Zora </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Whenever you use a healing power on an ally or use Heal to allow an ally to spend his or her second wind, that ally can also make a saving throw.  
    </RulesElement>
   <RulesElement name="Eel Skin" type="Feat" internal-id="ID_MSR_FEAT_ZORA_002" source="Christo's Zelda Races">
     <Prereqs> Zora race, smooth skin racial power </Prereqs>
     <print-prereqs> Zora, smooth skin racial power </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <modify name="Smooth Skin" type="Power" Field="Eel Skin" value="any enemy adjacent to you at the end of your turn takes 1d6 lighting damage. The damage increases to 2d6 at 11th level and 3d6 at 21st level." />
+      <modify name="Smooth Skin" type="Power" Field="Eel Skin" value="any enemy adjacent to you at the end of your turn takes 1d6 lighting damage. The damage increases to 2d6 at 11th level and 3d6 at 21st level."/>
     </rules>
 When you use the smooth skin power, any enemy adjacent to you at the end of your turn takes 1d6 lighting damage. The damage increases to 2d6 at 11th level and 3d6 at 21st level.
    </RulesElement>
@@ -553,14 +553,14 @@ When you use the smooth skin power, any enemy adjacent to you at the end of your
     <Prereqs> Zora race, Dex 13 </Prereqs>
     <print-prereqs> Zora, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency" />
-      <statadd name="FREEBEE:ID_FMP_WEAPON_ARM_FIN" value="+1" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
+      <statadd name="FREEBEE:ID_FMP_WEAPON_ARM_FIN" value="+1"/>
     </rules>
 When you make a melee weapon attack, you can use your arm fin, which is a weapon in the light blade weapon group. This weapon has the off-hand weapon property and a +3 proficiency bonus, and it deals 1d6 damage. While you aren’t holding anything, you are considered to have this weapon in each hand. You can enchant and disenchant your fins. When you disenchant your fins, they do not turn to dust.  
    </RulesElement>
@@ -568,14 +568,14 @@ When you make a melee weapon attack, you can use your arm fin, which is a weapon
     <Prereqs> Zora race, Dex 13 </Prereqs>
     <print-prereqs> Zora, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency" />
-      <statadd name="FREEBEE:ID_FMP_WEAPON_ARM_FIN" value="+1" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
+      <statadd name="FREEBEE:ID_FMP_WEAPON_ARM_FIN" value="+1"/>
     </rules>
 When you make a ranged weapon attack, you can use your arm fin, which is a weapon in the light thrown weapon group. This weapon has the off-hand property, a +3 proficiency bonus and it deals 1d6 damage. While you aren’t holding anything, you are considered to have this weapon in each hand. You can enchant and disenchant your fins. When you disenchant your fins, they do not turn to dust. When thrown, this weapon always returns to you, even if not enchanted.     
    </RulesElement>
@@ -583,14 +583,14 @@ When you make a ranged weapon attack, you can use your arm fin, which is a weapo
     <Prereqs> Zora race </Prereqs>
     <print-prereqs> Zora </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_BALLAD_OF_THE_WIND_FISH </specific>
     <rules>
-      <replace power-replace="Ballad of the Wind Fish:utility,2+" optional="true" />
+      <replace power-replace="Ballad of the Wind Fish:utility,2+" optional="true"/>
     </rules>
 You may replace any utility power of 2rd level or higher with the ballad of the wind fish power.
    </RulesElement>
@@ -598,14 +598,14 @@ You may replace any utility power of 2rd level or higher with the ballad of the 
     <Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Your voice takes on the qualities of crashing surf, waking your allies from their reverie. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Feat Power </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close Burst 10  </specific>
     <specific name="Target"> One ally within range </specific>
     <specific name="Effect"> The target ends any dazed, stunned, dominated, or unconcious conditions affecting it. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
   </RulesElement>
   <RulesElement name="Weapon Proficiency (Arm Fin)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(ARM_FIN)" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
@@ -613,7 +613,7 @@ You may replace any utility power of 2rd level or higher with the ballad of the 
     <specific name="Short Description"> Gain proficiency with the Arm Fin. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
     </rules>
 You gain proficiency with the Arm Fin..
    </RulesElement>
@@ -622,17 +622,17 @@ You gain proficiency with the Arm Fin..
   </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Simple Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Simple One-Handed Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_SIMPLE_ONE-HANDED_MELEE">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Arm Fin" type="Weapon" internal-id="ID_FMP_WEAPON_ARM_FIN" source="Christo's Zelda Races" revision-date="8/27/2010 1:16:10 PM">
@@ -655,7 +655,7 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Range"> 5/10 </specific>
     <specific name="Damage"> 1d6 </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Simple Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>
@@ -671,8 +671,8 @@ You count as a Zora for meeting prerequisites.
     <Prereqs> !Zora Race,!Zora CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_ZORA" type="CountsAsRace" />
-      <grant name="ID_MSR_POWER_SMOOTH_SKIN" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_ZORA" type="CountsAsRace"/>
+      <grant name="ID_MSR_POWER_SMOOTH_SKIN" type="Power"/>
     </rules>
 You are considered a Zoran for the purpose of meeting feat prerequisites.
    </RulesElement>
@@ -681,7 +681,7 @@ You are considered a Zoran for the purpose of meeting feat prerequisites.
     <Flavor> Secretive race of children who have only recently dared to step outside their forest haven. </Flavor>
     <specific name="Size"> Small </specific>
     <specific name="Speed"> 6 squares </specific>
-    <specific name="Characteristics"></specific>
+    <specific name="Characteristics"/>
     <specific name="Physical Qualities"> The Kokiri are a cautious, child-like, and secretive race native to Kokiri Forest. The Kokiri believe that they will die if they leave Kokiri Forest, and therefore, they never leave the forest and know nothing about the outside world, only the safe haven that is the Kokiri Forest  </specific>
     <specific name="Playing"> The Kokiri are known as "the spirits of the forest" and were possibly created by the Great Deku Tree, they were originally Hylian children that wandered into the forest and were changed by the powers of the forest. They are well known for their distinctive and traditional green garb. </specific>
     <specific name="Vision"> Normal </specific>
@@ -690,17 +690,17 @@ You are considered a Zoran for the purpose of meeting feat prerequisites.
     <specific name="Ability Scores"> +2 Dexterity, +2 Charisma or +2 Wisdom </specific>
     <specific name="Languages"> Hyrulean </specific>
     <specific name="Skill Bonuses"> +2 Nature, +2 Insight </specific>
-    <specific name="Male Names"></specific>
-    <specific name="Female Names"></specific>
-    <specific name="Short Description"></specific>
+    <specific name="Male Names"/>
+    <specific name="Female Names"/>
+    <specific name="Short Description"/>
     <specific name="Racial Traits"> ID_MSR_RACIAL_TRAIT_KOKIRI_1, ID_MSR_RACIAL_TRAIT_KOKIRI_2 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_KOKIRI" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="3' 3&quot;-4'3&quot;" />
-      <textstring name="Average Weight" value="75-85 lb." />
-      <textstring name="Size" value="Small" />
-      <select type="Race Ability Bonus" number="1" Category="Charisma|Wisdom" />
+      <grant name="ID_INTERNAL_GRANTS_KOKIRI" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="3' 3&quot;-4'3&quot;"/>
+      <textstring name="Average Weight" value="75-85 lb."/>
+      <textstring name="Size" value="Small"/>
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Wisdom"/>
     </rules>
 Play a Kokiri if you want...
 •   to embody childlike curiosity.
@@ -710,15 +710,15 @@ Play a Kokiri if you want...
   <RulesElement name="Kokiri" type="Grants" internal-id="ID_INTERNAL_GRANTS_KOKIRI" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_423 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_MSR_RACIAL_TRAIT_KOKIRI_1" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_KOKIRI_2" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language" />
-      <grant name="ID_MSR_LANGUAGE_LOST" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_KOKIRI_1" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_KOKIRI_2" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language"/>
+      <grant name="ID_MSR_LANGUAGE_LOST" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Kokiri" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_KOKIRI" source="Christo's Zelda Races">
@@ -730,8 +730,8 @@ You count as a Kokiri for meeting prerequisites.
     <Prereqs> !Kokiri Race,!Kokiri CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_KOKIRI" type="CountsAsRace" />
-      <grant name="ID_FMP_FEAT_738" type="Feat" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_KOKIRI" type="CountsAsRace"/>
+      <grant name="ID_FMP_FEAT_738" type="Feat"/>
     </rules>
 You are considered a Kokiri for the purpose of meeting feat prerequisites.
    </RulesElement>
@@ -739,7 +739,7 @@ You are considered a Kokiri for the purpose of meeting feat prerequisites.
     <specific name="Short Description"> You have the Arcane Familiar feat and the fairy racial familiar. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant name="ID_FMP_FEAT_738" type="Feat" />
+      <grant name="ID_FMP_FEAT_738" type="Feat"/>
     </rules>
 You have the Arcane Familiar feat and the fairy racial familiar. You can take any other feats that have Arcane Familiar feat prerequisite, even if your are not of an arcane class.
    </RulesElement>
@@ -752,16 +752,16 @@ You are considered a fey creature for the purpose of effects that relate to crea
     <Prereqs> Kokiri race, arcane familiar feat </Prereqs>
     <print-prereqs> Kokiri, fairy racial familiar, arcane familiar feat </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Arcana Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active." />
-      <statadd name="Dungeoneering Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active." />
-      <statadd name="Nature Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active." />
-      <statadd name="Religion Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active." />
+      <statadd name="Arcana Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active."/>
+      <statadd name="Dungeoneering Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active."/>
+      <statadd name="Nature Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active."/>
+      <statadd name="Religion Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active."/>
     </rules>
 You gain a +3 feat bonus to monster knowledge checks while your fairy familiar is active. 
 </RulesElement>
@@ -769,35 +769,35 @@ You gain a +3 feat bonus to monster knowledge checks while your fairy familiar i
     <Prereqs> Kokiri race, Dex 13 </Prereqs>
     <print-prereqs> Kokiri, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You ignore difficult terrain as a result of trees, underbrush, plants, or natural growth. You also gain a +2 feat bonus to acrobatics checks made in forest environments. This feat does not allow you to ignore challenging or hindering terrain. 
    </RulesElement>
   <RulesElement name="Friendly Fairy  " type="Feat" internal-id="ID_MSR_FEAT_KOKIRI_3" source="Christo's Zelda Races">
     <Prereqs> Kokiri race, arcane familiar feat </Prereqs>
     <print-prereqs> Kokiri, fairy racial familiar, arcane familiar feat </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When an ally within 5 squares of you is reduced to 0 hit points, he or she may immediately spend a healing surge as per you fairy familiar's passive benefit. This counts as the "once per day" use.
    </RulesElement>
   <RulesElement name="Great Deku Tree's Boon  " type="Feat" internal-id="ID_MSR_FEAT_KOKIRI_4" source="Christo's Zelda Races">
     <Prereqs> Kokiri race, any divine class or any primal class </Prereqs>
     <print-prereqs> Kokiri, any divine class or any primal class </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Saving Throws" value="+4" type="Feat" condition="against poison and endurance checks made to resist disease" />
+      <statadd name="Saving Throws" value="+4" type="Feat" condition="against poison and endurance checks made to resist disease"/>
     </rules>
 You receive a +4 feat bonus to saving throws against poison and Endurance checks made to resist disease.
    </RulesElement>
@@ -805,11 +805,11 @@ You receive a +4 feat bonus to saving throws against poison and Endurance checks
     <Prereqs> Kokiri race </Prereqs>
     <print-prereqs> Kokiri </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You gain a +2 feat bonus to AC while adjacent to at least two enemies larger than you.
    </RulesElement>
   <RulesElement name="Fairy  " type="Familiar" internal-id="ID_MSR_FAMILIAR_FAIRY" source="Christo's Zelda Races">
@@ -821,8 +821,8 @@ You gain a +2 feat bonus to AC while adjacent to at least two enemies larger tha
     <specific name="Secondary Speed"> fly 6 (hover) </specific>
     <specific name="Tier"> Heroic Tier </specific>
     <rules>
-      <statadd name="Perception Misc" value="+2" />
-      <statadd name="Insight Misc" value="+2" />
+      <statadd name="Perception Misc" value="+2"/>
+      <statadd name="Insight Misc" value="+2"/>
     </rules>
 At birth every Kokiri receives a fairy guardian to keep them safe. These winged orbs of light act as conscience and lifetime companions.
    </RulesElement>
@@ -839,17 +839,17 @@ At birth every Kokiri receives a fairy guardian to keep them safe. These winged 
     <specific name="Ability Scores"> +2 Strength, +2 Charisma or +2 Dexterity </specific>
     <specific name="Languages"> Hyrulean, Gerudo </specific>
     <specific name="Skill Bonuses"> +2 Thievery, +2 Intimidate </specific>
-    <specific name="Male Names" />
-    <specific name="Female Names" />
+    <specific name="Male Names"/>
+    <specific name="Female Names"/>
     <specific name="Short Description"> All female band of thieves and bandits. </specific>
     <specific name="Racial Traits"> ID_MSR_RACIAL_TRAIT_GERUDO_1, ID_MSR_RACIAL_TRAIT_GERUDO_2, ID_MSR_RACIAL_TRAIT_GERUDO_3, ID_MSR_RACIAL_TRAIT_GERUDO_4 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_GERUDO" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 6&quot;-6' 0&quot;" />
-      <textstring name="Average Weight" value="120-160 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+      <grant name="ID_INTERNAL_GRANTS_GERUDO" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 6&quot;-6' 0&quot;"/>
+      <textstring name="Average Weight" value="120-160 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
     </rules>
 
 Play a gerudo if you want...
@@ -860,24 +860,24 @@ Play a gerudo if you want...
   <RulesElement name="Gerudo" type="Grants" internal-id="ID_INTERNAL_GRANTS_GERUDO" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_9995 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_1" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_2" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_3" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_4" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
-      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language" />
-      <grant name="ID_MSR_LANGUAGE_GERUDO" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_1" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_2" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_3" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_GERUDO_4" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus"/>
+      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language"/>
+      <grant name="ID_MSR_LANGUAGE_GERUDO" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Desert Conditioning" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_GERUDO_1" source="Christo's Zelda Races">
     <specific name="Short Description"> You gain a +5 bonus to endurance checks made to survive in extreme environments. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Endurance Misc" value="+2" condition="to survive in extreme environments." />
+      <statadd name="Endurance Misc" value="+2" condition="to survive in extreme environments."/>
     </rules>
 You gain a +5 bonus to endurance checks made to survive in extreme environments.
  </RulesElement>
@@ -887,7 +887,7 @@ You gain a +5 bonus to endurance checks made to survive in extreme environments.
     <specific name="Powers"> ID_MSR_POWER_EXPERT_OPPORTUNIST </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_EXPERT_OPPORTUNIST </specific>
     <rules>
-      <grant name="ID_MSR_POWER_EXPERT_OPPORTUNIST" type="Power" />
+      <grant name="ID_MSR_POWER_EXPERT_OPPORTUNIST" type="Power"/>
     </rules>
 You have the expert opportunist power.
   </RulesElement>
@@ -895,9 +895,9 @@ You have the expert opportunist power.
     <specific name="Short Description"> You gain proficiency with the kopesh, scimitar and the halberd. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(KHOPESH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" type="Proficiency"/>
     </rules>
 You gain proficiency with the kopesh, scimitar and the halberd. 
    </RulesElement>
@@ -905,7 +905,7 @@ You gain proficiency with the kopesh, scimitar and the halberd.
     <specific name="Short Description"> You gain the Mounted Combat Feat </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant name="ID_FMP_FEAT_30" type="Feat" />
+      <grant name="ID_FMP_FEAT_30" type="Feat"/>
     </rules>
 You gain the Mounted Combat feat.  
    </RulesElement>
@@ -914,14 +914,14 @@ You gain the Mounted Combat feat.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> You use a gap in your enemy's defenses to your full advantage. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Gerudo Racial Power </specific>
     <specific name="Action Type"> Free Action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Trigger"> You hit with an opportunity attack. </specific>
     <specific name="Effect"> The addatck does an extra 1d6 damage.
 Increase to 2d6 damage at 11th level, and to 3d6 damage at 21st level. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_GERUDO_2 </specific>
   </RulesElement>
   <RulesElement name="Gerudo" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_GERUDO" source="Christo's Zelda Races">
@@ -933,8 +933,8 @@ You count as a Gerudo for meeting prerequisites.
     <Prereqs> !Gerudo Race,!Gerudo CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_GERUDO" type="CountsAsRace" />
-      <grant name="ID_MSR_POWER_EXPERT_OPPORTUNIST" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_GERUDO" type="CountsAsRace"/>
+      <grant name="ID_MSR_POWER_EXPERT_OPPORTUNIST" type="Power"/>
     </rules>
 You are considered a Zoran for the purpose of meeting feat prerequisites.
    </RulesElement>
@@ -942,46 +942,46 @@ You are considered a Zoran for the purpose of meeting feat prerequisites.
     <Prereqs> Gerudo race, any martial class, Dex 13 </Prereqs>
     <print-prereqs> Gerudo, any martial class, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When you use a martial encounter power or the expert opportunist power, you may shift 1 square before and/or after the attack.
 	  </RulesElement>
   <RulesElement name="Femme Fatale" type="Feat" internal-id="ID_MSR_FEAT_GERUDO_2" source="Christo's Zelda Races">
     <Prereqs> Gerudo race, Cha 13 </Prereqs>
     <print-prereqs> Gerudo, Cha 13, female </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Male humanoid enemies have a -1 attack penalty to hit you and you have a +2 feat bonus to damage rolls against said enemies.
    </RulesElement>
   <RulesElement name="Gerudo Magic" type="Feat" internal-id="ID_MSR_FEAT_GERUDO_3" source="Christo's Zelda Races">
     <Prereqs> Gerudo race, Any arcane class </Prereqs>
     <print-prereqs> Gerudo, Any arcane class </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per encounter when you hit an enemy with an arcane attack, the target gains ongoing 5 fire damage (save ends) or ongoing 5 cold damage (save ends). The ongoing damage increases to 10 at 11th level and 15 at 21st level. 
    </RulesElement>
   <RulesElement name="Loner" type="Feat" internal-id="ID_MSR_FEAT_GERUDO_4" source="Christo's Zelda Races">
     <Prereqs> Gerudo race </Prereqs>
     <print-prereqs> Gerudo </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="attack rolls" value="+2" type="Feat" condition="while not adjacent to an ally" />
+      <statadd name="attack rolls" value="+2" type="Feat" condition="while not adjacent to an ally"/>
     </rules>
 Gain a +2 feat bonus to attack rolls while not adjacent to an ally.
    </RulesElement>
@@ -989,13 +989,13 @@ Gain a +2 feat bonus to attack rolls while not adjacent to an ally.
     <Prereqs> Gerudo race </Prereqs>
     <print-prereqs> Gerudo </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Reflex Defense" value="+1" type="Feat" condition="when in an area of low light or darker" />
+      <statadd name="Reflex Defense" value="+1" type="Feat" condition="when in an area of low light or darker"/>
     </rules>
 You receive +1 feat bonus to your Reflex defence when in an area of low light or darker.
    </RulesElement>
@@ -1004,7 +1004,7 @@ You receive +1 feat bonus to your Reflex defence when in an area of low light or
     <Flavor> The high society of Hyrule. Legend has it their pointed ears allow them to hear the god's voices. </Flavor>
     <specific name="Size"> Medium </specific>
     <specific name="Speed"> 6 squares </specific>
-    <specific name="Characteristics"></specific>
+    <specific name="Characteristics"/>
     <specific name="Physical Qualities"> The traditional Hylian dress is simple and functional. Typically, men belt leather jerkins at the waist, and women slip into straight, ankle-length gowns. Although simple of design, Hylian dresses and tunics are often embellished with brightly colored, hand-stitched borders that make them look almost festive. It has been shown in many games that women tying their hair up into a tall, skinny bun has been a consistent fashion.
 When working outside, Hylian men often wear broad-brimmed hats that protect them from sun and rain. Also, the men always wear sturdy, cuffed knee-length leather boots. For the women, artisans craft delicate golden earrings, bracelets, and necklaces. Images of Hylian legends are often included in the design. </specific>
     <specific name="Playing"> The Hylians are bound to carry out the will of the Golden Goddesses and preside over the other races of Hyrule. This is mainly the reason why the Hylians are for the most part considered superior to other races in Hyrule. Hylians are an elf-like race of people who first established an ordered civilization in Hyrule. Physically, Hylians resemble humans, in which the only difference appearance-wise are their elf-like ears. The Hylians have long, sculpted ears that supposedly enable them to hear special messages. As the chosen people, they are also given unique psychic and magical abilities. This has been demonstrated in several different ways over time. </specific>
@@ -1019,13 +1019,13 @@ When working outside, Hylian men often wear broad-brimmed hats that protect them
     <specific name="Short Description"> The chosen Race of the Gods </specific>
     <specific name="Racial Traits"> ID_MSR_RACIAL_TRAIT_HYLIAN_1, ID_MSR_RACIAL_TRAIT_HYLIAN_2, ID_MSR_RACIAL_TRAIT_HYLIAN_3 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_HYLIAN" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 0&quot;-6' 0&quot;" />
-      <textstring name="Average Weight" value="120-180 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence" />
-      <select type="Language" number="2" Category="Zelda" />
+      <grant name="ID_INTERNAL_GRANTS_HYLIAN" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 0&quot;-6' 0&quot;"/>
+      <textstring name="Average Weight" value="120-180 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence"/>
+      <select type="Language" number="2" Category="Zelda"/>
     </rules>
 
 Play a hylian if you want...
@@ -1036,15 +1036,15 @@ Play a hylian if you want...
   <RulesElement name="Hylian" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYLIAN" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_9994 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_1" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_2" type="Racial Trait" />
-      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_3" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus" />
-      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_1" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_2" type="Racial Trait"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_3" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_WISDOM" type="Race Ability Bonus"/>
+      <grant name="ID_MSR_LANGUAGE_HYRULEAN" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Divine Resistance" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_HYLIAN_1" source="Christo's Zelda Races">
@@ -1059,9 +1059,9 @@ You have resistance to necrotic damage and radiant damage equal to 5 + one-half 
     <specific name="Powers"> ID_MSR_POWER_DINS_FATE,ID_MSR_POWER_FARORE_WIND,ID_MSR_POWER_NARYU_LOVE </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_DINS_FATE,ID_MSR_POWER_FARORE_WIND,ID_MSR_POWER_NARYU_LOVE </specific>
     <rules>
-      <grant name="ID_MSR_POWER_DINS_FATE" type="Power" />
-      <grant name="ID_MSR_POWER_FARORE_WIND" type="Power" />
-      <grant name="ID_MSR_POWER_NARYU_LOVE" type="Power" />
+      <grant name="ID_MSR_POWER_DINS_FATE" type="Power"/>
+      <grant name="ID_MSR_POWER_FARORE_WIND" type="Power"/>
+      <grant name="ID_MSR_POWER_NARYU_LOVE" type="Power"/>
     </rules>
 You have the din's fire, farore's wind and nayru's love powers. You may only use one of these powers per encounter.
    </RulesElement>
@@ -1069,7 +1069,7 @@ You have the din's fire, farore's wind and nayru's love powers. You may only use
     <specific name="Short Description"> Gain training in one skill of your choice. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <select type="Skill Training" number="1" />
+      <select type="Skill Training" number="1"/>
     </rules>
 You gain training in one skill of your choice. 
    </RulesElement>
@@ -1078,7 +1078,7 @@ You gain training in one skill of your choice.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> Din's strength explodes out from your body in all directions, incinerating your enemies in a fiery blaze. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Hylian Racial Power </specific>
     <specific name="Keywords"> Fire, Radiant, Divine </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -1087,7 +1087,7 @@ You gain training in one skill of your choice.
     <specific name="Hit"> 1d4 + Wisdom modifier fire and radiant damage.
 Increase to 2d4 + Wisdom modifier damage at 11th level, and to 3d4 + Wisdom modifier damage at 21st level. </specific>
     <specific name="Special"> When you create your character, choose Wisdom, Constitution, or Intelligence as the ability score you use when making attack rolls with this power. This choice remains throughout your character's life and does not change the power's other effects. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_HYLIAN_2 </specific>
 You may only use one Hylian Racial power per encounter.
    </RulesElement>
@@ -1096,13 +1096,13 @@ You may only use one Hylian Racial power per encounter.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> Farore's courage whisks you away, vanishing into thin air and reappearing in elsewhere in an instant. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Hylian Racial Power </specific>
     <specific name="Keywords"> Divine, Teleportation </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You may teleport up to your wisdom modifier + 1 squares. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_HYLIAN_2 </specific>
 You may only use one Hylian Racial power per encounter.   
    </RulesElement>
@@ -1111,12 +1111,12 @@ You may only use one Hylian Racial power per encounter.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> Naryu's wisdom surronds you, encasing you in a crystal and shielding you from harm. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Hylian Racial Power </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> The next attack to hit you does no damage. You still suffer any other effects of the attack. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_HYLIAN_2 </specific>
 You may only use one Hylian Racial power per encounter.   
    </RulesElement>
@@ -1129,8 +1129,8 @@ You count as a Hylian for meeting prerequisites.
     <Prereqs> !Hylian Race,!Hylian CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_HYLIAN" type="CountsAsRace" />
-      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_2" type="Racial Trait" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_HYLIAN" type="CountsAsRace"/>
+      <grant name="ID_MSR_RACIAL_TRAIT_HYLIAN_2" type="Racial Trait"/>
     </rules>
 You are considered a Zoran for the purpose of meeting feat prerequisites.
    </RulesElement>
@@ -1138,13 +1138,13 @@ You are considered a Zoran for the purpose of meeting feat prerequisites.
     <Prereqs> Hylian race </Prereqs>
     <print-prereqs> Hylian </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="FREEBEE:ID_FMP_RITUAL_16" value="+1" />
+      <statadd name="FREEBEE:ID_FMP_RITUAL_16" value="+1"/>
     </rules>
 You may preform the Hand of Fate ritual at half the usual component cost, even if you do not have the ritual caster feat.
 </RulesElement>
@@ -1152,22 +1152,22 @@ You may preform the Hand of Fate ritual at half the usual component cost, even i
     <Prereqs> Hylian race, any martial class </Prereqs>
     <print-prereqs> Hylian, any martial class </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
-      <statadd name="attack rolls" value="+1" type="Feat" wearing="DUAL-WIELDING:short sword-shield" />
-      <statadd name="attack rolls" value="+1" type="Feat" wearing="DUAL-WIELDING:longsword-shield" />
-      <statadd name="attack rolls" value="+1" type="Feat" wearing="DUAL-WIELDING:bastard sword-shield" />
-      <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:short sword-shield" />
-      <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:longsword-shield" />
-      <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:bastard sword-shield" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHORT_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(LONGSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
+      <statadd name="attack rolls" value="+1" type="Feat" wearing="DUAL-WIELDING:short sword-shield"/>
+      <statadd name="attack rolls" value="+1" type="Feat" wearing="DUAL-WIELDING:longsword-shield"/>
+      <statadd name="attack rolls" value="+1" type="Feat" wearing="DUAL-WIELDING:bastard sword-shield"/>
+      <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:short sword-shield"/>
+      <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:longsword-shield"/>
+      <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:bastard sword-shield"/>
     </rules>
 You have proficiency with shortswords, longswords, bastard swords and light shields and gain a +1 feat bonus to attack rolls and a +1 feat bonus to AC when wielding a short sword, long sword or bastard sword  and using a light shield. 
    </RulesElement>
@@ -1175,33 +1175,33 @@ You have proficiency with shortswords, longswords, bastard swords and light shie
     <Prereqs> Hylian race </Prereqs>
     <print-prereqs> Hylian, din's fire racial power, farore's wind racial power, nayru's love racial power </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You may use two different hylian racial powers per encounter.
    </RulesElement>
   <RulesElement name="Royal Aura" type="Feat" internal-id="ID_MSR_FEAT_HYLIAN_4" source="Christo's Zelda Races">
     <Prereqs> Hylian race </Prereqs>
     <print-prereqs> Hylian </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 All allies adjacent to you gain resist 3 necrotic and resist 3 radiant. The resistance increases to 5 at 11th level and 10 at 21st level.  
    </RulesElement>
   <RulesElement name="Shared Healing" type="Feat" internal-id="ID_MSR_FEAT_HYLIAN_5" source="Christo's Zelda Races">
     <Prereqs> Hylian race </Prereqs>
     <print-prereqs> Hylian </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per turn, whenever you regain hit points, each ally within 3 squares of you regains hit points equal to your level.
    </RulesElement>
   <RulesElement name="The Golden Goddesses" type="Deity" internal-id="ID_MSR_DEITY_10" source="Christo's Zelda Races">
@@ -1209,9 +1209,9 @@ Once per turn, whenever you regain hit points, each ally within 3 squares of you
     <specific name="Alignment"> Good </specific>
     <specific name="Domains"> ID_FMP_DOMAIN_4, ID_FMP_DOMAIN_9, ID_FMP_DOMAIN_20 </specific>
     <rules>
-      <grant name="ID_FMP_DOMAIN_4" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_9" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_20" type="Domain" />
+      <grant name="ID_FMP_DOMAIN_4" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_9" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_20" type="Domain"/>
     </rules>
 The Golden Goddesses are a collection of three deities attributed with the creation of Hyrule. Each represents a virtue of hylian society; power, wisdom and courage. The three are usually worshiped as a group, though some tend to lean more toward the values of one goddess over the others. As a whole, the Golden Goddesses teach their followers to:
 	• Seek out balance. When power, wisdom and courage are pulled together, the impossible can be achieved.
@@ -1223,9 +1223,9 @@ The Golden Goddesses are a collection of three deities attributed with the creat
     <specific name="Alignment"> Unaligned </specific>
     <specific name="Domains"> ID_FMP_DOMAIN_24, ID_FMP_DOMAIN_8, ID_FMP_DOMAIN_26 </specific>
     <rules>
-      <grant name="ID_FMP_DOMAIN_24" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_8" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_26" type="Domain" />
+      <grant name="ID_FMP_DOMAIN_24" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_8" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_26" type="Domain"/>
     </rules>
 Din represents power. In the creation of Hyrule, she used her might to form and shape the mountains and valleys of the land out of the empty void. Din is most often worshiped by warriors and those who hold physical strength in high regard. Gorons especially feel a connection to Din because of her association with earth and fire. She encourages her worshipers to:
 	• Obtain and maintain peek physical condition.
@@ -1237,9 +1237,9 @@ Din represents power. In the creation of Hyrule, she used her might to form and 
     <specific name="Alignment"> Good </specific>
     <specific name="Domains"> ID_FMP_DOMAIN_14, ID_FMP_DOMAIN_10, ID_FMP_DOMAIN_16 </specific>
     <rules>
-      <grant name="ID_FMP_DOMAIN_14" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_10" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_16" type="Domain" />
+      <grant name="ID_FMP_DOMAIN_14" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_10" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_16" type="Domain"/>
     </rules>
 Of the three Golden Goddesses, Farore represents courage. When Din created Hyrule’s form, it was Farore who populated it with life. Most hyrulians worship her, especially farmers and those native to lost woods such as the kokiri and deku. Her teachings are these:
 	• Be honorable in all things you do.
@@ -1251,9 +1251,9 @@ Of the three Golden Goddesses, Farore represents courage. When Din created Hyrul
     <specific name="Alignment"> Lawful Good </specific>
     <specific name="Domains"> ID_FMP_DOMAIN_13, ID_FMP_DOMAIN_12, ID_FMP_DOMAIN_3 </specific>
     <rules>
-      <grant name="ID_FMP_DOMAIN_13" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_12" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_3" type="Domain" />
+      <grant name="ID_FMP_DOMAIN_13" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_12" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_3" type="Domain"/>
     </rules>
 Nayru represents the virtue of wisdom. As Farore finished spreading life throughout Hyrule, Nayru created the laws and morals to govern them. Nayru is held in high regard by scholars, nobles and the Zora. Those who are faithful should:
 	• Understand and follow the law.
@@ -1269,9 +1269,9 @@ Traditionally, the term art was used to refer to any skill or mastery. This conc
     <specific name="Alignment"> Unailgned </specific>
     <specific name="Domains"> ID_FMP_DOMAIN_21, ID_MSR_DOMAIN_1, ID_FMP_DOMAIN_20 </specific>
     <rules>
-      <grant name="ID_FMP_DOMAIN_21" type="Domain" />
-      <grant name="ID_MSR_DOMAIN_1" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_20" type="Domain" />
+      <grant name="ID_FMP_DOMAIN_21" type="Domain"/>
+      <grant name="ID_MSR_DOMAIN_1" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_20" type="Domain"/>
     </rules>
 Lord Jabu Jabu is a demigod and the protector of the zoran race. Unlike the Golden Goddesses, Jabu Jabu inhabits the mortal realm, living in Zora’s Fountain. Obviously, Jabu Jabu is almost exclusively worshiped by the zora, though a few members of other races who rely of the ocean’s bounty might also recognise him. He appears as a whale or giant fish, decorated in jewelry and other finery.
    </RulesElement>
@@ -1280,9 +1280,9 @@ Lord Jabu Jabu is a demigod and the protector of the zoran race. Unlike the Gold
     <specific name="Alignment"> Good </specific>
     <specific name="Domains"> ID_FMP_DOMAIN_14, ID_FMP_DOMAIN_11, ID_FMP_DOMAIN_20 </specific>
     <rules>
-      <grant name="ID_FMP_DOMAIN_14" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_11" type="Domain" />
-      <grant name="ID_FMP_DOMAIN_20" type="Domain" />
+      <grant name="ID_FMP_DOMAIN_14" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_11" type="Domain"/>
+      <grant name="ID_FMP_DOMAIN_20" type="Domain"/>
     </rules>
 The Great Deku Tree is a demigod and protector of the kokiri. He lives amongst them in Kokiri Forest and watches over them as they play. Most kokiri and the occasional deku revere him but for the most part the other races do not even know of his existence. He appears to be a giant tree with a masculine face embedded in it’s trunk.
    </RulesElement>

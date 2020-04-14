@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>0</Version>
     <Filename>70-lizardfolk.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/70-lizardfolk.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/70-lizardfolk.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/70-lizardfolk.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/70-lizardfolk.txt</VersionAddress>
   </UpdateInfo>
 
 <!-- Lizardfolk: One spelljamming race for the astral sea -->
@@ -43,12 +43,12 @@ Released 14-December-2011 Lizardfolk race added.
   <specific name="Skill Bonuses"> +2 Athletics, +2 Nature </specific>
   <specific name="Racial Traits"> ID_WOG_SJ_RACIAL_TRAIT_1, ID_WOG_SJ_RACIAL_TRAIT_2, ID_WOG_SJ_RACIAL_TRAIT_3, ID_WOG_SJ_RACIAL_TRAIT_4, ID_FMP_RACIAL_TRAIT_632 </specific>
   <rules>
-    <grant name="ID_INTERNAL_GRANTS_LIZARDFOLK" type="Grants" />
-    <statadd name="Speed" value="+6" />
-    <textstring name="Average Height" value="5'-7'" />
-    <textstring name="Average Weight" value="200-300 lb." />
-    <textstring name="Size" value="Medium" />
-    <select type="Race Ability Bonus" number="1" Category="Dexterity|Wisdom" />
+    <grant name="ID_INTERNAL_GRANTS_LIZARDFOLK" type="Grants"/>
+    <statadd name="Speed" value="+6"/>
+    <textstring name="Average Height" value="5'-7'"/>
+    <textstring name="Average Weight" value="200-300 lb."/>
+    <textstring name="Size" value="Medium"/>
+    <select type="Race Ability Bonus" number="1" Category="Dexterity|Wisdom"/>
   </rules>
 Play a Lizardfolk if you want ...
    </RulesElement>
@@ -57,8 +57,8 @@ Play a Lizardfolk if you want ...
   <Prereqs> ~LIZARDFOLK </Prereqs>
   <specific name="_SupportsID"> ID_FMP_BACKGROUND_88 </specific>
   <rules>
-    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
-    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
   </rules>
 You were raised like a Lizardfolk.
    </RulesElement>
@@ -71,27 +71,27 @@ You count as a Lizardfolk for meeting prerequisites.
   <Prereqs> !Lizardfolk Race,!Lizardfolk CountsAsRace </Prereqs>
   <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
   <rules>
-    <grant name="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" type="CountsAsRace" />
-    <grant name="ID_WOG_SJ_RACIAL_TRAIT_2" type="Racial Trait" />
+    <grant name="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" type="CountsAsRace"/>
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_2" type="Racial Trait"/>
   </rules>
 You are considered a Lizardfolk for the purpose of meeting feat prerequisites. You gain swamp walk.
    </RulesElement>
 <RulesElement name="Lizardfolk" type="Grants" internal-id="ID_INTERNAL_GRANTS_LIZARDFOLK" source="Spelljammer">
   <specific name="_SupportsID"> ID_WOG_SJ_RACE_1 </specific>
   <rules>
-    <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-    <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-    <grant name="ID_WOG_SJ_RACIAL_TRAIT_1" type="Racial Trait" />
-    <grant name="ID_WOG_SJ_RACIAL_TRAIT_2" type="Racial Trait" />
-    <grant name="ID_WOG_SJ_RACIAL_TRAIT_3" type="Racial Trait" />
-    <grant name="ID_WOG_SJ_RACIAL_TRAIT_4" type="Racial Trait" />
-    <grant name="ID_FMP_RACIAL_TRAIT_632" type="Racial Trait" />
-    <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
-    <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-    <grant name="ID_FMP_LANGUAGE_2" type="Language" />
-    <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
-	<grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
-    <grant name="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" type="CountsAsRace" />
+    <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+    <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_1" type="Racial Trait"/>
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_2" type="Racial Trait"/>
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_3" type="Racial Trait"/>
+    <grant name="ID_WOG_SJ_RACIAL_TRAIT_4" type="Racial Trait"/>
+    <grant name="ID_FMP_RACIAL_TRAIT_632" type="Racial Trait"/>
+    <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus"/>
+    <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+    <grant name="ID_FMP_LANGUAGE_2" type="Language"/>
+    <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait"/>
+	<grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
+    <grant name="ID_INTERNAL_COUNTSASRACE_LIZARDFOLK" type="CountsAsRace"/>
   </rules>
 </RulesElement>
 <RulesElement name="Hold Breath" type="Racial Trait" internal-id="ID_WOG_SJ_RACIAL_TRAIT_1" source="Spelljammer">
@@ -111,13 +111,13 @@ A creature that has a swim speed moves through water at that speed without havin
 </RulesElement>
 <RulesElement name="Tail Slap" type="Racial Trait" internal-id="ID_WOG_SJ_RACIAL_TRAIT_4" source="Spelljammer">
     <specific name="Short Description"> You have the tail slap encounter power. </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Powers"> ID_WOG_SJ_RACE_POWER_1 </specific>
     <specific name="Type"> Attack </specific>
     <specific name="Class"> ID_WOG_SJ_RACE_1 </specific>
     <specific name="_DisplayPowers"> ID_WOG_SJ_RACE_POWER_1 </specific>
     <rules>
-      <grant name="ID_WOG_SJ_RACE_POWER_1" type="Power" />
+      <grant name="ID_WOG_SJ_RACE_POWER_1" type="Power"/>
     </rules>
 You have the tail slap encounter power.
 </RulesElement>
@@ -136,7 +136,7 @@ Level 21: Strength + 9 vs. AC, Dexterity + 9 vs. AC, or Wisdom + 9 vs. AC </spec
 Level 11: 2d8 + Strength modifier, Dexterity modifier, or Wisdom modifier damage
 Level 21: 3d8 + Strength modifier, Dexterity modifier, or Wisdom modifier damage. </specific>
     <specific name="Class"> ID_WOG_SJ_RACE_1 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Attack </specific>
     <specific name="_ParentFeature"> ID_WOG_SJ_RACIAL_TRAIT_4 </specific>
   </RulesElement>

@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.05</Version>
     <Filename>27-battlemind.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/27-battlemind.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=27-battlemind</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/27-battlemind.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/27-battlemind.txt</VersionAddress>
   </UpdateInfo>
   <!-- Battlemind -->
   <!-- 27-battlemind.part, version 1.05 -->
@@ -25,7 +25,7 @@
   <RulesElement name="Battlemind" type="Class" internal-id="ID_FMP_CLASS_124" source="Player's Handbook 3" revision-date="9/21/2010 3:20:43 PM">
     <Flavor> “My mind is a far deadlier weapon than some ill-crafted bit of iron.” </Flavor>
     <specific name="Key Abilities"> Constitution, Wisdom, Charisma </specific>
-    <specific name="Implements" />
+    <specific name="Implements"/>
     <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale; heavy shields, light shields </specific>
     <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged </specific>
     <specific name="Bonus to Defense"> +2 Will </specific>
@@ -47,28 +47,28 @@ Characteristics: Your heavy armor allows you to take on your enemies' attacks wi
 Religion: Battleminds who live up to this class's renowned arrogance rarely pray to the gods, and stories abound of battleminds whose ill luck could be placed at the feet of their impiety. Those battleminds who do follow the gods typically revere Kord for his martial skill and strength, Bahamut for his practice of justice, or Ioun for being the originator of psionic magic.
 
 Races: Half-elves are ideal quick battleminds, channeling their natural Charisma into psionic alacrity. Goliaths' sheer physical power makes them well suited for this class, and many gnome and tiefling warriors are drawn to the guile and trickery of some battlemind powers. </specific>
-    <specific name="Implement" />
+    <specific name="Implement"/>
     <specific name="Powers"> Your powers are called disciplines; they combine your fighting ability with your mastery of psionic magic. You can plant images in a foe's mind and use psionic power to lend unmatched speed and strength to your weapon blows. </specific>
     <specific name="Power Name"> Disciplines </specific>
     <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_5 </specific>
-    <specific name="_SecondaryPowerSourceElement" />
-    <specific name="Secondary Abilities" />
-    <specific name="Hybrid Talent Options" />
+    <specific name="_SecondaryPowerSourceElement"/>
+    <specific name="Secondary Abilities"/>
+    <specific name="Hybrid Talent Options"/>
     <specific name="Short Description"> A hardy warrior, you use psionic power to transform yourself into a living weapon. </specific>
-    <specific name="_ParentClass" />
-    <specific name="Trait Package" />
+    <specific name="_ParentClass"/>
+    <specific name="Trait Package"/>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_BATTLEMIND" type="Grants" />
-      <select type="Power" name="First Augmented At-Will" number="1" Category="$$CLASS,at-will,1" />
-      <select type="Power" name="Second Augmented At-Will" number="1" Category="$$CLASS,at-will,1" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_124" />
-      <statadd name="_LEVEL-ONE-HPS" value="+15" />
-      <statadd name="_PER-LEVEL-HPS" value="+6" />
-      <statadd name="Healing Surges" value="+9" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Will Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_124" />
+      <grant name="ID_INTERNAL_GRANTS_BATTLEMIND" type="Grants"/>
+      <select type="Power" name="First Augmented At-Will" number="1" Category="$$CLASS,at-will,1"/>
+      <select type="Power" name="Second Augmented At-Will" number="1" Category="$$CLASS,at-will,1"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_124"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+15"/>
+      <statadd name="_PER-LEVEL-HPS" value="+6"/>
+      <statadd name="Healing Surges" value="+9"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Will Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_124"/>
     </rules>
 As wanderers, mercenaries, and adventurers, battleminds are carefree warriors who seek only to test their skill against the mightiest and most dangerous opponents. Battleminds possess a potent combination of psionic and physical skill, allowing them to use their magic to manipulate and deceive their foes even as their fighting skill lets them carve a swath through enemy ranks. Battleminds tend to be bold and sometimes arrogant, an attitude earned through bringing ruin to enemies over the course of many conflicts.
 
@@ -79,23 +79,23 @@ Let those who would stand against your might quiver in terror when you approach,
   <RulesElement name="Battlemind" type="Grants" internal-id="ID_INTERNAL_GRANTS_BATTLEMIND" source="Player's Handbook 3">
     <specific name="_SupportsID"> ID_FMP_CLASS_124 </specific>
     <rules>
-      <grant name="ID_INTERNAL_INTERNAL_PSIONIC_FIRST_CLASS" type="Internal" />
-      <grant name="ID_FMP_ROLE_4" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_5" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-      <grant name="ID_FMP_CLASS_FEATURE_1812" type="Class Feature" />
-      <grant name="ID_FMP_CLASS_FEATURE_764" type="Class Feature" />
-      <grant name="ID_FMP_CLASS_FEATURE_2175" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_BATTLEMIND_IMPLEMENTS" type="Grants" />
+      <grant name="ID_INTERNAL_INTERNAL_PSIONIC_FIRST_CLASS" type="Internal"/>
+      <grant name="ID_FMP_ROLE_4" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_5" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CHAINMAIL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(SCALE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1812" type="Class Feature"/>
+      <grant name="ID_FMP_CLASS_FEATURE_764" type="Class Feature"/>
+      <grant name="ID_FMP_CLASS_FEATURE_2175" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_BATTLEMIND_IMPLEMENTS" type="Grants"/>
     </rules>
   </RulesElement>
   <RulesElement name="Psionic Study" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2175" source="Player's Handbook 3" revision-date="10/14/2010 9:29:03 AM">
@@ -103,7 +103,7 @@ Let those who would stand against your might quiver in terror when you approach,
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_765, ID_FMP_CLASS_FEATURE_2353, ID_FMP_CLASS_FEATURE_2662, ID_FMP_CLASS_FEATURE_2936 </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2175" />
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2175"/>
     </rules>
 Battleminds learn to fight using their bodies as weapons. Some battleminds alter their own form to fit their needs. Other battleminds use their psionic power to predict the best position for launching an attack.
 </RulesElement>
@@ -116,7 +116,7 @@ Battleminds learn to fight using their bodies as weapons. Some battleminds alter
     <specific name="Class"> ID_FMP_CLASS_124 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_12418 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12418" type="Power" />
+      <grant name="ID_FMP_POWER_12418" type="Power"/>
     </rules>
 You gain the wildfocus power, which reflects the raw telekinetic power you wield in combat.
    </RulesElement>
@@ -126,7 +126,7 @@ You gain the wildfocus power, which reflects the raw telekinetic power you wield
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2527, ID_FMP_CLASS_FEATURE_2528, ID_FMP_CLASS_FEATURE_2663 </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2526" />
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2526"/>
     </rules>
 Battleminds learn to fight using their bodies as weapons. Some battleminds alter their own form to fit their needs. Other battleminds use their psionic power to predict the best position for launching an attack.
 Choose one of these options.
@@ -137,24 +137,24 @@ Choose one of these options.
     <specific name="Level"> 1 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_12418 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_12418" type="Power" />
+      <grant name="ID_FMP_POWER_12418" type="Power"/>
     </rules>
 You gain the wild focus power, which reflects the raw telekinetic power you wield in combat.
 </RulesElement>
   <RulesElement name="Wild Battlemind" type="Build Suggestions" internal-id="ID_INTERNAL_BUILD_SUGGESTIONS_WILD_BATTLEMIND" source="Dark Sun Campaign Setting">
     <specific name="_SupportsID"> ID_FMP_BUILD_112 </specific>
     <rules>
-      <suggest name="ID_FMP_CLASS_FEATURE_2662" type="Class Feature" />
-      <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score" />
-      <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score" />
-      <suggest name="ID_FMP_ABILITY_SCORE_5" type="Ability Score" />
-      <suggest name="ID_FMP_FEAT_178" type="Feat" />
-      <suggest name="ID_FMP_POWER_12418" type="Power" />
-      <suggest name="ID_FMP_POWER_12419" type="Power" />
-      <suggest name="ID_FMP_POWER_12420" type="Power" />
-      <suggest name="ID_FMP_SKILL_27" type="Skill" />
-      <suggest name="ID_FMP_SKILL_8" type="Skill" />
-      <suggest name="ID_FMP_SKILL_14" type="Skill" />
+      <suggest name="ID_FMP_CLASS_FEATURE_2662" type="Class Feature"/>
+      <suggest name="ID_FMP_ABILITY_SCORE_2" type="Ability Score"/>
+      <suggest name="ID_FMP_ABILITY_SCORE_6" type="Ability Score"/>
+      <suggest name="ID_FMP_ABILITY_SCORE_5" type="Ability Score"/>
+      <suggest name="ID_FMP_FEAT_178" type="Feat"/>
+      <suggest name="ID_FMP_POWER_12418" type="Power"/>
+      <suggest name="ID_FMP_POWER_12419" type="Power"/>
+      <suggest name="ID_FMP_POWER_12420" type="Power"/>
+      <suggest name="ID_FMP_SKILL_27" type="Skill"/>
+      <suggest name="ID_FMP_SKILL_8" type="Skill"/>
+      <suggest name="ID_FMP_SKILL_14" type="Skill"/>
     </rules>
   </RulesElement>
     
@@ -233,8 +233,8 @@ You gain the wild focus power, which reflects the raw telekinetic power you wiel
     <specific name="Campaign"> General </specific>
     <specific name="Associated Skills"> Endurance, History </specific>
     <rules>
-      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURACE" type="Background Association" />
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURACE" type="Background Association"/>
     </rules>
   </RulesElement>
   <!-- Battlemind Class Feature Updates -->
@@ -243,16 +243,16 @@ You gain the wild focus power, which reflects the raw telekinetic power you wiel
     <specific name="Short Description"> Mind spike slides target 3 squares + slows target until the end of its next turn </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <modify name="Mind Spike" type="Power" Field="Monolithic Vision" value="Whenever you use your mind spike power, you also pull the target of that power 3 squares. The target is then slowed until the end of its next turn." />
+      <modify name="Mind Spike" type="Power" Field="Monolithic Vision" value="Whenever you use your mind spike power, you also pull the target of that power 3 squares. The target is then slowed until the end of its next turn."/>
     </rules>
 Whenever you use your mind spike power, you also slide the target of that power 3 squares. The target is then slowed until the end of its next turn.
    </RulesElement>
    
    <!-- Errata for August 2011 -->
-   <RulesElement name="Persistent Harrier" type="Power" internal-id="ID_FMP_POWER_13024" source="Psionic Power" revision-date="9/14/2011 1:43:00 PM" >
+   <RulesElement name="Persistent Harrier" type="Power" internal-id="ID_FMP_POWER_13024" source="Psionic Power" revision-date="9/14/2011 1:43:00 PM">
       <Flavor> You slip the bonds of space to strike back at even a distant opponent. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Feature  </specific>
       <specific name="Keywords"> Psionic, Teleportation, Weapon </specific>
       <specific name="Action Type"> Immediate Reaction </specific>
@@ -263,33 +263,33 @@ Whenever you use your mind spike power, you also slide the target of that power 
       <specific name="Attack"> Constitution vs. AC </specific>
       <specific name="Hit"> 1[W] + Constitution modifier damage, and you teleport to a square adjacent to the enemy. 
 Level 21: 2[W] + Constitution modifier damage.</specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
-      <specific name="Level" />
+      <specific name="Level"/>
       <specific name="Power Type"> Feature </specific>
       <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2936 </specific>
    </RulesElement>
-   <RulesElement name="Evade Explosion" type="Power" internal-id="ID_FMP_POWER_13034" source="Psionic Power" revision-date="9/14/2011 1:44:00 PM" >
+   <RulesElement name="Evade Explosion" type="Power" internal-id="ID_FMP_POWER_13034" source="Psionic Power" revision-date="9/14/2011 1:44:00 PM">
       <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_124,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,2 </Category>
       <Flavor> A prescient vision of destruction allows you to sidestep the worst effects of an attack. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Utility 2 </specific>
       <specific name="Keywords"> Psionic </specific>
       <specific name="Action Type"> Immediate Reaction </specific>
       <specific name="Attack Type"> Personal  </specific>
       <specific name="Trigger"> A close or an area attack hits you </specific>
       <specific name="Effect"> You shift 1 square. If the shift places you outside the area of the triggering attack, you take only half damage from the attack. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
       <specific name="Level"> 2 </specific>
       <specific name="Power Type"> Utility </specific>
    </RulesElement>
-   <RulesElement name="Lodestone Lure" type="Power" internal-id="ID_FMP_POWER_13041" source="Psionic Power" revision-date="9/14/2011 1:45:00 PM" >
+   <RulesElement name="Lodestone Lure" type="Power" internal-id="ID_FMP_POWER_13041" source="Psionic Power" revision-date="9/14/2011 1:45:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_124,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
       <Flavor> As you raise your weapon, a foe lurches toward you against its will. </Flavor>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 3 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -298,12 +298,12 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <specific name="Attack"> Constitution vs. Will </specific>
       <specific name="Hit"> Constitution modifier damage, and you must pull the target 1 square. Until the end of your next turn, the target can move only to squares that are adjacent to you. </specific>
       <specific name="Augment"> 1 </specific>
-      <specific name="	Attack Type"> Melee 5 </specific>
-      <specific name="	Hit"> As above, but you must pull the target 4 squares. </specific>
+      <specific name=" Attack Type"> Melee 5 </specific>
+      <specific name=" Hit"> As above, but you must pull the target 4 squares. </specific>
       <specific name="Augment"> 2 </specific>
-      <specific name="	Attack Type"> Melee 5 </specific>
-      <specific name="	Hit"> 1[W] + Constitution modifier damage, and you must pull the target 4 squares and knock it prone. Until the end of your next turn, the target can move only to squares that are adjacent to you. </specific>
-      <specific name="_Associated Feats" />
+      <specific name=" Attack Type"> Melee 5 </specific>
+      <specific name=" Hit"> 1[W] + Constitution modifier damage, and you must pull the target 4 squares and knock it prone. Until the end of your next turn, the target can move only to squares that are adjacent to you. </specific>
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
       <specific name="Level"> 3 </specific>
       <specific name="Power Type"> Attack </specific>
@@ -313,7 +313,7 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <Flavor> As you raise your weapon, a foe lurches toward you against its will. </Flavor>
       <specific name="_SupportsID"> ID_FMP_POWER_13041 </specific>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 3 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -330,7 +330,7 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <Flavor> As you raise your weapon, a foe lurches toward you against its will. </Flavor>
       <specific name="_SupportsID"> ID_FMP_POWER_13041 </specific>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 3 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -347,7 +347,7 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <Flavor> As you raise your weapon, a foe lurches toward you against its will. </Flavor>
       <specific name="_SupportsID"> ID_FMP_POWER_13041 </specific>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 3 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -360,29 +360,29 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <specific name="Power Type"> Attack </specific>
       <specific name="_AugmentParent"> ID_FMP_POWER_13041 </specific>
    </RulesElement>
-   <RulesElement name="Parting Shot" type="Power" internal-id="ID_FMP_POWER_13066" source="Psionic Power" revision-date="9/14/2011 1:46:00 PM" >
+   <RulesElement name="Parting Shot" type="Power" internal-id="ID_FMP_POWER_13066" source="Psionic Power" revision-date="9/14/2011 1:46:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_124,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
       <Flavor> You move through your enemies like a shadow, striking hard with your weapon as you slip away. </Flavor>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 13 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
       <specific name="Attack Type"> Melee weapon </specific>
       <specific name="Effect"> You shift 2 squares and make the following attack against one enemy adjacent to you at any point during this movement. </specific>
-      <specific name="	Target"> One creature </specific>
-      <specific name="	Attack"> Constitution vs. AC </specific>
-      <specific name="	Hit"> 1[W] + Constitution modifier damage. </specific>
+      <specific name=" Target"> One creature </specific>
+      <specific name=" Attack"> Constitution vs. AC </specific>
+      <specific name=" Hit"> 1[W] + Constitution modifier damage. </specific>
       <specific name="Augment"> 1 </specific>
-      <specific name="	Attack Type"> Close burst 1 </specific>
-      <specific name="	Target"> One or two creatures in the burst </specific>
-      <specific name="	Hit"> 1[W] damage. </specific>
+      <specific name=" Attack Type"> Close burst 1 </specific>
+      <specific name=" Target"> One or two creatures in the burst </specific>
+      <specific name=" Hit"> 1[W] damage. </specific>
       <specific name="Augment"> 4 </specific>
-      <specific name="	Effect"> You shift your speed and can move through enemies&apos; spaces during this movement. Make the following attack against one enemy adjacent to you at any point during this movement. </specific>
-      <specific name="	Target"> One creature </specific>
-      <specific name="	Attack"> Constitution vs. AC </specific>
-      <specific name="	Hit"> 2[W] + Constitution modifier damage, and you mark the target until the end of your next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name=" Effect"> You shift your speed and can move through enemies' spaces during this movement. Make the following attack against one enemy adjacent to you at any point during this movement. </specific>
+      <specific name=" Target"> One creature </specific>
+      <specific name=" Attack"> Constitution vs. AC </specific>
+      <specific name=" Hit"> 2[W] + Constitution modifier damage, and you mark the target until the end of your next turn. </specific>
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>
@@ -392,7 +392,7 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <Flavor> You move through your enemies like a shadow, striking hard with your weapon as you slip away. </Flavor>
       <specific name="_SupportsID"> ID_FMP_POWER_13066 </specific>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 13 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -408,11 +408,11 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <specific name="Target"> One or two creatures </specific>
       <specific name="Hit"> 1[W] damage. </specific>
    </RulesElement>
-   <RulesElement name="Unwavering Concentration" type="Power" internal-id="ID_FMP_POWER_13067" source="Psionic Power" revision-date="9/14/2011 1:47:00 PM" >
+   <RulesElement name="Unwavering Concentration" type="Power" internal-id="ID_FMP_POWER_13067" source="Psionic Power" revision-date="9/14/2011 1:47:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_124,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
       <Flavor> Your attack focuses your mind and body to shield you from counterattacks. </Flavor>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 13 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -421,12 +421,12 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <specific name="Attack"> Constitution vs. AC </specific>
       <specific name="Hit"> 1[W] + Constitution modifier damage. You gain a +2 power bonus to a defense of your choice until the start of your next turn. </specific>
       <specific name="Augment"> 1 </specific>
-      <specific name="	Hit"> 1[W] + Constitution modifier damage. You gain a +2 power bonus to all defenses until the end of your next turn. </specific>
+      <specific name=" Hit"> 1[W] + Constitution modifier damage. You gain a +2 power bonus to all defenses until the end of your next turn. </specific>
       <specific name="Augment"> 4 </specific>
-      <specific name="	Attack Type"> Close burst 1 </specific>
-	  <specific name="	Target"> Each enemy in burst </specific>
-      <specific name="	Hit"> 2[W] + Constitution modifier damage. You gain a power bonus to all defenses equal to your Wisdom modifier until the end of your next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name=" Attack Type"> Close burst 1 </specific>
+	  <specific name=" Target"> Each enemy in burst </specific>
+      <specific name=" Hit"> 2[W] + Constitution modifier damage. You gain a power bonus to all defenses equal to your Wisdom modifier until the end of your next turn. </specific>
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>
@@ -436,7 +436,7 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <Flavor> Your attack focuses your mind and body to shield you from counterattacks. </Flavor>
       <specific name="_SupportsID"> ID_FMP_POWER_13067 </specific>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 13 </specific>
       <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -449,26 +449,26 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <specific name="Power Type"> Attack </specific>
       <specific name="_AugmentParent"> ID_FMP_POWER_13067 </specific>
    </RulesElement>
-   <RulesElement name="Wings of Elevated Thought" type="Power" internal-id="ID_FMP_POWER_13088" source="Psionic Power" revision-date="9/14/2011 1:48:00 PM" >
+   <RulesElement name="Wings of Elevated Thought" type="Power" internal-id="ID_FMP_POWER_13088" source="Psionic Power" revision-date="9/14/2011 1:48:00 PM">
       <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_124,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,22 </Category>
       <Flavor> Your power of thought lifts you free of the battlefield. </Flavor>
       <specific name="Power Usage"> Daily </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Utility 22 </specific>
       <specific name="Keywords"> Psionic, Stance </specific>
       <specific name="Action Type"> Minor Action </specific>
       <specific name="Attack Type"> Personal  </specific>
       <specific name="Effect"> You assume the wings of elevated thought stance. Until the stance ends, you gain a fly speed of 6, but you descend safely to the ground at the end of each of your turns. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
       <specific name="Level"> 22 </specific>
       <specific name="Power Type"> Utility </specific>
    </RulesElement>
-   <RulesElement name="Many Doors Curse" type="Power" internal-id="ID_FMP_POWER_13104" source="Psionic Power" revision-date="9/14/2011 1:49:00 PM" >
+   <RulesElement name="Many Doors Curse" type="Power" internal-id="ID_FMP_POWER_13104" source="Psionic Power" revision-date="9/14/2011 1:49:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_124,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
       <Flavor> Your attack binds the target to you, wracking it with pain as you fling it across the battlefield. </Flavor>
       <specific name="Power Usage"> Daily </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Battlemind Attack 29 </specific>
       <specific name="Keywords"> Psionic, Psychic, Teleportation, Weapon </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -478,7 +478,7 @@ Level 21: 2[W] + Constitution modifier damage.</specific>
       <specific name="Hit"> 4[W] + Constitution modifier damage. </specific>
       <specific name="Miss"> Half damage. </specific>
       <specific name="Effect"> The target is subject to your many doors curse (save ends). While the target is affected by your many doors curse, the first time each turn that the target takes damage from an attack, you can teleport it to a square adjacent to you or an ally you can see as a free action. When you teleport the target this way, it takes 10 psychic damage. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_124 </specific>
       <specific name="Level"> 29 </specific>
       <specific name="Power Type"> Attack </specific>

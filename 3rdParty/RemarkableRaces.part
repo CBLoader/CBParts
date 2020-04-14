@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules>
   <UpdateInfo>
     <Version>1</Version>
     <Filename>RemarkableRaces.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/RemarkableRaces.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/RemarkableRaces.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/RemarkableRaces.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/RemarkableRaces.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Squole" type="Race" internal-id="ID_FMP_RACE_24601" source="Remarkable Races Squole" revision-date="12/09/10 10:31 PM">
     <Prereqs> ~SQUOLE </Prereqs>
@@ -20,16 +20,16 @@
     <specific name="Ability Scores"> +2 Strength, +2 Constitution </specific>
     <specific name="Languages"> Primoridal, Common </specific>
     <specific name="Skill Bonuses"> +2 Athletics, +2 Perception </specific>
-    <specific name="Male Names" />
-    <specific name="Female Names" />
-    <specific name="Short Description"></specific>
+    <specific name="Male Names"/>
+    <specific name="Female Names"/>
+    <specific name="Short Description"/>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_24601, ID_FMP_RACIAL_TRAIT_24602, ID_FMP_RACIAL_TRAIT_24603, ID_FMP_RACIAL_TRAIT_24604, ID_FMP_RACIAL_TRAIT_24605, ID_FMP_RACIAL_TRAIT_519 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_SQUOLE" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 6&quot; (female) or 6' 2&quot; (male)" />
-      <textstring name="Average Weight" value=" 135 lbs. (female) or 220 lbs. (male)" />
-      <textstring name="Size" value="Medium" />
+      <grant name="ID_INTERNAL_GRANTS_SQUOLE" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 6&quot; (female) or 6' 2&quot; (male)"/>
+      <textstring name="Average Weight" value=" 135 lbs. (female) or 220 lbs. (male)"/>
+      <textstring name="Size" value="Medium"/>
     </rules>
 
 
@@ -44,23 +44,23 @@ Play a Squole if you want ...
   <RulesElement name="Squole" type="Grants" internal-id="ID_INTERNAL_GRANTS_SQUOLE" source="Remarkable Races Squole">
     <specific name="_SupportsID"> ID_FMP_RACE_24601 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_BLINDSIGHT" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_519" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_24601" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_24602" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_24603" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_24604" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_24605" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_6" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_BLINDSIGHT" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_519" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_24601" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_24602" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_24603" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_24604" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_24605" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_6" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
-  <RulesElement name="Blindsight" type="Vision" internal-id="ID_INTERNAL_VISION_BLINDSIGHT" source="Core"></RulesElement>
+  <RulesElement name="Blindsight" type="Vision" internal-id="ID_INTERNAL_VISION_BLINDSIGHT" source="Core"/>
   <RulesElement name="Ooze Senses" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_24601" source="Remarkable Races Squole" revision-date="12/09/10 11:00 PM">
     <specific name="Short Description"> You are blind, but have blindsight </specific>
     <specific name="Level"> 1 </specific>
@@ -70,7 +70,7 @@ You cannot detect objects or creatures by natural sight. You cannot make Percept
     <specific name="Short Description"> You take no penalties for squeezing and gain a Reflex bonus </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Reflex" value="+1" type="racial" />
+      <statadd name="Reflex" value="+1" type="racial"/>
     </rules>
 You have a +1 racial bonus to Reflex. In addition, you can move and attack normally during a Squeeze move.
    </RulesElement>
@@ -78,10 +78,10 @@ You have a +1 racial bonus to Reflex. In addition, you can move and attack norma
     <specific name="Short Description"> Deal elemental damage on a melee basic attack. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <select type="Racial Trait" number="1" category="Elemental Constituency" />
-      <grant type="Power" name="ID_FMP_POWER_24601" />
-      <grant type="Power" name="ID_FMP_POWER_24602" level="11" />
-      <grant type="Power" name="ID_FMP_POWER_24603" level="21" />
+      <select type="Racial Trait" number="1" category="Elemental Constituency"/>
+      <grant type="Power" name="ID_FMP_POWER_24601"/>
+      <grant type="Power" name="ID_FMP_POWER_24602" level="11"/>
+      <grant type="Power" name="ID_FMP_POWER_24603" level="21"/>
     </rules>
 When you create your character, choose a damage type: acid, cold, fire, or lightning. This choice remains throughout your character's life. When you make a successful melee basic attack, you may add 1d4 damage of the chosen type. Increase damage to 1d6 damage at level 11, and 1d8 damage at level 21.  The damage does NOT add the keyword for that element to the attack.
    </RulesElement>
@@ -124,11 +124,11 @@ When you make a Strength check for grab attacks, roll twice and use either resul
     <print-prereqs> Squole, Elemental Resistance racial trait </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Gain extra damage resistance. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <rules></rules>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules/>
 Your Elemental Resistance increases by 5.
 </RulesElement>
   <RulesElement name="Evade Grasp" type="Feat" internal-id="ID_FMP_FEAT_24602" source="Remarkable Races Squole" revision-date="12/09/2010 11:31:00 PM">
@@ -136,12 +136,12 @@ Your Elemental Resistance increases by 5.
     <print-prereqs> Squole </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Your slimy nature helps you escape grabs more easily. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Athletics" value="+3" condition="when trying to escape a grab" />
+      <statadd name="Athletics" value="+3" condition="when trying to escape a grab"/>
     </rules>
 You can attempt to escape a grab with an Athletics check as a minor action instead of as a move action. In addition, you gain a +3 feat bonus to Athletics checks to escape a grab.
 </RulesElement>
@@ -150,12 +150,12 @@ You can attempt to escape a grab with an Athletics check as a minor action inste
     <print-prereqs> Squole, Elemental Oozing racial trait </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Gain extra damage with Elemental Oozing. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="melee basic:damage" value="+2" />
+      <statadd name="melee basic:damage" value="+2"/>
     </rules>
 Your Elemental Oozing racial trait deals an additional +2 damage of the appropriate elemental type.
 </RulesElement>
@@ -164,11 +164,11 @@ Your Elemental Oozing racial trait deals an additional +2 damage of the appropri
     <print-prereqs> Squole, Elemental Oozing racial trait </print-prereqs>
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> Deal oozing damage with a grab. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <rules></rules>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules/>
 Each round that you sustain a grab on your turn, you may also do damage through your Elemental Oozing racial feature as though you succeeded with a basic melee attack.
 </RulesElement>
   <RulesElement name="Honed Senses" type="Feat" internal-id="ID_FMP_FEAT_24605" source="Remarkable Races Squole" revision-date="12/09/2010 11:31:00 PM">
@@ -176,11 +176,11 @@ Each round that you sustain a grab on your turn, you may also do damage through 
     <print-prereqs> Squole, Ooze Senses racial trait, Wis 13; Paragon Tier </print-prereqs>
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> Increase blindsight by your Wisdom modifier. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <rules></rules>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules/>
 Your blindsight range increases by a number of squares equal to your Wisdom modifier.
 </RulesElement>
   <RulesElement name="Liquefy" type="Feat" internal-id="ID_FMP_FEAT_24606" source="Remarkable Races Squole" revision-date="12/09/2010 11:31:00 PM">
@@ -188,73 +188,73 @@ Your blindsight range increases by a number of squares equal to your Wisdom modi
     <print-prereqs> Squole, Evade Grasp; Epic Tier </print-prereqs>
     <specific name="Tier"> Epic </specific>
     <specific name="Short Description"> Escape a grab or shackles as a minor action. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <rules></rules>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules/>
 Once per encounter as a minor action, you can automatically escape a grab or free yourself from all bonds or shackles.
 </RulesElement>
   <RulesElement name="Heroic Elemental Oozing" type="Power" internal-id="ID_FMP_POWER_24601" source="Dragon 394" revision-date="10/12/2010 1:29:40 PM">
     <Category> ID_FMP_RACE_24601,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Squole Racial Power </specific>
-    <specific name="Keywords"></specific>
+    <specific name="Keywords"/>
     <specific name="Action Type">Free action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Trigger"> You hit with a melee basic attack </specific>
-    <specific name="Target" />
-    <specific name="Attack" />
-    <specific name="Hit" />
+    <specific name="Target"/>
+    <specific name="Attack"/>
+    <specific name="Hit"/>
     <specific name="Effect"> You deal an extra 1d4 damage of your elemental constituency </specific>
-    <specific name="Class"></specific>
-    <specific name="Level"></specific>
+    <specific name="Class"/>
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <rules>
-      <textstring name="melee basic:damage" value="+1d4" />
+      <textstring name="melee basic:damage" value="+1d4"/>
     </rules>
   </RulesElement>
   <RulesElement name="Paragon Elemental Oozing" type="Power" internal-id="ID_FMP_POWER_24602" source="Dragon 394" revision-date="10/12/2010 1:29:40 PM">
     <Category> ID_FMP_RACE_24601,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Squole Racial Power </specific>
-    <specific name="Keywords"></specific>
+    <specific name="Keywords"/>
     <specific name="Action Type">Free action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Trigger"> You hit with a melee basic attack </specific>
-    <specific name="Target" />
-    <specific name="Attack" />
-    <specific name="Hit" />
+    <specific name="Target"/>
+    <specific name="Attack"/>
+    <specific name="Hit"/>
     <specific name="Effect"> You deal an extra 1d6 damage of your elemental constituency </specific>
-    <specific name="Class"></specific>
-    <specific name="Level"></specific>
+    <specific name="Class"/>
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <rules>
-      <textstring name="melee basic:damage" value="+1d6" />
-      <replace power-replace="Paragon Elemental Oozing:ID_FMP_POWER_24601" optional="false" />
+      <textstring name="melee basic:damage" value="+1d6"/>
+      <replace power-replace="Paragon Elemental Oozing:ID_FMP_POWER_24601" optional="false"/>
     </rules>
   </RulesElement>
   <RulesElement name="Epic Elemental Oozing" type="Power" internal-id="ID_FMP_POWER_24603" source="Dragon 394" revision-date="10/12/2010 1:29:40 PM">
     <Category> ID_FMP_RACE_24601,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Squole Racial Power </specific>
-    <specific name="Keywords"></specific>
+    <specific name="Keywords"/>
     <specific name="Action Type">Free action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Trigger"> You hit with a melee basic attack </specific>
-    <specific name="Target" />
-    <specific name="Attack" />
-    <specific name="Hit" />
+    <specific name="Target"/>
+    <specific name="Attack"/>
+    <specific name="Hit"/>
     <specific name="Effect"> You deal an extra 1d8 damage of your elemental constituency </specific>
-    <specific name="Class"></specific>
-    <specific name="Level"></specific>
+    <specific name="Class"/>
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <rules>
-      <textstring name="melee basic:damage" value="+1d6" />
-      <replace power-replace="Epic Elemental Oozing:ID_FMP_POWER_24602" optional="false" />
+      <textstring name="melee basic:damage" value="+1d6"/>
+      <replace power-replace="Epic Elemental Oozing:ID_FMP_POWER_24602" optional="false"/>
     </rules>
   </RulesElement>
 </D20Rules>

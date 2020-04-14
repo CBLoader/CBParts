@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
 		<Version>1.02</Version>
 		<Filename>51-HonorSystem.part</Filename>
-		<PartAddress>http://cbloader.com/UnearthedArcana/51-HonorSystem.part</PartAddress>
-		<VersionAddress>http://cbloader.com/UnearthedArcana/51-HonorSystem.txt</VersionAddress>
+		<PartAddress>https://cbloader.vorpald20.com/UnearthedArcana/51-HonorSystem.part</PartAddress>
+		<VersionAddress>https://cbloader.vorpald20.com/UnearthedArcana/51-HonorSystem.txt</VersionAddress>
 	</UpdateInfo>
 	<!-- Unearthed Arcana Rules Variants: Honor System -->
 	<!-- 51-HonorSystem.part, version 1.02 -->
@@ -23,7 +23,7 @@
 		<specific name="Short Description"> You gain 3 honor points and the honorable action power. </specific>
 		<specific name="_DisplayPowers"> ID_FMP_POWER_HONORABLE_ACTION </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_HONORABLE_ACTION" type="Power" />
+			<grant name="ID_FMP_POWER_HONORABLE_ACTION" type="Power"/>
 		</rules>
 You gain 3 honor points and the honorable action power.
 	</RulesElement>
@@ -31,14 +31,14 @@ You gain 3 honor points and the honorable action power.
 		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
 		<Flavor> You rise to the challenge when honor is on the line. </Flavor>
 		<specific name="Power Usage"> Encounter </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Feat Power </specific>
-		<specific name="Keywords" />
+		<specific name="Keywords"/>
 		<specific name="Action Type"> No Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
 		<specific name="Trigger"> While acting honorably or avoiding dishonor, you make an ability check, an attack roll, a damage roll, or a skill check and dislike the result. </specific>
 		<specific name="Effect"> You spend 1 honor point. Roll 1d6 and add the result to the triggering roll. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 	</RulesElement>
 	<RulesElement name="Honorable Mind" type="Feat" internal-id="ID_FMP_FEAT_HONORABLE_MIND" source="Dragon Magazine 404">
 		<Prereqs> Honor-Bound </Prereqs>
@@ -75,7 +75,7 @@ Whenever you gain a level, you gain 2 extra honor points.
 		<specific name="Short Description">  You gain the honorable soul power. </specific>
 		<specific name="_DisplayPowers"> ID_FMP_POWER_HONORABLE_SOUL </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_HONORABLE_SOUL" type="Power" />
+			<grant name="ID_FMP_POWER_HONORABLE_SOUL" type="Power"/>
 		</rules>
 You gain the Honorable Soul power.
 	</RulesElement>
@@ -83,13 +83,13 @@ You gain the Honorable Soul power.
 		<Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
 		<Flavor> You rise to the challenge when honor is on the line. </Flavor>
 		<specific name="Power Usage"> Daily </specific>
-		<specific name="_SkillPower" />
+		<specific name="_SkillPower"/>
 		<specific name="Display"> Feat Power </specific>
-		<specific name="Keywords" />
+		<specific name="Keywords"/>
 		<specific name="Action Type"> No Action </specific>
 		<specific name="Attack Type"> Personal  </specific>
 		<specific name="Trigger">  While acting honorably or avoiding dishonor, you make an ability check, an attack roll, an initiative check, a saving throw, or a skill check and dislike the result. </specific>
 		<specific name="Effect">  You spend 1 honor point. You reroll the triggering roll and use the higher result. In addition, you gain 10 temporary hit points. </specific>
-		<specific name="_Associated Feats" />
+		<specific name="_Associated Feats"/>
 	</RulesElement>
 </D20Rules>

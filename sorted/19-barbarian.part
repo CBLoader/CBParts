@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.05</Version>
     <Filename>19-barbarian.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/19-barbarian.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=19-barbarian</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/19-barbarian.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/19-barbarian.txt</VersionAddress>
   </UpdateInfo>
   <!-- Barbarian -->
   <!-- 19-barbarian.part, version 1.05 -->
@@ -24,7 +24,7 @@
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
     <Flavor> Your rage reaches out to Stone Brother, and arms of molten stone form to grab your foe. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Barbarian Attack 5 </specific>
     <specific name="Keywords"> Fire, Primal, Rage, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -35,7 +35,7 @@
 	Aftereffect: The target falls prone. </specific>
     <specific name="Miss"> Half damage and the target falls prone. </specific>
     <specific name="Effect"> You enter the rage of earth's grasp. Until the rage ends, your attacks against prone targets deal 5 extra fire damage. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_148 </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -54,7 +54,7 @@
 		<specific name="_SupportsID"> ID_FMP_CLASS_906 </specific>
 You count as a berserker for meeting prerequisites.
 	</RulesElement>
-	<RulesElement name="Defender and Striker" type="Role" internal-id="ID_FMP_ROLE_6" source="Heroes of the Feywild"></RulesElement>
+	<RulesElement name="Defender and Striker" type="Role" internal-id="ID_FMP_ROLE_6" source="Heroes of the Feywild"/>
 
 	<RulesElement name="Berserker" type="Class" internal-id="ID_FMP_CLASS_906" source="Heroes of the Feywild">
 		<specific name="Key Abilities"> Strength, Dexterity </specific>
@@ -76,14 +76,14 @@ You count as a berserker for meeting prerequisites.
 		<specific name="_ParentClass"> ID_FMP_CLASS_148 </specific>
 		<specific name="_DisplayName"> Barbarian (Berserker) </specific>
 		<rules>
-			<grant name="ID_INTERNAL_GRANTS_BERSERKER" type="Grants" />
-			<select type="Power" number="2" Category="$$Class,at-will,1" />
-            <textstring name="_CLASSNAME" value="ID_FMP_CLASS_148 (ID_FMP_CLASS_906)" />
-			<statadd name="_LEVEL-ONE-HPS" value="+15" />
-			<statadd name="_PER-LEVEL-HPS" value="+6" />
-			<statadd name="Healing Surges" value="+8" />
-			<statadd name="Fortitude Defense Class Bonus" value="+2" />
-			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_148" />
+			<grant name="ID_INTERNAL_GRANTS_BERSERKER" type="Grants"/>
+			<select type="Power" number="2" Category="$$Class,at-will,1"/>
+            <textstring name="_CLASSNAME" value="ID_FMP_CLASS_148 (ID_FMP_CLASS_906)"/>
+			<statadd name="_LEVEL-ONE-HPS" value="+15"/>
+			<statadd name="_PER-LEVEL-HPS" value="+6"/>
+			<statadd name="Healing Surges" value="+8"/>
+			<statadd name="Fortitude Defense Class Bonus" value="+2"/>
+			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_148"/>
 		</rules>
   
 On the edge of civilization, far beyond the comfortable life within cities and towns, tribes of barbarian peoples maintain a simple yet primitive existence. Life for these people is not easy, and it is made more difficult because fey crossings commonly appear in their lands. As children, tribe members are taught about the perils of crossing into the Feywild, and about the monsters that emerge from that realm with malicious intent. Faced with this constant danger, the barbarians continually fight to maintain their way of life.
@@ -95,24 +95,24 @@ On the edge of civilization, far beyond the comfortable life within cities and t
 	<RulesElement name="Berserker" type="Grants" internal-id="ID_INTERNAL_GRANTS_BERSERKER" source="Heroes of the Feywild">
 		<specific name="_SupportsID"> ID_FMP_CLASS_906 </specific>
 		<rules>
-			<grant name="ID_INTERNAL_COUNTSASCLASS_BARBARIAN" type="CountsAsClass" />
-			<grant name="ID_FMP_ROLE_3" type="Role" />
-			<grant name="ID_FMP_ROLE_4" type="Role" />
-			<grant name="ID_FMP_ROLE_6" type="Role" />
-			<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
-			<grant name="ID_FMP_POWER_SOURCE_4" type="Power Source" />
-			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-			<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency" />
-			<grant name="ID_INTERNAL_GRANTS_BERSERKER_IMPLEMENTS" type="Grants" />	
-			<grant name="ID_FMP_CLASS_FEATURE_4134" type="Class Feature" />	
-			<grant name="ID_FMP_CLASS_FEATURE_4127" type="Class Feature" />	
-			<grant name="ID_FMP_CLASS_FEATURE_4132" type="Class Feature" />	
-			<grant name="ID_FMP_CLASS_FEATURE_4133" type="Class Feature" />	
-			<grant name="ID_WOG_BERSERKER_CLASS_FEATURE_3" type="Class Feature" />		 
+			<grant name="ID_INTERNAL_COUNTSASCLASS_BARBARIAN" type="CountsAsClass"/>
+			<grant name="ID_FMP_ROLE_3" type="Role"/>
+			<grant name="ID_FMP_ROLE_4" type="Role"/>
+			<grant name="ID_FMP_ROLE_6" type="Role"/>
+			<grant name="ID_FMP_POWER_SOURCE_1" type="Power Source"/>
+			<grant name="ID_FMP_POWER_SOURCE_4" type="Power Source"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency"/>
+			<grant name="ID_INTERNAL_GRANTS_BERSERKER_IMPLEMENTS" type="Grants"/>	
+			<grant name="ID_FMP_CLASS_FEATURE_4134" type="Class Feature"/>	
+			<grant name="ID_FMP_CLASS_FEATURE_4127" type="Class Feature"/>	
+			<grant name="ID_FMP_CLASS_FEATURE_4132" type="Class Feature"/>	
+			<grant name="ID_FMP_CLASS_FEATURE_4133" type="Class Feature"/>	
+			<grant name="ID_WOG_BERSERKER_CLASS_FEATURE_3" type="Class Feature"/>		 
 		</rules>
 	</RulesElement>
 
@@ -121,10 +121,10 @@ On the edge of civilization, far beyond the comfortable life within cities and t
 		<specific name="Level"> 1 </specific>
 		<specific name="_CS_ShortDescription"> @ </specific>
 		<rules>
-			<grant name="ID_FMP_CLASS_FEATURE_3070" type="Class Feature" Level="1" />
-			<modify name="Defender Aura" type="Class Feature" Field="_CS_ShortDescription" value="@" />
-			<modify name="Defender Aura" type="Power" Field="Display" value=" Barbarian Utility " />
-			<modify name="Defender Aura" type="Power" Field="Class" value="ID_FMP_CLASS_906" />
+			<grant name="ID_FMP_CLASS_FEATURE_3070" type="Class Feature" Level="1"/>
+			<modify name="Defender Aura" type="Class Feature" Field="_CS_ShortDescription" value="@"/>
+			<modify name="Defender Aura" type="Power" Field="Display" value=" Barbarian Utility "/>
+			<modify name="Defender Aura" type="Power" Field="Class" value="ID_FMP_CLASS_906"/>
 		</rules>
 	</RulesElement>
 
@@ -155,15 +155,15 @@ You choose one of the following terrain types that best represents your heartlan
     <specific name="Short Description"> Gain +3 AC and +2 Reflex when wearing cloth/no armor and no shield; gain resist 5 fire at 4th level, resist fire 10 at 14th, resist fire 15 at 24th </specific>
     <specific name="Level"> 1 </specific>
         <rules>
-            <statadd name="AC" value="+3" not-wearing="armor:" />
+            <statadd name="AC" value="+3" not-wearing="armor:"/>
             <statadd name="AC" value="+3" wearing="armor:cloth" not-wearing="armor:shield"/>
-            <statadd name="Reflex Defense" value="+2" not-wearing="armor:" />
+            <statadd name="Reflex Defense" value="+2" not-wearing="armor:"/>
             <statadd name="Reflex Defense" value="+2" wearing="armor:cloth" not-wearing="armor:shield"/>
-            <statadd name="Arid Desert Resist" value="+5" requires="4 level" />
-            <statadd name="Arid Desert Resist" value="+5" requires="14 level" />
-            <statadd name="Arid Desert Resist" value="+5" requires="24 level" />
-            <statadd name="resist:fire" value="+Arid Desert Resist" type="resist" zero="true" />
-            <statadd name="resist:fire" value="+Arid Desert Resist" type="resist" non-zero="true" />
+            <statadd name="Arid Desert Resist" value="+5" requires="4 level"/>
+            <statadd name="Arid Desert Resist" value="+5" requires="14 level"/>
+            <statadd name="Arid Desert Resist" value="+5" requires="24 level"/>
+            <statadd name="resist:fire" value="+Arid Desert Resist" type="resist" zero="true"/>
+            <statadd name="resist:fire" value="+Arid Desert Resist" type="resist" non-zero="true"/>
         </rules>
 While you are wearing cloth armor or no armor and not using a shield, you gain a +3 bonus to AC and a +2 bonus to Reflex.
     At 4th level, you gain resist 5 fire. The resistance increases to 10 at 14th level and 15 at 24th level.
@@ -175,13 +175,13 @@ While you are wearing cloth armor or no armor and not using a shield, you gain a
 		<specific name="Short Description"> Gain +1 to Fortitude and Will; gain resist 5 cold at 4th level, resist cold 10 at 14th and resist cold 15 at 24th </specific>
 		<specific name="Level"> 1 </specific>
 		<rules>
-			<statadd name="Fortitude Defense" value="+1" type="Class Feature" />
-			<statadd name="Will Defense" value="+1" type="Class Feature" />
+			<statadd name="Fortitude Defense" value="+1" type="Class Feature"/>
+			<statadd name="Will Defense" value="+1" type="Class Feature"/>
 			<statadd name="Frozen Land Resist" value="+5" requires="4 level"/>
 			<statadd name="Frozen Land Resist" value="+5" requires="14 level"/>
 			<statadd name="Frozen Land Resist" value="+5" requires="24 level"/>
-			<statadd name="resist:cold" value="+Frozen Land Resist" type="resist" zero="true" />
-			<statadd name="resist:cold" value="+Frozen Land Resist" type="resist" non-zero="true" />
+			<statadd name="resist:cold" value="+Frozen Land Resist" type="resist" zero="true"/>
+			<statadd name="resist:cold" value="+Frozen Land Resist" type="resist" non-zero="true"/>
 		</rules>
 
 You gain a +1 bonus to Fortitude and Will.
@@ -194,8 +194,8 @@ You gain a +1 bonus to Fortitude and Will.
     <specific name="Short Description"> Gain +2 bonus to damage when wielding a one-handed weapon and shield; at 4th level, gain +1 speed while charging </specific>
     <specific name="Level"> 1 </specific>
         <rules>
-            <statadd name="one-hand:damage" value="+2" wearing="armor:shield" />
-            <statadd name="Speed" value="+1" condition="while charging" requires="level 4" />
+            <statadd name="one-hand:damage" value="+2" wearing="armor:shield"/>
+            <statadd name="Speed" value="+1" condition="while charging" requires="level 4"/>
         </rules>
 While you are wielding a one-handed weapon and using a shield, you gain a +2 bonus to the damage rolls of any weapon attack you make with that weapon.
     At 4th level, you gain a +1 bonus to speed while charging.
@@ -207,7 +207,7 @@ While you are wielding a one-handed weapon and using a shield, you gain a +2 bon
 		<specific name="Short Description"> Gain +2 bonus to AC while defender aura is active and not wearing heavy armor </specific>
 		<specific name="Level"> 1 </specific>
 		<rules>
-			<statadd name="AC" value="+2" type="Class Feature" not-wearing="armor:heavy" condition="while your defender aura is active" />
+			<statadd name="AC" value="+2" type="Class Feature" not-wearing="armor:heavy" condition="while your defender aura is active"/>
 		</rules>
 
 While your defender aura is active and you're not wearing heavy armor, you gain a +2 bonus to AC.
@@ -224,7 +224,7 @@ While your defender aura is active and you're not wearing heavy armor, you gain 
 		<specific name="Class"> ID_FMP_CLASS_148 </specific>
 		<specific name="_DisplayPowers"> ID_FMP_POWER_15848 </specific>
 		<rules>
-			<grant name="ID_FMP_POWER_15848" type="Power" />
+			<grant name="ID_FMP_POWER_15848" type="Power"/>
 		</rules>
   
 You gain the vengeful guardian power.
@@ -236,7 +236,7 @@ You gain the vengeful guardian power.
 		<specific name="Short Description"> Enter berserker fury until end of encounter when you use a barbarian primal attack power or as a minor action when bloodied: defender's aura ends, melee basic attacks deal 1d8 extra damage (2d8 at 11th, 3d8 at 21st) </specific>
 		<specific name="Level"> 1 </specific>
 		<rules>
-			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field=" Berserker Fury" value="This attack deals 1d8 extra damage. This extra damage increases to 2d8 at 11th level and 3d8 at 21st level." />
+			<modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field=" Berserker Fury" value="This attack deals 1d8 extra damage. This extra damage increases to 2d8 at 11th level and 3d8 at 21st level."/>
 		</rules>
 		
 When you use a barbarian primal attack power, you enter your Berserker Fury until the end of the encounter. Alternatively, you can use a minor action while you are bloodied to enter the fury. The fury has the following effects. 
@@ -258,7 +258,7 @@ When you use a barbarian primal attack power, you enter your Berserker Fury unti
 	Level 11: 2d8 extra damage.
 	Level 21: 3d8 extra damage. On a miss, the attack deals half damage to the triggering enemy. </specific>
 		<specific name="Class"> ID_FMP_CLASS_148 </specific>
-		<specific name="Level" />
+		<specific name="Level"/>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4133 </specific>
 		<specific name="_Subclasses"> ID_FMP_CLASS_906 </specific>
@@ -1020,11 +1020,11 @@ The warriors of Cor Talcor have learned to wield the rocky terrain of their unde
     <specific name="Short Description"> Gain +1 AC and Reflex when not wearing heavy armor. (+2 at 11th level, +3 at 21st) </specific>
     <specific name="Level"> 1 </specific>
         <rules>
-            <statadd name="Barbarian Agility" value="+1" />
-            <statadd name="Barbarian Agility" value="+1" requires="Paragon Tier" />
-            <statadd name="Barbarian Agility" value="+1" requires="Epic Tier" />
-            <statadd name="AC" value="+Barbarian Agility" not-wearing="armor:heavy" />
-            <statadd name="Reflex Defense" value="+Barbarian Agility" not-wearing="armor:heavy" />
+            <statadd name="Barbarian Agility" value="+1"/>
+            <statadd name="Barbarian Agility" value="+1" requires="Paragon Tier"/>
+            <statadd name="Barbarian Agility" value="+1" requires="Epic Tier"/>
+            <statadd name="AC" value="+Barbarian Agility" not-wearing="armor:heavy"/>
+            <statadd name="Reflex Defense" value="+Barbarian Agility" not-wearing="armor:heavy"/>
         </rules>
 While you are not wearing heavy armor, you gain a +1 bonus to AC and Reflex. The bonus increases to +2 at 11th level and +3 at 21st level.
 </RulesElement>

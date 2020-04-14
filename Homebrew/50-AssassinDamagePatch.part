@@ -1,19 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules>
   <UpdateInfo>
     <Version>2</Version>
     <Filename>50-AssassinDamagePatch.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/50-AssassinDamagePatch.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/50-AssassinDamagePatch.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/50-AssassinDamagePatch.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/50-AssassinDamagePatch.txt</VersionAddress>
   </UpdateInfo>
   <AppendNodes name="Assassin" type="Class" internal-id="ID_FMP_CLASS_466" source="Dragon Magazine 379" revision-date="8/27/2010 12:43:11 PM">
     <specific name="_PARSED_CLASS_FEATURE">Death Attack, Small But Vicious </specific>
   </AppendNodes>
   <AppendNodes name="Assassin" type="Grants" internal-id="ID_INTERNAL_GRANTS_ASSASSIN" source="Dragon Magazine 379">
     <rules>
-      <grant name="ID_RYV_CLASS_FEATURE_22201" type="Class Feature" />
-      <grant name="ID_RYV_CLASS_FEATURE_72504" type="Class Feature" level="3" />
-      <grant type="Power" name="ID_RYV_POWER_72523" level="17" />
+      <grant name="ID_RYV_CLASS_FEATURE_22201" type="Class Feature"/>
+      <grant name="ID_RYV_CLASS_FEATURE_72504" type="Class Feature" level="3"/>
+      <grant type="Power" name="ID_RYV_POWER_72523" level="17"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Small But Vicious" type="Class Feature" internal-id="ID_RYV_CLASS_FEATURE_22201" source="At-Will Blog" revision-date="10/5/2010 1:47:04 PM">
@@ -21,13 +21,13 @@
     <Flavor> Even small weapons can do big damage. </Flavor>
     <specific name="Short Description"> When you wield an off-hand weapon or a weapon with the defensive property, increase the weapon's damage die by one size. The bonuses stack. In addition, the damage die of your light blade and unarmed weapons increases by one as well. </specific>
     <specific name="Level"> 1 </specific>
-    <specific name="_CS_ShortDescription" />
+    <specific name="_CS_ShortDescription"/>
     <specific name="_SupportsID"> ID_RYV_CLASS_725 </specific>
     <rules>
-      <statadd name="Off-hand:die" value="+1" />
-      <statadd name="Defensive:die" value="+1" />
-      <statadd name="Light blade group:die" value="+1" />
-      <statadd name="Unarmed group:die" value="+1" />
+      <statadd name="Off-hand:die" value="+1"/>
+      <statadd name="Defensive:die" value="+1"/>
+      <statadd name="Light blade group:die" value="+1"/>
+      <statadd name="Unarmed group:die" value="+1"/>
     </rules>
 When you wield an off-hand weapon or a weapon with the defensive property, increase the weapon's damage die by one size. The bonuses stack. In addition, the damage die of your light blade and unarmed weapons increases by one as well.
    </RulesElement>

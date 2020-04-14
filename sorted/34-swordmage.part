@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.05</Version>
     <Filename>34-swordmage.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/34-swordmage.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=34-swordmage</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/34-swordmage.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/34-swordmage.txt</VersionAddress>
   </UpdateInfo>
   <!-- Swordmage -->
   <!-- 34-swordmage.part, version 1.05 -->
@@ -48,22 +48,22 @@ Swordmages favor deities of magic or skill. Corellon, Selûne, Torm, and Tymora 
     <specific name="Power Name"> Spells </specific>
     <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
-    <specific name="_SecondaryPowerSourceElement" />
-    <specific name="Secondary Abilities" />
-    <specific name="Hybrid Talent Options" />
+    <specific name="_SecondaryPowerSourceElement"/>
+    <specific name="Secondary Abilities"/>
+    <specific name="Hybrid Talent Options"/>
     <specific name="Short Description"> You combine arcane magic with physical training to hone and perfect your melee capability. </specific>
-    <specific name="_ParentClass" />
-    <specific name="Trait Package" />
+    <specific name="_ParentClass"/>
+    <specific name="Trait Package"/>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_SWORDMAGE" type="Grants" />
-      <select type="Power" number="2" Category="$$CLASS,at-will,1" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_53" />
-      <statadd name="_LEVEL-ONE-HPS" value="+15" />
-      <statadd name="_PER-LEVEL-HPS" value="+6" />
-      <statadd name="Healing Surges" value="+8" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Will Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_53" />
+      <grant name="ID_INTERNAL_GRANTS_SWORDMAGE" type="Grants"/>
+      <select type="Power" number="2" Category="$$CLASS,at-will,1"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_53"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+15"/>
+      <statadd name="_PER-LEVEL-HPS" value="+6"/>
+      <statadd name="Healing Surges" value="+8"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Will Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_53"/>
     </rules>
 Swordmages apply the arcane arts to melee combat. The combat skills they possess are enhanced by the magic they wield. The flourish of a swordmage's blade not only bites with steel, but also with fire, lightning, or other powerful forces.
 	You studied and practiced for years to master your skills. You mastered the fundamentals of arcane magic and combined this academic study with endless hours of physical training. You might be a young eladrin in search of your fortune, a stranger to the wider world outside the seclusion of your homeland; a self-trained genasi sellsword, gifted with an affinity for elemental magic; the scion of a disgraced noble human family, taught by the finest tutors in your youth but now a footloose expatriate; or a half-elf arcane champion, rigorously trained in a war magic academy to serve in the armies of your homeland.
@@ -80,7 +80,7 @@ Swordmages apply the arcane arts to melee combat. The combat skills they possess
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> You form a gray lance of sonic energy around your weapon. The concussive force of its strike briefly slows your foe. </Flavor>
       <specific name="Power Usage"> At-Will </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Swordmage Attack 1 </specific>
       <specific name="Keywords"> Arcane, Implement, Thunder </specific>
       <specific name="Action Type"> Standard Action </specific>
@@ -90,7 +90,7 @@ Swordmages apply the arcane arts to melee combat. The combat skills they possess
 	  <specific name="Hit"> 1d8 thunder damage, and the target is slowed until the end of your next turn. 
 Level 21: 2d8 thunder damage. </specific>
       <specific name="Special"> When charging, you can use this power in place of a melee basic attack. Add your Intelligence modifier to the damage if you charge while mounted. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
@@ -101,11 +101,11 @@ Level 21: 2d8 thunder damage. </specific>
 <!-- Dragon Magazine 405 -->
 <!-- Class Acts: Swordmage The Winterguard of Cendriane Powers -->
 
-<RulesElement name="Dimensional Cleave" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-1" source="Dragon Magazine 405" >
+<RulesElement name="Dimensional Cleave" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-1" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
       <Flavor> You teleport your enemy into the path of your waiting blade. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Swordmage Attack 1 </specific>
       <specific name="Keywords"> Arcane, Weapon </specific>
       <specific name="Action Type"> Free Action </specific>
@@ -115,13 +115,13 @@ Level 21: 2d8 thunder damage. </specific>
 	  <specific name="Attack"> Intelligence vs. AC </specific>
 	  <specific name="Hit"> 1[W] + Intelligence modifier damage. </specific>
       <specific name="Aegis of Ensnarement"> Add your Constitution modifier to the damage. In addition, you can use this power as part of the immediate reaction of your aegis of ensnarement. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Binding Aegis" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-2" source="Dragon Magazine 405" >
+<RulesElement name="Binding Aegis" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-2" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> Your enemy is held fast by invisible magic bonds. If it manages to escape, your retribution is swift. </Flavor>
       <specific name="Power Usage"> Daily </specific>
@@ -133,13 +133,13 @@ Level 21: 2d8 thunder damage. </specific>
 	  <specific name="Effect"> The target is immobilized (save ends). </specific>
 	  <specific name="Aftereffect"> You can use a free action to teleport up to 10 squares to a square adjacent to the target and use a melee at-will attack power against it. </specific>
       <specific name="Aegis of Ensnarement"> If you hit with this attack, the target falls prone. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Eldritch Quagmire" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-3" source="Dragon Magazine 405" >
+<RulesElement name="Eldritch Quagmire" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-3" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_40,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
       <Flavor> Your spell turns the ground beneath your enemies' feet into gooey mud, which grasps and slows their movement. </Flavor>
       <specific name="Power Usage"> Daily </specific>
@@ -149,13 +149,13 @@ Level 21: 2d8 thunder damage. </specific>
       <specific name="Attack Type"> Personal </specific>
 	  <specific name="Effect"> You activate an aura 2 that lasts until the end of the encounter or until you deactivate it as a free action. The ground in the aura is difficult terrain for your enemies. </specific>
       <specific name="Aegis of Ensnarement"> When you deactivate the aura, one enemy within 2 squares of you is immobilized until the end of your next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 6 </specific>
       <specific name="Power Type"> Utility </specific>
 </RulesElement>
 
-<RulesElement name="Fettering Aegis" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-4" source="Dragon Magazine 405" >
+<RulesElement name="Fettering Aegis" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-4" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,7 </Category>
       <Flavor> The magic of your aegis creates an invisible tether between you and your enemy, preventing it from escaping. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
@@ -167,13 +167,13 @@ Level 21: 2d8 thunder damage. </specific>
 	  <specific name="Target"> The triggering enemy </specific>
 	  <specific name="Hit"> 1d8 + Intelligence modifier force damage, and you pull the target to a square adjacent to you. </specific>
       <specific name="Aegis of Ensnarement"> The target is then immobilized until the end of its next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 7 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Isolating Aegis" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-5" source="Dragon Magazine 405" >
+<RulesElement name="Isolating Aegis" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-5" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
       <Flavor> Your aegis's magic robs your foe of allies. </Flavor>
       <specific name="Power Usage"> Daily </specific>
@@ -185,13 +185,13 @@ Level 21: 2d8 thunder damage. </specific>
 	  <specific name="Hit"> 2d6 + Intelligence modifier force damage, and the target is not considered an ally to its allies and vice versa for the purpose of powers and auras. This effect lasts until the end of the encounter or until the target is no longer marked by your Swordmage Aegis power. </specific>
       <specific name="Aegis of Ensnarement"> If the target starts its turn adjacent to a creature other than you and is within 10 squares of you, you can use the immediate reaction of your aegis of ensnarement on the target. </specific>
 	  <specific name="Miss"> Half damage, and the target is not considered an ally to its allies and vice versa for the purpose of powers and auras. This effect lasts until the end of your next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 9 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Master Dimensional Cleave" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-6" source="Dragon Magazine 405" >
+<RulesElement name="Master Dimensional Cleave" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-6" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_FREE_ACTION,13</Category>
       <Flavor> When you teleport an enemy, your blade is waiting to strike a withering blow before the enemy realizes where it is. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
@@ -203,13 +203,13 @@ Level 21: 2d8 thunder damage. </specific>
 	  <specific name="Target"> The triggering enemy </specific>
 	  <specific name="Hit"> 2[W] + Intelligence modifier damage. </specific>
       <specific name="Aegis of Ensnarement"> Add your Constitution modifier to the damage. In addition, you can use this power as part of the immediate reaction of your aegis of ensnarement. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
 
-<RulesElement name="Grandmaster Dimensional Cleave" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-7" source="Dragon Magazine 405" >
+<RulesElement name="Grandmaster Dimensional Cleave" type="Power" internal-id="ID_TIV_POWER_DRAGON_405_02-7" source="Dragon Magazine 405">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_FREE_ACTION,23</Category>
       <Flavor> You swing your sword through the air, striking with pinpoint accuracy before your enemy has fully materialized. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
@@ -221,7 +221,7 @@ Level 21: 2d8 thunder damage. </specific>
 	  <specific name="Target"> The triggering enemy </specific>
 	  <specific name="Hit"> 3[W] + Intelligence modifier damage. </specific>
       <specific name="Aegis of Ensnarement"> The attack can score a critical hit on a roll of 18-20, and add your Constitution modifier to the damage. In addition, you can use this power as part of the immediate reaction of your aegis of ensnarement. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_53 </specific>
       <specific name="Level"> 23 </specific>
       <specific name="Power Type"> Attack </specific>

@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>98-EssentialsMulticlassFix.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/98-EssentialsMulticlassFix.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/98-EssentialsMulticlassFix.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/98-EssentialsMulticlassFix.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/98-EssentialsMulticlassFix.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Sneak of Shadows" type="Feat" internal-id="ID_FMP_FEAT_274" source="Player's Handbook" revision-date="8/27/2010 12:17:55 PM">
     <Category> ID_INTERNAL_CATEGORY_MULTICLASS_ROGUE,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -12,16 +12,16 @@
     <print-prereqs> Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Rogue: Thievery skill, Sneak Attack 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Rogue </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_THIEVERY" type="Skill Training" />
-      <grant name="ID_FMP_CLASS_FEATURE_322" type="Class Feature" />
-      <modify Field="Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_THIEVERY" type="Skill Training"/>
+      <grant name="ID_FMP_CLASS_FEATURE_322" type="Class Feature"/>
+      <modify Field="Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Thievery skill.
 	Once per encounter, you can use the rogue's Sneak Attack class feature.
@@ -32,17 +32,17 @@ You gain training in the Thievery skill.
     <print-prereqs> Int 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Wizard: Arcana skill, wizard power 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Wizard </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training" />
-      <select type="Power" number="1" Category="at-will,1,ID_FMP_CLASS_9" />
-      <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_GRANTS_WIZARD_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_ARCANA" type="Skill Training"/>
+      <select type="Power" number="1" Category="at-will,1,ID_FMP_CLASS_9"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_GRANTS_WIZARD_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Arcana skill.
 	Choose a 1st-level wizard at-will power. You can use that power once per encounter.
@@ -54,19 +54,19 @@ You gain training in the Arcana skill.
     <print-prereqs> Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Cleric: Religion skill, healing word 1/day </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Cleric </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_1455(Daily) </specific>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_RELIGION" type="Skill Training" />
-      <grant name="ID_FMP_POWER_1455" type="Power" />
-      <modify Field="Power Usage" value="Daily" />
-      <modify Field="Special" value="" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_RELIGION" type="Skill Training"/>
+      <grant name="ID_FMP_POWER_1455" type="Power"/>
+      <modify Field="Power Usage" value="Daily"/>
+      <modify Field="Special" value=""/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Religion skill.
 	Once per day, you can use the cleric's healing word power.
@@ -78,15 +78,15 @@ You gain training in the Religion skill.
     <print-prereqs> Str 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: skill training, +1 to attack 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="Fighter class" />
-      <select type="Class Feature" number="1" Category="Student of the Sword" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Fighter class"/>
+      <select type="Class Feature" number="1" Category="Student of the Sword"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the fighter's class skill list.
 	Choose either one-handed melee weapons or two-handed melee weapons. Once per encounter as a free action, you can add a +1 bonus to the next attack roll you make with a weapon of that category. Whether the attack hits or misses, you mark the target until the end of your next turn.
@@ -97,18 +97,18 @@ You gain training in one skill from the fighter's class skill list.
     <print-prereqs> Str 13, Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Paladin: skill training, divine challenge 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Paladin </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_805(Encounter) </specific>
     <rules>
-      <select type="Skill Training" number="1" Category="Paladin class" />
-      <grant name="ID_FMP_POWER_805" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Paladin class"/>
+      <grant name="ID_FMP_POWER_805" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the paladin's class skill list.
 	Once per encounter, you can use the paladin's divine challenge power.
@@ -120,18 +120,18 @@ You gain training in one skill from the paladin's class skill list.
     <print-prereqs> Str 13 or Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Ranger: skill training, Hunter's Quarry 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Ranger </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="ranger class" />
-      <grant name="ID_FMP_CLASS_FEATURE_602" type="Class Feature" />
-      <modify Field="Usage" value="Encounter" />
-      <modify name="Hunter's Quarry" type="Power" Field="Power Usage" value="Encounter" />
-      <modify name="Hunter's Quarry" type="Power" Field="Effect" value="You can designate the nearest enemy to you that you can see as your quarry. Once per encounter, when you hit your quarry with an attack, the attack deals extra damage based on your level. The extra damage is based on your level. If you can make multiple attacks in a round, you decide which attack to apply the extra damage to after all the attacks are rolled.  The hunter's quarry effect remains active until the end of your next turn or until the quarry is defeated.  You can designate one enemy as your quarry at a time. &lt;table&gt;Level Hunter's Quarry Extra Damage 1st?0th +1d6 11th?0th +2d6 21st?0th +3d6&lt;/table&gt;" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="ranger class"/>
+      <grant name="ID_FMP_CLASS_FEATURE_602" type="Class Feature"/>
+      <modify Field="Usage" value="Encounter"/>
+      <modify name="Hunter's Quarry" type="Power" Field="Power Usage" value="Encounter"/>
+      <modify name="Hunter's Quarry" type="Power" Field="Effect" value="You can designate the nearest enemy to you that you can see as your quarry. Once per encounter, when you hit your quarry with an attack, the attack deals extra damage based on your level. The extra damage is based on your level. If you can make multiple attacks in a round, you decide which attack to apply the extra damage to after all the attacks are rolled.  The hunter's quarry effect remains active until the end of your next turn or until the quarry is defeated.  You can designate one enemy as your quarry at a time. &lt;table&gt;Level Hunter's Quarry Extra Damage 1st?0th +1d6 11th?0th +2d6 21st?0th +3d6&lt;/table&gt;"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the ranger's class skill list.
 	Once per encounter, you can use the ranger's Hunter's Quarry class feature. The target you designate as your quarry remains your quarry until the end of your next turn.
@@ -142,17 +142,17 @@ You gain training in one skill from the ranger's class skill list.
     <print-prereqs> Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Warlock: skill training, pact at-will power 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Warlock </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="warlock class" />
-      <select type="Class Feature" number="1" Category="Pact Initiate" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="warlock class"/>
+      <select type="Class Feature" number="1" Category="Pact Initiate"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the warlock's class skill list.
 	Choose a warlock pact. You gain the pact's at-will power as an encounter power, and you can pursue the warlock paragon path based on that pact.
@@ -164,19 +164,19 @@ You gain training in one skill from the warlock's class skill list.
     <print-prereqs> Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Druid: Nature skill, wild shape, at-will beast form power 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Druid </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_5032 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_NATURE" type="Skill Training" />
-      <grant name="ID_FMP_POWER_5032" type="Power" />
-      <select type="Power" number="1" Category="ID_FMP_CLASS_126,1,at-will,beast form" />
-      <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_GRANTS_DRUID_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_DRUID" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_NATURE" type="Skill Training"/>
+      <grant name="ID_FMP_POWER_5032" type="Power"/>
+      <select type="Power" number="1" Category="ID_FMP_CLASS_126,1,at-will,beast form"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_GRANTS_DRUID_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_DRUID" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in Nature. You gain the druid's wild shape power. Choose a 1st-level druid at-will attack power that has the beast form keyword. You can use that power once per encounter.
 	In addition, you can wield druid implements.
@@ -187,14 +187,14 @@ You gain training in Nature. You gain the druid's wild shape power. Choose a 1st
     <print-prereqs> Str 13, Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: training in one skill, immediate interrupt basic attack once per encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="Fighter class" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Fighter class"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the fighter's class skill list.
 Once per encounter, whenever an enemy that is adjacent to you shifts or makes an attack that does not include you as a target, you can make a melee basic attack against that enemy as an immediate interrupt.
@@ -205,15 +205,15 @@ Once per encounter, whenever an enemy that is adjacent to you shifts or makes an
     <print-prereqs> Str 13, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Rogue: training in Stealth skill, Ruthless Ruffian </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Rogue </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
-      <grant name="ID_FMP_CLASS_FEATURE_1031" type="Class Feature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1031" type="Class Feature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Stealth skill. You gain the Ruthless Ruffian class feature.
    </RulesElement>
@@ -223,14 +223,14 @@ You gain training in the Stealth skill. You gain the Ruthless Ruffian class feat
     <print-prereqs> Dex 13, Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Rogue: training in Bluff skill or Intimidate skill, add Cha modifier to AC once per encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Rogue </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_3|ID_FMP_SKILL_14" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_3|ID_FMP_SKILL_14"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Bluff skill or the Intimidate skill.
 	Once per encounter, when an enemy makes an opportunity attack against you, you can add your Charisma modifier to your AC against that attack.
@@ -241,15 +241,15 @@ You gain training in the Bluff skill or the Intimidate skill.
     <print-prereqs> Str 13, Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Ranger: training in one skill, wield one-handed weapon as off-hand weapon </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Ranger </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="ranger class" />
-      <grant name="ID_INTERNAL_INTERNAL_AMBIDEXTROUS" type="Internal" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="ranger class"/>
+      <grant name="ID_INTERNAL_INTERNAL_AMBIDEXTROUS" type="Internal"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_RANGER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the ranger's class skill list.
 	You can wield a one-handed weapon in your off hand as though it were an off-hand weapon.
@@ -260,16 +260,16 @@ You gain training in one skill from the ranger's class skill list.
     <print-prereqs> Int 13, Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Wizard: Training in Arcana, Nature, or Religion, Ritual Casting, wizard implements </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Wizard </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_FMP_SKILL_16|ID_FMP_SKILL_18" />
-      <grant name="ID_FMP_CLASS_FEATURE_683" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_WIZARD_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_FMP_SKILL_16|ID_FMP_SKILL_18"/>
+      <grant name="ID_FMP_CLASS_FEATURE_683" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_WIZARD_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Arcana skill, the Nature skill, or the Religion skill. You gain the wizard's Ritual Casting class feature.  In addition, you can wield wizard implements.
    </RulesElement>
@@ -279,16 +279,16 @@ You gain training in the Arcana skill, the Nature skill, or the Religion skill. 
     <print-prereqs> Con 13, Cha 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Warlock: Warlock's Curse 1/encounter, warlock implements </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Warlock </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_605" type="Class Feature" />
-      <modify name="Warlock's Curse" type="Power" Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_GRANTS_WARLOCK_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_FMP_CLASS_FEATURE_605" type="Class Feature"/>
+      <modify name="Warlock's Curse" type="Power" Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_GRANTS_WARLOCK_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_WARLOCK" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Once per encounter, you can use the Warlock's Curse class feature. The curse ends the first time you deal the extra damage from Warlock's Curse.  In addition, you can wield warlock implements.
    </RulesElement>
@@ -298,16 +298,16 @@ Once per encounter, you can use the Warlock's Curse class feature. The curse end
     <print-prereqs> Wis 15 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Cleric: training in Heal, Healer's Lore </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Cleric </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_HEAL" type="Skill Training" />
-      <grant name="ID_FMP_CLASS_FEATURE_395" type="Class Feature" />
-      <grant name="ID_INTERNAL_GRANTS_CLERIC_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_HEAL" type="Skill Training"/>
+      <grant name="ID_FMP_CLASS_FEATURE_395" type="Class Feature"/>
+      <grant name="ID_INTERNAL_GRANTS_CLERIC_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Heal skill. You gain the cleric's Healer's Lore class feature. In addition, you can wield cleric implements.
    </RulesElement>
@@ -317,18 +317,18 @@ You gain training in the Heal skill. You gain the cleric's Healer's Lore class f
     <print-prereqs> Wis 15 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Paladin: training in one class skill, virtue's touch 1/day </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Paladin </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_7240(Daily) </specific>
     <rules>
-      <select type="Skill Training" number="1" Category="Paladin class" />
-      <grant name="ID_FMP_POWER_7240" type="Power" />
-      <modify Field="Power Usage" value="Daily" />
-      <grant name="ID_INTERNAL_GRANTS_PALADIN_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Paladin class"/>
+      <grant name="ID_FMP_POWER_7240" type="Power"/>
+      <modify Field="Power Usage" value="Daily"/>
+      <grant name="ID_INTERNAL_GRANTS_PALADIN_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the paladin's class skills list.
 Once per day, you can use the virtue's touch power. In addition, you can wield paladin implements.
@@ -338,20 +338,20 @@ Once per day, you can use the virtue's touch power. In addition, you can wield p
     <Prereqs> Dex 13; ~MULTICLASS or Unlimited Multiclass or Assassin CountsAsClass; !ID_FMP_CLASS_466; !ID_FMP_HYBRID_CLASS_641; !ID_FMP_CLASS_811 </Prereqs>
     <print-prereqs> Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
     <specific name="type"> Multiclass Assassin </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_9400 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
-      <grant name="ID_FMP_POWER_9400" type="Power" />
-      <modify name="Assassin's Shroud" type="Power" Field="Special" value="You can use this power only on your turn and only once per turn. You can use it no more than twice each encounter." />
-      <grant name="ID_INTERNAL_GRANTS_ASSASSIN_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training"/>
+      <grant name="ID_FMP_POWER_9400" type="Power"/>
+      <modify name="Assassin's Shroud" type="Power" Field="Special" value="You can use this power only on your turn and only once per turn. You can use it no more than twice each encounter."/>
+      <grant name="ID_INTERNAL_GRANTS_ASSASSIN_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Stealth skill. Twice per encounter, you can use the assassin's shroud power. In addition, you can wield assassin implements.
    </RulesElement>
@@ -360,20 +360,20 @@ You gain training in the Stealth skill. Twice per encounter, you can use the ass
     <Prereqs> Dex 13; ~MULTICLASS or Unlimited Multiclass or Assassin CountsAsClass; !ID_FMP_CLASS_466; !ID_FMP_HYBRID_CLASS_641; !ID_FMP_CLASS_811 </Prereqs>
     <print-prereqs> Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description" />
-    <specific name="Special" />
+    <specific name="Short Description"/>
+    <specific name="Special"/>
     <specific name="type"> Multiclass Assassin </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_9401(Encounter) </specific>
     <rules>
-      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_1|ID_FMP_SKILL_20" />
-      <grant name="ID_FMP_POWER_9401" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
-      <grant name="ID_INTERNAL_GRANTS_ASSASSIN_IMPLEMENTS" type="Grants" />
-      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="ID_FMP_SKILL_1|ID_FMP_SKILL_20"/>
+      <grant name="ID_FMP_POWER_9401" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
+      <grant name="ID_INTERNAL_GRANTS_ASSASSIN_IMPLEMENTS" type="Grants"/>
+      <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in the Acrobatics or Stealth skill. Once per encounter, you can use the shadow step power. In addition, you can wield assassin implements.
    </RulesElement>
@@ -383,14 +383,14 @@ You gain training in the Acrobatics or Stealth skill. Once per encounter, you ca
     <print-prereqs> Str 13 or Wis 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: training in one class skill, +1 attack or AC once per encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="Fighter class" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Fighter class"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the fighter's class skills list.
 Once per encounter while you wield a weapon in one hand and have nothing in your other hand, you can use a free action during your turn to gain a +1 bonus to an attack roll you just made or a +1 bonus to AC until the start of your next turn.
@@ -401,16 +401,16 @@ Once per encounter while you wield a weapon in one hand and have nothing in your
     <print-prereqs> Str 13 or Dex 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: training in one class skill, +1 damage once per encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="Fighter class" />
-      <statadd name="Cyclone Warrior" value="+1" requires="Paragon Tier" />
-      <statadd name="Cyclone Warrior" value="+1" requires="Epic Tier" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Fighter class"/>
+      <statadd name="Cyclone Warrior" value="+1" requires="Paragon Tier"/>
+      <statadd name="Cyclone Warrior" value="+1" requires="Epic Tier"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the fighter's class skills list.
 Once per encounter as a free action during your turn, while you are wearing light armor or chainmail and wielding a weapon in each hand, you can gain a +1 bonus to damage rolls with melee or close attacks until the end of your turn. This bonus increases to +2 at 11th level and +3 at 21st level.
@@ -421,14 +421,14 @@ Once per encounter as a free action during your turn, while you are wearing ligh
     <print-prereqs> Dex 13 or Int 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Rogue: training in Stealth, Cunning Sneak 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Rogue </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ROGUE" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in Stealth.
 Once per encounter, you can use a free action during your turn to gain the benefit of the rogue class feature Cunning Sneak until the end of your turn.
@@ -439,14 +439,14 @@ Once per encounter, you can use a free action during your turn to gain the benef
     <print-prereqs> Str 13 or Con 13 </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Fighter: training in one class skill, temporary hp when hit 1/encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Fighter </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Skill Training" number="1" Category="Fighter class" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Skill Training" number="1" Category="Fighter class"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_FIGHTER" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 You gain training in one skill from the fighter's class skills list.
 Once per encounter, when you are hit by a melee attack or a close attack, you gain temporary hit points equal to your Constitution modifier.
@@ -462,11 +462,11 @@ Once per encounter, when you are hit by a melee attack or a close attack, you ga
     <specific name="_SupportsID"> ID_FMP_FEAT_1627 </specific>
     <specific name="_RequiresID"> ID_FMP_CLASS_2 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_2,ID_FMP_CLASS_FEATURE_324" />
-      <modify Field="Power Usage" value="Daily" requires="!Channel Divinity class feature" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_2,ID_FMP_CLASS_FEATURE_324"/>
+      <modify Field="Power Usage" value="Daily" requires="!Channel Divinity class feature"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_CLERIC" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Choose a Channel Divinity power available as a class feature for clerics.
 If you don't already have the Channel Divinity class feature, you can use the selected Channel Divinity power once per day.
@@ -484,11 +484,11 @@ You are treated as having the Channel Divinity class feature for the purpose of 
     <specific name="_SupportsID"> ID_FMP_FEAT_1627 </specific>
     <specific name="_RequiresID"> ID_FMP_CLASS_4 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_4,ID_FMP_CLASS_FEATURE_324" />
-      <modify Field="Power Usage" value="Daily" requires="!Channel Divinity class feature" />
-      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_4,ID_FMP_CLASS_FEATURE_324"/>
+      <modify Field="Power Usage" value="Daily" requires="!Channel Divinity class feature"/>
+      <grant name="ID_INTERNAL_COUNTSASFEATURE_CHANNEL_DIVINITY" type="CountsAsFeature"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_PALADIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
     </rules>
 Choose a Channel Divinity power available as a class feature for paladins.
 If you don't already have the Channel Divinity class feature, you can use the selected Channel Divinity power once per day.

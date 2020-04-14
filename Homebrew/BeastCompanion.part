@@ -1,26 +1,26 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>BeastCompanion.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/BeastCompanion.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/BeastCompanion.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/BeastCompanion.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/BeastCompanion.txt</VersionAddress>
   </UpdateInfo>
-  <RulesElement name="Multiclass Beastmaster" type="Category" internal-id="ID_CATEGORY_MULTICLASS_BEASTMASTER" source="Homebrew" revision-date="8.27/2011 12:13:14 PM"></RulesElement>
+  <RulesElement name="Multiclass Beastmaster" type="Category" internal-id="ID_CATEGORY_MULTICLASS_BEASTMASTER" source="Homebrew" revision-date="8.27/2011 12:13:14 PM"/>
   <RulesElement name="Beast Companion" type="Feat" internal-id="ID_YKK_FEAT_101" source="Dragon Magazine 368" revision-date="8/27/2010 12:18:27 PM">
     <Category> ID_CATEGORY_MULTICLASS_BEASTMASTER,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
     <Prereqs> any martial class or any primal class or any arcane class or any divine class; ~MULTICLASS or Unlimited Multiclass </Prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a Beast Companion. </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Beastmaster </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_1030" type="Class Feature" />
-      <select type="Companion" number="1" category="ID_FMP_CLASS_5" />
+      <grant name="ID_FMP_CLASS_FEATURE_1030" type="Class Feature"/>
+      <select type="Companion" number="1" category="ID_FMP_CLASS_5"/>
 Beast Companion Type
-		 <statadd name="FREEBEE:ID_FMP_RITUAL_187" value="+1" /><grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" /><grant name="ID_INTERNAL_MULTICLASS_BEASTMASTER" type="Category" /><select type="Power" name="Beast Companion Attack" Category="at-will,attack,ID_FMP_CLASS_5,ID_FMP_CATEGORY_54,1" /><modify Field="Power Usage" value="Encounter" /></rules>
+		 <statadd name="FREEBEE:ID_FMP_RITUAL_187" value="+1"/><grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/><grant name="ID_INTERNAL_MULTICLASS_BEASTMASTER" type="Category"/><select type="Power" name="Beast Companion Attack" Category="at-will,attack,ID_FMP_CLASS_5,ID_FMP_CATEGORY_54,1"/><modify Field="Power Usage" value="Encounter"/></rules>
 You gain a Ranger Beast Companion.  Select a first level Ranger at-will attack power with the Beast keyword: you can use this power once per encounter.
    </RulesElement>
   <RulesElement name="Beast Companion Mastery" type="Feat" internal-id="ID_YKK_FEAT_102" source="Homebrew" revision-date="5/10/2011 4:45:22 PM">
@@ -29,14 +29,14 @@ You gain a Ranger Beast Companion.  Select a first level Ranger at-will attack p
     <print-prereqs> Beast Companion feat </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Gain options with your Beast Companion </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Multiclass Beastmaster </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Power" name="Beast Encounter Attack Power" Category="$$LEVEL,ID_FMP_CLASS_5,ID_FMP_CATEGORY_54,encounter,attack" />
-      <modify Field="Special" value="You must expend an encounter attack power of the same or higher level to use this power." />
-      <select type="Power" name="Beast Utility Power" Category="$$LEVEL,ID_FMP_CLASS_5,ID_FMP_CATEGORY_54,utility" Level="2" />
+      <select type="Power" name="Beast Encounter Attack Power" Category="$$LEVEL,ID_FMP_CLASS_5,ID_FMP_CATEGORY_54,encounter,attack"/>
+      <modify Field="Special" value="You must expend an encounter attack power of the same or higher level to use this power."/>
+      <select type="Power" name="Beast Utility Power" Category="$$LEVEL,ID_FMP_CLASS_5,ID_FMP_CATEGORY_54,utility" Level="2"/>
     </rules>
 When you take this feat, pick a ranger encounter attack power of your level or lower that has the Beast keyword.  Once per encounter you can use this attack power by expending an encounter attack power of equal or higher level.  In addition you gain a ranger utility power with the beast keyword of your level or lower.  Each time you gain a level, you may choose to change which powers you have selected.
    </RulesElement>

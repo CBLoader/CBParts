@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>Tikbalang.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/Tikbalang.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/Tikbalang.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/Tikbalang.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/Tikbalang.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Tikbalang" type="Race" internal-id="ID_ESJ_RACE_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
     <Prereqs> ~TIKBALANG </Prereqs>
@@ -31,12 +31,12 @@
     <specific name="Short Description"> Equine fey humanoids, clever and swift. </specific>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_641, ID_ESJ_RACIAL_TRAIT_7776001, ID_ESJ_RACIAL_TRAIT_7776002 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_TIKBALANG" type="Grants" />
-      <statadd name="Speed" value="+7" />
-      <textstring name="Average Height" value="6' 8&quot;-7' 2&quot;" />
-      <textstring name="Average Weight" value="150-280 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Dexterity|Charisma" />
+      <grant name="ID_INTERNAL_GRANTS_TIKBALANG" type="Grants"/>
+      <statadd name="Speed" value="+7"/>
+      <textstring name="Average Height" value="6' 8&quot;-7' 2&quot;"/>
+      <textstring name="Average Weight" value="150-280 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Dexterity|Charisma"/>
     </rules>
 Like many fey creatures, the mysterious tikbalang are forest guardians that one will only see if they allow you to. But unlike their gnomish or elven cousins, they have little reason to hide their presence from those that offend them. Though they also employ deceptive magic to ward off the many gates to Kalikasan, they are just as likely to literally kick a trespasser out of their demesne.
 
@@ -48,23 +48,23 @@ Play a tikbalang if you want . . .
   <RulesElement name="Tikbalang" type="Grants" internal-id="ID_INTERNAL_GRANTS_TIKBALANG" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
     <specific name="_SupportsID"> ID_ESJ_RACE_7776001 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
-      <grant name="ID_ESJ_RACIAL_TRAIT_7776001" type="Racial Trait" />
-      <grant name="ID_ESJ_RACIAL_TRAIT_7776002" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+      <grant name="ID_ESJ_RACIAL_TRAIT_7776001" type="Racial Trait"/>
+      <grant name="ID_ESJ_RACIAL_TRAIT_7776002" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Fleet of Foot" type="Racial Trait" internal-id="ID_ESJ_RACIAL_TRAIT_7776001" source="Tikbalang: Guardians of Kalikasan" revision-date="7/15/2010">
     <specific name="Short Description"> +2 to initiative </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Initiative Misc" value="+2" type="Racial" />
+      <statadd name="Initiative Misc" value="+2" type="Racial"/>
     </rules>
 You gain a +2 racial bonus on initiative checks.
    </RulesElement>
@@ -74,7 +74,7 @@ You gain a +2 racial bonus on initiative checks.
     <specific name="Powers"> ID_ESJ_POWER_7776002 </specific>
     <specific name="_DisplayPowers"> ID_ESJ_POWER_7776002 </specific>
     <rules>
-      <grant name="ID_ESJ_POWER_7776002" type="Power" />
+      <grant name="ID_ESJ_POWER_7776002" type="Power"/>
     </rules>
 You can use Unearthly Gallop as an at-will power. 
    </RulesElement>
@@ -111,7 +111,7 @@ You ignore difficult terrain whenever you charge.
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Bonus to Athletics and free running start </specific>
     <rules>
-      <statadd name="Athletics Misc" value="+2" type="Feat" />
+      <statadd name="Athletics Misc" value="+2" type="Feat"/>
     </rules>
 	You gain a +2 feat bonus to Athletics checks.
 	You are always considered to have made a running start whenever you make Athletics checks to jump.
@@ -143,7 +143,7 @@ You gain a +1 bonus to attack rolls against opponents who have yet to act in an 
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> Unearthly Gallop grants phasing </specific>
     <rules>
-      <modify name="Unearthly Gallop" type="Power" Field="Effect" value="You gain phasing for the next time you willingly move from your space before the start of your next turn." />
+      <modify name="Unearthly Gallop" type="Power" Field="Effect" value="You gain phasing for the next time you willingly move from your space before the start of your next turn."/>
     </rules>
 Whenever you use your Unearthly Gallop, you also gain phasing for the next movement that you make before the start of your next turn.
    </RulesElement>
@@ -153,7 +153,7 @@ Whenever you use your Unearthly Gallop, you also gain phasing for the next movem
     <specific name="Tier"> Epic </specific>
     <specific name="Short Description"> Free melee basic attack with Unearthly Gallop </specific>
     <rules>
-      <modify name="Unearthly Gallop" type="Power" Field="Kick-Start Gallop" value="You may also make an unarmed melee basic attack as a free action." />
+      <modify name="Unearthly Gallop" type="Power" Field="Kick-Start Gallop" value="You may also make an unarmed melee basic attack as a free action."/>
     </rules>
 Whenever you use your Unearthly Gallop, you may make an unarmed melee basic attack as a free action.
    </RulesElement>
@@ -163,8 +163,8 @@ Whenever you use your Unearthly Gallop, you may make an unarmed melee basic atta
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Use hooves as unarmed weapon </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
-      <statadd name="FREEBEE:ID_INTERNAL_WEAPON_TIKBALANG_HOOVES" value="+1" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency"/>
+      <statadd name="FREEBEE:ID_INTERNAL_WEAPON_TIKBALANG_HOOVES" value="+1"/>
     </rules>
 	When you make an unarmed attack, you can use your hooves instead, which is a weapon in the unarmed weapon group. This weapon has a proficiency bonus of +2, and a damage of 1d10. The hooves are not considered to be a weapon that you wield in your hand.
 	You can master and perform the Enhance Natural Armaments ritual as if you had the Ritual Caster feat.
@@ -236,8 +236,8 @@ You tie the golden mane around your ring finger, which causes you to lose one of
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_452 </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="Tikbalang Hooves:attack" value="+1" />
-      <statadd name="Tikbalang Hooves:damage" value="+4" requires="Kensei Mastery" />
+      <statadd name="Tikbalang Hooves:attack" value="+1"/>
+      <statadd name="Tikbalang Hooves:damage" value="+4" requires="Kensei Mastery"/>
     </rules>
 You gain a +1 bonus to attack rolls with Tikbalang Hooves.
    </RulesElement>
@@ -246,28 +246,28 @@ You gain a +1 bonus to attack rolls with Tikbalang Hooves.
   </RulesElement>
   <AppendNodes name="Implement Proficiency (Proficient Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PROFICIENT_WEAPONS)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" requires="Weapon Proficiency (Tikbalang Hooves)" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" requires="Weapon Proficiency (Tikbalang Hooves)"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Implement Proficiency (Unarmed group)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(UNARMED_GROUP)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Weapon Master" type="Internal" internal-id="ID_INTERNAL_INTERNAL_WEAPON_MASTER" source="Dragon Magazine 382">
     <rules>
-      <statadd name="Tikbalang Hooves:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Tikbalang Hooves) proficiency" />
-      <statadd name="Tikbalang Hooves:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Tikbalang Hooves) proficiency" />
+      <statadd name="Tikbalang Hooves:damage" value="+Weapon Mastery Focus" type="Feat" requires="Weapon Proficiency (Tikbalang Hooves) proficiency"/>
+      <statadd name="Tikbalang Hooves:attack" value="+Weapon Mastery Expertise" type="Feat" requires="Weapon Proficiency (Tikbalang Hooves) proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Weapon Group (Unarmed)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(UNARMED)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Implement Proficiency (Melee Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TIKBALANG_HOOVES)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Monk Unarmed Strike" type="Weapon" internal-id="ID_INTERNAL_WEAPON_MONK_UNARMED_STRIKE" source="Player's Handbook 3">
@@ -275,7 +275,7 @@ You gain a +1 bonus to attack rolls with Tikbalang Hooves.
     <specific name="InternalOnly"> 0 </specific>
     <specific name="Weight"> 0 </specific>
     <specific name="Gold"> 0 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> 1d8 </specific>
     <specific name="Proficiency Bonus"> 3 </specific>
     <specific name="Weapon Category"> Improvised Melee </specific>
@@ -295,12 +295,12 @@ You can make unarmed attacks with much greater effectiveness than most combatant
     <specific name="Powers"> ID_ESJ_POWER_7776003,ID_ESJ_POWER_7776004,ID_ESJ_POWER_7776005 </specific>
     <specific name="_DisplayPowers"> ID_ESJ_POWER_7776003,ID_ESJ_POWER_7776004,ID_ESJ_POWER_7776005 </specific>
     <rules>
-      <grant name="ID_ESJ_CLASS_FEATURE_7776001" type="Class Feature" Level="11" />
-      <grant name="ID_ESJ_CLASS_FEATURE_7776002" type="Class Feature" Level="11" />
-      <grant name="ID_ESJ_CLASS_FEATURE_7776003" type="Class Feature" Level="16" />
-      <grant name="ID_ESJ_POWER_7776003" type="Power" Level="11" />
-      <grant name="ID_ESJ_POWER_7776004" type="Power" Level="12" />
-      <grant name="ID_ESJ_POWER_7776005" type="Power" Level="20" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776001" type="Class Feature" Level="11"/>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776002" type="Class Feature" Level="11"/>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776003" type="Class Feature" Level="16"/>
+      <grant name="ID_ESJ_POWER_7776003" type="Power" Level="11"/>
+      <grant name="ID_ESJ_POWER_7776004" type="Power" Level="12"/>
+      <grant name="ID_ESJ_POWER_7776005" type="Power" Level="20"/>
     </rules>
 	Like the winds, tikbalangs are swift, unseen, and unpredictable. They can feel the powerful magic of the winds as their manes swim through it, and many take up the arcane arts because of this connection. However, only the truly skilled can gather this magic to power their spells. These tikbalangs are known as the eldritch runners.
 	Just like most mages, you prefer to stay outside melee, preferring to direct the flow of battle from a safe distance. But to affect real change, you know that galloping through the thick of things is necessary. You dart into the fight one moment and are gone the next; just like the wind that empowers you.
@@ -310,7 +310,7 @@ You can make unarmed attacks with much greater effectiveness than most combatant
     <specific name="Short Description"> Move action from action point gives bonus arcane attack and damage </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Windpact Action:If you spend an action point to take a move action, the next arcane attack power you make before the end of your next turn gains a +4 bonus to attack and damage." />
+      <textstring name="Action Point" value="Windpact Action:If you spend an action point to take a move action, the next arcane attack power you make before the end of your next turn gains a +4 bonus to attack and damage."/>
     </rules>
 Whenever you spend an action point to take a move action, the next arcane attack power you make before the end of your next turn gains a +4 bonus to the attack and damage roll.
    </RulesElement>
@@ -384,12 +384,12 @@ The image lasts until the end of your next turn. When the conjuration ends, you 
     <specific name="Powers"> ID_ESJ_POWER_7776006,ID_ESJ_POWER_7776007,ID_ESJ_POWER_7776008 </specific>
     <specific name="_DisplayPowers"> ID_ESJ_POWER_7776006,ID_ESJ_POWER_7776007,ID_ESJ_POWER_7776008 </specific>
     <rules>
-      <grant name="ID_ESJ_CLASS_FEATURE_7776004" type="Class Feature" Level="11" />
-      <grant name="ID_ESJ_CLASS_FEATURE_7776005" type="Class Feature" Level="11" />
-      <grant name="ID_ESJ_CLASS_FEATURE_7776006" type="Class Feature" Level="16" />
-      <grant name="ID_ESJ_POWER_7776006" type="Power" Level="11" />
-      <grant name="ID_ESJ_POWER_7776007" type="Power" Level="12" />
-      <grant name="ID_ESJ_POWER_7776008" type="Power" Level="20" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776004" type="Class Feature" Level="11"/>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776005" type="Class Feature" Level="11"/>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776006" type="Class Feature" Level="16"/>
+      <grant name="ID_ESJ_POWER_7776006" type="Power" Level="11"/>
+      <grant name="ID_ESJ_POWER_7776007" type="Power" Level="12"/>
+      <grant name="ID_ESJ_POWER_7776008" type="Power" Level="20"/>
     </rules>
 	There are those who see the tikbalangs for their inherent magical nature and their ability to mislead travellers. They view tikbalangs as a nuisance when travelling through the thick forests, but they aren't seen as an immediate, physical threat. Those who hold these beliefs have never had the misfortune of dealing with a Razormane Rampager.
 	Razormane Rampagers are creatures of strength and primal magic. Their manes permanently harden into bristles, and grow into hundreds of sharp daggers in the heat of battle. They also become larger and more terrifying than other tikbalangs, sometimes growing to 8 feet tall as they tap into their anger.
@@ -400,7 +400,7 @@ The image lasts until the end of your next turn. When the conjuration ends, you 
     <specific name="Short Description"> Adjacent creatures take Con mod damage on action point </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Scattermane Action:Each creature adjacent to you takes damage equal to your Constitution modifier." />
+      <textstring name="Action Point" value="Scattermane Action:Each creature adjacent to you takes damage equal to your Constitution modifier."/>
     </rules>
 Whenever you spend an action point to take an extra action, each creature adjacent to you takes damage equal to your Constitution modifier.
    </RulesElement>
@@ -476,8 +476,8 @@ You count as a tikbalang for meeting prerequisites.
     <Prereqs> !Tikbalang Race,!Tikbalang CountsAsRace </Prereqs>
     <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_TIKBALANG" type="CountsAsRace" />
-      <grant name="ID_ESJ_POWER_7776002" type="Power" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_TIKBALANG" type="CountsAsRace"/>
+      <grant name="ID_ESJ_POWER_7776002" type="Power"/>
     </rules>
 You are considered a Tikbalang for the purpose of meeting prerequisites.
    </RulesElement>

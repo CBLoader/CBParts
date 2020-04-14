@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.03</Version>
     <Filename>23-shaman.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/23-shaman.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=23-shaman</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/23-shaman.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/23-shaman.txt</VersionAddress>
   </UpdateInfo>
   <!-- Shaman -->
   <!-- 23-shaman.part, version 1.03 -->
@@ -50,16 +50,16 @@ Other shaman powers call on other spirits to intervene in the course of battle o
     <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
     <specific name="Short Description"> You command the services of a faithful spirit guide, using it to inspire allies and destroy enemies. </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_SHAMAN" type="Grants" />
-      <select type="Power" number="1" Category="$$CLASS,at-will,1" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_147" />
-      <statadd name="_LEVEL-ONE-HPS" value="+12" />
-      <statadd name="_PER-LEVEL-HPS" value="+5" />
-      <statadd name="Healing Surges" value="+7" />
-      <select type="Build" number="1" Category="$$CLASS" optional="true" />
-      <statadd name="Fortitude Defense Class Bonus" value="+1" />
-      <statadd name="Will Defense Class Bonus" value="+1" />
-      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_147" />
+      <grant name="ID_INTERNAL_GRANTS_SHAMAN" type="Grants"/>
+      <select type="Power" number="1" Category="$$CLASS,at-will,1"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_147"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+      <statadd name="_PER-LEVEL-HPS" value="+5"/>
+      <statadd name="Healing Surges" value="+7"/>
+      <select type="Build" number="1" Category="$$CLASS" optional="true"/>
+      <statadd name="Fortitude Defense Class Bonus" value="+1"/>
+      <statadd name="Will Defense Class Bonus" value="+1"/>
+      <select type="Skill Training" number="3" Category="ID_FMP_CLASS_147"/>
     </rules>
 Shamans are inspiring and dangerous battle leaders. They command powerful spirit guides, and through them lead their allies. These nature spirits bolster their allies' attacks and offer protection and healing when needed.
 In a rite of passage or initiation, you pledged yourself to the spirits, to be their voice and hands in the world. Through ancient song and sacred ceremony, you have called a powerful spirit companion to your side. The primal spirits of nature affirm your will, guide the actions of your allies, and deal mighty attacks against your foes. You might be a venerable advisor to a tribal leader, a young traveler seeking to bring tales of a wider world back to your people, or a scholar devoted to the pursuit of nearly forgotten lore.
@@ -75,12 +75,12 @@ The spirits and voices of nature guide your every step. Their power flows throug
     <specific name="Powers"> ID_FMP_POWER_13762,ID_FMP_POWER_13764,ID_FMP_POWER_13763 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_13762,ID_FMP_POWER_13764,ID_FMP_POWER_13763 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_3514" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_3515" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_3516" type="Class Feature" Level="16" />
-      <grant name="ID_FMP_POWER_13762" type="Power" Level="11" />
-      <grant name="ID_FMP_POWER_13764" type="Power" Level="12" />
-      <grant name="ID_FMP_POWER_13763" type="Power" Level="20" />
+      <grant name="ID_FMP_CLASS_FEATURE_3514" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3515" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3516" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_POWER_13762" type="Power" Level="11"/>
+      <grant name="ID_FMP_POWER_13764" type="Power" Level="12"/>
+      <grant name="ID_FMP_POWER_13763" type="Power" Level="20"/>
     </rules>
   Your mind is the gateway through which you imprint your will upon the world. In your studies, you have searched for more powerful ways of asserting that will. By choosing the mind flayer as your totem creature, you've gained some of the illithid's natural prowess at bending the wills of lesser beings.
   This connection has taught you hidden secrets of mental dominion, and you've found that they can also be applied to the shamanic practice of summoning spirit companions. In order to bind your new spirit companion to your will, you had to prove your dominance over it. Your spirit companion was cowed, to the point that it is more slave than friend. Even so, you know that if you let your guard down for a moment, the slave will try to become the master.
@@ -96,7 +96,7 @@ The spirits and voices of nature guide your every step. Their power flows throug
     <specific name="Short Description"> Inflict -2 save penalty with action point attack </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="When you spend an action point to make an attack, any enemy hit with the attack takes a -2 penalty to saving throws against any effects the attack imposes. Enemies hit by the attack grant combat advantage until the end of your next turn." />
+      <textstring name="Action Point" value="When you spend an action point to make an attack, any enemy hit with the attack takes a -2 penalty to saving throws against any effects the attack imposes. Enemies hit by the attack grant combat advantage until the end of your next turn."/>
     </rules>
   When you spend an action point to make an attack, any enemy hit with the attack takes a -2 penalty to saving throws against any effects the attack imposes. Enemies hit by the attack grant combat advantage until the end of your next turn.
 </RulesElement>
@@ -163,14 +163,14 @@ The spirits and voices of nature guide your every step. Their power flows throug
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_147,ID_FMP_CATEGORY_57,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION,9 </Category>
     <Flavor> You channel the many-armed thri-kreen spirit through your ally, allowing him or her to strike with speed and ferocity. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Shaman Attack 9 </specific>
     <specific name="Keywords"> Primal, Spirit </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Melee spirit 1 </specific>
     <specific name="Target"> One ally </specific>
     <specific name="Effect"> The target can make a melee basic attack against up to four enemies adjacent to it as a free action. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_147 </specific>
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.06</Version>
     <Filename>35-vampire.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/35-vampire.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=35-vampire</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/35-vampire.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/35-vampire.txt</VersionAddress>
   </UpdateInfo>
 <!-- Vampire -->
 <!-- 35-vampire.part, version 1.06 -->
@@ -31,85 +31,85 @@
   <specific name="Healing Surges"> 2 </specific>
   <specific name="Trained Skills"> From the class skills list below, choose 4 trained skills at 1st level. </specific>
   <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Diplomacy (Cha), History (Int), Intimidate (Cha), Perception (Wis), Religion (Int), Stealth (Dex), Thievery (Dex) </specific>
-  <specific name="Build Options" />
+  <specific name="Build Options"/>
   <specific name="_PARSED_CLASS_FEATURE"> Blood Drinker, Blood Is Life, Child of the Night, Enduring Soul, Hidden Might, Swarm of Shadows, Vampire At-Will Attack Powers, Vampiric Reflexes, Level 2 Vampire Utility Power, Feral Assault, Strength of Blood, Unfettered Hunger, Form of the Bat, Improved Blood Drinker, Night Crawler, Domineering Gaze, Gaseous Form, Enduring Reserves, Hungry Swarm, Shared Blood, Unleashed Fury, Vital Consumption, Level 22 Vampire Utility Power, Energized Blood Drinker, Irresistible Gaze, Consuming Swarm </specific>
-  <specific name="Role"> Striker. Infused with the power of darkness and having already experienced death, you are a lethal creature of the night. As your power increases, your supernatural nature comes to the fore&#8212;but will your humanity pay the price? </specific>
+  <specific name="Role"> Striker. Infused with the power of darkness and having already experienced death, you are a lethal creature of the night. As your power increases, your supernatural nature comes to the fore—but will your humanity pay the price? </specific>
   <specific name="Power Source"> Shadow. </specific>
-  <specific name="Creating" />
-  <specific name="Class Features" />
-  <specific name="Supplemental" />
-  <specific name="Implement" />
-  <specific name="Powers" />
-  <specific name="Power Name" />
+  <specific name="Creating"/>
+  <specific name="Class Features"/>
+  <specific name="Supplemental"/>
+  <specific name="Implement"/>
+  <specific name="Powers"/>
+  <specific name="Power Name"/>
   <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
   <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_6 </specific>
-  <specific name="_SecondaryPowerSourceElement" />
-  <specific name="Secondary Abilities" />
-  <specific name="Hybrid Talent Options" />
+  <specific name="_SecondaryPowerSourceElement"/>
+  <specific name="Secondary Abilities"/>
+  <specific name="Hybrid Talent Options"/>
   <specific name="Short Description"> Infused with the power of darkness and having already experienced death, you are a lethal creature of the night. </specific>
-  <specific name="_ParentClass" />
-  <specific name="Trait Package" />
+  <specific name="_ParentClass"/>
+  <specific name="Trait Package"/>
   <specific name="_SUGGESTED_FEATS"> ID_FMP_FEAT_3566,ID_FMP_FEAT_3154,ID_FMP_FEAT_131,ID_FMP_FEAT_3153,ID_FMP_FEAT_3521,ID_FMP_FEAT_3575,ID_FMP_FEAT_3559,ID_FMP_FEAT_3569,ID_FMP_FEAT_3570,ID_FMP_FEAT_3573,ID_FMP_FEAT_272,ID_FMP_FEAT_171,ID_FMP_FEAT_145,ID_FMP_FEAT_3523,ID_FMP_FEAT_3147,ID_FMP_FEAT_3136,ID_FMP_FEAT_3137,ID_FMP_FEAT_109,ID_FMP_FEAT_3128,ID_FMP_FEAT_3139 </specific>
   <rules>
-    <grant name="ID_INTERNAL_GRANTS_VAMPIRE" type="Grants" />
-    <textstring name="_CLASSNAME" value="ID_FMP_CLASS_817" />
-    <statadd name="_LEVEL-ONE-HPS" value="+12" />
-    <statadd name="_PER-LEVEL-HPS" value="+5" />
-    <statadd name="Healing Surges" value="2" />
-    <statadd name="Healing Surges" value="-ABILITYMOD(Constitution)" />
-    <statadd name="Fortitude Defense Class Bonus" value="+1" />
-    <statadd name="Will Defense Class Bonus" value="+1" />
-    <select type="Skill Training" number="4" Category="ID_FMP_CLASS_817" />
+    <grant name="ID_INTERNAL_GRANTS_VAMPIRE" type="Grants"/>
+    <textstring name="_CLASSNAME" value="ID_FMP_CLASS_817"/>
+    <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+    <statadd name="_PER-LEVEL-HPS" value="+5"/>
+    <statadd name="Healing Surges" value="2"/>
+    <statadd name="Healing Surges" value="-ABILITYMOD(Constitution)"/>
+    <statadd name="Fortitude Defense Class Bonus" value="+1"/>
+    <statadd name="Will Defense Class Bonus" value="+1"/>
+    <select type="Skill Training" number="4" Category="ID_FMP_CLASS_817"/>
   </rules>
 You are a monster, fated and infected by a vile curse that transformed you into a creature of nightmare. Normal emotions have become alien to you. Only cold, gnawing hunger remains.
-	Most of those who become vampires are victims of monstrous attacks, created by a callous hunter who drained them dry of blood and life force, then cast them aside. Others seek out this path from their own fear of infirmity and death, discovering the arcane rites and alchemical formulas that promise dark power. In some cases, a character finds his or her vampirism invoked by an ancient family curse, or that he or she is a member of an extended clan of vampires who pass their blood down to those they deem worthy&#8212;whether by choice or not.
+	Most of those who become vampires are victims of monstrous attacks, created by a callous hunter who drained them dry of blood and life force, then cast them aside. Others seek out this path from their own fear of infirmity and death, discovering the arcane rites and alchemical formulas that promise dark power. In some cases, a character finds his or her vampirism invoked by an ancient family curse, or that he or she is a member of an extended clan of vampires who pass their blood down to those they deem worthy—whether by choice or not.
 	Whatever their origins, vampire characters are not slaves to their creators. Even those beholden to an older vampire retain free will, and have a chance to avoid sinking into the bestial depravity so common among their kind. Vampire characters are the most exceptional examples of those who carry this dark curse, using their powers not solely for murder and personal gain. Some become the greatest of heroes, but even those vampires are aware that few among the common folk have the ability to see past the frightening reality of their dark nature. Avoiding the scrutiny of superstitious folk and disguising his or her needs and abilities serves a vampire best. Trusted companions, enemies to slay and feast upon, and reasons to avoid civilized areas for extended times make an adventuring life the perfect choice for such characters.
 </RulesElement>
 <RulesElement name="Vampire" type="Grants" internal-id="ID_INTERNAL_GRANTS_VAMPIRE" source="Player Essentials: Heroes of Shadow">
   <specific name="_SupportsID"> ID_FMP_CLASS_817 </specific>
   <rules>
-    <grant name="ID_FMP_ROLE_3" type="Role" />
-    <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source" />
-    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency" />
-    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-    <grant name="ID_INTERNAL_GRANTS_VAMPIRE_IMPLEMENTS" type="Grants" />
-    <grant name="ID_FMP_CLASS_FEATURE_3611" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3612" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3613" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3614" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3615" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3616" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3617" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3618" type="Class Feature" />
-    <grant name="ID_FMP_CLASS_FEATURE_3619" type="Class Feature" level="2" />
-    <grant name="ID_FMP_CLASS_FEATURE_3620" type="Class Feature" level="3" />
-    <grant name="ID_FMP_CLASS_FEATURE_3621" type="Class Feature" level="4" />
-    <grant name="ID_FMP_CLASS_FEATURE_3622" type="Class Feature" level="5" />
-    <grant name="ID_FMP_CLASS_FEATURE_3623" type="Class Feature" level="6" />
-    <grant name="ID_FMP_CLASS_FEATURE_3624" type="Class Feature" level="7" />
-    <grant name="ID_FMP_CLASS_FEATURE_3625" type="Class Feature" level="8" />
-    <grant name="ID_FMP_CLASS_FEATURE_3626" type="Class Feature" level="9" />
-    <grant name="ID_FMP_CLASS_FEATURE_3627" type="Class Feature" level="10" />
-    <grant name="ID_FMP_CLASS_FEATURE_3632" type="Class Feature" level="13" />
-    <grant name="ID_FMP_CLASS_FEATURE_3633" type="Class Feature" level="15" />
-    <grant name="ID_FMP_CLASS_FEATURE_3635" type="Class Feature" level="16" />
-    <grant name="ID_FMP_CLASS_FEATURE_3636" type="Class Feature" level="17" />
-    <grant name="ID_FMP_CLASS_FEATURE_3637" type="Class Feature" level="19" />
-    <grant name="ID_FMP_CLASS_FEATURE_3639" type="Class Feature" level="22" />
-    <grant name="ID_FMP_CLASS_FEATURE_3640" type="Class Feature" level="23" />
-    <grant name="ID_FMP_CLASS_FEATURE_3641" type="Class Feature" level="25" />
-    <grant name="ID_FMP_CLASS_FEATURE_3642" type="Class Feature" level="29" />
-    <grant name="ID_INTERNAL_COUNTSASCLASS_VAMPIRE" type="CountsAsClass" />
-    <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal" />
-    <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal" />
+    <grant name="ID_FMP_ROLE_3" type="Role"/>
+    <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+    <grant name="ID_INTERNAL_GRANTS_VAMPIRE_IMPLEMENTS" type="Grants"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3611" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3612" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3613" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3614" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3615" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3616" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3617" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3618" type="Class Feature"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3619" type="Class Feature" level="2"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3620" type="Class Feature" level="3"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3621" type="Class Feature" level="4"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3622" type="Class Feature" level="5"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3623" type="Class Feature" level="6"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3624" type="Class Feature" level="7"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3625" type="Class Feature" level="8"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3626" type="Class Feature" level="9"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3627" type="Class Feature" level="10"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3632" type="Class Feature" level="13"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3633" type="Class Feature" level="15"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3635" type="Class Feature" level="16"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3636" type="Class Feature" level="17"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3637" type="Class Feature" level="19"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3639" type="Class Feature" level="22"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3640" type="Class Feature" level="23"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3641" type="Class Feature" level="25"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3642" type="Class Feature" level="29"/>
+    <grant name="ID_INTERNAL_COUNTSASCLASS_VAMPIRE" type="CountsAsClass"/>
+    <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal"/>
+    <grant name="ID_INTERNAL_INTERNAL_KI_FOCUS_USER" type="Internal"/>
   </rules>
 </RulesElement>
 <RulesElement name="Vampire Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_VAMPIRE_IMPLEMENTS" source="Player Essentials: Heroes of Shadow">
   <specific name="_SupportsID"> ID_FMP_CLASS_817 </specific>
   <rules>
-    <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
-    <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KI_FOCUSES)" type="Proficiency" />
+    <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KI_FOCUSES)" type="Proficiency"/>
   </rules>
 </RulesElement>
 <RulesElement name="Vampire" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_VAMPIRE" source="Player Essentials: Heroes of Shadow">
@@ -123,8 +123,8 @@ You count as a vampire for meeting prerequisites.
   <specific name="Level"> 1 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <rules>
-    <grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision" />
-    <statadd name="resist:necrotic" value="+5" type="resist" />
+    <grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision"/>
+    <statadd name="resist:necrotic" value="+5" type="resist"/>
   </rules>
 You gain the following benefits and weaknesses.
 	* You are an undead creature. You are unaffected by anything that affects only living creatures. You don't need to breathe, which means you are immune to suffocation. You also don't age. Unlike most undead, you do need to sleep.
@@ -159,12 +159,12 @@ While you are bloodied, you gain regeneration equal to your Charisma modifier. I
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <statadd name="Hidden Might" value="+2" requires="5 level" />
-    <statadd name="Hidden Might" value="+2" requires="15 level" />
-    <statadd name="Hidden Might" value="+2" requires="25 level" />
-    <statadd name="Hidden Might" value="+ABILITYMOD(Charisma)" />
-    <statadd name="ID_FMP_CLASS_817:damage" value="+Hidden Might" />
-	<statadd name="Paragon Path:damage" value="+Hidden Might" />
+    <statadd name="Hidden Might" value="+2" requires="5 level"/>
+    <statadd name="Hidden Might" value="+2" requires="15 level"/>
+    <statadd name="Hidden Might" value="+2" requires="25 level"/>
+    <statadd name="Hidden Might" value="+ABILITYMOD(Charisma)"/>
+    <statadd name="ID_FMP_CLASS_817:damage" value="+Hidden Might"/>
+	<statadd name="Paragon Path:damage" value="+Hidden Might"/>
   </rules>
 You gain a bonus to the damage rolls of your vampire powers and vampire paragon path powers. The bonus equals your Charisma modifier. The bonus increases to 2 + your Charisma modifier at 5th level, 4 + your Charisma modifier at 15th level, and 6 + your Charisma modifier at 25th level.
 </RulesElement>
@@ -178,16 +178,16 @@ You gain a bonus to the damage rolls of your vampire powers and vampire paragon 
     <specific name="Level"> 1 </specific>
     <specific name="_CLASSNAME"> Vampire </specific>
         <rules>
-            <statadd name="Vampiric Reflexes" value="+2" />
-            <statadd name="AC" value="+Vampiric Reflexes" type="Shield" wearing="armor:cloth" not-wearing="armor:shield" />
-            <statadd name="AC" value="+Vampiric Reflexes" type="Shield" not-wearing="armor:" />
+            <statadd name="Vampiric Reflexes" value="+2"/>
+            <statadd name="AC" value="+Vampiric Reflexes" type="Shield" wearing="armor:cloth" not-wearing="armor:shield"/>
+            <statadd name="AC" value="+Vampiric Reflexes" type="Shield" not-wearing="armor:"/>
         </rules>
 You gain a +2 shield bonus to AC while you are wearing cloth armor or no armor and aren't using a shield.
 </RulesElement>
 
 <RulesElement name="Vampire At-Will Attack Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3616" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
   <Category> 1 </Category>
-  <Flavor> Vampires are known for their mythic strength and legendary charm&#8212;attributes that you wield as weapons when you enter combat. </Flavor>
+  <Flavor> Vampires are known for their mythic strength and legendary charm—attributes that you wield as weapons when you enter combat. </Flavor>
   <specific name="Short Description"> Gain the Dark Beckoning, Taste of Life, and Vampire Slam powers </specific>
   <specific name="Level"> 1 </specific>
   <specific name="Powers"> ID_FMP_POWER_13850,ID_FMP_POWER_13851,ID_FMP_POWER_13852 </specific>
@@ -197,9 +197,9 @@ You gain a +2 shield bonus to AC while you are wearing cloth armor or no armor a
   <specific name="_DisplayPowers"> ID_FMP_POWER_13850,ID_FMP_POWER_13851,ID_FMP_POWER_13852 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13850" type="Power" />
-    <grant name="ID_FMP_POWER_13851" type="Power" />
-    <grant name="ID_FMP_POWER_13852" type="Power" />
+    <grant name="ID_FMP_POWER_13850" type="Power"/>
+    <grant name="ID_FMP_POWER_13851" type="Power"/>
+    <grant name="ID_FMP_POWER_13852" type="Power"/>
   </rules>
 You gain the dark beckoning, taste of life, and vampire slam powers.
 </RulesElement>
@@ -215,7 +215,7 @@ You gain the dark beckoning, taste of life, and vampire slam powers.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13853 </specific>
   <specific name="_CS_ShortDescription"> @Improved Blood Drinker </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13853" type="Power" />
+    <grant name="ID_FMP_POWER_13853" type="Power"/>
   </rules>
 You gain the blood drinker power.
 </RulesElement>
@@ -231,7 +231,7 @@ You gain the blood drinker power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13854 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13854" type="Power" Level="1-14" />
+    <grant name="ID_FMP_POWER_13854" type="Power" Level="1-14"/>
   </rules>
 You gain the swarm of shadows power.
 </RulesElement>
@@ -247,13 +247,13 @@ You gain the swarm of shadows power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13855,ID_FMP_POWER_13856 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <select type="Power" number="1" Category="$$CLASS,utility,2" />
+    <select type="Power" number="1" Category="$$CLASS,utility,2"/>
   </rules>
 You gain a 2nd-level vampire utility power of your choice.
 </RulesElement>
 <RulesElement name="Feral Assault" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3620" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
   <Category> 3 </Category>
-  <Flavor> As you gain experience, you gain better control of your hunger&#8212;control that allows you to safely channel your feral impulses. When you unleash the beast within, no foe can stand against you for long. </Flavor>
+  <Flavor> As you gain experience, you gain better control of your hunger—control that allows you to safely channel your feral impulses. When you unleash the beast within, no foe can stand against you for long. </Flavor>
   <specific name="Short Description"> Gain the Feral Assault power </specific>
   <specific name="Level"> 3 </specific>
   <specific name="Powers"> ID_FMP_POWER_13857 </specific>
@@ -263,7 +263,7 @@ You gain a 2nd-level vampire utility power of your choice.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13857 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13857" type="Power" Level="3-16" />
+    <grant name="ID_FMP_POWER_13857" type="Power" Level="3-16"/>
   </rules>
 You gain the feral assault power.
 </RulesElement>
@@ -279,7 +279,7 @@ You gain the feral assault power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13858 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13858" type="Power" />
+    <grant name="ID_FMP_POWER_13858" type="Power"/>
   </rules>
 You gain the strength of blood power.
 </RulesElement>
@@ -295,7 +295,7 @@ You gain the strength of blood power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13859 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13859" type="Power" />
+    <grant name="ID_FMP_POWER_13859" type="Power"/>
   </rules>
 You gain the unfettered hunger power.
 </RulesElement>
@@ -311,7 +311,7 @@ You gain the unfettered hunger power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13860 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13860" type="Power" />
+    <grant name="ID_FMP_POWER_13860" type="Power"/>
   </rules>
 You gain the form of the bat power.
 </RulesElement>
@@ -323,7 +323,7 @@ You gain the form of the bat power.
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> You can the use the blood drinker power twice per encounter. </specific>
   <rules>
-    <modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power twice per encounter, but you can use it only once per turn." />
+    <modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power twice per encounter, but you can use it only once per turn."/>
   </rules>
 You gain one more use of blood drinker per encounter, but you can use it only once per turn.
 </RulesElement>
@@ -347,7 +347,7 @@ You gain a climb speed equal to your speed. You can climb across a ceiling or si
   <specific name="_DisplayPowers"> ID_FMP_POWER_13861 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13861" type="Power" Level="9-24" />  
+    <grant name="ID_FMP_POWER_13861" type="Power" Level="9-24"/>  
   </rules>
 You gain the domineering gaze power.
 </RulesElement>
@@ -363,7 +363,7 @@ You gain the domineering gaze power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13862 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13862" type="Power" />
+    <grant name="ID_FMP_POWER_13862" type="Power"/>
   </rules>
 You gain the gaseous form power.
 </RulesElement>
@@ -375,7 +375,7 @@ You gain the gaseous form power.
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <statadd name="Healing Surges" value="+1" />
+    <statadd name="Healing Surges" value="+1"/>
   </rules>
 Your number of healing surges increases by one.
 </RulesElement>
@@ -391,7 +391,7 @@ Your number of healing surges increases by one.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13863 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13863" type="Power" Level="15-28" />
+    <grant name="ID_FMP_POWER_13863" type="Power" Level="15-28"/>
   </rules>
 You gain the Hungry Swarm power. This new power replaces Swarm of Shadows.
 </RulesElement>
@@ -407,13 +407,13 @@ You gain the Hungry Swarm power. This new power replaces Swarm of Shadows.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13864 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13864" type="Power" />
+    <grant name="ID_FMP_POWER_13864" type="Power"/>
   </rules>
 You gain the shared blood power.
 </RulesElement>
 <RulesElement name="Unleashed Fury" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3636" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
   <Category> 17 </Category>
-  <Flavor> When you first took up the vampire's path, you fought to suppress the dark rage of your maimed soul. Now you have learned to control that fury to your advantage&#8212;and to your enemies' peril. </Flavor>
+  <Flavor> When you first took up the vampire's path, you fought to suppress the dark rage of your maimed soul. Now you have learned to control that fury to your advantage—and to your enemies' peril. </Flavor>
   <specific name="Short Description"> Gain the Unleashed Fury attack power. This new power replaces Feral Assault. </specific>
   <specific name="Level"> 17 </specific>
   <specific name="Powers"> ID_FMP_POWER_13865 </specific>
@@ -423,7 +423,7 @@ You gain the shared blood power.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13865 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-   <grant name="ID_FMP_POWER_13865" type="Power" Level="17-30" />
+   <grant name="ID_FMP_POWER_13865" type="Power" Level="17-30"/>
   </rules>
 You gain the unleashed fury power. This new power replaces feral assault.
 </RulesElement>
@@ -447,7 +447,7 @@ Whenever you lose a healing surge as part of one of your vampire or paragon path
   <specific name="_DisplayPowers"> ID_FMP_POWER_13866,ID_FMP_POWER_13867 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <select type="Power" number="1" Category="$$CLASS,utility,22" />
+    <select type="Power" number="1" Category="$$CLASS,utility,22"/>
   </rules>
 You gain a new vampire utility power of your level or lower.
 </RulesElement>
@@ -458,7 +458,7 @@ You gain a new vampire utility power of your level or lower.
   <specific name="Level"> 23 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <rules>
-    <modify name="Blood Drinker" type="Power" Field="Special" value="You gain temporary hit points equal to 5 + your Charisma modifier. If blood drinker has been triggered by taste of life, you instead gain 5 + twice your Charisma modifier temporary hit points." />
+    <modify name="Blood Drinker" type="Power" Field="Special" value="You gain temporary hit points equal to 5 + your Charisma modifier. If blood drinker has been triggered by taste of life, you instead gain 5 + twice your Charisma modifier temporary hit points."/>
   </rules>
 When you use your blood drinker, you gain temporary hit points equal to 5 + your Charisma modifier. If blood drinker has been triggered by taste of life, you instead gain 5 + twice your Charisma modifier temporary hit points.
 </RulesElement>
@@ -474,7 +474,7 @@ When you use your blood drinker, you gain temporary hit points equal to 5 + your
   <specific name="_DisplayPowers"> ID_FMP_POWER_13868 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13868" type="Power" Level="25-30" />
+    <grant name="ID_FMP_POWER_13868" type="Power" Level="25-30"/>
   </rules>
 You gain the irresistible gaze power. This new power replaces domineering gaze.
 </RulesElement>
@@ -490,7 +490,7 @@ You gain the irresistible gaze power. This new power replaces domineering gaze.
   <specific name="_DisplayPowers"> ID_FMP_POWER_13869 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13869" type="Power" Level="29-30" />
+    <grant name="ID_FMP_POWER_13869" type="Power" Level="29-30"/>
   </rules>
 You gain the consuming swarm power. This new power replaces hungry swarm.
 </RulesElement>
@@ -500,19 +500,19 @@ You gain the consuming swarm power. This new power replaces hungry swarm.
 <RulesElement name="Vampire Noble" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_818" source="Player Essentials: Heroes of Shadow" revision-date="3/29/2011 3:04 PM">
   <Prereqs> Vampire </Prereqs>
   <print-prereqs> Only a vampire can take this paragon path. </print-prereqs>
-  <specific name="Power Name" />
+  <specific name="Power Name"/>
   <specific name="Trait Package"> Beguiler Bloodline, Stalker Bloodline </specific>
   <specific name="Class Features"> ID_FMP_CLASS_FEATURE_3628, ID_FMP_CLASS_FEATURE_3629, ID_FMP_CLASS_FEATURE_3630, ID_FMP_CLASS_FEATURE_3631, ID_FMP_CLASS_FEATURE_3634, ID_FMP_CLASS_FEATURE_3638 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="Powers"> ID_FMP_POWER_13870,ID_FMP_POWER_13872,ID_FMP_POWER_13873,ID_FMP_POWER_13874 </specific>
   <specific name="_DisplayPowers"> ID_FMP_POWER_13870,ID_FMP_POWER_13872,ID_FMP_POWER_13873,ID_FMP_POWER_13874 </specific>
   <rules>
-    <grant name="ID_FMP_CLASS_FEATURE_3628" type="Class Feature" Level="11" />
-    <grant name="ID_FMP_CLASS_FEATURE_3629" type="Class Feature" Level="11" />
-    <grant name="ID_FMP_CLASS_FEATURE_3630" type="Class Feature" Level="11" />
-    <grant name="ID_FMP_CLASS_FEATURE_3631" type="Class Feature" Level="12" />
-    <grant name="ID_FMP_CLASS_FEATURE_3634" type="Class Feature" Level="16" />
-    <grant name="ID_FMP_CLASS_FEATURE_3638" type="Class Feature" Level="20" />
+    <grant name="ID_FMP_CLASS_FEATURE_3628" type="Class Feature" Level="11"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3629" type="Class Feature" Level="11"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3630" type="Class Feature" Level="11"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3631" type="Class Feature" Level="12"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3634" type="Class Feature" Level="16"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3638" type="Class Feature" Level="20"/>
   </rules>
 You have feasted on innumerable foes and defeated them, all the while holding yourself in the middle ground between mortality and undeath. When you ascend into the paragon tier, your shadow powers grow stronger as you carve out your dark legend.
 </RulesElement>
@@ -523,8 +523,8 @@ You have feasted on innumerable foes and defeated them, all the while holding yo
   <specific name="Level"> 11 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <rules>
-    <modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power three times per encounter, but you can use it only once per turn." requires="Improved Blood Drinker" />
-	<modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power twice per encounter, but you can use it only once per turn." requires="!Improved Blood Drinker" />
+    <modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power three times per encounter, but you can use it only once per turn." requires="Improved Blood Drinker"/>
+	<modify name="Blood Drinker" type="Power" Field="Special" value="You can the use the blood drinker power twice per encounter, but you can use it only once per turn." requires="!Improved Blood Drinker"/>
   </rules>
 You gain one more use of blood drinker per encounter, but you can still use it only once per turn.
 </RulesElement> 
@@ -536,20 +536,20 @@ You gain one more use of blood drinker per encounter, but you can still use it o
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <select type="Trait Package" number="1" Category="ID_FMP_CLASS_817" />
+    <select type="Trait Package" number="1" Category="ID_FMP_CLASS_817"/>
   </rules>
 You gain a paragon path feature associated with your bloodline.
 </RulesElement>
 <RulesElement name="Beguiler Bloodline" type="Trait Package" internal-id="ID_FMP_TRAIT_PACKAGE_819" source="Player Essentials: Heroes of Shadow" revision-date="3/29/2011 3:04 PM">
   <Category> ID_FMP_CLASS_817 </Category>
-  <specific name="Short Description" />
+  <specific name="Short Description"/>
   <specific name="_PARSED_CLASS_FEATURE"> ID_FMP_CLASS_FEATURE_3643, ID_FMP_CLASS_FEATURE_3644, ID_FMP_CLASS_FEATURE_3645, ID_FMP_CLASS_FEATURE_3646 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <rules>
-    <grant name="ID_FMP_CLASS_FEATURE_3643" type="Class Feature" />
+    <grant name="ID_FMP_CLASS_FEATURE_3643" type="Class Feature"/>
   </rules>
 Whether your curse of vampirism was inflicted by fate or by choice, you have come to wholly accept your power by the beginning of the paragon tier. However, though the common folk would call you a monster if they knew your true nature, you cannot simply forsake the memory of the person you once were.
-	You prefer the company of mortals and the benefits of being a part of society. Through the magic of blood and shadow, your mastery of your appearance and your subtle hunting methods have made you the most attractive of predators. Your enemies believe your lies even as they overlook your strangeness. When you reveal your true nature in all its dark glory, they are unable to look away&#8212;much less escape&#8212;as they fall to their knees before you.
+	You prefer the company of mortals and the benefits of being a part of society. Through the magic of blood and shadow, your mastery of your appearance and your subtle hunting methods have made you the most attractive of predators. Your enemies believe your lies even as they overlook your strangeness. When you reveal your true nature in all its dark glory, they are unable to look away—much less escape—as they fall to their knees before you.
 </RulesElement>
 <RulesElement name="Level 11 Beguiler Bloodline Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3643" source="Player Essentials: Heroes of Shadow" revision-date="4/11/2011 1:43:54 PM">
   <Category> 11 </Category>
@@ -557,18 +557,18 @@ Whether your curse of vampirism was inflicted by fate or by choice, you have com
   <specific name="Short Description"> +2 to Bluff checks, may feint (minor action) and gain combat advantage. +3 dmg vs. creatures granting combat advantage to you. </specific>
   <specific name="Level"> 11 </specific>
   <rules>
-    <statadd name="Bluff Misc" value="+2" type="Class Feature" />
-    <statadd name="Bluff Misc" value="+5" type="Class Feature" condition="when you are trying to pass as a specific individual of your race" />
+    <statadd name="Bluff Misc" value="+2" type="Class Feature"/>
+    <statadd name="Bluff Misc" value="+5" type="Class Feature" condition="when you are trying to pass as a specific individual of your race"/>
   </rules>
 You gain a +2 bonus to Bluff checks. This bonus increases to +5 when you are trying to pass as a specific individual of your race. In addition, you can make a Bluff check to feint and gain combat advantage as a minor action. You also gain a +3 bonus to damage rolls against any creature granting combat advantage to you.
 </RulesElement>
 <RulesElement name="Stalker Bloodline" type="Trait Package" internal-id="ID_FMP_TRAIT_PACKAGE_820" source="Player Essentials: Heroes of Shadow" revision-date="3/29/2011 3:04 PM">
   <Category> ID_FMP_CLASS_817 </Category>
-  <specific name="Short Description" />
+  <specific name="Short Description"/>
   <specific name="_PARSED_CLASS_FEATURE"> ID_FMP_CLASS_FEATURE_3647, ID_FMP_CLASS_FEATURE_3648, ID_FMP_CLASS_FEATURE_3649, ID_FMP_CLASS_FEATURE_3650 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <rules>
-    <grant name="ID_FMP_CLASS_FEATURE_3647" type="Class Feature" />
+    <grant name="ID_FMP_CLASS_FEATURE_3647" type="Class Feature"/>
   </rules>
 The dark curse that made you a vampire took little toll on your physical form. However, in your heart and soul, you have become a beast more terrifying than any monster you had known of in mortal life. As your power has grown, you have struggled at times to keep your feral side from taking over. Although you live for the chase and the kill, your hold on your humanity helps you glimpse the mindless savagery and wickedness that awaits you if you give in.
 	By controlling your bestial spirit, you can learn to take advantage of your predatory nature. The monster within is your connection between the world of mortals and the world of shadow, and it makes you strong.
@@ -579,9 +579,9 @@ The dark curse that made you a vampire took little toll on your physical form. H
   <specific name="Short Description"> +2 to Intimidate checks, +2 to damage rolls of vampire and stalker bloodline attacks </specific>
   <specific name="Level"> 11 </specific>
   <rules>
-    <statadd name="Intimidate Misc" value="+2" type="Class Feature" />
-  <statadd name="ID_FMP_CLASS_817:damage" value="+2" />
-  <statadd name="ID_FMP_PARAGON_PATH_818:damage" value="+2" />
+    <statadd name="Intimidate Misc" value="+2" type="Class Feature"/>
+  <statadd name="ID_FMP_CLASS_817:damage" value="+2"/>
+  <statadd name="ID_FMP_PARAGON_PATH_818:damage" value="+2"/>
   </rules>
 You gain a +2 bonus to Intimidate checks.
 	In addition, you gain a +2 bonus to the damage rolls of your vampire and stalker bloodline attacks.
@@ -593,7 +593,7 @@ You gain a +2 bonus to Intimidate checks.
   <specific name="Level"> 11 </specific>
   <specific name="_CLASSNAME"> Vampire </specific>
   <rules>
-    <textstring name="Action Point" value="Vampiric Action:When you spend an action point to take an extra action, if you have temporary hit points or have more healing surges than your usual number of healing surges for the day, you gain a +4 power bonus to your next attack roll before the end of your turn." />
+    <textstring name="Action Point" value="Vampiric Action:When you spend an action point to take an extra action, if you have temporary hit points or have more healing surges than your usual number of healing surges for the day, you gain a +4 power bonus to your next attack roll before the end of your turn."/>
   </rules>
 When you spend an action point to take an extra action, if you have temporary hit points or have more healing surges than your usual number of healing surges for the day, you gain a +4 power bonus to your next attack roll before the end of your turn.
 </RulesElement>
@@ -605,8 +605,8 @@ When you spend an action point to take an extra action, if you have temporary hi
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_CLASS_FEATURE_3644" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_819" />
-    <grant name="ID_FMP_CLASS_FEATURE_3648" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_820" />
+    <grant name="ID_FMP_CLASS_FEATURE_3644" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_819"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3648" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_820"/>
   </rules>
 You gain a utility power associated with your bloodline.
 </RulesElement>
@@ -620,7 +620,7 @@ You gain a utility power associated with your bloodline.
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="_DisplayPowers"> ID_FMP_POWER_13870 </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13870" type="Power" />
+    <grant name="ID_FMP_POWER_13870" type="Power"/>
   </rules>
 You gain the aura of grandeur power.
 </RulesElement>
@@ -634,7 +634,7 @@ You gain the aura of grandeur power.
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="_DisplayPowers"> ID_FMP_POWER_13873 </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13873" type="Power" />
+    <grant name="ID_FMP_POWER_13873" type="Power"/>
   </rules>
 You gain the hunter's frenzy power.
 </RulesElement>
@@ -646,8 +646,8 @@ You gain the hunter's frenzy power.
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_CLASS_FEATURE_3645" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_819" />
-    <grant name="ID_FMP_CLASS_FEATURE_3649" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_820" />
+    <grant name="ID_FMP_CLASS_FEATURE_3645" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_819"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3649" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_820"/>
   </rules>
 You gain a paragon path feature associated with your bloodline.
 </RulesElement>
@@ -657,8 +657,8 @@ You gain a paragon path feature associated with your bloodline.
   <specific name="Short Description"> +2 to Stealth, +4 if out of combat or moving 2 (or fewer) sq. Sunlight no longer deals radiant dmg to you, gain [Cha mod] bonus to saves vs. weakened by sunlight. </specific>
   <specific name="Level"> 16 </specific>
   <rules>
-    <statadd name="Stealth Misc" value="+2" type="Class Feature" />
-    <statadd name="Stealth Misc" value="+4" type="Class Feature" condition="if you move 2 or fewer squares during the turn in which you make the check, or if you are not in combat" />
+    <statadd name="Stealth Misc" value="+2" type="Class Feature"/>
+    <statadd name="Stealth Misc" value="+4" type="Class Feature" condition="if you move 2 or fewer squares during the turn in which you make the check, or if you are not in combat"/>
   </rules>
 You gain a +2 bonus to Stealth checks. This bonus increases to +4 if you move 2 or fewer squares during the turn in which you make the check, or if you are not in combat.
 	In addition, sunlight no longer deals radiant damage to you, and when it weakens you, you gain a bonus to saving throws to end that effect. The bonus equals your Charisma modifier.
@@ -669,8 +669,8 @@ You gain a +2 bonus to Stealth checks. This bonus increases to +4 if you move 2 
   <specific name="Short Description"> +2 to Nature checks, +4 if trying to calm a beast. Sunlight no longer deals radiant dmg to you, gain [Cha mod] bonus to saves vs. weakened by sunlight. </specific>
   <specific name="Level"> 16 </specific>
   <rules>
-    <statadd name="Nature Misc" value="+2" type="Class Feature" />
-    <statadd name="Nature Misc" value="+4" type="Class Feature" condition="if you are trying to calm a beast" />
+    <statadd name="Nature Misc" value="+2" type="Class Feature"/>
+    <statadd name="Nature Misc" value="+4" type="Class Feature" condition="if you are trying to calm a beast"/>
   </rules>
 You gain a +2 bonus to Nature checks. This bonus increases to +4 if you are trying to calm a beast.
 	In addition, sunlight no longer deals radiant damage to you, and when it weakens you, you gain a bonus to saving throws to end that effect. The bonus equals your Charisma modifier.
@@ -683,8 +683,8 @@ You gain a +2 bonus to Nature checks. This bonus increases to +4 if you are tryi
   <specific name="_CLASSNAME"> Vampire </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
-    <grant name="ID_FMP_CLASS_FEATURE_3646" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_819" />
-    <grant name="ID_FMP_CLASS_FEATURE_3650" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_820" />
+    <grant name="ID_FMP_CLASS_FEATURE_3646" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_819"/>
+    <grant name="ID_FMP_CLASS_FEATURE_3650" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_820"/>
   </rules>
 You gain a paragon path power associated with your bloodline.
 </RulesElement>
@@ -698,7 +698,7 @@ You gain a paragon path power associated with your bloodline.
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="_DisplayPowers"> ID_FMP_POWER_13872 </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13872" type="Power" />
+    <grant name="ID_FMP_POWER_13872" type="Power"/>
   </rules>
 You gain the predatory splendor power.
 </RulesElement>
@@ -712,7 +712,7 @@ You gain the predatory splendor power.
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="_DisplayPowers"> ID_FMP_POWER_13874 </specific>
   <rules>
-    <grant name="ID_FMP_POWER_13874" type="Power" />
+    <grant name="ID_FMP_POWER_13874" type="Power"/>
   </rules>
 You gain the darkwolf form power.
 </RulesElement>
@@ -721,7 +721,7 @@ You gain the darkwolf form power.
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
   <Flavor> Your mesmerizing presence draws your enemies closer. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 1 </specific>
   <specific name="Keywords"> Charm, Implement, Psychic, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -730,11 +730,11 @@ You gain the darkwolf form power.
   <specific name="Attack"> Charisma + 2 vs. Will </specific>
   <specific name="Hit"> 1d6 + Charisma modifier psychic damage, and you pull the target up to 3 squares.
 	Level 21: 2d6 + Charisma modifier psychic damage. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 1 </specific>
   <specific name="Power Type"> Attack </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 The steeliness of your gaze can sway the heart of even the most fearless foe. Like a coiled serpent, you transfix your enemies to leave them exactly where you want them.
 </RulesElement>
@@ -742,7 +742,7 @@ The steeliness of your gaze can sway the heart of even the most fearless foe. Li
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
   <Flavor> Your dread touch burns your foe with dark power, even as your own energy is temporarily restored. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 1 </specific>
   <specific name="Keywords"> Implement, Necrotic, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -751,11 +751,11 @@ The steeliness of your gaze can sway the heart of even the most fearless foe. Li
   <specific name="Attack"> Dexterity vs. Fortitude </specific>
   <specific name="Hit"> 1d8 + Dexterity modifier necrotic damage, and you gain temporary hit points equal to 2 + your Charisma modifier.
 	Level 21: 2d8 + Dexterity modifier necrotic damage. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 1 </specific>
   <specific name="Power Type"> Attack </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 Your undead essence thrives on the life energy of other creatures. This power lets you gain strength while you inflict pain on your foe.
 </RulesElement>
@@ -763,7 +763,7 @@ Your undead essence thrives on the life energy of other creatures. This power le
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
   <Flavor> You use the full force of your undead strength to drive your foe back. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 1 </specific>
   <specific name="Keywords"> Implement, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -773,11 +773,11 @@ Your undead essence thrives on the life energy of other creatures. This power le
   <specific name="Hit"> 1d10 + Dexterity modifier damage, and you can push the target 1 square.
 	Level 21: 2d10 + Dexterity modifier damage. </specific>
   <specific name="Special"> You can use this power as a melee basic attack. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 1 </specific>
   <specific name="Power Type"> Attack </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
   <specific name="_BasicAttack"> Melee </specific>
   
@@ -787,7 +787,7 @@ The power of shadow courses through you, transforming your unnatural quickness i
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_NO_ACTION,1 </Category>
   <Flavor> When your attack strikes true, you sweep past your foe's defenses to consume the essence of its life. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack  </specific>
   <specific name="Keywords"> Shadow </specific>
   <specific name="Action Type"> No Action </specific>
@@ -797,18 +797,18 @@ The power of shadow courses through you, transforming your unnatural quickness i
   <specific name="Effect"> The target takes 1d10 extra damage from the triggering attack, and you gain a healing surge.
 	Level 17: 2d10 extra damage.
 	Level 27: 3d10 extra damage. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 1 </specific>
   <specific name="Power Type"> Attack </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 </RulesElement>
 <RulesElement name="Swarm of Shadows" type="Power" internal-id="ID_FMP_POWER_13854" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:48:18 PM">
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
   <Flavor> Your body becomes a swarm of batlike shadows that let you harry your enemies, then fade from sight. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 1 </specific>
   <specific name="Keywords"> Implement, Shadow, Teleportation </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -818,29 +818,29 @@ The power of shadow courses through you, transforming your unnatural quickness i
   <specific name="Hit"> 3d6 + Dexterity modifier damage, and ongoing 5 damage (save ends). </specific>
   <specific name="Miss"> Half damage. </specific>
   <specific name="Effect"> You teleport to a square in the blast and are invisible until the end of your next turn. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 1 </specific>
   <specific name="Power Type"> Attack </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 </RulesElement>
 <RulesElement name="Charming Gaze" type="Power" internal-id="ID_FMP_POWER_13855" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:48:20 PM">
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
   <Flavor> Your compelling demeanor throws your prey off its guard, lulling it into a false sense of security. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 2 </specific>
   <specific name="Keywords"> Charm, Shadow </specific>
   <specific name="Action Type"> Minor Action </specific>
   <specific name="Attack Type"> Close blast 5 </specific>
   <specific name="Target"> One creature in the blast </specific>
   <specific name="Effect"> Until the end of your next turn, the target cannot make opportunity attacks or take immediate actions. In addition, you gain a +4 bonus to the next Bluff check or Diplomacy check you make against the target before the end of the encounter. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 2 </specific>
   <specific name="Power Type"> Utility </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 The force of your personality lets you channel the shadow magic that animates you, accentuating and sharpening your presence in combat.
 </RulesElement>
@@ -848,18 +848,18 @@ The force of your personality lets you channel the shadow magic that animates yo
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
   <Flavor> As you focus on a foe, your predatory presence leaves it open to attack. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 2 </specific>
   <specific name="Keywords"> Charm, Shadow </specific>
   <specific name="Action Type"> Minor Action </specific>
   <specific name="Attack Type"> Close blast 5 </specific>
   <specific name="Target"> One creature in the blast </specific>
   <specific name="Effect"> Until the start of your next turn, the target grants combat advantage while you are adjacent to it. In addition, you gain a +4 bonus to the next Intimidate check you make against the target before the end of the encounter. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 2 </specific>
   <specific name="Power Type"> Utility </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 Although you must maintain strict control over the feral hunger that lurks within you, that hunger can also serve you in combat. Sensing your deadly instincts, your foe is left in a state of vulnerable distraction.
 </RulesElement>
@@ -868,7 +868,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Prereqs> !Hybrid Vampire </Prereqs>
   <Flavor> You howl like a beast as you strike, your hunger and fury driving you to make a brutal attack. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 3 </specific>
   <specific name="Keywords"> Implement, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -877,7 +877,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <specific name="Attack"> Dexterity vs. Reflex </specific>
   <specific name="Hit"> 2d12 + Dexterity modifier damage. </specific>
   <specific name="Special"> You can lose a healing surge when you use this power to either target a second creature or deal 2d8 extra damage with the attack. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 3 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -888,25 +888,25 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,4 </Category>
   <Flavor> You draw on the life force you have consumed to grant yourself a sudden burst of strength. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 4 </specific>
   <specific name="Keywords"> Shadow </specific>
   <specific name="Action Type"> Minor Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Effect"> You gain a +5 power bonus to the next Athletics, Endurance, or Strength check you make before the end of your turn. </specific>
   <specific name="Special"> You can lose a healing surge when you use this power to increase the bonus to +10. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 4 </specific>
   <specific name="Power Type"> Utility </specific>
-  <specific name="_ParentFeature" />
+  <specific name="_ParentFeature"/>
   <specific name="_Subclasses"> ID_FMP_CLASS_817 </specific>
 </RulesElement>
 <RulesElement name="Unfettered Hunger" type="Power" internal-id="ID_FMP_POWER_13859" source="Player Essentials: Heroes of Shadow" revision-date="3/10/2011 12:51:49 PM">
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3622,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
   <Flavor> Your eyes turn red with fury, your fangs lengthen, and you rage like a beast as you allow your hunger to seize control. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 5 </specific>
   <specific name="Keywords"> Implement, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -916,7 +916,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <specific name="Hit"> 2d10 + Dexterity modifier damage. </specific>
   <specific name="Miss"> Half damage. </specific>
   <specific name="Effect"> Until the end of the encounter, you gain a +2 power bonus to attack rolls and a +4 power bonus to damage rolls, you can shift up to your speed as a move action, and you cannot spend healing surges to regain hit points. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 5 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -927,13 +927,13 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3623,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,6 </Category>
   <Flavor> Your body becomes a cloud of pure shadow that shrinks and coalesces into the form of a fluttering bat. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 6 </specific>
   <specific name="Keywords"> Polymorph, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Effect"> You assume the form of a Tiny bat. While you are in this form, you have a speed of 2 and a fly speed of 8, and you cannot make attacks or hold or carry any object. Your equipment becomes part of this form. You use a move action to return to your normal form. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 6 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -944,7 +944,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3626,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
   <Flavor> With a glance, your foe falls under your control and will yield up its life force to strengthen you. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 9 </specific>
   <specific name="Keywords"> Charm, Implement, Necrotic, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -953,7 +953,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <specific name="Attack"> Charisma + 2 vs. Will </specific>
   <specific name="Hit"> The target is dominated (save ends). While the target is dominated by this power, you can use a minor action while adjacent to the target to gain a healing surge and to deal necrotic damage to the target equal to your healing surge value. Doing so ends the domination. </specific>
   <specific name="Miss"> The power is not expended. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 9 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -964,14 +964,14 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3627,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
   <Flavor> You transform into a shadowy mist that shreds and twists away from your enemy's grasp. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 10 </specific>
   <specific name="Keywords"> Polymorph, Shadow </specific>
   <specific name="Action Type"> Minor Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Effect"> You assume a gaseous form. While in this form, you are insubstantial and phasing, gain a fly speed of 8, and gain a +10 power bonus to Stealth checks. You cannot attack in this form. The form lasts until the end of your next turn or until you use a minor action to end it. </specific>
   <specific name="Sustain Minor"> The gaseous form persists until the end of your next turn. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 10 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -982,7 +982,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3633,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
   <Flavor> Your body unravels into a swarm of batlike shadows whose claws and fangs steal sight and life from your foes. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 15 </specific>
   <specific name="Keywords"> Implement, Shadow, Teleportation </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -992,7 +992,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <specific name="Hit"> 5d6 + Dexterity modifier damage, and the target is blinded (save ends). </specific>
   <specific name="Miss"> Half damage. </specific>
   <specific name="Effect"> You teleport to a square in the blast and are invisible until the end of your next turn. If you hit at least one living creature with this attack, you gain a healing surge. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 15 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -1003,7 +1003,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3635,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,16 </Category>
   <Flavor> You bite yourself to let the life energy you have consumed seep onto your ally, transferring some of your undying vitality. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 16 </specific>
   <specific name="Keywords"> Healing, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -1011,7 +1011,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <specific name="Requirement"> You must have at least one healing surge remaining. </specific>
   <specific name="Target"> One ally </specific>
   <specific name="Effect"> You lose a healing surge. The target regains 1 hit point, gains temporary hit points equal to his or her bloodied value, and can make a saving throw with a +2 power bonus. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 16 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -1023,7 +1023,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Prereqs> !Hybrid Vampire </Prereqs>
   <Flavor> You become a ravening beast, lashing out at your foe with the strength of all your dark rage. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 17 </specific>
   <specific name="Keywords"> Implement, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -1032,7 +1032,7 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <specific name="Attack"> Dexterity vs. Reflex </specific>
   <specific name="Hit"> 3d12 + Dexterity modifier damage. </specific>
   <specific name="Special"> You can lose a healing surge when you use this power to either target each creature adjacent to you with the attack or deal 3d10 extra damage to a single target. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 17 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -1043,14 +1043,14 @@ Although you must maintain strict control over the feral hunger that lurks withi
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3639,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_FREE_ACTION,22 </Category>
   <Flavor> Your successful attack inspires even greater fury, letting you leap through your foes like a snarling beast. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 22 </specific>
   <specific name="Keywords"> Shadow </specific>
   <specific name="Action Type"> Free Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Trigger"> The target of your blood drinker power is bloodied or reduced to 0 hit points by that power's triggering attack. </specific>
   <specific name="Effect"> You shift up to your speed and can move through enemies' spaces during this shift. You then use vampire slam with a +2 bonus to the attack roll. If you hit, you also knock the target prone. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 22 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -1062,14 +1062,14 @@ The energy you drain from your enemies with your blood drinker power has become 
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3639,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_FREE_ACTION,22 </Category>
   <Flavor> As one foe falls, your dark presence pulls another enemy forward to become an offering for your hunger. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Utility 22 </specific>
   <specific name="Keywords"> Shadow </specific>
   <specific name="Action Type"> Free Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Trigger"> You reduce an adjacent enemy to 0 hit points on your turn. </specific>
   <specific name="Effect"> You use dark beckoning against an enemy within range. If you hit with that power, you also gain combat advantage against the target until the end of your next turn. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 22 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -1081,7 +1081,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3641,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,25 </Category>
   <Flavor> Your enemy gives up its will and its life force to you, stumbling through the battle under your command. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 25 </specific>
   <specific name="Keywords"> Charm, Implement, Necrotic, Psychic, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -1091,7 +1091,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <specific name="Hit"> The target is dominated (save ends). Once while the target is dominated by this power, you can use a minor action while adjacent to the target to gain a healing surge and to deal necrotic damage to the target equal to your healing surge value. Doing so ends the domination. </specific>
   <specific name=" Aftereffect"> The target takes ongoing 10 psychic damage and is dazed (save ends both). </specific>
   <specific name="Miss"> The power is not expended. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 25 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -1102,7 +1102,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3642,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_817,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_38,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
   <Flavor> The swarm of shadows into which you transform drains the life from your foes, then wraps you in a shroud of invisibility that endures while you attack. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Attack 29 </specific>
   <specific name="Keywords"> Implement, Shadow, Teleportation, Zone </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -1112,7 +1112,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <specific name="Hit"> 7d6 + Dexterity modifier damage, and the target is blinded (save ends). </specific>
   <specific name="Miss"> Half damage. </specific>
   <specific name="Effect"> You teleport to a square in the blast, and the blast creates a zone that lasts until you leave it. While in the zone, you are invisible, and you can use a free action at the start of each of your turns to teleport to a square in the zone. In addition, if you hit at least one living creature with this attack, you gain a healing surge. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_817 </specific>
   <specific name="Level"> 29 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -1123,14 +1123,14 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3644,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_818,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
   <Flavor> You become a beacon that your foes cannot ignore, forcing them to become distracted like moths circling an open flame. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Noble Utility 12 </specific>
   <specific name="Keywords"> Aura, Charm, Shadow </specific>
   <specific name="Action Type"> Minor Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Effect"> You activate an aura 3 that lasts until the end of your next turn. Enemies in the aura cannot make opportunity attacks against you or your allies. Whenever an enemy ends its turn in the aura, you can use a free action to slide that enemy up to 2 squares to another square in the aura. </specific>
   <specific name="Sustain Minor"> The aura persists until the end of your next turn. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="Level"> 12 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -1140,7 +1140,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3646,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_818,ID_FMP_CATEGORY_68,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
   <Flavor> Your overwhelming presence holds your foes fast, forcing them to face your wrath. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Noble Attack 20 </specific>
   <specific name="Keywords"> Aura, Charm, Implement, Psychic, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
@@ -1151,7 +1151,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <specific name="Miss"> Half damage, and the target is slowed and grants combat advantage (save ends both). </specific>
   <specific name="Effect"> You activate an aura 2 that lasts until the end of your next turn. If an enemy willingly leaves the aura, you can use a free action either to deal 10 psychic damage to it or to knock it prone. </specific>
   <specific name="Sustain Minor"> The aura persists until the end of your next turn. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="Level"> 20 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -1161,14 +1161,14 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_3648,ID_INTERNAL_CATEGORY_SWAPPABLE_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_818,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_FREE_ACTION,12 </Category>
   <Flavor> When your attack strikes true, it drives you into a fury that launches you into the midst of your foes. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Vampire Noble Utility 12 </specific>
   <specific name="Keywords"> Shadow </specific>
   <specific name="Action Type"> Free Action </specific>
   <specific name="Attack Type"> Personal  </specific>
   <specific name="Trigger"> You bloody an enemy or reduce it to 0 hit points with an attack. </specific>
   <specific name="Effect"> Any effect that is subjecting you to the slowed or immobilized conditions ends on you, and you then shift up to your speed. You gain combat advantage until the end of your next turn against each enemy adjacent to you at the end of the shift. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="Level"> 12 </specific>
   <specific name="Power Type"> Utility </specific>
@@ -1178,7 +1178,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_3650,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_818,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,20 </Category>
   <Flavor> With a growl, you transform your body into an inky cloak of darkness in the semblance of a feral wolf that is the embodiment of your hunger. </Flavor>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="_ChildPower"> ID_FMP_POWER_13875 </specific>
   <specific name="Display"> Vampire Noble Attack 20 </specific>
   <specific name="Keywords"> Fear, Polymorph, Shadow </specific>
@@ -1186,7 +1186,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <specific name="Attack Type"> Close burst 2 </specific>
   <specific name="Target"> Each creature in the burst </specific>
   <specific name="Effect"> You can push each target 1 square, and the target is immobilized until the end of your next turn. You assume the form of a wolflike beast of your size until the end of the encounter. While in this form, you gain a +2 power bonus to speed, you gain a +5 power bonus to Perception checks and Stealth checks, and the only attack you can make is the secondary power, which you can use at will. As a minor action once per round, you can change from your humanoid form to the wolflike form or vice versa. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="Level"> 20 </specific>
   <specific name="Power Type"> Attack </specific>
@@ -1197,8 +1197,8 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_818,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
   <Prereqs> Unselectable </Prereqs>
   <specific name="Power Usage"> Daily </specific>
-  <specific name="_SkillPower" />
-  <specific name="Display" />
+  <specific name="_SkillPower"/>
+  <specific name="Display"/>
   <specific name="Keywords"> Implement, Shadow </specific>
   <specific name="Action Type"> Standard Action </specific>
   <specific name="Attack Type"> Melee 1 </specific>
@@ -1206,7 +1206,7 @@ You balance your dark majesty and your deadly combat prowess with ease. The dest
   <specific name="Attack"> Dexterity vs. Reflex </specific>
   <specific name="Hit"> 3d8 + Dexterity modifier damage. </specific>
   <specific name="Special"> You can use this secondary power as a melee basic attack. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="_ParentPower"> ID_FMP_POWER_13874 </specific>
   <specific name="Class"> ID_FMP_PARAGON_PATH_818 </specific>
   <specific name="_BasicAttack"> Melee </specific>

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>RacialVariants(Volume1).part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/RacialVariants(Volume1).part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/RacialVariants(Volume1).txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/RacialVariants(Volume1).part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/RacialVariants(Volume1).txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Racial Variants Volume 1" type="source" internal-id="ID_TIV_SOURCE_1" source="Core">
     <specific name="IsBeta"> 1 </specific>
@@ -30,12 +30,12 @@
     <specific name="Short Description"> The elves have a deep love of nature, and their accuracy with bow, blade, or spell is unmatched. </specific>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_20, ID_FMP_RACIAL_TRAIT_353, ID_TIV_RACIAL_TRAIT_06, ID_FMP_RACIAL_TRAIT_641, ID_TIV_RACIAL_TRAIT_05 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_CITY-ELF" type="Grants" />
-      <statadd name="Speed" value="+7" />
-      <textstring name="Average Height" value="5' 4&quot;-6'0&quot;" />
-      <textstring name="Average Weight" value="130-170 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Intelligence|Strength" />
+      <grant name="ID_INTERNAL_GRANTS_CITY-ELF" type="Grants"/>
+      <statadd name="Speed" value="+7"/>
+      <textstring name="Average Height" value="5' 4&quot;-6'0&quot;"/>
+      <textstring name="Average Weight" value="130-170 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Strength"/>
     </rules>
 
 
@@ -44,18 +44,18 @@ Play an City Elf if you want ...
   <RulesElement name="City-Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_CITY-ELF" source="Racial Variants Volume 1">
     <specific name="_SupportsID"> ID_TIV_RACE_2 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_20" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_353" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_06" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_05" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_20" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_353" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_06" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_05" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="City-Elf" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_CITY-ELF" source="Racial Variants Volume 1">
@@ -72,10 +72,10 @@ You may take any part of your movement on a non-horizontal surface. You must eit
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_RACIAL_TRAIT_06_06 </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_RACIAL_TRAIT_06_06 </specific>
     <rules>
-      <grant name="ID_TIV_RACIAL_TRAIT_06_06" type="Power" />
+      <grant name="ID_TIV_RACIAL_TRAIT_06_06" type="Power"/>
     </rules>
 You have the Elven Agility power.
    </RulesElement>
@@ -83,14 +83,14 @@ You have the Elven Agility power.
     <Category> ID_TIV_RACIAL_TRAIT_06,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
     <Flavor> Your hand may slip, your foot may slide, but you're steady and sturdy. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> City-Elf Racial Power </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Free Action </specific>
     <specific name="Attack Type"> Personal  </specific>
-    <specific name="Trigger" />
+    <specific name="Trigger"/>
     <specific name="Effect"> You may reroll a failed Acrobatics or Athletics check, you must use the second roll. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_06 </specific>
   </RulesElement>
   <RulesElement name="Couatl Dragonborn" type="Race" internal-id="ID_TIV_RACE_3" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -114,12 +114,12 @@ You have the Elven Agility power.
     <specific name="Short Description"> Descended from couatl dragons, couatl dragonborn are a proud race of warriors. </specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_07,ID_FMP_RACIAL_TRAIT_631,ID_TIV_RACIAL_TRAIT_08 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_COUATL_DRAGONBORN" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="6' 2&quot;-6' 8&quot;" />
-      <textstring name="Average Weight" value="220-320 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
+      <grant name="ID_INTERNAL_GRANTS_COUATL_DRAGONBORN" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="6' 2&quot;-6' 8&quot;"/>
+      <textstring name="Average Weight" value="220-320 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
     </rules>
 Born to fight, dragonborn are a race of wandering mercenaries, soldiers, and adventurers. Long ago, their empire contended for worldwide dominion, but now only a few rootless clans of these honorable warriors remain to pass on their legends of ancient glory.
 
@@ -132,16 +132,16 @@ Play a Couatl Dragonborn if you want ...
   <RulesElement name="Couatl Dragonborn" type="Grants" internal-id="ID_INTERNAL_GRANTS_COUATL_DRAGONBORN" source="Racial Variants Volume 1">
     <specific name="_SupportsID"> ID_TIV_RACE_3 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_07" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_631" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_08" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_2" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_07" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_631" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_08" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_2" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Couatl Dragonborn" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_COUATL_DRAGONBORN" source="Racial Variants Volume 1">
@@ -154,11 +154,11 @@ You count as a Couatl Dragonborn for meeting prerequisites.
 You gain a +2 to all checks required for you to enter and exit tight spaces. You also gain this +2 to all escape attempts.
 </RulesElement>
   <RulesElement name="Couatl Dragonborn Racial Power" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_08" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_RACIAL_TRAIT_08_01, ID_TIV_RACIAL_TRAIT_08_02 </specific>
     <rules>
-      <select type="Racial Trait" number="1" Category="Couatl Dragonborn Racial Power" />
+      <select type="Racial Trait" number="1" Category="Couatl Dragonborn Racial Power"/>
     </rules>
 When you select dragonborn as your character's race, choose one of the following powers. Your dragonborn character gains that power.
    </RulesElement>
@@ -168,11 +168,11 @@ When you select dragonborn as your character's race, choose one of the following
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_POWER_08_01_01 </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_08_01_01(Encounter) </specific>
     <rules>
-      <grant name="ID_TIV_POWER_08_01_01" type="Power" />
-      <modify Field="Power Usage" value="Encounter" />
+      <grant name="ID_TIV_POWER_08_01_01" type="Power"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You can use Dawn Venom as an encounter power.
    </RulesElement>
@@ -180,7 +180,7 @@ You can use Dawn Venom as an encounter power.
     <Category> ID_TIV_RACIAL_TRAIT_08_01,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_14,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> As you leap upon your hapless enemy, you viciously bite down injecting a horrible venom from your gleaming fangs. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Couatl Dragonborn Racial Power </specific>
     <specific name="Keywords"> Poison, Radiant </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -190,7 +190,7 @@ You can use Dawn Venom as an encounter power.
     <specific name="Hit"> 1d4 + Charisma modifier poison and radiant damage. The target also takes ongoing Charisma modifier poison and radiant damage, save ends. 
 Increase to 2d4 + Charisma modifier poison and radiant damage and ongoing 2 x Charisma modifier poison and radiant damage, save ends at 11th level, and to 3d4 + Charisma modifier poison and radiant damage and ongoing 3 x Charisma modifier poison and radiant damage, save ends at 21st level. </specific>
     <specific name="Effect"> While the target is subject to the ongoing damage, anytime the target is hit in melee by you, you may perform this attack again as though it wasn't expended, the ongoing damage doesn't stack. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_08_01 </specific>
   </RulesElement>
   <RulesElement name="Couatl Dragonfear" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_08_02" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -199,10 +199,10 @@ Increase to 2d4 + Charisma modifier poison and radiant damage and ongoing 2 x Ch
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_POWER_08_02_02 </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_08_02_02 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_08_02_02" type="Power" />
+      <grant name="ID_TIV_POWER_08_02_02" type="Power"/>
     </rules>
 You can use Couatl Dragonfear as an encounter power.
    </RulesElement>
@@ -210,7 +210,7 @@ You can use Couatl Dragonfear as an encounter power.
     <Category> ID_TIV_RACIAL_TRAIT_08_02,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_7,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> Your presence causes your enemies to quake and tremble. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Couatl Dragonborn Racial Power </specific>
     <specific name="Keywords"> Fear </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -220,7 +220,7 @@ You can use Couatl Dragonfear as an encounter power.
 Level 11: Strength + 4 vs. Will or Charisma + 4 vs. Will.
 Level 21: Strength + 6 vs. Will or Charisma + 6 vs. Will. </specific>
     <specific name="Hit"> The target takes a -2 penalty to attack rolls and grants combat advantage until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_08_02 </specific>
   </RulesElement>
   <RulesElement name="Feral Eladrin" type="Race" internal-id="ID_TIV_RACE_4" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -243,12 +243,12 @@ Level 21: Strength + 6 vs. Will or Charisma + 6 vs. Will. </specific>
     <specific name="Short Description"> While isolated with beasts and monsters, they have become more aggressive to survive. </specific>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_14, ID_TIV_RACIAL_TRAIT_10, ID_TIV_RACIAL_TRAIT_09, ID_FMP_RACIAL_TRAIT_350, ID_TIV_RACIAL_TRAIT_11, ID_FMP_RACIAL_TRAIT_641 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_FERAL_ELADRIN" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 5&quot;-6'1&quot;" />
-      <textstring name="Average Weight" value="130-180 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity" />
+      <grant name="ID_INTERNAL_GRANTS_FERAL_ELADRIN" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 5&quot;-6'1&quot;"/>
+      <textstring name="Average Weight" value="130-180 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
     </rules>
 
 
@@ -258,19 +258,19 @@ Play an Feral Eladrin if you want ...
   <RulesElement name="Feral Eladrin" type="Grants" internal-id="ID_INTERNAL_GRANTS_FERAL_ELADRIN" source="Racial Variants Volume 1">
     <specific name="_SupportsID"> ID_TIV_RACE_4 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_14" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_10" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_09" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_11" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_14" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_10" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_09" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_350" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_11" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_INTELLIGENCE" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Feral Eladrin" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_FERAL_ELADRIN" source="Racial Variants Volume 1">
@@ -281,8 +281,8 @@ You count as a Feral Eladrin for meeting prerequisites.
     <specific name="Short Description"> +1 Fort Defense, +5 Saves against Poison. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Fortitude Defense" value="+1" type="Racial" />
-      <statadd name="Saving Throws" value="+5" type="Racial" condition="against poison effects" />
+      <statadd name="Fortitude Defense" value="+1" type="Racial"/>
+      <statadd name="Saving Throws" value="+5" type="Racial" condition="against poison effects"/>
     </rules>
 You gain a +1 racial bonus to your fortitude defense. In addition, you gain a +5 racial bonus to saving throws against poison.
    </RulesElement>
@@ -290,9 +290,9 @@ You gain a +1 racial bonus to your fortitude defense. In addition, you gain a +5
     <specific name="Short Description"> +3 bonus to unarmed attacks. Unarmed Damage 1d8. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Unarmed attack:attack" value="+3" />
-      <textstring name="Unarmed Damage Die" value="1d8" />
-      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d8" />
+      <statadd name="Unarmed attack:attack" value="+3"/>
+      <textstring name="Unarmed Damage Die" value="1d8"/>
+      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d8"/>
     </rules>
 You gain a +3 proficiency bonus to unarmed attacks and attack with 1d8 rather than 1d4.
    </RulesElement>
@@ -301,10 +301,10 @@ You gain a +3 proficiency bonus to unarmed attacks and attack with 1d8 rather th
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_POWER_11_11 </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_11_11 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_11_11" type="Power" />
+      <grant name="ID_TIV_POWER_11_11" type="Power"/>
     </rules>
 You have the War Step power.
 </RulesElement>
@@ -312,13 +312,13 @@ You have the War Step power.
     <Category> ID_TIV_RACIAL_TRAIT_11,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
     <Flavor> You don't fear any creature, large or small, and you won't teleport away no matter what the cost. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Eladrin Racial Power </specific>
     <specific name="Keywords"> Teleportation </specific>
     <specific name="Action Type"> Move Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Teleport up to 10 squares towards an enemy. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_11 </specific>
   </RulesElement>
   <RulesElement name="Sinner Tiefling" type="Race" internal-id="ID_TIV_RACE_5" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -347,13 +347,13 @@ You have the War Step power.
     <specific name="Short Description"> Tieflings are descended from humans who bargained with infernal powers. </specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_13, ID_FMP_RACIAL_TRAIT_39, ID_TIV_RACIAL_TRAIT_12 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_SINNER_TIEFLING" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 6&quot;-6' 2&quot;" />
-      <textstring name="Average Weight" value="140-230 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Language" number="1" Category="Starting" />
-      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom" />
+      <grant name="ID_INTERNAL_GRANTS_SINNER_TIEFLING" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 6&quot;-6' 2&quot;"/>
+      <textstring name="Average Weight" value="140-230 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Language" number="1" Category="Starting"/>
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom"/>
     </rules>
 Heirs to an ancient, infernal bloodline, tieflings have no realms of their own but instead live within human kingdoms and cities. They are descended from human nobles who bargained with dark powers, and long ago their empire subjugated half the world. But the empire was cast down into ruin, and tieflings were left to make their own way in a world that often fears and resents them.
 
@@ -365,15 +365,15 @@ Play a Sinner Tiefling if you want ...
   <RulesElement name="Sinner Tiefling" type="Grants" internal-id="ID_INTERNAL_GRANTS_SINNER_TIEFLING" source="Racial Variants Volume 1">
     <specific name="_SupportsID"> ID_TIV_RACE_5 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_13" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_39" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_12" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_13" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_39" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_12" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Sinner Tiefling" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_SINNER_TIEFLING" source="Racial Variants Volume 1">
@@ -390,10 +390,10 @@ If you are blooded, you gain a +1 to attacks for each bloodied character adjacen
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_POWER_13_13 </specific>
     <specific name="type"> Daily </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_13_13(Daily) </specific>
     <rules>
-      <grant name="ID_TIV_POWER_13_13" type="Power" />
+      <grant name="ID_TIV_POWER_13_13" type="Power"/>
     </rules>
 You can use Hellfire Wreath as an Daily power.
 </RulesElement>
@@ -401,17 +401,17 @@ You can use Hellfire Wreath as an Daily power.
     <Category> ID_TIV_RACIAL_TRAIT_13,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> The unholy aura around you, burns all. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Sinner Tiefling Racial Power </specific>
     <specific name="Keywords"> Fire </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Aura 2 </specific>
-    <specific name="Trigger" />
+    <specific name="Trigger"/>
     <specific name="Target"> All creatures within the aura </specific>
     <specific name="Effect"> Until the end of the encounter, a character that begins their turn in the aura or enters the aura, takes 1d6 + Charisma modifier fire damage.
 Level 11: 2d6 + Charisma modifier.
 Level 21: 3d6 + Charisma modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_13 </specific>
   </RulesElement>
   <RulesElement name="Stone-Kin Dwarf" type="Race" internal-id="ID_TIV_RACE_6" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -436,12 +436,12 @@ Level 21: 3d6 + Charisma modifier. </specific>
     <specific name="Short Description"> The stout dwarves are mountaineers and miners. They are the toughest of the common folk. </specific>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_9, ID_TIV_RACIAL_TRAIT_14, ID_TIV_RACIAL_TRAIT_15 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_STONE-KIN_DWARF" type="Grants" />
-      <statadd name="Speed" value="+5" />
-      <textstring name="Average Height" value="4' 3&quot;-4' 9&quot;" />
-      <textstring name="Average Weight" value="160-220 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom" />
+      <grant name="ID_INTERNAL_GRANTS_STONE-KIN_DWARF" type="Grants"/>
+      <statadd name="Speed" value="+5"/>
+      <textstring name="Average Height" value="4' 3&quot;-4' 9&quot;"/>
+      <textstring name="Average Weight" value="160-220 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Strength|Wisdom"/>
     </rules>
 
 
@@ -451,16 +451,16 @@ Play a Stone-Kin Dwarf if you want ...
   <RulesElement name=" Stone-Kin Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_STONE-KIN_DWARF" source="Racial Variants Volume 1">
     <specific name="_SupportsID"> ID_TIV_RACE_6 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_9" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_14" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_15" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_3" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_9" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_14" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_15" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_3" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Stone-Kin Dwarf" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_STONE-KIN_DWARF" source="Racial Variants Volume 1">
@@ -471,13 +471,13 @@ You count as a Stone-Kin Dwarf for meeting prerequisites.
     <specific name="Short Description"> You gain a +3 racial bonus to all defenses, AC, and saving throws. Resist all at 1/2 your level. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="AC" value="+3" type="Racial" />
-      <statadd name="Fortitude Defense" value="+3" type="Racial" />
-      <statadd name="Reflex Defense" value="+3" type="Racial" />
-      <statadd name="Will Defense" value="+3" type="Racial" />
-      <statadd name="Saving Throws" value="+3" type="Racial" />
-      <statadd name="_generic all resist" value="+HALF-LEVEL" />
-      <statadd name="resist:all" value="_generic all resist" type="Racial" />
+      <statadd name="AC" value="+3" type="Racial"/>
+      <statadd name="Fortitude Defense" value="+3" type="Racial"/>
+      <statadd name="Reflex Defense" value="+3" type="Racial"/>
+      <statadd name="Will Defense" value="+3" type="Racial"/>
+      <statadd name="Saving Throws" value="+3" type="Racial"/>
+      <statadd name="_generic all resist" value="+HALF-LEVEL"/>
+      <statadd name="resist:all" value="_generic all resist" type="Racial"/>
     </rules>
 You gain a +3 racial bonus to all defenses (including AC) and saving throws as well as a resist all equal to one-half your level.
 </RulesElement>
@@ -512,13 +512,13 @@ When an effect forces you to move, through a pull, a push, or a slide, you can i
     <specific name="Short Description"> Clever wanderers and explorers, halflings who want to hide from prying eyes are almost impossible to spot. </specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_16, ID_TIV_RACIAL_TRAIT_17 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_TIMID_HALFLING" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;" />
-      <textstring name="Average Weight" value="75-85 lb." />
-      <textstring name="Size" value="Small" />
-      <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
-      <select type="Language" number="1" Category="Starting" />
+      <grant name="ID_INTERNAL_GRANTS_TIMID_HALFLING" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="3' 10&quot;-4' 2&quot;"/>
+      <textstring name="Average Weight" value="75-85 lb."/>
+      <textstring name="Size" value="Small"/>
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
+      <select type="Language" number="1" Category="Starting"/>
     </rules>
 
 
@@ -528,14 +528,14 @@ Play a Timid Halfling if you want ...
   <RulesElement name="Timid Halfling" type="Grants" internal-id="ID_INTERNAL_GRANTS_TIMID_HALFLING" source="Racial Variants Volume 1">
     <specific name="_SupportsID"> ID_TIV_RACE_7 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_16" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_17" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_16" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_17" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Timed Halffling" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_TIMID_HALFLING" source="Racial Variants Volume 1">
@@ -552,10 +552,10 @@ You are immune to fear effects, but not damage caused by fear. You automatically
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_TIV_POWER_17_17 </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_TIV_POWER_17_17(Encounter) </specific>
     <rules>
-      <grant name="ID_TIV_POWER_17_17" type="Power" />
+      <grant name="ID_TIV_POWER_17_17" type="Power"/>
     </rules>
 You can use Run and Hide as an encounter power.
 </RulesElement>
@@ -563,14 +563,14 @@ You can use Run and Hide as an encounter power.
     <Category> ID_TIV_RACIAL_TRAIT_17,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
     <Flavor> Its not so bad to run away and live another day. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Timid Halfling Racial Power </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Immediate Reaction </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Trigger"> You are bloodied. </specific>
     <specific name="Effect"> You may shift your speed and make a Stealth check. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_TIV_RACIAL_TRAIT_17 </specific>
   </RulesElement>
   <RulesElement name="Brimstone" type="Feat" internal-id="ID_TIV_FEAT_9001_01" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -578,10 +578,10 @@ You can use Run and Hide as an encounter power.
     <print-prereqs> Sinner Tiefling </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Extend the aura of your Hellfire Wreath by 1 square.</specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Extend the aura of your Hellfire Wreath by 1 square.
 </RulesElement>
   <RulesElement name="Potent Dawn Venom" type="Feat" internal-id="ID_TIV_FEAT_9001_02" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -589,10 +589,10 @@ Extend the aura of your Hellfire Wreath by 1 square.
     <print-prereqs> Couatl Dragonborn </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> The ongoing damage from Dawn Venom deals an extra 5 poison and radiant damage. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 The ongoing damage from Dawn Venom deals an extra 5 poison and radiant damage.
 </RulesElement>
   <RulesElement name="Shrug-It Off" type="Feat" internal-id="ID_TIV_FEAT_9001_03" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -600,10 +600,10 @@ The ongoing damage from Dawn Venom deals an extra 5 poison and radiant damage.
     <print-prereqs> Stone-Kin Dwarf </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Once per encounter, you may automatically save against ongoing damage. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per encounter, you may automatically save against ongoing damage.
 </RulesElement>
   <RulesElement name="Sure Footed" type="Feat" internal-id="ID_TIV_FEAT_9001_04" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -611,10 +611,10 @@ Once per encounter, you may automatically save against ongoing damage.
     <print-prereqs> City-Elf </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a +2 to climb checks. This becomes a +4 when you use Elven Agility. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You gain a +2 to climb checks. This becomes a +4 when you use Elven Agility.
 </RulesElement>
   <RulesElement name="Tough Knuckles" type="Feat" internal-id="ID_TIV_FEAT_9001_05" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -622,13 +622,13 @@ You gain a +2 to climb checks. This becomes a +4 when you use Elven Agility.
     <print-prereqs> Feral Eladrin </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You deal 1d10 damage when performing unarmed attacks instead of 1d8. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <textstring name="Unarmed Damage Die" value="1d10" />
-      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d10" />
+      <textstring name="Unarmed Damage Die" value="1d10"/>
+      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d10"/>
     </rules>
 You deal 1d10 damage when performing unarmed attacks instead of 1d8.
 </RulesElement>
@@ -637,10 +637,10 @@ You deal 1d10 damage when performing unarmed attacks instead of 1d8.
     <print-prereqs> Timid Halfling </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a +2 to Stealth checks against non-halflings. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You gain a +2 to Stealth checks against non-halflings.
 </RulesElement>
   <RulesElement name="Hellfire Inferno" type="Feat" internal-id="ID_TIV_FEAT_9001_07" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -648,10 +648,10 @@ You gain a +2 to Stealth checks against non-halflings.
     <print-prereqs> 11th level, Sinner Tiefling </print-prereqs>
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> If a character is bloodied within the aura of Hellfire Wreath, the aura deals an extra 1d6 fire damage. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 If a character is bloodied within the aura of Hellfire Wreath, the aura deals an extra 1d6 fire damage.
 </RulesElement>
   <RulesElement name="Toxic Light" type="Feat" internal-id="ID_TIV_FEAT_9001_08" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -659,10 +659,10 @@ If a character is bloodied within the aura of Hellfire Wreath, the aura deals an
     <print-prereqs> 11th level, Couatl Dragonborn </print-prereqs>
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> When you deal damage with Dawn Venom, you deal an extra 1d4. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When you deal damage with Dawn Venom, you deal an extra 1d4.
 </RulesElement>
   <RulesElement name="Stone's Endurance" type="Feat" internal-id="ID_TIV_FEAT_9001_09" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -670,12 +670,12 @@ When you deal damage with Dawn Venom, you deal an extra 1d4.
     <print-prereqs> 11th level, Stone-Kin Dwarf </print-prereqs>
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> Gain 20 hit points. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Hit Points" value="+20" />
+      <statadd name="Hit Points" value="+20"/>
     </rules>
 Gain 20 hit points.
 </RulesElement>
@@ -684,12 +684,12 @@ Gain 20 hit points.
     <print-prereqs> 11th level, Feral Eladrin </print-prereqs>
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> Your proficiency bonus for unarmed attacks increases from +3 to +4. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Unarmed attack:attack" value="+1" />
+      <statadd name="Unarmed attack:attack" value="+1"/>
     </rules>
 Your proficiency bonus for unarmed attacks increases from +3 to +4.
 </RulesElement>
@@ -698,10 +698,10 @@ Your proficiency bonus for unarmed attacks increases from +3 to +4.
     <print-prereqs> 21st level, Feral Eladrin </print-prereqs>
     <specific name="Tier"> Epic </specific>
     <specific name="Short Description"> Your unarmed attacks are considered high crit weapons. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Your unarmed attacks are considered high crit weapons.
 </RulesElement>
   <RulesElement name="Blood and Fire" type="Feat" internal-id="ID_TIV_FEAT_9001_12" source="Racial Variants Volume 1" revision-date="12/24/2010 12:39:04 PM">
@@ -709,10 +709,10 @@ Your unarmed attacks are considered high crit weapons.
     <print-prereqs> 21st level, Sinner Tiefling </print-prereqs>
     <specific name="Tier"> Epic </specific>
     <specific name="Short Description"> If you are bloodied, you deal an extra 1d4 fire damage with Hellfire Wreath for each bloodied creature within the aura. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 If you are bloodied, you deal an extra 1d4 fire damage with Hellfire Wreath for each bloodied creature within the aura.
 </RulesElement>
 </D20Rules>

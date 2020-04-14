@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.06</Version>
     <Filename>30-runepriest.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/30-runepriest.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=30-runepriest</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/30-runepriest.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/30-runepriest.txt</VersionAddress>
   </UpdateInfo>
   <!-- Runepriest -->
   <!-- 30-runepriest.part, version 1.06 -->
@@ -19,55 +19,55 @@
  Updated 25-December-2011 Updated Enlightened Word paragon path and new Runepriest powers.
  Updated 18-May-2012 DSH added.
 </Changelog>
-<RulesElement name="Runes of the Blade Smith" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2398" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:06 PM" >
+<RulesElement name="Runes of the Blade Smith" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2398" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
       <Category> 11 </Category>
       <specific name="Short Description"> During rest, grant +1 damage bonus to one weapon </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-      <select type="Class Feature" number="1" Category="Runes of the Blade Smith" />
+      <select type="Class Feature" number="1" Category="Runes of the Blade Smith"/>
       </rules>
 When you take a short or an extended rest, you can touch one weapon that you or an ally carries. That weapon then gains a +1 bonus to damage rolls until you grant this bonus to a different weapon.
    </RulesElement>
    
- <RulesElement name="Runes of the Blade Smith (Self)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ROTBS_SELF" source="Player&apos;s Handbook 3" >
+ <RulesElement name="Runes of the Blade Smith (Self)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ROTBS_SELF" source="Player's Handbook 3">
       <Category> ID_FMP_CLASS_FEATURE_2398 </Category>
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2398 </specific>
       <specific name="Level"> 11 </specific>
       <rules>
-         <statadd name="Weapon:damage" value="+1" />
+         <statadd name="Weapon:damage" value="+1"/>
       </rules>
 You gain a +1 bonus to damage rolls with a weapon you are wielding.
    </RulesElement>
    
-<RulesElement name="Runes of the Blade Smith (Ally)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ROTBS_ALLY" source="Player&apos;s Handbook 3" >
+<RulesElement name="Runes of the Blade Smith (Ally)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_ROTBS_ALLY" source="Player's Handbook 3">
       <Category> ID_FMP_CLASS_FEATURE_2398 </Category>
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2398 </specific>
       <specific name="Level"> 11 </specific>
 An ally gains a +1 bonus to damage rolls with a weapon they are wielding.
    </RulesElement>
    
- <RulesElement name="Indomitable Steel" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2400" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:06 PM" >
+ <RulesElement name="Indomitable Steel" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2400" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
       <Category> 16 </Category>
       <specific name="Short Description"> +1 to AC of one set of heavy armor after rest </specific>
       <specific name="Level"> 16 </specific>
             <rules>
-      <select type="Class Feature" number="1" Category="Indomitable Steel" />
+      <select type="Class Feature" number="1" Category="Indomitable Steel"/>
       </rules>
 When you take a short or an extended rest, you can touch one suit of heavy armor that you or an ally wears. That armor gains a +1 bonus to AC until you grant this bonus to a different suit of armor.
    </RulesElement>
    
-<RulesElement name="Indomitable Steel (Self)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_IS_SELF" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+<RulesElement name="Indomitable Steel (Self)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_IS_SELF" source="Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
       <Category> ID_FMP_CLASS_FEATURE_2400 </Category>
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2400 </specific>
       <specific name="Short Description"> +1 AC in heavy armor </specific>
       <specific name="Level"> 16 </specific>
       <rules>
-         <statadd name="AC" value="+1" wearing="armor:heavy" />
+         <statadd name="AC" value="+1" wearing="armor:heavy"/>
       </rules>
 You receive a +1 bonus to AC when wearing heavy armor.
    </RulesElement>
    
- <RulesElement name="Indomitable Steel (Ally)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_IS_ALLY" source="Player&apos;s Handbook 3" revision-date="10/5/2010 1:47:04 PM" >
+ <RulesElement name="Indomitable Steel (Ally)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_IS_ALLY" source="Player's Handbook 3" revision-date="10/5/2010 1:47:04 PM">
       <Category> ID_FMP_CLASS_FEATURE_2400 </Category>
       <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2400 </specific>
       <specific name="Short Description"> +1 AC in heavy armor </specific>
@@ -86,7 +86,7 @@ An ally receives a +1 bonus to AC when wearing heavy armor.
       <specific name="Level"> 1 </specific>
       <specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_2389, ID_FMP_CLASS_FEATURE_2390, ID_FMP_CLASS_FEATURE_4261 </specific>
       <rules>
-         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2388" />
+         <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2388"/>
       </rules>
 Many runepriests follow one of the two major traditions of rune magic: the path of the Wrathful Hammer or the way of the Defiant Word. The two traditions use the same runes but differ in their practices and teachings.
 Although most shan zi in Kara-Tur follow the two major traditions of rune magic, Defiant Word and Wrathful Hammer, a sizable minority practices the tradition of the Serene Blade. When creating a runepriest, you can choose the following Runic Artistry option instead of those in Player's Handbook 3.
@@ -97,12 +97,12 @@ Although most shan zi in Kara-Tur follow the two major traditions of rune magic,
     <specific name="Short Description"> Gain proficiency with military heavy blades; you can use Wis instead of Dex or Int to determine AC when not wearing heavy armor; gain temp HP once per round when hit by an enemy </specific>
     <specific name="Level"> 1 </specific>
 	  <rules>  
-         <grant name="ID_INTERNAL_PROFICIENCY_ONE-HANDED_MILITARY_HEAVY_BLADE" type="Proficiency" />
-		 <grant name="ID_INTERNAL_PROFICIENCY_TWO-HANDED_MILITARY_HEAVY_BLADE" type="Proficiency" />
-		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" type="Proficiency" />
-		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" type="Proficiency" /> 
-		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)" type="Proficiency" />  
-		 <statadd name="AC" value="+Wisdom modifier" type="Ability" not-wearing="armor:heavy" />
+         <grant name="ID_INTERNAL_PROFICIENCY_ONE-HANDED_MILITARY_HEAVY_BLADE" type="Proficiency"/>
+		 <grant name="ID_INTERNAL_PROFICIENCY_TWO-HANDED_MILITARY_HEAVY_BLADE" type="Proficiency"/>
+		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLAIVE)" type="Proficiency"/>
+		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GREATSWORD)" type="Proficiency"/> 
+		 <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FALCHION)" type="Proficiency"/>  
+		 <statadd name="AC" value="+Wisdom modifier" type="Ability" not-wearing="armor:heavy"/>
 	  </rules>  
 You gain proficiency with all one-handed and two-handed military heavy blades. While you are not wearing heavy armor, you can use your Wisdom modifier in place of your Dexterity or Intelligence modifier to determine your AC. Once per round immediately after an enemy deals damage to you with an attack, you gain temporary hit points equal to your Wisdom modifier. The number of temporary hit points increases to 5 + your Wisdom modifier at 11th level and 10 + your Wisdom modifier at 21st level.
 </RulesElement>
@@ -219,12 +219,12 @@ Your weapon gleams with written sagas and poems of great heroes. As you strike y
     <specific name="Powers"> ID_FMP_POWER_15997,ID_FMP_POWER_15998,ID_FMP_POWER_15999 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_15997,ID_FMP_POWER_15998,ID_FMP_POWER_15999 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_4252" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_4253" type="Class Feature" Level="11" />
-	  <grant name="ID_FMP_CLASS_FEATURE_4254" type="Class Feature" Level="16" />
-      <grant name="ID_FMP_POWER_15997" type="Power" Level="11" />
-      <grant name="ID_FMP_POWER_15999" type="Power" Level="12" />
-      <grant name="ID_FMP_POWER_15998" type="Power" Level="20" />
+      <grant name="ID_FMP_CLASS_FEATURE_4252" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_4253" type="Class Feature" Level="11"/>
+	  <grant name="ID_FMP_CLASS_FEATURE_4254" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_POWER_15997" type="Power" Level="11"/>
+      <grant name="ID_FMP_POWER_15999" type="Power" Level="12"/>
+      <grant name="ID_FMP_POWER_15998" type="Power" Level="20"/>
     </rules> 
 All across Kara-Tur, runepriests go from village to village teaching not only literacy, but also the lessons found in the Path of Enlightenment. Such selfless acts, in turn, bring these runepriests closer to their own enlightenment. Recognizing this truth, a few shan zi learn how to share their blessings with their comrades and allies, further pushing back the darkness so that the light of the Celestial Emperor can purge the world of ignorance and evil. The following paragon path is available to any honorable runepriest who strives to become the consummate leader, acting through his or her allies to vanquish the opposition.
 </RulesElement>
@@ -241,7 +241,7 @@ Whenever you enter a new rune state, you can enter the rune state of the cloud s
     <specific name="Short Description"> When you spend an action point for a runepriest attack, make the origin the space of an ally within 5 squares and that ally gains temp HP equal to 5 + your Str mod </specific>
     <specific name="Level"> 11 </specific>
 		<rules>
-            <textstring name="Action Point" value="Shared Enlightenment Action: When you spend an action point to use a runepriest attack power, you can choose for that attack to originate from the space of an ally within 5 squares of you, instead of originating from your space. If you do so, that ally gains temporary hit points equal to 5 + your Strength modifier." />
+            <textstring name="Action Point" value="Shared Enlightenment Action: When you spend an action point to use a runepriest attack power, you can choose for that attack to originate from the space of an ally within 5 squares of you, instead of originating from your space. If you do so, that ally gains temporary hit points equal to 5 + your Strength modifier."/>
         </rules>
 When you spend an action point to use a runepriest attack power, you can choose for that attack to originate from the space of an ally within 5 squares of you, instead of originating from your space. If you do so, that ally gains temporary hit points equal to 5 + your Strength modifier.
 </RulesElement>

@@ -1,19 +1,19 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>Familiars.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/Familiars.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/Familiars.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/Familiars.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/Familiars.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Arcane Familiar" type="Feat" internal-id="ID_FMP_FEAT_738" source="Arcane Power" revision-date="4/10/2011 12:18:12 PM">
     <Category> ID_INTERNAL_CATEGORY_FAMILIAR </Category>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a familiar </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Familiar </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
       <select type="Familiar" number="1">
 Familiar Type
@@ -27,10 +27,10 @@ You gain a familiar. For each familiar feat you have beyond this one, your famil
     <print-prereqs> Arcane Familiar feat </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Communicate telepathically with your familiar </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Familiar </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You and your familiar can communicate telepathically out to a range of 10 squares. You must have line of sight and line of effect to your familiar to communicate with it in this manner.
    </RulesElement>
   <RulesElement name="Shielding Familiar" type="Feat" internal-id="ID_FMP_FEAT_740" source="Arcane Power" revision-date="4/10/2011 12:18:12 PM">
@@ -39,13 +39,13 @@ You and your familiar can communicate telepathically out to a range of 10 square
     <print-prereqs> Arcane Familiar feat, 6th-level or higher utility power </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Trade utility power for shielding familiar power </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Familiar </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_4214 </specific>
     <rules>
-      <replace power-replace="Shielding Familiar:utility,6+" optional="true" />
+      <replace power-replace="Shielding Familiar:utility,6+" optional="true"/>
     </rules>
 The shielding familiar feat power replaces one of your 6th-level or higher utility powers.
 Also, while your familiar is in its passive state, you gain a +1 bonus to Reflex.
@@ -56,13 +56,13 @@ Also, while your familiar is in its passive state, you gain a +1 bonus to Reflex
     <print-prereqs> Arcane Familiar feat, 6th-level or higher utility power </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Trade utility power for spellseer familiar power </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Familiar </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_4215 </specific>
     <rules>
-      <replace power-replace="Spellseer Familiar:utility,6+" optional="true" />
+      <replace power-replace="Spellseer Familiar:utility,6+" optional="true"/>
     </rules>
 The spellseer familiar feat power replaces one of your 6th-level or higher utility powers.
 While your familiar is in its active state, you gain a +1 bonus to attack rolls with arcane powers against targets adjacent to your familiar.
@@ -76,12 +76,12 @@ While your familiar is in its active state, you gain a +1 bonus to attack rolls 
     <specific name="Powers"> ID_FMP_POWER_7420,ID_FMP_POWER_7421,ID_FMP_POWER_7422 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_7420,ID_FMP_POWER_7421,ID_FMP_POWER_7422 </specific>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_1516" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_1517" type="Class Feature" Level="11" />
-      <grant name="ID_FMP_CLASS_FEATURE_1518" type="Class Feature" Level="16" />
-      <grant name="ID_FMP_POWER_7420" type="Power" Level="11" />
-      <grant name="ID_FMP_POWER_7421" type="Power" Level="12" />
-      <grant name="ID_FMP_POWER_7422" type="Power" Level="20" />
+      <grant name="ID_FMP_CLASS_FEATURE_1516" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1517" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1518" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_POWER_7420" type="Power" Level="11"/>
+      <grant name="ID_FMP_POWER_7421" type="Power" Level="12"/>
+      <grant name="ID_FMP_POWER_7422" type="Power" Level="20"/>
     </rules>
 Nothing is more precious to you than your familiar. The connection between you is deeper than that of a master and servant. Your accomplishments are the familiar's, too, and your thoughts are so often in synch that you practically share the same mind. Your familiar grows in power because of the strength of your bond, and arcane energy infuses its being more and more. As your reputation builds, your familiar is a part of your legend. When you begin to hear bard's tales about you, your familiar is mentioned (and sometimes receives top billing), and artistic representations of you show your companion, too.
 Your path features all relate to your familiar, and your powers work only if your familiar is in active mode. Since it's important that your familiar stick around if you want to make full use of it, take some familiar feats (from Arcane Power) to increase its defenses and to gain other benefits.

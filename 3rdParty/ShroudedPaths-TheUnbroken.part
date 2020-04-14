@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>ShroudedPaths-TheUnbroken.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/ShroudedPaths-TheUnbroken.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/ShroudedPaths-TheUnbroken.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/ShroudedPaths-TheUnbroken.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/ShroudedPaths-TheUnbroken.txt</VersionAddress>
   </UpdateInfo>
   <!-- Paragon Path: The Unbroken -->
   <RulesElement name="The Unbroken" type="Paragon Path" internal-id="ID_ESJ_PARAGON_PATH_7776003" source="Shrouded Paths: The Unbroken" revision-date="10/24/2008">
@@ -15,12 +15,12 @@
     <specific name="Powers"> ID_ESJ_POWER_7776003,ID_ESJ_POWER_7776004,ID_ESJ_POWER_7776005 </specific>
     <specific name="_DisplayPowers"> ID_ESJ_POWER_7776009,ID_ESJ_POWER_7776010,ID_ESJ_POWER_7776011 </specific>
     <rules>
-      <grant name="ID_ESJ_CLASS_FEATURE_7776007" type="Class Feature" Level="11" />
-      <grant name="ID_ESJ_CLASS_FEATURE_7776008" type="Class Feature" Level="11" />
-      <grant name="ID_ESJ_CLASS_FEATURE_7776009" type="Class Feature" Level="16" />
-      <grant name="ID_ESJ_POWER_7776009" type="Power" Level="11" />
-      <grant name="ID_ESJ_POWER_7776010" type="Power" Level="12" />
-      <grant name="ID_ESJ_POWER_7776011" type="Power" Level="20" />
+      <grant name="ID_ESJ_CLASS_FEATURE_7776007" type="Class Feature" Level="11"/>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776008" type="Class Feature" Level="11"/>
+      <grant name="ID_ESJ_CLASS_FEATURE_7776009" type="Class Feature" Level="16"/>
+      <grant name="ID_ESJ_POWER_7776009" type="Power" Level="11"/>
+      <grant name="ID_ESJ_POWER_7776010" type="Power" Level="12"/>
+      <grant name="ID_ESJ_POWER_7776011" type="Power" Level="20"/>
     </rules>
 	The loss of faith can be a terrible tragedy, especially if you have spent your life as a champion of divinity. For many, it is the end of everything. You have weathered this tragedy and come out stronger for it--bloodied, battered, but unbroken. Whether it has left you embittered towards the gods, or merely weary of their games, it has not weakened your resolve to do the things that must be done. Though you turned from your deity, your powers have not abandoned you, either because your god still supports you or perhaps because you never needed a divine crutch in the first place.
    </RulesElement>
@@ -29,7 +29,7 @@
     <specific name="Short Description"> Action point grants extra Channel Divinity as free action </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Unbroken Inspiration:you may also use your channel divinity (divine mettle) or channel divinity (divine strength) as a free action. This use does not count as a use of the channel divinity power for this encounter." />
+      <textstring name="Action Point" value="Unbroken Inspiration:you may also use your channel divinity (divine mettle) or channel divinity (divine strength) as a free action. This use does not count as a use of the channel divinity power for this encounter."/>
     </rules>
 When you spend an action point to take an extra action, you may also use your channel divinity: divine mettle or channel divinity: divine strength as a free action. This use does not count as a use of the channel divinity power for this encounter.
    </RulesElement>
@@ -38,8 +38,8 @@ When you spend an action point to take an extra action, you may also use your ch
     <specific name="Short Description"> Lose proficiency with holy symbols, use melee weapons as implements </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <drop name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" type="Proficiency" />
+      <drop name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HOLY_SYMBOL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" type="Proficiency"/>
     </rules>
 You may no longer use holy symbols, but you may use the enhancement bonus of a melee weapon as an implement bonus (the proficiency bonus is not included).
    </RulesElement>
@@ -161,80 +161,80 @@ When you spend an action point to take an action that furthers your personal cod
   <!-- New implement proficiency: All Melee Weapons -->
   <RulesElement name="Implement Proficiency (Melee Weapons)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MELEE_WEAPONS)" source="Core">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GARROTE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLUB)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DAGGER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(JAVELIN)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MACE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SICKLE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPEAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATCLUB)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORNINGSTAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(STAFF)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCYTHE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEAXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HANDAXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FLAIL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(THROWING_HAMMER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARHAMMER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAR_PICK)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCIMITAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHORT_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATAXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_FLAIL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GLAIVE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HALBERD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MAUL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LONGSPEAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KATAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(RAPIER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WHIP)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_CHAIN)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FALCHION)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_GAUNTLET)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BROADSWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KHOPESH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(LIGHT_WAR_PICK)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SCOURGE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIDENT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(HEAVY_WAR_PICK)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CRAGHAMMER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(KUKRI)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(PARRYING_DAGGER)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SPIKED_SHIELD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRATNYR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TRIPLE-HEADED_FLAIL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WARAXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(EXECUTION_AXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FULLBLADE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GREATSPEAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MORDENKRAD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_AXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_FLAIL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(URGROSH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(NET)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(GARROTE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CUTTING_WHEEL)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DROW_LONG_KNIFE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_TANGAT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(TALENTA_SHARRASH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DOUBLE_SCIMITAR)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ZULAAT)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(MONK_UNARMED_STRIKE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BATTLEFIST)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLAW_FIGHTER_CLAW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SHADOWBLADE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(CLIMBING_CLAW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FERAL_ARMOR_CLAW)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(BOAR_TUSK)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(DRAGONTOOTH_SHIELD_(HEROIC_TIER))" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(FIGHTING_SHIELD_(HEROIC_TIER))" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SOUL_SHIELD_(PARAGON_TIER))" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(SUN_SHIELD_(PARAGON_TIER))" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD_OF_SEVEN_PARTS_(WEAPON))" type="Proficiency"/>
     </rules>
   </RulesElement>
   <!-- Source for hyperlinks -->

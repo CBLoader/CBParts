@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>SGPTrueBeastmastersBGUK.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/SGPTrueBeastmastersBGUK.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/SGPTrueBeastmastersBGUK.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/SGPTrueBeastmastersBGUK.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/SGPTrueBeastmastersBGUK.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="St Georges Prey" type="source" internal-id="ID_FMP_SOURCE_401" source="Core">
     <specific name="IsBeta"> 0 </specific>
@@ -16,10 +16,10 @@
     <print-prereqs> Ranger, Hunter's Quarry class feature, Beast Mastery class feature </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Deal additional damage when you beast is adjacent to quarry </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 If your beast companion is adjacent to your quarry, you deal additional damage equal to your companions Wisdom modifier.
    </RulesElement>
   <RulesElement name="Ready to Bite" type="Feat" internal-id="ID_FMP_FEAT_65111" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -27,10 +27,10 @@ If your beast companion is adjacent to your quarry, you deal additional damage e
     <print-prereqs> Ranger, Beast Mastery class feature </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Beast attacks when you spend action point </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When you spend an action point to make another attack, your beast can also make a basic beast attack against the same target.
    </RulesElement>
   <RulesElement name="Animal Signalling" type="Feat" internal-id="ID_FMP_FEAT_65112" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -38,10 +38,10 @@ When you spend an action point to make another attack, your beast can also make 
     <print-prereqs> Ranger, Beast Mastery class feature </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Beast companion shifts when you do </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When a power allows you to shift, your beast companion can shift 1 square as a free action.
    </RulesElement>
   <RulesElement name="Beast Focus" type="Feat" internal-id="ID_FMP_FEAT_65113" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -49,15 +49,15 @@ When a power allows you to shift, your beast companion can shift 1 square as a f
     <print-prereqs> Ranger, Hunter's Quarry class feature, Beast Mastery class feature </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Beast attacks deal additional damage </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Beast Focus" value="+2" />
-      <statadd name="beast:damage" value="+Beast Focus" type="Feat" />
-      <statadd name="Beast Focus" value="+2" requires="Paragon Tier" />
-      <statadd name="Beast Focus" value="+2" requires="Epic Tier" />
+      <statadd name="Beast Focus" value="+2"/>
+      <statadd name="beast:damage" value="+Beast Focus" type="Feat"/>
+      <statadd name="Beast Focus" value="+2" requires="Paragon Tier"/>
+      <statadd name="Beast Focus" value="+2" requires="Epic Tier"/>
     </rules>
 Your beast companion deals an additional +2 damage per tier
    </RulesElement>
@@ -66,15 +66,15 @@ Your beast companion deals an additional +2 damage per tier
     <print-prereqs> Ranger, Hunter's Quarry class feature, Beast Mastery class feature </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Beast attacks gain a bonus to hit </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Beast Expertise" value="+2" />
-      <statadd name="beast:attack" value="+Beast Expertise" type="Feat" />
-      <statadd name="Beast Expertise" value="+2" requires="Paragon Tier" />
-      <statadd name="Beast Expertise" value="+2" requires="Epic Tier" />
+      <statadd name="Beast Expertise" value="+2"/>
+      <statadd name="beast:attack" value="+Beast Expertise" type="Feat"/>
+      <statadd name="Beast Expertise" value="+2" requires="Paragon Tier"/>
+      <statadd name="Beast Expertise" value="+2" requires="Epic Tier"/>
     </rules>
 Your beast companion gains a +2 bonus to attack rolls per tier
    </RulesElement>
@@ -83,10 +83,10 @@ Your beast companion gains a +2 bonus to attack rolls per tier
     <print-prereqs> Ranger, Beast Mastery class feature, beast companion (bear/serpent) </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Deal additional damage to tagrets you beast has grabbed </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Your beast companion deals Strength modifier damage to creatures it is grabbing at the start of your turn.
    </RulesElement>
   <RulesElement name="Savage Sweep" type="Feat" internal-id="ID_FMP_FEAT_65116" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -94,10 +94,10 @@ Your beast companion deals Strength modifier damage to creatures it is grabbing 
     <print-prereqs> Ranger, Beast Mastery class feature, beast companion (bear) </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Deal additional damage to adjacent creatures </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Your beast companions basic beast attacks deal beast Strength modifier damage to creatures adjacent to its target
    </RulesElement>
   <RulesElement name="Birdcall" type="Feat" internal-id="ID_FMP_FEAT_65117" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -105,10 +105,10 @@ Your beast companions basic beast attacks deal beast Strength modifier damage to
     <print-prereqs> Ranger, Beast Mastery class feature, beast companion (raptor) </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Beast companion can use Ghost Sound power </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per encounter, your beast companion can use the wizards ghost sound cantrip as a minor action
    </RulesElement>
   <RulesElement name="Venomous Friend" type="Feat" internal-id="ID_FMP_FEAT_65118" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -116,10 +116,10 @@ Once per encounter, your beast companion can use the wizards ghost sound cantrip
     <print-prereqs> Ranger, Beast Mastery class feature, beast companion (lizard/spider/serpent) </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Target of beast companion is takes ongoing damage </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Your beast companions basic beast attack deals ongoing poison damage equal to the beasts Constitution modifier (save ends) on a successful hit
    </RulesElement>
   <RulesElement name="Eagle Eyes" type="Feat" internal-id="ID_FMP_FEAT_65119" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -127,10 +127,10 @@ Your beast companions basic beast attack deals ongoing poison damage equal to th
     <print-prereqs> Ranger, Beast Mastery class feature, beast companion (raptor) </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Beast companions senses improve </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Your beast companion gains low-light vision, and +2 to perception and nature checks
    </RulesElement>
   <RulesElement name="Web Spinner" type="Feat" internal-id="ID_FMP_FEAT_65120" source="St Georges Prey" revision-date="8/27/2010 12:20:06 PM">
@@ -138,17 +138,17 @@ Your beast companion gains low-light vision, and +2 to perception and nature che
     <print-prereqs> Ranger, Beast Mastery class feature, beast companion (raptor) </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Target of beast companion is slowed </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 The target of your beast companions basic beast attack is slowed (save ends) on a successful hit
    </RulesElement>
   <RulesElement name="Bring Down The Prey" type="Power" internal-id="ID_FMP_POWER_65220" source="St Georges Prey" revision-date="8/27/2010 11:22:13 AM">
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> Your beast companion puts all its weight behind the attack, and causes the prey to tumble to the floor. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 1 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -158,7 +158,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Hit"> 1 + Beast's ability modifier damage </specific>
     <specific name="Special"> If your beast companion is a wolf, raptor or lizard, the attack deals an additional +3 damage. </specific>
     <specific name="Effect"> The target is knocked prone. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -167,7 +167,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> Your beast companion bats and pads at the target, moving it around with the strength of its strikes. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 1 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -175,7 +175,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Beast's attack bonus vs. AC </specific>
     <specific name="Hit"> 1 + Beast's ability modifier damage and the beast slides the target 1 square. If the target is your Quarry, the beast can slide the target 2 squares as long as it ends adjacent to either you or your beast. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -184,7 +184,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> When surrounded, your beast enters an animalistic rage, growling and nipping at the foes surrounding it. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 1 </specific>
     <specific name="Keywords"> Martial, Beast, Psychic </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -192,7 +192,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Target"> All enemies in burst </specific>
     <specific name="Attack"> Beast's attack bonus vs. Will </specific>
     <specific name="Hit"> 1 + Beast's ability modifier psychic damage and the target takes a -1 penalty to attack rolls until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -201,7 +201,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> Your beast knows when your allies are in danger, and protects them as if they were members of its own pack. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 1 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -209,7 +209,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Target"> One creature </specific>
     <specific name="Attack"> Beast's attack bonus vs. AC </specific>
     <specific name="Hit"> 1[B] damage and allies adjacent to your beast gain +1 to all defenses until the end of your next turn. If the target is your Quarry, the attack does extra damage equal to your Wisdom modifier. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -218,7 +218,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,1 </Category>
     <Flavor> Once its got its teeth into your foes, your beast isn't willing to let them escape its bite. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 1 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Immediate Interrupt </specific>
@@ -226,7 +226,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Trigger"> An enemy adjacent to your beast companion shifts away </specific>
     <specific name="Target"> The triggering creature </specific>
     <specific name="Effect"> Your beast companion can make a basic beast attack against the target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -235,13 +235,13 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
     <Flavor> Ignoring your advice, your beast chooses its own prey. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Utility 2 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Your beast companion can designate its own Hunters Quarry against the target nearest to itself. The Quarry lasts until the end of your next turn. You can only deal your Hunters Quarry damage to one quarried target per turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -250,7 +250,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
     <Flavor> Swiftly moving across the battlefield, your beast companion leaps at the target, causing it to loose its footing </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 3 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -259,7 +259,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Effect"> Your beast companion can shift 3 squares before attacking. </specific>
     <specific name="Attack"> Beast's attack bonus vs. Reflex </specific>
     <specific name="Hit"> 2[B] + Beast's ability modifier damage and the target grants combat advantage to you and your allies until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -268,13 +268,13 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_FREE_ACTION,6 </Category>
     <Flavor> Years of close companionship means you can tell that when your beasts' growl means danger. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Utility 6 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Free Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the end of your next turn, you can use the senses of your beast companion in addition to any of your own. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -283,7 +283,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,7 </Category>
     <Flavor> With the smell of blood in the air, your beast bounds across the battlefield, ready to sink its teeth into your target. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Attack 7 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Immediate Reaction </specific>
@@ -292,7 +292,7 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <specific name="Target"> Quarried target </specific>
     <specific name="Effect"> Your beast companion shifts upto 3 squares and makes a basic beast attack against the target. </specific>
     <specific name="Special"> If your beast companion is bloodied, it can spend a healing surge. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 7 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -301,13 +301,13 @@ The target of your beast companions basic beast attack is slowed (save ends) on 
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_5,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_54,ID_INTERNAL_CATEGORY_MINOR_ACTION,10 </Category>
     <Flavor> With a savage cry, your beast knows to concentrate its efforts against your foes. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Ranger Utility 10 </specific>
     <specific name="Keywords"> Martial, Beast </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal  </specific>
     <specific name="Effect"> Until the end of the encounter, once per round, your beast companion can make a basic beast attack as a minor action against your quarried target. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_5 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>

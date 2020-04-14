@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>Dragon'sHoard.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/Dragon'sHoard.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/Dragon'sHoard.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/Dragon'sHoard.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/Dragon'sHoard.txt</VersionAddress>
   </UpdateInfo>
   <!-- Coded by Tivaan -->
   <!-- Dragon's Hoard -->
@@ -17,12 +17,12 @@
     <specific name="Powers"> ID_TIV_POWER_DH_01_01_01,ID_TIV_POWER_DH_01_01_02,ID_TIV_POWER_DH_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_DH_01_01_01,ID_TIV_POWER_DH_01_01_02,ID_TIV_POWER_DH_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_DH_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_DH_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_DH_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_DH_01_01_01" type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_DH_01_01_02" type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_DH_01_01_03" type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_DH_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_DH_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_DH_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_DH_01_01_01" type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_DH_01_01_02" type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_DH_01_01_03" type="Power" Level="20"/>
     </rules>
 Many scholars believe they are divine creations of dark and horrible machinations fashioned into elite
 soldiers by masters of abomination. Dark Champions surround themselves with fiendish servants as they take to the battlefield bringing terror and uncertainty to every foe.
@@ -38,7 +38,7 @@ You are dazed until the end of your next turn when hit by power with the radiant
     <specific name="Short Description"> When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Undead Defense Action: When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn." />
+      <textstring name="Action Point" value="Undead Defense Action: When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn."/>
     </rules>
 When you spend an action point to take an extra action, you also gain a +5 bonus to all defenses against undead creatures until the start of your next turn.
 </RulesElement>
@@ -47,8 +47,8 @@ When you spend an action point to take an extra action, you also gain a +5 bonus
     <specific name="Short Description"> You have resist necrotic 5. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <statadd name="resist:necrotic" value="+5" type="Class Feature" zero="true" />
-      <statadd name="resist:necrotic" value="+5" type="Class Feature" non-zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="Class Feature" zero="true"/>
+      <statadd name="resist:necrotic" value="+5" type="Class Feature" non-zero="true"/>
     </rules>
 You have resist necrotic 5.
 </RulesElement>
@@ -78,9 +78,9 @@ You have resist necrotic 5.
     <specific name="Keywords"> Divine </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Personal </specific>
-    <specific name="Target" />
-    <specific name="Attack" />
-    <specific name="Hit" />
+    <specific name="Target"/>
+    <specific name="Attack"/>
+    <specific name="Hit"/>
     <specific name="Effect"> You gain darkvision and vulnerable 5 radiant. </specific>
     <specific name="Sustain Minor"> You may sustain this power either until the end of the encounter or for 5 minutes. </specific>
     <specific name="Class"> ID_TIV_PARAGON_PATH_DH_01 </specific>
@@ -99,7 +99,7 @@ You have resist necrotic 5.
     <specific name="Target"> One Creature </specific>
     <specific name="Attack"> Charisma vs. Will </specific>
     <specific name="Hit"> 3[W] + Charisma modifier necrotic damage. If the target is undead, it is dazed (save ends). First Failed Save: The target is dominated (save ends).</specific>
-    <specific name="Effect" />
+    <specific name="Effect"/>
     <specific name="Miss"> Half damage. If the target is undead, it is also dazed (save ends). </specific>
     <specific name="Class"> ID_TIV_PARAGON_PATH_DH_01 </specific>
     <specific name="Level"> 20 </specific>
@@ -119,12 +119,12 @@ You have resist necrotic 5.
     <specific name="Powers"> ID_MSR_POWER_DH_01_01_01,ID_MSR_POWER_DH_01_01_02,ID_MSR_POWER_DH_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_DH_01_01_01,ID_MSR_POWER_DH_01_01_02,ID_MSR_POWER_DH_01_01_03 </specific>
     <rules>
-      <grant name="ID_MSR_CLASS_FEATURE_DH_01" type="Class Feature" Level="11" />
-      <grant name="ID_MSR_CLASS_FEATURE_DH_02" type="Class Feature" Level="11" />
-      <grant name="ID_MSR_CLASS_FEATURE_DH_03" type="Class Feature" Level="16" />
-      <grant name="ID_MSR_POWER_DH_01_01_01" type="Power" Level="11" />
-      <grant name="ID_MSR_POWER_DH_01_01_02" type="Power" Level="12" />
-      <grant name="ID_MSR_POWER_DH_01_01_03" type="Power" Level="20" />
+      <grant name="ID_MSR_CLASS_FEATURE_DH_01" type="Class Feature" Level="11"/>
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02" type="Class Feature" Level="11"/>
+      <grant name="ID_MSR_CLASS_FEATURE_DH_03" type="Class Feature" Level="16"/>
+      <grant name="ID_MSR_POWER_DH_01_01_01" type="Power" Level="11"/>
+      <grant name="ID_MSR_POWER_DH_01_01_02" type="Power" Level="12"/>
+      <grant name="ID_MSR_POWER_DH_01_01_03" type="Power" Level="20"/>
     </rules>
 Knights of the Dawn revel in the destruction of all foul, nocturnal creatures. Against such powerful adversaries such as undead and other fetid creatures who fear the light of day, the Knights of the Dawn wields the power of faith and conviction. 
 These fearless knights believe only the righteous can withstand the light of day.  However, many predominant churches fear their ritualistic sun worship borders heresy. Nevertheless, due to their indomitable courage, their willingness to venture into places others fear, and their continued success, many nobles protect the Knights of the Dawn within the political arena. 
@@ -135,7 +135,7 @@ Still, many skeptics claim their boldness is not due to their righteous philosop
     <specific name="Short Description"> Extra 2d6 radiant damage against enemies of the light. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Damage" condition="against enemies of the light (Undead, shadow, and lycanthropes)" value="+2d6" />
+      <textstring name="Damage" condition="against enemies of the light (Undead, shadow, and lycanthropes)" value="+2d6"/>
     </rules>
 Your damage rolls against enemies of the light (Undead, shadow, and lycanthropes) that you challenge deal an extra 2d6 radiant damage. 
 </RulesElement>
@@ -144,7 +144,7 @@ Your damage rolls against enemies of the light (Undead, shadow, and lycanthropes
     <specific name="Short Description"> When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Knight Renewing Action:When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge." />
+      <textstring name="Action Point" value="Knight Renewing Action:When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge."/>
     </rules>
 When you spend an action point to take an extra action, you also gain hit points as if you spent a healing surge.   
 </RulesElement>
@@ -153,7 +153,7 @@ When you spend an action point to take an extra action, you also gain hit points
     <specific name="Short Description"> +4 damage against enemies of the light. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <statadd name="damage rolls" value="+4" type="item" condition="against enemies of the light. (Undead, shadow, and lycanthropes)" />
+      <statadd name="damage rolls" value="+4" type="item" condition="against enemies of the light. (Undead, shadow, and lycanthropes)"/>
     </rules>
 You gain a +4 bonus to damage rolls against enemies of the light. (Undead, shadow, and lycanthropes) If you attack a creature other than an enemy of the light, you lose this benefit until you take a short rest, at which time you spend in prayer to refocus yourself to the goal of the crusade. 
 </RulesElement>
@@ -217,12 +217,12 @@ You gain a +4 bonus to damage rolls against enemies of the light. (Undead, shado
     <specific name="Powers"> ID_MSR_POWER_DH_01_02_01,ID_MSR_POWER_DH_01_02_02,ID_MSR_POWER_DH_01_02_03 </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_DH_01_02_01,ID_MSR_POWER_DH_01_02_02,ID_MSR_POWER_DH_01_02_03 </specific>
     <rules>
-      <grant name="ID_MSR_CLASS_FEATURE_DH_02_01" type="Class Feature" Level="11" />
-      <grant name="ID_MSR_CLASS_FEATURE_DH_02_02" type="Class Feature" Level="11" />
-      <grant name="ID_MSR_CLASS_FEATURE_DH_02_03" type="Class Feature" Level="16" />
-      <grant name="ID_MSR_POWER_DH_01_02_01" type="Power" Level="11" />
-      <grant name="ID_MSR_POWER_DH_01_02_02" type="Power" Level="12" />
-      <grant name="ID_MSR_POWER_DH_01_02_03" type="Power" Level="20" />
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02_01" type="Class Feature" Level="11"/>
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02_02" type="Class Feature" Level="11"/>
+      <grant name="ID_MSR_CLASS_FEATURE_DH_02_03" type="Class Feature" Level="16"/>
+      <grant name="ID_MSR_POWER_DH_01_02_01" type="Power" Level="11"/>
+      <grant name="ID_MSR_POWER_DH_01_02_02" type="Power" Level="12"/>
+      <grant name="ID_MSR_POWER_DH_01_02_03" type="Power" Level="20"/>
     </rules>
 Spirits guide ancestral knights allowing them to provide stability and encouragement to those of their race. Ancestral knights serve as a bastion of defense instilling vigor on the battlefield against the numerous encroaching armies of man. Most are long retired warriors; emerging now as great leaders, storytellers, and generals. 
 Though knighthood is a human concept, the ancient civilized races adopted the notions of chivalry without the savagery instilled by man. When human warlords travel the countryside inciting others to the ways of war-mongering, ancestral knights attempt to hold the peace. 
@@ -239,7 +239,7 @@ Allies gain a +1 bonus to saving throws against fear and charm effects whenever 
     <specific name="Short Description"> Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Inherit Leadership Action:Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn." />
+      <textstring name="Action Point" value="Inherit Leadership Action:Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn."/>
     </rules>
 Instead of taking an extra action, you can spend an action point to grant each ally within 5 squares a +1 bonus to attack rolls, defenses, and saving throws until the end of your next turn. </RulesElement>
   <RulesElement name="Spiritual Guidance" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_DH_02_03" source="Dragon's Hoard" revision-date="12/27/2010 10:46:57 AM">

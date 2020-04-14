@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>FlawsandMerits.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/FlawsandMerits.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/FlawsandMerits.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/FlawsandMerits.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/FlawsandMerits.txt</VersionAddress>
   </UpdateInfo>
   <!-- Player Options: Flaws and Merits -->
   <!-- Coded by GTZ -->
@@ -19,42 +19,42 @@
   <RulesElement name="Meager Strength" type="Class Feature" internal-id="ID_GTZ_CLASS_FEATURE_MEAGER_STRENGTH">
     <category> ID_GTZ_FEAT_MEAGER</category>
     <rules>
-      <statadd name="Strength" value="-2" />
+      <statadd name="Strength" value="-2"/>
     </rules>
    -2 strength
    </RulesElement>
   <RulesElement name="Meager Constitution" type="Class Feature" internal-id="ID_GTZ_CLASS_FEATURE_MEAGER_CONSTITUTION">
     <category> ID_GTZ_FEAT_MEAGER</category>
     <rules>
-      <statadd name="Constitution" value="-2" />
+      <statadd name="Constitution" value="-2"/>
     </rules>
    -2 Constitution
    </RulesElement>
   <RulesElement name="Meager Dexterity" type="Class Feature" internal-id="ID_GTZ_CLASS_FEATURE_MEAGER_DEXTERITY">
     <category> ID_GTZ_FEAT_MEAGER</category>
     <rules>
-      <statadd name="Dexterity" value="-2" />
+      <statadd name="Dexterity" value="-2"/>
     </rules>
    -2 Dexterity
    </RulesElement>
   <RulesElement name="Meager Intelligence" type="Class Feature" internal-id="ID_GTZ_CLASS_FEATURE_MEAGER_INTELLIGENCE">
     <category> ID_GTZ_FEAT_MEAGER</category>
     <rules>
-      <statadd name="Intelligence" value="-2" />
+      <statadd name="Intelligence" value="-2"/>
     </rules>
    -2 Intelligence
    </RulesElement>
   <RulesElement name="Meager Wisdom" type="Class Feature" internal-id="ID_GTZ_CLASS_FEATURE_MEAGER_WISDOM">
     <category> ID_GTZ_FEAT_MEAGER</category>
     <rules>
-      <statadd name="Wisdom" value="-2" />
+      <statadd name="Wisdom" value="-2"/>
     </rules>
    -2 Wisdom
    </RulesElement>
   <RulesElement name="Meager Charisma" type="Class Feature" internal-id="ID_GTZ_CLASS_FEATURE_MEAGER_CHARISMA">
     <category> ID_GTZ_FEAT_MEAGER</category>
     <rules>
-      <statadd name="Charisma" value="-2" />
+      <statadd name="Charisma" value="-2"/>
     </rules>
    -2 Charisma
    </RulesElement>
@@ -66,17 +66,17 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -1 strength &amp; constitution </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <select type="Skill Training" number="1" />
-      <statadd name="Strength" value="-1" />
-      <statadd name="Constitution" value="-1" />
-      <statadd name="Speed" value="-1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <select type="Skill Training" number="1"/>
+      <statadd name="Strength" value="-1"/>
+      <statadd name="Constitution" value="-1"/>
+      <statadd name="Speed" value="-1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		Reduce your speed as well as your Strength and Constitution scores by 1. In addition to the feat gain through acquiring this flaw, gain an additional trained skill.
    </RulesElement>
@@ -86,13 +86,13 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Become dazed when first bloodied </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>	
 		You become dazed until the end of your next turn whenever you are first bloodied in an encounter.
    </RulesElement>
@@ -102,13 +102,13 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Fall prone when bloodied or fail acrobatics  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw</specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		The first time you are hit during an encounter or whenever you fail an Acrobatics skill check, you fall prone.
    </RulesElement>
@@ -118,13 +118,13 @@
     <print-prereqs> Controller role or Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 will and attack within threat range of enemy </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		If you begin your turn in the threat range of an enemy, you must first move (if possible) until you are no longer within reach. Otherwise, you take a -2 penalty to attack rolls and Will defense until you are no longer in the threat range of an enemy.
    </RulesElement>
@@ -134,18 +134,18 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 to all str,dex,con skill and ability checks </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Acrobatics" value="-2" />
-      <statadd name="Athletics" value="-2" />
-      <statadd name="Endurance" value="-2" />
-      <statadd name="Stealth" value="-2" />
-      <statadd name="Thievery" value="-2" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Acrobatics" value="-2"/>
+      <statadd name="Athletics" value="-2"/>
+      <statadd name="Endurance" value="-2"/>
+      <statadd name="Stealth" value="-2"/>
+      <statadd name="Thievery" value="-2"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		You have a -2 penalty to Strength, Dexterity, and Constitution-based skill checks and ability checks.
    </RulesElement>
@@ -155,14 +155,14 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Only 2 death saving throws  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <modify name="Death Saves Count" value="+2" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <modify name="Death Saves Count" value="+2"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		You can only have a maximum of two death savings throws between rests.
    </RulesElement>
@@ -172,13 +172,13 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Cannot attack until you or ally is attacked  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		You cannot target an enemy until an enemy targets you or an ally with an attack.
    </RulesElement>
@@ -188,13 +188,13 @@
     <print-prereqs> Controller role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  Exra damage for each die </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 		You take an additional point of damage for each damage die rolled.
    </RulesElement>
@@ -205,13 +205,13 @@
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> 1/day challenged  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You are confrontational and find it hard to back down from a challenge.
 Once per day, one enemy, decided by the Game Master, has the power outlined below.
@@ -223,117 +223,117 @@ Challenger's Mark (minor, at-will) Close burst 5; target one creature with the c
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Hit with at-will must keep using same at-will  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You prefer proven old tricks and tactics over new ideas. If it worked once, it will work again. Others might find you stubborn in your methods.
 If you hit an enemy with at-will attack power the previous round, you must use that power again for your next attack.
    </RulesElement>
   <RulesElement name="Loyal" type="Feat" internal-id="ID_GTZ_FEAT_LOYAL" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Defender role</Prereqs>
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Cannot leave square if ally adj to enemy  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Nothing matters save for the bond between you and your comrades. You are loyal to a fault.
 You cannot leave an adjacent space of an enemy if there is a single ally adjacent to the same enemy.
    </RulesElement>
   <RulesElement name="Obscured Vision" type="Feat" internal-id="ID_GTZ_FEAT_OBSCURED_VISION" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Defender role</Prereqs>
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> aditional -1 when targeting concealed  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Your field of vision is limited beyond your immediate area.
 You have an additional -1 penalty to attack rolls against targets benefitting from concealment.
    </RulesElement>
   <RulesElement name="Protector" type="Feat" internal-id="ID_GTZ_FEAT_PROTECTOR" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Defender role</Prereqs>
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  First attack must be agressive enemy </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You often run to the aid of others without thinking things through.
 Your first attack in an encounter must target an enemy that previously attacked you or an ally, unless you are first to act in an encounter.
    </RulesElement>
   <RulesElement name="Slow to React" type="Feat" internal-id="ID_GTZ_FEAT_SLOW_TO_REACT" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Defender role</Prereqs>
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  -6 initiative </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Initiative" value="-6" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Initiative" value="-6"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You have a hard time reacting to a spontaneous situation.
 You have a -6 penalty to your initiative checks.
    </RulesElement>
   <RulesElement name="Vengeful" type="Feat" internal-id="ID_GTZ_FEAT_VENGEFUL" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Defender role</Prereqs>
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 against creatures that havent attacked you  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You often seek to avenge yourself for what you perceive as a wrong.
 You have a -2 penalty to attack rolls unless you target an enemy that previously attacked you.
    </RulesElement>
   <RulesElement name="Weak Willed" type="Feat" internal-id="ID_GTZ_FEAT_WEAK_WILLED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Defender role</Prereqs>
     <print-prereqs> Defender role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 saving throws against domination </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Saving Throws" value="-2" condition="against domination effects" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Saving Throws" value="-2" condition="against domination effects"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Others often manipulate or use you for their own purpose. You are gullible.
 You take a -2 penalty to saving throws against the dominated condition.
@@ -347,131 +347,131 @@ You take a -2 penalty to saving throws against the dominated condition.
     <specific name="Short Description"> Take action point from ally when droped to 0 </specific>
     <specific name="Special"> You cannot gain the Natural Leader merit by acquiring this flaw. </specific>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You wish to glorify yourself and outdo all others no matter the odds.
 When you are reduced to 0 or fewer hit points, you take an action point from a random ally.
    </RulesElement>
   <RulesElement name="Arrogant" type="Feat" internal-id="ID_GTZ_FEAT_ARROGANT" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Leader role</Prereqs>
     <print-prereqs> Leader role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> take -1 to defenses when you crit  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Others see you as overbearing and full of self-worth and you often believe your own rhetoric.
 With each successful critical hit, you take a cumulative -1 penalty to all defenses. This penalty lasts until you take an extended rest.
    </RulesElement>
   <RulesElement name="Disciplinarian" type="Feat" internal-id="ID_GTZ_FEAT_DISCIPLINARIAN" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Leader role</Prereqs>
     <print-prereqs> Leader role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -1 to attack/skill on next encounter when ally uses heal </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You run a tight ship and expect everyone else to do the same. If the performance of your comrades suffer, you suffer.
 During each short rest, for every two allies that uses one of more healing surges, you suffer a -1 penalty to attack rolls (or skill checks for skill challenges) during the next encounter.
    </RulesElement>
   <RulesElement name="Catious" type="Feat" internal-id="ID_GTZ_FEAT_CATIOUS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Leader role</Prereqs>
     <print-prereqs> Leader role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 to speed until enemy is bloodied </specific>
     <specific name="Special">You cannot gain the Fleet-Footed feat by acquiring this flaw. </specific>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You overly examine every situation before putting your best foot forward.
 At the start of each encounter, reduce your speed by 2 squares until at least one enemy is bloodied.
    </RulesElement>
   <RulesElement name="Heroic" type="Feat" internal-id="ID_GTZ_FEAT_HEROIC" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Leader role</Prereqs>
     <print-prereqs> Leader role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Must provide heal when ally requests</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You often put others first regardless of the harm you might face.
 You must always provide a healing surge or a Heal check, when possible, on the next turn after an ally requests one.
    </RulesElement>
   <RulesElement name="Overconfident" type="Feat" internal-id="ID_GTZ_FEAT_OVERCONFIDENT" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Leader role</Prereqs>
     <print-prereqs> Leader role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -4 ac until opportunity attack </specific>
     <specific name="Special">You cannot gain the Defensive Mobility feat.</specific>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You are often brash and full of confidence believing that you can overcome any situation even if it means risking harm.
 At the start of each encounter, You have a -4 penalty to your AC until you provoke an opportunity attack.
    </RulesElement>
   <RulesElement name="Remorseful" type="Feat" internal-id="ID_GTZ_FEAT_REMORSEFUL" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Leader role</Prereqs>
     <print-prereqs> Leader role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  -2 attack rolls when ally falls to 0 hp</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 The pain of seeing a comrade fall under your leadership haunts you.
 When an ally falls to 0 or fewer hit points, you receive a -2 penalty to attack rolls until the end of the encounter.
    </RulesElement>
   <!-- Striker Flaws -->
   <RulesElement name="Brutal" type="Feat" internal-id="ID_GTZ_FEAT_BRUTAL" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role, Power Attack feat</Prereqs>
     <print-prereqs> Striker role, Power Attack feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -1 to attack when not using Power Attack  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You show little mercy as you pound your enemies with a cool, calculating demeanor. Your brutality often leaves others questioning your methods.
 You suffer a -1 penalty to all attack rolls unless you use the Power Attack feat as part of your attack.
@@ -482,105 +482,105 @@ You suffer a -1 penalty to all attack rolls unless you use the Power Attack feat
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 to attack at start of encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You find it difficult taking dire situations seriously. Others might find your whimsical attitude tiring especially when you fail to concentrate on the matter at hand.
 At the start of each encounter, you suffer a -2 penalty to attack rolls (save ends).
    </RulesElement>
   <RulesElement name="Cautious Striker" type="Feat" internal-id="ID_GTZ_FEAT_CAUTIOUS_STRIKER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role</Prereqs>
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  Cannot attack first round </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Before committing yourself to combat, you analyze and reflect on the situation.
 You cannot make an attack in the first round of an encounter, unless it is an opportunity action.
    </RulesElement>
   <RulesElement name="Inept Swordsman" type="Feat" internal-id="ID_GTZ_FEAT_INEPT_SWORDSMAN" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role; !ID_FMP_CLASS_7</Prereqs>
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 attack rolls with weapon and implement </specific>
     <specific name="Special">Warlocks cannot choose this flaw.</specific>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Attack Rolls" value="-2" condition="all weapon melee attacks" />
-      <statadd name="Attack Rolls" value="-2" condition="all implement close attacks" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Attack Rolls" value="-2" condition="all weapon melee attacks"/>
+      <statadd name="Attack Rolls" value="-2" condition="all implement close attacks"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 No matter how hard you train, you cannot gain the feel of a melee weapon in your hand. Although not swordsmen, arcane casters find it difficult wielding their implement so close to enemies.
 You have a -2 penalty on all weapon melee and implement close attack rolls.
    </RulesElement>
   <RulesElement name="Notorious" type="Feat" internal-id="ID_GTZ_FEAT_NOTORIOUS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role</Prereqs>
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 all charisma skill and ability checks </specific>
     <specific name="Special">If you take the Alluring merit, you lose this penalty when associating with members of the opposite sex, but gain an additional -1 penalty when dealing with members of the same sex.</specific>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Bluff" value="-2" />
-      <statadd name="Diplomacy" value="-2" />
-      <statadd name="Intimidate" value="-2" />
-      <statadd name="Streetwise" value="-2" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Bluff" value="-2"/>
+      <statadd name="Diplomacy" value="-2"/>
+      <statadd name="Intimidate" value="-2"/>
+      <statadd name="Streetwise" value="-2"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You will never shake off your bad reputation.
 You have a -2 penalty per tier to all Charisma-based skill checks and ability checks.
    </RulesElement>
   <RulesElement name="Shaky Hand" type="Feat" internal-id="ID_GTZ_FEAT_SHAKY_HAND" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role</Prereqs>
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 ranged attacks </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="ranged:attack" value="-2" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="ranged:attack" value="-2"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Your nerves are shot proving useless with any type of ranged attack.
 You have a -2 penalty on all ranged attacks.
    </RulesElement>
   <RulesElement name="Thrillseeker" type="Feat" internal-id="ID_GTZ_FEAT_THRILLSEEKER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role</Prereqs>
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> First attack must be charge </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You enjoy feeling the rush by staying close to the edge or performing dangerous stunts willing to risk your life for pure exhilaration.
 On the first round of an encounter, your first attack must be the charge action.
@@ -591,399 +591,399 @@ On the first round of an encounter, your first attack must be the charge action.
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Ally suffers -2 attack or AC at start of encounter </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You sometimes go too far with your pranks, bluffs, lies, and surprises, much to the chagrin of your comrades.
 On the first round of an encounter, one random ally suffers either a -2 penalty to attack rolls or armor class; Game Master's choice. (save ends).
    </RulesElement>
   <RulesElement name="Weak and Thinly" type="Feat" internal-id="ID_GTZ_FEAT_WEAK_AND_THINLY" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> Striker role</Prereqs>
     <print-prereqs> Striker role </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  1 less health per level</specific>
     <specific name="Special">You cannot gain the Toughness feat.</specific>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="_PER-LEVEL-HPS" value="-1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="_PER-LEVEL-HPS" value="-1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Your body suffers from poor health.
 Subtract 1 hit point from the number you gain each level.
    </RulesElement>
   <!-- General Flaws -->
   <RulesElement name="Adversity" type="Feat" internal-id="ID_GTZ_FEAT_ADVERSITY" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 all cha skill checks/ different races +1 to attack you </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Bluff" value="-2" />
-      <statadd name="Diplomacy" value="-2" />
-      <statadd name="Intimidate" value="-2" />
-      <statadd name="Streetwise" value="-2" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Bluff" value="-2"/>
+      <statadd name="Diplomacy" value="-2"/>
+      <statadd name="Intimidate" value="-2"/>
+      <statadd name="Streetwise" value="-2"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Whether it is your racial or social upbringing, you find it hard to get along with others outside your area of influence.
 Humanoids of a different race have a +1 bonus to attacks rolls against you. Furthermore, you have a -2 penalty to all Charisma-based skill checks.
    </RulesElement>
   <RulesElement name="Demon Hounded" type="Feat" internal-id="ID_GTZ_FEAT_DEMON_HOUNDED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Demons gain +2 against you  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You need to fulfill your pact with the damned.
 Demons have a +2 bonus to attacks rolls against you.
    </RulesElement>
   <RulesElement name="Dullwitted" type="Feat" internal-id="ID_GTZ_FEAT_DULLWITTED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -3 will  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Will Defense" value="-3" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Will Defense" value="-3"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You are the last one to get the joke, and usually it is about you.
 You have a -3 penalty to your Will defense.
    </RulesElement>
   <RulesElement name="Greedy" type="Feat" internal-id="ID_GTZ_FEAT_GREEDY" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Lose healing surges if you do not have enough wealth </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You must have it all.
 You must always have a total value of gems, art objects, and coin equal to the value of a magic item of your level. You lose 1 healing surge per increment that you do not meet the requirement.
    </RulesElement>
   <RulesElement name="haunted" type="Feat" internal-id="ID_GTZ_FEAT_HAUNTED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  Undead gain a +2 attack against you</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Undead draw toward you.
 Undead have a +2 bonus to attacks rolls against you.
    </RulesElement>
   <RulesElement name="Inept" type="Feat" internal-id="ID_GTZ_FEAT_INEPT" source="Player Options: Flaws and Merits">
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Lose racial skill bonuses </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_HEAL_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_STREETWISE_BONUS" type="Racial Trait" />
-      <drop name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_BLUFF_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_DIPLOMACY_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_HEAL_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_RELIGION_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_STREETWISE_BONUS" type="Racial Trait"/>
+      <drop name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You fail to grasp the natural skills beholden to your race.
 You do not gain your racial skill bonuses.
    </RulesElement>
   <RulesElement name="Lame" type="Feat" internal-id="ID_GTZ_FEAT_LAME" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 speed  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Speed" value="-2" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Speed" value="-2"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 An old injury, perhaps from childhood or combat, permanently hinders your ability to move quickly.
 Reduce your speed by 2.
    </RulesElement>
   <RulesElement name="Lethargic" type="Feat" internal-id="ID_GTZ_FEAT_LETHARGIC" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Do not gain Action Point on rest  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You have a hard time getting motivated.
 You do not gain an action point after taking an extended rest.
    </RulesElement>
   <RulesElement name="Meager" type="Feat" internal-id="ID_GTZ_FEAT_MEAGER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 one ability </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <select type="Class Feature" number="1" Category="ID_GTZ_FEAT_MEAGER" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <select type="Class Feature" number="1" Category="ID_GTZ_FEAT_MEAGER"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Whether it is a lack of confidence or physical prowess, you are below average.
 Reduce one of you ability scores by 2.
    </RulesElement>
   <RulesElement name="Naive" type="Feat" internal-id="ID_GTZ_FEAT_NAIVE" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -5 defense first round of combat </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You have much to learn and often lack experience, which may prove deadly.
 For the first round of combat each encounter, you suffer a -5 penalty to all defenses.
    </RulesElement>
   <RulesElement name="Nightmares" type="Feat" internal-id="ID_GTZ_FEAT_NIGHTMARES" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Regain 1 less daily power at end of extended rest on saving throw  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You suffer from inconsolable images each night making it hard to get proper rest.
 After each extended rest, make a saving throw. On a failure, you regain one less daily power.
    </RulesElement>
   <RulesElement name="Pathetic Reflexes" type="Feat" internal-id="ID_GTZ_FEAT_PATHETIC_REFLEXES" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -3 reflexe defense </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Reflex Defense" value="-3" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Reflex Defense" value="-3"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You are gangly and uncoordinated to put up a decent defense.
 You have a -3 penalty to your Reflex defense.
    </RulesElement>
   <RulesElement name="Phobia: Crowded Places" type="Feat" internal-id="ID_GTZ_FEAT_PHOBIA_CROWDED_PLACES" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> cannot enter settlement on failed saving throw  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You have a fear of places filled with people.
 You cannot enter a settlement the size of a town or greater (save ends). Each failed saving throw results in the loss of a healing surge. You cannot make a saving throw against this phobia if you no longer have a healing surge available.
    </RulesElement>
   <RulesElement name="Phobia: Darkness" type="Feat" internal-id="ID_GTZ_FEAT_PHOBIA_DARKNESS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -2 attack in darkness </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="attack" value="-2" condition="in darkness" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="attack" value="-2" condition="in darkness"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You find it difficult to function properly in dark areas.
 You suffer a -2 penalty to attack rolls while in darkness.
    </RulesElement>
   <RulesElement name="Phobia: Heights" type="Feat" internal-id="ID_GTZ_FEAT_PHOBIA_HEIGHTS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> cannot move more than 10 feet off ground </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You refuse to venture too far from the ground.
 You cannot move more than 10 feet off the ground or enter an airborne vessel (save ends). Each failed saving throw results in the loss of a healing surge. You cannot make a saving throw against this phobia if you no longer have a healing surge available.
    </RulesElement>
   <RulesElement name="Phobia: Monsters" type="Feat" internal-id="ID_GTZ_FEAT_PHOBIA_MONSTERS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">  cannot attack chosen monster </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 Particular creatures send shivers down the back of your spine.
 Choose one creature type. At the start of each encounter, you cannot attack chosen creature type (save ends).
    </RulesElement>
   <RulesElement name="Phobia: Water" type="Feat" internal-id="ID_GTZ_FEAT_PHOBIA_WATER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> cannot enter water  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You have a hard time boarding waterborne vessels or venturing in the water. A pirate's life is not for you.
 You cannot board a waterborne vessel or enter water (save ends). Each failed saving throw results in the loss of a healing surge. You cannot make a saving throw against this phobia if you no longer have a healing surge available.
 If thrust into water, you are dazed until you emerge from the water.
    </RulesElement>
   <RulesElement name="Poor Fortitude" type="Feat" internal-id="ID_GTZ_FEAT_POOR_FORTITUDE" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">-3 fortitude defense  </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <statadd name="Fortitude Defense" value="-3" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <statadd name="Fortitude Defense" value="-3"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You can hardly catch your breath and suffer from poor physical health.
 You have a -3 penalty to your Fortitude defense.
    </RulesElement>
   <RulesElement name="Uneducated" type="Feat" internal-id="ID_GTZ_FEAT_UNEDUCATED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> -5 on knowledge checks </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You never had the opportunity to receive a proper education.
 You take a -5 penalty to Knowledge skill checks.
    </RulesElement>
   <RulesElement name="Unskilled" type="Feat" internal-id="ID_GTZ_FEAT_UNSKILLED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
-    <Prereqs></Prereqs>
-    <print-prereqs></print-prereqs>
+    <Flavor/>
+    <Prereqs/>
+    <print-prereqs/>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> lose a trained skill </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Flaw </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Feat" number="1" />
-      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal" />
+      <select type="Feat" number="1"/>
+      <grant name="ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX" type="Internal"/>
     </rules>
 You have trouble adapting and taking direction, especially when learning a trade.
 You lose one of your trained skills.
@@ -992,65 +992,65 @@ You lose one of your trained skills.
   <!-- Merits -->
   <!-- Controller Merits -->
   <RulesElement name="Eidetic Mastery" type="Feat" internal-id="ID_GTZ_FEAT_EIDETIC_MASTERY" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX, Controller role</Prereqs>
     <print-prereqs> Controller role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Regain daily power on action point</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 	  Once per day, when you spend an action point, you may regain the use of a expended daily power you know instead of taking an extra action.
    </RulesElement>
   <RulesElement name="Eidetic Memory" type="Feat" internal-id="ID_GTZ_FEAT_EIDETIC_MEMORY" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX, Controller role</Prereqs>
     <print-prereqs> Controller role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Take 10 on knowledge check </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You can take 10 on Knowledge checks with trained skills.
    </RulesElement>
   <RulesElement name="Rejuvenating" type="Feat" internal-id="ID_GTZ_FEAT_REJUVENATING" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX, Controller role</Prereqs>
     <print-prereqs> Controller role , Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Expend daily to allow ally to spend healing surge.</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per day, you may sacrifice one of your daily area or close powers. Allies within the area of effect of the power sacrificed may spend a healing surge.
    </RulesElement>
   <RulesElement name="Sustainable Support" type="Feat" internal-id="ID_GTZ_FEAT_SUSTAINABLE_SUPPORT" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX, Controller role</Prereqs>
     <print-prereqs> Controller role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Allies within area effect powers gain +1 attack</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Allies gain a +1 bonus to attacks rolls within the area of effect of any of your area or close attack powers. This bonus lasts until the start of your next turn.
    </RulesElement>
   <RulesElement name="Unshakable Will" type="Feat" internal-id="ID_GTZ_FEAT_UNSHAKABLE_WILL" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX, Controller role</Prereqs>
     <print-prereqs> Controller role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">+2 will until hit by will attack</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Will Defense" value="+2" condition="until hit by attack targeting will" />
+      <statadd name="Will Defense" value="+2" condition="until hit by attack targeting will"/>
     </rules>
 You have a +2 bonus to your Will defense. You temporarily lose this bonus when an enemy successfully hits your Will defense. You regain this bonus when you take an short rest
    </RulesElement>
@@ -1061,10 +1061,10 @@ You have a +2 bonus to your Will defense. You temporarily lose this bonus when a
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Pull target when you mark it</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Whenever you mark a target, you may pull the target 1 square.
    </RulesElement>
   <RulesElement name="Champion" type="Feat" internal-id="ID_GTZ_FEAT_" source="Player Options: Flaws and Merits">
@@ -1073,22 +1073,22 @@ Whenever you mark a target, you may pull the target 1 square.
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Gain bonus against good or evil creatures once a day</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Benefit: Choose one: evil or good. Once per day, you gain a +2 feat bonus to attack rolls against evil (or good) aligned creatures until the end of the encounter.
    </RulesElement>
   <RulesElement name="Constant Defender" type="Feat" internal-id="ID_GTZ_FEAT_CONSTANT_DEFENDER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Defender role</Prereqs>
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Adj. allies gain +1 AC</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Allies gain a +1 bonus to Armor Class while they remain adjacent to you.
    </RulesElement>
   <RulesElement name="Defender Till the End" type="Feat" internal-id="ID_GTZ_FEAT_DEFENDER_TILL_THE_END" source="Player Options: Flaws and Merits">
@@ -1097,50 +1097,50 @@ Allies gain a +1 bonus to Armor Class while they remain adjacent to you.
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">+1 bonus to attack for staying in place</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You must first take a flaw.
 Benefit: Gain a cumulative +1 feat bonus to attack rolls for each previous round you did not move from your current square.
    </RulesElement>
   <RulesElement name="Fast Healer" type="Feat" internal-id="ID_GTZ_FEAT_FAST_HEALER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Defender role</Prereqs>
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Extra healing surge after extended rest</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You gain one extra healing surge after an extended rest.
    </RulesElement>
   <RulesElement name="Unyielding Fortitude" type="Feat" internal-id="ID_GTZ_FEAT_UNYIELDING_FORTITUDE" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Defender role</Prereqs>
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">+2 fort until hit by fort attack</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Fortitude Defense" value="+2" condition="until hit by attack targeting fortitude" />
+      <statadd name="Fortitude Defense" value="+2" condition="until hit by attack targeting fortitude"/>
     </rules>
 You have a +2 bonus to your Fortitude defense. You temporarily lose this bonus when an enemy successfully hits your Fortitude defense. You regain this bonus when you take an short rest
    </RulesElement>
   <RulesElement name="Guardian" type="Feat" internal-id="ID_GTZ_FEAT_GUARDIAN" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Defender role</Prereqs>
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Allies in burst area gain +1 defenses</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Allies gain a +1 bonus to all defenses within the area of effect of any of your close attack powers. This bonus lasts until the start of your next turn.
    </RulesElement>
   <RulesElement name="Companion" type="Feat" internal-id="ID_GTZ_FEAT_COMPANION" source="Player Options: Flaws and Merits">
@@ -1149,59 +1149,59 @@ Allies gain a +1 bonus to all defenses within the area of effect of any of your 
     <print-prereqs> Defender role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Spend healing surge to allow ally to spend one</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 At the start of an encounter, choose one ally. Should the chosen adjacent ally fall to 0 or fewer hit points, you may sacrifice a healing surge so they can spend a healing surge as an immediate reaction.
    </RulesElement>
   <!-- Leader Merits -->
   <RulesElement name="Alluring" type="Feat" internal-id="ID_GTZ_FEAT_ALLURING" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX or Eladrin; Leader role</Prereqs>
     <print-prereqs> Leader role, Flaw feat or Eladrin</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">+2 charisma skill checks against opposite sex</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 	  You have a +2 bonus per tier to Charisma-based skill checks against the opposite sex.
    </RulesElement>
   <RulesElement name="Bolstering Leader" type="Feat" internal-id="ID_GTZ_FEAT_BOLSTERING_LEADER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX; Leader role</Prereqs>
     <print-prereqs> Leader role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">ally gains healing surge value during short rest</specific>
     <specific name="Special">At the paragon tier or higher, you can use this feat twice per day instead of normal.</specific>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per day, during a short rest, one ally can regain hit points as if they spent a healing surge.
    </RulesElement>
   <RulesElement name="Enduring Leader" type="Feat" internal-id="ID_GTZ_FEAT_ENDURING_LEADER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX; Leader role</Prereqs>
     <print-prereqs> Leader role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">gain +1 fort/will/refl when you grant ally healing surge</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Whenever you grant a healing surge to an ally, you gain a +1 bonus to your Fortitude, Reflex, and Will defense, until the end of your next turn.
    </RulesElement>
   <RulesElement name="Fervor" type="Feat" internal-id="ID_GTZ_FEAT_FERVOR" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX; Leader role</Prereqs>
     <print-prereqs> Leader role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Ally gain bonus to attack</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Whenever you allow an ally to spend a healing surge, they also gain a +1 bonus to their next attack roll.
    </RulesElement>
   <RulesElement name="Invigorating Leader" type="Feat" internal-id="ID_GTZ_FEAT_INVIGORATING_LEADER" source="Player Options: Flaws and Merits">
@@ -1210,138 +1210,138 @@ Whenever you allow an ally to spend a healing surge, they also gain a +1 bonus t
     <print-prereqs> Leader role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Allow allies to make saving throw when bloodied</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 When you become bloodied, each ally within a number of squares equal to your Charisma modifier may make an immediate save to end one current condition.
    </RulesElement>
   <RulesElement name="Natural Leader" type="Feat" internal-id="ID_GTZ_FEAT_NATURAL_LEADER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX; Leader role</Prereqs>
     <print-prereqs> Leader role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Share action points with ally</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You may share your action points with your allies. This does not allow characters to spend more than one action point an encounter.
    </RulesElement>
   <RulesElement name="Prepared" type="Feat" internal-id="ID_GTZ_FEAT_PREPARED" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX; Leader role</Prereqs>
     <print-prereqs> Leader role, Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Use utility before encounter</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Once per day, you may use a utility power before the encounter begins. You cannot use this feat if you are surprised.
    </RulesElement>
   <!-- Striker Merits -->
   <RulesElement name="Acute Awareness" type="Feat" internal-id="ID_GTZ_FEAT_ACUTE_AWARENESS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Striker role</Prereqs>
     <print-prereqs> Striker role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Move or minor action before encounter</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 	  Once per day, you may make a move or minor action before the encounter begins. You cannot not use this feat if you are surprised.
    </RulesElement>
   <RulesElement name="Glibness" type="Feat" internal-id="ID_GTZ_FEAT_GLIBNESS" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs>  or Halfling, Striker role</Prereqs>
     <print-prereqs> Striker role, Flaw feat or Halfling</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Take 10 on diplomacy or bluff check</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 	  Once per day, you can take 10 on either a Diplomacy or Bluff skill check.
    </RulesElement>
   <RulesElement name="Nerves of Steel" type="Feat" internal-id="ID_GTZ_FEAT_NERVES_OF_STEEL" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Striker role</Prereqs>
     <print-prereqs> Striker role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">Provoke opportunity attack to gain combat advantage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 	  Once per encounter, you may provoke an opportunity attack against an adjacent enemy. If the enemy makes the opportunity attack, you gain combat advantage against the target for your next attack.
    </RulesElement>
   <RulesElement name="Nine Lives" type="Feat" internal-id="ID_GTZ_FEAT_NINE_LIVES" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Striker role</Prereqs>
     <print-prereqs> Striker role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">First failed death saving throw doesnt count</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 	  Your first failed death saving throw does not count against your daily limit.
    </RulesElement>
   <RulesElement name="Swift reflexes" type="Feat" internal-id="ID_GTZ_FEAT_SWIFT_REFLEXES" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX,Striker role</Prereqs>
     <print-prereqs> Striker role, Flaw feat </print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description">+2 reflex until hit by reflex attack</specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <statadd name="Reflex Defense" value="+2" condition="until hit by attack targeting reflex" />
+      <statadd name="Reflex Defense" value="+2" condition="until hit by attack targeting reflex"/>
     </rules>
 	  You have a +2 bonus to your Reflex defense. You temporarily lose this bonus when an enemy successfully hits your Reflex defense. You regain this bonus when you take an short rest
    </RulesElement>
   <!-- General Merits -->
   <RulesElement name="Common Sense" type="Feat" internal-id="ID_GTZ_FEAT_COMMON_SENSE" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX</Prereqs>
     <print-prereqs>Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> +2 bonus to knowledge checks </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 You have a +2 bonus on all Knowledge checks.
    </RulesElement>
   <RulesElement name="Proficient Teacher" type="Feat" internal-id="ID_GTZ_FEAT_PROFICIENT_TEACHER" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX</Prereqs>
     <print-prereqs>Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> One ally gains +2 bonus to proficient skill </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
 Choose one ally. Until your next extended rest, the chosen ally gains a +2 bonus to one skill in which you are trained.
    </RulesElement>
   <RulesElement name="Quick Study" type="Feat" internal-id="ID_GTZ_FEAT_QUICK_STUDY" source="Player Options: Flaws and Merits">
-    <Flavor></Flavor>
+    <Flavor/>
     <Prereqs> ID_GTZ_INTERNAL_FLAW_REQUIREMENT_FIX</Prereqs>
     <print-prereqs>Flaw feat</print-prereqs>
     <specific name="Tier"> Heroic</specific>
     <specific name="Short Description"> Gain at-will as encounter  </specific>
     <specific name="Special"> If you choose this feat at the paragon or epic tier, you may instead choose from a multiclass from which you belong.</specific>
     <specific name="type"> Merit </specific>
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
     <rules>
-      <select type="Power" number="1" Category="$$CLASS_OR_MULTICLASS,at-will,1" />
-      <modify Field="Power Usage" value="Encounter" />
+      <select type="Power" number="1" Category="$$CLASS_OR_MULTICLASS,at-will,1"/>
+      <modify Field="Power Usage" value="Encounter"/>
     </rules>
 You may add another at-will power from your primary class and use it as an encounter power.
    </RulesElement>

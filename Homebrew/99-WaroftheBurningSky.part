@@ -1,383 +1,383 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 
 <UpdateInfo>
     <Version>1.01</Version>
     <Filename>99-WaroftheBurningSky.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/99-WaroftheBurningSky.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/99-WaroftheBurningSky.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/99-WaroftheBurningSky.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/99-WaroftheBurningSky.txt</VersionAddress>
   </UpdateInfo>
 
 <!-- Source -->
 
 <RulesElement name="War of the Burning Sky" type="source" internal-id="ID_MSR_SOURCE_123" source="Core">
-  <specific name="IsBeta" />
+  <specific name="IsBeta"/>
   <specific name="URL">http://www.enworld.org/ap/wotbs.html </specific>
   <specific name="Release Date"> 4/19/2011 </specific>
 </RulesElement>
 
 <!-- Backgrounds -->
 
-<RulesElement name="Dragonborn  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_1" source="War of the Burning Sky" >
+<RulesElement name="Dragonborn  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_1" source="War of the Burning Sky">
       <Prereqs> Dragonborn </Prereqs>
       <print-prereqs> Dragonborn </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> Some magnificent failure on your part resulted in the utter loss of your honor. Many dragonborn in your position would seek death, but you have not. Why? Were you wrongly accused? If not, what did you do that cost you your honor? Would you do it again? How might you regain your honor? A few small clans of dragonborn inhabit the mountains between the Ostalin and Ragesian border. Loosely in communication with each other, the predominant goal is to solidify the creation of a new republic of dragonborn within the mountains. Those who adventure often do so to lay foundations for future diplomacy, learn and improve on the latest technologies of war and combat, or seek riches and glory to advance the dragonborn legacy and become the future leaders of the new empire. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
    
-   <RulesElement name="Dwarves  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_2" source="War of the Burning Sky" >
+   <RulesElement name="Dwarves  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_2" source="War of the Burning Sky">
       <Prereqs> Dwarf </Prereqs>
       <print-prereqs> Dwarf </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> Once plentiful and well represented across the lands, the mighty dwarf nation has become insular and isolated from the rest of the world. Those who venture beyond the tunnels and caverns of their mountain realm (near Gate Pass), do so in an effort to fight against the resignation that seems to be overtaking the older generations. Convinced that the isolationism is just as imprisoning as their ancient servitude to the giants, the adventurous dwarves venture out to build an inspiring legacy, rekindle the pride of the Dwarven nation, or restore faith in the ancient gods that seem to be forgotten in this modern day. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
    
-   <RulesElement name="Eladrin  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_3" source="War of the Burning Sky" >
+   <RulesElement name="Eladrin  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_3" source="War of the Burning Sky">
       <Prereqs> Eladrin </Prereqs>
       <print-prereqs> Eladrin </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge">  Eladrin are found in Shahalesti lands. In the Lands of the Burning Sky, "Shahalesti" is synonymous with "eladrin." Always vigilant, the Shahalesti remember well the conquests of Emperor Coaltongue. Sorcery, spying, and military/mercenary prowess are all reasons for a Shahalesti to adventure in the Lands. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-<RulesElement name="Elves  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_4" source="War of the Burning Sky" >
+<RulesElement name="Elves  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_4" source="War of the Burning Sky">
       <Prereqs> Elf </Prereqs>
       <print-prereqs> Elf </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> Of late, the elven tribes have come to fear Ragesian encroachment upon their forests. While the Shahalesti are more or less united in that they jealously guard their fey-touched land, the elves are divided: some seek isolation, others want to establish new alliances, and still others simply see a changing world and desire to be a part of it. All these reasons bring out many elves to the cities and towns where adventures often begin. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Gnomes  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_5" source="War of the Burning Sky" >
+   <RulesElement name="Gnomes  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_5" source="War of the Burning Sky">
       <Prereqs> Gnome </Prereqs>
       <print-prereqs> Gnome </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> If history is any indicator of the future, the gnomes continue to seek being ignored as a threat. Seeing the success of Coaltongue in using magic to secure his throne, the gnomes of the Lands strive to gather all manner of history and magic in order to avoid becoming slaves to the might and power of Ragesia or Shahalesti. To the gnomes, knowing how one could capture and enslave another allows the knowledgeable to avoid the possibility altogether. Their quick wit and seeming mockery of the Ragesians and the Shahalesti is vexing to orcs and eladrin alike. Most gnomes come from Shahalesti, but some small groups can be found in almost any land. If a gnome character encounters other gnomes, he will strive to spend at least a few hours with his brethren before continuing to adventure. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Half-Elves  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_6" source="War of the Burning Sky" >
+   <RulesElement name="Half-Elves  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_6" source="War of the Burning Sky">
       <Prereqs> Half-Elf </Prereqs>
       <print-prereqs> Half-Elf </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> More fully integrated with their human side, most half-elves come from the great cities of the Lands: from Gate Pass and Lyceum to the many cities of Ostalin, Dassen, and Sindaire. The motivation for adventure is as varied in a half-elf as it is in a human. Some do see the latest bellicose attitude of the Ragesians troubling and seek to help fend them off in the impending conflict. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Half-Orcs  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_7" source="War of the Burning Sky" >
+   <RulesElement name="Half-Orcs  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_7" source="War of the Burning Sky">
       <Prereqs> Half-Orc </Prereqs>
       <print-prereqs> Half-Orc </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> No matter what their racial origin may be, the half-orcs of the Lands enjoy a unique position, fully realized citizens in Ragesia, Gate Pass and Dassen. The other kingdoms are less cordial, and so most half-orc adventurers are found from the middle part of the Lands. Always struggling with their heritage, the adventuring life is often a way to throw off subtle, lingering prejudices or find a place in a group of allies and equals. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Halflings  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_8" source="War of the Burning Sky" >
+   <RulesElement name="Halflings  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_8" source="War of the Burning Sky">
       <Prereqs> Halfling </Prereqs>
       <print-prereqs> Halfling </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge"> Found mostly along the rivers and byways of Ostalin and Sindaire, the halflings of the Lands sometimes leave the west in search of adventure and treasure. Though once halflings were generally quite well traveled, the unrest in Ostalin has concentrated the population in that country because it presents the best hope for them to start a nation of their own. As the country continues in strife, the halflings work with some factions in Sindaire to destabilize the kingdom even further. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Humans  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_9" source="War of the Burning Sky" >
+   <RulesElement name="Humans  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_9" source="War of the Burning Sky">
       <Prereqs> Human </Prereqs>
       <print-prereqs> Human </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge">  As the greatest population in the lands, human characters can come from anywhere and their motivations for adventure are limitless. Those originating from the Gate Pass area have access to some ready-made regional benefits, and the city is diverse enough for almost any character type to be made. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Tieflings  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_10" source="War of the Burning Sky" >
+   <RulesElement name="Tieflings  " type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_10" source="War of the Burning Sky">
       <Prereqs> Tiefling </Prereqs>
       <print-prereqs> Tiefling </print-prereqs>
       <specific name="type"> Racial </specific>
       <specific name="Common Knowledge">  Ostalin is a haven for tieflings. The designs of Ostalin’s ambitious ruler, Khagan Onamdammin, have created a sort of demand for the skills of those who struggle with their darker nature, while the unstable government makes it hard for anyone to act against the tieflings as they strive to survive in a world that doesn’t trust them. In recent decades, the gregarious nature of Gate Pass merchants traveling the Lands has impressed some tieflings, and a few have set up a small merchant house within the fifth district of the capital, the mountain city of Kistan. The small but cosmopolitan city offers charms and temptations that make it enticing to those who struggle between good and evil and, though small, the merchant house is growing, both in legitimate trade and in their less noble underworld dealings. </specific>
-      <specific name="Benefit" />
-      <specific name="Short Description" />
+      <specific name="Benefit"/>
+      <specific name="Short Description"/>
       <specific name="Campaign"> War of the Burning Sky </specific>
       <specific name="Associated Skills"> Any class skill </specific>
-      <specific name="Associated Languages" />
+      <specific name="Associated Languages"/>
       <rules>
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association" />
-         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association" />
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ALL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ACROBATICS" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HEAL" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STREETWISE" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_THIEVERY" type="Background Association"/>
+         <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
       </rules>
    </RulesElement>
    
    <!-- Themes (That add beginning Feats) -->
    
    
-   <RulesElement name="City Council" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_11" source="War of the Burning Sky" >
+   <RulesElement name="City Council" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_11" source="War of the Burning Sky">
       <specific name="Creating"> A character involved in the government and politics of Gate Pass gains Civic Minded as a bonus feat. </specific>
       <rules>
-         <grant name="ID_WOTBS_FEAT_CIVIC_MINDED" type="Feat" />
+         <grant name="ID_WOTBS_FEAT_CIVIC_MINDED" type="Feat"/>
       </rules>
 While most of the politicians in Gate Pass wish to surrender to Ragesia, some want to take a stand.
 A character involved in the government and politics of Gate Pass gains Civic Minded as a bonus feat.
    </RulesElement>
-   <RulesElement name="The Temples" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_12" source="War of the Burning Sky" >
+   <RulesElement name="The Temples" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_12" source="War of the Burning Sky">
       <specific name="Creating"> An associate of one of the temples gains Blessed by Dreams as a bonus feat. </specific>
       <rules>
-         <grant name="ID_WOTBS_FEAT_BLESSED_BY_DREAMS" type="Feat" />
+         <grant name="ID_WOTBS_FEAT_BLESSED_BY_DREAMS" type="Feat"/>
       </rules>
 The religious community of Gate Pass fears the heretical zealotry of the Ragesian inquisitors.
 An associate of one of the temples gains Blessed by Dreams as a bonus feat. 
    </RulesElement>
-   <RulesElement name="The Military" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_13" source="War of the Burning Sky" >
+   <RulesElement name="The Military" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_13" source="War of the Burning Sky">
       <specific name="Creating">  A member of either military gains Cavalry Errant as a bonus feat. </specific>
       <rules>
-         <grant name="ID_WOTBS_FEAT_CAVALRY_ERRANT" type="Feat" />
+         <grant name="ID_WOTBS_FEAT_CAVALRY_ERRANT" type="Feat"/>
       </rules>
 Elements of the Ragesian military are displeased with their orders and their new ruler Leska, while commanders of Gate Pass’s military desire reinforcements.
 A member of either military gains Cavalry Errant as a bonus feat.
    </RulesElement>
-   <RulesElement name="Gabal’s School" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_14" source="War of the Burning Sky" >
+   <RulesElement name="Gabal’s School" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_14" source="War of the Burning Sky">
       <specific name="Creating"> An apprentice of Gabal gains Student of War as a bonus feat. </specific>
       <rules>
-         <grant name="ID_WOTBS_FEAT_STUDENT_OF_WAR" type="Feat" />
+         <grant name="ID_WOTBS_FEAT_STUDENT_OF_WAR" type="Feat"/>
       </rules>
 Gabal, a famed evoker, maintains a school of war, and he intends to make a stand against Ragesia.
 An apprentice of Gabal gains Student of War as a bonus feat.
    </RulesElement>
-   <RulesElement name="Thieves’ Guild" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_15" source="War of the Burning Sky" >
+   <RulesElement name="Thieves’ Guild" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_15" source="War of the Burning Sky">
       <specific name="Creating">  One of their members or agents gains Thieves’ Guild Sympathizer as a bonus feat. </specific>
       <rules>
-         <grant name="ID_WOTBS_FEAT_THIEVES_GUILD_SYMPATHIZER" type="Feat" />
+         <grant name="ID_WOTBS_FEAT_THIEVES_GUILD_SYMPATHIZER" type="Feat"/>
       </rules>
 The guild in Gate Pass is nervous about the prospect of Ragesian martial law.
 One of their members or agents gains Thieves’ Guild Sympathizer as a bonus feat.
    </RulesElement>
-   <RulesElement name="The Resistance" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_16" source="War of the Burning Sky" >
+   <RulesElement name="The Resistance" type="Background" internal-id="ID_MSR_BACKGROUND_WotBS_16" source="War of the Burning Sky">
       <specific name="Creating"> A member of their group gains Blade of the Resistance as a bonus feat. </specific>
       <rules>
-         <grant name="ID_WOTBS_FEAT_BLADE_OF_THE_RESISTANCE" type="Feat" />
+         <grant name="ID_WOTBS_FEAT_BLADE_OF_THE_RESISTANCE" type="Feat"/>
       </rules>
 A small group of Gate Pass natives are taking up arms to defend their home against both Ragesia and Shahalesti.
 A member of their group gains Blade of the Resistance as a bonus feat.
@@ -385,11 +385,11 @@ A member of their group gains Blade of the Resistance as a bonus feat.
    
    <!-- New Power Options -->
    
-   <RulesElement name="Reactive Counterspell" type="Power" internal-id="ID_WOTBS_POWER_REACTIVE_COUNTERSPELL" source="War of the Burning Sky" >
+   <RulesElement name="Reactive Counterspell" type="Power" internal-id="ID_WOTBS_POWER_REACTIVE_COUNTERSPELL" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,6 </Category>
       <Flavor> With a dismissive wave, your opponent’s spell loses power and dissipates into nothingness. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Cleric Utility 6 </specific>
       <specific name="Keywords"> Divine </specific>
       <specific name="Action Type"> Immediate Reaction </specific>
@@ -397,16 +397,16 @@ A member of their group gains Blade of the Resistance as a bonus feat.
       <specific name="Trigger"> You are struck by an arcane spell </specific>
       <specific name="Effect"> Your attacker rerolls his attack using the new roll as his attack roll. If the new attack fails, his spell fails. </specific>
 	  <specific name="Special"> You lose your standard action until the end of your next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_2 </specific>
       <specific name="Level"> 6 </specific>
       <specific name="Power Type"> Utility </specific>
    </RulesElement>
-   <RulesElement name="Ghost Phase Attack" type="Power" internal-id="ID_WOTBS_POWER_GHOST_PHASE_ATTACK" source="War of the Burning Sky" >
+   <RulesElement name="Ghost Phase Attack" type="Power" internal-id="ID_WOTBS_POWER_GHOST_PHASE_ATTACK" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_128,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
       <Flavor> A force missile phases in and out of reality, passing through the target’s cover and protection. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Sorcerer Attack 7 </specific>
       <specific name="Keywords"> Arcane, Implement </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -414,17 +414,17 @@ A member of their group gains Blade of the Resistance as a bonus feat.
 	  <specific name="Target"> One creature </specific>
       <specific name="Attack"> Charisma vs. Reflex; ghost phase attack ignores any penalty for cover or superior cover </specific>
       <specific name="Hit"> 1d10 + Charisma modifier </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_128 </specific>
       <specific name="Level"> 7 </specific>
       <specific name="Power Type"> Attack </specific>
    </RulesElement>
-   <RulesElement name="Curse of Flesh" type="Power" internal-id="ID_WOTBS_POWER_CURSE_OF_FLESH" source="War of the Burning Sky" >
+   <RulesElement name="Curse of Flesh" type="Power" internal-id="ID_WOTBS_POWER_CURSE_OF_FLESH" source="War of the Burning Sky">
       <Prereqs> Star Pact </Prereqs>
       <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10 </Category>
       <Flavor> With a shout, the glimmering creature is cursed to manifest itself. </Flavor>
       <specific name="Power Usage"> Daily </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Warlock Utility 10 </specific>
       <specific name="Keywords"> Arcane, Polymorph </specific>
       <specific name="Action Type"> Standard Action </specific>
@@ -433,40 +433,40 @@ A member of their group gains Blade of the Resistance as a bonus feat.
 	  <specific name="Attack"> Intelligence vs. Fortitude </specific>
       <specific name="Effect"> The target loses the insubstantial quality until the end of your next turn. </specific>
 	  <specific name="Sustain Minor"> The target does not regain the insubstantial quality at the end of this turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_7 </specific>
       <specific name="Level"> 10 </specific>
       <specific name="Power Type"> Utility </specific>
    </RulesElement>
-   <RulesElement name="Gabal’s Superior Missile" type="Power" internal-id="ID_WOTBS_POWER_GABALS_SUPERIOR_MISSLE" source="War of the Burning Sky" >
+   <RulesElement name="Gabal’s Superior Missile" type="Power" internal-id="ID_WOTBS_POWER_GABALS_SUPERIOR_MISSLE" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> With a wizard’s sight, you become instantly aware of every foe around you and launch bolts of force their way. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Wizard Attack 1 </specific>
       <specific name="Keywords"> Arcane, Force, Implement </specific>
       <specific name="Action Type"> Standard action </specific>
       <specific name="Attack Type"> Close blast 5 </specific>
-      <specific name="Target"> Up to two plus &#xBD; your level creatures within blast (maximum 5 creatures) </specific>
+      <specific name="Target"> Up to two plus ½ your level creatures within blast (maximum 5 creatures) </specific>
       <specific name="Attack"> Intelligence vs. Reflex </specific>
       <specific name="Hit"> 2d4 + Intelligence modifier force damage.
 Level 21: 4d4 + Intelligence modifier force damage. </specific>
       <specific name="Effect"> The bolts of force can be cast as if the targets had no cover or concealment as long as a clear path within the blast can be traced to the target. A clear path is one where line of effect can be successively determined from one square to the next starting from you and ending at the target. You do not need to have line of sight. This means that the bolt can turn corners and go through windows. </specific>
       <specific name="Special"> This spell can only be learned at Gabal’s School of War in Gate Pass (see page 9 of the War of Burning Sky Player's Guide). Consult your GM for details. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
 	  <rules>
-         <modify name="this" Field="Attack Type" value="Close blast 10" requires="Paragon Tier" />
-         <modify name="this" Field="Attack Type" value="Close blast 20" requires="Epic Tier" />
+         <modify name="this" Field="Attack Type" value="Close blast 10" requires="Paragon Tier"/>
+         <modify name="this" Field="Attack Type" value="Close blast 20" requires="Epic Tier"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Wayfarer’s Step" type="Power" internal-id="ID_WOTBS_POWER_WAYFARERS_STEP" source="War of the Burning Sky" >
+   <RulesElement name="Wayfarer’s Step" type="Power" internal-id="ID_WOTBS_POWER_WAYFARERS_STEP" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_STANDARD_ACTION,2 </Category>
       <Flavor> You create a doorway before the target and he steps through, reappearing somewhere else nearby. </Flavor>
       <specific name="Power Usage"> Daily </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Wizard Utility 2 </specific>
       <specific name="Keywords"> Arcane, Teleportation </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -474,16 +474,16 @@ Level 21: 4d4 + Intelligence modifier force damage. </specific>
 	  <specific name="Target"> One creature </specific>
       <specific name="Effect"> Teleport the creature 5 squares. </specific>
 	  <specific name="Special"> This spell can only be learned from the Wayfarers. Consult your GM for details. </specific>      
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 2 </specific>
       <specific name="Power Type"> Utility </specific>
    </RulesElement>
-   <RulesElement name="Enforced Flesh" type="Power" internal-id="ID_WOTBS_POWER_ENFORCED_FLESH" source="War of the Burning Sky" >
+   <RulesElement name="Enforced Flesh" type="Power" internal-id="ID_WOTBS_POWER_ENFORCED_FLESH" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_STANDARD_ACTION,13 </Category>
       <Flavor> You manipulate the planar energies that surround the creature and it becomes painful to stay insubstantial. </Flavor>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Wizard Attack 13 </specific>
       <specific name="Keywords"> Arcane, Polymorph, Implement </specific>
       <specific name="Action Type"> Standard action </specific>
@@ -491,7 +491,7 @@ Level 21: 4d4 + Intelligence modifier force damage. </specific>
       <specific name="Target"> One insubstantial creature </specific>
       <specific name="Attack"> Intelligence vs. Fortitude </specific>
       <specific name="Hit"> 2d6 + Intelligence modifier radiant damage, and the target loses the insubstantial quality until the end of your next turn. </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>
@@ -499,96 +499,96 @@ Level 21: 4d4 + Intelligence modifier force damage. </specific>
    
    <!-- Heroic Feats -->
    
-   <RulesElement name="Blade of the Resistance [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_BLADE_OF_THE_RESISTANCE" source="War of the Burning Sky" >
+   <RulesElement name="Blade of the Resistance [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_BLADE_OF_THE_RESISTANCE" source="War of the Burning Sky">
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to Insight, +2 to damage against creature that has dealth damage to you or your allies </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-         <statadd name="Insight Misc" value="+2" type="Feat" />
+         <statadd name="Insight Misc" value="+2" type="Feat"/>
       </rules>
 You gain a  +2 bonus to Insight checks. Additionally, once per encounter you can select an intelligent creature who has dealt damage to you or your allies as your preferred foe. Until the end of the encounter, you gain a +2 bonus to your damage rolls against your preferred foe.
 The foe need not have dealt the damage during the current encounter; a previous encounter will suffice.
    </RulesElement>
-   <RulesElement name="Blessed by Dreams [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_BLESSED_BY_DREAMS" source="War of the Burning Sky" >
+   <RulesElement name="Blessed by Dreams [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_BLESSED_BY_DREAMS" source="War of the Burning Sky">
       <Prereqs> Dex 13 </Prereqs>
       <print-prereqs> Dex 13 </print-prereqs>
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to Religion, Reroll a single saving throw made by you or an ally once per day. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-         <statadd name="Religion Misc" value="+2" type="Feat" />
+         <statadd name="Religion Misc" value="+2" type="Feat"/>
       </rules>
 You gain a +2 bonus to Religion checks. Additionally, once per day you may reroll a single saving throw made by you or any ally within 5 squares of you, taking the second result instead.
    </RulesElement>
-   <RulesElement name="Cavalry Errant [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_CAVALRY_ERRANT" source="War of the Burning Sky" >
+   <RulesElement name="Cavalry Errant [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_CAVALRY_ERRANT" source="War of the Burning Sky">
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> Gain the Mounted Combat Feat and as a minor action can appy that feat's benefits to an ally. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-		 <grant name="ID_FMP_FEAT_30" type="Feat" />
+		 <grant name="ID_FMP_FEAT_30" type="Feat"/>
       </rules>
  You gain the Mounted Combat feat. Additionally, you gain the ability to help your mounted allies. As a minor action, you may apply your Mounted Combat feat to an ally within 5 squares of you, giving him the benefit for the round. 
    </RulesElement>
-   <RulesElement name="Civic Minded [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_CIVIC_MINDED" source="War of the Burning Sky" >
+   <RulesElement name="Civic Minded [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_CIVIC_MINDED" source="War of the Burning Sky">
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to Diplomacy, +1 bonus to Aid Another </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-		 <statadd name="Diplomacy Misc" value="+2" type="Feat" />
+		 <statadd name="Diplomacy Misc" value="+2" type="Feat"/>
       </rules>
 You gain a +2 bonus to Diplomacy checks. Additionally, whenever an ally within 5 squares of you uses the Aid Another action, the bonus he provides increases by +1. Up to 3 allies with the Civic Minded feat can contribute for any one skill check.
    </RulesElement>
-   <RulesElement name="Student of War [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_STUDENT_OF_WAR" source="War of the Burning Sky" >
+   <RulesElement name="Student of War [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_STUDENT_OF_WAR" source="War of the Burning Sky">
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to History, +1 bonus to attack rolls with area attacks </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-         <statadd name="History Misc" value="+2" type="Feat" />
-         <statadd name="attack rolls" value="+1" condition="with any area spell" />
+         <statadd name="History Misc" value="+2" type="Feat"/>
+         <statadd name="attack rolls" value="+1" condition="with any area spell"/>
       </rules>
 You gain a +2 bonus to History checks. Additionally, you can strengthen your spells for use in large-scale battles. You gain a +1 bonus to your attack roll with any area spell.   
 </RulesElement>
-<RulesElement name="Thieves’ Guild Sympathizer [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_THIEVES_GUILD_SYMPATHIZER" source="War of the Burning Sky" >
+<RulesElement name="Thieves’ Guild Sympathizer [Gate Pass]" type="Feat" internal-id="ID_WOTBS_FEAT_THIEVES_GUILD_SYMPATHIZER" source="War of the Burning Sky">
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to History, Allies get to roll twice for Perception checks before a surprise round. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-         <statadd name="Bluff Misc" value="+2" type="Feat" />
+         <statadd name="Bluff Misc" value="+2" type="Feat"/>
       </rules>
 You gain a +2 bonus to Bluff checks. Additionally, your experience with being a lookout grants you an ability to alert your allies just before danger strikes. If you are not surprised at the start of an encounter, your allies receive a second Perception check to avoid being surprised.</RulesElement>
-   <RulesElement name="Moral Insight" type="Feat" internal-id="ID_WOTBS_FEAT_MORAL_INSIGHT" source="War of the Burning Sky" >
+   <RulesElement name="Moral Insight" type="Feat" internal-id="ID_WOTBS_FEAT_MORAL_INSIGHT" source="War of the Burning Sky">
    <Prereqs> Trained in Religion </Prereqs>
       <print-prereqs> Trained in Religion </print-prereqs>
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> Use your Religion skill to identify the alignment of sentient creatures and detect the presence of good and evil things in an area. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-		 <statadd name="Diplomacy Misc" value="+2" type="Feat" />
+		 <statadd name="Diplomacy Misc" value="+2" type="Feat"/>
       </rules>
 You can use your Religion skill to identify the alignment of sentient creatures and detect the presence of good and evil things in an area. The Religion skill is used in a similar fashion to the way Arcana is used to Detect Magic. 
    </RulesElement>
-   <RulesElement name="Religion Knowledge 67" type="Skill Usage" internal-id="ID_MSR_SKILL_USAGE_1" source="Core" revision-date="3/5/2009 1:56:33 PM" >
+   <RulesElement name="Religion Knowledge 67" type="Skill Usage" internal-id="ID_MSR_SKILL_USAGE_1" source="Core" revision-date="3/5/2009 1:56:33 PM">
 	  <Prereqs> Moral Insight </Prereqs>
       <specific name="Trained Only"> 0 </specific>
       <specific name="Skill"> ID_FMP_SKILL_18 </specific>
@@ -602,151 +602,151 @@ Make a Religion check  to identify the alignment of sentient creatures and detec
 ♦	Failure: You identify the creature as being Unaligned and the creature detects the 
 attempt to determine its alignment&lt;/rule&gt;
 &lt;rule&gt;Detect Presence of Evil or Good: Standard action; encounter (must choose which alignment to detect)
-♦	Range: Close burst &#xBD; level
-♦	DC: 20 minus &#xBD; the prominent power source’s level.
+♦	Range: Close burst ½ level
+♦	DC: 20 minus ½ the prominent power source’s level.
 ♦	Success: Evil or Good power is detected within the ranged area. The source is not defined.
 ♦	Failure: No knowledge is gained.
 ♦	Overwhelming Aura: If the level of the prominent power source is at least twice the character’s level, the character is 
 stunned for one round.&lt;/rule&gt;
    </RulesElement>
-   <RulesElement name="Spellduelist" type="Feat" internal-id="ID_WOTBS_FEAT_SPELLDUELIST" source="War of the Burning Sky" >
+   <RulesElement name="Spellduelist" type="Feat" internal-id="ID_WOTBS_FEAT_SPELLDUELIST" source="War of the Burning Sky">
    <Prereqs> Arcane Power Source </Prereqs>
       <print-prereqs> Arcane Power Source </print-prereqs>
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to Bluff. Negate Opportunity or Immediate Actions per encounter equal to your Intelligence modifier. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <rules>
-		 <statadd name="Bluff Misc" value="+2" type="Feat" />
+		 <statadd name="Bluff Misc" value="+2" type="Feat"/>
       </rules>
 You gain a +2 bonus to Bluff checks. In addition, you may negate an opportunity or immediate action against you. This includes readied actions. Make an opposed Bluff vs. Insight check before the action occurs. If you win, the action is negated — it is not expended and has no effect — otherwise, the action occurs normally. You may use this feat in a combat encounter a number of times equal to your Intelligence bonus (minimum 1).
    </RulesElement>
-   <RulesElement name="Spellduelist’s Counterspell" type="Feat" internal-id="ID_WOTBS_FEAT_SPELLDUELISTS_COUNTERSPELL" source="War of the Burning Sky" >
+   <RulesElement name="Spellduelist’s Counterspell" type="Feat" internal-id="ID_WOTBS_FEAT_SPELLDUELISTS_COUNTERSPELL" source="War of the Burning Sky">
    <Prereqs> Dex 15, Trained in Insight </Prereqs>
       <print-prereqs> Dex 15, Trained in Insight </print-prereqs>
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> You gain the counterspell feat power. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <specific name="_DisplayPowers"> ID_WOTBS_POWER_COUNTERSPELL </specific>
       <rules>
-         <grant name="ID_WOTBS_POWER_COUNTERSPELL" />
+         <grant name="ID_WOTBS_POWER_COUNTERSPELL"/>
       </rules>
 You gain the counterspell feat power.
  </RulesElement>
- <RulesElement name="Counterspell " type="Power" internal-id="ID_WOTBS_POWER_COUNTERSPELL" source="War of the Burning Sky" >
+ <RulesElement name="Counterspell " type="Power" internal-id="ID_WOTBS_POWER_COUNTERSPELL" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Feat Power </specific>
-      <specific name="Keywords" />
+      <specific name="Keywords"/>
       <specific name="Action Type"> Immediate Interrupt </specific>
       <specific name="Attack Type"> Personal  </specific>
       <specific name="Trigger"> You are affected by a spell </specific>
       <specific name="Effect"> If you choose, you may spend a healing surge to add ½ your level + 1 to your defense against the spell. If you do this and the spell misses, it does no damage and has no effect on you, and it is expended as if it had been successfully cast. This failure includes powers with the Reliable keyword </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
    </RulesElement>
-   <RulesElement name="Vow of Healing " type="Feat" internal-id="ID_WOTBS_FEAT_VOW_OF_HEALING" source="War of the Burning Sky" >
+   <RulesElement name="Vow of Healing " type="Feat" internal-id="ID_WOTBS_FEAT_VOW_OF_HEALING" source="War of the Burning Sky">
    <Prereqs> Channel Divinity class feature </Prereqs>
       <print-prereqs> Channel Divinity class feature, member of the Aquiline Cross </print-prereqs>
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> You gain the vow of healing power. You cannot refuse to heal an injured living creature who asks you for healing. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
       <specific name="_DisplayPowers"> ID_WOTBS_POWER_VOW_OF_HEALING </specific>
       <rules>
-         <grant name="ID_WOTBS_POWER_VOW_OF_HEALING" />
+         <grant name="ID_WOTBS_POWER_VOW_OF_HEALING"/>
       </rules>
 You gain the vow of healing power.
   You cannot refuse to heal an injured living creature who asks you for healing. This obligates you to use your vow of healing power once on any such creature, though you are not required to heal enemies until they surrender and you are reasonably sure they cannot betray you. You cannot perform a coup de grace on a living creature, nor can you target damage against a dying living foe (you may deal damage to them with area attacks, though you must make a best effort to avoid doing so). If you violate this oath, you lose the benefit of this feat for 24 hours. Repeated or flagrant transgressions can result in permanent loss of this benefit until you receive atonement.
  </RulesElement>
- <RulesElement name="Vow of Healing  " type="Power" internal-id="ID_WOTBS_POWER_VOW_OF_HEALING" source="War of the Burning Sky" >
+ <RulesElement name="Vow of Healing  " type="Power" internal-id="ID_WOTBS_POWER_VOW_OF_HEALING" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
       <specific name="Power Usage"> Encounter </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Feat Power </specific>
       <specific name="Keywords"> Divine, Healing, Radiant </specific>
       <specific name="Action Type"> Minor Action </specific>
       <specific name="Attack Type"> Close Burst 5 </specific>
       <specific name="Target"> All creatures in burst </specific>
       <specific name="Effect"> Living creatures regain a number of Hit Points equal to your Wisdom or Charisma bonus, whichever is higher (minimum 1). Undead creatures take damage equal to your Wisdom or Charisma bonus, whichever is higher (minimum 1). </specific>
-      <specific name="_Associated Feats" />
+      <specific name="_Associated Feats"/>
    </RulesElement>
-   <RulesElement name="Whip Proficiency" type="Feat" internal-id="ID_WOTBS_FEAT_WHIP_PROFICIENCY" source="War of the Burning Sky" >
+   <RulesElement name="Whip Proficiency" type="Feat" internal-id="ID_WOTBS_FEAT_WHIP_PROFICIENCY" source="War of the Burning Sky">
    <Prereqs> Dex 13, Martial Power Source </Prereqs>
       <print-prereqs> Dex 13, Martial Power Source </print-prereqs>
    <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> Gain proficiency with the Whip. You can grab with the Whip using Strength vs. Reflex </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)" type="Proficiency" />
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHIP)" type="Proficiency"/>
       </rules>
 You gain proficiency with the whip. When using a whip, you may choose to grab with it instead of inflicting damage. A grab attack with a whip ignores the whip’s proficiency bonus and uses Strength vs. Reflex; if you hit, the target is grabbed.
    </RulesElement>
    
    <!-- Paragon Feats -->
    
-   <RulesElement name="East Wind Style" type="Feat" internal-id="ID_WOTBS_FEAT_EAST_WIND_STYLE" source="War of the Burning Sky" >
+   <RulesElement name="East Wind Style" type="Feat" internal-id="ID_WOTBS_FEAT_EAST_WIND_STYLE" source="War of the Burning Sky">
       <Prereqs> 11th level, Trained in Arcana; Paragon Tier </Prereqs>
       <print-prereqs> 11th level, Trained in Arcana, studied at the Monastery of Two Winds </print-prereqs>
       <specific name="Tier"> Paragon </specific>
       <specific name="Short Description"> Your unarmed strikes deal an extra 1d6 + Intelligence modifier lightning damage. You gain Supernal as a bonus language. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
 	  <rules>
-         <grant name="ID_FMP_LANGUAGE_8" type="Language" />
+         <grant name="ID_FMP_LANGUAGE_8" type="Language"/>
       </rules>
 Your unarmed strikes deal an extra 1d6 + Intelligence modifier lightning damage. You gain Supernal as a bonus language.
    </RulesElement>
-   <RulesElement name="West Wind Style" type="Feat" internal-id="ID_WOTBS_FEAT_EAST_WIND_STYLE" source="War of the Burning Sky" >
+   <RulesElement name="West Wind Style" type="Feat" internal-id="ID_WOTBS_FEAT_EAST_WIND_STYLE" source="War of the Burning Sky">
       <Prereqs> 11th level, Channel Divinity class feature, Int 15; Paragon Tier </Prereqs>
       <print-prereqs> 11th level, Channel Divinity class feature, Int 15, studied at the Monastery of Two Winds </print-prereqs>
       <specific name="Tier"> Paragon </specific>
       <specific name="Short Description"> Your unarmed strikes deal an extra 1d6 + Intelligence modifier lightning damage. You gain Supernal as a bonus language. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
      <specific name="_DisplayPowers"> ID_WOTBS_POWER_WINDY_CONVERSION </specific>
       <rules>
-         <grant name="ID_WOTBS_POWER_WINDY_CONVERSION" />
-		 <grant name="ID_FMP_LANGUAGE_8" type="Language" />
+         <grant name="ID_WOTBS_POWER_WINDY_CONVERSION"/>
+		 <grant name="ID_FMP_LANGUAGE_8" type="Language"/>
       </rules>
 You gain the windy conversion feat power. You gain Supernal as a bonus language.
    </RulesElement>
-   <RulesElement name="Windy Conversion" type="Power" internal-id="ID_WOTBS_POWER_WINDY_CONVERSION" source="War of the Burning Sky" >
+   <RulesElement name="Windy Conversion" type="Power" internal-id="ID_WOTBS_POWER_WINDY_CONVERSION" source="War of the Burning Sky">
       <Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_15,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
       <specific name="Power Usage"> Daily </specific>
-      <specific name="_SkillPower" />
+      <specific name="_SkillPower"/>
       <specific name="Display"> Feat Power </specific>
       <specific name="Keywords"> Arcane, Polymorph </specific>
       <specific name="Action Type"> Minor Action </specific>
       <specific name="Attack Type"> Personal </specific>
       <specific name="Effect"> You become insubstantial until the end of the encounter or for 5 minutes. You gain fly 6, and can’t take standard actions. You may move into an enemy’s square and, as a minor action, attempt to take his breath away. </specific>
-      <specific name="	Attack"> Wisdom or Charisma vs. Fortitude </specific>
-      <specific name="	Hit"> Your Wisdom or Charisma bonus, whichever is higher (minimum 1) </specific>
-      <specific name="	Effect"> The target is dazed (save ends). </specific>
+      <specific name=" Attack"> Wisdom or Charisma vs. Fortitude </specific>
+      <specific name=" Hit"> Your Wisdom or Charisma bonus, whichever is higher (minimum 1) </specific>
+      <specific name=" Effect"> The target is dazed (save ends). </specific>
       <specific name="Special"> Reverting to your normal form is a minor action. When you revert, you may take a standard action in the same round. </specific>
-	  <specific name="_Associated Feats" />
+	  <specific name="_Associated Feats"/>
    </RulesElement>
-   <RulesElement name="Shining Warrior" type="Feat" internal-id="ID_WOTBS_FEAT_EAST_WIND_STYLE" source="War of the Burning Sky" >
+   <RulesElement name="Shining Warrior" type="Feat" internal-id="ID_WOTBS_FEAT_EAST_WIND_STYLE" source="War of the Burning Sky">
       <Prereqs> 11th level, Eladrin, Trained in Arcana; Paragon Tier </Prereqs>
       <print-prereqs> 11th level, Eladrin, trained in Arcana </print-prereqs>
       <specific name="Tier"> Paragon </specific>
       <specific name="Short Description"> You can double the radius of the light shed by a weapon that sheds light. On a critical hit with that weapon while doubling it's light, the target is blind until the end of your next turn. Gain a +2 to saving throws against fear and you cannot be dazed or blinded in a brightly illuminated area. </specific>
-      <specific name="Special" />
-      <specific name="type" />
-      <specific name="Associated Power Info" />
-      <specific name="Associated Powers" />
+      <specific name="Special"/>
+      <specific name="type"/>
+      <specific name="Associated Power Info"/>
+      <specific name="Associated Powers"/>
 	  <rules>
-         <statadd name="Saving Throws" value="+2" type="Feat" condition="against fear and negative energy in a brightly illuminated area" />
+         <statadd name="Saving Throws" value="+2" type="Feat" condition="against fear and negative energy in a brightly illuminated area"/>
       </rules>
 If you wield a magical weapon that sheds light, you can choose to intensify that light, doubling its radius as a standard action once a day. The intensified light lasts for 10 minutes or until the end of the encounter.
 If you make a critical hit with your weapon while it is emitting intensified light, the creature struck is blinded until the end of your next turn.
@@ -755,290 +755,290 @@ In a brightly illuminated area, you gain a +2 bonus to saves against fear and ne
    
    <!-- Magic Items -->
    
-   <RulesElement name="Potion Bracer" type="Magic Item" internal-id="ID_WOTBS_MAGIC_ITEM_POTION_BRACER" source="War of the Burning Sky" >
+   <RulesElement name="Potion Bracer" type="Magic Item" internal-id="ID_WOTBS_MAGIC_ITEM_POTION_BRACER" source="War of the Burning Sky">
       <specific name="Level"> 6 </specific>
       <specific name="Gold"> 1800 </specific>
       <specific name="Magic Item Type"> Arms Slot Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
       <specific name="Item Slot"> Arms </specific>
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="_Rarity"> Common </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
       <specific name="Property"> This bracer stores up to 10 potions or similarly sized items in an extradimensional space. You can retrieve any item as a free action. You can only wear one potion bracer at a time; wearing a second causes both to cease functioning. Most potion bracers are worn on the user’s weapon arm so the user does not have to drop a weapon to retrieve a potion. You may drink directly from the potion bracer as a minor action that provokes an opportunity attack. </specific>
    </RulesElement>   
-   <RulesElement name="Feigning Fez" type="Magic Item" internal-id="ID_WOTBS_MAGIC_ITEM_FEIGNING_FEZ" source="War of the Burning Sky" >
+   <RulesElement name="Feigning Fez" type="Magic Item" internal-id="ID_WOTBS_MAGIC_ITEM_FEIGNING_FEZ" source="War of the Burning Sky">
       <specific name="Level"> 10 </specific>
       <specific name="Gold"> 5000 </specific>
       <specific name="Magic Item Type"> Head Slot Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
       <specific name="Item Slot"> Head </specific>
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
-      <specific name="Power"> Power (At-Will &#x2022; Illusion) Standard Action. You may change your appearance, clothing, and equipment to mimic that of any humanoid race that matches your size category. The fez’s appearance can also change. The illusion is only visual. </specific>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
+      <specific name="Power"> Power (At-Will • Illusion) Standard Action. You may change your appearance, clothing, and equipment to mimic that of any humanoid race that matches your size category. The fez’s appearance can also change. The illusion is only visual. </specific>
       <specific name="_Rarity"> Common </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
       <specific name="Property"> When using the fez’s power, adds a +5 item bonus to all Bluff checks involving disguises. </specific>
    </RulesElement>
-   <RulesElement name="Hat of Exceptional Intelligence (Heroic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_HAT_OF_EXCEPTIONAL_INTELLIGENCE_(HEROIC)" source="War of the Burning Sky" >
+   <RulesElement name="Hat of Exceptional Intelligence (Heroic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_HAT_OF_EXCEPTIONAL_INTELLIGENCE_(HEROIC)" source="War of the Burning Sky">
       <specific name="Level"> 10 </specific>
       <specific name="Gold"> 5000 </specific>
       <specific name="Magic Item Type"> Head Slot Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
       <specific name="Item Slot"> Head </specific>
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Daily) Minor Action. You gain a +2 power bonus on the next Intelligence roll you make this turn. </specific>
       <specific name="_Rarity"> Common </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
       <specific name="Property"> You gain a +1 bonus to attack or damage with each spell you cast (your choice). 
 You gain a +2 bonus on knowledge and monster knowledge checks. </specific>
 	  <rules>
-		 <statadd name="attack rolls" value="+1" type="item" condition="either attack or damage for each spell you cast" />
-		 <statadd name="damage rolls" value="+1" type="item" condition="either attack or damage for each spell you cast" />
-         <statadd name="Arcana Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Dungeoneering Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Nature Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Religion Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks" />
+		 <statadd name="attack rolls" value="+1" type="item" condition="either attack or damage for each spell you cast"/>
+		 <statadd name="damage rolls" value="+1" type="item" condition="either attack or damage for each spell you cast"/>
+         <statadd name="Arcana Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Dungeoneering Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Nature Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Religion Misc" value="+2" type="item" condition="to knowledge and monster knowledge checks"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Hat of Exceptional Intelligence (Paragon)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_HAT_OF_EXCEPTIONAL_INTELLIGENCE_(PARAGON)" source="War of the Burning Sky" >
+   <RulesElement name="Hat of Exceptional Intelligence (Paragon)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_HAT_OF_EXCEPTIONAL_INTELLIGENCE_(PARAGON)" source="War of the Burning Sky">
       <specific name="Level"> 20 </specific>
       <specific name="Gold"> 125000 </specific>
       <specific name="Magic Item Type"> Head Slot Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
       <specific name="Item Slot"> Head </specific>
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Daily) Minor Action. You gain a +3 power bonus on the next Intelligence roll you make this turn. </specific>
       <specific name="_Rarity"> Common </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
       <specific name="Property"> You gain a +2 bonus to attack or damage with each spell you cast (your choice). 
 You gain a +3 bonus on knowledge and monster knowledge checks. </specific>
 	  <rules>
-		 <statadd name="attack rolls" value="+2" type="item" condition="either attack or damage for each spell you cast" />
-		 <statadd name="damage rolls" value="+2" type="item" condition="either attack or damage for each spell you cast" />
-         <statadd name="Arcana Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Dungeoneering Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Nature Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Religion Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks" />
+		 <statadd name="attack rolls" value="+2" type="item" condition="either attack or damage for each spell you cast"/>
+		 <statadd name="damage rolls" value="+2" type="item" condition="either attack or damage for each spell you cast"/>
+         <statadd name="Arcana Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Dungeoneering Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Nature Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Religion Misc" value="+3" type="item" condition="to knowledge and monster knowledge checks"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Hat of Exceptional Intelligence (Epic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_HAT_OF_EXCEPTIONAL_INTELLIGENCE_(EPIC)" source="War of the Burning Sky" >
+   <RulesElement name="Hat of Exceptional Intelligence (Epic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_HAT_OF_EXCEPTIONAL_INTELLIGENCE_(EPIC)" source="War of the Burning Sky">
       <specific name="Level"> 20 </specific>
       <specific name="Gold"> 125000 </specific>
       <specific name="Magic Item Type"> Head Slot Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
       <specific name="Item Slot"> Head </specific>
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Daily) Minor Action. You gain a +4 power bonus on the next Intelligence roll you make this turn. </specific>
       <specific name="_Rarity"> Common </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
       <specific name="Property"> You gain a +3 bonus to attack or damage with each spell you cast (your choice). 
 You gain a +4 bonus on knowledge and monster knowledge checks. </specific>
 	  <rules>
-		 <statadd name="attack rolls" value="+3" type="item" condition="either attack or damage for each spell you cast" />
-		 <statadd name="damage rolls" value="+3" type="item" condition="either attack or damage for each spell you cast" />
-         <statadd name="Arcana Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Dungeoneering Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Nature Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks" />
-         <statadd name="Religion Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks" />
+		 <statadd name="attack rolls" value="+3" type="item" condition="either attack or damage for each spell you cast"/>
+		 <statadd name="damage rolls" value="+3" type="item" condition="either attack or damage for each spell you cast"/>
+         <statadd name="Arcana Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Dungeoneering Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Nature Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks"/>
+         <statadd name="Religion Misc" value="+4" type="item" condition="to knowledge and monster knowledge checks"/>
       </rules>
    </RulesElement>
-   <RulesElement name="Shatterspell" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL" source="War of the Burning Sky" >
+   <RulesElement name="Shatterspell" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL" source="War of the Burning Sky">
       <Flavor> A black compound infused with antimagic when extremely chilled. As it warms, it turns gaseous, so that when the vial is opened or shattered, it fills a square with wispy black gas. </Flavor>
       <specific name="Level"> 5 </specific>
       <specific name="Gold"> 50 </specific>
       <specific name="Magic Item Type"> Alchemical </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
       <specific name="Special"> If a vial of shatterspell takes any cold damage, the contents turn liquid again and remain so for one minute. </specific>
       <specific name="Power"> Power (Consumable * Zone) Standard Action. Released as a gas, shatterspell creates a zone of magical disruption (Range 10, Area Burst 1). All magic effects within the square must make a saving throw or end immediately. The zone lasts until the end of your next turn. 
 	  Power (Consumable, Potion) Standard Action. Made liquid and swallowed as a potion (see above), shatterspell grants you +5 damage resistance against spells, lasting for 5 minutes or until the end of the encounter.</specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Shatterspell (Heroic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL_(HEROIC)" source="War of the Burning Sky" >
+   <RulesElement name="Shatterspell (Heroic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL_(HEROIC)" source="War of the Burning Sky">
       <Flavor> A black compound infused with antimagic when extremely chilled. As it warms, it turns gaseous, so that when the vial is opened or shattered, it fills a square with wispy black gas. </Flavor>
       <specific name="Level"> 10 </specific>
       <specific name="Gold"> 200 </specific>
       <specific name="Magic Item Type"> Alchemical </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
       <specific name="Special"> If a vial of shatterspell takes any cold damage, the contents turn liquid again and remain so for one minute. </specific>
       <specific name="Power"> Power (Consumable * Zone) Standard Action. Released as a gas, shatterspell creates a zone of magical disruption (Range 10, Area Burst 1). All magic effects within the square must make a saving throw with a -2 penalty or end immediately. The zone lasts until the end of your next turn. 
 	  Power (Consumable, Potion) Standard Action. Made liquid and swallowed as a potion (see above), shatterspell grants you +10 damage resistance against spells, lasting for 5 minutes or until the end of the encounter.</specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Shatterspell (Paragon)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL_(PARAGON)" source="War of the Burning Sky" >
+   <RulesElement name="Shatterspell (Paragon)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL_(PARAGON)" source="War of the Burning Sky">
       <Flavor> A black compound infused with antimagic when extremely chilled. As it warms, it turns gaseous, so that when the vial is opened or shattered, it fills a square with wispy black gas. </Flavor>
       <specific name="Level"> 15 </specific>
       <specific name="Gold"> 1000 </specific>
       <specific name="Magic Item Type"> Alchemical </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
       <specific name="Special"> If a vial of shatterspell takes any cold damage, the contents turn liquid again and remain so for one minute. </specific>
       <specific name="Power"> Power (Consumable * Zone) Standard Action. Released as a gas, shatterspell creates a zone of magical disruption (Range 10, Area Burst 1). All magic effects within the square must make a saving throw with a -4 penalty or end immediately. The zone lasts until the end of your next turn. 
 	  Power (Consumable, Potion) Standard Action. Made liquid and swallowed as a potion (see above), shatterspell grants you +15 damage resistance against spells, lasting for 5 minutes or until the end of the encounter.</specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Shatterspell (Epic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL_(EPIC)" source="War of the Burning Sky" >
+   <RulesElement name="Shatterspell (Epic)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_SHATTERSPELL_(EPIC)" source="War of the Burning Sky">
       <Flavor> A black compound infused with antimagic when extremely chilled. As it warms, it turns gaseous, so that when the vial is opened or shattered, it fills a square with wispy black gas. </Flavor>
       <specific name="Level"> 20 </specific>
       <specific name="Gold"> 5000 </specific>
       <specific name="Magic Item Type"> Alchemical </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
       <specific name="Special"> If a vial of shatterspell takes any cold damage, the contents turn liquid again and remain so for one minute. </specific>
       <specific name="Power"> Power (Consumable * Zone) Standard Action. Released as a gas, shatterspell creates a zone of magical disruption (Range 10, Area Burst 1). All magic effects within the square must make a saving throw with a -6 penalty or end immediately. The zone lasts until the end of your next turn. 
 	  Power (Consumable, Potion) Standard Action. Made liquid and swallowed as a potion (see above), shatterspell grants you +20 damage resistance against spells, lasting for 5 minutes or until the end of the encounter.</specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Feather Token (Anchor)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(ANCHOR)" source="War of the Burning Sky" >
+   <RulesElement name="Feather Token (Anchor)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(ANCHOR)" source="War of the Burning Sky">
       <specific name="Level"> 4 </specific>
       <specific name="Gold"> 40 </specific>
       <specific name="Magic Item Type"> Wondrous Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Consumable) Minor Action. Hold the token and spend a healing surge. The token disintegrates and releases its power, conjuring an anchor that moors a craft in water so as to render it immobile for up to one day. </specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Feather Token (Fan)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(FAN)" source="War of the Burning Sky" >
+   <RulesElement name="Feather Token (Fan)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(FAN)" source="War of the Burning Sky">
       <specific name="Level"> 6 </specific>
       <specific name="Gold"> 75 </specific>
       <specific name="Magic Item Type"> Wondrous Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Consumable) Minor Action. Hold the token and spend a healing surge. The token disintegrates and releases its power, which forms a huge flapping fan, causing a breeze of sufficient strength to propel one ship (about 25 mph). This wind is not cumulative with existing wind speed. The token can, however, be used to lessen existing winds, creating an area of relative calm or lighter winds (wave size in a storm is not affected). The fan can be used for up to 8 hours. It does not function on land. </specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Feather Token (Bird)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(BIRD)" source="War of the Burning Sky" >
+   <RulesElement name="Feather Token (Bird)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(BIRD)" source="War of the Burning Sky">
       <specific name="Level"> 8 </specific>
       <specific name="Gold"> 125 </specific>
       <specific name="Magic Item Type"> Wondrous Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Consumable) Minor Action. Hold the token and spend a healing surge. The token disintegrates and releases its power, which conjures a small flying creature (appropriate to the token source) that delivers a small written message unerringly to a designated target as would a carrier pigeon. The power lasts as long as it takes to carry the message. </specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Feather Token (Whip)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(WHIP)" source="War of the Burning Sky" >
+   <RulesElement name="Feather Token (Whip)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(WHIP)" source="War of the Burning Sky">
       <specific name="Level"> 10 </specific>
       <specific name="Gold"> 200 </specific>
       <specific name="Magic Item Type"> Wondrous Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Consumable) Minor Action. Hold the token and spend a healing surge. The token disintegrates and releases its power, which forms into a huge +1 whip and wields itself against an opponent of your choosing within 5 squares of you. The whip remains for one encounter or 5 minutes.
 The Whip can make the following attack as a free action on your turn: +11 vs. AC, 1d6+1 damage or +5 vs. Reflex, grab (Medium-sized or smaller creature). The whip has a Reflex 16 and Fortitude 18 defense. It cannot damage or move an opponent while grabbing.	  </specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Feather Token (Boat)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(BOAT)" source="War of the Burning Sky" >
+   <RulesElement name="Feather Token (Boat)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(BOAT)" source="War of the Burning Sky">
       <specific name="Level"> 12 </specific>
       <specific name="Gold"> 500 </specific>
       <specific name="Magic Item Type"> Wondrous Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Consumable) Minor Action. Hold the token and spend a healing surge. The token disintegrates and releases its power, which conjures a boat capable of moving on water at a speed of 60 feet. It can carry eight horses and gear or thirty-two Medium characters or any equivalent combination. The boat lasts for one day. </specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
-   <RulesElement name="Feather Token (Tree)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(TREE)" source="War of the Burning Sky" >
+   <RulesElement name="Feather Token (Tree)" type="Magic Item" internal-id="ID_WOTBS_MAGIC_FEATHER_TOKEN_(TREE)" source="War of the Burning Sky">
       <specific name="Level"> 16 </specific>
       <specific name="Gold"> 1800 </specific>
       <specific name="Magic Item Type"> Wondrous Item </specific>
-      <specific name="Tier" />
-      <specific name="_Item_Set_ID" />
-      <specific name="Armor" />
-      <specific name="Weapon" />
-      <specific name="Item Slot" />
-      <specific name="Requirement" />
-      <specific name="Critical" />
-      <specific name="Special" />
+      <specific name="Tier"/>
+      <specific name="_Item_Set_ID"/>
+      <specific name="Armor"/>
+      <specific name="Weapon"/>
+      <specific name="Item Slot"/>
+      <specific name="Requirement"/>
+      <specific name="Critical"/>
+      <specific name="Special"/>
       <specific name="Power"> Power (Consumable) Minor Action. Hold the token and spend a healing surge. The token disintegrates and releases its power, which Conjures a great oak (5-foot diameter trunk, 60-foot height, 40-foot top diameter). This is an instantaneous effect. </specific>
       <specific name="_Rarity"> Uncommon </specific>
-      <specific name="Granted Powers" />
+      <specific name="Granted Powers"/>
    </RulesElement>
    
    <!-- Rituals -->
    
-    <RulesElement name="Arcane Servant" type="Ritual" internal-id="ID_WOTBS_RITUAL_ARCANE_SERVANT" source="War of the Burning Sky" >
+    <RulesElement name="Arcane Servant" type="Ritual" internal-id="ID_WOTBS_RITUAL_ARCANE_SERVANT" source="War of the Burning Sky">
       <specific name="Category"> Creation </specific>
       <specific name="Key Skill"> Arcana (no check) </specific>
       <specific name="Component Cost"> 10 gp, plus a focus worth at least 30 gp </specific>
@@ -1046,12 +1046,12 @@ The Whip can make the following attack as a free action on your turn: +11 vs. AC
       <specific name="Level"> 1 </specific>
       <specific name="Time"> 10 minutes </specific>
       <specific name="Market Price"> 50 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 A Medium-sized, invisible force performs small tasks at your command. It can fetch objects, open unstuck doors, move furniture (up to 100 pounds), make camp and perform basic functions like mending and cleaning. It may perform the same task repeatedly, but can only perform one task at a time. It is limited to tasks that require a skill check of DC 10 or less.The arcane servant has a speed equal to the caster’s native speed. It occupies no space and cannot attack or be attacked. It cannot move more than 20 spaces from the focus.
 Focus: A small mannequin held in hand or otherwise in possession of a creature. The arcane servant will disappear on a failed saving throw if the focus is abandoned or dropped. 
    </RulesElement>
-    <RulesElement name="Continual Light" type="Ritual" internal-id="ID_WOTBS_RITUAL_CONTINUAL_LIGHT" source="War of the Burning Sky" >
+    <RulesElement name="Continual Light" type="Ritual" internal-id="ID_WOTBS_RITUAL_CONTINUAL_LIGHT" source="War of the Burning Sky">
       <specific name="Category"> Creation </specific>
       <specific name="Key Skill"> Arcana (no check) </specific>
       <specific name="Component Cost"> 10 gp </specific>
@@ -1059,12 +1059,12 @@ Focus: A small mannequin held in hand or otherwise in possession of a creature. 
       <specific name="Level"> 2 </specific>
       <specific name="Time"> 10 minutes </specific>
       <specific name="Market Price"> 100 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 You imbue an object no larger than a fist with a torchlike glow that illuminates a 5 square radius with bright light.
 Special: The ritual can be extended indefinitely by spending two healing surges during the casting.
    </RulesElement>
-   <RulesElement name="Duelist’s Etiquette" type="Ritual" internal-id="ID_WOTBS_RITUAL_DUELISTS_ETIQUETTE" source="War of the Burning Sky" >
+   <RulesElement name="Duelist’s Etiquette" type="Ritual" internal-id="ID_WOTBS_RITUAL_DUELISTS_ETIQUETTE" source="War of the Burning Sky">
       <specific name="Category"> Warding </specific>
       <specific name="Key Skill"> Arcana (no check) </specific>
       <specific name="Component Cost"> 5 gp, plus 2 healing surges </specific>
@@ -1072,12 +1072,12 @@ Special: The ritual can be extended indefinitely by spending two healing surges 
       <specific name="Level"> 1 </specific>
       <specific name="Time"> 10 minutes </specific>
       <specific name="Market Price"> 100 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 The ritual’s area (6 squares) is traced with a faintly glowing line of energy. The ritual creates a subtle defensive barrier against magical attacks, causing all damage from spells and summoned creatures in the area of effect to become nonlethal. Whenever a creature enters the warded area, it must consciously choose to accept this restriction, or else the spell ends. If at any time a creature inside the area wishes to no longer abide by the duelist’s etiquette, he can spend a standard action to concentrate and end the ritual. All creatures in the area of effect are immediately aware the ritual has ended.
 This ritual is primarily used to ensure that spell duels are not fatal, without forcing mages to hold back their strongest powers.
    </RulesElement>
-   <RulesElement name="Hallowed Ground" type="Ritual" internal-id="ID_WOTBS_RITUAL_HALLOWED_GROUND" source="War of the Burning Sky" >
+   <RulesElement name="Hallowed Ground" type="Ritual" internal-id="ID_WOTBS_RITUAL_HALLOWED_GROUND" source="War of the Burning Sky">
       <specific name="Category"> Warding </specific>
       <specific name="Key Skill"> Religion </specific>
       <specific name="Component Cost"> 5,000 gp plus 5 healing surges </specific>
@@ -1085,7 +1085,7 @@ This ritual is primarily used to ensure that spell duels are not fatal, without 
       <specific name="Level"> 20 </specific>
       <specific name="Time"> 30 minutes </specific>
       <specific name="Market Price"> 25,000 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 No scrying sensor can enter the area of Hallowed Ground and no creature can teleport into it, unless the sensor or the creature is higher level than the ritual caster who performed the ritual.
 	Your Religion check determines the size of the warded area, which is a burst.
@@ -1104,9 +1104,9 @@ Also, the following effects are placed on the burst:
 4. Divine casters gain a +4 Wisdom bonus to their Channel Divinity: Turn Undead roll.
 5. Creatures inside the burst cannot be turned into undead.
 
-The warding effect lasts for 24 hours, but the ritual caster (not any assistants) can extend this duration by expending a healing surge every 24 hours to sustain it. The caster does not need to be in the same area or even on the same plane to sustain the effect. If the ritual&apos;s effect is sustained without interruption for a year and a day, the effect becomes permanent.
+The warding effect lasts for 24 hours, but the ritual caster (not any assistants) can extend this duration by expending a healing surge every 24 hours to sustain it. The caster does not need to be in the same area or even on the same plane to sustain the effect. If the ritual's effect is sustained without interruption for a year and a day, the effect becomes permanent.
     </RulesElement>
-	<RulesElement name="Magicsense" type="Ritual" internal-id="ID_WOTBS_RITUAL_MAGICSENSE" source="War of the Burning Sky" >
+	<RulesElement name="Magicsense" type="Ritual" internal-id="ID_WOTBS_RITUAL_MAGICSENSE" source="War of the Burning Sky">
 	<flavor> The area shimmers and ripples as a magical item enters its covering area. </flavor>
       <specific name="Category"> Divination </specific>
       <specific name="Key Skill"> Arcana </specific>
@@ -1115,7 +1115,7 @@ The warding effect lasts for 24 hours, but the ritual caster (not any assistants
       <specific name="Level"> 5 </specific>
       <specific name="Time"> 1 hour </specific>
       <specific name="Market Price"> 250 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 Any magical item entering the area begins to glow and sparkle.
 Your Arcana check determines the size of the warded area, which is a burst.
@@ -1127,9 +1127,9 @@ Your Arcana check determines the size of the warded area, which is a burst.
 30–39	Burst 8
 40 or higher	Burst 12&lt;/table&gt;
 
-The warding effect lasts for 24 hours, but the ritual caster (not any assistants) can extend this duration by expending a healing surge every 24 hours to sustain it. The caster does not need to be in the same area or even on the same plane to sustain the effect. If the ritual&apos;s effect is sustained without interruption for a year and a day, the effect becomes permanent.
+The warding effect lasts for 24 hours, but the ritual caster (not any assistants) can extend this duration by expending a healing surge every 24 hours to sustain it. The caster does not need to be in the same area or even on the same plane to sustain the effect. If the ritual's effect is sustained without interruption for a year and a day, the effect becomes permanent.
    </RulesElement>
-<RulesElement name="Stand the Heat" type="Ritual" internal-id="ID_WOTBS_RITUAL_STAND_THE_HEAT" source="War of the Burning Sky" >
+<RulesElement name="Stand the Heat" type="Ritual" internal-id="ID_WOTBS_RITUAL_STAND_THE_HEAT" source="War of the Burning Sky">
       <specific name="Category"> Warding </specific>
       <specific name="Key Skill"> Arcana or Nature </specific>
       <specific name="Component Cost"> 135 gp </specific>
@@ -1137,7 +1137,7 @@ The warding effect lasts for 24 hours, but the ritual caster (not any assistants
       <specific name="Level"> 8 </specific>
       <specific name="Time"> 10 minutes </specific>
       <specific name="Market Price"> 3400 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 When you perform this ritual, you can select up to eight recipients to receive the spell’s benefits. The creature and all the equipment it carries suffers no harm from being in even extreme heat. It can exist comfortably in temperatures as high as 500 degrees Fahrenheit. This protection is sufficient to endure the oven-like heat of a forest fire, but fire damage is treated normally.
 A ritually affected creature that has ongoing fire damage (save ends) may use a move action to automatically save at the end of its turn.
@@ -1149,7 +1149,7 @@ A ritually affected creature that has ongoing fire damage (save ends) may use a 
 25–29	24 hours
 30 or higher	72 hours&lt;/table&gt;
  </RulesElement>
-<RulesElement name="True Form" type="Ritual" internal-id="ID_WOTBS_RITUAL_TRUE_FORM" source="War of the Burning Sky" >
+<RulesElement name="True Form" type="Ritual" internal-id="ID_WOTBS_RITUAL_TRUE_FORM" source="War of the Burning Sky">
       <specific name="Category"> Divination </specific>
       <specific name="Key Skill"> Arcana or Religion </specific>
       <specific name="Component Cost"> 140 gp </specific>
@@ -1157,7 +1157,7 @@ A ritually affected creature that has ongoing fire damage (save ends) may use a 
       <specific name="Level"> 6 </specific>
       <specific name="Time"> 1 minute </specific>
       <specific name="Market Price"> 600 gp </specific>
-      <specific name="Prerequisite" />
+      <specific name="Prerequisite"/>
       <specific name="type"> Ritual </specific>
 Within 20 squares of the ritual’s casting, you see creatures’ and objects’ true forms and precise locations. Mundane concealment and cover remains effective and may hide creatures and items as normal. Illusions, transmutations, and invisibility are ignored and the actual shapes, sizes, and locations of magically modified things are revealed
  </RulesElement>

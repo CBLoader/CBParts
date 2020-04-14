@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>Kender.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/Kender.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/Kender.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/Kender.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/Kender.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Dragonlance" type="source" internal-id="ID_CER_SOURCE_1" source="Core">
     <specific name="IsBeta"> 0 </specific>
@@ -29,12 +29,12 @@
     <specific name="Female Names"> Andrey, Bree, Callie, Chenna, Eida, Kithri, Lidda, Nedda, Paela, Shaena, Tryn, Vani, Verna, Wella. </specific>
     <specific name="Racial Traits"> ID_FMP_RACIAL_TRAIT_25, ID_FMP_RACIAL_TRAIT_361, ID_CER_RACIAL_TRAIT_1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_KENDER" type="Grants" />
-      <statadd name="Speed" value="+5" />
-      <textstring name="Average Height" value="3' -3' 9&quot;" />
-      <textstring name="Average Weight" value="85-105 lb." />
-      <textstring name="Size" value="Small" />
-      <select type="Language" number="1" Category="Starting" />
+      <grant name="ID_INTERNAL_GRANTS_KENDER" type="Grants"/>
+      <statadd name="Speed" value="+5"/>
+      <textstring name="Average Height" value="3' -3' 9&quot;"/>
+      <textstring name="Average Weight" value="85-105 lb."/>
+      <textstring name="Size" value="Small"/>
+      <select type="Language" number="1" Category="Starting"/>
     </rules>
 Kender are a small race known for their fearlessness, wanderlust, and curiousity.
 
@@ -46,16 +46,16 @@ Play a Kender if you want ...
   <RulesElement name="Kender" type="Grants" internal-id="ID_INTERNAL_GRANTS_KENDER" source="Dragonlance">
     <specific name="_SupportsID"> ID_CER_RACE_1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_FMP_RACIAL_TRAIT_25" type="Racial Trait" />
-      <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait" />
-      <grant name="ID_CER_RACIAL_TRAIT_1" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_25" type="Racial Trait"/>
+      <grant name="ID_FMP_RACIAL_TRAIT_361" type="Racial Trait"/>
+      <grant name="ID_CER_RACIAL_TRAIT_1" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CHARISMA" type="Race Ability Bonus"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ACROBATICS_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_THIEVERY_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Kender Taunt" type="Racial Trait" internal-id="ID_CER_RACIAL_TRAIT_1" source="Dragonlance" revision-date="x/x/x">
@@ -64,7 +64,7 @@ Play a Kender if you want ...
     <specific name="Powers"> ID_CER_POWER_1 </specific>
     <specific name="_DisplayPowers"> ID_CER_POWER_1 </specific>
     <rules>
-      <grant name="ID_CER_POWER_1" type="Power" />
+      <grant name="ID_CER_POWER_1" type="Power"/>
     </rules>
 You can use Kender Taunt as an Encounter power. 
    </RulesElement>
@@ -73,14 +73,14 @@ You can use Kender Taunt as an Encounter power.
     <Prereqs> Unselectable </Prereqs>
     <Flavor> You utter a jarring taunt, sending your enemy into a rage. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Kender Racial Power </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Close Burst 10  </specific>
     <specific name="Special"> You can use this power twice per encounter, but only once per round. </specific>
     <specific name="Target"> One creature in burst </specific>
     <specific name="Effect"> The target is marked by you.  </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_CER_RACIAL_TRAIT_1 </specific>
   </RulesElement>
   <RulesElement name="Kenderhome" type="Background" internal-id="ID_CER_BACKGROUND_1" source="Dragonlance" revision-date="x/x/x">
@@ -89,8 +89,8 @@ You can use Kender Taunt as an Encounter power.
     <specific name="Benefit"> You add Stealth and Thievery to your class skill list, and you gain a +1 bonus to Stealth and Thievery checks. </specific>
     <specific name="Short Description"> Kenderhome is home to the Kender, obviously. </specific>
     <specific name="Campaign"> Forgotten Realms </specific>
-    <specific name="Associated Skills" />
-    <specific name="Associated Languages" />
+    <specific name="Associated Skills"/>
+    <specific name="Associated Languages"/>
   </RulesElement>
   <RulesElement name="Kenderhome Benefit" type="Background Choice" internal-id="ID_INTERNAL_BACKGROUND_CHOICE_KENDERHOME_BENEFIT" source="Dragonlance" revision-date="x/x/x">
     <Category> ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT </Category>
@@ -98,10 +98,10 @@ You can use Kender Taunt as an Encounter power.
     <specific name="_SupportsID"> ID_CER_BACKGROUND_1 </specific>
     <specific name="_IsBenefit"> 1 </specific>
     <rules>
-      <modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true" />
-      <modify name="Thievery" type="Skill Training" Field="UniversalClassSkill" value="true" />
-      <statadd name="Stealth Misc" value="+1" />
-      <statadd name="Thievery Misc" value="+1" />
+      <modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+      <modify name="Thievery" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+      <statadd name="Stealth Misc" value="+1"/>
+      <statadd name="Thievery Misc" value="+1"/>
     </rules>
   </RulesElement>
 </D20Rules>

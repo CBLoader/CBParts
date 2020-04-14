@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>PathstoPrestige.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/PathstoPrestige.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/PathstoPrestige.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/PathstoPrestige.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/PathstoPrestige.txt</VersionAddress>
   </UpdateInfo>
   <RulesElement name="Paths to Prestige: Fell Knight" type="source" internal-id="ID_TIV_SOURCE_PATHS_TO_PRESTIGE:_FELL_KNIGHT" source="Core">
     <specific name="IsBeta"> 1 </specific>
@@ -24,13 +24,13 @@
     <specific name="Powers"> ID_TIV_POWER_300_01_01_01,ID_TIV_POWER_300_01_01_02,ID_TIV_POWER_300_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_300_01_01_01,ID_TIV_POWER_300_01_01_02,ID_TIV_POWER_300_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_300_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_300_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_300_02_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_300_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_300_01_01_01" type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_300_01_01_02" type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_300_01_01_03" type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_300_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_300_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_300_02_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_300_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_300_01_01_01" type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_300_01_01_02" type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_300_01_01_03" type="Power" Level="20"/>
     </rules>
 You have forsaken the gods of light and truth for those that dwell in darkness and deception. You have become a twisted, corrupted thing, a hollow mockery of the noble paladin you once were, but you have found power...none can deny that. You can draw upon the might of foul gods to smite your enemies, transforming what was once purifying flame and light into choking darkness and shadow. 
 </RulesElement>
@@ -39,7 +39,7 @@ You have forsaken the gods of light and truth for those that dwell in darkness a
     <specific name="Short Description"> Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Aura of Despair: Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn." />
+      <textstring name="Action Point" value="Aura of Despair: Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn."/>
     </rules>
 Whenever you spend an action point to take an extra action, all enemies with 5 squares suffer a -2 penalty on all defenses until the end of your next turn.
 </RulesElement>
@@ -54,14 +54,14 @@ Any paladin prayer you use that deals radiant damage now deals necrotic damage.
     <specific name="Short Description"> You gain resist 5 necrotic and vulnerability 5 radiant. This increases to resist 10 necrotic and vulnerability 10 radiant at 21st level. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="resist:necrotic" value="+5" type="resist" zero="true" />
-      <statadd name="resist:necrotic" value="+5" type="resist" non-zero="true" />
-      <statadd name="resist:necrotic" value="+5" type="resist" requires="Epic Tier" zero="true" />
-      <statadd name="resist:necrotic" value="+5" type="resist" requires="Epic Tier" non-zero="true" />
-      <statadd name="vulnerable:radiant" value="+5" type="resist" zero="true" />
-      <statadd name="vulnerable:radiant" value="+5" type="resist" non-zero="true" />
-      <statadd name="vulnerable:radiant" value="+5" type="resist" requires="Epic Tier" zero="true" />
-      <statadd name="vulnerable:radiant" value="+5" type="resist" requires="Epic Tier" non-zero="true" />
+      <statadd name="resist:necrotic" value="+5" type="resist" zero="true"/>
+      <statadd name="resist:necrotic" value="+5" type="resist" non-zero="true"/>
+      <statadd name="resist:necrotic" value="+5" type="resist" requires="Epic Tier" zero="true"/>
+      <statadd name="resist:necrotic" value="+5" type="resist" requires="Epic Tier" non-zero="true"/>
+      <statadd name="vulnerable:radiant" value="+5" type="resist" zero="true"/>
+      <statadd name="vulnerable:radiant" value="+5" type="resist" non-zero="true"/>
+      <statadd name="vulnerable:radiant" value="+5" type="resist" requires="Epic Tier" zero="true"/>
+      <statadd name="vulnerable:radiant" value="+5" type="resist" requires="Epic Tier" non-zero="true"/>
     </rules>
 You gain resist 5 necrotic and vulnerability 5 radiant. This increases to resist 10 necrotic and vulnerability 10 radiant at 21st level.
 </RulesElement>
@@ -126,12 +126,12 @@ Targets of your divine challenge that attack your allies without attacking you t
     <specific name="Powers"> ID_TIV_POWER_301_01_01_01,ID_TIV_POWER_301_01_01_02,ID_TIV_POWER_301_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_301_01_01_01,ID_TIV_POWER_301_01_01_02,ID_TIV_POWER_301_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_301_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_301_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_301_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_301_01_01_01" type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_301_01_01_02" type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_301_01_01_03" type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_301_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_301_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_301_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_301_01_01_01" type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_301_01_01_02" type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_301_01_01_03" type="Power" Level="20"/>
     </rules>
 You're a soldier than knows how to lead other soldiers. You don't stand behind the lines issuing orders for runners to carry out, you're right there in the blood and piss dealing out death alongside you're brothers. Sure, you're in charge, but only because you can get the boys in and out alive. You don't have much use for officers or nobility, they only tend to muck things up on the battlefield, and get honest soldiers killed. 
 </RulesElement>
@@ -146,7 +146,7 @@ Allies gain a +2 bonus to damage rolls when they are adjacent to you.
     <specific name="Short Description"> Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="The Centurion's Action: Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target." />
+      <textstring name="Action Point" value="The Centurion's Action: Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target."/>
     </rules>
 Whenever you spend an action point to make another melee attack, one adjacent ally of your choice can make a melee basic attack as a free action against the same target.
 </RulesElement>

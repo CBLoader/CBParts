@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.02</Version>
     <Filename>99-deluxe-missiles-v1.02.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/99-deluxe-missiles-v1.02.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/99-deluxe-missiles-v1.02.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/99-deluxe-missiles-v1.02.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/99-deluxe-missiles-v1.02.txt</VersionAddress>
   </UpdateInfo>
   <!-- Deluxe Missiles -->
   <!-- 99-deluxe-missiles.part, version 1.02 -->
@@ -27,24 +27,24 @@
     <specific name="Level"> 10 </specific>
     <specific name="Gold"> 200 </specific>
     <specific name="Magic Item Type"> Potion </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
-    <specific name="Item Slot" />
-    <specific name="Requirement" />
-    <specific name="Critical" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
+    <specific name="Item Slot"/>
+    <specific name="Requirement"/>
+    <specific name="Critical"/>
     <specific name="Special"> Consuming this potion counts as a use of a magic item daily power. </specific>
     <specific name="Power"> Power (Consumable * Healing): Minor Action. Drink this potion and spend a healing surge and regain 1d6 additional hit points. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Missile" type="Power" internal-id="ID_WOG_HR_POWER_1" source="Player's Handbook" revision-date="3/7/2011 10:30:00 PM">
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
     <Flavor> You launch a silvery bolt of force at an enemy. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Attack 1 </specific>
     <specific name="Keywords"> Arcane, Evocation, Force, Implement </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -54,13 +54,13 @@
     <specific name="Hit"> 2d4 + Intelligence modifier force damage.
 Increase damage to 4d4 + Intelligence modifier at 21st level. </specific>
     <specific name="Special"> This power counts as a ranged basic attack. When a power allows you to make a ranged basic attack, you can use this power. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_9 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_BasicAttack"> Ranged </specific>
     <rules>
-      <modify name="this" Field="_BasicAttack" value="Ranged" />
+      <modify name="this" Field="_BasicAttack" value="Ranged"/>
     </rules>
 Mordenkainen's force missiles prove more powerful than magic missiles but you must make an attack roll to use them.
    </RulesElement>
@@ -68,14 +68,14 @@ Mordenkainen's force missiles prove more powerful than magic missiles but you mu
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_MINOR_ACTION,1 </Category>
     <Flavor> You begin to fling force bolts with a flick of your wrist. </Flavor>
     <specific name="Power Usage"> Daily </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Wizard Attack 1 </specific>
     <specific name="Keywords"> Arcane, Force, Implement </specific>
     <specific name="Action Type"> Minor Action </specific>
-    <specific name="Attack Type" />
+    <specific name="Attack Type"/>
     <specific name="Note"> You must know the magic missile at-will wizard power or you must know the Mordenkainen's force missile at-will wizard power to learn this spell. </specific>
     <specific name="Effect"> Until the end of the encounter, as a minor action once per turn, you can cast magic missile or Mordenkainen's force missile. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_9 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -85,27 +85,27 @@ Mordenkainen's force missiles prove more powerful than magic missiles but you mu
     <specific name="Level"> 2 </specific>
     <specific name="Gold"> 520 </specific>
     <specific name="Magic Item Type"> Staff </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +1d6 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily): Free Action. Use this power when you cast magic missile or Mordenkainen's force missile. Target one or two creatures with the attack. No target can be more than 5 squares from any other target. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <specific name="Property"> When you use magic missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
     <specific name="Property"> When you cast Mordenkainen's force missile with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
 On a critical hit you deal +1d8 damage instead of +1d6 when using Mordenkainen's force missile. </specific>
     <rules>
-      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +1)" value="+1" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +1" value="Add an item bonus to the damage equal to the staff's enhancement bonus (1 point)." />
-      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +1)" value="+1" type="item" />
-      <statadd name="Mordenkainen's Force Missile:damage" value="+1" type="item" />
+      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +1)" value="+1" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +1" value="Add an item bonus to the damage equal to the staff's enhancement bonus (1 point)."/>
+      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +1)" value="+1" type="item"/>
+      <statadd name="Mordenkainen's Force Missile:damage" value="+1" type="item"/>
     </rules>
   </RulesElement>
   <RulesElement name="Staff of Missile Mastery +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2977" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
@@ -113,27 +113,27 @@ On a critical hit you deal +1d8 damage instead of +1d6 when using Mordenkainen's
     <specific name="Level"> 7 </specific>
     <specific name="Gold"> 2600 </specific>
     <specific name="Magic Item Type"> Staff </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +2d6 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily): Free Action. Use this power when you cast magic missile or Mordenkainen's force missile. Target one or two creatures with the attack. No target can be more than 5 squares from any other target. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <specific name="Property"> When you use magic missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
     <specific name="Property"> When you cast Mordenkainen's force missile with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
 On a critical hit you deal +2d8 damage instead of +2d6 when using Mordenkainen's force missile. </specific>
     <rules>
-      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +2)" value="+2" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +2" value="Add an item bonus to the damage equal to the staff's enhancement bonus (2 points)." />
-      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +2)" value="+1" type="item" />
-      <statadd name="Mordenkainen's Force Missile:damage" value="+2" type="item" />
+      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +2)" value="+2" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +2" value="Add an item bonus to the damage equal to the staff's enhancement bonus (2 points)."/>
+      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +2)" value="+1" type="item"/>
+      <statadd name="Mordenkainen's Force Missile:damage" value="+2" type="item"/>
     </rules>
   </RulesElement>
   <RulesElement name="Staff of Missile Mastery +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2978" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
@@ -141,28 +141,28 @@ On a critical hit you deal +2d8 damage instead of +2d6 when using Mordenkainen's
     <specific name="Level"> 12 </specific>
     <specific name="Gold"> 13000 </specific>
     <specific name="Magic Item Type"> Staff </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +3d6 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily): Free Action. Use this power when you cast magic missile or Mordenkainen's force missile. Target one or two creatures with the attack. No target can be more than 5 squares from any other target. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <specific name="Property"> When you use magic missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
     <specific name="Property"> When you cast Mordenkainen's force missile with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
 On a critical hit you deal +3d8 damage instead of +3d6 when using Mordenkainen's force missile.
  </specific>
     <rules>
-      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +3)" value="+3" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +3" value="Add an item bonus to the damage equal to the staff's enhancement bonus (3 points)." />
-      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +3)" value="+1" type="item" />
-      <statadd name="Mordenkainen's Force Missile:damage" value="+3" type="item" />
+      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +3)" value="+3" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +3" value="Add an item bonus to the damage equal to the staff's enhancement bonus (3 points)."/>
+      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +3)" value="+1" type="item"/>
+      <statadd name="Mordenkainen's Force Missile:damage" value="+3" type="item"/>
     </rules>
   </RulesElement>
   <RulesElement name="Staff of Missile Mastery +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2979" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
@@ -170,27 +170,27 @@ On a critical hit you deal +3d8 damage instead of +3d6 when using Mordenkainen's
     <specific name="Level"> 17 </specific>
     <specific name="Gold"> 65000 </specific>
     <specific name="Magic Item Type"> Staff </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +4d6 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily): Free Action. Use this power when you cast magic missile or Mordenkainen's force missile. Target one, two, or three creatures with the attack. No target can be more than 5 squares from any other target. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <specific name="Property"> When you use magic missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
     <specific name="Property"> When you cast Mordenkainen's force missile with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
 On a critical hit you deal +4d8 damage instead of +4d6 when using Mordenkainen's force missile. </specific>
     <rules>
-      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +4)" value="+4" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +4" value="Add an item bonus to the damage equal to the staff's enhancement bonus (4 points)." />
-      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +4)" value="+1" type="item" />
-      <statadd name="Mordenkainen's Force Missile:damage" value="+4" type="item" />
+      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +4)" value="+4" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +4" value="Add an item bonus to the damage equal to the staff's enhancement bonus (4 points)."/>
+      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +4)" value="+1" type="item"/>
+      <statadd name="Mordenkainen's Force Missile:damage" value="+4" type="item"/>
     </rules>
   </RulesElement>
   <RulesElement name="Staff of Missile Mastery +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2980" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
@@ -198,27 +198,27 @@ On a critical hit you deal +4d8 damage instead of +4d6 when using Mordenkainen's
     <specific name="Level"> 22 </specific>
     <specific name="Gold"> 325000 </specific>
     <specific name="Magic Item Type"> Staff </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +5d6 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily): Free Action. Use this power when you cast magic missile or Mordenkainen's force missile. Target one, two, or three creatures with the attack. No target can be more than 5 squares from any other target. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <specific name="Property"> When you use magic missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
     <specific name="Property"> When you cast Mordenkainen's force missile with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
 On a critical hit you deal +5d8 damage instead of +5d6 when using Mordenkainen's force missile. </specific>
     <rules>
-      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +5)" value="+5" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +5" value="Add an item bonus to the damage equal to the staff's enhancement bonus (5 points)." />
-      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +5)" value="+1" type="item" />
-      <statadd name="Mordenkainen's Force Missile:damage" value="+5" type="item" />
+      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +5)" value="+5" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +5" value="Add an item bonus to the damage equal to the staff's enhancement bonus (5 points)."/>
+      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +5)" value="+1" type="item"/>
+      <statadd name="Mordenkainen's Force Missile:damage" value="+5" type="item"/>
     </rules>
   </RulesElement>
   <RulesElement name="Staff of Missile Mastery +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_2981" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
@@ -226,723 +226,723 @@ On a critical hit you deal +5d8 damage instead of +5d6 when using Mordenkainen's
     <specific name="Level"> 27 </specific>
     <specific name="Gold"> 1625000 </specific>
     <specific name="Magic Item Type"> Staff </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +6d6 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Daily): Free Action. Use this power when you cast magic missile or Mordenkainen's force missile. Target one, two, or three creatures with the attack. No target can be more than 5 squares from any other target. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
-    <specific name="Granted Powers" />
+    <specific name="Granted Powers"/>
     <specific name="Property"> When you use magic missile with this implement, you gain an item bonus to the damage equal to the staff's enhancement bonus. </specific>
     <specific name="Property"> When you cast Mordenkainen's force missile with this implement, you gain a +1 item bonus to attack rolls and an item bonus to damage rolls equal to the staff's enhancement bonus.
 On a critical hit you deal +6d8 damage instead of +6d6 when using Mordenkainen's force missile. </specific>
     <rules>
-      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +6)" value="+6" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +6" value="Add an item bonus to the damage equal to the staff's enhancement bonus (6 points)." />
-      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +6)" value="+1" type="item" />
-      <statadd name="Mordenkainen's Force Missile:damage" value="+6" type="item" />
+      <statadd name="ID_FMP_POWER_463:nonroll-damage(Staff of Missile Mastery +6)" value="+6" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Staff of Missile Mastery +6" value="Add an item bonus to the damage equal to the staff's enhancement bonus (6 points)."/>
+      <statadd name="Mordenkainen's Force Missile:attack(Staff of Missile Mastery +6)" value="+1" type="item"/>
+      <statadd name="Mordenkainen's Force Missile:damage" value="+6" type="item"/>
     </rules>
   </RulesElement>
   <RulesElement name="Force Wand +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3045" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 3 </specific>
     <specific name="Gold"> 680 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +1d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Gain a +1 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+1" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+1" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+1" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+1"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Force Wand +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3046" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +2d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Gain a +1 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+1" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+2" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+1" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+2"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Force Wand +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3047" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 13 </specific>
     <specific name="Gold"> 17000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +3d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Gain a +2 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+2" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+3" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+2" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+3"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Force Wand +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3048" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +4d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Gain a +2 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+2" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+4" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+2" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+4"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Force Wand +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3049" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 23 </specific>
     <specific name="Gold"> 425000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +5d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Gain a +3 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+3" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+5" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+3" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+5"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Force Wand +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3050" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +6d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Gain a +3 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+3" type="item" />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+6" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+3" type="item"/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+6"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Master's Wand of Magic Missile +1" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3087" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your magic missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 4 </specific>
     <specific name="Gold"> 840 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +1d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Any target you damage with the magic missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +1" value="Any target you damage is pushed 1 square." />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+1" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +1" value="Any target you damage is pushed 1 square."/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+1"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Master's Wand of Magic Missile +2" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3088" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your magic missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 9 </specific>
     <specific name="Gold"> 4200 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +2d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Any target you damage with the magic missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +2" value="Any target you damage is pushed 1 square." />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+2" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +2" value="Any target you damage is pushed 1 square."/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+2"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Master's Wand of Magic Missile +3" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3089" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your magic missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 14 </specific>
     <specific name="Gold"> 21000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +3d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Any target you damage with the magic missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +3" value="Any target you damage is pushed 1 square." />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+3" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +3" value="Any target you damage is pushed 1 square."/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+3"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Master's Wand of Magic Missile +4" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3090" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your magic missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 19 </specific>
     <specific name="Gold"> 105000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +4d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Any target you damage with the magic missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +4" value="Any target you damage is pushed 1 square." />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+4" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +4" value="Any target you damage is pushed 1 square."/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+4"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Master's Wand of Magic Missile +5" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3091" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your magic missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 24 </specific>
     <specific name="Gold"> 525000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +5d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Any target you damage with the magic missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +5" value="Any target you damage is pushed 1 square." />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+5" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +5" value="Any target you damage is pushed 1 square."/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+5"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Master's Wand of Magic Missile +6" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_3092" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your magic missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 29 </specific>
     <specific name="Gold"> 2625000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +6d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter): Standard Action. As the wizard's magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_FMP_POWER_463(Encounter) </specific>
     <specific name="Property"> Any target you damage with the magic missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_463(Encounter) </specific>
     <rules>
-      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +6" value="Any target you damage is pushed 1 square." />
-      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463" />
-      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463" />
-      <statadd name="Offhand Implement Bonus" value="+6" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Magic Missile" type="Power" Field="Master's Wand of Magic Missile +6" value="Any target you damage is pushed 1 square."/>
+      <modify name="Magic Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_FMP_POWER_463"/>
+      <grant name="ID_FMP_POWER_463" type="Power" requires="!ID_FMP_POWER_463"/>
+      <statadd name="Offhand Implement Bonus" value="+6"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Wand +1" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_2" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 3 </specific>
     <specific name="Gold"> 680 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +1d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Gain a +1 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+1" type="item" />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+1" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+1" type="item"/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+1"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Wand +2" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_3" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +2d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Gain a +1 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+1" type="item" />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+2" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+1" type="item"/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+2"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Wand +3" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_4" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 13 </specific>
     <specific name="Gold"> 17000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +3d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Gain a +2 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+2" type="item" />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+3" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+2" type="item"/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+3"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Wand +4" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_5" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +4d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Gain a +2 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+2" type="item" />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+4" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+2" type="item"/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+4"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Wand +5" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_6" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 23 </specific>
     <specific name="Gold"> 425000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +5d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Gain a +3 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+3" type="item" />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+5" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+3" type="item"/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+5"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Force Wand +6" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_7" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> With this wand, your force powers pack a bigger punch. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +6d8 force damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Gain a +3 item bonus to damage rolls when you use this wand to attack with a power that has the force keyword. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <statadd name="force:damage" value="+3" type="item" />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+6" />
-      <grant name="WearingWand" type="Category" />
+      <statadd name="force:damage" value="+3" type="item"/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+6"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Wand of Force Missile +1" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_8" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your Mordenkainen's force missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 3 </specific>
     <specific name="Gold"> 680 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +1d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +1 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Any target you damage with the Mordenkainen's force missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +1" value="Any target you damage is pushed 1 square." />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+1" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +1" value="Any target you damage is pushed 1 square."/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+1"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Wand of Force Missile +2" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_9" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your Mordenkainen's force missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 8 </specific>
     <specific name="Gold"> 3400 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +2d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +2 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Any target you damage with the Mordenkainen's force missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +2" value="Any target you damage is pushed 1 square." />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+2" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +2" value="Any target you damage is pushed 1 square."/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+2"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Wand of Force Missile +3" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_10" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your Mordenkainen's force missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 13 </specific>
     <specific name="Gold"> 17000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +3d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +3 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Any target you damage with the Mordenkainen's force missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +3" value="Any target you damage is pushed 1 square." />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+3" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +3" value="Any target you damage is pushed 1 square."/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+3"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Wand of Force Missile +4" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_11" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your Mordenkainen's force missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 18 </specific>
     <specific name="Gold"> 85000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +4d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +4 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Any target you damage with the Mordenkainen's force missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +4" value="Any target you damage is pushed 1 square." />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+4" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +4" value="Any target you damage is pushed 1 square."/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+4"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Wand of Force Missile +5" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_12" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your Mordenkainen's force missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 23 </specific>
     <specific name="Gold"> 425000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +5d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +5 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Any target you damage with the Mordenkainen's force missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +5" value="Any target you damage is pushed 1 square." />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+5" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +5" value="Any target you damage is pushed 1 square."/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+5"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Mordenkainen's Wand of Force Missile +6" type="Magic Item" internal-id="ID_WOG_HR_MAGIC_ITEM_13" source="Adventurer's Vault" revision-date="3/7/2011 10:30:00 PM">
     <Flavor> Your Mordenkainen's force missiles impact a foe with the force of a bull rush. </Flavor>
-    <specific name="Offhand Implement Bonus" />
+    <specific name="Offhand Implement Bonus"/>
     <specific name="Level"> 28 </specific>
     <specific name="Gold"> 2125000 </specific>
     <specific name="Magic Item Type"> Wand </specific>
-    <specific name="Tier" />
-    <specific name="_Item_Set_ID" />
-    <specific name="Armor" />
-    <specific name="Weapon" />
+    <specific name="Tier"/>
+    <specific name="_Item_Set_ID"/>
+    <specific name="Armor"/>
+    <specific name="Weapon"/>
     <specific name="Item Slot"> Off-hand </specific>
-    <specific name="Requirement" />
+    <specific name="Requirement"/>
     <specific name="Critical"> +6d8 damage </specific>
-    <specific name="Special" />
+    <specific name="Special"/>
     <specific name="Power"> Power (Encounter - Arcane, Force, Implement): Standard Action. As the Mordenkainen's force magic missile power. </specific>
-    <specific name="_Rarity" />
+    <specific name="_Rarity"/>
     <specific name="Rarity"> Uncommon </specific>
     <specific name="Enhancement"> +6 attack rolls and damage rolls </specific>
     <specific name="Granted Powers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <specific name="Property"> Any target you damage with the Mordenkainen's force missile power is pushed 1 square. </specific>
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1(Encounter) </specific>
     <rules>
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +6" value="Any target you damage is pushed 1 square." />
-      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1" />
-      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1" />
-      <statadd name="Offhand Implement Bonus" value="+6" />
-      <grant name="WearingWand" type="Category" />
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Mordenkainen's Wand of Force Missile +6" value="Any target you damage is pushed 1 square."/>
+      <modify name="Mordenkainen's Force Missile" type="Power" Field="Power Usage" value="Encounter" requires="!ID_WOG_HR_POWER_1"/>
+      <grant name="ID_WOG_HR_POWER_1" type="Power" requires="!ID_WOG_HR_POWER_1"/>
+      <statadd name="Offhand Implement Bonus" value="+6"/>
+      <grant name="WearingWand" type="Category"/>
     </rules>
   </RulesElement>
   <RulesElement name="Missile Choice" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3037" source="House Rules Supplement" revision-date="3/7/2011 10:30:00 PM">
@@ -952,7 +952,7 @@ On a critical hit you deal +6d8 damage instead of +6d6 when using Mordenkainen's
     <specific name="_DisplayPowers"> ID_FMP_POWER_463, ID_WOG_HR_POWER_1 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3037" />
+      <select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_3037"/>
     </rules>
 Choose one of the following class powers at 1st level:
 Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
@@ -968,7 +968,7 @@ Mordenkainen's Force Missile: You launch a silvery bolt of force at an enemy (D&
     <specific name="_DisplayPowers"> ID_FMP_POWER_463 </specific>
     <specific name="_CS_ShortDescription"> Gain the magic missile power </specific>
     <rules>
-      <grant name="ID_FMP_POWER_463" type="Power" />
+      <grant name="ID_FMP_POWER_463" type="Power"/>
     </rules>
 Choose one of the following class powers at 1st level:
 Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).
@@ -984,7 +984,7 @@ Mordenkainen's Force Missile: You launch a silvery bolt of force at an enemy (D&
     <specific name="_DisplayPowers"> ID_WOG_HR_POWER_1 </specific>
     <specific name="_CS_ShortDescription"> Gain the Mordenkainen's force missile power </specific>
     <rules>
-      <grant name="ID_WOG_HR_POWER_1" type="Power" />
+      <grant name="ID_WOG_HR_POWER_1" type="Power"/>
     </rules>
 Choose one of the following class powers at 1st level:
 Magic Missile: A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target (Essentials Magic Missile).

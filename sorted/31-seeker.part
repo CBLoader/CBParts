@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.03</Version>
     <Filename>31-seeker.part</Filename>
-    <PartAddress>https://vorpald20.com/cbloader/31-seeker.part</PartAddress>
-    <VersionAddress>https://vorpald20.com/cbloader/version.php?part=31-seeker</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/sorted/31-seeker.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/sorted/31-seeker.txt</VersionAddress>
   </UpdateInfo>
   <!-- Seeker -->
   <!-- 31-seeker.part, version 1.03 -->
@@ -22,13 +22,13 @@
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_472,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
     <Flavor> Your eyesight sharpens until you can pick out the most distant foes. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Seeker Utility 6 </specific>
     <specific name="Keywords"> Primal </specific>
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> Until the end of your next turn, you take no penalty to attack rolls for attacking at long range. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_472 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
@@ -38,7 +38,7 @@
     <Prereqs> Crimson Hunter </Prereqs>
     <Flavor> You draw from your ancestors' insights to guide your shots. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Crimson Hunter Attack 11 </specific>
     <specific name="Keywords"> Primal, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -47,13 +47,13 @@
     <specific name="Attack"> Wisdom vs. AC </specific>
     <specific name="Hit"> 2[W] + Wisdom modifier damage, and the target gains vulnerable 5 to all damage until the end of your next turn. </specific>
     <specific name="Special"> You can use this power as a ranged basic attack. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_PARAGON_PATH_473 </specific>
     <specific name="Level"> 11 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_BasicAttack"> Ranged </specific>
     <rules>
-      <modify name="this" Field="_BasicAttack" value="Ranged" />
+      <modify name="this" Field="_BasicAttack" value="Ranged"/>
     </rules>
   </RulesElement>
 <!-- DSH -->
@@ -89,7 +89,7 @@ Fighting in close quarters can be a daunting and difficult proposition. Some del
     <specific name="Attack"> Wisdom vs. AC </specific>
     <specific name="Hit"> 1[W] damage, and you can slide the target 1 square.
 Level 21: 2[W] modifier damage. </specific>
-    <specific name="Effect"></specific>
+    <specific name="Effect"/>
     <specific name="Class"> ID_FMP_CLASS_472 </specific>
     <specific name="Level"> 1 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -108,7 +108,7 @@ When you strike at your foes, lunar spirits flood the area of your volley, pulli
     <specific name="Target"> One or two creatures </specific>
     <specific name="Attack"> Wisdom vs. AC </specific>
     <specific name="Hit"> 1[W] + Wisdom modifier damage, you can teleport the target 1 square, and the target takes a penalty to damage rolls equal to your Wisdom modifier until the end of your next turn. </specific>
-    <specific name="Effect"></specific>
+    <specific name="Effect"/>
     <specific name="Class"> ID_FMP_CLASS_472 </specific>
     <specific name="Level"> 3 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -147,7 +147,7 @@ You cast your enemies into a patch of dense webs in the Feywild. Your enemies bl
     <specific name="Target"> One or two creatures </specific>
     <specific name="Attack"> Wisdom vs. AC </specific>
     <specific name="Hit"> 1[W] + 1d8 + Wisdom modifier cold and radiant damage, and the target is restrained (save ends). </specific>
-    <specific name="Effect"></specific>
+    <specific name="Effect"/>
     <specific name="Class"> ID_FMP_CLASS_472 </specific>
     <specific name="Level"> 13 </specific>
     <specific name="Power Type"> Attack </specific>
@@ -163,10 +163,10 @@ Lunar spirits haunt your attack, binding your enemy in cold moonlight.
     <specific name="Keywords"> Primal, Psychic, Weapon, Zone </specific>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Area burst 2 within weapon range </specific>
-	<specific name="Requirement"></specific>
-    <specific name="Target"></specific>
-    <specific name="Attack"></specific>
-    <specific name="Hit"></specific>
+	<specific name="Requirement"/>
+    <specific name="Target"/>
+    <specific name="Attack"/>
+    <specific name="Hit"/>
     <specific name="Effect">The burst creates a zone that lasts until the end of your next turn. The zone is difficult terrain for your enemies, and any enemy that enters the zone or ends its turn there takes 15 psychic damage (an enemy can take this damage only once per turn). You and your allies have partial cover while in the zone.</specific>
     <specific name="Class"> ID_FMP_CLASS_472 </specific>
     <specific name="Level"> 17 </specific>
@@ -183,7 +183,7 @@ Your attack allows a living forest of the Feywild to partially manifest in your 
     <specific name="Keywords"> Polymorph, Primal, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Ranged weapon </specific>
-	<specific name="Requirement"></specific>
+	<specific name="Requirement"/>
     <specific name="Target">One creature</specific>
     <specific name="Attack">Wisdom vs. AC</specific>
     <specific name="Hit">1[W] + 1d8 + Wisdom modifier damage, and the target assumes the form of a Tiny wisp of light (save ends). In this form, the target gains a fly speed of 6 (hover) and is dazed, and it cannot use standard or minor actions. All of the target's equipment transforms with it.</specific>
@@ -203,7 +203,7 @@ You can momentarily transform a creature into a wisp of light, not unlike the wi
     <specific name="Keywords"> Primal, Weapon, Zone </specific>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Ranged weapon </specific>
-	<specific name="Requirement"></specific>
+	<specific name="Requirement"/>
     <specific name="Target">One creature</specific>
     <specific name="Attack">Wisdom vs. Will</specific>
     <specific name="Hit">1[W] + 1d8 + Wisdom modifier damage, and the target is removed from play until the end of your next turn.</specific>
@@ -227,12 +227,12 @@ You create a gateway into the Feywild in the form of a grotto of slippery stones
     <specific name="Keywords"> Primal, Teleportation, Weapon </specific>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Area burst 2 within weapon range </specific>
-	<specific name="Requirement"></specific>
+	<specific name="Requirement"/>
     <specific name="Target">Each enemy in the burst</specific>
     <specific name="Attack">Wisdom vs. AC</specific>
     <specific name="Hit">2[W] + Wisdom modifier damage, and you can teleport the target to a square within 3 squares of you. In addition, the target takes a -5 penalty to attack rolls until the end of your next turn.</specific>
     <specific name="Effect">Until the end of your next turn, when you hit an enemy with a ranged attack, you can teleport it to a square within 3 squares of you as a free action right after the attack. In addition, the target takes a -5 penalty to attack rolls until the end of your next turn.</specific>
-	<specific name="Sustain Minor"></specific>
+	<specific name="Sustain Minor"/>
     <specific name="Class"> ID_FMP_CLASS_472 </specific>
     <specific name="Level"> 27 </specific>
     <specific name="Power Type"> Attack </specific>

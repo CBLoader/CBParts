@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1</Version>
     <Filename>AdvancedPlayer'sGuide.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/AdvancedPlayer'sGuide.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/AdvancedPlayer'sGuide.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/AdvancedPlayer'sGuide.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/AdvancedPlayer'sGuide.txt</VersionAddress>
   </UpdateInfo>
   <!-- Coded by Tivaan -->
   <!-- Advanced Player's Guide -->
@@ -16,7 +16,7 @@
   <RulesElement name="Chi" type="Power Source" internal-id="ID_TIV_POWER_SOURCE_APG_01" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
 Your martial artist powers are technically prayers, as they draw on a divine source, but these are not spoken litanies of faith.
 </RulesElement>
-  <RulesElement name="Chi" type="Category" internal-id="ID_TIV_CATEGORY_CHI" source="Core" revision-date="1/25/2011 10:34:07 AM"></RulesElement>
+  <RulesElement name="Chi" type="Category" internal-id="ID_TIV_CATEGORY_CHI" source="Core" revision-date="1/25/2011 10:34:07 AM"/>
   <!-- Races -->
   <!-- Earth Gnome -->
   <RulesElement name="Earth Gnome" type="Race" internal-id="ID_TIV_RACE_ADVANCED-PLAYERS-GUIDE_01" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
@@ -42,12 +42,12 @@ Your martial artist powers are technically prayers, as they draw on a divine sou
     <specific name="Short Description"> More fey than the dour dwarves but far earthier than the elves or their cousins among the other gnome races, earth gnomes occupy an odd middle ground between worlds. While some earth gnome communities are insular indeed, many earth gnomes are friendly, outgoing, even prankish - a persona that, in combination with their small size, prevents most other races from taking them seriously. Some ignore the attitudes of the larger beings, while others set out to prove themselves, but all earth gnomes take an intense pride in their heritage.</specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_AVG_01,ID_TIV_RACIAL_TRAIT_AVG_02,ID_TIV_RACIAL_TRAIT_AVG_03,ID_TIV_RACIAL_TRAIT_AVG_04 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_EARTH_GNOME" type="Grants" />
-      <statadd name="Speed" value="+5" />
-      <textstring name="Average Height" value="3' 11&quot;-4'4&quot;" />
-      <textstring name="Average Weight" value="78-90 lb." />
-      <textstring name="Size" value="Small" />
-      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom" />
+      <grant name="ID_INTERNAL_GRANTS_EARTH_GNOME" type="Grants"/>
+      <statadd name="Speed" value="+5"/>
+      <textstring name="Average Height" value="3' 11&quot;-4'4&quot;"/>
+      <textstring name="Average Weight" value="78-90 lb."/>
+      <textstring name="Size" value="Small"/>
+      <select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom"/>
     </rules>
 
 
@@ -60,17 +60,17 @@ Play an earth gnome if you want...
   <RulesElement name="Earth Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_EARTH_GNOME" source="Advanced Player's Guide">
     <specific name="_SupportsID"> ID_TIV_RACE_ADVANCED-PLAYERS-GUIDE_01 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_01" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_02" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_03" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_04" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_3" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_01" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_02" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_03" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_04" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_3" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Earth Gnome" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_EARTH_GNOME" source="Advanced Player's Guide">
@@ -82,7 +82,7 @@ You count as an Earth Gnome for meeting prerequisites.
     <specific name="Short Description"> Gain Commune With Animals ritual. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="FREEBEE:ID_TIV_RITUAL_APG_01" value="+1" />
+      <statadd name="FREEBEE:ID_TIV_RITUAL_APG_01" value="+1"/>
     </rules>
 Earth gnomes have a strange, almost spiritual affinity for tiny burrowing mammals (rabbits, badgers, weasels, and the like). Once per day, all earth gnomes can cast the Commune With Animals ritual without cost, even if they do not formally know it or cannot normally cast rituals. They may only target tiny burrowing mammals when doing so. (Earth gnomes can choose to learn the ritual normally, in order to commune with other animals, but they must meet all prerequisites and pay all costs as normal.) 
 </RulesElement>
@@ -91,8 +91,8 @@ Earth gnomes have a strange, almost spiritual affinity for tiny burrowing mammal
     <specific name="Short Description"> Bonuses to Will defense (+1) and Saving Throws against illusions (+5). </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Will Defense" value="+1" type="Racial Trait" />
-      <statadd name="Saving Throws" value="+5" type="Racial Trait" condition="Against illusion effects" />
+      <statadd name="Will Defense" value="+1" type="Racial Trait"/>
+      <statadd name="Saving Throws" value="+5" type="Racial Trait" condition="Against illusion effects"/>
     </rules>
 You gain a +1 racial bonus on your Will defense, and a +5 racial bonus to saving throws against illusion effects.
 </RulesElement>
@@ -110,7 +110,7 @@ If you have cover or concealment when you make an initiative check, you can make
     <specific name="type"> At-Will </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_AVG_04_01 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_AVG_04_01  " type="Power" />
+      <grant name="ID_TIV_POWER_AVG_04_01  " type="Power"/>
     </rules>
 You have the Battlefield Trickery Power.
 </RulesElement>
@@ -148,12 +148,12 @@ You have the Battlefield Trickery Power.
     <specific name="Short Description"> Most folks assume that the orc-blooded are all the children of a human and orc pairing, often an unwilling one and that is, indeed, the source of a few members of the race. Most orc-blooded, however, are descendants from days of old, when humans were more primitive and some tribes intermingled with orcs on a regular basis. The line bred true, and in several regions of the wild, clans of orc-blooded exist as their own race.</specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_AVG_05,ID_TIV_RACIAL_TRAIT_AVG_06,ID_TIV_RACIAL_TRAIT_AVG_07,ID_TIV_RACIAL_TRAIT_AVG_08 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_ORC-BLOODED" type="Grants" />
-      <statadd name="Speed" value="+6" />
-      <textstring name="Average Height" value="5' 11&quot;-6'5&quot;" />
-      <textstring name="Average Weight" value="180-280 lb." />
-      <textstring name="Size" value="Medium" />
-      <select type="Race Ability Bonus" number="1" Category="Constitution|Wisdom" />
+      <grant name="ID_INTERNAL_GRANTS_ORC-BLOODED" type="Grants"/>
+      <statadd name="Speed" value="+6"/>
+      <textstring name="Average Height" value="5' 11&quot;-6'5&quot;"/>
+      <textstring name="Average Weight" value="180-280 lb."/>
+      <textstring name="Size" value="Medium"/>
+      <select type="Race Ability Bonus" number="1" Category="Constitution|Wisdom"/>
     </rules>
 
 
@@ -166,17 +166,17 @@ Play an Orc-Blooded if you want...
   <RulesElement name="Orc-Blooded" type="Grants" internal-id="ID_INTERNAL_GRANTS_ORC-BLOODED" source="Advanced Player's Guide">
     <specific name="_SupportsID"> ID_TIV_RACE_ADVANCED-PLAYERS-GUIDE_02 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size" />
-      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_05" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_06" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_07" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_08" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_FMP_LANGUAGE_19" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_MEDIUM" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_LOW-LIGHT" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_05" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_06" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_07" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_08" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_STRENGTH" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_FMP_LANGUAGE_19" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ATHLETICS_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_NATURE_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Orc-Blooded" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_ORC-BLOODED" source="Advanced Player's Guide">
@@ -188,8 +188,8 @@ You count as an Orc-Blooded for meeting prerequisites.
     <specific name="Short Description"> You gain proficiency with the hand axe and battleaxe. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HANDAXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BATTLEAXE)" type="Proficiency"/>
     </rules>
 You gain proficiency with the hand axe and battleaxe. 
 </RulesElement>
@@ -198,7 +198,7 @@ You gain proficiency with the hand axe and battleaxe.
     <specific name="Short Description"> You can take feats that have either orc or human as a prerequisite. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace" />
+      <grant name="ID_INTERNAL_COUNTSASRACE_HUMAN" type="CountsAsRace"/>
     </rules>
 You can take feats that have either orc or human as a prerequisite (as well as those specifically for the orc-blooded), as long as you meet any other requirements. 
 </RulesElement>
@@ -207,7 +207,7 @@ You can take feats that have either orc or human as a prerequisite (as well as t
     <specific name="Short Description"> You gain a +2 racial bonus to death saves. </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Saving Throws" value="+2" type="Racial Trait" condition="Bonus to Death Saves only." />
+      <statadd name="Saving Throws" value="+2" type="Racial Trait" condition="Bonus to Death Saves only."/>
     </rules>
 It's exceedingly difficult to keep an orc-blooded down. You gain a +2 racial bonus to death saves. 
 </RulesElement>
@@ -219,7 +219,7 @@ It's exceedingly difficult to keep an orc-blooded down. You gain a +2 racial bon
     <specific name="type"> Encounter </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_AVG_08_01 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_AVG_08_01  " type="Power" />
+      <grant name="ID_TIV_POWER_AVG_08_01  " type="Power"/>
     </rules>
 You have the Savage Ferocity Power.
 </RulesElement>
@@ -259,13 +259,13 @@ You have the Savage Ferocity Power.
     <specific name="Short Description"> Shire halflings are cousins of the more well known halfling race more closely related than, say, elves and eladrin, but still boasting their share of racial differences. Where other halflings are nomadic traders and river-travelers, shire halflings prefer lives of homey comfort, and view the notion of adventuring with something akin to horror. Yet some of them possess the same wanderlust as their nomadic cousins, a need that drives them, despite their "better judgment," to take up an adventuring lifestyle, at least for a time.</specific>
     <specific name="Racial Traits"> ID_TIV_RACIAL_TRAIT_AVG_09,ID_TIV_RACIAL_TRAIT_AVG_10,ID_TIV_RACIAL_TRAIT_AVG_11 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_SHIRE_HALFLING" type="Grants" />
-      <statadd name="Speed" value="+5" />
-      <textstring name="Average Height" value="3' 10&quot;-4'2&quot;" />
-      <textstring name="Average Weight" value="100-125 lb." />
-      <textstring name="Size" value="Small" />
-      <select type="Race Ability Bonus" number="1" Category="Charisma|Wisdom" />
-      <select type="Language" number="1" Category="Starting" />
+      <grant name="ID_INTERNAL_GRANTS_SHIRE_HALFLING" type="Grants"/>
+      <statadd name="Speed" value="+5"/>
+      <textstring name="Average Height" value="3' 10&quot;-4'2&quot;"/>
+      <textstring name="Average Weight" value="100-125 lb."/>
+      <textstring name="Size" value="Small"/>
+      <select type="Race Ability Bonus" number="1" Category="Charisma|Wisdom"/>
+      <select type="Language" number="1" Category="Starting"/>
     </rules>
 
 
@@ -278,15 +278,15 @@ Play a Shire Halfling if you want...
   <RulesElement name="Shire Halfling" type="Grants" internal-id="ID_INTERNAL_GRANTS_SHIRE_HALFLING" source="Advanced Player's Guide">
     <specific name="_SupportsID"> ID_TIV_RACE_ADVANCED-PLAYERS-GUIDE_03 </specific>
     <rules>
-      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_09" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_10" type="Racial Trait" />
-      <grant name="ID_TIV_RACIAL_TRAIT_AVG_11" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus" />
-      <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait" />
-      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait" />
+      <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+      <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_09" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_10" type="Racial Trait"/>
+      <grant name="ID_TIV_RACIAL_TRAIT_AVG_11" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
+      <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
+      <grant name="ID_INTERNAL_RACIAL_TRAIT_STEALTH_BONUS" type="Racial Trait"/>
     </rules>
   </RulesElement>
   <RulesElement name="Shire Halfling" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_SHIRE_HALFLING" source="Advanced Player's Guide">
@@ -298,8 +298,8 @@ You count as an Shire Halfling for meeting prerequisites.
     <specific name="Short Description"> You gain bonuses to your Fortitude defense (+1) and saving throws against fear and poison (+3). </specific>
     <specific name="Level"> 1 </specific>
     <rules>
-      <statadd name="Fortitude Defense" value="+1" type="Racial Trait" />
-      <statadd name="Saving Throws" value="+3" type="Racial Trait" condition="Against fear and poison." />
+      <statadd name="Fortitude Defense" value="+1" type="Racial Trait"/>
+      <statadd name="Saving Throws" value="+3" type="Racial Trait" condition="Against fear and poison."/>
     </rules>
 You gain a +1 racial bonus to your Fortitude defense. In addition, you gain a +3 racial bonus to saving throws against fear and poison. 
 </RulesElement>
@@ -317,7 +317,7 @@ Shire halflings don't travel much, but they're capable of covering substantial g
     <specific name="type"> Encounter </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_AVG_11_01 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_AVG_11_01  " type="Power" />
+      <grant name="ID_TIV_POWER_AVG_11_01  " type="Power"/>
     </rules>
 You have the Unending Determination Power.
 </RulesElement>
@@ -340,13 +340,13 @@ You have the Unending Determination Power.
     <specific name="Powers"> ID_TIV_POWER_501_01_01_01,ID_TIV_POWER_501_01_01_02,ID_TIV_POWER_501_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_501_01_01_01,ID_TIV_POWER_501_01_01_02,ID_TIV_POWER_501_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_501_04" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_501_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_501_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_501_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_501_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_501_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_501_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_501_04" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_501_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_501_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_501_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_501_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_501_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_501_01_01_03  " type="Power" Level="20"/>
     </rules>
 You feel a kinship with the beasts of the wild, so much so that you have learned to use your nature priest powers to take their form. You can adopt the shape of many normal animals, and may even prefer those shapes to your natural body.
 </RulesElement>
@@ -357,7 +357,7 @@ You feel a kinship with the beasts of the wild, so much so that you have learned
     <specific name="_ChildPower"> ID_TIV_POWER_APG_502_04-1 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_APG_502_04-1 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_APG_502_04-1  " type="Power" />
+      <grant name="ID_TIV_POWER_APG_502_04-1  " type="Power"/>
     </rules>
 You gain the Hunter's Form [Wildshaper] power. You assume the form of a normal (that is, realworld) animal. The animal must be a quadruped, and must be within one size category of your natural form. (You can, if necessary, become a giant or abnormally small version of an otherwise normal animal, in order to fit this criteria.) Common forms include wolves, panthers, abnormally large lizards, and smaller bears. Despite the name "hunter," you do not have to become a predatory creature; horses and bulls are viable choices as well. 
 * You can resume your humanoid form as a free action at any point during your turn.
@@ -397,7 +397,7 @@ You gain the Hunter's Form [Wildshaper] power. You assume the form of a normal (
     <specific name="Short Description"> When you spend an action point, when in the form of an animal, to gain an extra action, you also gain an extra move action (but not standard action) on your next turn. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Hunter's Speed: When you spend an action point, when in the form of an animal, to gain an extra action, you also gain an extra move action (but not standard action) on your next turn." />
+      <textstring name="Action Point" value="Hunter's Speed: When you spend an action point, when in the form of an animal, to gain an extra action, you also gain an extra move action (but not standard action) on your next turn."/>
     </rules>
 When you spend an action point, when in the form of an animal, to gain an extra action, you also gain an extra move action (but not standard action) on your next turn.
 </RulesElement>
@@ -414,7 +414,7 @@ When in the form of an animal, you can speak with other animals of that sort, wi
     <specific name="_ChildPower"> ID_TIV_POWER_APG_502_03-1 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_APG_502_03-1 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_APG_502_03-1  " type="Power" />
+      <grant name="ID_TIV_POWER_APG_502_03-1  " type="Power"/>
     </rules>
 You gain the Raptor's Form [Wildshaper] power. You assume the form of a flying creature, such as a large eagle or a giant bat. The form must be within one size category of your own size, and either be that of a realworld animal, or of a flying beast that lacks any blatant supernatural powers (such as a griffon or a hippogriff).
 * You can resume your humanoid form as a free action at any point during your turn.
@@ -496,13 +496,13 @@ You gain the Raptor's Form [Wildshaper] power. You assume the form of a flying c
     <specific name="Powers"> ID_TIV_POWER_502_01_01_01,ID_TIV_POWER_502_01_01_02,ID_TIV_POWER_502_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_502_01_01_01,ID_TIV_POWER_502_01_01_02,ID_TIV_POWER_502_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_502_04" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_502_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_502_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_502_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_502_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_502_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_502_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_502_04" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_502_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_502_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_502_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_502_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_502_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_502_01_01_03  " type="Power" Level="20"/>
     </rules>
 You have mastered the ins and outs of a particular sort of terrain or environment. You might consider yourself the guardian of a specific region, or you might be a wanderer who happens to favor a given sort of area.
 </RulesElement>
@@ -512,7 +512,7 @@ You have mastered the ins and outs of a particular sort of terrain or environmen
     <specific name="Level"> 11 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_502_04-1,ID_TIV_CLASS_FEATURE_502_04-2,ID_TIV_CLASS_FEATURE_502_04-3,ID_TIV_CLASS_FEATURE_502_04-4,ID_TIV_CLASS_FEATURE_502_04-5,ID_TIV_CLASS_FEATURE_502_04-6,ID_TIV_CLASS_FEATURE_502_04-7,ID_TIV_CLASS_FEATURE_502_04-8,ID_TIV_CLASS_FEATURE_502_04-9 </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_502_04" />
+      <select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_502_04"/>
     </rules>
 Choose one of the following environments as a guardian to that enviroment.
 * Desert
@@ -596,7 +596,7 @@ You suffer no penalties for walking in your chosen terrain, and ignore difficult
     <specific name="Short Description"> When you spend an action point while in your favored environment, you gain a +4 bonus on any attack roll or check you make with that extra action. In addition, you gain an extra move action (but not a standard action) on your next turn. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Strength of the World: When you spend an action point while in your favored environment, you gain a +4 bonus on any attack roll or check you make with that extra action. In addition, you gain an extra move action (but not a standard action) on your next turn." />
+      <textstring name="Action Point" value="Strength of the World: When you spend an action point while in your favored environment, you gain a +4 bonus on any attack roll or check you make with that extra action. In addition, you gain an extra move action (but not a standard action) on your next turn."/>
     </rules>
 When you spend an action point while in your favored environment, you gain a +4 bonus on any attack roll or check you make with that extra action. In addition, you gain an extra move action (but not a standard action) on your next turn. 
 </RulesElement>
@@ -657,12 +657,12 @@ When you spend an action point while in your favored environment, you gain a +4 
     <specific name="Powers"> ID_TIV_POWER_503_01_01_01,ID_TIV_POWER_503_01_01_02,ID_TIV_POWER_503_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_503_01_01_01,ID_TIV_POWER_503_01_01_02,ID_TIV_POWER_503_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_503_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_503_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_503_03" type="Class Feature" Level="17" />
-      <grant name="ID_TIV_POWER_503_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_503_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_503_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_503_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_503_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_503_03" type="Class Feature" Level="17"/>
+      <grant name="ID_TIV_POWER_503_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_503_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_503_01_01_03  " type="Power" Level="20"/>
     </rules>
 You have always been fascinated by the power of the elements. Other nature priests may commune with the beasts, summon fire, even change their shape but you know that the greatest power in the natural world is the might of the raging storm.
 </RulesElement>
@@ -671,7 +671,7 @@ You have always been fascinated by the power of the elements. Other nature pries
     <specific name="Short Description"> When you spend an action point to take an extra action, you also add half your level to the damage of any attack powers that have the lightning or thunder keywords. This bonus lasts until the start of your next turn. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Friend of the Storm: When you spend an action point to take an extra action, you also add half your level to the damage of any attack powers that have the lightning or thunder keywords. This bonus lasts until the start of your next turn." />
+      <textstring name="Action Point" value="Friend of the Storm: When you spend an action point to take an extra action, you also add half your level to the damage of any attack powers that have the lightning or thunder keywords. This bonus lasts until the start of your next turn."/>
     </rules>
 When you spend an action point to take an extra action, you also add half your level to the damage of any attack powers that have the lightning or thunder keywords. This bonus lasts until the start of your next turn.
 </RulesElement>
@@ -745,12 +745,12 @@ Once per day, as a free action, you grant yourself the ability to walk on air, e
     <specific name="Powers"> ID_TIV_POWER_504_01_01_01,ID_TIV_POWER_504_01_01_02,ID_TIV_POWER_504_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_504_01_01_01,ID_TIV_POWER_504_01_01_02,ID_TIV_POWER_504_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_504_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_504_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_504_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_504_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_504_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_504_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_504_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_504_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_504_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_504_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_504_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_504_01_01_03  " type="Power" Level="20"/>
     </rules>
 You are fully focused on what, exactly, it means to be a nature priest. You identify yourself as a priest of nature first, as an individual or a member of your race second. In many ways, you are to other nature priests what high priests are to clerics; you don't necessarily have authority over them, but you understand secrets of the ancient ways that other nature priests do not.
 </RulesElement>
@@ -772,7 +772,7 @@ Once per day as a free action, you can grant yourself poison resistance equal to
     <specific name="Level"> 16 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_504_03-1,ID_TIV_CLASS_FEATURE_504_03-2,ID_TIV_CLASS_FEATURE_504_03-3,ID_TIV_CLASS_FEATURE_504_03-4,ID_TIV_CLASS_FEATURE_504_03-5 </specific>
     <rules>
-      <select type="Class Feature" number="2" Category="ID_TIV_CLASS_FEATURE_504_03" />
+      <select type="Class Feature" number="2" Category="ID_TIV_CLASS_FEATURE_504_03"/>
     </rules>
 Choose two of the following ritual categories: divination, exploration, healing, scrying, or teleportation. You can now cast all rituals of those categories using your Nature skill, no matter what skill those rituals normally require. (You do not, however, gain the standard nature priest bonus of +2 to Nature-based rituals when casting a ritual that normally requires some other skill.) 
 </RulesElement>
@@ -863,13 +863,13 @@ The target can continue attempting to save on its turn each round. If it succeed
     <specific name="Powers"> ID_TIV_POWER_505_01_01_01,ID_TIV_POWER_505_01_01_02,ID_TIV_POWER_505_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_505_01_01_01,ID_TIV_POWER_505_01_01_02,ID_TIV_POWER_505_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_505_04" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_CLASS_FEATURE_505_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_505_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_505_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_505_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_505_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_505_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_505_04" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_CLASS_FEATURE_505_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_505_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_505_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_505_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_505_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_505_01_01_03  " type="Power" Level="20"/>
     </rules>
 You are a towering mass of scar and muscle, a brawler who needs no excuse to set fists to flying. You actually prefer to fight bare-handed, seeing it almost as a sport, though when a foe draws steel, you're quick to do the same.
 </RulesElement>
@@ -878,10 +878,10 @@ You are a towering mass of scar and muscle, a brawler who needs no excuse to set
     <specific name="Short Description"> Your unarmed attacks now deal 1d6 damage, rather than the normal 1d4, and you gain a +2 proficiency bonus to unarmed attacks, to grabs, and to bull rushes. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="Unarmed attack:attack" value="+2" />
-      <textstring name="Unarmed Damage Die" value="1d6" />
-      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d6" />
-      <statadd name="attack rolls" value="+2" type="Class Feature" condition="to bull rush attacks and grab attempts" />
+      <statadd name="Unarmed attack:attack" value="+2"/>
+      <textstring name="Unarmed Damage Die" value="1d6"/>
+      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d6"/>
+      <statadd name="attack rolls" value="+2" type="Class Feature" condition="to bull rush attacks and grab attempts"/>
     </rules>
 Your unarmed attacks now deal 1d6 damage, rather than the normal 1d4, and you gain a +2 proficiency bonus to unarmed attacks, to grabs, and to bull rushes.
 </RulesElement>
@@ -890,7 +890,7 @@ Your unarmed attacks now deal 1d6 damage, rather than the normal 1d4, and you ga
     <specific name="Short Description"> Any time you spend an action point, and use the extra action to make a melee attack, that attack also knocks the foe prone if it hits, in addition to all other effects. (If the attack would normally have knocked the foe prone, this power allows you to add push 2 to the effect instead.) </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Hit Fast, Hit Hard: Any time you spend an action point, and use the extra action to make a melee attack, that attack also knocks the foe prone if it hits, in addition to all other effects. (If the attack would normally have knocked the foe prone, this power allows you to add push 2 to the effect instead.)" />
+      <textstring name="Action Point" value="Hit Fast, Hit Hard: Any time you spend an action point, and use the extra action to make a melee attack, that attack also knocks the foe prone if it hits, in addition to all other effects. (If the attack would normally have knocked the foe prone, this power allows you to add push 2 to the effect instead.)"/>
     </rules>
 Any time you spend an action point, and use the extra action to make a melee attack, that attack also knocks the foe prone if it hits, in addition to all other effects. (If the attack would normally have knocked the foe prone, this power allows you to add push 2 to the effect instead.) 
 </RulesElement>
@@ -899,8 +899,8 @@ Any time you spend an action point, and use the extra action to make a melee att
     <specific name="Short Description"> Your unarmed damage increases to 1d8. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Unarmed Damage Die" value="1d8" />
-      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d8" />
+      <textstring name="Unarmed Damage Die" value="1d8"/>
+      <modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d8"/>
     </rules>
 Your unarmed damage increases to 1d8.
 </RulesElement>
@@ -909,7 +909,7 @@ Your unarmed damage increases to 1d8.
     <specific name="Short Description"> Whenever you push a foe or knock a foe prone, it takes damage equal to your Constitution modifier. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="Class Feature" condition="Whenever you push or knock a foe prone." />
+      <statadd name="damage rolls" value="+ABILITYMOD(con)" type="Class Feature" condition="Whenever you push or knock a foe prone."/>
     </rules>
 Whenever you push a foe or knock a foe prone, it takes damage equal to your Constitution modifier.
 </RulesElement>
@@ -973,12 +973,12 @@ Whenever you push a foe or knock a foe prone, it takes damage equal to your Cons
     <specific name="Powers"> ID_TIV_POWER_506_01_01_01,ID_TIV_POWER_506_01_01_02,ID_TIV_POWER_506_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_506_01_01_01,ID_TIV_POWER_506_01_01_02,ID_TIV_POWER_506_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_506_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_506_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_506_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_506_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_506_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_506_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_506_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_506_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_506_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_506_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_506_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_506_01_01_03  " type="Power" Level="20"/>
     </rules>
 You truly believe that the best way to defend your friends is to move ahead of them, to flatten the enemy and absorb any counterattacks before your softer, more vulnerable allies even get close. The hell with the "front line" you charge into combat, leaving all lines behind.
 </RulesElement>
@@ -993,7 +993,7 @@ Your basic charge attacks improves. You can now use Encounter powers, in place o
     <specific name="Short Description"> As a free action, you can spend an action point to reroll any attack roll you have just made via a charge attack. When you do this, you don't take an extra action from the action point. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Unstoppable Charge: As a free action, you can spend an action point to reroll any attack roll you have just made via a charge attack. When you do this, you don't take an extra action from the action point. " />
+      <textstring name="Action Point" value="Unstoppable Charge: As a free action, you can spend an action point to reroll any attack roll you have just made via a charge attack. When you do this, you don't take an extra action from the action point. "/>
     </rules>
 As a free action, you can spend an action point to reroll any attack roll you have just made via a charge attack. When you do this, you don't take an extra action from the action point. 
 </RulesElement>
@@ -1061,12 +1061,12 @@ You can now choose to use daily powers, in place of basic attacks, when making a
     <specific name="Powers"> ID_TIV_POWER_507_01_01_01,ID_TIV_POWER_507_01_01_02,ID_TIV_POWER_507_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_507_01_01_01,ID_TIV_POWER_507_01_01_02,ID_TIV_POWER_507_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_507_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_507_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_507_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_507_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_507_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_507_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_507_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_507_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_507_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_507_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_507_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_507_01_01_03  " type="Power" Level="20"/>
     </rules>
 All savage warriors are possessed of a primal rage, but you carry it far beyond. When you enter combat, it's as though the world goes red, and you fall into a maddened fury.
 </RulesElement>
@@ -1080,9 +1080,9 @@ Level 11-20: +3
 Level 21-30: +4 </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="attack rolls" value="+1" type="Class Feature" condition="When you become bloodied." />
-      <statadd name="AC" value="+3" type="Class Feature" requires="Paragon Tier" condition="When you become bloodied." />
-      <statadd name="AC" value="+1" type="Class Feature" requires="Epic Tier" condition="When you become bloodied." />
+      <statadd name="attack rolls" value="+1" type="Class Feature" condition="When you become bloodied."/>
+      <statadd name="AC" value="+3" type="Class Feature" requires="Paragon Tier" condition="When you become bloodied."/>
+      <statadd name="AC" value="+1" type="Class Feature" requires="Epic Tier" condition="When you become bloodied."/>
     </rules>
 You gain the extra benefits once you become bloodied during an encounter:
 * Your powers deal a critical hit on a roll of 19 or 20, rather than just a 20.
@@ -1096,7 +1096,7 @@ Level 21-30: +4
     <specific name="Short Description"> When you are bloodied, you can spend an action point to turn a hit you have just landed with a melee attack into a critical hit. When you spend an action point in this fashion, you do not gain an extra action. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Potent Rage: When you are bloodied, you can spend an action point to turn a hit you have just landed with a melee attack into a critical hit. When you spend an action point in this fashion, you do not gain an extra action. " />
+      <textstring name="Action Point" value="Potent Rage: When you are bloodied, you can spend an action point to turn a hit you have just landed with a melee attack into a critical hit. When you spend an action point in this fashion, you do not gain an extra action. "/>
     </rules>
 When you are bloodied, you can spend an action point to turn a hit you have just landed with a melee attack into a critical hit. When you spend an action point in this fashion, you do not gain an extra action. 
 </RulesElement>
@@ -1162,13 +1162,13 @@ Once per encounter, when bloodied, you can choose to roll twice when making a me
     <specific name="Powers"> ID_TIV_POWER_508_01_01_01,ID_TIV_POWER_508_01_01_02,ID_TIV_POWER_508_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_508_01_01_01,ID_TIV_POWER_508_01_01_02,ID_TIV_POWER_508_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_508_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_508_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_508_03" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_508_04" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_508_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_508_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_508_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_508_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_508_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_508_03" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_508_04" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_508_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_508_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_508_01_01_03  " type="Power" Level="20"/>
     </rules>
 Most barbarians delight in charging into the fray, taking the fight to the foe. You, however, prefer to let the enemy come to you, for you know that you have the strength to keep them from moving any farther.
 </RulesElement>
@@ -1177,7 +1177,7 @@ Most barbarians delight in charging into the fray, taking the fight to the foe. 
     <specific name="Short Description"> You no longer gain the +1 attack bonus when charging that other characters gain. Instead, you gain a +1 attack bonus when it has been at least one full round since you either moved or shifted. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="attack rolls" value="+1" type="Class Feature" condition="when you have not moved or shifted in 1 full round." />
+      <statadd name="attack rolls" value="+1" type="Class Feature" condition="when you have not moved or shifted in 1 full round."/>
     </rules>
 You no longer gain the +1 attack bonus when charging that other characters gain. Instead, you gain a +1 attack bonus when it has been at least one full round since you either moved or shifted.
 </RulesElement>
@@ -1198,7 +1198,7 @@ When wielding a reach weapon, you can make opportunity attacks to the full reach
     <specific name="Short Description"> You may spend an action point to spend a healing surge, and gain a +2 bonus to all defenses until the start of your next turn, as a standard action. You do not gain any of the other benefits of spending an action point. This does not count as a use of your second wind.  </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Unfailing Flesh: You may spend an action point to spend a healing surge, and gain a +2 bonus to all defenses until the start of your next turn, as a standard action. You do not gain any of the other benefits of spending an action point. This does not count as a use of your second wind." />
+      <textstring name="Action Point" value="Unfailing Flesh: You may spend an action point to spend a healing surge, and gain a +2 bonus to all defenses until the start of your next turn, as a standard action. You do not gain any of the other benefits of spending an action point. This does not count as a use of your second wind."/>
     </rules>
 You may spend an action point to spend a healing surge, and gain a +2 bonus to all defenses until the start of your next turn, as a standard action. You do not gain any of the other benefits of spending an action point. This does not count as a use of your second wind. 
 </RulesElement>
@@ -1259,12 +1259,12 @@ You may spend an action point to spend a healing surge, and gain a +2 bonus to a
     <specific name="Powers"> ID_TIV_POWER_509_01_01_01,ID_TIV_POWER_509_01_01_02,ID_TIV_POWER_509_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_509_01_01_01,ID_TIV_POWER_509_01_01_02,ID_TIV_POWER_509_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_509_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_509_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_509_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_509_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_509_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_509_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_509_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_509_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_509_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_509_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_509_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_509_01_01_03  " type="Power" Level="20"/>
     </rules>
 Let others worry about commanding the elements, reshaping the world, or communing with higher powers. You know that the true power lies in the eyes, the ears, and the mind, for what a man sees and hears, he believes.
 </RulesElement>
@@ -1273,7 +1273,7 @@ Let others worry about commanding the elements, reshaping the world, or communin
     <specific name="Short Description"> You may spend an action point to regain one encounter power you have already used, instead of gaining an extra action. This power must have at least one of the following keywords: Charm, Illusion, or Psychic. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Faster Than the Mind: You may spend an action point to regain one encounter power you have already used, instead of gaining an extra action. This power must have at least one of the following keywords: Charm, Illusion, or Psychic." />
+      <textstring name="Action Point" value="Faster Than the Mind: You may spend an action point to regain one encounter power you have already used, instead of gaining an extra action. This power must have at least one of the following keywords: Charm, Illusion, or Psychic."/>
     </rules>
 You may spend an action point to regain one encounter power you have already used, instead of gaining an extra action. This power must have at least one of the following keywords: Charm, Illusion, or Psychic.
 </RulesElement>
@@ -1282,8 +1282,8 @@ You may spend an action point to regain one encounter power you have already use
     <specific name="Short Description"> You are capable of obscuring your precise movements with a mere second's thought. This grants you a +2 power bonus on Initiative checks, and a +4 power bonus on Stealth checks. This is an illusion effect (and if any single foe is immune to illusions, you do not gain the initiative bonus for that encounter).  </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="Stealth Misc" value="+4" type="Class Feature" />
-      <statadd name="Initiative" value="+2" type="Class Feature" />
+      <statadd name="Stealth Misc" value="+4" type="Class Feature"/>
+      <statadd name="Initiative" value="+2" type="Class Feature"/>
     </rules>
 You are capable of obscuring your precise movements with a mere second's thought. This grants you a +2 power bonus on Initiative checks, and a +4 power bonus on Stealth checks. This is an illusion effect (and if any single foe is immune to illusions, you do not gain the initiative bonus for that encounter).
 </RulesElement>
@@ -1292,7 +1292,7 @@ You are capable of obscuring your precise movements with a mere second's thought
     <specific name="Short Description"> Any time you spend an action point, you also turn invisible until you attack, or until the end of your next turn.  </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Swift Disappearance: Any time you spend an action point, you also turn invisible until you attack, or until the end of your next turn." />
+      <textstring name="Action Point" value="Swift Disappearance: Any time you spend an action point, you also turn invisible until you attack, or until the end of your next turn."/>
     </rules>
 Any time you spend an action point, you also turn invisible until you attack, or until the end of your next turn.
 </RulesElement>
@@ -1351,13 +1351,13 @@ Any time you spend an action point, you also turn invisible until you attack, or
     <specific name="Powers"> ID_TIV_POWER_510_01_01_01,ID_TIV_POWER_510_01_01_02,ID_TIV_POWER_510_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_510_01_01_01,ID_TIV_POWER_510_01_01_02,ID_TIV_POWER_510_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_510_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_510_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_510_03" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_510_04" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_510_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_510_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_510_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_510_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_510_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_510_03" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_510_04" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_510_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_510_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_510_01_01_03  " type="Power" Level="20"/>
     </rules>
 You are fascinated by the synergy between magic and the skills of the humanoid body. Even more so than most bards, you combine the two into techniques that, while clearly supernatural, are unlike any spells cast by others.
 </RulesElement>
@@ -1367,7 +1367,7 @@ You are fascinated by the synergy between magic and the skills of the humanoid b
     <specific name="Level"> 11 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_1227 </specific>
     <rules>
-      <grant name="ID_FMP_POWER_1227  " type="Power" />
+      <grant name="ID_FMP_POWER_1227  " type="Power"/>
     </rules>
 You gain the Mage Hand power (see the wizard's cantrip feature) as an encounter ability. If you already have mage hand (perhaps via selection of the cantrip utility power), you instead extend its range from 5 squares to 8 squares.
 </RulesElement>
@@ -1382,7 +1382,7 @@ You can use your Mage Hand to perform Thievery skill checks at range, albeit wit
     <specific name="Short Description"> When you spend an action point, you also gain a +4 bonus to attack rolls with your Bard powers and to Thievery checks, until the start of your next turn.  </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Mage Strike: When you spend an action point, you also gain a +4 bonus to attack rolls with your Bard powers and to Thievery checks, until the start of your next turn." />
+      <textstring name="Action Point" value="Mage Strike: When you spend an action point, you also gain a +4 bonus to attack rolls with your Bard powers and to Thievery checks, until the start of your next turn."/>
     </rules>
 When you spend an action point, you also gain a +4 bonus to attack rolls with your Bard powers and to Thievery checks, until the start of your next turn.
 </RulesElement>
@@ -1448,12 +1448,12 @@ Once per encounter, you can teleport in place of your normal movement. This stil
     <specific name="Powers"> ID_TIV_POWER_511_01_01_01,ID_TIV_POWER_511_01_01_02,ID_TIV_POWER_511_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_511_01_01_01,ID_TIV_POWER_511_01_01_02,ID_TIV_POWER_511_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_511_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_511_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_511_03" type="Class Feature" Level="17" />
-      <grant name="ID_TIV_POWER_511_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_511_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_511_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_511_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_511_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_511_03" type="Class Feature" Level="17"/>
+      <grant name="ID_TIV_POWER_511_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_511_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_511_01_01_03  " type="Power" Level="20"/>
     </rules>
 You have grown particularly skilled with your powers of healing and helping others. Though you lack the religious fervor of the cleric, you find yourself drawn to their abilities, and seek to emulate them via arcane study.
 </RulesElement>
@@ -1463,7 +1463,7 @@ You have grown particularly skilled with your powers of healing and helping othe
     <specific name="Level"> 11 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_511_01-1 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_511_01-1  " type="Power" />
+      <grant name="ID_TIV_POWER_511_01-1  " type="Power"/>
     </rules>
 You gain the Inspirational Magic: Rejuvenating Call power.
 The target may use a healing surge and heals an additional 4d6 damage.
@@ -1494,7 +1494,7 @@ At 26th level, the target heals an additional 6d10 damage.  </specific>
     <specific name="Short Description"> Any time you spend an action point, choose one ally within line of sight. That ally heals damage equal to half your level + your Charisma modifier.  </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="One for All: Any time you spend an action point, choose one ally within line of sight. That ally heals damage equal to half your level + your Charisma modifier." />
+      <textstring name="Action Point" value="One for All: Any time you spend an action point, choose one ally within line of sight. That ally heals damage equal to half your level + your Charisma modifier."/>
     </rules>
 Any time you spend an action point, choose one ally within line of sight. That ally heals damage equal to half your level + your Charisma modifier.
 </RulesElement>
@@ -1504,7 +1504,7 @@ Any time you spend an action point, choose one ally within line of sight. That a
     <specific name="Level"> 17 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_511_01-2 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_511_01-2  " type="Power" />
+      <grant name="ID_TIV_POWER_511_01-2  " type="Power"/>
     </rules>
 You gain the Inspirational Magic: Inspiring Call power.
 The target may spend a healing surge. This does not grant any healing, as normal, but instead allows the target to reroll any attack roll, skill check, ability check, or saving throw he just made with a +3 bonus. The target must use the result of the second roll.
@@ -1584,13 +1584,13 @@ At 26th level, the target gains a +5 power bonus on the reroll.  </specific>
     <specific name="Powers"> ID_TIV_POWER_512_01_01_01,ID_TIV_POWER_512_01_01_02,ID_TIV_POWER_512_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_512_01_01_01,ID_TIV_POWER_512_01_01_02,ID_TIV_POWER_512_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_512_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_512_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_512_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_CLASS_FEATURE_512_04" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_512_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_512_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_512_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_512_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_512_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_512_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_CLASS_FEATURE_512_04" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_512_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_512_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_512_01_01_03  " type="Power" Level="20"/>
     </rules>
 You firmly believe that stealth and secrecy are the roads to victory but an army, a team, or an adventuring party are only as stealthy as their clumsiest member. Whether you're devoted to a government, a guild, or simply a party of allies, you're determined to guide their efforts, gathering information and sneaking past sentries no matter how loud the paladin's armor might be ringing.
 </RulesElement>
@@ -1605,7 +1605,7 @@ All allies within 3 squares (including yourself) gain a +2 bonus on Stealth chec
     <specific name="Short Description"> As a free action, you can spend an action point to allow all allies within 5 squares (including yourself, if you'd like) to reroll Stealth checks they've just made. When you do this, you do not gain the standard action normally granted by spending an action point, but you can take an extra move action.  </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Step Where I Step: As a free action, you can spend an action point to allow all allies within 5 squares (including yourself, if you'd like) to reroll Stealth checks they've just made. When you do this, you do not gain the standard action normally granted by spending an action point, but you can take an extra move action." />
+      <textstring name="Action Point" value="Step Where I Step: As a free action, you can spend an action point to allow all allies within 5 squares (including yourself, if you'd like) to reroll Stealth checks they've just made. When you do this, you do not gain the standard action normally granted by spending an action point, but you can take an extra move action."/>
     </rules>
 As a free action, you can spend an action point to allow all allies within 5 squares (including yourself, if you'd like) to reroll Stealth checks they've just made. When you do this, you do not gain the standard action normally granted by spending an action point, but you can take an extra move action.
 </RulesElement>
@@ -1677,12 +1677,12 @@ When making a Stealth check, roll twice and use the higher result. In addition, 
     <specific name="Powers"> ID_TIV_POWER_513_01_01_01,ID_TIV_POWER_513_01_01_02,ID_TIV_POWER_513_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_513_01_01_01,ID_TIV_POWER_513_01_01_02,ID_TIV_POWER_513_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_513_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_513_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_513_03" type="Class Feature" Level="17" />
-      <grant name="ID_TIV_POWER_513_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_513_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_513_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_513_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_513_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_513_03" type="Class Feature" Level="17"/>
+      <grant name="ID_TIV_POWER_513_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_513_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_513_01_01_03  " type="Power" Level="20"/>
     </rules>
 You can move in ways that, to others, seem to border on the supernatural. Bouncing off walls, leaping from ledges, flipping and twisting in midair these come as simply to you as walking.
 </RulesElement>
@@ -1691,7 +1691,7 @@ You can move in ways that, to others, seem to border on the supernatural. Bounci
     <specific name="Short Description"> When you spend an action point, in addition to taking an extra standard action this turn, you also gain an extra move action. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <textstring name="Action Point" value="Acrobatic Action: When you spend an action point, in addition to taking an extra standard action this turn, you also gain an extra move action." />
+      <textstring name="Action Point" value="Acrobatic Action: When you spend an action point, in addition to taking an extra standard action this turn, you also gain an extra move action."/>
     </rules>
 When you spend an action point, in addition to taking an extra standard action this turn, you also gain an extra move action.
 </RulesElement>
@@ -1766,12 +1766,12 @@ You can cover 2 squares when you shift, rather than the normal 1.
     <specific name="Powers"> ID_TIV_POWER_514_01_01_01,ID_TIV_POWER_514_01_01_02,ID_TIV_POWER_514_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_514_01_01_01,ID_TIV_POWER_514_01_01_02,ID_TIV_POWER_514_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_514_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_514_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_514_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_514_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_514_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_514_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_514_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_514_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_514_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_514_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_514_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_514_01_01_03  " type="Power" Level="20"/>
     </rules>
 Nearly all assassins are skilled at stealth and killing, but you have elevated them to an art form. You might be a cold-blooded killer for hire, or you might serve a higher purpose, eliminating the enemies of your guild, your king, or your Church. Whatever the case, however, you're a strong believer in striking from the dark, and in killing before the target has the chance to strike back.
 </RulesElement>
@@ -1792,7 +1792,7 @@ When you attack with combat advantage, you score a critical hit on a 19 to 20, r
     <specific name="Short Description"> When you spend an action point to gain an extra action, all your attacks automatically have combat advantage until the start of your next turn. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Sudden Death: When you spend an action point to gain an extra action, all your attacks automatically have combat advantage until the start of your next turn." />
+      <textstring name="Action Point" value="Sudden Death: When you spend an action point to gain an extra action, all your attacks automatically have combat advantage until the start of your next turn."/>
     </rules>
 When you spend an action point to gain an extra action, all your attacks automatically have combat advantage until the start of your next turn.
 </RulesElement>
@@ -1853,14 +1853,14 @@ When you spend an action point to gain an extra action, all your attacks automat
     <specific name="Powers"> ID_TIV_POWER_515_01_01_01,ID_TIV_POWER_515_01_01_02,ID_TIV_POWER_515_01_01_03 </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_515_01_01_01,ID_TIV_POWER_515_01_01_02,ID_TIV_POWER_515_01_01_03 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_515_01" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_02" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_05" type="Class Feature" Level="11" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_04" type="Class Feature" Level="16" />
-      <grant name="ID_TIV_POWER_515_01_01_01  " type="Power" Level="11" />
-      <grant name="ID_TIV_POWER_515_01_01_02  " type="Power" Level="12" />
-      <grant name="ID_TIV_POWER_515_01_01_03  " type="Power" Level="20" />
+      <grant name="ID_TIV_CLASS_FEATURE_515_01" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_02" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_05" type="Class Feature" Level="11"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_04" type="Class Feature" Level="16"/>
+      <grant name="ID_TIV_POWER_515_01_01_01  " type="Power" Level="11"/>
+      <grant name="ID_TIV_POWER_515_01_01_02  " type="Power" Level="12"/>
+      <grant name="ID_TIV_POWER_515_01_01_03  " type="Power" Level="20"/>
     </rules>
 Where other arcane casters may seek to branch out, trying to encompass as much magic as possible, you've instead chosen to narrow your focus. You have no interest in variety or flexibility; you do one thing, and you do it very well indeed.
 </RulesElement>
@@ -1870,7 +1870,7 @@ Where other arcane casters may seek to branch out, trying to encompass as much m
     <specific name="Level"> 11 </specific>
     <specific name="_PARSED_SUB_FEATURES"> ID_TIV_CLASS_FEATURE_515_01-1,ID_TIV_CLASS_FEATURE_515_01-2,ID_TIV_CLASS_FEATURE_515_01-3,ID_TIV_CLASS_FEATURE_515_01-4,ID_TIV_CLASS_FEATURE_515_01-5,ID_TIV_CLASS_FEATURE_515_01-6,ID_TIV_CLASS_FEATURE_515_01-7,ID_TIV_CLASS_FEATURE_515_01-8,ID_TIV_CLASS_FEATURE_515_01-9,ID_TIV_CLASS_FEATURE_515_01-10 </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_515_01" />
+      <select type="Class Feature" number="1" Category="ID_TIV_CLASS_FEATURE_515_01"/>
     </rules>
 Choose one of the following keywords: Acid, Cold, Fire, Force, Lightning, Necrotic, Poison, Psychic, Radiant, or Thunder. This choice influences all your other path features, and once made cannot be changed.
 </RulesElement>
@@ -1879,7 +1879,7 @@ Choose one of the following keywords: Acid, Cold, Fire, Force, Lightning, Necrot
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Acid. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Acid" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Acid"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Acid.
 </RulesElement>
@@ -1888,7 +1888,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Cold. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Cold" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Cold"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Cold.
 </RulesElement>
@@ -1897,7 +1897,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Fire. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Fire" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Fire"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Fire.
 </RulesElement>
@@ -1906,7 +1906,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Force. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Force" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Force"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Force.
 </RulesElement>
@@ -1915,7 +1915,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Lightning. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Lightning" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Lightning"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Lightning.
 </RulesElement>
@@ -1924,7 +1924,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Necrotic. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Necrotic" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Necrotic"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Necrotic.
 </RulesElement>
@@ -1933,7 +1933,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Poison. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Poison" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Poison"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Poison.
 </RulesElement>
@@ -1942,7 +1942,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Psychic. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Psychic" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Psychic"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Psychic.
 </RulesElement>
@@ -1951,7 +1951,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Radiant. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Radiant" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Radiant"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Radiant.
 </RulesElement>
@@ -1960,7 +1960,7 @@ This choice influences all your other path features, and once made cannot be cha
     <specific name="Short Description"> This choice influences all your other path features, and once made cannot be changed. You chose Thunder. </specific>
     <specific name="Level"> 11 </specific>
     <rules>
-      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Thunder" />
+      <statadd name="damage rolls" value="+2" type="Class Feature" condition="while using a power with the keyword: Thunder"/>
     </rules>
 This choice influences all your other path features, and once made cannot be changed. You chose Thunder.
 </RulesElement>
@@ -1981,16 +1981,16 @@ When you cast an arcane spell with the same keyword as your Arcane Affinity, you
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-10" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-10" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-9" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-9" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-8" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-8" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-7" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-7" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-6" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-6" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-5" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-5" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-4" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-4" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-3" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-3" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-2" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-2" />
-      <grant name="ID_TIV_CLASS_FEATURE_515_03-1" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-1" />
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-10" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-10"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-9" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-9"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-8" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-8"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-7" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-7"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-6" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-6"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-5" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-5"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-4" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-4"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-3" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-3"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-2" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-2"/>
+      <grant name="ID_TIV_CLASS_FEATURE_515_03-1" type="Class Feature" requires="ID_TIV_CLASS_FEATURE_515_01-1"/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -1999,7 +1999,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Acid." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Acid."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2008,7 +2008,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Cold." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Cold."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2017,7 +2017,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Fire." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Fire."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2026,7 +2026,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Force." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Force."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2035,7 +2035,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Lightning." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Lightning."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2044,7 +2044,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Necrotic." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Necrotic."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2053,7 +2053,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Poison." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Poison."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2062,7 +2062,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Psychic." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Psychic."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2071,7 +2071,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Radiant." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Radiant."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2080,7 +2080,7 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Thunder." />
+      <textstring name="Action Point" value="Arcane Recovery: You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the keyword Thunder."/>
     </rules>
 You can spend an action point to regain an Encounter power you have already used in this encounter. The power you regain must be an arcane spell with the same keyword as your Arcane Affinity.
 </RulesElement>
@@ -2089,16 +2089,16 @@ You can spend an action point to regain an Encounter power you have already used
     <specific name="Short Description"> The target's resistance you ignore due to Arcane Penetration rises to 15, and your bonus damage from Arcane Precision increases to +3. </specific>
     <specific name="Level"> 16 </specific>
     <rules>
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Force" requires="ID_TIV_CLASS_FEATURE_515_01-4" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2" non-zero="true" />
-      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1" non-zero="true" />
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Force" requires="ID_TIV_CLASS_FEATURE_515_01-4" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2" non-zero="true"/>
+      <statadd name="damage rolls" value="+1" type="Class Feature" condition="while using a power with the keyword: Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1" non-zero="true"/>
     </rules>
 The resistance you ignore due to Arcane Penetration rises to 15, and your bonus damage from Arcane Precision increases to +3. 
 </RulesElement>
@@ -2119,16 +2119,16 @@ The resistance you ignore due to Arcane Penetration rises to 15, and your bonus 
     <specific name="Level"> 11 </specific>
     <specific name="Power Type"> Attack </specific>
     <rules>
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Force" requires="ID_TIV_CLASS_FEATURE_515_01-4" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9" />
-      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10" />
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Force" requires="ID_TIV_CLASS_FEATURE_515_01-4"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9"/>
+      <modify name="Arcane Tempest  " type="Power" Field="Keywords" value="Arcane, Implement, Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10"/>
     </rules>
   </RulesElement>
   <RulesElement name="Arcane Dissipation  " type="Power" internal-id="ID_TIV_POWER_515_01_01_02" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
@@ -2146,16 +2146,16 @@ The resistance you ignore due to Arcane Penetration rises to 15, and your bonus 
     <specific name="Level"> 12 </specific>
     <specific name="Power Type"> Utility </specific>
     <rules>
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Force" requires="ID_TIV_CLASS_FEATURE_515_01-4" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9" />
-      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10" />
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Force" requires="ID_TIV_CLASS_FEATURE_515_01-4"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9"/>
+      <modify name="Arcane Dissipation  " type="Power" Field="Keywords" value="Arcane, Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10"/>
     </rules>
   </RulesElement>
   <RulesElement name="Soul-Burn  " type="Power" internal-id="ID_TIV_POWER_515_01_01_03" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
@@ -2175,26 +2175,26 @@ The resistance you ignore due to Arcane Penetration rises to 15, and your bonus 
     <specific name="Level"> 20 </specific>
     <specific name="Power Type"> Attack </specific>
     <rules>
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Acid damage, plus 10 ongoing Acid damage (save ends). As long as the target is taking ongoing Acid damage from this attack, the target deals 5 Acid damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-1" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Cold damage, plus 10 ongoing Cold damage (save ends). As long as the target is taking ongoing Cold damage from this attack, the target deals 5 Cold damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-2" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Fire damage, plus 10 ongoing Fire damage (save ends). As long as the target is taking ongoing Fire damage from this attack, the target deals 5 Fire damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-3" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Force" requires="ID_TIV_CLASS_FEATURE_515_01-4" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Force damage, plus 10 ongoing Force damage (save ends). As long as the target is taking ongoing Force damage from this attack, the target deals 5 Force damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-4" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Lightning damage, plus 10 ongoing Lightning damage (save ends). As long as the target is taking ongoing Lightning damage from this attack, the target deals 5 Lightning damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-5" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Necrotic damage, plus 10 ongoing Necrotic damage (save ends). As long as the target is taking ongoing Necrotic damage from this attack, the target deals 5 Necrotic damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-6" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Poison damage, plus 10 ongoing Poison damage (save ends). As long as the target is taking ongoing Poison damage from this attack, the target deals 5 Poison damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-7" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Psychic damage, plus 10 ongoing Psychic damage (save ends). As long as the target is taking ongoing Psychic damage from this attack, the target deals 5 Psychic damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-8" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Radiant damage, plus 10 ongoing Radiant damage (save ends). As long as the target is taking ongoing Radiant damage from this attack, the target deals 5 Radiant damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-9" />
-      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10" />
-      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Thunder damage, plus 10 ongoing Thunder damage (save ends). As long as the target is taking ongoing Thunder damage from this attack, the target deals 5 Thunder damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-10" />
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Acid" requires="ID_TIV_CLASS_FEATURE_515_01-1"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Acid damage, plus 10 ongoing Acid damage (save ends). As long as the target is taking ongoing Acid damage from this attack, the target deals 5 Acid damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-1"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Cold" requires="ID_TIV_CLASS_FEATURE_515_01-2"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Cold damage, plus 10 ongoing Cold damage (save ends). As long as the target is taking ongoing Cold damage from this attack, the target deals 5 Cold damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-2"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Fire" requires="ID_TIV_CLASS_FEATURE_515_01-3"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Fire damage, plus 10 ongoing Fire damage (save ends). As long as the target is taking ongoing Fire damage from this attack, the target deals 5 Fire damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-3"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Force" requires="ID_TIV_CLASS_FEATURE_515_01-4"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Force damage, plus 10 ongoing Force damage (save ends). As long as the target is taking ongoing Force damage from this attack, the target deals 5 Force damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-4"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Lightning" requires="ID_TIV_CLASS_FEATURE_515_01-5"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Lightning damage, plus 10 ongoing Lightning damage (save ends). As long as the target is taking ongoing Lightning damage from this attack, the target deals 5 Lightning damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-5"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Necrotic" requires="ID_TIV_CLASS_FEATURE_515_01-6"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Necrotic damage, plus 10 ongoing Necrotic damage (save ends). As long as the target is taking ongoing Necrotic damage from this attack, the target deals 5 Necrotic damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-6"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Poison" requires="ID_TIV_CLASS_FEATURE_515_01-7"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Poison damage, plus 10 ongoing Poison damage (save ends). As long as the target is taking ongoing Poison damage from this attack, the target deals 5 Poison damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-7"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Psychic" requires="ID_TIV_CLASS_FEATURE_515_01-8"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Psychic damage, plus 10 ongoing Psychic damage (save ends). As long as the target is taking ongoing Psychic damage from this attack, the target deals 5 Psychic damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-8"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Radiant" requires="ID_TIV_CLASS_FEATURE_515_01-9"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Radiant damage, plus 10 ongoing Radiant damage (save ends). As long as the target is taking ongoing Radiant damage from this attack, the target deals 5 Radiant damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-9"/>
+      <modify name="Soul-Burn  " type="Power" Field="Keywords" value="Arcane, Thunder" requires="ID_TIV_CLASS_FEATURE_515_01-10"/>
+      <modify name="Soul-Burn  " type="Power" Field="Hit" value="3d8 + either Intelligence modifier or Charisma modifier Thunder damage, plus 10 ongoing Thunder damage (save ends). As long as the target is taking ongoing Thunder damage from this attack, the target deals 5 Thunder damage to all creatures adjacent to it at the start of its next turn." requires="ID_TIV_CLASS_FEATURE_515_01-10"/>
     </rules>
   </RulesElement>
   <!-- Feats -->
@@ -2211,7 +2211,7 @@ If you successfully bull rush an opponent, you may push the target 2 squares, ra
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> When you use the Unending Determination power, you gain a +2 bonus to the new saving throw.</specific>
     <rules>
-      <modify name="Unending Determination  " type="Power" Field="Effect" value="Reroll a saving throw adding a +2 bonus. Use the second result, even if it's lower." />
+      <modify name="Unending Determination  " type="Power" Field="Effect" value="Reroll a saving throw adding a +2 bonus. Use the second result, even if it's lower."/>
     </rules>
 When you use the Unending Determination power, you gain a +2 bonus to the new saving throw.
 </RulesElement>
@@ -2221,7 +2221,7 @@ When you use the Unending Determination power, you gain a +2 bonus to the new sa
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a +1 feat bonus to damage rolls with all powers with the illusion or psychic keywords.</specific>
     <rules>
-      <statadd name="damage rolls" value="+1" type="Feat" condition="while using powers with the illusion or psychic keywords." />
+      <statadd name="damage rolls" value="+1" type="Feat" condition="while using powers with the illusion or psychic keywords."/>
     </rules>
 You gain a +1 feat bonus to damage rolls with all powers with the illusion or psychic keywords.
 </RulesElement>
@@ -2231,7 +2231,7 @@ You gain a +1 feat bonus to damage rolls with all powers with the illusion or ps
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a +2 feat bonus when making saving throws against ongoing effects with the fear or illusion keywords.</specific>
     <rules>
-      <statadd name="Saving Throws" value="+2" type="item" condition="against ongoing effects with the fear or illusion keywords." />
+      <statadd name="Saving Throws" value="+2" type="item" condition="against ongoing effects with the fear or illusion keywords."/>
     </rules>
 You gain a +2 feat bonus when making saving throws against ongoing effects with the fear or illusion keywords.
 </RulesElement>
@@ -2241,9 +2241,9 @@ You gain a +2 feat bonus when making saving throws against ongoing effects with 
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain proficiency and a +2 feat bonus to damage rolls with axes and spears.</specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(AXE)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" type="Proficiency" />
-      <statadd name="damage rolls" value="+2" type="Feat" condition="while using an axe or spear" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(AXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" type="Proficiency"/>
+      <statadd name="damage rolls" value="+2" type="Feat" condition="while using an axe or spear"/>
     </rules>
 You gain proficiency and a +2 feat bonus to damage rolls with axes and spears.
 </RulesElement>
@@ -2253,7 +2253,7 @@ You gain proficiency and a +2 feat bonus to damage rolls with axes and spears.
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain a +2 feat bonus to your movement speed when charging.</specific>
     <rules>
-      <statadd name="Speed" value="+2" condition="when charging" />
+      <statadd name="Speed" value="+2" condition="when charging"/>
     </rules>
 You gain a +2 feat bonus to your movement speed when charging.
 </RulesElement>
@@ -2270,7 +2270,7 @@ When using your Hasty Stealth racial ability, you may choose to take 10 rather t
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> When you spend an action point to gain an extra standard action, you can use your Savage Ferocity power on any damage you deal during that extra action. This does not count against the normal limit of one use per encounter on that power.</specific>
     <rules>
-      <textstring name="Action Point" value="Swift Savagery: When you spend an action point to gain an extra standard action, you can use your Savage Ferocity power on any damage you deal during that extra action. This does not count against the normal limit of one use per encounter on that power." />
+      <textstring name="Action Point" value="Swift Savagery: When you spend an action point to gain an extra standard action, you can use your Savage Ferocity power on any damage you deal during that extra action. This does not count against the normal limit of one use per encounter on that power."/>
     </rules>
 When you spend an action point to gain an extra standard action, you can use your savage ferocity power on any damage you deal during that extra action. This does not count against the normal limit of one use per encounter on that power.
 </RulesElement>
@@ -2280,8 +2280,8 @@ When you spend an action point to gain an extra standard action, you can use you
     <specific name="Tier"> Paragon </specific>
     <specific name="Short Description"> When you use the Battlefield Trickery racial power, you gain a +1 racial bonus to your AC and Reflex defense until the start of your next turn.</specific>
     <rules>
-      <statadd name="AC" value="+1" type="Feat" condition="when you use the Battlefield Trickery racial power, until the start of your next turn." />
-      <statadd name="Reflex Defense" value="+1" type="Feat" condition="when you use the Battlefield Trickery racial power, until the start of your next turn." />
+      <statadd name="AC" value="+1" type="Feat" condition="when you use the Battlefield Trickery racial power, until the start of your next turn."/>
+      <statadd name="Reflex Defense" value="+1" type="Feat" condition="when you use the Battlefield Trickery racial power, until the start of your next turn."/>
     </rules>
 When you use the Battlefield Trickery racial power, you gain a +1 racial bonus to your AC and Reflex defense until the start of your next turn.
 </RulesElement>
@@ -2295,7 +2295,7 @@ When you use the Battlefield Trickery racial power, you gain a +1 racial bonus t
     <specific name="Level"> 1 </specific>
     <specific name="Time"> 1 minute </specific>
     <specific name="Market Price"> 75 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You enable yourself to speak with a specific animal, and to gain answers to your questions. The animal need not be present when you cast the ritual, but you must designate what type of animal you wish to speak to. And of course, you'll need to locate or attract an animal of that type before the duration of the ritual expires. 
 Most animals are, obviously, not particularly intelligent. They know what they've seen in the recent past. They answer your questions to the best of their ability, but they cannot understand abstract concepts, and they don't count very well.
@@ -2319,7 +2319,7 @@ At the GM's option, questioning the animal might require a skill challenge, usin
     <specific name="Level"> 15 </specific>
     <specific name="Time"> 10 minutes </specific>
     <specific name="Market Price"> 5,000 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You generate an aura of magic that transforms the water around you into a lighter, breathable substance. It remains a liquid, not true air, but you and all creatures within are still capable of breathing normally. When within the sphere, you can move through the water at a speed equal to your normal base movement, and can do so in all directions, but you cannot run. You can cause a number of willing companions to move along with the sphere as many as can reasonably fit in the sphere's diameter. Aquatic creatures outside the area of Air Bubble can see the perimeter of the bubble, and most avoid it if possible. Aquatic creatures cannot breathe within the sphere, but they can swim through it if necessary.
 
@@ -2343,7 +2343,7 @@ Your Nature check determines the duration and size of the bubble.
     <specific name="Level"> 6 </specific>
     <specific name="Time"> 10 minutes </specific>
     <specific name="Market Price"> 360 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You enable yourself to speak with a specific plant, and to gain answers to your questions.
 
@@ -2368,7 +2368,7 @@ At the GM's option, questioning the plant might require a skill challenge, using
     <specific name="Level"> 17 </specific>
     <specific name="Time"> 2 hours (10 minutes to maintain; see text) </specific>
     <specific name="Market Price"> 13,000 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 With this ritual, you can alter the contours of a natural area of ground. The region must be dirt, soil, sand, clay, loose rock, or the like. You cannot move or collapse true rock formations, ground made up of solid rock, or a manufactured floor. This ritual does not violently break the surface of the ground. Instead, it creates wavelike crests and troughs, with the earth reacting with glacier-like fluidity until the desired result is achieved. Trees, structures, rock formations, and such are mostly unaffected except for changes in elevation and relative topography.
 
@@ -2395,7 +2395,7 @@ Any walls or barriers you create with this ritual have the following statistics 
     <specific name="Level"> 20 </specific>
     <specific name="Time"> 10 minutes </specific>
     <specific name="Market Price"> 25,000 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You create the illusion of a number of objects, using them to alter the appearance of the region as you prefer. You can use this ritual to create an illusory wall, tree, statue, shrub, or other object. Each object created by the ritual can be between Small and Large size; you can, if you like, include one or two Huge objects among them, but this cuts the number of total images you can create by half.
 
@@ -2422,7 +2422,7 @@ Creatures that view or interact with an illusion are entitled to Insight checks 
     <specific name="Level"> 12 </specific>
     <specific name="Time"> 10 minutes </specific>
     <specific name="Market Price"> 2,600 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 You enable yourself to speak with a stone or stone object (of up to Large size), and to gain answers to your questions.
 
@@ -2447,7 +2447,7 @@ At the GM's option, questioning the stone might require a skill challenge, using
     <specific name="Level"> 12 </specific>
     <specific name="Time"> 10 minutes </specific>
     <specific name="Market Price"> 2,600 gp </specific>
-    <specific name="Prerequisite" />
+    <specific name="Prerequisite"/>
     <specific name="type"> Ritual </specific>
 While walking "between the worlds" in this manner, you cover substantially more ground, taking advantage of both the intrinsic magic of the Feywild and the differences in terrain between the two worlds. For the duration of the ritual, multiply your overland travel distances by 5. You must emerge from another tree, so if your destination is a wasteland a desert, for instance, or a glacier the GM may determine that you cannot use this spell to travel the entire distance.
 
@@ -4909,17 +4909,17 @@ As a move action, you may move the area of the imaginary terrain up to 3 squares
     <specific name="Power Type"> Utility </specific>
     <specific name="_DisplayPowers"> ID_TIV_POWER_APG_100-151-1,ID_TIV_POWER_APG_100-151-2,ID_TIV_POWER_APG_100-151-3,ID_TIV_POWER_APG_100-151-4 </specific>
     <rules>
-      <grant name="ID_TIV_POWER_APG_100-151-1  " type="Power" />
-      <grant name="ID_TIV_POWER_APG_100-151-2  " type="Power" />
-      <grant name="ID_TIV_POWER_APG_100-151-3  " type="Power" />
-      <grant name="ID_TIV_POWER_APG_100-151-4  " type="Power" />
+      <grant name="ID_TIV_POWER_APG_100-151-1  " type="Power"/>
+      <grant name="ID_TIV_POWER_APG_100-151-2  " type="Power"/>
+      <grant name="ID_TIV_POWER_APG_100-151-3  " type="Power"/>
+      <grant name="ID_TIV_POWER_APG_100-151-4  " type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Bard's Ghost Sound  " type="Power" internal-id="ID_TIV_POWER_APG_100-151-1" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
     <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_10,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> With a wink, you create an illusory sound that emanates from a distant location. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility  </specific>
     <specific name="Keywords"> Arcane, Illusion </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -4927,16 +4927,16 @@ As a move action, you may move the area of the imaginary terrain up to 3 squares
     <specific name="Target"> One object or unoccupied square </specific>
     <specific name="Effect"> You cause a sound as quiet as a whisper or as loud as a yelling or fighting creature to emanate from the target. You can produce nonvocal sounds such as the ringing of a sword blow, jingling armor, or scraping stone. If you whisper, you can whisper quietly enough that only creatures adjacent to the target can hear your words. 
 Useful for creating diversions both in and out of combat, ghost sound can help you distract other creatures with mysterious footsteps, the sound of a brawl coming from around a corner, or any other sound you can imagine.</specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="_ParentPower"> ID_TIV_POWER_APG_100-151 </specific>
   </RulesElement>
   <RulesElement name="Bard's Light  " type="Power" internal-id="ID_TIV_POWER_APG_100-151-2" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
     <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> With a wave of your hand, you cause a bright light to appear on the tip of your staff, upon some other object, or in a nearby space. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility  </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -4944,16 +4944,16 @@ Useful for creating diversions both in and out of combat, ghost sound can help y
     <specific name="Target"> One object or unoccupied square </specific>
     <specific name="Effect"> The target sheds bright light until the end of the encounter or until you use this power again. The light fills the target's space and all squares within 4 squares of it. Putting out the light is a free action. 
 With a light cantrip at your disposal, you need never worry about carrying torches, lanterns, or oil.</specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="_ParentPower"> ID_TIV_POWER_APG_100-151 </specific>
   </RulesElement>
   <RulesElement name="Bard's Mage Hand  " type="Power" internal-id="ID_TIV_POWER_APG_100-151-3" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
     <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
     <Flavor> You gesture toward an object nearby, and a spectral floating hand lifts the object into the air and moves it where you wish. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility  </specific>
     <specific name="Keywords"> Arcane, Conjuration </specific>
     <specific name="Action Type"> Minor Action </specific>
@@ -4964,16 +4964,16 @@ You conjure a spectral, floating hand in an unoccupied square within range. The 
     <specific name=" Move Action"> The hand moves up to 5 squares in any direction, carrying the object it holds. </specific>
     <specific name=" Free Action"> The hand drops the object it is holding. </specific>
     <specific name="Sustain Minor"> The hand persists until the end of your next turn. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="_ParentPower"> ID_TIV_POWER_APG_100-151 </specific>
   </RulesElement>
   <RulesElement name="Bard's Prestidigitation  " type="Power" internal-id="ID_TIV_POWER_APG_100-151-4" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">
     <Category> ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_104,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Flavor> You perform an amusing magical trick, such as creating a dancing wisp of light, freshening a wilting flower, making a coin invisible, or warming a cold drink. </Flavor>
     <specific name="Power Usage"> At-Will </specific>
-    <specific name="_SkillPower" />
+    <specific name="_SkillPower"/>
     <specific name="Display"> Bard Utility  </specific>
     <specific name="Keywords"> Arcane </specific>
     <specific name="Action Type"> Standard action </specific>
@@ -4988,9 +4988,9 @@ You conjure a spectral, floating hand in an unoccupied square within range. The 
 	* Produce out of nothingness a small item or image that exists until the end of your next turn.
 	* Make a small, handheld item invisible until the end of your next turn. </specific>
     <specific name="Special"> You can have as many as three prestidigitation effects active at one time. Nothing you create with this cantrip can deal damage, serve as a weapon or a tool, or hinder another creature's actions. This cantrip cannot duplicate the effect of any other power. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="Class"> ID_FMP_CLASS_104 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="_ParentPower"> ID_TIV_POWER_APG_100-151 </specific>
   </RulesElement>
   <RulesElement name=" Inspire Competence  " type="Power" internal-id="ID_TIV_POWER_APG_100-152" source="Advanced Player's Guide" revision-date="12/27/2010 10:46:57 AM">

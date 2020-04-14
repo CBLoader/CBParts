@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>0</Version>
     <Filename>83-blackmoor.part</Filename>
-    <PartAddress>http://cbloader.com/3rdParty/83-blackmoor.part</PartAddress>
-    <VersionAddress>http://cbloader.com/3rdParty/83-blackmoor.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/3rdParty/83-blackmoor.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/3rdParty/83-blackmoor.txt</VersionAddress>
   </UpdateInfo>
 
 <!-- Blackmoor -->
@@ -49,13 +49,13 @@
   <specific name="Short Description"> Small but tough warriors who defend their communities from invasion and oppression. </specific>
   <specific name="Racial Traits"> ID_DAB_RACIAL_TRAIT_1, ID_DAB_RACIAL_TRAIT_2, ID_DAB_RACIAL_TRAIT_3, ID_DAB_RACIAL_TRAIT_4 </specific>
   <rules>
-    <grant name="ID_INTERNAL_GRANTS_DOCRAE" type="Grants" />
-    <statadd name="Speed" value="+6" />
-    <textstring name="Average Height" value="3' 6&quot;-3' 10&quot;" />
-    <textstring name="Average Weight" value="65-75 lb." />
-    <textstring name="Size" value="Small" />
-    <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution" />
-    <select type="Language" number="1" Category="Starting" />
+    <grant name="ID_INTERNAL_GRANTS_DOCRAE" type="Grants"/>
+    <statadd name="Speed" value="+6"/>
+    <textstring name="Average Height" value="3' 6&quot;-3' 10&quot;"/>
+    <textstring name="Average Weight" value="65-75 lb."/>
+    <textstring name="Size" value="Small"/>
+    <select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
+    <select type="Language" number="1" Category="Starting"/>
   </rules>
 Play a Docrae if you want ...
    </RulesElement>
@@ -64,8 +64,8 @@ Play a Docrae if you want ...
   <Prereqs> ~DOCRAE </Prereqs>
   <specific name="_SupportsID"> ID_FMP_BACKGROUND_88 </specific>
   <rules>
-    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association" />
-    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association" />
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+    <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
   </rules>
 You were raised like a Docrae.
    </RulesElement>
@@ -78,46 +78,46 @@ You count as a Docrae for meeting prerequisites.
   <Prereqs> !Docrae Race,!Docrae CountsAsRace </Prereqs>
   <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2064 </specific>
   <rules>
-    <grant name="ID_INTERNAL_COUNTSASRACE_DOCRAE" type="CountsAsRace" />
-    <grant name="ID_DAB_RACE_POWER_1" type="Power" />
+    <grant name="ID_INTERNAL_COUNTSASRACE_DOCRAE" type="CountsAsRace"/>
+    <grant name="ID_DAB_RACE_POWER_1" type="Power"/>
   </rules>
 You are considered a Docrae for the purpose of meeting feat prerequisites.
    </RulesElement>
 <RulesElement name="Docrae" type="Grants" internal-id="ID_INTERNAL_GRANTS_DOCRAE" source="Blackmoor">
   <specific name="_SupportsID"> ID_DAB_RACE_1 </specific>
   <rules>
-    <grant name="ID_INTERNAL_SIZE_SMALL" type="Size" />
-    <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision" />
-    <grant name="ID_DAB_RACIAL_TRAIT_1" type="Racial Trait" />
-    <grant name="ID_DAB_RACIAL_TRAIT_2" type="Racial Trait" />
-    <grant name="ID_DAB_RACIAL_TRAIT_3" type="Racial Trait" />
-    <grant name="ID_DAB_RACIAL_TRAIT_4" type="Racial Trait" />
-    <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus" />
-    <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-    <grant name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait" />
-    <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait" />
-    <grant name="ID_INTERNAL_COUNTSASRACE_DOCRAE" type="CountsAsRace" />
-    <grant name="ID_INTERNAL_COUNTSASRACE_HALFLING" type="CountsAsRace" />
+    <grant name="ID_INTERNAL_SIZE_SMALL" type="Size"/>
+    <grant name="ID_INTERNAL_VISION_NORMAL" type="Vision"/>
+    <grant name="ID_DAB_RACIAL_TRAIT_1" type="Racial Trait"/>
+    <grant name="ID_DAB_RACIAL_TRAIT_2" type="Racial Trait"/>
+    <grant name="ID_DAB_RACIAL_TRAIT_3" type="Racial Trait"/>
+    <grant name="ID_DAB_RACIAL_TRAIT_4" type="Racial Trait"/>
+    <grant name="ID_INTERNAL_RACE_ABILITY_BONUS_DEXTERITY" type="Race Ability Bonus"/>
+    <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+    <grant name="ID_INTERNAL_RACIAL_TRAIT_INSIGHT_BONUS" type="Racial Trait"/>
+    <grant name="ID_INTERNAL_RACIAL_TRAIT_PERCEPTION_BONUS" type="Racial Trait"/>
+    <grant name="ID_INTERNAL_COUNTSASRACE_DOCRAE" type="CountsAsRace"/>
+    <grant name="ID_INTERNAL_COUNTSASRACE_HALFLING" type="CountsAsRace"/>
   </rules>
 </RulesElement>
 <RulesElement name="Born Hurler" type="Racial Trait" internal-id="ID_DAB_RACIAL_TRAIT_1" source="Blackmoor">
   <specific name="Short Description"> +1 attack with thrown weapons. </specific>
   <specific name="Level"> 1 </specific>
   <rules>
-         <statadd name="light thrown:attack" value="+1" type="Racial" />
-         <statadd name="heavy thrown:attack" value="+1" type="Racial" />
+         <statadd name="light thrown:attack" value="+1" type="Racial"/>
+         <statadd name="heavy thrown:attack" value="+1" type="Racial"/>
   </rules>
 You gain a +1 racial bonus to attack rolls with weapons with a thrown property.
 </RulesElement>
 <RulesElement name="Never Surrender" type="Racial Trait" internal-id="ID_DAB_RACIAL_TRAIT_2" source="Blackmoor">
     <specific name="Short Description"> You have the never surrender encounter power. </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Powers"> ID_DAB_RACE_POWER_1 </specific>
     <specific name="Type"> Utility </specific>
     <specific name="Class"> ID_DAB_RACE_1 </specific>
     <specific name="_DisplayPowers"> ID_DAB_RACE_POWER_1 </specific>
     <rules>
-      <grant name="ID_DAB_RACE_POWER_1" type="Power" />
+      <grant name="ID_DAB_RACE_POWER_1" type="Power"/>
     </rules>
 You have the never surrender encounter power.
 </RulesElement>
@@ -130,7 +130,7 @@ You have the never surrender encounter power.
     <specific name="Trigger"> You are bloodied by an attack. </specific>
     <specific name="Effect"> You can spend a healing surge. </specific>
     <specific name="Class"> ID_DAB_RACE_1 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_DAB_RACIAL_TRAIT_2 </specific>
 </RulesElement>
@@ -138,8 +138,8 @@ You have the never surrender encounter power.
   <specific name="Short Description"> When bloodied, +1 to Fort and Will. </specific>
   <specific name="Level"> 1 </specific>
   <rules>
-      <statadd name="Fortitude Defense" value="+1" type="Racial" condition="while bloodied." />
-      <statadd name="Will Defense" value="+1" type="Racial" condition="while bloodied." />
+      <statadd name="Fortitude Defense" value="+1" type="Racial" condition="while bloodied."/>
+      <statadd name="Will Defense" value="+1" type="Racial" condition="while bloodied."/>
   </rules>
 When you are bloodied, you gain a +1 racial bonus to Fortitude and Will defense.
 </RulesElement>
@@ -147,7 +147,7 @@ When you are bloodied, you gain a +1 racial bonus to Fortitude and Will defense.
   <specific name="Short Description"> +1 attack with crossbows. </specific>
   <specific name="Level"> 1 </specific>
   <rules>
-         <statadd name="crossbow group:attack" value="+1" type="Racial" />
+         <statadd name="crossbow group:attack" value="+1" type="Racial"/>
   </rules>
 You gain a +1 racial bonus to attack rolls with weapons of the crossbow group.
 </RulesElement>
@@ -288,7 +288,7 @@ Zugzul (tsuk-tzul) is deity of conquest, death, fire, and war.
 
 <RulesElement name="Dhumnon" type="Deity" internal-id="ID_DAB_DEITY_28" source="Blackmoor">
       <specific name="Alignment"> Lawful Good </specific>
-Dhumnon (d&#250;m-non) is the God-King of all dwarves and dwarven deities.
+Dhumnon (dúm-non) is the God-King of all dwarves and dwarven deities.
 </RulesElement>
 
 <RulesElement name="Gorrim" type="Deity" internal-id="ID_DAB_DEITY_29" source="Blackmoor">
@@ -381,8 +381,8 @@ Charis (kar-is) is the God-King of the gnome pantheon. His followers believe tha
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +3 to athletics &amp; nature checks for natural mounts </specific>
       <rules>
-         <statadd name="Athletics Misc" value="+3" type="Feat" condition="when they apply to mounts that are natural beasts." />
-         <statadd name="Nature Misc" value="+3" type="Feat" condition="when they apply to mounts that are natural beasts." />
+         <statadd name="Athletics Misc" value="+3" type="Feat" condition="when they apply to mounts that are natural beasts."/>
+         <statadd name="Nature Misc" value="+3" type="Feat" condition="when they apply to mounts that are natural beasts."/>
       </rules>
 You gain a +3 feat bonus to Athletics and Nature checks when they apply to mounts that are natural beasts.
    </RulesElement>
@@ -395,7 +395,7 @@ You gain a +3 feat bonus to Athletics and Nature checks when they apply to mount
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_1 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_1" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_1" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Charis's way.
    </RulesElement>
@@ -418,7 +418,7 @@ You can invoke the power of your deity to use Charis's way.
   <specific name="Tier"> Heroic </specific>
   <specific name="Short Description"> benefits on Action Point </specific>
   <rules>
-     <textstring name="Action Point" value="Concentrated Effort:Whenever you spend an action point to take an extra action, you can choose a target. You gain a +1 feat bonus on attack rolls against the target, and a +1 feat bonus to AC versus attacks made by the target, until the start of your next turn. If you do, you take a -2 penalty to your AC against attacks from other sources until the start of your next turn." />
+     <textstring name="Action Point" value="Concentrated Effort:Whenever you spend an action point to take an extra action, you can choose a target. You gain a +1 feat bonus on attack rolls against the target, and a +1 feat bonus to AC versus attacks made by the target, until the start of your next turn. If you do, you take a -2 penalty to your AC against attacks from other sources until the start of your next turn."/>
   </rules>
 Whenever you spend an action point to take an extra action, you can choose a target. You gain a +1 feat bonus on attack rolls against the target, and a +1 feat bonus to AC versus attacks made by the target, until the start of your next turn. If you do, you take a -2 penalty to your AC against attacks from other sources until the start of your next turn.
    </RulesElement>
@@ -431,7 +431,7 @@ Whenever you spend an action point to take an extra action, you can choose a tar
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_2 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_2" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_2" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Dhumnon's bond.
    </RulesElement>
@@ -457,7 +457,7 @@ You can invoke the power of your deity to use Dhumnon's bond.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_3 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_3" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_3" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Faunus's accuracy.
    </RulesElement>
@@ -482,7 +482,7 @@ You can invoke the power of your deity to use Faunus's accuracy.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_4 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_4" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_4" type="Power"/>
       </rules>
 You can invoke the power of your deity to use heart of Phellia.
    </RulesElement>
@@ -508,7 +508,7 @@ You can invoke the power of your deity to use heart of Phellia.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_5 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_5" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_5" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Hemgrid's passage.
    </RulesElement>
@@ -530,7 +530,7 @@ You can invoke the power of your deity to use Hemgrid's passage.
   <specific name="Tier"> Heroic </specific>
   <specific name="Short Description"> Bond with your horse </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_6" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_6" type="Power"/>
       </rules>
 You can create a powerful bond between yourself and a single horse. Creating the bond takes one week. Once the bond is created, you can communicate with the bonded horse empathically. This allows you to know whenever your horse is afraid, hungry, or in pain, out to a range of about 1 mile. In addition, when you are with your horse, you can look in its eyes and get a sense of what it has seen in the past 12 hours. (This sense is not a vivid picture, but a rough understanding of the animal's perspective.) You can only have one bond of this type at a time.
 If you are ever permanently separated from your bonded horse, or if the bonded horse dies, the bond is broken and you take a -2 penalty on all attack rolls, saving throws, and skill checks for one week due to the extreme trauma. This penalty applies even if the horse is ultimately raised from the dead. After this mourning period, you may bond with a new horse or reset the previously existing bond.
@@ -563,7 +563,7 @@ Special: You may take this feat multiple times. Each time you take it, it applie
       <specific name="Short Description"> Gain +4 intimidate versus Cumasti elves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Cumasti elves." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Cumasti elves."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Cumasti elf race.
    </RulesElement>
@@ -574,7 +574,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Westryn elves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Westryn elves." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Westryn elves."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Westryn elf race.
    </RulesElement>
@@ -585,7 +585,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Dwarves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC dwarves." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC dwarves."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the dwarven race.
    </RulesElement>
@@ -596,7 +596,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Eladrin </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC eladrin." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC eladrin."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the eladrin race.
    </RulesElement>
@@ -607,7 +607,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus half-elves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC half-elves." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC half-elves."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the half-elven race.
    </RulesElement>
@@ -618,7 +618,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Hobbit halflings </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Hobbit halflings." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Hobbit halflings."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Hobbit halfling race.
    </RulesElement>
@@ -629,7 +629,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Docrae halflings </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Docrae halflings." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Docrae halflings."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Docrae halfling race.
    </RulesElement>
@@ -640,7 +640,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus High Thonians </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC High Thonians." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC High Thonians."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the High Thonians human race.
    </RulesElement>
@@ -651,7 +651,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Peshwah </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Peshwah." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Peshwah."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Peshwah human race.
    </RulesElement>
@@ -662,7 +662,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Thonians </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Thonians." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Thonians."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Thonians human race.
    </RulesElement>
@@ -673,7 +673,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Afridhi </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Afridhi." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Afridhi."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Afridhi human race.
    </RulesElement>
@@ -684,7 +684,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus Skandaharians </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Skandaharians." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC Skandaharians."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the Skandaharians human race.
    </RulesElement>
@@ -695,7 +695,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus gnomes </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC gnomes." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC gnomes."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the gnome race.
    </RulesElement>
@@ -706,7 +706,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus orcs </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC orcs." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC orcs."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the orc race including half-orcs.
    </RulesElement>
@@ -717,7 +717,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="Short Description"> Gain +4 intimidate versus goblins </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC goblins." />
+         <statadd name="Intimidate Misc" value="+4" type="Feat" condition="when used upon NPC goblins."/>
       </rules>
 You gain a +4 bonus on Intimidate checks when dealing with non-player characters of the goblin race.
    </RulesElement>
@@ -730,7 +730,7 @@ You gain a +4 bonus on Intimidate checks when dealing with non-player characters
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_7 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_7" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_7" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Insellageth's incantation.
    </RulesElement>
@@ -756,7 +756,7 @@ You can invoke the power of your deity to use Insellageth's incantation.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_8 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_8" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_8" type="Power"/>
       </rules>
 You can invoke the power of your deity to use nobility of Fronaus.
    </RulesElement>
@@ -782,7 +782,7 @@ You can invoke the power of your deity to use nobility of Fronaus.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_9 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_9" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_9" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Odir's lore.
    </RulesElement>
@@ -816,7 +816,7 @@ Special: You may take this feat multiple times. Each time you take it, it applie
       <specific name="Short Description"> Gain +4 diplomacy versus Cumasti elves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Cumasti elves." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Cumasti elves."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Cumasti elf race.
    </RulesElement>
@@ -827,7 +827,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Westryn elves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Westryn elves." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Westryn elves."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Westryn elf race.
    </RulesElement>
@@ -838,7 +838,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Dwarves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC dwarves." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC dwarves."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the dwarven race.
    </RulesElement>
@@ -849,7 +849,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Eladrin </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC eladrin." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC eladrin."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the eladrin race.
    </RulesElement>
@@ -860,7 +860,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus half-elves </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC half-elves." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC half-elves."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the half-elven race.
    </RulesElement>
@@ -871,7 +871,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Hobbit halflings </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Hobbit halflings." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Hobbit halflings."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Hobbit halfling race.
    </RulesElement>
@@ -882,7 +882,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Docrae halflings </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Docrae halflings." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Docrae halflings."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Docrae halfling race.
    </RulesElement>
@@ -893,7 +893,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus High Thonians </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC High Thonians." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC High Thonians."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the High Thonians human race.
    </RulesElement>
@@ -904,7 +904,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Peshwah </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Peshwah." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Peshwah."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Peshwah human race.
    </RulesElement>
@@ -915,7 +915,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Thonians </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Thonians." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Thonians."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Thonians human race.
    </RulesElement>
@@ -926,7 +926,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Afridhi </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Afridhi." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Afridhi."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Afridhi human race.
    </RulesElement>
@@ -937,7 +937,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus Skandaharians </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Skandaharians." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC Skandaharians."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the Skandaharians human race.
    </RulesElement>
@@ -948,7 +948,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus gnomes </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC gnomes." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC gnomes."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the gnome race.
    </RulesElement>
@@ -959,7 +959,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus orcs </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC orcs." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC orcs."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the orc race including half-orcs.
    </RulesElement>
@@ -970,7 +970,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="Short Description"> Gain +4 diplomacy versus goblins </specific>
       <specific name="Tier"> Heroic </specific>
       <rules>
-         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC goblins." />
+         <statadd name="Diplomacy Misc" value="+4" type="Feat" condition="when used upon NPC goblins."/>
       </rules>
 You gain a +4 bonus on diplomacy checks when dealing with non-player characters of the goblin race.
    </RulesElement>
@@ -983,7 +983,7 @@ You gain a +4 bonus on diplomacy checks when dealing with non-player characters 
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_10 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_10" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_10" type="Power"/>
       </rules>
 You can invoke the power of your deity to use shield of Shau.
    </RulesElement>
@@ -1007,7 +1007,7 @@ You can invoke the power of your deity to use shield of Shau.
       <specific name="Tier"> Heroic </specific>
       <specific name="Short Description"> +2 to damage rolls vs large creatures </specific>
       <rules>
-         <statadd name="melee damage rolls" value="+2" type="Feat" condition="against enemies that are at least two size categories larger than you." />
+         <statadd name="melee damage rolls" value="+2" type="Feat" condition="against enemies that are at least two size categories larger than you."/>
       </rules>
 You gain a +2 feat bonus to melee damage rolls against enemies that are at least two size categories larger than you.
 </RulesElement>
@@ -1020,7 +1020,7 @@ You gain a +2 feat bonus to melee damage rolls against enemies that are at least
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_11 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_11" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_11" type="Power"/>
       </rules>
 You can invoke the power of your deity to use vision of Ordana.
    </RulesElement>
@@ -1045,7 +1045,7 @@ You can invoke the power of your deity to use vision of Ordana.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_12 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_12" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_12" type="Power"/>
       </rules>
 You can invoke the power of your deity to use wind of Hak.
    </RulesElement>
@@ -1071,7 +1071,7 @@ You can invoke the power of your deity to use wind of Hak.
       <specific name="type"> Divinity </specific>
       <specific name="_DisplayPowers"> ID_DAB_FEAT_POWER_13 </specific>
       <rules>
-         <grant name="ID_DAB_FEAT_POWER_13" type="Power" />
+         <grant name="ID_DAB_FEAT_POWER_13" type="Power"/>
       </rules>
 You can invoke the power of your deity to use Zugzul's flames.
    </RulesElement>

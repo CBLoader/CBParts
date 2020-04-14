@@ -1,11 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <!-- UpdateInfo -->
   <UpdateInfo>
     <Version>10-August-2011</Version>
     <Filename>90-pact-blade-manifestation.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/90-pact-blade-manifestation.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/90-pact-blade-manifestation.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/90-pact-blade-manifestation.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/90-pact-blade-manifestation.txt</VersionAddress>
   </UpdateInfo>
   <!-- Pact Blade Manifestation -->
   <!-- 90-pact-blade-manifestation.part, version 1.02 -->
@@ -43,20 +43,20 @@
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain the ability to make your pact weapon, a physical sign of your alliance with an otherworldly power, appear in your hand. </specific>
     <specific name="_CS_ShortDescription"> Gain your Pact Blade. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <specific name="_DisplayPowers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <specific name="_DisplayPowers"/>
     <rules>
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_772" />
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3B_FEAT" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_773" />
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3C_FEAT" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_774" />
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT" type="Class Feature" requires="ID_INTERNAL_CLASS_FEATURE_FEY_PACT_(HYBRID)" />
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3B_FEAT" type="Class Feature" requires="ID_INTERNAL_CLASS_FEATURE_INFERNAL_PACT_(HYBRID)" />
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3C_FEAT" type="Class Feature" requires="ID_INTERNAL_CLASS_FEATURE_STAR_PACT_(HYBRID)" />
-      <grant name="ID_FMP_CLASS_FEATURE_3731_FEAT" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_823" />
-      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3C_FEAT" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_824" />
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_772"/>
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3B_FEAT" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_773"/>
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3C_FEAT" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_774"/>
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT" type="Class Feature" requires="ID_INTERNAL_CLASS_FEATURE_FEY_PACT_(HYBRID)"/>
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3B_FEAT" type="Class Feature" requires="ID_INTERNAL_CLASS_FEATURE_INFERNAL_PACT_(HYBRID)"/>
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3C_FEAT" type="Class Feature" requires="ID_INTERNAL_CLASS_FEATURE_STAR_PACT_(HYBRID)"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3731_FEAT" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_823"/>
+      <grant name="ID_WOG_HEXBLADE_CLASS_FEATURE_3C_FEAT" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_824"/>
     </rules>
 You gain the Pact Weapon warlock class feature. You gain the at-will attack power associated with the pact weapon but not the encounter attack power.
 </RulesElement>
@@ -66,64 +66,64 @@ You gain the Pact Weapon warlock class feature. You gain the at-will attack powe
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You give up one of your warlock abilities, and in exchange, your pact weapon gains a new attack power. </specific>
     <specific name="_CS_ShortDescription"> Gain Pact Blade encounter power. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <specific name="_DisplayPowers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <specific name="_DisplayPowers"/>
     <rules>
-      <grant name="ID_WOG_PT_DROP_WARLOCK_ENCOUNTER" type="Class Feature" />
-      <drop select="Drop Warlock Encounter Power" />
-      <grant name="ID_WOG_PT_FEAT_2A" type="Class Feature" requires="ID_INTERNAL_WOG_FEY_PACT" />
-      <grant name="ID_WOG_PT_FEAT_2B" type="Class Feature" requires="ID_INTERNAL_WOG_INFERNAL_PACT" />
-      <grant name="ID_WOG_PT_FEAT_2C" type="Class Feature" requires="ID_INTERNAL_WOG_STAR_PACT" />
-      <grant name="ID_WOG_PT_FEAT_2D" type="Class Feature" requires="ID_INTERNAL_WOG_GLOOM_PACT" />
-      <grant name="ID_WOG_PT_FEAT_2E" type="Class Feature" requires="ID_INTERNAL_WOG_WHITE_PACT" />
+      <grant name="ID_WOG_PT_DROP_WARLOCK_ENCOUNTER" type="Class Feature"/>
+      <drop select="Drop Warlock Encounter Power"/>
+      <grant name="ID_WOG_PT_FEAT_2A" type="Class Feature" requires="ID_INTERNAL_WOG_FEY_PACT"/>
+      <grant name="ID_WOG_PT_FEAT_2B" type="Class Feature" requires="ID_INTERNAL_WOG_INFERNAL_PACT"/>
+      <grant name="ID_WOG_PT_FEAT_2C" type="Class Feature" requires="ID_INTERNAL_WOG_STAR_PACT"/>
+      <grant name="ID_WOG_PT_FEAT_2D" type="Class Feature" requires="ID_INTERNAL_WOG_GLOOM_PACT"/>
+      <grant name="ID_WOG_PT_FEAT_2E" type="Class Feature" requires="ID_INTERNAL_WOG_WHITE_PACT"/>
     </rules>
 Choose one of your warlock encounter attack powers that has a level. You lose that power and gain the encounter attack power associated with your Pact Weapon class feature.
 </RulesElement>
   <RulesElement name="Drop Warlock Encounter Power" type="Class Feature" internal-id="ID_WOG_PT_DROP_WARLOCK_ENCOUNTER" source="House Rules Supplement" revision-date="6/10/2011 8:00:00 PM">
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Power" number="1" name="Drop Warlock Encounter Power" Category="ID_FMP_CLASS_7,encounter,attack,1,3,7,13,17,23,27" existing="true" />
+      <select type="Power" number="1" name="Drop Warlock Encounter Power" Category="ID_FMP_CLASS_7,encounter,attack,1,3,7,13,17,23,27" existing="true"/>
     </rules>
   </RulesElement>
   <RulesElement name="Fey Pact Blade Mastery" type="Class Feature" internal-id="ID_WOG_PT_FEAT_2A" source="House Rules Supplement" revision-date="6/10/2011 8:00:00 PM">
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_13671" type="Power" />
+      <grant name="ID_FMP_POWER_13671" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="White Well Blade Mastery" type="Class Feature" internal-id="ID_WOG_PT_FEAT_2E" source="House Rules Supplement" revision-date="6/11/2011 1:00:00 AM">
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_13747" type="Power" />
+      <grant name="ID_FMP_POWER_13747" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Infernal Pact Blade Mastery" type="Class Feature" internal-id="ID_WOG_PT_FEAT_2B" source="House Rules Supplement" revision-date="6/10/2011 8:00:00 PM">
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_13681" type="Power" />
+      <grant name="ID_FMP_POWER_13681" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Star Blade Mastery" type="Class Feature" internal-id="ID_WOG_PT_FEAT_2C" source="House Rules Supplement" revision-date="6/10/2011 8:00:00 PM">
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_13723" type="Power" />
+      <grant name="ID_FMP_POWER_13723" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Gloom Blade Mastery" type="Class Feature" internal-id="ID_WOG_PT_FEAT_2D" source="House Rules Supplement" revision-date="6/10/2011 8:00:00 PM">
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <grant name="ID_FMP_POWER_13964" type="Power" />
+      <grant name="ID_FMP_POWER_13964" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Fey Pact Weapon Choice" type="Class Feature" internal-id="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
-      <select type="Class Feature" number="1" Category="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT_FEY|ID_WOG_HEXBLADE_CLASS_FEATURE_3D_FEAT" />
+      <select type="Class Feature" number="1" Category="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT_FEY|ID_WOG_HEXBLADE_CLASS_FEATURE_3D_FEAT"/>
     </rules>
   </RulesElement>
   <RulesElement name="Fey Pact Weapon Manifestation" type="Class Feature" internal-id="ID_WOG_HEXBLADE_CLASS_FEATURE_3A_FEAT_FEY" source="Player Essentials: Heroes of the Forgotten Kingdoms">
@@ -138,49 +138,49 @@ Choose one of your warlock encounter attack powers that has a level. You lose th
     <specific name="_DisplayPowers"> ID_FMP_POWER_13670 </specific>
     <specific name="_DisplayWeapons"> ID_WOG_HEXBLADE_TRAIT_WEAPON_1 </specific>
     <rules>
-      <grant name="PactBladeManifestationFey" type="Category" />
-      <grant name="ID_FMP_POWER_13670" type="Power" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FEY_PACT_WEAPON)" type="proficiency" />
-      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_1_ITEM" value="+1" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade" />
+      <grant name="PactBladeManifestationFey" type="Category"/>
+      <grant name="ID_FMP_POWER_13670" type="Power"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FEY_PACT_WEAPON)" type="proficiency"/>
+      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_1_ITEM" value="+1"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_1,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade"/>
     </rules>
 You may summon the blade of winter's mourning weapon and you gain a power that you can use whenever you wield the blade: icy skewer.
 </RulesElement>
@@ -194,49 +194,49 @@ You may summon the blade of winter's mourning weapon and you gain a power that y
     <specific name="Powers"> ID_FMP_POWER_13680 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_13680 </specific>
     <rules>
-      <grant name="PactBladeManifestationInfernal" type="Category" />
-      <grant name="ID_FMP_POWER_13680" type="Power" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(INFERNAL_PACT_WEAPON)" type="proficiency" />
-      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_2_ITEM" value="+1" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade" />
+      <grant name="PactBladeManifestationInfernal" type="Category"/>
+      <grant name="ID_FMP_POWER_13680" type="Power"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(INFERNAL_PACT_WEAPON)" type="proficiency"/>
+      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_2_ITEM" value="+1"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_2,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade"/>
     </rules>
 You may summon the blade of annihilation weapon and you also gain two powers that you can use whenever you wield the blade: soul eater and blazing doom of the void.
 </RulesElement>
@@ -250,49 +250,49 @@ You may summon the blade of annihilation weapon and you also gain two powers tha
     <specific name="Powers"> ID_FMP_POWER_13722 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_13722 </specific>
     <rules>
-      <grant name="PactBladeManifestationStar" type="Category" />
-      <grant name="ID_FMP_POWER_13722" type="Power" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(STAR_PACT_WEAPON)" type="proficiency" />
-      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_3_ITEM" value="+1" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade" />
+      <grant name="PactBladeManifestationStar" type="Category"/>
+      <grant name="ID_FMP_POWER_13722" type="Power"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(STAR_PACT_WEAPON)" type="proficiency"/>
+      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_3_ITEM" value="+1"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_3,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade"/>
     </rules>
 You may summon the starshadow blade weapon and you also gain two powers that you can use whenever you wield the blade: resplendent blade and wield the warp.
 </RulesElement>
@@ -308,49 +308,49 @@ You may summon the starshadow blade weapon and you also gain two powers that you
     <specific name="_DisplayWeapons"> ID_FMP_WEAPON_163 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_13963 </specific>
     <rules>
-      <grant name="PactBladeManifestationGloom" type="Category" />
-      <grant name="ID_FMP_POWER_13963" type="Power" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLOOM_PACT_WEAPON)" type="proficiency" />
-      <statadd name="FREEBEE:ID_HOS_GLOOM_PACT_WEAPON_ITEM" value="+1" />
-      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade" />
+      <grant name="PactBladeManifestationGloom" type="Category"/>
+      <grant name="ID_FMP_POWER_13963" type="Power"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLOOM_PACT_WEAPON)" type="proficiency"/>
+      <statadd name="FREEBEE:ID_HOS_GLOOM_PACT_WEAPON_ITEM" value="+1"/>
+      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade"/>
     </rules>
 You gain the scourge of exquisite agony. When you gain this weapon, you also gain flesh rend and spirit flay, two powers that you can use whenever you wield it.
 </RulesElement>
@@ -367,49 +367,49 @@ You gain the scourge of exquisite agony. When you gain this weapon, you also gai
     <specific name="_DisplayPowers"> ID_FMP_POWER_13746 </specific>
     <specific name="_DisplayWeapons"> ID_WOG_HEXBLADE_TRAIT_WEAPON_4 </specific>
     <rules>
-      <grant name="PactBladeManifestationWhiteWell" type="Category" />
-      <grant name="ID_FMP_POWER_13746" type="Power" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHITE_WELL_PACT_WEAPON)" type="proficiency" />
-      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_4_ITEM" value="+1" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade" />
+      <grant name="PactBladeManifestationWhiteWell" type="Category"/>
+      <grant name="ID_FMP_POWER_13746" type="Power"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(WHITE_WELL_PACT_WEAPON)" type="proficiency"/>
+      <statadd name="FREEBEE:ID_WOG_HEXBLADE_TRAIT_WEAPON_4_ITEM" value="+1"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_WOG_HEXBLADE_TRAIT_WEAPON_4,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade"/>
     </rules>
 You may summon the sword of the White Well weapon and you also gain a power that you can use whenever you wield the blade: moonfire blade.
 </RulesElement>
@@ -420,13 +420,13 @@ You may summon the sword of the White Well weapon and you also gain a power that
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You gain the ability to make your pact weapon, a physical sign of your alliance with an otherworldly power, appear in your hand. </specific>
     <specific name="_CS_ShortDescription"> Gain your Pact Blade. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <specific name="_DisplayPowers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <specific name="_DisplayPowers"/>
     <rules>
-      <grant name="ID_FMP_CLASS_FEATURE_3731_FEAT_VAR" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_804" />
+      <grant name="ID_FMP_CLASS_FEATURE_3731_FEAT_VAR" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_804"/>
     </rules>
 You gain the Pact Weapon warlock class feature. You gain the at-will attack power associated with the pact weapon but not the encounter attack power.
 </RulesElement>
@@ -436,15 +436,15 @@ You gain the Pact Weapon warlock class feature. You gain the at-will attack powe
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> You give up one of your warlock abilities, and in exchange, your pact weapon gains a new attack power. </specific>
     <specific name="_CS_ShortDescription"> Gain Pact Blade encounter power. </specific>
-    <specific name="Special" />
-    <specific name="type" />
-    <specific name="Associated Power Info" />
-    <specific name="Associated Powers" />
-    <specific name="_DisplayPowers" />
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <specific name="_DisplayPowers"/>
     <rules>
-      <grant name="ID_WOG_PT_DROP_WARLOCK_ENCOUNTER" type="Class Feature" />
-      <drop select="Drop Warlock Encounter Power" />
-      <grant name="ID_WOG_PT_FEAT_2D" type="Class Feature" requires="ID_INTERNAL_WOG_GLOOM_PACT" />
+      <grant name="ID_WOG_PT_DROP_WARLOCK_ENCOUNTER" type="Class Feature"/>
+      <drop select="Drop Warlock Encounter Power"/>
+      <grant name="ID_WOG_PT_FEAT_2D" type="Class Feature" requires="ID_INTERNAL_WOG_GLOOM_PACT"/>
     </rules>
 Choose one of your warlock encounter attack powers that has a level. You lose that power and gain the encounter attack power associated with your Pact Weapon class feature.
 </RulesElement>
@@ -460,49 +460,49 @@ Choose one of your warlock encounter attack powers that has a level. You lose th
     <specific name="_DisplayWeapons"> ID_FMP_WEAPON_163 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_13963 </specific>
     <rules>
-      <grant name="PactBladeManifestationGloom" type="Category" />
-      <grant name="ID_FMP_POWER_13963" type="Power" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLOOM_PACT_WEAPON)" type="proficiency" />
-      <statadd name="FREEBEE:ID_HOS_GLOOM_PACT_WEAPON_ITEM" value="+1" />
-      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod" />
-      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade" />
-      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade" />
+      <grant name="PactBladeManifestationGloom" type="Category"/>
+      <grant name="ID_FMP_POWER_13963" type="Power"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(GLOOM_PACT_WEAPON)" type="proficiency"/>
+      <statadd name="FREEBEE:ID_HOS_GLOOM_PACT_WEAPON_ITEM" value="+1"/>
+      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingRod"/>
+      <statadd name="ID_FMP_WEAPON_163:attack" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_FMP_WEAPON_163:damage" value="+Offhand Implement Bonus" type="off-hand enhancement" requires="WearingPactBlade&amp;WearingWand"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3522&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3522&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3522&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;11 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(ROD)&amp;21 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_FMP_FEAT_3157&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_FMP_FEAT_3157&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_FMP_FEAT_3157&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;11 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_FOCUS_(WAND)&amp;21 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_FEAT_IMPLEMENT_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;15 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(ROD)&amp;25 level&amp;WearingRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+2" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;15 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+3" type="Feat" requires="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(WAND)&amp;25 level&amp;WearingWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ROD)&amp;WearingRod&amp;WearingAccurateRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_WAND)&amp;WearingWand&amp;WearingAccurateWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Ashen rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ASHEN_ROD)&amp;WearingRod&amp;WearingAshenRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,will:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Necrotic:damage" value="+Deathbone rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEATHBONE_ROD)&amp;WearingRod&amp;WearingDeathboneRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Radiant:damage" value="+Defiant rod" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DEFIANT_ROD)&amp;WearingRod&amp;WearingDefiantRod&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Fire:damage" value="+Cinder wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(CINDER_WAND)&amp;WearingWand&amp;WearingCinderWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,reflex:attack" value="+1" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7:damage" value="+Dragontooth wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(DRAGONTOOTH_WAND)&amp;WearingWand&amp;WearingDragontoothWand&amp;WearingPactBlade"/>
+      <statadd name="ID_FMP_WEAPON_163,ID_FMP_CLASS_7,Lightning:damage" value="+Rowan wand" type="Superior Implement" requires="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ROWAN_WAND)&amp;WearingWand&amp;WearingRowanWand&amp;WearingPactBlade"/>
     </rules>
 You gain the scourge of exquisite agony. When you gain this weapon, you also gain flesh rend and spirit flay, two powers that you can use whenever you wield it.
 </RulesElement>

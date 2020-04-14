@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.01</Version>
     <Filename>95-customized-background.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/95-customized-background.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/95-customized-background.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/95-customized-background.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/95-customized-background.txt</VersionAddress>
   </UpdateInfo>
 <!-- Customized Background -->
 <!-- 95-customized-background.part, version 1.01 -->
@@ -32,10 +32,10 @@
 <RulesElement name="Customized Background" type="Background" internal-id="ID_WOG_CUSTOM_MASTER_BACKGROUND_1" source="House Rules Supplement" revision-date="7/24/2011 6:00:00 PM">
       <specific name="type"> Campaign </specific>
       <specific name="Benefit"> This Customized Background selection was designed to cover the needs of Dungeon Masters with specialized or home-made campaigns and campaign worlds. You may still select other backgrounds to print on your character sheet for role-playing details and are encouraged to do so. Select two of the following benefits to receive as your background benefits.  </specific>
-      <specific name="Short Description" />
+      <specific name="Short Description"/>
       <specific name="Campaign"> Customized Background </specific>
-      <specific name="Associated Skills" />
-      <specific name="Associated Languages" />
+      <specific name="Associated Skills"/>
+      <specific name="Associated Languages"/>
 This Customized Background selection was designed to cover the needs of Dungeon Masters with specialized or home-made campaigns and campaign worlds. You may still select other backgrounds to print on your character sheet for role-playing details and are encouraged to do so. Select two of the following benefits to receive as your background benefits. 
 </RulesElement>
 
@@ -45,7 +45,7 @@ This Customized Background selection was designed to cover the needs of Dungeon 
       <specific name="_SupportsID"> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </specific>
       <specific name="_IsBenefit"> 1 </specific>
       <rules>
-      <select type="Background Choice" number="2" Category="CustomizedBackgroundChoice" >
+      <select type="Background Choice" number="2" Category="CustomizedBackgroundChoice">
 Choose Any Two Background Benefits
       </select>    
       </rules>
@@ -56,14 +56,14 @@ Select two of the following benefits to receive as your background benefits.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Acrobatics Misc" value="+2" />
-         <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ACROBATICS_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Acrobatics Misc" value="+2"/>
+         <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ACROBATICS_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Acrobatics checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Acrobatics" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ACROBATICS_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -72,14 +72,14 @@ Gain a +2 bonus to Acrobatics checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Arcana Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ARCANA_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Arcana Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ARCANA_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Arcana checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Arcana" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ARCANA_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -88,14 +88,14 @@ Gain a +2 bonus to Arcana checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Athletics Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ATHLETICS_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Athletics Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ATHLETICS_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Athletics checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Athletics" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ATHLETICS_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -104,14 +104,14 @@ Gain a +2 bonus to Athletics checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Bluff Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_BLUFF_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Bluff Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_BLUFF_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Bluff checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Bluff" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_BLUFF_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -120,14 +120,14 @@ Gain a +2 bonus to Bluff checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Diplomacy Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_DIPLOMACY_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Diplomacy Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_DIPLOMACY_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Diplomacy checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Diplomacy" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_DIPLOMACY_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -136,14 +136,14 @@ Gain a +2 bonus to Diplomacy checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Dungeoneering Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_DUNG_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Dungeoneering Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_DUNG_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Dungeoneering checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Dungeoneering" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_DUNG_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -152,14 +152,14 @@ Gain a +2 bonus to Dungeoneering checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Endurance Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ENDURANCE_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Endurance Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ENDURANCE_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Endurance checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Endurance" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_ENDURANCE_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -168,14 +168,14 @@ Gain a +2 bonus to Endurance checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Heal Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_HEAL_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Heal Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_HEAL_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Heal checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Heal" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_HEAL_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -184,14 +184,14 @@ Gain a +2 bonus to Heal checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="History Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_HISTORY_CLASSFEATURE" type="Class Feature" />
+         <statadd name="History Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_HISTORY_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to History checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to History" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_HISTORY_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -200,14 +200,14 @@ Gain a +2 bonus to History checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Insight Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_INSIGHT_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Insight Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_INSIGHT_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Insight checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Insight" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_INSIGHT_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -216,14 +216,14 @@ Gain a +2 bonus to Insight checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Intimidate Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_INTIMIDATE_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Intimidate Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_INTIMIDATE_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Intimidate checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Intimidate" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_INTIMIDATE_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -232,14 +232,14 @@ Gain a +2 bonus to Intimidate checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Nature Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_NATURE_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Nature Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_NATURE_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Nature checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Nature" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_NATURE_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -248,14 +248,14 @@ Gain a +2 bonus to Nature checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Perception Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_PERCEPTION_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Perception Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_PERCEPTION_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Perception checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Perception" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_PERCEPTION_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -264,14 +264,14 @@ Gain a +2 bonus to Perception checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Religion Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_RELIGION_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Religion Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_RELIGION_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Religion checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Religion" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_RELIGION_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -280,14 +280,14 @@ Gain a +2 bonus to Religion checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Stealth Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_STEALTH_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Stealth Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_STEALTH_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Stealth checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Stealth" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_STEALTH_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -296,14 +296,14 @@ Gain a +2 bonus to Stealth checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Streetwise Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_STREETWISE_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Streetwise Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_STREETWISE_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Streetwise checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Streetwise" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_STREETWISE_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -312,14 +312,14 @@ Gain a +2 bonus to Streetwise checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <statadd name="Thievery Misc" value="+2" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_THIEVERY_CLASSFEATURE" type="Class Feature" />
+         <statadd name="Thievery Misc" value="+2"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_THIEVERY_CLASSFEATURE" type="Class Feature"/>
       </rules>
 Gain a +2 bonus to Thievery checks.
 </RulesElement>
 
 <RulesElement name="Background: +2 to Thievery" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_SKILL_BONUS_BACKGROUND_THIEVERY_CLASSFEATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Miscellaneous bonus </specific>
 </RulesElement>
@@ -328,14 +328,14 @@ Gain a +2 bonus to Thievery checks.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Acrobatics" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ACRO" type="Class Feature" />
+         <modify name="Acrobatics" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ACRO" type="Class Feature"/>
       </rules>
 Add Acrobatics to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Acrobatics" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ACRO" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -344,14 +344,14 @@ Add Acrobatics to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Arcana" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ARCANA" type="Class Feature" />
+         <modify name="Arcana" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ARCANA" type="Class Feature"/>
       </rules>
 Add Arcana to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Arcana" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ARCANA" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -360,14 +360,14 @@ Add Arcana to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Athletics" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ATH" type="Class Feature" />
+         <modify name="Athletics" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ATH" type="Class Feature"/>
       </rules>
 Add Athletics to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Athletics" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ATH" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -376,14 +376,14 @@ Add Athletics to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Bluff" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_BLUFF" type="Class Feature" />
+         <modify name="Bluff" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_BLUFF" type="Class Feature"/>
       </rules>
 Add Bluff to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Bluff" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_BLUFF" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -392,14 +392,14 @@ Add Bluff to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Diplomacy" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DIPLOMACY" type="Class Feature" />
+         <modify name="Diplomacy" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DIPLOMACY" type="Class Feature"/>
       </rules>
 Add Diplomacy to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Diplomacy" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DIPLOMACY" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -408,14 +408,14 @@ Add Diplomacy to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Dungeoneering" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DUNG" type="Class Feature" />
+         <modify name="Dungeoneering" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DUNG" type="Class Feature"/>
       </rules>
 Add Dungeoneering to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Dungeoneering" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DUNG" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -424,14 +424,14 @@ Add Dungeoneering to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Endurance" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ENDURANCE" type="Class Feature" />
+         <modify name="Endurance" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ENDURANCE" type="Class Feature"/>
       </rules>
 Add Endurance to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Endurance" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ENDURANCE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -440,14 +440,14 @@ Add Endurance to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Heal" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_HEAL" type="Class Feature" />
+         <modify name="Heal" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_HEAL" type="Class Feature"/>
       </rules>
 Add Heal to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Heal" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_HEAL" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -456,14 +456,14 @@ Add Heal to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="History" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_HISTORY" type="Class Feature" />
+         <modify name="History" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_HISTORY" type="Class Feature"/>
       </rules>
 Add History to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: History" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_HISTORY" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -472,14 +472,14 @@ Add History to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Insight" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_INSIGHT" type="Class Feature" />
+         <modify name="Insight" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_INSIGHT" type="Class Feature"/>
       </rules>
 Add Insight to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Insight" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_INSIGHT" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -488,14 +488,14 @@ Add Insight to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Intimidate" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_INT" type="Class Feature" />
+         <modify name="Intimidate" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_INT" type="Class Feature"/>
       </rules>
 Add Intimidate to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Intimidate" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_INT" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -504,14 +504,14 @@ Add Intimidate to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Nature" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_NATURE" type="Class Feature" />
+         <modify name="Nature" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_NATURE" type="Class Feature"/>
       </rules>
 Add Nature to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Nature" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_NATURE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -520,14 +520,14 @@ Add Nature to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Perception" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PERCEPTION" type="Class Feature" />
+         <modify name="Perception" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PERCEPTION" type="Class Feature"/>
       </rules>
 Add Perception to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Perception" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PERCEPTION" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -536,14 +536,14 @@ Add Perception to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Religion" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_RELIGION" type="Class Feature" />
+         <modify name="Religion" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_RELIGION" type="Class Feature"/>
       </rules>
 Add Religion to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Religion" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_RELIGION" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -552,14 +552,14 @@ Add Religion to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_STEALTH" type="Class Feature" />
+         <modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_STEALTH" type="Class Feature"/>
       </rules>
 Add Stealth to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Stealth" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_STEALTH" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -568,14 +568,14 @@ Add Stealth to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Streetwise" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_STREETWISE" type="Class Feature" />
+         <modify name="Streetwise" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_STREETWISE" type="Class Feature"/>
       </rules>
 Add Streetwise to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Streetwise" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_STREETWISE" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -584,14 +584,14 @@ Add Streetwise to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <modify name="Thievery" type="Skill Training" Field="UniversalClassSkill" value="true" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THIEVERY" type="Class Feature" />
+         <modify name="Thievery" type="Skill Training" Field="UniversalClassSkill" value="true"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THIEVERY" type="Class Feature"/>
       </rules>
 Add Thievery to your list of class skills.
 </RulesElement>
 
 <RulesElement name="Background: Thievery" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THIEVERY" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Counts as class skill. </specific>
 </RulesElement>
@@ -600,14 +600,14 @@ Add Thievery to your list of class skills.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_1" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_COMMON" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_1" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_COMMON" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Common language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Common" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_COMMON" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -616,14 +616,14 @@ You can speak, read, and write the Common language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_2" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DRACONIC" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_2" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DRACONIC" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Draconic language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Draconic" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DRACONIC" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -632,14 +632,14 @@ You can speak, read, and write the Draconic language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_3" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DWARVEN" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_3" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DWARVEN" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Dwarven language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Dwarven" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DWARVEN" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -648,14 +648,14 @@ You can speak, read, and write the Dwarven language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_4" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ELVEN" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_4" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ELVEN" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Elven language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Elven" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ELVEN" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -664,14 +664,14 @@ You can speak, read, and write the Elven language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_6" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PRIMORDIAL" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_6" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PRIMORDIAL" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Primordial language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Primordial" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PRIMORDIAL" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -680,14 +680,14 @@ You can speak, read, and write the Primordial language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_18" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DEEPSPEECH" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_18" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DEEPSPEECH" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Deep Speech language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Deep Speech" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DEEPSPEECH" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -696,14 +696,14 @@ You can speak, read, and write the Deep Speech language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_19" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_GIANT" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_19" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_GIANT" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Giant language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Giant" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_GIANT" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -712,14 +712,14 @@ You can speak, read, and write the Giant language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_20" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_GOBLIN" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_20" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_GOBLIN" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Draconic language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Goblin" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_GOBLIN" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -728,22 +728,22 @@ You can speak, read, and write the Draconic language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_WOG_LANGUAGE_1" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THIEVESCANT" type="Class Feature" />
+        <grant name="ID_WOG_LANGUAGE_1" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THIEVESCANT" type="Class Feature"/>
       </rules>
 Thieves' Cant is a secret language that might exist in your game world at your DM's discretion.
 You can speak, read, and write the Thieves' Cant secret language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Thieves' Cant" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THIEVESCANT" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
 
 <RulesElement name="Thieves' Cant" type="Language" internal-id="ID_WOG_LANGUAGE_1" source="House Rules Supplement" revision-date="7/24/2011 6:00:00 PM">
       <rules>
-         <statadd name="Language Count" value="+1" />
+         <statadd name="Language Count" value="+1"/>
       </rules>
 Thieves' Cant is a secret language that might exist in your game world at your DM's discretion.
 </RulesElement>
@@ -752,22 +752,22 @@ Thieves' Cant is a secret language that might exist in your game world at your D
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_WOG_LANGUAGE_2" type="Language" />]
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DRUIDIC" type="Class Feature" />
+        <grant name="ID_WOG_LANGUAGE_2" type="Language"/>]
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DRUIDIC" type="Class Feature"/>
       </rules>
 Druidic is a secret language that might exist in your game world at your DM's discretion.
 You can speak, read, and write the Druidic secret language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Druidic" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DRUIDIC" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
 
 <RulesElement name="Druidic" type="Language" internal-id="ID_WOG_LANGUAGE_2" source="House Rules Supplement" revision-date="7/24/2011 6:00:00 PM">
       <rules>
-         <statadd name="Language Count" value="+1" />
+         <statadd name="Language Count" value="+1"/>
       </rules>
 Druidic is a secret language that might exist in your game world at your DM's discretion.
 </RulesElement>
@@ -776,22 +776,22 @@ Druidic is a secret language that might exist in your game world at your DM's di
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_WOG_LANGUAGE_3" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DROWSIGN" type="Class Feature" />
+        <grant name="ID_WOG_LANGUAGE_3" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DROWSIGN" type="Class Feature"/>
       </rules>
 Drow Sign Language is a secret language that might exist in your game world at your DM's discretion.
 You understand and can use the Drow Sign Language secret language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Drow Sign" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_DROWSIGN" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
 
 <RulesElement name="Drow Sign Language" type="Language" internal-id="ID_WOG_LANGUAGE_3" source="House Rules Supplement" revision-date="7/24/2011 6:00:00 PM">
       <rules>
-         <statadd name="Language Count" value="+1" />
+         <statadd name="Language Count" value="+1"/>
       </rules>
 Drow Sign Language is a secret language that might exist in your game world at your DM's discretion.
 </RulesElement>
@@ -800,15 +800,15 @@ Drow Sign Language is a secret language that might exist in your game world at y
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_7" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ABYSSAL" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_7" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ABYSSAL" type="Class Feature"/>
       </rules>
 Abyssal requires your DM's special permission to take at first level.
 You can speak, read, and write the Abyssal language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Abyssal" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_ABYSSAL" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -817,15 +817,15 @@ You can speak, read, and write the Abyssal language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_8" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_SUPERNAL" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_8" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_SUPERNAL" type="Class Feature"/>
       </rules>
 Supernal requires your DM's special permission to take at first level.
 You can speak, read, and write the Supernal language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Supernal" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_SUPERNAL" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -834,14 +834,14 @@ You can speak, read, and write the Supernal language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-        <grant name="ID_FMP_LANGUAGE_43" type="Language" />
-		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THRIKREEN" type="Class Feature" />
+        <grant name="ID_FMP_LANGUAGE_43" type="Language"/>
+		<grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THRIKREEN" type="Class Feature"/>
       </rules>
 You can speak, read, and write the Thri-Kreen language fluently.
 </RulesElement>
 
 <RulesElement name="Background: Thri-Kreen" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_THRIKREEN" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Learned language. </specific>
 </RulesElement>
@@ -850,14 +850,14 @@ You can speak, read, and write the Thri-Kreen language fluently.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1 </Prereqs>
       <rules>
-         <select type="Proficiency" number="1" Category="Simple|Military" />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_WEAPON" type="Class Feature" />
+         <select type="Proficiency" number="1" Category="Simple|Military"/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_WEAPON" type="Class Feature"/>
       </rules>
 You gain proficiency in a single simple or military weapon of your choice.
 </RulesElement>
 
 <RulesElement name="Background: Weapon Proficiency" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_WEAPON" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Extra simple or military. </specific>
 </RulesElement>
@@ -866,16 +866,16 @@ You gain proficiency in a single simple or military weapon of your choice.
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1,ritual casting class feature or Trained in Arcana or Religion,!ID_FMP_CLASS_FEATURE_683 </Prereqs>
       <rules>
-         <select type="Feat" number="1" Category="Ritual Casting" default="Ritual Caster" />
-         <statadd name="FREEBEE:ID_FMP_GEAR_31" value="+1" />
-		 <textstring name="Free Rituals" value="* From your background, you are entitled to one 1st-level ritual to begin your career." />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_RITUALS" type="Class Feature" />
+         <select type="Feat" number="1" Category="Ritual Casting" default="Ritual Caster"/>
+         <statadd name="FREEBEE:ID_FMP_GEAR_31" value="+1"/>
+		 <textstring name="Free Rituals" value="* From your background, you are entitled to one 1st-level ritual to begin your career."/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_RITUALS" type="Class Feature"/>
       </rules>
 You can master and perform rituals. You learn one 1st-level ritual of your choice.
 </RulesElement>
 
 <RulesElement name="Background: Rituals" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_RITUALS" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Can perform rituals. </specific>
 </RulesElement>
@@ -884,15 +884,15 @@ You can master and perform rituals. You learn one 1st-level ritual of your choic
       <Category> ID_INTERNAL_WOG_BACKGROUND_CHOICE_TAG </Category>
       <Prereqs> ID_WOG_CUSTOM_MASTER_BACKGROUND_1,Any martial class </Prereqs>
       <rules>
-         <grant name="ID_FMP_FEAT_2050" type="Feat" />
-		 <textstring name="Free Rituals" value="* From your background, you are entitled to one 1st-level martial practice to begin your career." />
-		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PRACTICES" type="Class Feature" />
+         <grant name="ID_FMP_FEAT_2050" type="Feat"/>
+		 <textstring name="Free Rituals" value="* From your background, you are entitled to one 1st-level martial practice to begin your career."/>
+		 <grant name="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PRACTICES" type="Class Feature"/>
       </rules>
 You can master and perform martial practices. You learn one 1st-level martial practice of your choice.
 </RulesElement>
 
 <RulesElement name="Background: Practices" type="Class Feature" internal-id="ID_INTERNAL_WOG_CUSTOMIZED_CLASSFEATURE_PRACTICES" source="House Rules Supplement">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 1 </specific>
     <specific name="_CS_ShortDescription"> Can perform martial practices. </specific>
 </RulesElement>

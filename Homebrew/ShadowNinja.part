@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules>
   <UpdateInfo>
     <Version>1.00</Version>
     <Filename>ShadowNinja.part</Filename>
-    <PartAddress>http://cbloader.com/Homebrew/ShadowNinja.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/ShadowNinja.txt</VersionAddress>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/ShadowNinja.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/ShadowNinja.txt</VersionAddress>
   </UpdateInfo>
   
   <RulesElement name="Atirakis' Shadow Ninja" type="source" internal-id="ID_MSR_SOURCE_200" source="Core">
@@ -58,53 +58,53 @@
     <specific name="Short Description"> The ninja, using covert methods of waging war, performed espionage, sabotage, infiltration, and assassination, as well as open combat in certain situations. </specific>
     <specific name="_ParentClass"> ID_FMP_CLASS_466 </specific>
     <rules>
-      <grant name="ID_INTERNAL_GRANTS_NINJA" type="Grants" />
-      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_466 (ID_MSR_CLASS_20)" />
-      <statadd name="_LEVEL-ONE-HPS" value="+12" />
-      <statadd name="_PER-LEVEL-HPS" value="+5" />
-      <statadd name="Healing Surges" value="+6" />
-      <statadd name="Reflex Defense Class Bonus" value="+2" />
-      <select type="Skill Training" number="3" Category="ID_MSR_CLASS_20" />
+      <grant name="ID_INTERNAL_GRANTS_NINJA" type="Grants"/>
+      <textstring name="_CLASSNAME" value="ID_FMP_CLASS_466 (ID_MSR_CLASS_20)"/>
+      <statadd name="_LEVEL-ONE-HPS" value="+12"/>
+      <statadd name="_PER-LEVEL-HPS" value="+5"/>
+      <statadd name="Healing Surges" value="+6"/>
+      <statadd name="Reflex Defense Class Bonus" value="+2"/>
+      <select type="Skill Training" number="3" Category="ID_MSR_CLASS_20"/>
     </rules>
 The ninja were stealth soldiers and mercenaries hired mostly by daimyos. Their primary roles were those of espionage and sabotage, although assassinations were also attributed to ninjas. In battle, the ninja could also be used to cause confusion amongst the enemy.
 </RulesElement>
   <RulesElement name="Ninja Grants" type="Grants" internal-id="ID_INTERNAL_GRANTS_NINJA" source="Atirakis' Shadow Ninja">
     <specific name="_SupportsID"> ID_MSR_CLASS_20 </specific>
     <rules>
-      <grant name="ID_FMP_ROLE_3" type="Role" />
-      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source" />
-      <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source" />
-      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_ONE-HANDED_MELEE" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency" />
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHURIKEN)" type="Proficiency" />
-      <grant name="ID_MSR_CLASS_FEATURE_NINJA_ASSASSIN" type="Class Feature" />
-      <grant name="ID_MSR_CLASS_FEATURE_NINJITSU_STRIKE" type="Class Feature" />
-      <grant name="ID_MSR_CLASS_FEATURE_NINJA_WEAPON_FINESSE" type="Class Feature" />
-      <grant name="ID_MSR_CLASS_FEATURE_STRIKE_FROM_THE_SHADOWS" type="Class Feature" />
-      <grant name="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" type="Class Feature" />
-      <grant name="ID_MSR_CLASS_FEATURE_NINJA_WEAPON_TALENT" type="Class Feature" level="2" />
-      <grant name="ID_MSR_CLASS_FEATURE_STEALTH_MASTERY" type="Class Feature" level="2" />
-      <grant name="ID_MSR_CLASS_FEATURE_LVL3_IMPROVED_NINJITSU_STRIKE" type="Class Feature" level="3" />
-      <grant name="ID_MSR_CLASS_FEATURE_GARROTE_STRANGLE" type="Class Feature" level="5" />
-      <grant name="ID_MSR_CLASS_FEATURE_HARD_TO_HIT" type="Class Feature" level="9" />
-      <grant name="ID_MSR_CLASS_FEATURE_IMPROVED_NINJA_WEAPON_FINESSE" type="Class Feature" level="9" />
-      <grant name="ID_MSR_CLASS_FEATURE_LVL13_IMPROVED_NINJITSU_STRIKE" type="Class Feature" level="13" />
-      <grant name="ID_MSR_CLASS_FEATURE_PARAGON_FINESSE" type="Class Feature" level="15" />
-      <grant name="ID_MSR_CLASS_FEATURE_EPIC_FINISH_THEM" type="Class Feature" level="21" />
-      <grant name="ID_MSR_CLASS_FEATURE_GET_IN_THE_FIRST_SHOT" type="Class Feature" level="23" />
-      <grant name="ID_MSR_CLASS_FEATURE_EPIC_FINESSE" type="Class Feature" level="25" />
-      <grant name="ID_MSR_CLASS_FEATURE_EPIC_NINJA_MASTER" type="Class Feature" level="27" />
-      <grant name="ID_MSR_CLASS_UTILITY_SHADOW_ASSASSIN" type="CountsAsFeature" level="2" />
-      <grant name="ID_MSR_CLASS_UTILITY_NINJA_REFLEXES" type="CountsAsFeature" level="6" />
-      <grant name="ID_MSR_CLASS_UTILITY_BLINDING_FLASH" type="CountsAsFeature" level="10" />
-      <grant name="ID_MSR_CLASS_UTILITY_SHADOW_PALM" type="CountsAsFeature" level="16" />
-      <grant name="ID_MSR_CLASS_UTILITY_VANISH_FROM_SIGHT" type="CountsAsFeature" level="22" />
-      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_NINJA" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass" />
-      <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal" />
+      <grant name="ID_FMP_ROLE_3" type="Role"/>
+      <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source"/>
+      <grant name="ID_FMP_POWER_SOURCE_6" type="Power Source"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_ONE-HANDED_MELEE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_RANGED" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SHURIKEN)" type="Proficiency"/>
+      <grant name="ID_MSR_CLASS_FEATURE_NINJA_ASSASSIN" type="Class Feature"/>
+      <grant name="ID_MSR_CLASS_FEATURE_NINJITSU_STRIKE" type="Class Feature"/>
+      <grant name="ID_MSR_CLASS_FEATURE_NINJA_WEAPON_FINESSE" type="Class Feature"/>
+      <grant name="ID_MSR_CLASS_FEATURE_STRIKE_FROM_THE_SHADOWS" type="Class Feature"/>
+      <grant name="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" type="Class Feature"/>
+      <grant name="ID_MSR_CLASS_FEATURE_NINJA_WEAPON_TALENT" type="Class Feature" level="2"/>
+      <grant name="ID_MSR_CLASS_FEATURE_STEALTH_MASTERY" type="Class Feature" level="2"/>
+      <grant name="ID_MSR_CLASS_FEATURE_LVL3_IMPROVED_NINJITSU_STRIKE" type="Class Feature" level="3"/>
+      <grant name="ID_MSR_CLASS_FEATURE_GARROTE_STRANGLE" type="Class Feature" level="5"/>
+      <grant name="ID_MSR_CLASS_FEATURE_HARD_TO_HIT" type="Class Feature" level="9"/>
+      <grant name="ID_MSR_CLASS_FEATURE_IMPROVED_NINJA_WEAPON_FINESSE" type="Class Feature" level="9"/>
+      <grant name="ID_MSR_CLASS_FEATURE_LVL13_IMPROVED_NINJITSU_STRIKE" type="Class Feature" level="13"/>
+      <grant name="ID_MSR_CLASS_FEATURE_PARAGON_FINESSE" type="Class Feature" level="15"/>
+      <grant name="ID_MSR_CLASS_FEATURE_EPIC_FINISH_THEM" type="Class Feature" level="21"/>
+      <grant name="ID_MSR_CLASS_FEATURE_GET_IN_THE_FIRST_SHOT" type="Class Feature" level="23"/>
+      <grant name="ID_MSR_CLASS_FEATURE_EPIC_FINESSE" type="Class Feature" level="25"/>
+      <grant name="ID_MSR_CLASS_FEATURE_EPIC_NINJA_MASTER" type="Class Feature" level="27"/>
+      <grant name="ID_MSR_CLASS_UTILITY_SHADOW_ASSASSIN" type="CountsAsFeature" level="2"/>
+      <grant name="ID_MSR_CLASS_UTILITY_NINJA_REFLEXES" type="CountsAsFeature" level="6"/>
+      <grant name="ID_MSR_CLASS_UTILITY_BLINDING_FLASH" type="CountsAsFeature" level="10"/>
+      <grant name="ID_MSR_CLASS_UTILITY_SHADOW_PALM" type="CountsAsFeature" level="16"/>
+      <grant name="ID_MSR_CLASS_UTILITY_VANISH_FROM_SIGHT" type="CountsAsFeature" level="22"/>
+      <grant name="ID_INTERNAL_SKILL_TRAINING_STEALTH" type="Skill Training"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_NINJA" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_COUNTSASCLASS_ASSASSIN" type="CountsAsClass"/>
+      <grant name="ID_INTERNAL_INTERNAL_ESSENTIALS_CLASS" type="Internal"/>
     </rules>
   </RulesElement>
   <RulesElement name="Ninja" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_NINJA" source="Atirakis' Shadow Ninja">
@@ -114,34 +114,34 @@ You count as an Ninja for meeting prerequisites.
   <RulesElement name="Shinobi" type="Paragon Path" internal-id="ID_MSR_PARAGON_PATH_SHINOBI" source="Atirakis' Shadow Ninja" revision-date="8/27/2010 12:40:14 PM">
     <Prereqs> Ninja class </Prereqs>
     <print-prereqs> Ninja class </print-prereqs>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Power Name"> Exploits </specific>
     <specific name="Class Features"> ID_MSR_CLASS_FEATURE_LVL11_IMPROVED_NINJITSU_STRIKE,ID_MSR_CLASS_FEATURE_FINISH_THEM,ID_MSR_CLASS_FEATURE_SHADOW_STRIKER,ID_MSR_CLASS_FEATURE_NINJA_MASTER </specific>
     <specific name="Powers"> ID_MSR_POWER_SHADOW_WEAPON </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_SHADOW_WEAPON </specific>
     <rules>
-      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_LVL11_IMPROVED_NINJITSU_STRIKE" />
-      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_FINISH_THEM" />
-      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_SHADOW_STRIKER" level="16" />
-      <grant type="Power" name="ID_MSR_POWER_SHADOW_WEAPON" level="12" />
-      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_NINJA_MASTER" level="20" />
-      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_EPIC_SHADOW_WEAPON" level="29" />
+      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_LVL11_IMPROVED_NINJITSU_STRIKE"/>
+      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_FINISH_THEM"/>
+      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_SHADOW_STRIKER" level="16"/>
+      <grant type="Power" name="ID_MSR_POWER_SHADOW_WEAPON" level="12"/>
+      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_NINJA_MASTER" level="20"/>
+      <grant type="Class Feature" name="ID_MSR_CLASS_FEATURE_EPIC_SHADOW_WEAPON" level="29"/>
     </rules>
 You have become a legendary Shinobi, and have the power over invisibility, walking on water, and control of natural elements.
    </RulesElement>
   <RulesElement name="Ninja Assassin" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_NINJA_ASSASSIN" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 1 </Category>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Short Description"> Additional +2d6 damage with all weapon attacks made against an enemy granting combat advantage to you.</specific>
     <specific name="Level"> 1 </specific>
-    <specific name="_CS_ShortDescription" />
+    <specific name="_CS_ShortDescription"/>
     <specific name="_SupportsID"> ID_MSR_CLASS_20 </specific>
     <rules>
-      <textstring name="Ninja Assassin Die" value="d6" />
-      <statadd name="Ninja Assassin Dice" value="+2" />
-      <statadd name="Ninja Assassin Dice" value="+1" requires="Paragon Tier" />
-      <statadd name="Ninja Assassin Dice" value="+2" requires="Epic Tier" />
-      <modify name="this" Field="Usage" value="turn" />
+      <textstring name="Ninja Assassin Die" value="d6"/>
+      <statadd name="Ninja Assassin Dice" value="+2"/>
+      <statadd name="Ninja Assassin Dice" value="+1" requires="Paragon Tier"/>
+      <statadd name="Ninja Assassin Dice" value="+2" requires="Epic Tier"/>
+      <modify name="this" Field="Usage" value="turn"/>
     </rules>
 You deal an additional +2d6 damage with all weapon attacks made against an enemy granting combat advantage to you. You can apply this extra damage once per turn.
 
@@ -157,17 +157,17 @@ N
     <specific name="Level"> 1 </specific>
     <specific name="Powers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <rules>
-      <grant name="ID_MSR_POWER_NINJITSU_STRIKE" type="Power" />
+      <grant name="ID_MSR_POWER_NINJITSU_STRIKE" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Ninjitsu Strike" type="Power" internal-id="ID_MSR_POWER_NINJITSU_STRIKE" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> ID_MSR_CLASS_20,ID_FMP_CLASS_466,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION,1 </Category>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Ninja Attack 1 </specific>
-    <specific name="Keywords" />
+    <specific name="Keywords"/>
     <specific name="Action Type"> Free Action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Trigger"> You hit an enemy with a melee weapon attack </specific>
@@ -177,57 +177,57 @@ Level 7: 2[W]
 Level 17: 3[W]
 Level 27: 4[W] </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
   <RulesElement name="Level 3 Improved Ninjitsu Strike" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_LVL3_IMPROVED_NINJITSU_STRIKE" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 3 </specific>
     <specific name="Powers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <specific name="type"> At-Will </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <rules>
-      <modify name="Ninjitsu Strike" type="Power" Field="Special" value="You can use this power twice per encounter." />
+      <modify name="Ninjitsu Strike" type="Power" Field="Special" value="You can use this power twice per encounter."/>
     </rules>
   </RulesElement>
   <RulesElement name="Level 11 Improved Ninjitsu Strike" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_LVL11_IMPROVED_NINJITSU_STRIKE" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 11 </specific>
     <specific name="Powers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <specific name="type"> At-Will </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <rules>
-      <modify name="Ninjitsu Strike" type="Power" Field="Special" value="You can use this power three times per encounter." />
+      <modify name="Ninjitsu Strike" type="Power" Field="Special" value="You can use this power three times per encounter."/>
     </rules>
   </RulesElement>
   <RulesElement name="Level 13 Improved Ninjitsu Strike" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_LVL13_IMPROVED_NINJITSU_STRIKE" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 11 </specific>
     <specific name="Powers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <specific name="type"> At-Will </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_NINJITSU_STRIKE </specific>
     <rules>
-      <modify name="Ninjitsu Strike" type="Power" Field="Special" value="You can use this power four times per encounter." />
+      <modify name="Ninjitsu Strike" type="Power" Field="Special" value="You can use this power four times per encounter."/>
     </rules>
   </RulesElement>
   <RulesElement name="Ninja Weapon Finesse" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_NINJA_WEAPON_FINESSE" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 1 </Category>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Short Description"> You can use Dexterity instead of Strength on a MBA or Grab attack and damage roll. </specific>
     <specific name="Level"> 1 </specific>
-    <specific name="_CS_ShortDescription" />
+    <specific name="_CS_ShortDescription"/>
     <specific name="_DisplayPowers"> ID_INTERNAL_POWER_MELEE_BASIC_ATTACK </specific>
     <specific name="_SupportsID"> ID_MSR_CLASS_20 </specific>
     <rules>
-      <textstring name="melee basic:key ability" value="Dexterity" />
-      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Dexterity vs. AC" />
-      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Dexterity modifier damage." />
-      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field=" Level 21" value="2[W] + Dexterity modifier damage." />
-      <statadd name="weapon:damage" value="+2" />
+      <textstring name="melee basic:key ability" value="Dexterity"/>
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Dexterity vs. AC"/>
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Dexterity modifier damage."/>
+      <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field=" Level 21" value="2[W] + Dexterity modifier damage."/>
+      <statadd name="weapon:damage" value="+2"/>
     </rules>
 When you make a Melee Basic Attack or Grab, you can use Dexterity instead of Strength for the attack and damage roll. Additionally you deal +2 extra damage with weapon attacks.
 </RulesElement>
@@ -236,30 +236,30 @@ When you make a Melee Basic Attack or Grab, you can use Dexterity instead of Str
     <Flavor> You fade from the shadows, shove your blade in a foe, and fade back again, all in a split second. </Flavor>
     <specific name="Short Description"> You have Combat Advantage against any enemy you have Concealment against. </specific>
     <specific name="Level"> 1 </specific>
-    <rules></rules>
+    <rules/>
 You have Combat Advantage against any enemy you have Concealment against.
 </RulesElement>
   <RulesElement name="Ninja Techniques" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 1 </Category>
-    <Flavor></Flavor>
+    <Flavor/>
     <specific name="Short Description"> You can choose Ninja Techniques </specific>
     <specific name="Level"> 1 </specific>
-    <specific name="_CS_ShortDescription" />
+    <specific name="_CS_ShortDescription"/>
     <rules>
-      <select type="Power" number="2" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" />
-      <select type="Power" number="1" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" level="4" />
-      <select type="Power" number="1" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" level="7" />
-      <select type="Power" number="1" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" level="17" />
+      <select type="Power" number="2" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES"/>
+      <select type="Power" number="1" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" level="4"/>
+      <select type="Power" number="1" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" level="7"/>
+      <select type="Power" number="1" Category="ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES" level="17"/>
     </rules>
 You can choose 2 Ninja Techniques, with more at higher levels.
 </RulesElement>
   <RulesElement name="Ninja Level 2 Utility Power" type="CountsAsFeature" internal-id="ID_MSR_CLASS_UTILITY_SHADOW_ASSASSIN" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 2 </Category>
-    <Flavor></Flavor>
-    <specific name="Short Description" />
+    <Flavor/>
+    <specific name="Short Description"/>
     <specific name="Level"> 2 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,2" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,2"/>
     </rules>
   </RulesElement>
   <RulesElement name="Shadow Assassin" type="Power" internal-id="ID_MSR_POWER_SHADOW_ASSASSIN" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
@@ -272,17 +272,17 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Requirement"> You must be hidden </specific>
     <specific name="Effect"> Move up to your speed to a square adjacent to an enemy. You gain a power bonus to the next Attack Roll you make before the end of your turn equal to your Charisma modifier. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
   <RulesElement name="Ninja Level 6 Utility Power" type="CountsAsFeature" internal-id="ID_MSR_CLASS_UTILITY_NINJA_REFLEXES" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 6 </Category>
-    <Flavor></Flavor>
-    <specific name="Short Description" />
+    <Flavor/>
+    <specific name="Short Description"/>
     <specific name="Level"> 6 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,6" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,6"/>
     </rules>
   </RulesElement>
   <RulesElement name="Ninja Reflexes" type="Power" internal-id="ID_MSR_POWER_NINJA_REFLEXES" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
@@ -295,17 +295,17 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Trigger"> You are hit by an attack that targeted your AC or Fortitude defense. </specific>
     <specific name="Effect"> You use your Reflex in place of the targeted defense. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
   <RulesElement name="Ninja Level 10 Utility Power" type="CountsAsFeature" internal-id="ID_MSR_CLASS_UTILITY_BLINDING_FLASH" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 10 </Category>
-    <Flavor></Flavor>
-    <specific name="Short Description" />
+    <Flavor/>
+    <specific name="Short Description"/>
     <specific name="Level"> 10 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,10" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,10"/>
     </rules>
   </RulesElement>
   <RulesElement name="Blinding Flash  " type="Power" internal-id="ID_MSR_POWER_BLINDING_FLASH" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
@@ -320,17 +320,17 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Hit"> The target is Blinded and Dazed (save ends). </specific>
     <specific name="Miss"> The target is Blinded and Dazed until the end of your next turn. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
   <RulesElement name="Ninja Level 16 Utility Power" type="CountsAsFeature" internal-id="ID_MSR_CLASS_UTILITY_SHADOW_PALM" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 16 </Category>
-    <Flavor></Flavor>
-    <specific name="Short Description" />
+    <Flavor/>
+    <specific name="Short Description"/>
     <specific name="Level"> 16 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,16" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,16"/>
     </rules>
   </RulesElement>
   <RulesElement name="Shadow Palm " type="Power" internal-id="ID_MSR_POWER_SHADOW_PALM" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
@@ -347,20 +347,20 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Hit"> The target is Blinded and Dazed (save ends). </specific>
     <specific name="Miss"> The target is Blinded and Dazed until the end of your next turn. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
     <specific name="_DisplayPowers"> ID_MSR_POWER_NINJA_DEATH_TOUCH </specific>
     <rules>
-      <grant name="ID_MSR_POWER_NINJA_DEATH_TOUCH" type="Power" />
+      <grant name="ID_MSR_POWER_NINJA_DEATH_TOUCH" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Ninja Death Touch" type="Power" internal-id="ID_MSR_POWER_NINJA_DEATH_TOUCH" source="Atirakis' Shadow Ninja" revision-date="9/21/2010 2:02:01 PM">
     <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_MSR_CLASS_20,ID_FMP_CLASS_466,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_MISS,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
     <Prereqs> Unselectable </Prereqs>
     <specific name="Power Usage"> Encounter </specific>
-    <specific name="_SkillPower" />
-    <specific name="Display" />
+    <specific name="_SkillPower"/>
+    <specific name="Display"/>
     <specific name="Keywords"> Martial, Shadow </specific>
     <specific name="Action Type"> Standard Action </specific>
     <specific name="Attack Type"> Melee 1 </specific>
@@ -370,18 +370,18 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Miss"> Half Damage and the target is Weakened and Dazed until the end of your next turn. </specific>
     <specific name=" First Failed Save"> 2d6 necrotic damage and the target is Stunned (save ends). </specific>
     <specific name="Special"> You can spend more than 1 Healing Surge when you use this power. For each additional Healing Surge you spend the target takes a cumulative -2 penalty to all Saving Throws until the end of the encounter and an additional 1d6 necrotic damage every time they fail a saving throw. </specific>
-    <specific name="_Associated Feats" />
+    <specific name="_Associated Feats"/>
     <specific name="_ParentPower"> ID_FMP_POWER_13037 </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
   <RulesElement name="Ninja Level 22 Utility Power " type="CountsAsFeature" internal-id="ID_MSR_CLASS_UTILITY_VANISH_FROM_SIGHT" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
     <Category> 22 </Category>
-    <Flavor></Flavor>
-    <specific name="Short Description" />
+    <Flavor/>
+    <specific name="Short Description"/>
     <specific name="Level"> 22 </specific>
     <rules>
-      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,22" />
+      <select type="Power" number="1" Category="ID_FMP_CLASS_466,utility,22"/>
     </rules>
   </RulesElement>
   <RulesElement name="Vanish from Sight  " type="Power" internal-id="ID_MSR_POWER_VANISH_FROM_SIGHT" source="Atirakis' Shadow Ninja" revision-date="10/14/2010 9:29:04 AM">
@@ -393,7 +393,7 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You become Invisible until the end of your turn and move up to your speed -2. You do not provoke opportunity attacks during this movement. At the end of your turn you are considered hidden if you have cover or concealment. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
@@ -406,7 +406,7 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You move up to your speed + 4. During this movement you can move across vertical surfaces as if they were horizontal. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
@@ -420,7 +420,7 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You move up to your speed + 4 and gain a power bonus equal to your Dexterity modifier to the next Athletics or Acrobatics roll you make to jump. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
@@ -434,7 +434,7 @@ You can choose 2 Ninja Techniques, with more at higher levels.
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You move up to your speed. You do not need to make any checks to climb a vertical surface during this movement. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
@@ -451,7 +451,7 @@ You can choose 2 Ninja Techniques, with more at higher levels.
 Level 11: Dexterity modifier + 5.
 Level 21: Dexterity modifier + 10. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
@@ -465,21 +465,21 @@ Level 21: Dexterity modifier + 10. </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You shift a number of squares equal to half your Dexterity modifier. </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Utility </specific>
     <specific name="_ParentFeature"> ID_MSR_CLASS_FEATURE_NINJA_TECHNIQUES </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
   </RulesElement>
   <RulesElement name="Garrote Strangle  " type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_GARROTE_STRANGLE" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
     <Category> 5 </Category>
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 5 </specific>
     <specific name="Powers"> ID_MSR_POWER_GARROTE_STRANGLE </specific>
     <specific name="type"> Encounter </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_GARROTE_STRANGLE </specific>
     <rules>
-      <grant name="ID_MSR_POWER_GARROTE_STRANGLE" type="Power" />
+      <grant name="ID_MSR_POWER_GARROTE_STRANGLE" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Garrote Strangle  " type="Power" internal-id="ID_MSR_POWER_GARROTE_STRANGLE" source="Atirakis' Shadow Ninja" revision-date="10/12/2010 1:29:40 PM">
@@ -495,7 +495,7 @@ Level 21: Dexterity modifier + 10. </specific>
     <specific name="Sustain Standard"> 2[W] + Dexterity modifier damage and you sustain the Grab.
 Level 21: 3[W] + Dexterity modifier damage  </specific>
     <specific name="Class"> ID_FMP_CLASS_466 </specific>
-    <specific name="Level" />
+    <specific name="Level"/>
     <specific name="Power Type"> Attack </specific>
     <specific name="_ParentFeature"> ID_MSR_CLASS_FEATURE_GARROTE_STRANGLE </specific>
     <specific name="_Subclasses"> ID_MSR_CLASS_20 </specific>
@@ -505,22 +505,22 @@ Level 21: 3[W] + Dexterity modifier damage  </specific>
     <specific name="Short Description"> While wearing Cloth or no armor you gain a +2 bonus to AC and Reflex </specific>
     <specific name="Level"> 9 </specific>
     <specific name="type"> At-Will </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <rules>
-      <statadd name="Hard to Hit Bonus" value="+2" not-wearing="armor:shield" />
-      <statadd name="AC" value="+Hard to Hit Bonus" wearing="armor:cloth" />
-      <statadd name="AC" value="+Hard to Hit Bonus" not-wearing="armor:" />
-      <statadd name="Reflex Defense" value="+Hard to Hit Bonus" wearing="armor:cloth" />
-      <statadd name="Reflex Defense" value="+Hard to Hit Bonus" not-wearing="armor:" />
+      <statadd name="Hard to Hit Bonus" value="+2" not-wearing="armor:shield"/>
+      <statadd name="AC" value="+Hard to Hit Bonus" wearing="armor:cloth"/>
+      <statadd name="AC" value="+Hard to Hit Bonus" not-wearing="armor:"/>
+      <statadd name="Reflex Defense" value="+Hard to Hit Bonus" wearing="armor:cloth"/>
+      <statadd name="Reflex Defense" value="+Hard to Hit Bonus" not-wearing="armor:"/>
     </rules>
 While wearing Cloth or no armor you gain a +2 bonus to AC and Reflex
 </RulesElement>
   <RulesElement name="Improved Ninja Weapon Finesse " type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_IMPROVED_NINJA_WEAPON_FINESSE" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
     <Category> 9 </Category>
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 9 </specific>
     <rules>
-      <statadd name="weapon:damage" value="+3" />
+      <statadd name="weapon:damage" value="+3"/>
     </rules>
 The bonus to damage rolls granted by Attack Finesse increases to +3
 </RulesElement>
@@ -532,14 +532,14 @@ If you deal enough damage to a target to reduce them to 10 hp or less they are i
 </RulesElement>
   <RulesElement name="Shadow Weapon" type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_SHADOW_WEAPON" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
     <Category> 12 </Category>
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 12 </specific>
     <specific name="Powers"> ID_MSR_POWER_SHADOW_WEAPON </specific>
     <specific name="type"> At-Will </specific>
-    <specific name="Class" />
+    <specific name="Class"/>
     <specific name="_DisplayPowers"> ID_MSR_POWER_SHADOW_WEAPON </specific>
     <rules>
-      <grant name="ID_MSR_POWER_SHADOW_WEAPON" type="Power" />
+      <grant name="ID_MSR_POWER_SHADOW_WEAPON" type="Power"/>
     </rules>
   </RulesElement>
   <RulesElement name="Shadow Weapon  " type="Power" internal-id="ID_MSR_POWER_SHADOW_WEAPON" source="Atirakis' Shadow Ninja" revision-date="10/12/2010 1:29:40 PM">
@@ -558,10 +558,10 @@ If you deal enough damage to a target to reduce them to 10 hp or less they are i
   </RulesElement>
   <RulesElement name="Pargaon Ninja Weapon Finesse " type="Class Feature" internal-id="ID_MSR_CLASS_FEATURE_PARAGON_NINJA_WEAPON_FINESSE" source="Atirakis' Shadow Ninja" revision-date="10/5/2010 1:47:04 PM">
     <Category> 15 </Category>
-    <specific name="Short Description" />
+    <specific name="Short Description"/>
     <specific name="Level"> 15 </specific>
     <rules>
-      <statadd name="weapon:damage" value="+4" />
+      <statadd name="weapon:damage" value="+4"/>
     </rules>
 The bonus to damage rolls granted by Attack Finesse increases to +4
 </RulesElement>
@@ -577,7 +577,7 @@ If you are hidden from an enemy when you make an attack you remain hidden after 
     <specific name="Short Description"> Gain proficiency with the Ninja-To. </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency"/>
     </rules>
 You gain proficiency with the Ninja-To.
    </RulesElement>
@@ -586,17 +586,17 @@ You gain proficiency with the Ninja-To.
   </RulesElement>
   <AppendNodes name="Weapon Group (Light Blade)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(LIGHT_BLADE)">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Military Melee" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <AppendNodes name="Military Light Blade" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_MILITARY_LIGHT_BLADE">
     <rules>
-      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency" />
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(NINJA-TO)" type="Proficiency"/>
     </rules>
   </AppendNodes>
   <RulesElement name="Ninja-To" type="Weapon" internal-id="ID_MSR_WEAPON_02" source="Atirakis' Shadow Ninja" revision-date="8/27/2010 1:16:15 PM">
@@ -615,10 +615,10 @@ Group:
 Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lunges, and agile defenses are the strong points of these weapons.). </specific>
     <specific name="Weight"> 2 </specific>
     <specific name="Gold"> 10 </specific>
-    <specific name="Range" />
+    <specific name="Range"/>
     <specific name="Damage"> 1d6 </specific>
     <specific name="Proficiency Bonus"> 2 </specific>
-    <specific name="_Primary End" />
+    <specific name="_Primary End"/>
     <specific name="Weapon Category"> Military Melee </specific>
     <specific name="Hands Required"> One-Handed </specific>
     <specific name="Item Slot"> Off-hand </specific>

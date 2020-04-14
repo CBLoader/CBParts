@@ -1,15 +1,19 @@
+import ast
 import glob
 from lxml import etree
 import os
 from typing import List
 
 BASEURL = 'https://cbloader.vorpald20.com/'
+indexes = []
 
 def do_folder(dir: str, subs: List[str], files: List[str]) -> None:
     for part in [p for p in files if os.path.splitext(p)[1].lower() == '.part']:
         patch_part(dir, part)
     for index in [p for p in files if os.path.splitext(p)[1].lower() == '.index']:
-        patch_part(dir, index)
+        info = patch_part(dir, index)
+        if info:
+            indexes.append(info)
 
 def patch_part(dir: str, part: str) -> None:
     path = os.path.join(dir, part)
@@ -36,8 +40,40 @@ def patch_part(dir: str, part: str) -> None:
     else:
         etree.SubElement(update_info, "VersionAddress").text = version_url
     xml.write(path, pretty_print=True, xml_declaration=True, encoding='utf-8')
+    description = update_info.find('Description')
+    if description is not None:
+        desc_text = description.text
+        pinned = ast.literal_eval(description.get('pin', 'False'))
+        category = description.get('category', None)
+    else:
+        desc_text = ''
+        pinned = False
+        category = None
+    if category is None:
+        if part.endswith('.part'):
+            category = os.path.dirname(path)
+        else:
+            pelem = xml.find('Part')
+            if pelem is None:
+                return None
+            address = pelem.find('PartAddress').text
+            category = os.path.dirname(address)
+        category = os.path.basename(category)
+    return (part, os.path.join(dir, part), update_info.base, desc_text, pinned, category)
 
+def write_index() -> None:
+    doc = etree.Element("Indexes")
+    for (name, _, url, desc, pinned, category) in indexes:
+        entry = etree.Element('Index', name=name, url=url, category=category)
+        entry.text = desc
+        if pinned:
+            doc.insert(0, entry)
+        else:
+            doc.append(entry)
+    tree = etree.ElementTree(doc)
+    tree.write('index.xml', pretty_print=True)
 
 for v in os.walk('.'):
     do_folder(*v)
+    write_index()
 

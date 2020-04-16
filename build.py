@@ -143,6 +143,7 @@ def writeV2() -> None:
     names = [p.name for p in infos]
     dups = checkForDups(names)
     with open('versions2.txt', 'w') as f:
+        f.write('CBLoader Version File v2\n')
         for p in infos:
             if p.name not in dups:
                 f.write(f'{p.name}:{p.parthash}:{p.version}\n')

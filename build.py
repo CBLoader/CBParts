@@ -53,7 +53,8 @@ def patch_part(dir: str, part: str) -> None:
     xml = etree.parse(path)
     update_info = xml.find('UpdateInfo')
     if update_info is None:
-        print(f'WARNING: {dir}/{part} has no UpdateInfo')
+        if xml.find('Obsolete') is None:
+            print(f'WARNING: {dir}/{part} has no UpdateInfo')
         return
     txt = os.path.splitext(path)[0] + '.txt'
     with open(txt, 'w') as f:

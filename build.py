@@ -12,6 +12,7 @@ BASEURL = 'https://cbloader.vorpald20.com/'
 indexes = []
 parts = []
 
+preview = etree.XSLT(etree.parse('D20Rules.xslt'))
 
 @attr.s(auto_attribs=True)
 class Info():
@@ -46,7 +47,6 @@ def SetOrCreate(update_info: etree.Element, elemName: str, text: str) -> None:
         sub.text = text
     else:
         etree.SubElement(update_info, elemName).text = text
-
 
 def patch_part(dir: str, part: str) -> None:
     path = os.path.join(dir, part)
@@ -86,6 +86,7 @@ def patch_part(dir: str, part: str) -> None:
             address = pelem.find('PartAddress').text
             category = os.path.dirname(address)
         category = os.path.basename(category)
+    preview(xml).write(os.path.splitext(path)[0] + '.html')
     return Info(part, os.path.join(dir, part), update_info.base, desc_text, pinned, category, version_hash(path), update_info.find('Version').text)
 
 def version_hash(path: str) -> str:

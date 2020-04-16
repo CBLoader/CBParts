@@ -95,7 +95,9 @@ def version_hash(path: str) -> str:
 
 def write_index() -> None:
     idxs = list(indexes)
-    html = ['<html><body>']
+    html = []
+    with open('head.html') as f:
+        html.append(f.read())
     doc = etree.Element("Indexes")
     def add(info: Info) -> None:
         entry = etree.Element('Index', name=info.name, url=info.url, category=info.category, description=info.desc)

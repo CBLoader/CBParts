@@ -26,7 +26,7 @@ class Info():
 
     def __str__(self) -> str:
         return f'{self.category}: {self.url}' + f' ({self.desc})' if self.desc else ''
-    
+
     def html(self) -> str:
         return f'<p>[{self.category}]: <a href="{self.url}">{self.name}</a>' + (f'<br/> {self.desc}</p>' if self.desc else '</p>')
 
@@ -59,7 +59,7 @@ def patch_part(dir: str, part: str) -> None:
     txt = os.path.splitext(path)[0] + '.txt'
     with open(txt, 'w') as f:
         f.write(update_info.find('Version').text)
-    
+
     url = (BASEURL + update_info.base).replace('/./', '/')
     version_url = os.path.splitext(url)[0] + '.txt'
     SetOrCreate(update_info, 'PartAddress', url)
@@ -118,7 +118,7 @@ def write_index() -> None:
     for c in categories:
         for i in [i for i in idxs if i.category == c]:
             add(i)
-    
+
     tree = etree.ElementTree(doc)
     tree.write('index.xml', pretty_print=True)
     html.append('</body></html>')
@@ -126,7 +126,7 @@ def write_index() -> None:
         f.writelines(html)
 
 def checkForDups(listOfElems) -> Set[str]:
-    ''' Check if given list contains any duplicates '''    
+    ''' Check if given list contains any duplicates '''
     setOfElems = set()
     setOfDups = set()
     for elem in listOfElems:
@@ -134,7 +134,7 @@ def checkForDups(listOfElems) -> Set[str]:
             print(f'Duplicate {elem} found in names')
             setOfDups.add(elem)
         else:
-            setOfElems.add(elem)         
+            setOfElems.add(elem)
     return setOfDups
 
 def writeV2() -> None:
@@ -149,8 +149,6 @@ def writeV2() -> None:
                 f.write(f'{p.name}:{p.parthash}:{p.version}\n')
             else:
                 print(f'Not writing V2 about duplicated {p.name}')
-            
-
 
 for v in os.walk('.'):
     do_folder(*v)

@@ -11,6 +11,7 @@ from lxml import etree
 BASEURL = 'https://cbloader.vorpald20.com/'
 indexes = []
 parts = []
+indexed = set()
 
 preview = etree.XSLT(etree.parse('D20Rules.xslt'))
 
@@ -87,6 +88,11 @@ def patch_part(dir: str, part: str) -> None:
             category = os.path.dirname(address)
         category = os.path.basename(category)
     preview(xml).write(os.path.splitext(path)[0] + '.html')
+    if part.endswith('.index'):
+        for p in xml.findall('Part'):
+            fn = p.find('Filename')
+            if fn is not None:
+                indexed.add(fn.text)
     return Info(part, os.path.join(dir, part), update_info.base, desc_text, pinned, category, version_hash(path), update_info.find('Version').text)
 
 def version_hash(path: str) -> str:
@@ -121,6 +127,9 @@ def write_index() -> None:
     for c in categories:
         for i in [i for i in idxs if i.category == c]:
             add(i)
+    unindexed = {p.name for p in parts} - indexed
+    for i in unindexed:
+        print(f'{i} is not indexed')
 
     tree = etree.ElementTree(doc)
     tree.write('index.xml', pretty_print=True)

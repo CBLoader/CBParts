@@ -2,6 +2,7 @@ import ast
 import base64
 import glob
 import hashlib
+import subprocess
 import os
 from typing import List, Set
 
@@ -49,6 +50,17 @@ def SetOrCreate(update_info: etree.Element, elemName: str, text: str) -> None:
     else:
         etree.SubElement(update_info, elemName).text = text
 
+def MakeUpdateInfo(dir: str, part: str):
+    path = os.path.join(dir, part)
+    update_info = etree.Element('UpdateInfo')
+    cid = subprocess.check_output(['git', 'rev-list', '-1', 'HEAD', path])
+    ver = etree.SubElement(update_info, 'Version')
+    ver.text = cid
+    fname = etree.SubElement(update_info, 'Filename')
+    fname.text = part
+    return update_info
+
+
 def patch_part(dir: str, part: str) -> None:
     path = os.path.join(dir, part)
     xml = etree.parse(path)
@@ -56,7 +68,10 @@ def patch_part(dir: str, part: str) -> None:
     if update_info is None:
         if xml.find('Obsolete') is None:
             print(f'WARNING: {dir}/{part} has no UpdateInfo')
-        return
+            update_info = MakeUpdateInfo(dir, part)
+            xml.getroot().insert(0, update_info)
+        else:
+            return
     txt = os.path.splitext(path)[0] + '.txt'
     with open(txt, 'w') as f:
         f.write(update_info.find('Version').text)

@@ -31,7 +31,7 @@ class Info():
         return f'{self.category}: {self.url}' + f' ({self.desc})' if self.desc else ''
 
     def html(self) -> str:
-        return f'<p>[{self.category}]: <a href="{self.url}">{self.name}</a>' + (f'<br/> {self.desc}</p>' if self.desc else '</p>')
+        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + (f'<br/> {self.desc}</p>' if self.desc else '</p>')
 
     def __hash__(self):
         return self.name.__hash__()
@@ -160,6 +160,11 @@ def write_index() -> None:
 
     tree = etree.ElementTree(doc)
     tree.write('index.xml', pretty_print=True)
+    try:
+        subprocess.run('zip', '-r', 'indexes.zip', 'indexes')
+        html.append('<p><a href="indexes.zip">Download all indexes</a></p>')
+    except Exception as c:
+        print(c)
     html.append('</body></html>')
     with open('index.html', 'w') as f:
         f.writelines(html)

@@ -16,7 +16,7 @@ indexed = set()
 
 preview = etree.XSLT(etree.parse('D20Rules.xslt'))
 
-@attr.s(auto_attribs=True)
+@attr.s(auto_attribs=True, hash=False, eq=False)
 class Info():
     name: str
     path: str
@@ -32,6 +32,17 @@ class Info():
 
     def html(self) -> str:
         return f'<p>[{self.category}]: <a href="{self.url}">{self.name}</a>' + (f'<br/> {self.desc}</p>' if self.desc else '</p>')
+
+    def __hash__(self):
+        return self.name.__hash__()
+
+    def __eq__(self, other):
+        if isinstance(other, type(self)):
+            return self.path == other.path
+        elif isinstance(other, str):
+            if self.name == other or self.path == other:
+                return True
+        return False
 
 def do_folder(dir: str, subs: List[str], files: List[str]) -> None:
     for part in [p for p in files if os.path.splitext(p)[1].lower() == '.part']:
@@ -117,12 +128,15 @@ def version_hash(path: str) -> str:
 
 def write_index() -> None:
     idxs = list(indexes)
+    unindexed = set(parts) - indexed
+    idxs.extend(unindexed)
     html = []
     with open('head.html') as f:
         html.append(f.read())
     doc = etree.Element("Indexes")
     def add(info: Info) -> None:
-        entry = etree.Element('Index', name=info.name, url=info.url, category=info.category, description=info.desc)
+        tag = os.path.splitext(info.name)[1].strip('.').title()
+        entry = etree.Element(tag, name=info.name, url=info.url, category=info.category, description=info.desc)
         entry.text = str(info)
         if info.pinned:
             doc.insert(0, entry)
@@ -130,7 +144,6 @@ def write_index() -> None:
         else:
             doc.append(entry)
             html.append(info.html())
-        idxs.remove(info)
 
     for i in [i for i in idxs if i.pinned]:
         add(i)
@@ -140,11 +153,10 @@ def write_index() -> None:
     categories = list(cats)
     categories.sort()
     for c in categories:
-        for i in [i for i in idxs if i.category == c]:
+        for i in [i for i in idxs if i.category == c and not i.pinned]:
             add(i)
-    unindexed = {p.name for p in parts} - indexed
     for i in unindexed:
-        print(f'{i} is not indexed')
+        print(f'{i.name} is not indexed')
 
     tree = etree.ElementTree(doc)
     tree.write('index.xml', pretty_print=True)

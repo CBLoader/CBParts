@@ -44,6 +44,10 @@ class Info():
                 return True
         return False
 
+    def __lt__(self, other):
+        if isinstance(other, type(self)):
+            return self.name < other.name
+
 def do_folder(dir: str, subs: List[str], files: List[str]) -> None:
     for part in [p for p in files if os.path.splitext(p)[1].lower() == '.part']:
         info = patch_part(dir, part)
@@ -153,7 +157,9 @@ def write_index() -> None:
     categories = list(cats)
     categories.sort()
     for c in categories:
-        for i in [i for i in idxs if i.category == c and not i.pinned]:
+        incat = [i for i in idxs if i.category == c and not i.pinned]
+        incat.sort()
+        for i in incat:
             add(i)
     for i in unindexed:
         print(f'{i.name} is not indexed')

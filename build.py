@@ -175,7 +175,7 @@ def checkForDups(listOfElems) -> Set[str]:
     setOfDups = set()
     for elem in listOfElems:
         if elem in setOfElems:
-            print(f'Duplicate {elem} found in names')
+            print(f'WARNING: Duplicate {elem} found in names')
             setOfDups.add(elem)
         else:
             setOfElems.add(elem)
@@ -192,7 +192,7 @@ def writeV2() -> None:
             if p.name not in dups:
                 f.write(f'{p.name}:{p.parthash}:{p.version}\n')
             else:
-                print(f'Not writing V2 about duplicated {p.name}')
+                print(f'WARNING: Not writing V2 about duplicated {p.name}')
 
 for v in os.walk('.'):
     do_folder(*v)

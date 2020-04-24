@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+<UpdateInfo>
+ <Version>1.69</Version>
+ <Filename>69-expert.part</Filename>
+ <PartAddress>https://cbloader.vorpald20.com/Homebrew/69-expert.part</PartAddress>
+ <VersionAddress>https://cbloader.vorpald20.com/Homebrew/69-expert.txt</VersionAddress>
+ <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+</UpdateInfo>
+<Changelog>
+ Created 24-April-2020 Free feat!?
+</Changelog>
+
+<AppendNodes name="1" type="Level" internal-id="ID_INTERNAL_LEVEL_1" source="Core">
+	<rules>
+		<grant name="Expertise" type="Internal"/>
+	</rules>
+</AppendNodes>
+
+
+<RulesElement name="Expertise" type="Internal" internal-id="ID_HOUSERULE_INTERNAL_FREEX" source="Core">
+	<rules>
+		<select type="Feat" name="Expertise" number="1" Category="ID_FMP_FEAT_3122|ID_FMP_FEAT_3123|ID_FMP_FEAT_3124|ID_FMP_FEAT_3126|ID_FMP_FEAT_3141|ID_FMP_FEAT_3144|ID_FMP_FEAT_3145|ID_FMP_FEAT_3146|ID_FMP_FEAT_3149|ID_FMP_FEAT_3150|ID_FMP_FEAT_3151|ID_FMP_FEAT_3157|ID_FMP_FEAT_3522|ID_FMP_FEAT_3565|ID_FMP_FEAT_3566|ID_FMP_FEAT_2785|ID_FMP_FEAT_3738|ID_FMP_FEAT_3739|ID_FMP_FEAT_3740|ID_FMP_FEAT_3741|ID_FMP_FEAT_3743|ID_FMP_FEAT_3603|ID_FMP_FEAT_3609|ID_FMP_FEAT_3611|ID_FMP_FEAT_3742|ID_FMP_FEAT_3671|ID_FMP_FEAT_3672|ID_FMP_FEAT_3736" requires="!Nonstandard Feats"/>
+	</rules>
+</RulesElement>
+
+</D20Rules>

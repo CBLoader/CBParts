@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.136</Version>
+		<Version>1.138</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
 	<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
 	<!-- Feats -->
 	<!-- 09-feats.part, version 1.136 -->
-	<!-- Original release: 13-July-2011; Last modified: 18-January-2014 -->
-	<!-- Test compiled with CBLoader build V1.3.0 -->
+	<!-- Original release: 13-July-2011; Last modified: 5-May-2020 -->
+	<!-- Test compiled with CBLoader build V1.4.4 -->
 	<!-- This part file belongs to the July 2011 reorganization of data files. -->
 	<!-- Special thanks to the entire community for handling the materials. -->
 	<Changelog>
@@ -57,6 +57,7 @@
  Updated 20-March-2013 Added Dragon Magazine 421 Feats You Say Dragonborn, I Say Draconian
  Updated 22-April-2013 Added Winning Races: Tinker Gnome Feats
  Updated 18-January-2014 Updated Disciple of Madness Feat
+ Updated 5-May-2020 Arena fighter feat fixes.
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -42755,406 +42756,6 @@ You gain a +3 feat bonus to Thievery checks.
 		</rules>
 You gain a +3 feat bonus to Athletics checks.
 	</RulesElement>
-	<RulesElement name="Weapon Focus (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(MACE)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_1 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Maces </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Mace)" value="+1"/>
-			<statadd name="Weapon Focus (Mace)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Mace)" value="+1" requires="Epic Tier"/>
-			<statadd name="mace group,weapon:damage" value="+Weapon Focus (Mace)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Mace group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(LIGHT_BLADE)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_2 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Light Blades </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Light Blade)" value="+1"/>
-			<statadd name="Weapon Focus (Light Blade)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Light Blade)" value="+1" requires="Epic Tier"/>
-			<statadd name="Light Blade group,weapon:damage" value="+Weapon Focus (Light Blade)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Light Blade group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(STAFF)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_6 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Staffs </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Staff)" value="+1"/>
-			<statadd name="Weapon Focus (Staff)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Staff)" value="+1" requires="Epic Tier"/>
-			<statadd name="Staff group,weapon:damage" value="+Weapon Focus (Staff)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Staff group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_7 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Heavy Blades </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Heavy Blade)" value="+1"/>
-			<statadd name="Weapon Focus (Heavy Blade)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Heavy Blade)" value="+1" requires="Epic Tier"/>
-			<statadd name="Heavy Blade group,weapon:damage" value="+Weapon Focus (Heavy Blade)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Heavy Blade group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(AXE)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_8 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Axes </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Axe)" value="+1"/>
-			<statadd name="Weapon Focus (Axe)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Axe)" value="+1" requires="Epic Tier"/>
-			<statadd name="Axe group,weapon:damage" value="+Weapon Focus (Axe)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Axe group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(FLAIL)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_10 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Flails </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Flail)" value="+1"/>
-			<statadd name="Weapon Focus (Flail)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Flail)" value="+1" requires="Epic Tier"/>
-			<statadd name="Flail group,weapon:damage" value="+Weapon Focus (Flail)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Flail group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HAMMER)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_11 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Hammers </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Hammer)" value="+1"/>
-			<statadd name="Weapon Focus (Hammer)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Hammer)" value="+1" requires="Epic Tier"/>
-			<statadd name="hammer group,weapon:damage" value="+Weapon Focus (Hammer)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Hammer group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(PICK)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_13 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Picks </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Pick)" value="+1"/>
-			<statadd name="Weapon Focus (Pick)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Pick)" value="+1" requires="Epic Tier"/>
-			<statadd name="Pick group,weapon:damage" value="+Weapon Focus (Pick)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Pick group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(POLEARM)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_22 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Polearms </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Polearm)" value="+1"/>
-			<statadd name="Weapon Focus (Polearm)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Polearm)" value="+1" requires="Epic Tier"/>
-			<statadd name="Polearm group,weapon:damage" value="+Weapon Focus (Polearm)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Polearm group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Unarmed)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(UNARMED)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_27 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks when Unarmed </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Unarmed)" value="+1"/>
-			<statadd name="Weapon Focus (Unarmed)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Unarmed)" value="+1" requires="Epic Tier"/>
-			<statadd name="unarmed group,weapon:damage" value="+Weapon Focus (Unarmed)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Unarmed group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(CROSSBOW)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_29 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Crossbows </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Crossbow)" value="+1"/>
-			<statadd name="Weapon Focus (Crossbow)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Crossbow)" value="+1" requires="Epic Tier"/>
-			<statadd name="Crossbow group,weapon:damage" value="+Weapon Focus (Crossbow)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Crossbow group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(SLING)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_30 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Slings </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Sling)" value="+1"/>
-			<statadd name="Weapon Focus (Sling)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Sling)" value="+1" requires="Epic Tier"/>
-			<statadd name="Sling group,weapon:damage" value="+Weapon Focus (Sling)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Sling group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(BOW)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_32 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Bows </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Bow)" value="+1"/>
-			<statadd name="Weapon Focus (Bow)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Bow)" value="+1" requires="Epic Tier"/>
-			<statadd name="Bow group,weapon:damage" value="+Weapon Focus (Bow)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Bow group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(SPEAR)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_35 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Spears </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Spear)" value="+1"/>
-			<statadd name="Weapon Focus (Spear)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Spear)" value="+1" requires="Epic Tier"/>
-			<statadd name="Spear group,weapon:damage" value="+Weapon Focus (Spear)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Spear group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(GARROTE)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_47 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Garrotes </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Garrote)" value="+1"/>
-			<statadd name="Weapon Focus (Garrote)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Garrote)" value="+1" requires="Epic Tier"/>
-			<statadd name="Garrote group,weapon:damage" value="+Weapon Focus (Garrote)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Garrote group.
-	</RulesElement>
-	<RulesElement name="Weapon Focus (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(BLOWGUN)" source="Player's Handbook">
-		<specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_48 </specific>
-		<specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Blowguns </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Weapon Focus (Blowgun)" value="+1"/>
-			<statadd name="Weapon Focus (Blowgun)" value="+1" requires="Paragon Tier"/>
-			<statadd name="Weapon Focus (Blowgun)" value="+1" requires="Epic Tier"/>
-			<statadd name="Blowgun group,weapon:damage" value="+Weapon Focus (Blowgun)" type="Feat"/>
-		</rules>
-You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Blowgun group.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Mace)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(MACE)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_1 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with maces (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,mace group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,mace group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,mace group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a mace. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Light Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(LIGHT_BLADE)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_2 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with light blades (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,light blade group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,light blade group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,light blade group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a light blade. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Staff)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(STAFF)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_6 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with staffs (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,staff group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,staff group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,staff group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a staff. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Heavy Blade)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HEAVY_BLADE)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_7 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with heavy blades (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,heavy blade group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,heavy blade group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,heavy blade group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a heavy blade. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Axe)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(AXE)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_8 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with axes (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,axe group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,axe group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,axe group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a axe. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Flail)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(FLAIL)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_10 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with flails (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,flail group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,flail group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,flail group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a flail. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Hammer)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HAMMER)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_11 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with hammers (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,hammer group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,hammer group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,hammer group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a hammer. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Pick)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(PICK)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_13 </specific>
-		<specific name="Short Description"> Gain +1 bonus to weapon attacks with picks (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,pick group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,pick group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,pick group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a pick. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Polearm)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(POLEARM)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_22 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with polearms (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,polearm group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,polearm group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,polearm group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a polearm. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Unarmed)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(UNARMED)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_27 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks when unarmed (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,unarmed group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,unarmed group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,unarmed group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use when unarmed. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Crossbow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(CROSSBOW)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_29 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with crossbows (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,crossbow group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,crossbow group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,crossbow group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a crossbow. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Sling)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SLING)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_30 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with slings (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,sling group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,sling group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,sling group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a sling. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Bow)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BOW)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_32 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with bows (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,bow group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,bow group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,bow group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a bow. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SPEAR)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_35 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with spears (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,spear group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,spear group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,spear group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a spear. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Garrote)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(GARROTE)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_47 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with garrotes (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,garrote group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,garrote group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,garrote group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a garrote. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
-	<RulesElement name="Weapon Expertise (Blowgun)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BLOWGUN)" source="Player's Handbook 2">
-		<specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
-		<specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_48 </specific>
-		<specific name="Short Description"> Gain +1 to weapon attacks with blowguns (+2 at 11th, +3 at 21st level) </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="weapon,blowgun group:attack" value="+1" type="Feat"/>
-			<statadd name="weapon,blowgun group:attack" value="+2" type="Feat" requires="11 level"/>
-			<statadd name="weapon,blowgun group:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>
-You gain a +1 feat bonus to attack rolls with any weapon power you use with a blowgun. The bonus increases to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
 	<RulesElement name="Superior Implement Training (Accurate orb)" type="Feat" internal-id="ID_INTERNAL_FEAT_SUPERIOR_IMPLEMENT_TRAINING_(ACCURATE_ORB)" source="Player's Handbook 3">
 		<Prereqs> Can use the Orb implement </Prereqs>
 		<print-prereqs> Can use the Orb implement </print-prereqs>
@@ -46988,4 +46589,1113 @@ You ignore the -4 penalty for using your Quick Fix racial feature.
 	In addition, if you have the jury rig power, you can choose two targets instead of one whenever you use it.
 </RulesElement>
 
+<!-- Arena fighter fixes follow-->
+	<RulesElement name="Axe Expertise" type="Feat" internal-id="ID_FMP_FEAT_3122" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> The axe is a weapon designed to cleave through armor and bone. You are trained to maximize the force you deliver with each hack of your axe. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with axes; reroll one damage die that shows 1 with axe weapon attack </specific>
+		<rules>
+			<statadd name="Axe Expertise" value="+1"/>
+			<statadd name="Axe Expertise" value="+1" requires="Paragon Tier"/>
+			<statadd name="Axe Expertise" value="+1" requires="Epic Tier"/>
+			<statadd name="weapon,axe group:attack" value="+Axe Expertise" type="Feat"/>
+			<statadd name="weapon,arena group:attack" value="+Axe Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE" type="Feat"/>
+		</rules>
+You gain a +1 feat bonus to weapon attack rolls you make with an axe. This bonus increases to +2 at 11th level and +3 at 21st level.
+	Also, when rolling damage for a weapon attack you make with an axe, you can reroll one damage die that results in a 1, but you must use the second result.
+	</RulesElement>
+	<RulesElement name="Bludgeon Expertise" type="Feat" internal-id="ID_FMP_FEAT_3123" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> In your hands, a hammer or a mace delivers crushing blows that reverberate through the toughest armor. Even glancing blows are enough to wear down your enemy. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with hammers and maces; +1 sq. to push and slide distance with hammer and mace weapon attacks  </specific>
+		<rules>
+			<statadd name="Bludgeon Expertise" value="+1"/>
+			<statadd name="Bludgeon Expertise" value="+1" requires="Paragon Tier"/>
+			<statadd name="Bludgeon Expertise" value="+1" requires="Epic Tier"/>
+			<statadd name="weapon,mace group:attack" value="+Bludgeon Expertise" type="Feat"/>
+			<statadd name="weapon,hammer group:attack" value="+Bludgeon Expertise" type="Feat"/>
+			<statadd name="weapon,arena group:attack" value="+Bludgeon Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_MACE" type="Feat"/>
+			<statadd name="weapon,arena group:attack" value="+Bludgeon Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER" type="Feat"/>
+		</rules>
+You gain a +1 feat bonus to weapon attack rolls you make with a hammer or a mace. This bonus increases to +2 at 11th level and +3 at 21st level.
+	You also gain a +1 feat bonus to the number of squares you push or slide creatures with weapon attacks you make with a hammer or a mace.
+	</RulesElement>
+	<RulesElement name="Bow Expertise" type="Feat" internal-id="ID_FMP_FEAT_3124" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Flavor> Your steady accuracy allows you to fire arrows with great precision. With training, you've learned to hone in on lone foes to deal out crippling strikes. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with bows; +1/+2/+3 (by tier) to damage against isolated creatures with bow weapon attacks  </specific>
+		<rules>
+			<statadd name="Bow Expertise" value="+1"/>
+			<statadd name="Bow Expertise" value="+1" requires="Paragon Tier"/>
+			<statadd name="Bow Expertise" value="+1" requires="Epic Tier"/>
+			<statadd name="Bow Expertise 2" value="+1" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
+			<statadd name="Bow Expertise 2" value="+1" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW&amp;Paragon Tier"/>
+			<statadd name="Bow Expertise 2" value="+1" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW&amp;Epic Tier"/>
+			<statadd name="weapon,bow group:attack" value="+Bow Expertise" type="Feat"/>
+			<statadd name="weapon,bow group:damage" value="+Bow Expertise 2" condition="against a single creature that is not adjacent to any other creature"/>
+			<statadd name="weapon,arena group:attack" value="+Bow Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW" type="Feat"/>
+			<statadd name="weapon,arena group:damage" value="+Bow Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW" condition="against a single creature that is not adjacent to any other creature"/>
+		</rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a bow. In addition, you gain a +1 bonus to the damage roll of any weapon attack you make with a bow against a single creature that is not adjacent to any other creature. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3126" name="Crossbow Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+    <Flavor> In your steady hands, a crossbow is a precision weapon. You need to see only a small portion of your enemy to deliver a deadly attack. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with crossbows; ignore partial and superior cover with crossbow weapon attacks </specific>
+    <rules>
+      <statadd name="Crossbow Expertise" value="+1"/>
+      <statadd name="Crossbow Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Crossbow Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,crossbow group:attack" value="+Crossbow Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:attack" value="+Crossbow Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_CROSSBOW" type="Feat"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a crossbow. This bonus increases to +2 at 11th level and +3 at 21st level.
+	Also, you ignore partial cover and superior cover with weapon attacks you make with a crossbow.
+	</RulesElement>
+      <RulesElement internal-id="ID_DRAG427_FEAT_1" name="Reaper's Blade" type="Feat" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+    <Prereqs> Must worship Nerull </Prereqs>
+    <specific name="Short Description"> Gain proficiency, extra damage, and high crit with sickles and scythes. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" type="Proficiency"/>
+      <statadd name="Scythe:damage" value="+Reaper's Blade" type="Feat"/>
+      <statadd name="weapon, arena group:damage" value="+Reaper's Blade" requires="ID_INTERNAL_ARENA_WEAPON_(SICKLE)|ID_INTERNAL_ARENA_WEAPON_(SCYTHE)" type="Feat"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)" type="Proficiency"/>
+      <statadd name="Sickle:damage" value="+Reaper's Blade" type="Feat"/>
+      <statadd name="Reaper's Blade" value="+2"/>
+      <statadd name="Reaper's Blade" value="+1" requires="Paragon Tier"/>
+      <statadd name="Reaper's Blade" value="+1" requires="Epic Tier"/>
+      <modify name="Scythe" type="Weapon" Field="Properties" list-addition="High Crit"/>
+      <modify name="Sickle" type="Weapon" Field="Properties" list-addition="High Crit" requires="ID_INTERNAL_ARENA_WEAPON_(SICKLE)&amp;ID_INTERNAL_ARENA_WEAPON_(SCYTHE)"/>
+    </rules>
+Like the scythe Nerull carried long ago, your scythe cuts down any who stray into its path. You gain proficiency and a +2 feat bonus to damage rolls with the sickle and the scythe. This bonus increases to +3 at 11th level and +4 at 21st level. In addition, you treat the scythe as having the high crit property.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_1252" name="Spiked Chain Training" type="Feat" source="Dragon Magazine Annual 2009,Dragon Magazine 372" revision-date="8/27/2010 12:18:48 PM">
+    <Category>ID_INTERNAL_CATEGORY_MULTICLASS_SPIKED_CHAIN,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS</Category>
+    <Prereqs> Dex 13; ~MULTICLASS or Unlimited Multiclass </Prereqs>
+    <print-prereqs> Dex 13 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Spiked Chain: Gain proficiency with spiked chain and treat as double weapon </specific>
+    <specific name="Special"/>
+    <specific name="type"> Multiclass Spiked Chain </specific>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPIKED_CHAIN)" type="Proficiency"/>
+      <modify name="Spiked chain" type="Weapon" Field="_SecondaryEnd" value="ID_INTERNAL_SPIKED_CHAIN_SECONDARY_END"/>
+      <modify name="Spiked chain" type="Weapon" Field="Damage" value="2d4"/>
+      <modify name="Spiked chain" type="Weapon" Field="Group" list-addition="Light Blade"/>
+      <modify name="Spiked chain" type="Weapon" Field="Properties" list-addition="Stout, Off-hand"/>
+      <grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>
+      <grant name="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE" type="Internal" requires="ID_INTERNAL_ARENA_WEAPON_(SPIKED_CHAIN)"/>
+    </rules>
+You gain proficiency with the spiked chain. You can treat the spiked chain as a double weapon. As a double weapon, each end of the spiked chain is a light blade and deals 2d4 damage. The primary end gains the stout property, and the secondary end gains the off-hand property.
+   </RulesElement>
+ 
+    <RulesElement internal-id="ID_FMP_FEAT_1004" name="Goliath Greatweapon Prowess" type="Feat" source="Player's Handbook 2" revision-date="8/27/2010 12:18:33 PM">
+    <Prereqs> Goliath </Prereqs>
+    <print-prereqs> Goliath </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain proficiency, +2/+3/+4 (by tier) to damage with simple and military two-handed melee weapons </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      
+      <statadd name="Goliath Greatweapon Prowess" value="+2"/>
+      <statadd name="Goliath Greatweapon Prowess" value="+1" requires="Paragon Tier"/>
+      <statadd name="Goliath Greatweapon Prowess" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,arena group:damage" value="+Goliath Greatweapon Prowess" requires="ID_INTERNAL_ARENA_WEAPON_(GREATAXE)|ID_INTERNAL_ARENA_WEAPON_(HEAVY_FLAIL)|ID_INTERNAL_ARENA_WEAPON_(GLAIVE)|ID_INTERNAL_ARENA_WEAPON_(HALBERD)|ID_INTERNAL_ARENA_WEAPON_(MAUL)|ID_INTERNAL_ARENA_WEAPON_(LONGSPEAR)|ID_INTERNAL_ARENA_WEAPON_(GREATSWORD)|ID_INTERNAL_ARENA_WEAPON_(FALCHION)|ID_INTERNAL_ARENA_WEAPON_(HEAVY_WAR_PICK)|ID_INTERNAL_ARENA_WEAPON_(GREATCLUB)|ID_INTERNAL_ARENA_WEAPON_(MORNINGSTAR)|ID_INTERNAL_ARENA_WEAPON_(QUARTERSTAFF)|ID_INTERNAL_ARENA_WEAPON_(SCYTHE)|ID_INTERNAL_ARENA_WEAPON_(TRIKAL)" type="Feat"/>
+      <grant name="ID_INTERNAL_INTERNAL_GOLIATH_GREATWEAPON_PROWESS" type="Internal"/>
+    </rules>
+You gain proficiency with all simple and military two-handed melee weapons and a +2 feat bonus to damage rolls with such weapons. The bonus increases to +3 at 11th level and +4 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_2420" name="Gnome Weapon Training" type="Feat" source="Martial Power 2" revision-date="8/27/2010 12:20:14 PM">
+    <Prereqs> Gnome, any martial class </Prereqs>
+    <print-prereqs> Gnome, any martial class </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Proficiency and +2/+3/+4 (by tier) damage with simple and military hammers and picks </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <statadd name="Gnome Weapon Training" value="+2"/>
+      <statadd name="Gnome Weapon Training" value="+1" requires="Paragon Tier"/>
+      <statadd name="Gnome Weapon Training" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,arena group:damage" value="+Gnome Weapon Training" requires="ID_INTERNAL_ARENA_WEAPON_(THROWING_HAMMER)|ID_INTERNAL_ARENA_WEAPON_(WARHAMMER)|ID_INTERNAL_ARENA_WEAPON_(WAR_PICK)|ID_INTERNAL_ARENA_WEAPON_(MAUL)|ID_INTERNAL_ARENA_WEAPON_(LIGHT_WAR_PICK)|ID_INTERNAL_ARENA_WEAPON_(HEAVY_WAR_PICK)" type="feat"/>
+      <grant name="ID_INTERNAL_INTERNAL_GNOME_WEAPON_TRAINING" type="Internal"/>
+    </rules>
+You gain proficiency with simple and military hammers and picks and gain a +2 feat bonus to damage rolls with such weapons. This bonus increases to +3 at 11th level and +4 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_2157" name="Dusk Elf Weapon Training" type="Feat" source="Dragon Magazine 382" revision-date="8/27/2010 12:19:50 PM">
+    <Prereqs> Dusk Elf Stealth </Prereqs>
+    <print-prereqs> Dusk Elf Stealth </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Proficiency and +2/+3/+4 (by tier) to damage with simple and military light blades </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <grant name="ID_INTERNAL_INTERNAL_DUSK_ELF_WEAPON_TRAINING" type="Internal"/>
+      <statadd name="Dusk Elf Weapon Training" value="+2"/>
+      <statadd name="Dusk Elf Weapon Training" value="+1" requires="Paragon Tier"/>
+      <statadd name="Dusk Elf Weapon Training" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,arena group:damage" value="+Dusk Elf Weapon Training" requires="ID_INTERNAL_ARENA_WEAPON_(DAGGER)|ID_INTERNAL_ARENA_WEAPON_(SICKLE)|ID_INTERNAL_ARENA_WEAPON_(SHORT_SWORD)|ID_INTERNAL_ARENA_WEAPON_(RAPIER)"/>
+    </rules>
+You gain proficiency with simple and military light blades, and you gain a +2 feat bonus to damage rolls with these weapons. The bonus increases to +3 at 11th level and +4 at 21st level.
+	</RulesElement>
+     <RulesElement internal-id="ID_FMP_FEAT_69" name="Dwarven Weapon Training" type="Feat" source="Player's Handbook" revision-date="8/27/2010 12:17:50 PM">
+    <Prereqs> Dwarf </Prereqs>
+    <print-prereqs> Dwarf </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +2 to damage and proficiency with axes and hammers </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(AXE)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_GROUP_(HAMMER)" type="Proficiency"/>
+      <statadd name="axe group:damage" value="+2" type="Feat"/>
+      <statadd name="hammer group:damage" value="+2" type="Feat"/>
+      <statadd name="arena group:damage" value="+2" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE|ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER"/>
+    </rules>
+You gain proficiency and a +2 feat bonus to damage rolls with axes and hammers.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_1772" name="Githzerai Blade Master" type="Feat" source="Dragon Magazine 378" revision-date="8/27/2010 12:19:26 PM">
+    <Prereqs> Githzerai </Prereqs>
+    <print-prereqs> Githzerai </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Proficiency and +2/+3/+4 (by tier) to damage with military heavy blades, bastard sword, and fullblade </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_HEAVY_BLADE" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(BASTARD_SWORD)" type="Proficiency"/>
+      <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(FULLBLADE)" type="Proficiency"/>
+      <statadd name="Githzerai Blade Master" value="+2"/>
+      <statadd name="military,heavy blade group:damage" value="+Githzerai Blade Master" type="Feat"/>
+      <statadd name="Bastard sword:damage" value="+Githzerai Blade Master" type="Feat"/>
+      <statadd name="arena group:damage" value="+Githzerai Blade Master" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_(BASTARD_SWORD)|ID_INTERNAL_ARENA_WEAPON_(FULLBLADE)|ID_INTERNAL_ARENA_WEAPON_(BROADSWORD)|ID_INTERNAL_ARENA_WEAPON_(FALCHION)|ID_INTERNAL_ARENA_WEAPON_(GLAVE)|ID_INTERNAL_ARENA_WEAPON_(GREATSWORD)|ID_INTERNAL_ARENA_WEAPON_(KHOPESH)|ID_INTERNAL_ARENA_WEAPON_(LONGSWORD)|ID_INTERNAL_ARENA_WEAPON_(SCIMITAR)"/>
+      <statadd name="Fullblade:damage" value="+Githzerai Blade Master" type="Feat"/>
+      <statadd name="Githzerai Blade Master" value="+1" requires="Paragon Tier"/>
+      <statadd name="Githzerai Blade Master" value="+1" requires="Epic Tier"/>
+    </rules>
+You gain proficiency with all military heavy blades, as well as the bastard sword and the fullblade. Additionally, you gain a +2 feat bonus to damage rolls with these weapons. This bonus increases to +3 at 11th level and +4 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3741" name="Devout Protector Expertise" type="Feat" source="Dragon Magazine 402">
+    <Flavor> The power of your faith shines from both your holy symbol and your weapon, enhancing your attacks and your shield at the same time. </Flavor>
+    <Prereqs> Can use the Holy Symbol implement </Prereqs>
+    <print-prereqs> Proficiency with holy symbols </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Gain +1 feat bonus per tier to weapon attack rolls you make with any one-handed melee weapon and a +1 feat bonus per tier to holy symbol implement attacks. While you use a shield, your allies gain a +1 shield bonus to AC. </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <statadd name="Devout Protector Expertise" value="+1"/>
+      <statadd name="Devout Protector Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Devout Protector Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="one-hand:attack" value="+Devout Protector Expertise" type="Feat"/>
+      <statadd name="holy symbol implement,implement:attack" value="+Devout Protector Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:attack" value="+Devout Protector Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_ONE_HANDED"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls you make with any one-handed melee weapon and a +1 feat bonus to implement attack rolls you make with holy symbols. These bonuses increase to +2 at 11th level and +3 at 21st level.
+   In addition, while you use a shield, your allies gain a +1 shield bonus to AC.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3603" name="Flail Expertise" type="Feat" source="Mordenkainen's Magnificent Emporium">
+    <Flavor> The flail requires a mix of speed and power, a style that you have perfected over long hours of training. With a sweeping attack, you entangle a foe and send it tumbling to the ground. </Flavor>
+    <specific name="Short Description"> +1/2/3 by tier to weapon attack rolls made with flail; choose to knock enemies prone instead of sliding enemy </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Flail Expertise" value="+1"/>
+      <statadd name="Flail Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Flail Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,flail group:attack" value="+Flail Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:attack" value="+Flail Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_FLAIL"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a flail. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, when you hit with a melee weapon attack using a flail and the attack lets you slide the target, you can knock the target prone instead of sliding it.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3743" name="War Wizard's Expertise" type="Feat" source="Dragon Magazine 402">
+    <Prereqs> Any arcane class </Prereqs>
+    <print-prereqs> Any arcane class </print-prereqs>
+    <Flavor> While the techniques of channeling arcane power with a bladed weapon were said to have been discovered by the race that became the elves, drow, and eladrin, variants have since spread far and wide. You have mastered one of these special talents that not only enhances your attacks but gives your friends a measure of protection from those same strikes. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You gain a +1 feat bonus per tier to the attack rolls of arcane attack powers and basic attacks made with a light blade or a heavy blade, and take a -5 penalty to hit your allies. </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+      <statadd name="War Wizard's Expertise" value="+1"/>
+      <statadd name="War Wizard's Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="War Wizard's Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="arcane,heavy blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
+      <statadd name="arcane,light blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
+      <statadd name="melee basic,heavy blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
+      <statadd name="melee basic,light blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
+      <statadd name="melee basic,arena group:attack" value="+War Wizard's Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE|ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="ranged basic,arena group:attack" value="+War Wizard's Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE|ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="arcane,arena group:attack" value="+War Wizard's Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE|ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="ranged basic,heavy blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
+      <statadd name="ranged basic,light blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
+    </rules>	
+You gain a +1 feat bonus to the attack rolls of arcane powers and basic attacks that you make with a light blade or a heavy blade. This bonus increases to +2 at 11th level and +3 at 21st level.
+	Also, when you use an arcane attack power with a light blade or a heavy blade, your attack rolls take a -5 penalty against your allies.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3141" name="Heavy Blade Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+    <Flavor> The heavy blade blends accurate attacks and quick parries into a potent package. You have learned to use your weapon to deflect enemies' attacks as you move about the battlefield. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with heavy blades; +2 to defenses against OAs when wielding heavy blade </specific>
+    <rules>
+      <statadd name="AC" value="+2" condition="against opportunity attacks"/>
+      <statadd name="Fortitude Defense" value="+2" condition="against opportunity attacks"/>
+      <statadd name="Reflex Defense" value="+2" condition="against opportunity attacks"/>
+      <statadd name="Will Defense" value="+2" condition="against opportunity attacks"/>
+      <statadd name="Heavy Blade Expertise" value="+1"/>
+      <statadd name="Heavy Blade Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Heavy Blade Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,heavy blade group:attack" value="+Heavy Blade Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:attack" value="+Heavy Blade Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a heavy blade. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, while wielding a heavy blade, you gain a +2 bonus to all defenses against opportunity attacks.
+	</RulesElement>
+    <RulesElement internal-id="ID_FMP_FEAT_3144" name="Light Blade Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Flavor> What a light blade lacks in weight and power, it makes up in accuracy. In your hands, this advantage becomes even deadlier when your foe's defenses are down. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with light blades; +1/+2/+3 (by tier) to damage of light blade weapon attacks with CA </specific>
+    <rules>
+      <statadd name="Light Blade Expertise" value="+1"/>
+      <statadd name="Light Blade Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Light Blade Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="Light Blade Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="Light Blade Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE&amp;Paragon Tier"/>
+      <statadd name="Light Blade Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE&amp;Epic Tier"/>
+      <statadd name="weapon,light Blade group:attack" value="+Light Blade Expertise" type="Feat"/>
+      <statadd name="weapon,light blade group:damage" value="+Light Blade Expertise 2" condition="when you have combat advantage"/>
+      <statadd name="weapon,arena group:attack" value="+Light Blade Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="weapon,arena group:damage" value="+Light Blade Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE" condition="when you have combat advantage"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a light blade. In addition, you gain a +1 bonus to the damage rolls of weapon attacks that you make with a light blade against a creature granting combat advantage to you. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_3742" name="Mighty Crusader Expertise" type="Feat" source="Dragon Magazine 402">
+    <Flavor> You use your weapon to fend off attacks while you unleash your prayers through the symbol of your faith. </Flavor>
+    <Prereqs> Can use the Holy Symbol implement </Prereqs>
+    <print-prereqs> Proficiency with holy symbols </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> You gain a +1 feat bonus to weapon attack rolls you make with a two-handed melee weapon, and to implement attack rolls you make with a holy symbol. </specific>
+    <specific name="Special"/>
+    <specific name="type"/>
+    <specific name="Associated Power Info"/>
+    <specific name="Associated Powers"/>
+    <rules>
+     <statadd name="Mighty Crusader Expertise" value="+1"/>
+     <statadd name="Mighty Crusader Expertise" value="+1" requires="Paragon Tier"/>
+     <statadd name="Mighty Crusader Expertise" value="+1" requires="Epic Tier"/>
+     <statadd name="holy symbol implement,implement:attack" value="+Mighty Crusader Expertise" type="Feat"/>
+     <statadd name="two-hands:attack" value="+Mighty Crusader Expertise" type="Feat"/>
+     <statadd name="weapon,arena group:attack" value="+Mighty Crusader Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
+    </rules>	
+You gain a +1 feat bonus to weapon attack rolls you make with any two-handed melee weapon and a +1 feat bonus to implement attack rolls you make with holy symbols. These bonuses increase to +2 at 11th level and +3 at 21st level.
+	In addition, while you wield a two-handed melee weapon, ranged and area attacks you make with a holy symbol do not provoke opportunity attacks.
+    </RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_3609" name="Pick Expertise" type="Feat" source="Mordenkainen's Magnificent Emporium">
+    <Flavor> The pick is a favored weapon of dwarves, gnomes, and others that must battle giants. Its curved point makes it an excellent weapon for striking at a foe's feet, particularly against larger foes such as giants or ogres. Of course, to a halfling or gnome a human is a larger foe. </Flavor>
+    <specific name="Short Description"> +1/2/3 by tier to weapon attack rolls made with pick; +1/2/3 by tier to damage rolls made with pick against enemies with larger size category </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Pick Expertise" value="+1"/>
+      <statadd name="Pick Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Pick Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="Pick Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+      <statadd name="Pick Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK&amp;Paragon Tier"/>
+      <statadd name="Pick Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK&amp;Epic Tier"/>
+      <statadd name="weapon,pick group:attack" value="+Pick Expertise" type="Feat"/>
+      <statadd name="weapon,pick group:damage" value="+Pick Expertise 2" condition="against any enemy that has a size category larger than yours when using a pick"/>
+      <statadd name="weapon,arena group:attack" value="+Pick Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+      <statadd name="weapon,arena group:damage" value="+Pick Expertise" condition="against any enemy that has a size category larger than yours when using an arena weapon" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a pick. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, you gain a +1 bonus to pick damage rolls against any enemy that has a size category larger than yours. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_3611" name="Polearm Expertise" type="Feat" source="Mordenkainen's Magnificent Emporium">
+    <Flavor> With proper training, a polearm's length provides both an offensive and a defensive edge. When you attack, you keep your foes at a distance. When they close to attack, the polearm's size makes it ideal for parrying. </Flavor>
+    <specific name="Short Description"> +1/2/3 by tier to weapon attack rolls made with polearms; gain a +2 bonus to all defenses against charge attacks </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="polearm Expertise" value="+1"/>
+      <statadd name="polearm Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="polearm Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,polearm group:attack" value="+polearm Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:attack" value="+polearm Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_POLEARM"/>
+      <statadd name="AC" value="+2" type="Feat" condition="against charge attacks"/>
+      <statadd name="Fortitude Defense" value="+2" type="feat" condition="against charge attacks"/>
+      <statadd name="Reflex Defense" value="+2" type="feat" condition="against charge attacks"/>
+      <statadd name="Will Defense" value="+2" type="feat" condition="against charge attacks"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a polearm. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, while you hold a two-handed polearm in both hands, you gain a +2 bonus to all defenses against charge attacks.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3149" name="Sling Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Flavor> The sling is a versatile weapon favored by melee combatants because it is fast and light, and it can be carried in one hand. You are a master of the sling and can use it without threat from nearby foes. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with slings; ranged and area attacks with sling don't provoke OAs </specific>
+    <rules>
+      <statadd name="Sling Expertise" value="+1"/>
+      <statadd name="Sling Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Sling Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,sling group:attack" value="+Sling Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:attack" value="+Sling Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SLING"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a sling. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, when you make a ranged or an area attack with a sling, you don't provoke opportunity attacks for doing so.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3150" name="Spear Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Flavor> Your talent with the spear is deadliest when you are advancing upon a foe. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with spears; +1/+2/+3 (by tier) to weapon damage with spear when charging </specific>
+    <rules>
+      <statadd name="Spear Expertise" value="+1"/>
+      <statadd name="Spear Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Spear Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="Spear Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+      <statadd name="Spear Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR&amp;Paragon Tier"/>
+      <statadd name="Spear Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR&amp;Epic Tier"/>
+      <statadd name="weapon,spear group:attack" value="+Spear Expertise" type="Feat"/>
+      <statadd name="weapon,spear group:damage" value="+Spear Expertise 2" condition="when you are charging"/>
+      <statadd name="weapon,arena group:attack" value="+Spear Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+      <statadd name="weapon,arena group:damage" value="+Spear Expertise" condition="when you are charging" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a spear. When charging, you also gain a +1 bonus to damage rolls of weapon attacks that you make with a spear. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_FMP_FEAT_3151" name="Staff Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Flavor> The staff is the most durable implement as well as a dependable weapon. You have learned to use the staff to defend yourself while unleashing your magical powers or to strike at enemies beyond your reach. </Flavor>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to staff attacks; ranged and area implement attacks with staff don't provoke OAs; +1 to reach with staff weapon attacks </specific>
+    <rules>
+      <statadd name="Staff Expertise" value="+1"/>
+      <statadd name="Staff Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Staff Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,staff group:attack" value="+Staff Expertise" type="Feat"/>
+      <statadd name="implement,staff implement:attack" value="+Staff Expertise" type="Feat"/>
+      <statadd name="arena group:attack" value="+Staff Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_STAFF"/>
+    </rules>
+You gain a +1 feat bonus to the attack rolls of implement powers and weapon powers that you use with a staff. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, when you make a ranged or an area attack with a staff as an implement, you don't provoke opportunity attacks for doing so.
+	When you make a melee weapon attack with a staff, the weapon's reach for that attack increases by 1.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_3672" name="Two-Handed Weapon Expertise" type="Feat" source="Heroes of the Feywild">
+    <Flavor> You are a master of wielding two-handed melee weapons, and you can deal devastating amounts of damage when you charge. </Flavor>
+    <specific name="Short Description"> +1/2/3 to attack rolls with two-handed melee weapons, +1/2/3 to damage rolls of charge attacks with two-handed melee weapons </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Two-Handed Weapon Expertise" value="+1"/>
+      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="Two-Handed Weapon Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
+      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED&amp;Paragon Tier"/>
+      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED&amp;Epic Tier"/>
+      <statadd name="two-hands:attack" value="+Two-Handed Weapon Expertise" type="Feat"/>
+      <statadd name="two-hands:damage" value="+Two-Handed Weapon Expertise 2" condition="on a charge"/>
+      <statadd name="weapon,arena group:attack" value="+Two-Handed Weapon Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
+      <statadd name="weapon,arena group:damage" value="+Two-Handed Weapon Expertise" condition="on a charge" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls you make with a two-handed melee weapon. In addition, you gain a +1 bonus to the damage rolls of charge attacks you make with a two-handed melee weapon. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(MACE)" name="Versatile Expertise (Mace)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Maces. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Mace group:attack" value="+1" type="Feat"/>
+      <statadd name="Mace group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Mace group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_MACE"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_MACE"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_MACE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Mace. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(LIGHT_BLADE)" name="Versatile Expertise (Light Blade)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Light Blades. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Light Blade group:attack" value="+1" type="Feat"/>
+      <statadd name="Light Blade group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Light Blade group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Light Blade. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(STAFF)" name="Versatile Expertise (Staff)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Staffs. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Staff group:attack" value="+1" type="Feat"/>
+      <statadd name="Staff group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Staff group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_STAFF"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_STAFF"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_STAFF"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Staff. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(HEAVY_BLADE)" name="Versatile Expertise (Heavy Blade)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Heavy Blades. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Versatile Expertise (Heavy Blade)" value="+1"/>
+      <statadd name="Versatile Expertise (Heavy Blade)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Versatile Expertise (Heavy Blade)" value="+1" requires="Epic Tier"/>
+      <statadd name="Heavy Blade group:attack" value="+Versatile Expertise (Heavy Blade)" type="Feat"/>
+      <statadd name="arena group:attack" value="+Versatile Expertise (Heavy Blade)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Heavy Blade. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(AXE)" name="Versatile Expertise (Axe)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Axes. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Axe group:attack" value="+1" type="Feat"/>
+      <statadd name="Axe group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Axe group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Axe. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(FLAIL)" name="Versatile Expertise (Flail)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Flails. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Flail group:attack" value="+1" type="Feat"/>
+      <statadd name="Flail group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Flail group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_FLAIL"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_FLAIL"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_FLAIL"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Flail. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(HAMMER)" name="Versatile Expertise (Hammer)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Hammers. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Hammer group:attack" value="+1" type="Feat"/>
+      <statadd name="Hammer group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Hammer group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Hammer. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(PICK)" name="Versatile Expertise (Pick)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Picks. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Pick group:attack" value="+1" type="Feat"/>
+      <statadd name="Pick group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Pick group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Pick. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(POLEARM)" name="Versatile Expertise (Polearm)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Polearms. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Polearm group:attack" value="+1" type="Feat"/>
+      <statadd name="Polearm group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Polearm group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_POLEARM"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_POLEARM"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_POLEARM"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Polearm. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(UNARMED)" name="Versatile Expertise (Unarmed)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Unarmeds. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Unarmed group:attack" value="+1" type="Feat"/>
+      <statadd name="Unarmed group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Unarmed group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_UNARMED"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_UNARMED"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_UNARMED"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Unarmed. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(CROSSBOW)" name="Versatile Expertise (Crossbow)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Crossbows. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="crossbow group:attack" value="+1" type="Feat"/>
+      <statadd name="crossbow group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="crossbow group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_CROSSBOW"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_CROSSBOW"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_CROSSBOW"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Crossbow. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(SLING)" name="Versatile Expertise (Sling)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Slings. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="sling group:attack" value="+1" type="Feat"/>
+      <statadd name="sling group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="sling group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SLING"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_SLING"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_SLING"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Sling. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(BOW)" name="Versatile Expertise (Bow)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Bows. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Bow group:attack" value="+1" type="Feat"/>
+      <statadd name="Bow group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Bow group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Bow. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(SPEAR)" name="Versatile Expertise (Spear)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Spears. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Spear group:attack" value="+1" type="Feat"/>
+      <statadd name="Spear group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Spear group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Spear. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(GARROTE)" name="Versatile Expertise (Garrote)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Garrotes. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Garrote group:attack" value="+1" type="Feat"/>
+      <statadd name="Garrote group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Garrote group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_GARROTE"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_GARROTE"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_GARROTE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Garrote. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_VERSATILE_EXPERTISE_(BLOWGUN)" name="Versatile Expertise (Blowgun)" type="Class Feature" source="Player's Handbook 3">
+    <Category>ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_WEAPON_GROUP,ID_INTERNAL_CATEGORY_VERSATILE_EXPERTISE_IMPLEMENT</Category>
+    <specific name="_SupportsID"> ID_FMP_FEAT_2785 </specific>
+    <specific name="Short Description">  +1/+2/+3 (by tier) to attack rolls with Blowguns. </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Blowgun group:attack" value="+1" type="Feat"/>
+      <statadd name="Blowgun group:attack" value="+2" type="Feat" requires="11 level"/>
+      <statadd name="Blowgun group:attack" value="+3" type="Feat" requires="21 level"/>
+      <statadd name="arena group:attack" value="+1" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BLOWGUN"/>
+      <statadd name="arena group:attack" value="+2" type="Feat" requires="11 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_BLOWGUN"/>
+      <statadd name="arena group:attack" value="+3" type="Feat" requires="21 level&amp;ID_INTERNAL_ARENA_WEAPON_CATEGORY_BLOWGUN"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls through a Blowgun. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(MACE)" name="Weapon Focus (Mace)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_1 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Maces </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Mace)" value="+1"/>
+      <statadd name="Weapon Focus (Mace)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Mace)" value="+1" requires="Epic Tier"/>
+      <statadd name="mace group,weapon:damage" value="+Weapon Focus (Mace)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Mace)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_MACE"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Mace group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(LIGHT_BLADE)" name="Weapon Focus (Light Blade)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_2 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Light Blades </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Light Blade)" value="+1"/>
+      <statadd name="Weapon Focus (Light Blade)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Light Blade)" value="+1" requires="Epic Tier"/>
+      <statadd name="Light Blade group,weapon:damage" value="+Weapon Focus (Light Blade)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Light Blade)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Light Blade group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(STAFF)" name="Weapon Focus (Staff)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_6 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Staffs </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Staff)" value="+1"/>
+      <statadd name="Weapon Focus (Staff)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Staff)" value="+1" requires="Epic Tier"/>
+      <statadd name="Staff group,weapon:damage" value="+Weapon Focus (Staff)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Staff)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_STAFF"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Staff group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HEAVY_BLADE)" name="Weapon Focus (Heavy Blade)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_7 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Heavy Blades </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Heavy Blade)" value="+1"/>
+      <statadd name="Weapon Focus (Heavy Blade)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Heavy Blade)" value="+1" requires="Epic Tier"/>
+      <statadd name="Heavy Blade group,weapon:damage" value="+Weapon Focus (Heavy Blade)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Heavy Blade)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Heavy Blade group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(AXE)" name="Weapon Focus (Axe)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_8 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Axes </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Axe)" value="+1"/>
+      <statadd name="Weapon Focus (Axe)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Axe)" value="+1" requires="Epic Tier"/>
+      <statadd name="Axe group,weapon:damage" value="+Weapon Focus (Axe)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Axe)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Axe group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(FLAIL)" name="Weapon Focus (Flail)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_10 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Flails </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Flail)" value="+1"/>
+      <statadd name="Weapon Focus (Flail)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Flail)" value="+1" requires="Epic Tier"/>
+      <statadd name="Flail group,weapon:damage" value="+Weapon Focus (Flail)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Flail)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_FLAIL"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Flail group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(HAMMER)" name="Weapon Focus (Hammer)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_11 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Hammers </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Hammer)" value="+1"/>
+      <statadd name="Weapon Focus (Hammer)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Hammer)" value="+1" requires="Epic Tier"/>
+      <statadd name="hammer group,weapon:damage" value="+Weapon Focus (Hammer)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Hammer)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Hammer group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(PICK)" name="Weapon Focus (Pick)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_13 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Picks </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Pick)" value="+1"/>
+      <statadd name="Weapon Focus (Pick)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Pick)" value="+1" requires="Epic Tier"/>
+      <statadd name="Pick group,weapon:damage" value="+Weapon Focus (Pick)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Pick)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Pick group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(POLEARM)" name="Weapon Focus (Polearm)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_22 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Polearms </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Polearm)" value="+1"/>
+      <statadd name="Weapon Focus (Polearm)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Polearm)" value="+1" requires="Epic Tier"/>
+      <statadd name="Polearm group,weapon:damage" value="+Weapon Focus (Polearm)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Polearm)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_POLEARM"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Polearm group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(UNARMED)" name="Weapon Focus (Unarmed)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_27 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks when Unarmed </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Unarmed)" value="+1"/>
+      <statadd name="Weapon Focus (Unarmed)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Unarmed)" value="+1" requires="Epic Tier"/>
+      <statadd name="unarmed group,weapon:damage" value="+Weapon Focus (Unarmed)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Unarmed)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_UNARMED"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Unarmed group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(CROSSBOW)" name="Weapon Focus (Crossbow)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_29 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Crossbows </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Crossbow)" value="+1"/>
+      <statadd name="Weapon Focus (Crossbow)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Crossbow)" value="+1" requires="Epic Tier"/>
+      <statadd name="Crossbow group,weapon:damage" value="+Weapon Focus (Crossbow)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Crossbow)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_CROSSBOW"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Crossbow group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(SLING)" name="Weapon Focus (Sling)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_30 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Slings </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Sling)" value="+1"/>
+      <statadd name="Weapon Focus (Sling)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Sling)" value="+1" requires="Epic Tier"/>
+      <statadd name="Sling group,weapon:damage" value="+Weapon Focus (Sling)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Sling)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SLING"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Sling group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(BOW)" name="Weapon Focus (Bow)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_32 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Bows </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Bow)" value="+1"/>
+      <statadd name="Weapon Focus (Bow)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Bow)" value="+1" requires="Epic Tier"/>
+      <statadd name="Bow group,weapon:damage" value="+Weapon Focus (Bow)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Bow)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Bow group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(SPEAR)" name="Weapon Focus (Spear)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_35 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Spears </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Spear)" value="+1"/>
+      <statadd name="Weapon Focus (Spear)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Spear)" value="+1" requires="Epic Tier"/>
+      <statadd name="Spear group,weapon:damage" value="+Weapon Focus (Spear)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Spear)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Spear group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(GARROTE)" name="Weapon Focus (Garrote)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_47 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Garrotes </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Garrote)" value="+1"/>
+      <statadd name="Weapon Focus (Garrote)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Garrote)" value="+1" requires="Epic Tier"/>
+      <statadd name="Garrote group,weapon:damage" value="+Weapon Focus (Garrote)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Garrote)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_GARROTE"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Garrote group.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_FOCUS_(BLOWGUN)" name="Weapon Focus (Blowgun)" type="Feat" source="Player's Handbook">
+    <specific name="_SupportsID"> ID_FMP_FEAT_233 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_48 </specific>
+    <specific name="Short Description"> Gain +1 damage per tier with weapon attacks with Blowguns </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Focus (Blowgun)" value="+1"/>
+      <statadd name="Weapon Focus (Blowgun)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Focus (Blowgun)" value="+1" requires="Epic Tier"/>
+      <statadd name="Blowgun group,weapon:damage" value="+Weapon Focus (Blowgun)" type="Feat"/>
+      <statadd name="arena group,weapon:damage" value="+Weapon Focus (Blowgun)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BLOWGUN"/>
+    </rules>
+You gain a +1 per tier feat bonus to damage rolls of weapon attacks with weapons in the Blowgun group.
+	</RulesElement>
+      <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(MACE)" name="Weapon Expertise (Mace)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_1 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with maces (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Mace)" value="+1"/>
+      <statadd name="Weapon Expertise (Mace)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Mace)" value="+1" requires="Epic Tier"/>
+      <statadd name="mace group,weapon:attack" value="+Weapon Expertise (Mace)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Mace)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_MACE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a mace. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(LIGHT_BLADE)" name="Weapon Expertise (Light Blade)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_2 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with light blades (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Light Blade)" value="+1"/>
+      <statadd name="Weapon Expertise (Light Blade)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Light Blade)" value="+1" requires="Epic Tier"/>
+      <statadd name="light blade group,weapon:attack" value="+Weapon Expertise (Light Blade)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Light Blade)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a light blade. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(STAFF)" name="Weapon Expertise (Staff)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_6 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with staffs (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Staff)" value="+1"/>
+      <statadd name="Weapon Expertise (Staff)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Staff)" value="+1" requires="Epic Tier"/>
+      <statadd name="staff group,weapon:attack" value="+Weapon Expertise (Staff)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Staff)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_STAFF"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a staff. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HEAVY_BLADE)" name="Weapon Expertise (Heavy Blade)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_7 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with heavy blades (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Heavy Blade)" value="+1"/>
+      <statadd name="Weapon Expertise (Heavy Blade)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Heavy Blade)" value="+1" requires="Epic Tier"/>
+      <statadd name="heavy blade group,weapon:attack" value="+Weapon Expertise (Heavy Blade)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Heavy Blade)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a heavy blade. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(AXE)" name="Weapon Expertise (Axe)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_8 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with axes (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Axe)" value="+1"/>
+      <statadd name="Weapon Expertise (Axe)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Axe)" value="+1" requires="Epic Tier"/>
+      <statadd name="axe group,weapon:attack" value="+Weapon Expertise (Axe)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Axe)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_AXE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a axe. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(FLAIL)" name="Weapon Expertise (Flail)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_10 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with flails (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Flail)" value="+1"/>
+      <statadd name="Weapon Expertise (Flail)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Flail)" value="+1" requires="Epic Tier"/>
+      <statadd name="flail group,weapon:attack" value="+Weapon Expertise (Flail)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Flail)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_FLAIL"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a flail. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(HAMMER)" name="Weapon Expertise (Hammer)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_11 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with hammers (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Hammer)" value="+1"/>
+      <statadd name="Weapon Expertise (Hammer)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Hammer)" value="+1" requires="Epic Tier"/>
+      <statadd name="hammer group,weapon:attack" value="+Weapon Expertise (Hammer)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Hammer)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HAMMER"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a hammer. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(PICK)" name="Weapon Expertise (Pick)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_13 </specific>
+    <specific name="Short Description"> Gain +1 bonus to weapon attacks with picks (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Pick)" value="+1"/>
+      <statadd name="Weapon Expertise (Pick)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Pick)" value="+1" requires="Epic Tier"/>
+      <statadd name="pick group,weapon:attack" value="+Weapon Expertise (Pick)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Pick)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a pick. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(POLEARM)" name="Weapon Expertise (Polearm)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_22 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with polearms (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Polearm)" value="+1"/>
+      <statadd name="Weapon Expertise (Polearm)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Polearm)" value="+1" requires="Epic Tier"/>
+      <statadd name="polearm group,weapon:attack" value="+Weapon Expertise (Polearm)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Polearm)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_POLEARM"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a polearm. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(UNARMED)" name="Weapon Expertise (Unarmed)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_27 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks when unarmed (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Unarmed)" value="+1"/>
+      <statadd name="Weapon Expertise (Unarmed)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Unarmed)" value="+1" requires="Epic Tier"/>
+      <statadd name="unarmed group,weapon:attack" value="+Weapon Expertise (Unarmed)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Unarmed)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_UNARMED"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use when unarmed. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(CROSSBOW)" name="Weapon Expertise (Crossbow)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_29 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with crossbows (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Crossbow)" value="+1"/>
+      <statadd name="Weapon Expertise (Crossbow)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Crossbow)" value="+1" requires="Epic Tier"/>
+      <statadd name="crossbow group,weapon:attack" value="+Weapon Expertise (Crossbow)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Crossbow)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_CROSSBOW"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a crossbow. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SLING)" name="Weapon Expertise (Sling)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_30 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with slings (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Sling)" value="+1"/>
+      <statadd name="Weapon Expertise (Sling)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Sling)" value="+1" requires="Epic Tier"/>
+      <statadd name="sling group,weapon:attack" value="+Weapon Expertise (Sling)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Sling)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SLING"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a sling. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BOW)" name="Weapon Expertise (Bow)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_32 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with bows (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Bow)" value="+1"/>
+      <statadd name="Weapon Expertise (Bow)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Bow)" value="+1" requires="Epic Tier"/>
+      <statadd name="bow group,weapon:attack" value="+Weapon Expertise (Bow)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Bow)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a bow. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(SPEAR)" name="Weapon Expertise (Spear)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_35 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with spears (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Spear)" value="+1"/>
+      <statadd name="Weapon Expertise (Spear)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Spear)" value="+1" requires="Epic Tier"/>
+      <statadd name="spear group,weapon:attack" value="+Weapon Expertise (Spear)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Spear)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a spear. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(GARROTE)" name="Weapon Expertise (Garrote)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_47 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with garrotes (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Garrote)" value="+1"/>
+      <statadd name="Weapon Expertise (Garrote)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Garrote)" value="+1" requires="Epic Tier"/>
+      <statadd name="garrote group,weapon:attack" value="+Weapon Expertise (Garrote)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Garrote)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_GARROTE"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a garrote. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+  <RulesElement internal-id="ID_INTERNAL_FEAT_WEAPON_EXPERTISE_(BLOWGUN)" name="Weapon Expertise (Blowgun)" type="Feat" source="Player's Handbook 2">
+    <specific name="_SupportsID"> ID_FMP_FEAT_1032 </specific>
+    <specific name="_RequiresID"> ID_FMP_WEAPON_GROUP_48 </specific>
+    <specific name="Short Description"> Gain +1 to weapon attacks with blowguns (+2 at 11th, +3 at 21st level) </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Weapon Expertise (Blowgun)" value="+1"/>
+      <statadd name="Weapon Expertise (Blowgun)" value="+1" requires="Paragon Tier"/>
+      <statadd name="Weapon Expertise (Blowgun)" value="+1" requires="Epic Tier"/>
+      <statadd name="blowgun group,weapon:attack" value="+Weapon Expertise (Blowgun)" type="Feat"/>
+      <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Blowgun)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BLOWGUN"/>
+    </rules>
+You gain a +1 feat bonus to attack rolls with any weapon power you use with a blowgun. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+<!-- End of feat fixes -->
 </D20Rules>

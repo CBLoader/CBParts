@@ -119,10 +119,14 @@ def patch_part(dir: str, part: str) -> None:
         category = os.path.basename(category)
     preview(xml).write(os.path.splitext(path)[0] + '.html')
     if part.endswith('.index'):
+        contents = []
         for p in xml.findall('Part'):
             fn = p.find('Filename')
             if fn is not None:
                 indexed.add(fn.text)
+                contents.append(fn.text)
+        if not desc_text:
+            desc_text ='<i>' + ', '.join(contents) + '</i>'
     return Info(part, os.path.join(dir, part), update_info.base, desc_text, pinned, category, version_hash(path), update_info.find('Version').text)
 
 def version_hash(path: str) -> str:

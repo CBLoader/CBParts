@@ -32,6 +32,7 @@
  Updated 26-December-2011 Gnome race fix for Ghost Sound (wizard base class side).
  Updated 27-May-2012 Psionic Augmentation update.
  Updated 5-June-2012 Node updates.
+ Updated 23-May-2020 Fix for malformed XML if you mention "For Cormyr!" in your Campaign Settings
 </Changelog>
   <!-- Spiked Chain Training Feat (by Drewjitsu (whos an asshole)) -->
   <RulesElement name="Spiked Chain Training" type="Feat" internal-id="ID_FMP_FEAT_1252" source="Dragon Magazine Annual 2009,Dragon Magazine 372" revision-date="8/27/2010 12:18:48 PM">
@@ -63,9 +64,9 @@ Cost: 30 gp
 Damage: 2d4
 Proficient: +3
 Weight: 10 lb.
-Properties: 
+Properties:
 Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy.).
-Group: 
+Group:
 Flail (Weapons in the flail group have a flexible material, usually a length of chain, between a solid handle and the damage-dealing end of the weapon.). </specific>
     <specific name="Weight"> 10 </specific>
     <specific name="Gold"> 30 </specific>
@@ -183,9 +184,9 @@ Proficient: +2
 Range: -
 Weight: 7 lb.
 This light shield is constructed with a sharpened spike at its center. A spiked shield can be enchanted as a magic shield or a magic weapon, but not both. A spiked shield enchanted as a magic weapon does not occupy a character's magic item arms slot. Although a character cannot use two shields at the same time, a character wielding a spiked shield enchanted as a weapon can employ arms slot items such as bracers.
-Properties: 
+Properties:
 Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can't attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
-Group: 
+Group:
 Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lunges, and agile defenses are the strong points of these weapons.). </specific>
     <specific name="Weight"> 7 </specific>
     <specific name="Gold"> 10 </specific>
@@ -221,9 +222,9 @@ Proficient: +2
 Range: -
 Weight: 14 lb.
 This light shield is constructed with a sharpened spike at its center. A spiked shield can be enchanted as a magic shield or a magic weapon, but not both. A spiked shield enchanted as a magic weapon does not occupy a character's magic item arms slot. Although a character cannot use two shields at the same time, a character wielding a spiked shield enchanted as a weapon can employ arms slot items such as bracers.
-Properties: 
+Properties:
 Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can't attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
-Group: 
+Group:
 Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lunges, and agile defenses are the strong points of these weapons.). </specific>
     <specific name="Weight"> 14 </specific>
     <specific name="Gold"> 10 </specific>
@@ -1199,9 +1200,9 @@ You use Constitution as your key ability with &lt;i&gt;Goring Charge&lt;/i&gt;.
     <specific name="Attack Type"> Melee 1 </specific>
     <specific name="Effect"> You charge and make the following attack in place of a melee basic attack. </specific>
     <specific name="Target"> One creature </specific>
-    <specific name="Attack"> Strength +4 vs. AC, Constitution +4 vs. AC, or Dexterity +4 vs. AC 
+    <specific name="Attack"> Strength +4 vs. AC, Constitution +4 vs. AC, or Dexterity +4 vs. AC
 Increase to +6 bonus at 11th level, and to +8 at 21st level. </specific>
-    <specific name="Hit"> 1d6 + Strength modifier, Constitution modifier, or Dexterity modifier damage, and you knock the target prone. 
+    <specific name="Hit"> 1d6 + Strength modifier, Constitution modifier, or Dexterity modifier damage, and you knock the target prone.
 Increase to 2d6 + Strength, Constitution, or Dexterity modifier damage at 11th level, and to 3d6 + Strength, Constitution, or Dexterity modifier damage at 21st level. </specific>
     <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_412 </specific>
@@ -1268,7 +1269,7 @@ Your Dragon Breath power deals poison damage.
     <specific name="Attack Type"> Close blast 3 </specific>
     <specific name="Targets"> All creatures in area. </specific>
     <specific name="Attack"> Strength +2 vs. Reflex, Constitution +2 vs. Reflex, or Dexterity +2 vs. Reflex </specific>
-    <specific name="Hit"> 1d6 + Constitution modifier damage. 
+    <specific name="Hit"> 1d6 + Constitution modifier damage.
 Increase to +4 bonus and 2d6 + Constitution modifier damage at 11th level, and to +6 bonus and 3d6 + Constitution modifier damage at 21st level. </specific>
     <specific name="Special"> When you create your character, choose Strength, Constitution, or Dexterity as the ability score you use when making attack rolls with this power. You also choose the power's damage type: acid, cold, fire, lightning, or poison. These two choices remain throughout your character's life and do not change the power's other effects. </specific>
     <specific name="_Associated Feats"/>
@@ -1404,13 +1405,13 @@ You can use the Wrathful symbol superior implement.
    <rules><statadd name="implement,will:attack(Wrathful symbol)" value="+1" requires="Superior Implement Training (Wrathful symbol)"/></rules></RulesElement>
   <RulesElement name="Accurate symbol" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_96" source="Player's Handbook 3" revision-date="8/27/2010 1:16:20 PM">
     <specific name="Full Text"> Accurate symbol
-Superior implement 
+Superior implement
 Cost: 25 gp
 Weight: 1 lb.
 An accurate symbol is carved with symbols of power that channel divine energy more precisely.
-Properties: 
+Properties:
 Accurate (You gain a +1 bonus to attack rolls made with an accurate implement.).
-Group: 
+Group:
 Holy Symbol (If you are a member of a class that can use a holy symbol as an implement, you can apply the enhancement bonus of a holy symbol to the attack rolls and the damage rolls of any of your powers from that class that have the implement keyword, and you can use a holy symbol's properties and powers. Members of other classes gain no benefit from wearing or holding a holy symbol.
 A holy symbol represents your deity and takes the shape of an aspect of the god. (See pages 21–22 for the symbols of the good, lawful good, and unaligned deities.) As with most other implements, you can't make melee attacks with a holy symbol.
 Unlike other implements, you need only to wear a holy symbol for its property or power to function. If you are wearing or holding more than one holy symbol, none of your symbols function.). </specific>
@@ -1419,19 +1420,19 @@ Unlike other implements, you need only to wear a holy symbol for its property or
     <specific name="WeaponEquiv"/>
     <specific name="Group"> Holy Symbol </specific>
     <specific name="Properties"> Accurate </specific>
-    <specific name="Item Slot"> Off-hand </specific> 
+    <specific name="Item Slot"> Off-hand </specific>
 An accurate symbol is carved with symbols of power that channel divine energy more precisely.
 </RulesElement>
   <RulesElement name="Astral symbol" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_97" source="Player's Handbook 3" revision-date="8/27/2010 1:16:20 PM">
     <specific name="Full Text"> Astral symbol
-Superior implement 
+Superior implement
 Cost: 18 gp
 Weight: 1 lb.
 An astral symbol is crafted of solidified mist from the Astral Sea and glows with a faint silvery light.
-Properties: 
+Properties:
 Distant (The range of your area and ranged attack powers increases by 2 when they're used through a distant implement.).
 Energized (radiant) (When you use an attack power through an energized implement, you gain a +2 bonus to damage rolls if the power has the keyword that matches the implement's damage type. The bonus increases to +3 at 11th level and +4 at 21st level.).
-Group: 
+Group:
 Holy Symbol (If you are a member of a class that can use a holy symbol as an implement, you can apply the enhancement bonus of a holy symbol to the attack rolls and the damage rolls of any of your powers from that class that have the implement keyword, and you can use a holy symbol's properties and powers. Members of other classes gain no benefit from wearing or holding a holy symbol.
 A holy symbol represents your deity and takes the shape of an aspect of the god. (See pages 21–22 for the symbols of the good, lawful good, and unaligned deities.) As with most other implements, you can't make melee attacks with a holy symbol.
 Unlike other implements, you need only to wear a holy symbol for its property or power to function. If you are wearing or holding more than one holy symbol, none of your symbols function.). </specific>
@@ -1442,19 +1443,19 @@ Unlike other implements, you need only to wear a holy symbol for its property or
     <specific name="Properties"> Distant, Energized (radiant) </specific>
     <specific name="_DamageType"> Radiant </specific>
     <specific name="Item Slot"> Off-hand </specific>
-      
+
 An astral symbol is crafted of solidified mist from the Astral Sea and glows with a faint silvery light.
    </RulesElement>
   <RulesElement name="Warding symbol" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_98" source="Player's Handbook 3" revision-date="8/27/2010 1:16:20 PM">
     <specific name="Full Text"> Warding symbol
-Superior implement 
+Superior implement
 Cost: 21 gp
 Weight: 1 lb.
 A warding symbol has protective glyphs carved into its adamantine surface.
-Properties: 
+Properties:
 Shielding (Whenever you hit at least one target with an attack power using a shielding implement, you gain a +1 shield bonus to AC and Reflex until the start of your next turn.).
 Unstoppable (You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.).
-Group: 
+Group:
 Holy Symbol (If you are a member of a class that can use a holy symbol as an implement, you can apply the enhancement bonus of a holy symbol to the attack rolls and the damage rolls of any of your powers from that class that have the implement keyword, and you can use a holy symbol's properties and powers. Members of other classes gain no benefit from wearing or holding a holy symbol.
 A holy symbol represents your deity and takes the shape of an aspect of the god. (See pages 21–22 for the symbols of the good, lawful good, and unaligned deities.) As with most other implements, you can't make melee attacks with a holy symbol.
 Unlike other implements, you need only to wear a holy symbol for its property or power to function. If you are wearing or holding more than one holy symbol, none of your symbols function.). </specific>
@@ -1464,19 +1465,19 @@ Unlike other implements, you need only to wear a holy symbol for its property or
     <specific name="Group"> Holy Symbol </specific>
     <specific name="Properties"> Shielding, Unstoppable </specific>
     <specific name="Item Slot"> Off-hand </specific>
-      
+
 A warding symbol has protective glyphs carved into its adamantine surface.
    </RulesElement>
   <RulesElement name="Wrathful symbol" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_99" source="Player's Handbook 3" revision-date="8/27/2010 1:16:20 PM">
     <specific name="Full Text"> Wrathful symbol
-Superior implement 
+Superior implement
 Cost: 23 gp
 Weight: 1 lb.
 A wrathful symbol is made from black iron mined in Chernoggar and engraved with runes of divine fury.
-Properties: 
+Properties:
 Empowered Crit (When you score a critical hit with an empowered crit implement, the attack deals 1d10 extra damage. The extra damage increases to 2d10 at 11th level and 3d10 at 21st level.).
 Undeniable (You gain a +1 bonus to attack rolls against Will when attacking with an undeniable implement.).
-Group: 
+Group:
 Holy Symbol (If you are a member of a class that can use a holy symbol as an implement, you can apply the enhancement bonus of a holy symbol to the attack rolls and the damage rolls of any of your powers from that class that have the implement keyword, and you can use a holy symbol's properties and powers. Members of other classes gain no benefit from wearing or holding a holy symbol.
 A holy symbol represents your deity and takes the shape of an aspect of the god. (See pages 21–22 for the symbols of the good, lawful good, and unaligned deities.) As with most other implements, you can't make melee attacks with a holy symbol.
 Unlike other implements, you need only to wear a holy symbol for its property or power to function. If you are wearing or holding more than one holy symbol, none of your symbols function.). </specific>
@@ -1486,7 +1487,7 @@ Unlike other implements, you need only to wear a holy symbol for its property or
     <specific name="Group"> Holy Symbol </specific>
     <specific name="Properties"> Empowered Crit, Undeniable </specific>
     <specific name="Item Slot"> Off-hand </specific>
-      
+
 A wrathful symbol is made from black iron mined in Chernoggar and engraved with runes of divine fury.
    </RulesElement>
   <RulesElement name="Fallen Needle [Movement Technique]" type="Power" internal-id="ID_FMP_POWER_13220" source="Dragon Magazine 389" revision-date="8/27/2010 12:07:52 PM">
@@ -2317,7 +2318,7 @@ When an ally who can see you spends an action point to make an attack, the attac
       <modify name="Sandslide" type="Power" Field="Primordial Surge" value="Whenever you successfully use a genasi racial power, you gain temporary hit points equal to 5 + your Strength, Constitution, or Dexterity modifier (your choice)."/>
       <modify name="Sun Flare" type="Power" Field="Primordial Surge" value="Whenever you successfully use a genasi racial power, you gain temporary hit points equal to 5 + your Strength, Constitution, or Dexterity modifier (your choice)."/>
     </rules>
-Whenever you successfully use a genasi racial power, you gain temporary hit points equal to 5 + your Strength, Constitution, or Dexterity modifier (your choice).  
+Whenever you successfully use a genasi racial power, you gain temporary hit points equal to 5 + your Strength, Constitution, or Dexterity modifier (your choice).
  </RulesElement>
   <!-- Shifting Fortunes Fix to show on Second Wind card -->
   <RulesElement name="Shifting Fortunes" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_1862" source="Player's Handbook 3" revision-date="10/5/2010 1:47:14 PM">
@@ -2360,7 +2361,7 @@ Choose one of the monk's Flurry of Blows powers. You can use that power once per
     <print-prereqs> 21st level, must worship Bahamut </print-prereqs>
     <Flavor> Your great virtue and righteous nature reward you with the sacred task of safeguarding Bahamut's divinity. </Flavor>
     <specific name="Immortality"> Immortality?
-The divine fragment you carry enables Bahamut to be reborn into the world, to live even if his divine form is slain, as unlikely an event as that might be. If your patron neverfaces destruction, good and constant service undoubtedly rewards you with a place in your god's dominion, perhaps as an exarch, perhaps as something more. Indeed, Bahamut keeps council with the greatest champions to have ever served him, and these allies attend him in all things. 
+The divine fragment you carry enables Bahamut to be reborn into the world, to live even if his divine form is slain, as unlikely an event as that might be. If your patron neverfaces destruction, good and constant service undoubtedly rewards you with a place in your god's dominion, perhaps as an exarch, perhaps as something more. Indeed, Bahamut keeps council with the greatest champions to have ever served him, and these allies attend him in all things.
 Bahamut is Dead, Long Live Bahamut: While all gods are immortal, no being is truly unkillable. Should Bahamut die, omens and visions reveal your final quest. Your purpose, to return Bahamut to the world, is made clear. You may carry the divine embryo, but you must take bold steps to allow the godling within to awaken and resume its proper place. When you fulfill every condition, divine fire consumes your very existence to restore the god to corporeal form. The sacrifice required is absolute, its destruction required to facilitate the rebirth. Though you no longer exist, your memory lives on within the god and those who follow him, granting you a rare form of immortality—within the fondest memories of a god. </specific>
     <specific name="Power Name"/>
     <specific name="Class Features"> ID_FMP_CLASS_FEATURE_1914, ID_FMP_CLASS_FEATURE_1915, ID_FMP_CLASS_FEATURE_1916 </specific>
@@ -3025,11 +3026,11 @@ When you use the grab action, you gain a +4 feat bonus to the attack roll. The b
   <!-- Superior Ki Focuses Fix (Drewjitsu) -->
   <RulesElement name="Accurate Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_150" source="Psionic Power" revision-date="9/21/2010 2:18:08 PM">
     <specific name="Full Text"> Accurate Ki Focus
-Superior implement 
+Superior implement
 Cost: 25 gp
-Properties: 
+Properties:
 Accurate (You gain a +1 bonus to attack rolls made with an accurate implement.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 25 </specific>
@@ -3043,12 +3044,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Fluid Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_151" source="Psionic Power" revision-date="9/21/2010 2:18:17 PM">
     <specific name="Full Text"> Fluid Ki Focus
-Superior implement 
+Superior implement
 Cost: 30 gp
-Properties: 
+Properties:
 Mobile (When you hit with an attack using a mobile implement, you can shift as a minor action before the end of your turn.).
 Shielding (Whenever you hit at least one target with an attack power using a shielding implement, you gain a +1 shield bonus to AC and Reflex until the start of your next turn.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 30 </specific>
@@ -3059,12 +3060,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Inexorable Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_152" source="Psionic Power" revision-date="9/21/2010 2:18:20 PM">
     <specific name="Full Text"> Inexorable Ki Focus
-Superior implement 
+Superior implement
 Cost: 35 gp
-Properties: 
+Properties:
 Energized (force) (When you use an attack power through an energized implement, you gain a +2 bonus to damage rolls if the power has the keyword that matches the implement's damage type. The bonus increases to +3 at 11th level and +4 at 21st level.).
 Unstoppable (You gain a +1 bonus to attack rolls against Fortitude when attacking with an unstoppable implement.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 35 </specific>
@@ -3083,12 +3084,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Iron Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_153" source="Psionic Power" revision-date="9/21/2010 2:18:23 PM">
     <specific name="Full Text"> Iron Ki Focus
-Superior implement 
+Superior implement
 Cost: 30 gp
-Properties: 
+Properties:
 Deadly (You gain a +1 bonus to damage rolls made with a deadly implement. The bonus increases to +2 at 11th level and +3 at 21st level.).
 Forceful (Whenever you pull, push, or slide a target with an attack power using a forceful implement, the distance of the forced movement increases by 1 square.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 30 </specific>
@@ -3105,12 +3106,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Mighty Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_154" source="Psionic Power" revision-date="9/21/2010 2:18:25 PM">
     <specific name="Full Text"> Mighty Ki Focus
-Superior implement 
+Superior implement
 Cost: 25 gp
-Properties: 
+Properties:
 Empowered Crit (When you score a critical hit with an empowered crit implement, the attack deals 1d10 extra damage. The extra damage increases to 2d10 at 11th level and 3d10 at 21st level.).
 Unerring (You gain a +1 bonus to attack rolls against Reflex when attacking with an unerring implement.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 25 </specific>
@@ -3124,12 +3125,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Mountain Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_155" source="Psionic Power" revision-date="9/21/2010 2:18:27 PM">
     <specific name="Full Text"> Mountain Ki Focus
-Superior implement 
+Superior implement
 Cost: 30 gp
-Properties: 
+Properties:
 Forceful (Whenever you pull, push, or slide a target with an attack power using a forceful implement, the distance of the forced movement increases by 1 square.).
 Shielding (Whenever you hit at least one target with an attack power using a shielding implement, you gain a +1 shield bonus to AC and Reflex until the start of your next turn.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 30 </specific>
@@ -3140,12 +3141,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Serene Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_156" source="Psionic Power" revision-date="9/21/2010 2:18:29 PM">
     <specific name="Full Text"> Serene Ki Focus
-Superior implement 
+Superior implement
 Cost: 35 gp
-Properties: 
+Properties:
 Energized (psychic) (When you use an attack power through an energized implement, you gain a +2 bonus to damage rolls if the power has the keyword that matches the implement's damage type. The bonus increases to +3 at 11th level and +4 at 21st level.).
 Undeniable (You gain a +1 bonus to attack rolls against Will when attacking with an undeniable implement.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 35 </specific>
@@ -3164,12 +3165,12 @@ Ki focus (A ki focus is an implement that certain classes use as a focus for the
   </RulesElement>
   <RulesElement name="Transcendent Ki Focus" type="Superior Implement" internal-id="ID_FMP_SUPERIOR_IMPLEMENT_157" source="Psionic Power" revision-date="9/21/2010 2:18:31 PM">
     <specific name="Full Text"> Transcendent Ki Focus
-Superior implement 
+Superior implement
 Cost: 30 gp
-Properties: 
+Properties:
 Blinking (When you hit with a teleportation attack power, you have concealment until the start of your next turn.).
 Reaching (You gain +1 reach with melee attacks using a reaching implement.).
-Group: 
+Group:
 Ki focus (A ki focus is an implement that certain classes use as a focus for their inner magical energy, known as their ki. A ki focus might take the form of a training manual, a scroll of ancient secrets, or a blunt training weapon. To use a ki focus, you must first attune yourself to it. Some characters study their ki focus to attune themselves to it. Others meditate with it or wield it as they practice their fighting techniques. Once you have attuned yourself to a ki focus, you must either wear or hold it to use it as an implement.). </specific>
     <specific name="Weight"/>
     <specific name="Gold"> 30 </specific>
@@ -3391,7 +3392,7 @@ This prayer demonstrates that the earth itself is yours to command. With but a h
       <modify name="ID_FMP_POWER_6515" type="Power" Field="Action Type" value="Standard Action"/>
     </rules>
 You gain training in Nature.
-	You gain the shaman's call spirit companion power, but you use it as a standard action. 
+	You gain the shaman's call spirit companion power, but you use it as a standard action.
 	Choose a Companion Spirit option. Choose a Companion Spirit option. You gain the at-will shaman power associated with that option, such as spirit's shield or spirit's fang, as an encounter power.
 	You gain speak with spirits as a daily power.
 	In addition, you can wield shaman implements.
@@ -3713,7 +3714,7 @@ Brash Assault (warlord): Against the target of this exploit, you gain a bonus to
 Brash Strike (fighter): Against the target of this exploit, you gain a bonus to defenses equal to your Charisma modifier until the start of your next turn.
 Deft Strike (rogue): You can move 3 squares before this attack, instead of 2. Add your Charisma modifier to your defenses against opportunity attacks provoked by this movement.
 Hit and Run (ranger): If you move after the using this exploit, add your Charisma modifier to your defenses against opportunity attacks made against you during that movement.
-   </RulesElement>  
+   </RulesElement>
   <RulesElement name="Hunting Wolf Style" type="Feat" internal-id="ID_FMP_FEAT_1303" source="Dragon Magazine 373" revision-date="8/27/2010 12:18:51 PM">
     <Prereqs> Any martial class </Prereqs>
     <print-prereqs> Any martial class </print-prereqs>
@@ -3919,7 +3920,7 @@ You can use Wisdom in place of strength for the attack roll with melee basic att
     </rules>
 You can use Charisma in place of strength for the attack roll with melee basic attack, and half of its ability modifier in place of the strength modifier for the damage roll.
    </RulesElement>
-   
+
 <RulesElement name="Webs of Darkness" type="Power" internal-id="ID_FMP_POWER_4790" source="Dragon Magazine 367" revision-date="8/27/2010 11:36:10 AM">
       <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
       <Flavor> Inky tendrils of solidified darkness leap from your fingertip and bind your enemies. </Flavor>
@@ -4488,7 +4489,7 @@ You gain a benefit with any of the following exploits you possess.
 Opening Shove (Warlord): If you are wielding a shield, you can add your shield bonus as a feat bonus to your attack roll.
 Tide of Iron (Fighter): If you hit with this exploit, an ally adjacent to the target gains a +1 shield bonus to AC until the end of your next turn or until the target leaves its square—whichever comes first.
    </RulesElement>
-   
+
 <!-- Entilzha4's Claw Fighter Fix -->
    <RulesElement name="Claw Fighter" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2234" source="Martial Power 2" revision-date="8/5/2011 7:21:00 PM">
       <Category> 11 </Category>
@@ -6181,7 +6182,7 @@ You gain the opportunity action power of the Companion Spirit option you chose.
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Dexterity vs. AC or Reflex" wearing="weapon:light blade" requires="ID_FMP_CLASS_FEATURE_2788"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Charisma vs. AC or Reflex" wearing="weapon:light blade" requires="ID_FMP_FEAT_2128"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Intelligence vs. AC or Reflex" wearing="weapon:light blade" requires="ID_FMP_FEAT_613|ID_FMP_CLASS_FEATURE_4029"/>
-        <modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Constitution vs. AC or Reflex" wearing="weapon:light blade" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(CONSTITUTION)"/>		
+        <modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Constitution vs. AC or Reflex" wearing="weapon:light blade" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(CONSTITUTION)"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Dexterity vs. AC or Reflex" wearing="weapon:light blade"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Intelligence vs. AC or Reflex" wearing="weapon:light blade" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(INTELLIGENCE)"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Wisdom vs. AC or Reflex" wearing="weapon:light blade" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(WISDOM)"/>
@@ -6203,7 +6204,7 @@ When you make a basic attack using a light blade, you can target AC or Reflex.
 	    <modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength vs. AC or Fortitude"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Charisma vs. AC or Fortitude" wearing="weapon:pick" requires="ID_FMP_FEAT_2128"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Intelligence vs. AC or Fortitude" wearing="weapon:light blade" requires="ID_FMP_CLASS_FEATURE_4029"/>
-        <modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Constitution vs. AC or Fortitude" wearing="weapon:pick" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(CONSTITUTION)"/>		
+        <modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Constitution vs. AC or Fortitude" wearing="weapon:pick" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(CONSTITUTION)"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Dexterity vs. AC or Fortitude" wearing="weapon:pick" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(DEXTERITY)"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Intelligence vs. AC or Fortitude" wearing="weapon:pick" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(INTELLIGENCE)"/>
 		<modify name="Melee Basic Attack" type="Power" Field="Attack" value="Strength or Wisdom vs. AC or Fortitude" wearing="weapon:pick" requires="ID_INTERNAL_FEAT_MELEE_TRAINING_(WISDOM)"/>
@@ -6211,7 +6212,7 @@ When you make a basic attack using a light blade, you can target AC or Reflex.
 	    <modify name="Melee Basic Attack" type="Power" Field="Piercing Pick" value="When you make a basic attack using a pick, you can target AC or Fortitude."/>
 	  </rules>
 Whenever you use a pick to make a melee basic attack, you can target AC or Fortitude.
-   </RulesElement>   
+   </RulesElement>
 <RulesElement name="Metamorphosis of Spellflame" type="Power" internal-id="ID_FMP_POWER_3516" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 11:31:19 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PSEUDO_CLASS_216,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,29 </Category>
       <Flavor> Words only the spellscarred can speak change your foe into maddening blue fire. </Flavor>
@@ -6229,8 +6230,8 @@ Whenever you use a pick to make a melee basic attack, you can target AC or Forti
       <specific name="Class"> ID_FMP_PSEUDO_CLASS_216 </specific>
       <specific name="Level"> 29 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>
-<RulesElement name="Instant Escape" type="Power" internal-id="ID_FMP_POWER_1655" source="Player's Handbook" revision-date="8/27/2010 11:26:03 AM">
+  </RulesElement>
+  <RulesElement name="Instant Escape" type="Power" internal-id="ID_FMP_POWER_1655" source="Player's Handbook" revision-date="8/27/2010 11:26:03 AM">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_36,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,12 </Category>
     <Prereqs> Cat Burglar </Prereqs>
     <Flavor> With supreme effort, you escape. </Flavor>
@@ -6246,10 +6247,10 @@ Whenever you use a pick to make a melee basic attack, you can target AC or Forti
     <specific name="Class"> ID_FMP_PARAGON_PATH_36 </specific>
     <specific name="Level"> 12 </specific>
     <specific name="Power Type"> Utility </specific>
- </RulesElement>
-<RulesElement name="Spiked gauntlet" type="Weapon" internal-id="ID_FMP_WEAPON_48" source="Adventurer's Vault" revision-date="8/27/2010 1:16:15 PM">
-      <Category> ID_FMP_WEAPON_PROPERTY_1,ID_FMP_WEAPON_GROUP_27,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
-      <specific name="Full Text"> Spiked gauntlet
+  </RulesElement>
+  <RulesElement name="Spiked gauntlet" type="Weapon" internal-id="ID_FMP_WEAPON_48" source="Adventurer's Vault" revision-date="8/27/2010 1:16:15 PM">
+    <Category> ID_FMP_WEAPON_PROPERTY_1,ID_FMP_WEAPON_GROUP_27,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+    <specific name="Full Text"> Spiked gauntlet
 Simple one-handed melee weapon
 Cost: 5 gp
 Damage: 1d6
@@ -6257,22 +6258,34 @@ Proficient: +2
 Range: -
 Weight: 1 lb.
 These gauntlets are specially fitted with metal spikes. Unlike other weapons, the spiked gauntlet occupies your magic item hands slot while enchanted.
-Properties: 
+Properties:
 Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can't attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
-Group: 
+Group:
 Unarmed (When you punch, kick, elbow, knee, or even head butt an opponent, you're making an unarmed strike. A simple unarmed attack is treated as an improvised weapon. Creatures that have natural weapons such as claws or bite attacks are proficient with those natural weapons.). </specific>
-      <specific name="Weight"> 1 </specific>
-      <specific name="Gold"> 5 </specific>
-      <specific name="Range"/>
-      <specific name="Damage"> 1d6 </specific>
-      <specific name="Proficiency Bonus"> 2 </specific>
-      <specific name="_Primary End"/>
-      <specific name="Weapon Category"> Simple Melee </specific>
-      <specific name="Hands Required"> One-Handed </specific>
-      <specific name="Item Slot"> Off-hand </specific>
-      <specific name="Group"> Unarmed </specific>
-      <specific name="Properties"> Off-hand </specific>
-      <specific name="_AlternateSlot"> Hands </specific>
+    <specific name="Weight"> 1 </specific>
+    <specific name="Gold"> 5 </specific>
+    <specific name="Range"/>
+    <specific name="Damage"> 1d6 </specific>
+    <specific name="Proficiency Bonus"> 2 </specific>
+    <specific name="_Primary End"/>
+    <specific name="Weapon Category"> Simple Melee </specific>
+    <specific name="Hands Required"> One-Handed </specific>
+    <specific name="Item Slot"> Off-hand </specific>
+    <specific name="Group"> Unarmed </specific>
+    <specific name="Properties"> Off-hand </specific>
+    <specific name="_AlternateSlot"> Hands </specific>
 These gauntlets are specially fitted with metal spikes. Unlike other weapons, the spiked gauntlet occupies your magic item hands slot while enchanted.
-   </RulesElement>
+  </RulesElement>
+
+  <!-- For Cormyr! campaign ID fix -->
+  <DeleteElement internal-id="ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(FOR_CORMYR!)" />
+  <RulesElement name="Traveler's Unpredictable Power (For Cormyr!)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(FOR_CORMYR)" source="Dragon Magazine 382">
+    <Category> ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(PARAGON_PATH) </Category>
+    <Prereqs> Fighter, paladin, or warlord; affiliated with Cormyr </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2174 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_1910" type="Power" />
+    </rules>
+You gain the For Cormyr! power, the 20th level power from the Purple Dragon Knight paragon path.
+  </RulesElement>
 </D20Rules>

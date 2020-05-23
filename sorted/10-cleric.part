@@ -33,6 +33,7 @@
  Updated 5-June-2012 Warpriest fixes.
  Updated 6-August-2012 Dismissal 7/2012 Rules Update.
  Updated 8-October-2013 Added Dragon 427 New Deity
+ Updated 23-May-2020 Removed duplicate definition of Reaper's Blade
 	</Changelog>
 	<!-- Cleric Feature Updates -->
 	<RulesElement name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
@@ -7719,8 +7720,8 @@ Loyal priestesses of Lolth are gifted with unique abilities by the Demon Queen o
 		<specific name="Level"> 9 </specific>
 		<specific name="Power Type"> Attack </specific>
 	</RulesElement>
-	
-	
+
+
 <!-- Dragon 427 New Diety -->
 	<RulesElement name="Nerull" type="Deity" internal-id="ID_DRAG427_GOD" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
       <Prereqs> !Deity of the Arcana domain,!Deity of the Change domain,!Deity of the Civilization domain,!Deity of the Creation domain,!Deity of the Darkness domain,!Deity of the Death domain,!Deity of the Destruction domain,!Deity of the Earth domain,!Deity of the Fate domain,!Deity of the Freedom domain,!Deity of the Hope domain,!Deity of the Justice domain,!Deity of the Knowledge domain,!Deity of the Life domain,!Deity of the Love domain,!Deity of the Luck domain,!Deity of the Madness domain,!Deity of the Moon domain,!Deity of the Poison domain,!Deity of the Protection domain,!Deity of the Sea domain,!Deity of the Skill domain,!Deity of the Storm domain,!Deity of the Strength domain,!Deity of the Strife domain,!Deity of the Sun domain,!Deity of the Torment domain,!Deity of the Trickery domain,!Deity of the Tyranny domain,!Deity of the Undeath domain,!Deity of the Vengeance domain,!Deity of the War domain,!Deity of the Wilderness domain,!Deity of the Winter domain </Prereqs>
@@ -7730,24 +7731,8 @@ Compared to most dead gods, Nerull still has a sizeable following, although his 
 Hostility comes not only from the general public, but also from the followers of other gods. Devotees of the Raven Queen destroy any traces of Nerull worship they can find. Vecna’s agents are more likely to capture the Reaper’s followers alive, hoping to extract their knowledge. Similarly, followers of the good and unaligned gods (particularly Pelor and Corellon) do not want to risk allowing the dead god to regain a foothold in the world. Zehir alone tolerates the worshipers of Nerull, finding that those who revere the dead god have the right disposition for induction into Zehir’s ranks of assassins.
 Despite all the opposition, some creatures still choose to worship the Reaper. Such worshipers—typically necromancers or undead—are inducted into Nerull’s cults through blood-soaked rituals under the light of the harvest moon. But not all followers of the dead god are crazed cultists living in abandoned crypts.
 	</RulesElement>
-	
-	<RulesElement name="Reaper's Blade" type="Feat" internal-id="ID_DRAG427_FEAT_1" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
-	<Prereqs> Must worship Nerull </Prereqs>
-	<specific name="Short Description"> Gain proficiency, extra damage, and high crit with sickles and scythes. </specific>
-	<specific name="Tier"> Heroic </specific>
-	<rules>
-		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCYTHE)" type="Proficiency"/>
-		<statadd name="Scythe:damage" value="+Reaper's Blade" type="Feat"/>
-		<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SICKLE)" type="Proficiency"/>
-		<statadd name="Sickle:damage" value="+Reaper's Blade" type="Feat"/>
-		<statadd name="Reaper's Blade" value="+2"/>
-		<statadd name="Reaper's Blade" value="+1" requires="Paragon Tier"/>
-		<statadd name="Reaper's Blade" value="+1" requires="Epic Tier"/>
-	</rules>
-Like the scythe Nerull carried long ago, your scythe cuts down any who stray into its path. You gain proficiency and a +2 feat bonus to damage rolls with the sickle and the scythe. This bonus increases to +3 at 11th level and +4 at 21st level. In addition, you treat the scythe as having the high crit property.
-	</RulesElement>
-	
-	<RulesElement name="Nerull's Binding" type="Feat" internal-id="ID_DRAG427_FEAT_2" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+
+  <RulesElement name="Nerull's Binding" type="Feat" internal-id="ID_DRAG427_FEAT_2" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
 	<Category> ID_INTERNAL_CATEGORY_DIVINITY </Category>
 	<Prereqs> Channel Divinity class feature, Polytheist or must worship Nerull </Prereqs>
 	<print-prereqs> Channel Divinity class feature, must worship Nerull. </print-prereqs>

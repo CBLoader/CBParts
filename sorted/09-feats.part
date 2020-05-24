@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.138</Version>
+		<Version>1.139</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -58,6 +58,7 @@
  Updated 22-April-2013 Added Winning Races: Tinker Gnome Feats
  Updated 18-January-2014 Updated Disciple of Madness Feat
  Updated 5-May-2020 Arena fighter feat fixes.
+ Updated 24-May-2020 More arena fighter feat fixes.
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -43954,19 +43955,6 @@ While you are in an ally's space, you have partial cover against melee attacks a
 You gain a +1 feat bonus to implement attack rolls you make with a totem. This bonus increases to +2 at 11th level and +3 at 21st level.
 	Also, you ignore partial cover and partial concealment on implement attacks you make with a totem.
 	</RulesElement>
-	<RulesElement name="Two-Handed Weapon Expertise" type="Feat" internal-id="ID_FMP_FEAT_3672" source="Heroes of the Feywild">
-		<Flavor> You are a master of wielding two-handed melee weapons, and you can deal devastating amounts of damage when you charge. </Flavor>
-		<specific name="Short Description"> +1/2/3 to attack rolls with two-handed melee weapons, +1/2/3 to damage rolls of charge attacks with two-handed melee weapons </specific>
-		<specific name="Tier"> Heroic </specific>
-		<rules>
-			<statadd name="Two-Handed Weapon Expertise" value="+1"/>
-			<statadd name="Two-Handed Weapon Expertise" value="+1" requires="Paragon Tier"/>
-			<statadd name="Two-Handed Weapon Expertise" value="+1" requires="Epic Tier"/>
-			<statadd name="two-hands:attack" value="+Two-Handed Weapon Expertise" type="Feat"/>
-			<statadd name="two-hands:damage" value="+Two-Handed Weapon Expertise" condition="on a charge"/>
-		</rules>
-You gain a +1 feat bonus to weapon attack rolls you make with a two-handed melee weapon. In addition, you gain a +1 bonus to the damage rolls of charge attacks you make with a two-handed melee weapon. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
-	</RulesElement>
 	<RulesElement name="Vine Arms" type="Feat" internal-id="ID_FMP_FEAT_3673" source="Heroes of the Feywild">
 		<Prereqs> Wilden, Nature's Aspect racial trait </Prereqs>
 		<print-prereqs> Wilden, Nature's Aspect racial trait </print-prereqs>
@@ -46621,6 +46609,7 @@ You gain a +1 feat bonus to weapon attack rolls you make with a hammer or a mace
 	You also gain a +1 feat bonus to the number of squares you push or slide creatures with weapon attacks you make with a hammer or a mace.
 	</RulesElement>
 	<RulesElement name="Bow Expertise" type="Feat" internal-id="ID_FMP_FEAT_3124" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Prereqs>!ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW</Prereqs>
 		<Flavor> Your steady accuracy allows you to fire arrows with great precision. With training, you've learned to hone in on lone foes to deal out crippling strikes. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with bows; +1/+2/+3 (by tier) to damage against isolated creatures with bow weapon attacks  </specific>
@@ -46628,13 +46617,22 @@ You gain a +1 feat bonus to weapon attack rolls you make with a hammer or a mace
 			<statadd name="Bow Expertise" value="+1"/>
 			<statadd name="Bow Expertise" value="+1" requires="Paragon Tier"/>
 			<statadd name="Bow Expertise" value="+1" requires="Epic Tier"/>
-			<statadd name="Bow Expertise 2" value="+1" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW"/>
-			<statadd name="Bow Expertise 2" value="+1" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW&amp;Paragon Tier"/>
-			<statadd name="Bow Expertise 2" value="+1" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW&amp;Epic Tier"/>
 			<statadd name="weapon,bow group:attack" value="+Bow Expertise" type="Feat"/>
-			<statadd name="weapon,bow group:damage" value="+Bow Expertise 2" condition="against a single creature that is not adjacent to any other creature"/>
-			<statadd name="weapon,arena group:attack" value="+Bow Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW" type="Feat"/>
-			<statadd name="weapon,arena group:damage" value="+Bow Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW" condition="against a single creature that is not adjacent to any other creature"/>
+			<statadd name="weapon,bow group:damage" value="+Bow Expertise" condition="against a single creature that is not adjacent to any other creature"/>
+		</rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a bow. In addition, you gain a +1 bonus to the damage roll of any weapon attack you make with a bow against a single creature that is not adjacent to any other creature. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement name="Bow Expertise (arena)" type="Feat" internal-id="ID_FMP_FEAT_3124_V2" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:39 PM">
+		<Prereqs>ID_INTERNAL_ARENA_WEAPON_CATEGORY_BOW</Prereqs>
+		<Flavor> Your steady accuracy allows you to fire arrows with great precision. With training, you've learned to hone in on lone foes to deal out crippling strikes. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with bows; +1/+2/+3 (by tier) to damage against isolated creatures with bow weapon attacks  </specific>
+		<rules>
+			<statadd name="Bow Expertise" value="+1"/>
+			<statadd name="Bow Expertise" value="+1" requires="Paragon Tier"/>
+			<statadd name="Bow Expertise" value="+1" requires="Epic Tier"/>
+			<statadd name="weapon,arena group:attack" value="+Bow Expertise" type="Feat"/>
+			<statadd name="weapon,arena group:damage" value="+Bow Expertise" condition="against a single creature that is not adjacent to any other creature"/>
 		</rules>
 You gain a +1 feat bonus to weapon attack rolls that you make with a bow. In addition, you gain a +1 bonus to the damage roll of any weapon attack you make with a bow against a single creature that is not adjacent to any other creature. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
 	</RulesElement>
@@ -46870,19 +46868,29 @@ You gain a +1 feat bonus to weapon attack rolls that you make with a heavy blade
 	</RulesElement>
     <RulesElement internal-id="ID_FMP_FEAT_3144" name="Light Blade Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
     <Flavor> What a light blade lacks in weight and power, it makes up in accuracy. In your hands, this advantage becomes even deadlier when your foe's defenses are down. </Flavor>
+    <Prereqs>!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE</Prereqs>
+	<specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with light blades; +1/+2/+3 (by tier) to damage of light blade weapon attacks with CA </specific>
+    <rules>
+      <statadd name="Light Blade Expertise" value="+1"/>
+      <statadd name="Light Blade Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Light Blade Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,light Blade group:attack" value="+Light Blade Expertise" type="Feat"/>
+      <statadd name="weapon,light blade group:damage" value="+Light Blade Expertise" condition="when you have combat advantage"/>
+</rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a light blade. In addition, you gain a +1 bonus to the damage rolls of weapon attacks that you make with a light blade against a creature granting combat advantage to you. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement internal-id="ID_FMP_FEAT_3144_V2" name="Light Blade Expertise (arena)" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+	<Prereqs>ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE</Prereqs>
+    <Flavor> What a light blade lacks in weight and power, it makes up in accuracy. In your hands, this advantage becomes even deadlier when your foe's defenses are down. </Flavor>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with light blades; +1/+2/+3 (by tier) to damage of light blade weapon attacks with CA </specific>
     <rules>
       <statadd name="Light Blade Expertise" value="+1"/>
       <statadd name="Light Blade Expertise" value="+1" requires="Paragon Tier"/>
       <statadd name="Light Blade Expertise" value="+1" requires="Epic Tier"/>
-      <statadd name="Light Blade Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
-      <statadd name="Light Blade Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE&amp;Paragon Tier"/>
-      <statadd name="Light Blade Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE&amp;Epic Tier"/>
-      <statadd name="weapon,light Blade group:attack" value="+Light Blade Expertise" type="Feat"/>
-      <statadd name="weapon,light blade group:damage" value="+Light Blade Expertise 2" condition="when you have combat advantage"/>
-      <statadd name="weapon,arena group:attack" value="+Light Blade Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
-      <statadd name="weapon,arena group:damage" value="+Light Blade Expertise" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE" condition="when you have combat advantage"/>
+      <statadd name="weapon,arena group:attack" value="+Light Blade Expertise" type="Feat" />
+      <statadd name="weapon,arena group:damage" value="+Light Blade Expertise" condition="when you have combat advantage"/>
     </rules>
 You gain a +1 feat bonus to weapon attack rolls that you make with a light blade. In addition, you gain a +1 bonus to the damage rolls of weapon attacks that you make with a light blade against a creature granting combat advantage to you. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
 	</RulesElement>
@@ -46908,6 +46916,7 @@ You gain a +1 feat bonus to weapon attack rolls you make with any two-handed mel
 	In addition, while you wield a two-handed melee weapon, ranged and area attacks you make with a holy symbol do not provoke opportunity attacks.
     </RulesElement>
       <RulesElement internal-id="ID_FMP_FEAT_3609" name="Pick Expertise" type="Feat" source="Mordenkainen's Magnificent Emporium">
+	<Prereqs>!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK</Prereqs>
     <Flavor> The pick is a favored weapon of dwarves, gnomes, and others that must battle giants. Its curved point makes it an excellent weapon for striking at a foe's feet, particularly against larger foes such as giants or ogres. Of course, to a halfling or gnome a human is a larger foe. </Flavor>
     <specific name="Short Description"> +1/2/3 by tier to weapon attack rolls made with pick; +1/2/3 by tier to damage rolls made with pick against enemies with larger size category </specific>
     <specific name="Tier"> Heroic </specific>
@@ -46915,11 +46924,21 @@ You gain a +1 feat bonus to weapon attack rolls you make with any two-handed mel
       <statadd name="Pick Expertise" value="+1"/>
       <statadd name="Pick Expertise" value="+1" requires="Paragon Tier"/>
       <statadd name="Pick Expertise" value="+1" requires="Epic Tier"/>
-      <statadd name="Pick Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
-      <statadd name="Pick Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK&amp;Paragon Tier"/>
-      <statadd name="Pick Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK&amp;Epic Tier"/>
       <statadd name="weapon,pick group:attack" value="+Pick Expertise" type="Feat"/>
-      <statadd name="weapon,pick group:damage" value="+Pick Expertise 2" condition="against any enemy that has a size category larger than yours when using a pick"/>
+      <statadd name="weapon,pick group:damage" value="+Pick Expertise" condition="against any enemy that has a size category larger than yours when using a pick"/>
+</rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a pick. This bonus increases to +2 at 11th level and +3 at 21st level.
+	In addition, you gain a +1 bonus to pick damage rolls against any enemy that has a size category larger than yours. This bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+      <RulesElement internal-id="ID_FMP_FEAT_3609_V2" name="Pick Expertise (arena)" type="Feat" source="Mordenkainen's Magnificent Emporium">
+    <Flavor> The pick is a favored weapon of dwarves, gnomes, and others that must battle giants. Its curved point makes it an excellent weapon for striking at a foe's feet, particularly against larger foes such as giants or ogres. Of course, to a halfling or gnome a human is a larger foe. </Flavor>
+	<Prereqs>ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK</Prereqs>
+    <specific name="Short Description"> +1/2/3 by tier to weapon attack rolls made with pick; +1/2/3 by tier to damage rolls made with pick against enemies with larger size category </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Pick Expertise" value="+1"/>
+      <statadd name="Pick Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Pick Expertise" value="+1" requires="Epic Tier"/>
       <statadd name="weapon,arena group:attack" value="+Pick Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
       <statadd name="weapon,arena group:damage" value="+Pick Expertise" condition="against any enemy that has a size category larger than yours when using an arena weapon" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_PICK"/>
     </rules>
@@ -46960,6 +46979,26 @@ You gain a +1 feat bonus to weapon attack rolls that you make with a sling. This
 	</RulesElement>
   <RulesElement internal-id="ID_FMP_FEAT_3150" name="Spear Expertise" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
     <Flavor> Your talent with the spear is deadliest when you are advancing upon a foe. </Flavor>
+	<Prereqs>!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR</Prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with spears; +1/+2/+3 (by tier) to weapon damage with spear when charging </specific>
+    <rules>
+      <statadd name="Spear Expertise" value="+1"/>
+      <statadd name="Spear Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Spear Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="Spear Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+      <statadd name="Spear Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR&amp;Paragon Tier"/>
+      <statadd name="Spear Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR&amp;Epic Tier"/>
+      <statadd name="weapon,spear group:attack" value="+Spear Expertise" type="Feat"/>
+      <statadd name="weapon,spear group:damage" value="+Spear Expertise 2" condition="when you are charging"/>
+      <statadd name="weapon,arena group:attack" value="+Spear Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+      <statadd name="weapon,arena group:damage" value="+Spear Expertise" condition="when you are charging" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls that you make with a spear. When charging, you also gain a +1 bonus to damage rolls of weapon attacks that you make with a spear. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	  <RulesElement internal-id="ID_FMP_FEAT_3150_V2" name="Spear Expertise (arena)" type="Feat" source="Player Essentials: Heroes of the Fallen Lands" revision-date="10/12/2010 1:37:40 PM">
+    <Flavor> Your talent with the spear is deadliest when you are advancing upon a foe. </Flavor>
+	<Prereqs>ID_INTERNAL_ARENA_WEAPON_CATEGORY_SPEAR</Prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> +1/+2/+3 (by tier) to weapon attacks with spears; +1/+2/+3 (by tier) to weapon damage with spear when charging </specific>
     <rules>
@@ -46994,19 +47033,29 @@ You gain a +1 feat bonus to the attack rolls of implement powers and weapon powe
 	</RulesElement>
       <RulesElement internal-id="ID_FMP_FEAT_3672" name="Two-Handed Weapon Expertise" type="Feat" source="Heroes of the Feywild">
     <Flavor> You are a master of wielding two-handed melee weapons, and you can deal devastating amounts of damage when you charge. </Flavor>
+	<Prereqs>!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED</Prereqs>
     <specific name="Short Description"> +1/2/3 to attack rolls with two-handed melee weapons, +1/2/3 to damage rolls of charge attacks with two-handed melee weapons </specific>
     <specific name="Tier"> Heroic </specific>
     <rules>
       <statadd name="Two-Handed Weapon Expertise" value="+1"/>
       <statadd name="Two-Handed Weapon Expertise" value="+1" requires="Paragon Tier"/>
       <statadd name="Two-Handed Weapon Expertise" value="+1" requires="Epic Tier"/>
-      <statadd name="Two-Handed Weapon Expertise 2" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
-      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED&amp;Paragon Tier"/>
-      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="!ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED&amp;Epic Tier"/>
       <statadd name="two-hands:attack" value="+Two-Handed Weapon Expertise" type="Feat"/>
-      <statadd name="two-hands:damage" value="+Two-Handed Weapon Expertise 2" condition="on a charge"/>
-      <statadd name="weapon,arena group:attack" value="+Two-Handed Weapon Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
-      <statadd name="weapon,arena group:damage" value="+Two-Handed Weapon Expertise" condition="on a charge" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
+      <statadd name="two-hands:damage" value="+Two-Handed Weapon Expertise" condition="on a charge"/>
+    </rules>
+You gain a +1 feat bonus to weapon attack rolls you make with a two-handed melee weapon. In addition, you gain a +1 bonus to the damage rolls of charge attacks you make with a two-handed melee weapon. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	      <RulesElement internal-id="ID_FMP_FEAT_3672_V2" name="Two-Handed Weapon Expertise (arena)" type="Feat" source="Heroes of the Feywild">
+    <Flavor> You are a master of wielding two-handed melee weapons, and you can deal devastating amounts of damage when you charge. </Flavor>
+	<Prereqs>ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED</Prereqs>
+    <specific name="Short Description"> +1/2/3 to attack rolls with two-handed melee weapons, +1/2/3 to damage rolls of charge attacks with two-handed melee weapons </specific>
+    <specific name="Tier"> Heroic </specific>
+    <rules>
+      <statadd name="Two-Handed Weapon Expertise" value="+1"/>
+      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="Paragon Tier"/>
+      <statadd name="Two-Handed Weapon Expertise" value="+1" requires="Epic Tier"/>
+      <statadd name="weapon,arena group:attack" value="+Two-Handed Weapon Expertise" type="Feat"/>
+      <statadd name="weapon,arena group:damage" value="+Two-Handed Weapon Expertise" condition="on a charge"/>
     </rules>
 You gain a +1 feat bonus to weapon attack rolls you make with a two-handed melee weapon. In addition, you gain a +1 bonus to the damage rolls of charge attacks you make with a two-handed melee weapon. Both of these bonuses increase to +2 at 11th level and +3 at 21st level.
 	</RulesElement>

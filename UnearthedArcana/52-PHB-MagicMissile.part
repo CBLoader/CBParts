@@ -1,0 +1,36 @@
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>3</Version>
+    <Filename>CoreEdits.part</Filename>
+    <PartAddress>http://dl.dropbox.com/u/4187827/CharBuilder/CharBuilder/CoreEdits.part</PartAddress>
+    <VersionAddress>http://dl.dropbox.com/u/4187827/CharBuilder/CharBuilder/CoreEdits.txt</VersionAddress>
+  </UpdateInfo>
+  <!-- Magic Missile -->
+  <AppendNodes name="Magic Missile" type="Power" internal-id="ID_FMP_POWER_463" source="Player's Handbook" revision-date="8/27/2010 11:22:31 AM">
+    <Prereqs> ~Magic Missile </Prereqs>
+  </AppendNodes>
+  <RulesElement name="Magic Missile (Classic)" type="Power" internal-id="_ID_FMP_POWER_463" source="Player's Handbook" revision-date="8/27/2010 11:22:31 AM">
+    <Prereqs> ~Magic Missile </Prereqs>
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1,ID_FMP_POWER_463 </Category>
+    <Flavor> A glowing blue bolt of magical energy hurtles from your finger and unerringly strikes your target. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower" />
+    <specific name="Display"> Wizard Attack 1 </specific>
+    <specific name="Keywords"> Arcane, Evocation, Force, Implement </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Ranged 20 </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Effect"> 2d4 + Intelligence modifier force damage.
+Level 21: 4d4 + Intelligence modifier force damage. </specific>
+    <specific name="Special"> You can use this power as a ranged basic attack. </specific>
+    <specific name="_Associated Feats" />
+    <specific name="Class"> ID_FMP_CLASS_9 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_BasicAttack"> Ranged </specific>
+    <rules>
+      <modify name="this" Field="_BasicAttack" value="Ranged" />
+    </rules>
+Every mage learns this spell as part of his or her arcane studies. What magic missile lacks in strength, it compensates for with unparalleled accuracy. Neither the heaviest armor nor the toughest hide offers any defense against this spell.
+  </RulesElement>
+</D20Rules>

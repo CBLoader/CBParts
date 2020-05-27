@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>2.1</Version>
+		<Version>2.2</Version>
 		<Filename>50-StrangeGods.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/UnearthedArcana/50-StrangeGods.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/UnearthedArcana/50-StrangeGods.txt</VersionAddress>
@@ -16,7 +16,9 @@
  Updated 22-October-2011 File released under the new Index system.
  Updated 11-August-2012 File updated regarding conflicts with newer class features. This is not a guarantee that some conflicts still don't exist as with all Unearthed Arcana materials.
  Updated 27-February-2013 Added Unearthed Arcana Ghost (Can be found by typing in "*Ghost" at item purchase screen)
+ Updated 25-May-2020 Fixed RemoveNodes error and corrected Subversive Word/Rune of Elemental Attuning choices - Shrike#4580
 	</Changelog>
+
 	<RulesElement name="Unearthed Arcana: Strange Gods" type="source" internal-id="ID_CDJ_UA_SOURCE_STRANGE_GODS" source="Core">
 		<specific name="IsBeta"> 1 </specific>
 		<specific name="URL">http://www.wizards.com/default.asp?x=dnd/drtoc/398</specific> 
@@ -70,16 +72,18 @@
 	</RulesElement>
 	<RulesElement name="Subversive Word" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_75704" source="Unearthed Arcana: Strange Gods">
 		<Category> 1 </Category>
-		<specific name="Short Description"> Use subversive word as an encounter power; minor action. </specific>
+		<specific name="Short Description"> Use subversive word as an encounter power and lose healing word; minor action. </specific>
 		<specific name="Level"> 1 </specific>
 		<specific name="Powers"> ID_CDJ_POWER_75704 </specific>
 		<specific name="type"> Utility </specific>
 		<specific name="Class"> ID_FMP_CLASS_2 </specific>
 		<specific name="_DisplayPowers"> ID_CDJ_POWER_75704 </specific>
 		<rules>
+			<drop name="ID_FMP_CLASS_FEATURE_64" type="Class Feature"/>
+			<drop name="ID_FMP_POWER_1455" type="Power"/>
 			<grant name="ID_CDJ_POWER_75704" type="Power"/>
 		</rules>
-By foregoing some of your ability to heal, you gain a measure of the gods' destructive capacities.
+By foregoing some of your ability to heal, you gain a measure of the gods' destructive capacities.  You lose the healing word power and gain the subversive word power.
 	</RulesElement>
 	<RulesElement name="Subversive Word" type="Power" internal-id="ID_CDJ_POWER_75704" source="Unearthed Arcana: Strange Gods">
 		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_2 </Category>
@@ -103,16 +107,18 @@ Level 21: The target takes 2d6 extra necrotic and radiant damage. </specific>
 	</RulesElement>
 	<RulesElement name="Rune of Elemental Attuning" type="Class Feature" internal-id="ID_CDJ_CLASS_FEATURE_75705" source="Unearthed Arcana: Strange Gods">
 		<Category> 1 </Category>
-		<specific name="Short Description"> Use rune of elemental attuning as an encounter power; minor action. </specific>
+		<specific name="Short Description"> Use rune of elemental attuning as an encounter power and lose rune of mending; minor action. </specific>
 		<specific name="Level"> 1 </specific>
 		<specific name="Powers"> ID_CDJ_POWER_75705 </specific>
 		<specific name="type"> Utility </specific>
 		<specific name="Class"> ID_FMP_CLASS_602 </specific>
 		<specific name="_DisplayPowers"> ID_CDJ_POWER_75705 </specific>
 		<rules>
+			<drop name="ID_FMP_CLASS_FEATURE_2387" type="Class Feature"/>
+			<drop name="ID_FMP_POWER_11353" type="Power"/>
 			<grant name="ID_CDJ_POWER_75705" type="Power"/>
 		</rules>
-By foregoing some of your ability to heal, you can focus on preventing damage to your allies.
+By foregoing some of your ability to heal, you can focus on preventing damage to your allies.  You lose the rune of mending power and gain the rune of elemental attuning power.
 	</RulesElement>
 	<RulesElement name="Rune of Elemental Attuning" type="Power" internal-id="ID_CDJ_POWER_75705" source="Unearthed Arcana: Strange Gods">
 		<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_65,ID_INTERNAL_CATEGORY_MINOR_ACTION,ID_FMP_CLASS_602 </Category>
@@ -154,22 +160,17 @@ Level 21: Resist 15 to the chosen damage type </specific>
 Once per encounter you can invoke divine power, filling yourself with the might of your patron deity. With the divine might you invoke you can wield special powers. You can also learn other uses for this feature; for instance, the divinity feats grant characters with access to the Channel Divinity class feature the ability to use additional special powers.
 Regardless of how many different uses for Channel Divinity you know, you can use only one such ability per encounter. The special ability or power you invoke works just like your other powers.
 	</RulesElement>
-	<RemoveNodes name="Cleric" type="Grants" internal-id="ID_INTERNAL_GRANTS_CLERIC" source="Player's Handbook">
-			<grant name="ID_FMP_CLASS_FEATURE_64" type="Class Feature"/>
-	</RemoveNodes>	
 	<AppendNodes name="Cleric" type="Grants" internal-id="ID_INTERNAL_GRANTS_CLERIC" source="Player's Handbook">
 		<rules>
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_64|ID_CDJ_CLASS_FEATURE_75704"/>
+			<select type="Class Feature" number="1" optional="true" Category="ID_CDJ_CLASS_FEATURE_75704"/>
 		</rules>
 	</AppendNodes>	
-	<RemoveNodes name="Runepriest" type="Grants" internal-id="ID_INTERNAL_GRANTS_RUNEPRIEST" source="Player's Handbook 3">
-			<grant name="ID_FMP_CLASS_FEATURE_2387" type="Class Feature"/>
-	</RemoveNodes>
 	<AppendNodes name="Runepriest" type="Grants" internal-id="ID_INTERNAL_GRANTS_RUNEPRIEST" source="Player's Handbook 3">
 		<rules>
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2387|ID_CDJ_CLASS_FEATURE_75705"/>
+			<select type="Class Feature" number="1" optional="true" Category="ID_CDJ_CLASS_FEATURE_75705"/>
 		</rules>
 	</AppendNodes>
+
 	
 	
 	

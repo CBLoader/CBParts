@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>2.20</Version>
+    <Version>2.21</Version>
     <Filename>08-themes.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/08-themes.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/08-themes.txt</VersionAddress>
@@ -34,6 +34,7 @@
  Updated 18-January-2014 Added Dragon Magazine 430 Character Themes
  Updated 12-April-2020 Fixed Order Adept and Wizard's Apprentice.
  Updated 21-April-2020 Fixed names for Dragon 414 themes.
+ Updated 07-July-2020 Fixed Dragon 430 theme powers.
 </Changelog>
 <!-- Dark Sun Themes -->
   <RulesElement name="Athasian Minstrel" type="Theme" internal-id="ID_FMP_THEME_642" source="Dark Sun Campaign Setting">
@@ -17981,7 +17982,7 @@ You gain training in History. If you are already trained in History, choose a di
     <specific name="Attack Type"> Personal </specific>
 	<specific name="Trigger"> You make an attack roll, a skill check, or an ability check. </specific>
     <specific name="Effect"> You roll two d20s for the triggering roll, and use either result. If you roll the same number on both dice, after you complete the action related to the triggering roll, you are dazed until the end of your next turn. </specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_1 </specific>
     <specific name="Level"/>
     <specific name="Power Type"> Attack </specific>
     <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_430-1-1 </specific>
@@ -18011,7 +18012,7 @@ Whenever you spend an action point to take an action that requires you to make a
 
 <RulesElement name="Mythical Recall" type="Power" internal-id="ID_TIV_POWER_DRAGON_430-1-1" source="Dragon Magazine 430">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,2,ID_FMP_CLASS_0 </Category>
-    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </Prereqs>
+    <Prereqs> ID_DRAG430_THEME_1 </Prereqs>
     <Flavor> You recall the successful efforts your people made to tame the world in which they lived.</Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Ghost of the Past Utility 2 </specific>
@@ -18020,7 +18021,7 @@ Whenever you spend an action point to take an action that requires you to make a
     <specific name="Attack Type"> Personal </specific>
 	<specific name="Target"/>
     <specific name="Effect"> Choose a beast, humanoid, or magical beast that you can see and make a monster knowledge check, using History in place of the skill you would normally use. If the result is 20 or higher, you gain combat advantage against the creature until the end of your next turn. </specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_1 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
 Most of the dangerous creatures that threatened your empire were tamed, chained, or banished in its early days. You grew up hearing impressive tales about the heroes who accomplished these tasks. Perhaps that knowledge will now be useful again.
@@ -18028,7 +18029,7 @@ Most of the dangerous creatures that threatened your empire were tamed, chained,
 
 <RulesElement name="Profound Flashback" type="Power" internal-id="ID_TIV_POWER_DRAGON_430-1-2" source="Dragon Magazine 4230">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION,6,ID_FMP_CLASS_0 </Category>
-    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </Prereqs>
+    <Prereqs> ID_DRAG430_THEME_1 </Prereqs>
     <Flavor> Your mind momentarily drifts through time, back to your old life, and reveals the solution you need. </Flavor>
     <specific name="Power Usage"> Daily </specific>
     <specific name="Display"> Ghost of the Past Utility 6 </specific>
@@ -18041,7 +18042,7 @@ Most of the dangerous creatures that threatened your empire were tamed, chained,
 	<specific name="Attack"/>
     <specific name="Hit"/>
 	<specific name="Effect"> Reroll three d20s for the triggering roll, and use any result. If you roll the same number on any two dice, after you complete the action related to the triggering roll, you are dazed until the end of your next turn. </specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_1 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
 Visions of your past haunt you. You see people you once knew in the faces all around you, feel a sense of déjà vu when you hear of recent events, and experience an eerie feeling when you travel to places that once held import for you. These flashbacks to the life you once led can sometimes help you through a difficult situation, but they can be overwhelming.
@@ -18049,7 +18050,7 @@ Visions of your past haunt you. You see people you once knew in the faces all ar
 
 <RulesElement name="Time Jaunt" type="Power" internal-id="ID_TIV_POWER_DRAGON_430-1-3" source="Dragon Magazine 430">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_STANDARD_ACTION,10,ID_FMP_CLASS_0 </Category>
-    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </Prereqs>
+    <Prereqs> ID_DRAG430_THEME_1 </Prereqs>
     <Flavor> The world wavers as you return to your proper time for a moment, which you bring back with you. </Flavor>
     <specific name="Power Usage"> Daily </specific>
     <specific name="Display"> Ghost of the Past Utility 10 </specific>
@@ -18061,7 +18062,7 @@ Visions of your past haunt you. You see people you once knew in the faces all ar
 	<specific name="Attack"/>
 	<specific name="Hit"/>
     <specific name="Effect"> You are removed from play for the next two turns and reappear at the start of the third. When you return, you can spend a healing surge and you gain an action point. You return to play in an unoccupied space within 5 squares of the last space you occupied. </specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-1 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_1 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
 You do not belong in the present. Your place lies somewhere back in time. You can manipulate the magic holding you in the present and return to the past for a few moments.
@@ -18109,7 +18110,7 @@ You gain a +1 power bonus to Streetwise checks and Bluff checks. You also gain t
     <specific name="Effect"> You use an at-will attack power against the target. If you hit, you deal the target 2d6 extra damage. If you miss, you take 1d6 damage.
 Level 11: 3d6 extra damage; 2d6 damage if you miss.
 Level 21: 4d6 extra damage; 3d6 damage if you miss.</specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_2 </specific>
     <specific name="Level"/>
     <specific name="Power Type"> Attack </specific>
     <specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_430-2-1 </specific>
@@ -18136,7 +18137,7 @@ When you grant combat advantage to enemies, they do not gain the bonus to attack
 
 <RulesElement name="River Rat Tactics" type="Power" internal-id="ID_TIV_POWER_DRAGON_430-2-1" source="Dragon Magazine 430">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,2,ID_FMP_CLASS_0,ID_FMP_CATEGORY_28 </Category>
-    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </Prereqs>
+    <Prereqs> ID_DRAG430_THEME_2 </Prereqs>
     <Flavor> When it counts, you know how to take advantage of any opening you find.</Flavor>
     <specific name="Power Usage"> Daily </specific>
     <specific name="Display"> River Rat Utility 2 </specific>
@@ -18144,7 +18145,7 @@ When you grant combat advantage to enemies, they do not gain the bonus to attack
     <specific name="Action Type"> Minor Action </specific>
     <specific name="Attack Type"> Personal </specific>
     <specific name="Effect"> You assume the river rat tactics stance. Until the stance ends, you have combat advantage against any enemy that is adjacent to one or more of your allies.</specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_2 </specific>
     <specific name="Level"> 2 </specific>
     <specific name="Power Type"> Utility </specific>
 Like most low-born ghetto dwellers, river rats can easily go unnoticed, but this is rarely their first inclination when in danger. They're feisty, preferring to dig in and grit their crumb-crushers rather than scamper away—especially when they have allies.
@@ -18152,7 +18153,7 @@ Like most low-born ghetto dwellers, river rats can easily go unnoticed, but this
 
 <RulesElement name="River Rat Quack" type="Power" internal-id="ID_TIV_POWER_DRAGON_430-2-2" source="Dragon Magazine 4230">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,6,ID_FMP_CLASS_0 </Category>
-    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </Prereqs>
+    <Prereqs> ID_DRAG430_THEME_2 </Prereqs>
     <Flavor> Your mind momentarily drifts through time, back to your old life, and reveals the solution you need. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> River Rat Utility 6 </specific>
@@ -18160,7 +18161,7 @@ Like most low-born ghetto dwellers, river rats can easily go unnoticed, but this
 	<specific name="Attack Type"> Close Burst 5 </specific>
 	<specific name="Target"> One creature that can see and hear you in the burst </specific>
 	<specific name="Effect"> Make a Bluff check to gain combat advantage against the target. If you succeed, you also provoke no opportunity attacks from the target until the end of your next turn. </specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_2 </specific>
     <specific name="Level"> 6 </specific>
     <specific name="Power Type"> Utility </specific>
 Although you might use your slang to swindle gullible townsfolk, you can also use it to confuse an adversary in a fight, making the foe second-guess your intent. Gestures and body language are also part of your communication. Using misleading hand signs, falsely placing your body weight, or flicking your eyes from side to side can confuse opponents who don't understand or even use language.
@@ -18168,7 +18169,7 @@ Although you might use your slang to swindle gullible townsfolk, you can also us
 
 <RulesElement name="River Rat Cheek" type="Power" internal-id="ID_TIV_POWER_DRAGON_430-2-3" source="Dragon Magazine 430">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION,10,ID_FMP_CLASS_0 </Category>
-    <Prereqs> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </Prereqs>
+    <Prereqs> ID_DRAG430_THEME_2 </Prereqs>
     <Flavor> When the odds look bleak, you smile and double down on your trash talk. </Flavor>
     <specific name="Power Usage"> Daily </specific>
     <specific name="Display"> River Rat Utility 10 </specific>
@@ -18176,7 +18177,7 @@ Although you might use your slang to swindle gullible townsfolk, you can also us
     <specific name="Attack Type"> Personal </specific>
 	<specific name="Trigger"> You are bloodied by an attack. </specific>
     <specific name="Effect"> Until the end of the encounter, you gain a +1 power bonus to all defenses and a +1 power bonus to saving throws. Whenever an attack misses you or you succeed on a saving throw, you gain temporary hit points equal to 3 + your Charisma modifier. </specific>
-    <specific name="Class"> ID_TIV_THEME_DRAGON_MAGAZINE_430-2 </specific>
+    <specific name="Class"> ID_DRAG430_THEME_2 </specific>
     <specific name="Level"> 10 </specific>
     <specific name="Power Type"> Utility </specific>
 The toughest river rats gain reserves of strength through their defiance. Unafraid of going toe to toe with larger foes, a wounded river rat relents only when the opponent is face down at the river's edge.

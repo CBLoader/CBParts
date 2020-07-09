@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.0</Version>
+    <Filename>Araz.part</Filename>
+	<PartAddress>http://cbloader.com/Homebrew/Araz.part</PartAddress>
+    <VersionAddress>http://cbloader.com/Homebrew/Araz.txt</VersionAddress>
+  </UpdateInfo>
+<Changelog>
+ Added G.A.R.Y.
+</Changelog>
+    <RulesElement name="G.A.R.Y. (Greatly Articulated Remedial Youngster)" type="Power" internal-id="ID_ARAZ_POWER_001" source="Arazzius Compendium">
+		<Category>ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_125,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_INTERNAL_CATEGORY_MINOR_ACTION,3</Category>
+		<Flavor> Disappearing for a moment, the Artificer returns with a figure made of mechanical parts. He introduces the figure as G.A.R.Y. </Flavor>
+		<specific name="Class"> ID_FMP_CLASS_125 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Utility </specific>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Artificer Utility 3 </specific>
+		<specific name="Keywords"> Arcane, Healing </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Area burst 2 within 1 square </specific>
+		<specific name="Target"> Each ally in the burst </specific>
+		<specific name="Effect"> Targets gain 1d4 temporary hitpoints.
+	Level 5: 1d4 + Wisdom modifier.
+	Level 10: 2d4 + Wisdom modifier.
+	Level 15: 2d6 + Wisdom modifier.
+	Level 20: 3d6 + Wisdom modifier.</specific>
+		<specific name="Sustain Minor"> G.A.R.Y. persists until the end of your next turn. </specific>
+		<specific name="Special"> Placing G.A.R.Y. does not provoke an opportunity attack. The artificer can spend a move action to move G.A.R.Y up to 3 squares. </specific>
+	</RulesElement>
+	<RulesElement name="Make An Example" type="Power" internal-id="ID_ARAZ_POWER_002" source="Arazzius Compendium">
+		<Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,3</Category>
+		<Flavor> You grab the nearest enemy and uses them as a club to make an example </Flavor>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack 3 </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee touch </specific>
+		<specific name="Requirement"> You must have sufficient Strength to lift the target. </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. Reflex </specific>
+		<specific name="Hit"> 2[W] + 1d8 + Strength modifier damage and the target is grabbed.
+Level 5: 2[W] + 2d8 + Strength modifier damage.
+Level 8: 2[W] + 2d8 + Strength modifier damage and you can slide the target 3 squares.
+		</specific>
+		<specific name="Miss"> The target is stunned and you gain a +1 power bonus to your next attack roll. </specific>
+		<specific name="Effect"> While the target is grabbed, you can use the Make An Example (Tighten) power. </specific>
+		<specific name="Special"> While the target is grabbed, you can use the target as an improvised weapon that deals 1d10 damage. When the target escapes, you can use the Make An Example (Final) power. </specific>
+		<specific name="_ChildPower"> ID_ARAZ_POWER_002~Tighten,ID_ARAZ_POWER_002~Final </specific>
+		<specific name="_DisplayPowers"> ID_ARAZ_POWER_002~Tighten(At-Will),ID_ARAZ_POWER_002~Final </specific>
+		<rules>
+			<grant name="ID_ARAZ_POWER_002~Tighten" type="Power" />
+			<modify Field="Power Usage" value="At-Will" />
+			<grant name="ID_ARAZ_POWER_002~Final" type="Power" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Make An Example (Tighten)" type="Power" internal-id="ID_ARAZ_POWER_002~Tighten" source="Arazzius Compendium">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+		<Prereqs> Unselectable; Unselectable </Prereqs>
+		<Flavor> You tighten your hold on your target, continuing to make an example of them </Flavor>
+		<specific name="_ParentPower"> ID_ARAZ_POWER_002 </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Barbarian Attack </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee </specific>
+		<specific name="Requirement"> The target is grabbed by the Make An Example power. </specific>
+		<specific name="Target"> Held creature </specific>
+		<specific name="Attack"> Strength vs. Reflex </specific>
+		<specific name="Hit"> 2[W] + 1d6 + Strength modifier damage. </specific>
+	</RulesElement>
+	<RulesElement name="Make An Example (Final)" type="Power" internal-id="ID_ARAZ_POWER_002~Final" source="Arazzius Compendium">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_148,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
+		<Prereqs> Unselectable; Unselectable </Prereqs>
+		<Flavor> You unleash your strength against a secondary target </Flavor>
+		<specific name="_ParentPower"> ID_ARAZ_POWER_002 </specific>
+		<specific name="Class"> ID_FMP_CLASS_148 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Barbarian Attack </specific>
+		<specific name="Keywords"> Primal, Weapon </specific>
+		<specific name="Action Type"> Immediate Reaction </specific>
+		<specific name="Attack Type"> Melee </specific>
+		<specific name="Trigger"> An enemy escapes from your Make An Example grab. </specific>
+		<specific name="Target"> Another creature within range </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + 1d8 + Strength modifier damage. </specific>
+	</RulesElement>
+	<RulesElement name="Hungry Blade" type="Power" internal-id="ID_ARAZ_POWER_003" source="Arazzius Compendium">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_53,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,3 </Category>
+		<Flavor> An enchantment powers your blade to deflect and repel your attacker. Your weapon absorbs the oncoming attack and deflects it toward an attacker. </Flavor>
+		<specific name="Class"> ID_FMP_CLASS_53 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Display"> Swordmage Attack 3 </specific>
+		<specific name="Keywords"> Arcane, Force, Weapon </specific>
+		<specific name="Action Type"> Immediate Interrupt </specific>
+		<specific name="Attack Type"> Close burst 1 </specific>
+		<specific name="Trigger"> An enemy makes a melee attack against you </specific>
+		<specific name="Primary Target"> One enemy in burst </specific>
+		<specific name="Effect"> 1[W] + Intelligence modifier damage
+ Level 8: 1d12 + Intelligence modifier damage</specific>
+		<specific name="	Secondary Target"> Each enemy in burst </specific>
+		<specific name="	Effect"> You can push the target 1 square
+   Level 8: You can push the target 1 square, and it is knocked prone </specific>
+		<specific name="Special"> At level 10, if an enemy is reduced to 0 HP from this attack, all enemies in a burst 3 from the enemy are pulled to the fallen enemy's square. </specific>
+	</RulesElement>
+	<RulesElement name="Murder of Crows" type="Power" internal-id="ID_ARAZ_POWER_004" source="Arazzius Compendium">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_73,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,3 </Category>
+		<Flavor>Irridescent black feathers begin sprouting from your arms. As you extend them, your palms open into dark voids sending waves of crows flooding out, swarming the enemy.</Flavor>
+		<specific name="Class"> ID_FMP_CLASS_9 </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_908 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Usage"> Encounter </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Display"> Witch Attack 3 </specific>
+		<specific name="Keywords"> Shadow, Psychic, Fear, Implement </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 6 </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Intelligence vs. Will </specific>
+		<specific name="Hit"> 3d4 + Intelligence modifier psychic damage, and the target is blinded until the end of your next turn. </specific>
+		<specific name="Miss"> The target is stunned until the end of your next turn. </specific>
+		<specific name="Effect"> You can sustain this power. </specific>
+		<specific name="Sustain Standard"> Use the Murder of Crows (Sustain) power aginst the same target. </specific>
+		<specific name="Special"> At level 8, if the target is reduced to 0 HP by this attack, all enemies within 3 squares of the target must move at least 2 squares, or take 1d4 damage. </specific>
+		<specific name="_ChildPower"> ID_ARAZ_POWER_004~Sustain </specific>
+		<specific name="_DisplayPowers"> ID_ARAZ_POWER_004~Sustain(At-Will) </specific>
+		<rules>
+			<grant name="ID_ARAZ_POWER_004~Sustain" type="Power" />
+			<modify Field="Power Usage" value="At-Will" />
+		</rules>
+	</RulesElement>
+	<RulesElement name="Murder of Crows (Sustain)" type="Power" internal-id="ID_ARAZ_POWER_004~Sustain" source="Arazzius Compendium">
+		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_53,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
+		<Prereqs> Unselectable; Unselectable </Prereqs>
+		<Flavor> The crows continue to swirl about your enemy </Flavor>
+		<specific name="_ParentPower"> ID_ARAZ_POWER_004 </specific>
+		<specific name="Class"> ID_FMP_CLASS_9 </specific>
+		<specific name="_Subclasses"> ID_FMP_CLASS_908 </specific>
+		<specific name="Level"> 3 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Witch Attack </specific>
+		<specific name="Keywords"> Shadow, Psychic, Fear, Implement </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Ranged 6 </specific>
+		<specific name="Requirement"> You attacked the target with this power or Murder of Crows last round. </specific>
+		<specific name="Attack"> Intelligence vs. Will </specific>
+		<specific name="Hit"> 2d4 + Intelligence modifier psychic damage.
+Level 5: 2d8 + Intelligence modifier psychic damage	</specific>
+		<specific name="Special"> If you've hit with this or the primary attack previously, deal an additional 2d4 damage and the target is dazed until the end of your next turn. </specific>
+	</RulesElement>
+	<RulesElement name="Psionic Tether" type="Power" internal-id="ID_ARAZ_POWER_005" source="Arazzius Compendium">
+		<Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1</Category>
+		<Flavor> You twist a cylindrical runic tool, firing one end to your ally and attaching the other end to your weapon. With each attack, your enemy's life force drains and your ally is invogorated. </Flavor>
+		<specific name="Class"> ID_FMP_CLASS_529 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Display"> Ardent Attack 1 </specific>
+		<specific name="Keywords"> Augmentable, Psychic, Healing </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Close burst 3 </specific>
+		<specific name="Target"> One creature within burst and one ally within 5 </specific>
+		<specific name="Attack"> Charisma vs. Will </specific>
+		<specific name="Hit"> 1d8 damage to the target, and the ally gains a +1 power bonus to AC until the end of your next turn.
+Level 3: 1d8 + Charisma modifier damage. The ally is healed for half their healing surge value, and gains a +2 power bonus to AC.
+Level 8: 2d8 + Charisma modifier damage. The ally is healed for half their healing surge value, and gains a +2 power bonus to AC and FORT.
+		</specific>
+		<specific name="Sustain Minor"> Reuse this power with the same ally. </specific>
+		<specific name="Sustain Move"> Reuse this power with another ally in range. </specific>
+		<specific name="Augment"> 1 </specific>
+		<specific name=" Hit">
+Level 3: As above, and each ally adjacent to you can shift 1 square as a free action.
+Level 8: As above, and each ally adjacent to you can either stand up or shift 1 square as a free action.</specific>
+		<specific name="Augment"> 2 </specific>
+		<specific name=" Hit">
+Level 3: 1d8 + Charisma modifier damage. Until the end of your next turn, the target deals half damage with any non-basic attack.
+Level 8: 2d8 + Charisma modifier damage. Until the end of your next turn, either:
+  all adjacent allies gain a power bonus to damage equal to your Constitution modifier,
+  OR the target deals half damage with any non-basic attack. </specific>
+		<specific name=" Miss"> Tethered ally gains a +2 power bonus to their next attack roll. </specific>
+		<specific name="Special"> You must be able to see your ally. </specific>
+		<specific name="_AugmentVersions"> ID_ARAZ_POWER_005~AUGMENT_0,ID_ARAZ_POWER_005~AUGMENT_1,ID_ARAZ_POWER_005~AUGMENT_2 </specific>
+	</RulesElement>
+	<RulesElement name="Psionic Tether (Augment 0)" type="Power" internal-id="ID_ARAZ_POWER_005~AUGMENT_0" source="Arazzius Compendium">
+		<Flavor> You twist a cylindrical runic tool, firing one end to your ally and attaching the other end to your weapon. With each attack, your enemy's life force drains and your ally is invogorated. </Flavor>
+		<specific name="_SupportsID"> ID_ARAZ_POWER_005 </specific>
+		<specific name="_AugmentParent"> ID_ARAZ_POWER_005 </specific>
+		<specific name="Class"> ID_FMP_CLASS_529 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Display"> Ardent Attack 1 </specific>
+		<specific name="Keywords"> Augmentable, Psionic </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Close burst 3 </specific>
+		<specific name="Target"> One creature within burst and one ally within 5 </specific>
+		<specific name="Attack"> Charisma vs. Will </specific>
+		<specific name="Hit"> 1d8 damage to the target, and the ally gains a +1 power bonus to AC until the end of your next turn.
+Level 3: 1d8 + Charisma modifier damage. The ally is healed for half their healing surge value, and gains a +2 power bonus to AC.
+Level 8: 2d8 + Charisma modifier damage. The ally is healed for half their healing surge value, and gains a +2 power bonus to AC and FORT.
+		</specific>
+		<specific name="Special"> You must be able to see your ally. </specific>
+	</RulesElement>
+	<RulesElement name="Psionic Tether (Augment 1)" type="Power" internal-id="ID_ARAZ_POWER_005~AUGMENT_1" source="Arazzius Compendium">
+		<Flavor> You twist a cylindrical runic tool, firing one end to your ally and attaching the other end to your weapon. With each attack, your enemy's life force drains and your ally is invogorated. </Flavor>
+		<specific name="_SupportsID"> ID_ARAZ_POWER_005 </specific>
+		<specific name="_AugmentParent"> ID_ARAZ_POWER_005 </specific>
+		<specific name="Class"> ID_FMP_CLASS_529 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Display"> Ardent Attack 1 </specific>
+		<specific name="Keywords"> Augmentable, Psionic </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Close burst 3 </specific>
+		<specific name="Target"> One creature within burst and one ally within 5 </specific>
+		<specific name="Attack"> Charisma vs. Will </specific>
+		<specific name="Hit"> Level 3: As above, and each ally adjacent to you can shift 1 square as a free action.
+Level 8: As above, and each ally adjacent to you can either stand up or shift 1 square as a free action.
+		</specific>
+		<specific name="Special"> You must be able to see your ally. </specific>
+	</RulesElement>
+	<RulesElement name="Psionic Tether (Augment 2)" type="Power" internal-id="ID_ARAZ_POWER_005~AUGMENT_2" source="Arazzius Compendium">
+		<Flavor> You twist a cylindrical runic tool, firing one end to your ally and attaching the other end to your weapon. With each attack, your enemy's life force drains and your ally is invogorated. </Flavor>
+		<specific name="_SupportsID"> ID_ARAZ_POWER_005 </specific>
+		<specific name="_AugmentParent"> ID_ARAZ_POWER_005 </specific>
+		<specific name="Class"> ID_FMP_CLASS_529 </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="Power Usage"> At-Will </specific>
+		<specific name="Power Type"> Attack </specific>
+		<specific name="Display"> Ardent Attack 1 </specific>
+		<specific name="Keywords"> Augmentable, Psionic </specific>
+		<specific name="Action Type"> Standard action </specific>
+		<specific name="Attack Type"> Close burst 3 </specific>
+		<specific name="Target"> One creature within burst and one ally within 5 </specific>
+		<specific name="Attack"> Charisma vs. Will </specific>
+		<specific name="Hit"> Level 3: 1d8 + Charisma modifier damage. Until the end of your next turn, the target deals half damage with any non-basic attack.
+Level 8: 2d8 + Charisma modifier damage. Until the end of your next turn, either:
+ all adjacent allies gain a power bonus to damage equal to your Constitution modifier, OR the target deals half damage with any non-basic attack. </specific>
+		<specific name=" Miss"> Tethered ally gains a +2 power bonus to their next attack roll.
+		</specific>
+		<specific name="Special"> You must be able to see your ally. </specific>
+	</RulesElement>
+</D20Rules>

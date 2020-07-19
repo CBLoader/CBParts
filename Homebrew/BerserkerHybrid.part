@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+
+<UpdateInfo>
+  <Version>1.0</Version>
+  <Filename>BerserkerHybrid.part</Filename>
+  <PartAddress>https://cbloader.vorpald20.com/Homebrew/BerserkerHybrid.part</PartAddress>
+  <VersionAddress>https://cbloader.vorpald20.com/Homebrew/BerserkerHybrid.txt</VersionAddress>
+  <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+  <Description>Adds a hybrid option for the Beserker class</Description>
+</UpdateInfo>
+
+<!-- Hybrid Berserker -->
+
+<RulesElement internal-id="ID_CUSTOM_HYBRID_BERZERKER_BY_NUPTUP" name="Hybrid Berserker" type="Hybrid Class" source="Nuptup Homebrew" revision-date="3/29/2011 3:03:59 PM">
+  <Prereqs> !ID_FMP_HYBRID_CLASS_440 </Prereqs>
+  <specific name="Key Abilities"> Strength, Dexterity </specific>
+  <specific name="Armor Proficiencies"> Cloth, leather, hide; light shields </specific>
+  <specific name="Weapon Proficiencies"> Simple melee, military melee </specific>
+  <specific name="Bonus to Defense"> +1 Fortitude </specific>
+  <specific name="Hit Points at 1st Level"> 7.5+ Constitution Score </specific>
+  <specific name="Hit Points per Level Gained"> 3 </specific>
+  <specific name="Healing Surges"> 4 </specific>
+  <specific name="Trained Skills"> </specific>
+  <specific name="Class Skills"> Acrobatics (Dex), Athletics (Str), Endurance (Con), Heal (Wis), Intimidate (Cha), Nature (Wis), Perception (Wis) </specific>
+  <specific name="_PARSED_CLASS_FEATURE"> Berserker Fury, Defender Aura, Vengeful Guardian </specific>
+  <specific name="Role"> Defender and Striker. Your skill and experience make you good at defending others, but when your rage surfaces, you become an aggressive attacker. </specific>
+  <specific name="Power Source"> Martial and Primal. </specific>
+  <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+  <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_1 </specific>
+  <specific name="_SecondaryPowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+  <specific name="Hybrid Talent Options"> Heartland, Poised Defender </specific>
+  <specific name="Short Description"> Your skill and experience make you good at defending others, but when your rage surfaces, you become an aggressive attacker. </specific>
+  <specific name="_ParentClass"> ID_FMP_CLASS_148 </specific>
+  <specific name="_BaseClass"> ID_FMP_CLASS_148 </specific>
+  <rules>
+    <grant name="ID_INTERNAL_GRANTS_HYBRID_BERSERKER" type="Grants"/>
+      <select type="Power" name="Power At-Will 1" number="1" Category="ID_FMP_CLASS_148,at-will,1"/>
+    <textstring name="_CLASSNAME" value="ID_CUSTOM_HYBRID_BERZERKER_BY_NUPTUP"/>
+    <statadd name="_LEVEL-ONE-HPS" value="+7" half-point="true"/>
+    <statadd name="_PER-LEVEL-HPS" value="+3"/>
+    <statadd name="Healing Surges" value="+4"/>
+	<statadd name="Fortitude Defense Class Bonus" value="+1"/>
+ </rules>
+On the edge of civilization, far beyond the comfortable life within cities and towns, tribes of barbarian peoples maintain a simple yet primitive existence. Life for these people is not easy, and it is made more difficult because fey crossings commonly appear in their lands. As children, tribe members are taught about the perils of crossing into the Feywild, and about the monsters that emerge from that realm with malicious intent. Faced with this constant danger, the barbarians continually fight to maintain their way of life.
+     Some among them have fought so hard for so long that they know little other than violence as a means of protecting their tribes. These individuals, prone to rage that transforms them into whirling forces of destruction, are known as berserkers. Most berserkers are skilled warriors with keen survival instincts. When their ire is stoked, however, much of that experience and discipline is replaced by an animal fury unmatched among other warriors.
+      If fury and aggressiveness was all that berserkers had to protect them from harm, they would eventually tire and be overcome by their enemies. When the berserkers' unbridled rage overtakes them, they become beacons of the spirit world, and their rage sounds like a gong calling to the primal spirits. Those spirits are drawn to such strong emotion, and are able to inhabit berserkers during their rages, protecting them against harm. The spirits also lend their energy to the berserkers, allowing them to perform incredible, even supernatural, feats.
+     It is not just barbarians in the mortal world who become berserkers. Within the Feywild are many savage warriors, and that bright realm is a place where warriors who are as mercurial as the berserker fit right in. Many berserkers are found among the lycanthrope tribes of the Brokenstone Vale, others are among the elves who still dwell in the forests of the Feywild, and yet others can be found anywhere civilization has not yet encroached upon.
+</RulesElement>
+
+
+<RulesElement name="Hybrid Berserker" type="Grants" internal-id="ID_INTERNAL_GRANTS_HYBRID_BERSERKER" source="Nuptup Homebrew">
+  <specific name="_SupportsID"> ID_CUSTOM_HYBRID_BERZERKER_BY_NUPTUP </specific>
+  <rules>
+	<grant name="ID_FMP_ROLE_6" type="Role"/>
+    <grant name="ID_FMP_POWER_SOURCE_1" type="Power Source"/>
+    <grant name="ID_FMP_POWER_SOURCE_4" type="Power Source"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_SIMPLE_MELEE" type="Proficiency"/>
+    <grant name="ID_INTERNAL_PROFICIENCY_MILITARY_MELEE" type="Proficiency"/>
+	<grant name="ID_INTERNAL_GRANTS_BERSERKER_IMPLEMENTS" type="Grants"/>
+	<grant name="ID_FMP_CLASS_FEATURE_4134" type="Class Feature"/>
+	<grant name="ID_FMP_CLASS_FEATURE_4133" type="Class Feature"/>
+	<grant name="ID_WOG_BERSERKER_CLASS_FEATURE_3" type="Class Feature"/>
+	<grant name="ID_CDJ_CLASS_FEATURE_BERSERKER_FURY" type="Class Feature"/>
+	<grant name="ID_CDJ_CLASS_FEATURE_DEFENDER_AURA" type="Class Feature"/>
+	<grant name="ID_INTERNAL_COUNTSASCLASS_BERSERKER" type="CountsAsClass"/>
+	<grant name="ID_INTERNAL_COUNTSASCLASS_BARBARIAN" type="CountsAsClass"/>
+  </rules>
+</RulesElement>
+	<RulesElement name="Heartland" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4127" source="Heroes of the Feywild">
+		<Category>ID_CUSTOM_HYBRID_BERZERKER_BY_NUPTUP,1</Category>
+		<Flavor> Berserkers live on the edge of civilization, where they are closer to the land and more shaped by the environment than other warriors are. You have cultivated certain abilities that are based on your experiences in your heartland's environment. </Flavor>
+		<specific name="Short Description"> Gain benefit from heartland terrain </specific>
+      <specific name="_CS_ShortDescription"> @ </specific>
+		<specific name="Level"> 1 </specific>
+		<specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4128, ID_FMP_CLASS_FEATURE_4129, ID_FMP_CLASS_FEATURE_4130 </specific>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4127"/>
+		</rules>
+
+You choose one of the following terrain types that best represents your heartland and gain its benefit.
+	</RulesElement>
+		<RulesElement name="Poised Defender" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4132" source="Heroes of the Feywild">
+		<Category>ID_CUSTOM_HYBRID_BERZERKER_BY_NUPTUP,1</Category>
+		<Flavor> As long as your primal rage does not take over, your martial training helps you dodge and parry incoming attacks if you're not burdened by heavy armor. </Flavor>
+		<specific name="Short Description"> Gain +2 bonus to AC while defender aura is active and not wearing heavy armor </specific>
+		<specific name="Level"> 1 </specific>
+		<rules>
+			<statadd name="AC" value="+2" type="Class Feature" not-wearing="armor:heavy" condition="while your defender aura is active"/>
+		</rules>
+
+While your defender aura is active and you're not wearing heavy armor, you gain a +2 bonus to AC.
+	</RulesElement>
+<!-- End Hybrid Berserker -->
+</D20Rules>

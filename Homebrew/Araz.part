@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.0</Version>
     <Filename>Araz.part</Filename>
-	<PartAddress>http://cbloader.com/Homebrew/Araz.part</PartAddress>
-    <VersionAddress>http://cbloader.com/Homebrew/Araz.txt</VersionAddress>
-  </UpdateInfo>
+	<PartAddress>https://cbloader.vorpald20.com/Homebrew/Araz.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/Araz.txt</VersionAddress>
+  <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
 <Changelog>
  Added G.A.R.Y.
 </Changelog>
@@ -53,9 +53,9 @@ Level 8: 2[W] + 2d8 + Strength modifier damage and you can slide the target 3 sq
 		<specific name="_ChildPower"> ID_ARAZ_POWER_002~Tighten,ID_ARAZ_POWER_002~Final </specific>
 		<specific name="_DisplayPowers"> ID_ARAZ_POWER_002~Tighten(At-Will),ID_ARAZ_POWER_002~Final </specific>
 		<rules>
-			<grant name="ID_ARAZ_POWER_002~Tighten" type="Power" />
-			<modify Field="Power Usage" value="At-Will" />
-			<grant name="ID_ARAZ_POWER_002~Final" type="Power" />
+			<grant name="ID_ARAZ_POWER_002~Tighten" type="Power"/>
+			<modify Field="Power Usage" value="At-Will"/>
+			<grant name="ID_ARAZ_POWER_002~Final" type="Power"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Make An Example (Tighten)" type="Power" internal-id="ID_ARAZ_POWER_002~Tighten" source="Arazzius Compendium">
@@ -109,8 +109,8 @@ Level 8: 2[W] + 2d8 + Strength modifier damage and you can slide the target 3 sq
 		<specific name="Primary Target"> One enemy in burst </specific>
 		<specific name="Effect"> 1[W] + Intelligence modifier damage
  Level 8: 1d12 + Intelligence modifier damage</specific>
-		<specific name="	Secondary Target"> Each enemy in burst </specific>
-		<specific name="	Effect"> You can push the target 1 square
+		<specific name=" Secondary Target"> Each enemy in burst </specific>
+		<specific name=" Effect"> You can push the target 1 square
    Level 8: You can push the target 1 square, and it is knocked prone </specific>
 		<specific name="Special"> At level 10, if an enemy is reduced to 0 HP from this attack, all enemies in a burst 3 from the enemy are pulled to the fallen enemy's square. </specific>
 	</RulesElement>
@@ -136,8 +136,8 @@ Level 8: 2[W] + 2d8 + Strength modifier damage and you can slide the target 3 sq
 		<specific name="_ChildPower"> ID_ARAZ_POWER_004~Sustain </specific>
 		<specific name="_DisplayPowers"> ID_ARAZ_POWER_004~Sustain(At-Will) </specific>
 		<rules>
-			<grant name="ID_ARAZ_POWER_004~Sustain" type="Power" />
-			<modify Field="Power Usage" value="At-Will" />
+			<grant name="ID_ARAZ_POWER_004~Sustain" type="Power"/>
+			<modify Field="Power Usage" value="At-Will"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Murder of Crows (Sustain)" type="Power" internal-id="ID_ARAZ_POWER_004~Sustain" source="Arazzius Compendium">

@@ -6,6 +6,7 @@
     <PartAddress>https://cbloader.vorpald20.com/Homebrew/85-ThemeMulticlassing.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/Homebrew/85-ThemeMulticlassing.txt</VersionAddress>
   <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+  <Description>Adds a theme for multiclassing for several classes in the Background tab when building a character.</Description>
   <RulesElement name="At-Will Blog" type="source" internal-id="ID_RYV_SOURCE_AW001" source="Core">
     <specific name="IsBeta"> 0 </specific>
     <specific name="URL"> http://www.4eatwill.net </specific>
@@ -14,8 +15,6 @@
   <!--Themes-->
   <RulesElement name="Mugger (Multiclass Rogue)" type="Theme" internal-id="ID_RYV_THEME_1001" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "You look surprised to see me. If you'd been paying attention, you might still be alive." </Flavor>
-    <Prereqs> Rogue </Prereqs>
-    <print-prereqs> Rogue </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
@@ -30,8 +29,6 @@ You can use the Sly Flourish power once per encounter.
 </RulesElement>
   <RulesElement name="Vicar (Multiclass Cleric)" type="Theme" internal-id="ID_RYV_THEME_1002" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "Have courage, my friends. Pelor favors us today!" </Flavor>
-    <Prereqs> Cleric </Prereqs>
-    <print-prereqs> Cleric </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_2 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
@@ -45,8 +42,6 @@ Instead of a theme feature power, you gain the Healer's Lore class feature.
 </RulesElement>
   <RulesElement name="Apprentice (Multiclass Wizard)" type="Theme" internal-id="ID_RYV_THEME_1003" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "I am the fire that burns, the choking fog, the storm that rains devastation on our foes." </Flavor>
-    <Prereqs> Wizard </Prereqs>
-    <print-prereqs> Wizard </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_1 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
@@ -74,8 +69,6 @@ You may only prepare one utility or daily spell per day per level from your spel
 </RulesElement>
   <RulesElement name="Warrior (Multiclass Fighter)" type="Theme" internal-id="ID_RYV_THEME_1004" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "You'll have to deal with me first, dragon!" </Flavor>
-    <Prereqs> Fighter </Prereqs>
-    <print-prereqs> Fighter </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
@@ -90,8 +83,6 @@ This is the multiclass theme for weapon-based fighters. You can use the Threaten
 </RulesElement>
   <RulesElement name="Pugilist (Multiclass Fighter)" type="Theme" internal-id="ID_RYV_THEME_1005" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "You'll have to deal with me first, dragon!" </Flavor>
-    <Prereqs> Fighter </Prereqs>
-    <print-prereqs> Fighter </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
@@ -106,8 +97,6 @@ This is the multiclass theme for grappling fighters. You can use the Grappling S
 </RulesElement>
   <RulesElement name="Seargent (Multiclass Warlord)" type="Theme" internal-id="ID_RYV_THEME_1006" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "Onward to victory; they can not stand before us!" </Flavor>
-    <Prereqs> Warlord </Prereqs>
-    <print-prereqs> Warlord </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_2 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
@@ -128,8 +117,6 @@ If you took a Warlord multiclass feat that is related to a Commanding Presence, 
 </RulesElement>
   <RulesElement name="Thaumaturge (Multiclass Sorcerer)" type="Theme" internal-id="ID_RYV_THEME_1007" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "I am the arcane and the arcane is in me." </Flavor>
-    <Prereqs> Sorcerer </Prereqs>
-    <print-prereqs> Sorcerer </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
@@ -144,8 +131,6 @@ You can use the Burning Spray power once per encounter.
 </RulesElement>
   <RulesElement name="Charming Rake (Multiclass Bard)" type="Theme" internal-id="ID_RYV_THEME_1008" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "The clash of blades, a note. The battle fought, a verse. The hero's war, a song." </Flavor>
-    <Prereqs> Bard </Prereqs>
-    <print-prereqs> Bard </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_2 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
@@ -160,8 +145,6 @@ You can use the Misdirected Mark power once per encounter.
 </RulesElement>
   <RulesElement name="Nature's Reservist (Multiclass Warden)" type="Theme" internal-id="ID_RYV_THEME_1009" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "Get past me? You might as well try to push the mountains aside." </Flavor>
-    <Prereqs> Warden </Prereqs>
-    <print-prereqs> Warden </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_4 </specific>
     <specific name="Power Name"> Evocations </specific>
@@ -216,8 +199,6 @@ You count as having the Earthstrength warden class feature.
   <RulesElement name="Earthstrength" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_EARTHSTRENGTH" source="Core"/>
   <RulesElement name="Eldritch Hexer (Multiclass Warlock)" type="Theme" internal-id="ID_RYV_THEME_1010" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "The darkness holds no terror for me, demon! I curse you now under the Sign of Ill Omen!" </Flavor>
-    <Prereqs> Warlock </Prereqs>
-    <print-prereqs> Warlock </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_2 </specific>
     <specific name="Power Name"> Spells </specific>
@@ -339,8 +320,6 @@ You must decide whether or not to spend your fell might when you choose to use a
 </RulesElement>
   <RulesElement name="Wilderness Predator (Multiclass Ranger)" type="Theme" internal-id="ID_RYV_THEME_1011" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "I'll get the one in the back. That's one hobgoblin who'll regret ever lifting a bow." </Flavor>
-    <Prereqs> Ranger </Prereqs>
-    <print-prereqs> Ranger </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_1 </specific>
     <specific name="Power Name"> Exploits </specific>
@@ -355,8 +334,6 @@ You can use the Throw and Stab power once per encounter.
 </RulesElement>
   <RulesElement name="Steeled Zealot (Multiclass Avenger)" type="Theme" internal-id="ID_RYV_THEME_1012" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "Everything my god needs to say to you can be said with my weapon." </Flavor>
-    <Prereqs> Avenger </Prereqs>
-    <print-prereqs> Avenger </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_3 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
@@ -371,8 +348,6 @@ You gain the Abjure Undead Channel Divinity power.
 </RulesElement>
   <RulesElement name="Minor Prophet (Multiclass Invoker)" type="Theme" internal-id="ID_RYV_THEME_1013" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "The only thing stronger than my faith is the fire I use to burn away those who stand against the will of the gods." </Flavor>
-    <Prereqs> Invoker </Prereqs>
-    <print-prereqs> Invoker </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_1 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>
@@ -387,8 +362,6 @@ You gain the Rebuke Undead Channel Divinity power.
 </RulesElement>
   <RulesElement name="Burgeoning Justiciar (Multiclass Paladin)" type="Theme" internal-id="ID_RYV_THEME_1014" source="At-Will Blog" revision-date="10/12/2010 1:42:26 PM">
     <Flavor> "I am the righteous shield of Moradin and a sword in his mighty hand! I fear no evil!" </Flavor>
-    <Prereqs> Paladin </Prereqs>
-    <print-prereqs> Paladin </print-prereqs>
     <specific name="Role"> ID_FMP_ROLE_4 </specific>
     <specific name="Power Source"> ID_FMP_POWER_SOURCE_3 </specific>
     <specific name="Power Name"> Prayers </specific>

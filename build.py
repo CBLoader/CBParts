@@ -26,12 +26,13 @@ class Info():
     category: str
     parthash: str
     version: str
+    children: List[str]
 
     def __str__(self) -> str:
         return f'{self.category}: {self.url}' + f' ({self.desc})' if self.desc else ''
 
     def html(self) -> str:
-        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + (f'<br/> {self.desc}</p>' if self.desc else '</p>')
+        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + (f'<br/> {self.description}</p>' if self.description else '</p>')
 
     def __hash__(self):
         return self.name.__hash__()
@@ -47,6 +48,12 @@ class Info():
     def __lt__(self, other):
         if isinstance(other, type(self)):
             return self.name < other.name
+
+    @property
+    def description(self) -> str:
+        if not self.desc:
+            return '<i>' + ', '.join(self.children) + '</i>'
+        return self.desc
 
 def do_folder(dir: str, subs: List[str], files: List[str]) -> None:
     for part in [p for p in files if os.path.splitext(p)[1].lower() == '.part']:
@@ -121,16 +128,14 @@ def patch_part(dir: str, part: str) -> None:
             category = os.path.dirname(address)
         category = os.path.basename(category)
     preview(xml).write(os.path.splitext(path)[0] + '.html')
+    contents = []
     if part.endswith('.index'):
-        contents = []
         for p in xml.findall('Part'):
             fn = p.find('Filename')
             if fn is not None:
                 indexed.add(fn.text)
                 contents.append(fn.text)
-        if not desc_text:
-            desc_text ='<i>' + ', '.join(contents) + '</i>'
-    return Info(part, os.path.join(dir, part), update_info.base, desc_text, pinned, category, version_hash(path), update_info.find('Version').text)
+    return Info(part, os.path.join(dir, part), update_info.base, desc_text, pinned, category, version_hash(path), update_info.find('Version').text, contents)
 
 def version_hash(path: str) -> str:
     with open(path, encoding='utf-8') as f:
@@ -147,7 +152,7 @@ def write_index() -> None:
     doc = etree.Element("Indexes")
     def add(info: Info) -> None:
         tag = os.path.splitext(info.name)[1].strip('.').title()
-        entry = etree.Element(tag, name=info.name, url=info.url, category=info.category, description=info.desc)
+        entry = etree.Element(tag, name=info.name, url=info.url, category=info.category, description=info.description)
         entry.text = str(info)
         if info.pinned:
             doc.insert(0, entry)

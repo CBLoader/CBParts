@@ -99,6 +99,9 @@ def patch_part(dir: str, part: str) -> None:
 
     xml.write(path, pretty_print=True, xml_declaration=True, encoding='utf-8')
     description = update_info.find('Description')
+    if description is None and xml.find('Description') is not None:
+        description = xml.find('Description')
+        print(f'{part} description is not in UpdateInfo')
     if description is not None:
         desc_text = description.text
         pinned = ast.literal_eval(description.get('pin', 'False'))

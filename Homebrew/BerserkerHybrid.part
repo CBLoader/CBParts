@@ -73,13 +73,19 @@ On the edge of civilization, far beyond the comfortable life within cities and t
 </RulesElement>
 	<RulesElement name="Heartland" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4127" source="Heroes of the Feywild">
 		<Category>ID_CUSTOM_HYBRID_BERZERKER_BY_NUPTUP,1</Category>
-		<Flavor> Berserkers live on the edge of civilization, where they are closer to the land and more shaped by the environment than other warriors are. You have cultivated certain abilities that are based on your experiences in your heartland's environment. </Flavor>
+		<Flavor> Berserkers live on the edge of civilization, where they are closer to the land and more shaped by the environment than other warriors are. You have cultivated certain abilities that are based on your experiences in your heartland's environment. 
+
+Note: Hybrid Berserkers who choose this option are granted proficiency with Leather Armor, Hide Armor and Light Shields. </Flavor>
 		<specific name="Short Description"> Gain benefit from heartland terrain </specific>
       <specific name="_CS_ShortDescription"> @ </specific>
 		<specific name="Level"> 1 </specific>
 		<specific name="_PARSED_SUB_FEATURES"> ID_FMP_CLASS_FEATURE_4128, ID_FMP_CLASS_FEATURE_4129, ID_FMP_CLASS_FEATURE_4130 </specific>
 		<rules>
 			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4127"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(CLOTH)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(LEATHER)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_ARMOR_PROFICIENCY_(HIDE)" type="Proficiency"/>
+			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
 		</rules>
 
 You choose one of the following terrain types that best represents your heartland and gain its benefit.

@@ -5,7 +5,9 @@
     <Filename>ZeldaRaces.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/Homebrew/ZeldaRaces.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/Homebrew/ZeldaRaces.txt</VersionAddress>
-  <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+    <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+    <Description>Christo's Zelda Races</Description>
+  </UpdateInfo>
   <RulesElement name="Christo's Zelda Races" type="source" internal-id="ID_FMP_SOURCE_Christo's Zelda Races" source="Core">
     <specific name="IsBeta"> 0 </specific>
     <specific name="URL"> http://bit.ly/ieMeZp </specific>
@@ -218,8 +220,8 @@ When you make an attack which ends the boulder dash stance, that attack gains a 
       <statadd name="Mountain Settler" value="+5"/>
       <statadd name="resist:cold" value="+Mountain Settler" type="resist" requires="Mountain Dweller (Fire)"/>
       <statadd name="resist:fire" value="+Mountain Settler" type="resist" requires="Mountain Dweller (Cold)"/>
-    </rules> 
-	    
+    </rules>
+
 You have both resist 5 fire and resist 5 cold.
    </RulesElement>
   <RulesElement name="Past Spirit (Goron)" type="Racial Trait" internal-id="ID_INTERNAL_RACIAL_TRAIT_PAST_SPIRIT_(GORON)" source="Christo's Zelda Races">
@@ -362,7 +364,7 @@ You count as a Deku for meeting prerequisites.
     <rules>
       <statadd name="Athletics checks to swim" value="+5" type="Feat"/>
     </rules>
-You gain a +5 feat bonus to Athletics checks related to swimming.   
+You gain a +5 feat bonus to Athletics checks related to swimming.
 </RulesElement>
   <RulesElement name="Distance Spit" type="Feat" internal-id="ID_MSR_FEAT_DEKU_002" source="Christo's Zelda Races">
     <Prereqs> Deku race, seed spit racial power, Dex 13 </Prereqs>
@@ -521,7 +523,7 @@ You grant any non-zora ally within 10 squares of you a +1 racial bonus to Athlet
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(JAVELIN)" type="Proficiency"/>
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SPEAR)" type="Proficiency"/>
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIDENT)" type="Proficiency"/>
-    </rules>		
+    </rules>
 You gain proficiency with the longspear, javelin, spear and trident.
 </RulesElement>
   <RulesElement name="Cleansing Current" type="Feat" internal-id="ID_MSR_FEAT_ZORA_001" source="Christo's Zelda Races">
@@ -533,7 +535,7 @@ You gain proficiency with the longspear, javelin, spear and trident.
     <specific name="type"/>
     <specific name="Associated Power Info"/>
     <specific name="Associated Powers"/>
-Whenever you use a healing power on an ally or use Heal to allow an ally to spend his or her second wind, that ally can also make a saving throw.  
+Whenever you use a healing power on an ally or use Heal to allow an ally to spend his or her second wind, that ally can also make a saving throw.
    </RulesElement>
   <RulesElement name="Eel Skin" type="Feat" internal-id="ID_MSR_FEAT_ZORA_002" source="Christo's Zelda Races">
     <Prereqs> Zora race, smooth skin racial power </Prereqs>
@@ -562,7 +564,7 @@ When you use the smooth skin power, any enemy adjacent to you at the end of your
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
       <statadd name="FREEBEE:ID_FMP_WEAPON_ARM_FIN" value="+1"/>
     </rules>
-When you make a melee weapon attack, you can use your arm fin, which is a weapon in the light blade weapon group. This weapon has the off-hand weapon property and a +3 proficiency bonus, and it deals 1d6 damage. While you aren’t holding anything, you are considered to have this weapon in each hand. You can enchant and disenchant your fins. When you disenchant your fins, they do not turn to dust.  
+When you make a melee weapon attack, you can use your arm fin, which is a weapon in the light blade weapon group. This weapon has the off-hand weapon property and a +3 proficiency bonus, and it deals 1d6 damage. While you aren’t holding anything, you are considered to have this weapon in each hand. You can enchant and disenchant your fins. When you disenchant your fins, they do not turn to dust.
    </RulesElement>
   <RulesElement name="Fin-blade Hurler" type="Feat" internal-id="ID_MSR_FEAT_ZORA_004" source="Christo's Zelda Races">
     <Prereqs> Zora race, Dex 13 </Prereqs>
@@ -577,7 +579,7 @@ When you make a melee weapon attack, you can use your arm fin, which is a weapon
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(ARM_FIN)" type="Proficiency"/>
       <statadd name="FREEBEE:ID_FMP_WEAPON_ARM_FIN" value="+1"/>
     </rules>
-When you make a ranged weapon attack, you can use your arm fin, which is a weapon in the light thrown weapon group. This weapon has the off-hand property, a +3 proficiency bonus and it deals 1d6 damage. While you aren’t holding anything, you are considered to have this weapon in each hand. You can enchant and disenchant your fins. When you disenchant your fins, they do not turn to dust. When thrown, this weapon always returns to you, even if not enchanted.     
+When you make a ranged weapon attack, you can use your arm fin, which is a weapon in the light thrown weapon group. This weapon has the off-hand property, a +3 proficiency bonus and it deals 1d6 damage. While you aren’t holding anything, you are considered to have this weapon in each hand. You can enchant and disenchant your fins. When you disenchant your fins, they do not turn to dust. When thrown, this weapon always returns to you, even if not enchanted.
    </RulesElement>
   <RulesElement name="Jabu Jabu's Boon" type="Feat" internal-id="ID_MSR_FEAT_ZORA_005" source="Christo's Zelda Races">
     <Prereqs> Zora race </Prereqs>
@@ -645,10 +647,10 @@ Range: 5/10
 Proficient: +3
 Weight: 0 lb.
 
-Properties: 
+Properties:
 Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can't attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
 
-Group: 
+Group:
 Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lunges, and agile defenses are the strong points of these weapons.). </specific>
     <specific name="Weight"> 0 </specific>
     <specific name="Gold"> 0 </specific>
@@ -763,7 +765,7 @@ You are considered a fey creature for the purpose of effects that relate to crea
       <statadd name="Nature Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active."/>
       <statadd name="Religion Misc" value="+3" condition="to monster knowledge checks while your fairy familiar is active."/>
     </rules>
-You gain a +3 feat bonus to monster knowledge checks while your fairy familiar is active. 
+You gain a +3 feat bonus to monster knowledge checks while your fairy familiar is active.
 </RulesElement>
   <RulesElement name="Forest Playground  " type="Feat" internal-id="ID_MSR_FEAT_KOKIRI_2" source="Christo's Zelda Races">
     <Prereqs> Kokiri race, Dex 13 </Prereqs>
@@ -774,7 +776,7 @@ You gain a +3 feat bonus to monster knowledge checks while your fairy familiar i
     <specific name="type"/>
     <specific name="Associated Power Info"/>
     <specific name="Associated Powers"/>
-You ignore difficult terrain as a result of trees, underbrush, plants, or natural growth. You also gain a +2 feat bonus to acrobatics checks made in forest environments. This feat does not allow you to ignore challenging or hindering terrain. 
+You ignore difficult terrain as a result of trees, underbrush, plants, or natural growth. You also gain a +2 feat bonus to acrobatics checks made in forest environments. This feat does not allow you to ignore challenging or hindering terrain.
    </RulesElement>
   <RulesElement name="Friendly Fairy  " type="Feat" internal-id="ID_MSR_FEAT_KOKIRI_3" source="Christo's Zelda Races">
     <Prereqs> Kokiri race, arcane familiar feat </Prereqs>
@@ -899,7 +901,7 @@ You have the expert opportunist power.
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(SCIMITAR)" type="Proficiency"/>
       <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HALBERD)" type="Proficiency"/>
     </rules>
-You gain proficiency with the kopesh, scimitar and the halberd. 
+You gain proficiency with the kopesh, scimitar and the halberd.
    </RulesElement>
   <RulesElement name="Mounted Combat " type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_GERUDO_4" source="Christo's Zelda Races">
     <specific name="Short Description"> You gain the Mounted Combat Feat </specific>
@@ -907,7 +909,7 @@ You gain proficiency with the kopesh, scimitar and the halberd.
     <rules>
       <grant name="ID_FMP_FEAT_30" type="Feat"/>
     </rules>
-You gain the Mounted Combat feat.  
+You gain the Mounted Combat feat.
    </RulesElement>
   <RulesElement name="Expert Opportunist" type="Power" internal-id="ID_MSR_POWER_EXPERT_OPPORTUNIST" source="Christo's Zelda Races">
     <Category> ID_MSR_RACIAL_TRAIT_GERUDO_2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
@@ -969,7 +971,7 @@ Male humanoid enemies have a -1 attack penalty to hit you and you have a +2 feat
     <specific name="type"/>
     <specific name="Associated Power Info"/>
     <specific name="Associated Powers"/>
-Once per encounter when you hit an enemy with an arcane attack, the target gains ongoing 5 fire damage (save ends) or ongoing 5 cold damage (save ends). The ongoing damage increases to 10 at 11th level and 15 at 21st level. 
+Once per encounter when you hit an enemy with an arcane attack, the target gains ongoing 5 fire damage (save ends) or ongoing 5 cold damage (save ends). The ongoing damage increases to 10 at 11th level and 15 at 21st level.
    </RulesElement>
   <RulesElement name="Loner" type="Feat" internal-id="ID_MSR_FEAT_GERUDO_4" source="Christo's Zelda Races">
     <Prereqs> Gerudo race </Prereqs>
@@ -1050,8 +1052,8 @@ Play a hylian if you want...
   <RulesElement name="Divine Resistance" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_HYLIAN_1" source="Christo's Zelda Races">
     <specific name="Short Description"> You have resistance to necrotic damage and radiant damage equal to 5 + one-half your level. </specific>
     <specific name="Level"> 1 </specific>
-	
-You have resistance to necrotic damage and radiant damage equal to 5 + one-half your level. 
+
+You have resistance to necrotic damage and radiant damage equal to 5 + one-half your level.
    </RulesElement>
   <RulesElement name="Goddesses' Favour" type="Racial Trait" internal-id="ID_MSR_RACIAL_TRAIT_HYLIAN_2" source="Christo's Zelda Races" revision-date="10/5/2010 1:47:14 PM">
     <specific name="Short Description"> You have the din's fire, farore's wind and nayru's love powers. You may only use one of these powers per encounter. </specific>
@@ -1071,7 +1073,7 @@ You have the din's fire, farore's wind and nayru's love powers. You may only use
     <rules>
       <select type="Skill Training" number="1"/>
     </rules>
-You gain training in one skill of your choice. 
+You gain training in one skill of your choice.
    </RulesElement>
   <RulesElement name="Din's Fate" type="Power" internal-id="ID_MSR_POWER_DINS_FATE" source="Christo's Zelda Races">
     <Category> ID_MSR_RACIAL_TRAIT_HYLIAN_2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_2,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
@@ -1104,7 +1106,7 @@ You may only use one Hylian Racial power per encounter.
     <specific name="Effect"> You may teleport up to your wisdom modifier + 1 squares. </specific>
     <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_HYLIAN_2 </specific>
-You may only use one Hylian Racial power per encounter.   
+You may only use one Hylian Racial power per encounter.
    </RulesElement>
   <RulesElement name="Naryu's Love" type="Power" internal-id="ID_MSR_POWER_NARYU_LOVE" source="Christo's Zelda Races">
     <Category> ID_MSR_RACIAL_TRAIT_HYLIAN_2,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
@@ -1118,7 +1120,7 @@ You may only use one Hylian Racial power per encounter.
     <specific name="Effect"> The next attack to hit you does no damage. You still suffer any other effects of the attack. </specific>
     <specific name="_Associated Feats"/>
     <specific name="_ParentFeature"> ID_MSR_RACIAL_TRAIT_HYLIAN_2 </specific>
-You may only use one Hylian Racial power per encounter.   
+You may only use one Hylian Racial power per encounter.
    </RulesElement>
   <RulesElement name="Hylian" type="CountsAsRace" internal-id="ID_INTERNAL_COUNTSASRACE_HYLIAN" source="Christo's Zelda Races">
     <specific name="_SupportsID"> ID_MSR_RACE_9994 </specific>
@@ -1169,7 +1171,7 @@ You may preform the Hand of Fate ritual at half the usual component cost, even i
       <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:longsword-shield"/>
       <statadd name="AC" value="+1" type="Feat" wearing="DUAL-WIELDING:bastard sword-shield"/>
     </rules>
-You have proficiency with shortswords, longswords, bastard swords and light shields and gain a +1 feat bonus to attack rolls and a +1 feat bonus to AC when wielding a short sword, long sword or bastard sword  and using a light shield. 
+You have proficiency with shortswords, longswords, bastard swords and light shields and gain a +1 feat bonus to attack rolls and a +1 feat bonus to AC when wielding a short sword, long sword or bastard sword  and using a light shield.
    </RulesElement>
   <RulesElement name="Improved Goddesses' Favour" type="Feat" internal-id="ID_MSR_FEAT_HYLIAN_3" source="Christo's Zelda Races">
     <Prereqs> Hylian race </Prereqs>
@@ -1191,7 +1193,7 @@ You may use two different hylian racial powers per encounter.
     <specific name="type"/>
     <specific name="Associated Power Info"/>
     <specific name="Associated Powers"/>
-All allies adjacent to you gain resist 3 necrotic and resist 3 radiant. The resistance increases to 5 at 11th level and 10 at 21st level.  
+All allies adjacent to you gain resist 3 necrotic and resist 3 radiant. The resistance increases to 5 at 11th level and 10 at 21st level.
    </RulesElement>
   <RulesElement name="Shared Healing" type="Feat" internal-id="ID_MSR_FEAT_HYLIAN_5" source="Christo's Zelda Races">
     <Prereqs> Hylian race </Prereqs>

@@ -1,22 +1,27 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>31-July-2011</Version>
+    <Version>1.1</Version>
     <Filename>99-remove-grab.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/Homebrew/99-remove-grab.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/Homebrew/99-remove-grab.txt</VersionAddress>
-  <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+  <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+</UpdateInfo>
 
 <!-- Disable Grab, Bull Rush and Opportunity Attacks -->
-<!-- 99-remove-grab.part, version 1.00 -->
-<!-- Original release: 31-July-2011; Last modified: 31-July-2011 -->
-<!-- Test compiled with CBLoader build V1.2.4.1 -->
+<!-- 99-remove-grab.part, version 1.1 -->
+<!-- Original release: 31-July-2011; Last modified: 3-November-2020 -->
+<!-- Test compiled with CBLoader build V1.4.5.1 -->
 
 <!-- Updated 31-July-2011 File released -->
+<!-- Updated 3-November-2020 Fixed RemoveNodes error -->
 
-<RemoveNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
-    <grant name="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" type="Power"/>
-    <grant name="ID_INTERNAL_POWER_GRAB_ATTACK" type="Power"/>
-    <grant name="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" type="Power"/>
-</RemoveNodes>
+<AppendNodes name="Level1Rules" type="Level1Rules" internal-id="ID_INTERNAL_LEVEL1RULES_LEVEL1RULES" source="Core">
+    <rules>
+      <drop name="ID_INTERNAL_POWER_BULL_RUSH_ATTACK" type="Power"/>
+      <drop name="ID_INTERNAL_POWER_GRAB_ATTACK" type="Power"/>
+      <drop name="ID_INTERNAL_POWER_OPPORTUNITY_ATTACK" type="Power"/>
+    </rules>
+</AppendNodes>
+
 </D20Rules>

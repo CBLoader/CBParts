@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.139</Version>
+		<Version>1.140</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
-	<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+		<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+	</UpdateInfo>
 	<!-- Feats -->
 	<!-- 09-feats.part, version 1.136 -->
 	<!-- Original release: 13-July-2011; Last modified: 5-May-2020 -->
@@ -59,6 +60,7 @@
  Updated 18-January-2014 Updated Disciple of Madness Feat
  Updated 5-May-2020 Arena fighter feat fixes.
  Updated 24-May-2020 More arena fighter feat fixes.
+ Updated 22-01-2021 Made Thirst for Blood functional.
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -5244,6 +5246,9 @@ You gain the following benefits and weaknesses.
 		<specific name="Special"/>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
+		<rules>
+			<replace power-replace="ID_FMP_POWER_13853:encounter,1+" />
+		</rules>
 Choose one of your encounter attack powers that has a level. You lose that power and gain blood drinker. Your blood drinker is also triggered if you hit an adjacent enemy with a melee at-will attack power.
 	</RulesElement>
 	<RulesElement name="Practiced Killer" type="Feat" internal-id="ID_FMP_FEAT_3615" source="Dragon Magazine 400">
@@ -8819,22 +8824,22 @@ When you slide an ally with your Virtue of Cunning, you can also slide an enemy 
 		<specific name="Associated Powers"/>
 When you grant an ally temporary hit points with your Virtue of Valor, that ally also gains a +2 bonus to the next damage roll he or she makes before the end of his or her next turn.
 	</RulesElement>
-<RulesElement name="Improved Majestic Word" type="Feat" internal-id="ID_FMP_FEAT_471" source="Player's Handbook 2" revision-date="8/27/2010 12:18:03 PM"> 
-		<Prereqs> Bard, majestic word power </Prereqs> 
-		<print-prereqs> Bard, majestic word power </print-prereqs> 
-		<specific name="Tier"> Heroic </specific> 
-		<specific name="Short Description"> Target of majestic word gains Cha modifier 
-temporary hp </specific> 
-		<specific name="Special"/> 
-		<specific name="type"/> 
-		<specific name="Associated Power Info"/> 
-		<specific name="Associated Powers"/> 
-		<rules> 
-			<modify name="Majestic Word" type="Power" Field="Improved Majestic Word" value="The target of the power gains temporary hit points equal to your Charisma modifier."/> 
-		</rules> 
-When you use majestic word, the target of the power gains temporary hit points 
-equal to your Charisma modifier. 
-</RulesElement> 
+<RulesElement name="Improved Majestic Word" type="Feat" internal-id="ID_FMP_FEAT_471" source="Player's Handbook 2" revision-date="8/27/2010 12:18:03 PM">
+		<Prereqs> Bard, majestic word power </Prereqs>
+		<print-prereqs> Bard, majestic word power </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Target of majestic word gains Cha modifier
+temporary hp </specific>
+		<specific name="Special"/>
+		<specific name="type"/>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+			<modify name="Majestic Word" type="Power" Field="Improved Majestic Word" value="The target of the power gains temporary hit points equal to your Charisma modifier."/>
+		</rules>
+When you use majestic word, the target of the power gains temporary hit points
+equal to your Charisma modifier.
+</RulesElement>
 	<RulesElement name="Rousing Voice" type="Feat" internal-id="ID_FMP_FEAT_472" source="Arcane Power" revision-date="8/27/2010 12:18:03 PM">
 		<Prereqs> Human, bard </Prereqs>
 		<print-prereqs> Human, bard </print-prereqs>
@@ -15188,7 +15193,7 @@ Add the bonus to AC granted by your Swordmage Warding to the necrotic resistance
         </rules>
 While you are wearing cloth armor, leather armor, or no armor, the bonus to AC from your Swordmage Warding increases by 1.
     </RulesElement>
-	
+
 	<RulesElement name="Infernal Clamor" type="Feat" internal-id="ID_FMP_FEAT_1144" source="Arcane Power" revision-date="8/27/2010 12:18:41 PM">
 		<Prereqs> Tiefling, bard </Prereqs>
 		<print-prereqs> Tiefling, bard </print-prereqs>
@@ -15542,21 +15547,21 @@ Once per encounter as a free action, you can use this stored power by expending 
 		<specific name="Associated Powers"/>
 While you wield a wand, your arcane powers ignore enemies' cover (but not superior cover).
 	</RulesElement>
-<RulesElement name="Majestic Rescue" type="Feat" internal-id="ID_FMP_FEAT_1182" source="Arcane Power" revision-date="8/27/2010 12:18:43 PM"> 
-		<Prereqs> 11th level, bard, majestic word power; Paragon Tier </Prereqs> 
-		<print-prereqs> 11th level, bard, majestic word power </print-prereqs> 
-		<specific name="Tier"> Paragon </specific> 
-		<specific name="Short Description"> Grant target of majestic word a saving 
-throw </specific> 
-		<specific name="Special"/> 
-		<specific name="type"/> 
-		<specific name="Associated Power Info"/> 
-		<specific name="Associated Powers"/> 
-		<rules> 
-			<modify name="Majestic Word" type="Power" Field="Majestic Rescue" value="The target of the power is granted a saving throw."/> 
-		</rules> 
-When you use majestic word, you can grant the target a saving throw in addition 
-to the other effects of the power. 
+<RulesElement name="Majestic Rescue" type="Feat" internal-id="ID_FMP_FEAT_1182" source="Arcane Power" revision-date="8/27/2010 12:18:43 PM">
+		<Prereqs> 11th level, bard, majestic word power; Paragon Tier </Prereqs>
+		<print-prereqs> 11th level, bard, majestic word power </print-prereqs>
+		<specific name="Tier"> Paragon </specific>
+		<specific name="Short Description"> Grant target of majestic word a saving
+throw </specific>
+		<specific name="Special"/>
+		<specific name="type"/>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+			<modify name="Majestic Word" type="Power" Field="Majestic Rescue" value="The target of the power is granted a saving throw."/>
+		</rules>
+When you use majestic word, you can grant the target a saving throw in addition
+to the other effects of the power.
 </RulesElement>
 	<RulesElement name="Prescient Aid" type="Feat" internal-id="ID_FMP_FEAT_1183" source="Arcane Power" revision-date="8/27/2010 12:18:43 PM">
 		<Prereqs> 11th level, bard, Virtue of Prescience class feature; Paragon Tier </Prereqs>
@@ -43104,7 +43109,7 @@ When you ride a creature, you gain access to any special mount abilities it conf
 			<statadd name="ID_INTERNAL_POWER_RANGED_BASIC_ATTACK:attack" value="+3" type="feat" requires="21 Level"/>
 			<select type="Class Feature" number="1" Category="White Lotus Dueling Expertise">
 White Lotus Dueling Expertise: Choose Implement Proficiency
-			</select>	
+			</select>
 		</rules>
 You gain a +1 feat bonus to the attack rolls of arcane powers and basic attacks that you make with any weapon or implement with which you have proficiency. This bonus increases to +2 at 11th level and +3 at 21st level.
 	You also gain proficiency with orbs, rods, staffs, or wands.
@@ -43165,7 +43170,7 @@ You gain proficiency with the Wand implement.
 			<statadd name="implement,crossbow group:attack" value="+1" type="Feat"/>
 			<statadd name="implement,crossbow group:attack" value="+2" type="Feat" requires="11 Level"/>
 			<statadd name="implement,crossbow group:attack" value="+3" type="Feat" requires="21 Level"/>
-		</rules>	
+		</rules>
 You gain a +1 feat bonus to attack rolls that you make with a crossbow or a wand. This bonus increases to +2 at 11th level and +3 at 21st level.
 	You can also draw or stow a wand once per round as a free action on your turn, and you can load a crossbow as a free action.
 	</RulesElement>
@@ -43189,7 +43194,7 @@ You gain a +1 feat bonus to attack rolls that you make with a crossbow or a wand
 			<statadd name="weapon:attack" value="+1" type="feat"/>
 			<statadd name="weapon:attack" value="+2" type="feat" requires="11 Level"/>
 			<statadd name="weapon:attack" value="+3" type="feat" requires="21 Level"/>
-		</rules>	
+		</rules>
 You gain a +1 feat bonus to attack rolls you make with any weapon with which you have proficiency and with a wand or another item designated as a bard implement. This bonus increases to +2 at 11th level and +3 at 21st level.
 	You also gain a +1 feat bonus to the number of squares that you can pull, push, or slide creatures with your bard attacks and bard paragon path attacks.
 	</RulesElement>
@@ -43234,7 +43239,7 @@ You gain a +1 feat bonus to weapon attack rolls you make with any one-handed mel
 			<statadd name="melee basic,light blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
 			<statadd name="ranged basic,heavy blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
 			<statadd name="ranged basic,light blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
-		</rules>	
+		</rules>
 You gain a +1 feat bonus to the attack rolls of arcane powers and basic attacks that you make with a light blade or a heavy blade. This bonus increases to +2 at 11th level and +3 at 21st level.
 	Also, when you use an arcane attack power with a light blade or a heavy blade, your attack rolls take a -5 penalty against your allies.
 	</RulesElement>
@@ -43409,7 +43414,7 @@ When you use power strike with a staff, the target grants combat advantage until
 			<statadd name="two-hands:attack" value="+1" type="Feat"/>
 			<statadd name="two-hands:attack" value="+2" type="Feat" requires="11 level"/>
 			<statadd name="two-hands:attack" value="+3" type="Feat" requires="21 level"/>
-		</rules>	
+		</rules>
 You gain a +1 feat bonus to weapon attack rolls you make with any two-handed melee weapon and a +1 feat bonus to implement attack rolls you make with holy symbols. These bonuses increase to +2 at 11th level and +3 at 21st level.
 	In addition, while you wield a two-handed melee weapon, ranged and area attacks you make with a holy symbol do not provoke opportunity attacks.</RulesElement>
 	<RulesElement name="Arcane Trapsmith" type="Feat" internal-id="ID_FMP_FEAT_3640" source="Dragon Magazine 403">
@@ -45142,7 +45147,7 @@ You gain a +2 feat bonus to Endurance checks and Intimidate checks.
 		<specific name="Tier"> Heroic </specific>
 		<rules>
 			<statadd name="Burning Vapors" value="+3"/>
-			<statadd name="Burning Vapors" value="+1" requires="Epic Tier"/>		
+			<statadd name="Burning Vapors" value="+1" requires="Epic Tier"/>
 			<statadd name="acid:damage" value="+Burning Vapors" type="Feat"/>
 		</rules>
 You gain a +3 feat bonus to acid damage rolls. This bonus increases to +4 at 21st level.
@@ -45445,7 +45450,7 @@ You swap a utility power that is at least 6th level for the elemental vengeance 
 		<specific name="Tier"> Heroic </specific>
 		<rules>
 			<statadd name="Fiery Blood" value="+3"/>
-			<statadd name="Fiery Blood" value="+1" requires="Epic Tier"/>		
+			<statadd name="Fiery Blood" value="+1" requires="Epic Tier"/>
 			<statadd name="fire:damage" value="+Fiery Blood" type="Feat"/>
 		</rules>
 You gain a +3 feat bonus to fire damage rolls. This bonus increases to +4 at 21st level.
@@ -45477,7 +45482,7 @@ You gain resist 5 fire. This resistance increases to 10 at 11th level and 15 at 
 		<specific name="Tier"> Heroic </specific>
 		<rules>
 			<statadd name="Icy Heart" value="+3"/>
-			<statadd name="Icy Heart" value="+1" requires="Epic Tier"/>		
+			<statadd name="Icy Heart" value="+1" requires="Epic Tier"/>
 			<statadd name="cold:damage" value="+Icy Heart" type="Feat"/>
 		</rules>
 You gain a +3 feat bonus to cold damage rolls. This bonus increases to +4 at 21st level.
@@ -45491,7 +45496,7 @@ You gain a +3 feat bonus to cold damage rolls. This bonus increases to +4 at 21s
 		<specific name="Tier"> Heroic </specific>
 		<rules>
 			<statadd name="Lightning Soul" value="+3"/>
-			<statadd name="Lightning Soul" value="+1" requires="Epic Tier"/>		
+			<statadd name="Lightning Soul" value="+1" requires="Epic Tier"/>
 			<statadd name="lightning:damage" value="+Lightning Soul" type="Feat"/>
 		</rules>
 You gain a +3 feat bonus to lightning damage rolls. This bonus increases to +4 at 21st level.
@@ -45525,7 +45530,7 @@ You can shift through enemies' spaces.
 		<specific name="Tier"> Heroic </specific>
 		<rules>
 			<statadd name="Thunder's Rumble" value="+3"/>
-			<statadd name="Thunder's Rumble" value="+1" requires="Epic Tier"/>		
+			<statadd name="Thunder's Rumble" value="+1" requires="Epic Tier"/>
 			<statadd name="thunder:damage" value="+Thunder's Rumble" type="Feat"/>
 		</rules>
 You gain a +3 feat bonus to thunder damage rolls. This bonus increases to +4 at 21st level.
@@ -45606,7 +45611,7 @@ You gain a +1 feat bonus to attack and damage rolls when you use an arcane power
 	<RulesElement name="Dragon's Indomitability" type="Feat" internal-id="ID_FMP_FEAT_3751" source="Dungeon Survival Handbook">
 		<Prereqs> Kobold </Prereqs>
 		<print-prereqs> Kobold </print-prereqs>
-		<Flavor> You're not entirely fearless, but you try to follow the example of the great dragons. </Flavor>	
+		<Flavor> You're not entirely fearless, but you try to follow the example of the great dragons. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Roll twice and use either result against daze or stun </specific>
 		<specific name="Special"/>
@@ -45618,7 +45623,7 @@ You can roll two dice and use either result when making saving throws against ef
 	<RulesElement name="Eldritch Momentum" type="Feat" internal-id="ID_FMP_FEAT_3752" source="Dungeon Survival Handbook">
 		<Prereqs> Kobold, Warlock, Warlock's Curse class feature </Prereqs>
 		<print-prereqs> Kobold, Warlock, Warlock's Curse class feature </print-prereqs>
-		<Flavor> In the kobold tradition, warlocks learn to warp arcane energy with their movement and use it to break through enemies' defenses. Your attacks zig and zag in an unpredictable fashion that catches enemies off guard. </Flavor>	
+		<Flavor> In the kobold tradition, warlocks learn to warp arcane energy with their movement and use it to break through enemies' defenses. Your attacks zig and zag in an unpredictable fashion that catches enemies off guard. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Move 3 squares+ to gain combat advantage vs cursed foes </specific>
 		<specific name="Special"/>
@@ -45630,7 +45635,7 @@ If you move at least 3 squares away from where you started your turn, you gain c
 	<RulesElement name="Kobold in a Corner" type="Feat" internal-id="ID_FMP_FEAT_3753" source="Dungeon Survival Handbook">
 		<Prereqs> Kobold </Prereqs>
 		<print-prereqs> Kobold </print-prereqs>
-		<Flavor> Getting trapped in a dead end and surrounded is the worst danger a kobold can face. When enemies surround you, your instincts to escape kick in, and you fight back angrily. </Flavor>	
+		<Flavor> Getting trapped in a dead end and surrounded is the worst danger a kobold can face. When enemies surround you, your instincts to escape kick in, and you fight back angrily. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> +1/+2/+3 (by tier) to damage vs foes with combat advantage against you </specific>
 		<specific name="Special"/>
@@ -45642,13 +45647,13 @@ If you move at least 3 squares away from where you started your turn, you gain c
 			<statadd name="Kobold in a Corner" value="+1" requires="Paragon Tier"/>
 			<statadd name="Kobold in a Corner" value="+1" requires="Epic Tier"/>
 			<statadd name="damage rolls" value="+Kobold in a Corner" type="Feat" condition="against creatures that have combat advantage against you."/>
-		</rules> 	
+		</rules>
 You gain a +1 bonus to damage rolls against creatures that have combat advantage against you. This bonus increases to +2 at 11th level and +3 at 21st level.
 	</RulesElement>
 	<RulesElement name="Shiftier Maneuver" type="Feat" internal-id="ID_FMP_FEAT_3754" source="Dungeon Survival Handbook">
 		<Prereqs> Kobold, shifty maneuver racial power </Prereqs>
 		<print-prereqs> Kobold, shifty maneuver racial power </print-prereqs>
-		<Flavor> Carefully skulking around the battlefield is the kobold way to victory, and everyone in the tribe should be good at it. Your expertise is infectious. </Flavor>	
+		<Flavor> Carefully skulking around the battlefield is the kobold way to victory, and everyone in the tribe should be good at it. Your expertise is infectious. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> 1 target can shift 2 extra squares </specific>
 		<specific name="Special"/>
@@ -45657,13 +45662,13 @@ You gain a +1 bonus to damage rolls against creatures that have combat advantage
 		<specific name="Associated Powers"/>
 		<rules>
 			<modify name="ID_FMP_POWER_2479" type="Power" Field="Shiftier Maneuver" value="When you use shifty maneuver, one target of the power can shift up to 2 extra squares."/>
-		</rules> 	
+		</rules>
 When you use shifty maneuver, one target of the power can shift up to 2 extra squares.
 	</RulesElement>
 	<RulesElement name="Trapbuster" type="Feat" internal-id="ID_FMP_FEAT_3755" source="Dungeon Survival Handbook">
 		<Prereqs> Kobold, You must have training in Thievery. </Prereqs>
 		<print-prereqs> Kobold, training in Thievery </print-prereqs>
-		<Flavor> You understand the mechanisms used in all sorts of traps, and your ability to disarm them is second to none. </Flavor>	
+		<Flavor> You understand the mechanisms used in all sorts of traps, and your ability to disarm them is second to none. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Roll twice to detect traps &amp; never trigger traps </specific>
 		<specific name="Special"/>
@@ -45687,7 +45692,7 @@ You can roll two dice and use either result when you make a Perception check to 
 	<RulesElement name="Improved Flock Tactics" type="Feat" internal-id="ID_FMP_FEAT_3761" source="Dragon Magazine 411">
 		<Prereqs> Kenku, flock tactics racial power </Prereqs>
 		<print-prereqs> Kenku, flock tactics racial power </print-prereqs>
-		<Flavor> In the company of allies you are a deadly menace. </Flavor>	
+		<Flavor> In the company of allies you are a deadly menace. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Also gain +3 to damage rolls </specific>
 		<specific name="Special"/>
@@ -45696,13 +45701,13 @@ You can roll two dice and use either result when you make a Perception check to 
 		<specific name="Associated Powers"/>
 		<rules>
 			<modify name="ID_FMP_POWER_16541" type="Power" Field="Improved Flock Tactics" value="When your flock tactics power causes an enemy to grant combat advantage to you, you also gain a +3 feat bonus to damage rolls against that enemy until the start of your next turn. When you use your flock tactics power to take the aid attack action, your ally gains combat advantage with his or her next attack against the chosen enemy, instead of gaining the bonus from the aid attack action."/>
-		</rules> 	
+		</rules>
 When your flock tactics power causes an enemy to grant combat advantage to you, you also gain a +3 feat bonus to damage rolls against that enemy until the start of your next turn. When you use your flock tactics power to take the aid attack action, your ally also gains combat advantage on his or her next attack against the chosen enemy.
 	</RulesElement>
 	<RulesElement name="Kenku Ventriloquist" type="Feat" internal-id="ID_FMP_FEAT_3762" source="Dragon Magazine 411">
 		<Prereqs> Kenku, You must have training in Bluff. </Prereqs>
 		<print-prereqs> Kenku, trained in Bluff </print-prereqs>
-		<Flavor> You mix magic with verse and song, elevating your mundane ability to mimic sounds and voices. </Flavor>	
+		<Flavor> You mix magic with verse and song, elevating your mundane ability to mimic sounds and voices. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Change mimicry origin square </specific>
 		<specific name="Special"/>
@@ -45715,7 +45720,7 @@ When you speak or use your Mimicry racial feature, you can make the sound seem t
 	<RulesElement name="Ankle Biter" type="Feat" internal-id="ID_FMP_FEAT_3745" source="Dungeon Survival Handbook">
 		<Prereqs> Goblin race </Prereqs>
 		<print-prereqs> Goblin </print-prereqs>
-		<Flavor> Many things are bigger than goblins-many dangerous things.  You learn from infancy how to get in every little attack you can against those big brutes. </Flavor>	
+		<Flavor> Many things are bigger than goblins-many dangerous things.  You learn from infancy how to get in every little attack you can against those big brutes. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> +1/+2/+3 bonus to damage against larger creatures.  Crit against larger creatures deals 1d6 extra damage. </specific>
 		<specific name="Special"/>
@@ -45733,7 +45738,7 @@ You gain a +1 feat bonus to damage rolls against creatures larger than you.  Thi
 	<RulesElement name="Desperate Goblin Tactics" type="Feat" internal-id="ID_FMP_FEAT_3746" source="Dungeon Survival Handbook">
 		<Prereqs> Goblin, ID_FMP_RACIAL_TRAIT_714 </Prereqs>
 		<print-prereqs> Goblin, goblin tactics racial power </print-prereqs>
-		<Flavor> Panic takes over when you're near death, and you rush away from the fray even faster than usual. </Flavor>	
+		<Flavor> Panic takes over when you're near death, and you rush away from the fray even faster than usual. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Shift 2 extra sqaures with goblin tactics while bloodied. </specific>
 		<specific name="Special"/>
@@ -45748,7 +45753,7 @@ When you use goblin tactics while bloodied, you can shift up to 2 extra squares.
 	<RulesElement name="Goblin Feint" type="Feat" internal-id="ID_FMP_FEAT_3747" source="Dungeon Survival Handbook">
 		<Prereqs> Goblin, ID_FMP_RACIAL_TRAIT_714 </Prereqs>
 		<print-prereqs> Goblin, goblin tactics racial power </print-prereqs>
-		<Flavor> The big folk think they can smash a little goblin easily.  You know how to use their mistakes against them by sneaking past their guard when they try to attack you. </Flavor>	
+		<Flavor> The big folk think they can smash a little goblin easily.  You know how to use their mistakes against them by sneaking past their guard when they try to attack you. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Gain CA against enemy that triggered goblin tactics until end of next turn. </specific>
 		<specific name="Special"/>
@@ -45763,7 +45768,7 @@ When you use goblin tactics while bloodied, you can shift up to 2 extra squares.
 	<RulesElement name="Shadowcreeper" type="Feat" internal-id="ID_FMP_FEAT_3748" source="Dungeon Survival Handbook">
 		<Prereqs> Goblin, assassin, ID_FMP_RACIAL_TRAIT_714 </Prereqs>
 		<print-prereqs> Goblin, assassin, goblin tactics racial power </print-prereqs>
-		<Flavor> When you dash away from an attack, you take to the shadows.  A dash through the darkness leaves you protected in shadow and better set up to strike. </Flavor>	
+		<Flavor> When you dash away from an attack, you take to the shadows.  A dash through the darkness leaves you protected in shadow and better set up to strike. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Sbift 1 extra square and gain concealment until end of next turn with goblin tactics. </specific>
 		<specific name="Special"/>
@@ -45778,7 +45783,7 @@ When you use goblin tactics, you can shift 1 extra square, and you gain partial 
 	<RulesElement name="Sneaky Stabber" type="Feat" internal-id="ID_FMP_FEAT_3749" source="Dungeon Survival Handbook">
 		<Prereqs> Goblin race, rogue, Sneak Attack class feature </Prereqs>
 		<print-prereqs> Goblin, rogue, Sneak Attack class feature </print-prereqs>
-		<Flavor> You know how to attack from a low angle to do the most damage to a bigger creature.  Being below notice makes it easy to get at vulnerable points. </Flavor>	
+		<Flavor> You know how to attack from a low angle to do the most damage to a bigger creature.  Being below notice makes it easy to get at vulnerable points. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Brutal 1 Sneak Attack when creature is adjacent. </specific>
 		<specific name="Special"/>
@@ -45790,7 +45795,7 @@ When you deal Sneak Attack damage to a creature adjacent to you, you can reroll 
 	<RulesElement name="Wrist Biter" type="Feat" internal-id="ID_FMP_FEAT_3750" source="Dungeon Survival Handbook">
 		<Prereqs> Goblin, ID_FMP_RACIAL_TRAIT_714 </Prereqs>
 		<print-prereqs> Goblin, goblin tactics racial power </print-prereqs>
-		<Flavor> When you slip away from an attacker, you can't help but get in one last jab.  Your quick retaliation might not hurt much, but as the old goblin saying goes, "Death by a thousand cuts is the best kind of death." </Flavor>	
+		<Flavor> When you slip away from an attacker, you can't help but get in one last jab.  Your quick retaliation might not hurt much, but as the old goblin saying goes, "Death by a thousand cuts is the best kind of death." </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Deal 1d4/2d4/3d4 damage to adjacent creature with goblin tactics. </specific>
 		<specific name="Special"/>
@@ -45806,7 +45811,7 @@ When you deal Sneak Attack damage to a creature adjacent to you, you can reroll 
 	<RulesElement name="Crew Savvy" type="Feat" internal-id="ID_FMP_FEAT_3756" source="Dungeon Survival Handbook">
 		<Prereqs> Svirfneblin, you must have training in Athletics </Prereqs>
 		<print-prereqs> Svirfneblin, training in Athletics </print-prereqs>
-		<Flavor> As a member of a mining crew, you learned how to use teamwork when delving. </Flavor>	
+		<Flavor> As a member of a mining crew, you learned how to use teamwork when delving. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> +3 to Athletics to climb.  Ally gains +2 when you use Dungeoneering or Athletics. </specific>
 		<specific name="Special"/>
@@ -45818,7 +45823,7 @@ You gain a +3 feat bonus to Athletics checks to climb.  In addition, whenever yo
 	<RulesElement name="Deep Durability" type="Feat" internal-id="ID_FMP_FEAT_3757" source="Dungeon Survival Handbook">
 		<Prereqs> Svirfneblin, Warden, stone camouflage racial feature </Prereqs>
 		<print-prereqs> Svirfneblin, Warden, stone camouflage racial power </print-prereqs>
-		<Flavor> The primal spirits of earth and stone recognize you as their protector, and they shield you. </Flavor>	
+		<Flavor> The primal spirits of earth and stone recognize you as their protector, and they shield you. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Gain additional temp. hit points with stone camouflage with enemies marked. </specific>
 		<specific name="Special"/>
@@ -45833,7 +45838,7 @@ When you use stone camouflage, you gain 3 additional temporary hit points for ea
 	<RulesElement name="Deepstone Blessing" type="Feat" internal-id="ID_FMP_FEAT_3758" source="Dungeon Survival Handbook">
 		<Prereqs> Svirfneblin, Cleric, healing word power </Prereqs>
 		<print-prereqs> Svirfneblin, Cleric, Healing Word power </print-prereqs>
-		<Flavor> Since svirfneblin first learn to heal their own kin, their prayers confer distinct blessings.  Anyone healed by a svirfneblin prayer feels his or her skin toughen and turn stony for a brief time. </Flavor>	
+		<Flavor> Since svirfneblin first learn to heal their own kin, their prayers confer distinct blessings.  Anyone healed by a svirfneblin prayer feels his or her skin toughen and turn stony for a brief time. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Ally healed with healing word gains CON mod. temp. hit points. </specific>
 		<specific name="Special"/>
@@ -45848,7 +45853,7 @@ When you use healing word, the target also gains temporary hit points equal to y
 	<RulesElement name="Fade to Gray" type="Feat" internal-id="ID_FMP_FEAT_3759" source="Dungeon Survival Handbook">
 		<Prereqs> Svirfneblin, stone camouflage racial feature </Prereqs>
 		<print-prereqs> Svirfneblin, stone camouflage racial power </print-prereqs>
-		<Flavor> The gnomes who live above have a stronger affinity for illusion than svirfneblin do.  You're one of the few deep gnomes with a greater connection to such magic, than to the magic of stone and earth. </Flavor>	
+		<Flavor> The gnomes who live above have a stronger affinity for illusion than svirfneblin do.  You're one of the few deep gnomes with a greater connection to such magic, than to the magic of stone and earth. </Flavor>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Turn invisible if attack hits you while stone camouflage is active. </specific>
 		<specific name="Special"/>
@@ -46114,7 +46119,7 @@ You gain echoing dirge and shadow warp as encounter powers.
 		</rules>
 You gain thidden lore and mind shadows as encounter powers.
 	</RulesElement>
-	<!-- Dragon Magazine 412 Feats -->	
+	<!-- Dragon Magazine 412 Feats -->
 	<RulesElement name="Chauntea's Comfort" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_412-1" source="Dragon Magazine 412">
 		<Prereqs> Must worship Chauntea </Prereqs>
 		<print-prereqs> Must worship Chauntea </print-prereqs>
@@ -46240,7 +46245,7 @@ You can invoke the power of your deity to use Forest Father's Grasp.
 		<specific name="Special"> You can use only one channel divinity power per encounter. </specific>
 		<specific name="Power Type"> Attack </specific>
 	</RulesElement>
-	
+
 	<RulesElement name="Stalking Panther Form" type="Feat" internal-id="ID_FMP_FEAT_553" source="Player's Handbook 2" revision-date="8/27/2010 12:18:05 PM">
 		<Prereqs> 11th level, druid, wild shape power; Paragon Tier </Prereqs>
 		<print-prereqs> 11th level, druid, wild shape power </print-prereqs>
@@ -46263,7 +46268,7 @@ While you are in beast form, you gain a +5 feat bonus to Stealth checks and a +4
 <RulesElement name="Goblinoid Mount Training" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-1" source="Dragon Magazine 419">
 	<Prereqs> Goblin or Hobgoblin </Prereqs>
 	<print-prereqs> Goblin or Hobgoblin Race </print-prereqs>
-	<Flavor> None doubt the goblinoids' ability to form tight bonds with mounts. </Flavor>	
+	<Flavor> None doubt the goblinoids' ability to form tight bonds with mounts. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> When you ride a friendly mount, it can use your defenses in place of its own, and it can make Acrobatics, Athletics, Endurance, or Stealth checks using your modifiers. (not including any temporary bonuses or penalties) </specific>
 	<specific name="Special"/>
@@ -46277,7 +46282,7 @@ When you ride a friendly mount, the creature can use your defenses in place of i
 <RulesElement name="Hobgoblin Beast Companion" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-2" source="Dragon Magazine 419">
 	<Prereqs> Hobgoblin, Ranger, Beast Companion class feature, ID_TIV_RACIAL_TRAIT_DRAGON_419-3 </Prereqs>
 	<print-prereqs> Hobgoblin, Ranger, Beast Companion class feature, Hobgoblin Discipline Racial Power </print-prereqs>
-	<Flavor> Your ability to brush aside effects that would harm you extends to your companion animal. </Flavor>	
+	<Flavor> Your ability to brush aside effects that would harm you extends to your companion animal. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> When you use hobgoblin discipline and your beast companion is adjacent to you, you can also end one effect a save can end affecting your beast companion; your beast companion gains a +1 feat bonus to all defenses while it is adjacent to you. </specific>
 	<specific name="Special"/>
@@ -46297,7 +46302,7 @@ When you use hobgoblin discipline and your beast companion is adjacent to you, y
 <RulesElement name="Hobgoblin Phalanx Soldier" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-3" source="Dragon Magazine 419">
 	<Prereqs> Strength 13, hobgoblin </Prereqs>
 	<print-prereqs> Strength 13, Hobgoblin </print-prereqs>
-	<Flavor> Hobgoblins favor the phalanx formation above all others. Wielding spear and shield, hobgoblins can protect themselves and their neighbors while marching forward to impale their enemies. </Flavor>	
+	<Flavor> Hobgoblins favor the phalanx formation above all others. Wielding spear and shield, hobgoblins can protect themselves and their neighbors while marching forward to impale their enemies. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> Gain proficiency with all shields; 	ignore the check penalty for wearing a shield. </specific>
 	<specific name="Special"/>
@@ -46307,7 +46312,7 @@ When you use hobgoblin discipline and your beast companion is adjacent to you, y
 		<rules>
 			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(HEAVY)" type="Proficiency"/>
 			<grant name="ID_INTERNAL_PROFICIENCY_SHIELD_PROFICIENCY_(LIGHT)" type="Proficiency"/>
-			<statadd name="Armor Penalty" value="0" type="Heavy Shields"/>  
+			<statadd name="Armor Penalty" value="0" type="Heavy Shields"/>
 			<statadd name="Armor Penalty" value="0" type="Light Shields"/>
 		</rules>
 You gain proficiency with all shields.
@@ -46317,7 +46322,7 @@ You gain proficiency with all shields.
 <RulesElement name="Hobgoblin Weapon Training" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-4" source="Dragon Magazine 419">
 	<Prereqs> Hobgoblin </Prereqs>
 	<print-prereqs> Hobgoblin </print-prereqs>
-	<Flavor> The focus on mastery at arms, warfare, and conquest gives hobgoblins ample opportunity to hone their weapon skills. Of all the various weapons hobgoblins use, flails and spears are the most common. </Flavor>	
+	<Flavor> The focus on mastery at arms, warfare, and conquest gives hobgoblins ample opportunity to hone their weapon skills. Of all the various weapons hobgoblins use, flails and spears are the most common. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> Gain proficiency with flails and spears; gain a +2 feat bonus to the damage rolls of weapon attacks that you make using flails and spears. (increases to +3 at 11th and +4 at 21st) </specific>
 	<specific name="Special"/>
@@ -46333,9 +46338,9 @@ You gain proficiency with all shields.
 			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(HEAVY_FLAIL)" type="Proficiency"/>
 			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(TRIPLE-HEADED_FLAIL)" type="Proficiency"/>
 			<grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DOUBLE_FLAIL)" type="Proficiency"/>
-			<statadd name="Hobgoblin Weapon Training" value="+2"/>  
-			<statadd name="Hobgoblin Weapon Training" value="+1" requires="11 level"/>  
-			<statadd name="Hobgoblin Weapon Training" value="+1" requires="21 level"/>  
+			<statadd name="Hobgoblin Weapon Training" value="+2"/>
+			<statadd name="Hobgoblin Weapon Training" value="+1" requires="11 level"/>
+			<statadd name="Hobgoblin Weapon Training" value="+1" requires="21 level"/>
 			<statadd name="Flail group:damage" value="+Hobgoblin Weapon Training" type="Feat"/>
 			<statadd name="Spear group:damage" value="+Hobgoblin Weapon Training" type="Feat"/>
 		</rules>
@@ -46346,7 +46351,7 @@ You gain proficiency with all flails and spears.
 <RulesElement name="Phalanx Advance" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-5" source="Dragon Magazine 419">
 	<Prereqs> Hobgoblin, bard, Virtue of Valor class feature </Prereqs>
 	<print-prereqs> Hobgoblin, Bard, Virtue of Valor class feature </print-prereqs>
-	<Flavor> On the battlefield, hobgoblin bards beat drums and bark chants to help soldiers march at the same pace and maintain their formations. </Flavor>	
+	<Flavor> On the battlefield, hobgoblin bards beat drums and bark chants to help soldiers march at the same pace and maintain their formations. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> Virtue of Valor allows you and each ally adjacent to you to shift 1 square as a free action. (Allies must end the shift in a square adjacent to you) </specific>
 	<specific name="Special"/>
@@ -46359,7 +46364,7 @@ When you use your Virtue of Valor class feature, you and each ally adjacent to y
 <RulesElement name="Warcaster Tactics" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-6" source="Dragon Magazine 419">
 	<Prereqs> Hobgoblin, any arcane class </Prereqs>
 	<print-prereqs> Hobgoblin and any arcane class </print-prereqs>
-	<Flavor> Hobgoblin warcasters employ magical attacks to destroy and scatter their enemies. A warcaster's destructive spells sometimes cause casualties among allied soldiers. You learn better control over your magic and can bend its effects away from an ally. </Flavor>	
+	<Flavor> Hobgoblin warcasters employ magical attacks to destroy and scatter their enemies. A warcaster's destructive spells sometimes cause casualties among allied soldiers. You learn better control over your magic and can bend its effects away from an ally. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> You can omit one square adjacent to you from the area of effect of any arcane close blast or burst power you use. </specific>
 	<specific name="Special"/>
@@ -46372,7 +46377,7 @@ You can omit one square adjacent to you from the area of effect of any arcane cl
 <RulesElement name="Warrior's Sacrifice" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-7" source="Dragon Magazine 419">
 	<Prereqs> Hobgoblin, ID_TIV_POWER_DRAGON_419-1 </Prereqs>
 	<print-prereqs> Hobgoblin and Discipline racial power </print-prereqs>
-	<Flavor> Hobgoblin warriors eat together, rest together, fight together, and die together. A shout and a shove is enough to remind their fellow warriors of the cause for which they fight. </Flavor>	
+	<Flavor> Hobgoblin warriors eat together, rest together, fight together, and die together. A shout and a shove is enough to remind their fellow warriors of the cause for which they fight. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> As a free action on your turn, you can expend your hobgoblin discipline power to allow an ally adjacent to you to make a saving throw. </specific>
 	<specific name="Special"/>
@@ -46380,7 +46385,7 @@ You can omit one square adjacent to you from the area of effect of any arcane cl
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
 		<rules>
-            <modify name="Hobgoblin Discipline" type="Power" Field="Warrior's Sacrifice" value="As a free action on your turn, you can expend your hobgoblin discipline power to allow an ally adjacent to you to make a saving throw."/>  			
+            <modify name="Hobgoblin Discipline" type="Power" Field="Warrior's Sacrifice" value="As a free action on your turn, you can expend your hobgoblin discipline power to allow an ally adjacent to you to make a saving throw."/>
         </rules>
 As a free action on your turn, you can expend your hobgoblin discipline power to allow an ally adjacent to you to make a saving throw.
 </RulesElement>
@@ -46389,7 +46394,7 @@ As a free action on your turn, you can expend your hobgoblin discipline power to
 <RulesElement name="Bladed Fists" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-8" source="Dragon Magazine 419">
 	<Prereqs> Bladeling </Prereqs>
 	<print-prereqs> Bladeling </print-prereqs>
-	<Flavor> You cultivate the blades growing on the backs of your hands, keeping them honed to ensure that you are never without a bladed weapon. </Flavor>	
+	<Flavor> You cultivate the blades growing on the backs of your hands, keeping them honed to ensure that you are never without a bladed weapon. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> Your unarmed attack deals 1d6 damage; Gain a +2 proficiency bonus to attack rolls you make with unarmed attacks. </specific>
 	<specific name="Special"/>
@@ -46398,8 +46403,8 @@ As a free action on your turn, you can expend your hobgoblin discipline power to
 	<specific name="Associated Powers"/>
 		<rules>
             <textstring name="Unarmed Damage Die" value="1d6"/>
-			<modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d6"/> 
-			<statadd name="Unarmed group:attack" value="+2" type="proficiency"/> 			
+			<modify name="Unarmed attack" type="Weapon" Field="Damage" value="1d6"/>
+			<statadd name="Unarmed group:attack" value="+2" type="proficiency"/>
         </rules>
 Your unarmed attack deals 1d6 damage.
 	In addition, you gain a +2 proficiency bonus to attack rolls you make with unarmed attacks.
@@ -46408,7 +46413,7 @@ Your unarmed attack deals 1d6 damage.
 <RulesElement name="Bladed Stalker" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-9" source="Dragon Magazine 419">
 	<Prereqs> Bladeling, Bladed Fists feat </Prereqs>
 	<print-prereqs> Bladeling and Bladed Fists feat </print-prereqs>
-	<Flavor> Through subtlety and underhanded strikes, you can make the most of your natural weaponry. </Flavor>	
+	<Flavor> Through subtlety and underhanded strikes, you can make the most of your natural weaponry. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> Your unarmed attack gains the high crit weapon property. </specific>
 	<specific name="Special"/>
@@ -46422,7 +46427,7 @@ Your unarmed attack gains the high crit weapon property.
 <RulesElement name="Brutal Blades" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-10" source="Dragon Magazine 419">
 	<Prereqs> Bladeling, razor storm racial power </Prereqs>
 	<print-prereqs> Bladeling and Razor Storm racial power </print-prereqs>
-	<Flavor> You keep the blades on your body razor-sharp. </Flavor>	
+	<Flavor> You keep the blades on your body razor-sharp. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> Your unarmed attack gains the off-hand weapon property; your razor storm power damage dice increases to d8s </specific>
 	<specific name="Special"/>
@@ -46430,7 +46435,7 @@ Your unarmed attack gains the high crit weapon property.
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
 		<rules>
-            <modify name="Razor Storm" type="Power" Field="Hit" value="1d8 + Strength, Constitution, or Dexterity modifier damage. Level 11: 2d8 + Strength, Constitution, or Dexterity modifier damage. Level 21: 3d8 + Strength, Constitution, or Dexterity modifier damage."/>  			
+            <modify name="Razor Storm" type="Power" Field="Hit" value="1d8 + Strength, Constitution, or Dexterity modifier damage. Level 11: 2d8 + Strength, Constitution, or Dexterity modifier damage. Level 21: 3d8 + Strength, Constitution, or Dexterity modifier damage."/>
         </rules>
 Your unarmed attack gains the off-hand weapon property.
 	In addition, the damage dice for your razor storm power increase from d6s to d8s.
@@ -46439,7 +46444,7 @@ Your unarmed attack gains the off-hand weapon property.
 <RulesElement name="Improved Razor Storm" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_419-11" source="Dragon Magazine 419">
 	<Prereqs> Bladeling, razor storm racial power </Prereqs>
 	<print-prereqs> Bladeling and Razor Storm racial power </print-prereqs>
-	<Flavor> You achieve such a mastery over the blades covering your body that you can cause them to burst outward with greater force. </Flavor>	
+	<Flavor> You achieve such a mastery over the blades covering your body that you can cause them to burst outward with greater force. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> The size of the burst created by your razor storm power increases by 1;whenever you score a critical hit using your razor storm power, the target also takes ongoing 5 damage (save ends). </specific>
 	<specific name="Special"/>
@@ -46447,7 +46452,7 @@ Your unarmed attack gains the off-hand weapon property.
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
 		<rules>
-            <modify name="Razor Storm" type="Power" Field="Attack Type" value="Close burst 2"/>			
+            <modify name="Razor Storm" type="Power" Field="Attack Type" value="Close burst 2"/>
         </rules>
 The size of the burst created by your razor storm power increases by 1.
 	In addition, whenever you score a critical hit using your razor storm power, the target also takes ongoing 5 damage (save ends).
@@ -46469,12 +46474,12 @@ The size of the burst created by your razor storm power increases by 1.
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
 		<rules>
-			<statadd name="Bozak Evoker" value="+2"/>  
-			<statadd name="Bozak Evoker" value="+2" requires="11 level"/>  
-			<statadd name="Bozak Evoker" value="+2" requires="21 level"/>  
+			<statadd name="Bozak Evoker" value="+2"/>
+			<statadd name="Bozak Evoker" value="+2" requires="11 level"/>
+			<statadd name="Bozak Evoker" value="+2" requires="21 level"/>
 			<statadd name="arcane:damage" value="+Bozak Evoker" type="racial trait" condition="while bloodied."/>
 		</rules>
-If you score a critical hit with an arcane attack power, the target falls prone. 
+If you score a critical hit with an arcane attack power, the target falls prone.
 	In addition, while you are bloodied, you double your racial bonus to damage rolls with arcane attack powers.
 </RulesElement>
 
@@ -46518,15 +46523,15 @@ You gain resist 5 acid and resist 5 poison. This benefit increases to resist 10 
 <RulesElement name="Improved Lab Conditioning" type="Feat" internal-id="ID_TIV_FEAT_DUNGEONMAGAZINE422-F1" source="Dragon Magazine 422">
 	<Prereqs> Tinker Gnome </Prereqs>
 	<print-prereqs> Tinker Gnome, lab conditioning racial power </print-prereqs>
-	<Flavor> When you need to escape an unsafe situation, your inner reserves help you rise to meet the challenge. </Flavor>	
+	<Flavor> When you need to escape an unsafe situation, your inner reserves help you rise to meet the challenge. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> When you use your lab conditioning racial power, you can also make a saving throw against one effect that a save can end. </specific>
 	<specific name="Special"/>
 	<specific name="type"/>
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
-		<rules>  
-            <modify name="Lab Conditioning" type="Power" Field="Effect" value="If you take any damage from the attack, halve that damage. You then shift up to half your speed. You can also make a saving throw against one effect that a save can end."/> 			
+		<rules>
+            <modify name="Lab Conditioning" type="Power" Field="Effect" value="If you take any damage from the attack, halve that damage. You then shift up to half your speed. You can also make a saving throw against one effect that a save can end."/>
         </rules>
 When you use your lab conditioning racial power, you can also make a saving throw against one effect that a save can end.
 </RulesElement>
@@ -46534,7 +46539,7 @@ When you use your lab conditioning racial power, you can also make a saving thro
 <RulesElement name="Inventive Empowerment" type="Feat" internal-id="ID_TIV_FEAT_DUNGEONMAGAZINE422-F2" source="Dragon Magazine 422">
 	<Prereqs> Tinker Gnome, artificer </Prereqs>
 	<print-prereqs> Tinker Gnome, artificer, Arcane Empowerment class feature </print-prereqs>
-	<Flavor> Because of your own revolutionary advances in energy transfer, charging magic items has never been easier. </Flavor>	
+	<Flavor> Because of your own revolutionary advances in energy transfer, charging magic items has never been easier. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> You gain one additional use of the Arcane Empowerment class feature per day. </specific>
 	<specific name="Special"/>
@@ -46547,15 +46552,15 @@ You gain one additional use of the Arcane Empowerment class feature per day.
 <RulesElement name="Mage Hand Assistant" type="Feat" internal-id="ID_TIV_FEAT_DUNGEONMAGAZINE422-F3" source="Dragon Magazine 422">
 	<Prereqs> Tinker Gnome, wizard, mage hand cantrip </Prereqs>
 	<print-prereqs> Tinker Gnome, Wizard, Mage Hand cantrip </print-prereqs>
-	<Flavor> Sometimes, the only assistant you can really trust is yourself. Through practice and determination, you have made a common cantrip into something much more useful-an invisible set of hands that exhibit fine control. </Flavor>	
+	<Flavor> Sometimes, the only assistant you can really trust is yourself. Through practice and determination, you have made a common cantrip into something much more useful-an invisible set of hands that exhibit fine control. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> You gain one additional use of the Arcane Empowerment class feature per day. </specific>
 	<specific name="Special"/>
 	<specific name="type"/>
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
-		<rules>  
-            <modify name="Mage Hand" type="Utility" Field="Mage Hand Assistant" value="You can use the mage hand cantrip to perform Arcana checks made to manipulate magical phenomena, or Thievery checks made to disable devices, open locks, or pick pockets. Both kinds of checks can be made from up to 5 squares away from the target of the check."/> 			
+		<rules>
+            <modify name="Mage Hand" type="Utility" Field="Mage Hand Assistant" value="You can use the mage hand cantrip to perform Arcana checks made to manipulate magical phenomena, or Thievery checks made to disable devices, open locks, or pick pockets. Both kinds of checks can be made from up to 5 squares away from the target of the check."/>
         </rules>
 You can use the mage hand cantrip to perform Arcana checks made to manipulate magical phenomena, or Thievery checks made to disable devices, open locks, or pick pockets. Both kinds of checks can be made from up to 5 squares away from the target of the check.
 </RulesElement>
@@ -46563,15 +46568,15 @@ You can use the mage hand cantrip to perform Arcana checks made to manipulate ma
 <RulesElement name="Quick Tinker" type="Feat" internal-id="ID_TIV_FEAT_DUNGEONMAGAZINE422-F4" source="Dragon Magazine 422">
 	<Prereqs> Tinker gnome, Quick Fix racial feature, trained in Arcana or Thievery </Prereqs>
 	<print-prereqs> Tinker gnome, Quick Fix racial feature, trained in Arcana or Thievery </print-prereqs>
-	<Flavor> You can apply your skills with precision and haste. </Flavor>	
+	<Flavor> You can apply your skills with precision and haste. </Flavor>
 	<specific name="Tier"> Heroic </specific>
 	<specific name="Short Description"> You gain one additional use of the Arcane Empowerment class feature per day. </specific>
 	<specific name="Special"/>
 	<specific name="type"/>
 	<specific name="Associated Power Info"/>
 	<specific name="Associated Powers"/>
-		<rules>  
-            <modify name="Jury Rig" type="Utility" Field="Target" value="One suit of armor or one weapon. Quick Tinker: You can choose two targets instead of one."/> 			
+		<rules>
+            <modify name="Jury Rig" type="Utility" Field="Target" value="One suit of armor or one weapon. Quick Tinker: You can choose two targets instead of one."/>
         </rules>
 You ignore the -4 penalty for using your Quick Fix racial feature.
 	In addition, if you have the jury rig power, you can choose two targets instead of one whenever you use it.
@@ -46689,7 +46694,7 @@ Like the scythe Nerull carried long ago, your scythe cuts down any who stray int
     </rules>
 You gain proficiency with the spiked chain. You can treat the spiked chain as a double weapon. As a double weapon, each end of the spiked chain is a light blade and deals 2d4 damage. The primary end gains the stout property, and the secondary end gains the off-hand property.
    </RulesElement>
- 
+
     <RulesElement internal-id="ID_FMP_FEAT_1004" name="Goliath Greatweapon Prowess" type="Feat" source="Player's Handbook 2" revision-date="8/27/2010 12:18:33 PM">
     <Prereqs> Goliath </Prereqs>
     <print-prereqs> Goliath </print-prereqs>
@@ -46700,7 +46705,7 @@ You gain proficiency with the spiked chain. You can treat the spiked chain as a 
     <specific name="Associated Power Info"/>
     <specific name="Associated Powers"/>
     <rules>
-      
+
       <statadd name="Goliath Greatweapon Prowess" value="+2"/>
       <statadd name="Goliath Greatweapon Prowess" value="+1" requires="Paragon Tier"/>
       <statadd name="Goliath Greatweapon Prowess" value="+1" requires="Epic Tier"/>
@@ -46844,7 +46849,7 @@ You gain a +1 feat bonus to weapon attack rolls that you make with a flail. This
       <statadd name="arcane,arena group:attack" value="+War Wizard's Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_HEAVY_BLADE|ID_INTERNAL_ARENA_WEAPON_CATEGORY_LIGHT_BLADE"/>
       <statadd name="ranged basic,heavy blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
       <statadd name="ranged basic,light blade group:attack" value="+War Wizard's Expertise" type="Feat"/>
-    </rules>	
+    </rules>
 You gain a +1 feat bonus to the attack rolls of arcane powers and basic attacks that you make with a light blade or a heavy blade. This bonus increases to +2 at 11th level and +3 at 21st level.
 	Also, when you use an arcane attack power with a light blade or a heavy blade, your attack rolls take a -5 penalty against your allies.
 	</RulesElement>
@@ -46911,7 +46916,7 @@ You gain a +1 feat bonus to weapon attack rolls that you make with a light blade
      <statadd name="holy symbol implement,implement:attack" value="+Mighty Crusader Expertise" type="Feat"/>
      <statadd name="two-hands:attack" value="+Mighty Crusader Expertise" type="Feat"/>
      <statadd name="weapon,arena group:attack" value="+Mighty Crusader Expertise" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_TWO_HANDED"/>
-    </rules>	
+    </rules>
 You gain a +1 feat bonus to weapon attack rolls you make with any two-handed melee weapon and a +1 feat bonus to implement attack rolls you make with holy symbols. These bonuses increase to +2 at 11th level and +3 at 21st level.
 	In addition, while you wield a two-handed melee weapon, ranged and area attacks you make with a holy symbol do not provoke opportunity attacks.
     </RulesElement>

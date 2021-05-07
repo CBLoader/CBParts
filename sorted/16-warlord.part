@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.05</Version>
+    <Version>1.06</Version>
     <Filename>16-warlord.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/16-warlord.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/16-warlord.txt</VersionAddress>
@@ -17,6 +17,7 @@
  Updated 22-August-2011 Interrupting Strike parsing error corrected
  Updated 20-January-2011 Captain of Fortune corrections.
  Updated 30-March-2012 March Errata Band of Fellows
+ Updated 06-May-2021 Moved Terrain Dominance from Warlock powers. [Issue #13]
 </Changelog>
   <!-- Warlord Updates by Drewjitsu and GreySector -->
   <RulesElement name="Inspiring Presence" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_32" source="Player's Handbook" revision-date="10/5/2010 1:47:04 PM">
@@ -1696,4 +1697,26 @@ You can spend two action points during an encounter, but no more than one per ro
       <specific name="Level"> 15 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
+
+<!-- May 2021 Update, moved power from Warlock -->
+
+	<RulesElement name="Terrain Dominance" type="Power" internal-id="ID_FMP_POWER_16517" source="Dungeon Survival Handbook">
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_8,ID_FMP_CATEGORY_36,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+		<Flavor> You drive your foe into hindering terrain, showing your allies how to utilize the battlefield to their advantage. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Warlord Attack 5 </specific>
+		<specific name="Keywords"> Martial, Weapon </specific>
+		<specific name="Action Type"> Standard Action </specific>
+		<specific name="Attack Type"> Melee weapon </specific>
+		<specific name="Target"> One creature </specific>
+		<specific name="Attack"> Strength vs. AC </specific>
+		<specific name="Hit"> 2[W] + Strength modifier damage, and you slide the target up to 3 squares. If the target ends this slide in difficult terrain, it falls prone. </specific>
+		<specific name="Miss"> Half damage. </specific>
+		<specific name="Effect"> Until the end of the encounter, you and your allies gain a +2 power bonus to attack rolls against targets on difficult terrain. </specific>
+		<specific name="Class"> ID_FMP_CLASS_8 </specific>
+		<specific name="Level"> 5 </specific>
+		<specific name="Power Type"> Attack </specific>
+No race is more adept at waging war underground than the dwarves. With terrain dominance, you use their battle planning to incorporate the rocky terrain of the Underdark into your strategy.
+	</RulesElement>
+
 </D20Rules>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.16</Version>
+    <Version>1.17</Version>
     <Filename>11-fighter.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/11-fighter.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/11-fighter.txt</VersionAddress>
@@ -26,6 +26,7 @@
  Updated 19-September-2012 Brawler Style and Unarmored Defense Fix
  Updated 19-October-2012 Updates on fighter attack powers changed weapon group detection for correct damage bonus and to calculate correctly for differant groups
  Updated 13-April-2017 Fixed Slayer/Knight stances to allow for selecting any fighter utility.
+ Updated 21-June-2021 Added typo fix on Daring Shout
 </Changelog>
   <!-- Fighter Class Feature Updates -->
   <RulesElement name="Fighter" type="Class" internal-id="ID_FMP_CLASS_3" source="Player's Handbook" revision-date="10/12/2010 1:39:31 PM">
@@ -4784,4 +4785,22 @@ MULTIPLE WEAPONS ON POWER CARDS NOW CALCULATE CORRECTLY FOR DIFFERENT GROUPS. --
             <statadd name="ID_FMP_POWER_4354,light blade group:damage" value="+ABILITYMOD(Dexterity)"/>
         </rules>
     </RulesElement>
+
+    <RulesElement internal-id="ID_FMP_POWER_7395" name="Daring Shout" type="Power" source="PH Heroes: Series 1" revision-date="8/27/2010 11:45:29 AM">
+      <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_3,ID_FMP_CATEGORY_36,ID_INTERNAL_CATEGORY_MINOR_ACTION,6</Category>
+      <Flavor> You challenge nearby enemies to attack you, bolstering your own stamina. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Fighter Utility 6 </specific>
+      <specific name="Keywords"> Martial </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close burst 1 </specific>
+      <specific name="Target"> Each enemy in burst you can see. </specific>
+      <specific name="Effect"> The target is marked until the end of your next turn. You gain temporary hit points equal to your Constitution modifier + the number of targets in the burst. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_3 </specific>
+      <specific name="Level"> 6 </specific>
+      <specific name="Power Type"> Utility </specific>
+    </RulesElement>
+
 </D20Rules>

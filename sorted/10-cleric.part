@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.24</Version>
+		<Version>1.25</Version>
 		<Filename>10-cleric.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/10-cleric.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/10-cleric.txt</VersionAddress>
@@ -34,6 +34,7 @@
  Updated 6-August-2012 Dismissal 7/2012 Rules Update.
  Updated 8-October-2013 Added Dragon 427 New Deity
  Updated 23-May-2020 Removed duplicate definition of Reaper's Blade
+ Updated 22-June-2021 Removed requirement on Weapon of Divine Protection
 	</Changelog>
 	<!-- Cleric Feature Updates -->
 	<RulesElement name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
@@ -5955,13 +5956,12 @@ Level 21: 2[W] + 4 + Strength modifier damage.	  </specific>
 	<RulesElement name="Weapon of Divine Protection" type="Power" internal-id="ID_FMP_POWER_14296" source="Dragon Magazine 400">
 		<Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_2,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
 		<Flavor> Guided by your hand, your weapon becomes a divine tool that can deal mighty attacks or defend your allies. </Flavor>
-		<specific name="Power Usage"> At-will </specific>
+		<specific name="Power Usage"> At-Will </specific>
 		<specific name="_SkillPower"/>
 		<specific name="Display"> Cleric Attack 1 </specific>
 		<specific name="Keywords"> Divine, Weapon </specific>
 		<specific name="Action Type"> Standard Action </specific>
 		<specific name="Attack Type"> Melee weapon </specific>
-		<specific name="Requirement"> You must use this power with a simple weapon. </specific>
 		<specific name="Target"> One creature </specific>
 		<specific name="Attack"> Strength vs. AC </specific>
 		<specific name="Hit"> 1[W] + Strength modifier damage.

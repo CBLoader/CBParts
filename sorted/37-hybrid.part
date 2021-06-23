@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.26</Version>
+    <Version>1.27</Version>
     <Filename>37-hybrid.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.txt</VersionAddress>
@@ -35,6 +35,7 @@
  Updated 19-September-2012 Brawler Style (Hybrid) Fix
  Updated 12-April-2020 Cavalier and Blackguard first level power pick
  Updated 13-April-2020 Desert wind and Eternal Tide added to hybrid and monastic talent
+ Updated 22-June-2021 Fix Hybrid Wizard cantrip choices
 </Changelog>
   
   <RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
@@ -1921,4 +1922,29 @@ In addition, you gain a +2 enhancement bonus to the attack rolls of unarmed atta
     </rules>
 	You gain all the features associated with your Monastic Tradition.
    </RulesElement>
+
+  <RulesElement internal-id="ID_WOG_BF_CLASS_FEATURE_1" name="Hybrid Cantrips" type="Class Feature" source="Player's Handbook,Player's Handbook 3" revision-date="3/9/2011 7:00:00 PM">
+    <Category>1</Category>
+    <Flavor> The basic tricks of magic are known as cantrips, and they are the first spells that a beginning wizard learns. The formula underlying a cantrip is so simple that each cantrip can be committed to memory and used at will once you have mastered it. </Flavor>
+    <specific name="Short Description"> Gain four cantrips of your choice. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_1217,ID_FMP_POWER_1225,ID_FMP_POWER_1227,ID_FMP_POWER_1930,ID_FMP_POWER_12731,ID_FMP_POWER_13970 </specific>
+    <specific name="Class"> ID_FMP_HYBRID_CLASS_360 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_1217,ID_FMP_POWER_1225,ID_FMP_POWER_1227,ID_FMP_POWER_1930,ID_FMP_POWER_12731,ID_FMP_POWER_13970 </specific>
+    <rules>
+      <modify name="ID_FMP_POWER_12731" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_1225" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_1227" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_1930" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_13970" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_13971" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Type" value="Utility" />
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Class" value="ID_FMP_CLASS_9" requires="ID_FMP_RACE_20" />
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Usage" value="At-Will" requires="ID_FMP_RACE_20" />
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Action Type" value="Standard Action" requires="ID_FMP_RACE_20" />
+      <select type="Power" number="4" Category="ID_FMP_CLASS_FEATURE_2870" />
+    </rules>
+Cantrips are minor spells you gain at 1st level. You can select four cantrips to use as at-will powers.
+   </RulesElement>
+
 </D20Rules>

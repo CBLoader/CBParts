@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.04</Version>
+    <Version>1.05</Version>
     <Filename>29-psion.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/29-psion.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/29-psion.txt</VersionAddress>
@@ -17,6 +17,7 @@
  Updated 14-September-2011: Added Errata for August 2011.
  Updated 25-September-2011: Added Community updates.
  Updated 18-May-2012 DSH added.
+ Updated 23-June-2021 Added Shaper Focus (Hybrid) base power tag to Minor Creation
 </Changelog>
 
   <!-- Errata for August 2011 -->
@@ -436,4 +437,21 @@ The aberrant creatures below rarely communicate in ways familiar to surface dwel
     <specific name="_AugmentParent"> ID_FMP_POWER_16493 </specific>
 The aberrant creatures below rarely communicate in ways familiar to surface dwellers. Most transmit their sickening thoughts with telepathy, which makes them especially receptive to the mental activity of their prospective victims. With telepathic wail, you ensure that they hear your thoughts loud and clear.
 </RulesElement>
+
+<RulesElement internal-id="ID_FMP_POWER_13301" name="Minor Creation" type="Power" source="Psionic Power" revision-date="9/21/2010 2:15:20 PM">
+  <Flavor> You create something from nothing. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Psion Feature  </specific>
+  <specific name="Keywords"> Conjuration, Psionic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 5 </specific>
+  <specific name="Effect"> You conjure a nonliving, nonmagical object that appears within range, either in an unoccupied square, in your hand, or in an ally's hand. The object lasts until the end of the encounter or until you dismiss it as a free action. The object you conjure is a single weapon or an item listed under “Adventuring Gear,” page 222 of the Player's Handbook. At the Dungeon Master's discretion, you can create some other nonmagical object no larger than one that a Medium creature can carry. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level" />
+  <specific name="Power Type"> Feature </specific>
+  <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3097,ID_FMP_CLASS_FEATURE_SF </specific>
+</RulesElement>
+
 </D20Rules>

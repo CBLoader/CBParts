@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.05</Version>
+    <Version>1.06</Version>
     <Filename>29-psion.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/29-psion.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/29-psion.txt</VersionAddress>
@@ -18,10 +18,12 @@
  Updated 25-September-2011: Added Community updates.
  Updated 18-May-2012 DSH added.
  Updated 23-June-2021 Added Shaper Focus (Hybrid) base power tag to Minor Creation
+ Updated 24-June-2021 Added Insidious Doubt and Psychic Anomaly to add the Augmentable keyword
+ Updated 24-June-2021 Added Augment 0 entries for Static Mote and Psychic Anomaly to prevent removal of Augmentable keyword
 </Changelog>
 
   <!-- Errata for August 2011 -->
-  <RulesElement name="Static Mote" type="Power" internal-id="ID_FMP_POWER_13462" source="Psionic Power" revision-date="9/14/2011 6:27:00 PM">
+  <RulesElement name="Static Mote" type="Power" internal-id="ID_FMP_POWER_13462" source="Psionic Power" revision-date="6/24/2021 6:27:00 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> A mote of roiling lightning hinders your foes before exploding in a devastating burst. </Flavor>
       <specific name="Power Usage"> At-Will </specific>
@@ -37,6 +39,7 @@
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
       <specific name="_DisplayPowers"> ID_FMP_POWER_13463 </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_STATIC_MOTE_(AUGMENT_0) </specific>
       <rules>
          <grant name="ID_FMP_POWER_13463" type="Power"/>
       </rules>
@@ -452,6 +455,120 @@ The aberrant creatures below rarely communicate in ways familiar to surface dwel
   <specific name="Level" />
   <specific name="Power Type"> Feature </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3097,ID_FMP_CLASS_FEATURE_SF </specific>
+</RulesElement>
+
+<!-- Fixes for Missing Augmentable Tags -->
+
+<RulesElement internal-id="ID_FMP_POWER_13444" name="Insidious Doubt" type="Power" source="Dragon Magazine 390" revision-date="9/21/2010 1:52:59 PM">
+  <Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7</Category>
+  <Flavor> You fan doubt's fire in your enemy's mind until indecision blocks every action it would take. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Psion Attack 7 </specific>
+  <specific name="Keywords"> Augmentable, Fear, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Intelligence vs. Will </specific>
+  <specific name="Hit"> 1d8 + Intelligence modifier psychic damage. Until the end of your next turn, the target takes psychic damage equal to your Charisma modifier the first time it uses an opportunity or immediate action. </specific>
+  <specific name="Augment"> 1 </specific>
+  <specific name=" Hit"> As above, but the target also takes the damage if it uses a move action. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 7 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentVersions"> ID_INTERNAL_POWER_INSIDIOUS_DOUBT_(AUGMENT_0),ID_INTERNAL_POWER_INSIDIOUS_DOUBT_(AUGMENT_1) </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_INSIDIOUS_DOUBT_(AUGMENT_0)" name="Insidious Doubt (Augment 0)" type="Power" source="Dragon Magazine 390" revision-date="9/21/2010 1:52:59 PM">
+  <Flavor> You fan doubt's fire in your enemy's mind until indecision blocks every action it would take. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_13444 </specific>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Psion Attack 7 </specific>
+  <specific name="Keywords"> Augmentable, Fear, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Intelligence vs. Will </specific>
+  <specific name="Hit"> 1d8 + Intelligence modifier psychic damage. Until the end of your next turn, the target takes psychic damage equal to your Charisma modifier the first time it uses an opportunity or immediate action. </specific>
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 7 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_13444 </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_INSIDIOUS_DOUBT_(AUGMENT_1)" name="Insidious Doubt (Augment 1)" type="Power" source="Dragon Magazine 390" revision-date="9/21/2010 1:52:59 PM">
+  <Flavor> You fan doubt's fire in your enemy's mind until indecision blocks every action it would take. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_13444 </specific>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Psion Attack 7 </specific>
+  <specific name="Keywords"> Augmentable, Fear, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Target"> One creature </specific>
+  <specific name="Attack"> Intelligence vs. Will </specific>
+  <specific name="Hit"> 1d8 + Intelligence modifier psychic damage. Until the end of your next turn, the target takes psychic damage equal to your Charisma modifier the first time it uses an opportunity or immediate action, but the target also takes the damage if it uses a move action. </specific>
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 7 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_13444 </specific>
+</RulesElement>
+
+<RulesElement internal-id="ID_FMP_POWER_13320" name="Psychic Anomaly" type="Power" source="Psionic Power" revision-date="9/21/2010 2:15:40 PM">
+  <Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3</Category>
+  <Flavor> You conjure a shimmering anomaly of pure psionic energy, which disrupts the minds of nearby foes. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="_ChildPower"> ID_FMP_POWER_13321 </specific>
+  <specific name="Display"> Psion Attack 3 </specific>
+  <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Effect"> You conjure a psychic anomaly in an unoccupied square within range. The anomaly lasts until the end of your next turn. You can use the Psychic Anomaly Attack power using the anomaly. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 3 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_DisplayPowers"> ID_FMP_POWER_13321 </specific>
+  <specific name="_AugmentVersions"> ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_0) </specific>
+  <rules>
+    <grant name="ID_FMP_POWER_13321" type="Power" />
+  </rules>
+</RulesElement>
+
+<!-- Augment 0 versions of Static Mote and Psychic Anomaly to allow them to function properly -->
+
+<RulesElement internal-id="ID_INTERNAL_POWER_STATIC_MOTE_(AUGMENT_0)" name="Static Mote (Augment 0)" type="Power" source="Psionic Power" revision-date="9/21/2010 2:08:44 PM">
+  <Flavor> A mote of roiling lightning hinders your foes before exploding in a devastating burst. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_13462 </specific>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="_ChildPower"> ID_FMP_POWER_13463 </specific>
+  <specific name="Display"> Psion Attack 1 </specific>
+  <specific name="Keywords"> Augmentable, Conjuration, Implement, Lightning, Psionic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Effect"> You conjure a static mote in an unoccupied square within range. Any creature that starts its turn adjacent to the mote is slowed until the end of its turn. At the start of your next turn, the mote disappears and you use the Static Mote Attack power. </specific>
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 1 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_13462 </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_PSYCHIC_ANOMALY_(AUGMENT_0)" name="Psychic Anomaly (Augment 0)" type="Power" source="Psionic Power" revision-date="9/21/2010 2:08:44 PM">
+  <Flavor> You conjure a shimmering anomaly of pure psionic energy, which disrupts the minds of nearby foes. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_13320 </specific>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="_ChildPower"> ID_FMP_POWER_13321 </specific>
+  <specific name="Display"> Psion Attack 3 </specific>
+  <specific name="Keywords"> Augmentable, Conjuration, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Effect"> You conjure a psychic anomaly in an unoccupied square within range. The anomaly lasts until the end of your next turn. You can use the Psychic Anomaly Attack power using the anomaly. </specific>
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 3 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_13320 </specific>
 </RulesElement>
 
 </D20Rules>

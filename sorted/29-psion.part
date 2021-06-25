@@ -20,6 +20,7 @@
  Updated 23-June-2021 Added Shaper Focus (Hybrid) base power tag to Minor Creation
  Updated 24-June-2021 Added Insidious Doubt and Psychic Anomaly to add the Augmentable keyword
  Updated 24-June-2021 Added Augment 0 entries for Static Mote and Psychic Anomaly to prevent removal of Augmentable keyword
+ Updated 24-June-2021 Added Reality Meltdown and added an Augment 0 entry for it to prevent removal of Augmentable keyword
 </Changelog>
 
   <!-- Errata for August 2011 -->
@@ -569,6 +570,44 @@ The aberrant creatures below rarely communicate in ways familiar to surface dwel
   <specific name="Level"> 3 </specific>
   <specific name="Power Type"> Attack </specific>
   <specific name="_AugmentParent"> ID_FMP_POWER_13320 </specific>
+</RulesElement>
+
+<RulesElement internal-id="ID_FMP_POWER_13385" name="Reality Meltdown" type="Power" source="Psionic Power" revision-date="9/21/2010 2:16:57 PM">
+  <Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_437,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27</Category>
+  <Flavor> A shimmering orb of molten psionic essence sears foes that linger too close. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="_ChildPower"> ID_FMP_POWER_13386 </specific>
+  <specific name="Display"> Psion Attack 27 </specific>
+  <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Effect"> You conjure a molten orb in an unoccupied square within range. The orb lasts until the end of your next turn. Any creature that enters the orb's space or starts its turn there takes fire damage equal to your Intelligence modifier. In addition, you can use the Reality Meltdown Attack power with the orb. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 27 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_DisplayPowers"> ID_FMP_POWER_13386 </specific>
+  <specific name="_AugmentVersions"> ID_INTERNAL_POWER_REALITY_MELTDOWN_(AUGMENT_0) </specific>
+  <rules>
+    <grant name="ID_FMP_POWER_13386" type="Power" />
+  </rules>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_REALITY_MELTDOWN_(AUGMENT_0)" name="Reality Meltdown (Augment 0)" type="Power" source="Psionic Power" revision-date="9/21/2010 2:16:57 PM">
+  <Flavor> A shimmering orb of molten psionic essence sears foes that linger too close. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_13385 </specific>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="_ChildPower"> ID_FMP_POWER_13386 </specific>
+  <specific name="Display"> Psion Attack 27 </specific>
+  <specific name="Keywords"> Augmentable, Conjuration, Fire, Implement, Psionic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Effect"> You conjure a molten orb in an unoccupied square within range. The orb lasts until the end of your next turn. Any creature that enters the orb's space or starts its turn there takes fire damage equal to your Intelligence modifier. In addition, you can use the Reality Meltdown Attack power with the orb. </specific>
+  <specific name="Class"> ID_FMP_CLASS_437 </specific>
+  <specific name="Level"> 27 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_13385 </specific>
 </RulesElement>
 
 </D20Rules>

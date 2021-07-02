@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.28</Version>
+    <Version>1.29</Version>
     <Filename>07-darksun.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/07-darksun.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/07-darksun.txt</VersionAddress>
@@ -34,6 +34,7 @@
  Updated 25-August-2012 Veiled Defender's Action notation fixed on Action Point card.
  Updated 23-October-2012 Updated Mindbite Scorn feat
  Updated 5-March-2020 Arena Fighter updates.
+ Updated 24-June-2021 Add Augmentable keyword to Direct Order, Impose Your Will
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -5785,12 +5786,12 @@ Level 21: Primary ability + 9 vs. Will </specific>
     <specific name="Power Type"> Utility </specific>
   </RulesElement>
   <RulesElement name="Direct Order" type="Power" internal-id="ID_FMP_POWER_12252" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:24:59 PM">
-    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_659,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_659,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_61,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
     <Prereqs> Mind General </Prereqs>
     <Flavor> You stagger the target with a mental attack, either to provide your ally with a vulnerable target or allow the ally to get away </Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Mind General Attack 11 </specific>
-    <specific name="Keywords"> Implement, Psionic </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Target"> One creature </specific>
@@ -6334,12 +6335,12 @@ Level 21: Primary ability + 9 vs. Will </specific>
     <specific name="Power Type"> Utility </specific>
   </RulesElement>
   <RulesElement name="Impose Your Will" type="Power" internal-id="ID_FMP_POWER_12396" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:25:40 PM">
-    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_678,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_678,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_61,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
     <Prereqs> Wielder of the Way </Prereqs>
     <Flavor> As your weapon strikes home, the aspect of your psyche imbued into your weapon burns into your foe's mind and influences its actions. </Flavor>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Wielder of the Way Attack 11 </specific>
-    <specific name="Keywords"> Psionic, Weapon </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Melee weapon </specific>
     <specific name="Target"> One creature </specific>
@@ -8126,7 +8127,7 @@ Level 25: 3[W] + Strength or Dexterity modifier damage. </specific>
     <specific name="_SupportsID"> ID_FMP_POWER_12252 </specific>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Mind General Attack 11 </specific>
-    <specific name="Keywords"> Implement, Psionic </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Target"> One creature </specific>
@@ -8143,7 +8144,7 @@ Level 25: 3[W] + Strength or Dexterity modifier damage. </specific>
     <specific name="_SupportsID"> ID_FMP_POWER_12252 </specific>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Mind General Attack 11 </specific>
-    <specific name="Keywords"> Implement, Psionic </specific>
+    <specific name="Keywords"> Augmentable, Implement, Psionic </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Ranged 10 </specific>
     <specific name="Target"> One creature </specific>
@@ -8160,7 +8161,7 @@ Level 25: 3[W] + Strength or Dexterity modifier damage. </specific>
     <specific name="_SupportsID"> ID_FMP_POWER_12396 </specific>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Wielder of the Way Attack 11 </specific>
-    <specific name="Keywords"> Psionic, Weapon </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Melee weapon </specific>
     <specific name="Target"> One creature </specific>
@@ -8176,7 +8177,7 @@ Level 25: 3[W] + Strength or Dexterity modifier damage. </specific>
     <specific name="_SupportsID"> ID_FMP_POWER_12396 </specific>
     <specific name="Power Usage"> Encounter </specific>
     <specific name="Display"> Wielder of the Way Attack 11 </specific>
-    <specific name="Keywords"> Psionic, Weapon </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
     <specific name="Action Type"> Standard action </specific>
     <specific name="Attack Type"> Melee weapon </specific>
     <specific name="Target"> One creature </specific>

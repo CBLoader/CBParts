@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.33</Version>
+    <Version>1.34</Version>
     <Filename>38-paragon-paths.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.txt</VersionAddress>
@@ -41,6 +41,7 @@
  Updated 19-October-2012 Updated Blade of Cendiane Paragon Path
  Updated 11-March-2013 Added Umbriri paragon path fix (Shadow Defense)
  Updated 8-October-2013 Added Dragon 427 Paragon Path
+ Updated 24-June-2021 Added Dream Blade and Irruption of the Living Gate to add Augmentable keyword
 </Changelog>
   <!-- Dragon Magazine 394 -->
   <RulesElement name="Herald of Madness" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_805" source="Dragon Magazine 394" revision-date="x/x/x">
@@ -4811,7 +4812,133 @@ Level 21: The soul pushes the triggering enemy up to 3 squares. </specific>
 <specific name="Class"> ID_DRAG427_PARAGON </specific>
 </RulesElement>
 
+<!-- Adding missing Augmentable keywords -->
 
+<RulesElement internal-id="ID_FMP_POWER_11347" name="Dream Blade" type="Power" source="Player's Handbook 3" revision-date="9/21/2010 1:52:50 PM">
+  <Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_600,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_61,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11</Category>
+  <Prereqs> Dreamwalker </Prereqs>
+  <Flavor> Your dream form lashes out with a blade of psychic energy at a nearby foe and hinders any enemies that try to pass by it. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Dreamwalker Attack 11 </specific>
+  <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Close burst 5 </specific>
+  <specific name="Effect"> Your dream form makes the following melee attack. If your dream form isn't present, you use manifest dream form as part of this power, and then your dream form makes the attack. </specific>
+  <specific name=" Target"> One creature adjacent to your dream form </specific>
+  <specific name=" Attack"> Intelligence vs. Reflex </specific>
+  <specific name=" Hit"> 2d8 + Intelligence modifier psychic damage. </specific>
+  <specific name=" Effect"> Until the end of your next turn, squares adjacent to your dream form are difficult terrain for your enemies. </specific>
+  <specific name="Augment"> 2 </specific>
+  <specific name=" Target"> Each enemy adjacent to your dream form </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_PARAGON_PATH_600 </specific>
+  <specific name="Level"> 11 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentVersions"> ID_INTERNAL_POWER_DREAM_BLADE_(AUGMENT_0),ID_INTERNAL_POWER_DREAM_BLADE_(AUGMENT_2) </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_DREAM_BLADE_(AUGMENT_0)" name="Dream Blade (Augment 0)" type="Power" source="Player's Handbook 3" revision-date="9/21/2010 1:52:50 PM">
+  <Flavor> Your dream form lashes out with a blade of psychic energy at a nearby foe and hinders any enemies that try to pass by it. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_11347 </specific>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Dreamwalker Attack 11 </specific>
+  <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Close burst 5 </specific>
+  <specific name="Effect"> Your dream form makes the following melee attack. If your dream form isn't present, you use manifest dream form as part of this power, and then your dream form makes the attack. </specific>
+  <specific name=" Target"> One creature adjacent to your dream form </specific>
+  <specific name=" Attack"> Intelligence vs. Reflex </specific>
+  <specific name=" Hit"> 2d8 + Intelligence modifier psychic damage. </specific>
+  <specific name=" Effect"> Until the end of your next turn, squares adjacent to your dream form are difficult terrain for your enemies. </specific>
+  <specific name="Class"> ID_FMP_PARAGON_PATH_600 </specific>
+  <specific name="Level"> 11 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_11347 </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_DREAM_BLADE_(AUGMENT_2)" name="Dream Blade (Augment 2)" type="Power" source="Player's Handbook 3" revision-date="9/21/2010 1:52:50 PM">
+  <Flavor> Your dream form lashes out with a blade of psychic energy at a nearby foe and hinders any enemies that try to pass by it. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_11347 </specific>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Dreamwalker Attack 11 </specific>
+  <specific name="Keywords"> Augmentable, Implement, Psionic, Psychic </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Close burst 5 </specific>
+  <specific name="Effect"> Your dream form makes the following melee attack. If your dream form isn't present, you use manifest dream form as part of this power, and then your dream form makes the attack. </specific>
+  <specific name=" Target"> One creature adjacent to your dream form </specific>
+  <specific name=" Attack"> Intelligence vs. Reflex </specific>
+  <specific name=" Hit"> 2d8 + Intelligence modifier psychic damage. </specific>
+  <specific name=" Effect"> Until the end of your next turn, squares adjacent to your dream form are difficult terrain for your enemies. </specific>
+  <specific name="Class"> ID_FMP_PARAGON_PATH_600 </specific>
+  <specific name="Level"> 11 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_11347 </specific>
+  <specific name="Target"> Each enemy adjacent to your dream form </specific>
+</RulesElement>
+
+<RulesElement internal-id="ID_FMP_POWER_11057" name="Irruption of the Living Gate" type="Power" source="Player's Handbook 3" revision-date="9/21/2010 1:52:23 PM">
+  <Category>ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_587,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_61,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11</Category>
+  <Prereqs> Shard Disciple </Prereqs>
+  <Flavor> Ruby shards explode around your foes. With the expenditure of psionic energy, you can transport yourself into the middle of the storm. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Shard Disciple Attack 11 </specific>
+  <specific name="Keywords"> Augmentable, Implement, Psionic, Zone </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+  <specific name="Target"> Each creature in burst </specific>
+  <specific name="Attack"> Intelligence vs. Reflex </specific>
+  <specific name="Hit"> 2d10 + Intelligence modifier damage. </specific>
+  <specific name="Effect"> The burst creates a zone that lasts until the end of your next turn. The zone is difficult terrain for your enemies. </specific>
+  <specific name="Augment"> 2 </specific>
+  <specific name=" Keyword"> This power gains the teleportation keyword. </specific>
+  <specific name=" Area"> burst 2 within 10 squares </specific>
+  <specific name=" Effect"> As above, and while the zone persists, you can teleport to a square within it as a move action. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_PARAGON_PATH_587 </specific>
+  <specific name="Level"> 11 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentVersions"> ID_INTERNAL_POWER_IRRUPTION_OF_THE_LIVING_GATE_(AUGMENT_0),ID_INTERNAL_POWER_IRRUPTION_OF_THE_LIVING_GATE_(AUGMENT_2) </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_IRRUPTION_OF_THE_LIVING_GATE_(AUGMENT_0)" name="Irruption of the Living Gate (Augment 0)" type="Power" source="Player's Handbook 3" revision-date="9/21/2010 1:52:23 PM">
+  <Flavor> Ruby shards explode around your foes. With the expenditure of psionic energy, you can transport yourself into the middle of the storm. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_11057 </specific>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Shard Disciple Attack 11 </specific>
+  <specific name="Keywords"> Augmentable, Implement, Psionic, Zone </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+  <specific name="Target"> Each creature in burst </specific>
+  <specific name="Attack"> Intelligence vs. Reflex </specific>
+  <specific name="Hit"> 2d10 + Intelligence modifier damage. </specific>
+  <specific name="Effect"> The burst creates a zone that lasts until the end of your next turn. The zone is difficult terrain for your enemies. </specific>
+  <specific name="Class"> ID_FMP_PARAGON_PATH_587 </specific>
+  <specific name="Level"> 11 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_11057 </specific>
+</RulesElement>
+<RulesElement internal-id="ID_INTERNAL_POWER_IRRUPTION_OF_THE_LIVING_GATE_(AUGMENT_2)" name="Irruption of the Living Gate (Augment 2)" type="Power" source="Player's Handbook 3" revision-date="9/21/2010 1:52:23 PM">
+  <Flavor> Ruby shards explode around your foes. With the expenditure of psionic energy, you can transport yourself into the middle of the storm. </Flavor>
+  <specific name="_SupportsID"> ID_FMP_POWER_11057 </specific>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Shard Disciple Attack 11 </specific>
+  <specific name="Keywords"> Augmentable, Implement, Psionic, Zone </specific>
+  <specific name="Action Type"> Standard action </specific>
+  <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+  <specific name="Target"> Each creature in burst </specific>
+  <specific name="Attack"> Intelligence vs. Reflex </specific>
+  <specific name="Hit"> 2d10 + Intelligence modifier damage. </specific>
+  <specific name="Effect"> The burst creates a zone that lasts until the end of your next turn. The zone is difficult terrain for your enemies, and while the zone persists, you can teleport to a square within it as a move action. </specific>
+  <specific name="Class"> ID_FMP_PARAGON_PATH_587 </specific>
+  <specific name="Level"> 11 </specific>
+  <specific name="Power Type"> Attack </specific>
+  <specific name="_AugmentParent"> ID_FMP_POWER_11057 </specific>
+  <specific name="Keyword"> This power gains the teleportation keyword. </specific>
+  <specific name="Area"> burst 2 within 10 squares </specific>
+</RulesElement>
 
 
 </D20Rules>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.120</Version>
+		<Version>1.121</Version>
 		<Filename>04-new-items.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/04-new-items.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/04-new-items.txt</VersionAddress>
@@ -117,6 +117,7 @@
  Updated 24-November-2013 Gem of Seeing repaired. 
  Updated 18-January-2014 Added Dragon 428, 429, 430 and Dungeon 219, 220, 221 New items
  Updated 16-August-2015 Added Serpentine Knife of Zannad from the Book of Vile Darkness. 
+ Updated 5-Sugust-2021 Removed duplicated Earthmother Torc entries.
 	</Changelog>
 	<RulesElement name="Primal Element (level 2)" type="Magic Item" internal-id="ID_FMP_MAGIC_ITEM_9295" source="Dark Sun Campaign Setting">
 		<Flavor> Creatures not of this world suffer the sting of this primal essence. </Flavor>
@@ -31008,7 +31009,12 @@ Effect: The sword teleports up to 1 mile to your hand. You do not need to have l
 		<specific name="Gold"> 840 </specific>
 		<specific name="Magic Item Type"> Neck Slot Item </specific>
 		<specific name="Item Slot"> Neck </specific>
-		<specific name="Power (Daily)"> No Action.
+		<specific name="Tier"/>
+		<specific name="_Item_Set_ID"/>
+		<specific name="Armor"/>
+		<specific name="Weapon"/>
+		<specific name="_Rarity" />
+		<specific name="Power"> Power (Daily): No Action.
 Trigger: A shapechanger is hit by your attack.
 Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both).	  </specific>
 		<specific name="Rarity"> Uncommon </specific>
@@ -38709,120 +38715,6 @@ Effect: Reroll the triggering roll, and use the second result.	</specific>
 
 
 <!-- Dungeon Magazine 210 New Items -->
-<RulesElement name="Earthmother Torc +1" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-1" source="Dungeon Magazine 210">
-	<Flavor> Stylized acorns, oak leaves, holly berries, and ferns adorn this rope-like silver collar, representing the natural world's serenity. </Flavor>
-	<specific name="Level"> 4 </specific>
-	<specific name="Gold"> 840 </specific>
-	<specific name="Magic Item Type"> Neck Slot Item </specific>
-	<specific name="Item Slot"> Neck </specific>
-	<specific name="Utility Power (Daily)"> No Action.
-Trigger: A shapechanger is hit by your attack.
-Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both). </specific>
-	<specific name="Enhancement"> +1 Fortitude, Reflex, and Will </specific>
-	<specific name="Rarity"> Uncommon </specific>
-	<specific name="Property"> You are immune to diseases transmitted by shapechanger attacks. </specific>
-	<rules>
-		<statadd name="Fortitude Defense" value="+1" type="Enhancement"/>
-		<statadd name="Reflex Defense" value="+1" type="Enhancement"/>
-		<statadd name="Will Defense" value="+1" type="Enhancement"/>
-	</rules>
-</RulesElement>
-
-<RulesElement name="Earthmother Torc +2" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-2" source="Dungeon Magazine 210">
-	<Flavor> Stylized acorns, oak leaves, holly berries, and ferns adorn this rope-like silver collar, representing the natural world's serenity. </Flavor>
-	<specific name="Level"> 9 </specific>
-	<specific name="Gold"> 4200 </specific>
-	<specific name="Magic Item Type"> Neck Slot Item </specific>
-	<specific name="Item Slot"> Neck </specific>
-	<specific name="Utility Power (Daily)"> No Action.
-Trigger: A shapechanger is hit by your attack.
-Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both). </specific>
-	<specific name="Enhancement"> +2 Fortitude, Reflex, and Will </specific>
-	<specific name="Rarity"> Uncommon </specific>
-	<specific name="Property"> You are immune to diseases transmitted by shapechanger attacks. </specific>
-	<rules>
-		<statadd name="Fortitude Defense" value="+2" type="Enhancement"/>
-		<statadd name="Reflex Defense" value="+2" type="Enhancement"/>
-		<statadd name="Will Defense" value="+2" type="Enhancement"/>
-	</rules>
-</RulesElement>
-
-<RulesElement name="Earthmother Torc +3" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-3" source="Dungeon Magazine 210">
-	<Flavor> Stylized acorns, oak leaves, holly berries, and ferns adorn this rope-like silver collar, representing the natural world's serenity. </Flavor>
-	<specific name="Level"> 14 </specific>
-	<specific name="Gold"> 21000 </specific>
-	<specific name="Magic Item Type"> Neck Slot Item </specific>
-	<specific name="Item Slot"> Neck </specific>
-	<specific name="Utility Power (Daily)"> No Action.
-Trigger: A shapechanger is hit by your attack.
-Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both). </specific>
-	<specific name="Enhancement"> +3 Fortitude, Reflex, and Will </specific>
-	<specific name="Rarity"> Uncommon </specific>
-	<specific name="Property"> You are immune to diseases transmitted by shapechanger attacks. </specific>
-	<rules>
-		<statadd name="Fortitude Defense" value="+3" type="Enhancement"/>
-		<statadd name="Reflex Defense" value="+3" type="Enhancement"/>
-		<statadd name="Will Defense" value="+3" type="Enhancement"/>
-	</rules>
-</RulesElement>
-
-<RulesElement name="Earthmother Torc +4" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-4" source="Dungeon Magazine 210">
-	<Flavor> Stylized acorns, oak leaves, holly berries, and ferns adorn this rope-like silver collar, representing the natural world's serenity. </Flavor>
-	<specific name="Level"> 19 </specific>
-	<specific name="Gold"> 105000 </specific>
-	<specific name="Magic Item Type"> Neck Slot Item </specific>
-	<specific name="Item Slot"> Neck </specific>
-	<specific name="Utility Power (Daily)"> No Action.
-Trigger: A shapechanger is hit by your attack.
-Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both). </specific>
-	<specific name="Enhancement"> +4 Fortitude, Reflex, and Will </specific>
-	<specific name="Rarity"> Uncommon </specific>
-	<specific name="Property"> You are immune to diseases transmitted by shapechanger attacks. </specific>
-	<rules>
-		<statadd name="Fortitude Defense" value="+4" type="Enhancement"/>
-		<statadd name="Reflex Defense" value="+4" type="Enhancement"/>
-		<statadd name="Will Defense" value="+4" type="Enhancement"/>
-	</rules>
-</RulesElement>
-
-<RulesElement name="Earthmother Torc +5" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-5" source="Dungeon Magazine 210">
-	<Flavor> Stylized acorns, oak leaves, holly berries, and ferns adorn this rope-like silver collar, representing the natural world's serenity. </Flavor>
-	<specific name="Level"> 24 </specific>
-	<specific name="Gold"> 525000 </specific>
-	<specific name="Magic Item Type"> Neck Slot Item </specific>
-	<specific name="Item Slot"> Neck </specific>
-	<specific name="Utility Power (Daily)"> No Action.
-Trigger: A shapechanger is hit by your attack.
-Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both). </specific>
-	<specific name="Enhancement"> +5 Fortitude, Reflex, and Will </specific>
-	<specific name="Rarity"> Uncommon </specific>
-	<specific name="Property"> You are immune to diseases transmitted by shapechanger attacks. </specific>
-	<rules>
-		<statadd name="Fortitude Defense" value="+5" type="Enhancement"/>
-		<statadd name="Reflex Defense" value="+5" type="Enhancement"/>
-		<statadd name="Will Defense" value="+5" type="Enhancement"/>
-	</rules>
-</RulesElement>
-
-<RulesElement name="Earthmother Torc +6" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-6" source="Dungeon Magazine 210">
-	<Flavor> Stylized acorns, oak leaves, holly berries, and ferns adorn this rope-like silver collar, representing the natural world's serenity. </Flavor>
-	<specific name="Level"> 29 </specific>
-	<specific name="Gold"> 2625000 </specific>
-	<specific name="Magic Item Type"> Neck Slot Item </specific>
-	<specific name="Item Slot"> Neck </specific>
-	<specific name="Utility Power (Daily)"> No Action.
-Trigger: A shapechanger is hit by your attack.
-Effect: The shapechanger cannot regain hit points and cannot use polymorph powers (save ends both). </specific>
-	<specific name="Enhancement"> +6 Fortitude, Reflex, and Will </specific>
-	<specific name="Rarity"> Uncommon </specific>
-	<specific name="Property"> You are immune to diseases transmitted by shapechanger attacks. </specific>
-	<rules>
-		<statadd name="Fortitude Defense" value="+6" type="Enhancement"/>
-		<statadd name="Reflex Defense" value="+6" type="Enhancement"/>
-		<statadd name="Will Defense" value="+6" type="Enhancement"/>
-	</rules>
-</RulesElement>
-
 <RulesElement name="Book of Five Truths (First)" type="Magic Item" internal-id="ID_TIV_MAGIC_ITEM_DUNGEONMAGAZINE210-8" source="Dungeon Magazine 210">
 	<Flavor> Scribes recorded five truths on scrolls at the start of the Dawn War and then scattered them throughout the planes. Each scroll grants its reader insight into the nature of being. </Flavor>
 	<specific name="Level"> 8 </specific>

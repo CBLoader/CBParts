@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.29</Version>
+    <Version>1.30</Version>
     <Filename>07-darksun.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/07-darksun.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/07-darksun.txt</VersionAddress>
@@ -35,6 +35,7 @@
  Updated 23-October-2012 Updated Mindbite Scorn feat
  Updated 5-March-2020 Arena Fighter updates.
  Updated 24-June-2021 Add Augmentable keyword to Direct Order, Impose Your Will
+ Updated 23-September-2021 Remove nonexistent Extended Arena Training class feature, updated prereqs for Extended Arena Training feat.
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -4142,28 +4143,16 @@ You treat all weapons with which you are not proficient as improvised weapons.
 	While you are not wearing heavy armor, you gain a +1 bonus to AC. This bonus increases to +2 at 11th level and +3 at 21st level.
 	You select two weapons as your arena weapons. If you are not already proficient with these weapons, you gain proficiency with them. In addition, any of your feats that grant feat bonuses to attack rolls or damage rolls with one of your arena weapons apply to your other arena weapon as well.
 </RulesElement>
-  <RulesElement internal-id="ID_FMP_CLASS_FEATURE_2893_2" name="Extended Arena Training" type="Class Feature" source="Dark Sun Campaign Setting" revision-date="10/14/2010 9:29:04 AM">
-    <Category>ID_FMP_CLASS_FEATURE_1064,1</Category>
-    <specific name="Short Description"> Grants proficiency with up to 4 additional weapons. Increases AC bonus, improvised weapon bonus and damage </specific>
-    <specific name="Level"> 1 </specific>
-    <rules>
-      <statadd name="Arena Training" value="+1"/>
-      <statadd name="Arena Training" value="+1" requires="Paragon Tier"/>
-      <statadd name="Arena Training" value="+1" requires="Epic Tier"/>
-      <statadd name="AC" value="+Arena Training" not-wearing="armor:heavy"/>
-      <select type="Class Feature" number="4" Category="Arena Weapon Group"/>
-      <grant name="ID_INTERNAL_ARENA_WEAPON_CATEGORYS" type="internal"/>
-    </rules>
-You treat all weapons with which you are not proficient as improvised weapons.
-	You gain a +2 proficiency bonus to attack rolls with improvised weapons. Your attacks with one-handed improvised weapons deal 1d8 damage, and your attacks with two-handed improvised weapons deal 1d10 damage.
-	While you are not wearing heavy armor, you gain a +1 bonus to AC. This bonus increases to +2 at 11th level and +3 at 21st level.
-	You select two weapons as your arena weapons. If you are not already proficient with these weapons, you gain proficiency with them. In addition, any of your feats that grant feat bonuses to attack rolls or damage rolls with one of your arena weapons apply to your other arena weapon as well. You also took the Extended Arena Traning Feat
-</RulesElement>
-  <RulesElement internal-id="ID_FMP_FEAT_3202" name="Extended Arena Training" type="Feat" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:37:43 PM">
-    <Prereqs> Fighter, Extended Arena Training class feature </Prereqs>
-    <print-prereqs> Fighter, Extended Arena Training class feature </print-prereqs>
+<RulesElement internal-id="ID_FMP_FEAT_3202" name="Extended Arena Training" type="Feat" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:37:43 PM">
+    <Prereqs> Fighter, Arena Training class feature </Prereqs>
+    <print-prereqs> Fighter, Arena Training class feature </print-prereqs>
     <specific name="Tier"> Heroic </specific>
     <specific name="Short Description"> Gain proficiency and arena training with two extra weapons </specific>
+    <rules>
+      <statadd name="Arena Training Weapons" value="+2"/>
+      <select type="Class Feature" number="2" Category="Arena Weapon Group"/>
+      <grant name="ID_INTERNAL_ARENA_WEAPON_CATEGORYS" type="internal"/>
+    </rules>
 You gain proficiency with two weapons, which become additional arena weapons for you.
 </RulesElement>
 

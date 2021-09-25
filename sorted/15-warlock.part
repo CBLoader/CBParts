@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.29</Version>
+		<Version>1.30</Version>
 		<Filename>15-warlock.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/15-warlock.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/15-warlock.txt</VersionAddress>
@@ -39,6 +39,7 @@
  Updated 14-August-2013 Elemental Hybrid Pact Added
  Updated 06-May-2021 Moved Terrain Dominance to Warlord powers. [Issue #13]
  Updated 24-September-2021 Fixed Warlock Pact Boon (hybrid) prerequisite. [Issue #76]
+ Updated 24-September-2021 Revert last change, was working as intended.
 	</Changelog>
 	<!-- Warlock Class Updates -->
 	<RulesElement name="Warlock" type="Class" internal-id="ID_FMP_CLASS_7" source="Player's Handbook" revision-date="8/27/2010 12:40:06 PM">
@@ -9207,7 +9208,7 @@ This feature is the same as the non-hybrid pact, except you do not gain the at-w
    </RulesElement>
       <RulesElement name="Warlock Pact Boon" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1845" source="Player's Handbook 3" revision-date="10/5/2010 1:47:05 PM">
       <Category> ID_FMP_HYBRID_CLASS_358,1 </Category>
-      <Prereqs> Hybrid Warlock </Prereqs>
+      <Prereqs> Matched Warlock Pact </Prereqs>
       <specific name="Short Description"> Gain pact boon </specific>
       <specific name="Level"> 1 </specific>
       <specific name="_DisplayPowers"> ID_FMP_POWER_2094,ID_FMP_POWER_2095,ID_FMP_POWER_2263,ID_FMP_POWER_4311 </specific>

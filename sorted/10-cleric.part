@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.25</Version>
+		<Version>1.26</Version>
 		<Filename>10-cleric.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/10-cleric.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/10-cleric.txt</VersionAddress>
@@ -35,6 +35,7 @@
  Updated 8-October-2013 Added Dragon 427 New Deity
  Updated 23-May-2020 Removed duplicate definition of Reaper's Blade
  Updated 22-June-2021 Removed requirement on Weapon of Divine Protection
+ Updated 27-September-2021 Fixed grouping for Icon of Fear
 	</Changelog>
 	<!-- Cleric Feature Updates -->
 	<RulesElement name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
@@ -7526,7 +7527,7 @@ Enemies cannot stand before your towering fury.
 Level 21: 2[W] + Wisdom modifier damage. </specific>
 		<specific name="Effect"> One ally adjacent to you can shift up to 2 squares as a free action and must end adjacent to the target. </specific>
 		<specific name="Class"> ID_FMP_CLASS_2 </specific>
-		<specific name="Level"/>
+		<specific name="Level"> 1 </specific>
 		<specific name="Power Type"> Attack </specific>
 		<specific name="_ParentFeature"> ID_TIV_CLASS_FEATURE_DRAGON_409-2 </specific>
 Your stern confidence causes enemies to hesitate and drives those who fight alongside you to take advantage of the situation.

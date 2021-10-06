@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.40</Version>
+    <Version>1.41</Version>
     <Filename>17-wizard.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/17-wizard.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/17-wizard.txt</VersionAddress>
@@ -44,6 +44,7 @@
  Updated 24-June-2012 Bigby's Icy Grasp updated.
  Updated 18-August-2012 Bladesinger Level 29 Daily fix.
  Updated 11-September-2012 Illusory Assailant fix
+ Updated 5-October-2021 Melf's Minute Meteors Secondary Power fix.
 </Changelog>
   
   <!-- Wizard Feature Updates -->
@@ -7624,6 +7625,9 @@ This spell forms a massive fist out of stone and animates it long enough to blud
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_16289 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_16289" type="Power" />
+    </rules>
   
 Among the many battle spells Melf created, Melf 's minute meteors might be the most famous. The spell brings forth fiery spheres that you can launch with minimal effort or keep around you to protect you from attacks.
 </RulesElement>

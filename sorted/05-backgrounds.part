@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.20</Version>
+    <Version>1.21</Version>
     <Filename>05-backgrounds.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/05-backgrounds.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/05-backgrounds.txt</VersionAddress>
@@ -32,6 +32,7 @@
  Updated 5-June-2012 Skill power nodes adjusted.
  Updated 10-June-2012 Myth Drannor fix.
  Updated 20-March-2013 Added Dragon Magazine 421 Backgrounds You Say Dragonborn, I Say Draconian
+ Updated 11-October-2021 Added Airspur Benefit to fix skill bonuses
 </Changelog>
   <RulesElement name="Baernor Scion" type="Background" internal-id="ID_FMP_BACKGROUND_729" source="Dragon Magazine 392" revision-date="12/16/2010 10:50:36 AM">
     <Prereqs>Human</Prereqs>
@@ -2458,4 +2459,20 @@ The weak and infirm are quickly weeded out in the crucible, leaving behind only 
 	  <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
     </rules>
 </RulesElement>
+
+<!-- Dungeon Magazine 172 -->
+
+  <RulesElement internal-id="ID_INTERNAL_BACKGROUND_CHOICE_AIRSPUR_BENEFIT" name="Airspur Benefit" type="Background Choice" source="Dungeon Magazine 172">
+    <Category>ID_INTERNAL_INTERNAL_BACKGROUND_BENEFIT</Category>
+    <Prereqs> ID_FMP_BACKGROUND_595 </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_BACKGROUND_595 </specific>
+    <specific name="_IsBenefit"> 1 </specific>
+    <rules>
+      <statadd name="Acrobatics Misc" value="+2" />
+      <statadd name="Diplomacy Misc" value="+2" />
+    </rules>
++2 bonus to Acrobatics and Diplomacy.
+   </RulesElement>
+
+
 </D20Rules>

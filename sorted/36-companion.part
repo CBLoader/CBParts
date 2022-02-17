@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.12</Version>
+    <Version>1.13</Version>
     <Filename>36-companion.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/36-companion.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/36-companion.txt</VersionAddress>
@@ -25,6 +25,7 @@
  Updated 3-March-2012 Added the Heroes of the Elemental Chaos Druid companions with cards, Invisible Stalker card, Warlock companions with cards, Living Zephyr Card
  Updated 4-June-2012 Updated the Ranger Beast Companions Horse and Simian and added the cards 
  Updated 27-February-2013 Added the Famaliar (Bellavous, Bound Quasit) from ELTU3 The Way of All Flesh
+ Updated 17-February-2022 Updated fiddling grig and coure attendant to Heroes of the Feywild stats
 </Changelog>
   <!-- Section: Required Gear Tweaks -->
 
@@ -3089,7 +3090,7 @@ Undead: The specter is immune to necrotic damage. </specific>
 
 <!-- Fiddling Grig Card -->
 
-<AppendNodes name="Fiddling Grig" type="Familiar" internal-id="ID_FMP_FAMILIAR_87" source="Dragon Magazine 390">
+<AppendNodes name="Fiddling Grig" type="Familiar" internal-id="ID_FMP_FAMILIAR_87" source="Heroes of the Feywild">
       <rules>
          <grant name="ID_TIV_FAMILIAR-76" type="Power"/>
       </rules>
@@ -3106,7 +3107,7 @@ Undead: The specter is immune to necrotic damage. </specific>
 	The grig can act as a focus for any bard ritual that requires a musical instrument worth fewer than 100 gp.</specific>
   <specific name="Secondary Speed"> fly 6 </specific>
   <specific name="Senses"> Low-light vision </specific>
-  <specific name="Irresistible Dance"> If you hit an enemy adjacent to the fiddling grig with an arcane attack power, the target of that power is immobilized until the end of your next turn. </specific>
+  <specific name="Irresistible Dance"> Once per round, when you hit an enemy with an arcane attack power and the enemy is adjacent to the fiddling grig, that enemy cannot make opportunity attacks until the end of your next turn. </specific>
 </RulesElement>
 
 <!-- Faerie Dragonling Card -->
@@ -3133,7 +3134,7 @@ Undead: The specter is immune to necrotic damage. </specific>
 
 <!-- Coure Attendant Card -->
 
-<AppendNodes name="Coure Attendant" type="Familiar" internal-id="ID_FMP_FAMILIAR_89" source="Dragon Magazine 390">
+<AppendNodes name="Coure Attendant" type="Familiar" internal-id="ID_FMP_FAMILIAR_89" source="Heroes of the Feywild">
       <rules>
          <grant name="ID_TIV_FAMILIAR-78" type="Power"/>
       </rules>
@@ -3143,15 +3144,14 @@ Undead: The specter is immune to necrotic damage. </specific>
 <Prereqs> Unselectable </Prereqs>
   <specific name="Power Usage"> At-Will </specific>
   <specific name="Action Type"> Minor action </specific>
-  <specific name="Information"> Sometimes, the courtiers of the Court of the Stars honor promising arcanists by serving as their squires or handmaidens. In familiar form, these noble eladrin resemble miniature versions of themselves, but with long, gossamer wings sprouting from their shoulders. </specific>
+  <specific name="Information"> Sometimes the Court of the Stars honors promising spellcasters with coure familiars, which look like miniature eladrin and have gossamer wings sprouting from their shoulders. </specific>
   <specific name="Size"/>
-  <specific name="Speed"> 6 </specific>
+  <specific name="Speed"> 4 </specific>
   <specific name="Constant Benefits"> You gain a +2 bonus to Arcana checks.
-	You can retrieve or store an item as a free action instead of a minor action.
-	Enemies treat squares adjacent to you as difficult terrain.</specific>
-  <specific name="Secondary Speed"> fly 8 (hover) </specific>
+	Once per round, you can retrieve or store an item as a free action instead of a minor action.</specific>
+  <specific name="Secondary Speed"> fly 6 (hover) </specific>
   <specific name="Senses"> Low-light vision </specific>
-  <specific name="Feylight Form"> Once per encounter as a minor action, the coure attendant can assume the form of a twinkling ball of light. While in this form, it gains a +2 bonus to all defenses and sheds dim light within 2 squares. Enemies that start their turns within the dim light shed by a coure attendant in feylight form grant combat advantage to you. It can return to its normal form as a free action. </specific>
+  <specific name="Feylight Form"> Once per encounter as a minor action, the coure attendant can assume the form of a twinkling ball of light. While in this form, it gains a +2 bonus to all defenses and sheds dim light within 2 squares. Enemies grant combat advantage to you while in this light. The coure attendant is immobilized in this form. You can spend a free action to return it to its normal form. </specific>
 </RulesElement>
 
 <!-- Critic Lizard Card -->

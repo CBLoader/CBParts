@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.144</Version>
+		<Version>1.145</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -65,6 +65,7 @@
  Updated 28-July-2021 Updated Hobgoblin Weapon Training Feat to include Spiked Chain
  Updated 13-October-2021 Updated Goblinoid Mount Training feat so the Goblin language doesn't qualify
  Updated 11-June-2022 Fixed Spear Expertise conditional calculation
+ Updated 26-July-2022 Fixed Shadow Poisoner feat
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -5301,7 +5302,7 @@ Choose one daily assassin attack power of your level or lower. You gain that pow
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
-			<select type="Class Feature" number="1" Category="Assassin Poison,$$LEVEL"/>
+			<select type="Class Feature" number="1" Category="$$LEVEL,Assassin Poison"/>
 		</rules>
 You learn the recipe for one assassin poison of your level or lower, as per the executioner's Poison Use class feature. When you take an extended rest, you can choose to lose the use of one of your daily attack powers; if you do so, you can create one vial of an assassin poison of a level that is less than or equal to the level of the power you lost.
 	</RulesElement>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.26</Version>
+		<Version>1.27</Version>
 		<Filename>10-cleric.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/10-cleric.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/10-cleric.txt</VersionAddress>
@@ -36,6 +36,7 @@
  Updated 23-May-2020 Removed duplicate definition of Reaper's Blade
  Updated 22-June-2021 Removed requirement on Weapon of Divine Protection
  Updated 27-September-2021 Fixed grouping for Icon of Fear
+ Updated 7-August-2022 Fixed L16 Devout Warpriest domain feature name errors
 	</Changelog>
 	<!-- Cleric Feature Updates -->
 	<RulesElement name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
@@ -2217,7 +2218,7 @@ You gain a benefit associated with your domain.
 		<specific name="Short Description"> When you use healing word: slide self or ally in burst a number of squares up to your Constitution modifier. </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Storm Domain" value="When you use healing word, you can slide yourself or one ally in the power's burst a number of squares up to your Constitution modifier."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Storm Domain Feature" value="When you use healing word, you can slide yourself or one ally in the power's burst a number of squares up to your Constitution modifier."/>
 		</rules>
 When you use healing word, you can slide yourself or one ally in the power's burst a number of squares up to your Constitution modifier.
 	</RulesElement>
@@ -2227,7 +2228,7 @@ When you use healing word, you can slide yourself or one ally in the power's bur
 		<specific name="Short Description"> Healing word target gains temporary hit points equal to 5 + your Constitution modifier. </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Sun Domain" value="When you use healing word, the target of the power gains temporary hit points equal to 5 + your Constitution modifier."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Sun Domain Feature" value="When you use healing word, the target of the power gains temporary hit points equal to 5 + your Constitution modifier."/>
 		</rules>
 When you use healing word, the target of the power gains temporary hit points equal to 5 + your Constitution modifier.
 	</RulesElement>
@@ -2237,7 +2238,7 @@ When you use healing word, the target of the power gains temporary hit points eq
 		<specific name="Short Description"> Allies in healing word burst gain resist all equal to your Constitution modifier. </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Sun Domain" value="Whenever you use healing word, you and each ally in the burst other than the target gains resist all equal to your Constitution modifier until the end of your next turn. If you are the target of healing word, you do not gain this benefit."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Earth Domain Feature" value="Whenever you use healing word, you and each ally in the burst other than the target gains resist all equal to your Constitution modifier until the end of your next turn. If you are the target of healing word, you do not gain this benefit."/>
 		</rules>
 Whenever you use healing word, you and each ally in the burst other than the target gains resist all equal to your Constitution modifier until the end of your next turn. If you are the target of healing word, you do not gain this benefit.
 	</RulesElement>
@@ -2256,7 +2257,7 @@ Whenever you use healing word, choose one enemy within 5 squares of you. Until t
 		<specific name="Short Description"> The target of your healing word becomes invisible to enemies until the start of their next turn </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Death Domain Feature" value="The target of the power becomes invisible to enemies until the start of his or her next turn"/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Corellon Domain Feature" value="The target of the power becomes invisible to enemies until the start of his or her next turn"/>
 		</rules>
 When you use healing word, the target of the power becomes invisible to enemies until the start of his or her next turn.
 	</RulesElement><RulesElement name="Level 16 Oghma Domain Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3994" source="Neverwinter Campaign Guide">
@@ -2265,7 +2266,7 @@ When you use healing word, the target of the power becomes invisible to enemies 
 		<specific name="Short Description"> The target of your healing word can make a basic attack as a free action </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Death Domain Feature" value="The target of the power can make a basic attack as a free action."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Oghma Domain Feature" value="The target of the power can make a basic attack as a free action."/>
 		</rules>
 When you use healing word, the target of the power can make a basic attack as a free action.
 	</RulesElement><RulesElement name="Level 16 Selûne Domain Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4009" source="Neverwinter Campaign Guide">
@@ -2274,7 +2275,7 @@ When you use healing word, the target of the power can make a basic attack as a 
 		<specific name="Short Description"> When you use healing word, enemies in the burst cannot regain hp until the end of your next turn </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Death Domain Feature" value="Enemies in the burst cannot regain hit points until the end of your next turn."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Selûne Domain Feature" value="Enemies in the burst cannot regain hit points until the end of your next turn."/>
 		</rules>
 When you use healing word, enemies in the burst cannot regain hit points until the end of your next turn.
 	</RulesElement><RulesElement name="Level 16 Torm Domain Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4024" source="Neverwinter Campaign Guide">
@@ -2283,7 +2284,7 @@ When you use healing word, enemies in the burst cannot regain hit points until t
 		<specific name="Short Description"> Each ally in the burst of your healing word can make a saving throw </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Death Domain Feature" value="Each ally in the burst can make a saving throw."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Torm Domain Feature" value="Each ally in the burst can make a saving throw."/>
 		</rules>
 When you use healing word, each ally in the burst can make a saving throw.
 	</RulesElement>
@@ -7401,7 +7402,7 @@ You gain the inspire terror power.
 		<specific name="Short Description"> Use healing word, choose one enemy in the burst. Until the end of your next turn, that enemy grants combat advantage. </specific>
 		<specific name="Level"> 16 </specific>
 		<rules>
-			<modify name="Healing Word" type="Power" Field="Level 16 Domination Domain" value="When you use healing word, choose one enemy in the burst. Until the end of your next turn, that enemy grants combat advantage."/>
+			<modify name="Healing Word" type="Power" Field="Level 16 Domination Domain Feature" value="When you use healing word, choose one enemy in the burst. Until the end of your next turn, that enemy grants combat advantage."/>
 		</rules>
 When you use healing word, choose one enemy in the burst. Until the end of your next turn, that enemy grants combat advantage.
 	</RulesElement>

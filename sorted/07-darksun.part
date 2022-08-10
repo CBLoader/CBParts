@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.32</Version>
+    <Version>1.33</Version>
     <Filename>07-darksun.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/07-darksun.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/07-darksun.txt</VersionAddress>
@@ -38,6 +38,7 @@
  Updated 23-September-2021 Remove nonexistent Extended Arena Training class feature, updated prereqs for Extended Arena Training feat.
  Updated 28-October-2021 Fix typo.
  Updated 28-July-2022 Fix Mind Lord of the Order prerequisite
+ Updated 10-August-2022 Wrist Razor change to remove double Swordmage Warding, Gauntlet Axe errata fix
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -894,11 +895,6 @@ Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An ax
     <specific name="Properties"> Defensive, Off-hand </specific>
 This heavy bracer holds two light crescent blades, turning the forearm into an axe while keeping the hand free. The weapon can also serve as a light shield. A gauntlet axe can be enchanted as either an arms slot item or as a magic weapon. When enchanted as a magic weapon, it does not occupy a character's arms slot.
 <rules>
-<statadd name="Light Shield Defense Bonus" value="+1"/>
-<statadd name="Armor Class" value="+Light Shield Defense Bonus" type="Shield" requires="Shield Proficiency (Light)"/>
-<statadd name="Reflex Defense" value="+Light Shield Defense Bonus" type="Shield" requires="Shield Proficiency (Light)"/>
-<statadd name="Shield Bonus" value="1" type="Shield Contribution"/><statadd name="AC" value="+2" wearing="weapon:light blade" requires="Swordmage Warding"/>
-<statadd name="AC" value="+2" wearing="weapon:heavy blade" requires="Swordmage Warding"/>
 <grant name="WearingOffHandAxe" type="Category"/>
 </rules></RulesElement>
   <RulesElement name="Gouge" type="Weapon" internal-id="ID_FMP_WEAPON_136" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:55:06 PM">
@@ -1198,7 +1194,6 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Properties"> Off-hand </specific>
 	<specific name="_AlternateSlot"> Arms </specific>
     <rules>
-      <statadd name="AC" value="+2" requires="Swordmage Warding" wearing="DUAL-WIELDING:"/>
 	  <grant name="WearingOffHandLightBlade" type="Category"/>
     </rules>
 This weapon consists of three sharp blades that protrude from a sturdy bracer, freeing the wielder's hand. A shield cannot be worn on the same arm as wrist razors. Wrist razors do not need to be drawn, nor do they need to be sheathed for the wielder to use the hand the razors are on. An enchanted wrist razor occupies the arms slot.

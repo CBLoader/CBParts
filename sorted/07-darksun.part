@@ -38,7 +38,7 @@
  Updated 23-September-2021 Remove nonexistent Extended Arena Training class feature, updated prereqs for Extended Arena Training feat.
  Updated 28-October-2021 Fix typo.
  Updated 28-July-2022 Fix Mind Lord of the Order prerequisite
- Updated 10-August-2022 Revert Wrist Razor change to remove double Swordmage Warding
+ Updated 10-August-2022 Wrist Razor change to remove double Swordmage Warding, Gauntlet Axe errata fix
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -895,11 +895,6 @@ Axe (Axes are weapons that have bladed, heavy heads and deal vicious cuts. An ax
     <specific name="Properties"> Defensive, Off-hand </specific>
 This heavy bracer holds two light crescent blades, turning the forearm into an axe while keeping the hand free. The weapon can also serve as a light shield. A gauntlet axe can be enchanted as either an arms slot item or as a magic weapon. When enchanted as a magic weapon, it does not occupy a character's arms slot.
 <rules>
-<statadd name="Light Shield Defense Bonus" value="+1"/>
-<statadd name="Armor Class" value="+Light Shield Defense Bonus" type="Shield" requires="Shield Proficiency (Light)"/>
-<statadd name="Reflex Defense" value="+Light Shield Defense Bonus" type="Shield" requires="Shield Proficiency (Light)"/>
-<statadd name="Shield Bonus" value="1" type="Shield Contribution"/><statadd name="AC" value="+2" wearing="weapon:light blade" requires="Swordmage Warding"/>
-<statadd name="AC" value="+2" wearing="weapon:heavy blade" requires="Swordmage Warding"/>
 <grant name="WearingOffHandAxe" type="Category"/>
 </rules></RulesElement>
   <RulesElement name="Gouge" type="Weapon" internal-id="ID_FMP_WEAPON_136" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:55:06 PM">

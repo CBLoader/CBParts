@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.32</Version>
+    <Version>1.33</Version>
     <Filename>07-darksun.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/07-darksun.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/07-darksun.txt</VersionAddress>
@@ -38,6 +38,7 @@
  Updated 23-September-2021 Remove nonexistent Extended Arena Training class feature, updated prereqs for Extended Arena Training feat.
  Updated 28-October-2021 Fix typo.
  Updated 28-July-2022 Fix Mind Lord of the Order prerequisite
+ Updated 10-August-2022 Revert Wrist Razor change to remove double Swordmage Warding
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -1198,7 +1199,6 @@ Light blade (Light blades reward accuracy as much as force. Pinpoint attacks, lu
     <specific name="Properties"> Off-hand </specific>
 	<specific name="_AlternateSlot"> Arms </specific>
     <rules>
-      <statadd name="AC" value="+2" requires="Swordmage Warding" wearing="DUAL-WIELDING:"/>
 	  <grant name="WearingOffHandLightBlade" type="Category"/>
     </rules>
 This weapon consists of three sharp blades that protrude from a sturdy bracer, freeing the wielder's hand. A shield cannot be worn on the same arm as wrist razors. Wrist razors do not need to be drawn, nor do they need to be sheathed for the wielder to use the hand the razors are on. An enchanted wrist razor occupies the arms slot.

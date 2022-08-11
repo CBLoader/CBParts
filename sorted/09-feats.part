@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.145</Version>
+		<Version>1.146</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -66,6 +66,7 @@
  Updated 13-October-2021 Updated Goblinoid Mount Training feat so the Goblin language doesn't qualify
  Updated 11-June-2022 Fixed Spear Expertise conditional calculation
  Updated 26-July-2022 Fixed Shadow Poisoner feat
+ Updated 10-August-2022 School of Magic feat fixes
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -4885,7 +4886,7 @@ Choose one of the 7th-level Weapon Specialization options of the knight or the s
 	</RulesElement>
 	<RulesElement name="School of Magic Apprentice" type="Feat" internal-id="ID_FMP_FEAT_3585" source="Player Essentials: Class Compendium" revision-date="6/15/2011 10:13:53 AM">
 		<Flavor> You abandon your focus on implements to delve into a school of magic's secrets. </Flavor>
-		<Prereqs> Wizard, !Mage </Prereqs>
+		<Prereqs> Wizard, Arcane Implement Mastery </Prereqs>
 		<print-prereqs> Wizard, Arcane Implement Mastery </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Trade Arcane Implement Mastery for Apprentice Mage benefit from a school </specific>
@@ -4894,7 +4895,7 @@ Choose one of the 7th-level Weapon Specialization options of the knight or the s
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2867"/>
+			<grant type="Class Feature" name="ID_FMP_CLASS_FEATURE_2867"/>
 		</rules>
 Choose a school of magic, such as enchantment or evocation. You lose Arcane Implement Mastery and gain the Apprentice Mage benefit associated with that school.
 	</RulesElement>
@@ -4981,7 +4982,7 @@ Wizards of all builds appreciate this form of mastery because of the flexibility
 	<RulesElement name="School of Magic Expert" type="Feat" internal-id="ID_FMP_FEAT_3586" source="Player Essentials: Class Compendium" revision-date="6/15/2011 10:13:54 AM">
 		<Flavor> Your dedicated study in a particular school rewards you with more profound insights into its workings. </Flavor>
 		<Prereqs> Wizard, !Mage, School of Magic Apprentice feat, 5th level </Prereqs>
-		<print-prereqs> Wizard, School of Magic Apprentice feat, 10th level </print-prereqs>
+		<print-prereqs> Wizard, School of Magic Apprentice feat, 5th level </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Gain the Expert Mage benefit for your chosen school of magic </specific>
 		<specific name="Special"/>
@@ -4989,7 +4990,7 @@ Wizards of all builds appreciate this form of mastery because of the flexibility
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2871"/>
+			<grant type="Class Feature" name="ID_FMP_CLASS_FEATURE_2871"/>
 		</rules>
 You gain the Expert Mage benefit associated with the school you chose for your School of Magic Apprentice feat.
 	</RulesElement>
@@ -5004,7 +5005,7 @@ You gain the Expert Mage benefit associated with the school you chose for your S
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
-			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_2872"/>
+			<grant type="Class Feature" name="ID_FMP_CLASS_FEATURE_2872"/>
 		</rules>
 You gain the Master Mage benefit associated with the school you chose for your School of Magic Apprentice feat.
 	</RulesElement>

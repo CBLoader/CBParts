@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.03</Version>
+    <Version>1.04</Version>
     <Filename>22-invoker.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/22-invoker.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/22-invoker.txt</VersionAddress>
@@ -16,6 +16,7 @@
  Updated 13-July-2011 File Released.
  Updated 21-July-2011 Spell Update.
  Updated 18-May-2012 DSH added.
+ Updated 21-August-2022 Fix usage of Blade of Vengeance Attack.
 </Changelog>
 <!-- Typos -->  
    <RulesElement name="Blessing of the Storm Father" type="Power" internal-id="ID_FMP_POWER_11047" source="Dragon Magazine 383" revision-date="8/27/2010 11:57:45 AM">
@@ -52,4 +53,27 @@
     <specific name="Power Type"> Attack </specific>
 Seekers of lost lore can be consumed by their work. They spend most of their waking hours entranced in the study of the items they seek, possibly due to a residual property of the magic that binds the items to ensure they are never forgotten. The god of knowledge opens a conduit to such seekers, compelling them to go out and retrieve the items rather than remain forever studying, with timely warnings to protect them during their travels.
 </RulesElement>
+
+<!-- Fix Blade of Vengeance Attack usage -->
+<RulesElement internal-id="ID_FMP_POWER_7308" name="Blade of Vengeance Attack" type="Power" source="Player's Handbook 2" revision-date="8/27/2010 11:45 AM">
+  <Category>ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_127,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT</Category>
+  <Prereqs> Unselectable </Prereqs>
+  <Flavor> A spectral form like a shining angel appears amid your foes. Though the angel is indistinct and incorporeal, its curving blade seems solid and poised to attack an enemy that threatens your  allies. </Flavor>
+  <specific name="Power Usage"> At-Will </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display" />
+  <specific name="Keywords"> Conjuration, Divine, Implement </specific>
+  <specific name="Action Type"> Immediate Interrupt </specific>
+  <specific name="Attack Type"> Melee 1 </specific>
+  <specific name="Requirement"> The Blade of Vengeance power must be active to use this power. </specific>
+  <specific name="Trigger"> An enemy within 10 squares of the blade hits your ally </specific>
+  <specific name="Effect"> Before the attack, you move the blade to a square adjacent to the triggering enemy. </specific>
+  <specific name="Target"> The triggering enemy </specific>
+  <specific name="Attack"> Wisdom vs. Reflex </specific>
+  <specific name="Hit"> 1d8 + Wisdom modifier damage. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="_ParentPower"> ID_FMP_POWER_5192 </specific>
+  <specific name="Class"> ID_FMP_CLASS_127 </specific>
+</RulesElement>
+
 </D20Rules>

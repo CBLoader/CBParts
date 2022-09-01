@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.30</Version>
+    <Version>1.31</Version>
     <Filename>37-hybrid.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.txt</VersionAddress>
@@ -39,6 +39,7 @@
  Updated 22-June-2021 Fix Shadow Twist (Hybrid) display for Hybrid Binder
  Updated 23-June-2021 Add missing Shaper Focus COUNTSASFEATURE
  Updated 7-October-2021 Fix Attack Finesse (Hybrid) display for Hybrid Executioner
+ Updated 31-August-2022 Fix Hybrid/MC Vampire Surges errors
 </Changelog>
   
   <RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
@@ -296,7 +297,7 @@ You gain a +1 bonus to Will Defense Class Bonus.
 <statadd name="Vampire Surge Adjustment" value="-7" requires="ID_FMP_CLASS_2|ID_FMP_CLASS_8|ID_FMP_CLASS_104|ID_FMP_CLASS_126|ID_FMP_CLASS_129|ID_FMP_CLASS_147|ID_FMP_CLASS_362|ID_FMP_CLASS_472|ID_FMP_CLASS_529|ID_FMP_CLASS_602|ID_FMP_CLASS_779|ID_FMP_CLASS_705|ID_FMP_CLASS_811"/>
 <statadd name="Vampire Surge Adjustment" value="-9" requires="ID_FMP_CLASS_3|ID_FMP_CLASS_124|ID_FMP_CLASS_134|ID_FMP_CLASS_713|ID_FMP_CLASS_716"/>
 <statadd name="Vampire Surge Adjustment" value="-10" requires="ID_FMP_CLASS_4|ID_FMP_CLASS_784|ID_FMP_CLASS_813"/>
-<statadd name="Vampire Surge Adjustment" value="-6" requires="ID_FMP_CLASS_5|ID_FMP_CLASS_6|ID_FMP_CLASS_7|ID_FMP_CLASS_9|ID_FMP_CLASS_125|ID_FMP_CLASS_127|ID_FMP_CLASS_128|ID_FMP_CLASS_437|ID_FMP_CLASS_466|ID_FMP_CLASS_788|ID_FMP_CLASS_790|ID_FMP_CLASS_793|ID_FMP_CLASS_719|ID_FMP_CLASS_722|ID_FMP_CLASS_821"/>
+<statadd name="Vampire Surge Adjustment" value="-6" requires="ID_FMP_CLASS_5|ID_FMP_CLASS_6|ID_FMP_CLASS_7|ID_FMP_CLASS_9|ID_FMP_CLASS_125|ID_FMP_CLASS_127|ID_FMP_CLASS_128|ID_FMP_CLASS_437|ID_FMP_CLASS_466|ID_FMP_CLASS_788|ID_FMP_CLASS_793|ID_FMP_CLASS_719|ID_FMP_CLASS_722|ID_FMP_CLASS_821"/>
 <statadd name="Vampire Surge Adjustment" value="-8" requires="ID_FMP_CLASS_53|ID_FMP_CLASS_148"/>
 <statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_352"/> 
 <statadd name="Vampire Surge Adjustment" value="-4" half-point="true" requires="ID_FMP_HYBRID_CLASS_353"/> 
@@ -324,10 +325,18 @@ You gain a +1 bonus to Will Defense Class Bonus.
 <statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_612"/>
 <statadd name="Vampire Surge Adjustment" value="-3" requires="ID_FMP_HYBRID_CLASS_641"/>
 <statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_CDJ_HYBRID_CLASS_40001"/>
-<statadd name="Vampire Surge Adjustment" value="-5" half-point="true" requires="ID_CDJ_HYBRID_CLASS_40003"/>
-<statadd name="Vampire Surge Adjustment" value="-5" half-point="true" requires="ID_CDJ_HYBRID_CLASS_40004"/>
+<statadd name="Vampire Surge Adjustment" value="-5" requires="ID_CDJ_HYBRID_CLASS_40003"/>
+<statadd name="Vampire Surge Adjustment" value="-5" requires="ID_CDJ_HYBRID_CLASS_40004"/>
 <statadd name="Vampire Surge Adjustment" value="-3" half-point="true" requires="ID_FMP_HYBRID_CLASS_894"/>
 <statadd name="Vampire Surge Adjustment" value="-3" requires="ID_CDJ_HYBRID_CLASS_40006"/> 
+<statadd name="Vampire Surge Adjustment" value="-8" requires="ID_FMP_CLASS_906"/>
+<statadd name="Vampire Surge Adjustment" value="-7" requires="ID_FMP_CLASS_907"/>
+<statadd name="Vampire Surge Adjustment" value="-7" requires="ID_FMP_CLASS_909"/>
+<statadd name="Vampire Surge Adjustment" value="-7" requires="ID_FMP_CLASS_790"/>
+<statadd name="Vampire Surge Adjustment" value="-6" requires="ID_FMP_CLASS_956"/>
+<statadd name="Vampire Surge Adjustment" value="-7" requires="ID_FMP_CLASS_883"/>
+<statadd name="Vampire Surge Adjustment" value="-6" requires="ID_FMP_CLASS_958"/>
+<statadd name="Vampire Surge Adjustment" value="-6" requires="ID_FMP_CLASS_908"/>
 <statadd name="Healing Surges" value="-ABILITYMOD(Constitution)"/>
 <statadd name="Healing Surges" value="+Vampire Surge Adjustment"/>
 <statadd name="Healing Surges" value="+2"/>

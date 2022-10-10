@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.34</Version>
+    <Version>1.36</Version>
     <Filename>38-paragon-paths.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.txt</VersionAddress>
@@ -42,6 +42,7 @@
  Updated 11-March-2013 Added Umbriri paragon path fix (Shadow Defense)
  Updated 8-October-2013 Added Dragon 427 Paragon Path
  Updated 24-June-2021 Added Dream Blade and Irruption of the Living Gate to add Augmentable keyword
+ Updated 9-October-2022 Added Luckbringer of Tymora to fix prerequisite, Feature levels
 </Changelog>
   <!-- Dragon Magazine 394 -->
   <RulesElement name="Herald of Madness" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_805" source="Dragon Magazine 394" revision-date="x/x/x">
@@ -4940,5 +4941,23 @@ Level 21: The soul pushes the triggering enemy up to 3 squares. </specific>
   <specific name="Area"> burst 2 within 10 squares </specific>
 </RulesElement>
 
+<RulesElement internal-id="ID_FMP_PARAGON_PATH_153" name="Luckbringer of Tymora" type="Paragon Path" source="Dragon Magazine 365" revision-date="8/27/2010 12:41:08 PM">
+  <Prereqs> Cleric class, must worship Tymora </Prereqs>
+  <print-prereqs> Cleric class, must worship Tymora </print-prereqs>
+  <Flavor> “I am a daughter of Lady Luck. I place myself in the hands of fate and embrace a willingness to take risks. Fortune favors the bold!” </Flavor>
+  <specific name="Power Name" />
+  <specific name="Class Features"> ID_FMP_CLASS_FEATURE_867, ID_FMP_CLASS_FEATURE_868, ID_FMP_CLASS_FEATURE_869 </specific>
+  <specific name="Powers"> ID_FMP_POWER_4181,ID_FMP_POWER_4182,ID_FMP_POWER_4183 </specific>
+  <specific name="_DisplayPowers"> ID_FMP_POWER_4181,ID_FMP_POWER_4182,ID_FMP_POWER_4183 </specific>
+  <rules>
+    <grant name="ID_FMP_CLASS_FEATURE_867" type="Class Feature" Level="16" />
+    <grant name="ID_FMP_CLASS_FEATURE_868" type="Class Feature" Level="11" />
+    <grant name="ID_FMP_CLASS_FEATURE_869" type="Class Feature" Level="11" />
+    <grant name="ID_FMP_POWER_4181" type="Power" Level="12" />
+    <grant name="ID_FMP_POWER_4182" type="Power" Level="20" />
+    <grant name="ID_FMP_POWER_4183" type="Power" Level="11" />
+  </rules>
+As a priest of the Lady Who Smiles you favor gaiety and spontaneity, and you believe that those who enjoy the greatest fortune are those who take the greatest risks. You are bold, for to be bold is to live.
+ </RulesElement>
 
 </D20Rules>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+<UpdateInfo>
+    <Version>1.00</Version>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/Kobold-power-choice.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/Kobold-power-choice.part</VersionAddress>
+    <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+</UpdateInfo>
+<Changelog>
+    Created 2-May-2021
+</Changelog>
+
+<!-- Adds back in the old MM Shifty power as a choice instead of Shifty Maneuver -->
+
+  <RulesElement internal-id="ID_FMP_RACIAL_TRAIT_416" name="Shifty Choice" type="Racial Trait" source="Monster Manual,Into the Unknown: The Dungeon Survival Handbook,Custom">
+    <specific name="Short Description"> Choose a benefit; the old "Shifty" power or the new "Shifty Maneuver" power. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="_PARSED_SUB_FEATURES"> ID_FMP_RACIAL_TRAIT_416-1, ID_FMP_RACIAL_TRAIT_416-2 </specific>
+    <rules>
+      <select type="Racial Trait" number="1" Category="ID_FMP_RACIAL_TRAIT_416" />
+    </rules>
+Choose one of the following benefits below.
+The old Shifty power or the new Shifty Maneuver power.
+  </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_RACIAL_TRAIT_416-1" name="Shifty" type="Racial Trait" source="Monster Manual,Into the Unknown: The Dungeon Survival Handbook,Custom">
+    <Category>ID_FMP_RACIAL_TRAIT_416,1</Category>
+    <specific name="Short Description"> You have the shifty power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_2479-1 </specific>
+    <specific name="Type"> Utility </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_FMP_POWER_2479-1 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_2479-1" type="Power" />
+    </rules>
+You have the shifty power.
+  </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_RACIAL_TRAIT_416-2" name="Shifty Maneuver" type="Racial Trait" source="Monster Manual,Dungeon Survival Handbook">
+    <Category>ID_FMP_RACIAL_TRAIT_416,1</Category>
+    <specific name="Short Description"> You have the shifty maneuver power </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Powers"> ID_FMP_POWER_2479 </specific>
+    <specific name="Type"> Utility </specific>
+    <specific name="Class" />
+    <specific name="_DisplayPowers"> ID_FMP_POWER_2479 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_2479" type="Power" />
+    </rules>
+You have the shifty maneuver power.
+  </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_POWER_2479-1" name="Shifty" type="Power" source="Monster Manual,Into the Unknown: The Dungeon Survival Handbook,Custom">
+    <Category>ID_FMP_RACIAL_TRAIT_416-1,ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_RACIAL_TRAIT_416,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_RACE_23,ID_INTERNAL_CATEGORY_MINOR_ACTION</Category>
+    <Prereqs> Unselectable </Prereqs>
+    <Flavor> You skitter and scamper through the ranks of your enemies, much to their chagrin. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="Display"> Kobold Racial Utility </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You shift 1 square. </specific>
+    <specific name="Class"> ID_FMP_RACE_23 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_416-1 </specific>
+  </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_POWER_2479" name="Shifty Maneuver" type="Power" source="Monster Manual,Into the Unknown: The Dungeon Survival Handbook">
+    <Category>ID_FMP_RACIAL_TRAIT_416-2,ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_RACIAL_TRAIT_416,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_RACE_23,ID_INTERNAL_CATEGORY_MOVE_ACTION</Category>
+    <Prereqs> Unselectable </Prereqs>
+    <Flavor> You call on your natural ability to dodge danger, taking your tribemates along for the ride. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Kobold Racial Utility </specific>
+    <specific name="Keywords" />
+    <specific name="Action Type"> Move Action </specific>
+    <specific name="Attack Type"> Close burst 2 </specific>
+    <specific name="Target"> You and each ally in the burst </specific>
+    <specific name="Effect"> Each target can shift 1 square as a free action. </specific>
+    <specific name="Class"> ID_FMP_RACE_23 </specific>
+    <specific name="Level" />
+    <specific name="Power Type"> Utility </specific>
+    <specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_416-2 </specific>
+  </RulesElement>
+
+</D20Rules>

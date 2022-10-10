@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>2.30</Version>
+    <Version>2.31</Version>
     <Filename>08-themes.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/08-themes.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/08-themes.txt</VersionAddress>
@@ -44,6 +44,7 @@
  Updated 19-January-2022 Updated Pack Outcast F5 to match errata.
  Updated 11-August-2022 Fix range on Far Reaching
  Updated 24-August-2022 Fix sustain on Grasping Limb
+ Updated 9-October-2022 Fix missing River Rat's Gambit power granted by theme
 </Changelog>
 <!-- Dark Sun Themes -->
   <RulesElement name="Athasian Minstrel" type="Theme" internal-id="ID_FMP_THEME_642" source="Dark Sun Campaign Setting">
@@ -18104,6 +18105,7 @@ Any class might be drawn to the river rat lifestyle, but those well suited to ro
 		<rules>
 			<statadd name="Streetwise Misc" value="+1" type="River Rat"/>
 			<statadd name="Bluff Misc" value="+1" type="River Rat"/>
+      <grant name="ID_TIV_POWER_DRAGON_430-2-1-1" type="Power" />
 		</rules>
 You gain a +1 power bonus to Streetwise checks and Bluff checks. You also gain the river rat's gambit attack power.
 </RulesElement>

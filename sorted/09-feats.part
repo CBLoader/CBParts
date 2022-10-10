@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.146</Version>
+		<Version>1.148</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -67,6 +67,7 @@
  Updated 11-June-2022 Fixed Spear Expertise conditional calculation
  Updated 26-July-2022 Fixed Shadow Poisoner feat
  Updated 10-August-2022 School of Magic feat fixes
+ Updated 11-September-2022 Binding Initiate source fix, typos
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -46060,7 +46061,7 @@ Special: This feat counts as a multiclass feat for the Battlemind class.
 You gain the Psionic Augmentation class feature and 1 power point. You can spend this power point to augment powers, feats, or magic items that are augmentable. Once you spend this power point, you do not regain the power point until you take an extended rest. You also qualify for feats that require the Psionic Augmentation class feature. You gain 1 additional power point at 21st level.
 Special: This feat counts as a multiclass feat for the Psion class.
 	</RulesElement>
-	<RulesElement name="Binding Initiate" type="Feat" internal-id="ID_FMP_FEAT_3633" source="Dragon Magazine 402">
+	<RulesElement name="Binding Initiate" type="Feat" internal-id="ID_FMP_FEAT_3633" source="Dragon Magazine 400">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_WARLOCK,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
 		<Prereqs> ~MULTICLASS or Unlimited Multiclass </Prereqs>
 		<Flavor> You have studied the magic needed to create a binding pact with a planar entity. </Flavor>
@@ -46082,7 +46083,7 @@ You gain training in one skill from the binder warlock's class skills list. You 
 	Choose a binder pact boon. You gain the at-will attack power and the utility power it grants at 1st level as encounter powers.
 	</RulesElement>
 	<RulesElement name="BindingInitiateChoice" type="Category" internal-id="ID_INTERNAL_INTERNAL_ID_FMP_FEAT_3633_CHOICE" source="Core"/>
-	<RulesElement name="Fey Pact (Binding Initate)" type="Class Feature" internal-id="ID_FMP_FEAT_3633_FEYPACT" source="Dragon Magazine 402">
+	<RulesElement name="Fey Pact (Binding Initate)" type="Class Feature" internal-id="ID_FMP_FEAT_3633_FEYPACT" source="Dragon Magazine 406">
 		<Category> ID_INTERNAL_INTERNAL_ID_FMP_FEAT_3633_CHOICE </Category>
 		<specific name="Short Description"/>
 		<specific name="_CS_ShortDescription"> @ </specific>
@@ -46098,7 +46099,7 @@ You gain training in one skill from the binder warlock's class skills list. You 
 		</rules>
 You gain cloud sight and fascinating shadows as encounter powers.
 	</RulesElement>
-	<RulesElement name="Gloom Pact (Binding Initate)" type="Class Feature" internal-id="ID_FMP_FEAT_3633_GLOOMPACT" source="Dragon Magazine 402">
+	<RulesElement name="Gloom Pact (Binding Initate)" type="Class Feature" internal-id="ID_FMP_FEAT_3633_GLOOMPACT" source="Dragon Magazine 400">
 		<Category> ID_INTERNAL_INTERNAL_ID_FMP_FEAT_3633_CHOICE </Category>
 		<specific name="Short Description"/>
 		<specific name="_CS_ShortDescription"> @ </specific>
@@ -46114,7 +46115,7 @@ You gain cloud sight and fascinating shadows as encounter powers.
 		</rules>
 You gain echoing dirge and shadow warp as encounter powers.
 	</RulesElement>
-	<RulesElement name="Star Pact (Binding Initate)" type="Class Feature" internal-id="ID_FMP_FEAT_3633_STARPACT" source="Dragon Magazine 402">
+	<RulesElement name="Star Pact (Binding Initate)" type="Class Feature" internal-id="ID_FMP_FEAT_3633_STARPACT" source="Dragon Magazine 400">
 		<Category> ID_INTERNAL_INTERNAL_ID_FMP_FEAT_3633_CHOICE </Category>
 		<specific name="Short Description"/>
 		<specific name="_CS_ShortDescription"> @ </specific>
@@ -46128,7 +46129,7 @@ You gain echoing dirge and shadow warp as encounter powers.
 			<grant name="ID_FMP_POWER_13913" type="Power"/>
 			<modify name="ID_FMP_POWER_13913" type="Power" Field="Power Usage" value="Encounter"/>
 		</rules>
-You gain thidden lore and mind shadows as encounter powers.
+You gain hidden lore and mind shadows as encounter powers.
 	</RulesElement>
 	<!-- Dragon Magazine 412 Feats -->
 	<RulesElement name="Chauntea's Comfort" type="Feat" internal-id="ID_TIV_FEAT_DRAGON_MAGAZINE_412-1" source="Dragon Magazine 412">

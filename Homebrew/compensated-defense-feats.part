@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+<UpdateInfo>
+    <Version>1.00</Version>
+    <PartAddress>https://cbloader.vorpald20.com/Homebrew/compensated-defense-feats.part</PartAddress>
+    <VersionAddress>https://cbloader.vorpald20.com/Homebrew/compensated-defense-feats.part</VersionAddress>
+    <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+</UpdateInfo>
+<Changelog>
+    Created 22-October-2021 Initial creation
+    Updated 11-January-2022 Updated feats from 15-December-2021 post in Discord
+</Changelog>
+
+<!-- These feats are homebrew content created by Derahex#1200 on the 4e D&D Discord -->
+
+<RulesElement internal-id="ID_INTERNAL_COMPENSATED_DEFENSE" name="Compensated Defense" type="Internal" source="House Rules, Derahex#1200" />
+
+<RulesElement internal-id="ID_DERAHEX_FEAT_CD1" name="Vanguard's Charge" type="Feat" source="House Rules, Derahex#1200">
+    <Prereqs> Strength 15; Constitution 15; !Compensated Defense </Prereqs>
+    <print-prereqs> Strength 15 and Constitution 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use lower of Str or Con for Reflex and initiative </specific>
+    <specific name="Special" />
+    <specific name="type"> Compensated Defense </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_COMPENSATED_DEFENSE" type="Internal" />
+      <statadd name="CompDef1" value="+Strength modifier" type="Ability1" />
+      <statadd name="CompDef2" value="+Constitution modifier" type="Ability2" />
+      <statadd name="CompDefMax" value="+Strength modifier" type="Ability3" />
+      <statadd name="CompDefMax" value="+Constitution modifier" type="Ability3" />
+      <statadd name="Compensated Defense" value="+CompDef1" />
+      <statadd name="Compensated Defense" value="+CompDef2" />
+      <statadd name="Compensated Defense" value="-CompDefMax" />
+      <statadd name="Reflex Defense" value="+Compensated Defense" type="Ability" />
+      <statadd name="Initiative" value="+Compensated Defense" type="Ability" />
+    </rules>
+You use the lower of your Strength modifier or Constitution modifier to determine your Reflex defense and initiative instead of the normal modifiers.
+You may only have one Compensated Defense feat.
+</RulesElement>
+
+<RulesElement internal-id="ID_DERAHEX_FEAT_CD2" name="Brawn Over Brain" type="Feat" source="House Rules, Derahex#1200">
+    <Prereqs> Strength 15; Constitution 15; !Compensated Defense </Prereqs>
+    <print-prereqs> Strength 15 and Constitution 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use lower of Str or Con for Will and Intimidate, +1 to saves after being bloodied </specific>
+    <specific name="Special" />
+    <specific name="type"> Compensated Defense </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_COMPENSATED_DEFENSE" type="Internal" />
+      <statadd name="CompDef1" value="+Strength modifier" type="Ability1" />
+      <statadd name="CompDef2" value="+Constitution modifier" type="Ability2" />
+      <statadd name="CompDefMax" value="+Strength modifier" type="Ability3" />
+      <statadd name="CompDefMax" value="+Constitution modifier" type="Ability3" />
+      <statadd name="Compensated Defense" value="+CompDef1" />
+      <statadd name="Compensated Defense" value="+CompDef2" />
+      <statadd name="Compensated Defense" value="-CompDefMax" />
+      <statadd name="Will Defense" value="+Compensated Defense" type="Ability" />
+      <statadd name="Intimidate" value="+Compensated Defense" type="Ability" />
+    </rules>
+You use the lower of your Strength modifier or Constitution modifier to determine your Will defense and when making Intimidate checks instead of the normal modifiers.
+Additionally, when you first become bloodied in an encounter, you gain a +1 bonus to all saving throws until the end of the encounter.
+You may only have one Compensated Defense feat.
+</RulesElement>
+
+<RulesElement internal-id="ID_DERAHEX_FEAT_CD3" name="Practiced Resilience" type="Feat" source="House Rules, Derahex#1200">
+    <Prereqs> Dexterity 15; Intelligence 15; !Compensated Defense </Prereqs>
+    <print-prereqs> Dexterity 15 and Intelligence 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use lower of Dex or Int for Fortitude, half that modifier to healing surge value, and gain a healing surge </specific>
+    <specific name="Special" />
+    <specific name="type"> Compensated Defense </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_COMPENSATED_DEFENSE" type="Internal" />
+      <statadd name="CompDef1" value="+Dexterity modifier" type="Ability1" />
+      <statadd name="CompDef2" value="+Intelligence modifier" type="Ability2" />
+      <statadd name="CompDefMax" value="+Dexterity modifier" type="Ability3" />
+      <statadd name="CompDefMax" value="+Intelligence modifier" type="Ability3" />
+      <statadd name="Compensated Defense" value="+CompDef1" />
+      <statadd name="Compensated Defense" value="+CompDef2" />
+      <statadd name="Compensated Defense" value="-CompDefMax" />
+      <statadd name="Fortitude Defense" value="+Compensated Defense" type="Ability" />
+      <statadd name="Comp Def Surge Value" value="+(Compensated Defense)/2" />
+      <statadd name="Healing Surge Value" value="+Comp Def Surge Value" />
+      <statadd name="Healing Surges" value="+1" />
+    </rules>
+You use the lower of your Dexterity modifier or Intelligence modifier to determine your Fortitude defense instead of the normal modifier, and add half that modifier value to your healing surge value. You gain an additional healing surge.
+You may only have one Compensated Defense feat.
+</RulesElement>
+
+<RulesElement internal-id="ID_DERAHEX_FEAT_CD4" name="Sharp Spirited" type="Feat" source="House Rules, Derahex#1200">
+    <Prereqs> Dexterity 15; Intelligence 15; !Compensated Defense </Prereqs>
+    <print-prereqs> Dexterity 15 and Intelligence 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use lower of Dex or Int for Will and gain +1 to saving throws </specific>
+    <specific name="Special" />
+    <specific name="type"> Compensated Defense </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_COMPENSATED_DEFENSE" type="Internal" />
+      <statadd name="CompDef1" value="+Dexterity modifier" type="Ability1" />
+      <statadd name="CompDef2" value="+Intelligence modifier" type="Ability2" />
+      <statadd name="CompDefMax" value="+Dexterity modifier" type="Ability3" />
+      <statadd name="CompDefMax" value="+Intelligence modifier" type="Ability3" />
+      <statadd name="Compensated Defense" value="+CompDef1" />
+      <statadd name="Compensated Defense" value="+CompDef2" />
+      <statadd name="Compensated Defense" value="-CompDefMax" />
+      <statadd name="Will Defense" value="+Compensated Defense" type="Ability" />
+      <select type="Skill Training" number="1" Category="$$CLASS" requires="!Binder|Blackguard|Cavalier|Hexblade|Knight" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_821" requires="Binder" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_813" requires="Blackguard" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_784" requires="Cavalier" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_793" requires="Hexblade" />
+      <select type="Skill Training" number="1" Category="ID_FMP_CLASS_713" requires="Knight" />
+    </rules>
+You use the lower of your Dexterity modifier or Intelligence modifier to determine your Will defense instead of the normal modifier. You also gain training in a class skill of your choice.
+In addition, choose a skill power associated with that skill. You gain that power. To use it, you must expend an unexpended utility power of the same level or higher. You can change the skill power from this feat every time you gain a level.
+You may only have one Compensated Defense feat.
+</RulesElement>
+
+<!-- Encumbrance is hard-coded, so we can't implement that part of this feat -->
+<RulesElement internal-id="ID_DERAHEX_FEAT_CD5" name="Mind Over Matter" type="Feat" source="House Rules, Derahex#1200">
+    <Prereqs> Wisdom 15; Charisma 15; !Compensated Defense </Prereqs>
+    <print-prereqs> Wisdom 15 and Charisma 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use lower of Wis or Cha for Fortitude, carrying capacity, and max hp; ignore speed penalty in heavy armor </specific>
+    <specific name="Special" />
+    <specific name="type"> Compensated Defense </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_COMPENSATED_DEFENSE" type="Internal" />
+      <statadd name="CompDef1" value="+Wisdom modifier" type="Ability1" />
+      <statadd name="CompDef2" value="+Charisma modifier" type="Ability2" />
+      <statadd name="CompDefMax" value="+Wisdom modifier" type="Ability3" />
+      <statadd name="CompDefMax" value="+Charisma modifier" type="Ability3" />
+      <statadd name="CompDefScoreMax" value="+Wisdom" type="Ability4" />
+      <statadd name="CompDefScoreMax" value="+Charisma" type="Ability4" />
+      <statadd name="Compensated Defense" value="+CompDef1" />
+      <statadd name="Compensated Defense" value="+CompDef2" />
+      <statadd name="Compensated Defense" value="-CompDefMax" />
+      <statadd name="Fortitude Defense" value="+Compensated Defense" type="Ability" />
+      <statadd name="Compensated Defense Score" value="+Wisdom" />
+      <statadd name="Compensated Defense Score" value="+Charisma" />
+      <statadd name="Compensated Defense Score" value="-CompDefScoreMax" />
+      <statadd name="Hit Points" value="+Compensated Defense Score" type="Level 1" />
+      <statadd name="Speed" value="0" type="Armor" />
+    </rules>
+You use the lower of your Wisdom modifier or Charisma modifier to determine your Fortitude defense, carrying capacity, and maximum hit points instead of the normal modifiers.
+Additionally, you ignore the speed penalty of heavy armor.
+You may only have one Compensated Defense feat.
+</RulesElement>
+
+<RulesElement internal-id="ID_DERAHEX_FEAT_CD6" name="Shrewd Sagacity" type="Feat" source="House Rules, Derahex#1200">
+    <Prereqs> Wisdom 15; Charisma 15; !Compensated Defense </Prereqs>
+    <print-prereqs> Wisdom 15 and Charisma 15 </print-prereqs>
+    <specific name="Tier"> Heroic </specific>
+    <specific name="Short Description"> Use lower of Wis or Cha for Reflex and grant movement when healed</specific>
+    <specific name="Special" />
+    <specific name="type"> Compensated Defense </specific>
+    <specific name="Associated Power Info" />
+    <specific name="Associated Powers" />
+    <rules>
+      <grant name="ID_INTERNAL_COMPENSATED_DEFENSE" type="Internal" />
+      <statadd name="CompDef1" value="+Wisdom modifier" type="Ability1" />
+      <statadd name="CompDef2" value="+Charisma modifier" type="Ability2" />
+      <statadd name="CompDefMax" value="+Wisdom modifier" type="Ability3" />
+      <statadd name="CompDefMax" value="+Charisma modifier" type="Ability3" />
+      <statadd name="Compensated Defense" value="+CompDef1" />
+      <statadd name="Compensated Defense" value="+CompDef2" />
+      <statadd name="Compensated Defense" value="-CompDefMax" />
+      <statadd name="Reflex Defense" value="+Compensated Defense" type="Ability" />
+    </rules>
+You use the lower of your Wisdom modifier or Charisma modifier to determine your Reflex defense instead of the normal modifier. You also gain training in a class skill of your choice.
+Additionally, when you use a power that allows an ally to spend a healing surge to regain hit points, or a power that allows an ally to regain hit points as if they had spent one or more healing surges, either you or that ally can also shift 1 square as a free action.
+You may only have one Compensated Defense feat.
+</RulesElement>
+
+</D20Rules>

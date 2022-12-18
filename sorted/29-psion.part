@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.06</Version>
+    <Version>1.07</Version>
     <Filename>29-psion.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/29-psion.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/29-psion.txt</VersionAddress>
@@ -21,6 +21,7 @@
  Updated 24-June-2021 Added Insidious Doubt and Psychic Anomaly to add the Augmentable keyword
  Updated 24-June-2021 Added Augment 0 entries for Static Mote and Psychic Anomaly to prevent removal of Augmentable keyword
  Updated 24-June-2021 Added Reality Meltdown and added an Augment 0 entry for it to prevent removal of Augmentable keyword
+ Updated 18-December-2022 Fixed incorrect Void Shard augment power reference
 </Changelog>
 
   <!-- Errata for August 2011 -->
@@ -117,7 +118,7 @@
       <specific name="Attack Type"> Ranged 10 </specific>
       <specific name="Effect"> You conjure a void shard in an unoccupied square within range. Any creature that starts its turn adjacent to the shard is slowed until the end of its turn. At the start of your next turn, the shard disappears and you use the Void Shard Attack power. </specific>
       <specific name="Augment"> 1 </specific>
-      <specific name=" Effect"> As above, and when the void shard is conjured, it uses the Void Shard Attack power as a free action, with the range Close burst 3. </specific>
+      <specific name=" Effect"> As above, and when the void shard is conjured, it uses the following attack as a free action, with the range Close burst 3. </specific>
       <specific name=" Target"> Each enemy in burst </specific>
       <specific name=" Attack"> Intelligence vs. Reflex </specific>
       <specific name=" Hit"> The void shard pulls the target 3 squares. </specific>
@@ -144,6 +145,7 @@
       <specific name="Target"> Each creature in burst </specific>
       <specific name="Attack"> Intelligence vs. Fortitude </specific>
       <specific name="Hit"> 1d8 + Intelligence modifier force damage, and the target falls prone. </specific>
+      <specific name="Special"> You can take this free action only as the first action of your turn. </specific>
       <specific name="Augment"> 4 </specific>
       <specific name=" Hit"> 2d8 + Intelligence modifier force damage, and the target is both dazed and slowed until the end of your next turn </specific>
       <specific name="_Associated Feats"/>
@@ -308,7 +310,7 @@ When you summon a creature using a psion power or psion paragon path power, the 
       <specific name="Keywords"> Augmentable, Conjuration, Force, Implement, Psionic </specific>
       <specific name="Action Type"> Standard action </specific>
       <specific name="Attack Type"> Ranged 10 </specific>
-      <specific name="Effect"> You conjure a void shard in an unoccupied square within range. Any creature that starts its turn adjacent to the shard is slowed until the end of its turn. At the start of your next turn, the shard disappears and you use the Void Shard Attack power, and when the void shard is conjured, it uses the Void Shard Attack power as a free action, with the range Close burst 3. </specific>
+      <specific name="Effect"> You conjure a void shard in an unoccupied square within range. Any creature that starts its turn adjacent to the shard is slowed until the end of its turn. At the start of your next turn, the shard disappears and you use the Void Shard Attack power, and when the void shard is conjured, it uses the following attack as a free action, with the range Close burst 3. </specific>
       <specific name="Class"> ID_FMP_CLASS_437 </specific>
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>

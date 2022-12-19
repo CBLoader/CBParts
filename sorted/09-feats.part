@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.148</Version>
+		<Version>1.149</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -68,6 +68,7 @@
  Updated 26-July-2022 Fixed Shadow Poisoner feat
  Updated 10-August-2022 School of Magic feat fixes
  Updated 11-September-2022 Binding Initiate source fix, typos
+ Updated 19-December-2022 Fix Master of Fire and Darkness feat
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -10041,6 +10042,10 @@ At 21st level the damage increases to 1d12 per point in the Darkspiral Aura.
 		<specific name="type"/>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
+		<rules>
+			<grant type="Power" name="ID_FMP_POWER_2473" requires="ID_FMP_RACIAL_TRAIT_565" />
+			<grant type="Power" name="ID_FMP_POWER_1831" requires="ID_FMP_RACIAL_TRAIT_565" />
+		</rules>
 Your Lolthtouched racial trait normally lets you use either cloud of darkness or darkfire as an encounter power. Now cloud of darkness and darkfire are two separate encounter powers. You can use each power once per encounter.
 	</RulesElement>
 	<RulesElement name="Merciless Killer" type="Feat" internal-id="ID_FMP_FEAT_641" source="Forgotten Realms Player's Guide" revision-date="8/27/2010 12:18:09 PM">

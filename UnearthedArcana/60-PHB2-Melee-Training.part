@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<D20Rules game-system="D&amp;D4E">
+	<UpdateInfo>
+		<Version>1.00</Version>
+		<Filename>60-PHB2-Melee-Training.part</Filename>
+		<PartAddress>https://cbloader.vorpald20.com/UnearthedArcana/60-PHB2-Melee-Training.part</PartAddress>
+		<VersionAddress>https://cbloader.vorpald20.com/UnearthedArcana/60-PHB2-Melee-Training.part</VersionAddress>
+		<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
+	</UpdateInfo>
+<Changelog>
+    Created 31-December-2022
+</Changelog>
+
+<!-- Un-Nerf Melee Training -->
+
+<RulesElement internal-id="ID_INTERNAL_FEAT_MELEE_TRAINING_(CONSTITUTION)" name="Melee Training (Constitution)" type="Feat" source="Player's Handbook 2">
+  <Prereqs> ~MELEE-TRAINING </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_FEAT_1016 </specific>
+  <specific name="Short Description"> Use Con for MBAs </specific>
+  <specific name="Tier"> Heroic </specific>
+  <rules>
+    <textstring name="melee basic:key ability" value="Constitution*" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Constitution vs. AC" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Constitution modifier damage. Increase damage to 2[W] + Constitution modifier damage at 21st level." />
+  </rules>
+You can use Constitution in place of strength for the attack and damage rolls with melee basic attack.
+ </RulesElement>
+<RulesElement internal-id="ID_INTERNAL_FEAT_MELEE_TRAINING_(DEXTERITY)" name="Melee Training (Dexterity)" type="Feat" source="Player's Handbook 2">
+  <Prereqs> ~MELEE-TRAINING </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_FEAT_1016 </specific>
+  <specific name="Short Description"> Use Dex for MBAs </specific>
+  <specific name="Tier"> Heroic </specific>
+  <rules>
+    <textstring name="melee basic:key ability" value="Dexterity*" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Dexterity vs. AC" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Dexterity modifier damage. Increase damage to 2[W] + Dexterity modifier damage at 21st level." />
+  </rules>
+You can use Dexterity in place of strength for the attack and damage rolls with melee basic attack.
+ </RulesElement>
+<RulesElement internal-id="ID_INTERNAL_FEAT_MELEE_TRAINING_(INTELLIGENCE)" name="Melee Training (Intelligence)" type="Feat" source="Player's Handbook 2">
+  <Prereqs> ~MELEE-TRAINING </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_FEAT_1016 </specific>
+  <specific name="Short Description"> Use Int for MBAs </specific>
+  <specific name="Tier"> Heroic </specific>
+  <rules>
+    <textstring name="melee basic:key ability" value="Intelligence*" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Intelligence vs. AC" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Intelligence modifier damage. Increase damage to 2[W] + Intelligence modifier damage at 21st level." />
+  </rules>
+You can use Intelligence in place of strength for the attack and damage rolls with melee basic attack.
+ </RulesElement>
+<RulesElement internal-id="ID_INTERNAL_FEAT_MELEE_TRAINING_(WISDOM)" name="Melee Training (Wisdom)" type="Feat" source="Player's Handbook 2">
+  <Prereqs> ~MELEE-TRAINING </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_FEAT_1016 </specific>
+  <specific name="Short Description"> Use Wis for MBAs </specific>
+  <specific name="Tier"> Heroic </specific>
+  <rules>
+    <textstring name="melee basic:key ability" value="Wisdom*" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Wisdom vs. AC" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Wisdom modifier damage. Increase damage to 2[W] + Wisdom modifier damage at 21st level." />
+  </rules>
+You can use Wisdom in place of strength for the attack and damage rolls with melee basic attack.
+ </RulesElement>
+<RulesElement internal-id="ID_INTERNAL_FEAT_MELEE_TRAINING_(CHARISMA)" name="Melee Training (Charisma)" type="Feat" source="Player's Handbook 2">
+  <Prereqs> ~MELEE-TRAINING </Prereqs>
+  <specific name="_SupportsID"> ID_FMP_FEAT_1016 </specific>
+  <specific name="Short Description"> Use Cha for MBAs </specific>
+  <specific name="Tier"> Heroic </specific>
+  <rules>
+    <textstring name="melee basic:key ability" value="Charisma*" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Charisma vs. AC" />
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Charisma modifier damage. Increase damage to 2[W] + Charisma modifier damage at 21st level." />
+  </rules>
+You can use Charisma in place of strength for the attack and damage rolls with melee basic attack.
+ </RulesElement>
+
+ 
+</D20Rules>

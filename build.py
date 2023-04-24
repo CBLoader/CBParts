@@ -32,7 +32,7 @@ class Info():
         return f'{self.category}: {self.url}' + f' ({self.desc})' if self.desc else ''
 
     def html(self) -> str:
-        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + (f'<br/> {self.description}</p>' if self.description else '</p>')
+        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + f'<a href="{self.url}">(Preview)</a>' + (f'<br/> {self.description}</p>' if self.description else '</p>')  # noqa: E501
 
     def __hash__(self):
         return self.name.__hash__()

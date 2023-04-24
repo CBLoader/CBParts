@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
 		<Version>1.149</Version>
@@ -5255,7 +5256,7 @@ You gain the following benefits and weaknesses.
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
-			<replace power-replace="ID_FMP_POWER_13853:encounter,1+" />
+			<replace power-replace="ID_FMP_POWER_13853:encounter,1+"/>
 		</rules>
 Choose one of your encounter attack powers that has a level. You lose that power and gain blood drinker. Your blood drinker is also triggered if you hit an adjacent enemy with a melee at-will attack power.
 	</RulesElement>
@@ -10043,8 +10044,8 @@ At 21st level the damage increases to 1d12 per point in the Darkspiral Aura.
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
-			<grant type="Power" name="ID_FMP_POWER_2473" requires="ID_FMP_RACIAL_TRAIT_565" />
-			<grant type="Power" name="ID_FMP_POWER_1831" requires="ID_FMP_RACIAL_TRAIT_565" />
+			<grant type="Power" name="ID_FMP_POWER_2473" requires="ID_FMP_RACIAL_TRAIT_565"/>
+			<grant type="Power" name="ID_FMP_POWER_1831" requires="ID_FMP_RACIAL_TRAIT_565"/>
 		</rules>
 Your Lolthtouched racial trait normally lets you use either cloud of darkness or darkfire as an encounter power. Now cloud of darkness and darkfire are two separate encounter powers. You can use each power once per encounter.
 	</RulesElement>
@@ -43644,13 +43645,7 @@ You gain a +1 feat bonus to trained skill checks.
 			<select type="Skill Training" number="1" Category="bard class"/>
 			<grant name="ID_FMP_POWER_15849" type="Power"/>
 			<modify name="ID_FMP_POWER_15849" type="Power" Field="Class" value="ID_FMP_CLASS_104"/>
-			<modify name="ID_FMP_POWER_15849" type="Power" Field="Effect" value="You activate an aura 5 that lasts until the end of the encounter. If the aura ends prematurely for any reason, you can reactivate it during the encounter as a minor action. 
-	Once per day, you or any ally in the aura can use a minor action to spend a healing surge and regain 1d6 additional hit points. Alternatively, you or any ally can use a minor action to allow an adjacent ally to spend a healing surge and regain the additional hit points. 
-	Level 6: 2d6 additional hit points. 
-	Level 11: 3d6 additional hit points. 
-	Level 16: 4d6 additional hit points. 
-	Level 21: Sd6 additional hit points. 
-	Level 26: 6d6 additional hit points. "/>
+			<modify name="ID_FMP_POWER_15849" type="Power" Field="Effect" value="You activate an aura 5 that lasts until the end of the encounter. If the aura ends prematurely for any reason, you can reactivate it during the encounter as a minor action.   Once per day, you or any ally in the aura can use a minor action to spend a healing surge and regain 1d6 additional hit points. Alternatively, you or any ally can use a minor action to allow an adjacent ally to spend a healing surge and regain the additional hit points.   Level 6: 2d6 additional hit points.   Level 11: 3d6 additional hit points.   Level 16: 4d6 additional hit points.   Level 21: Sd6 additional hit points.   Level 26: 6d6 additional hit points. "/>
 			<grant name="ID_INTERNAL_GRANTS_SKALD_IMPLEMENTS" type="Grants"/>
 			<grant name="ID_INTERNAL_COUNTSASCLASS_BARD" type="CountsAsClass"/>
 			<grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass"/>

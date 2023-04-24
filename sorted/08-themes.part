@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>2.31</Version>
@@ -2651,7 +2652,7 @@ As you have increased your knowledge, you have discovered vulnerabilities of cre
 Choose a Skill for +2 Bonus
       </select>
       <select type="Skill Training" number="1" Category="ID_FMP_SKILL_2|ID_FMP_SKILL_7|ID_FMP_SKILL_11|ID_FMP_SKILL_16|ID_FMP_SKILL_18" requires="!MaxedOutSkillsScholar"/>
-      <select type="Language" number="1" Category="ID_FMP_LANGUAGE_1|ID_FMP_LANGUAGE_6|ID_FMP_LANGUAGE_7|ID_FMP_LANGUAGE_8|ID_FMP_LANGUAGE_18|ID_FMP_LANGUAGE_19|ID_FMP_LANGUAGE_20" requires="ID_FMP_LANGUAGE_2&amp;ID_FMP_LANGUAGE_3&amp;ID_FMP_LANGUAGE_4" />
+      <select type="Language" number="1" Category="ID_FMP_LANGUAGE_1|ID_FMP_LANGUAGE_6|ID_FMP_LANGUAGE_7|ID_FMP_LANGUAGE_8|ID_FMP_LANGUAGE_18|ID_FMP_LANGUAGE_19|ID_FMP_LANGUAGE_20" requires="ID_FMP_LANGUAGE_2&amp;ID_FMP_LANGUAGE_3&amp;ID_FMP_LANGUAGE_4"/>
       <select type="Language" number="1" Category="ID_FMP_LANGUAGE_2|ID_FMP_LANGUAGE_3|ID_FMP_LANGUAGE_4" requires="!ID_FMP_LANGUAGE_2|!ID_FMP_LANGUAGE_3|!ID_FMP_LANGUAGE_4"/>
     </rules>
 A true scholar never stops learning. Even though you're now an adventurer, you continue to add to your understanding of the world around you at every opportunity. After all, knowledge is power.
@@ -18105,7 +18106,7 @@ Any class might be drawn to the river rat lifestyle, but those well suited to ro
 		<rules>
 			<statadd name="Streetwise Misc" value="+1" type="River Rat"/>
 			<statadd name="Bluff Misc" value="+1" type="River Rat"/>
-      <grant name="ID_TIV_POWER_DRAGON_430-2-1-1" type="Power" />
+      <grant name="ID_TIV_POWER_DRAGON_430-2-1-1" type="Power"/>
 		</rules>
 You gain a +1 power bonus to Streetwise checks and Bluff checks. You also gain the river rat's gambit attack power.
 </RulesElement>

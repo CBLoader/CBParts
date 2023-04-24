@@ -189,6 +189,11 @@ body {
 </xsl:if>
 <xsl:for-each select="PartIndex/Part" >
 <h2><xsl:value-of select="Filename" /></h2>
+<ul>
+	<li><a><xsl:attribute name='href'><xsl:value-of select="PartAddress" /></xsl:attribute> 
+	       <xsl:attribute name='download'><xsl:value-of select="Filename" /></xsl:attribute>Download</a></li>
+	<li><a><xsl:attribute name='href'><xsl:value-of select="PartAddress" /></xsl:attribute>Preview</a></li>
+</ul>
 </xsl:for-each>
 </div>
 </body>

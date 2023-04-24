@@ -1,4 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
     <Version>1.31</Version>
@@ -1829,7 +1830,7 @@ You gain the persistent harrier power, which reflects the ease with which you ca
     </rules>
 You gain the power minor creation.
    </RulesElement>
-  <RulesElement internal-id="ID_INTERNAL_COUNTSASFEATURE_SHAPER_FOCUS" name="Shaper Focus" type="CountsAsFeature" source="Psionic Power" />
+  <RulesElement internal-id="ID_INTERNAL_COUNTSASFEATURE_SHAPER_FOCUS" name="Shaper Focus" type="CountsAsFeature" source="Psionic Power"/>
 
   <RulesElement name="Discipline Focus (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2415" source="Player's Handbook 3" revision-date="10/5/2010 1:47:06 PM">
     <Category> 1 </Category>
@@ -1945,17 +1946,17 @@ In addition, you gain a +2 enhancement bonus to the attack rolls of unarmed atta
     <specific name="Class"> ID_FMP_HYBRID_CLASS_360 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_1217,ID_FMP_POWER_1225,ID_FMP_POWER_1227,ID_FMP_POWER_1930,ID_FMP_POWER_12731,ID_FMP_POWER_13970 </specific>
     <rules>
-      <modify name="ID_FMP_POWER_12731" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_1225" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_1227" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_1930" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_13970" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_13971" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Type" value="Utility" />
-      <modify name="ID_FMP_POWER_1217" type="Power" Field="Class" value="ID_FMP_CLASS_9" requires="ID_FMP_RACE_20" />
-      <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Usage" value="At-Will" requires="ID_FMP_RACE_20" />
-      <modify name="ID_FMP_POWER_1217" type="Power" Field="Action Type" value="Standard Action" requires="ID_FMP_RACE_20" />
-      <select type="Power" number="4" Category="ID_FMP_CLASS_FEATURE_2870" />
+      <modify name="ID_FMP_POWER_12731" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_1225" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_1227" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_1930" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_13970" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_13971" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Type" value="Utility"/>
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Class" value="ID_FMP_CLASS_9" requires="ID_FMP_RACE_20"/>
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Power Usage" value="At-Will" requires="ID_FMP_RACE_20"/>
+      <modify name="ID_FMP_POWER_1217" type="Power" Field="Action Type" value="Standard Action" requires="ID_FMP_RACE_20"/>
+      <select type="Power" number="4" Category="ID_FMP_CLASS_FEATURE_2870"/>
     </rules>
 Cantrips are minor spells you gain at 1st level. You can select four cantrips to use as at-will powers.
    </RulesElement>

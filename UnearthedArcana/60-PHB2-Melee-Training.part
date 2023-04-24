@@ -1,10 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
 		<Version>1.00</Version>
 		<Filename>60-PHB2-Melee-Training.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/UnearthedArcana/60-PHB2-Melee-Training.part</PartAddress>
-		<VersionAddress>https://cbloader.vorpald20.com/UnearthedArcana/60-PHB2-Melee-Training.part</VersionAddress>
+		<VersionAddress>https://cbloader.vorpald20.com/UnearthedArcana/60-PHB2-Melee-Training.txt</VersionAddress>
 		<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address>
 	</UpdateInfo>
 <Changelog>
@@ -19,9 +20,9 @@
   <specific name="Short Description"> Use Con for MBAs </specific>
   <specific name="Tier"> Heroic </specific>
   <rules>
-    <textstring name="melee basic:key ability" value="Constitution*" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Constitution vs. AC" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Constitution modifier damage. Increase damage to 2[W] + Constitution modifier damage at 21st level." />
+    <textstring name="melee basic:key ability" value="Constitution*"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Constitution vs. AC"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Constitution modifier damage. Increase damage to 2[W] + Constitution modifier damage at 21st level."/>
   </rules>
 You can use Constitution in place of strength for the attack and damage rolls with melee basic attack.
  </RulesElement>
@@ -31,9 +32,9 @@ You can use Constitution in place of strength for the attack and damage rolls wi
   <specific name="Short Description"> Use Dex for MBAs </specific>
   <specific name="Tier"> Heroic </specific>
   <rules>
-    <textstring name="melee basic:key ability" value="Dexterity*" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Dexterity vs. AC" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Dexterity modifier damage. Increase damage to 2[W] + Dexterity modifier damage at 21st level." />
+    <textstring name="melee basic:key ability" value="Dexterity*"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Dexterity vs. AC"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Dexterity modifier damage. Increase damage to 2[W] + Dexterity modifier damage at 21st level."/>
   </rules>
 You can use Dexterity in place of strength for the attack and damage rolls with melee basic attack.
  </RulesElement>
@@ -43,9 +44,9 @@ You can use Dexterity in place of strength for the attack and damage rolls with 
   <specific name="Short Description"> Use Int for MBAs </specific>
   <specific name="Tier"> Heroic </specific>
   <rules>
-    <textstring name="melee basic:key ability" value="Intelligence*" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Intelligence vs. AC" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Intelligence modifier damage. Increase damage to 2[W] + Intelligence modifier damage at 21st level." />
+    <textstring name="melee basic:key ability" value="Intelligence*"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Intelligence vs. AC"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Intelligence modifier damage. Increase damage to 2[W] + Intelligence modifier damage at 21st level."/>
   </rules>
 You can use Intelligence in place of strength for the attack and damage rolls with melee basic attack.
  </RulesElement>
@@ -55,9 +56,9 @@ You can use Intelligence in place of strength for the attack and damage rolls wi
   <specific name="Short Description"> Use Wis for MBAs </specific>
   <specific name="Tier"> Heroic </specific>
   <rules>
-    <textstring name="melee basic:key ability" value="Wisdom*" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Wisdom vs. AC" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Wisdom modifier damage. Increase damage to 2[W] + Wisdom modifier damage at 21st level." />
+    <textstring name="melee basic:key ability" value="Wisdom*"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Wisdom vs. AC"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Wisdom modifier damage. Increase damage to 2[W] + Wisdom modifier damage at 21st level."/>
   </rules>
 You can use Wisdom in place of strength for the attack and damage rolls with melee basic attack.
  </RulesElement>
@@ -67,9 +68,9 @@ You can use Wisdom in place of strength for the attack and damage rolls with mel
   <specific name="Short Description"> Use Cha for MBAs </specific>
   <specific name="Tier"> Heroic </specific>
   <rules>
-    <textstring name="melee basic:key ability" value="Charisma*" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Charisma vs. AC" />
-    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Charisma modifier damage. Increase damage to 2[W] + Charisma modifier damage at 21st level." />
+    <textstring name="melee basic:key ability" value="Charisma*"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Attack" value="Charisma vs. AC"/>
+    <modify name="ID_INTERNAL_POWER_MELEE_BASIC_ATTACK" Field="Hit" value="1[W] + Charisma modifier damage. Increase damage to 2[W] + Charisma modifier damage at 21st level."/>
   </rules>
 You can use Charisma in place of strength for the attack and damage rolls with melee basic attack.
  </RulesElement>

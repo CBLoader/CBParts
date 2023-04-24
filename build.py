@@ -1,6 +1,5 @@
 import ast
 import base64
-import glob
 import hashlib
 import subprocess
 import os
@@ -9,7 +8,7 @@ from typing import List, Set
 import attr
 from lxml import etree
 
-BASEURL = 'https://cbloader.vorpald20.com/'
+BASEURL = 'https://cbloader.org/'
 indexes = []
 parts = []
 indexed = set()
@@ -32,7 +31,7 @@ class Info():
         return f'{self.category}: {self.url}' + f' ({self.desc})' if self.desc else ''
 
     def html(self) -> str:
-        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + f'<a href="{self.url}">(Preview)</a>' + (f'<br/> {self.description}</p>' if self.description else '</p>')  # noqa: E501
+        return f'<p>[{self.category}]: <a href="{self.url}" download="{self.name}" >{self.name}</a>' + f' (<a href="{self.url}">Preview</a>)' + (f'<br/> {self.description}</p>' if self.description else '</p>')  # noqa: E501
 
     def __hash__(self):
         return self.name.__hash__()

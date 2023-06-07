@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.31</Version>
+    <Version>1.32</Version>
     <Filename>37-hybrid.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.txt</VersionAddress>
@@ -41,6 +41,7 @@
  Updated 23-June-2021 Add missing Shaper Focus COUNTSASFEATURE
  Updated 7-October-2021 Fix Attack Finesse (Hybrid) display for Hybrid Executioner
  Updated 31-August-2022 Fix Hybrid/MC Vampire Surges errors
+ Updated 6-June-2023 Fix Hybrid e-Classes allowing hybrids of their own base class
 </Changelog>
   
   <RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
@@ -1959,6 +1960,213 @@ In addition, you gain a +2 enhancement bonus to the attack rolls of unarmed atta
       <select type="Power" number="4" Category="ID_FMP_CLASS_FEATURE_2870"/>
     </rules>
 Cantrips are minor spells you gain at 1st level. You can select four cantrips to use as at-will powers.
+   </RulesElement>
+
+<!-- Fix Hybrid e-Classes allowing selection of their own base classes as their second hybrid -->
+
+  <RulesElement internal-id="ID_FMP_HYBRID_CLASS_442" name="Hybrid Druid" type="Hybrid Class" source="Player's Handbook 3" revision-date="8/27/2010 12:43:02 PM">
+    <Prereqs> !ID_FMP_HYBRID_CLASS_894 </Prereqs>
+    <specific name="Key Abilities"> Wisdom, Dexterity, Constitution </specific>
+    <specific name="Implements"> Staffs, totems </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather, hide </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+    <specific name="Bonus to Defense"> +1 Reflex or +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 6+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 2.5 </specific>
+    <specific name="Healing Surges"> 3.5 </specific>
+    <specific name="Trained Skills" />
+    <specific name="Class Skills"> Arcana (Int), Athletics (Str), Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Nature (Wis), Perception (Wis) </specific>
+    <specific name="Build Options" />
+    <specific name="_PARSED_CLASS_FEATURE"> Wild Shape </specific>
+    <specific name="Role"> Controller. </specific>
+    <specific name="Power Source"> Primal. </specific>
+    <specific name="Creating" />
+    <specific name="Class Features" />
+    <specific name="Supplemental"> Selecting Druid Powers
+
+Despite automatically gaining the wild shape power, a hybrid druid doesn't come with beast form powers; you must select them from your limited array of druid powers.
+At 1st level, you should consider selecting a beast form power as your lone druid at-will power. You can use your other at-will power in humanoid form even if that power isn't a druid power. (Human hybrid druids can afford to pick up both a beast form  and a nonbeast form druid at-will power.)
+If you don't have any beast form powers, you're wasting wild shape, so include beast form powers among your attack powers and utility powers. Having a beast form power you can use in every encounter makes your wild shape more valuable.
+
+Suggested Combinations
+The druid/shaman is an ideal combination of primal classes, mixing the druid's control and melee powers with the shaman's leadership. 
+
+A druid/invoker mixes powers and features from two different Wisdom-based controller classes and can offer an interesting character background: What brought you to mesh the ancient power of the gods with the might of primal spirits?
+
+Hybrid druids who want to increase their deadliness in melee should consider the avenger, ranger, and rogue classes. </specific>
+    <specific name="Implement" />
+    <specific name="Powers" />
+    <specific name="Power Name" />
+    <specific name="_RoleElement"> ID_FMP_ROLE_1 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
+    <specific name="_SecondaryPowerSourceElement" />
+    <specific name="Secondary Abilities" />
+    <specific name="Hybrid Talent Options"> Druid Armor Proficiency, Primal Aspect. </specific>
+    <specific name="Short Description"> One with the natural world, you can assume the forms of animals and call on the fury of nature. </specific>
+    <specific name="_ParentClass" />
+    <specific name="Trait Package" />
+    <specific name="_BaseClass"> ID_FMP_CLASS_126 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_HYBRID_DRUID" type="Grants" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_HYBRID_CLASS_442" />
+      <statadd name="_LEVEL-ONE-HPS" value="+6" />
+      <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true" />
+      <statadd name="Healing Surges" value="+3" half-point="true" />
+      <select type="Class Feature" number="1" Category="ID_FMP_HYBRID_CLASS_442 Defense" />
+    </rules>
+Your ability to take on the form of a beast marks you unmistakably as a druid, but your bond to the spirits of nature remains somewhat tenuous. Do your druid powers stem from an innate but undeveloped link to primal spirits? Or have you just begun to explore the mysteries of nature after a life spent in other pursuits? 
+As a hybrid druid, you can assume beast form and likely know powers useful in that form. However, you sacrifice some connections to the natural world—including Primal Aspect and Ritual Casting—to explore another class's talents.
+   </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_HYBRID_CLASS_641" name="Hybrid Assassin" type="Hybrid Class" source="Dragon Magazine 385" revision-date="8/27/2010 12:44:19 PM">
+    <Prereqs> !ID_CDJ_HYBRID_CLASS_40001 </Prereqs>
+    <specific name="Key Abilities"> Dexterity, Charisma, Constitution </specific>
+    <specific name="Implements"> Ki focuses </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather; light shields </specific>
+    <specific name="Weapon Proficiencies"> Simple one-handed melee, simple ranged, military heavy blade, military light blade </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude or +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 5+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 2 </specific>
+    <specific name="Healing Surges"> 3 </specific>
+    <specific name="Trained Skills"> You gain one extra trained skill, chosen from the list of class skills below. </specific>
+    <specific name="Class Skills"> Acrobatics (Dex), Arcana (Int), Athletics (Str), Bluff (Cha), Endurance (Con), Insight (Wis), Perception (Wis), Stealth (Dex), Streetwise (Cha), Thievery (Dex) </specific>
+    <specific name="Build Options" />
+    <specific name="_PARSED_CLASS_FEATURE"> Assassin's Shroud (Hybrid) </specific>
+    <specific name="Role"> Striker. </specific>
+    <specific name="Power Source"> Shadow. </specific>
+    <specific name="Creating" />
+    <specific name="Class Features" />
+    <specific name="Supplemental"> Suggested Combinations
+Assassins combine best with other striker classes since doing so provides two methods for dealing striker damage. The strongest combinations include assassin/rogue, assassin/monk, and assassin/ranger. If you want to develop leader techniques, the assassin/bard is a good choice. For defender, think about the assassin/paladin to improve your durability and gain self-healing. Combining an assassin with controller classes is difficult since few abilities overlap. To add control techniques, you are served better by picking up the sorcerer or warlock. Although they are not controllers, many spells available to them have controller effects. </specific>
+    <specific name="Implement" />
+    <specific name="Powers" />
+    <specific name="Power Name" />
+    <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_6 </specific>
+    <specific name="_SecondaryPowerSourceElement" />
+    <specific name="Secondary Abilities" />
+    <specific name="Hybrid Talent Options"> Guild Training (Hybrid), Shade Form, Shadow Step. </specific>
+    <specific name="Short Description"> The darkness within gives you the ability to capitalize on your enemy's weaknesses. </specific>
+    <specific name="_ParentClass" />
+    <specific name="Trait Package" />
+    <specific name="_BaseClass"> ID_FMP_CLASS_466 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_HYBRID_ASSASSIN" type="Grants" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_HYBRID_CLASS_641" />
+      <statadd name="_LEVEL-ONE-HPS" value="+5" />
+      <statadd name="_PER-LEVEL-HPS" value="+2" />
+      <statadd name="Healing Surges" value="+3" />
+      <select type="Class Feature" number="1" Category="ID_FMP_HYBRID_CLASS_641 Defense" />
+      <select type="Skill Training" number="1" Category="ID_FMP_HYBRID_CLASS_641" />
+      <statadd name="_WeaponsAsImplements" value="+1" />
+    </rules>
+You have accepted your dark reflection and understand its place in your soul. Yet you are unwilling to surrender completely to the darkness you now harbor. 
+
+What drove you to seek out the Shadowfell's power? Were you driven by grief, guilt, hatred, or vengeance? Something else? Is your divided focus the result of an incomplete bond? Or do you dabble in other areas to better conceal your sinister nature?
+
+As a hybrid assassin, you can call forth shrouds to help guide your attacks where they can deal the most damage, but you sacrifice many of the techniques assassins use to evade their enemies.
+   </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_HYBRID_CLASS_354" name="Hybrid Paladin" type="Hybrid Class" source="Player's Handbook 3" revision-date="8/27/2010 12:42:21 PM">
+    <Prereqs> !ID_CDJ_HYBRID_CLASS_40003, !ID_CDJ_HYBRID_CLASS_40004 </Prereqs>
+    <specific name="Key Abilities"> Strength, Charisma, Wisdom </specific>
+    <specific name="Implements"> Holy symbols </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather, hide, chainmail, scale, plate; heavy shields, light shields </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, military melee, simple ranged </specific>
+    <specific name="Bonus to Defense"> +1 Fortitude or +1 Reflex or +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 7.5+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 3 </specific>
+    <specific name="Healing Surges"> 5 </specific>
+    <specific name="Trained Skills" />
+    <specific name="Class Skills"> Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int) </specific>
+    <specific name="Build Options" />
+    <specific name="_PARSED_CLASS_FEATURE"> Divine Challenge (Hybrid) </specific>
+    <specific name="Role"> Defender. </specific>
+    <specific name="Power Source"> Divine. </specific>
+    <specific name="Creating" />
+    <specific name="Class Features" />
+    <specific name="Supplemental"> Suggested Combinations
+
+Combining the hybrid fighter with the hybrid paladin keeps your AC up and mixes two different styles of melee control.
+
+It's easy to see the value of combining paladin and cleric, but the paladin/warlord—favoring Charisma over Intelligence—might well be the most valiant battlefield leader imaginable.
+
+Perhaps a strange combination, the paladin/warlock meshes melee prowess with deadly ranged attacks, as well as the ability to keep distant foes marked with divine challenge. For this combination, Paladin Armor Proficiency is a must-have option. </specific>
+    <specific name="Implement" />
+    <specific name="Powers" />
+    <specific name="Power Name" />
+    <specific name="_RoleElement"> ID_FMP_ROLE_4 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_3 </specific>
+    <specific name="_SecondaryPowerSourceElement" />
+    <specific name="Secondary Abilities" />
+    <specific name="Hybrid Talent Options"> Channel Divinity (Hybrid Paladin), Paladin Armor Proficiency. </specific>
+    <specific name="Short Description"> A holy warrior devoted to a higher power, you smite enemies of your faith with divine power. </specific>
+    <specific name="_ParentClass" />
+    <specific name="Trait Package" />
+    <specific name="_BaseClass"> ID_FMP_CLASS_4 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_HYBRID_PALADIN" type="Grants" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_HYBRID_CLASS_354" />
+      <statadd name="_LEVEL-ONE-HPS" value="+7" half-point="true" />
+      <statadd name="_PER-LEVEL-HPS" value="+3" />
+      <statadd name="Healing Surges" value="+5" />
+      <select type="Class Feature" number="1" Category="ID_FMP_HYBRID_CLASS_354 Defense" />
+    </rules>
+You combine the divine authority of a paladin with the talents of another class to become a formidable protector. Many hybrid paladins have only recently pledged themselves to the path of the divine warrior after years spent in other pursuits. A few, however, have recognized that single-minded devotion isn't for them and have expanded their abilities accordingly.
+
+As a hybrid paladin, you bring a useful marking ability and strong melee powers to a group. Like other de-fenders, you are durable and can protect allies well, but you give up some healing capability to gain the tal-ents of another class.
+   </RulesElement>
+
+  <RulesElement internal-id="ID_FMP_HYBRID_CLASS_358" name="Hybrid Warlock" type="Hybrid Class" source="Player's Handbook 3" revision-date="8/27/2010 12:42:24 PM">
+    <Prereqs> !ID_CDJ_HYBRID_CLASS_40006 </Prereqs>
+    <specific name="Key Abilities"> Charisma, Constitution, Intelligence </specific>
+    <specific name="Implements"> Rods, wands </specific>
+    <specific name="Armor Proficiencies"> Cloth, leather </specific>
+    <specific name="Weapon Proficiencies"> Simple melee, simple ranged </specific>
+    <specific name="Bonus to Defense"> +1 Reflex or +1 Will </specific>
+    <specific name="Hit Points at 1st Level"> 6+ Constitution Score </specific>
+    <specific name="Hit Points per Level Gained"> 2.5 </specific>
+    <specific name="Healing Surges"> 3 </specific>
+    <specific name="Trained Skills" />
+    <specific name="Class Skills"> Arcana (Int), Bluff (Cha), History (Int), Insight (Wis), Intimidate (Cha), Religion (Int), Streetwise (Cha), Thievery (Dex) </specific>
+    <specific name="Build Options" />
+    <specific name="_PARSED_CLASS_FEATURE"> Eldritch Pact (Hybrid), Warlock's Curse (Hybrid) </specific>
+    <specific name="Role"> Striker. </specific>
+    <specific name="Power Source"> Arcane. </specific>
+    <specific name="Creating" />
+    <specific name="Class Features" />
+    <specific name="Supplemental"> Suggested Combinations
+
+A sorcerer/warlock can be a potent striker, with Charisma as the highest ability score.
+
+Combining the warlock with the wizard creates a synergistic power list, and the wizard's key ability, Intelligence, is a good secondary ability for the warlock.
+
+A combination of warlock and bard works quite well, thanks to the ability score overlap of the two classes and the diversity of their power selection. </specific>
+    <specific name="Implement" />
+    <specific name="Powers" />
+    <specific name="Power Name" />
+    <specific name="_RoleElement"> ID_FMP_ROLE_3 </specific>
+    <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_2 </specific>
+    <specific name="_SecondaryPowerSourceElement" />
+    <specific name="Secondary Abilities" />
+    <specific name="Hybrid Talent Options"> Prime Shot, Shadow Walk, Warlock Pact Boon. </specific>
+    <specific name="Short Description"> You draw on a pact formed with a greater power, using that alliance to vex your enemies. </specific>
+    <specific name="_ParentClass" />
+    <specific name="Trait Package" />
+    <specific name="_BaseClass"> ID_FMP_CLASS_7 </specific>
+    <rules>
+      <grant name="ID_INTERNAL_GRANTS_HYBRID_WARLOCK" type="Grants" />
+      <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
+      <textstring name="_CLASSNAME" value="ID_FMP_HYBRID_CLASS_358" />
+      <statadd name="_LEVEL-ONE-HPS" value="+6" />
+      <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true" />
+      <statadd name="Healing Surges" value="+3" />
+      <select type="Class Feature" number="1" Category="ID_FMP_HYBRID_CLASS_358 Defense" />
+    </rules>
+You draw power from snippets of arcane lore wrested from dusty tomes and primeval entities, but these secrets do not wholly define or limit your abilities. What keeps you from fully embracing the pacts of a warlock? Do you fear the price that such bargains might entail? Or have you not yet managed to pin down the final secret that would unleash your arcane destiny? As a hybrid warlock, you command excellent damage-dealing ability along with some control powers, but you must give up some of the more notable features of the class, including the Pact Boon and Shadow Walk.
    </RulesElement>
 
 </D20Rules>

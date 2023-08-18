@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.39</Version>
+		<Version>1.40</Version>
 		<Filename>06-races.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/06-races.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/06-races.txt</VersionAddress>
@@ -47,6 +47,7 @@
  Updated 20-March-2013 Added Dragon Magazine 421 Subraces You Say Dragonborn, I Say Draconian
  Updated 22-April-2013 Added Winning Races: Tinker Gnomes
  Updated 18-January-2014 Added Dragon 429 Half-Orc New Powers
+ Updated 15-August-2023 Updated several entries missing "Play an X if you want to..."
 	</Changelog>
 	<!-- Essential Race Bonus Skill Setup -->
 	<RulesElement name="Bonus Skill" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_34" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
@@ -96,10 +97,11 @@ Devas do not have cities or societies of their own, and their numbers are so sma
 			<select type="Language" number="2" Category="Starting"/>
 		</rules>
 Deep in the recesses of memory, devas recall what they once were: immortal servitors of the gods of good, spirits who chose to bind themselves to the world in mortal flesh. For millennia, their souls have been reborn to wage an endless war against the forces of darkness. Most devas are fiercely committed to the cause of good, because they fear what they might become if they turn to evil: A deva whose soul becomes corrupted risks being reborn as a rakshasa.
+
 Play a Deva if you want ...
-• to have dimly remembered connections to a thousand heroic lifetimes.
-• to embrace the cause of good and strive for perfection in all you do.
-• to be a member of a race that favors the avenger, cleric, invoker, and wizard classes.
+✦ to have dimly remembered connections to a thousand heroic lifetimes.
+✦ to embrace the cause of good and strive for perfection in all you do.
+✦ to be a member of a race that favors the avenger, cleric, invoker, and wizard classes.
 	</RulesElement>
 	<RulesElement name="Deva" type="Grants" internal-id="ID_INTERNAL_GRANTS_DEVA" source="Player's Handbook 2">
 		<specific name="_SupportsID"> ID_FMP_RACE_35 </specific>
@@ -184,10 +186,10 @@ You have the memory of a thousand lifetimes power.
 Born to fight, dragonborn are a race of wandering mercenaries, soldiers, and adventurers. Long ago, their empire contended for worldwide dominion, but now only a few rootless clans of these honorable warriors remain to pass on their legends of ancient glory.	
 
 Play a Dragonborn if you want ...
- * to look like a dragon.
- * to be the proud heir of an ancient, fallen empire.
- * to breathe acid, cold, fire, lightning, or poison.
- * to be a member of a race that favors the warlord, fighter, and paladin classes.
+✦ to look like a dragon.
+✦ to be the proud heir of an ancient, fallen empire.
+✦ to breathe acid, cold, fire, lightning, or poison.
+✦ to be a member of a race that favors the warlord, fighter, and paladin classes.
 </RulesElement>
 
 <RulesElement name="Dragonborn" type="Grants" internal-id="ID_INTERNAL_GRANTS_DRAGONBORN" source="Player's Handbook">
@@ -540,11 +542,12 @@ Level 21: Strength or Charisma +6 vs. Will. </specific>
 			<select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma"/>
 		</rules>
 Drow are a decadent race of dark elves whose beauty and sophistication fail to mask hearts all too often stained in evil. The vast majority of dark elves base their behavior and attitudes on the worship of the chaotic evil goddess Lolth, also known as the Spider Queen.
-	Drow society is organized into houses. The heads of the most powerful houses occupy leadership positions in the various cities of the Underdark, the subterranean realm beneath Faerûn that the dark elves call home.
+Drow society is organized into houses. The heads of the most powerful houses occupy leadership positions in the various cities of the Underdark, the subterranean realm beneath Faerûn that the dark elves call home.
+
 Play a Drow if you want ...
-• to be good at skulking, striking quickly, and employing a variety of dirty tactics.
-• to play a hero in search of redemption, or one who struggles to rise above the wickedness of his or her people.
-• to be a member of a race that favors the ranger, rogue, and warlock classes.
+✦ to be good at skulking, striking quickly, and employing a variety of dirty tactics.
+✦ to play a hero in search of redemption, or one who struggles to rise above the wickedness of his or her people.
+✦ to be a member of a race that favors the ranger, rogue, and warlock classes.
 	</RulesElement>
 	<RulesElement name="Drow" type="Grants" internal-id="ID_INTERNAL_GRANTS_DROW" source="Forgotten Realms Player's Guide">
 		<specific name="_SupportsID"> ID_FMP_RACE_16 </specific>
@@ -645,7 +648,13 @@ Increase to +6 bonus at 11th level and +8 bonus at 21st level. </specific>
 			<textstring name="Size" value="Medium"/>
 			<select type="Race Ability Bonus" number="1" Category="Strength|Wisdom"/>
 		</rules>
-Play a Dwarf if you want ...
+Carved from the bedrock of the universe, dwarves endured an age of servitude to giants before winning their freedom. Their mighty mountain fortress-cities testify to the power of their ancient empires. Even those who live in human cities are counted among the staunchest defenders against the darkness that threatens to engulf the world.
+
+Play a dwarf if you want . . .
+✦ to be tough, gruff, and strong as bedrock.
+✦ to bring glory to your ancestors or serve as your god’s right hand.
+✦ to be able to take as much punishment as you dish out.
+✦ to be a member of a race that favors the paladin, cleric, and fighter classes.
 	</RulesElement>
 	<RulesElement name="Dwarf" type="Grants" internal-id="ID_INTERNAL_GRANTS_DWARF" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_2 </specific>
@@ -662,6 +671,7 @@ Play a Dwarf if you want ...
 			<grant name="ID_INTERNAL_RACIAL_TRAIT_DUNGEONEERING_BONUS" type="Racial Trait"/>
 			<grant name="ID_INTERNAL_RACIAL_TRAIT_ENDURANCE_BONUS" type="Racial Trait"/>
 		</rules>
+
 	</RulesElement>
 	<RulesElement name="Dwarf Subrace" type="Racial Trait" internal-id="ID_DRU_RACIAL_TRAIT_001" source="Forgotten Realms Player's Guide" revision-date="10/5/2010 1:47:14 PM">
 		<specific name="Short Description"/>
@@ -808,7 +818,13 @@ You gain proficiency with the light shield. This benefit replaces Dwarven Weapon
 			<textstring name="Size" value="Medium"/>
 			<select type="Race Ability Bonus" number="1" Category="Charisma|Dexterity"/>
 		</rules>
-Play an Eladrin if you want ...
+Creatures of magic with strong ties to nature, eladrin live in cities in the twilight realm of the Feywild. Their cities lie close enough to the world that they sometimes cross over, appearing briefly in mountain valleys or deep forest glades before fading back into the Feywild.
+
+Play an eladrin if you want . . .
+✦ to be otherworldly and mysterious.
+✦ to be graceful and intelligent.
+✦ to teleport around the battlefield, cloaked in the magic of the Feywild.
+✦ to be a member of a race that favors the wizard, rogue, and warlord classes.
 	</RulesElement>
 	<RulesElement name="Eladrin" type="Grants" internal-id="ID_INTERNAL_GRANTS_ELADRIN" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_3 </specific>
@@ -995,7 +1011,12 @@ You gain proficiency with the orb, the staff, and the wand as implements. This b
 			<textstring name="Size" value="Medium"/>
 			<select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom"/>
 		</rules>
-Play an Elf if you want ...
+Wild and free, elves guard their forested lands using stealth and deadly arrows from the trees. They build their homes in close harmony with the forest, so perfectly joined that travelers often fail to notice that they have entered an elven community until it is too late.
+
+Play an elf if you want . . .
+✦ to be quick, quiet, and wild.
+✦ to lead your companions through the deep woods and pepper your enemies with arrows.
+✦ to be a member of a race that favors the ranger, rogue, and cleric classes.
 	</RulesElement>
 	<RulesElement name="Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_ELF" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_4 </specific>
@@ -1193,11 +1214,11 @@ Windsoul: Silver skin; light blue energy lines; glowing blue and gray ice crysta
 			<select type="Race Ability Bonus" number="1" Category="Strength|Constitution"/>
 		</rules>
 Genasi are an inherent contradiction. Each genasi embodies the potential chaos of air and fire, the  order of earth and water, or the ferocity of thunder and lightning. Genasi manifest one of these facets of their elemental soul at all times. Their race is passionate and nearly as diverse as humans. Genasi can be found almost anywhere.
+
 Play a Genasi if you want ...
-•	to struggle or experiment with the order and chaos of your existence.
-•	to look for adaptability in personality and physical appearance.
-•	to be a member of a race that favors the
-swordmage and warlord classes.
+✦ to struggle or experiment with the order and chaos of your existence.
+✦ to look for adaptability in personality and physical appearance.
+✦ to be a member of a race that favors the swordmage and warlord classes.
 	</RulesElement>
 	<RulesElement name="Genasi" type="Grants" internal-id="ID_INTERNAL_GRANTS_GENASI" source="Forgotten Realms Player's Guide">
 		<specific name="_SupportsID"> ID_FMP_RACE_33 </specific>
@@ -1247,10 +1268,11 @@ Gnomes were once enslaved by the fomorian rulers of the Feydark, the subterranea
 			<select type="Race Ability Bonus" number="1" Category="Dexterity|Charisma"/>
 		</rules>
 In the Feywild, the best way for a small creature to survive is to be overlooked. While suffering in servitude to the fomorian tyrants of the Feydark, gnomes learned to hide, to mislead, and to deflect-and by these means, to survive. The same talents sustain them still, allowing them to prosper in a world filled with creatures much larger and far more dangerous than they are.
+
 Play a Gnome if you want ...
-•	to be curious, funny, and tricky.
-•	to rely more on stealth and deception than on brute strength and intimidation.
-•	to be a member of a race that favors the bard, sorcerer, warlock, and wizard classes.
+✦ to be curious, funny, and tricky.
+✦ to rely more on stealth and deception than on brute strength and intimidation.
+✦ to be a member of a race that favors the bard, sorcerer, warlock, and wizard classes.
 	</RulesElement>
 	<RulesElement name="Gnome" type="Grants" internal-id="ID_INTERNAL_GRANTS_GNOME" source="Player's Handbook 2">
 		<specific name="_SupportsID"> ID_FMP_RACE_20 </specific>
@@ -1330,10 +1352,11 @@ Goliaths respect and revere the natural world, and goliath adventurers commonly 
 			<select type="Language" number="1" Category="ID_FMP_RACE_37"/>
 		</rules>
 Goliaths are mountain-dwelling nomads who see life as a grand competition. Their scattered bands have never been major players in the politics of the lowland world, but they have wandered the mountain ranges of the world since the primordials first shaped the peaks and valleys. Tall and massive, goliaths revere the primal power of nature and use it to enhance their own strength.
+
 Play a Goliath if you want ...
-•	to be tougher and stronger than nearly anyone else.
-•	to master the rugged mountain slopes.
-•	to be a member of a race that favors the barbarian, fighter, and warden classes.
+✦ to be tougher and stronger than nearly anyone else.
+✦ to master the rugged mountain slopes.
+✦ to be a member of a race that favors the barbarian, fighter, and warden classes.
 	</RulesElement>
 	<RulesElement name="Goliath" type="Grants" internal-id="ID_INTERNAL_GRANTS_GOLIATH" source="Player's Handbook 2">
 		<specific name="_SupportsID"> ID_FMP_RACE_37 </specific>
@@ -1413,7 +1436,12 @@ Level 21: Resist 15 to all damage. </specific>
 			<select type="Race Ability Bonus" number="1" Category="Charisma|Constitution"/>
 			<select type="Language" number="1" Category="Starting"/>
 		</rules>
-Play a Halfling if you want ...
+Halflings are a small race known for their resourcefulness, quick wits, and steady nerves. They are a nomadic folk who roam waterways and marshlands. No people travel farther or see more of what happens in the world than halflings.
+
+Play a halfling if you want . . .
+✦ to be a plucky hero who is all too easy to underestimate.
+✦ to be likable, warm, and friendly.
+✦ to be a member of a race that favors the rogue, ranger, and warlock classes.
 	</RulesElement>
 	<RulesElement name="Halfling" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALFLING" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_5 </specific>
@@ -1494,10 +1522,11 @@ You can use second chance as an encounter power.
 			<select type="Race Ability Bonus" number="1" Category="Wisdom|Charisma"/>
 		</rules>
 Descended from both elves and humans, half-elves are a handsome race in whom the best features of each people often appear.
+
 Play a Half-Elf if you want ...
- • to be an outgoing, enthusiastic leader.
- • to be a charismatic hero equally at home in two different cultures.
- • to be a member of a race that favors the warlord, paladin, and warlock classes.
+✦ to be an outgoing, enthusiastic leader.
+✦ to be a charismatic hero equally at home in two different cultures.
+✦ to be a member of a race that favors the warlord, paladin, and warlock classes.
 	</RulesElement>
 	<RulesElement name="Half-Elf" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALF-ELF" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_6 </specific>
@@ -1606,10 +1635,11 @@ Half-orcs generally live among either human or orc cultures-some in bustling hum
 			<select type="Race Ability Bonus" number="1" Category="Strength|Constitution"/>
 		</rules>
 An obscure legend claims that when Corellon put out Gruumsh's eye in a primeval battle, part of the savage god's essence fell to earth, where it transformed a race of humans into fierce half-orcs. Another story suggests that an ancient hobgoblin empire created half-orcs to lead orc tribes on the empire's behalf. Yet another legend claims that a tribe of brutal human barbarians chose to breed with orcs to strengthen their bloodline. Some say that Kord created half-orcs, copying the best elements from the human and orc races to make a strong and fierce people after his own heart. If you ask a half-orc about his origin, you might hear one of these stories. You might also get a punch in the face for asking such a rude question.
+
 Play a Half-Orc if you want ...
- • to be big, strong, and fast.
- • to harness anger into resilience and combat power.
- • to be a member of a race that favors the barbarian, fighter, ranger, and rogue classes.
+✦ to be big, strong, and fast.
+✦ to harness anger into resilience and combat power.
+✦ to be a member of a race that favors the barbarian, fighter, ranger, and rogue classes.
 	</RulesElement>
 	<RulesElement name="Half-Orc" type="Grants" internal-id="ID_INTERNAL_GRANTS_HALF-ORC" source="Player's Handbook 2">
 		<specific name="_SupportsID"> ID_FMP_RACE_36 </specific>
@@ -1745,7 +1775,12 @@ You have the furious assault power.
 			<select type="Race Ability Bonus" number="1"/>
 			<select type="Language" number="1" Category="Starting"/>
 		</rules>
-Play a Human if you want ...
+Of all the civilized races, humans are the most adaptable and diverse. Human settlements can be found almost anywhere, and human morals, customs, and interests vary greatly.
+
+Play a human if you want . . .
+✦ to be a decisive, resourceful hero with enough determination to face any challenge.
+✦ to have the most versatility and flexibility of any race.
+✦ to be able to excel at any class you choose.
 	</RulesElement>
 	<RulesElement name="Human" type="Grants" internal-id="ID_INTERNAL_GRANTS_HUMAN" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_7 </specific>
@@ -1828,11 +1863,12 @@ The fragment of quori soul in a kalashtar recalls the escape from Dal Quor. Kala
 			<select type="Race Ability Bonus" number="1" Category="Intelligence|Wisdom"/>
 		</rules>
 Kalashtar look similar to humans, but their outward appearance masks an inner demeanor that is at once serene and wild-cerebral and mad. The kalashtar fled Dal Quor, the region of dreams, eighteen centuries ago and came to Eberron. Today, they are strangers in Khorvaire, seeking refuge from agents of the Dreaming Dark in temple-keeps in the mountains of Adar.
+
 Play a Kalashtar if you want ...
-• to play a wise and contemplative character who is capable of momentary madness.
-• to be a stranger in a strange land, where every place you visit is full of wonder.
-• to be a fugitive on the run from enemies that could be anyone, anywhere.
-• to be a member of a race that favors the bard, cleric, paladin, and warlock classes.
+✦ to play a wise and contemplative character who is capable of momentary madness.
+✦ to be a stranger in a strange land, where every place you visit is full of wonder.
+✦ to be a fugitive on the run from enemies that could be anyone, anywhere.
+✦ to be a member of a race that favors the bard, cleric, paladin, and warlock classes.
 	</RulesElement>
 	<RulesElement name="Kalashtar" type="Grants" internal-id="ID_INTERNAL_GRANTS_KALASHTAR" source="Eberron Player's Guide">
 		<specific name="_SupportsID"> ID_FMP_RACE_46 </specific>
@@ -2021,10 +2057,11 @@ The Raven Queen is a fair mother, if not a loving one. When the shadar-kai calle
 			<select type="Language" number="1" Category="Starting"/>
 		</rules>
 Long eons in the Shadowfell have shaped the shadar-kai into a fiery and, some say, cruel people. Fighting the apathy pervasive in their home plane, shadar-kai live passionately and fearlessly, if grimly. They see themselves as instruments of death and dissolution, the bringers of the righteous end to complacency, stagnation, and life itself. Theirs is a harsh society of self-interest. Among shadar-kai, the strong of body and mind excel and create legends. The weak molder to dust, passing into eternity unremembered.
+
 Play a Shadar-kai if you want ...
-•	to use your shadow origins to enhance your abilities with dark powers.
-•	to be part of a culture that values great deeds and great power.
-•	to be a member of a race that favors the avenger, bard, fighter, invoker, ranger, rogue, sorcerer, warlord, and wizard classes.
+✦ to use your shadow origins to enhance your abilities with dark powers.
+✦ to be part of a culture that values great deeds and great power.
+✦ to be a member of a race that favors the avenger, bard, fighter, invoker, ranger, rogue, sorcerer, warlord, and wizard classes.
 	</RulesElement>
 	<RulesElement name="Shadar-kai" type="Grants" internal-id="ID_INTERNAL_GRANTS_SHADAR-KAI" source="Dragon Magazine 372">
 		<specific name="_SupportsID"> ID_FMP_RACE_26 </specific>
@@ -2303,10 +2340,11 @@ The Trail of Five Darknesses that you used to become a shade did not end with yo
 			<select type="Race Ability Bonus" number="1" Category="Constitution|Intelligence"/>
 		</rules>
 Heirs to an ancient, infernal bloodline, tieflings have no realms of their own but instead live within human kingdoms and cities. They are descended from human nobles who bargained with dark powers, and long ago their empire subjugated half the world. But the empire was cast down into ruin, and tieflings were left to make their own way in a world that often fears and resents them.
+
 Play a Tiefling if you want ...
- • to be a hero who has a dark side to overcome.
- • to be good at tricking, intimidating, or persuading others to do your will.
- • to be a member of a race that favors the warlock, warlord, and rogue classes.
+✦ to be a hero who has a dark side to overcome.
+✦ to be good at tricking, intimidating, or persuading others to do your will.
+✦ to be a member of a race that favors the warlock, warlord, and rogue classes.
 	</RulesElement>
 	<RulesElement name="Tiefling" type="Grants" internal-id="ID_INTERNAL_GRANTS_TIEFLING" source="Player's Handbook">
 		<specific name="_SupportsID"> ID_FMP_RACE_8 </specific>
@@ -2613,10 +2651,11 @@ A warforged often has limited experiences in the world, having spent its existen
 			<select type="Race Ability Bonus" number="1" Category="Strength|Intelligence"/>
 		</rules>
 Created as soldiers for the Last War, warforged are artificial humanoids who are intelligent and selfaware. Without a war to fight, freed of their creators, and with no heritage or culture of  their own, warforged are searching for a place in the world.
+
 Play a Warforged if you want ...
-•	to be strong, tough, and built for battle.
-•	to be a creature searching for the meaning of your existence.
-•	to be a member of a race that favors the fighter, barbarian, warden, and paladin classes.
+✦ to be strong, tough, and built for battle.
+✦ to be a creature searching for the meaning of your existence.
+✦ to be a member of a race that favors the fighter, barbarian, warden, and paladin classes.
 	</RulesElement>
 	<RulesElement name="Warforged" type="Grants" internal-id="ID_INTERNAL_GRANTS_WARFORGED" source="Eberron Player's Guide">
 		<specific name="_SupportsID"> ID_FMP_RACE_28 </specific>
@@ -5242,7 +5281,7 @@ You gain resist 10 lightning 10 and resist 10 thunder.
 			<select type="Language" number="1" Category="Starting"/>
 		</rules>
 Play a Hengeyokai if you want ...
-*	to be a member of a race that favors the assassin, monk, rogue, or sorcerer classes.
+✦ to be a member of a race that favors the assassin, monk, rogue, or sorcerer classes.
 	</RulesElement>
 	<RulesElement name="Hengeyokai" type="Grants" internal-id="ID_INTERNAL_GRANTS_HENGEYOKAI" source="Dragon Magazine 404">
 		<specific name="_SupportsID"> ID_FMP_RACE_65 </specific>
@@ -5519,7 +5558,13 @@ As a pixie, keep the following rules in mind.
 			<textstring name="Size" value="Tiny"/>
 			<select type="Race Ability Bonus" number="1" Category="Dexterity|Intelligence"/>
 		</rules>
-	Play a Pixie if you want ...
+Born of raw fey magic, pixies are whimsical tiny fairy folk that communicate with animals and magical beasts.  Childlike, curious and easily bored, pixies have an affinity for mischievous fun. In the mortal world they make their homes in deep forests and grottoes far beyond view of others. Their realms are sights to behold, the beginning and end of rainbows. Excitement is in their life-blood, and they don't understand or want the common, and boring lives of other humanoids. 
+	
+Play a Pixie if you want ...
+✦ to be a member of a tiny enchanted race with a deep connection to the Feywild.
+✦ to have a fun but mischievous outlook and be a dutiful caretaker of nature.
+✦ to fly.
+✦ to be a member of a race that favors the bard, ranger, rogue, or wizard classes.	
 	</RulesElement>
 	<RulesElement name="Pixie" type="Grants" internal-id="ID_INTERNAL_GRANTS_PIXIE" source="Heroes of the Feywild">
 		<specific name="_SupportsID"> ID_FMP_RACE_61 </specific>
@@ -5716,7 +5761,7 @@ Young satyrs grow quickly to maturity. Though they remain small in size as child
 			<select type="Race Ability Bonus" number="1" Category="Constitution|Dexterity"/>
 		</rules>
 Play a satyr if you want ...
-* to be a member of a race that favors the bard, rogue, sorcerer, or warlock classes.
+✦ to be a member of a race that favors the bard, rogue, sorcerer, or warlock classes.
 	</RulesElement>
 	<RulesElement name="Satyr" type="Grants" internal-id="ID_INTERNAL_GRANTS_SATYR" source="Heroes of the Feywild">
 		<specific name="_SupportsID"> ID_FMP_RACE_62 </specific>

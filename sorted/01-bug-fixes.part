@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.23</Version>
+    <Version>1.24</Version>
     <Filename>01-bug-fixes.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/01-bug-fixes.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/01-bug-fixes.txt</VersionAddress>
@@ -34,6 +34,7 @@
  Updated 27-May-2012 Psionic Augmentation update.
  Updated 5-June-2012 Node updates.
  Updated 23-May-2020 Fix for malformed XML if you mention "For Cormyr!" in your Campaign Settings
+ Updated 23-August-2023 Added Traveler's Harlequin D20 for Master Preserver power Light of the Lost Sun
 </Changelog>
   <!-- Spiked Chain Training Feat (by Drewjitsu (whos an asshole)) -->
   <RulesElement name="Spiked Chain Training" type="Feat" internal-id="ID_FMP_FEAT_1252" source="Dragon Magazine Annual 2009,Dragon Magazine 372" revision-date="8/27/2010 12:18:48 PM">
@@ -6288,5 +6289,16 @@ These gauntlets are specially fitted with metal spikes. Unlike other weapons, th
       <grant name="ID_FMP_POWER_1910" type="Power"/>
     </rules>
 You gain the For Cormyr! power, the 20th level power from the Purple Dragon Knight paragon path.
+  </RulesElement>
+
+  <!-- missing Traveler's Harlequin options -->
+  <RulesElement internal-id="ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(LIGHT_OF_THE_LOST_SUN)" name="Traveler's Unpredictable Power (Light of the Lost Sun)" type="Class Feature" source="Dragon Magazine 382">
+    <Category>ID_INTERNAL_CLASS_FEATURE_TRAVELER'S_UNPREDICTABLE_POWER_(PARAGON_PATH)</Category>
+    <Prereqs> Arcane class </Prereqs>
+    <specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_2174 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_12334" type="Power" />
+    </rules>
+You gain the Light of the Lost Sun power, the 20th level power from the Master Preserver paragon path.
   </RulesElement>
 </D20Rules>

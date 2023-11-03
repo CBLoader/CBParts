@@ -1,6 +1,13 @@
 <html>
     <head>
         <title>CBLoader Part Index</title>
+        <script defer>
+            q = new URLSearchParams(window.location.search);
+            if (q.get("update")) {
+                document.getElementById("update").style.display = "block";
+            }
+        </script>
     </head>
     <body>
+        <div style="display: none;" id="update">An <a href="https://github.com/cbLoader/CBLoader/releases/latest">update</a> for CBLoader is available.</div>
         <p>If you want to update or add your own parts to the index, contact silasary#0001 on discord</p>

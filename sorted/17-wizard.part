@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.43</Version>
+    <Version>1.44</Version>
     <Filename>17-wizard.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/17-wizard.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/17-wizard.txt</VersionAddress>
@@ -48,6 +48,7 @@
  Updated 5-October-2021 Melf's Minute Meteors Secondary Power fix.
  Updated 15-January-2022 Melf's Minute Meteors Secondary Power typo and usage fix.
  Updated 22-January-2024 Bolstering Blood update per errata.
+ Updated 13-February-2024 Added Sabotage Trap to fix power type.
 </Changelog>
   
   <!-- Wizard Feature Updates -->
@@ -8000,4 +8001,25 @@ The archmage Bigby is best known for the various “hand” spells that bear his
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>
 </RulesElement>
+
+<RulesElement internal-id="ID_FMP_POWER_5831" name="Sabotage Trap" type="Power" source="Arcane Power" revision-date="8/27/2010 11:41:28 AM">
+  <Category>ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_331,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_19,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,12</Category>
+  <Prereqs> Hermetic Saboteur </Prereqs>
+  <Flavor> Sometimes the wrong person triggers the trap. Fortunately, you have an answer for that. </Flavor>
+  <specific name="Power Usage"> Encounter </specific>
+  <specific name="_SkillPower" />
+  <specific name="Display"> Hermetic Saboteur Utility 12 </specific>
+  <specific name="Keywords"> Arcane, Teleportation </specific>
+  <specific name="Action Type"> Immediate Interrupt </specific>
+  <specific name="Attack Type"> Ranged 10 </specific>
+  <specific name="Trigger"> A creature triggers a trap within range </specific>
+  <specific name="Primary Target"> The triggering creature </specific>
+  <specific name="Secondary Target"> A different creature within 10 squares of the primary target </specific>
+  <specific name="Effect"> The primary target and secondary targets swap positions, and the secondary target is considered to have triggered the trap. If the secondary target is you or an ally, he or she gains a +4 bonus to all defenses against that trap's attacks until the end of the secondary target's next turn. </specific>
+  <specific name="_Associated Feats" />
+  <specific name="Class"> ID_FMP_PARAGON_PATH_331 </specific>
+  <specific name="Level"> 12 </specific>
+  <specific name="Power Type"> Utility </specific>
+</RulesElement>
+
 </D20Rules>

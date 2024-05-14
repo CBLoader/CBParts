@@ -1,0 +1,635 @@
+<D20Rules game-system="D&amp;D4E">
+
+<!-- Version 1.00; May 2024 -->
+<!-- Convert existing Born of Elements / Born of Shadow / Fey Bond feat chains into bloodlines. Also includes balance fixes to account for bloodlines being exclusive (and some feats were just terrible, like Child of Stone being worse than Toughness) -->
+<!-- Added feats for the Elan Heritage bloodline themed around telepathy and mutual aid -->
+
+<!-- Reworked Born of the Elements Feats -->
+   <RulesElement name="Elemental Bloodline" type="Internal" internal-id="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" source="Core" >
+   </RulesElement>
+
+   <RulesElement name="Elemental Reversal" type="Power" internal-id="ID_FMP_POWER_HF_ELEM_BLOOD_1" source="HF Homebrew" revision-date="5/5/2024 9:36:42 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_74,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT </Category>
+      <Flavor> You absorb elemental power intended to harm you, only to release it against your foes. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Feat Power </specific>
+      <specific name="Keywords"> Elemental </specific>
+      <specific name="Action Type"> Immediate Interrupt </specific>
+      <specific name="Attack Type"> Personal </specific>
+      <specific name="Trigger"> You take acid, cold, fire, lightning, or thunder damage </specific>
+      <specific name="Effect"> Reduce the triggering attack's damage by 5. The next attack you make before the end of your next turn deals an additional 5 damage of the same type which was prevented.
+     Level 11: The amount of damage prevented and dealt increases to 10.
+     Level 21: The amount of damage prevented and dealt increases to 15.</specific>
+      <specific name="_Associated Feats" />
+   </RulesElement>
+	
+	<RulesElement name="Born of the Elements" type="Feat" internal-id="ID_FMP_FEAT_3716" source="HF Homebrew" revision-date="5/5/2024 9:36:42 AM" >
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Humanoid; !bloodline or Elemental Bloodline</Prereqs>
+		<print-prereqs> Humanoid </print-prereqs>
+		<Flavor> Power flows up from the Elemental Chaos and through you, attuning your soul to its destructive energy. The influence of the Plane Below manifests itself in your preternatural resilience to environmental dangers. Furthermore, you have an instinctive knowledge of the elemental tongue and can communicate with creatures hailing from that plane. </Flavor>
+		<specific name="Short Description"> Origin changes to elemental; strengthen elemental defenses; gain elemental reversal power </specific>
+		<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_HF_ELEM_BLOOD_1 </specific>
+		<rules>
+			<drop name="ID_FMP_RACIAL_TRAIT_1139" type="Racial Trait"/>
+			<drop name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+			<drop name="ID_FMP_RACIAL_TRAIT_1496" type="Racial Trait"/>
+			<grant name="ID_TIV_RACIAL_TRAIT_ELEMENTAL_ORIGIN" type="Racial Trait"/>
+			<grant name="ID_FMP_LANGUAGE_6" type="Language"/>
+			<grant name="ID_FMP_POWER_HF_ELEM_BLOOD_1" type="Power"/>
+			<statadd name="AC" value="+1" condition="against attacks with the acid, cold, fire, lightning, or thunder keywords" />
+			<statadd name="Fortitude Defense" value="+1" condition="against attacks with the acid, cold, fire, lightning, or thunder keywords" />
+			<statadd name="Reflex Defense" value="+1" condition="against attacks with the acid, cold, fire, lightning, or thunder keywords"/>
+			<statadd name="Will Defense" value="+1" condition="against attacks with the acid, cold, fire, lightning, or thunder keywords"/>
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+		</rules>
+You can speak, read, and write Primordial. You gain a +1 bonus to all defenses against creatures with the air, earth, fire, or water keywords.
+	In addition, you gain the elemental reversal power.
+	</RulesElement>
+
+	<RulesElement name="Child of Fire" type="Feat" internal-id="ID_FMP_FEAT_3718" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> Elemental fire burns in your breast. These flames are eager to escape. Should your control ever slip, they rush free to scorch your foe. </Flavor>
+		<specific name="Short Description"> Flames damage foe when you are bloodied or unconscious </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+ 	<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+	</rules>
+Whenever an attack bloodies you or knocks you unconscious, one enemy of your choice within 2 squares of you takes fire damage equal to your Constitution modifier.
+	Level 11: One enemy within 3 squares.
+	Level 21: All enemies within 5 squares.
+	</RulesElement>
+	<RulesElement name="Child of Stone" type="Feat" internal-id="ID_FMP_FEAT_3719" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> You are a child of elemental earth; its power sustains and protects you. You can call forth earth's protective power to recover more swiftly when your need is greatest. </Flavor>
+		<specific name="Short Description"> Use second wind as a move action </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+ 	<rules>
+<modify name="Second Wind" field="Child of Stone" value="You can use your second wind as a move action."/>	
+<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+	</rules>
+You can use your second wind as a move action.
+	</RulesElement>
+	<RulesElement name="Child of Storm" type="Feat" internal-id="ID_FMP_FEAT_3720" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline</Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> The eldritch storms boiling across the Elemental Chaos reflect the turmoil in your heart. Elemental energy invigorates you. </Flavor>
+		<specific name="Short Description"> +2 to next saving throw after taking elemental damage </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+			<statadd name="Saving Throws" value="+2" type="Feat" condition="after taking elemental damage"/>
+		</rules>
+Whenever you take acid, cold, fire, lightning, or thunder damage from an enemy attack, you gain a +2 bonus to your next saving throw during this encounter. This bonus stacks with itself.
+	</RulesElement>
+	<RulesElement name="Child of the Sea" type="Feat" internal-id="ID_FMP_FEAT_3721" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> You are the most free when swimming. Your elemental heritage lets you maneuver through waters with ease as if you were born to it. </Flavor>
+		<specific name="Short Description"> Gain swim speed, other aquatic benefits </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+ 	<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+	</rules>
+You have a swim speed equal to your walking speed. In addition, you count as having the aquatic keyword.
+	</RulesElement>
+	<RulesElement name="Child of Wind" type="Feat" internal-id="ID_FMP_FEAT_3722" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> Drawing on your heritage of elemental air gives lift to your steps. </Flavor>
+		<specific name="Short Description"> Ignore difficult terrain when not wearing heavy armor </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+ 	<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+	</rules>
+Whenever you are not wearing heavy armor, you ignore difficult terrain.
+	</RulesElement>
+	<RulesElement name="Earthwalker" type="Feat" internal-id="ID_FMP_FEAT_3723" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> Your elemental heritage manifests as an affinity for elemental earth. Neither rubble nor uneven stone hampers you, for you can call upon your heritage to let you move through solid rock. </Flavor>
+		<specific name="Short Description"> Gain earth walk; gain phasing after using second wind </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+			<modify name="Second Wind" field="Earthwalker" value="Whenever you use your second wind, you have phasing until the end of your next turn. Using this feat, you can phase only through earth and rock."/>
+		</rules>
+You gain earth walk, meaning that you ignore difficult terrain caused by rubble, uneven stone, or earthen construction.
+	In addition, whenever you use your second wind, you have phasing until the end of your next turn. Using this feat, you can phase only through earth and rock.
+	</RulesElement>
+	<RulesElement name="Firedancer" type="Feat" internal-id="ID_FMP_FEAT_3729" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> You have a connection to elemental fire thanks to your elemental heritage. You do not fear flames since they no longer burn you. </Flavor>
+		<specific name="Short Description"> Gain resist 5/10/15 fire; deal fire damage after using second wind </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="resist:fire" value="+5" type="resist" zero="true"/>
+			<statadd name="resist:fire" value="+5" type="resist" non-zero="true"/>
+			<statadd name="resist:fire" value="+5" type="resist" requires="11 level" zero="true"/>
+			<statadd name="resist:fire" value="+5" type="resist" requires="11 level" non-zero="true"/>
+			<statadd name="resist:fire" value="+5" type="resist" requires="21 level" zero="true"/>
+			<statadd name="resist:fire" value="+5" type="resist" requires="21 level" non-zero="true"/>
+			<modify name="Second Wind" field="Firedancer" value="When you use your second wind, your melee and ranged attacks deal 1d6 extra fire damage until the end of your next turn."/>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+		</rules>
+You gain resist 5 fire. This resistance increases to 10 at 11th level and 15 at 21st level. If you already have fire resistance, it instead increases by 5.
+	In addition, when you use your second wind, your melee and ranged attacks deal 1d6 extra fire damage until the end of your next turn.
+	</RulesElement>
+	<RulesElement name="Rising Chaos" type="Feat" internal-id="ID_FMP_FEAT_3733" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> Born of the Elements </print-prereqs>
+		<Flavor> You feel new strength awaken within you whenever you must confront elemental energy. The power awakened bolsters your attacks. </Flavor>
+		<specific name="Short Description"> +2 to damage rolls after using elemental absorption </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<statadd name="damage rolls" value="+2" type="feat" condition="after using elemental absorption."/>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+		</rules>
+After you use your elemental absorption power, you gain a +2 bonus to damage rolls until the end of the encounter.
+	</RulesElement>
+	<RulesElement name="Seastrider" type="Feat" internal-id="ID_FMP_FEAT_3734" source="HF Homebrew">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> 21st level, Born of the Elements feat; !bloodline or Elemental Bloodline </Prereqs>
+		<print-prereqs> 21st level, Born of the Elements </print-prereqs>
+		<Flavor> Your elemental heritage manifests as an affinity for elemental water. You can use elemental water's power to flow through your enemies and across liquid surfaces. </Flavor>
+		<specific name="Short Description"> Shift through enemies' spaces, move across liquid </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Epic </specific>
+ 	<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+	</rules>
+You can shift through enemies' spaces.
+	In addition, when you move, you may treat liquid surfaces as though they were solid ground. If you end the move on the liquid, you sink.
+	</RulesElement>
+	<RulesElement name="Windfoot" type="Feat" internal-id="ID_FMP_FEAT_3737" source="Heroes of the Elemental Chaos">
+		<Category> ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE </Category>
+		<Prereqs> 21st level, Born of the Elements feat </Prereqs>
+		<print-prereqs> 21st level, Born of the Elements </print-prereqs>
+		<Flavor> You have an affinity for elemental air thanks to your unusual heritage. </Flavor>
+		<specific name="Short Description"> Take no damage from falling; fly after using second wind </specific>
+	<specific name="type"> Elemental Bloodline </specific>
+		<specific name="Tier"> Epic </specific>
+		<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_ELEMENTAL_BLOODLINE" type="Internal"/>
+			<modify name="Second Wind" field="Windfoot" value="When you use your second wind, you can fly up to your speed as a free action."/>
+		</rules>
+You take no damage from falling.
+	In addition, when you use your second wind, you can fly up to your speed as a free action.
+	</RulesElement>
+
+	<RulesElement name="Elemental Companion" type="Feat" internal-id="ID_FMP_FEAT_3724" source="HF Homebrew">
+		<Category> ID_FMP_FEAT_3724 </Category>
+		<Prereqs> Elemental origin, !ID_FMP_FEAT_738 </Prereqs>
+		<print-prereqs> Elemental origin, must not have the Arcane Familiar feat </print-prereqs>
+		<Flavor> You fashion a companion from raw elemental substance. The companion aids you in your endeavors when called. (See page 146 of Heroes of Elemental Chaos for a selection of elemental companions.) </Flavor>
+		<specific name="Short Description"> You gain an elemental companion </specific>
+		<specific name="Type"> Elemental Companion </specific>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="_PARSED_SUB_FEATURES"> ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(ARCTINE),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(AUTOMATON),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(CHAOS_PHAGE),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(CRYSMALITE),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(FLAME_SERPENT),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(HORDELING),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(MUD_WRENCH),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(MAGMIN),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(NEREID),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(PECH),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(STORM_TALON),ID_INTERNAL_CLASS_FEATURE_ELEMENTAL_COMPANION_(SYLPH) </specific>
+		<specific name="_DisplayPowers"/>
+		<rules>
+			<select type="Class Feature" number="1" Category="ID_FMP_FEAT_3724"/>
+Choose Elemental Companion
+		</rules>
+You gain an elemental companion.
+	For each elemental companion feat you have beyond this one, your elemental companion gains a +1 bonus to all defenses.
+	</RulesElement>
+
+<!-- Reworked Born of Shadow Feats -->
+<!-- Note: Also converts Haunting Shade to Shadow bloodline feat rather than multiclass feat -->
+   <RulesElement name="Shadow Bloodline" type="Internal" internal-id="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" source="Core" >
+   </RulesElement>
+
+	<RulesElement name="Born of Shadow" type="Feat" internal-id="ID_FMP_FEAT_3559" source="HF Homebrew" revision-date="5/5/2024 12:44:57 PM">
+		<Flavor> Your soul is forever bound to the twilight of the Shadowfell. Your shadow is slightly deeper than seems normal for the ambient light around you, your eyes have black sclera, and your body and mind are strengthened when you are shrouded in gloom. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+             	<Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Humanoid; !bloodline or Shadow Bloodline</Prereqs>
+		<print-prereqs> Humanoid </print-prereqs>
+		<specific name="Short Description"> Origin changes to shadow; darkvision or blindsight; +1 to saving throws while not in bright light </specific>
+		<specific name="Special"/>
+		<specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+			<drop name="ID_FMP_RACIAL_TRAIT_1139" type="Racial Trait"/>
+			<drop name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+			<drop name="ID_FMP_RACIAL_TRAIT_519" type="Racial Trait"/>
+			<grant name="ID_FMP_RACIAL_TRAIT_1496" type="Racial Trait"/>
+                        <grant name="ID_INTERNAL_VISION_DARKVISION" type="Vision"/>
+			<statadd name="Saving Throws" value="+1" condition="while you are in dim light or darkness"/>
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+		</rules>
+Your origin changes to shadow and you gain darkvision. If you already had darkvision, you instead gain blindsight 2.
+        In addition, you gain a +1 bonus to saving throws while you are in dim light or darkness.
+	</RulesElement>
+
+<!-- Note that "grant feat as bonus feat" is needed for feats which grant power swaps. Attempting to grant multiple power swaps directly in a single feat results in errors. -->
+
+	<RulesElement name="Haunting Shade" type="Feat" internal-id="ID_FMP_FEAT_3064" source="HF Homebrew" revision-date="5/5/2024 9:28:35 AM">
+             	<Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Born of Shadow; !bloodline or Shadow Bloodline </Prereqs>
+		<print-prereqs> Born of Shadow </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +2 to Stealth, move through enemies when invisible/insubstantial, shadow power swaps </specific>
+		<specific name="Special"/>
+		<specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<specific name="_DisplayPowers"> ID_FMP_POWER_12544,ID_FMP_POWER_12545,ID_FMP_POWER_12546 </specific>
+		<rules>
+                  <statadd name="Stealth Misc" type="feat" value="+2" />
+                  <grant name="ID_FMP_FEAT_3065" type="Feat" />
+                  <grant name="ID_FMP_FEAT_3066" type="Feat" />
+                  <grant name="ID_FMP_FEAT_3067" type="Feat" />
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+		</rules>
+You gain a +2 feat bonus to Stealth. While you are invisible or insubstantial, you may move through squares containing enemies as though you had phasing.
+      You can also gain the ability to swap some of your powers per the Haunting Shade Novice, Haunting Shade Expert, and Haunting Shade Specialist feats. 
+	</RulesElement>
+
+   <RulesElement name="Haunting Shade Novice" type="Feat" internal-id="ID_FMP_FEAT_3065" source="Dragon Magazine 387" revision-date="5/5/2024 12:20:56 PM" >
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+      <Prereqs> Haunting Shade feat </Prereqs>
+      <print-prereqs> Haunting Shade feat </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description" />
+      <specific name="Special" />
+      <specific name="type"> Shadow Bloodline </specific>
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <specific name="_DisplayPowers"> ID_FMP_POWER_12544 </specific>
+      <rules>
+         <replace power-replace="black blade of despair:encounter,3+" optional="true" />
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+      </rules>
+You can swap one 3rd-level or higher encounter attack power you know for the black blade of despair power.
+   </RulesElement>
+   <RulesElement name="Haunting Shade Expert" type="Feat" internal-id="ID_FMP_FEAT_3066" source="Dragon Magazine 387" revision-date="5/5/2024 12:20:56 PM" >
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+      <Prereqs> Haunting Shade feat </Prereqs>
+      <print-prereqs> Haunting Shade feat </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description" />
+      <specific name="Special" />
+      <specific name="type"> Shadow Bloodline </specific>
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <specific name="_DisplayPowers"> ID_FMP_POWER_12545 </specific>
+      <rules>
+         <replace power-replace="shade stride:utility,6+" optional="true" />
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>      
+</rules>
+You can swap one 6th-level or higher utility power you know for the shade stride power.
+   </RulesElement>
+   <RulesElement name="Haunting Shade Specialist" type="Feat" internal-id="ID_FMP_FEAT_3067" source="Dragon Magazine 387" revision-date="5/5/2024 12:20:56 PM" >
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+      <Prereqs> Haunting Shade feat </Prereqs>
+      <print-prereqs> Haunting Shade feat </print-prereqs>
+      <specific name="Tier"> Heroic </specific>
+      <specific name="Short Description" />
+      <specific name="Special" />
+      <specific name="type"> Shadow Bloodline </specific>
+      <specific name="Associated Power Info" />
+      <specific name="Associated Powers" />
+      <specific name="_DisplayPowers"> ID_FMP_POWER_12546 </specific>
+      <rules>
+         <replace power-replace="gathering of shadows:daily,9+" optional="true" />
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+      </rules>
+You can swap one 9th-level or higher daily attack power you know for the gathering of shadows power.
+   </RulesElement>
+
+<RulesElement name="Shadow Blood" type="Feat" internal-id="ID_FMP_FEAT_3569" source="HF Homebrew" revision-date="3/10/2011 12:45:12 PM">
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Born of Shadow; !bloodline or Shadow Bloodline </Prereqs>
+		<print-prereqs> Born of Shadow </print-prereqs>
+		<Flavor> Although others feel the chill of fear in the shadows, you find only solace in the darkness. When you draw on your inner reserves of strength, the shadow that cloaks you grants you even more vitality. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Regain +5/+10/+15 (by tier) hp while not in bright light </specific>
+		<specific name="Special"/>
+	        <specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+      <rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+	<modify name="Second Wind" field="Shadow Blood" value="When in dim light or darkness, regain an additional 5/10/15 hit points."/>
+      </rules>
+When you are the target of a healing power or use your second wind to regain hit points while you are in dim light or darkness, you regain 5 additional hit points. The additional hit points increase to 10 at 11th level and 15 at 21st level.
+	</RulesElement>
+
+	<RulesElement name="Shadow Control" type="Feat" internal-id="ID_FMP_FEAT_3570" source="HF Homebrew" revision-date="3/10/2011 12:45:14 PM">
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Born of Shadow; !bloodline or Shadow Bloodline </Prereqs>
+		<print-prereqs> Born of Shadow </print-prereqs>
+		<Flavor> The shadow magic you channel lets you summon strength from the darkness, drawing down shadows that shift and swirl to shield you from attacks. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +1 to defenses while not in bright light </specific>
+		<specific name="Special"/>
+  	        <specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+			<statadd name="AC" value="+1" condition="while you are in dim light or darkness"/>
+			<statadd name="Fortitude Defense" value="+1" condition="while you are in dim light or darkness"/>
+			<statadd name="Reflex Defense" value="+1" condition="while you are in dim light or darkness"/>
+			<statadd name="Will Defense" value="+1" condition="while you are in dim light or darkness"/>
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+                 	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+		</rules>
+You gain a +1 bonus to all defenses while you are in dim light or darkness.
+	</RulesElement>
+
+	<RulesElement name="Shadow Mantle" type="Feat" internal-id="ID_FMP_FEAT_3571" source="HF Homebrew" revision-date="3/10/2011 12:45:16 PM">
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Born of Shadow; !bloodline or Shadow Bloodline </Prereqs>
+		<print-prereqs> Born of Shadow </print-prereqs>
+		<Flavor> At the height of combat, shadow flares to accentuate your movements, then conceals you as you execute your next assault. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Gain concealment until EoNT when you crit or drop nonminion enemy </specific>
+		<specific name="Special"/>
+         	<specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+		</rules>
+When you score a critical hit or reduce a nonminion enemy to 0 hit points, you gain partial concealment until the end of your next turn.
+	</RulesElement>
+
+	<RulesElement name="Shadow Overflow" type="Feat" internal-id="ID_FMP_FEAT_3572" source="HF Homebrew" revision-date="3/10/2011 12:45:17 PM">
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Born of Shadow; !bloodline or Shadow Bloodline </Prereqs>
+		<print-prereqs> Born of Shadow </print-prereqs>
+		<Flavor> Your soul is imbued with shadow energy that flows through your attacks. Each time you slay an enemy, tendrils of that shadow lash out against your other foes. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Enemy within 2/3/5 sq. takes Con modifier necrotic damage when you drop nonminion enemy </specific>
+		<specific name="Special"/>
+      <specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+		</rules>
+Whenever you reduce a nonminion enemy to 0 hit points, one enemy within 2 squares of you takes necrotic damage equal to your Constitution modifier.
+     Level 11: One enemy within 3 squares of you.
+     Level 21: All enemies within 5 squares of you.
+	</RulesElement>
+
+	<RulesElement name="Shadow Strider" type="Feat" internal-id="ID_FMP_FEAT_3573" source="HF Homebrew" revision-date="3/10/2011 12:45:19 PM">
+      <Category> ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE </Category>
+		<Prereqs> Born of Shadow; !bloodline or Shadow Bloodline </Prereqs>
+		<print-prereqs> Born of Shadow </print-prereqs>
+		<Flavor> As a creature of shadow, you move through the night with ease. Darkness coalesces around you, making it easy to pick your way through even the roughest terrain. </Flavor>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Ignore difficult terrain in squares of dim light or darkness </specific>
+		<specific name="Special"/>
+      <specific name="type"> Shadow Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+	<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+	<grant name="ID_INTERNAL_INTERNAL_SHADOW_BLOODLINE" type="Internal"/>
+		</rules>
+You ignore difficult terrain in squares of dim light or darkness.
+	</RulesElement>
+
+<!-- Fey Bond bloodline conversion -->
+<!-- Also includes other "fey"-themed feats which are not race-specific -->
+<!-- This bloodline was reworked more than the other two, as there were only three generic "fey" feats in Heroes of the Feywild and the older Dragon feats overlapped one another considerably -->
+
+<RulesElement name="Fey Bloodline" type="Internal" internal-id="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" source="Core" >
+   </RulesElement>
+
+	<RulesElement name="Fey Bond" type="Feat" internal-id="ID_FMP_FEAT_3652" source="Heroes of the Feywild">
+             	<Category> ID_INTERNAL_INTERNAL_FEY_BLOODLINE </Category>
+		<Prereqs> Humanoid; !bloodline or Fey Bloodline </Prereqs>
+		<print-prereqs> Humanoid </print-prereqs>
+		<Flavor> Through your knowledge and experience of the fey, you have acquired some of their qualities, perhaps as a reward from the Feywild's archfey, and you have learned the language of the elves and their kin. </Flavor>
+		<specific name="Short Description"> Origin changes to fey; gain Elven (or Goblin/Giant), +2 to Bluff and Diplomacy checks </specific>
+		<specific name="Tier"> Heroic </specific>
+	        <specific name="type"> Fey Bloodline </specific>
+		<rules>
+			<drop name="ID_FMP_RACIAL_TRAIT_1139" type="Racial Trait"/>
+			<drop name="ID_FMP_RACIAL_TRAIT_519" type="Racial Trait"/>
+			<drop name="ID_FMP_RACIAL_TRAIT_1496" type="Racial Trait"/>
+			<grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+			<statadd name="Bluff Racial" value="+2"/>
+			<statadd name="Diplomacy Racial" value="+2"/>
+			<select type="Language" number="1" Category="ID_FMP_LANGUAGE_4|ID_FMP_LANGUAGE_19|ID_FMP_LANGUAGE_20" default="ID_FMP_LANGUAGE_4"/>
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" type="Internal"/>
+		</rules>
+Your origin becomes fey and you gain a +2 racial bonus to Bluff checks and Diplomacy checks.
+	In addition, you can speak, read, and write Elven. (If you already know Elven, you can choose Giant or Goblin instead.)
+	</RulesElement>
+
+	<RulesElement name="Fey Cantrip" type="Feat" internal-id="ID_FMP_FEAT_3653" source="Heroes of the Feywild">
+      <Category> ID_INTERNAL_INTERNAL_FEY_BLOODLINE </Category>
+		<Prereqs> Fey Bond; !bloodline or Fey Bloodline </Prereqs>
+		<print-prereqs> Fey Bond </print-prereqs>
+		<Flavor> You have picked up a magic trick as a result of your connection to the Feywild. </Flavor>
+		<specific name="Short Description"> Gain a cantrip </specific>
+		<specific name="Tier"> Heroic </specific>
+	        <specific name="type"> Fey Bloodline </specific>
+		<rules>
+			<modify name="ID_FMP_POWER_12731" type="Power" Field="Power Type" value="Utility"/>
+			<modify name="ID_FMP_POWER_1217" type="Power" Field="Power Type" value="Utility"/>
+			<modify name="ID_FMP_POWER_1225" type="Power" Field="Power Type" value="Utility"/>
+			<modify name="ID_FMP_POWER_1227" type="Power" Field="Power Type" value="Utility"/>
+			<modify name="ID_FMP_POWER_1930" type="Power" Field="Power Type" value="Utility"/>
+			<modify name="ID_FMP_POWER_13970" type="Power" Field="Power Type" value="Utility"/>
+			<modify name="ID_FMP_POWER_13971" type="Power" Field="Power Type" value="Utility"/>
+			<select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_2870"/>
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" type="Internal"/>
+		</rules>
+Choose one wizard cantrip, such as mage hand or prestidigitation. You gain that power.
+	</RulesElement>
+
+	<RulesElement name="Fey Companions" type="Feat" internal-id="ID_FMP_FEAT_3509" source="Dragon Magazine 392" revision-date="12/06/2010 11:37:44 AM">
+      <Category> ID_INTERNAL_INTERNAL_FEY_BLOODLINE </Category>
+		<Prereqs> Fey Bond; !bloodline or Fey Bloodline </Prereqs>
+		<print-prereqs> Fey Bond </print-prereqs>
+		<specific name="Short Description"> Gain a fey-themed familiar </specific>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Special"/>
+	        <specific name="type"> Fey Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+			<select type="Familiar" number="1" Category="ID_FMP_FAMILIAR_89|ID_FMP_FAMILIAR_31|ID_FMP_FAMILIAR_88|ID_FMP_FAMILIAR_88|ID_FMP_FAMILIAR_82|ID_FMP_FAMILIAR_79|ID_FMP_FAMILIAR_102|ID_FMP_FAMILIAR_37|ID_FMP_FAMILIAR_76" />
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" type="Internal"/>
+		</rules>
+	  You gain a fey-themed familiar, which gains a +1 bonus to all defenses for every other Fey Bloodline feat which you have.
+	</RulesElement>
+
+	<RulesElement name="Fey Senses" type="Feat" internal-id="ID_FMP_FEAT_2727" source="Dragon Magazine 384" revision-date="8/27/2010 12:20:34 PM">
+      <Category> ID_INTERNAL_INTERNAL_FEY_BLOODLINE </Category>
+		<Prereqs> Fey Bond; !bloodline or Fey Bloodline </Prereqs>
+		<print-prereqs> Fey Bond </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> +2 to Perception and Insight, sense magic with Perception </specific>
+		<specific name="Special"/>
+	        <specific name="type"> Fey Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+			<statadd name="Perception Misc" value="+2" type="Feat"/>
+			<statadd name="Insight Misc" value="+2" type="Feat"/>
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" type="Internal"/>
+		</rules>
+You gain a +2 feat bonus to Perception and Insight. In addition, you can use Perception in place of Arcana to sense the presence of magic.
+	</RulesElement>
+
+	<RulesElement name="Fey-Minded" type="Feat" internal-id="ID_FMP_FEAT_2728" source="Dragon Magazine 384" revision-date="8/27/2010 12:20:34 PM">
+      <Category> ID_INTERNAL_INTERNAL_FEY_BLOODLINE </Category>
+		<Prereqs> Fey Bond; !bloodline or Fey Bloodline </Prereqs>
+		<print-prereqs> Fey Bond </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Use Nature instead of Arcana for fey monster knowledge, saving throw against charm at start of turn </specific>
+		<specific name="Special"/>
+	        <specific name="type"> Fey Bloodline </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>	
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" type="Internal"/>
+</rules>
+You can use Nature in place of Arcana for fey-related monster knowledge checks. At the start of your turn, you can make a saving throw against a charm effect that a save could end. On a save, the effect immediately ends.
+	</RulesElement>
+
+	<RulesElement name="Fey Shift" type="Feat" internal-id="ID_FMP_FEAT_3655" source="Heroes of the Feywild">
+      <Category> ID_INTERNAL_INTERNAL_FEY_BLOODLINE </Category>
+		<Prereqs> 21st level, Fey Bond; !bloodline or Fey Bloodline </Prereqs>
+		<print-prereqs> 21st level, Fey Bond </print-prereqs>
+		<Flavor> Harnessing a power that is innate to many Feywild creatures, you can step through planar shortcuts, albeit only for short distances. </Flavor>
+		<specific name="Short Description"> Teleport 2 squares as move action </specific>
+		<specific name="Tier"> Epic </specific>
+	        <specific name="type"> Fey Bloodline </specific>
+		<rules>	
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_FEY_BLOODLINE" type="Internal"/>
+</rules>
+You can teleport up to 2 squares as a move action.
+	</RulesElement>
+
+<!-- Additional Elan feat, based on Psionic Incarnate feature -->
+
+	<RulesElement name="Psionic Repletion" type="Feat" internal-id="ID_FMP_FEAT_HF_ELAN_1" source="HF Homebrew">
+      <Category> ID_INTERNAL_INTERNAL_ELAN_BLOODLINE </Category>
+		<Prereqs> Elan Heritage; !bloodline or Elan Bloodline </Prereqs>
+		<print-prereqs> Elan Heritage </print-prereqs>
+		<Flavor> You have found a way to allow psionic energy to sustain your form. </Flavor>
+		<specific name="Short Description"> +2 Endurance, no need to eat or breathe, rest quickly </specific>
+		<specific name="Tier"> Heroic </specific>
+	        <specific name="type"> Elan Bloodline </specific>
+		<rules>	
+			<statadd name="Endurance Misc" value="+2" type="Feat"/>			
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_ELAN_BLOODLINE" type="Internal"/>
+</rules>
+You gain a +2 feat bonus to Endurance checks. You no longer need to breathe, eat, or drink. In addition, you do not sleep and instead enter a state of dormancy in which you remain fully aware of your surroundings. You only need four hours in this state to gain the same benefits other races gain from taking a 6-hour extended rest.
+	</RulesElement>
+
+<!-- Additional Elan feats, based on enhancing Elan telepathy along the theme of "assistance" -->
+
+	<RulesElement name="Telepathic Assistance" type="Feat" internal-id="ID_FMP_FEAT_HF_ELAN_2" source="HF Homebrew">
+      <Category> ID_INTERNAL_INTERNAL_ELAN_BLOODLINE </Category>
+		<Prereqs> Elan Heritage; !bloodline or Elan Bloodline </Prereqs>
+		<print-prereqs> Elan Heritage </print-prereqs>
+		<Flavor> You can be the helpful voice in someone's head. </Flavor>
+		<specific name="Short Description"> Aid another within range of telepathy/as minor action </specific>
+		<specific name="Tier"> Heroic </specific>
+	        <specific name="type"> Elan Bloodline </specific>
+		<rules>		
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_ELAN_BLOODLINE" type="Internal"/>
+</rules>
+You do not need to be adjacent to a creature when using the aid another action so long as it is within range of your telepathy. You may also choose to use a minor action to take the aid another action rather than a standard action, but if you fail, the target takes a -2 penalty to the next check due to the distraction.
+	</RulesElement>
+
+	<RulesElement name="Nascent Hive Mind" type="Feat" internal-id="ID_FMP_FEAT_HF_ELAN_3" source="HF Homebrew">
+      <Category> ID_INTERNAL_INTERNAL_ELAN_BLOODLINE </Category>
+		<Prereqs> 21st level, Elan Heritage; !bloodline or Elan Bloodline </Prereqs>
+		<print-prereqs> 21st level, Elan Heritage </print-prereqs>
+		<Flavor> You connect your allies in a mental web, allowing you to support one another's minds from a distance. </Flavor>
+		<specific name="Short Description"> Telepathy 10; aid another within range of telepathy/as free action for mental checks </specific>
+		<specific name="Tier"> Epic </specific>
+	        <specific name="type"> Elan Bloodline </specific>
+		<rules>		
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_ELAN_BLOODLINE" type="Internal"/>
+</rules>
+The range of your telepathy increases to 10. When you or an ally within range of your telepathy makes an Intelligence-based, Wisdom-based, or Charisma-based ability check or skill check, up to four of you within range of your telepathy may take the aid another action as a free action to assist with that check (they need not be adjacent to the target being assisted).
+	</RulesElement>
+
+<!-- Additional Elan feat, based on enhancing Elan telepathy to improve distance/line of effect concerns -->
+
+	<RulesElement name="Improved Telepathic Connection" type="Feat" internal-id="ID_FMP_FEAT_HF_ELAN_4" source="HF Homebrew">
+      <Category> ID_INTERNAL_INTERNAL_ELAN_BLOODLINE </Category>
+		<Prereqs> 11th level, Elan Heritage; !bloodline or Elan Bloodline </Prereqs>
+		<print-prereqs> 11th level, Elan Heritage </print-prereqs>
+		<Flavor> Your telepathy reaches far beyond the limitations of lesser elan. </Flavor>
+		<specific name="Short Description"> Telepathy 10; master and perform telepathic rituals </specific>
+		<specific name="Tier"> Paragon </specific>
+	        <specific name="type"> Elan Bloodline </specific>
+		<rules>		
+			<grant name="ID_INTERNAL_INTERNAL_BLOODLINE" type="Internal"/>
+			<grant name="ID_INTERNAL_INTERNAL_ELAN_BLOODLINE" type="Internal"/>
+</rules>
+The range of your telepathy increases to 10 and ignores blocking terrain to determine line of effect. You master and can perform the Sending, Telepathic Bond, and Far Sending rituals as if you had the Ritual Caster feat. You ignore the component cost of the Sending ritual and once per day, you can ignore the component cost of Telepathic Bond or Far Sending.
+	</RulesElement>
+
+<!-- Change to make Tinker Gnome count as a Gnome and fey origin -->
+<AppendNodes name="Tinker Gnome" type="Race" internal-id="ID_TIV_RACE_DRAGONMAGAZINE422-1" source="Dragon Magazine 422">
+      <rules>
+	<grant name="ID_INTERNAL_COUNTSASRACE_GNOME" type="CountsAsRace"/>
+	<grant name="ID_FMP_RACIAL_TRAIT_641" type="Racial Trait"/>
+      </rules>
+</AppendNodes>
+
+</D20Rules>

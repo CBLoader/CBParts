@@ -2,14 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.40</Version>
+		<Version>1.41</Version>
 		<Filename>06-races.part</Filename>
-		<PartAddress>https://cbloader.vorpald20.com/sorted/06-races.part</PartAddress>
-		<VersionAddress>https://cbloader.vorpald20.com/sorted/06-races.txt</VersionAddress>
-	<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+		<PartAddress>https://cbloader.org/sorted/06-races.part</PartAddress>
+		<VersionAddress>https://cbloader.org/sorted/06-races.txt</VersionAddress>
+	<V2Address>https://cbloader.org/versions2.txt</V2Address></UpdateInfo>
 	<!-- Races -->
-	<!-- 06-races.part, version 1.39 -->
-	<!-- Original release: 13-July-2011; Last modified: 18-January-2014 -->
+	<!-- 06-races.part, version 1.41 -->
+	<!-- Original release: 13-July-2011; Last modified: 13-May-2024 -->
 	<!-- Test compiled with CBLoader build V1.3.0 -->
 	<!-- This part file belongs to the July 2011 reorganization of data files. -->
 	<!-- Special thanks to the entire community for handling the materials. -->
@@ -48,6 +48,7 @@
  Updated 22-April-2013 Added Winning Races: Tinker Gnomes
  Updated 18-January-2014 Added Dragon 429 Half-Orc New Powers
  Updated 15-August-2023 Updated several entries missing "Play an X if you want to..."
+ Updated 13-May-2024 Fixed source of draconians and Shifty Maneuver; updated Tinker Gnome flavor description
 	</Changelog>
 	<!-- Essential Race Bonus Skill Setup -->
 	<RulesElement name="Bonus Skill" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_34" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
@@ -147,9 +148,9 @@ You have the memory of a thousand lifetimes power.
 		<specific name="_Associated Feats"/>
 		<specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_1140 </specific>
 	</RulesElement>
-	
-	
-	
+
+
+
 <!-- Dragon Magazine 421 Subraces-->
 <!-- You Say Dragonborn, I Say Draconian -->
 <RulesElement name="Dragonborn" type="Race" internal-id="ID_FMP_RACE_1" source="Player's Handbook" revision-date="11/05/2010 00:00:00 AM">
@@ -161,7 +162,7 @@ You have the memory of a thousand lifetimes power.
     <specific name="Physical Qualities"> Dragonborn resemble humanoid dragons. They're covered in scaly hide, but they don't have tails. They are tall and strongly built, often standing close to 6 feet and half in height and weighing 300 pounds or more. Their hands and feet are strong, talonlike claws, with three fingers and a thumb on each hand. A dragonborn's head features a blunt snout, a strong brow, and distinctive frills at the cheek and ear. Behind the brow, a crest of hornlike scales of various lengths resembles thick, ropy hair. Their eyes are shades of red or gold.
 	A typical dragonborn's scales can be scarlet, gold, rust, ocher, bronze, or brown. Rarely do an individual's scales match the hue of a chromatic or metallic dragon, and scale color gives no indication of the type of breath weapon a dragonborn uses. Most dragonborn have very fine scales over most of their body, giving their skin a leathery texture, with regions of larger scales on the forearms, lower legs and feet, shoulders, and thighs.
 	Young dragonborn grow faster than human children do. They walk hours after hatching, reach the size and development of a 10-year-old human child by the age of 3 and reach adulthood by 15. They live about as long as humans do. </specific>
-    <specific name="Playing"> To a dragonborn, honor is more important than life itself. First and foremost, honor is tied to battlefield conduct. Adversaries should be treated with courtesy and respect, even if they are bitter enemies. Caution and discretion are key to a warrior's survival, but fear is a disease and cowardice is a moral failing. 
+    <specific name="Playing"> To a dragonborn, honor is more important than life itself. First and foremost, honor is tied to battlefield conduct. Adversaries should be treated with courtesy and respect, even if they are bitter enemies. Caution and discretion are key to a warrior's survival, but fear is a disease and cowardice is a moral failing.
 	The drive to behave honorably extends into the rest of a dragonborn's life: Breaking an oath is the height of dishonor, and attention to honesty extends to every word. A commitment made must be carried out. Ultimately, a dragonborn takes responsibility for his or her actions and their consequences.
 	A continual drive for self-improvement reveals an additional aspect of dragonborn honor. Dragonborn value skill and excellence in all endeavors. They hate to fail, and they push themselves to extreme efforts before they give up on something. A dragonborn holds mastery of a particular skill as a lifetime goal. Members of other races who share the same commitment find it easy to earn the respect of a dragonborn.
 	The dragonborn dedication to honor and excellence sometimes leads others to view dragonborn as arrogant and proud. Most dragonborn share a great pride in their race's past and present accomplishments, but they are also quick to admire the accomplishments of others. Even though the tiefling empire of Bael Turath was the enemy of the ancient dragonborn empire of Arkhosia, dragonborn recognize tieflings as worthy companions or opponents, admiring their strength and tenacity as friends or enemies.
@@ -183,7 +184,7 @@ You have the memory of a thousand lifetimes power.
       <textstring name="Average Weight" value="220-320 lb."/>
       <textstring name="Size" value="Medium"/>
     </rules>
-Born to fight, dragonborn are a race of wandering mercenaries, soldiers, and adventurers. Long ago, their empire contended for worldwide dominion, but now only a few rootless clans of these honorable warriors remain to pass on their legends of ancient glory.	
+Born to fight, dragonborn are a race of wandering mercenaries, soldiers, and adventurers. Long ago, their empire contended for worldwide dominion, but now only a few rootless clans of these honorable warriors remain to pass on their legends of ancient glory.
 
 Play a Dragonborn if you want ...
 ✦ to look like a dragon.
@@ -203,7 +204,7 @@ Play a Dragonborn if you want ...
     </rules>
 </RulesElement>
 
-<RulesElement name="Dragonborn Subrace" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGONBORN" source="Racial Variants Volume 1">
+<RulesElement name="Dragonborn Subrace" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGONBORN" source="Dragon Magazine 421">
   <specific name="Short Description"/>
   <specific name="_CS_ShortDescription"> @ </specific>
   <specific name="Level"> 1 </specific>
@@ -249,11 +250,11 @@ Select option
 Select option
 	   </select>
    </rules>
-Playing: When creating a draconian character, consider the following points. 
+Playing: When creating a draconian character, consider the following points.
 	You are the boogeyman. Draconians have a well-deserved reputation as killers, conquerors, slavers, and bringers of war. To say that most people don't care for you is an understatement; you are likely reviled by all who behold you. It might take some impressive deeds to persuade members of other races to accept you as the individual you are, rather than just another typically brutal draconian.
 	You are proud. Draconians verge on arrogance, certain of their superiority. In spite of their cruelty and vice, most draconians are as fearless and bold as their opponents. Even the staid and proper Knights of Solamnia bear a grudging respect for the courage and guile of their draconian foes.
 	You must change. During the war, it was easy to follow the orders of your superiors and to give in to your baser instincts. You were at the top of the food chain, and the creatures you subjugated had to submit to you and your comrades in arms or risk being crushed and discarded. Now, the changing landscape has forced you to find a new path for which you are ill-prepared. You have been forced to acknowledge the shocking reality that your greatest changes are yet to come-if you truly wish to adapt and survive in this world.
-	
+
 Bozak draconians are widely regarded as some of the most dangerous soldiers that served under the Dark Queen. Their magical power is exceeded by the auraks and their physical strength is dwarfed by the sivaks, but the bozaks exist in far greater numbers.
 	Their natural cleverness and magnetism make them trusted, effective, and intelligent leaders. Bozaks prefer the more destructive flavors of magic, such as elemental evocations, over the subtle spells employed by their aurak cousins.
 	Bozaks are dangerous even in death, thanks to their tendency to explode and damage creatures around them at the moment of their demise. A slayer of a bozak draconian might find his or her own death with the sword's final stroke.
@@ -266,9 +267,9 @@ Bozak draconians are widely regarded as some of the most dangerous soldiers that
       <specific name="Short Description"> Gain a +1 bonus to the damage rolls of your arcane attack powers. (Increases to +2 at 11th and +3 at 21st.) </specific>
       <specific name="Level"> 1 </specific>
 	    <rules>
-		    <statadd name="Arcane Blood" value="+1"/>  
-			<statadd name="Arcane Blood" value="+1" requires="11 level"/>  
-			<statadd name="Arcane Blood" value="+1" requires="21 level"/>  
+		    <statadd name="Arcane Blood" value="+1"/>
+			<statadd name="Arcane Blood" value="+1" requires="11 level"/>
+			<statadd name="Arcane Blood" value="+1" requires="21 level"/>
 			<statadd name="arcane:damage" value="+Arcane Blood" type="racial trait"/>
 		</rules>
 You gain a +1 racial bonus to the damage rolls of your arcane attack powers. This bonus increases to +2 at 11th level and +3 at 21st level. This benefit replaces Dragonborn Fury.
@@ -333,16 +334,16 @@ Select option
 	   <grant name="ID_INTERNAL_RACIAL_TRAIT_HISTORY_BONUS" type="Racial Trait"/>
 	   <grant name="ID_INTERNAL_RACIAL_TRAIT_INTIMIDATE_BONUS" type="Racial Trait"/>
    </rules>
-Playing: When creating a draconian character, consider the following points. 
+Playing: When creating a draconian character, consider the following points.
 	You are the boogeyman. Draconians have a well-deserved reputation as killers, conquerors, slavers, and bringers of war. To say that most people don't care for you is an understatement; you are likely reviled by all who behold you. It might take some impressive deeds to persuade members of other races to accept you as the individual you are, rather than just another typically brutal draconian.
 	You are proud. Draconians verge on arrogance, certain of their superiority. In spite of their cruelty and vice, most draconians are as fearless and bold as their opponents. Even the staid and proper Knights of Solamnia bear a grudging respect for the courage and guile of their draconian foes.
 	You must change. During the war, it was easy to follow the orders of your superiors and to give in to your baser instincts. You were at the top of the food chain, and the creatures you subjugated had to submit to you and your comrades in arms or risk being crushed and discarded. Now, the changing landscape has forced you to find a new path for which you are ill-prepared. You have been forced to acknowledge the shocking reality that your greatest changes are yet to come-if you truly wish to adapt and survive in this world.
-	
+
 Like their bozak cousins, kapak draconians also stand just over 6 feet tall, though their scales are coppery rather than bronze. Bozaks have the overall shape of burly humans, whereas the sinewy kapaks have serpentine features with long limbs and torsos.
 	Kapaks have a reputation for being vicious in their dealings with other races and are well known for bullying creatures smaller and weaker than themselves. The wisest among them have learned the value of avoiding attention, and those kapaks are more dangerous for their slyness.
 	The kapaks are widely regarded as the fastest and most agile of the draconians. Their impressive speed is far from their most dangerous attribute. Glands underneath their tongues secrete a paralyzing toxin with which they can poison their weapons.
 	Like all draconians, they are capable of killing even as they meet their own fate. When kapak draconians die, they immediately dissolve into a pool of highly caustic acid, inflicting horrible burns upon the unwary.
-	Kapaks make fine assassins, particularly executioners, as well as effective rogues and thieves. Some kapaks learned to adapt to life in the wilderness as rangers, and a few studied the bardic arts, supporting troops while in the service of the dragonarmies. 
+	Kapaks make fine assassins, particularly executioners, as well as effective rogues and thieves. Some kapaks learned to adapt to life in the wilderness as rangers, and a few studied the bardic arts, supporting troops while in the service of the dragonarmies.
 	When creating a kapak draconian character, you can pick from the following benefits.
 </RulesElement>
 
@@ -425,14 +426,14 @@ Level 21: The bonus increases to +6. </specific>
       <specific name="Hit"> 1d8 + Constitution modifier acid damage, and ongoing 5 acid damage (save ends).
 Level 11: 2d8 + Constitution modifier acid damage, and ongoing 10 acid damage (save ends).
 Level 21: 3d8 + Constitution modifier acid damage, and ongoing 15 acid damage (save ends). </specific>
-</RulesElement>	
-	
-	
-	
-	
-	
-	
-	<!-- Dragonborn -->	
+</RulesElement>
+
+
+
+
+
+
+	<!-- Dragonborn -->
 	<RulesElement name="Dragon Breath" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_6" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
 		<Category> ID_FMP_RACIAL_TRAIT_3162 </Category>
 		<specific name="Short Description"> You have the dragon breath power </specific>
@@ -664,7 +665,7 @@ Play a dwarf if you want . . .
 			<grant name="ID_FMP_RACIAL_TRAIT_11" type="Racial Trait"/>
 			<grant name="ID_FMP_RACIAL_TRAIT_12" type="Racial Trait"/>
 			<grant name="ID_FMP_RACIAL_TRAIT_632" type="Racial Trait"/>
-			<grant name="ID_DRU_RACIAL_TRAIT_001" type="Racial Trait"/>	
+			<grant name="ID_DRU_RACIAL_TRAIT_001" type="Racial Trait"/>
 			<grant name="ID_INTERNAL_RACE_ABILITY_BONUS_CONSTITUTION" type="Race Ability Bonus"/>
 			<grant name="ID_FMP_LANGUAGE_1" type="Language"/>
 			<grant name="ID_FMP_LANGUAGE_3" type="Language"/>
@@ -1064,7 +1065,7 @@ Select option
 			<select type="Racial Trait" number="1" Category="ID_FMP_RACIAL_TRAIT_3965|ID_FMP_RACIAL_TRAIT_353">
 Select option
 			</select>
-		</rules>	
+		</rules>
 Playing: All other cultures are wrong. You might have left your people by your own choice, but that decision has not changed how you view the world. Among your kind, all ways but those of the wild elves represent corruption and iniquity. Though you might be more open to the customs of other folk than most of your kind, it is hard for you to entirely set aside your distrust of those people.
 	The world knows more than any elf. You view the natural world and its primal spirits as cousins and friends. You see portents in the change of the weather, the flight paths of birds, and the health of plants. Those places where the world cannot display its natural order—cities, dungeons, magical terrain—seem dangerous to you, because you cannot depend on signs you cannot read.
 	Birds fly because they have wings. Wild elves are nomads who must constantly wander. Corellon placed that wanderlust in the souls of your people—the impetus that brought the first elves to the world. Just as a bird must fly when its wings are strong enough, so too must you move on when the spirit takes you.
@@ -1116,7 +1117,7 @@ You have the elven accuracy power.
 		<specific name="Level"/>
 		<specific name="Power Type"> Utility </specific>
 		<specific name="_Associated Feats"/>
-		<specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_359 </specific>	
+		<specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_359 </specific>
 	</RulesElement>
 	<RulesElement name="Subtle Step" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_3964" source="Neverwinter Campaign Guide">
 		<specific name="Short Description"> You have the subtle step power </specific>
@@ -1146,7 +1147,7 @@ You have the Subtle Step power. This benefit replaces elven accuracy.
 		<specific name="Level"/>
 		<specific name="Power Type"> Utility </specific>
 		<specific name="_Associated Feats"/>
-		<specific name="_ParentFeature"> ID_DRU_RACIAL_TRAIT_359 </specific>	
+		<specific name="_ParentFeature"> ID_DRU_RACIAL_TRAIT_359 </specific>
 	</RulesElement>
 	<RulesElement name="Wild Elf Weapon Proficiency" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_3965" source="Neverwinter Campaign Guide">
 		<specific name="Short Description"> Proficiency with javelin, spear, and longspear </specific>
@@ -1685,9 +1686,9 @@ You have the furious assault power.
 		<specific name="_Associated Feats"/>
 		<specific name="_ParentFeature"> ID_FMP_RACIAL_TRAIT_1146 </specific>
 	</RulesElement>
-	
-	
-	
+
+
+
 <!--Dragon 429 Content-->
 <RulesElement name="Athletic Grace" type="Power" internal-id="ID_DRAG429_POWER_1" source="Dragon Magazine 429">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION,2,ID_FMP_CLASS_0 </Category>
@@ -1735,11 +1736,11 @@ You have the furious assault power.
 		<specific name="Level"> 10 </specific>
 		<specific name="Power Type"> Utility </specific>
 </RulesElement>
-	
-	
-	
-	
-	
+
+
+
+
+
 	<!-- Human -->
 	<RulesElement name="Human" type="Race" internal-id="ID_FMP_RACE_7" source="Player's Handbook" revision-date="8/31/2010 10:46:57 AM">
 		<Prereqs> ~HUMAN </Prereqs>
@@ -5558,13 +5559,13 @@ As a pixie, keep the following rules in mind.
 			<textstring name="Size" value="Tiny"/>
 			<select type="Race Ability Bonus" number="1" Category="Dexterity|Intelligence"/>
 		</rules>
-Born of raw fey magic, pixies are whimsical tiny fairy folk that communicate with animals and magical beasts.  Childlike, curious and easily bored, pixies have an affinity for mischievous fun. In the mortal world they make their homes in deep forests and grottoes far beyond view of others. Their realms are sights to behold, the beginning and end of rainbows. Excitement is in their life-blood, and they don't understand or want the common, and boring lives of other humanoids. 
-	
+Born of raw fey magic, pixies are whimsical tiny fairy folk that communicate with animals and magical beasts.  Childlike, curious and easily bored, pixies have an affinity for mischievous fun. In the mortal world they make their homes in deep forests and grottoes far beyond view of others. Their realms are sights to behold, the beginning and end of rainbows. Excitement is in their life-blood, and they don't understand or want the common, and boring lives of other humanoids.
+
 Play a Pixie if you want ...
 ✦ to be a member of a tiny enchanted race with a deep connection to the Feywild.
 ✦ to have a fun but mischievous outlook and be a dutiful caretaker of nature.
 ✦ to fly.
-✦ to be a member of a race that favors the bard, ranger, rogue, or wizard classes.	
+✦ to be a member of a race that favors the bard, ranger, rogue, or wizard classes.
 	</RulesElement>
 	<RulesElement name="Pixie" type="Grants" internal-id="ID_INTERNAL_GRANTS_PIXIE" source="Heroes of the Feywild">
 		<specific name="_SupportsID"> ID_FMP_RACE_61 </specific>
@@ -6740,7 +6741,7 @@ You are considered a reptile for the purpose of effects that relate to the repti
 		</rules>
 You have the shifty maneuver power.
 	</RulesElement>
-	<RulesElement name="Shifty Maneuver" type="Power" internal-id="ID_FMP_POWER_2479" source="Monster Manual,Into the Unknown: The Dungeon Survival Handbook">
+	<RulesElement name="Shifty Maneuver" type="Power" internal-id="ID_FMP_POWER_2479" source="Monster Manual,Dungeon Survival Handbook">
 		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_RACIAL_TRAIT_416,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_RACE_23,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<Flavor> You call on your natural ability to dodge danger, taking your tribemates along for the ride. </Flavor>
@@ -7532,7 +7533,7 @@ Most people can't see how all stone belongs to one family.  Svirfneblin know tha
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 2 </specific>
 		<specific name="Power Type"> Utility </specific>
-You coil and spring instinctively, covering a tremendous distance without much effort.	
+You coil and spring instinctively, covering a tremendous distance without much effort.
 	</RulesElement>
 	<RulesElement name="Pheremone Release" type="Power" internal-id="ID_FMP_POWER_16548" source="Dragon Magazine 411">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_MINOR_ACTION,2 </Category>
@@ -7547,7 +7548,7 @@ You coil and spring instinctively, covering a tremendous distance without much e
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 2 </specific>
 		<specific name="Power Type"> Utility </specific>
-Although imperceptible to most creatures, your pheremones have a significant effect on the behavior of other creatures.	
+Although imperceptible to most creatures, your pheremones have a significant effect on the behavior of other creatures.
 	</RulesElement>
 	<RulesElement name="Chameleon Chitin" type="Power" internal-id="ID_FMP_POWER_16549" source="Dragon Magazine 411">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
@@ -7562,7 +7563,7 @@ Although imperceptible to most creatures, your pheremones have a significant eff
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 6 </specific>
 		<specific name="Power Type"> Utility </specific>
-Your powerful mind can rapidly change your exoskeleton to match the light and objects around you, allowing you to gain the advantage or slip away from the fight.	
+Your powerful mind can rapidly change your exoskeleton to match the light and objects around you, allowing you to gain the advantage or slip away from the fight.
 	</RulesElement>
 	<RulesElement name="Mantis Dodge" type="Power" internal-id="ID_FMP_POWER_16550" source="Dragon Magazine 411">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT_ACTION,6 </Category>
@@ -7594,7 +7595,7 @@ The attack comes from far enough away that you react instinctively to leap away 
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 10 </specific>
 		<specific name="Power Type"> Utility </specific>
-Your antennae are sensitive enough to pick up vibrations around you, giving you a clear picture of your surroundings for a moment.	
+Your antennae are sensitive enough to pick up vibrations around you, giving you a clear picture of your surroundings for a moment.
 	</RulesElement>
 	<RulesElement name="Insect Mind" type="Power" internal-id="ID_FMP_POWER_16552" source="Dragon Magazine 411">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_NO_ACTION,10 </Category>
@@ -7611,7 +7612,7 @@ Your antennae are sensitive enough to pick up vibrations around you, giving you 
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 10 </specific>
 		<specific name="Power Type"> Utility </specific>
-Your instincts take over as your higher mental functions fail you.	
+Your instincts take over as your higher mental functions fail you.
 	</RulesElement>
 	<RulesElement name="Hive Consciousness" type="Power" internal-id="ID_FMP_POWER_16553" source="Dragon Magazine 411">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_MINOR_ACTION,16 </Category>
@@ -7628,7 +7629,7 @@ Your instincts take over as your higher mental functions fail you.
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 16 </specific>
 		<specific name="Power Type"> Utility </specific>
-You extend your mind through your antennae, uniting the minds and senses of your allies with yours.	
+You extend your mind through your antennae, uniting the minds and senses of your allies with yours.
 	</RulesElement>
 	<RulesElement name="Kinetic Chitin" type="Power" internal-id="ID_FMP_POWER_16554" source="Dragon Magazine 411">
 		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_0,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION_ACTION,16 </Category>
@@ -7644,13 +7645,13 @@ You extend your mind through your antennae, uniting the minds and senses of your
 		<specific name="Class"> ID_FMP_RACE_51 </specific>
 		<specific name="Level"> 16 </specific>
 		<specific name="Power Type"> Utility </specific>
-Reacting to an impact, your exoskeleton temporarily hardens.	
+Reacting to an impact, your exoskeleton temporarily hardens.
 	</RulesElement>
-	
-	
-	
-	
-	
+
+
+
+
+
 <!-- Winning Races: Hobgoblins Race -->
 <RulesElement name="Hobgoblin" type="Race" internal-id="ID_FMP_RACE_22" source="Monster Manual, Dragon Magazine 419" revision-date="9/1/2010 3:20:15 PM">
       <Prereqs> ~HOBGOBLIN </Prereqs>
@@ -7661,7 +7662,7 @@ Reacting to an impact, your exoskeleton temporarily hardens.
 Hobgoblin ears are long, pointed, and mobile. Although most hobgoblins have good control of their facial expressions, giving them a reputation for being emotionless, it's harder for them to keep their ears from lying back when they are upset or angry. Their shining yellow eyes and overdeveloped canines give them a wolflike appearance.
 Hobgoblin males are taller and broader than females, but both sexes are capable of sustained physical activity. Hobgoblins can march for 20 miles per day over rough terrain for a week and still arrive in fighting condition at the end.
 Hobgoblins' lives are slightly shorter than those of humans. Few hobgoblins live to be much older than seventy, and the rare hobgoblin who reaches eighty years or more is considered venerable and favored by luck and the gods. </specific>
-      <specific name="Playing"> 
+      <specific name="Playing">
 	Attitudes and Beliefs:
 	There is no denying that hobgoblins are strict by the standards of most races. Those who make mistakes are punished swiftly, and poor excuses for dishonorable behavior are not tolerated. From a young age, hobgoblins are taught that untruths weaken the one who speaks them, making that individual unworthy of being trusted in the future. Conversely, a hobgoblin who takes responsibility for errors and accepts the punishment without flinching may receive some amount of acclaim for doing so.
 Hobgoblins worship two gods above all others: Bane and his exarch Maglubiyet receive great respect within hobgoblin society. In particular, Bane's doctrine of seizing power over the undeserving is accepted unthinkingly by most hobgoblins.
@@ -7683,7 +7684,7 @@ Hobgoblins' lives revolve around two kinds of honor, though "honor" is a poor tr
 
 	Hobgoblin Adventurers:
 	Despite the strong pressure to conform within hobgoblin society, some hobgoblins rebel and leave their families and clans. Others are banished for a perceived weakness or personal failing, and still others believe that they will find atcha more easily by seeking out new lands alone. Even though they have left their society, their society never truly leaves them. These hobgoblins often seek to replace the void left by the loss of clan by bringing together a band of fellows.
-	  
+
 Bard
 Hobgoblins' love for history and tales of martial combat lends itself to making them exceptional bards and skalds. Their words serve a key role in uniting goblin and bugbear tribes as parts of a hobgoblinled army. Their words are not the only things others should fear, however, because their fighting style draws upon all the greatest warriors in hobgoblin history.
 
@@ -7694,17 +7695,17 @@ Blackguard
 Although hobgoblins do not make great outward signs of faith as dwarves and elves do, their piety for their dark gods runs deep. The greatest reverence is expressed by those who draw upon the darkness of their own souls to weaken and overwhelm their foes. These blackguards have iron control of their own minds and bodies but sow the seeds of discord while they fight, turning ally against ally and kin against kin.
 
 Warlord
-The image of hobgoblin as warlord has been ingrained in the minds of civilized races after countless incursions. Whether they choose to focus on their tactical acumen or to inspire their comrades to fight all the harder, hobgoblins excel in leading at every level from small four- or five-person units all the way up to an army. Perhaps their greatest skill on the battlefield is ensuring that everyone maintains the proper position to gain the maximum tactical advantage. Few sights inspire such fear as ordered ranks of hobgoblins and their allies marching in perfect unison.	  
-	  
+The image of hobgoblin as warlord has been ingrained in the minds of civilized races after countless incursions. Whether they choose to focus on their tactical acumen or to inspire their comrades to fight all the harder, hobgoblins excel in leading at every level from small four- or five-person units all the way up to an army. Perhaps their greatest skill on the battlefield is ensuring that everyone maintains the proper position to gain the maximum tactical advantage. Few sights inspire such fear as ordered ranks of hobgoblins and their allies marching in perfect unison.
+
 When creating a hobgoblin adventurer, here are a few points to consider:
-	  
-* The lone wolf starves, but the pack feasts. 
+
+* The lone wolf starves, but the pack feasts.
 You know that a single person going up against any real threat faces a grave disadvantage. After all, in a fair fight, you're just as likely to lose as to win. By joining a group, or better still, organizing one yourself, you become more capable of achieving your goals. It's your duty to ensure that the party is prepared for battle and to know what each member is capable of.
 
-* The end can justify the means. 
+* The end can justify the means.
 It's not always pleasant, but you will do what it takes to get the job done. This isn't an excuse for cruelty without purpose. When the situation is grim and someone has to make the hard choice, you're the leader who steps forward and makes it. Let others keep their consciences clean. You're keeping them alive.
 
-* Honor extends both ways. 
+* Honor extends both ways.
 When you pledge yourself to follow another's banner, it is your duty to obey all orders to the best of your ability. When others pledge themselves to you, it is your duty to provide for them and use them to their best potential. These duties do not require mindless devotion from followers; honest opposition has its time and place. The people and the leader must work as one. </specific>
       <specific name="Vision"> Low-light </specific>
       <specific name="Average Height"> 6'1"-6'5" </specific>
@@ -7725,11 +7726,11 @@ When you pledge yourself to follow another's banner, it is your duty to obey all
          <textstring name="Size" value="Medium"/>
 		 <select type="Race Ability Bonus" number="1" Category="Charisma|Intelligence"/>
       </rules>
-	
+
 Play a Hobgoblin if you want ...
 
 </RulesElement>
-   
+
 <RulesElement name="Hobgoblin" type="Grants" internal-id="ID_INTERNAL_GRANTS_HOBGOBLIN" source="Monster Manual">
       <specific name="_SupportsID"> ID_FMP_RACE_22 </specific>
       <rules>
@@ -7766,7 +7767,7 @@ You gain a +1 racial bonus to AC while you and at least one ally stand adjacent 
 Choose one of the following benefits below.
 The old Hobgoblin Resilience power or the new Hobgoblin Discipline power.
 </RulesElement>
-   
+
 <RulesElement name="Hobgoblin Resilience" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_716" source="Monster Manual" revision-date="10/5/2010 1:47:14 PM">
 <Category> ID_TIV_RACIAL_TRAIT_DRAGON_419-2,1 </Category>
 		<specific name="Short Description"> You have the hobgoblin resilience power </specific>
@@ -7781,7 +7782,7 @@ The old Hobgoblin Resilience power or the new Hobgoblin Discipline power.
 		</rules>
 You can use hobgoblin resilience as an encounter power.
 </RulesElement>
-	
+
 <RulesElement name="Hobgoblin Resilience" type="Power" internal-id="ID_FMP_POWER_2478" source="Monster Manual" revision-date="8/27/2010 11:28:08 AM">
       <Category> ID_FMP_RACIAL_TRAIT_716,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION </Category>
       <Flavor> You shake off an effect that would cripple a lesser warrior. </Flavor>
@@ -7811,7 +7812,7 @@ You can use hobgoblin resilience as an encounter power.
 		</rules>
 You can use hobgoblin discipline as an encounter power.
 </RulesElement>
-	
+
 <RulesElement name="Hobgoblin Discipline" type="Power" internal-id="ID_TIV_POWER_DRAGON_419-1" source="Dragon Magazine 419" revision-date="8/27/2010 11:28:08 AM">
       <Category> ID_TIV_RACIAL_TRAIT_DRAGON_419-3,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
       <Flavor> You steel yourself against a harmful effect, and that malady disappears. </Flavor>
@@ -7838,12 +7839,12 @@ You can use hobgoblin discipline as an encounter power.
 	<specific name="Action Type"> Minor Action </specific>
 	<specific name="Attack Type"> Close burst 3 </specific>
 	<specific name="Target"> Each ally in the burst </specific>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> The target gains 5 temporary hit points. If the target is asleep, it wakens. If the target is prone, it can stand up as a free action. </specific>
 	<specific name="Level"> 2 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 You shout with the authority gained from your battle experience, ensuring allies regain their feet and defend themselves when enemies attack.
 </RulesElement>
 
@@ -7858,12 +7859,12 @@ You shout with the authority gained from your battle experience, ensuring allies
 	<specific name="Attack Type"/>
 	<specific name="Target"> Personal </specific>
 	<specific name="Trigger"> An enemy's attack pushes, pulls, or slides you. </specific>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> The forced movement does not affect you, and you gain combat advantage against the triggering enemy until the end of your next turn. </specific>
 	<specific name="Level"> 6 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 Any break in the battle lines can turn a fight into a rout. You know to hold firm your resolve and keep your position no matter what.
 </RulesElement>
 
@@ -7878,12 +7879,12 @@ Any break in the battle lines can turn a fight into a rout. You know to hold fir
 	<specific name="Attack Type"/>
 	<specific name="Target"> Personal </specific>
 	<specific name="Trigger"> An enemy within 3 squares of you moves without shifting. </specific>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> You shift up to 3 squares to a square adjacent to the triggering enemy. You then mark that enemy until the end of your next turn. </specific>
 	<specific name="Level"> 10 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 Veteran hobgoblins know the best way to defeat their enemies is to control their movement. You spring into motion when an enemy tries to escape.
 </RulesElement>
 
@@ -7898,12 +7899,12 @@ Veteran hobgoblins know the best way to defeat their enemies is to control their
 	<specific name="Attack Type"/>
 	<specific name="Target"> Personal </specific>
 	<specific name="Trigger"> You use hobgoblin discipline. </specific>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> You regain the use of hobgoblin discipline. </specific>
 	<specific name="Level"> 16 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 A hardy and determined people, some hobgoblins strengthen their internal discipline even further.
 </RulesElement>
 
@@ -7918,12 +7919,12 @@ A hardy and determined people, some hobgoblins strengthen their internal discipl
 	<specific name="Attack Type"> Close burst 5 </specific>
 	<specific name="Target"> Each ally in the burst </specific>
 	<specific name="Trigger"/>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> The target can shift up to half its speed. </specific>
 	<specific name="Level"> 22 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 You have seen hundreds of battlefields. Each has taught you the value of quickly moving yourself and your allies to better positions.
 </RulesElement>
 
@@ -7940,16 +7941,16 @@ These qualities alone would not set bladelings apart from the countless humanoid
 Through careful pruning and their innate ability to guide the blades' growth, bladelings can shape their appearance much as humans cut their hair or grow beards. A few of the more radical or antisocial individuals let their blades grow wild, hampering the use of most armor, but these are a minority. The average bladeling is more practical than that, preferring to cultivate shapes designed to impress or intimidate.</specific>
       <specific name="Playing">
 	Attitudes and Beliefs:
-	Bladelings wall off their emotions, presenting a stoic facade to everyone they meet. Dour and humorless, they approach even the most innocent situations with shrewd and calculating minds. Their ability to focus in complex and chaotic situations makes bladelings ideal soldiers, and their ingenuity helps them find the solution to almost any problem. Every bladeling sees the world through a strategist's eye and takes nothing lightly, not even idle conversation.	
-Bladelings take pride in their fighting skills and have a hard time backing down from a challenge. No matter how slim the odds, no matter how desperate the situation, they acquit themselves without fear, coldly doing what must be done to emerge victorious. They believe in themselves foremost, not because they lack faith in their allies, but out of an almost pathological need to prove themselves capable. 
-The bladelings' connection to Bane and the estrangement that persists between them and their maker give these people a perspective that poisons their views of all gods. They know that Bane shaped them to suit his purposes, but rather than seeing him as a benevolent creator, many bladelings have come to regard him as a tyrant, an opportunist, and a meddler. 
+	Bladelings wall off their emotions, presenting a stoic facade to everyone they meet. Dour and humorless, they approach even the most innocent situations with shrewd and calculating minds. Their ability to focus in complex and chaotic situations makes bladelings ideal soldiers, and their ingenuity helps them find the solution to almost any problem. Every bladeling sees the world through a strategist's eye and takes nothing lightly, not even idle conversation.
+Bladelings take pride in their fighting skills and have a hard time backing down from a challenge. No matter how slim the odds, no matter how desperate the situation, they acquit themselves without fear, coldly doing what must be done to emerge victorious. They believe in themselves foremost, not because they lack faith in their allies, but out of an almost pathological need to prove themselves capable.
+The bladelings' connection to Bane and the estrangement that persists between them and their maker give these people a perspective that poisons their views of all gods. They know that Bane shaped them to suit his purposes, but rather than seeing him as a benevolent creator, many bladelings have come to regard him as a tyrant, an opportunist, and a meddler.
 Even those with a more forgiving view can be cynical and suspicious when it comes to the divine powers, or anyone in authority for that matter. The few bladelings who do follow a divine path see their deities as partners in a mutually beneficial relationship, producing fewer clerics and more avengers among them.
 Although the bladelings have largely parted from their maker, many remain in Bane's service. Those who still serve him regard the others as misguided rebels, while those who have escaped Bane's tyranny see their kin on Chernoggar as narrow-minded sycophants. Predictably, meetings between the different factions almost always end in violence.
 
 	Forging of the Bladelings:
 	The creation of the mortal world heralded the greatest war the cosmos has ever witnessed, pitting the gods of the Astral Sea against the primordials of the Elemental Chaos. Yet the Dawn War didn't ignite immediately. Chaotic and dispersed, the primordials did not immediately notice the gods' meddling with the middle realm. By the time the elemental lords mounted their assault, the world had already been blessed with some of the Astral Sea's stability, and life found what it needed to thrive. Whether spontaneously or through divine guidance, sentient beings arose there. And among those primeval mortals the gods found their first followers.
 One such god was the stoic Achra, the Iron General, brother of cruel Tuern and thunderous Kord. Achra's martial teachings found purchase within a few primitive mortal tribes, providing them the tools to bring order into an age of anarchy. According to most scholars, these primitive mortals were humans. A few dissidents claim that they were actually from the same racial stock that would eventually give rise to the githyanki and githzerai. Whatever they were, these mortals became the first of Achra's followers, dedicated to his teachings of battle and strategy to an extent that rivaled even the god's angels. This dedication, coupled with their own mortal initiative and ingenuity, made them paragons of martial prowess. Through strength of arms, they tamed the wilderness around them and established some of the earliest city-states of the mortal world. So pleased was Achra with his worshipers that, when the Dawn War broke out, he offered them a place in his own divine legions.
-When the gods' armies marched on the forces of the primordial Tabrach-Ti, the Queen of Bronze, they counted many of Achra's mortal followers among their numbers. It is said that the mortals fought with unmatched fervor and efficiency, slaying archons, elementals, and giants alike in the name of their divine general. As the battle reached its end, Achra slew the Queen of Bronze, the first primordial to die in the war, and was acclaimed as the General of Heaven by the other gods. His elemental enemies, on the other hand, began fearfully calling him by another name, which would identify him forevermore: Bane. And in this aspect the war god gazed approvingly upon his surviving mortal champions and elevated them to the status of favored servants.	
+When the gods' armies marched on the forces of the primordial Tabrach-Ti, the Queen of Bronze, they counted many of Achra's mortal followers among their numbers. It is said that the mortals fought with unmatched fervor and efficiency, slaying archons, elementals, and giants alike in the name of their divine general. As the battle reached its end, Achra slew the Queen of Bronze, the first primordial to die in the war, and was acclaimed as the General of Heaven by the other gods. His elemental enemies, on the other hand, began fearfully calling him by another name, which would identify him forevermore: Bane. And in this aspect the war god gazed approvingly upon his surviving mortal champions and elevated them to the status of favored servants.
 Quarrelsome and undisciplined as he was, Tuern was still a formidable opponent, and Bane needed soldiers to seize the iron fortress of Tuer-Chern. His angels were too evenly matched with those of his brother, but the Iron General had something Tuern lacked: his mortal champions. Through his divine power, Bane molded his favored servants into the perfect warrior race, melding them with the blades they used in battle. The war god gave each of them a body as strong as a greatsword and as agile as a flashing dagger. As their skin bonded with iron and steel, the mortals gained the ability to grow razors and spikes from their bodies. And knowing that a blade is only as strong as the thought that guides it-something his brother never seemed to grasp-the Iron General sharpened his followers' minds, granting them the willpower, insight, and determination to make them the perfect soldiers. Whatever they had been before, Bane's servants became an entirely new race. Pleased with his work, he christened his children bladelings, a name they carry to this day.
 Tuern's forces were crushed underneath the boots of Bane's armies, and the Iron General was enthroned as the lord of Chernoggar. The bladelings considered themselves natives of the newly conquered domain, having shed their blood to win this homeland. They stood by Bane's side when the other gods united to discourage their lord from waging war against them. When one-eyed Gruumsh crashed his own domain of Nishrek into that of Bane, they fought valiantly to repel the orc hordes of the slaughter god.
 Throughout these battles against Tuern and then Gruumsh, the bladelings followed the Iron General's every order. Devoted as they were to martial discipline, they had complete trust in their maker. But everything changed when the goblins came.
@@ -7964,7 +7965,7 @@ These emigrant bladelings were at first exhilarated by the prospect of exploring
 
 	Bladeling Adventurers:
 	Combat prowess and an innate thirst for glory make bladelings well suited to the adventuring life. They form the iron core of any adventuring group, reminding allies of their purpose and making everyone accountable for their actions. A bladeling's influence can transform the most willful band of individualists into an effective fighting unit with all the discipline of a military squad.
-	
+
 Avenger:
 Few bladelings seek service to a god, seeing any such act as replacing one divine tyrant for another. Yet for all their skepticism about the gods, some recall the old tales with more than passing fondness and feel driven to pledge their swords to a cause higher than themselves. Such a bladeling enters a cautious arrangement with a god, agreeing to fight on his or her behalf in exchange for divine power.
 
@@ -7979,16 +7980,16 @@ Freed from Bane's service, many bladelings have spent centuries seeking a home i
 
 Runepriest:
 Bladeling runepriests harness divine power without having to serve any god directly. They might not respect the gods, but they do appreciate their power, especially that gained from studying the Defiant Word and Serene Blade traditions. Bladeling runepriests sometimes work as master weaponsmiths and armorers, working to keep their fellows supplied with superior equipment. The arms and armor they produce are festooned with images memorializing fallen champions and grotesques depicting their enemies.
-	  
-When creating a bladeling adventurer, here are a few points to consider. 
-	
-* You live in Bane's shadow. 
-You were molded by the gauntleted hand of the war god, and there's no denying your origins. You were born for war, but how do you face that predestination? You might embrace your warrior nature and block out all other aspects of your life, or you might search for a purpose outside the battlefield. But if you do fight, what do you fight for? 
 
-* Your homeland is lost. 
+When creating a bladeling adventurer, here are a few points to consider.
+
+* You live in Bane's shadow.
+You were molded by the gauntleted hand of the war god, and there's no denying your origins. You were born for war, but how do you face that predestination? You might embrace your warrior nature and block out all other aspects of your life, or you might search for a purpose outside the battlefield. But if you do fight, what do you fight for?
+
+* Your homeland is lost.
 Your people have no homeland to call their own. By leaving Chernoggar behind, you forfeited all claim your people had to it, and it now is overrun by goblins and orcs. Do you seek a new place you can belong to, or do you consider your own body to be your homeland?
 
-* You are a child of the planes. 
+* You are a child of the planes.
 You belong to the endless cosmos. As befits such a well-traveled race, you are used to seeing the big picture and putting things in perspective. You know that joy and pain, life and death are fleeting things, so you make the most of the present and try not to worry about what you can't control. </specific>
       <specific name="Vision"> Normal </specific>
       <specific name="Average Height"> 5'8"-6'4" </specific>
@@ -8008,11 +8009,11 @@ You belong to the endless cosmos. As befits such a well-traveled race, you are u
          <textstring name="Size" value="Medium"/>
 		 <select type="Race Ability Bonus" number="1" Category="Strength|Dexterity"/>
       </rules>
-		
+
 Play a Bladeling if you want ...
 
 </RulesElement>
-   
+
 <RulesElement name="Bladeling" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADELING" source="Manual of the Planes">
       <specific name="_SupportsID"> ID_FMP_RACE_38 </specific>
       <rules>
@@ -8027,7 +8028,7 @@ Play a Bladeling if you want ...
 		 <grant name="ID_INTERNAL_RACIAL_TRAIT_ARCANA_BONUS" type="Racial Trait"/>
       </rules>
    </RulesElement>
-   
+
 <RulesElement name="Razor Storm" type="Power" internal-id="ID_FMP_POWER_5599" source="Manual of the Planes, Dragon Magazine 419" revision-date="8/27/2010 11:40:18 AM">
       <Category> ID_FMP_RACIAL_TRAIT_1066,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
       <Flavor> Spikes and blades leap from your body to tear through your foes. </Flavor>
@@ -8039,7 +8040,7 @@ Play a Bladeling if you want ...
       <specific name="Attack Type"> Close burst 1 </specific>
       <specific name="Targets"> Each creature in burst </specific>
       <specific name="Attack"> Strength + 2, Constitution + 2, or Dexterity + 2 vs. Reflex.
-Level 11: The bonus increases to +4. 
+Level 11: The bonus increases to +4.
 Level 21: The bonus increases to +6. </specific>
       <specific name="Hit"> 1d6 + Strength, Constitution, or Dexterity modifier damage.
 Level 11: 2d6 + Strength, Constitution, or Dexterity modifier damage.
@@ -8052,14 +8053,14 @@ Level 21: 3d6 + Strength, Constitution, or Dexterity modifier damage. </specific
 Razor Storm Key Ability
          </select>
       </rules>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Barbed Body" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGON_419-4" source="Dragon Magazine 419">
 		<specific name="Short Description"> Your body has the barbed armor property; Whenever you escape a creature's grab on your turn, or a creature escapes your grab, it takes damage equal to 2 + one-half your level. If you're wearing barbed armor or carrying a barbed shield, the creature takes this damage only once. </specific>
 		<specific name="Level"> 1 </specific>
-Your body has the barbed armor property. 
+Your body has the barbed armor property.
 	Whenever you escape a creature's grab on your turn, or a creature escapes your grab, it takes damage equal to 2 + one-half your level. If you're wearing barbed armor or carrying a barbed shield, the creature takes this damage only once.
-</RulesElement> 
+</RulesElement>
 
 <!-- Winning Races: Bladeling Powers -->
 <RulesElement name="Rending Spines" type="Power" internal-id="ID_TIV_POWER_DRAGON_419-7" source="Dragon Magazine 419">
@@ -8073,15 +8074,15 @@ Your body has the barbed armor property.
 	<specific name="Attack Type"/>
 	<specific name="Target"/>
 	<specific name="Trigger"/>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> You assume the rending spines stance. Until the stance ends, the following effects apply.
 * You are slowed.
 * You take a -2 penalty to all defenses.
 * Any creature adjacent to you that hits or misses you with a melee attack takes damage equal to 3 + one-half your level. </specific>
 	<specific name="Level"> 2 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 Concentrating on the blades that bristle on your body causes them to grow at an accelerated rate until long spines cover you from head to toe. Enemies that would attack you risk impaling themselves on your spines. When you stop concentrating, the excess crumbles away to rust.
 </RulesElement>
 
@@ -8096,12 +8097,12 @@ Concentrating on the blades that bristle on your body causes them to grow at an 
 	<specific name="Attack Type"/>
 	<specific name="Target"/>
 	<specific name="Trigger"/>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> Until the end of the encounter, when you hit a creature adjacent to you with a melee attack, that creature takes 1d6 extra damage. </specific>
 	<specific name="Level"> 6 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 You learn to focus your concentration on a single blade, causing it to grow into a jagged spike from your hand that gouges enemies. At any time, you can snap it off to deliver a bleeding wound.
 </RulesElement>
 
@@ -8116,12 +8117,12 @@ You learn to focus your concentration on a single blade, causing it to grow into
 	<specific name="Attack Type"/>
 	<specific name="Target"> One door, gate, or similar object </specific>
 	<specific name="Trigger"/>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> The target becomes a magical portal to a square within 20 squares of you. The portal lasts until the end of your next turn. Until the effect ends, the target and the square you chose are considered to be adjacent to each other for movement purposes. </specific>
 	<specific name="Level"> 10 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 You might have explored the City of Doors or just heard stories, but you have heard and learned enough to turn an otherwise unremarkable door into a temporary gateway to somewhere distant.
 </RulesElement>
 
@@ -8137,13 +8138,13 @@ You might have explored the City of Doors or just heard stories, but you have he
 	<specific name="Requirement"> You must use this power at the end of an extended rest. </specific>
 	<specific name="Target"> You and each ally in the burst </specific>
 	<specific name="Trigger"/>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> You lose three healing surges. Each target then teleports to a permanent teleportation circle to which you have memorized the sigil sequence. </specific>
 	<specific name="Special"> When you gain this power, you learn the sigil sequences of two permanent teleportation circles in locations determined by the Dungeon Master. </specific>
 	<specific name="Level"> 16 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 You learn how to attune your body to an existing teleportation circle, allowing you to become a living gateway to another plane.
 </RulesElement>
 
@@ -8158,8 +8159,8 @@ You learn how to attune your body to an existing teleportation circle, allowing 
 	<specific name="Attack Type"> Personal </specific>
 	<specific name="Target"/>
 	<specific name="Trigger"/>
-	<specific name="Attack"/> 
-	<specific name="Hit"/> 
+	<specific name="Attack"/>
+	<specific name="Hit"/>
 	<specific name="Effect"> You assume the bred for battle stance. Until the stance ends, you gain the following benefits.
 * You gain a +2 power bonus to AC.
 * You cannot be marked.
@@ -8167,7 +8168,7 @@ You learn how to attune your body to an existing teleportation circle, allowing 
 * At the end of each of your turns, you can spend a healing surge and regain no hit points. If you do so, you regain the use of your razor storm power. </specific>
 	<specific name="Level"> 22 </specific>
 	<specific name="Power Type"> Utility </specific>
-	
+
 Bane created bladelings for war. You can tap into the divine spark that transformed your people to become a living weapon on the battlefield. Your spines and blades lengthen to protect you, and the strikes you make rend your enemies.
 </RulesElement>
 
@@ -8176,7 +8177,7 @@ Bane created bladelings for war. You can tap into the divine spark that transfor
 <!-- Winning Races: Tinker Gnome -->
 <RulesElement name="Tinker Gnome" type="Race" internal-id="ID_TIV_RACE_DRAGONMAGAZINE422-1" source="Dragon Magazine 422">
 		<Prereqs> ~TINKER GNOME </Prereqs>
-		<Flavor> Slight, sly tricksters of the Feywild who excel at avoiding notice </Flavor>
+		<Flavor> Maniacal engineers for whom the act of inventing is more important than the invention itself </Flavor>
 		<specific name="Size"> Small </specific>
 		<specific name="Speed"> 5 squares </specific>
 		<specific name="Characteristics"> Abrasive, cheerful, curious, disorganized, excitable, inventive, tenacious </specific>
@@ -8189,7 +8190,7 @@ Invention exists for the sake of invention. The prevailing sentiment within tink
 		<specific name="Attitudes and Beliefs"> The need for innovation among tinker gnomes is legendary. Tinker gnomes think nothing of spending years-even decades-in the creation of complex (and often faulty) gadgets with no practical purpose. The creators of such devices seem to have little or no concern about safety in testing their dubious creations, and the results of such tests are sometimes fatal. Rare is the dedicated tinker gnome who lives to a ripe old age.
 The majority of other races find tinker gnomes difficult to understand. Tinker gnomes speak quickly and endlessly, stringing together long sentences without care for natural pauses in the conversation or social cues. They feel that they have to race to complete their trains of thought before they are lost forever. More often than not, tinker gnomes end their sentences only after the listener verbally or forcibly instructs them to stop.
 Tinker gnomes foster a love of bureaucracy that transcends even the most dedicated middlemen of other races and societies. Dozens-if not hundreds-of guilds, many of which feature overlapping areas of expertise, drive the tinker gnome settlements. If a tinker gnome cannot find a suitable guild for his or her branch of investigation, the gnome does not hesitate to found a new one-regardless of interest, need,
-or purpose. 
+or purpose.
 Every tinker gnome has three names. The first name is the given name, which details the name and deeds of every member of the gnome's family tree. The second name is a shortened version, which merely points out the highlights of the family history. The third name is a nickname, usually bestowed upon the gnome by members of other races. The nickname usually consists of the first few syllables of the gnome's full name. Most gnomes find these nicknames to be a mild indignity, but those who have regular dealings with other races tolerate their use.
 The patron deity of the tinker gnomes is Reorx, the Creator. But the tinker gnomes are not especially religious, so they pay their deity little more than lip service, except for the observance of the Lifequest (see below). Tinker gnome priests do exist, but they are few and far between. </specific>
 		<specific name="Tinker Gnome Communities"> More than ninety-five percent of all tinker gnomes on Krynn dwell in a single dormant volcano. The gnomish name for the volcano is nearly a hundred words long, and most other races cannot pronounce it at all. Therefore, it has earned the sobriquet Mount Nevermind. The Naming Guild insists that this nickname was the utterance of an early human visitor to the settlement, who shouted "Never mind!" after a friendly member of the Greeting Guild attempted to welcome the beleaguered man to the mountain.

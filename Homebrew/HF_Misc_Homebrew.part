@@ -1,0 +1,424 @@
+<D20Rules game-system="D&amp;D4E">
+
+<!-- Various custom elements developed by Herid Fel -->
+<!-- Version 1.00; May 2024 -->
+<!-- Contains Ashes of Athas double-bladed spear, fixes to Lyrander Wind-Rider paragon path, new epic destiny for changelings, new "favored primordial" option for Primordial Adept, new multiclass feat and level 5 daily attack power for druid, house rule to combine all multiclass power swap feats, random magic item from a previous campaign -->
+
+<!-- Ashes of Athas base weapon -->
+
+<RulesElement name="Double-Bladed Spear" type="Weapon" internal-id="ID_HF_WEAPON_1" source="Ashes of Athas" revision-date="10/12/2010 1:55:06 PM">
+ <Category> ID_INTERNAL_CATEGORY_TWO-HANDS,ID_FMP_WEAPON_GROUP_35,ID_INTERNAL_CATEGORY_ONE-HANDED,ID_INTERNAL_CATEGORY_SELECTABLE </Category>
+ <specific name="Full Text"> Double-Bladed Spear
+Superior double melee weapon
+Cost: 20 gp
+Damage: 1d8
+Proficient: +2
+Weight: 11 lb.
+
+This weapon comes from the Ashes of Athas campaign.
+
+Properties: 
+Defensive (A defensive weapon grants you a +1 bonus to AC while you wield the defensive weapon in one hand and wield another melee weapon in your other hand. Wielding more than one defensive weapon does not increase this bonus. To gain this benefit, you need not attack with the defensive weapon, but you must be proficient with it.).
+Reach (With a reach weapon, you can attack enemies that are 2 squares away from you as well as adjacent enemies, with no attack penalty. You can still make opportunity attacks only against adjacent enemies. Likewise, you can flank only an adjacent enemy.).
+Stout (A weapon that has the stout property can be treated as a two-handed weapon.).
+
+Group: 
+Spear (Consisting of a stabbing head on the end of a long shaft, a spear is great for lunging attacks.). </specific>
+ <specific name="Weight"> 11 </specific>
+ <specific name="Gold"> 20 </specific>
+ <specific name="Damage"> 1d8 </specific>
+ <specific name="Proficiency Bonus"> 2 </specific>
+ <specific name="Weapon Category"> Superior Melee </specific>
+ <specific name="Hands Required"> One-Handed </specific>
+ <specific name="Item Slot"> Two-Hands </specific>
+ <specific name="Group"> Spear </specific>
+ <specific name="Properties"> Defensive, Reach, Stout </specific>
+ <specific name="_Secondary End"> ID_HF_WEAPON_2 </specific>
+The double-bladed spear is a spear that has two blades.
+</RulesElement>
+
+<RulesElement name="Double-Bladed Spear - Secondary end" type="Weapon" internal-id="ID_HF_WEAPON_2" source="Ashes of Athas" revision-date="10/12/2010 1:55:07 PM">
+ <Category> ID_FMP_WEAPON_PROPERTY_1,ID_FMP_WEAPON_GROUP_35,ID_INTERNAL_CATEGORY_ONE-HANDED </Category>
+ <specific name="Full Text"> Double-Bladed Spear - Secondary end
+Superior double melee weapon
+
+Damage: 1d8
+Proficient: +2
+
+Properties: 
+Off-Hand (An off-hand weapon is light enough that you can hold it and attack effectively with it while holding a weapon in your main hand. You can't attack with both weapons in the same turn, unless you have a power that lets you do so, but you can attack with either weapon.).
+
+Group: 
+Spear (Consisting of a stabbing head on the end of a long shaft, a spear is great for lunging attacks.). </specific>
+ <specific name="Damage"> 1d8 </specific>
+ <specific name="Proficiency Bonus"> 2 </specific>
+ <specific name="_Primary End"> ID_FMP_WEAPON_137 </specific>
+ <specific name="Weapon Category"> Superior Melee </specific>
+ <specific name="Hands Required"> One-Handed </specific>
+ <specific name="Item Slot"> Off-hand </specific>
+ <specific name="Group"> Spear </specific>
+ <specific name="Properties"> Off-hand </specific>
+ <specific name="InternalOnly"> 1 </specific>
+</RulesElement>
+
+   <RulesElement name="Weapon Proficiency (Double-Bladed Spear)" type="Feat" internal-id="ID_INTERNAL_FEAT_WEAPON_PROFICIENCY_(DBSPEAR)" source="Ashes of Athas" >
+      <specific name="_SupportsID"> ID_FMP_FEAT_178 </specific>
+      <specific name="_RequiresID"> ID_HF_WEAPON_2 </specific>
+      <specific name="Short Description"> Gain proficiency with the Double-Bladed Spear. </specific>
+      <specific name="Tier"> Heroic </specific>
+      <rules>
+         <grant name="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DBSPEAR)" type="Proficiency" />
+      </rules>
+You gain proficiency with the Double-Bladed Spear.
+   </RulesElement>
+
+   <RulesElement name="Weapon Proficiency (Double-Bladed Spear)" type="Proficiency" internal-id="ID_INTERNAL_PROFICIENCY_WEAPON_PROFICIENCY_(DBSPEAR)" source="Core" >
+      <Category> ID_FMP_WEAPON_GROUP_35,ID_INTERNAL_CATEGORY_SUPERIOR,ID_INTERNAL_CATEGORY_MELEE </Category>
+   </RulesElement>
+
+
+<!-- Changes to Lyrandar Wind-Rider attack powers so they benefit from the Mark of Storms/paragon path benefits to lightning and thunder powers. Also adds an implement proficiency to the paragon path since its powers use that keyword but there's no requirement to be from an implement-granting class. -->
+
+<AppendNodes name="Lyrandar Wind-Rider" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_379" source="Eberron Player's Guide">
+      <rules>
+	         <grant name="ID_FMP_CLASS_FEATURE_LYRANDAR_IMPLEMENT" type="Class Feature" Level="11" />
+      </rules>
+</AppendNodes>
+
+   <RulesElement name="Wind-Rider Implement Proficiency" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_LYRANDAR_IMPLEMENT" source="Eberron Player's Guide" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> 11 </Category>
+      <specific name="Short Description" />
+      <specific name="Level"> 11 </specific>
+      <rules>
+         <select type="Class Feature" number="1" Category="ID_INTERNAL_CLASS_FEATURE_HF_PP_EPG_ROD|ID_INTERNAL_CLASS_FEATURE_HF_PP_EPG_WAND">
+Lyrandar Wind-Rider: Choose Implement Proficiency
+			</select>
+      </rules>
+You gain proficiency with rods or wands.   </RulesElement>
+
+<RulesElement name="Lyrandar Wind-Rider Implement (Rod)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HF_PP_EPG_ROD" source="Eberron Player's Guide">
+		<specific name="_SupportsID"> ID_FMP_PARAGON_PATH_379 </specific>
+		<specific name="Short Description"> You gain proficiency with the Rod implement </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ROD)" type="Proficiency"/>
+		</rules>
+You gain proficiency with the Rod implement.
+	</RulesElement>
+	<RulesElement name="Lyrandar Wind-Rider Implement (Wand)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_HF_PP_EPG_WAND" source="Eberron Player's Guide">
+		<specific name="_SupportsID"> ID_FMP_PARAGON_PATH_379 </specific>
+		<specific name="Short Description"> You gain proficiency with the Wand implement </specific>
+		<rules>
+			<grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency"/>
+		</rules>
+You gain proficiency with the Wand implement.
+	</RulesElement>
+
+ <RulesElement name="Wind Burst" type="Power" internal-id="ID_FMP_POWER_7591" source="Eberron Player's Guide" revision-date="8/27/2010 11:46:28 AM" >
+   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_379,,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_STANDARD_ACTION,11 </Category>
+   <Prereqs> Lyrandar Wind-Rider </Prereqs>
+   <Flavor> With the power of your dragon mark, you call forth a column of wind that lands on your enemies, scattering them in all directions. </Flavor>
+   <specific name="Power Usage"> Encounter </specific>
+   <specific name="Display"> Lyrandar Wind-Rider Attack 11 </specific>
+   <specific name="Keywords"> Implement, Thunder </specific>
+   <specific name="Action Type"> Standard action </specific>
+   <specific name="Attack Type"> Area burst 2 within 10 squares </specific>
+   <specific name="Target"> Each creature in burst </specific>
+   <specific name="Attack"> Charisma or Constitution vs. Fortitude </specific>
+   <specific name="Hit"> 3d6 + Charisma or Constitution modifier thunder damage, and you push the target 2 squares away from the attack's origin square. A target in the burst's origin square is knocked prone instead of pushed. </specific>
+   <specific name="_Associated Feats" />
+   <specific name="Class"> ID_FMP_PARAGON_PATH_379 </specific>
+   <specific name="Level"> 11 </specific>
+   <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+
+   <RulesElement name="Unruly Cyclone" type="Power" internal-id="ID_FMP_POWER_7593" source="Eberron Player's Guide" revision-date="7/2/2012 11:46:28 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_379,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,20 </Category>
+      <Prereqs> Lyrandar Wind-Rider </Prereqs>
+      <Flavor> Your dragon mark flares as you struggle to control a powerful tornado and blast your foes. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Lyrandar Wind-Rider Attack 20 </specific>
+      <specific name="Keywords"> Implement, Thunder, Zone </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+      <specific name="Effect"> The burst creates a zone of violent wind that lasts until the end of your next turn. As a move action, you can move the zone 4 squares. Each creature that starts its turn within the zone is subject to the following attack. </specific>
+      <specific name="Attack"> Charisma or Constitution vs. Fortitude. </specific>
+      <specific name="	Hit"> 3d10 + Charisma or Constitution modifier, and you push the target 4 squares away from the burst's origin square. </specific>
+      <specific name="Sustain Minor"> The zone persists. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_PARAGON_PATH_379 </specific>
+      <specific name="Level"> 20 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+<!-- Changeling racial epic destiny -->
+
+<RulesElement name="Doppleganger of Legend" type="Epic Destiny" internal-id="ID_HF_EPIC_DESTINY_1" source="HF Homebrew" revision-date="10/12/2010 1:42:53 PM">
+		<Prereqs> 21st level, changeling </Prereqs>
+		<print-prereqs> 21st level, changeling </print-prereqs>
+		<specific name="Class Features"> ID_FMP_CLASS_FEATURE_HF4, ID_FMP_CLASS_FEATURE_HF5, ID_FMP_CLASS_FEATURE_HF6, ID_FMP_CLASS_FEATURE_HF7 </specific>
+		<specific name="Powers"> ID_FMP_HF_POWER_008 </specific>
+		<specific name="_DisplayPowers"> ID_FMP_HF_POWER_008 </specific>
+		<rules>
+			<grant name="ID_FMP_CLASS_FEATURE_HF4" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_HF5" type="Class Feature" Level="21" />
+			<grant name="ID_FMP_CLASS_FEATURE_HF6" type="Class Feature" Level="24" />
+			<grant name="ID_FMP_CLASS_FEATURE_HF7" type="Class Feature" Level="30" />
+			<grant name="ID_FMP_HF_POWER_008" type="Power" Level="26" />
+		</rules>
+Changelings are viewed with distrust by many other races, both civilized and uncivilized. Their ability to change their forms is well-suited for all sorts of unsavory activities, and many who would abuse this ability if they had it fear changelings all the more. Tales have been borne from fevered imaginations of changelings with even greater abilities of shapechanging and infiltration. Changelings have called these stories "doppleganger tales" to keep from being associated with them. Dopplegangers can read thoughts, and assume any form. Dopplegangers are able to heal any wound by changing their forms to uninjured ones. Most people dismiss these tales as mere stories. But even some changelings would be surprised to learn that many of these tales are true.
+The first changeling was said to be so skilled that she hid herself from the goddess who created her. Armed with this snippet and other ones like it, you sought to rediscover the secrets of form-changing lost for ages. 
+The key, you found, was changing your form so completely that any concept of a "true form" became meaningless. Your form is you, and you are your form. With this seemingly simple realization, you took your first steps towards becoming a doppleganger of legend.
+In time, your natural abilities became honed. You connected with your racial memories, providing you with knowledge of hundreds of languages beyond your own, and learned to open your mind to the thoughts of others.
+Finally, your shapechanging reached its zenith. You can adapt to myriad environments and take the form of more exotic creatures.
+	</RulesElement>
+	<RulesElement name="Changeling Abilities" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_HF4" source="HF Homebrew" revision-date="7/2/2012 5:48:00 PM">
+		<Category> 21 </Category>
+		<Flavor> You enhance your native changeling abilities. </Flavor>
+		<specific name="Short Description"> Increase your Charisma by 2, and your Intelligence or Dexerity by 2. </specific>
+		<specific name="Level"> 21 </specific>
+		<specific name="_CS_ShortDescription"> Increase Cha and Int or Dex by 2 </specific>
+		<rules>
+			<statadd name="Charisma" value="+2" />
+			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_HF4" />
+		</rules>
+You increase your Charisma by 2, and you increase your Dexterity or Intelligence by 2.
+	</RulesElement>
+	<RulesElement name="Changeling Adroitness (Dexterity)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_CHANGELING_ADROITNESS_(DEXTERITY)" source="HF Homebrew">
+		<Category> ID_FMP_CLASS_FEATURE_HF4 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_HF4 </specific>
+		<specific name="Short Description"> +2 to your Dexterity </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Dexterity </specific>
+		<rules>
+			<statadd name="Dexterity" value="+2" />
+		</rules>
+Add +2 to your Dexterity.
+	</RulesElement>
+	<RulesElement name="Changeling Cunning (Intelligence)" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_CHANGELING_CUNNING_(INTELLIGENCE)" source="HF Homebrew">
+		<Category> ID_FMP_CLASS_FEATURE_HF4 </Category>
+		<specific name="_SupportsID"> ID_FMP_CLASS_FEATURE_HF4 </specific>
+		<specific name="Short Description"> +2 to your Intelligence </specific>
+		<specific name="_CS_ShortDescription"> +2 to your Intelligence </specific>
+		<rules>
+			<statadd name="Intelligence" value="+2" />
+		</rules>
+Add +2 to your Intelligence.
+	</RulesElement>
+	<RulesElement name="Improved Changeling Disguise" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_HF5" source="HF Homebrew" revision-date="7/2/2012 5:48:00 PM">
+		<Category> 21 </Category>
+		<Flavor> Your changeling disguise extends beyond the superficial. </Flavor>
+		<specific name="Short Description"> Changeling Disguise affects more. </specific>
+		<specific name="Level"> 21 </specific>
+		<specific name="_CS_ShortDescription"> Changeling disguise affects more </specific>
+When you use your changeling disguise racial power, you may also change the appearance of your clothes, armor, and weapons. Your new form is considered your natural form in all ways, including for the purposes of truesight and using other polymorph effects. In addition, you do not age.
+	</RulesElement>
+<RulesElement name="Mastery of the Form" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_HF6" source="HF Homebrew" revision-date="7/2/2012 5:48:00 PM">
+		<Category> 24 </Category>
+		<Flavor> Your dedication to testing the limits of your shapechanging ability has brought even greater rewards. </Flavor>
+		<specific name="Short Description"> Use another race's racial power, gain their senses, telepathy, and languages </specific>
+		<specific name="Level"> 24 </specific>
+		<specific name="_CS_ShortDescription"> Use another race's racial power, gain their senses, telepathy, and languages </specific>
+While in an assumed form, you gain any special senses (such as low-light vision or darkvision) possessed by that form. Once per encounter, when you have assumed the form of another race, you may expend changeling trick to use an unleveled racial encounter power of that race. This requires that power's normal action.
+You also gain telepathy 15, and you can speak and understand all languages.
+	</RulesElement>
+	<RulesElement name="Resculpt the Broken Flesh" type="Power" internal-id="ID_FMP_HF_POWER_008" source="HF Homebrew" revision-date="10/12/2010 1:30:56 PM">
+		<Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_HF_EPIC_DESTINY_1,ID_FMP_CATEGORY_9,ID_INTERNAL_CATEGORY_MINOR_ACTION,26 </Category>
+		<Prereqs> Doppleganger of Legend </Prereqs>
+		<Flavor> For a short time, you reach deep within yourself and use your native changeling abilities to heal your body. </Flavor>
+		<specific name="Power Usage"> Daily </specific>
+		<specific name="Display"> Doppleganger of Legend Utility 26 </specific>
+		<specific name="Keywords"> Healing </specific>
+		<specific name="Action Type"> Minor Action </specific>
+		<specific name="Attack Type"> Personal  </specific>
+		<specific name="Effect"> You gain regeneration 25 until the end of the encounter. </specific>
+		<specific name="Special"> If you would die, you may expend this power or end its effects. You do not die, and instead regain hit points equal to your healing surge value.  </specific>
+		<specific name="Class"> ID_HF_EPIC_DESTINY_1 </specific>
+		<specific name="Level"> 26 </specific>
+		<specific name="Power Type"> Utility </specific>
+Your ability to change your form has grown well beyond that of normal changelings. Though it strains you, you can recover from nearly lethal injuries - and sometimes, even lethal ones.
+	</RulesElement>
+<RulesElement name="Greater Metamorphosis" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_HF7" source="HF Homebrew" revision-date="7/2/2012 5:48:00 PM">
+		<Category> 30 </Category>
+		<Flavor> In any form, your shapechanging ability gives you greater combat prowess than you would have thought possible. </Flavor>
+		<specific name="Short Description"> Gain your choice of benefits while in an assumed form </specific>
+		<specific name="Level"> 30 </specific>
+		<specific name="_CS_ShortDescription"> Gain your choice of benefits while in an assumed form  </specific>
+Your ability to change your form has reached its zenith. Whenever you use changeling disguise, you may choose to gain one of the following benefits. These benefits are not obvious to observers when not in use, allowing you to maintain a more mundane disguise as well.
+* Aquatic - You gain the aquatic keyword, and a swim speed equal to your speed.
+* Winged - You gain a fly speed equal to your speed.
+* Armored - You gain a +2 bonus to all defenses.
+* Resistant - You gain resist 20 against a specific damage type of your choice.</RulesElement>
+
+<!-- Theme: Primordial Adept -->
+<!-- Adding additional option for the primordial Castanamir -->
+<RulesElement name="Primordial Adept Level 10 Feature" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4306" source="Heroes of the Elemental Chaos" revision-date="11/9/2012 11:46:28 AM" >
+    <Category> 10 </Category>
+    <Flavor> Your elemental patron places a portion of its essence at your command, drastically enhancing the effectiveness of your attacks then they align with its sphere of influence. </Flavor>
+    <specific name="Short Description"> Deal +2 damage rolls with thunder powers and cold, fire, or lightning powers based on your patron </specific>
+    <specific name="Level"> 10 </specific>
+	<rules>
+           <statadd name="cold:damage" value="+2" type="power" requires="ID_FMP_POWER_16093"/>
+	   <statadd name="fire:damage" value="+2" type="power" requires="ID_FMP_POWER_16094"/>
+           <statadd name="lightning:damage" value="+2" type="power" requires="ID_FMP_POWER_HF_CW"/>
+           <statadd name="thunder:damage" value="+2" type="power"/>
+    </rules>
+If you chose Solkara's wave, you gain a +2 power bonus to damage rolls with cold powers and thunder powers. If you chose Vezzuvu's eruption, you gain a +2 power bonus to damage rolls with fire powers and thunder powers. If you chose Castanamir's Wrath, you gain a +2 power bonus to lightning powers and thunder powers.
+</RulesElement>
+
+<RulesElement name="Castanamir's Wrath" type="Power" internal-id="ID_FMP_POWER_HF_CW" source="HF Homebrew">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_FMP_CLASS_FEATURE_4304,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_74,ID_FMP_CATEGORY_11,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> A small eruption knocks creatures down with rumbling tremors and shocks them with lightning. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Primordial Adept Attack  </specific>
+    <specific name="Keywords"> Arcane, Elemental, Implement, Lightning, Thunder, Zone </specific>
+    <specific name="Action Type"> Standard Action </specific>
+    <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
+    <specific name="Target"> Each creature in the burst </specific>
+    <specific name="Attack"> Your highest ability modifier vs. Reflex </specific>
+    <specific name="Hit"> 1d6 + your highest ability modifier lightning damage, and the target falls prone.
+	Level 11: 2d6 + your highest ability modifier thunder damage.
+	Level 21: 3d6 + your highest ability modifier thunder damage. </specific>
+    <specific name="Effect"> The burst creates a zone of difficult terrain that lasts until the end of your next turn. Any creature that ends its turn in the zone takes 5 thunder damage. </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4304 </specific>
+</RulesElement>
+
+<!-- Druid-related power and multiclass feat option (not all MC feats for druid need to grant Nature) -->
+   <RulesElement name="Dire Mosquito Frenzy" type="Power" internal-id="ID_HF_POWER_PS1" source="HF Homebrew" revision-date="4/28/2024 11:36:42 AM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_50,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+      <Flavor> Your enemies wish that it was only ants in their pants. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Druid Attack 5 </specific>
+      <specific name="Keywords"> Beast Form, Implement, Primal </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 3 </specific>
+      <specific name="Target"> Each enemy in burst </specific>
+      <specific name="Attack"> Wisdom vs. Fortitude </specific>
+      <specific name="Hit"> 2d6 + Wisdom modifier damage. </specific>
+      <specific name="Effect"> The target takes ongoing 5 damage and cannot take opportunity actions or immediate actions (save ends both). </specific>
+      <specific name="	Primal Swarm"> When an enemy takes ongoing damage from this power, you regain that many hit points. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_126 </specific>
+      <specific name="Level"> 5 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+
+  <RulesElement name="Primal Aspect Selection" type="Category" internal-id="ID_FMP_CLASS_FEATURE_HF_DRUID_1" source="Core"/>
+
+	<RulesElement name="Primal Connection" type="Feat" internal-id="ID_FMP_HF_MC_1" source="HF Homebrew" revision-date="4/29/2024 12:18:10 PM" >
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_DRUID,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS</Category>
+		<Prereqs> Wis 13 or Con 13; ~MULTICLASS or Unlimited Multiclass or Druid CountsAsClass; !ID_FMP_CLASS_126; !ID_FMP_HYBRID_CLASS_442; !ID_FMP_CLASS_779 </Prereqs>
+		<print-prereqs> Wis 13 or Con 13</print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Druid: skill training; Primal Aspect 1/encounter </specific>
+		<specific name="Special" />
+                <specific name="Powers"> ID_FMP_POWER_HF_DRUID_1,ID_FMP_POWER_HF_DRUID_2,ID_FMP_POWER_HF_DRUID_3,ID_FMP_POWER_HF_DRUID_4 </specific>
+                <specific name="_DisplayPowers"> ID_FMP_POWER_HF_DRUID_1,ID_FMP_POWER_HF_DRUID_2,ID_FMP_POWER_HF_DRUID_3,ID_FMP_POWER_HF_DRUID_4 </specific>
+		<specific name="type"> Multiclass Druid </specific>
+		<rules>
+                        <select type="Skill Training" number="1" Category="Druid class" />
+                        <select type="Power" number="1" Category="ID_FMP_CLASS_FEATURE_HF_DRUID_1" />
+			<grant name="ID_INTERNAL_GRANTS_DRUID_IMPLEMENTS" type="Grants" />
+			<grant name="ID_INTERNAL_COUNTSASCLASS_DRUID" type="CountsAsClass" />
+			<grant name="ID_INTERNAL_MULTICLASS_MULTICLASS" type="Multiclass" />
+		</rules>
+You gain training in one skill from the druid's class skills list. You also gain a power based on your choice of Primal Aspect. 
+	In addition, you can wield druid implements.
+	</RulesElement>
+
+   <RulesElement name="Primal Connection (Guardian)" type="Power" internal-id="ID_FMP_POWER_HF_DRUID_1" source="HF Homebrew" revision-date="4/28/2024 11:36:42 AM" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_HF_DRUID_1,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> You briefly grow tougher, girding your loins against danger. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Druid Feature </specific>
+      <specific name="Keywords"> Primal </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Effect"> You gain a +2 power bonus to your AC until the end of your next turn. </specific>
+      <specific name="Special"> You may only use this power on your turn and only when you are not wearing heavy armor. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_126 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+
+   <RulesElement name="Primal Connection (Predator)" type="Power" internal-id="ID_FMP_POWER_HF_DRUID_2" source="HF Homebrew" revision-date="4/28/2024 11:36:42 AM" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_HF_DRUID_1,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> You briefly grow swifter, akin to the predators which stalk the wilds. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Druid Feature </specific>
+      <specific name="Keywords"> Primal </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Effect"> You gain a +1 power bonus to your speed until the end of your next turn. </specific>
+      <specific name="Special"> You may only use this power on your turn and only when you are not wearing heavy armor. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_126 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+
+   <RulesElement name="Primal Connection (Swarm)" type="Power" internal-id="ID_FMP_POWER_HF_DRUID_3" source="HF Homebrew" revision-date="4/28/2024 11:36:42 AM" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_HF_DRUID_1,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> You briefly grow harder to harm as you take upon the qualities of the swarm. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Druid Feature </specific>
+      <specific name="Keywords"> Primal </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Effect"> Until the end of your next turn, when you take damage from melee attacks or ranged attacks, the damage is reduced by your Consitution modifier. </specific>
+      <specific name="Special"> You may only use this power on your turn and only when you are not wearing heavy armor. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_126 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+
+   <RulesElement name="Primal Connection (Wrath)" type="Power" internal-id="ID_FMP_POWER_HF_DRUID_4" source="HF Homebrew" revision-date="4/28/2024 11:36:42 AM" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_CLASS_FEATURE_HF_DRUID_1,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_126,ID_FMP_CATEGORY_33,ID_INTERNAL_CATEGORY_FREE_ACTION </Category>
+      <Flavor> You briefly grow more elementally vicious, calling upon nature's wrath to punish your foes. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Druid Feature </specific>
+      <specific name="Keywords"> Primal </specific>
+      <specific name="Action Type"> Free action </specific>
+      <specific name="Attack Type"> Personal  </specific>
+      <specific name="Effect"> You gain a +1 power bonus to attack rolls with attacks that have the cold, fire, lightning, or thunder keywords until the end of your turn. </specific>
+      <specific name="Special"> You may only use this power on your turn and only when you are not wearing heavy armor. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_126 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+
+<!-- House rule to combine the power swap feats. Note that trying to grant more than one power swap in a single feat breaks things, which is why this workaround is used to grant multiple feats with a feat. -->
+
+<RulesElement name="Combined Power Swap" type="Feat" internal-id="ID_FMP_FEAT_HF_MC_SWAP" source="HF Homebrew" revision-date="4/29/2024 12:17:59 PM">
+		<Category> ID_INTERNAL_CATEGORY_MULTICLASS </Category>
+		<Prereqs> Any class-specific multiclass feat, 4th level </Prereqs>
+		<print-prereqs> Any class-specific multiclass feat, 4th level </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Swap one of each type of power for one from multiclass </specific>
+		<specific name="Special"/>
+		<specific name="type"> Multiclass </specific>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+		<rules>
+	          <grant name="ID_FMP_FEAT_339" type="Feat" />
+                  <grant name="ID_FMP_FEAT_340" type="Feat" />
+                  <grant name="ID_FMP_FEAT_341" type="Feat" />
+		</rules>
+You gain the Novice Power, Acolyte Power, and Adept Power feats.
+	</RulesElement>
+
+<RulesElement name="History of Galthoria (heroic tier) " type="Magic Item" internal-id="ID_HF_MAGIC_ITEM_020" source="HF Homebrew" revision-date="1/23/2011 10:34:17 AM" >
+   <Flavor> A thick leather-bound tome, this book has nearly limitless information on the lost kingdom of Galthoria. </Flavor>
+   <specific name="Level"> 3 </specific>
+   <specific name="Gold"> 680 </specific>
+   <specific name="Magic Item Type"> Wondrous Item </specific>
+   <specific name="_Rarity"> Uncommon </specific>
+   <specific name="Property"> After each extended rest, choose a knowledge skill. You gain a +2 bonus to knowledge checks made with that skill until the end of your next extended rest. </specific>
+  </RulesElement>
+
+</D20Rules>

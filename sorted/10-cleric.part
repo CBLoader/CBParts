@@ -2,14 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.27</Version>
+		<Version>1.28</Version>
 		<Filename>10-cleric.part</Filename>
-		<PartAddress>https://cbloader.vorpald20.com/sorted/10-cleric.part</PartAddress>
-		<VersionAddress>https://cbloader.vorpald20.com/sorted/10-cleric.txt</VersionAddress>
-	<V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+		<PartAddress>https://cbloader.org/sorted/10-cleric.part</PartAddress>
+		<VersionAddress>https://cbloader.org/sorted/10-cleric.txt</VersionAddress>
+	<V2Address>https://cbloader.org/versions2.txt</V2Address></UpdateInfo>
 	<!-- Cleric -->
-	<!-- 10-cleric.part, version 1.24 -->
-	<!-- Original release: 13-July-2011; Last modified: 8-October-2013 -->
+	<!-- 10-cleric.part, version 1.28 -->
+	<!-- Original release: 13-July-2011; Last modified: 13-May-2024 -->
 	<!-- Test compiled with CBLoader build V1.3.0 -->
 	<!-- This part file belongs to the July 2011 reorganization of data files. -->
 	<!-- Special thanks to the entire community for handling the materials. -->
@@ -38,6 +38,7 @@
  Updated 22-June-2021 Removed requirement on Weapon of Divine Protection
  Updated 27-September-2021 Fixed grouping for Icon of Fear
  Updated 7-August-2022 Fixed L16 Devout Warpriest domain feature name errors
+ Updated 13-May-2024 Fix campaign setting sources
 	</Changelog>
 	<!-- Cleric Feature Updates -->
 	<RulesElement name="Cleric" type="Class" internal-id="ID_FMP_CLASS_2" source="Player's Handbook" revision-date="8/27/2010 12:39:49 PM">
@@ -7210,7 +7211,7 @@ The teachings of a warpriest of Torm emphasize loyalty to one's friends and idea
 		<specific name="Level"> 3 </specific>
 		<specific name="Power Type"> Attack </specific>
 	</RulesElement>
-	<RulesElement name="Channel Divinity (Oghma)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3984" source="Neverwinter Campaign Setting">
+	<RulesElement name="Channel Divinity (Oghma)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3984" source="Neverwinter Campaign Guide">
 		<Category> 1 </Category>
 		<Flavor> Oghma exhorts his followers to find truth and seek new ideas, but the Binder of What Is Known also shares information with his faithful. When you call on his blessing, Oghma grants you and your allies the knowledge that lets you achieve your aims. </Flavor>
 		<specific name="Short Description"> Gain the knowledge to spread power </specific>
@@ -7226,7 +7227,7 @@ The teachings of a warpriest of Torm emphasize loyalty to one's friends and idea
 
 You gain the knowledge to spread power.
 	</RulesElement>
-	<RulesElement name="Channel Divinity (Selûne)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4000" source="Neverwinter Campaign Setting">
+	<RulesElement name="Channel Divinity (Selûne)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4000" source="Neverwinter Campaign Guide">
 		<Category> 1 </Category>
 		<Flavor> The servants of Shar utilize shadowy magic antithetical to life, while at the same time fearing the light. Channeling Selûne's power can allow a warpriest to take advantage of this weakness. </Flavor>
 		<specific name="Short Description"> Gain the life and light power </specific>
@@ -7241,7 +7242,7 @@ You gain the knowledge to spread power.
 		</rules>
 You gain the life and light power.
 	</RulesElement>
-	<RulesElement name="Channel Divinity (Torm)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4015" source="Neverwinter Campaign Setting">
+	<RulesElement name="Channel Divinity (Torm)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4015" source="Neverwinter Campaign Guide">
 		<Category> 1 </Category>
 		<Flavor> Spur-of-the-moment tactics play as strong a role as long-term strategy in the battle for justice. Torm helps his most faithful win the day by letting them pull allies from across the battlefield as if they were chess pieces. </Flavor>
 		<specific name="Short Description"> Gain the outmaneuver power </specific>
@@ -7725,8 +7726,8 @@ Loyal priestesses of Lolth are gifted with unique abilities by the Demon Queen o
 	</RulesElement>
 
 
-<!-- Dragon 427 New Diety -->
-	<RulesElement name="Nerull" type="Deity" internal-id="ID_DRAG427_GOD" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+<!-- Dragon 427 New Deity -->
+	<RulesElement name="Nerull" type="Deity" internal-id="ID_DRAG427_GOD" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
       <Prereqs> !Deity of the Arcana domain,!Deity of the Change domain,!Deity of the Civilization domain,!Deity of the Creation domain,!Deity of the Darkness domain,!Deity of the Death domain,!Deity of the Destruction domain,!Deity of the Earth domain,!Deity of the Fate domain,!Deity of the Freedom domain,!Deity of the Hope domain,!Deity of the Justice domain,!Deity of the Knowledge domain,!Deity of the Life domain,!Deity of the Love domain,!Deity of the Luck domain,!Deity of the Madness domain,!Deity of the Moon domain,!Deity of the Poison domain,!Deity of the Protection domain,!Deity of the Sea domain,!Deity of the Skill domain,!Deity of the Storm domain,!Deity of the Strength domain,!Deity of the Strife domain,!Deity of the Sun domain,!Deity of the Torment domain,!Deity of the Trickery domain,!Deity of the Tyranny domain,!Deity of the Undeath domain,!Deity of the Vengeance domain,!Deity of the War domain,!Deity of the Wilderness domain,!Deity of the Winter domain </Prereqs>
 	  <specific name="Alignment"> Evil </specific>
 		<specific name="Domains"/>
@@ -7735,7 +7736,7 @@ Hostility comes not only from the general public, but also from the followers of
 Despite all the opposition, some creatures still choose to worship the Reaper. Such worshipers—typically necromancers or undead—are inducted into Nerull’s cults through blood-soaked rituals under the light of the harvest moon. But not all followers of the dead god are crazed cultists living in abandoned crypts.
 	</RulesElement>
 
-  <RulesElement name="Nerull's Binding" type="Feat" internal-id="ID_DRAG427_FEAT_2" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Nerull's Binding" type="Feat" internal-id="ID_DRAG427_FEAT_2" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
 	<Category> ID_INTERNAL_CATEGORY_DIVINITY </Category>
 	<Prereqs> Channel Divinity class feature, Polytheist or must worship Nerull </Prereqs>
 	<print-prereqs> Channel Divinity class feature, must worship Nerull. </print-prereqs>
@@ -7749,7 +7750,7 @@ Despite all the opposition, some creatures still choose to worship the Reaper. S
 You channel the power of Nerull to command the recently slain to protect you.
 </RulesElement>
 
-<RulesElement name="Channel Divinity: Nerull's Binding" type="Power" internal-id="ID_DRAG427_CD" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+<RulesElement name="Channel Divinity: Nerull's Binding" type="Power" internal-id="ID_DRAG427_CD" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
 	<Category> ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE, ID_FMP_CATEGORY_12, ID_FMP_CATEGORY_40, ID_FMP_CATEGORY_67, ID_FMP_POWER_SOURCE_3, ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION</Category>
 	<Flavor> The shade of a dead enemy provides you with a dark veil of temporary protection.</Flavor>
 	<specific name="Power Usage"> Encounter </specific>

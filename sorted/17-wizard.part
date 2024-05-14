@@ -2,14 +2,14 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.44</Version>
+    <Version>1.45</Version>
     <Filename>17-wizard.part</Filename>
-    <PartAddress>https://cbloader.vorpald20.com/sorted/17-wizard.part</PartAddress>
-    <VersionAddress>https://cbloader.vorpald20.com/sorted/17-wizard.txt</VersionAddress>
-  <V2Address>https://cbloader.vorpald20.com/versions2.txt</V2Address></UpdateInfo>
+    <PartAddress>https://cbloader.org/sorted/17-wizard.part</PartAddress>
+    <VersionAddress>https://cbloader.org/sorted/17-wizard.txt</VersionAddress>
+  <V2Address>https://cbloader.org/versions2.txt</V2Address></UpdateInfo>
   <!-- Wizard -->
   <!-- 17-wizard.part, version 1.40 -->
-  <!-- Original release: 13-July-2011; Last modified: 11-September-2012 -->
+  <!-- Original release: 13-July-2011; Last modified: 13-May-2024 -->
   <!-- Test compiled with CBLoader build V1.3.0 -->
   <!-- This part file belongs to the July 2011 reorganization of data files. -->
   <!-- Special thanks to the entire community for handling the materials. -->
@@ -49,8 +49,9 @@
  Updated 15-January-2022 Melf's Minute Meteors Secondary Power typo and usage fix.
  Updated 22-January-2024 Bolstering Blood update per errata.
  Updated 13-February-2024 Added Sabotage Trap to fix power type.
+ Updated 13-May-2024 Fix for campaign setting sources
 </Changelog>
-  
+
   <!-- Wizard Feature Updates -->
   <RulesElement name="Wizard" type="Class" internal-id="ID_FMP_CLASS_9" source="Player's Handbook" revision-date="8/27/2010 12:40:14 PM">
     <Flavor> “I am the fire that burns, the choking fog, the storm that rains devastation on our foes.” </Flavor>
@@ -335,7 +336,7 @@ SPELLS PREPARED PER DAY
     <specific name="Power Usage"> At-Will </specific>
     <specific name="Display"> Mage Spellbook </specific>
     <specific name="Keywords"/>
-    <specific name="Spellbook"> 
+    <specific name="Spellbook">
 &lt;table&gt;Level	Encounter	Daily	Utility
    1            1           1         0
    2            1           1         1
@@ -1365,7 +1366,7 @@ Originally crafted by eladrin wizards of the Feywild, this spell creates strands
     <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
     <specific name="Target"> Each creature in the burst </specific>
     <specific name="Attack"> Intelligence vs. Reflex </specific>
-    <specific name="Hit"> 1d6 + Intelligence modifier cold damage, and you can slide the target 1 square. 
+    <specific name="Hit"> 1d6 + Intelligence modifier cold damage, and you can slide the target 1 square.
 Level 21: 2d6 + Intelligence modifier cold damage. </specific>
     <specific name="Class"> ID_FMP_CLASS_9 </specific>
     <specific name="Level"> 1 </specific>
@@ -2135,7 +2136,7 @@ Nolzur eventually found other challenges to distract him from his quest to dupli
     <specific name="Attack Type"> Area burst 1 within 10 squares </specific>
     <specific name="Target"> Each creature in the burst </specific>
     <specific name="Attack"> Intelligence vs. Fortitude </specific>
-    <specific name="Hit"> 1d6 + Intelligence modifier damage, and the target is slowed until the end of your next turn. 
+    <specific name="Hit"> 1d6 + Intelligence modifier damage, and the target is slowed until the end of your next turn.
 Level 21: 2d6 + Intelligence modifier damage. </specific>
     <specific name="Class"> ID_FMP_CLASS_9 </specific>
     <specific name="Level"> 1 </specific>
@@ -2878,7 +2879,7 @@ When you cast vampiric strike, you create a malignant link with an enemy. As the
     <specific name="Class"> ID_FMP_CLASS_9 </specific>
     <specific name="Level"> 25 </specific>
     <specific name="Power Type"> Attack </specific>
-    <specific name="_DisplayPowers"> ID_FMP_POWER_14007 </specific>  
+    <specific name="_DisplayPowers"> ID_FMP_POWER_14007 </specific>
 The Shadowfell's bleakest reaches are inimical to life. Living beings lost in these lightless lands find their souls crippled by melancholy and their bodies plagued with rampant decay. The dooming darkness spell lets a wizard draw forth this horrid influence and use it to entrap enemies.
 </RulesElement>
   <RulesElement name="Dooming Darkness (Secondary Power)" type="Power" internal-id="ID_FMP_POWER_14007" source="Player Essentials: Heroes of Shadow" revision-date="3/14/2011 12:01:49 PM">
@@ -3319,7 +3320,7 @@ You gain the nightscape power.
     <specific name="Power Type"> Attack </specific>
     <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_3223 </specific>
   </RulesElement>
-<!-- Dragon 401 Arcanist Playtest Material -->   
+<!-- Dragon 401 Arcanist Playtest Material -->
 <RulesElement name="Spellstorm Mage" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_59" source="Player's Handbook" revision-date="8/27/2010 12:40:27 PM">
   <Prereqs> Wizard class </Prereqs>
   <print-prereqs> Wizard class </print-prereqs>
@@ -3353,7 +3354,7 @@ Alternatively, you can choose to extend the duration of an effect created by a w
       <specific name="Requirement"> You must wield an orb to use this ability. </specific>
       <specific name="_Associated Feats"/>
       <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_769 </specific>
-   </RulesElement>  
+   </RulesElement>
 <RulesElement name="Cloud of Daggers" type="Power" internal-id="ID_FMP_POWER_1164" source="Player's Handbook" revision-date="8/27/2010 11:24:10 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_8,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> You create a small cloud of whirling daggers of force that relentlessly attack creatures in the area. </Flavor>
@@ -3372,7 +3373,7 @@ Increase damage to 2d6 + Intelligence modifier at 21st level. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-</RulesElement>  
+</RulesElement>
 <RulesElement name="Scorching Burst" type="Power" internal-id="ID_FMP_POWER_1166" source="Player's Handbook" revision-date="8/27/2010 11:24:10 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> A vertical column of golden flames burns all within. </Flavor>
@@ -3483,7 +3484,7 @@ Increase damage to 2d6 + Intelligence modifier at 21st level. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
+   </RulesElement>
 <RulesElement name="Ray of Enfeeblement" type="Power" internal-id="ID_FMP_POWER_416" source="Player's Handbook" revision-date="8/27/2010 11:22:25 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_72,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
       <Flavor> You point three fingers at your foe, curling them like talons. Weird green mist streams from your enemy's flesh, carrying away its strength. </Flavor>
@@ -3501,7 +3502,7 @@ Increase damage to 2d6 + Intelligence modifier at 21st level. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
+   </RulesElement>
 <RulesElement name="Acid Arrow" type="Power" internal-id="ID_FMP_POWER_464" source="Player's Handbook" revision-date="8/27/2010 11:22:32 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_5,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
       <Flavor> A shimmering arrow of green, glowing liquid streaks to your target and bursts in a spray of sizzling acid. </Flavor>
@@ -3544,7 +3545,7 @@ When the sphere appears, it immediately makes the following attack. While the sp
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-</RulesElement>   
+</RulesElement>
 <RulesElement name="Freezing Cloud" type="Power" internal-id="ID_FMP_POWER_185" source="Player's Handbook" revision-date="8/27/2010 11:22:07 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_39,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,1 </Category>
       <Flavor> A pellet shoots from your hand and explodes into a cloud of icy mist at the point of impact. </Flavor>
@@ -3564,7 +3565,7 @@ When the sphere appears, it immediately makes the following attack. While the sp
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-</RulesElement> 
+</RulesElement>
 <RulesElement name="Color Spray" type="Power" internal-id="ID_FMP_POWER_173" source="Player's Handbook" revision-date="8/27/2010 11:22:03 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
       <Flavor> A brilliant blast of flashing colors springs from your outstretched fingers, knocking nearby enemies senseless. </Flavor>
@@ -3581,7 +3582,7 @@ When the sphere appears, it immediately makes the following attack. While the sp
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 3 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>  
+   </RulesElement>
 <RulesElement name="Fire Shroud" type="Power" internal-id="ID_FMP_POWER_2272" source="Player's Handbook" revision-date="8/27/2010 11:27:26 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
       <Flavor> With a subtle gesture, you wreathe nearby enemies in flames. </Flavor>
@@ -3900,7 +3901,7 @@ When the hands appear, you make the following attack with each hand. While a han
       <specific name="Attack Type"> Ranged 10 </specific>
       <specific name="Target"> One creature </specific>
       <specific name="Attack"> Intelligence vs. Reflex </specific>
-      <specific name="Hit"> You conjure a sphere of force that fills the target's entire space until the end of your next turn. The target is immo-bilized and can't attack anything outside its own space. Creatures outside the sphere can't attack the target, and the sphere blocks objects and creatures attempting to pass through it. 
+      <specific name="Hit"> You conjure a sphere of force that fills the target's entire space until the end of your next turn. The target is immo-bilized and can't attack anything outside its own space. Creatures outside the sphere can't attack the target, and the sphere blocks objects and creatures attempting to pass through it.
 	The sphere, though impenetrable, is not impervious to damage. Attacks against the sphere automatically hit, and it has 100 hit points. </specific>
       <specific name="Sustain Minor"> If your attack roll was successful, you can sustain the sphere. </specific>
       <specific name="Miss"> The target is immobilized (save ends). </specific>
@@ -4433,11 +4434,11 @@ You gain proficiency with the longsword as an implement. In addition, if you hav
       </rules>
 You can spend an action point to regain the use of one wizard encounter attack power that you have already used during this encounter, instead of taking an extra action.
    </RulesElement>
-<!--End Dragon 401 Arcanist Playtest Material -->   
-  
-  
+<!--End Dragon 401 Arcanist Playtest Material -->
+
+
 <!-- Bladesinger Essential Class -->
-  <RulesElement name="Bladesinger" type="Class" internal-id="ID_FMP_CLASS_883" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Bladesinger" type="Class" internal-id="ID_FMP_CLASS_883" source="Neverwinter Campaign Guide">
     <Flavor> You realize the ultimate blending of swordplay and spellcasting, unleashing magic and making attacks with your blade with equal ease. </Flavor>
     <specific name="Key Abilities"> Intelligence, Dexterity </specific>
     <specific name="Implements"> Orbs, staffs, wands </specific>
@@ -4468,14 +4469,14 @@ Like all bladesingers, you can channel magic through your chosen blade, treating
     <statadd name="Healing Surges" value="+6"/>
     <statadd name="Will Defense Class Bonus" value="+2"/>
     <select type="Skill Training" number="3" Category="ID_FMP_CLASS_883"/>
-    </rules>  
+    </rules>
 Those who see a bladesinger in battle never forget the sight. Amid the chaos and blood, the bladesinger moves in an otherworldly dance. Spells and sword act as partners, matching awe-inspiring beauty with an awful deadliness. When the bladesinger engages in the true heart of the art, when the sword whirls through the air so swiftly that it keens and the air hums and whistles in chorus, when the bladesong has begun—then the bladesinger becomes something unreal, something timeless.
 	According to legend, Corellon himself inspired and taught the first bladesinger. The techniques handed down as a gift from the leader of the elven deities have passed from one to another among the Tel'Quessir for untold generations, and though different styles evolved as eladrin and elves turned its power to suit their needs, none have improved upon the essential core of the art.
 	The bladesinger wields a weapon one-handed, leaving the other free or using it to employ a wand that can be incorporated into the fighting style. This technique gives a bladesinger the speed and freedom of movement necessary for the dancelike motions of the various forms of martial art, which allow for both magical and physical attacks to flow freely.
 	Few among the Tel'Quessir have the honor of being inducted into the bladesingers. One must have the mind necessary to be a great wizard, and also the agility of the greatest dancer. Yet those traits alone are not enough. A bladesinger is first and foremost devoted to the ways and the people of the Tel'Quessir, for that was the purpose of Corellon's gift.
 	A bladesinger who has set out beyond the borders of a nation of the People must have had good cause. Adventuring bladesingers might seek out relics or locations of great meaning to the Tel'Quessir, or they could leave in order to guard a specific person or group against harm. A bladesinger might instead embark upon a quest to eliminate a threat to the People or to find and communicate with some long-lost branch of the race. In a more tragic case, a bladesinger might have failed in the duty to protect a community and be death-pledged to avenge it and restore his or her honor.
 </RulesElement>
-<RulesElement name="Bladesinger" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER" source="Neverwinter Campaign Guide">
   <specific name="_SupportsID"> ID_FMP_CLASS_883 </specific>
   <rules>
     <grant name="ID_FMP_ROLE_1" type="Role"/>
@@ -4517,7 +4518,7 @@ Those who see a bladesinger in battle never forget the sight. Amid the chaos and
     <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass"/>
   </rules>
 </RulesElement>
-<RulesElement name="Bladesinger Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER_IMPLEMENTS" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER_IMPLEMENTS" source="Neverwinter Campaign Guide">
   <specific name="_SupportsID"> ID_FMP_CLASS_883 </specific>
   <rules>
     <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency"/>
@@ -4525,13 +4526,13 @@ Those who see a bladesinger in battle never forget the sight. Amid the chaos and
     <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency"/>
   </rules>
 </RulesElement>
-<RulesElement name="Bladesinger" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_Bladesinger" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_Bladesinger" source="Neverwinter Campaign Guide">
   <specific name="_SupportsID"> ID_FMP_CLASS_883 </specific>
 You count as a bladesinger for meeting prerequisites.
 </RulesElement>
 
 <!-- Section: Class Features -->
-<RulesElement name="Instinctive Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4029" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Instinctive Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4029" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> You have trained your body and your mind to work in concert so well that you can act without conscious thought. In your hands, a sword is no mere weapon. It becomes an extension of your deadly will. </Flavor>
   <specific name="Short Description"> Use Int instead of Str when making melee basic attacks with a weapon wielded in one hand </specific>
@@ -4543,7 +4544,7 @@ You count as a bladesinger for meeting prerequisites.
   </rules>
 When you make a melee basic attack with a weapon you wield in one hand, you can use Intelligence instead of Strength for the attack roll and the damage roll.
 </RulesElement>
-<RulesElement name="Guarded Flourish" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4030" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Guarded Flourish" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4030" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> With a blade in your hand, you weave a defensive web of steel that allows you to hurl spells or weapons without fear of prerisal from nearby foes. </Flavor>
   <specific name="Short Description"> Your ranged and area attacks don't provoke opportunity attacks when you use 1-handed melee weapons; you gain a +2 shield bonus to AC with light/no armor and a one-handed melee weapon without shield </specific>
@@ -4556,7 +4557,7 @@ When you make a melee basic attack with a weapon you wield in one hand, you can 
 Your ranged attacks and area attacks do not provoke opportunity attacks while you are holding a one-handed melee weapon.
 In addition, you gain a +2 shield bonus to AC while you are wearing light armor or no armor and are holding a one-handed melee weapon in one hand and no weapon or shield in the other.
 </RulesElement>
-<RulesElement name="Blade Magic" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4031" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Blade Magic" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4031" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> Your weapon becomes part of the magic you cast.  Just as a mage can direct spells with a wand, destructive magic can spew from the point of your sword </Flavor>
   <specific name="Short Description"> Choose a one-handed melee weapon you are proficient with for an implement; the weapon also counts as a wand </specific>
@@ -4567,7 +4568,7 @@ In addition, you gain a +2 shield bonus to AC while you are wearing light armor 
   </rules>
 Choose a one-handed melee weapon with which you have proficiency, and that is a light blade or a heavy blade.  You gain proficiency with that weapon as an implement, meaning you can use your implement powers through it.  The weapon also counts as a wand for you, although it can be enchanted only as a weapon.
 </RulesElement>
-<RulesElement name="Bastard Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BASTARDSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bastard Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BASTARDSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with bastard sword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a bastard sword as if it were a wand </specific>
@@ -4577,7 +4578,7 @@ Choose a one-handed melee weapon with which you have proficiency, and that is a 
   </rules>
 You can use a bastard sword as if it were a wand.
 </RulesElement>
-<RulesElement name="Broadsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BROADSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Broadsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BROADSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with broadsword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a broadsword as if it were a wand </specific>
@@ -4587,7 +4588,7 @@ You can use a bastard sword as if it were a wand.
   </rules>
 You can use a broadsword as if it were a wand.
 </RulesElement>
-<RulesElement name="Chatkcha [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CHATKCHA" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Chatkcha [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CHATKCHA" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with chatkcha </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a chatkcha as if it were a wand </specific>
@@ -4597,7 +4598,7 @@ You can use a broadsword as if it were a wand.
   </rules>
 You can use a chatkcha as if it were a wand.
 </RulesElement>
-<RulesElement name="Cutting Wheel [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CUTTINGWHEEL" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Cutting Wheel [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CUTTINGWHEEL" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with cutting wheel </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a cutting wheel as if it were a wand </specific>
@@ -4607,7 +4608,7 @@ You can use a chatkcha as if it were a wand.
   </rules>
 You can use a cutting wheel as if it were a wand.
 </RulesElement>
-<RulesElement name="Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DAGGER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DAGGER" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with dagger </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a dagger as if it were a wand </specific>
@@ -4617,7 +4618,7 @@ You can use a cutting wheel as if it were a wand.
   </rules>
 You can use a dagger as if it were a wand.
 </RulesElement>
-<RulesElement name="Drow Long Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DROWLONGKNIFE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Drow Long Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DROWLONGKNIFE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with drow long knife </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a drow long knife as if it were a wand </specific>
@@ -4627,7 +4628,7 @@ You can use a dagger as if it were a wand.
   </rules>
 You can use a drow long knife as if it were a wand.
 </RulesElement>
-<RulesElement name="Katar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KATAR" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Katar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KATAR" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with katar </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a katar as if it were a wand </specific>
@@ -4637,7 +4638,7 @@ You can use a drow long knife as if it were a wand.
   </rules>
 You can use a katar as if it were a wand.
 </RulesElement>
-<RulesElement name="Khopesh [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KHOPESH" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Khopesh [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KHOPESH" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with khopesh </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a khopesh as if it were a wand </specific>
@@ -4647,7 +4648,7 @@ You can use a katar as if it were a wand.
   </rules>
 You can use a khopesh as if it were a wand.
 </RulesElement>
-<RulesElement name="Kukri [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KUKRI" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Kukri [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KUKRI" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with kukri </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a kukri as if it were a wand </specific>
@@ -4657,7 +4658,7 @@ You can use a khopesh as if it were a wand.
   </rules>
 You can use a kukri as if it were a wand.
 </RulesElement>
-<RulesElement name="Longsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_LONGSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Longsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_LONGSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with longsword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a longsword as if it were a wand </specific>
@@ -4667,7 +4668,7 @@ You can use a kukri as if it were a wand.
   </rules>
 You can use a longsword as if it were a wand.
 </RulesElement>
-<RulesElement name="Parrying Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PARRYINGDAGGER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Parrying Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PARRYINGDAGGER" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with parrying dagger </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a parrying dagger as if it were a wand </specific>
@@ -4677,7 +4678,7 @@ You can use a longsword as if it were a wand.
   </rules>
 You can use a parrying dagger as if it were a wand.
 </RulesElement>
-<RulesElement name="Puchik [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PUCHIK" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Puchik [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PUCHIK" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with puchik </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a puchik as if it were a wand </specific>
@@ -4687,7 +4688,7 @@ You can use a parrying dagger as if it were a wand.
   </rules>
 You can use a puchik as if it were a wand.
 </RulesElement>
-<RulesElement name="Rapier [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_RAPIER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Rapier [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_RAPIER" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with rapier </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a rapier as if it were a wand </specific>
@@ -4697,7 +4698,7 @@ You can use a puchik as if it were a wand.
   </rules>
 You can use a rapier as if it were a wand.
 </RulesElement>
-<RulesElement name="Scimitar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SCIMITAR" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Scimitar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SCIMITAR" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with scimitar </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a scimitar as if it were a wand </specific>
@@ -4707,7 +4708,7 @@ You can use a rapier as if it were a wand.
   </rules>
 You can use a scimitar as if it were a wand.
 </RulesElement>
-<RulesElement name="Short Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SHORTSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Short Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SHORTSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with short sword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a short sword as if it were a wand </specific>
@@ -4717,7 +4718,7 @@ You can use a scimitar as if it were a wand.
   </rules>
 You can use a short sword as if it were a wand.
 </RulesElement>
-<RulesElement name="Sickle [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SICKLE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Sickle [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SICKLE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with sickle </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a sickle as if it were a wand </specific>
@@ -4727,7 +4728,7 @@ You can use a short sword as if it were a wand.
   </rules>
 You can use a sickle as if it were a wand.
 </RulesElement>
-<RulesElement name="Spiked Shield [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SPIKEDSHIELD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Spiked Shield [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SPIKEDSHIELD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with spiked shield </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a spiked shield as if it were a wand </specific>
@@ -4737,7 +4738,7 @@ You can use a sickle as if it were a wand.
   </rules>
 You can use a spiked shield as if it were a wand.
 </RulesElement>
-<RulesElement name="Talenta Tengat [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TENGAT" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Talenta Tengat [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TENGAT" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with talenta tengat </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a talenta tengat as if it were a wand </specific>
@@ -4747,7 +4748,7 @@ You can use a spiked shield as if it were a wand.
   </rules>
 You can use a talenta tangat as if it were a wand.
 </RulesElement>
-<RulesElement name="Tortoise Blade [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TOROISEBLADE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Tortoise Blade [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TOROISEBLADE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with tortoise blade </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a tortoise blade as if it were a wand </specific>
@@ -4757,7 +4758,7 @@ You can use a talenta tangat as if it were a wand.
   </rules>
 You can use a tortoise blade as if it were a wand.
 </RulesElement>
-<RulesElement name="Widow's Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WIDOWKNIFE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Widow's Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WIDOWKNIFE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with widow's knife </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a widow's knife as if it were a wand </specific>
@@ -4767,7 +4768,7 @@ You can use a tortoise blade as if it were a wand.
   </rules>
 You can use a widow's knife as if it were a wand.
 </RulesElement>
-<RulesElement name="Wrist Razors [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WRISTRAZORS" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Wrist Razors [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WRISTRAZORS" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with wrist razors </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a wrist razors as if it were a wand </specific>
@@ -4777,7 +4778,7 @@ You can use a widow's knife as if it were a wand.
   </rules>
 You can use a wrist razors as if it were a wand.
 </RulesElement>
-<RulesElement name="Bladesong" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4032" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesong" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4032" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> The bladesong lies at the heart of any bladesinger's craft.  Bladesingers describe it as a period of peace amid war, calm in chaosm and clarity in confusion. When you enter the bladesong, the world seems to slow even as, to an outside observer, your movements speed into a blur. Your concentration becomes absolute as mind and body, spell and sword meld into one perfection of form. Then your sword sings the dirge of your foes. </Flavor>
   <specific name="Short Description"> Gain the bladesong power </specific>
@@ -4786,14 +4787,14 @@ You can use a wrist razors as if it were a wand.
   <specific name="Type"> Utility </specific>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
   <specific name="_CLASSNAME"> Bladesinger </specific>
-  <specific name="_DisplayPowers"> ID_FMP_POWER_14285 </specific>  
+  <specific name="_DisplayPowers"> ID_FMP_POWER_14285 </specific>
   <specific name="_CS_ShortDescription"> @ </specific>
   <rules>
     <grant name="ID_FMP_POWER_14285" type="Power"/>
   </rules>
 You gain the bladesong power
 </RulesElement>
-<RulesElement name="Bladesinger's Spellbook" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4033" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger's Spellbook" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4033" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> Like other wizards, a bladesinger keeps a spellbook and prepares spells from it.  Your spellbook holds the most powerful spells you learn as you advance in level. </Flavor>
   <specific name="Short Description"> Gain bladesinger's spellbook </specific>
@@ -4841,7 +4842,7 @@ WIZARD POWERS PREPARED PER DAY
  16-21	3	4
  22-30	3	5&lt;/table&gt;
 </RulesElement>
-<RulesElement name="Bladespells" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4034" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladespells" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4034" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> A bladesinger mixes melee and magic with such ease and grace that every successful strike unleashes a spell. Unique to bladesingers, these bladespells lash out to affect even the most well-defended foes. </Flavor>
   <specific name="Short Description"> Gain three wizard at-will attack powers with the bladespell keyword </specific>
@@ -4856,7 +4857,7 @@ WIZARD POWERS PREPARED PER DAY
   </rules>
 You gain three wizard at-will powers that have the bladespell keyword.
 </RulesElement>
-<RulesElement name="Level 1 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4035" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 1 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4035" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> A bladesinger must split time between study of martial skill and the arcane arts while at the same time using mental focus for both.  This division limits the bladesinger's spellcasting attacks while they heighten his or her melee capability.  Spells that a mage can use in every battle become powers that a bladesinger can replenish only after an extended rest. </Flavor>
   <specific name="Short Description"> Add two encounter powers as dailies to your spellbook. </specific>
@@ -4875,7 +4876,7 @@ You gain three wizard at-will powers that have the bladespell keyword.
   </rules>
 You add two 1st-level wizard encounter attack powers of your choice to your spellbook. The two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Bladesinger Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4036" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4036" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> The basic tricks of magic are known as cantrips, and they are the first spells that a beginning wizard learns. The formula underlying a cantrip is so simple that each cantrip can be committed to memory and used at will once you have mastered it. </Flavor>
   <specific name="Short Description"> Gain three wizard cantrips </specific>
@@ -4899,7 +4900,7 @@ You add two 1st-level wizard encounter attack powers of your choice to your spel
   </rules>
 You gain three cantrips of your choice.
 </RulesElement>
-<RulesElement name="Level 2 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4037" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 2 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4037" source="Neverwinter Campaign Guide">
   <Category> 2 </Category>
   <Flavor> Since those who dance the blades do not use shields, you have trained extensively in defensive sword techniques. For generations, magic users have worked to develop a vast array of specialized defensive tricks. As  you continue your studies, you learn spells that you can use tactically, for both personal and group protection. </Flavor>
   <specific name="Short Description"> Add two 2nd-level wizard utility powers of your choice to your spellbook </specific>
@@ -4916,7 +4917,7 @@ You gain three cantrips of your choice.
   </rules>
 You add two 2nd-level wizard utility powers of your choice to your spellbook.
 </RulesElement>
-<RulesElement name="Arcane Strike" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4038" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Arcane Strike" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4038" source="Neverwinter Campaign Guide">
   <Category> 3 </Category>
   <Flavor> Your bladespells sing forth to herald your success in melee, and as you grow in experience you learn to turn that relationship on its head. Now, when you attack with a spell, its arcane energy follows a current back through your body, giving you the quickness of limb and mind to lash out with your sword as you complete the casting. </Flavor>
   <specific name="Short Description"> Make a melee basic attack as a minor action when you use a bladesinger daily attack power on your turn </specific>
@@ -4926,7 +4927,7 @@ You add two 2nd-level wizard utility powers of your choice to your spellbook.
   </rules>
 When you use a bladesinger daily attack power on your turn, you can make a melee basic attack as a minor action.
 </RulesElement>
-<RulesElement name="Level 5 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4039" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 5 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4039" source="Neverwinter Campaign Guide">
   <Category> 5 </Category>
   <Flavor> Your study of magic opens your mind to more powerful spells. Now you can prepare and unleash two attack spells each day. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 3rd level or lower, act as daily powers </specific>
@@ -4945,7 +4946,7 @@ When you use a bladesinger daily attack power on your turn, you can make a melee
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 3rd level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 6 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4040" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 6 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4040" source="Neverwinter Campaign Guide">
   <Category> 6 </Category>
   <Flavor> As much as any other wizard, the useful tactics and devious tricks embodied by utility spells are part of your repertoire. </Flavor>
   <specific name="Short Description"> Add two wizard utility powers of your level or lower to your spellbook </specific>
@@ -4962,7 +4963,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Steely Retort" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4041" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Steely Retort" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4041" source="Neverwinter Campaign Guide">
   <Category> 7 </Category>
   <Flavor> When you are using your bladesong, your concentration is absolute. Those who attempt to interrupt that concentration pay with their lives. </Flavor>
   <specific name="Short Description"> Use melee basic attack as opportunity action against adjacent enemies who hit you while bladesong is active </specific>
@@ -4972,7 +4973,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   </rules>
 When an adjacent enemy hits you while your bladesong is active, you can make a melee basic attack against that enemy as an opportunity action.
 </RulesElement>
-<RulesElement name="Level 9 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4042" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 9 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4042" source="Neverwinter Campaign Guide">
   <Category> 9 </Category>
   <Flavor> Your spellcasting skill increases, giving you access to seminal spells such as lightning bolt. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 7th level or lower, act as daily powers </specific>
@@ -4991,7 +4992,7 @@ When an adjacent enemy hits you while your bladesong is active, you can make a m
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 7th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 10 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4043" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 10 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4043" source="Neverwinter Campaign Guide">
   <Category> 10 </Category>
   <Flavor> Your skill with defensive magic improves as you adapt to face different threats. </Flavor>
   <specific name="Short Description"> Add two new wizard utility powers of your level or lower to your spellbook </specific>
@@ -5008,7 +5009,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Unerring Bladespell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4047" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Unerring Bladespell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4047" source="Neverwinter Campaign Guide">
   <Category> 13 </Category>
   <Flavor> As you are swept up in the rhythm of your bladesinging, you are now able to unleash spells that find their targets unerringly. </Flavor>
   <specific name="Short Description"> While bladesong is active, you can use a bladespell power when you make a melee basic attack, even if you miss </specific>
@@ -5016,7 +5017,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   <specific name="Level"> 13 </specific>
 When you make a melee basic attack while your bladesong is active, you can use a bladespell power even if the attack misses.
 </RulesElement>
-<RulesElement name="Level 15 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4048" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 15 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4048" source="Neverwinter Campaign Guide">
   <Category> 15 </Category>
   <Flavor> Your magical studies continue to reap rewards, adding more to your arcane arsenal. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 13th level or lower, act as daily powers </specific>
@@ -5035,7 +5036,7 @@ When you make a melee basic attack while your bladesong is active, you can use a
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 13th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 16 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4050" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 16 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4050" source="Neverwinter Campaign Guide">
   <Category> 16 </Category>
   <Flavor> Your study of utility magic continues to bear fruit, and you gain knowledge of more spells that aid you and others on the battlefield. </Flavor>
   <specific name="Short Description"> Add two new wizard utility powers of your level or lower to your spellbook </specific>
@@ -5052,7 +5053,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Level 19 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4051" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 19 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4051" source="Neverwinter Campaign Guide">
   <Category> 19 </Category>
   <Flavor> Your spellcasting prowess grows again, giving you access to more powerful wizard spells </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 17th level or lower, act as daily powers </specific>
@@ -5071,7 +5072,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 17th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 22 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4054" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 22 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4054" source="Neverwinter Campaign Guide">
   <Category> 22 </Category>
   <Flavor> Your mastery of utility spells has reached new heights. Like all the greatest mages, you can accomplish stunning feats of magic. </Flavor>
   <specific name="Short Description"> Add two new wizard utility powers of your level or lower to your spellbook </specific>
@@ -5088,7 +5089,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Bladespell Burst" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4055" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladespell Burst" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4055" source="Neverwinter Campaign Guide">
   <Category> 23 </Category>
   <Flavor> Each swing of your sword has become a thing of enchantment, and when you land a particularly effective blow, you can unleash that buildup of power as a cascade of bladespells. </Flavor>
   <specific name="Short Description"> Use a bladespell power against each adjacent enemy after using a bladespell power, 1/day. </specific>
@@ -5096,7 +5097,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   <specific name="Level"> 23 </specific>
 Once per day when you use a bladespell power against an adjacent enemy, you can use that power against each adjacent enemy.
 </RulesElement>
-<RulesElement name="Level 25 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4056" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 25 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4056" source="Neverwinter Campaign Guide">
   <Category> 25 </Category>
   <Flavor> Your mastery of magic now exceeds the power that most mortal dream of. Although your close companions in your many adventures might rival your might, only creatures of legend and villains of world-spanning infamy can reasonably hope to outmatch you. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 23rd level or lower, act as daily powers </specific>
@@ -5115,7 +5116,7 @@ Once per day when you use a bladespell power against an adjacent enemy, you can 
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 23rd level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 29 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4057" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 29 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4057" source="Neverwinter Campaign Guide">
   <Category> 29 </Category>
   <Flavor> Your mastery of spellcasting has reached its peak. Your spellcasting outstrips the ability of most of the mightiest eladrin mages, and not even the greatest among them would think to challenge you to battle. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 27th level or lower, act as daily powers </specific>
@@ -5135,13 +5136,13 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 27th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
 
-<RulesElement name="Bladesinger Spellbook" type="Power" internal-id="ID_NWC_POWER_BLADESINGERS_SPELLBOOK" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger Spellbook" type="Power" internal-id="ID_NWC_POWER_BLADESINGERS_SPELLBOOK" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> At the end of each of your extended rests, you can prepare daily attack powers and utility powers from your spellbook. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
   <specific name="Display"> Bladesinger Spellbook </specific>
   <specific name="Keywords"/>
-  <specific name="Spellbook"> 
+  <specific name="Spellbook">
 &lt;table&gt;Level	Encounter as Daily	Utility
    1	1	-
   2-4	1	1
@@ -5157,7 +5158,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   <specific name="_Subclasses"/>
 At the end of each of your extended rests, you can prepare daily attack powers and utility powers from your spellbook.
 </RulesElement>
-<RulesElement name="Bladesong" type="Power" internal-id="ID_FMP_POWER_14285" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesong" type="Power" internal-id="ID_FMP_POWER_14285" source="Neverwinter Campaign Guide">
    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
    <Flavor> Your whirling blade begins to sing through the air as you enter a state of total concentration. </Flavor>
    <specific name="Power Usage"> Encounter </specific>
@@ -5175,7 +5176,7 @@ Level 27: +15 power bonus to damage rolls.   </specific>
    <specific name="Level"/>
    <specific name="Power Type"> Utility </specific>
 </RulesElement>
-<RulesElement name="Dancing Fire" type="Power" internal-id="ID_FMP_POWER_14286" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Dancing Fire" type="Power" internal-id="ID_FMP_POWER_14286" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> A leaping flame dances over your enemy, driving it to distraction. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5192,13 +5193,13 @@ Level 21: 4 + Dexterity modifier fire damage. </specific>
   <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
   <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
-  <specific name="Level"/> 
+  <specific name="Level"/>
   <specific name="Power Type"> Attack </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 Elves and eladrin must take care when using flame in the forest homes of their people, and thus many bladesingers learn to command the fires that their magic produces. The blow of a sword provides the opening to unleash a spritelike fire that burns an enemy without fear of anything else being set to smolder.
 </RulesElement>
-<RulesElement name="Dazzling Sunray" type="Power" internal-id="ID_FMP_POWER_14287" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Dazzling Sunray" type="Power" internal-id="ID_FMP_POWER_14287" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You strike with your blade and from the other hand unleash a beam of brilliant light to confound your foe. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5215,13 +5216,13 @@ Level 21: 4 + Dexterity modifier radiant damage. </specific>
   <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
   <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
-  <specific name="Level"/> 
+  <specific name="Level"/>
   <specific name="Power Type"> Attack </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 The bladesingers of old knew how to catch the reflection of the sun upon their glittering blades to temporarily blind distant foes. In time, this tactic became a bladespell in many bladesingers' arsenal so that it might be used to matter how dark the day or deep the shadows of night.
 </RulesElement>
-<RulesElement name="Frost Bite" type="Power" internal-id="ID_FMP_POWER_14288" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Frost Bite" type="Power" internal-id="ID_FMP_POWER_14288" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_`,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> Sparkling snow swirls around your enemy, numbing its limbs and making it struggle to move. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5238,13 +5239,13 @@ Level 21: 4 + Dexterity modifier cold damage. </specific>
   <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
   <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
-  <specific name="Level"/> 
+  <specific name="Level"/>
   <specific name="Power Type"> Attack </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 Even though the world has drastic extremes of weather, never does it approach the treacherous beauty of winter in the Feywild.  Bladesiners who learn how to harness that frigid fey power can turn it to their advantage whenever they want.
 </RulesElement>
-<RulesElement name="Lightning Ring" type="Power" internal-id="ID_FMP_POWER_14289" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Lightning Ring" type="Power" internal-id="ID_FMP_POWER_14289" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You stab your opponent, and an arc of lightning leaps from your hand to encircle a foe in a crackling ring. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5261,13 +5262,13 @@ Level 21: 4 + Dexterity modifier lightning damage. </specific>
   <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
   <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
-  <specific name="Level"/> 
+  <specific name="Level"/>
   <specific name="Power Type"> Attack </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 A bladesinger's prowess comes from more sources than the Feywild. Like other wizards, bladesingers draw upon the Elemental Chaos, the Shadowfell, the Astral Sea, and the latent magic of the world to craft enchantments amid the swirl of their swords. With lightning ring, you use elemental forces to set a lightning bolt to chasing itself around a foe.
 </RulesElement>
-<RulesElement name="Shadow Sever" type="Power" internal-id="ID_FMP_POWER_14290" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Shadow Sever" type="Power" internal-id="ID_FMP_POWER_14290" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You attack slices away your enemy's shadow, sending it flitting across the field to pull at the feet of a foe. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5284,13 +5285,13 @@ Level 21: 4 + Dexterity modifier necrotic damage. </specific>
   <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
   <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
-  <specific name="Level"/> 
+  <specific name="Level"/>
   <specific name="Power Type"> Attack </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 Wielding arcane power through your blade, you drive the point of your weapon into your enemy's shadow, slicing it away. Forced from its caster, the desperate shadow seeks to drag someone over it so that it can hide from the light.
 </RulesElement>
-<RulesElement name="Unseen Hand" type="Power" internal-id="ID_FMP_POWER_14291" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Unseen Hand" type="Power" internal-id="ID_FMP_POWER_14291" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You level a crushing blow against your foe, and an unseen force grasps an enemy and drags it about the field of battle. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5307,14 +5308,14 @@ Level 21: 4 + Dexterity modifier force damage. </specific>
   <specific name="Special"> You can only use one bladespell per triggering attack. </specific>
   <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_CLASS_9 </specific>
-  <specific name="Level"/> 
+  <specific name="Level"/>
   <specific name="Power Type"> Attack </specific>
   <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_4034 </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 When a bladesinger needs to bring a foe close or heave an enemy farther away, the trick is to summon forth a hand of force to guide the foe's fate. Using this power, a bladesinger can act like  a chess master playing about with piecces on a board.
 </RulesElement>
 <!-- Paragon Bladesinger Path, Neverwinter -->
-  <RulesElement name="Sorcerous Sword" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_884" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Sorcerous Sword" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_884" source="Neverwinter Campaign Guide">
     <Prereqs> ID_FMP_CLASS_883 </Prereqs>
     <print-prereqs> Only a bladesinger can take this paragon path. </print-prereqs>
     <specific name="Class Features"> ID_FMP_CLASS_FEATURE_4044, ID_FMP_CLASS_FEATURE_4045, ID_FMP_CLASS_FEATURE_4046, ID_FMP_CLASS_FEATURE_4049, ID_FMP_CLASS_FEATURE_4053 </specific>
@@ -5324,20 +5325,20 @@ When a bladesinger needs to bring a foe close or heave an enemy farther away, th
       <grant name="ID_FMP_CLASS_FEATURE_4046" type="Class Feature" Level="12"/>
       <grant name="ID_FMP_CLASS_FEATURE_4049" type="Class Feature" Level="16"/>
       <grant name="ID_FMP_CLASS_FEATURE_4053" type="Class Feature" Level="20"/>
-    </rules> 
+    </rules>
 In the paragon tier, you continue your intensive study of the ways in which sword and spell can unify into a single weapon. The bladesinger's path is both a highly formalized tradition and a deeply personal journey into the secrets, of magic, swordplay, and the self. As your journey continues, you come to grasp ever more powerful spells, and magic plays an increasingly important role in your drive to victory.
 </RulesElement>
-  <RulesElement name="Choir of Swords" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4044" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Choir of Swords" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4044" source="Neverwinter Campaign Guide">
     <Category> 11 </Category>
     <Flavor> In your most desperate moments, bladesinging can give you a clarity of vision and such superior speed that your sword seems to become several blades, each a separate singer in a choir of swords. </Flavor>
     <specific name="Short Description"> Spend action point while bladesong is active, make melee basic attack against all adjacent enemies as standard action </specific>
     <specific name="Level"> 11 </specific>
     <rules>
       <textstring name="Action Point" value="Choir of Swords:While your bladesong is active, you can spend an action point to make a melee basic attack against each enemy adjacent to you as a standard action."/>
-    </rules>  
+    </rules>
 While your bladesong is active, you can spend an action point to make a melee basic attack against each enemy adjacent to you as a standard action.
 </RulesElement>
-  <RulesElement name="Boon Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4045" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Boon Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4045" source="Neverwinter Campaign Guide">
     <Category> 11 </Category>
     <Flavor> Magic comes ever easier to you as you continue your studies. You now acquire another prepared spell as easily as adding an arrow to a quiver. </Flavor>
     <specific name="Short Description"> Add new wizard encounter attack power to spellbook, counts as daily power; you can prepare one additional bladesinger daily power from your spellbook, but not the same power twice on one day </specific>
@@ -5346,18 +5347,18 @@ While your bladesong is active, you can spend an action point to make a melee ba
     <rules>
       <select type="Power" name="Level 11 Boon Spell" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_ENCOUNTER,7" Level="11"/>
 	  <modify select="Level 11 Boon Spell" Field="Power Usage" value="Daily"/>
-    </rules>  
+    </rules>
 You add a new wizard encounter attack power to your spellbook. The power must be of 7th level or lower, and it functions as a daily attack power for you.
 	In addition, each day you can prepare one additional bladesinger daily power from your spellbook. This additional power can be the same level as another power you prepare, but this feature does not allow you to prepare the same power twice on the same day.
 </RulesElement>
-  <RulesElement name="Bladesong Ballet" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4046" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Bladesong Ballet" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4046" source="Neverwinter Campaign Guide">
     <Category> 12 </Category>
     <Flavor> The bladesong has always been a dance, but now your movement as your sword sings has an elegance and deftness that defies the mind's grasp. </Flavor>
     <specific name="Short Description"> Use an action point while your bladesong is active to shift your speed in squares </specific>
     <specific name="Level"> 12 </specific>
 While your bladesong is active, you can use a move action to shift a number of squares up to your speed.
 </RulesElement>
-  <RulesElement name="Bladespell Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4049" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Bladespell Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4049" source="Neverwinter Campaign Guide">
     <Category> 16 </Category>
     <Flavor> Your connection to arcane magic opens a path for you that is closed to all others. One moment you strike a foe with a sword, and the next you stand many strides away. </Flavor>
     <specific name="Short Description"> Teleport 5 squares as free action after you use a bladespell power, 1/encounter </specific>
@@ -5375,7 +5376,7 @@ Once per encounter, you can teleport up to 5 squares as a free action immediatel
       </rules>
 Choose one of your arcane daily attack powers. You gain a +2 bonus to attack rolls with that power. If you retrain that power, you can choose a new arcane daily attack power as your Signature Spell.
    </RulesElement>
-  <RulesElement name="Signature Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4053" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Signature Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4053" source="Neverwinter Campaign Guide">
     <Category> 20 </Category>
     <Flavor> Just as a duelist might have a unique flourish, you develop an especially formidable special arcane attack that serves as your signature. </Flavor>
     <specific name="Short Description"> Gain a wizard daily attack power of level 19th or lower </specific>
@@ -5385,7 +5386,7 @@ Choose one of your arcane daily attack powers. You gain a +2 bonus to attack rol
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
       <select type="Power" name="Level 20 Signature Spell" number="1" Category="$$CLASS,ID_INTERNAL_CATEGORY_DAILY,19"/>
-    </rules>  
+    </rules>
 You gain a wizard daily attack power of 19th level or lower.
 </RulesElement>
 
@@ -5434,7 +5435,7 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
    </RulesElement>
 
-<!-- Prismatic Spray Proposed Fix -->   
+<!-- Prismatic Spray Proposed Fix -->
  <RulesElement name="Prismatic Spray" type="Power" internal-id="ID_FMP_POWER_1200" source="Player's Handbook" revision-date="8/27/2010 11:24:16 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_14,ID_INTERNAL_CATEGORY_STANDARD_ACTION,25 </Category>
       <Flavor> A dazzling spray of multicolored light springs from your hands, enveloping your enemies. </Flavor>
@@ -5452,8 +5453,8 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 25 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <!-- Added Keywords to the following Spells as per the Wizards Schools pdf -->
  <RulesElement name="Tome of Transposition" type="Power" internal-id="ID_FMP_POWER_10073" source="Dragon Magazine 380" revision-date="8/27/2010 11:52:19 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_70,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
@@ -5473,7 +5474,7 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 9 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
+   </RulesElement>
 
 <RulesElement name="Arcane Chastisement" type="Power" internal-id="ID_FMP_POWER_10423" source="Dragon Magazine 382" revision-date="8/27/2010 11:54:19 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_70,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,13 </Category>
@@ -5493,8 +5494,8 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 13 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Charm of False Glory" type="Power" internal-id="ID_FMP_POWER_10150" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:45 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_70,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
       <Flavor> Your foe shouts in triumph as it suddenly turns against its allies. Your magic twists its sight and mind, causing it to see enemies where allies stand. </Flavor>
@@ -5511,7 +5512,7 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 17 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
+   </RulesElement>
 
  <RulesElement name="Charm of Puppet Strings" type="Power" internal-id="ID_FMP_POWER_10152" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:46 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_70,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
@@ -5529,8 +5530,8 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 27 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
  <RulesElement name="Mind-Numbing Presence" type="Power" internal-id="ID_FMP_POWER_10428" source="Dragon Magazine 382" revision-date="8/27/2010 11:54:21 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_70,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
       <Flavor> You surround your foe with a field that dampens thought. </Flavor>
@@ -5548,8 +5549,8 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 27 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
    <RulesElement name="Chilling Cloud" type="Power" internal-id="ID_FMP_POWER_7406" source="PH Heroes: Series 1" revision-date="8/27/2010 11:45:33 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_1,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> A lingering swarm of ice crystals chills foes to the bone. </Flavor>
@@ -5567,8 +5568,8 @@ The most powerful illusions play to an enemy's darkest desires. When you cast vi
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Erupting Flare" type="Power" internal-id="ID_FMP_POWER_12547" source="Dragon Magazine 388" revision-date="8/27/2010 12:04:15 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> You kindle a massive, sudden flame within your enemy. The fires burn your foe and spill out to singe any who stay near it. </Flavor>
@@ -5586,8 +5587,8 @@ Level 21: 2d8 + Intelligence modifier fire damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
  <RulesElement name="Storm Pillar" type="Power" internal-id="ID_FMP_POWER_4309" source="Arcane Power" revision-date="8/27/2010 11:33:46 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_26,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> A crackling column of lightning appears amid your enemies, lashing out at any who move near it. </Flavor>
@@ -5603,8 +5604,8 @@ Level 21: 2d6 + Intelligence modifier lightning damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-       
+   </RulesElement>
+
 <RulesElement name="Winged Horde" type="Power" internal-id="ID_FMP_POWER_10137" source="Dragon Magazine 381" revision-date="8/27/2010 11:52:41 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_10,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
       <Flavor> A horde of flesh-devouring sprites appear in your foes' minds. They shriek in fear and swat at this menace, leaving them unable to react to your allies' maneuvers. </Flavor>
@@ -5622,7 +5623,7 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
+   </RulesElement>
 
 <RulesElement name="Grasp of the Grave" type="Power" internal-id="ID_FMP_POWER_6958" source="Dragon Magazine 372" revision-date="8/27/2010 11:43:09 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_72,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
@@ -5642,8 +5643,8 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 5 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Animate Dead" type="Power" internal-id="ID_FMP_POWER_6959" source="Dragon Magazine 372" revision-date="8/27/2010 11:43:09 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_72,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,9 </Category>
       <Flavor> You flood a fallen foe's animus with shadow, imbuing it with arcane strength. </Flavor>
@@ -5661,8 +5662,8 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 9 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Entombing Earth" type="Power" internal-id="ID_FMP_POWER_6961" source="Dragon Magazine 372" revision-date="8/27/2010 11:43:10 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_72,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
       <Flavor> A maw of moaning grave dirt appears around your foe and slams shut with echoing finality. </Flavor>
@@ -5680,8 +5681,8 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 19 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Crushing Necrotism" type="Power" internal-id="ID_FMP_POWER_10427" source="Dragon Magazine 382" revision-date="8/27/2010 11:54:20 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_72,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,23 </Category>
       <Flavor> You encase your foe in tightening necrotic energy, which washes over its allies when the enemy struggles free. </Flavor>
@@ -5699,8 +5700,8 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 23 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Soul Fire" type="Power" internal-id="ID_FMP_POWER_4039" source="Arcane Power" revision-date="8/27/2010 11:32:45 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_72,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
       <Flavor> You crook your hand in a mystical gesture, and your foes shriek in agony as their souls are consumed by hidden flame. </Flavor>
@@ -5717,8 +5718,8 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 27 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>  
-   
+   </RulesElement>
+
  <RulesElement name="Miasma of Enfeeblement" type="Power" internal-id="ID_FMP_POWER_2820" source="Arcane Power" revision-date="8/27/2010 11:29:03 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_72,ID_FMP_CATEGORY_12,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,29 </Category>
       <Flavor> Black dust whirls up around your foes, sapping their strength and clouding their vision. </Flavor>
@@ -5739,7 +5740,7 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Level"> 29 </specific>
       <specific name="Power Type"> Attack </specific>
    </RulesElement>
-   
+
 <RulesElement name="Evard's Dreadful Mist" type="Power" internal-id="ID_FMP_POWER_182" source="Arcane Power" revision-date="8/27/2010 11:22:05 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_7,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_73,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,15 </Category>
       <Flavor> You call forth a thick, ominous fog. As it descends upon your foes, sounds of gnashing fangs and snapping claws echo from it. Something lurks within. Something horrible. </Flavor>
@@ -5806,7 +5807,7 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Level"> 23 </specific>
       <specific name="Power Type"> Attack </specific>
    </RulesElement>
-   
+
 <RulesElement name="Serpents of Flame" type="Power" internal-id="ID_FMP_POWER_12551" source="Dragon Magazine 388" revision-date="8/27/2010 12:04:17 PM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_3,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_15,ID_FMP_CATEGORY_71,ID_INTERNAL_CATEGORY_STANDARD_ACTION,15 </Category>
       <Flavor> Your arms become twin serpents of pure flame with which you harry your enemies. </Flavor>
@@ -5831,8 +5832,8 @@ Level 21: 2d6 psychic damage. </specific>
       <rules>
          <grant name="ID_FMP_POWER_12552" type="Power"/>
       </rules>
-   </RulesElement>   
-   
+   </RulesElement>
+
 <RulesElement name="Thunderous Transformation" type="Power" internal-id="ID_FMP_POWER_10425" source="Dragon Magazine 382" revision-date="8/27/2010 11:54:19 AM">
       <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_19,ID_FMP_CATEGORY_20,ID_FMP_CATEGORY_71,ID_INTERNAL_CATEGORY_STANDARD_ACTION,17 </Category>
       <Flavor> You translate your enemy's physical form into a monstrous peal of thunder before it reincorporates nearby. </Flavor>
@@ -5850,11 +5851,11 @@ Level 21: 2d6 psychic damage. </specific>
       <specific name="Class"> ID_FMP_CLASS_9 </specific>
       <specific name="Level"> 17 </specific>
       <specific name="Power Type"> Attack </specific>
-   </RulesElement>  
+   </RulesElement>
 
-   
-   
-   
+
+
+
 
 <!-- Sub-Class Witch-->
 <!-- Heroes of the Feywild-->
@@ -5887,7 +5888,7 @@ Level 21: 2d6 psychic damage. </specific>
 			<statadd name="Will Defense Class Bonus" value="+2"/>
 			<select type="Skill Training" number="3" Category="ID_FMP_CLASS_9"/>
 		</rules>
-  
+
 Part religion, part ritual, and all mystery, witchcraft is an ancient practice that came about in an age before arcane magic was studied, institutionalized, and etched in writing, when monstrous titans ruled over creation and the secret of making fire was yet undiscovered. In this chaotic dark age, the gods had little influence on the titans' world. Instead of seeking their aid, the primitive peoples called out to the night for protection and power, and a voice from the darkness answered. Those who accepted its arcane gifts became the first witches, and they wielded such power as only immortals had known-seen by some jealous gods as an affront that they have never forgiven.
 	Witches gain their power from a patron who instructs them by way of a mystical familiar that comes and goes as it pleases, unbound by the strictures of the material world. The most prevalent patron among witches-the original voice from the darkness-is the moon goddess Sehanine, referred to by witches as simply the Goddess. Other entities have since seen the advantage of imbuing mortals with power, and so your patron might be an archfey, a god, an angel, a primordial, a demon lord, a devil, or another legendary being that believes it can benefit by imbuing you with a gift of arcane prowess. It might prefer to remain anonymous.
 	The circumstances by which you obtained your gift can vary widely. Some witches seek out the gift in order to fulfill a personal desire or vendetta, while others were brought up in a coven. Some receive their power after making a pact with a devil, as a warlock might do, and others have it bestowed upon them by a fairy godparent or a witch queen.
@@ -5912,12 +5913,12 @@ You count as a witch for meeting prerequisites.
 			<textstring name="PowersAsClass" value="ID_FMP_CLASS_9"/>
 			<grant name="ID_INTERNAL_NO_LV1_ENCOUNTER_POWER" type="Internal"/>
 			<grant name="ID_INTERNAL_NO_LV13_ENCOUNTER_POWER" type="Internal"/>
-			<grant name="ID_INTERNAL_GRANTS_WITCH_IMPLEMENTS" type="Grants"/>	
-			<grant name="ID_FMP_CLASS_FEATURE_4151" type="Class Feature"/>	
-			<grant name="ID_FMP_CLASS_FEATURE_4148" type="Class Feature"/>	
-			<grant name="ID_FMP_CLASS_FEATURE_4147" type="Class Feature"/>	
-			<grant name="ID_FMP_CLASS_FEATURE_4145" type="Class Feature"/>	
-			<grant name="ID_FMP_CLASS_FEATURE_WITCH-13" type="Class Feature" Level="13"/>	
+			<grant name="ID_INTERNAL_GRANTS_WITCH_IMPLEMENTS" type="Grants"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4151" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4148" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4147" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_4145" type="Class Feature"/>
+			<grant name="ID_FMP_CLASS_FEATURE_WITCH-13" type="Class Feature" Level="13"/>
 		</rules>
 	</RulesElement>
 
@@ -5939,9 +5940,9 @@ You count as a witch for meeting prerequisites.
 
 	<RulesElement name="Moon Coven" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4148" source="Heroes of the Feywild">
 		<Category> 1 </Category>
-		<Flavor> When you create your witch, you choose a moon coven with which you are affiliated. A moon coven is a loose order of witches that share a philosophy of witchcraft. Each moon coven represents one of two phases of the moon-full or dark (new)-and symbolizes the witch's quintessential attitude toward the application of his or her craft. Each moon coven reflects a member witch's philosophy regarding the use of magic-not necessarily corresponding to the witch's alignment, since witches of all alignments are found in each coven. Nevertheless, a greater number of evil witches gravitate toward the dark moon and its powers over ill fortune and necromancy, whereas good witches more frequently affiliate themselves with the full moon coven and favor its charms and healing magic. 
-	Witches are solitary by nature, requiring little arcane instruction beyond the teachings of their familiar, and most prefer to keep their craft secret lest they be targeted by witch hunters. Therefore, a moon coven typically convenes only once during the course of a year, in an isolated location in the wilderness often near standing stones, ley lines, or other sites that thrum with arcane power, on an evening when the coven's moon phase displays in its ideal state in the dark heavens above. Despite their opposing philosophies on witchcraft, the two moon covens sometimes come together on the night of a lunar eclipse, when both are symbolically represented in the night sky. Such meetings occur only when all witches, or the world in which they live, are threatened by forces bent on their extermination. 
-	In addition to, or instead of, meeting with their moon coven, some witches gather in local covens attended by witches that inhabit the area. Such local covens are often the way new witches are initiated into the craft, and they show the initiate the way to call on a powerful entity and receive the gift of its power in the form of a familiar. These local covens usually have their own aims and goals related to their immediate surroundings, and might or  right not adhere to the philosophy of either of the moon covens. 
+		<Flavor> When you create your witch, you choose a moon coven with which you are affiliated. A moon coven is a loose order of witches that share a philosophy of witchcraft. Each moon coven represents one of two phases of the moon-full or dark (new)-and symbolizes the witch's quintessential attitude toward the application of his or her craft. Each moon coven reflects a member witch's philosophy regarding the use of magic-not necessarily corresponding to the witch's alignment, since witches of all alignments are found in each coven. Nevertheless, a greater number of evil witches gravitate toward the dark moon and its powers over ill fortune and necromancy, whereas good witches more frequently affiliate themselves with the full moon coven and favor its charms and healing magic.
+	Witches are solitary by nature, requiring little arcane instruction beyond the teachings of their familiar, and most prefer to keep their craft secret lest they be targeted by witch hunters. Therefore, a moon coven typically convenes only once during the course of a year, in an isolated location in the wilderness often near standing stones, ley lines, or other sites that thrum with arcane power, on an evening when the coven's moon phase displays in its ideal state in the dark heavens above. Despite their opposing philosophies on witchcraft, the two moon covens sometimes come together on the night of a lunar eclipse, when both are symbolically represented in the night sky. Such meetings occur only when all witches, or the world in which they live, are threatened by forces bent on their extermination.
+	In addition to, or instead of, meeting with their moon coven, some witches gather in local covens attended by witches that inhabit the area. Such local covens are often the way new witches are initiated into the craft, and they show the initiate the way to call on a powerful entity and receive the gift of its power in the form of a familiar. These local covens usually have their own aims and goals related to their immediate surroundings, and might or  right not adhere to the philosophy of either of the moon covens.
 	Many witches learn their craft in isolation, unaware of the presence of the fundamental moon covens, or  even of other witches. Regardless of whether a witch or a local coven identifies with a moon coven, every witch makes a choice concerning the type of witchcraft he or she wants to practice. </Flavor>
 		<specific name="Short Description"> Gain the benefits of a coven </specific>
 		<specific name="Level"> 1 </specific>
@@ -5949,7 +5950,7 @@ You count as a witch for meeting prerequisites.
 		<rules>
 			<select type="Class Feature" number="1" Category="ID_FMP_CLASS_FEATURE_4148"/>
 		</rules>
-  
+
 Choose a coven, and gain its benefits.
 	</RulesElement>
 
@@ -5968,7 +5969,7 @@ Choose a coven, and gain its benefits.
 			<statadd name="Intimidate Misc" value="+2" requires="5 level"/>
 			<statadd name="Stealth Misc" value="+2" requires="5 level"/>
 		</rules>
-  
+
 You gain the dread presence power.
 	In addition, you gain training in the Intimidate skill. At level 5, you gain a +2 bonus to Intimidate checks and Stealth checks.
 	</RulesElement>
@@ -5988,7 +5989,7 @@ You gain the dread presence power.
 			<statadd name="Heal Misc" value="+2" requires="5 level"/>
 			<statadd name="Diplomacy Misc" value="+2" requires="5 level"/>
 		</rules>
-  
+
 You gain the glorious presence power.
 	In addition, you gain training in the Heal skill. At 5th level, you gain a +2 bonus to Heal checks and Diplomacy checks.
 	</RulesElement>
@@ -6005,7 +6006,7 @@ You gain the glorious presence power.
 		<rules>
 			<grant name="ID_FMP_POWER_15850" type="Power"/>
 		</rules>
-  
+
 You gain the augury power.
 	</RulesElement>
 
@@ -6027,21 +6028,21 @@ You gain the augury power.
             <modify name="ID_FMP_POWER_1217" type="Power" Field="Action Type" value="Standard Action" requires="ID_FMP_RACE_20"/>
 			<select type="Power" number="3" Category="ID_FMP_CLASS_FEATURE_2870"/>
 		</rules>
-  
+
 You gain three cantrips of your choice.
 	</RulesElement>
 
 	<RulesElement name="Witch's Familiar" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4145" source="Heroes of the Feywild">
 		<Category> 1 </Category>
 		<Flavor> Unlike other wizards, a witch receives the gift of arcane power from a patron such as an archfey, a god, a devil, an angel, a demon, or another powerful being. The witch might or might not be aware of the patron's true identity or its reasons for bestowing power, but such entities always have their reasons, which become clear in time, for good or ill.
-	A witch's familiar takes the shape of a Tiny creature, usually a natural or a fey beast such as a cat, a serpent, or a raven, and acts as an intermediary between the witch and the patron of the witch's power. Bound to the witch's soul, this familiar instructs the witch in the use of supernatural powers. 
+	A witch's familiar takes the shape of a Tiny creature, usually a natural or a fey beast such as a cat, a serpent, or a raven, and acts as an intermediary between the witch and the patron of the witch's power. Bound to the witch's soul, this familiar instructs the witch in the use of supernatural powers.
 	Your familiar can have as active a role as you like. Familiars have a distinct personality and a unique relationship with the witches they instruct. Your familiar might provide hints and lore, or it might be a subtle presence in the background that appears and disappears without a sound, if you prefer to downplay its role in your story. </Flavor>
 		<specific name="Short Description"> Gain Arcane Familiar Feat; after an extended rest replace one wizard daily or utility powers; at 24th level use an action point to regain the use of a wizard encounter attack power </specific>
 		<specific name="Level"> 1 </specific>
 		<rules>
 			<grant name="ID_FMP_FEAT_738" type="Feat"/>
 		</rules>
-  
+
 You gain the Arcane Familiar feat as a bonus feat.
 	At the end of each extended rest, when you confer with your familiar you can replace one of your wizard daily attack powers or wizard utility powers with another wizard power of the same type. The new power must have a level, and its level must be the same as the old power's level.
 	When you reach level 24, your familiar enables you to spend an action point on your turn to regain the use of one of your expended wizard encounter attack powers, instead of taking an extra action. If you do so, you gain combat advantage against every target of that power the next time you use it during the current encounter.
@@ -6101,7 +6102,7 @@ Some polymorph spells can transform a creature from one form to another for a mo
 		<specific name="_Subclasses"> ID_FMP_CLASS_908 </specific>
 Whether you stand in the fastness of a sunny elven grove or in a dark cavern beneath the surface of the world, the night wind knows your voice, and you can call it to your command.
 	</RulesElement>
-  
+
   <RulesElement name="Witch Bolt" type="Power" internal-id="ID_FMP_POWER_14541" source="Heroes of the Feywild">
 		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_FEATURE_845,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_69,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
 		<Flavor> You hurl a bolt of crackling energy, forming a line of lightning between you and your foe. </Flavor>
@@ -6896,7 +6897,7 @@ The Sidhe lords and other eladrin nobility are often described as having the epi
       <grant name="ID_FMP_CLASS_FEATURE_4172" type="Class Feature" Level="12"/>
       <grant name="ID_FMP_POWER_15865" type="Power" Level="16"/>
       <grant name="ID_FMP_CLASS_FEATURE_4175" type="Class Feature" Level="20"/>
-    </rules>  
+    </rules>
 Your reputation as a witch runs far and wide. Bards and other storytellers weave colorful tales about your frightening powers, carrying those stories from land to land. Whether the tales portray you as a saint, a villain, or an enigmatic hand of fate, ordinary folk pray to the gods that you do not one day darken their doors.
 </RulesElement>
   <RulesElement name="Favor of the Moon" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4165" source="Heroes of the Feywild">
@@ -6915,7 +6916,7 @@ You can see invisible creatures that are adjacent to you, and you are immune to 
 		<rules>
 			<grant name="ID_FMP_CLASS_FEATURE_4167" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4149"/>
 			<grant name="ID_FMP_CLASS_FEATURE_4168" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4150"/>
-		</rules>  
+		</rules>
 You gain a benefit that is associated with your moon coven.
 </RulesElement>
   <RulesElement name="Dark Moon Coven Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4167" source="Heroes of the Feywild">
@@ -6925,7 +6926,7 @@ You gain a benefit that is associated with your moon coven.
     <specific name="Level"> 11 </specific>
 		<rules>
             <textstring name="Action Point" value="Dark Moon Coven Action: When you spend an action point you push each adjacent enemy a number of squares equal to your Wis mod."/>
-        </rules>  
+        </rules>
 When you spend an action point to take an extra action, you push each enemy adjacent to you up to a number of squares equal to your Wisdom modifier.
 </RulesElement>
   <RulesElement name="Full Moon Coven Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4168" source="Heroes of the Feywild">
@@ -6935,7 +6936,7 @@ When you spend an action point to take an extra action, you push each enemy adja
     <specific name="Level"> 11 </specific>
 		<rules>
             <textstring name="Action Point" value="Full Moon Coven Action: When you spend an action point any enemy within 3 squares of you grant combat advantage."/>
-        </rules>  
+        </rules>
 When you spend an action point to take an extra action, any enemy within 3 squares of you grants combat advantage until the end of your next turn.
 </RulesElement>
   <RulesElement name="Moon Coven Encounter Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4169" source="Heroes of the Feywild">
@@ -6948,7 +6949,7 @@ When you spend an action point to take an extra action, any enemy within 3 squar
 	    <rules>
 			<grant name="ID_FMP_CLASS_FEATURE_4171" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4149"/>
 			<grant name="ID_FMP_CLASS_FEATURE_4170" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4150"/>
-		</rules>    
+		</rules>
 You gain an encounter attack power associated with your moon coven, either madness of the full moon for the full moon coven or terror of the dark moon for the dark moon coven.
 </RulesElement>
   <RulesElement name="Madness of the Full Moon" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4170" source="Heroes of the Feywild">
@@ -6963,7 +6964,7 @@ cast its radiance among your foes to send them into confusion. </Flavor>
     <specific name="_DisplayPowers"> ID_FMP_POWER_15866 </specific>
 		<rules>
 			<grant name="ID_FMP_POWER_15866" type="Power"/>
-		</rules>   
+		</rules>
 You gain the madness of the full moon power.
 </RulesElement>
   <RulesElement name="Terror of the Dark Moon" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4171" source="Heroes of the Feywild">
@@ -6977,7 +6978,7 @@ You gain the madness of the full moon power.
     <specific name="_DisplayPowers"> ID_FMP_POWER_15868 </specific>
 		<rules>
 			<grant name="ID_FMP_POWER_15868" type="Power"/>
-		</rules>   
+		</rules>
 You gain the terror of the dark moon power.
 </RulesElement>
   <RulesElement name="Moon Coven Utility Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4172" source="Heroes of the Feywild">
@@ -7004,7 +7005,7 @@ You gain a utility power associated with your moon coven either dark moon's reck
     <specific name="_DisplayPowers"> ID_FMP_POWER_15869 </specific>
 		<rules>
 			<grant name="ID_FMP_POWER_15869" type="Power"/>
-		</rules>    
+		</rules>
 You gain the dark moon's reckoning power.
 </RulesElement>
   <RulesElement name="Moonlight's Mischief" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4174" source="Heroes of the Feywild">
@@ -7018,7 +7019,7 @@ You gain the dark moon's reckoning power.
     <specific name="_DisplayPowers"> ID_FMP_POWER_15870 </specific>
 		<rules>
 			<grant name="ID_FMP_POWER_15870" type="Power"/>
-		</rules>    
+		</rules>
 You gain the moonlight's mischief power.
 </RulesElement>
   <RulesElement name="Moon Coven Daily Power" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4175" source="Heroes of the Feywild">
@@ -7031,7 +7032,7 @@ You gain the moonlight's mischief power.
 		<rules>
 			<grant name="ID_FMP_CLASS_FEATURE_4176" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4149"/>
 			<grant name="ID_FMP_CLASS_FEATURE_4177" type="Class Feature" requires="ID_FMP_CLASS_FEATURE_4150"/>
-		</rules>  
+		</rules>
 You gain a daily attack power associated with your moon coven, either nightmare form for the dark moon coven or unicorn form for the full moon coven.
 </RulesElement>
   <RulesElement name="Nightmare Form" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4176" source="Heroes of the Feywild">
@@ -7045,7 +7046,7 @@ You gain a daily attack power associated with your moon coven, either nightmare 
     <specific name="_DisplayPowers"> ID_FMP_POWER_15871 </specific>
 		<rules>
 			<grant name="ID_FMP_POWER_15871" type="Power"/>
-		</rules>    
+		</rules>
 You gain the nightmare form power.
 </RulesElement>
   <RulesElement name="Unicorn Form" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4177" source="Heroes of the Feywild">
@@ -7059,7 +7060,7 @@ You gain the nightmare form power.
     <specific name="_DisplayPowers"> ID_FMP_POWER_15873 </specific>
 		<rules>
 			<grant name="ID_FMP_POWER_15873" type="Power"/>
-		</rules>    
+		</rules>
 You gain the unicorn form power.
 </RulesElement>
   <RulesElement name="Ride the Night Wind" type="Power" internal-id="ID_FMP_POWER_15865" source="Heroes of the Feywild">
@@ -7219,7 +7220,7 @@ The most talented witches learn to cherish the night's embrace, for when they ar
     <specific name="Class"> ID_FMP_PARAGON_PATH_910 </specific>
     <specific name="Level"> 20 </specific>
   </RulesElement>
-  
+
 <!-- WotC Rule Updates -->
 <RulesElement name="Arcanist Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_130" source="Player's Handbook,Player's Handbook 3" revision-date="27/02/2012 1:47:04 PM">
       <Category> 1 </Category>
@@ -7249,10 +7250,10 @@ Cantrips are minor spells you gain at 1st level. You can select four cantrips to
 
 
 
-<!-- Heroes of the Elemental Chaos --> 
-<!-- Sha'ir Class -->  
-  
-  
+<!-- Heroes of the Elemental Chaos -->
+<!-- Sha'ir Class -->
+
+
 <RulesElement name="Sha'ir" type="Class" internal-id="ID_FMP_CLASS_958" source="Heroes of the Elemental Chaos">
     <specific name="Key Abilities"> Intelligence, Constitution </specific>
     <specific name="Implements"> Orbs, staffs, wands </specific>
@@ -7283,7 +7284,7 @@ Cantrips are minor spells you gain at 1st level. You can select four cantrips to
       <statadd name="Healing Surges" value="+6"/>
       <statadd name="Will Defense Class Bonus" value="+2"/>
       <select type="Skill Training" number="3" Category="ID_FMP_CLASS_9"/>
-    </rules>  
+    </rules>
 Sha'irs cull magical energy from the Elemental Chaos to power their spells. Rather than pore over ancient formulas and techniques, these wizards bargain with elemental powers for the magical knowledge they need. Sha'irs do not deal directly with these powers; instead, they rely on proxies, elemental spirits called gen servants, to negotiate on their behalf. Dispatching these servants to the Elemental Chaos each day, a sha'ir replenishes the necessary power and information to wield the forces of creation.
 	Their unconventional methods, combined with their reputation for consorting with dangerous, often violent, powers, place sha'irs on the fringes of the magical world. Other wizards regard sha'irs with scorn and distrust, believing that they cheat by circumventing the arduous training and research wizards must typically undergo. This mistrust stems from ignorance, however, for even though a sha'ir draws magic from a gen servant, a foundation in arcane training is necessary to wield the power he or she gains.
 	Since sha'irs do not clutter their minds with mystical formulas and arcane utterances, they have wider access to spells than other wizards enjoy. They need only know a spell's basic structure to request it from their gen servants. The gen servant then vanishes into the Elemental Chaos, where it bargains with more powerful elemental lords and creatures to acquire the spell the sha'ir seeks and then returns without fail to provide its master with the energy and means to cast the spell. So even though sha'irs do not employ spellbooks, they have access to the full expanse of wizards' most powerful and versatile spells.
@@ -7329,7 +7330,7 @@ You count as a sha'ir for meeting prerequisites.
     <specific name="Short Description"> Gain Arcane Familiar feat and you can choose sha'ir familiars; after an extended rest you can replace 1 wizard daily or utility power </specific>
     <specific name="Level"> 1 </specific>
 		<rules>
-			<grant name="ID_FMP_FEAT_738" type="Feat"/> 
+			<grant name="ID_FMP_FEAT_738" type="Feat"/>
 		</rules>
 You gain the Arcane Familiar feat as a bonus feat. You can choose any familiar normally available to a wizard or one of the familiars available only to sha'irs.
 	At the end of each extended rest, when your familiar returns from its venture into the Elemental Chaos, you can replace one of your wizard daily attack powers or wizard utility powers with another wizard power of the same type. The new power must have a level, and its level must be the same as the old power's level.
@@ -7518,7 +7519,7 @@ The obvious and destructive uses for elemental fire exist in many spells-yet, wi
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_16282 </specific>
-  
+
 By freezing elemental water into ice, you create a weapon able to punch through armor or thick hide.
 </RulesElement>
   <RulesElement name="Ice Knife Secondary Attack" type="Power" internal-id="ID_FMP_POWER_16282" source="Heroes of the Elemental Chaos">
@@ -7597,7 +7598,7 @@ Calling forth the Shadowfell's unhealthy atmosphere and lacing it with ribbons o
     <specific name="Level"> 9 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_16287 </specific>
-  
+
 This spell forms a massive fist out of stone and animates it long enough to bludgeon any enemy it can reach.
 </RulesElement>
   <RulesElement name="Earthen Grasp Secondary Power" type="Power" internal-id="ID_FMP_POWER_16287" source="Heroes of the Elemental Chaos">
@@ -8007,7 +8008,7 @@ The archmage Bigby is best known for the various “hand” spells that bear his
   <Prereqs> Hermetic Saboteur </Prereqs>
   <Flavor> Sometimes the wrong person triggers the trap. Fortunately, you have an answer for that. </Flavor>
   <specific name="Power Usage"> Encounter </specific>
-  <specific name="_SkillPower" />
+  <specific name="_SkillPower"/>
   <specific name="Display"> Hermetic Saboteur Utility 12 </specific>
   <specific name="Keywords"> Arcane, Teleportation </specific>
   <specific name="Action Type"> Immediate Interrupt </specific>
@@ -8016,7 +8017,7 @@ The archmage Bigby is best known for the various “hand” spells that bear his
   <specific name="Primary Target"> The triggering creature </specific>
   <specific name="Secondary Target"> A different creature within 10 squares of the primary target </specific>
   <specific name="Effect"> The primary target and secondary targets swap positions, and the secondary target is considered to have triggered the trap. If the secondary target is you or an ally, he or she gains a +4 bonus to all defenses against that trap's attacks until the end of the secondary target's next turn. </specific>
-  <specific name="_Associated Feats" />
+  <specific name="_Associated Feats"/>
   <specific name="Class"> ID_FMP_PARAGON_PATH_331 </specific>
   <specific name="Level"> 12 </specific>
   <specific name="Power Type"> Utility </specific>

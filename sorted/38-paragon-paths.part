@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.36</Version>
+    <Version>1.37</Version>
     <Filename>38-paragon-paths.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.txt</VersionAddress>
@@ -44,6 +44,7 @@
  Updated 8-October-2013 Added Dragon 427 Paragon Path
  Updated 24-June-2021 Added Dream Blade and Irruption of the Living Gate to add Augmentable keyword
  Updated 9-October-2022 Added Luckbringer of Tymora to fix prerequisite, Feature levels
+ Updated 18-May-2024 Added Ninefold Master feature Breath Expertise to fix missing damage bonus
 </Changelog>
   <!-- Dragon Magazine 394 -->
   <RulesElement name="Herald of Madness" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_805" source="Dragon Magazine 394" revision-date="x/x/x">
@@ -4959,6 +4960,18 @@ Level 21: The soul pushes the triggering enemy up to 3 squares. </specific>
     <grant name="ID_FMP_POWER_4183" type="Power" Level="11"/>
   </rules>
 As a priest of the Lady Who Smiles you favor gaiety and spontaneity, and you believe that those who enjoy the greatest fortune are those who take the greatest risks. You are bold, for to be bold is to live.
+ </RulesElement>
+
+ <RulesElement internal-id="ID_FMP_CLASS_FEATURE_2122" name="Breath Expertise" type="Class Feature" source="Player's Handbook Races: Dragonborn" revision-date="10/5/2010 1:47:05 PM">
+  <Category>11</Category>
+  <specific name="Short Description" />
+  <specific name="Level"> 11 </specific>
+  <rules>
+    <modify name="Dragon Breath" type="Power" Field="Keywords" list-addition="Arcane" />
+    <statadd name="Dragon Breath Expertise" value="+Offhand Implement Bonus"/>
+    <statadd name="dragon breath:damage" value="+Dragon Breath Expertise" type="Enhancement"/>
+  </rules>
+Your dragon breath power is considered an arcane power belonging to each of your arcane classes. If you are wielding an implement you can use for your arcane powers, you may add the implement's enhancement bonus to the damage rolls for your dragon breath power.
  </RulesElement>
 
 </D20Rules>

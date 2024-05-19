@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.40</Version>
+		<Version>1.41</Version>
 		<Filename>06-races.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/06-races.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/06-races.txt</VersionAddress>
@@ -48,6 +48,7 @@
  Updated 22-April-2013 Added Winning Races: Tinker Gnomes
  Updated 18-January-2014 Added Dragon 429 Half-Orc New Powers
  Updated 15-August-2023 Updated several entries missing "Play an X if you want to..."
+ Updated 18-May-2024 Fixed source of draconians and Shifty Maneuver; updated Tinker Gnome flavor description - thanks to heridfel
 	</Changelog>
 	<!-- Essential Race Bonus Skill Setup -->
 	<RulesElement name="Bonus Skill" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_34" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
@@ -203,7 +204,7 @@ Play a Dragonborn if you want ...
     </rules>
 </RulesElement>
 
-<RulesElement name="Dragonborn Subrace" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGONBORN" source="Racial Variants Volume 1">
+<RulesElement name="Dragonborn Subrace" type="Racial Trait" internal-id="ID_TIV_RACIAL_TRAIT_DRAGONBORN" source="Dragon Magazine 421">
   <specific name="Short Description"/>
   <specific name="_CS_ShortDescription"> @ </specific>
   <specific name="Level"> 1 </specific>
@@ -6740,7 +6741,7 @@ You are considered a reptile for the purpose of effects that relate to the repti
 		</rules>
 You have the shifty maneuver power.
 	</RulesElement>
-	<RulesElement name="Shifty Maneuver" type="Power" internal-id="ID_FMP_POWER_2479" source="Monster Manual,Into the Unknown: The Dungeon Survival Handbook">
+	<RulesElement name="Shifty Maneuver" type="Power" internal-id="ID_FMP_POWER_2479" source="Dungeon Survival Handbook">
 		<Category> ID_INTERNAL_CATEGORY_RACIAL_POWER,ID_INTERNAL_CATEGORY_UTILITY,ID_FMP_RACIAL_TRAIT_416,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_RACE_23,ID_INTERNAL_CATEGORY_MOVE_ACTION </Category>
 		<Prereqs> Unselectable </Prereqs>
 		<Flavor> You call on your natural ability to dodge danger, taking your tribemates along for the ride. </Flavor>
@@ -8176,7 +8177,7 @@ Bane created bladelings for war. You can tap into the divine spark that transfor
 <!-- Winning Races: Tinker Gnome -->
 <RulesElement name="Tinker Gnome" type="Race" internal-id="ID_TIV_RACE_DRAGONMAGAZINE422-1" source="Dragon Magazine 422">
 		<Prereqs> ~TINKER GNOME </Prereqs>
-		<Flavor> Slight, sly tricksters of the Feywild who excel at avoiding notice </Flavor>
+		<Flavor>Maniacal engineers for whom the act of inventing is more important than the invention itself </Flavor>
 		<specific name="Size"> Small </specific>
 		<specific name="Speed"> 5 squares </specific>
 		<specific name="Characteristics"> Abrasive, cheerful, curious, disorganized, excitable, inventive, tenacious </specific>

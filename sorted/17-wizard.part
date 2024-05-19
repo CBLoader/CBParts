@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.44</Version>
+    <Version>1.45</Version>
     <Filename>17-wizard.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/17-wizard.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/17-wizard.txt</VersionAddress>
@@ -49,6 +49,7 @@
  Updated 15-January-2022 Melf's Minute Meteors Secondary Power typo and usage fix.
  Updated 22-January-2024 Bolstering Blood update per errata.
  Updated 13-February-2024 Added Sabotage Trap to fix power type.
+ Updated 18-May-2024 Fixed campaign setting sources - thanks to heridfel
 </Changelog>
   
   <!-- Wizard Feature Updates -->
@@ -4437,7 +4438,7 @@ You can spend an action point to regain the use of one wizard encounter attack p
   
   
 <!-- Bladesinger Essential Class -->
-  <RulesElement name="Bladesinger" type="Class" internal-id="ID_FMP_CLASS_883" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Bladesinger" type="Class" internal-id="ID_FMP_CLASS_883" source="Neverwinter Campaign Guide">
     <Flavor> You realize the ultimate blending of swordplay and spellcasting, unleashing magic and making attacks with your blade with equal ease. </Flavor>
     <specific name="Key Abilities"> Intelligence, Dexterity </specific>
     <specific name="Implements"> Orbs, staffs, wands </specific>
@@ -4475,7 +4476,7 @@ Those who see a bladesinger in battle never forget the sight. Amid the chaos and
 	Few among the Tel'Quessir have the honor of being inducted into the bladesingers. One must have the mind necessary to be a great wizard, and also the agility of the greatest dancer. Yet those traits alone are not enough. A bladesinger is first and foremost devoted to the ways and the people of the Tel'Quessir, for that was the purpose of Corellon's gift.
 	A bladesinger who has set out beyond the borders of a nation of the People must have had good cause. Adventuring bladesingers might seek out relics or locations of great meaning to the Tel'Quessir, or they could leave in order to guard a specific person or group against harm. A bladesinger might instead embark upon a quest to eliminate a threat to the People or to find and communicate with some long-lost branch of the race. In a more tragic case, a bladesinger might have failed in the duty to protect a community and be death-pledged to avenge it and restore his or her honor.
 </RulesElement>
-<RulesElement name="Bladesinger" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER" source="Neverwinter Campaign Guide">
   <specific name="_SupportsID"> ID_FMP_CLASS_883 </specific>
   <rules>
     <grant name="ID_FMP_ROLE_1" type="Role"/>
@@ -4517,7 +4518,7 @@ Those who see a bladesinger in battle never forget the sight. Amid the chaos and
     <grant name="ID_INTERNAL_COUNTSASCLASS_WIZARD" type="CountsAsClass"/>
   </rules>
 </RulesElement>
-<RulesElement name="Bladesinger Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER_IMPLEMENTS" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger Implements" type="Grants" internal-id="ID_INTERNAL_GRANTS_BLADESINGER_IMPLEMENTS" source="Neverwinter Campaign Guide">
   <specific name="_SupportsID"> ID_FMP_CLASS_883 </specific>
   <rules>
     <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(ORB)" type="Proficiency"/>
@@ -4525,13 +4526,13 @@ Those who see a bladesinger in battle never forget the sight. Amid the chaos and
     <grant name="ID_INTERNAL_PROFICIENCY_IMPLEMENT_PROFICIENCY_(WAND)" type="Proficiency"/>
   </rules>
 </RulesElement>
-<RulesElement name="Bladesinger" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_Bladesinger" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger" type="CountsAsClass" internal-id="ID_INTERNAL_COUNTSASCLASS_Bladesinger" source="Neverwinter Campaign Guide">
   <specific name="_SupportsID"> ID_FMP_CLASS_883 </specific>
 You count as a bladesinger for meeting prerequisites.
 </RulesElement>
 
 <!-- Section: Class Features -->
-<RulesElement name="Instinctive Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4029" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Instinctive Attack" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4029" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> You have trained your body and your mind to work in concert so well that you can act without conscious thought. In your hands, a sword is no mere weapon. It becomes an extension of your deadly will. </Flavor>
   <specific name="Short Description"> Use Int instead of Str when making melee basic attacks with a weapon wielded in one hand </specific>
@@ -4543,7 +4544,7 @@ You count as a bladesinger for meeting prerequisites.
   </rules>
 When you make a melee basic attack with a weapon you wield in one hand, you can use Intelligence instead of Strength for the attack roll and the damage roll.
 </RulesElement>
-<RulesElement name="Guarded Flourish" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4030" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Guarded Flourish" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4030" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> With a blade in your hand, you weave a defensive web of steel that allows you to hurl spells or weapons without fear of prerisal from nearby foes. </Flavor>
   <specific name="Short Description"> Your ranged and area attacks don't provoke opportunity attacks when you use 1-handed melee weapons; you gain a +2 shield bonus to AC with light/no armor and a one-handed melee weapon without shield </specific>
@@ -4556,7 +4557,7 @@ When you make a melee basic attack with a weapon you wield in one hand, you can 
 Your ranged attacks and area attacks do not provoke opportunity attacks while you are holding a one-handed melee weapon.
 In addition, you gain a +2 shield bonus to AC while you are wearing light armor or no armor and are holding a one-handed melee weapon in one hand and no weapon or shield in the other.
 </RulesElement>
-<RulesElement name="Blade Magic" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4031" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Blade Magic" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4031" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> Your weapon becomes part of the magic you cast.  Just as a mage can direct spells with a wand, destructive magic can spew from the point of your sword </Flavor>
   <specific name="Short Description"> Choose a one-handed melee weapon you are proficient with for an implement; the weapon also counts as a wand </specific>
@@ -4567,7 +4568,7 @@ In addition, you gain a +2 shield bonus to AC while you are wearing light armor 
   </rules>
 Choose a one-handed melee weapon with which you have proficiency, and that is a light blade or a heavy blade.  You gain proficiency with that weapon as an implement, meaning you can use your implement powers through it.  The weapon also counts as a wand for you, although it can be enchanted only as a weapon.
 </RulesElement>
-<RulesElement name="Bastard Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BASTARDSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bastard Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BASTARDSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with bastard sword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a bastard sword as if it were a wand </specific>
@@ -4577,7 +4578,7 @@ Choose a one-handed melee weapon with which you have proficiency, and that is a 
   </rules>
 You can use a bastard sword as if it were a wand.
 </RulesElement>
-<RulesElement name="Broadsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BROADSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Broadsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_BROADSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with broadsword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a broadsword as if it were a wand </specific>
@@ -4587,7 +4588,7 @@ You can use a bastard sword as if it were a wand.
   </rules>
 You can use a broadsword as if it were a wand.
 </RulesElement>
-<RulesElement name="Chatkcha [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CHATKCHA" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Chatkcha [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CHATKCHA" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with chatkcha </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a chatkcha as if it were a wand </specific>
@@ -4597,7 +4598,7 @@ You can use a broadsword as if it were a wand.
   </rules>
 You can use a chatkcha as if it were a wand.
 </RulesElement>
-<RulesElement name="Cutting Wheel [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CUTTINGWHEEL" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Cutting Wheel [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_CUTTINGWHEEL" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with cutting wheel </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a cutting wheel as if it were a wand </specific>
@@ -4607,7 +4608,7 @@ You can use a chatkcha as if it were a wand.
   </rules>
 You can use a cutting wheel as if it were a wand.
 </RulesElement>
-<RulesElement name="Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DAGGER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DAGGER" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with dagger </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a dagger as if it were a wand </specific>
@@ -4617,7 +4618,7 @@ You can use a cutting wheel as if it were a wand.
   </rules>
 You can use a dagger as if it were a wand.
 </RulesElement>
-<RulesElement name="Drow Long Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DROWLONGKNIFE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Drow Long Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_DROWLONGKNIFE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with drow long knife </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a drow long knife as if it were a wand </specific>
@@ -4627,7 +4628,7 @@ You can use a dagger as if it were a wand.
   </rules>
 You can use a drow long knife as if it were a wand.
 </RulesElement>
-<RulesElement name="Katar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KATAR" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Katar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KATAR" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with katar </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a katar as if it were a wand </specific>
@@ -4637,7 +4638,7 @@ You can use a drow long knife as if it were a wand.
   </rules>
 You can use a katar as if it were a wand.
 </RulesElement>
-<RulesElement name="Khopesh [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KHOPESH" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Khopesh [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KHOPESH" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with khopesh </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a khopesh as if it were a wand </specific>
@@ -4647,7 +4648,7 @@ You can use a katar as if it were a wand.
   </rules>
 You can use a khopesh as if it were a wand.
 </RulesElement>
-<RulesElement name="Kukri [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KUKRI" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Kukri [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_KUKRI" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with kukri </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a kukri as if it were a wand </specific>
@@ -4657,7 +4658,7 @@ You can use a khopesh as if it were a wand.
   </rules>
 You can use a kukri as if it were a wand.
 </RulesElement>
-<RulesElement name="Longsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_LONGSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Longsword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_LONGSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with longsword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a longsword as if it were a wand </specific>
@@ -4667,7 +4668,7 @@ You can use a kukri as if it were a wand.
   </rules>
 You can use a longsword as if it were a wand.
 </RulesElement>
-<RulesElement name="Parrying Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PARRYINGDAGGER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Parrying Dagger [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PARRYINGDAGGER" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with parrying dagger </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a parrying dagger as if it were a wand </specific>
@@ -4677,7 +4678,7 @@ You can use a longsword as if it were a wand.
   </rules>
 You can use a parrying dagger as if it were a wand.
 </RulesElement>
-<RulesElement name="Puchik [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PUCHIK" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Puchik [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_PUCHIK" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with puchik </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a puchik as if it were a wand </specific>
@@ -4687,7 +4688,7 @@ You can use a parrying dagger as if it were a wand.
   </rules>
 You can use a puchik as if it were a wand.
 </RulesElement>
-<RulesElement name="Rapier [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_RAPIER" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Rapier [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_RAPIER" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with rapier </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a rapier as if it were a wand </specific>
@@ -4697,7 +4698,7 @@ You can use a puchik as if it were a wand.
   </rules>
 You can use a rapier as if it were a wand.
 </RulesElement>
-<RulesElement name="Scimitar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SCIMITAR" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Scimitar [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SCIMITAR" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with scimitar </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a scimitar as if it were a wand </specific>
@@ -4707,7 +4708,7 @@ You can use a rapier as if it were a wand.
   </rules>
 You can use a scimitar as if it were a wand.
 </RulesElement>
-<RulesElement name="Short Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SHORTSWORD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Short Sword [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SHORTSWORD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with short sword </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a short sword as if it were a wand </specific>
@@ -4717,7 +4718,7 @@ You can use a scimitar as if it were a wand.
   </rules>
 You can use a short sword as if it were a wand.
 </RulesElement>
-<RulesElement name="Sickle [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SICKLE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Sickle [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SICKLE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with sickle </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a sickle as if it were a wand </specific>
@@ -4727,7 +4728,7 @@ You can use a short sword as if it were a wand.
   </rules>
 You can use a sickle as if it were a wand.
 </RulesElement>
-<RulesElement name="Spiked Shield [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SPIKEDSHIELD" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Spiked Shield [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_SPIKEDSHIELD" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with spiked shield </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a spiked shield as if it were a wand </specific>
@@ -4737,7 +4738,7 @@ You can use a sickle as if it were a wand.
   </rules>
 You can use a spiked shield as if it were a wand.
 </RulesElement>
-<RulesElement name="Talenta Tengat [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TENGAT" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Talenta Tengat [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TENGAT" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with talenta tengat </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a talenta tengat as if it were a wand </specific>
@@ -4747,7 +4748,7 @@ You can use a spiked shield as if it were a wand.
   </rules>
 You can use a talenta tangat as if it were a wand.
 </RulesElement>
-<RulesElement name="Tortoise Blade [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TOROISEBLADE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Tortoise Blade [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_TOROISEBLADE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with tortoise blade </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a tortoise blade as if it were a wand </specific>
@@ -4757,7 +4758,7 @@ You can use a talenta tangat as if it were a wand.
   </rules>
 You can use a tortoise blade as if it were a wand.
 </RulesElement>
-<RulesElement name="Widow's Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WIDOWKNIFE" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Widow's Knife [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WIDOWKNIFE" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with widow's knife </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a widow's knife as if it were a wand </specific>
@@ -4767,7 +4768,7 @@ You can use a tortoise blade as if it were a wand.
   </rules>
 You can use a widow's knife as if it were a wand.
 </RulesElement>
-<RulesElement name="Wrist Razors [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WRISTRAZORS" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Wrist Razors [Blade Magic]" type="Class Feature" internal-id="ID_INTERNAL_CLASS_FEATURE_BS_WRISTRAZORS" source="Neverwinter Campaign Guide">
   <Prereqs> proficient with wrist razors </Prereqs>
   <Category> Blade Magic </Category>
   <specific name="Short Description"> You can use a wrist razors as if it were a wand </specific>
@@ -4777,7 +4778,7 @@ You can use a widow's knife as if it were a wand.
   </rules>
 You can use a wrist razors as if it were a wand.
 </RulesElement>
-<RulesElement name="Bladesong" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4032" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesong" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4032" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> The bladesong lies at the heart of any bladesinger's craft.  Bladesingers describe it as a period of peace amid war, calm in chaosm and clarity in confusion. When you enter the bladesong, the world seems to slow even as, to an outside observer, your movements speed into a blur. Your concentration becomes absolute as mind and body, spell and sword meld into one perfection of form. Then your sword sings the dirge of your foes. </Flavor>
   <specific name="Short Description"> Gain the bladesong power </specific>
@@ -4793,7 +4794,7 @@ You can use a wrist razors as if it were a wand.
   </rules>
 You gain the bladesong power
 </RulesElement>
-<RulesElement name="Bladesinger's Spellbook" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4033" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger's Spellbook" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4033" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> Like other wizards, a bladesinger keeps a spellbook and prepares spells from it.  Your spellbook holds the most powerful spells you learn as you advance in level. </Flavor>
   <specific name="Short Description"> Gain bladesinger's spellbook </specific>
@@ -4841,7 +4842,7 @@ WIZARD POWERS PREPARED PER DAY
  16-21	3	4
  22-30	3	5&lt;/table&gt;
 </RulesElement>
-<RulesElement name="Bladespells" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4034" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladespells" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4034" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> A bladesinger mixes melee and magic with such ease and grace that every successful strike unleashes a spell. Unique to bladesingers, these bladespells lash out to affect even the most well-defended foes. </Flavor>
   <specific name="Short Description"> Gain three wizard at-will attack powers with the bladespell keyword </specific>
@@ -4856,7 +4857,7 @@ WIZARD POWERS PREPARED PER DAY
   </rules>
 You gain three wizard at-will powers that have the bladespell keyword.
 </RulesElement>
-<RulesElement name="Level 1 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4035" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 1 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4035" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> A bladesinger must split time between study of martial skill and the arcane arts while at the same time using mental focus for both.  This division limits the bladesinger's spellcasting attacks while they heighten his or her melee capability.  Spells that a mage can use in every battle become powers that a bladesinger can replenish only after an extended rest. </Flavor>
   <specific name="Short Description"> Add two encounter powers as dailies to your spellbook. </specific>
@@ -4875,7 +4876,7 @@ You gain three wizard at-will powers that have the bladespell keyword.
   </rules>
 You add two 1st-level wizard encounter attack powers of your choice to your spellbook. The two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Bladesinger Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4036" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger Cantrips" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4036" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> The basic tricks of magic are known as cantrips, and they are the first spells that a beginning wizard learns. The formula underlying a cantrip is so simple that each cantrip can be committed to memory and used at will once you have mastered it. </Flavor>
   <specific name="Short Description"> Gain three wizard cantrips </specific>
@@ -4899,7 +4900,7 @@ You add two 1st-level wizard encounter attack powers of your choice to your spel
   </rules>
 You gain three cantrips of your choice.
 </RulesElement>
-<RulesElement name="Level 2 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4037" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 2 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4037" source="Neverwinter Campaign Guide">
   <Category> 2 </Category>
   <Flavor> Since those who dance the blades do not use shields, you have trained extensively in defensive sword techniques. For generations, magic users have worked to develop a vast array of specialized defensive tricks. As  you continue your studies, you learn spells that you can use tactically, for both personal and group protection. </Flavor>
   <specific name="Short Description"> Add two 2nd-level wizard utility powers of your choice to your spellbook </specific>
@@ -4916,7 +4917,7 @@ You gain three cantrips of your choice.
   </rules>
 You add two 2nd-level wizard utility powers of your choice to your spellbook.
 </RulesElement>
-<RulesElement name="Arcane Strike" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4038" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Arcane Strike" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4038" source="Neverwinter Campaign Guide">
   <Category> 3 </Category>
   <Flavor> Your bladespells sing forth to herald your success in melee, and as you grow in experience you learn to turn that relationship on its head. Now, when you attack with a spell, its arcane energy follows a current back through your body, giving you the quickness of limb and mind to lash out with your sword as you complete the casting. </Flavor>
   <specific name="Short Description"> Make a melee basic attack as a minor action when you use a bladesinger daily attack power on your turn </specific>
@@ -4926,7 +4927,7 @@ You add two 2nd-level wizard utility powers of your choice to your spellbook.
   </rules>
 When you use a bladesinger daily attack power on your turn, you can make a melee basic attack as a minor action.
 </RulesElement>
-<RulesElement name="Level 5 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4039" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 5 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4039" source="Neverwinter Campaign Guide">
   <Category> 5 </Category>
   <Flavor> Your study of magic opens your mind to more powerful spells. Now you can prepare and unleash two attack spells each day. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 3rd level or lower, act as daily powers </specific>
@@ -4945,7 +4946,7 @@ When you use a bladesinger daily attack power on your turn, you can make a melee
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 3rd level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 6 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4040" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 6 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4040" source="Neverwinter Campaign Guide">
   <Category> 6 </Category>
   <Flavor> As much as any other wizard, the useful tactics and devious tricks embodied by utility spells are part of your repertoire. </Flavor>
   <specific name="Short Description"> Add two wizard utility powers of your level or lower to your spellbook </specific>
@@ -4962,7 +4963,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Steely Retort" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4041" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Steely Retort" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4041" source="Neverwinter Campaign Guide">
   <Category> 7 </Category>
   <Flavor> When you are using your bladesong, your concentration is absolute. Those who attempt to interrupt that concentration pay with their lives. </Flavor>
   <specific name="Short Description"> Use melee basic attack as opportunity action against adjacent enemies who hit you while bladesong is active </specific>
@@ -4972,7 +4973,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   </rules>
 When an adjacent enemy hits you while your bladesong is active, you can make a melee basic attack against that enemy as an opportunity action.
 </RulesElement>
-<RulesElement name="Level 9 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4042" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 9 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4042" source="Neverwinter Campaign Guide">
   <Category> 9 </Category>
   <Flavor> Your spellcasting skill increases, giving you access to seminal spells such as lightning bolt. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 7th level or lower, act as daily powers </specific>
@@ -4991,7 +4992,7 @@ When an adjacent enemy hits you while your bladesong is active, you can make a m
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 7th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 10 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4043" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 10 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4043" source="Neverwinter Campaign Guide">
   <Category> 10 </Category>
   <Flavor> Your skill with defensive magic improves as you adapt to face different threats. </Flavor>
   <specific name="Short Description"> Add two new wizard utility powers of your level or lower to your spellbook </specific>
@@ -5008,7 +5009,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Unerring Bladespell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4047" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Unerring Bladespell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4047" source="Neverwinter Campaign Guide">
   <Category> 13 </Category>
   <Flavor> As you are swept up in the rhythm of your bladesinging, you are now able to unleash spells that find their targets unerringly. </Flavor>
   <specific name="Short Description"> While bladesong is active, you can use a bladespell power when you make a melee basic attack, even if you miss </specific>
@@ -5016,7 +5017,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   <specific name="Level"> 13 </specific>
 When you make a melee basic attack while your bladesong is active, you can use a bladespell power even if the attack misses.
 </RulesElement>
-<RulesElement name="Level 15 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4048" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 15 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4048" source="Neverwinter Campaign Guide">
   <Category> 15 </Category>
   <Flavor> Your magical studies continue to reap rewards, adding more to your arcane arsenal. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 13th level or lower, act as daily powers </specific>
@@ -5035,7 +5036,7 @@ When you make a melee basic attack while your bladesong is active, you can use a
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 13th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 16 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4050" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 16 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4050" source="Neverwinter Campaign Guide">
   <Category> 16 </Category>
   <Flavor> Your study of utility magic continues to bear fruit, and you gain knowledge of more spells that aid you and others on the battlefield. </Flavor>
   <specific name="Short Description"> Add two new wizard utility powers of your level or lower to your spellbook </specific>
@@ -5052,7 +5053,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Level 19 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4051" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 19 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4051" source="Neverwinter Campaign Guide">
   <Category> 19 </Category>
   <Flavor> Your spellcasting prowess grows again, giving you access to more powerful wizard spells </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 17th level or lower, act as daily powers </specific>
@@ -5071,7 +5072,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 17th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 22 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4054" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 22 Bladesinger Utility Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4054" source="Neverwinter Campaign Guide">
   <Category> 22 </Category>
   <Flavor> Your mastery of utility spells has reached new heights. Like all the greatest mages, you can accomplish stunning feats of magic. </Flavor>
   <specific name="Short Description"> Add two new wizard utility powers of your level or lower to your spellbook </specific>
@@ -5088,7 +5089,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   </rules>
 You add two new wizard utility powers of your level or lower to your spellbook.
 </RulesElement>
-<RulesElement name="Bladespell Burst" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4055" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladespell Burst" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4055" source="Neverwinter Campaign Guide">
   <Category> 23 </Category>
   <Flavor> Each swing of your sword has become a thing of enchantment, and when you land a particularly effective blow, you can unleash that buildup of power as a cascade of bladespells. </Flavor>
   <specific name="Short Description"> Use a bladespell power against each adjacent enemy after using a bladespell power, 1/day. </specific>
@@ -5096,7 +5097,7 @@ You add two new wizard utility powers of your level or lower to your spellbook.
   <specific name="Level"> 23 </specific>
 Once per day when you use a bladespell power against an adjacent enemy, you can use that power against each adjacent enemy.
 </RulesElement>
-<RulesElement name="Level 25 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4056" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 25 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4056" source="Neverwinter Campaign Guide">
   <Category> 25 </Category>
   <Flavor> Your mastery of magic now exceeds the power that most mortal dream of. Although your close companions in your many adventures might rival your might, only creatures of legend and villains of world-spanning infamy can reasonably hope to outmatch you. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 23rd level or lower, act as daily powers </specific>
@@ -5115,7 +5116,7 @@ Once per day when you use a bladespell power against an adjacent enemy, you can 
   </rules>
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 23rd level or lower, and the two function as daily attack powers for you.
 </RulesElement>
-<RulesElement name="Level 29 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4057" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Level 29 Bladesinger Daily Powers" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4057" source="Neverwinter Campaign Guide">
   <Category> 29 </Category>
   <Flavor> Your mastery of spellcasting has reached its peak. Your spellcasting outstrips the ability of most of the mightiest eladrin mages, and not even the greatest among them would think to challenge you to battle. </Flavor>
   <specific name="Short Description"> Add two wizard encounter attack powers to your spellbook; powers must be 27th level or lower, act as daily powers </specific>
@@ -5135,7 +5136,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
 You add two new wizard encounter attack powers to your spellbook. The powers must be of 27th level or lower, and the two function as daily attack powers for you.
 </RulesElement>
 
-<RulesElement name="Bladesinger Spellbook" type="Power" internal-id="ID_NWC_POWER_BLADESINGERS_SPELLBOOK" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesinger Spellbook" type="Power" internal-id="ID_NWC_POWER_BLADESINGERS_SPELLBOOK" source="Neverwinter Campaign Guide">
   <Category> 1 </Category>
   <Flavor> At the end of each of your extended rests, you can prepare daily attack powers and utility powers from your spellbook. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5157,7 +5158,7 @@ You add two new wizard encounter attack powers to your spellbook. The powers mus
   <specific name="_Subclasses"/>
 At the end of each of your extended rests, you can prepare daily attack powers and utility powers from your spellbook.
 </RulesElement>
-<RulesElement name="Bladesong" type="Power" internal-id="ID_FMP_POWER_14285" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Bladesong" type="Power" internal-id="ID_FMP_POWER_14285" source="Neverwinter Campaign Guide">
    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_9,ID_FMP_CATEGORY_31,ID_INTERNAL_CATEGORY_MINOR_ACTION </Category>
    <Flavor> Your whirling blade begins to sing through the air as you enter a state of total concentration. </Flavor>
    <specific name="Power Usage"> Encounter </specific>
@@ -5175,7 +5176,7 @@ Level 27: +15 power bonus to damage rolls.   </specific>
    <specific name="Level"/>
    <specific name="Power Type"> Utility </specific>
 </RulesElement>
-<RulesElement name="Dancing Fire" type="Power" internal-id="ID_FMP_POWER_14286" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Dancing Fire" type="Power" internal-id="ID_FMP_POWER_14286" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_3,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> A leaping flame dances over your enemy, driving it to distraction. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5198,7 +5199,7 @@ Level 21: 4 + Dexterity modifier fire damage. </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 Elves and eladrin must take care when using flame in the forest homes of their people, and thus many bladesingers learn to command the fires that their magic produces. The blow of a sword provides the opening to unleash a spritelike fire that burns an enemy without fear of anything else being set to smolder.
 </RulesElement>
-<RulesElement name="Dazzling Sunray" type="Power" internal-id="ID_FMP_POWER_14287" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Dazzling Sunray" type="Power" internal-id="ID_FMP_POWER_14287" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_2,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You strike with your blade and from the other hand unleash a beam of brilliant light to confound your foe. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5221,7 +5222,7 @@ Level 21: 4 + Dexterity modifier radiant damage. </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 The bladesingers of old knew how to catch the reflection of the sun upon their glittering blades to temporarily blind distant foes. In time, this tactic became a bladespell in many bladesingers' arsenal so that it might be used to matter how dark the day or deep the shadows of night.
 </RulesElement>
-<RulesElement name="Frost Bite" type="Power" internal-id="ID_FMP_POWER_14288" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Frost Bite" type="Power" internal-id="ID_FMP_POWER_14288" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_`,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> Sparkling snow swirls around your enemy, numbing its limbs and making it struggle to move. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5244,7 +5245,7 @@ Level 21: 4 + Dexterity modifier cold damage. </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 Even though the world has drastic extremes of weather, never does it approach the treacherous beauty of winter in the Feywild.  Bladesiners who learn how to harness that frigid fey power can turn it to their advantage whenever they want.
 </RulesElement>
-<RulesElement name="Lightning Ring" type="Power" internal-id="ID_FMP_POWER_14289" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Lightning Ring" type="Power" internal-id="ID_FMP_POWER_14289" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_11,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You stab your opponent, and an arc of lightning leaps from your hand to encircle a foe in a crackling ring. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5267,7 +5268,7 @@ Level 21: 4 + Dexterity modifier lightning damage. </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 A bladesinger's prowess comes from more sources than the Feywild. Like other wizards, bladesingers draw upon the Elemental Chaos, the Shadowfell, the Astral Sea, and the latent magic of the world to craft enchantments amid the swirl of their swords. With lightning ring, you use elemental forces to set a lightning bolt to chasing itself around a foe.
 </RulesElement>
-<RulesElement name="Shadow Sever" type="Power" internal-id="ID_FMP_POWER_14290" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Shadow Sever" type="Power" internal-id="ID_FMP_POWER_14290" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_12,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You attack slices away your enemy's shadow, sending it flitting across the field to pull at the feet of a foe. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5290,7 +5291,7 @@ Level 21: 4 + Dexterity modifier necrotic damage. </specific>
   <specific name="_Subclasses"> ID_FMP_CLASS_883 </specific>
 Wielding arcane power through your blade, you drive the point of your weapon into your enemy's shadow, slicing it away. Forced from its caster, the desperate shadow seeks to drag someone over it so that it can hide from the light.
 </RulesElement>
-<RulesElement name="Unseen Hand" type="Power" internal-id="ID_FMP_POWER_14291" source="Player Essentials: Neverwinter Campaign Guide">
+<RulesElement name="Unseen Hand" type="Power" internal-id="ID_FMP_POWER_14291" source="Neverwinter Campaign Guide">
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_9,ID_FMP_CLASS_883,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_75,ID_FMP_CATEGORY_8,ID_INTERNAL_CATEGORY_NO_ACTION </Category>
   <Flavor> You level a crushing blow against your foe, and an unseen force grasps an enemy and drags it about the field of battle. </Flavor>
   <specific name="Power Usage"> At-Will </specific>
@@ -5314,7 +5315,7 @@ Level 21: 4 + Dexterity modifier force damage. </specific>
 When a bladesinger needs to bring a foe close or heave an enemy farther away, the trick is to summon forth a hand of force to guide the foe's fate. Using this power, a bladesinger can act like  a chess master playing about with piecces on a board.
 </RulesElement>
 <!-- Paragon Bladesinger Path, Neverwinter -->
-  <RulesElement name="Sorcerous Sword" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_884" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Sorcerous Sword" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_884" source="Neverwinter Campaign Guide">
     <Prereqs> ID_FMP_CLASS_883 </Prereqs>
     <print-prereqs> Only a bladesinger can take this paragon path. </print-prereqs>
     <specific name="Class Features"> ID_FMP_CLASS_FEATURE_4044, ID_FMP_CLASS_FEATURE_4045, ID_FMP_CLASS_FEATURE_4046, ID_FMP_CLASS_FEATURE_4049, ID_FMP_CLASS_FEATURE_4053 </specific>
@@ -5327,7 +5328,7 @@ When a bladesinger needs to bring a foe close or heave an enemy farther away, th
     </rules> 
 In the paragon tier, you continue your intensive study of the ways in which sword and spell can unify into a single weapon. The bladesinger's path is both a highly formalized tradition and a deeply personal journey into the secrets, of magic, swordplay, and the self. As your journey continues, you come to grasp ever more powerful spells, and magic plays an increasingly important role in your drive to victory.
 </RulesElement>
-  <RulesElement name="Choir of Swords" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4044" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Choir of Swords" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4044" source="Neverwinter Campaign Guide">
     <Category> 11 </Category>
     <Flavor> In your most desperate moments, bladesinging can give you a clarity of vision and such superior speed that your sword seems to become several blades, each a separate singer in a choir of swords. </Flavor>
     <specific name="Short Description"> Spend action point while bladesong is active, make melee basic attack against all adjacent enemies as standard action </specific>
@@ -5337,7 +5338,7 @@ In the paragon tier, you continue your intensive study of the ways in which swor
     </rules>  
 While your bladesong is active, you can spend an action point to make a melee basic attack against each enemy adjacent to you as a standard action.
 </RulesElement>
-  <RulesElement name="Boon Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4045" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Boon Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4045" source="Neverwinter Campaign Guide">
     <Category> 11 </Category>
     <Flavor> Magic comes ever easier to you as you continue your studies. You now acquire another prepared spell as easily as adding an arrow to a quiver. </Flavor>
     <specific name="Short Description"> Add new wizard encounter attack power to spellbook, counts as daily power; you can prepare one additional bladesinger daily power from your spellbook, but not the same power twice on one day </specific>
@@ -5350,14 +5351,14 @@ While your bladesong is active, you can spend an action point to make a melee ba
 You add a new wizard encounter attack power to your spellbook. The power must be of 7th level or lower, and it functions as a daily attack power for you.
 	In addition, each day you can prepare one additional bladesinger daily power from your spellbook. This additional power can be the same level as another power you prepare, but this feature does not allow you to prepare the same power twice on the same day.
 </RulesElement>
-  <RulesElement name="Bladesong Ballet" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4046" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Bladesong Ballet" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4046" source="Neverwinter Campaign Guide">
     <Category> 12 </Category>
     <Flavor> The bladesong has always been a dance, but now your movement as your sword sings has an elegance and deftness that defies the mind's grasp. </Flavor>
     <specific name="Short Description"> Use an action point while your bladesong is active to shift your speed in squares </specific>
     <specific name="Level"> 12 </specific>
 While your bladesong is active, you can use a move action to shift a number of squares up to your speed.
 </RulesElement>
-  <RulesElement name="Bladespell Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4049" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Bladespell Step" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4049" source="Neverwinter Campaign Guide">
     <Category> 16 </Category>
     <Flavor> Your connection to arcane magic opens a path for you that is closed to all others. One moment you strike a foe with a sword, and the next you stand many strides away. </Flavor>
     <specific name="Short Description"> Teleport 5 squares as free action after you use a bladespell power, 1/encounter </specific>
@@ -5375,7 +5376,7 @@ Once per encounter, you can teleport up to 5 squares as a free action immediatel
       </rules>
 Choose one of your arcane daily attack powers. You gain a +2 bonus to attack rolls with that power. If you retrain that power, you can choose a new arcane daily attack power as your Signature Spell.
    </RulesElement>
-  <RulesElement name="Signature Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4053" source="Player Essentials: Neverwinter Campaign Guide">
+  <RulesElement name="Signature Spell" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_4053" source="Neverwinter Campaign Guide">
     <Category> 20 </Category>
     <Flavor> Just as a duelist might have a unique flourish, you develop an especially formidable special arcane attack that serves as your signature. </Flavor>
     <specific name="Short Description"> Gain a wizard daily attack power of level 19th or lower </specific>

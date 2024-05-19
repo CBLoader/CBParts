@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.37</Version>
+    <Version>1.38</Version>
     <Filename>38-paragon-paths.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/38-paragon-paths.txt</VersionAddress>
@@ -45,6 +45,7 @@
  Updated 24-June-2021 Added Dream Blade and Irruption of the Living Gate to add Augmentable keyword
  Updated 9-October-2022 Added Luckbringer of Tymora to fix prerequisite, Feature levels
  Updated 18-May-2024 Added Ninefold Master feature Breath Expertise to fix missing damage bonus
+ Updated 18-May-2024 Fix campaign setting sources - thanks to heridfel
 </Changelog>
   <!-- Dragon Magazine 394 -->
   <RulesElement name="Herald of Madness" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_805" source="Dragon Magazine 394" revision-date="x/x/x">
@@ -4643,7 +4644,7 @@ You gain resist necrotic equal to 5 + one-half your level.
 </RulesElement>
 
 <!-- Dragon 427 Paragon Path-->
- <RulesElement name="Soul Binder" type="Paragon Path" internal-id="ID_DRAG427_PARAGON" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+ <RulesElement name="Soul Binder" type="Paragon Path" internal-id="ID_DRAG427_PARAGON" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Prereqs> Any arcane class or any divine class or any shadow class; must worship Nerull </Prereqs>
     <print-prereqs> Any arcane, divine or shadow class; must worship Nerull </print-prereqs>
     <Flavor> “Death is not always the end. Not until the fight is over.” </Flavor>
@@ -4662,7 +4663,7 @@ For those who devote themselves to Nerull, the nature of the Reaper becomes clea
 As a soul binder, you have bound a soul to your service. The soul might be that of an enemy whose torment you wish to prolong, a loved one whose company you wish to keep, or a friend whom you’re saving from a vile afterlife. Regardless of your reasons, the soul must protect and serve you.
 </RulesElement>
 
-  <RulesElement name="Soul-Bound Action" type="Class Feature" internal-id="ID_DRAG427_PATH_11-1" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Soul-Bound Action" type="Class Feature" internal-id="ID_DRAG427_PATH_11-1" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> 11 </Category>
     <specific name="Short Description"> When you spend an action point, your bound soul can also take a standard action. </specific>
     <specific name="Level"> 11 </specific>
@@ -4671,19 +4672,19 @@ As a soul binder, you have bound a soul to your service. The soul might be that 
     </rules>
 As you push your own limits, the soul bound to you senses your effort and exerts itself accordingly. When you spend an action point, your bound soul can also take a standard action.
 </RulesElement>
-  <RulesElement name="Touch of Pluton" type="Class Feature" internal-id="ID_DRAG427_PATH_11-2" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Touch of Pluton" type="Class Feature" internal-id="ID_DRAG427_PATH_11-2" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> 11 </Category>
     <specific name="Short Description"> Your necrotic attacks can also deal radiant damage. </specific>
     <specific name="Level"> 11 </specific>
 You have mastered the divine magic of Pluton and can combine seemingly inimical energies. You can choose for your attacks that deal necrotic damage to also deal radiant damage.
 </RulesElement>
-  <RulesElement name="Death Is the Source" type="Class Feature" internal-id="ID_DRAG427_PATH_16" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Death Is the Source" type="Class Feature" internal-id="ID_DRAG427_PATH_16" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> 16 </Category>
     <specific name="Short Description"> When you or your bound soul kills a nonminion, gain 5 + half level temp hp. Can give some or all to your bound soul.</specific>
     <specific name="Level"> 16 </specific>
 You are an agent of the Reaper, and your reaping sustains you and the soul bound to you.  Whenever your attack or that of your bound soul drops a nonminion enemy below 1 hit point, you gain temporary hit points equal to 5 + one-half your level. As a free action when you gain the temporary hit points, you can transfer some or all of these hit points to your bound soul.
 </RulesElement>
-  <RulesElement name="Call Bound Soul" type="Class Feature" internal-id="ID_DRAG427_PATH_11P" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Call Bound Soul" type="Class Feature" internal-id="ID_DRAG427_PATH_11P" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> 11 </Category>
     <Flavor> By exerting your will, you force the soul you have bound into the physical world to aid you in battle. </Flavor>
     <specific name="Short Description"> Gain the call bound soul power </specific>
@@ -4698,7 +4699,7 @@ You are an agent of the Reaper, and your reaping sustains you and the soul bound
     </rules>
 You gain the call bound soul power.
 </RulesElement>
-  <RulesElement name="Overflowing Soul" type="Class Feature" internal-id="ID_DRAG427_PATH_12P" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Overflowing Soul" type="Class Feature" internal-id="ID_DRAG427_PATH_12P" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> 12 </Category>
     <Flavor> You dismiss your bound soul to use its essence. </Flavor>
     <specific name="Short Description"> Gain the overflowing soul power </specific>
@@ -4712,7 +4713,7 @@ You gain the call bound soul power.
     </rules>
 You gain the share overflowing soul power.
 </RulesElement>
-  <RulesElement name="Gray Legionnaires" type="Class Feature" internal-id="ID_DRAG427_PATH_20P" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Gray Legionnaires" type="Class Feature" internal-id="ID_DRAG427_PATH_20P" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> 20 </Category>
     <Flavor> You open a conduit to Pluton, and members of the Legion of the Gray enter the world to do your bidding. The task is physically exhausting and places your senses between two worlds, leaving you vulnerable as you command the dead. </Flavor>
     <specific name="Short Description"> Gain the gray legionnaires power </specific>
@@ -4726,7 +4727,7 @@ You gain the share overflowing soul power.
     </rules>
 You gain the gray legionnaires power.
 </RulesElement>
-  <RulesElement name="Call Bound Soul" type="Power" internal-id="ID_DRAG427_POWER_11" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Call Bound Soul" type="Power" internal-id="ID_DRAG427_POWER_11" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DRAG427_PARAGON,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_MINOR_ACTION,11 </Category>
     <Prereqs> Soul Binder </Prereqs>
     <Flavor> You call the soul bound to serve you into the physical realm. </Flavor>
@@ -4748,7 +4749,7 @@ You gain the gray legionnaires power.
     <specific name="Level"> 11 </specific>
     <specific name="Power Type"> Attack </specific>
   </RulesElement>
-  <RulesElement name="Overflowing Soul" type="Power" internal-id="ID_DRAG427_POWER_12" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Overflowing Soul" type="Power" internal-id="ID_DRAG427_POWER_12" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_DRAG427_PARAGON,ID_FMP_CATEGORY_32,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
     <Prereqs> Soul Binder </Prereqs>
     <Flavor> Your bound soul leaves and grants your allies false life. </Flavor>
@@ -4767,7 +4768,7 @@ You gain the gray legionnaires power.
     <specific name="Level"> 12 </specific>
     <specific name="Power Type"> Utility </specific>
   </RulesElement>
-  <RulesElement name="Gray Legionnaires" type="Power" internal-id="ID_DRAG427_POWER_20" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+  <RulesElement name="Gray Legionnaires" type="Power" internal-id="ID_DRAG427_POWER_20" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
     <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_DRAG427_PARAGON,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_51,ID_INTERNAL_CATEGORY_STANDARD_ACTION,12 </Category>
     <Prereqs> Soul Binder </Prereqs>
     <Flavor> You lose touch with the physical world as you summon more souls of Pluton to serve you. </Flavor>
@@ -4782,14 +4783,14 @@ You gain the gray legionnaires power.
 	Each soul lacks actions of its own. Instead, you spend actions to command it mentally. When you spend an action to command one of your bound souls, each of your bound souls can also take that same type of action, choosing from the actions in the bound soul's description.
 	You must have line of effect to the soul to command it. When you command the soul, you and the soul share knowledge but not senses.
 	When a soul makes an attack roll or a check, you make the roll using your statistics, not including any temporary bonuses or penalties.
-	each soul lasts until it drops below 1 hit point. At that time, you lose a healing surge (or hit points equal to your surge value if you have no surges lfet). Otherwise, the soul lasts until you dismiss it as a minor action or until the end of the encounter.</specific>
+	Each soul lasts until it drops below 1 hit point. At that time, you lose a healing surge (or hit points equal to your surge value if you have no surges left). Otherwise, the soul lasts until you dismiss it as a minor action or until the end of the encounter.</specific>
     <specific name="_Associated Feats"/>
     <specific name="Class"> ID_DRAG427_PARAGON </specific>
     <specific name="Level"> 20 </specific>
     <specific name="Power Type"> Utility </specific>
   </RulesElement>
 
-<RulesElement name="Bound Soul" type="Power" internal-id="ID_DRAG427_SOUL" source="Dragon 427" revision-date="9/19/2013 12:00 AM">
+<RulesElement name="Bound Soul" type="Power" internal-id="ID_DRAG427_SOUL" source="Dragon Magazine 427" revision-date="9/19/2013 12:00 AM">
   <Prereqs> Unselectable </Prereqs>
   <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CATEGORY_32,ID_FMP_CATEGORY_51</Category>
   <specific name="Power Usage"> Encounter </specific>

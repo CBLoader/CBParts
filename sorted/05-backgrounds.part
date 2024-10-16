@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.21</Version>
+    <Version>1.22</Version>
     <Filename>05-backgrounds.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/05-backgrounds.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/05-backgrounds.txt</VersionAddress>
@@ -34,6 +34,7 @@
  Updated 10-June-2012 Myth Drannor fix.
  Updated 20-March-2013 Added Dragon Magazine 421 Backgrounds You Say Dragonborn, I Say Draconian
  Updated 11-October-2021 Added Airspur Benefit to fix skill bonuses
+ Updated 26-May-2024 Added Dungeon Survival Handbook backgrounds
 </Changelog>
   <RulesElement name="Baernor Scion" type="Background" internal-id="ID_FMP_BACKGROUND_729" source="Dragon Magazine 392" revision-date="12/16/2010 10:50:36 AM">
     <Prereqs>Human</Prereqs>
@@ -2475,5 +2476,101 @@ The weak and infirm are quickly weeded out in the crucible, leaving behind only 
 +2 bonus to Acrobatics and Diplomacy.
    </RulesElement>
 
+
+<!--Dungeon Survival Handbook -->
+
+<RulesElement name="Barovian Escapee" type="Background" internal-id="ID_HF_BACKGROUND_DSH_1" source="Dungeon Survival Handbook">
+  <specific name="Type"> Campaign </specific>
+  <specific name="Common Knowledge"> Most of the time, you lived a pleasant life in Barovia. Simple rules guided your existence: Obey the burgomeister. Do not consort with the Vistani. Do not go out after sunset. And always do as Count Strahd von Zarovich commands.
+  Several times each year, some village residents receive invitations written in the count's hand and bearing his seal pressed into crimson wax. Those who return tell of lavish banquets and parties that last through the night. Some do not return, though. They are afterward said to be "living with the count," and they are never seen outside the castle again.
+  Or so you thought - until the night you saw your sweetheart for the last time.
+  You awoke to the sound of your name being called from the yard outside. Your love, who had answered an invitation from Strahd some time ago, and whom you had secretly grieved as lost to you ever since, stood beneath your window, pale in the moonlight. Her faint words warned you that your name was now on the guest list and that you must not come to the castle - in fact, you had to leave Barovia that night. Of course you wavered, but nonetheless, fighting against everything you had been taught, you went out into the night and follow the one you loved most in the world down the road toward the gateway into the forest. She stood aside and implored you to pass through the gate. When you did so and turned back to look, no one stood behind you, but in the distance a pack of wolves crept out of the woods onto the road. You fled for your life into the forest.
+  You spent weeks wandering the mountains. Eventually you found a road, which led you to a new land. You're still not certain you did the right thing in leaving your homeland, even though life is better in many ways beyond Barovia's borders.
+  And... more than guilt haunts you. Recently you have heard stories of a black coach being pulled by exquisite black stallions. It appears from time to time, traveling the roads with no one driving it, and no passenger is glimpsed byond its swaying velvet curtains. Its last reported location is always somewhere behind you, leading you to wonder if it is drawing closer.
+  It is, you fear, the same black coach that carries the count's guests to his castle.
+  </specific>
+  <specific name="Campaign"> Ravenloft </specific>
+  <specific name="Associated Skills"> Perception, Stealth </specific>
+   <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_PERCEPTION" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
+    </rules>
+</RulesElement>
+
+<RulesElement name="Inverness Survivor" type="Background" internal-id="ID_HF_BACKGROUND_DSH_2" source="Dungeon Survival Handbook">
+    <specific name="Type"/>
+  <specific name="Common Knowledge"> You were there when the ghost of Salazar Vladistone demanded single combat with Brother Splintershield, the leader of the Inverness settlement. You watched as Brother Splintershield smugly renounced the spirit's claim to the place from inside the boundary of the cleansing ritual he had performed. You had heard some of the stories about the ghost towers of the Nentir Vale, and denying the ghost didn't seem right, with it standing there before you all. Deeply unsettled by the encounter, you left thinking that something bad was going to happen.
+  You were right. On a cold midwinter night you awoke to screams of terror and you didn't have to wait long to understand why. Several ghosts of soldiers came through your walls and ordered you to leave. They needn't have bothered - the sight alone of the terrible apparitions had you scurrying for the exit. Some in your village tried to fight, but to no avail. Their pitchforks and swords passed harmlessly through the spirits, while the ghosts' spectral weapons slashed your friends' bodies. Phantom arrows flickering with pale flames ignited real fires in the buildings. Hot blood steamed on icy ground.
+  You fled with many others, and in the days of travel that followed, more died from starvation, sickness, exhaustion, and cold. With each new corpse in a grave dug shallow in frost-hardened ground, your desire for vengeance grew. You were lucky; you survived the ordeal. Bu how can you take reventge on the dead? When you got back to civilization, you resolved to find out how.
+  </specific>
+  <specific name="Campaign"> General </specific>
+  <specific name="Associated Skills"> Arcana, Nature, Religion </specific>
+   <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+    </rules>
+</RulesElement>
+
+<RulesElement name="Blessed of Zargon" type="Background" internal-id="ID_HF_BACKGROUND_DSH_3" source="Dungeon Survival Handbook">
+  <specific name="Type"/>
+  <specific name="Common Knowledge"> You were born to die. You have the sign of Zargon upon your brow - a birthmark that represents his horn - and your flesh is his food. You were raised in the mad, masked society of the Lost City, your life degenerated into a haze of animal frenzy and ignorant zealotry. When the time came for you to at last meet your dark god, you felt fear and doubt for the first time. That fear gave you strength - strength enough to disobey and run.
+  Your flight to the surface is a poorly remembered nightmare. Your head at last cleared when you removed the mask from your pale face and raised your awestruck eyes to the sun for the first time. You wandered in a trackless wasteland for days before a band of desert nomads found you, and they were kind. They took you to a distant city and introduced you to a world you could never have imagined.
+  Yet in dreams you still see the golden-masked priests and the blood-red eye of the god that marked you as his own. In your head you hear Zargon's terrible voice, and in your heart you feel the bestial urges of the Lost City's perpetual carnival. To your knowledge, no sacrifice has ever escaped Zargon's maw. Surely the Cynidiceans will come for you. Surely you must some day return to the Lost City.
+  Zargon has marked you as his own.
+  </specific>
+  <specific name="Campaign"> General </specific>
+  <specific name="Associated Skills"> Dungeoneering, Endurance </specific>
+   <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DUNGEONEERING" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ENDURANCE" type="Background Association"/>
+    </rules>
+</RulesElement>
+
+<RulesElement name="Cult Survivor" type="Background" internal-id="ID_HF_BACKGROUND_DSH_4" source="Dungeon Survival Handbook">
+  <specific name="Type"/>
+  <specific name="Common Knowledge"> You were young when the Cult of the Elder Elemental Eye held sway over all the surrounding lands, but not too young to remember. How could you forget? Your parents were taken during the last days before the war.
+  When the armies of the surrounding lands rode through the streets of your village, pennants flying as they drove your oppressors before them, you were swept up in their wake and ready to spill blood. But your uncle held you back. He took the dagger from your hand and bade you stay still. You were not ready to fight, and he would not allow you to die so soon after you came into his care.
+  Your uncle was a simple man of the fields and market, and he would have stayed as well, but your bravery shamed him. Bearing your father's sword and your mother's shield, he joined the army to fight the cult. Word of victory returned, but your uncle did not. Nor did you ever see your parents again.
+  Your aunt raised you and sought to protect you from the world. She thought that if she could keep you away from violence and hide from you the truth about the cult and the temple, you might somehow avoid being hurt by such things. But her efforts only inflamed your desire to know more and to be ready for the next battle. You often slipped away to stand in the shadow of the temple, searching through the weeds and rubble for your parents' sword and shield. You wonder if your parents are still alive, slaves locked behind the temple's doors.
+  Now bandits again rove the roads, and the village elders whisper that the old sense of terror has returned. If the cult is back, the temple is the source - you're sure of that. And this time you're ready to fight.
+  </specific>
+  <specific name="Campaign"> General </specific>
+  <specific name="Associated Skills"> Arcana, Athletics, Religion </specific>
+   <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_RELIGION" type="Background Association"/>
+    </rules>
+</RulesElement>
+
+<RulesElement name="Former Cult Sympathizer" type="Background" internal-id="ID_HF_BACKGROUND_DSH_5" source="Dungeon Survival Handbook">
+  <specific name="Type"/>
+  <specific name="Common Knowledge"> You have done terrible things, acts that still have you waking in a cold sweat more than a decade later. You had killed before and you have killed since, but you remember everything about each person you were forced to execute or enslave for the cult: the color of frightened eyes, the trails traced by tears on upturned faces, brave last words, heart-wrenching pleas and screams, even the sudden warmth of spit upon your face.
+  You wonder every day if you should have been as courageous as they were - if you should have rejected the Cult of the Elder Elemental Eye and died in the terrible dungeons beneath the temple. Is life worth living with so much blood on your hands? Can you even consider your desperate existence a life? When you encounter anyone new, you search your memory, frantically hoping the face is not one you recognize. At the same time, something inside you burns to be called out for your crimes. At least then the torment might finally end.
+  Yet each time you consider giving in, you find the strength to stay alive and stay hidden. You're not really strong though - you're just afraid. What else would you be willing to do to avoid death? If the time again comes when you must choosen between what is right and what is safe, will you add more faces to the host that haunts you, or will you accept their judgment in the afterlife?
+  </specific>
+  <specific name="Campaign"> General </specific>
+  <specific name="Associated Skills"> Bluff, Insight, Intimidate </specific>
+   <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
+    </rules>
+</RulesElement>
+
+<RulesElement name="Longbridge Local" type="Background" internal-id="ID_HF_BACKGROUND_DSH_6" source="Dungeon Survival Handbook">
+  <specific name="Type"/>
+  <specific name="Common Knowledge"> You grew up in Longbridge during the last days of the ice iron rush and can remember running back and forth across the river, pounding the boards of the Long Bridge with your tiny feet, rushing to bring grains of the clear metal to the assayer. One day, in your haste to "quick step across the Quickstep" (as your father used to say), you dropped the bag of hard-won metal and watched it plummet into the river through a gap in the bridge. No punishment from your parents could match the terror and guilt you felt as you saw your family's fortune slip away.
+  Now the future of your family and many others in Longbridge is more uncertain than ever. The ice iron rush is over, and the curse that besets the village seems like it will never end. You've seen good people - even close friends you grew up with - become desperate, go bad, and finally swing from the gallows. The town was a happier place when the metal was here. But no amount of panning in the river or digging in the hills has turned up even a flake of ice iron for as long as the curse has been active.
+  Yet the gates of Firestorm Peak are made of the stuff. Clearly, that fact is significant, but in exactly what way remains to be determined. You've made a study of all the legends and history, so you know that the gates are invulnerable when they're shut. But what about when they're open? Even if they are still invulnerable, there could be more ice iron inside the the mountain. You know one sure way to find out.
+  </specific>
+  <specific name="Campaign"> General </specific>
+  <specific name="Associated Skills"> Arcana, History </specific>
+   <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ARCANA" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
+    </rules>
+</RulesElement>
 
 </D20Rules>

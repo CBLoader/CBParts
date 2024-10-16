@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.07</Version>
+    <Version>1.08</Version>
     <Filename>26-ardent.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/26-ardent.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/26-ardent.txt</VersionAddress>
@@ -21,6 +21,7 @@
  Updated 19-October-2011 Changed Encounter (Special) to Encounter on Line 402
  Updated 25-December-2011 Contemplative Ardent-Thought Harvest Fix.
  Updated 21-July-2022 Fix indent formatting on Ardent-Decelerating Slash.
+ Updated 24-May-2024 Fix Courageous Strike Augment 2 (hf)
 </Changelog>
   <!-- Background, Dragon 395 -->
   <RulesElement name="Empath" type="Background" internal-id="ID_FMP_BACKGROUND_767" source="Dragon Magazine 395" revision-date="10/5/2010 1:34:59 PM">
@@ -667,4 +668,34 @@ When an ally within 5 squares of you is targeted by an opportunity attack, that 
       </rules>
 Whenever you are damaged by a melee attack, you can spend an action point to use an unaugmented ardent at-will power that you know as an immediate reaction.
    </RulesElement>
+
+<!--Fix for Courageous Strike Augment 2 Hit -->
+   <RulesElement name="Courageous Strike" type="Power" internal-id="ID_FMP_POWER_10287" source="Player's Handbook 3" revision-date="9/21/2010 1:52:13 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+      <Flavor> You strike at your foe and fill your friend with courage, bolstering both of you against the foe's attacks. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Ardent Attack 7 </specific>
+      <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>
+      <specific name="Hit"> 1[W] + Charisma modifier damage, and you and one ally adjacent to you gain a +2 power bonus to AC against the target's attacks until the end of your next turn. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name="	Hit"> As above, but the power bonus applies to all defenses, not just AC. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Keyword"> This power gains the Zone keyword. </specific>
+      <specific name="	Attack Type"> Close burst 1 </specific>
+      <specific name="	Target"> Each enemy in burst </specific>
+      <specific name="	Hit"> 1[W] + Charisma modifier damage. </specific>
+      <specific name="	Effect"> The burst creates a zone that lasts until the end of your next turn. You and your allies gain a power bonus to AC equal to your Wisdom modifier while within the zone. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 7 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_COURAGEOUS_STRIKE_(AUGMENT_0),ID_INTERNAL_POWER_COURAGEOUS_STRIKE_(AUGMENT_1),ID_INTERNAL_POWER_COURAGEOUS_STRIKE_(AUGMENT_2) </specific>
+   </RulesElement>
+
+
 </D20Rules>

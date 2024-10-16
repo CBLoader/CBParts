@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.31</Version>
+    <Version>1.32</Version>
     <Filename>40-gear.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/40-gear.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/40-gear.txt</VersionAddress>
@@ -34,6 +34,7 @@
  Updated 2-July-2012 Added the gear from Dragon Magazine 412
  Updated 20-May-2013 Added Ritual from Dragon Magazine 423
  Updated 18-January-2014 Added Dragon 430 New Rituals
+ Updated 26-May-2024 Removed duplicate entry for "Sack/Sacks"; added DSH alchemical formulas
 </Changelog>
   <!-- Spinning Axe Mastery Updates -->
 <RulesElement name="Handaxe" type="Weapon" internal-id="ID_FMP_WEAPON_13" source="Player's Handbook" revision-date="8/27/2010 1:16:11 PM">
@@ -2968,23 +2969,6 @@ Description: In social situations where appearances and wealth matter, wearing r
     <specific name="count"> 1 </specific>
 In social situations where appearances and wealth matter, wearing regalia gives you a +2 bonus to Bluff, Diplomacy, and Intimidate checks.
 </RulesElement>
-
-<RulesElement name="Sack" type="Gear" internal-id="ID_TIV_GEAR_MORDS_MAG_EMP_10-29" source="Mordenkainen's Magnificent Emporium,Dungeon Survival Handbook">
-      <specific name="Full Text"> Sack
-Category: Gear
-Weight: 1 lbs
-Price: 1 gp
-Description: You can carry up to 100 pounds in one of these leather or canvas drawstring bags. </specific>
-      <specific name="Weight"> 1 </specific>
-      <specific name="Gold"> 1 </specific>
-      <specific name="Silver"/>
-      <specific name="Copper"/>
-      <specific name="Category"> Gear </specific>
-      <specific name="_RelatedElement"/>
-      <specific name="count"> 2 </specific>
-      <specific name="_Monster"/>
-You can carry up to 100 pounds in one of these leather or canvas drawstring bags. 
-</RulesElement>
   <RulesElement name="Snares" type="Gear" internal-id="ID_FMP_GEAR_179" source="Mordenkainen's Magnificent Emporium">
     <specific name="Full Text"> Snares
 Category: Gear
@@ -4427,12 +4411,11 @@ This kit is used by trapsmiths to lay their special traps.
 Category: Gear
 Price: 1 gp 
 Weight: 1 lb
-Description: You can carry up to 100 pounds in one of these leather or canvas drawstring bags. </specific>
+Description: These sturdy burlap sacks each hold up to 50 pounds and have a volume of 1 and 1/2 cubic feet. </specific>
     <specific name="Weight"> 1 </specific>
     <specific name="Gold"> 1 </specific>
     <specific name="Category"> Gear </specific>
     <specific name="count"> 2 </specific>
-You can carry up to 100 pounds in one of these leather or canvas drawstring bags.
 </RulesElement>
   <RulesElement name="Harness" type="Gear" internal-id="ID_FMP_GEAR_167" source="Mordenkainen's Magnificent Emporium">
     <specific name="Full Text"> Harness
@@ -4823,5 +4806,85 @@ This ritual otherwise works the same as Linked Portal in regard to how the porta
 	When you finish performing the ritual, you merge with an aspect of yourself from another timeline. You can retrain a power, a feat, or a skill selection of your choice, or you can replace a magic item you possess with another item of the same level and rarity.
 	The DM can choose to alter additional aspects of your character as an unintended consequence of merging with yourself from another timeline. You might discover that you know secrets you didn't know before, or that you remember events that didn't happen. You might possess slightly different equipment or clothing, or even a different hairstyle.
 </RulesElement>
+
+<!--Dungeon Survival Handbook alchemical formulae-->
+  <RulesElement name="Aboleth Slime" type="Ritual" internal-id="ID_HF_RITUAL_DSH_1" source="Dungeon Survival Handbook">
+    <specific name="Category"> Poison </specific>
+    <specific name="Key Skill"> Arcana, Dungeoneering, or Nature (no check) </specific>
+    <specific name="Component Cost"> See the item's price </specific>
+    <specific name="Duration"/>
+    <specific name="Level"> 15 </specific>
+    <specific name="Time"> 1 hour </specific>
+    <specific name="Market Price"> 4500 gp </specific>
+    <specific name="Prerequisite"/>
+    <specific name="Type"> Alchemical Formula </specific>
+    <specific name="_RELATED_ITEMS"> ID_HF_MAGIC_ITEM_DSH_1,ID_HF_MAGIC_ITEM_DSH_2,ID_HF_MAGIC_ITEM_DSH_3,ID_HF_MAGIC_ITEM_DSH_4 </specific>
+This revolting goo is an alchemical concentration of the aberrant poisons in aboleths' mucus, which must be harvested from the foul pools in which the creatures dwell. Splashing aboleth slime over a living creature brings it spasms of pain as its form twists uncontrollably. The process of collecting the disgusting stuff is exceedingly hazardous, making this formula both hard to find and very expensive.
+</RulesElement>
+
+  <RulesElement name="Longbreath" type="Ritual" internal-id="ID_HF_RITUAL_DSH_2" source="Dungeon Survival Handbook">
+    <specific name="Category"> Other </specific>
+    <specific name="Key Skill"> Heal or Nature (no check) </specific>
+    <specific name="Component Cost"> See the item's price </specific>
+    <specific name="Duration"/>
+    <specific name="Level"> 4 </specific>
+    <specific name="Time"> 30 minutes </specific>
+    <specific name="Market Price"> 160 gp </specific>
+    <specific name="Prerequisite"/>
+    <specific name="Type"> Alchemical Formula </specific>
+    <specific name="_RELATED_ITEMS"> ID_HF_MAGIC_ITEM_DSH_5,ID_HF_MAGIC_ITEM_DSH_6,ID_HF_MAGIC_ITEM_DSH_7 </specific>
+Druids and other priests of nature gods capture fresh air in skins or large bottles and infuse it with healing vapors. A deep inhalation from this container not only provides air but also invigorates the lungs to enable them to retain it longer.</RulesElement>
+
+  <RulesElement name="Pacification Dust" type="Ritual" internal-id="ID_HF_RITUAL_DSH_3" source="Dungeon Survival Handbook">
+    <specific name="Category"> Poison </specific>
+    <specific name="Key Skill"> Dungeoneering or Nature (no check) </specific>
+    <specific name="Component Cost"> See the item's price </specific>
+    <specific name="Duration"/>
+    <specific name="Level"> 5 </specific>
+    <specific name="Time"> 30 minutes </specific>
+    <specific name="Market Price"> 200 gp </specific>
+    <specific name="Prerequisite"/>
+    <specific name="Type"> Alchemical Formula </specific>
+    <specific name="_RELATED_ITEMS"> ID_HF_MAGIC_ITEM_DSH_8,ID_HF_MAGIC_ITEM_DSH_9,ID_HF_MAGIC_ITEM_DSH_10,ID_HF_MAGIC_ITEM_DSH_11,ID_HF_MAGIC_ITEM_DSH_12,ID_HF_MAGIC_ITEM_DSH_13 </specific>
+Svirfneblin harvest spores from nearby myconid colonies to create this dust. Like the creatures it comes from, it momentarily befuddles the senses of those it touches.</RulesElement>
+
+  <RulesElement name="Phantom Ink" type="Ritual" internal-id="ID_HF_RITUAL_DSH_4" source="Dungeon Survival Handbook">
+    <specific name="Category"> Oil </specific>
+    <specific name="Key Skill"> Arcana, Dungeoneering, or Thievery (no check) </specific>
+    <specific name="Component Cost"> See the item's price </specific>
+    <specific name="Duration"/>
+    <specific name="Level"> 2 </specific>
+    <specific name="Time"> 30 minutes </specific>
+    <specific name="Market Price"> 70 gp </specific>
+    <specific name="Prerequisite"/>
+    <specific name="Type"> Alchemical Formula </specific>
+    <specific name="_RELATED_ITEMS"> ID_HF_MAGIC_ITEM_DSH_14 </specific>
+This paste is made from a variety of Underdark mushroom known as indigo svirf. When exposes to torchlight or another source of fire, it glows dimly but is not visible to creatures that see only by means of darkvision. Explorers make use of phantom ink to leave messages or directions in underground areas that are frequented by drow or other enemies that have darkvision. One application is enough for a message one or two sentences long.</RulesElement>
+
+  <RulesElement name="Stone Eater" type="Ritual" internal-id="ID_HF_RITUAL_DSH_5" source="Dungeon Survival Handbook">
+    <specific name="Category"> Volatile </specific>
+    <specific name="Key Skill"> Arcana, Dungeoneering, or Thievery (no check) </specific>
+    <specific name="Component Cost"> See the item's price </specific>
+    <specific name="Duration"/>
+    <specific name="Level"> 10 </specific>
+    <specific name="Time"> 1 hour </specific>
+    <specific name="Market Price"> 700 gp </specific>
+    <specific name="Prerequisite"/>
+    <specific name="Type"> Alchemical Formula </specific>
+    <specific name="_RELATED_ITEMS"> ID_HF_MAGIC_ITEM_DSH_15,ID_HF_MAGIC_ITEM_DSH_16 </specific>
+This potent but specialized acid is derived from the digestive juices of purple worms. The substance must be harvested minutes after the beast's passage through an area, before it dries to a useless crust. The alchemical mixture dissolves minerals in a matter of minutes. A typical jar contains enough substance to consume a Medium-sized stone object.</RulesElement>
+
+  <RulesElement name="Violet Phosphor" type="Ritual" internal-id="ID_HF_RITUAL_DSH_6" source="Dungeon Survival Handbook">
+    <specific name="Category"> Other </specific>
+    <specific name="Key Skill"> Arcana or Nature (no check) </specific>
+    <specific name="Component Cost"> See the item's price </specific>
+    <specific name="Duration"/>
+    <specific name="Level"> 1 </specific>
+    <specific name="Time"> 30 minutes </specific>
+    <specific name="Market Price"> 70 gp </specific>
+    <specific name="Prerequisite"/>
+    <specific name="Type"> Alchemical Formula </specific>
+    <specific name="_RELATED_ITEMS"> ID_HF_MAGIC_ITEM_DSH_17 </specific>
+Resourceful Underdark explorers extract the luminous compounds from subterranen fungi to create this substance. When shaken, the liquid in this glass vial glows with a long-lasting light.</RulesElement>
 
 </D20Rules>

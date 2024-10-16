@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.156</Version>
+		<Version>1.157</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -22,7 +22,7 @@
  Updated 31-January-2012 Updated Bloodhunter's Flank Feat.
  Updated 28-February-2012 Added Heroes of the Elemental Chaos Feats.
  Updated 29-February-2012 Master of Stories update.
- Updated 3-March-2012 Icey Heart fix.
+ Updated 3-March-2012 Icy Heart fix.
  Updated 15-March-2012 Power of the Moon feat fix.
  Updated 30-March-2012 Devout Protector Expertise fix .
  Updated 30-March-2012 March Errata Beast Protector, Two-Fisted Shooter.
@@ -77,6 +77,7 @@
  Updated 18-May-2024 Removed erroneous radiant dragon's breath rule from Nature's Doom
  Updated 18-May-2024 Final Headsman's Chop khopesh fix for the last edge case
  Updated 18-May-2024 Fixed campaign settings source for certain Past Soul feats; fix typo in Born in Darkness - thanks to heridfel
+ Updated 30-May-2024 Fixes to Templar's Domain prerequisites (exhaustive list of prerequisites without requiring feature being removed); update to Tempest Magic to make bloodied bonus a feat bonus. (hf)
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -4896,7 +4897,7 @@ Choose one of the 7th-level Weapon Specialization options of the knight or the s
 	</RulesElement>
 	<RulesElement name="School of Magic Apprentice" type="Feat" internal-id="ID_FMP_FEAT_3585" source="Player Essentials: Class Compendium" revision-date="6/15/2011 10:13:53 AM">
 		<Flavor> You abandon your focus on implements to delve into a school of magic's secrets. </Flavor>
-		<Prereqs> Wizard, Arcane Implement Mastery </Prereqs>
+		<Prereqs> Wizard, ID_FMP_CLASS_FEATURE_444 </Prereqs>
 		<print-prereqs> Wizard, Arcane Implement Mastery </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Trade Arcane Implement Mastery for Apprentice Mage benefit from a school </specific>
@@ -4905,6 +4906,7 @@ Choose one of the 7th-level Weapon Specialization options of the knight or the s
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
+			<drop name="ID_FMP_CLASS_FEATURE_444" type="Class Feature"/>
 			<grant type="Class Feature" name="ID_FMP_CLASS_FEATURE_2867"/>
 		</rules>
 Choose a school of magic, such as enchantment or evocation. You lose Arcane Implement Mastery and gain the Apprentice Mage benefit associated with that school.
@@ -5053,7 +5055,7 @@ You may choose the Thief's Backstab power as a regular encounter attack power.
 	</RulesElement>
 	<RulesElement name="Templar's Domain" type="Feat" internal-id="ID_FMP_FEAT_3589" source="Player Essentials: Class Compendium" revision-date="6/15/2011 10:13:54 AM">
 		<Flavor> You focus your faith on your god's domains, to influence the divine magic you wield. </Flavor>
-		<Prereqs> Cleric, ID_FMP_CLASS_FEATURE_395, !Warpriest, !ID_FMP_CLASS_FEATURE_4058 </Prereqs>
+		<Prereqs> Cleric, !Warpriest, !ID_FMP_CLASS_FEATURE_4058, !ID_FMP_FEAT_2871 or ID_FMP_FEAT_1628, !ID_FMP_FEAT_333 or ID_FMP_FEAT_1628 </Prereqs>
 		<print-prereqs> Cleric, Healer's Lore class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Lose Healer's Lore to gain 1st-level domain feature </specific>
@@ -15363,10 +15365,13 @@ Phase of the Stars: You gain a +2 feat bonus to Insight checks and Perception ch
 			<statadd name="Tempest Magic" value="+1"/>
 			<statadd name="Tempest Magic" value="+1" requires="Paragon Tier"/>
 			<statadd name="Tempest Magic" value="+1" requires="Epic Tier"/>
+			<statadd name="Tempest Bloodied Magic" value="+2"/>
+			<statadd name="Tempest Bloodied Magic" value="+2" requires="Paragon Tier"/>
+			<statadd name="Tempest Bloodied Magic" value="+2" requires="Epic Tier"/>
 			<statadd name="lightning:damage" value="+Tempest Magic" type="Feat"/>
 			<statadd name="thunder:damage" value="+Tempest Magic" type="Feat"/>
-			<statadd name="lightning:damage" value="+Tempest Magic" condition="while bloodied"/>
-			<statadd name="thunder:damage" value="+Tempest Magic" condition="while bloodied"/>
+			<statadd name="lightning:damage" value="+Tempest Bloodied Magic" type="Feat" condition="while bloodied"/>
+			<statadd name="thunder:damage" value="+Tempest Bloodied Magic" type="Feat" condition="while bloodied"/>
 		</rules>
 When you use an arcane power that has the lightning or thunder keyword, you gain a +1 feat bonus to damage rolls. While you are bloodied, this bonus becomes +2.
 At 11th level, this bonus increases to +2 (or +4 when bloodied). At 21st level, it increases to +3 (or +6 when bloodied).
@@ -40521,24 +40526,24 @@ While you are at 0 hit points or fewer, you are insubstantial. When you regain h
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to Diplomacy; can forgo augmented hand of blight's extra damage to grant target vulnerability all equal to Int modifier until SoNT (reduced by 1 each time damaged) </specific>
+		<specific name="Short Description"> +2 to Diplomacy; can forgo hand of blight's extra damage to grant target vulnerability all equal to Int modifier until SoNT (reduced by 1 each time damaged) </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="Diplomacy Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Balican Praetor" value="You gain a +2 feat bonus to Diplomacy checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to instead grant the target vulnerability to all damage equal to your Intelligence modifier until the start of your next turn. Each time the target takes damage while it has this vulnerability, reduce the vulnerability by 1 (to a minimum of 0)."/>
+			<modify name="Hand of Blight" type="Power" Field="Balican Praetor" value="When you spend your fell might on hand of blight, you can forgo the extra damage to instead grant the target vulnerability to all damage equal to your Intelligence modifier until the start of your next turn. Each time the target takes damage while it has this vulnerability, reduce the vulnerability by 1 (to a minimum of 0)."/>
 		</rules>
 You gain a +2 feat bonus to Diplomacy checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to instead grant the target vulnerability to all damage equal to your Intelligence modifier until the start of your next turn. Each time the target takes damage while it has this vulnerability, reduce the vulnerability by 1 (to a minimum of 0).
+	When you spend your fell might on hand of blight, you can forgo the extra damage to instead grant the target vulnerability to all damage equal to your Intelligence modifier until the start of your next turn. Each time the target takes damage while it has this vulnerability, reduce the vulnerability by 1 (to a minimum of 0).
 	</RulesElement>
 	<RulesElement name="Balican High Praetor" type="Feat" internal-id="ID_FMP_FEAT_3417" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Balican Praetor feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Balican Praetor feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain extra benefit when cursed enemy drops; can augment associated powers with fell might; can use Cha for associated powers </specific>
+		<specific name="Short Description"> Gain extra benefit when cursed enemy drops; can enhance associated powers with fell might; can use Cha for associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
@@ -40547,7 +40552,7 @@ You gain a +2 feat bonus to Diplomacy checks.
 			<textstring name="ID_FMP_FEAT_3417 association:key ability" value="DMG:Cha"/>
 		</rules>
 Whenever an enemy you have cursed drops to 0 hit points, you gain the following benefit in addition to regaining the use of your fell might. The next ally you can see that hits with a damaging attack before the start of your next turn subjects its target to your Warlock's Curse. If the target is already under your curse, the ally's attack instead deals extra damage equal to 3 + your Intelligence modifier.
-	You can augment powers associated with this feat with your fell might. When you hit an enemy with an augmented power associated with this feat, each ally adjacent to the target can either shift 1 square as a free action or gain a +2 power bonus to all defenses until the start of your next turn.
+	You can enhance powers associated with this feat with your fell might. When you hit an enemy with an enhanced power associated with this feat, each ally adjacent to the target can either shift 1 square as a free action or gain a +2 power bonus to all defenses until the start of your next turn.
 	Finally, you can use Charisma instead of Constitution for attack rolls and damage rolls with any power associated with this feat.
 	</RulesElement>
 	<RulesElement name="Draji Aspirant" type="Feat" internal-id="ID_FMP_FEAT_3418" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
@@ -40555,24 +40560,24 @@ Whenever an enemy you have cursed drops to 0 hit points, you gain the following 
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to Intimidate; can forgo augmented hand of blight's extra damage to force target move its speed away </specific>
+		<specific name="Short Description"> +2 to Intimidate; can forgo enhanced hand of blight's extra damage to force target to shift its speed away </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="Intimidate Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Draji Aspirant" value="You gain a +2 feat bonus to Intimidate checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to force the target to make one immediate move action away from you at its full speed and along the safest, fastest path."/>
+			<modify name="Hand of Blight" type="Power" Field="Draji Aspirant" value="Once per encounter, when you enhance hand of blight, you can forgo the extra damage to cause the target to shift its speed away from you along the safest, fastest path."/>
 		</rules>
 You gain a +2 feat bonus to Intimidate checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to force the target to make one immediate move action away from you at its full speed and along the safest, fastest path.
+	Once per encounter, when you enhance hand of blight, you can forgo the extra damage and instead cause the target to shift its speed away from you along the safest, fastest path.
 	</RulesElement>
 	<RulesElement name="Draji Devotee" type="Feat" internal-id="ID_FMP_FEAT_3419" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Draji Aspirant feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Draji Aspirant feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers; can use Cha for associated powers </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to enhance associated powers; can use Cha for associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
@@ -40582,7 +40587,7 @@ You gain a +2 feat bonus to Intimidate checks.
 		</rules>
 You gain the following three benefits.
 	In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you push each enemy adjacent to you 1 square.
-	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, each enemy adjacent to the target takes a -2 penalty to attack rolls until the end of your next turn. The triggering power gains the fear keyword if it doesn't have it already.
+	You can also expend your fell might to enhance any power associated with this feat. When you hit an enemy with an associated power enhanced by this feat, each enemy adjacent to the target takes a -2 penalty to attack rolls until the end of your next turn. The triggering power gains the fear keyword if it doesn't have it already.
 	Finally, you can use Charisma instead of Constitution for attack rolls and damage rolls with any power associated with this feat.
 	</RulesElement>
 	<RulesElement name="Spirit Talker of Lalali-Puy" type="Feat" internal-id="ID_FMP_FEAT_3420" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
@@ -40590,114 +40595,114 @@ You gain the following three benefits.
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to Nature; can forgo augmented hand of blight's extra damage to teleport target Int modifier sq. adjacent to visible ally </specific>
+		<specific name="Short Description"> +2 to Nature; can forgo enhanced hand of blight's extra damage to teleport target Int modifier sq. adjacent to visible ally </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="Nature Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Spirit Talker of Lalali-Puy" value="You gain a +2 feat bonus to Nature checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to instead teleport the target a number of squares equal to your Intelligence modifier to an unoccupied square adjacent to an ally you can see."/>
+			<modify name="Hand of Blight" type="Power" Field="Spirit Talker of Lalali-Puy" value="Once per encounter, when you enhance hand of blight, you can forgo the extra damage to instead teleport the target a number of squares equal to your Intelligence modifier to an unoccupied square adjacent to an ally you can see."/>
 		</rules>
 You gain a +2 feat bonus to Nature checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to instead teleport the target a number of squares equal to your Intelligence modifier to an unoccupied square adjacent to an ally you can see.
+	Once per encounter, when you enhance hand of blight, you can forgo the extra damage to instead teleport the target a number of squares equal to your Intelligence modifier to an unoccupied square adjacent to an ally you can see.
 	</RulesElement>
 	<RulesElement name="Spirit Master of Lalali-Puy" type="Feat" internal-id="ID_FMP_FEAT_3421" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Spirit Talker of Lalali-Puy feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Spirit Talker of Lalali-Puy feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to enhance associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"> Eldritch Rain, Mire the Mind, Bewitching Whispers, Thirsting Tendrils, Thorns of Venom, Curse of the Fey King </specific>
-In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you slide each enemy adjacent to you and each enemy cursed by you 1 square. No enemy can be slid more than 1 square by this effect.
-	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, the target makes a basic attack against a legal target you choose.
+In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you slide that enemy and each enemy adjacent to you 1 square. No enemy can be slid more than 1 square by this effect.
+	You can also expend your fell might once per encounter to enhance any power associated with this feat. The first enemy you hit with a power enhanced by this feat, the target makes a basic attack against a legal target you choose.
 	</RulesElement>
 	<RulesElement name="Nibenese Bride" type="Feat" internal-id="ID_FMP_FEAT_3422" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:20 PM">
 		<Category> ID_INTERNAL_CATEGORY_LESSER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to Bluff; can forgo augmented hand of blight's extra damage to weaken target until EoNT </specific>
+		<specific name="Short Description"> +2 to Bluff; can forgo enhanced hand of blight's extra damage to weaken target until EoNT </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="Bluff Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Nibenese Bride" value="You gain a +2 feat bonus to Bluff checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to instead weaken the target until the end of your next turn."/>
+			<modify name="Hand of Blight" type="Power" Field="Nibenese Bride" value="Once per encounter when you enhance hand of blight, you can forgo the extra damage to instead weaken the target until the end of your next turn."/>
 		</rules>
 You gain a +2 feat bonus to Bluff checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to instead weaken the target until the end of your next turn.
+	Once per encounter when you enhance hand of blight, you can forgo the extra damage to instead weaken the target until the end of your next turn.
 	</RulesElement>
 	<RulesElement name="Nibenese Favored Wife" type="Feat" internal-id="ID_FMP_FEAT_3423" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:21 PM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Nibenese Bride feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Nibenese Bride feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to enhance associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"> Shared Agony, Death's Commands, All Must Sacrifice, Devouring Death, Blades of Vanquished Armies, Inevitable Undercut </specific>
-In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, each enemy cursed by you takes psychic damage equal to your Intelligence modifier.
-	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, you gain insubstantial until the start of your next turn.
+In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, one enemy cursed by you takes psychic damage equal to your Intelligence modifier.
+	You can also expend your fell might to enhance any power associated with this feat. When you hit an enemy with a power enhanced by this feat, you gain insubstantial until the start of your next turn.
 	</RulesElement>
 	<RulesElement name="Favored of Raam" type="Feat" internal-id="ID_FMP_FEAT_3424" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:21 PM">
 		<Category> ID_INTERNAL_CATEGORY_LESSER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to Streetwise; can forgo augmented hand of blight's extra damage to become invisible to target until EoNT </specific>
+		<specific name="Short Description"> +2 to Streetwise; can forgo enhanced hand of blight's extra damage to become invisible to target until EoNT </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="Streetwise Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Favored of Raam" value="You gain a +2 feat bonus to Streetwise checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to instead become invisible to the target until the end of your next turn."/>
+			<modify name="Hand of Blight" type="Power" Field="Favored of Raam" value="When you enhance hand of blight, you can forgo the extra damage to instead become invisible to the target until the end of your next turn."/>
 		</rules>
 You gain a +2 feat bonus to Streetwise checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to instead become invisible to the target until the end of your next turn.
+	When you enhance hand of blight, you can forgo the extra damage to instead become invisible to the target until the end of your next turn.
 	</RulesElement>
 	<RulesElement name="Champion of Raam" type="Feat" internal-id="ID_FMP_FEAT_3425" source="Dragon Magazine 390" revision-date="9/14/2010 9:53:09 AM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Favored of Raam feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Favored of Raam feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to enhance associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
-In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you can shift a number of squares equal to 3 + your Intelligence modifier.
-	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, the target cannot include you as a target in its attacks until the start of your next turn.
+In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, you can shift a number of squares equal to your Intelligence modifier.
+	Oncer per encounter, you can expend your fell might to enhance any power associated with this feat. When you hit an enemy with a power enhanced by this feat, the target cannot include you as a target in its attacks until the start of your next turn.
 	</RulesElement>
 	<RulesElement name="Tyrian Bureaucrat" type="Feat" internal-id="ID_FMP_FEAT_3426" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:21 PM">
 		<Category> ID_INTERNAL_CATEGORY_LESSER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to Streetwise; can forgo augmented hand of blight's extra damage to daze target until EoNT </specific>
+		<specific name="Short Description"> +2 to Streetwise; can forgo enhanced hand of blight's extra damage to daze target until EoNT </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="Streetwise Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Tyrian Bureaucrat" value="You gain a +2 feat bonus to Streetwise checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to instead daze the target until the end of your next turn."/>
+			<modify name="Hand of Blight" type="Power" Field="Tyrian Bureaucrat" value="When you enhance hand of blight, you can forgo the extra damage to instead daze the target until the end of your next turn."/>
 		</rules>
 You gain a +2 feat bonus to Streetwise checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to instead daze the target until the end of your next turn.
+	Once per encounter when you enhance hand of blight, you can forgo the extra damage to instead daze the target until the end of your next turn.
 	</RulesElement>
 	<RulesElement name="Tyrian Ascendant" type="Feat" internal-id="ID_FMP_FEAT_3427" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:21 PM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Tyrian Bureaucrat feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Tyrian Bureaucrat feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers; can use Cha for associated powers </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to enhance associated powers; can use Cha for associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
@@ -40706,7 +40711,7 @@ You gain a +2 feat bonus to Streetwise checks.
 			<textstring name="ID_FMP_FEAT_3427 association:key ability" value="DMG:Cha"/>
 		</rules>
 In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, each enemy cursed by you takes a -2 penalty to attack rolls until the end of your next turn.
-	You can also expend your fell might to augment any power associated with this feat. When you hit an enemy with an associated power augmented by this feat, you also knock the target prone.
+	You can also expend your fell might to enhance any power associated with this feat. When you hit an enemy with a  power enhanced by this feat, you also knock the target prone.
 	Finally, you can use Charisma instead of Constitution for attack rolls and damage rolls with any power associated with this feat.
 	</RulesElement>
 	<RulesElement name="Yellow Cloak of Urik" type="Feat" internal-id="ID_FMP_FEAT_3428" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:21 PM">
@@ -40714,24 +40719,24 @@ In addition to regaining the use of your fell might, whenever you drop an enemy 
 		<Prereqs> Warlock, Sorcerer-King Pact class feature </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> +2 to History; can forgo augmented hand of blight's extra damage to immobilize target until EoNT </specific>
+		<specific name="Short Description"> +2 to History; can forgo enhanced hand of blight's extra damage to immobilize target until EoNT </specific>
 		<specific name="Special"/>
 		<specific name="type"> Lesser Pact </specific>
 		<specific name="Associated Power Info"/>
 		<specific name="Associated Powers"/>
 		<rules>
 			<statadd name="History Misc" value="+2" type="Feat"/>
-			<modify name="Hand of Blight" type="Power" Field="Yellow Cloak of Urik" value="You gain a +2 feat bonus to History checks.  When you augment hand of blight, you can forgo the extra damage the augment would deal to instead immobilize the target until the end of your next turn."/>
+			<modify name="Hand of Blight" type="Power" Field="Yellow Cloak of Urik" value="Once per encounter when you enhance hand of blight, you can forgo the extra damage to instead immobilize the target until the end of your next turn."/>
 		</rules>
 You gain a +2 feat bonus to History checks.
-	When you augment hand of blight, you can forgo the extra damage the augment would deal to instead immobilize the target until the end of your next turn.
+	Once per encounter when you enhance hand of blight, you can forgo the extra damage to instead immobilize the target until the end of your next turn.
 	</RulesElement>
 	<RulesElement name="Golden Lion of Urik" type="Feat" internal-id="ID_FMP_FEAT_3429" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:22 PM">
 		<Category> ID_INTERNAL_CATEGORY_GREATER_PACT </Category>
 		<Prereqs> Warlock, Sorcerer-King Pact class feature, Yellow Cloak of Urik feat </Prereqs>
 		<print-prereqs> Warlock, Sorcerer-King Pact class feature, Yellow Cloak of Urik feat </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to augment associated powers; can use Cha for associated powers </specific>
+		<specific name="Short Description"> Gain additional benefit when you drop cursed enemy; can expend fell might to enhance associated powers; can use Cha for associated powers </specific>
 		<specific name="Special"/>
 		<specific name="type"> Greater Pact </specific>
 		<specific name="Associated Power Info"/>
@@ -40739,10 +40744,9 @@ You gain a +2 feat bonus to History checks.
 		<rules>
 			<textstring name="ID_FMP_FEAT_3429 association:key ability" value="DMG:Cha"/>
 		</rules>
-In addition to regaining the use of your fell might, whenever you drop an enemy you have cursed to 0 hit points, each enemy cursed by you can choose to either fall prone or become weakened until the start of your next turn.
-	You can also expend your fell might to augment any power associated with this feat. When you hit at least one enemy with an associated power augmented by this feat, one ally within 5 squares of you makes a basic attack as a free action and deals extra thunder damage equal to your Intelligence modifier.
-	Finally, you can use Charisma instead of Constitution for attack rolls and damage rolls with any power associated with this feat.
-	</RulesElement>
+Once per encounter, when you drop an enemy you have cursed to 0 hit points, each enemy cursed by you can choose to either fall prone or become weakened until the start of your next turn. This is in addition to regaining the use of your fell might.
+Once per encounter, you can expend your fell might to enhance any power associated with this feat. When you hit at least one enemy with an associated power enhanced by this feat, one ally within 5 squares of you makes a basic attack as a free action and deals extra thunder damage equal to your Intelligence modifier.
+Finally, you can use Charisma instead of Constitution for attack rolls and damage rolls with any power associated with this feat.	</RulesElement>
 	<RulesElement name="Armored Sorcerer" type="Feat" internal-id="ID_FMP_FEAT_3430" source="Dragon Magazine 390" revision-date="8/27/2010 12:21:22 PM">
 		<Prereqs> Sorcerer, proficiency with leather armor </Prereqs>
 		<print-prereqs> Sorcerer, proficiency with leather armor </print-prereqs>
@@ -45758,7 +45762,7 @@ You gain a +1 feat bonus to damage rolls against creatures larger than you.  Thi
 		<print-prereqs> Goblin, goblin tactics racial power </print-prereqs>
 		<Flavor> Panic takes over when you're near death, and you rush away from the fray even faster than usual. </Flavor>
 		<specific name="Tier"> Heroic </specific>
-		<specific name="Short Description"> Shift 2 extra sqaures with goblin tactics while bloodied. </specific>
+		<specific name="Short Description"> Shift 2 extra squares with goblin tactics while bloodied. </specific>
 		<specific name="Special"/>
 		<specific name="type"/>
 		<specific name="Associated Power Info"/>
@@ -47770,5 +47774,6 @@ You gain a +1 feat bonus to attack rolls with any weapon power you use with a ga
     </rules>
 You gain a +1 feat bonus to attack rolls with any weapon power you use with a blowgun. The bonus increases to +2 at 11th level and +3 at 21st level.
 	</RulesElement>
+
 <!-- End of feat fixes -->
 </D20Rules>

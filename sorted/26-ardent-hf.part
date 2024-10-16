@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
+<D20Rules game-system="D&amp;D4E">
+  <UpdateInfo>
+    <Version>1.07</Version>
+    <Filename>26-ardent.part</Filename>
+    <PartAddress>https://cbloader.org/sorted/26-ardent.part</PartAddress>
+    <VersionAddress>https://cbloader.org/sorted/26-ardent.txt</VersionAddress>
+  <V2Address>https://cbloader.org/versions2.txt</V2Address></UpdateInfo>
+  <!-- Ardent -->
+  <!-- 26-ardent.part, version 1.06 -->
+  <!-- Original release: 13-July-2011; Last modified: 25-December-2011 -->
+  <!-- Test compiled with CBLoader build V1.3.0 -->
+  <!-- This part file belongs to the July 2011 reorganization of data files. -->
+  <!-- Special thanks to the entire community for handling the materials. -->
+<Changelog>
+ Updated 13-July-2011 File Released.
+ Updated 22-August-2011 Corrections for Mantle of Impulsiveness
+ Updated 14-September-2011 Added Errata for August 2011 (by Malek Deneith)
+ Updated 25-September-2011 Added fixes form Community Members (by Maddock)
+ Updated 19-October-2011 Changed Encounter (Special) to Encounter on Line 402
+ Updated 25-December-2011 Contemplative Ardent-Thought Harvest Fix.
+ Updated 21-July-2022 Fix indent formatting on Ardent-Decelerating Slash.
+</Changelog>
+  <!-- Background, Dragon 395 -->
+  <RulesElement name="Empath" type="Background" internal-id="ID_FMP_BACKGROUND_767" source="Dragon Magazine 395" revision-date="10/5/2010 1:34:59 PM">
+    <Prereqs> Ardent </Prereqs>
+    <print-prereqs> Ardent </print-prereqs>
+    <specific name="type"> Occupation </specific>
+    <specific name="Common Knowledge"> Long before you came into your psionic powers, you had a knack for reading the emotions in other people. You could always tell when something was wrong, bond with people who liked you, and sever connections with those who meant you harm. Close friends marveled when you finished their sentences. You had a gift, a talent that revealed itself in a profound way when you came into the fullness of your psionic ability. Your childhood tricks evolved into something more, until you could almost hear people's thoughts and read their moods and emotions as if they were words on a page. </specific>
+    <specific name="Benefit"/>
+    <specific name="Campaign"> General </specific>
+    <specific name="Associated Skills"> Diplomacy, Insight </specific>
+    <specific name="Associated Languages"/>
+    <rules>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
+      <grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INSIGHT" type="Background Association"/>
+    </rules>
+  </RulesElement>
+  <!-- Powers, Dragon 395 -->
+  <RulesElement name="Intent Laid Bare" type="Power" internal-id="ID_FMP_POWER_13780" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+    <Flavor> You slip into your opponent's mind while the pain from your attack distracts it. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 1 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and the target cannot shift until the end of your next turn. </specific>
+    <specific name="Effect"> You can communicate with the target via telepathy 5 until the end of your next turn. </specific>
+    <specific name="Special"> You can use this power unaugmented as a melee basic attack. </specific>
+    <specific name="Augment"> 1 </specific>
+    <specific name=" Effect"> As above, and the target takes a -2 penalty on attack rolls that include you as a target until the end of your next turn. </specific>
+    <specific name="Augment"> 2 </specific>
+    <specific name=" Hit"> 2[W] + Charisma modifier damage, and the target cannot shift until the end of your next turn. </specific>
+    <specific name=" Effect"> As above, and until the end of your next turn, if the target moves, you or one ally within 5 squares of you can shift 1 square as a free action. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentVersions"> ID_INTERNAL_POWER_INTENT_LAID_BARE_(AUGMENT_0),ID_INTERNAL_POWER_INTENT_LAID_BARE_(AUGMENT_1),ID_INTERNAL_POWER_INTENT_LAID_BARE_(AUGMENT_2) </specific>
+  </RulesElement>
+  <RulesElement name="Intent Laid Bare (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_INTENT_LAID_BARE_(AUGMENT_0)" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Flavor> You slip into your opponent's mind while the pain from your attack distracts it. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13780 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 1 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and the target cannot shift until the end of your next turn. </specific>
+    <specific name="Effect"> You can communicate with the target via telepathy 5 until the end of your next turn. </specific>
+    <specific name="Special"> You can use this power unaugmented as a melee basic attack. </specific>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13780 </specific>
+    <specific name="_BasicAttack"> Melee </specific>
+    <rules>
+      <modify name="this" Field="_BasicAttack" value="Melee"/>
+    </rules>
+  </RulesElement>
+  <RulesElement name="Intent Laid Bare (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_INTENT_LAID_BARE_(AUGMENT_1)" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Flavor> You slip into your opponent's mind while the pain from your attack distracts it. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13780 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 1 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage, and the target cannot shift until the end of your next turn. </specific>
+    <specific name="Effect"> You can communicate with the target via telepathy 5 until the end of your next turn. The target takes a -2 penalty on attack rolls that include you as a target until the end of your next turn. </specific>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13780 </specific>
+  </RulesElement>
+  <RulesElement name="Intent Laid Bare (Augment 2)" type="Power" internal-id="ID_INTERNAL_POWER_INTENT_LAID_BARE_(AUGMENT_2)" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Flavor> You slip into your opponent's mind while the pain from your attack distracts it. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13780 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 1 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 2[W] + Charisma modifier damage, and the target cannot shift until the end of your next turn. </specific>
+    <specific name="Effect"> You can communicate with the target via telepathy 5 until the end of your next turn. The target takes a -2 penalty on attack rolls that include you as a target until the end of your next turn. Until the end of your next turn, if the target moves, you or one ally within 5 squares of you can shift 1 square as a free action. </specific>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 1 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13780 </specific>
+  </RulesElement>
+  <RulesElement name="Sympathetic Agony" type="Power" internal-id="ID_FMP_POWER_13781" source="Dragon Magazine 395" revision-date="8/27/2010 11:53:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_IMMEDIATE_INTERRUPT,2 </Category>
+    <Flavor> You open your mind to receive an ally's agony, and take some of that pain upon yourself. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Utility 2 </specific>
+    <specific name="Keywords"> Psionic </specific>
+    <specific name="Action Type"> Immediate interrupt </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Trigger"> One ally in burst takes damage from an attack </specific>
+    <specific name="Target"> The triggering ally </specific>
+    <specific name="Effect"> The target takes half damage from the triggering attack. If the target would receive an effect that a save can end from the triggering attack, you can choose to have the effect apply to you instead. Until the end of your next turn, you and the target gain a +2 power bonus to defenses while you are within 5 squares of one another. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 2 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Painful Revelations" type="Power" internal-id="ID_FMP_POWER_13782" source="Dragon Magazine 395" revision-date="8/27/2010 11:53:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_MINOR_ACTION,6 </Category>
+    <Flavor> You risk your sanity to share your enemy's pain, and in doing so gain powerful insights into how to bring this battle to a close. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Utility 6 </specific>
+    <specific name="Keywords"> Psionic </specific>
+    <specific name="Action Type"> Minor action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You activate an aura 5 that lasts until the end of the encounter or until you dismiss it as a minor action. Whenever an enemy in the aura takes damage from an attack, you can take 5 psychic damage that can't be reduced in any way. If you do so, that enemy grants combat advantage (save ends). </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 6 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Unshakable Bond" type="Power" internal-id="ID_FMP_POWER_13784" source="Dragon Magazine 395" revision-date="8/27/2010 11:53:30 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_FREE_ACTION,10 </Category>
+    <Flavor> When your enemy lets down its guard after making a successful attack, you invade its mind and steal its thoughts. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Utility 10 </specific>
+    <specific name="Keywords"> Psionic </specific>
+    <specific name="Action Type"> Free action </specific>
+    <specific name="Attack Type"> Close burst 5 </specific>
+    <specific name="Trigger"> An enemy hits your ally with an attack </specific>
+    <specific name="Target"> The triggering enemy </specific>
+    <specific name="Effect"> You subject the target to your unshakable bond until the end of the encounter or until it drops to 0 hit points. While the target is subject to your unshakable bond, you always know its exact location and your attacks against it ignore any cover or concealment. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 10 </specific>
+    <specific name="Power Type"> Utility </specific>
+  </RulesElement>
+  <RulesElement name="Clarifying Impact" type="Power" internal-id="ID_FMP_POWER_13783" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Category> ID_FMP_CATEGORY_68,ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+    <Flavor> Smashing your weapon into the enemy heightens your mind's ability to pick out concealed and hidden foes. </Flavor>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 7 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, the target does not benefit from partial cover or partial concealment on attacks made by you or allies adjacent to you. </specific>
+    <specific name="Special"> You can use this power unaugmented as a melee basic attack. </specific>
+    <specific name="Augment"> 1 </specific>
+    <specific name=" Effect"> As above, but you also gain a +5 power bonus to Perception checks made to find hidden creatures until the end of your next turn. </specific>
+    <specific name="Augment"> 2 </specific>
+    <specific name=" Attack"> Charisma vs. AC If the target is adjacent to one of your allies, you have combat advantage for this attack. </specific>
+    <specific name=" Hit"> 2[W] + Charisma modifier damage. </specific>
+    <specific name=" Effect"> You activate an aura 5 that lasts until the end of your next turn. Enemies in the aura cannot benefit from partial cover or partial concealment. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentVersions"> ID_INTERNAL_POWER_CLARIFYING_IMPACT_(AUGMENT_0),ID_INTERNAL_POWER_CLARIFYING_IMPACT_(AUGMENT_1),ID_INTERNAL_POWER_CLARIFYING_IMPACT_(AUGMENT_2) </specific>
+  </RulesElement>
+  <RulesElement name="Clarifying Impact (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_CLARIFYING_IMPACT_(AUGMENT_0)" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Flavor> Smashing your weapon into the enemy heightens your mind's ability to pick out concealed and hidden foes. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13783 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 7 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, the target does not benefit from partial cover or partial concealment on attacks made by you or allies adjacent to you. </specific>
+    <specific name="Special"> You can use this power unaugmented as a melee basic attack. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13783 </specific>
+    <rules>
+      <modify name="this" Field="_BasicAttack" value="Melee"/>
+    </rules>
+  </RulesElement>
+  <RulesElement name="Clarifying Impact (Augment 1)" type="Power" internal-id="ID_INTERNAL_POWER_CLARIFYING_IMPACT_(AUGMENT_1)" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Flavor> Smashing your weapon into the enemy heightens your mind's ability to pick out concealed and hidden foes. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13783 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 7 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC </specific>
+    <specific name="Hit"> 1[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> Until the end of your next turn, the target does not benefit from partial cover or partial concealment on attacks made by you or allies adjacent to you. You also gain a +5 power bonus to Perception checks made to find hidden creatures until the end of your next turn. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13783 </specific>
+  </RulesElement>
+  <RulesElement name="Clarifying Impact (Augment 2)" type="Power" internal-id="ID_INTERNAL_POWER_CLARIFYING_IMPACT_(AUGMENT_2)" source="Dragon Magazine 395" revision-date="9/21/2010 1:52:11 PM">
+    <Flavor> Smashing your weapon into the enemy heightens your mind's ability to pick out concealed and hidden foes. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13783 </specific>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Ardent Attack 7 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Weapon, Aura </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Target"> One creature </specific>
+    <specific name="Attack"> Charisma vs. AC. If the target is adjacent to one of your allies, you have combat advantage for this attack. </specific>
+    <specific name="Hit"> 2[W] + Charisma modifier damage. </specific>
+    <specific name="Effect"> You activate an aura 5 that lasts until the end of your next turn. Enemies in the aura cannot benefit from partial cover or partial concealment. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_CLASS_529 </specific>
+    <specific name="Level"> 7 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13783 </specific>
+  </RulesElement>
+  <!-- Paragon Path, Dragon 395 -->
+  <RulesElement name="Contemplative Ardent" type="Paragon Path" internal-id="ID_FMP_PARAGON_PATH_810" source="Dragon Magazine 395" revision-date="8/27/2010 12:43:37 PM">
+    <Prereqs> Ardent </Prereqs>
+    <print-prereqs> Ardent </print-prereqs>
+    <Flavor/>
+    <specific name="Power Name"> Disciplines </specific>
+    <specific name="Class Features"> ID_FMP_CLASS_FEATURE_3528, ID_FMP_CLASS_FEATURE_3529, ID_FMP_CLASS_FEATURE_3530 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13785,ID_FMP_POWER_13786,ID_FMP_POWER_13787 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13785,ID_FMP_POWER_13786,ID_FMP_POWER_13787 </specific>
+    <rules>
+      <grant name="ID_FMP_CLASS_FEATURE_3528" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3529" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1818" type="Class Feature" Level="11"/>
+      <grant name="ID_FMP_CLASS_FEATURE_3530" type="Class Feature" Level="16"/>
+      <grant name="ID_FMP_POWER_13785" type="Power" Level="11"/>
+      <grant name="ID_FMP_POWER_13786" type="Power" Level="20"/>
+      <grant name="ID_FMP_POWER_13787" type="Power" Level="12"/>
+    </rules>
+From the time you first felt another's emotion, from the moment you experienced another's thought, you have struggled against the flood that threatens to drown out your identity. It seemed you would never grow comfortable with your strange talent and yet, against all odds, you did. You developed your concentration to drive back outside influences, but you still can't remember the last time you were alone in your head.
+Training, focus, or natural adaptability has let you control the voices invading your thoughts. You can now single them out and use them to warn you of hidden dangers or to find ways around a foe's defenses. In effect, your supernatural senses give you cues to leading and fighting in battle
+</RulesElement>
+  <RulesElement name="Telepathic Mind" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3528" source="Dragon Magazine 395" revision-date="6/2/2011 1:18:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> You gain telepathy 5. </specific>
+    <specific name="Level"> 11 </specific>
+ You gain telepathy 5. If you already have telepathy, you increase its range by 5. The first time you drop to 0 power points in an encounter, each ally within the range of your telepathy gains a +2 power bonus to attack rolls until the end of your next turn.
+</RulesElement>
+  <RulesElement name="Contemplative Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3529" source="Dragon Magazine 395" revision-date="6/2/2011 1:18:35 PM">
+    <Category> 11 </Category>
+    <specific name="Short Description"> Gain bonus to hit and damage within telepathy range on action point. </specific>
+    <specific name="Level"> 11 </specific>
+    <rules>
+      <textstring name="Action Point" value="Whenever you spend an action point to make an attack, you gain a bonus to the attack roll and the damage roll equal to the number of bloodied creatures within range of your telepathy."/>
+    </rules>
+  Whenever you spend an action point to make an attack, you gain a bonus to the attack roll and the damage roll equal to the number of bloodied creatures within range of your telepathy.
+</RulesElement>
+  <RulesElement name="Inverted Corona" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_3530" source="Dragon Magazine 395" revision-date="6/2/2011 1:18:35 PM">
+    <Category> 16 </Category>
+    <specific name="Short Description"> Pull allies 2 when you allow an ally to spend a healing surge. </specific>
+    <specific name="Level"> 16 </specific>
+  Whenever you enable an ally to spend a healing surge, you can pull one or two allies within range of your telepathy up to 2 squares as a free action.
+</RulesElement>
+  <RulesElement name="Thought Harvest" type="Power" internal-id="ID_FMP_POWER_13785" source="Dragon Magazine 395">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_ENCOUNTER,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_PARAGON_PATH_810,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_NO_ACTION,11 </Category>
+    <Prereqs> Contemplative Ardent </Prereqs>
+    <Flavor> As your attack draws your enemy's attention, you sneak through its mental defenses to see into its mind and discover its next move. </Flavor>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Contemplative Ardent Attack 11 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Psychic, Weapon </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You hit an enemy with an unaugmented at-will ardent attack power. </specific>
+    <specific name="Target"> The enemy you hit </specific>
+    <specific name="Effect"> The target takes 5 extra psychic damage, and it is subject to your thought harvest until the end of your next turn. While subject to your thought harvest, the target cannot shift, and it takes a -2 penalty to attack rolls and to all defenses against attacks by you or by any of your allies within range of your telepathy. </specific>
+    <specific name="Augment"> 2 </specific>
+    <specific name=" Effect"> As above, but the target takes 10 extra psychic damage. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_810 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_Tags"> Player's Handbook 3 </specific>
+    <specific name="_AugmentVersions"> ID_INTERNAL_POWER_THOUGHT_HARVEST_(AUGMENT_0),ID_INTERNAL_POWER_THOUGHT_HARVEST_(AUGMENT_2) </specific>
+Although you can pick up thoughts from sentient creatures, they are usually surface thoughts, random and disjointed. Using psionic energy, you can burrow a hole through an opponent's mental defenses to peer into that creature's thoughts.
+</RulesElement>
+  <RulesElement name="Thought Harvest (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_THOUGHT_HARVEST_(AUGMENT_0)" source="Dragon Magazine 395">
+    <Flavor> As your attack draws your enemy's attention, you sneak through its mental defenses to see into its mind and discover its next move. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13785 </specific>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Contemplative Ardent Attack 11 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Psychic, Weapon </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You hit an enemy with an unaugmented at-will ardent attack power. </specific>
+    <specific name="Target"> The enemy you hit </specific>
+    <specific name="Effect"> The target takes 5 extra psychic damage, and it is subject to your thought harvest until the end of your next turn. While subject to your thought harvest, the target cannot shift, and it takes a -2 penalty to attack rolls and to all defenses against attacks by you or by any of your allies within range of your telepathy. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_810 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13785 </specific>
+Although you can pick up thoughts from sentient creatures, they are usually surface thoughts, random and disjointed. Using psionic energy, you can burrow a hole through an opponent's mental defenses to peer into that creature's thoughts.
+</RulesElement>
+  <RulesElement name="Thought Harvest (Augment 2)" type="Power" internal-id="ID_INTERNAL_POWER_THOUGHT_HARVEST_(AUGMENT_2)" source="Dragon Magazine 395">
+    <Flavor> As your attack draws your enemy's attention, you sneak through its mental defenses to see into its mind and discover its next move. </Flavor>
+    <specific name="_SupportsID"> ID_FMP_POWER_13785 </specific>
+    <specific name="Power Usage"> Encounter </specific>
+    <specific name="Display"> Contemplative Ardent Attack 11 </specific>
+    <specific name="Keywords"> Augmentable, Psionic, Psychic, Weapon </specific>
+    <specific name="Action Type"> No Action </specific>
+    <specific name="Attack Type"> Melee weapon </specific>
+    <specific name="Trigger"> You hit an enemy with an unaugmented at-will ardent attack power. </specific>
+    <specific name="Target"> The enemy you hit </specific>
+    <specific name="Effect"> The target takes 5 extra psychic damage, and it is subject to your thought harvest until the end of your next turn. While subject to your thought harvest, the target cannot shift, and it takes a -2 penalty to attack rolls and to all defenses against attacks by you or by any of your allies within range of your telepathy, but the target takes 10 extra psychic damage. </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_810 </specific>
+    <specific name="Level"> 11 </specific>
+    <specific name="Power Type"> Attack </specific>
+    <specific name="_AugmentParent"> ID_FMP_POWER_13785 </specific>
+Although you can pick up thoughts from sentient creatures, they are usually surface thoughts, random and disjointed. Using psionic energy, you can burrow a hole through an opponent's mental defenses to peer into that creature's thoughts.
+</RulesElement>
+  <RulesElement name="Open the Floodgates" type="Power" internal-id="ID_FMP_POWER_13786" source="Dragon Magazine 395" revision-date="8/27/2010 11:53:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_810,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,20 </Category>
+    <Prereqs> Contemplative Ardent </Prereqs>
+    <Flavor> You release all the emotions and thoughts you've absorbed, smashing your enemies' minds with a psychic flood. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Contemplative Ardent Attack 20 </specific>
+    <specific name="Keywords"> Psionic, Weapon, Psychic </specific>
+    <specific name="Action Type"> Standard action </specific>
+    <specific name="Attack Type"> Close blast 3 </specific>
+    <specific name="Target"> Each creature in blast </specific>
+    <specific name="Attack"> Charisma vs. Will </specific>
+    <specific name="Hit">  2[W] + Charisma modifier damage, and the target is weakened and takes ongoing 10 psychic damage (save ends both). </specific>
+    <specific name="Miss"> Half damage. </specific>
+    <specific name="Effect"> You shift up to 4 squares to a square in or adjacent to the blast. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_810 </specific>
+    <specific name="Level"> 20 </specific>
+    <specific name="Power Type"> Attack </specific>
+  </RulesElement>
+  <RulesElement name="Sleeper Awakens" type="Power" internal-id="ID_FMP_POWER_13787" source="Dragon Magazine 395" revision-date="8/27/2010 11:53:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_PARAGON_PATH_810,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_MINOR_ACTION,12 </Category>
+    <Prereqs> Contemplative Ardent </Prereqs>
+    <Flavor> Your eyes become white, and your corona flares. Your enemies are as insects to you. </Flavor>
+    <specific name="Power Usage"> Daily </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"> Contemplative Ardent Utility 12 </specific>
+    <specific name="Keywords"> Psionic, Stance </specific>
+    <specific name="Action Type"> Minor Action </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Effect"> You enter the awakened sleeper stance. Until the stance ends, you gain a +5 power bonus to Insight checks, and enemies cannot gain combat advantage against you by flanking. In addition, you can use the secondary power at will. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_810 </specific>
+    <specific name="Level"> 12 </specific>
+    <specific name="Power Type"> Utility </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_13788" type="Power"/>
+    </rules>
+  </RulesElement>
+  <RulesElement name="Sleeper Awakens (Secondary Power)" type="Power" internal-id="ID_FMP_POWER_13788" source="Dragon Magazine 395" revision-date="8/27/2010 11:53:44 AM">
+    <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_PARAGON_PATH_810,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_28,ID_INTERNAL_CATEGORY_IMMEDIATE_REACTION,12 </Category>
+    <Prereqs> Unselectable; Unselectable </Prereqs>
+    <Flavor/>
+    <specific name="Power Usage"> At-Will </specific>
+    <specific name="_SkillPower"/>
+    <specific name="Display"/>
+    <specific name="Keywords"> Psionic, Stance </specific>
+    <specific name="Action Type"> Immediate reaction </specific>
+    <specific name="Attack Type"> Personal </specific>
+    <specific name="Trigger">  An enemy attacks you or an ally adjacent to you. </specific>
+    <specific name="Effect"> You shift up to 2 squares. </specific>
+    <specific name="_Associated Feats"/>
+    <specific name="_ParentPower"> ID_FMP_POWER_13787 </specific>
+    <specific name="Class"> ID_FMP_PARAGON_PATH_810 </specific>
+    <specific name="Level"/>
+    <specific name="Power Type"/>
+  </RulesElement>
+  
+<!-- Corrections to Class Features and Powers for Hybrid Mantle of Impulsiveness -->
+<RulesElement name="Ardent Eruption" type="Power" internal-id="ID_FMP_POWER_12931" source="Psionic Power" revision-date="9/21/2010 1:45:32 PM">
+      <Flavor> Your pain bleeds from you in a wave, touching your allies and lending new ferocity to their attacks. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Feature  </specific>
+      <specific name="Keywords"> Psionic </specific>
+      <specific name="Action Type"> No Action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Trigger"> You are bloodied by an attack </specific>
+      <specific name="Target"> Each ally in burst </specific>
+      <specific name="Effect"> The target gains a +2 bonus to his or her damage rolls until the start of your next turn.
+Level 11: +4 bonus.
+Level 21: +6 bonus. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"/>
+      <specific name="Power Type"> Feature </specific>
+      <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2916,ID_FMP_CLASS_FEATURE_2345 </specific>
+   </RulesElement>
+   <RulesElement name="Mantle of Impulsiveness" type="CountsAsFeature" internal-id="ID_INTERNAL_COUNTSASFEATURE_MANTLE_OF_IMPULSIVENESS" source="Core">
+   </RulesElement>
+   <RulesElement name="Ardent Surge" type="Power" internal-id="ID_FMP_POWER_10273" source="Player's Handbook 3" revision-date="8/27/2010 11:53:28 AM">
+      <Flavor> You send a surge of powerful emotion that revives a faltering ally. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Feature  </specific>
+      <specific name="Keywords"> Healing, Psionic </specific>
+      <specific name="Action Type"> Minor Action </specific>
+      <specific name="Attack Type"> Close burst 5 (10 at 16th level) </specific>
+      <specific name="Target"> You or one ally </specific>
+      <specific name="Effect"> The target can spend a healing surge and regain 1d6 additional hit points.
+	Level 6: 2d6 additional hit points.
+	Level 11: 3d6 additional hit points.
+	Level 16: 4d6 additional hit points.
+	Level 21: 5d6 additional hit points.
+	Level 26: 6d6 additional hit points. </specific>
+      <specific name=" Mantle of Clarity"> The target gains a +1 bonus to all defenses until the end of your next turn. </specific>
+      <specific name=" Mantle of Elation"> The target gains a +1 bonus to attack rolls until the end of your next turn. </specific>
+      <specific name=" Mantle of Impulsiveness"> The target gains a +2 bonus to speed until the end of your next turn. </specific>
+      <specific name="Special"> You can use this power twice per encounter, but only once per round. At 16th level, you can use this power three times per encounter,
+ but only once per round. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"/>
+      <specific name="Power Type"> Feature </specific>
+      <specific name="_ParentFeature"> ID_FMP_CLASS_FEATURE_2138,ID_FMP_CLASS_FEATURE_2346 </specific>
+   </RulesElement>
+   <RulesElement name="Mantle of Impulsiveness" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2916" source="Psionic Power" revision-date="10/5/2010 1:47:07 PM">
+      <Category> ID_FMP_CLASS_FEATURE_2136,1 </Category>
+      <specific name="Short Description"> Gain Ardent Eruption power, improve Ardent Surge power. Allies within 5 squares gain bonuses. </specific>
+      <specific name="Level"> 1 </specific>
+      <specific name="Powers"> ID_FMP_POWER_12931 </specific>
+      <specific name="type"> Encounter </specific>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="_DisplayPowers"> ID_FMP_POWER_12931 </specific>
+      <rules>
+         <grant name="ID_FMP_POWER_12931" type="Power" requires="Ardent Mantle|Mantle Power"/>
+      </rules>
+When an ally within 5 squares of you is targeted by an opportunity attack, that ally gains a power bonus to damage rolls equal to your Constitution modifier until the end of his or her turn.
+	In addition, each ally within 5 squares of you gains a +2 bonus to Endurance checks and Intimidate checks. You also gain the ardent eruption power.
+   </RulesElement>  
+   
+   <!-- Errata for August 2011 -->
+   <RulesElement name="Cloud Mind" type="Power" internal-id="ID_FMP_POWER_12944" source="Psionic Power" revision-date="9/14/2011 11:16:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,3 </Category>
+      <Flavor> Your attack clouds a foe's mind to let an ally slip past without fear of reprisal. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 3 </specific>
+      <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>
+      <specific name="Hit"> 1[W] + Charisma modifier damage, and one ally adjacent to you or the target can shift 1 square as a free action. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name=" Hit"> 1[W] + Charisma modifier damage. One ally within 5 squares of you gains combat advantage against the target until the end of your next turn. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name=" Hit"> 2[W] + Charisma modifier damage. Until the end of your next turn, any ally more than 1 square away from the target has concealment against it. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_CLOUD_MIND_(AUGMENT_0),ID_INTERNAL_POWER_CLOUD_MIND_(AUGMENT_1),ID_INTERNAL_POWER_CLOUD_MIND_(AUGMENT_2) </specific>
+   </RulesElement>
+   
+   <RulesElement name="Cloud Mind (Augment 0)" type="Power" internal-id="ID_INTERNAL_POWER_CLOUD_MIND_(AUGMENT_0)" source="Psionic Power" revision-date="9/21/2010 1:52:57 PM">
+      <Flavor> Your attack clouds a foe's mind to let an ally slip past without fear of reprisal. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_12944 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 3 </specific>
+      <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>
+      <specific name="Hit"> 1[W] + Charisma modifier damage, and one ally adjacent to you or the target can shift 1 square as a free action. </specific>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 3 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_12944 </specific>
+   </RulesElement>
+   
+   <RulesElement name="Decelerating Slash" type="Power" internal-id="ID_FMP_POWER_12948" source="Psionic Power" revision-date="9/14/2011 11:18:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,5 </Category>
+      <Flavor> When your strike lands, light flashes from you to drain away your enemy's momentum. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 5 </specific>
+      <specific name="Keywords"> Psionic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>
+      <specific name="Hit"> 3[W] + Charisma modifier damage, and the target is slowed (save ends). </specific>
+      <specific name=" First Failed Saving Throw"> The target is immobilized instead of slowed (save ends). </specific>
+      <specific name="Miss"> The target is slowed (save ends). </specific>
+      <specific name="Each Failed Saving Throw"> One ally you can see shifts 1 square as a free action. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 5 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Invitation to Defeat" type="Power" internal-id="ID_FMP_POWER_12949" source="Psionic Power" revision-date="9/14/2011 11:21:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,5 </Category>
+      <Flavor> You raise your weapon and force your enemies to approach you, inviting them to certain defeat. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 5 </specific>
+      <specific name="Keywords"> Psionic, Psychic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 5 </specific>
+      <specific name="Target"> Each enemy in burst </specific>
+      <specific name="Attack"> Charisma vs. Will </specific>
+      <specific name="Hit"> You pull the target 5 squares. Any target pulled to a square adjacent to you is weakened (save ends). </specific>
+      <specific name="Effect"> Enemies are weakened while adjacent to you. In addition, the first time each turn that an enemy adjacent to you takes damage, that enemy takes extra psychic damage equal to your Charisma modifier. This effect lasts until the end of your next turn. </specific>
+      <specific name="Sustain Minor"> The effect persists until the end of your next turn. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 5 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Opportunity Seized" type="Power" internal-id="ID_FMP_POWER_12953" source="Psionic Power" revision-date="9/14/2011 11:23:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_ENCOUNTER_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_INTERNAL_CATEGORY_FREE_ACTION,6 </Category>
+      <Flavor> When a foe slips past you or your ally, it opens up new opportunities to attack. </Flavor>
+      <specific name="Power Usage"> Encounter </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Utility 6 </specific>
+      <specific name="Keywords"> Psionic </specific>
+      <specific name="Action Type"> Free Action </specific>
+      <specific name="Attack Type"> Close burst 3 </specific>
+      <specific name="Trigger"> You or one ally in burst misses with an opportunity attack </specific>
+      <specific name="Target"> The triggering creature </specific>
+      <specific name="Effect"> The target makes another opportunity attack against the same target or a different one. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 6 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+   <RulesElement name="Emotional Wellspring" type="Power" internal-id="ID_FMP_POWER_12961" source="Psionic Power" revision-date="9/14/2011 11:25:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,9 </Category>
+      <Flavor> Your attack drains a foe of its resilience, and allows allies to claim that resilience for themselves. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 9 </specific>
+      <specific name="Keywords"> Psionic, Psychic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. Will </specific>
+      <specific name="Hit"> 2[W] + Charisma modifier damage. </specific>
+      <specific name="Miss"> Half damage. </specific>
+      <specific name="Effect"> The target takes ongoing 5 psychic damage (save ends). In addition, each ally who hits the target can choose to gain temporary hit points equal to your Charisma modifier or make a saving throw with a +4 power bonus. This effect lasts until the end of your next turn, or until the target is no longer taking ongoing damage from this power, whichever is later. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 9 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Mind Rend" type="Power" internal-id="ID_FMP_POWER_12986" source="Psionic Power" revision-date="9/14/2011 11:28:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_DAILY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_24,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,ID_INTERNAL_CATEGORY_MISS,19 </Category>
+      <Flavor> Your attack generates a field of psionic energy that tears away your enemies' will to act. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 19 </specific>
+      <specific name="Keywords"> Psionic, Psychic, Weapon, Zone </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Close burst 2 </specific>
+      <specific name="Target"> Each enemy in burst </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>
+      <specific name="Hit"> 2[W] + Charisma modifier psychic damage, and the target is slowed (save ends). </specific>
+      <specific name="Miss"> Half damage, and the target is slowed (save ends). </specific>
+      <specific name="Effect"> The burst creates a zone that lasts until the end of your next turn. Any enemy that ends its turn within the zone is dazed until the end of its next turn. </specific>
+      <specific name="Sustain Minor"> The zone persists until the end if your next turn. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 19 </specific>
+      <specific name="Power Type"> Attack </specific>
+   </RulesElement>
+   <RulesElement name="Unconscious Assault" type="Power" internal-id="ID_FMP_POWER_13001" source="Psionic Power" revision-date="9/14/2011 11:31:00 AM">
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_6,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_16,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,27 </Category>
+      <Flavor> You take control of a foe's unconscious impulses, forcing it to attack at your whim. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 27 </specific>
+      <specific name="Keywords"> Augmentable, Charm, Psionic, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee touch </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Effect"> The target makes a melee basic attack as a free action against a creature you choose, with a +2 power bonus to the attack roll. If the target's attack hits, it deals extra psychic damage equal to your Constitution modifier, and the target takes 10 psychic damage. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name=" Effect"> As above, and you slide the target 2 squares before it makes its attack. </specific>
+      <specific name="Augment"> 6 </specific>
+      <specific name=" Keyword"> Weapon </specific>
+      <specific name=" Attack Type"> Melee weapon </specific>
+	  <specific name=" Attack"> Charisma vs. AC </specific>
+      <specific name=" Hit"> 2[W] + Charisma modifier damage. </specific>
+      <specific name=" Effect"> The target charges an enemy you choose as a free action. If this attack hits, the target takes 10 psychic damage and the creature it charged takes 10 extra psychic damage. </specific>
+      <specific name="_Associated Feats"/>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 27 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_UNCONSCIOUS_ASSAULT_(AUGMENT_0),ID_INTERNAL_POWER_UNCONSCIOUS_ASSAULT_(AUGMENT_2),ID_INTERNAL_POWER_UNCONSCIOUS_ASSAULT_(AUGMENT_6) </specific>
+   </RulesElement>
+   <RulesElement name="Unconscious Assault (Augment 6)" type="Power" internal-id="ID_INTERNAL_POWER_UNCONSCIOUS_ASSAULT_(AUGMENT_6)" source="Psionic Power" revision-date="9/21/2010 1:58:25 PM">
+      <Flavor> You take control of a foe's unconscious impulses, forcing it to attack at your whim. </Flavor>
+      <specific name="_SupportsID"> ID_FMP_POWER_13001 </specific>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower"/>
+      <specific name="Display"> Ardent Attack 27 </specific>
+      <specific name="Keywords"> Augmentable, Charm, Psionic, Psychic </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>	  
+      <specific name="Effect"> The target charges an enemy you choose as a free action. If this attack hits, the target takes 10 psychic damage and the creature it charged takes 10 extra psychic damage. </specific>
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 27 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentParent"> ID_FMP_POWER_13001 </specific>
+      <specific name="Keyword"> Weapon </specific>
+      <specific name="Hit"> 2[W] + Charisma modifier damage. </specific>
+   </RulesElement>
+   
+   <RulesElement name="Reflexive Action" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_2930" source="Psionic Power" revision-date="9/14/2011 12:32:00 PM">
+      <Category> 11 </Category>
+      <specific name="Short Description"> When damaged by melee attack, may spend action point to use unaugmented ardent at-will power that you know (immediate reaction) </specific>
+      <specific name="Level"> 11 </specific>
+      <rules>
+         <textstring name="Action Point" value="Reflexive Action:Whenever you are damaged by a melee attack, you can spend an action point to use an unaugmented ardent at-will power that you know as an immediate reaction."/>
+      </rules>
+Whenever you are damaged by a melee attack, you can spend an action point to use an unaugmented ardent at-will power that you know as an immediate reaction.
+   </RulesElement>
+
+<!--Fix for Courageous Strike Augment 2 Hit -->
+   <RulesElement name="Courageous Strike" type="Power" internal-id="ID_FMP_POWER_10287" source="Player's Handbook 3" revision-date="9/21/2010 1:52:13 PM" >
+      <Category> ID_INTERNAL_CATEGORY_ATTACK,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_529,ID_FMP_CATEGORY_61,ID_FMP_CATEGORY_35,ID_FMP_CATEGORY_24,ID_INTERNAL_CATEGORY_AUGMENTABLE_AT-WILL,ID_INTERNAL_CATEGORY_STANDARD_ACTION,7 </Category>
+      <Flavor> You strike at your foe and fill your friend with courage, bolstering both of you against the foe's attacks. </Flavor>
+      <specific name="Power Usage"> At-Will </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Ardent Attack 7 </specific>
+      <specific name="Keywords"> Augmentable, Psionic, Weapon </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Melee weapon </specific>
+      <specific name="Target"> One creature </specific>
+      <specific name="Attack"> Charisma vs. AC </specific>
+      <specific name="Hit"> 1[W] + Charisma modifier damage, and you and one ally adjacent to you gain a +2 power bonus to AC against the target's attacks until the end of your next turn. </specific>
+      <specific name="Augment"> 1 </specific>
+      <specific name="	Hit"> As above, but the power bonus applies to all defenses, not just AC. </specific>
+      <specific name="Augment"> 2 </specific>
+      <specific name="	Keyword"> This power gains the Zone keyword. </specific>
+      <specific name="	Attack Type"> Close burst 1 </specific>
+      <specific name="	Target"> Each enemy in burst </specific>
+      <specific name="	Hit"> 1[W] + Charisma modifier damage. </specific>
+      <specific name="	Effect"> The burst creates a zone that lasts until the end of your next turn. You and your allies gain a power bonus to AC equal to your Wisdom modifier while within the zone. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_529 </specific>
+      <specific name="Level"> 7 </specific>
+      <specific name="Power Type"> Attack </specific>
+      <specific name="_AugmentVersions"> ID_INTERNAL_POWER_COURAGEOUS_STRIKE_(AUGMENT_0),ID_INTERNAL_POWER_COURAGEOUS_STRIKE_(AUGMENT_1),ID_INTERNAL_POWER_COURAGEOUS_STRIKE_(AUGMENT_2) </specific>
+   </RulesElement>
+
+
+</D20Rules>

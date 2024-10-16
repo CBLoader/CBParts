@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.41</Version>
+		<Version>1.42</Version>
 		<Filename>06-races.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/06-races.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/06-races.txt</VersionAddress>
@@ -49,6 +49,7 @@
  Updated 18-January-2014 Added Dragon 429 Half-Orc New Powers
  Updated 15-August-2023 Updated several entries missing "Play an X if you want to..."
  Updated 18-May-2024 Fixed source of draconians and Shifty Maneuver; updated Tinker Gnome flavor description - thanks to heridfel
+ Updated 26-May-2024 Fixed benefits for Forgotten Realms shifter backgrounds (hf)
 	</Changelog>
 	<!-- Essential Race Bonus Skill Setup -->
 	<RulesElement name="Bonus Skill" type="Racial Trait" internal-id="ID_FMP_RACIAL_TRAIT_34" source="Player's Handbook" revision-date="10/5/2010 1:47:14 PM">
@@ -3291,7 +3292,7 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Class"> ID_FMP_PARAGON_PATH_808 </specific>
 	</RulesElement>
 	<!-- Racial Backgrounds, Dragon 394 -->
-	<RulesElement name="Shifter - Baldur's Gate" type="Background" internal-id="ID_FMP_BACKGROUND_747" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
+	<RulesElement name="Shifter - Baldur's Gate" type="Background" internal-id="ID_FMP_BACKGROUND_747" source="Dragon Magazine 394">
 		<Prereqs> Shifter </Prereqs>
 		<print-prereqs> Shifter </print-prereqs>
 		<specific name="type"> Racial </specific>
@@ -3304,8 +3305,9 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"> History </specific>
 		<specific name="Associated Languages"> Elven </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_HISTORY" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ELVEN" type="Background Association"/>
+           <statadd name="History Misc" value="+2" />
+           <modify name="History" type="Skill Training" Field="UniversalClassSkill" value="true" />		  
+		   <grant name="ID_FMP_LANGUAGE_4" type="Language" />
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - The Dalelands" type="Background" internal-id="ID_FMP_BACKGROUND_748" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3315,15 +3317,13 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Common Knowledge"> A shepherd looks to the rising moon and begins to urge his flock home, despite the hours of summer sun that remain in the day. A farmwife scans the pale dirt road as it winds into the forbidding wood, waiting for someone who will never return. A man stops dead in his tracks, then heads home at a run after seeing bits of blood and fur on a neighbor's doorframe. Such is life in the Dalelands, particularly in Daggerdale.
   Surrounded by hilly forests and rocky, mazelike canyons, the citizens of isolated Daggerdale live in fear of werecreatures striking their villages in the night. The dale has never been a place friendly to outsiders, and shifters are viewed with particular suspicion. Strangers could be lycanthropes in disguise, and the folk of Daggerdale have little doubt that shifters run with the monsters that infest the craggy heights of the Dagger Hills.
   You are a shifter related to the lycanthropes that plague the dale. Perhaps you grew to hate the leaders of your kind after witnessing too much wanton slaughter. Maybe you were exiled, lacking your tribe's hunger and rage. Or perhaps you fled the area after seeing one of your kind captured and killed by the people of Daggerdale. </specific>
-		<specific name="Benefit"> While shifting, you gain a +2 bonus to Intimidate checks. </specific>
+		<specific name="Benefit"> Add Stealth and Nature to your class skill list. While shifting, you gain a +2 bonus to Intimidate checks. </specific>
 		<specific name="Short Description"/>
 		<specific name="Campaign"> Forgotten Realms </specific>
 		<specific name="Associated Skills"> Stealth, Nature </specific>
 		<specific name="Associated Languages"/>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
-			<statadd name="Intimidate Misc" value="+2" condition="while you are shifting"/>
+			<modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true" />		                        <modify name="Nature" type="Skill Training" Field="UniversalClassSkill" value="true" />		  			<statadd name="Intimidate Misc" value="+2" condition="while you are shifting"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - Dambrath" type="Background" internal-id="ID_FMP_BACKGROUND_749" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3350,7 +3350,7 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"/>
 		<specific name="Associated Languages"> Goblin </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_GOBLIN" type="Background Association"/>
+			<grant name="ID_FMP_LANGUAGE_20" type="Language" />
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - The Great Dale" type="Background" internal-id="ID_FMP_BACKGROUND_751" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3365,7 +3365,7 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"/>
 		<specific name="Associated Languages"> Elven </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ELVEN" type="Background Association"/>
+			<grant name="ID_FMP_LANGUAGE_4" type="Language" />
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - Luruar" type="Background" internal-id="ID_FMP_BACKGROUND_752" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3380,9 +3380,8 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"> Intimidate </specific>
 		<specific name="Associated Languages"> Chondathan </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_CHONDATHAN" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_INTIMIDATE" type="Background Association"/>
-			<statadd name="Perception Misc" value="+2" condition="while you are shifting"/>
+			<grant name="ID_FMP_LANGUAGE_34" type="Language" />
+			<modify name="Intimidate" type="Skill Training" Field="UniversalClassSkill" value="true" />		  			<statadd name="Perception Misc" value="+2" condition="while you are shifting"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - Luskan" type="Background" internal-id="ID_FMP_BACKGROUND_753" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3397,7 +3396,7 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"/>
 		<specific name="Associated Languages"> Shou </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_SHOU" type="Background Association"/>
+			<grant name="ID_FMP_LANGUAGE_30" type="Language" />
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - Moonshae Isles" type="Background" internal-id="ID_FMP_BACKGROUND_754" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3412,9 +3411,8 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"> Athletics </specific>
 		<specific name="Associated Languages"> Chondathan </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_ATHLETICS" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_CHONDATHAN" type="Background Association"/>
-			<statadd name="Athletics Misc" value="+2" condition="to swim"/>
+			<grant name="ID_FMP_LANGUAGE_34" type="Language" />
+			<modify name="Athletics" type="Skill Training" Field="UniversalClassSkill" value="true" />					<statadd name="Athletics Misc" value="+3" condition="to swim"/>
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - Rashemen" type="Background" internal-id="ID_FMP_BACKGROUND_755" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3429,8 +3427,8 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"> Nature </specific>
 		<specific name="Associated Languages"> Damaran </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NATURE" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DAMARAN" type="Background Association"/>
+			<grant name="ID_FMP_LANGUAGE_28" type="Language" />
+			<modify name="Nature" type="Skill Training" Field="UniversalClassSkill" value="true" />		
 			<statadd name="Bluff Misc" value="+2" condition="dealing with fey"/>
 			<statadd name="Diplomacy Misc" value="+2" condition="dealing with fey"/>
 			<statadd name="Insight Misc" value="+2" condition="dealing with fey"/>
@@ -3449,9 +3447,9 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"> Bluff, Diplomacy </specific>
 		<specific name="Associated Languages"> Netherese </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_BLUFF" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DIPLOMACY" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_NETHERESE" type="Background Association"/>
+			<grant name="ID_FMP_LANGUAGE_29" type="Language" />
+			<modify name="Bluff" type="Skill Training" Field="UniversalClassSkill" value="true" />		
+			<modify name="Diplomacy" type="Skill Training" Field="UniversalClassSkill" value="true" />		
 		</rules>
 	</RulesElement>
 	<RulesElement name="Shifter - Tethyr" type="Background" internal-id="ID_FMP_BACKGROUND_757" source="Dragon Magazine 394" revision-date="10/5/2010 1:35:01 PM">
@@ -3466,10 +3464,9 @@ Whenever you spend an action point to make an attack, you can reroll one attack 
 		<specific name="Associated Skills"> Stealth </specific>
 		<specific name="Associated Languages"> Chondathan, Draconic </specific>
 		<rules>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_STEALTH" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_CHONDATHAN" type="Background Association"/>
-			<grant name="ID_INTERNAL_BACKGROUND_ASSOCIATION_DRACONIC" type="Background Association"/>
+			<modify name="Stealth" type="Skill Training" Field="UniversalClassSkill" value="true" />		
 			<statadd name="Stealth Misc" value="+2"/>
+		<select type="Language" number="1" Category="ID_FMP_LANGUAGE_2|ID_FMP_LANGUAGE_34"/>
 		</rules>
 	</RulesElement>
 	<!-- Racial Backgrounds, Dragon 395 -->

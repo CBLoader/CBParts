@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.32</Version>
+    <Version>1.33</Version>
     <Filename>37-hybrid.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/37-hybrid.txt</VersionAddress>
@@ -42,6 +42,7 @@
  Updated 7-October-2021 Fix Attack Finesse (Hybrid) display for Hybrid Executioner
  Updated 31-August-2022 Fix Hybrid/MC Vampire Surges errors
  Updated 6-June-2023 Fix Hybrid e-Classes allowing hybrids of their own base class
+ Updated 29-May-2024 Fixes for hybrid sentinels, especially druids of the waste
 </Changelog>
   
   <RulesElement name="Divine Challenge (Hybrid)" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1529" source="Player's Handbook 3" revision-date="11/05/2010 00:00:00 AM">
@@ -1424,7 +1425,7 @@ Alignment: A cavalier of valor can be lawful good, good, or unaligned. While the
   <specific name="_PowerSourceElement"> ID_FMP_POWER_SOURCE_4 </specific>
   <specific name="_SecondaryPowerSourceElement"/>
   <specific name="Secondary Abilities"/>
-  <specific name="Hybrid Talent Options"> Wilderness Knack (Hybrid), Druid Armor Proficiency, Paragon of the Natural Cycle, Animal Companion Power, Nature's Bounty </specific>
+  <specific name="Hybrid Talent Options"> Wilderness Knack (Hybrid), Druid Armor Proficiency, Paragon of the Natural Cycle, Animal Companion Power, Primal Guardian, Nature's Bounty. </specific>
   <specific name="Short Description"> You want to play a weapon-wielding master of primal magic who has an animal companion. </specific>
   <specific name="_ParentClass"> ID_FMP_CLASS_126 </specific>
   <specific name="Trait Package"/>
@@ -1432,6 +1433,7 @@ Alignment: A cavalier of valor can be lawful good, good, or unaligned. While the
   <specific name="_SUGGESTED_FEATS"> </specific>
   <rules>
     <grant name="ID_INTERNAL_GRANTS_HYBRID_SENTINEL" type="Grants"/>
+    <select type="Power" name="Power At-Will 1" number="1" Category="$$CLASS,at-will,1" />
     <textstring name="_CLASSNAME" value="ID_FMP_HYBRID_CLASS_894"/>
     <statadd name="_LEVEL-ONE-HPS" value="+6"/>
     <statadd name="_PER-LEVEL-HPS" value="+2" half-point="true"/>
@@ -1479,13 +1481,19 @@ When you choose to become a hybrid druid of one of the four seasons, you gain so
 
 Druid of Spring:
 You gain the following benefits.
-    * Your animal companion is a wolf.
-    * You gain a +2 bonus to Heal checks.
+    • Your animal companion is a wolf.
+    • You gain a +2 bonus to Heal checks.
 
 Druid of Summer:
 You gain the following benefits.
-    * Your animal companion is a bear.
-     * You gain a +2 bonus to Athletics checks.
+    • Your animal companion is a bear.
+    • You gain a +2 bonus to Athletics checks.
+
+Druid of the Wastes:
+You gain the following benefits.
+    • Your animal companion is a living zephyr.
+    • You gain a +2 bonus to Endurance checks.
+
 </RulesElement>
   <RulesElement name="Druid of Spring (Hybrid)" type="Trait Package" internal-id="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> ID_FMP_HYBRID_CLASS_894 </Category>
@@ -1493,12 +1501,12 @@ You gain the following benefits.
     <print-prereqs> Hybrid Sentinel </print-prereqs>
     <flavor> You draw your strength from the spring, a time when life emerges once more from the bleakness of winter and reaches for the sun. You believe that all things can be renewed, and you show your allies how to shrug off pain and injury, just as the spring sun melts away the last remnants of winter's snow.
 Your chosen weapons are the scimitar, the spear, the dagger, and the sickle. The bright steel of these weapons gleams like the spring sun. In battle, you rely on accuracy and precision rather than brute force to defeat your foes. </flavor>
-    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_2A,ID_WOG_SENTINEL_CLASS_FEATURE_18,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_28 </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_2A </specific>
     <specific name="Short Description"> You are a druid of spring and have a wolf companion. </specific>
     <specific name="_CS_ShortDescription"> Spring is your chosen cycle </specific>
 You gain the following benefits.
-    * Your animal companion is a wolf.
-    * You gain a +2 bonus to Heal checks.
+    • Your animal companion is a wolf.
+    • You gain a +2 bonus to Heal checks.
 </RulesElement>
   <RulesElement name="Druid of Summer (Hybrid)" type="Trait Package" internal-id="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> ID_FMP_HYBRID_CLASS_894 </Category>
@@ -1506,13 +1514,27 @@ You gain the following benefits.
     <print-prereqs> Hybrid Sentinel </print-prereqs>
     <flavor> You feel the strongest association with the high heat of summer, a time when the life of the natural world stands in full bloom. You are a symbol of the power and vibrancy of life, embodying the full resilience of nature. You draw strength from the light of the sun, the green of the forest, and the blue of the sky, demonstrating to your allies that the present is always the season of their greatest strength.
 Your chosen weapons are the staff and the club. They represent summer's enduring strength, the trees that flourish in that season and persist through the darkest winter. Your fighting style reflects that strength, as you rely on overpowering force to batter your foes into submission. </flavor>
-    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_2B,ID_WOG_SENTINEL_CLASS_FEATURE_19,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_29 </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_2B </specific>
     <specific name="Short Description"> You are a druid of summer and have a bear companion. </specific>
     <specific name="_CS_ShortDescription"> Summer is your chosen cycle </specific>
 You gain the following benefits.
-    * Your animal companion is a bear.
-    * You gain a +2 bonus to Athletics checks.
+    • Your animal companion is a bear.
+    • You gain a +2 bonus to Athletics checks.
 </RulesElement>
+
+  <RulesElement name="Druid of the Wastes (Hybrid)" type="Trait Package" internal-id="ID_HF_HYBRID_SENTINEL_TRAIT_PACKAGE_3" source="Heroes of the Elemental Chaos">
+    <Category> ID_FMP_HYBRID_CLASS_894 </Category>
+    <Prereqs> Hybrid Sentinel </Prereqs>
+    <print-prereqs> Hybrid Sentinel </print-prereqs>
+    <Flavor> You draw your strength from the world's majestic desolate places-the icy wastes of the north, the bleak shores, the great sandy deserts, or the barren rocky mountains. In these places the primal spirits embody the living elements and take on elemental-like forms. </Flavor>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_FMP_CLASS_FEATURE_4327 </specific>
+    <specific name="Short Description"> You are a druid of the wastes and have a zephyr companion. </specific>
+    <specific name="_CS_ShortDescription"> Spring is your chosen cycle </specific>
+You gain the following benefits.
+	• Your animal companion is a living zephyr.
+	• You gain a +2 bonus to Endurance checks.
+</RulesElement>
+
   <RulesElement name="Acolyte of the Natural Cycle (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> 1 </Category>
     <Flavor> As a sentinel, you are charged with maintaining the balance inherent in the seasonal cycles of growth, death, and rebirth. </Flavor>
@@ -1522,19 +1544,25 @@ You gain the following benefits.
     <rules>
       <grant name="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1A" type="Class Feature" requires="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1"/>
       <grant name="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1B" type="Class Feature" requires="ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2"/>
+      <grant name="ID_HF_HYBRID_SENTINEL_CLASS_FEATURE_1C" type="Class Feature" requires="ID_HF_HYBRID_SENTINEL_TRAIT_PACKAGE_3"/>
     </rules>
 At 1st level, each sentinel chooses a season that demonstrates his or her affinity for that aspect of nature's power. Your choice of season determines some of your class features, including the animal companion you gain.
 When you choose to become a hybrid druid of one of the four seasons, you gain some of the benefit associated with that season.
 
 Druid of Spring:
 You gain the following benefits.
-    * Your animal companion is a wolf.
-    * You gain a +2 bonus to Heal checks.
+    • Your animal companion is a wolf.
+    • You gain a +2 bonus to Heal checks.
 
 Druid of Summer:
 You gain the following benefits.
-    * Your animal companion is a bear.
-    * You gain a +2 bonus to Athletics checks.
+    • Your animal companion is a bear.
+    • You gain a +2 bonus to Athletics checks.
+
+Druid of the Wastes:
+You gain the following benefits.
+    • Your animal companion is a living zephyr.
+    • You gain a +2 bonus to Endurance checks.
 </RulesElement>
   <RulesElement name="Druid of Spring (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1A" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1 </Category>
@@ -1547,11 +1575,11 @@ Your chosen weapons are the scimitar, the spear, the dagger, and the sickle. The
      <statadd name="Heal Misc" value="+2"/>
     </rules>
 You gain the following benefits.
-    * Your animal companion is a wolf.
-    * You gain a +2 bonus to Heal checks.
+    • Your animal companion is a wolf.
+    • You gain a +2 bonus to Heal checks.
 </RulesElement>
   <RulesElement name="Druid of Summer (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1B" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_WOG_SENTINEL_CLASS_FEATURE_1 </Category>
+    <Category> ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1 </Category>
     <flavor> You feel the strongest association with the high heat of summer, a time when the life of the natural world stands in full bloom. You are a symbol of the power and vibrancy of life, embodying the full resilience of nature. You draw strength from the light of the sun, the green of the forest, and the blue of the sky, demonstrating to your allies that the present is always the season of their greatest strength.
 Your chosen weapons are the staff and the club. They represent summer's enduring strength, the trees that flourish in that season and persist through the darkest winter. Your fighting style reflects that strength, as you rely on overpowering force to batter your foes into submission. </flavor>
     <specific name="_PARSED_CLASS_FEATURE"> ID_WOG_SENTINEL_CLASS_FEATURE_19,ID_WOG_SENTINEL_CLASS_FEATURE_22,ID_WOG_SENTINEL_CLASS_FEATURE_29 </specific>
@@ -1561,8 +1589,22 @@ Your chosen weapons are the staff and the club. They represent summer's enduring
       <statadd name="Athletics Misc" value="+2"/>
     </rules>
 You gain the following benefits.
-    * Your animal companion is a bear.
-    * You gain a +2 bonus to Athletics checks.
+    • Your animal companion is a bear.
+    • You gain a +2 bonus to Athletics checks.
+</RulesElement>
+
+  <RulesElement name="Druid of the Wastes (Hybrid)" type="Class Feature" internal-id="ID_HF_HYBRID_SENTINEL_CLASS_FEATURE_1C" source="Heroes of the Elemental Chaos">
+    <Category> ID_CDJ_HYBRID_SENTINEL_CLASS_FEATURE_1 </Category>
+    <specific name="_PARSED_CLASS_FEATURE"> ID_FMP_CLASS_FEATURE_4327, ID_FMP_CLASS_FEATURE_4326, ID_FMP_CLASS_FEATURE_4328, ID_FMP_CLASS_FEATURE_4329 </specific>
+    <specific name="Short Description"> You are a druid of the wastes and have a zephyr companion. </specific>
+    <specific name="_CS_ShortDescription"> The wastes is your chosen cycle </specific>
+    <rules>
+	<statadd name="Endurance Misc" value="+2"/>
+	<grant name="ID_FMP_CLASS_FEATURE_4327" type="Class Feature"/>
+    </rules>
+You gain the following benefits.
+    • Your animal companion is a living zephyr.
+    • You gain a +2 bonus to Endurance checks.
 </RulesElement>
 
 
@@ -1584,15 +1626,13 @@ You can select the combined attack power whenever you have the opportunity to ga
       <specific name="Short Description"> Healing word 1/encounter </specific>
       <specific name="Level"> 1 </specific>
       <specific name="Powers"> ID_FMP_POWER_1455 </specific>
-      <specific name="type"> Utility </specific>
+      <specific name="type"> Feature </specific>
       <specific name="Class"> ID_FMP_CLASS_126 </specific>
       <specific name="_DisplayPowers"> ID_FMP_POWER_1455 </specific>
       <rules>
          <grant name="ID_FMP_POWER_1455" type="Power"/>
          <modify Field="Special" value=""/>
 		 <modify name="ID_FMP_POWER_1455" type="Power" Field="Display" value="Druid Utility"/>
-         <modify name="ID_FMP_POWER_1455" type="Power" Field="Power Type" value="Utility"/>
-         <modify name="ID_FMP_POWER_1455" type="Power" Field="Power Usage" value="Encounter"/>
          <modify name="ID_FMP_POWER_1455" type="Power" Field="Class" value="ID_FMP_CLASS_126"/>
          <grant name="ID_INTERNAL_COUNTSASFEATURE_HEALING_WORD" type="CountsAsFeature"/>
       </rules>
@@ -1609,37 +1649,47 @@ You gain the druid's healing word power. The power functions as normal except th
       </rules>
 You gain proficiency with leather armor and hide armor.
    </RulesElement>
+
+   <RulesElement name="Primal Guardian" type="Class Feature" internal-id="ID_FMP_CLASS_FEATURE_1121" source="Player's Handbook 2" revision-date="10/5/2010 1:47:04 PM" >
+      <Category> ID_FMP_CLASS_FEATURE_784,ID_FMP_HYBRID_CLASS_894,1 </Category>
+      <specific name="Short Description"> While not wearing heavy armor, use Con mod in place of Dex or Int mod to determine AC </specific>
+      <specific name="Level"> 1 </specific>
+      <rules>
+         <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy" />
+      </rules>
+While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
+   </RulesElement>
    
 <RulesElement name="Wilderness Knack (Hybrid)" type="Class Feature" internal-id="ID_CDJ_HYBRID_SENTINEL_WILDERNESS_KNACK" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> ID_FMP_HYBRID_CLASS_894,1 </Category>
     <Flavor> Druids, like rangers, are experts in outdoor survival. As a primal adept, you have learned several mundane tricks and techniques to aid you in traveling through the wilds. </Flavor>
     <specific name="Short Description"> Gain a druid wilderness knack. </specific>
     <specific name="Level"> 1 </specific>
-    <specific name="_CS_ShortDescription"> Gain 1 wilderness knacks </specific>
+    <specific name="_CS_ShortDescription"> Gain 1 wilderness knack </specific>
     <rules>
       <select type="Class Feature" number="1" Category="ID_WOG_SENTINEL_CLASS_FEATURE_4,ID_FMP_CLASS_126"/>
     </rules>
-You gain two of the following abilities of your choice.
+You gain one of the following abilities of your choice.
 
 Beast Empathy:
 The beasts of the wilderness see and know most of what unfolds in their realm. Few folk heed them, but you have learned to understand and interpret their actions and attitudes. Your woodcraft is short of the magical ability to communicate with animals directly, but it is enough to reveal secrets that others miss.
-   *You gain a +2 bonus to Bluff, Diplomacy, and Intimidate checks against beasts. You can communicate simple concepts and commands to such creatures, though they are under no compulsion to obey you. With a successful Insight check (DC determined by the DM), you can read a creature's body language and vocalizations enough to understand basic messages from it.
+   • You gain a +2 bonus to Bluff, Diplomacy, and Intimidate checks against beasts. You can communicate simple concepts and commands to such creatures, though they are under no compulsion to obey you. With a successful Insight check (DC determined by the DM), you can read a creature's body language and vocalizations enough to understand basic messages from it.
 
 Herb Lore:
 You have studied the properties of various plants. Even in distant lands your lore serves you well in finding the right leaves and roots to harvest. By brewing a soothing tea or mixing a poultice, you help soothe the aches, bruises, and cuts you and your allies suffer.
-   *You and each ally can add 2 to his or her healing surge value when spending heading surges during a short rest. To gain this benefit, you must take the short rest in an area that offers easy access to plants. The additional hit points increase to 4 at 11th level and 6 at 21st level.
+   • You and each ally can add 2 to his or her healing surge value when spending heading surges during a short rest. To gain this benefit, you must take the short rest in an area that offers easy access to plants. The additional hit points increase to 4 at 11th level and 6 at 21st level.
 
 Mountain Guide:
 You have clambered over steep cliffs and ranged across imposing mountains. Your knack for climbing allows you to pick out the easiest paths up even the most imposing slopes.
-   *Whenever you succeed on an Athletics check to climb, you reduce the DC of that climb by 2 for your allies until the end of the encounter. Only allies who see you make the climb gain this benefit.
+   • Whenever you succeed on an Athletics check to climb, you reduce the DC of that climb by 2 for your allies until the end of the encounter. Only allies who see you make the climb gain this benefit.
 
 Watchful Rest:
 Long days spent in the wilds have taught you the best way to set up a camp. By picking out an easily defensible spot and carefully positioning your gear, you ensure that you and your allies have the best chance to avoid an ambush.
-   *When you take an extended rest, you and any allies also taking the rest do not take the -5 penalty to Perception checks for sleeping.
+   • When you take an extended rest, you and any allies also taking the rest do not take the -5 penalty to Perception checks for sleeping.
 
 Wilderness Tracker:
 You are an expert at reading the signs of a creature's passage. When you inspect an area, a splintered twig or a trampled leaf is enough for you to glean a significant amount of information. Even the slyest rogues and sneakiest warlocks leave behind some trace of their passage.
-   *During a short rest, you can make a Perception check (DC determined by the DM) to inspect the area around you. This area can be as large as 10 squares on a side. If your check succeeds, you determine the number and nature of the creatures that have moved through the area in the past 24 hours. You ascertain when and where they entered the area, as well as when and where they left.
+   • During a short rest, you can make a Perception check (DC determined by the DM) to inspect the area around you. This area can be as large as 10 squares on a side. If your check succeeds, you determine the number and nature of the creatures that have moved through the area in the past 24 hours. You ascertain when and where they entered the area, as well as when and where they left.
 </RulesElement>
 
 <RulesElement name="Combined Attack (Second Use)" type="Power" internal-id="ID_CDJ_POWER_COMBINED_ATTACK_II" source="Player Essentials: Heroes of the Forgotten Kingdoms">

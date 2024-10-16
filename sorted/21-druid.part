@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.29</Version>
+    <Version>1.30</Version>
     <Filename>21-druid.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/21-druid.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/21-druid.txt</VersionAddress>
@@ -35,8 +35,9 @@
  Updated 18-August-2012 Fixed Druid of the Wastes grants.
  Updated 24-November-2013 Writhing Henge spell update.
  Updated 7-April-2020 Allow Sentinel to use normal druid encounters.
- Updated 15-April-2020 Wolf has a name instead of a nname.
+ Updated 15-April-2020 Wolf has a name instead of a name.
  Updated 10-August-2024 Primal Swarm short description added.
+ Updated 29-May-2024 Fixes for hybrid sentinel, especially Druids of the Waste options (hf)
 </Changelog>
   <!-- Druid sub-class Powers, Heroes of the Forgotten Kingdoms -->  
   <RulesElement name="Dynamic Assault" type="Power" internal-id="ID_FMP_POWER_13507" source="Player Essentials: Heroes of the Forgotten Kingdoms">
@@ -1053,7 +1054,7 @@ Sustain Minor: The effect persists until the end of your next turn.</specific>
     <rules/>
   </RulesElement>
   <!-- Sentinel sub-class Features -->
-  <!-- Notes: Acolyte of the Natural Cycle, Animal Companion, Combined Attack, Druid Wilderness Knacks, Healing Word, Level 1 Sentinel At-Will Power, Level 1 Sentinel Daily Power, Primal Guardian (Sentinel), Level 2 Sentinel Utility Power, Level 3 Improved Combined Attack, Level 5 Sentinel Daily Power, Level 6 Sentinel Utility Power, Hear the Voice of Nature, Level 7 Improved Combined Attack, Restore Life, Level 9 Sentinel Daily Power, Level 10 Sentinel Utility Power, Paragon of the Natural Cycle, Level 15 Sentinel Daily Power, Level 16 Sentinel Utility Power, Animal Companion Power, Level 19 Sentinel Daily Power, Level 22 Sentinel Utility Power, Timeless Body, Level 25 Sentinel Daily Power, Nature&apos;s Bounty, Level 29 Sentinel Daily Power. -->
+  <!-- Notes: Acolyte of the Natural Cycle, Animal Companion, Combined Attack, Druid Wilderness Knacks, Healing Word, Level 1 Sentinel At-Will Power, Level 1 Sentinel Daily Power, Primal Guardian, Level 2 Sentinel Utility Power, Level 3 Improved Combined Attack, Level 5 Sentinel Daily Power, Level 6 Sentinel Utility Power, Hear the Voice of Nature, Level 7 Improved Combined Attack, Restore Life, Level 9 Sentinel Daily Power, Level 10 Sentinel Utility Power, Paragon of the Natural Cycle, Level 15 Sentinel Daily Power, Level 16 Sentinel Utility Power, Animal Companion Power, Level 19 Sentinel Daily Power, Level 22 Sentinel Utility Power, Timeless Body, Level 25 Sentinel Daily Power, Nature&apos;s Bounty, Level 29 Sentinel Daily Power. -->
 <RulesElement name="Season Choice" type="Class Feature" internal-id="ID_WOG_SENTINEL_CLASS_FEATURE_0" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> 1 </Category>
     <Flavor> As a sentinel, you are charged with maintaining the balance inherent in the seasonal cycles of growth, death, and rebirth. </Flavor>
@@ -1778,17 +1779,6 @@ You gain one of the following powers of your choice.
     </rules>
 You gain one of the following powers of your choice.
 </RulesElement>
-  <RulesElement name="Primal Guardian (Sentinel)" type="Class Feature" internal-id="ID_WOG_SENTINEL_CLASS_FEATURE_7" source="Player Essentials: Heroes of the Forgotten Kingdoms">
-    <Category> ID_FMP_HYBRID_CLASS_894,1 </Category>
-    <specific name="Level"> 1 </specific>
-    <Flavor> Your innate connection to nature grants you the resilience of the primal spirits. </Flavor>
-    <specific name="Short Description"> While not wearing heavy armor, use Con mod in place of Dex or Int mod to determine AC. </specific>
-    <specific name="_CS_ShortDescription"> Use Con mod for AC </specific>
-    <rules>
-      <statadd name="AC" value="+Constitution modifier" type="Ability" not-wearing="armor:heavy"/>
-    </rules>
-While you are not wearing heavy armor, you can use your Constitution modifier in place of your Dexterity or Intelligence modifier to determine your AC.
-</RulesElement>
   <RulesElement name="Level 2 Sentinel Utility Power" type="Class Feature" internal-id="ID_WOG_SENTINEL_CLASS_FEATURE_8" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> 2 </Category>
     <Flavor> As your mastery of primal magic grows stronger, you begin to harness its potential for a variety of new and useful tasks. </Flavor>
@@ -1933,15 +1923,15 @@ You gain one of the following powers of your choice.
     <rules>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_18" type="Class Feature" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_1|ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1"/>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_19" type="Class Feature" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_2|ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2"/>
-	  <grant name="ID_FMP_CLASS_FEATURE_4326" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_972"/>
+	  <grant name="ID_FMP_CLASS_FEATURE_4326" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_972||ID_HF_HYBRID_SENTINEL_TRAIT_PACKAGE_3"/>
     </rules>
 You gain one of the following benefits, depending on the season you chose for your Acolyte of the Natural Cycle class feature. If you are a Hybrid Sentinel, this benefit does not apply until level 13.
 Paragon of the Natural Cycle (Spring):
-   *When you or your animal companion reduces a nonminion enemy to 0 hit points, you and your animal companion each regain 10 hit points.
+   • When you or your animal companion reduces a nonminion enemy to 0 hit points, you and your animal companion each regain 10 hit points.
 Paragon of the Natural Cycle (Summer):
-   *Your reach increases by 1 for melee weapon attacks.
+   • Your reach increases by 1 for melee weapon attacks.
 Paragon of the Wastes:
-   *Become insubstantial and shift up to 5 squares as an immediate reaction when you or your living zephyr companion first becomes bloodied.
+   • The first time each encounter that you or your living spirit companion becomes bloodied, you can use an immediate reaction to become insubstantial and shift 5 squares. You are insubstantial until the start of your next turn.
 </RulesElement>
   <RulesElement name="Paragon of the Natural Cycle (Spring)" type="Class Feature" internal-id="ID_WOG_SENTINEL_CLASS_FEATURE_18" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> ID_WOG_SENTINEL_CLASS_FEATURE_17 </Category>
@@ -1996,12 +1986,12 @@ You gain one of the following powers of your choice.
     <specific name="Level"> 17 </specific>
     <specific name="Short Description"> Gain animal companion power. </specific>
     <specific name="_CS_ShortDescription"> Gain companion encounter power </specific>
-    <specific name="Powers"> ID_FMP_POWER_13540,ID_FMP_POWER_13541 </specific>
-    <specific name="_DisplayPowers"> ID_FMP_POWER_13540,ID_FMP_POWER_13541 </specific>
+    <specific name="Powers"> ID_FMP_POWER_13540,ID_FMP_POWER_13541,ID_FMP_POWER_16117 </specific>
+    <specific name="_DisplayPowers"> ID_FMP_POWER_13540,ID_FMP_POWER_13541,ID_FMP_POWER_16117 </specific>
     <rules>
       <grant name="ID_FMP_POWER_13540" type="Power" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_1||ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1"/>
-      <grant name="ID_FMP_POWER_13541" type="Power" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_2||ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1"/>
-	  <grant name="ID_FMP_CLASS_FEATURE_4328" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_972"/>
+      <grant name="ID_FMP_POWER_13541" type="Power" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_2||ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2"/>
+	  <grant name="ID_FMP_POWER_16117" type="Power" requires="ID_FMP_TRAIT_PACKAGE_972||ID_HF_HYBRID_SENTINEL_TRAIT_PACKAGE_3"/>
     </rules>
 You gain a power associated with your animal companion. If you are a Hybrid Sentinel, this benefit does not apply until level 17.
 </RulesElement>
@@ -2118,16 +2108,16 @@ You gain one of the following powers of your choice. This new power replaces the
     <specific name="_CS_ShortDescription"> @ </specific>
     <rules>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_28" type="Class Feature" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_1||ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1"/>
-      <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_29" type="Class Feature" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_2||ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_1"/>
-	  <grant name="ID_FMP_CLASS_FEATURE_4329" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_972"/>
+      <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_29" type="Class Feature" requires="ID_WOG_SENTINEL_TRAIT_PACKAGE_2||ID_CDJ_HYBRID_SENTINEL_TRAIT_PACKAGE_2"/>
+	  <grant name="ID_FMP_CLASS_FEATURE_4329" type="Class Feature" requires="ID_FMP_TRAIT_PACKAGE_972||ID_HF_HYBRID_SENTINEL_TRAIT_PACKAGE_3"/>
     </rules>
 Whenever you use your second wind, choose one ally within 10 squares of you. That ally gains a benefit determined by the season you chose for your Acolyte of the Natural Cycle class feature. If you are a Hybrid Sentinel, this benefit does not apply until level 27.
 Spring Bounty:
-   *Whenever you use your second wind, choose one ally within 10 squares of you. The chosen ally gains resist 10 to all damage until the end of your next turn.
+   • Whenever you use your second wind, choose one ally within 10 squares of you. The chosen ally gains resist 10 to all damage until the end of your next turn.
 Summer Bounty:
-   *Whenever you use your second wind, choose one ally within 10 squares of you. The chosen ally gains a +5 power bonus to damage rolls until the end of your next turn.
+   • Whenever you use your second wind, choose one ally within 10 squares of you. The chosen ally gains a +5 power bonus to damage rolls until the end of your next turn.
 Druid of the Wastes:
-   *After using second wind, an ally within 10 squares of you can end any ongoing damage and gains partial concealment
+   • Whenever you use your second wind, choose one ally within 10 squares of you. That ally ends one ongoing damage effect that he or she is currently suffering, and the ally gains partial concealment until the end of your next turn.
 </RulesElement>
   <RulesElement name="Spring Bounty" type="Class Feature" internal-id="ID_WOG_SENTINEL_CLASS_FEATURE_28" source="Player Essentials: Heroes of the Forgotten Kingdoms">
     <Category> ID_WOG_SENTINEL_CLASS_FEATURE_27 </Category>
@@ -2163,8 +2153,6 @@ You gain one of the following powers of your choice. This new power replaces the
     <rules>
       <grant name="ID_FMP_POWER_1455" type="Power"/>
       <modify name="ID_FMP_POWER_1455" type="Power" Field="Display" value="Druid Utility"/>
-      <modify name="ID_FMP_POWER_1455" type="Power" Field="Power Type" value="Utility"/>
-      <modify name="ID_FMP_POWER_1455" type="Power" Field="Power Usage" value="Encounter"/>
       <modify name="ID_FMP_POWER_1455" type="Power" Field="Class" value="ID_FMP_CLASS_126"/>
       <grant name="ID_INTERNAL_COUNTSASFEATURE_HEALING_WORD" type="CountsAsFeature"/>
     </rules>
@@ -2195,7 +2183,7 @@ You count as a sentinel for meeting prerequisites.
     <specific name="Healing Surges"> 7+ Constitution Modifier </specific>
     <specific name="Trained Skills"> Nature. From the class skills list below, choose 3 more trained skills at 1st level. </specific>
     <specific name="Class Skills"> Arcana (Int), Athletics (Str), Diplomacy (Cha), Endurance (Con), Heal (Wis), History (Int), Insight (Wis), Nature (Wis), Perception (Wis) </specific>
-    <specific name="_PARSED_CLASS_FEATURE"> Acolyte of the Natural Cycle, Animal Companion, Combined Attack, Druid Wilderness Knacks, Healing Word (Druid), Level 1 Sentinel At-Will Power, Level 1 Sentinel Daily Power, Primal Guardian (Sentinel), Level 2 Sentinel Utility Power, Level 3 Improved Combined Attack, Level 5 Sentinel Daily Power, Level 6 Sentinel Utility Power, Hear the Voice of Nature, Level 7 Improved Combined Attack, Restore Life, Level 9 Sentinel Daily Power, Level 10 Sentinel Utility Power, Paragon of the Natural Cycle, Level 15 Sentinel Daily Power, Level 16 Sentinel Utility Power, Animal Companion Power, Level 19 Sentinel Daily Power, Level 22 Sentinel Utility Power, Timeless Body, Level 25 Sentinel Daily Power, Nature's Bounty, Level 29 Sentinel Daily Power </specific>
+    <specific name="_PARSED_CLASS_FEATURE"> Acolyte of the Natural Cycle, Animal Companion, Combined Attack, Druid Wilderness Knacks, Healing Word (Druid), Level 1 Sentinel At-Will Power, Level 1 Sentinel Daily Power, Primal Guardian, Level 2 Sentinel Utility Power, Level 3 Improved Combined Attack, Level 5 Sentinel Daily Power, Level 6 Sentinel Utility Power, Hear the Voice of Nature, Level 7 Improved Combined Attack, Restore Life, Level 9 Sentinel Daily Power, Level 10 Sentinel Utility Power, Paragon of the Natural Cycle, Level 15 Sentinel Daily Power, Level 16 Sentinel Utility Power, Animal Companion Power, Level 19 Sentinel Daily Power, Level 22 Sentinel Utility Power, Timeless Body, Level 25 Sentinel Daily Power, Nature's Bounty, Level 29 Sentinel Daily Power </specific>
     <specific name="Role"> Leader. You wield the magic of the natural world, using your connection to the primal spirits to tend the wounds of your allies and lead them to victory. </specific>
     <specific name="Power Source"> Primal. As a sentinel, you use primal power to shelter your allies and defeat those that would disrupt the balance of the natural world. </specific>
     <specific name="_RoleElement"> ID_FMP_ROLE_2 </specific>
@@ -2234,7 +2222,7 @@ The world experiences perpetual cycles of life, death, and rebirth. The four sea
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_4" type="Class Feature" Level="1"/>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_5" type="Class Feature" Level="1"/>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_6" type="Class Feature" Level="1"/>
-      <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_7" type="Class Feature" Level="1"/>
+      <grant name="ID_FMP_CLASS_FEATURE_1121" type="Class Feature" Level="1"/>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_8" type="Class Feature" Level="2"/>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_9" type="Class Feature" Level="3"/>
       <grant name="ID_WOG_SENTINEL_CLASS_FEATURE_10" type="Class Feature" Level="5"/>
@@ -3994,6 +3982,7 @@ You can use primal magic to bond with your allies. Your party becomes a hive, ab
 		<print-prereqs> Sentinel </print-prereqs>
 		<Flavor> You draw your strength from the world's majestic desolate places-the icy wastes of the north, the bleak shores, the great sandy deserts, or the barren rocky mountains. In these places the primal spirits embody the living elements and take on elemental-like forms. </Flavor>
     <specific name="_PARSED_CLASS_FEATURE"> ID_FMP_CLASS_FEATURE_4327, ID_FMP_CLASS_FEATURE_4326, ID_FMP_CLASS_FEATURE_4328, ID_FMP_CLASS_FEATURE_4329 </specific>
+    <specific name="Short Description"> You are a druid of the wastes and have a zephyr companion. </specific>
 You gain the following benefits:
 	* Your animal companion is a living zephyr.
 	* When wielding a spear or a staff, you gain a +1 shield bonus to AC and Reflex.
@@ -4042,7 +4031,7 @@ The first time each encounter that you or your living zephyr companion becomes b
     <specific name="Short Description"> Gain the zephyr carry power </specific>
     <specific name="Level"> 17 </specific>
     <specific name="Powers"> ID_FMP_POWER_16117 </specific>
-    <specific name="Type"> Utility </specific>
+    <specific name="Type"> Feature </specific>
     <specific name="Class"> ID_FMP_CLASS_126 </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_16117 </specific>
 	<rules>

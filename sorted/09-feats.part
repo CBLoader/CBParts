@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.158</Version>
+		<Version>1.159</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -79,6 +79,7 @@
  Updated 18-May-2024 Fixed campaign settings source for certain Past Soul feats; fix typo in Born in Darkness - thanks to heridfel
  Updated 30-May-2024 Fixes to Templar's Domain prerequisites (exhaustive list of prerequisites without requiring feature being removed); update to Tempest Magic to make bloodied bonus a feat bonus. (hf)
  Updated 3-March-2025 Fix to Powerful Lure prerequisites
+ Updated 3-March-2025 Added missing Inspiring Fury feat
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -47774,6 +47775,17 @@ You gain a +1 feat bonus to attack rolls with any weapon power you use with a ga
       <statadd name="arena group,weapon:attack" value="+Weapon Expertise (Blowgun)" type="Feat" requires="ID_INTERNAL_ARENA_WEAPON_CATEGORY_BLOWGUN"/>
     </rules>
 You gain a +1 feat bonus to attack rolls with any weapon power you use with a blowgun. The bonus increases to +2 at 11th level and +3 at 21st level.
+	</RulesElement>
+	<RulesElement internal-id="ID_INTERNAL_FEAT_INSPIRING_FURY" name="Inspiring Fury" type="Feat" source="Dragon 429">
+		<Prereqs> Half-orc, Skald's Aura class feature </Prereqs>
+		<print-prereqs> Half-orc, Skald's Aura class feature </print-prereqs>
+		<Flavor> The ferocity of your blows gives hopes to your allies, allowing them to catch their breath and follow your example. </Flavor>
+		<specific name="Short Description"> Extra healing from Skald's Aura after using furious assault </specific>
+		<specific name="Tier"> Heroic </specific>
+		<rules>
+			<modify name="Furious Assault" type="Power" Field="Inspiring Fury" value="Until the end of your next turn, any creature that heals using your Skald's Aura gains additional hit points equal to 1d8 + your Charisma modifier."/>
+		</rules>
+When you use your furious assault racial power, any creature that heals using your Skald's Aura class feature before the end of your next turn gains additional hit points equal to 1d8 + your Charisma modifier.
 	</RulesElement>
 
 <!-- End of feat fixes -->

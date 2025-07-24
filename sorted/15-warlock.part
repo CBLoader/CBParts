@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.30</Version>
+		<Version>1.31</Version>
 		<Filename>15-warlock.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/15-warlock.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/15-warlock.txt</VersionAddress>
@@ -41,6 +41,7 @@
  Updated 06-May-2021 Moved Terrain Dominance to Warlord powers. [Issue #13]
  Updated 24-September-2021 Fixed Warlock Pact Boon (hybrid) prerequisite. [Issue #76]
  Updated 24-September-2021 Revert last change, was working as intended.
+ Updated 23-July-2025 Remove level category from Fascinating Shadows. [Thanks, RuinsFate!]
 	</Changelog>
 	<!-- Warlock Class Updates -->
 	<RulesElement name="Warlock" type="Class" internal-id="ID_FMP_CLASS_7" source="Player's Handbook" revision-date="8/27/2010 12:40:06 PM">
@@ -4769,7 +4770,7 @@ You gain the cloud sight and fascinating shadows powers.
 		<specific name="_ParentFeature"> ID_WOG_D406_FEY_PACT_BINDER_CLASS_FEATURE_1 </specific>
 	</RulesElement>
 	<RulesElement name="Fascinating Shadows" type="Power" internal-id="ID_WOG_D404_BINDER_POWER_2" source="Dragon Magazine 406">
-		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_WOG_D406_FEY_PACT_BINDER_CLASS_FEATURE_1,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION,1 </Category>
+		<Category> ID_INTERNAL_CATEGORY_CLASS_POWER,ID_INTERNAL_CATEGORY_ATTACK,ID_WOG_D406_FEY_PACT_BINDER_CLASS_FEATURE_1,ID_INTERNAL_CATEGORY_AT-WILL,ID_INTERNAL_CATEGORY_AT-WILL_USAGE,ID_FMP_CLASS_7,ID_FMP_CATEGORY_31,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_16,ID_FMP_CATEGORY_38,ID_INTERNAL_CATEGORY_STANDARD_ACTION </Category>
 		<Flavor> You create a dizzying array of images out of the shadows, lulling your enemies into drawing closer. </Flavor>
 		<specific name="Power Usage"> At-Will </specific>
 		<specific name="Display"> Warlock Attack </specific>

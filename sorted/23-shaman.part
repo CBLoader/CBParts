@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.03</Version>
+    <Version>1.04</Version>
     <Filename>23-shaman.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/23-shaman.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/23-shaman.txt</VersionAddress>
@@ -18,6 +18,8 @@
  Updated 13-July-2011 Added Phrenic Master and powers.
  Updated 01-August-2011 Moved main class from Dark Sun part file.
  Updated 18-May-2012 DSH added.
+ Updated 23-July-2025 Fix Life and Death Struggle type [Herid Fel]
+
 </Changelog> 
   <!-- Shaman Class Updates -->
   <RulesElement name="Shaman" type="Class" internal-id="ID_FMP_CLASS_147" source="Player's Handbook 2" revision-date="10/12/2010 1:40:25 PM">
@@ -195,4 +197,20 @@ The spirits and voices of nature guide your every step. Their power flows throug
     <specific name="Power Type"> Attack </specific>
 The spirit world frightens the ignorant. It is associated with death and the great passing. Shamans understand that life extends beyond the mortal shell and that great ancestors wait to welcome us home once more.
 </RulesElement>
+<RulesElement name="Life and Death Struggle" type="Power" internal-id="ID_FMP_POWER_6948" source="Dragon Magazine 372" revision-date="7/23/2025 11:43:05 AM" >
+      <Category> ID_INTERNAL_CATEGORY_UTILITY,ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_147,ID_FMP_CATEGORY_9,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_STANDARD_ACTION,22 </Category>
+      <Flavor> You anchor your allies&apos; souls to their bodies, keeping them from shuffling off the mortal coil for a short while. </Flavor>
+      <specific name="Power Usage"> Daily </specific>
+      <specific name="_SkillPower" />
+      <specific name="Display"> Shaman Utility 22 </specific>
+      <specific name="Keywords"> Healing, Primal, Zone </specific>
+      <specific name="Action Type"> Standard action </specific>
+      <specific name="Attack Type"> Area burst 2 within 10 </specific>
+      <specific name="Effect"> Each ally within the burst can spend a healing surge. This burst creates a zone that lasts until the end of the encounter. While within the zone, you and your allies gain a +5 power bonus to death saves. Enemies within the zone cannot heal or regenerate. </specific>
+      <specific name="_Associated Feats" />
+      <specific name="Class"> ID_FMP_CLASS_147 </specific>
+      <specific name="Level"> 22 </specific>
+      <specific name="Power Type"> Utility </specific>
+   </RulesElement>
+
 </D20Rules>

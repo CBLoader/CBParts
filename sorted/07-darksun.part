@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.34</Version>
+    <Version>1.35</Version>
     <Filename>07-darksun.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/07-darksun.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/07-darksun.txt</VersionAddress>
@@ -41,6 +41,7 @@
  Updated 28-July-2022 Fix Mind Lord of the Order prerequisite
  Updated 10-August-2022 Wrist Razor change to remove double Swordmage Warding, Gauntlet Axe errata fix
  Updated 3-June-2023 Updated Sorcerer-King Pact prerequisites for 4 feats
+ Updated 23-July-2025 Fix to Shrieking Wind Spirits to display the secondary attack on the character sheet [Herid Fel]
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -7195,6 +7196,9 @@ Level 21: 2d6 + Wisdom modifier damage. </specific>
     <specific name="Level"> 5 </specific>
     <specific name="Power Type"> Attack </specific>
     <specific name="_DisplayPowers"> ID_FMP_POWER_12872 </specific>
+    <rules>
+      <grant name="ID_FMP_POWER_12872" type="Power" />
+    </rules>
   </RulesElement>
   <RulesElement name="Shrieking Wind Attack" type="Power" internal-id="ID_FMP_POWER_12872" source="Dark Sun Campaign Setting" revision-date="10/12/2010 1:31:26 PM">
     <Category> ID_INTERNAL_CATEGORY_DAILY_USAGE,ID_FMP_CLASS_147,ID_FMP_CATEGORY_25,ID_FMP_CATEGORY_33,ID_FMP_CATEGORY_57,ID_FMP_CATEGORY_39,ID_INTERNAL_CATEGORY_OPPORTUNITY_ACTION </Category>

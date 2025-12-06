@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
   <UpdateInfo>
-    <Version>1.35</Version>
+    <Version>1.36</Version>
     <Filename>07-darksun.part</Filename>
     <PartAddress>https://cbloader.vorpald20.com/sorted/07-darksun.part</PartAddress>
     <VersionAddress>https://cbloader.vorpald20.com/sorted/07-darksun.txt</VersionAddress>
@@ -42,6 +42,7 @@
  Updated 10-August-2022 Wrist Razor change to remove double Swordmage Warding, Gauntlet Axe errata fix
  Updated 3-June-2023 Updated Sorcerer-King Pact prerequisites for 4 feats
  Updated 23-July-2025 Fix to Shrieking Wind Spirits to display the secondary attack on the character sheet [Herid Fel]
+ Updated 5-December-2025 Fix typo in Gythka Novice feat
 </Changelog>
   <!-- Written by Mustache Ride -->
   <RulesElement name="Dark Sun" type="Information" internal-id="ID_INTERNAL_INFORMATION_DARK_SUN" source="Dragon Magazine 390">
@@ -1816,16 +1817,16 @@ You swap one of your level 3 or higher encounter attack powers for the tripping 
     <Prereqs> 4th level, proficiency with gythka</Prereqs>
     <print-prereqs>4th level, proficiency with gythka </print-prereqs>
     <specific name="Tier"> Heroic </specific>
-    <specific name="Short Description"> Swap 3rd+-level encounter attack power for gythka claw scoop </specific>
+    <specific name="Short Description"> Swap 3rd+-level encounter attack power for gythka claw swoop </specific>
     <specific name="Special"/>
     <specific name="type"/>
     <specific name="Associated Power Info"/>
     <specific name="Associated Powers"/>
     <specific name="_DisplayPowers"> ID_FMP_POWER_12925 </specific>
     <rules>
-      <replace power-replace="Gythka Claw Scoop:attack,3+" optional="true"/>
+      <replace power-replace="Gythka Claw Swoop:attack,3+" optional="true"/>
     </rules>
-	You swap one of your level 3 or higher encounter attack powers for the gythka claw scoop power.
+	You swap one of your level 3 or higher encounter attack powers for the gythka claw swoop power.
 	</RulesElement>
   <RulesElement name="Gythka Specialist" type="Feat" internal-id="ID_FMP_FEAT_3213" source="Dark Sun Campaign Setting" revision-date="8/27/2010 12:17:48 PM">
     <Prereqs> 10th level, proficiency with gythka</Prereqs>

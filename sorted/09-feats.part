@@ -47793,7 +47793,7 @@ You gain a +1 feat bonus to attack rolls with any weapon power you use with a ga
     </rules>
 You gain a +1 feat bonus to attack rolls with any weapon power you use with a blowgun. The bonus increases to +2 at 11th level and +3 at 21st level.
 	</RulesElement>
-	<RulesElement internal-id="ID_INTERNAL_FEAT_INSPIRING_FURY" name="Inspiring Fury" type="Feat" source="Dragon 429">
+  <RulesElement internal-id="ID_INTERNAL_FEAT_INSPIRING_FURY" name="Inspiring Fury" type="Feat" source="Dragon 429">
 		<Prereqs> Half-orc, Skald's Aura class feature </Prereqs>
 		<print-prereqs> Half-orc, Skald's Aura class feature </print-prereqs>
 		<Flavor> The ferocity of your blows gives hopes to your allies, allowing them to catch their breath and follow your example. </Flavor>
@@ -47803,6 +47803,42 @@ You gain a +1 feat bonus to attack rolls with any weapon power you use with a bl
 			<modify name="Furious Assault" type="Power" Field="Inspiring Fury" value="Until the end of your next turn, any creature that heals using your Skald's Aura gains additional hit points equal to 1d8 + your Charisma modifier."/>
 		</rules>
 When you use your furious assault racial power, any creature that heals using your Skald's Aura class feature before the end of your next turn gains additional hit points equal to 1d8 + your Charisma modifier.
+	</RulesElement>
+
+  <RulesElement name="Feral Companion" type="Feat" internal-id="ID_FMP_FEAT_3797" source="Dragon Magazine 429">
+		<Prereqs> Half-orc, combined attack druid attack power </Prereqs>
+		<print-prereqs> Half-orc, combined attack druid attack power </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> Use furious assault after your combined attack hits; you and your animal companion both deal the extra damage </specific>
+		<specific name="Special"/>
+		<specific name="type"/>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+You can use your furious assault power after you hit with your combined attack power's attack and your animal companion hits with the animal attack combined attack's effect allows. If you do, your hit and your animal companion's hit both deal the extra damage from your furious assault power.
+	</RulesElement>
+
+  <RulesElement name="Unyielding Rage" type="Feat" internal-id="ID_FMP_FEAT_3798" source="Dragon Magazine 429">
+		<Prereqs> Half-orc, Rage Strike class feature </Prereqs>
+		<print-prereqs> Half-orc, Rage Strike class feature </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> You do not expend furious assault when using it with your rage strike power's attack </specific>
+		<specific name="Special"/>
+		<specific name="type"/>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+When you use your furious assault power with your rage strike power's attack, you do not expend furious assault.
+	</RulesElement>
+
+  <RulesElement name="Jousting Charge" type="Feat" internal-id="ID_FMP_FEAT_3799" source="Dragon Magazine 401">
+		<Prereqs> Mounted Combat feat </Prereqs>
+		<print-prereqs> Mounted Combat feat </print-prereqs>
+		<specific name="Tier"> Heroic </specific>
+		<specific name="Short Description"> After a mounted charge hit, push the target 1 square and shift 1 square into its space </specific>
+		<specific name="Special"/>
+		<specific name="type"/>
+		<specific name="Associated Power Info"/>
+		<specific name="Associated Powers"/>
+If you hit a target with a charge attack while you are mounted, you can push the target 1 square and then shift 1 square into the square the target vacated.
 	</RulesElement>
 
 <!-- End of feat fixes -->

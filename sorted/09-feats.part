@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/D20Rules.xslt"?>
 <D20Rules game-system="D&amp;D4E">
 	<UpdateInfo>
-		<Version>1.163</Version>
+		<Version>1.164</Version>
 		<Filename>09-feats.part</Filename>
 		<PartAddress>https://cbloader.vorpald20.com/sorted/09-feats.part</PartAddress>
 		<VersionAddress>https://cbloader.vorpald20.com/sorted/09-feats.txt</VersionAddress>
@@ -84,6 +84,7 @@
  Updated 29-April-2026 Fix Immortal Prowess prerequisites
  Updated 13-June-2026 Fix Traveler's Celerity missing Target
  Updated 8-July-2026 Add missing half orc feats from Dragon 429 and a jousting charge feat from Dragon 401 
+ Updated 10-July-2026 Update feral companion to correctly show eligibility
 	</Changelog>
 	<RulesElement name="Divine Healer" type="Feat" internal-id="ID_FMP_FEAT_1628" source="Divine Power" revision-date="8/27/2010 12:19:17 PM">
 		<Category> ID_INTERNAL_CATEGORY_MULTICLASS_CLERIC,ID_INTERNAL_CATEGORY_MULTICLASS,ID_INTERNAL_CATEGORY_CLASS-SPECIFIC_MULTICLASS </Category>
@@ -47807,7 +47808,7 @@ When you use your furious assault racial power, any creature that heals using yo
 	</RulesElement>
 
   <RulesElement name="Feral Companion" type="Feat" internal-id="ID_FMP_FEAT_3797" source="Dragon Magazine 429">
-		<Prereqs> Half-orc, combined attack druid attack power </Prereqs>
+		<Prereqs> Half-orc, ID_FMP_POWER_13506 </Prereqs>
 		<print-prereqs> Half-orc, combined attack druid attack power </print-prereqs>
 		<specific name="Tier"> Heroic </specific>
 		<specific name="Short Description"> Use furious assault after your combined attack hits; you and your animal companion both deal the extra damage </specific>
